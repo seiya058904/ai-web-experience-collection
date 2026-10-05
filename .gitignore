@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.vite/
+coverage/
+.cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tsbuildinfo
+*.log
+.vscode/
+.idea/
+.playwright-cli/
+.impeccable/
+playwright-report/
+test-results/
+# Historical generated mockups contain third-party branding; keep local only.
+design/concepts/
