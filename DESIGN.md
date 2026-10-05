@@ -37,6 +37,8 @@ rounded:
 
 # Beyond the Limit — design contract
 
+This contract applies to `/f1/`. The Collection entrance has its own contract in [design/COLLECTION.md](design/COLLECTION.md); VERDANT and ORBITAL retain their independent styles.
+
 ## Overview
 
 An experience, told as a night in a racing laboratory. The user delegated design and stack choices and requested completion without another approval round. The six generated chapter references are the visual target; all text, controls, charts and track geometry are native web elements. No generated UI pixels are shipped.
@@ -85,7 +87,7 @@ Motion: narrative progress is linear and reversible (`scrub: true`); Lenis suppl
 
 Lenis is fed by one owned GSAP ticker. Wheel smoothing uses restrained interpolation; touch keeps native momentum. No full-page snapping or navigation-blocking intro. Each chapter follows Enter → Hold → Exit. The desktop opening, introduction and five main scenes use CSS sticky with measured travel retained in normal document flow; there are no negative margins that let B consume A's reading window. No ScrollTrigger pin spacers are inserted.
 
-Reading geometry accounts for the header and shared gutter. Hold distance depends on available viewport height, protected content height, text lines and controls; it is not a fixed section extension. A composition taller than the viewport scrolls through naturally before its final important group receives a hold. Content entry and outgoing image motion have separate progress ranges, with neither advancing during Hold. Existing diagonal surfaces stay inside B, below its content, and cannot mask A. Mobile uses normal flow; its reading window ends when the protected first line approaches the header, allowing B's ground to appear below without covering text. Scroll reversal traverses the same ranges without changing z-index.
+Reading geometry accounts for the header and shared gutter. Hold distance depends on available viewport height, protected content height, text lines and controls; it is not a fixed section extension. A composition taller than the viewport scrolls through naturally before its final important group receives a hold. Content entry and outgoing image motion have separate progress ranges, with neither obscuring text during Hold. Hold adds a reversible 12px foreground drift and restrained existing-image scale on the same clock; the extra travel is intentionally short. Existing diagonal surfaces stay inside B, below its content, and cannot mask A. Mobile uses normal flow; its reading window ends when the protected first line approaches the header, allowing B's ground to appear below without covering text. Scroll reversal traverses the same ranges without changing z-index.
 
 One shared, cached SVG stroke moves from the introduction to airflow, the energy orbit, tyre contact, pit-lane ground, a strategy datum and the selected real circuit. It is a visual guide, never an additional telemetry series. Cross-chapter morphs start after A's Hold, finish at B's completed entry and remain hidden during stable reading. Controls remain above their scene and interactive. Geometry is sampled before ScrollTrigger refresh at settled checkpoints, including disclosure and viewport changes. Scroll frames interpolate cached points and never measure boxes or SVG paths.
 

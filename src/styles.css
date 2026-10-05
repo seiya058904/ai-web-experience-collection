@@ -3443,6 +3443,7 @@ img {
     position: relative;
     z-index: 1;
     display: flow-root;
+    overflow-x: clip;
     background: var(--bg);
   }
   .scene-shell::after {
@@ -3456,6 +3457,16 @@ img {
   .motion-active .scene-frame {
     position: sticky;
     top: var(--scene-top, 0px);
+    translate: 0 calc(var(--living-hold, 0) * -12px);
+  }
+  .motion-active .hero-media img {
+    scale: calc(1 + var(--living-hold, 0) * .035);
+  }
+  .motion-active .aero-car,
+  .motion-active .energy-visual > img,
+  .motion-active .tyre-visual > img,
+  .motion-active .pit-cinema > img {
+    scale: calc(1 + var(--living-hold, 0) * .018);
   }
   .motion-active .closing {
     position: relative;

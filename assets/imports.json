@@ -1,0 +1,10 @@
+{
+  "imported": "2026-10-05",
+  "method": "Original scene source and runtime resources, adapted to Vite static multi-page documents; no source-site recreation.",
+  "archives": [
+    {"file": "VERDANT-Complete-Website.zip", "sha256": "abba2371935bdb7a3543d065068d88f6c7e771d9b288c37f4958a18f9dfc30a0", "root": "VERDANT", "source": "User-supplied complete project", "code": "experiences/verdant", "media": "public/verdant", "imagery": "Four original AI-generated photographic-style scenes; font and motion notices retained."},
+    {"file": "ORBITAL-Beyond-Earth-Complete.zip", "sha256": "21c1fa235fad3259dada9af6b665b6d4f07df2f4c03bd74b3de0ab45ca2bf073", "root": "ORBITAL-Beyond-Earth", "source": "User-supplied complete project", "code": "experiences/orbital", "media": "public/orbital", "imagery": "Original illustrative spacecraft and cinematic plates; NASA Earth, Moon and cloud textures with source credits."}
+  ],
+  "excluded": ["Compiled dist copies", "Unused server/auth/database and connector starter", "Unused UI primitives", "Original hosting configuration", "Design concept screenshots and master exports"],
+  "collectionPreviews": "Reuse the same production assets; no new third-party images."
+}

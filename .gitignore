@@ -17,5 +17,7 @@ Desktop.ini
 .impeccable/
 playwright-report/
 test-results/
+# Original delivery archives are preserved outside the source checkout.
+/*.zip
 # Historical generated mockups contain third-party branding; keep local only.
 design/concepts/

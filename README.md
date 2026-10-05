@@ -1,91 +1,71 @@
-# F1 / Beyond the Limit — 速度之外
+# AI Web Experience Collection
 
-An immersive, cinematic Formula 1 educational experience built around scroll-driven storytelling.
+[Open the Collection](https://seiya058904.github.io/f1-beyond-the-limit/)
 
-在线体验：[F1 / Beyond the Limit](https://seiya058904.github.io/f1-beyond-the-limit/)
+Three complete, independent web experiences, brought together through a restrained visual entrance. No iframe and no client-side route fallback: each work has its own HTML document, CSS, runtime and lifecycle.
 
-面向普通观众的中文 F1 科普展示站。以摄影棚、风洞、动力实验室和赛道为场景，将空气动力学、能量回收、轮胎与比赛策略变成可以操作的解释。当前视觉、交互与章节交接已通过用户真人验收，作为正式项目基线保存。
+| Route (relative to the deployment base) | Experience | Runtime |
+| --- | --- | --- |
+| `/` | Collection — three visual entrances | HTML / CSS, optional pointer response |
+| `/f1/` | **Beyond the Limit** — Formula 1, Chinese | TypeScript, GSAP, Lenis, SVG / Canvas |
+| `/verdant/` | **VERDANT** — nature, spring and architecture | React, GSAP, Lenis, photographic WebGL surfaces |
+| `/orbital/` | **ORBITAL** — rockets and deep space | React, GSAP, Lenis, Three.js with Canvas fallback |
+| `/credits.html` | Collection provenance and licenses | Static HTML |
 
-## 体验与章节
+VERDANT and ORBITAL were integrated from the supplied complete projects. Their scene code and production imagery are retained; unused server/auth/database starter code and duplicate builds are excluded. The small shared UI directory contains only the original Radix primitives actually used by the works. No account, backend, API key or external asset CDN is required. ORBITAL audio is synthesized after an explicit click; there are no runtime videos.
 
-- **开场与引言**：分层赛车影像、巨幅字体和完整观看窗口，建立滚动叙事。
-- **空气动力学**：部件热点、Canvas 气流、速度滑块、弯道 / 直道模式。
-- **动力**：回收 / 释放控制、能量轨迹与电池示意。
-- **轮胎**：软 / 中 / 硬配方及抓地力、耐久性和身体负荷解释。
-- **比赛**：常规 / 冲刺周末、键盘比赛日标签和 52 圈一停策略模型。
-- **赛道与尾章**：蒙扎、铃鹿、摩纳哥的真实轮廓、可暂停路线演示与资料出处。
+## Develop and build
 
-本项目独立、非官方。图像为 AI 生成的概念插画；模型、性能条和能量轨迹是教学示意，不是车队实测、遥测或真实策略承诺。内容按 2026 技术方向与赛制编写，资料核查基准为 2026-10-04，出处可在网站页脚访问。
-
-## 安装与运行
-
-建议使用 **Node.js 24 LTS / npm**（本地验证环境为 Node 24.15.0、npm 11.12.1）。图片、字体和赛道数据已包含在仓库中，无需素材服务、后台、账户或 API 密钥。
+Use **Node.js 24 LTS and npm**. One lockfile fixes the dependencies; existing F1 versions were retained and imported dependencies use the versions from the supplied projects.
 
 ```sh
 npm ci
-npm run dev
-```
-
-开发地址：`http://127.0.0.1:5173`。
-
-```sh
-npm test                 # 七项模型测试
-npm run build            # TypeScript 检查 + Vite production build
-npm run verify           # 顺序执行 test 和 build
+npm run dev                       # http://127.0.0.1:5173
+npm test                          # 7 F1 model + 2 orbital continuity tests
+npm run build                     # TypeScript + Vite multi-page build
+npm run verify:build              # check output routes, links, CSS assets and licenses
+npm run verify                    # all three checks, site-root build
 npm run preview -- --port 4174 --strictPort
 ```
 
-生产预览：`http://127.0.0.1:4174`。默认开发与构建保留站点根路径；`dist/` 可交给静态服务器。
+Open `/`, `/f1/`, `/verdant/` or `/orbital/` on either server. Development uses real document navigation so leaving a work also releases its clocks, listeners, Canvas and WebGL resources.
 
-### GitHub Pages
-
-`.github/workflows/pages.yml` 在推送 `main` 或手动运行时安装锁定依赖、执行七项测试，再按 Pages 返回的部署路径进行类型检查与构建。只有构建成功后才发布 `dist/`，包括两份许可文本；不提交构建产物或另建发布分支。
-
-本地检查同样的项目子路径：
+To reproduce GitHub Pages' project path:
 
 ```sh
 npm run build -- --base=/f1-beyond-the-limit/
+npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/f1-beyond-the-limit/
 ```
 
-访问 `http://127.0.0.1:4175/f1-beyond-the-limit/`，检查图片、字体、交互和页脚许可链接。资源路径由 Vite 处理，许可链接使用 `%BASE_URL%`；子路径部署不改变视觉、滚动时钟或章节交接。
+Then open `http://127.0.0.1:4175/f1-beyond-the-limit/`. Vite rewrites HTML/CSS assets; dynamically loaded imagery, textures, GLB and links use `import.meta.env.BASE_URL`. Keep trailing slashes on work URLs. There is no SPA rewrite requirement. A deployment to a different base needs a rebuild, not an edited compiled bundle.
 
-## 技术与结构
+## Structure
 
-Vite 8、TypeScript 5.9、原生 HTML / CSS、Lenis 1.3.26、GSAP 3.15 / ScrollTrigger，以及轻量 SVG / Canvas；没有组件框架、WebGL 或视频运行时。
+- `index.html`, `src/collection.*`: Collection homepage.
+- `f1/index.html`, `src/{main,motion,choreography,interactions,models}.ts`, `src/styles.css`: original F1 experience.
+- `verdant/index.html`, `experiences/verdant/`: original React scenes, journey and surface renderer.
+- `orbital/index.html`, `experiences/orbital/`: original mission, spacecraft, audio and compatibility renderer.
+- `experiences/shared/`: used Radix UI primitives and the consistent Collection return link.
+- `public/media`, `public/fonts`: F1 resources; `public/verdant` and `public/orbital`: namespaced imported resources.
+- `assets/imports.json`, `ATTRIBUTION.md`, app source notices, `public/licenses.txt`: provenance and licenses.
+- `design/COLLECTION.md`: Collection visual contract; `DESIGN.md`: F1 visual contract; `SCROLL-AUDIT.md`: handoff architecture and bounded verification record.
+- `scripts/verify-build.mjs`: checks actual production documents and referenced local files. `scripts/prepare-*.mjs` are deliberate F1 resource import tools, **not** verification commands.
 
-| 位置 | 职责 |
-| --- | --- |
-| `index.html`、`src/styles.css` | 语义章节、视觉语言、响应式与交互状态 |
-| `src/main.ts` | 初始化、资源就绪与 HMR 清理 |
-| `src/motion.ts` | 单一 Lenis / GSAP 时钟、空闲几何刷新、导航、动效偏好与生命周期 |
-| `src/choreography.ts` | 内容测量、Enter → Hold → Exit 与可逆章节交接 |
-| `src/interactions.ts`、`src/models.ts` | 科普控制、可见场景循环与纯计算模型 |
-| `tests/models.test.mjs` | 七项空气动力、策略和地图投影测试 |
-| `vite.config.ts` | 保留上游许可注释并生成构建依赖许可清单 |
-| `public/`、`assets/` | 正式资源、许可文本、生产原图、提示词与来源记录 |
-| `DESIGN.md`、`SCROLL-AUDIT.md`、`AGENTS.md` | 设计约束、滚动审计与后续维护指南 |
+## Motion and typography changes
 
-一个 GSAP ticker 驱动 Lenis 与可见场景；ScrollTrigger 直接 scrub，不叠加延迟。图片、字体、尺寸和说明展开引起的刷新合并到滚动停止后的几何检查点，避免尺寸更新截断惯性目标。实例销毁会清理监听器、观察器、ticker、场景与交互动画。
+F1 retains its single Lenis / GSAP clock, 0.105 interpolation, direct scrub, measured normal-flow sticky shells and protected reading regions. The added Hold travel is shorter; scroll input now advances a reversible 12px foreground drift and restrained existing-image scale during that interval. Text does not fade until the original exit range. The shared trajectory still belongs to the transition. Reduced motion removes sticky storytelling and the new movement.
 
-章节采用 **Enter → Hold → Exit**：桌面引言与五个主章节按内容、视口和控制项测量 sticky 阅读窗口，入场和转场使用独立 progress。下一章节在文档流中接入，背景层位于正文下方；正反向经过同一时间轴。手机采用独立构图与自然流阅读，不固定正文。气流、能量与赛道持续运动离屏暂停，Canvas 限制为 1.5 DPR / 300 万像素，路径使用缓存几何。
+VERDANT's display typography remains large. Architecture, Understory and Coda now group related text in normal flow with explicit gaps. A wide/short Architecture composition uses two title lines rather than letting a width-scaled three-line title collide with prose positioned by height. Mobile Arrival and Coda use the same safe grouping principle. Resource readiness in both imported works is deferred until scroll inertia settles.
 
-## 浏览器验收
+## Deployment
 
-CI 执行 `npm ci` 和 `npm run verify`。没有独立 lint 配置或自动浏览器测试脚本；类型检查由 build 完成，浏览器验收需另行执行。
+`.github/workflows/pages.yml` runs on `main` push or manual dispatch. It performs `npm ci`, all nine tests, a Pages-base production build, and output verification before uploading **only `dist/`**. GitHub Pages serves the four independent entrances from that artifact. Do not commit `dist/`, dependency caches, ZIP exports or browser evidence.
 
-使用生产预览，逐章正向 / 反向滚动并在 Enter、Hold、Exit 停止。检查气动滑块与模式、热点说明、能量控制、轮胎选择、比赛日键盘标签、进站滑块、赛道选择 / 暂停、导航、资料展开和动效开关；同时检查控制台、失败资源和横向溢出。建议覆盖 390×844、768×1024、1440×900、2560×1440、3840×2160。动效改动的复现检查点见 [SCROLL-AUDIT.md](SCROLL-AUDIT.md)。
+Production preserves upstream legal comments and emits `third-party-licenses.md`; ship it with `licenses.txt` and the namespaced font notices. The `credits.html` page links to these files and explains the generated imagery and independent, unofficial nature of the projects.
 
-手机在 760px 及以下使用专门适配，触摸保留浏览器原生惯性。支持 `prefers-reduced-motion` 和页眉动效开关；减少运动时科普控制仍可用。当前自动检查与截图基于 Chromium，不能推导所有浏览器或实际设备表现。
+## Verification scope
 
-**仍需实机验证**：iOS Safari、真实触屏 / 触控板动量、手机旋转、真实后台页恢复，以及 120 / 144 Hz 显示节奏。视口模拟、合成事件与 rAF 回调采样不等同于这些实机验收；用户的真人验收不被扩展解释为全部环境已验证。
+Browser checks cover desktop 1920×1080, 2560×1440, 3840×2160, 1440×900, tablet 768×1024, phone 390×844 and the 1920×900 overlap reproduction. The release record is in `SCROLL-AUDIT.md`. Model tests and CI do not replace browser acceptance. Browser viewport emulation does not certify physical touchpad momentum, iOS Safari or 120/144 Hz hardware. Do not infer those results from a screenshot, synthetic wheel input or an older supplied-project README.
 
-## 素材与许可
-
-自有代码、文案、设计与原创素材**保留版权**，见 [LICENSE](LICENSE)。公开可浏览不等于授予宽松开源许可；字体、赛道与依赖适用各自条款，详见 [ATTRIBUTION.md](ATTRIBUTION.md) 与 [public/licenses.txt](public/licenses.txt)。
-
-生产构建保留上游许可注释，并额外生成 `dist/third-party-licenses.md`；发布静态产物时一并保留这份清单与 `licenses.txt`。
-
-生产插画原图与生成提示词保留在 `assets/`。历史概念图含第三方标识，留在本地而不随公开仓库分发。赛道来自 Tomislav Bacinger 的 MIT [f1-circuits](https://github.com/bacinger/f1-circuits)；Noto Sans SC 与 Barlow Condensed 为 SIL OFL 1.1，Lenis 为 MIT，GSAP 为 Standard No-Charge License。
-
-`scripts/prepare-data.mjs` 会访问上游并重新生成赛道、中文字体子集与来源记录；`scripts/prepare-assets.mjs` 用于导入原始生成输出和制作 WebP。日常安装、测试、构建不需要运行这些脚本。修改文案或素材时应有意审查再生结果，避免覆盖已验收资源。
+This collection is independent of Formula 1, the FIA, racing teams, NASA and SpaceX. Generated scenes and models are illustrative; original and third-party rights remain distinct.

@@ -39,3 +39,14 @@
 视觉研究参考 [Apple AirPods Pro](https://www.apple.com/airpods-pro/)、[Lenis](https://lenis.darkroom.engineering/) 和 [Apart Collective / Charles Leclerc](https://apart-collective.com/works/charles-leclerc/) 的尺度、节奏与运动表达，没有将这些网站的代码或媒体纳入项目。GitHub 的实际素材复用为上述赛道数据；没有纳入 CodePen 实现或无法确认许可的复制代码。
 
 这是独立、非官方的 F1 教育展示项目，不与 Formula 1、FIA、车队或赞助商存在隶属或认可关系。第三方名称、商标与所链接资料仍属于各自权利人。
+
+## Collection additions (2026-10-05)
+
+`assets/imports.json` records the SHA-256 identity of the two user-supplied complete projects and the deliberately selected import boundary. Original ZIP exports are preserved outside the Git checkout. Their unused cloud/server starter and compiled duplicates are not distributed in this repository.
+
+- **VERDANT:** four original AI-generated botanical / architectural plates and their responsive WebP derivatives; Instrument Serif and DM Sans with their OFL notices. See [the supplied asset record](experiences/verdant/ASSET-SOURCES.md). Runtime resources are now under `public/verdant/`.
+- **ORBITAL:** original illustrative spacecraft GLB, layered compatibility renders and cinematic plates supplied with the project. Earth / Moon / cloud textures credit NASA / Goddard (Reto Stöckli for the cloud composite). Sources are retained in `experiences/orbital/SOURCE.md` and the in-experience credits. Fonts retain their OFL notices. Runtime resources are under `public/orbital/`.
+- **Collection:** reuses those same production image files; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
+- React, Radix UI, Lucide, Three.js and the used utility packages retain their own licenses. The imported shadcn stylesheet's MIT notice remains beside it. The production dependency inventory includes the actually bundled libraries; it does not grant rights to imagery or replace GSAP's terms.
+
+The earlier F1-only statement about no audio applies to F1. ORBITAL synthesizes optional audio in code after the sound control is activated; no audio recording or video file was added. The Collection is independent of Formula 1, FIA, racing teams, NASA and SpaceX. See the production `credits.html` for visitor-facing attribution and license links.

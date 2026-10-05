@@ -1,50 +1,35 @@
-# F1 / Beyond the Limit — maintenance guide
+# AI Web Experience Collection — maintenance guide
 
-## Goal and baseline
+## Scope and entrypoints
 
-This is a Chinese F1 educational site built around Motion Design, scroll storytelling and finished visual compositions. The current product has passed human acceptance. Preserve its imagery, typography, content, interactions and timing unless the requested task explicitly changes them or a reproduced engineering defect requires a correction.
+Three accepted complete works share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
 
-## Entry points
-
-- `index.html`: semantic chapters and cited educational content; `src/styles.css`: visual language and responsive composition.
-- `src/main.ts`: startup, resource readiness and HMR teardown.
-- `src/motion.ts`: the single Lenis / GSAP ticker owner, idle geometry queue, navigation, preferences and disposal.
-- `src/choreography.ts`: measured reading windows, separate content / transition progress and reversible handoffs.
-- `src/interactions.ts`: controls and three visibility-aware scene loops; `src/models.ts`: pure educational models, tested by `tests/models.test.mjs`.
-- Read `DESIGN.md` and `SCROLL-AUDIT.md` before changing layout or motion; check `ATTRIBUTION.md` before publishing assets.
-- `vite.config.ts` preserves upstream legal comments and emits a dependency license inventory; retain both in production releases.
+- `index.html`, `src/collection.ts`, `src/collection.css`: Collection entrance. Read `design/COLLECTION.md` before changing it.
+- `f1/index.html`, `src/main.ts`, `src/styles.css`: F1 document, startup and composition. Read `DESIGN.md` and `SCROLL-AUDIT.md` before changing F1 layout or motion.
+- `experiences/verdant/components/verdant/`: React composition, single journey timeline and photographic surface renderer; `experiences/verdant/app/globals.css`: its independent style sheet.
+- `experiences/orbital/components/orbital/`, `experiences/orbital/lib/orbital/`: React composition, mission controller, pure progress/poses, WebGL / Canvas and audio.
+- `experiences/shared/`: only genuinely shared UI primitives and Collection return control.
+- `ATTRIBUTION.md`, `assets/imports.json` and per-work notices: asset provenance. Preserve legal comments and production license inventory.
 
 ## Invariants
 
-- Keep one Lenis instance and one app-owned GSAP clock. Register continuous scene work through `motion.loop()` and cleanup through `motion.own()` / its abort signal. Do not add a competing RAF clock.
-- Do not increase smoothing to disguise a scroll defect. Current Lenis interpolation is 0.105; touch uses native momentum (`syncTouch: false`). ScrollTrigger scrub is direct and reversible.
-- Reflow must use the idle geometry queue. Never call `lenis.resize()` during an active destination or refresh blindly on every input. Measure choreography before ScrollTrigger refresh.
-- Preserve **Enter → Hold → Exit**. Content must be fully composed before a measurable Hold, followed by transition. Keep content and transition progress separate, backgrounds below text and hold travel in normal document flow; do not restore negative overlaps or fixed-pixel spacer fixes.
-- Both scroll directions and arbitrary stopping positions must work. Maintain keyboard controls, reduced motion, reading-position preservation and teardown across mode / breakpoint changes.
-- 1440p and 4K matter. Mobile (at / below the 760px breakpoint) has an independently composed, natural-flow layout rather than a scaled desktop scene.
-- Keep offscreen loops paused, cached path geometry and the Canvas cap (1.5 DPR / 3 million pixels). Do not introduce Three.js / WebGL for novelty or materially regress rendering cost.
-- Models are illustrative; preserve their assumptions and distinguish 2026 active aero from historical DRS. New assets require proven distribution rights. Historical branded mockups in `design/concepts/` remain local and ignored.
+- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
+- HTML/CSS asset URLs go through Vite. Runtime URLs and cross-work links must include `import.meta.env.BASE_URL`; HTML links use `%BASE_URL%`. Keep resources namespaced and test a project-path build.
+- Each experience keeps one Lenis instance and one owned GSAP clock. Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
+- F1 interpolation is 0.105, `syncTouch: false`, direct reversible ScrollTrigger scrub. `src/motion.ts` owns the idle geometry queue, navigation, preferences and teardown. Register loops via `motion.loop()` and cleanup via `motion.own()` / its abort signal.
+- F1 must retain Enter → complete composition → Living Hold → handoff → Exit. Short measured Hold travel stays in normal flow; no negative overlaps, content masks or fixed-pixel spacer patches. Input must give visible, reversible feedback while the protected text remains readable.
+- F1 remeasure happens before ScrollTrigger refresh and only after active input settles. Do not resize Lenis during a destination. The dev-only `window.__f1Motion.inspect()` is absent from production.
+- VERDANT text groups must own spacing; do not reintroduce independently absolute-positioned prose below a width-scaled heading. Test both 16:9 and wide/short windows after font load. Static/reduced layouts must remain legible.
+- ORBITAL's shared spacecraft, engineering tabs, Moon/Mars, silent-by-default audio, reading companion and Canvas compatibility path are part of the complete experience.
+- Preserve visibility suspension, rendering caps, keyboard access, reduced motion and read-position retention on rebuild. F1 Canvas cap is 1.5 DPR / 3 million pixels; do not add WebGL to F1 for novelty.
+- No subagents without explicit user authorization. No dependency updates or publishing without task authorization.
 
-## Change and validation
+## Validation and deployment
 
-Reproduce first, then make the smallest justified correction. Preserve the visual language and avoid unsupported broad refactors. Do not change dependencies, publish or deploy without task authorization. Never claim hardware, browser or performance checks that were not run.
+Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (nine tests); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
 
-Use Node.js 24 LTS and npm. No backend or secret configuration is required.
+There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
 
-```sh
-npm ci                                  # lockfile install; no dependency updates
-npm run dev                             # http://127.0.0.1:5173
-npm test                                # seven node:test model tests
-npm run build                           # TypeScript check + Vite -> dist/
-npm run verify                          # tests + production build
-npm run preview -- --port 4174 --strictPort
-git diff --check
-```
+After UI/motion changes, inspect complete frames at 390×844, 768×1024, 1440×900, 1920×1080, 2560×1440 and 3840×2160, plus wide/short VERDANT. Exercise slow/normal/fine/high-frequency wheel, fast down/reverse, arbitrary stops, scene boundaries, disclosures, every control, menus, reduced motion, immediate-load input, resize and tab recovery. Record actual observations; physical touch, iOS and high-refresh hardware require actual devices.
 
-There is no configured lint or browser-test npm script. CI runs `npm ci` and `npm run verify`; it does not replace browser acceptance. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` are deliberate resource regeneration / import tools, not verification commands. They access upstream resources or the original generation outputs and may replace assets; do not run them during a routine build.
-
-After motion or layout changes, scroll the production preview in a real browser through every boundary: slow / normal / repeated / fine wheel input, quick down-and-reverse and stops at Enter, Hold and Exit. Check complete outgoing content, expanded disclosures, navigation, motion toggle, all educational controls, mobile menu, console and failed assets. Test at least 390×844, a tablet, 1440×900, 2560×1440 and 3840×2160; for 1440p / 4K inspect the full frame, not just document width. The development-only `window.__f1Motion.inspect()` helps diagnose geometry and lifecycle; it is absent in production.
-
-Physical touch / touchpad momentum, iOS Safari, real background-tab recovery and 120/144 Hz pacing require actual devices / external browsers. Viewport emulation and synthetic events cannot establish those results.
-
-Local development and ordinary builds default to the site root. `.github/workflows/pages.yml` tests and builds with the Pages `base_path`, then deploys only `dist/` from `main`. Keep the footer license link based on `%BASE_URL%`; preserve both production license files. For a project-path preview use the build / preview `--base=/f1-beyond-the-limit/` commands in README, and verify deployed asset bytes, license navigation and core desktop / mobile interactions. Deployment must preserve the frozen visuals and motion architecture.
+Pages workflow builds with its returned base path, tests output references, then deploys only `dist/` on `main`. Before authorized release, run the README project-path build/preview and verify direct loads, refresh, home/work/back navigation, fonts/images/GLB, WebGL/Canvas and both production license files. After deployment, compare live asset bytes with the verified build and repeat core desktop/mobile flows. Close with exact commit, Git parity and clean state.

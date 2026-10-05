@@ -3,3 +3,5 @@
 *.webp -text
 *.woff -text
 *.woff2 -text
+*.jpg -text
+*.glb -text

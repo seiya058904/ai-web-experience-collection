@@ -140,10 +140,10 @@ export function createChoreography(desktop: boolean) {
     // These are viewport/content ratios, recalculated after reflow and disclosure.
     return (
       available *
-      (0.24 +
-        0.42 * clamp(height / available) +
-        0.22 * clamp(lines / 28) +
-        0.12 * clamp(controls / 12))
+      (0.08 +
+        0.12 * clamp(height / available) +
+        0.06 * clamp(lines / 28) +
+        0.04 * clamp(controls / 12))
     );
   }
   function measurePhases() {
@@ -594,6 +594,21 @@ export function createChoreography(desktop: boolean) {
   function render(y: number) {
     if (Math.abs(y - previousY) < 0.15 || cues.length < 2) return;
     previousY = y;
+    // Reuse the owner's scroll clock. A small, reversible foreground drift
+    // makes input visible even when a tall scene's main image is off screen.
+    // It changes neither sticky geometry nor the measured reading rectangle.
+    if (desktop) {
+      $(".hero-stage").style.setProperty(
+        "--living-hold", String(clamp(y / Math.max(1, openingHold))),
+      );
+      for (const { selector } of chapters) {
+        const p = phases.get(selector)!;
+        $(selector).style.setProperty(
+          "--living-hold",
+          String(clamp((y - p.holdStart) / Math.max(1, p.holdEnd - p.holdStart))),
+        );
+      }
+    }
     const index = intervals.findIndex(
       (interval) => y >= interval.start && y <= interval.end,
     );
@@ -640,6 +655,10 @@ export function createChoreography(desktop: boolean) {
       }
       $(".hero").style.removeProperty("--hero-runway");
       $(".hero-stage").style.removeProperty("--hero-top");
+      $(".hero-stage").style.removeProperty("--living-hold");
+      chapters.forEach(({ selector }) =>
+        $(selector).style.removeProperty("--living-hold"),
+      );
       chapters.forEach(({ selector }) =>
         $(selector).style.removeProperty("--scene-top"),
       );

@@ -39,3 +39,9 @@ The current visual, interaction and section-handoff version has passed user acce
 ## Accessibility & Inclusion
 
 Meaningful content remains available with reduced motion; touch retains native scrolling; every interaction needs readable labels and keyboard equivalents.
+
+## Collection expansion — 2026-10-05
+
+The root now introduces three independent finished experiences: Beyond the Limit at `/f1/`, VERDANT at `/verdant/`, ORBITAL at `/orbital/`. The Collection visitor chooses a world and can return through a consistent quiet header link. Each work retains its own identity and runtime. The entrance is an Experience surface: a full-width photographic triptych with a modest pointer response, never a nested app or elaborate fourth story.
+
+The imported React works use the same Vite multi-page build and lockfile. Preserve their existing GSAP/Lenis ownership, WebGL/Canvas fallbacks and accessible controls. The user's current authorization replaces the former frozen-handoff constraint only for F1's excessive static Hold and the documented VERDANT typography collisions. Existing F1 scientific content, generated illustration notices and all asset/license requirements remain.
