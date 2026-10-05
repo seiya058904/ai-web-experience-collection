@@ -5,7 +5,7 @@ This directory is excluded from the website build. It preserves unique material 
 - `f1/`: five original image masters, prompts, font/circuit sources and design metadata. Local branded concept references are ignored.
 - `glaze/`: original image-generation attribution, final image dimensions and SHA-256. Runtime files are under `public/glaze/`.
 - `kage/`: the unique supplied offline edition and the provenance of its actual FRAME screenshot used by the gallery.
-- `chronos/`: original image/technical attribution and design metadata; runtime art/fonts and licenses live in `public/chronos/`.
+- `chronos/`: original image/technical attribution and design metadata; runtime art/Cormorant fonts and licenses live in `public/chronos/`; identical DM Sans fonts are shared with VERDANT in `public/shared/fonts/`.
 - `deliveries/`: legacy import notes and the entry-by-entry SHA-256 manifest of the GLAZE, KAGE and CHRONOS deliveries.
 
 The imported new ZIPs, extracted intermediate directories, compiled duplicates and standalone configs/startup scripts have been removed after verified import. Their original entry hashes remain in `deliveries/import-manifest.json`.

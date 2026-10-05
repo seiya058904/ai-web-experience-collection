@@ -67,6 +67,6 @@ GLAZE、KAGE 与 CHRONOS 三个新交付 ZIP 的逐项字节和 SHA-256 保存�
 
 ## CHRONOS — The Architecture of Time
 
-用户提供的完整原创数字腕表成品。原代码、程序几何与文档继续适用 [MIT](public/chronos/LICENSE)；两幅生成摄影艺术保持其原始说明，不声称是真实品牌产品或精确工程图。完整 [素材来源与机械参考](provenance/chronos/ATTRIBUTION.md)、[第三方声明](public/chronos/THIRD_PARTY_NOTICES.md) 与所有许可证已保留。Cormorant Garamond 与 DM Sans 从交付构建中的同版本 WOFF2 无损导入本地命名空间；IBM Plex Mono 使用 Collection 已锁定的相同 5.3.0 软件包。运行库仍为同版本 Three.js、GSAP、Lenis，无依赖升级。
+用户提供的完整原创数字腕表成品。原代码、程序几何与文档继续适用 [MIT](public/chronos/LICENSE)；两幅生成摄影艺术保持其原始说明，不声称是真实品牌产品或精确工程图。完整 [素材来源与机械参考](provenance/chronos/ATTRIBUTION.md)、[第三方声明](public/chronos/THIRD_PARTY_NOTICES.md) 与所有许可证已保留。Cormorant Garamond 与 DM Sans 从交付构建中的同版本 WOFF2 无损导入本地；其中与 VERDANT 字节完全相同的两个 DM Sans 文件安全合并到 `public/shared/fonts/`，两站许可均保留；IBM Plex Mono 使用 Collection 已锁定的相同 5.3.0 软件包。运行库仍为同版本 Three.js、GSAP、Lenis，无依赖升级。
 
 六章的 3D 机芯、机械关系、慢动作与本地合成声音均沿用成品实现；模型是解释性运动研究，不是可制造机芯或精度模拟。原交付的逐项文件 SHA-256 追加在 `provenance/deliveries/import-manifest.json`。

@@ -26,7 +26,7 @@ The two supplied photographic artworks were generated for this project with the 
 | DM Sans | 正文与界面；Latin 400、500 | [SIL OFL 1.1 与原始版权声明](../../public/chronos/licenses/DM-Sans-OFL.txt) |
 | IBM Plex Mono | 技术读数；Latin 400 | [SIL OFL 1.1 与原始版权声明](../../public/chronos/licenses/IBM-Plex-Mono-OFL.txt) |
 
-字体通过对应的 `@fontsource` 软件包取得，当前锁定版本均为 5.3.0。构建后的 WOFF2 文件本地随包提供。字体保持原有许可，不改列为应用的 MIT 许可。
+字体通过对应的 `@fontsource` 软件包取得，当前锁定版本均为 5.3.0。构建后的 WOFF2 文件本地随包提供；Cormorant 位于 `public/chronos/fonts/`，与 VERDANT 字节相同的 DM Sans 400/500 位于 `public/shared/fonts/`。字体保持原有许可，不改列为应用的 MIT 许可。
 
 ## 机械参考 / Mechanical references
 

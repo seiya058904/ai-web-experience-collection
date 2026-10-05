@@ -17,7 +17,7 @@ for (const route of routes) {
   const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
   assert(sitemap.includes(`<loc>${site}${route}/</loc>`), `Missing sitemap route: ${route}`);
 }
-for (const file of ['glaze/LICENSE.txt', 'glaze/licenses/Archivo-OFL.txt', 'kage/LICENSE', 'kage/licenses/THIRD-PARTY-NOTICES.md', 'chronos/LICENSE', 'chronos/licenses/Cormorant-Garamond-OFL.txt']) {
+for (const file of ['glaze/LICENSE.txt', 'glaze/licenses/Archivo-OFL.txt', 'kage/LICENSE', 'kage/licenses/THIRD-PARTY-NOTICES.md', 'chronos/LICENSE', 'chronos/licenses/Cormorant-Garamond-OFL.txt', 'shared/fonts/dm-sans-latin-400-normal.woff2', 'shared/fonts/dm-sans-latin-500-normal.woff2']) {
   assert((await stat(join(root, file))).size > 0, `Missing supplied notice: ${file}`);
 }
 for (const [file, route, title] of [

@@ -10,7 +10,7 @@ AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a s
 - `experiences/orbital/components/orbital/`, `experiences/orbital/lib/orbital/`: React composition, mission controller, pure progress/poses, WebGL / Canvas and audio.
 - `experiences/glaze/src/`: supplied seven-study journey; `docs/glaze/DESIGN.md` owns its style.
 - `experiences/kage/src/`: supplied pure score, Three.js sculpture and owned RAF; read `docs/kage/ARCHITECTURE.md`.
-- `experiences/chronos/src/`: supplied watch narrative, pure mechanics and lazy Three.js scene; read `docs/chronos/DESIGN.md` and `docs/chronos/MOTION.md`. Its local fonts and image art live in `public/chronos/`.
+- `experiences/chronos/src/`: supplied watch narrative, pure mechanics and lazy Three.js scene; read `docs/chronos/DESIGN.md` and `docs/chronos/MOTION.md`. Its local Cormorant fonts and image art live in `public/chronos/`; its DM Sans files are byte-identical to VERDANT and live in `public/shared/fonts/`.
 - `pages/`: Vite HTML root; `public/<work>/`: runtime media, fonts and notices; `provenance/`: source history, not deployment.
 - `experiences/shared/`: only genuinely shared UI primitives and Collection return control.
 - `ATTRIBUTION.md`, `provenance/deliveries/legacy-imports.json`, `provenance/deliveries/import-manifest.json` and per-work notices: asset provenance. Preserve legal comments and production license inventory.

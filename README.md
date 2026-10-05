@@ -31,7 +31,7 @@ tests/               F1, ORBITAL, KAGE and CHRONOS model/continuity tests
 .github/workflows/   Verification and Pages deployment
 ```
 
-One package manifest and lockfile govern the entire collection. Vite's `root` is `pages/`; output is root `dist/`. Source lives outside the HTML root and is imported explicitly. Runtime resources live under `public/<work>/`; shared gallery assets remain at the top of `public/`.
+One package manifest and lockfile govern the entire collection. Vite's `root` is `pages/`; output is root `dist/`. Source lives outside the HTML root and is imported explicitly. Runtime resources live under `public/<work>/`; shared gallery assets remain at the top of `public/`. Only byte-identical VERDANT/CHRONOS DM Sans fonts are shared under `public/shared/fonts/`; each work retains its license notice.
 
 ## Development
 

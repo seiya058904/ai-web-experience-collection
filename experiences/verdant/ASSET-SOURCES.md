@@ -17,12 +17,12 @@ The image-generation concept screenshots served as design references. Visible we
 
 ## Local fonts
 
-The font files are served from `../../public/verdant/fonts/`; the site does not request a hosted font stylesheet at runtime. Both families are supplied through Fontsource 5.3.0 packages and distributed under the **SIL Open Font License 1.1**.
+Instrument Serif is served from `public/verdant/fonts/`; the byte-identical DM Sans files used by VERDANT and CHRONOS are served from `public/shared/fonts/`; the site does not request a hosted font stylesheet at runtime. Both families are supplied through Fontsource 5.3.0 packages and distributed under the **SIL Open Font License 1.1**.
 
 | Family | Local files | Attribution and source | Bundled license |
 | --- | --- | --- | --- |
 | Instrument Serif | `instrument-serif-regular.woff2`, `instrument-serif-italic.woff2` | Copyright 2022 The Instrument Serif Project Authors. [Upstream project](https://github.com/Instrument/instrument-serif); supplied by `@fontsource/instrument-serif`. | [Instrument-Serif-OFL.txt](../../public/verdant/licenses/Instrument-Serif-OFL.txt) |
-| DM Sans | `dm-sans-regular.woff2`, `dm-sans-medium.woff2` | Copyright 2014 The DM Sans Project Authors. [Upstream project](https://github.com/googlefonts/dm-fonts); supplied by `@fontsource/dm-sans`. | [DM-Sans-OFL.txt](../../public/verdant/licenses/DM-Sans-OFL.txt) |
+| DM Sans | `public/shared/fonts/dm-sans-latin-400-normal.woff2`, `public/shared/fonts/dm-sans-latin-500-normal.woff2` | Copyright 2014 The DM Sans Project Authors. [Upstream project](https://github.com/googlefonts/dm-fonts); supplied by `@fontsource/dm-sans`. | [DM-Sans-OFL.txt](../../public/verdant/licenses/DM-Sans-OFL.txt) |
 
 On the deployed site, the complete notices are available at `<base>/verdant/licenses/Instrument-Serif-OFL.txt` and `<base>/verdant/licenses/DM-Sans-OFL.txt`. Keep the copyright and license notices with redistributed font files.
 
