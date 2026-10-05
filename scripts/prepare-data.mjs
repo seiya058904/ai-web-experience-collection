@@ -20,7 +20,7 @@ const dataUrl =
   "https://raw.githubusercontent.com/bacinger/f1-circuits/master/f1-circuits.geojson";
 let selected;
 try {
-  selected = JSON.parse(await fs.readFile("src/circuits.json", "utf8"));
+  selected = JSON.parse(await fs.readFile("experiences/f1/src/circuits.json", "utf8"));
 } catch {
   const data = await (await get(dataUrl)).json();
   selected = {};
@@ -35,10 +35,10 @@ try {
     );
   }
 }
-await fs.writeFile("src/circuits.json", JSON.stringify(selected));
-await fs.mkdir("public/fonts", { recursive: true });
+await fs.writeFile("experiences/f1/src/circuits.json", JSON.stringify(selected));
+await fs.mkdir("public/f1/fonts", { recursive: true });
 const sourceTexts = await Promise.all(
-  ["index.html", "src/interactions.ts"].map((file) =>
+  ["pages/f1/index.html", "experiences/f1/src/interactions.ts"].map((file) =>
     fs.readFile(file, "utf8"),
   ),
 );
@@ -53,7 +53,7 @@ fontUrl.searchParams.set("family", "Noto Sans SC:wght@100..900");
 fontUrl.searchParams.set("text", chars);
 fontUrl.searchParams.set("display", "swap");
 const css = await (await get(fontUrl)).text();
-await fs.writeFile("assets/font-source.css", css);
+await fs.writeFile("provenance/f1/font-source.css", css);
 if (!css.includes("font-weight: 100 900"))
   throw new Error(
     "Expected a variable font response, not a single static weight.",
@@ -61,7 +61,7 @@ if (!css.includes("font-weight: 100 900"))
 const fontFile = css.match(/url\((https:[^)]+)\)/)?.[1];
 if (!fontFile) throw new Error("Font stylesheet had no downloadable file.");
 await fs.writeFile(
-  "public/fonts/noto-sans-sc.woff2",
+  "public/f1/fonts/noto-sans-sc.woff2",
   Buffer.from(await (await get(fontFile)).arrayBuffer()),
 );
 const notices = [];
@@ -94,7 +94,7 @@ await fs.writeFile(
   notices.join("\n\n==================================================\n\n"),
 );
 await fs.writeFile(
-  "assets/provenance.json",
+  "provenance/f1/provenance.json",
   JSON.stringify(
     {
       checked: "2026-10-04",
@@ -121,10 +121,10 @@ await fs.writeFile(
         source: "OpenAI built-in Image Gen, created for this project",
         nature:
           "Generated unbranded concept illustrations; not official photographs, exact engineering diagrams or real event records",
-        originals: "assets/source",
-        references: "design/concepts",
-        production: "public/media",
-        prompts: "assets/image-prompts.json",
+        originals: "provenance/f1/source",
+        references: "provenance/f1/concepts",
+        production: "public/f1/media",
+        prompts: "provenance/f1/image-prompts.json",
       },
     },
     null,

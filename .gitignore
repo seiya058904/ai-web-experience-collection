@@ -20,4 +20,9 @@ test-results/
 # Original delivery archives stay local and are not deployment inputs.
 /*.zip
 # Historical generated mockups contain third-party branding; keep local only.
-design/concepts/
+provenance/f1/concepts/
+
+# Historical delivery archives are local evidence, not source/build inputs.
+provenance/deliveries/*.zip
+__pycache__/
+*.py[cod]

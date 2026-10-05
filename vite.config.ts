@@ -1,21 +1,31 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
+import { resolve } from 'node:path';
 
 export default defineConfig({
-  esbuild: { jsx: "automatic" },
+  root: 'pages',
+  publicDir: '../public',
+  esbuild: { jsx: 'automatic' },
+  plugins: [{
+    name: 'collection-sitemap',
+    generateBundle() {
+      const base = this.environment.config.base;
+      const origin = `https://seiya058904.github.io${base}`;
+      this.emitFile({ type: 'asset', fileName: 'sitemap.xml', source:
+        '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
+        ['', 'f1/', 'verdant/', 'orbital/', 'glaze/', 'kage/', 'credits.html'].map(route => `<url><loc>${origin}${route}</loc></url>`).join('') + '</urlset>' });
+    },
+  }],
   build: {
-    license: { fileName: "third-party-licenses.md" },
+    outDir: '../dist',
+    emptyOutDir: true,
+    license: { fileName: 'third-party-licenses.md' },
     rolldownOptions: {
-      input: ["index.html", "credits.html", "f1/index.html", "verdant/index.html", "orbital/index.html"],
+      input: ['index.html', 'credits.html', ...['f1', 'verdant', 'orbital', 'glaze', 'kage'].map(route => `${route}/index.html`)].map(file => resolve('pages', file)),
       onwarn(warning, defaultHandler) {
-        // All entrypoints are client documents; React's server boundary
-        // directives have no meaning in this static multi-page build.
-        if (warning.code === "MODULE_LEVEL_DIRECTIVE") return;
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE') return;
         defaultHandler(warning);
       },
-      output: {
-        // Keep upstream notices without changing runtime code or minification.
-        comments: { legal: true, annotation: false, jsdoc: false },
-      },
+      output: { comments: { legal: true, annotation: false, jsdoc: false } },
     },
   },
 });

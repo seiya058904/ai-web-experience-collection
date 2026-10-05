@@ -21,12 +21,14 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 - **Beyond the Limit** (`/f1/`): Formula 1, speed and racing engineering.
 - **VERDANT** (`/verdant/`): spring, nature, botanical landscapes, architecture and light.
 - **ORBITAL** (`/orbital/`): rockets, orbital flight, aerospace engineering and deep space.
+- **GLAZE** (`/glaze/`): ceramic form, glaze, color and light.
+- **KAGE / VOID** (`/kage/`): a continuous sculpture of light, shadow and space.
 
 ## Capabilities and Constraints
 
 - A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
 - Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
-- Preserve the accepted imagery, typography, controls, timing and content of all three works. Do not impose a common visual theme or expand the entrance into a fourth story.
+- Preserve the accepted imagery, typography, controls, timing and content of all five works. Do not impose a common visual theme or expand the entrance into another story.
 - One Lenis instance and one owned GSAP clock per experience. Retain rendering caps, visibility suspension, teardown and read-position retention.
 - Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
 - Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
@@ -35,11 +37,11 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 
 ## Brand Commitments
 
-The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects three distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, and ORBITAL's spacecraft and planetary horizon. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](design/COLLECTION.md) and [F1's design contract](DESIGN.md).
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects five distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, and KAGE's spatial sculpture. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and [F1's design contract](docs/f1/DESIGN.md).
 
 ## Evidence on Hand
 
-The three integrated experiences have passed user acceptance and are deployed through GitHub Pages. Nine model/continuity tests and production-reference verification are maintained. [SCROLL-AUDIT.md](SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
+The five supplied experiences are accepted complete works. Fourteen model/continuity tests and production-reference verification are maintained. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 

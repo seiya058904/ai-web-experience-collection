@@ -1,0 +1,462 @@
+{
+  "imported": "2026-10-05",
+  "deliveries": [
+    {
+      "archive": "GLAZE-Color-Fired-Into-Form.zip",
+      "sha256": "dd40529df6b017ed4fd4c58c248c6f4deca1a49d4be22dee852ea956c1cd8f62",
+      "entries": [
+        {
+          "path": "GLAZE/.gitignore",
+          "bytes": 53,
+          "sha256": "b0c0c9c58ac3710b01c350165b34e65285438317c179aa6e2f4c88497b4444f7"
+        },
+        {
+          "path": "GLAZE/ASSET-PROVENANCE.json",
+          "bytes": 48343,
+          "sha256": "409df6ce9a220495df6121fcbe996ec2a332996ecba8e861cf5809292331012d"
+        },
+        {
+          "path": "GLAZE/ATTRIBUTION.md",
+          "bytes": 6619,
+          "sha256": "bf80ba485f8f9fdddcb500cac0c2486505fb13335148694b80153b50e304eaa8"
+        },
+        {
+          "path": "GLAZE/DESIGN.md",
+          "bytes": 6199,
+          "sha256": "733dc27dbb19e7200102b1874067a58a11affc16ff522cb28786681295451da7"
+        },
+        {
+          "path": "GLAZE/LICENSE.txt",
+          "bytes": 1331,
+          "sha256": "f0d143ca58912ab3459697fc3397276f0e1422171c41b785afe00e1841953659"
+        },
+        {
+          "path": "GLAZE/README.md",
+          "bytes": 6427,
+          "sha256": "4b1e335b14bd824eb3df3c0cfcced48ef96fbf349be5a2f9e11b90a75f6fff0d"
+        },
+        {
+          "path": "GLAZE/START-WINDOWS.cmd",
+          "bytes": 269,
+          "sha256": "618651fdb06e59054998b173c38ce5373be946d25e1c899bb2009ace27b6f9d9"
+        },
+        {
+          "path": "GLAZE/dist/assets/index-C-WXv49X.js",
+          "bytes": 146656,
+          "sha256": "4e4faa3322ae6e02d3ef1221b5ca86589c017c17faf849b4232ce6d3fb51fe64"
+        },
+        {
+          "path": "GLAZE/dist/assets/style-gqA3OIFP.css",
+          "bytes": 15062,
+          "sha256": "6e5d39508691b35d38f9069e2de35a53ca5f8c5b1c7dd82ef83a130f4b851d92"
+        },
+        {
+          "path": "GLAZE/dist/favicon.svg",
+          "bytes": 271,
+          "sha256": "a32470a2f44907946260090d36931c96cd34b779af2a15b1b9dd1a579f334590"
+        },
+        {
+          "path": "GLAZE/dist/fonts/archivo-latin-variable.woff2",
+          "bytes": 90104,
+          "sha256": "e3a28eade21a900c7155a247757f4b2834c07bb7ef07ad7efa55cebaac1e8f5e"
+        },
+        {
+          "path": "GLAZE/dist/index.html",
+          "bytes": 12405,
+          "sha256": "1b0d74871767f719037d6ffd718233ecab08eb09064886012ee110aa85686e9e"
+        },
+        {
+          "path": "GLAZE/dist/media/amber-mobile.webp",
+          "bytes": 189830,
+          "sha256": "d7160fe1fe8760b4dc89c2a9da9cd3818187fdcecb9e6731696424346ca83c28"
+        },
+        {
+          "path": "GLAZE/dist/media/amber.webp",
+          "bytes": 169984,
+          "sha256": "87d3197de8be21648d614c8d9b15a9d8b41d1f3b6d15002568778a3471842edf"
+        },
+        {
+          "path": "GLAZE/dist/media/celadon.webp",
+          "bytes": 305870,
+          "sha256": "007c43003812a322f7ae5a5512f9ae06bfa340039395f612302418383e046a1b"
+        },
+        {
+          "path": "GLAZE/dist/media/cobalt-mask.webp",
+          "bytes": 35146,
+          "sha256": "10d8e2327fba9ba693c308f03f4def787cd8a8208976eb2497043df20a12da1d"
+        },
+        {
+          "path": "GLAZE/dist/media/cobalt.webp",
+          "bytes": 268360,
+          "sha256": "30a1adb11e2e766fb40a4621920c5d20169ba2e682bba8f9552fbd9faf599b51"
+        },
+        {
+          "path": "GLAZE/dist/media/crackle.webp",
+          "bytes": 271052,
+          "sha256": "fc7b9eedca509aaeb6f3b8684a31fba6d2a0bc3215c5beb6814d490df136cdc3"
+        },
+        {
+          "path": "GLAZE/dist/media/iron.webp",
+          "bytes": 218870,
+          "sha256": "c96600e806360998ad2b9c575fc6031845dac7bb11ac29441080999422a16633"
+        },
+        {
+          "path": "GLAZE/dist/media/ivory-mobile.webp",
+          "bytes": 129894,
+          "sha256": "93abf92c8a6645cc7dfd65b754faa1fb28bd3daf73b95bd36d953b8349491a07"
+        },
+        {
+          "path": "GLAZE/dist/media/ivory.webp",
+          "bytes": 113338,
+          "sha256": "c63720801f75330398f05330fd8213401147e9d2c65fc73d1072584bf63c6b12"
+        },
+        {
+          "path": "GLAZE/dist/media/oxblood-mobile.webp",
+          "bytes": 251202,
+          "sha256": "595410cf095b23f22dd66d55b5146470cc1f8189e5a7f4ad7b051dc495e04621"
+        },
+        {
+          "path": "GLAZE/dist/media/oxblood.webp",
+          "bytes": 220810,
+          "sha256": "e7d9681906893736940e552e827d0ab0b88e27cc3f9d6da3e8a6b6519ee31684"
+        },
+        {
+          "path": "GLAZE/index.html",
+          "bytes": 12304,
+          "sha256": "b8e1cbe0842d18a986147e621f13acc27da24127f77e5c27307ee7b27a12507c"
+        },
+        {
+          "path": "GLAZE/licenses/Archivo-OFL.txt",
+          "bytes": 4503,
+          "sha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b"
+        },
+        {
+          "path": "GLAZE/licenses/GSAP-Standard-License.txt",
+          "bytes": 4756,
+          "sha256": "43734a46698b76a8e2df378a70ecb6291befebe07909e574dde7d6c73053a62f"
+        },
+        {
+          "path": "GLAZE/licenses/Lenis-MIT.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "GLAZE/licenses/TypeScript-Apache-2.0.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "GLAZE/licenses/Vite-MIT.txt",
+          "bytes": 101182,
+          "sha256": "2ef0b8a67599690e6abccc21a3678b54457b420fb402654112d45c4e71cce364"
+        },
+        {
+          "path": "GLAZE/package-lock.json",
+          "bytes": 36585,
+          "sha256": "2c62f88f0ebf5b9d6789673baae51727b93635371d6b93c2b8e3568641fd5644"
+        },
+        {
+          "path": "GLAZE/package.json",
+          "bytes": 588,
+          "sha256": "dec30e1b138a5acbb652a6d1deb2155fb4b2c4d2b8eb785b5bd5cd29c832aa2b"
+        },
+        {
+          "path": "GLAZE/public/favicon.svg",
+          "bytes": 271,
+          "sha256": "a32470a2f44907946260090d36931c96cd34b779af2a15b1b9dd1a579f334590"
+        },
+        {
+          "path": "GLAZE/public/fonts/archivo-latin-variable.woff2",
+          "bytes": 90104,
+          "sha256": "e3a28eade21a900c7155a247757f4b2834c07bb7ef07ad7efa55cebaac1e8f5e"
+        },
+        {
+          "path": "GLAZE/public/media/amber-mobile.webp",
+          "bytes": 189830,
+          "sha256": "d7160fe1fe8760b4dc89c2a9da9cd3818187fdcecb9e6731696424346ca83c28"
+        },
+        {
+          "path": "GLAZE/public/media/amber.webp",
+          "bytes": 169984,
+          "sha256": "87d3197de8be21648d614c8d9b15a9d8b41d1f3b6d15002568778a3471842edf"
+        },
+        {
+          "path": "GLAZE/public/media/celadon.webp",
+          "bytes": 305870,
+          "sha256": "007c43003812a322f7ae5a5512f9ae06bfa340039395f612302418383e046a1b"
+        },
+        {
+          "path": "GLAZE/public/media/cobalt-mask.webp",
+          "bytes": 35146,
+          "sha256": "10d8e2327fba9ba693c308f03f4def787cd8a8208976eb2497043df20a12da1d"
+        },
+        {
+          "path": "GLAZE/public/media/cobalt.webp",
+          "bytes": 268360,
+          "sha256": "30a1adb11e2e766fb40a4621920c5d20169ba2e682bba8f9552fbd9faf599b51"
+        },
+        {
+          "path": "GLAZE/public/media/crackle.webp",
+          "bytes": 271052,
+          "sha256": "fc7b9eedca509aaeb6f3b8684a31fba6d2a0bc3215c5beb6814d490df136cdc3"
+        },
+        {
+          "path": "GLAZE/public/media/iron.webp",
+          "bytes": 218870,
+          "sha256": "c96600e806360998ad2b9c575fc6031845dac7bb11ac29441080999422a16633"
+        },
+        {
+          "path": "GLAZE/public/media/ivory-mobile.webp",
+          "bytes": 129894,
+          "sha256": "93abf92c8a6645cc7dfd65b754faa1fb28bd3daf73b95bd36d953b8349491a07"
+        },
+        {
+          "path": "GLAZE/public/media/ivory.webp",
+          "bytes": 113338,
+          "sha256": "c63720801f75330398f05330fd8213401147e9d2c65fc73d1072584bf63c6b12"
+        },
+        {
+          "path": "GLAZE/public/media/oxblood-mobile.webp",
+          "bytes": 251202,
+          "sha256": "595410cf095b23f22dd66d55b5146470cc1f8189e5a7f4ad7b051dc495e04621"
+        },
+        {
+          "path": "GLAZE/public/media/oxblood.webp",
+          "bytes": 220810,
+          "sha256": "e7d9681906893736940e552e827d0ab0b88e27cc3f9d6da3e8a6b6519ee31684"
+        },
+        {
+          "path": "GLAZE/scripts/serve.mjs",
+          "bytes": 2823,
+          "sha256": "bddf31233d20086a633bc5e05bdec68b8b56978f181797419d5304de14a933cd"
+        },
+        {
+          "path": "GLAZE/src/main.ts",
+          "bytes": 7569,
+          "sha256": "cc636ce2872dc92df757d9d129d84e335d81574afecc054f68ebbd6fc31a6b39"
+        },
+        {
+          "path": "GLAZE/src/motion.ts",
+          "bytes": 20945,
+          "sha256": "21b5084b267210a972ba9bbbf2d0cec848c924182bff571f6062a357f74875da"
+        },
+        {
+          "path": "GLAZE/src/style.css",
+          "bytes": 16883,
+          "sha256": "bb3097e62ca42b13d261cfc873bcb95a22eb0e39c1449cfe78ab90cd6909f5d2"
+        },
+        {
+          "path": "GLAZE/tsconfig.json",
+          "bytes": 434,
+          "sha256": "c06a2f9f3048ed0873b3faadd4ec1f082240cace1c7f09c1593072fce3c1c949"
+        },
+        {
+          "path": "GLAZE/vite.config.mjs",
+          "bytes": 303,
+          "sha256": "26ac313e734d04b40bd5ad96fc780a35dc631c5911c1f893c470bf5e3202a5c9"
+        }
+      ]
+    },
+    {
+      "archive": "KAGE-VOID.zip",
+      "sha256": "6a744bb492cc27a9b7c12f65b2e9a5eb7560f24a4d7781e7225e0ef8fd44b343",
+      "entries": [
+        {
+          "path": "kage-void/.gitignore",
+          "bytes": 106,
+          "sha256": "09738985b522c671e63fa56858a66e158ec54ecb955d57c64e5d28afc484843f"
+        },
+        {
+          "path": "kage-void/.npmrc",
+          "bytes": 39,
+          "sha256": "38f597ba156c01059069e584e1e45805341c0a9badfc84434e65437812a7a9db"
+        },
+        {
+          "path": "kage-void/DESIGN.md",
+          "bytes": 11365,
+          "sha256": "45556376bbe4cd1411eb02b0afe0090c729d23073ac3a7f0a93a3e2dafabbc10"
+        },
+        {
+          "path": "kage-void/KAGE-VOID.html",
+          "bytes": 729908,
+          "sha256": "104e77a75b9fca42a0faf9e6b3f9519bf3437a97c6e6356f52976e8fa067c72e"
+        },
+        {
+          "path": "kage-void/LICENSE",
+          "bytes": 1081,
+          "sha256": "cf6a9e0cfd6d6b971672314ad4787e9040976d364645f940cf630dc987f09062"
+        },
+        {
+          "path": "kage-void/PRODUCT.md",
+          "bytes": 2031,
+          "sha256": "fb65af60430c4479691ad7490de40966d7784c8f1700d8755ef78fb495ee1861"
+        },
+        {
+          "path": "kage-void/README.md",
+          "bytes": 5898,
+          "sha256": "aa459fa8b9b4e406212bf1f1caf130bfe71554bd72febf9afacdf8106c3e2574"
+        },
+        {
+          "path": "kage-void/dist/assets/index-CAduTLgQ.js",
+          "bytes": 572234,
+          "sha256": "2fd79629f08daf11c8a668f3caaf18b09a2f9f248c7edf5f4d1e6583eaa3cbfa"
+        },
+        {
+          "path": "kage-void/dist/assets/index-okFrDAGy.css",
+          "bytes": 13948,
+          "sha256": "37313425b58b82cd3bd2f4009e61cb7783468b00a2aa84abd3916ae38d366c52"
+        },
+        {
+          "path": "kage-void/dist/favicon.svg",
+          "bytes": 165,
+          "sha256": "7964faa873450bc04164666c418dc6322b1b253ebac5e3ae55b38b4746f5d64f"
+        },
+        {
+          "path": "kage-void/dist/fonts/barlow-condensed-latin-500-normal.woff2",
+          "bytes": 21424,
+          "sha256": "460f141ec8f6c9a1516bfd2bd9fe71656246d7a9d04a0955faf53158d8970c4c"
+        },
+        {
+          "path": "kage-void/dist/fonts/barlow-condensed-latin-600-normal.woff2",
+          "bytes": 22308,
+          "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+        },
+        {
+          "path": "kage-void/dist/fonts/dm-sans-latin-wght-normal.woff2",
+          "bytes": 36932,
+          "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+        },
+        {
+          "path": "kage-void/dist/fonts/noto-sans-jp-kage-subset.woff2",
+          "bytes": 5464,
+          "sha256": "7696a2ef283c9b5d6e31ecfeab1e4565fad7a273f77f0f856805803a1318e3ba"
+        },
+        {
+          "path": "kage-void/dist/index.html",
+          "bytes": 10014,
+          "sha256": "c3bce00cf56669c3e6875db9e3e0c1c2dd10f1ec69fa9951b010756506a0cce1"
+        },
+        {
+          "path": "kage-void/docs/ARCHITECTURE.md",
+          "bytes": 13671,
+          "sha256": "d75c9df23685065072576d6b3b2e11dd693373a2e3e6829b9134eb9724e7d1f4"
+        },
+        {
+          "path": "kage-void/index.html",
+          "bytes": 9911,
+          "sha256": "c1c8d2a1eed66ac1cc6b84b12cffa236d723bc56250a590b116bef6376fd2d5b"
+        },
+        {
+          "path": "kage-void/licenses/Barlow-Condensed-OFL.txt",
+          "bytes": 6167,
+          "sha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31"
+        },
+        {
+          "path": "kage-void/licenses/DM-Sans-OFL.txt",
+          "bytes": 4502,
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+        },
+        {
+          "path": "kage-void/licenses/Lenis-MIT.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "kage-void/licenses/Noto-Sans-JP-OFL.txt",
+          "bytes": 4388,
+          "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+        },
+        {
+          "path": "kage-void/licenses/THIRD-PARTY-NOTICES.md",
+          "bytes": 1936,
+          "sha256": "59d0f6ae61cd405d58d29e8c816a80e8046f9c7b9622d2a9c195e9d8c2c7f780"
+        },
+        {
+          "path": "kage-void/licenses/Three-MIT.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "kage-void/licenses/fonts.md",
+          "bytes": 2922,
+          "sha256": "7c07bb5ddd41c5c41b8bfa10dda591cf8678ec7a698fc7e55a25de723138e808"
+        },
+        {
+          "path": "kage-void/package-lock.json",
+          "bytes": 29583,
+          "sha256": "4168a5ab86441aa9c14aea75fe525a8d88fda11c06bef1a1de499ea6741aa9cd"
+        },
+        {
+          "path": "kage-void/package.json",
+          "bytes": 738,
+          "sha256": "84f4fd3630ce9b146548386753a03e49c65b40d34e18b77708ff7b6c7ce9486c"
+        },
+        {
+          "path": "kage-void/public/favicon.svg",
+          "bytes": 165,
+          "sha256": "7964faa873450bc04164666c418dc6322b1b253ebac5e3ae55b38b4746f5d64f"
+        },
+        {
+          "path": "kage-void/public/fonts/barlow-condensed-latin-500-normal.woff2",
+          "bytes": 21424,
+          "sha256": "460f141ec8f6c9a1516bfd2bd9fe71656246d7a9d04a0955faf53158d8970c4c"
+        },
+        {
+          "path": "kage-void/public/fonts/barlow-condensed-latin-600-normal.woff2",
+          "bytes": 22308,
+          "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+        },
+        {
+          "path": "kage-void/public/fonts/dm-sans-latin-wght-normal.woff2",
+          "bytes": 36932,
+          "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+        },
+        {
+          "path": "kage-void/public/fonts/noto-sans-jp-kage-subset.woff2",
+          "bytes": 5464,
+          "sha256": "7696a2ef283c9b5d6e31ecfeab1e4565fad7a273f77f0f856805803a1318e3ba"
+        },
+        {
+          "path": "kage-void/scripts/make-portable.mjs",
+          "bytes": 7728,
+          "sha256": "30e19beac256f158a401bfac182a9e38ae23676b58ff4370d8ca5f190f223958"
+        },
+        {
+          "path": "kage-void/src/main.ts",
+          "bytes": 17876,
+          "sha256": "7454007269dfedd9b85967258d74186418e3a0ad4f47c448a2f2b63adb54bcfc"
+        },
+        {
+          "path": "kage-void/src/score.ts",
+          "bytes": 9447,
+          "sha256": "04acb9c41b25980354b240d1da70720d0514168c0921615fe50c77d4963fef50"
+        },
+        {
+          "path": "kage-void/src/sculpture.ts",
+          "bytes": 15552,
+          "sha256": "5e06abeec593f69b4571b7a94b16b6c8e1848e5967b974184a67355a09f0b842"
+        },
+        {
+          "path": "kage-void/src/style.css",
+          "bytes": 16812,
+          "sha256": "9b83a7a32123e59d0ae876c64c6cce877d91ab32ac0dfbff3af9c85e8a0ef9a7"
+        },
+        {
+          "path": "kage-void/tests/score.test.ts",
+          "bytes": 1978,
+          "sha256": "3dc51c7374f3fe0a086bce37365d1eaefca88ff88f0c661e350e31560c1a82c9"
+        },
+        {
+          "path": "kage-void/tsconfig.json",
+          "bytes": 510,
+          "sha256": "cb7eddaf1b6047acb13038d6703be0b2fcdf5aac0576d9a3462aacc23e0600f7"
+        },
+        {
+          "path": "kage-void/vite.config.ts",
+          "bytes": 388,
+          "sha256": "152ba04f17529496b341a29f612b537c8ae29990f155e99a7b274408b87b5e62"
+        }
+      ]
+    }
+  ]
+}

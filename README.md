@@ -1,6 +1,6 @@
 # AI Web Experience Collection
 
-A showcase of cinematic, motion-driven web experiences exploring speed, nature, architecture and space.
+Five complete, independent web experiences exploring speed, nature, space, ceramic color and spatial sculpture.
 
 [Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
 
@@ -8,41 +8,46 @@ A showcase of cinematic, motion-driven web experiences exploring speed, nature, 
 
 | Experience | World | Entrance |
 | --- | --- | --- |
-| **Beyond the Limit** | Formula 1, speed and racing engineering through cinematic scroll storytelling. | [`/f1/`](https://seiya058904.github.io/ai-web-experience-collection/f1/) |
-| **VERDANT** | A quiet passage through spring, botanical landscapes, architecture and light. | [`/verdant/`](https://seiya058904.github.io/ai-web-experience-collection/verdant/) |
-| **ORBITAL** | An illustrative journey through rockets, orbital flight and deep space. | [`/orbital/`](https://seiya058904.github.io/ai-web-experience-collection/orbital/) |
+| **Beyond the Limit** | Formula 1, speed and racing engineering | [/f1/](https://seiya058904.github.io/ai-web-experience-collection/f1/) |
+| **VERDANT** | Nature, botanical landscapes, architecture and light | [/verdant/](https://seiya058904.github.io/ai-web-experience-collection/verdant/) |
+| **ORBITAL** | Rockets, orbital flight and deep space | [/orbital/](https://seiya058904.github.io/ai-web-experience-collection/orbital/) |
+| **GLAZE — Color Fired Into Form** | Seven studies of ceramics, glaze, color and light | [/glaze/](https://seiya058904.github.io/ai-web-experience-collection/glaze/) |
+| **KAGE / VOID** | Eight continuous movements in black, white, light and shadow | [/kage/](https://seiya058904.github.io/ai-web-experience-collection/kage/) |
 
-Each work keeps its own imagery, typography, interactions and pace. The Collection entrance connects them through full document navigation.
+Each work keeps its own imagery, typography, controls and pace. The gallery uses full document navigation; only the selected work's runtime starts. No iframe or SPA fallback.
 
-## Design Philosophy
+## Repository
 
-Cinematic scrolling, continuous section handoffs and motion-driven storytelling. Responsive compositions and visual-first interaction give each world room to unfold; keyboard access and reduced motion preserve the reading experience. A single owned animation clock and bounded rendering cost support smooth motion on high-refresh displays. Physical-device and high-refresh hardware validation limits are recorded in [SCROLL-AUDIT.md](SCROLL-AUDIT.md).
+```text
+collection/          Gallery styles, pointer interaction and credits styles
+pages/               Vite HTML root: home, credits and five route documents
+experiences/         f1, verdant, orbital, glaze, kage and shared UI
+public/              Namespaced runtime assets, fonts and license notices
+docs/                Collection, F1, GLAZE and KAGE design/architecture contracts
+provenance/          Unique masters, source records, import hashes and delivery history
+scripts/             Build verification and F1 asset maintenance
+tests/               F1, ORBITAL and KAGE model/continuity tests
+.github/workflows/   Verification and Pages deployment
+```
 
-## Technology
-
-- Vite and TypeScript; HTML and CSS.
-- GSAP / ScrollTrigger and Lenis.
-- React for VERDANT and ORBITAL.
-- SVG / Canvas, photographic WebGL surfaces and Three.js; ORBITAL includes a Canvas compatibility renderer.
+One package manifest and lockfile govern the entire collection. Vite's `root` is `pages/`; output is root `dist/`. Source lives outside the HTML root and is imported explicitly. Runtime resources live under `public/<work>/`; shared gallery assets remain at the top of `public/`.
 
 ## Development
 
-Use **Node.js 24 LTS and npm** with the committed lockfile.
+Use **Node.js 24 LTS and npm**.
 
 ```sh
 npm ci
 npm run dev
-npm run build
+npm run verify
 npm run preview -- --port 4174 --strictPort
 ```
 
-Open `/`, `/f1/`, `/verdant/` or `/orbital/`. Run `npm run verify` for the nine model/continuity tests, production build and output-reference checks. Asset import scripts are maintenance tools, not verification commands.
+`npm run verify` runs 14 model/continuity tests, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
 
 ## Deployment
 
-GitHub Pages serves separate HTML documents for the Collection and each experience, with no iframe or SPA fallback. Routes above are relative to the deployment base, `/ai-web-experience-collection/`.
-
-[Deploy Pages](.github/workflows/pages.yml) runs on `main` pushes or manual dispatch. It installs locked dependencies, runs tests, builds with the base path returned by GitHub Pages, verifies routes and assets, and deploys only `dist/`. The [Verify workflow](.github/workflows/verify.yml) independently runs `npm run verify`.
+[Deploy Pages](.github/workflows/pages.yml) installs locked dependencies, tests, builds with the Pages base path, verifies output references, and deploys only `dist/` on `main`. [Verify](.github/workflows/verify.yml) independently runs `npm run verify`.
 
 Reproduce the production path locally:
 
@@ -52,12 +57,16 @@ npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
-Open `http://127.0.0.1:4175/ai-web-experience-collection/`. Asset URLs and Collection links use Vite's configured base; keep trailing slashes on experience URLs. A different deployment base requires a rebuild. Production canonical and social URLs use the GitHub Pages origin and that same base.
+Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all five trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
 
-## Credits / Assets
+When adding another accepted work, put its HTML in `pages/<route>/`, source in `experiences/<route>/`, resources in `public/<route>/`, and register the input, sitemap and output identity checks in `vite.config.ts` and `scripts/verify-build.mjs`. Update the gallery, credits, product and maintenance guide. Preserve its design and lifecycle; verify both `/` and project-path builds, entry/return, direct loads, mobile and reduced motion.
 
-See [About & credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html), [ATTRIBUTION.md](ATTRIBUTION.md), [import provenance](assets/imports.json), [VERDANT asset sources](experiences/verdant/ASSET-SOURCES.md) and [ORBITAL source notes](experiences/orbital/SOURCE.md).
+## Credits and provenance
 
-Production includes `licenses.txt`, `third-party-licenses.md` and namespaced font notices. Preserve them and upstream legal comments. The social preview reuses the three works' existing illustrations. Imagery and models are illustrative; ORBITAL audio is synthesized only after activation. No runtime video files are used.
+See [About & credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html), [ATTRIBUTION.md](ATTRIBUTION.md), [Delivery records](provenance/deliveries/legacy-imports.json), [GLAZE provenance](provenance/glaze/ASSET-PROVENANCE.json), [VERDANT sources](experiences/verdant/ASSET-SOURCES.md) and [ORBITAL notes](experiences/orbital/SOURCE.md).
 
-Original work is governed by [LICENSE](LICENSE); third-party materials retain their own terms. This independent collection has no affiliation with Formula 1, FIA, racing teams, NASA or SpaceX.
+`licenses.txt`, `third-party-licenses.md` and namespaced project/font notices ship in production. GLAZE and KAGE original code retains its supplied MIT license; the collection's own [LICENSE](LICENSE) does not replace upstream terms. GSAP uses its Standard No-Charge License. KAGE's gallery/social plate is captured from its actual procedural FRAME scene. Gallery social art reuses all five works; no new third-party art. No runtime videos are used; ORBITAL audio is synthesized only after activation.
+
+Unique source material and import checksums live in [provenance/](provenance/README.md), outside deployment.
+
+See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md) and [KAGE architecture](docs/kage/ARCHITECTURE.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.

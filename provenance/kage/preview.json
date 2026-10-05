@@ -1,0 +1,17 @@
+{
+  "captured": "2026-10-05",
+  "source": "KAGE / VOID original procedural FRAME chapter; no geometry or pose changes",
+  "method": "1920x1080 Chromium WebGL render; hide DOM labels and chrome for artwork-only canvas screenshot",
+  "runtimeAssets": [
+    {
+      "file": "public/kage/social.jpg",
+      "bytes": 110467,
+      "sha256": "d2e7d664a6f8d3bbd5b58dc305262303792edf1e6ec72601cdc4f549a3ef758c"
+    },
+    {
+      "file": "public/collection-social.jpg",
+      "bytes": 151254,
+      "sha256": "62daabe8796629713bb0a1dcf3489b61ae53b58311e4fe1e02551d5f3fbe60cd"
+    }
+  ]
+}

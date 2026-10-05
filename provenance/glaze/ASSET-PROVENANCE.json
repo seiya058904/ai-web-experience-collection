@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "project": "GLAZE — Color Fired Into Form",
+  "recorded_on": "2026-10-05",
+  "record_language": "zh-CN",
+  "scope_zh": "覆盖 public/glaze/media 中全部 11 个交付 WebP，包括七场景、三个手机变体与一个钴蓝遮罩。dist/glaze/media 中的同名文件为构建时复制的生产版本，汇总不重复计算这些副本。字体与 SVG 的许可说明另见 ATTRIBUTION.md。",
+  "generation": {
+    "provider": "OpenAI",
+    "tool": "image_gen.imagegen (built-in)",
+    "exact_model_identifier": null,
+    "model_identifier_note_zh": "执行环境未暴露精确模型编号；不据此声明为 Image 2.5 或其他指定版本。",
+    "art_direction": "Original GLAZE project art direction",
+    "content_type": "AI-generated photographic-style digital artwork",
+    "real_photographic_capture": false,
+    "external_reference_photographs_shipped": false
+  },
+  "measurement": {
+    "basis": "Actual public/glaze/media WebP files, measured with Pillow and filesystem byte counts",
+    "hash_algorithm": "SHA-256",
+    "asset_count": 11,
+    "total_webp_bytes": 2174356,
+    "total_webp_mib": 2.073627,
+    "counts_all_variants": true,
+    "is_first_viewport_transfer_size": false
+  },
+  "resolution_note_zh": "源图并非原生 4K。提示词中的 2560x1440、3840x2160、2160x3840 等是请求目标；实际输出尺寸以各资产记录为准。4K 表示页面视口布局适配，位图细节仍受实际像素尺寸限制。",
+  "record_integrity_zh": "有现存提示词文件的资产逐字保留相应文本。Celadon、Crackle、Iron 未找到保存的原始提示词，仅提供明确标注的方向记录。源 PNG 与提示词的 authoring_path 是制作过程来源标识，不要求这些中间文件存在于运行目录。",
+  "assets": [
+    {
+      "id": "celadon",
+      "scene_number": 1,
+      "scene_name": "CELADON",
+      "file": "public/glaze/media/celadon.webp",
+      "runtime_url": "media/celadon.webp",
+      "production_copy_path": "dist/glaze/media/celadon.webp",
+      "role_zh": "透明首屏器物",
+      "used_by": "pages/glaze/index.html .hero-object img",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "has_alpha": true,
+        "pixel_count": 1572864,
+        "bytes": 305870,
+        "sha256": "007c43003812a322f7ae5a5512f9ae06bfa340039395f612302418383e046a1b"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/01-celadon.png",
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "has_alpha": true,
+        "bytes": 2432410,
+        "sha256": "51d678388895253c006b39df7222fbffb67bbd8463ef727d184cee80694c1f64",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "celadon",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "crackle",
+      "scene_number": 2,
+      "scene_name": "CRACKLE",
+      "file": "public/glaze/media/crackle.webp",
+      "runtime_url": "media/crackle.webp",
+      "production_copy_path": "dist/glaze/media/crackle.webp",
+      "role_zh": "釉面微距背景",
+      "used_by": "pages/glaze/index.html .scene--crackle",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 271052,
+        "sha256": "fc7b9eedca509aaeb6f3b8684a31fba6d2a0bc3215c5beb6814d490df136cdc3"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/02-crackle.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 2267242,
+        "sha256": "94d5a3505f74f202e427a044eeb9312356a947f6b6e3dfae1eda89c2439fb7cf",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "crackle",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "cobalt",
+      "scene_number": 3,
+      "scene_name": "COBALT",
+      "file": "public/glaze/media/cobalt.webp",
+      "runtime_url": "media/cobalt.webp",
+      "production_copy_path": "dist/glaze/media/cobalt.webp",
+      "role_zh": "钴蓝底图及被遮罩的同源前景颜色",
+      "used_by": "pages/glaze/index.html .cobalt-base / .cobalt-foreground",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 268360,
+        "sha256": "30a1adb11e2e766fb40a4621920c5d20169ba2e682bba8f9552fbd9faf599b51"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/03-cobalt.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 2128001,
+        "sha256": "86cb3736066ef4c447d7a354ea7e2e07eba50e6148e26dab8e8b503cd62554ee",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "cobalt",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "cobalt-mask",
+      "scene_number": 3,
+      "scene_name": "COBALT",
+      "file": "public/glaze/media/cobalt-mask.webp",
+      "runtime_url": "media/cobalt-mask.webp",
+      "production_copy_path": "dist/glaze/media/cobalt-mask.webp",
+      "role_zh": "钴蓝前景 alpha 遮罩；并非独立展示的摄影",
+      "used_by": "experiences/glaze/src/style.css .cobalt-foreground mask-image",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGBA",
+        "has_alpha": true,
+        "pixel_count": 1573352,
+        "bytes": 35146,
+        "sha256": "10d8e2327fba9ba693c308f03f4def787cd8a8208976eb2497043df20a12da1d"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/03-cobalt-cutout.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGBA",
+        "has_alpha": true,
+        "bytes": 1563358,
+        "sha256": "273fe0aa394328e7dab411abb62fb8237d5e90c5d7619b0c05f404f44aea6664",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "cobalt-mask",
+      "final_processing_zh": "本项目生成的透明钴蓝抠图提供 alpha 轮廓，转换并优化为用于 CSS mask-image 的 WebP。前景的可见颜色仍取自 cobalt.webp；遮罩文件为 35,146 字节。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。",
+      "color_source_asset_id": "cobalt"
+    },
+    {
+      "id": "oxblood",
+      "scene_number": 4,
+      "scene_name": "OXBLOOD",
+      "file": "public/glaze/media/oxblood.webp",
+      "runtime_url": "media/oxblood.webp",
+      "production_copy_path": "dist/glaze/media/oxblood.webp",
+      "role_zh": "红釉横幅背景",
+      "used_by": "pages/glaze/index.html .scene--oxblood img",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 220810,
+        "sha256": "e7d9681906893736940e552e827d0ab0b88e27cc3f9d6da3e8a6b6519ee31684"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/04-oxblood.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1879965,
+        "sha256": "dbbd50b9af1bfbfe925ee631f1035f0000714dcff2a7ae084e74becbe7937974",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "oxblood",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "ivory",
+      "scene_number": 5,
+      "scene_name": "IVORY",
+      "file": "public/glaze/media/ivory.webp",
+      "runtime_url": "media/ivory.webp",
+      "production_copy_path": "dist/glaze/media/ivory.webp",
+      "role_zh": "白瓷横幅背景",
+      "used_by": "pages/glaze/index.html .scene--ivory img",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 113338,
+        "sha256": "c63720801f75330398f05330fd8213401147e9d2c65fc73d1072584bf63c6b12"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/ivory.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1694784,
+        "sha256": "2759f45a33c72a48fc3ce5e1e3a0e63dbc8d3403747baeb04319b0f07db7e83f",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "ivory",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "amber",
+      "scene_number": 6,
+      "scene_name": "AMBER",
+      "file": "public/glaze/media/amber.webp",
+      "runtime_url": "media/amber.webp",
+      "production_copy_path": "dist/glaze/media/amber.webp",
+      "role_zh": "琥珀横幅背景",
+      "used_by": "pages/glaze/index.html .scene--amber img",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 169984,
+        "sha256": "87d3197de8be21648d614c8d9b15a9d8b41d1f3b6d15002568778a3471842edf"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/amber.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1784681,
+        "sha256": "cbb7b325eaa5ce7a8ffa3173e342b714f4e318d3fad9710d08259304ec364240",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "amber",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "iron",
+      "scene_number": 7,
+      "scene_name": "IRON",
+      "file": "public/glaze/media/iron.webp",
+      "runtime_url": "media/iron.webp",
+      "production_copy_path": "dist/glaze/media/iron.webp",
+      "role_zh": "铁黑横幅背景",
+      "used_by": "pages/glaze/index.html .scene--iron img",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 1671,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1572411,
+        "bytes": 218870,
+        "sha256": "c96600e806360998ad2b9c575fc6031845dac7bb11ac29441080999422a16633"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/07-iron.png",
+        "width": 1671,
+        "height": 941,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1929082,
+        "sha256": "c0479d1cd1e2fc97cbc363907401b8e5c216040e6a916ff54b6a03d41eb6b3a6",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "iron",
+      "final_processing_zh": "生成源图转换为本地 WebP；尺寸与字节数从最终文件实测，不以提示词的期望尺寸代替。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。"
+    },
+    {
+      "id": "oxblood-mobile",
+      "scene_number": 4,
+      "scene_name": "OXBLOOD",
+      "file": "public/glaze/media/oxblood-mobile.webp",
+      "runtime_url": "media/oxblood-mobile.webp",
+      "production_copy_path": "dist/glaze/media/oxblood-mobile.webp",
+      "role_zh": "红釉专用竖幅构图",
+      "used_by": "pages/glaze/index.html .scene--oxblood picture source",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 941,
+        "height": 1672,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 251202,
+        "sha256": "595410cf095b23f22dd66d55b5146470cc1f8189e5a7f4ad7b051dc495e04621"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/04-oxblood-mobile.png",
+        "width": 941,
+        "height": 1672,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1828867,
+        "sha256": "91d470f8c9dced970d46448cc729a46e4e10d2f527220012ae368c1428da7b5d",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "oxblood-mobile",
+      "final_processing_zh": "以对应横幅生成图为输入，生成独立竖幅构图后转为本地 WebP；不是把横幅压窄或拉长。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。",
+      "input_generated_asset_id": "oxblood"
+    },
+    {
+      "id": "ivory-mobile",
+      "scene_number": 5,
+      "scene_name": "IVORY",
+      "file": "public/glaze/media/ivory-mobile.webp",
+      "runtime_url": "media/ivory-mobile.webp",
+      "production_copy_path": "dist/glaze/media/ivory-mobile.webp",
+      "role_zh": "白瓷专用竖幅构图",
+      "used_by": "pages/glaze/index.html .scene--ivory picture source",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 941,
+        "height": 1672,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 129894,
+        "sha256": "93abf92c8a6645cc7dfd65b754faa1fb28bd3daf73b95bd36d953b8349491a07"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/ivory-mobile.png",
+        "width": 941,
+        "height": 1672,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1688903,
+        "sha256": "dee54103d0282b249afc56d252ffacba8bd17d1b3f5cf8ee47988977f866fccc",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "ivory-mobile",
+      "final_processing_zh": "以对应横幅生成图为输入，生成独立竖幅构图后转为本地 WebP；不是把横幅压窄或拉长。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。",
+      "input_generated_asset_id": "ivory"
+    },
+    {
+      "id": "amber-mobile",
+      "scene_number": 6,
+      "scene_name": "AMBER",
+      "file": "public/glaze/media/amber-mobile.webp",
+      "runtime_url": "media/amber-mobile.webp",
+      "production_copy_path": "dist/glaze/media/amber-mobile.webp",
+      "role_zh": "琥珀专用竖幅构图",
+      "used_by": "pages/glaze/index.html .scene--amber picture source",
+      "origin": "OpenAI built-in image generation; original fictional ceramic artwork created for GLAZE",
+      "is_real_photograph": false,
+      "is_historical_artifact_record": false,
+      "third_party_reference_image_redistributed": false,
+      "native_4k": false,
+      "webp": {
+        "width": 941,
+        "height": 1672,
+        "mode": "RGB",
+        "has_alpha": false,
+        "pixel_count": 1573352,
+        "bytes": 189830,
+        "sha256": "d7160fe1fe8760b4dc89c2a9da9cd3818187fdcecb9e6731696424346ca83c28"
+      },
+      "generated_source": {
+        "authoring_path": "art-originals/amber-mobile.png",
+        "width": 941,
+        "height": 1672,
+        "mode": "RGB",
+        "has_alpha": false,
+        "bytes": 1827682,
+        "sha256": "3b18a5bafd8ec0424f479aa4dedbf9931e2283048438121a89e41ecd4a984bef",
+        "required_at_runtime": false
+      },
+      "prompt_record_id": "amber-mobile",
+      "final_processing_zh": "以对应横幅生成图为输入，生成独立竖幅构图后转为本地 WebP；不是把横幅压窄或拉长。",
+      "rights_note": "生成艺术随项目交付；说明见 ATTRIBUTION.md。未使用博物馆或图库的图片授权作为本图来源。",
+      "input_generated_asset_id": "amber"
+    }
+  ],
+  "prompt_records": [
+    {
+      "id": "cobalt",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts-blue-red.json",
+        "sha256": "e0c0a28d694a33a75c9c12ebfc397433ced067e5e094a1730a69139b57131d57",
+        "record_embedded_below": true
+      },
+      "concept_image_record": "art-concepts/03-cobalt-concept.png",
+      "production_source_record": "art-originals/03-cobalt.png",
+      "stages": [
+        {
+          "stage": "concept_generation",
+          "prompt": "Use case: ui-mockup. Create a single exquisitely art-directed full-bleed 16:9 desktop screenshot concept for GLAZE, a contemporary digital ceramic art exhibition. Landscape 2560x1440 or larger. NO browser chrome, NO cards, NO panels, NO grids. The photograph occupies every pixel. The visual language is the finest real museum object photography combined with Swiss editorial typography and dramatically bold crop. This is scene 03, COBALT. One extraordinarily tactile cobalt ceramic ring vase dominates center-right, 68% of frame width; a thick, hollow handmade moon-ring vessel with a believable small open neck at the very top, not a generic mathematical donut. Its ring wall is thick and slightly organically irregular, it sits with a solid foot on the floor. It enters from right and extends below the bottom frame, monumental scale, with its top around 13% down from top. Real deep electric cobalt glaze pooling into dark midnight blue, very subtle throwing imperfections, finely broken specular sheen, narrow pale softbox reflection sliding down its curved shoulder, visible fired ceramic material, not plastic and not a CGI toy. Single saturated but soft blue-gray studio cyclorama, restrained directional soft light from upper left, heavy tactile contact shadow and dark inside the ring opening, realistic glaze reflection, no accent decorative items. Left 32% of frame gives considered negative space. Giant light-ivory grotesk 'COBALT' spans the middle behind the vessel, partial letter occlusion by vessel, impressive editorial proportion. Small warm white copy at upper-left middle reading exactly 'A deeper kind\\nof blue.' in two lines, delicately set sans serif. Header in very tiny tracked pale ivory grotesk: 'GLAZE' top-left, 'COLOR FIRED INTO FORM' top-center, 'Index +' top-right. Footer tiny pale ivory at lower-left: '03 / 07' then 'COBALT'; bottom-right tiny 'Light held in blue.' No other UI. Render photograph and typography extraordinarily cleanly. Rich vivid blue object, deep blue-gray background, warm ivory typography; refuse cheap neon, overdone gradient backgrounds, generic 3D metallic torus, impossible geometry, stock photo aesthetic, painterly image, traditional ornament, watermark."
+        },
+        {
+          "stage": "production_image_edit",
+          "prompt": "Use case: precise-object-edit. Image 1 is the approved GLAZE COBALT web scene concept. Make its clean PRODUCTION PHOTOGRAPH, preserving exactly the existing giant ring-vase geometry, shape, edge positions, glaze material, highlights, shadows, blue-gray studio, crop, aspect ratio, and color. Remove ALL typography and ALL UI completely: header GLAZE / COLOR FIRED INTO FORM / Index +, left subtitle, giant COBALT letters in front and behind vessel (including visible letters through ring opening and giant T on right), footer numbers/names/caption. Restore exactly natural photographic material under every removed letter. Where text overlays the object, seamlessly reconstruct matching cobalt glazed pottery with the existing lighting; where behind object or through hole, restore matching blue-gray cyclorama. Keep the giant ring vase identical: actual small open top neck, dark hollow ring, realistic rough blue glaze pooling, light rectangular specular reflection, organic fired imperfections. Do not change camera angle, do not resize or shift object, do not alter scene lighting or saturation, do not create a new subject. Landscape 16:9, highest available resolution, ideally 2560x1440 or larger. Final image must contain absolutely NO text, letters, logos, icons, UI or watermarks. This is only the photographic plate. No blur, color overlays, extra props or borders."
+        }
+      ],
+      "note": "逐字保留现存提示词文件中的文本；生成请求尺寸不等于实际输出尺寸。"
+    },
+    {
+      "id": "oxblood",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts-blue-red.json",
+        "sha256": "e0c0a28d694a33a75c9c12ebfc397433ced067e5e094a1730a69139b57131d57",
+        "record_embedded_below": true
+      },
+      "concept_image_record": "art-concepts/04-oxblood-concept.png",
+      "production_source_record": "art-originals/04-oxblood.png",
+      "stages": [
+        {
+          "stage": "concept_generation",
+          "prompt": "Use case: ui-mockup. Create one exquisite full-screen 16:9 desktop design concept for the GLAZE contemporary digital ceramic art exhibition, scene 04 OXBLOOD. Landscape 2560x1440 or larger, no browser chrome, panels, cards, grids or product controls. Art direction: a monumental single ceramic object photographed with the precision and texture of a museum collection, dark luxury editorial cover, restrained Swiss grotesk typography, huge object scale and radical dark light composition. A low round moon flask made of actual handmade ceramic on the RIGHT occupies about 61% of width, from x=41% to beyond the right edge, its body slightly cut by the bottom edge. Its silhouette is a compressed round disc body with a short narrow open top neck, clear continuous structurally real pottery, visible thick lip, slight asymmetric handmade geometry. The glaze is dark oxblood and black cherry, varying organically with iron-dark recesses, small muted ember mottles, a thin imperfect cream line at lip or edge. One long diagonal warm amber sliver of light from upper left crosses its shoulder and ends in shadow on the floor, emphasizes glazed curvature and deep glossy material; the rest is soft deep carmine/red-black studio darkness with real dense shadow and no visible horizon. No glowing fake lava, no flames, no floating objects, no plastic CGI. Left 41% is dramatic deep-red negative space. Oversized thin-to-regular ivory grotesk title exactly 'Born\\nin fire.' on two lines at left, occupying middle third and partially nearing the object edge. Header in extremely small spaced ivory type: 'GLAZE' top-left, 'COLOR FIRED INTO FORM' top-center, 'Index +' top-right. Footer lower-left tiny '04 / 07' then 'OXBLOOD'; lower-right tiny 'Heat leaves a memory.' Every element elegant and highly legible against dark background. We should sense heat through rich fired glaze color and angular light, not illustrated fire. Texture sharply photographed, tactile glaze pooling and real reflection with beautiful subtle imperfection. Avoid pristine 3d showroom models, candles, gold decorations, gold luxury template, historical styling, logos and watermarks."
+        },
+        {
+          "stage": "production_image_edit",
+          "prompt": "Use case: precise-object-edit. Image 1 is the approved GLAZE OXBLOOD web scene concept. Make the clean PRODUCTION PHOTOGRAPH preserving exactly the existing giant moon-flask geometry, position, edge crop, glaze surface, all specular reflections, amber upper-left light, atmospheric red-black studio, shadows and colors. Remove ALL typography and ALL UI completely: GLAZE / COLOR FIRED INTO FORM / Index + header, giant Born in fire. title, lower-left numbers/name, bottom-right Heat leaves a memory. Restore continuous natural photographic surface under the removed text. The left side becomes completely empty deep oxblood studio negative space, with subtle existing amber light falloff and floor. Keep the object EXACTLY identical, including its believable open neck and thick irregular cream-fired lip, organic mottled dark cherry/iron glaze, warm highlight on left shoulder, deep black recesses, tactile micro-pits, handmade slight asymmetry. Do not change crop or object scale, do not move or recolor the object. Landscape 16:9, highest available resolution, ideally 2560x1440 or larger. Absolutely no text, letters, logos, UI, captions, watermark or border in final. Do not smooth it into plastic CGI, do not add fire, no new objects."
+        }
+      ],
+      "note": "逐字保留现存提示词文件中的文本；生成请求尺寸不等于实际输出尺寸。"
+    },
+    {
+      "id": "cobalt-mask",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts-blue-red-additions.json",
+        "sha256": "29f279136711ebce5f9b60d0beab8fecd9a693e571c7e06d45e5566151f62836",
+        "record_embedded_below": true
+      },
+      "input_generated_asset_id": "cobalt",
+      "production_source_record": "art-originals/03-cobalt-cutout.png",
+      "stages": [
+        {
+          "stage": "generated_alpha_extraction",
+          "prompt": "Use case: background-extraction. Input image 1 is the approved exact 1672x941 COBALT photographic plate. Extract ONLY the complete visible blue ceramic ring vase into a truly transparent RGBA background. Preserve the ENTIRE ORIGINAL LANDSCAPE CANVAS framing and dimensions, object position, object size, perspective, crop and exact pixel silhouette. The vase must stay in exactly the same place: touching bottom and right edges, top rim around x68%, y7%, visible leftmost object edge around x30%. Do not center, fit, enlarge, shrink, rotate, recompose or recrop it. Remove ALL the blue-gray studio background and ALL floor, including the background visible THROUGH THE CIRCULAR RING HOLE. Pixels outside the vase and through the hole must have true alpha zero. Preserve only the physically real ceramic vase, its actual small open top neck and dark inner glaze surface. Keep cobalt color, textured pooled glaze, highlights and surface details identical. Make clean precise antialiased ceramic edges, no background spill, no haze, no artificial glow, no floor shadow, no drop shadow, no strokes. This asset will overlay its original photographic plate at 1:1 position, so silhouette/canvas agreement is the primary requirement. Absolutely no text or UI. Background must actually be transparent, not painted checkerboard, black, white or blue."
+        }
+      ],
+      "note": "Transparent background extraction of approved cobalt photographic plate. Preserve original-photo RGB under this generated alpha if exact material/position fidelity is needed."
+    },
+    {
+      "id": "oxblood-mobile",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts-blue-red-additions.json",
+        "sha256": "29f279136711ebce5f9b60d0beab8fecd9a693e571c7e06d45e5566151f62836",
+        "record_embedded_below": true
+      },
+      "input_generated_asset_id": "oxblood",
+      "production_source_record": "art-originals/04-oxblood-mobile.png",
+      "stages": [
+        {
+          "stage": "portrait_recomposition",
+          "prompt": "Use case: precise-object-edit. Input image 1 is our approved OXBLOOD ceramic photograph. Create a dedicated portrait 9:16 photographic composition for a mobile immersive web scene, ideally 1440x2560 or the largest available portrait output. SAME exact physical moon-flask object, same believable thick irregular cream rim, same mottled dark oxblood/cherry/iron-black glaze, same warm amber sliver lighting from the upper left, same real surface pits and glossy reflection quality. RECOMPOSE FOR VERTICAL: the top third (0–33% of canvas height) is completely uncluttered deep wine-red/near-black studio negative space for later code typography, without any light hotspots there. The actual open mouth and neck should begin around y36%–40%, centered around x63%; body occupies the lower 65% and is monumental, cropped strongly by right and bottom edges, rounded left shoulder entering the lower part from around x3%–10%. The vessel should feel enormous and tactile, not smaller and isolated. Direct a warm fine amber reflection down its left shoulder, strong dark right recess, studio floor barely visible in lower-left only. Real museum-quality macro object photograph with consistent previous lighting and material; no plastic CGI, fake lava glow, flames, extra objects, shelves, scenery, pedestal or ornaments. This is a PHOTOGRAPHIC ASSET, not a website design mockup: no text, logos, letters, captions, headers, UI, watermark or border anywhere. Keep the top one-third dark and clear."
+        }
+      ],
+      "note": "Dedicated 9:16 mobile photographic composition, dark top third, original fictional oxblood vessel moved below native typography."
+    },
+    {
+      "id": "ivory",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts/ivory.json",
+        "sha256": "6e5c1e1749f11ca25e7fcb9cc4e12af44680d6aba91f3eb7759864c72fc61e9f",
+        "record_embedded_below": true
+      },
+      "production_source_record": "art-originals/ivory.png",
+      "stages": [
+        {
+          "stage": "concept_generation",
+          "prompt": "Use case: ui-mockup. Asset type: full-screen 16:9 desktop scene design concept for the original contemporary digital ceramics exhibition GLAZE — Color Fired Into Form.\nCreate a museum-grade photograph of an enormous thin-walled warm ivory porcelain folded bowl sculpture, light becoming material. Delicate but structurally plausible porcelain walls curve upward like one broad undulating oval sail; this is ONE real handmade bowl with visible rim thickness, deep interior, mineral pinholes, a subtle warm ivory satin glaze, minute firing variation, never paper, plastic or 3D. The vessel enters from lower left, its left outer edge and base cropped by the frame, occupying the lower-left 65% and about 74% of image height. Rim sweeps in a long powerful rising curve from lower left to center, sculpture's taller back wall at center-left. Late afternoon single studio beam from high back-left transmits a restrained warm amber edge through the thin porcelain wall; broad soft light reveals real ceramic microsurface, gentle contact shadow trails right. Completely clean seamless warm-white plaster cyclorama with subtle natural light gradient and large negative space at right and upper right. Photography language: exceptional medium-format still-life for a major contemporary art museum, tonal precision, truly physical material, hard-to-soft light transition, restrained film grain, shot 80mm, no set dressing.\nIntegrated web poster typography, in dark warm grey. At upper-left tiny letterspaced sans-serif 'GLAZE', at upper-center tiny letterspaced 'COLOR FIRED INTO FORM', upper-right 'Index  +' with elegant crosshair plus. Very large elegant light-weight modern grotesk on right at about x=60%, y=30% reading exactly 'Almost' on first line and 'light.' on second; clean severe editorial typesetting, modest overlap with porcelain edge, negative space. At bottom-left small '05 / 07', then 'IVORY', then 'Held at the edge of light.' In lower-right only a minimal fine vertical scroll arrow. No borders or cards. Light, sacred, sensuous but contemporary. Art direction: giant asymmetric physical object against silence, huge type against minute captions. No historic decoration, no Asian calligraphy, no pottery wheel, no hands, no transparent glass, no products grid, no interface panels, no watermarks. Final output should be a beautiful full-bleed cinematic website screen, with no browser chrome. Landscape 3840x2160 pixels preferred, exact 16:9 aspect."
+        },
+        {
+          "stage": "production_image_edit",
+          "prompt": "Use case: precise-object-edit. Asset type: original text-free photographic background plate for a production website.\nEdit this ivory ceramic exhibition concept by removing EVERY typographic and graphical element: remove GLAZE at top-left, COLOR FIRED INTO FORM at top-center, Index and plus at top-right, the giant words Almost light., all bottom-left scene numerals and IVORY and caption, and the thin arrow at bottom-right. Seamlessly reconstruct only the photograph beneath them. Keep the exact same bowl shape, exact crop, exact camera angle, exact placement, flawless warm ivory porcelain material, handmade microscopic pinholes, thin glowing amber rim, contact shadow, seamless studio floor and neutral wall, light direction and beautiful exposure. The large object must remain cropped off left and bottom; right half must remain calm empty space. The output must be JUST the original photograph, NO letters, numbers, logos, graphics, UI, watermark or arrows anywhere. Preserve all photographic details and the 16:9 landscape composition exactly. Export highest available resolution, prefer 3840x2160."
+        }
+      ],
+      "note": "逐字保留现存概念与去字生产图提示词；画面为 AI 生成摄影风格作品。"
+    },
+    {
+      "id": "ivory-mobile",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts/ivory-mobile.json",
+        "sha256": "7651565fbb46b03830be3e1ba9218470d859a5d1fa6f2521f8cbbf35c5753156",
+        "record_embedded_below": true
+      },
+      "input_generated_asset_id": "ivory",
+      "input_image_record": "art-originals/ivory.png",
+      "production_source_record": "art-originals/ivory-mobile.png",
+      "stages": [
+        {
+          "stage": "portrait_recomposition",
+          "prompt": "Use case: precise-object-edit. Asset type: portrait mobile photographic background plate for a production ceramics art website.\nTransform the supplied landscape photograph into a newly art-directed PORTRAIT 9:16 composition. This is a composition re-shoot in the same studio, NOT a crop or a distorted resize.\nKeep the same one warm ivory handmade folded porcelain bowl sculpture, same thin luminous curving upper rim, same tactile micro-pinholes and ceramic surface, same single warm studio source from high back-left and soft contact shadow, same restrained creamy-white and warm-gray neutral palette. Reframe the camera in a tall 9:16 composition to show the sculpture mainly in the lower 65% of the image. The bowl's back wall forms one graceful asymmetrical crest around y=38%; a beautiful amber-transmitting porcelain lip stays entirely readable from x=12% to x=90%. The sculpture's largest body can run beyond the lower-left/bottom edges, with visible interior, physical wall thickness, and a convincing shadow on the seamless plaster floor. Let the large bowl fill almost the entire lower frame without losing the defining fold. Reserve the entire upper 28% as extremely calm, uncluttered light warm-gray/ivory studio negative space for future headings. Maintain an elegant soft gradient and single-source light logic, real medium-format photography. The object itself must remain plausible handmade porcelain, never paper, plastic, or glass. No other objects or props.\nAbsolutely no typography, letters, numerals, UI, logos, arrows, decorations, borders or watermarks. One beautiful bare photograph. Tall portrait composition, exact 9:16 aspect, prefer maximum native resolution 2160x3840."
+        }
+      ],
+      "note": "为手机重新组织同一器物、光线与负空间的生成编辑；并非横幅拉伸。"
+    },
+    {
+      "id": "amber",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts/amber.json",
+        "sha256": "7868240ce81eaab728fece8d2b38f2ee6351989fd0f6da6392245afb552f8f42",
+        "record_embedded_below": true
+      },
+      "production_source_record": "art-originals/amber.png",
+      "stages": [
+        {
+          "stage": "concept_generation",
+          "prompt": "Use case: ui-mockup. Asset type: full-screen 16:9 desktop scene design concept for the original contemporary digital ceramics exhibition GLAZE — Color Fired Into Form.\nAn extraordinary museum-grade photograph of ONE enormous sculptural ring vase in honey amber glazed stoneware, against a deep ochre-tan seamless studio cyclorama. The vessel is physically plausible handmade ceramic: thick rounded donut-shaped flattened body with a large open circular negative-space hole, upright on a small unglazed earthy foot, ONE very short narrow cylindrical neck and small real open mouth at its top. Its amber glaze is opaque honey-brown with rich pooling at its lower edges, iron flecks, slight handmade asymmetry, vertical tiny glaze runoff variations, subtle crazing, elegant tactile roughness at unglazed foot. Absolutely ceramic not translucent glass: hard glossy glaze over warm stoneware clay, broad sweeping satin highlights, visible clay depth. Object positioned to the far left, slightly left-cropped, occupying x=0-55% of image and from y=15% to y=90%; an elegant low camera sees the strong elliptical rim and the inner ring edge. Beautiful angular hard studio light from upper-left creating one long angular dark burnt-amber shadow across the entire lower-right. Confident sun-saturated monochrome palette with sophisticated amber/gold material and a low contrast caramel environment, no garish yellow. Medium-format photograph for a major contemporary art museum, 80mm lens, physical microtexture, slight film grain, clean light logic, truly realistic material quality.\nSuperimposed original restrained exhibition UI typography: tiny letterspaced dark brown sans-serif 'GLAZE' upper-left; tiny 'COLOR FIRED INTO FORM' upper-center; small 'Index  +' upper-right. Very large dark coffee-brown lightweight uppercase 'AMBER' across upper-middle and right, at x=41%, y=30%, deliberately starting behind the right edge of the vessel and extending almost to right frame edge, poster-scale elegant neutral Swiss grotesk. At bottom-left small '06 / 07', next line 'AMBER', next line 'The warmth that stays.' Bottom-right minimal fine vertical scroll arrow. Small captions have good contrast. Entire screen is a single huge photograph and typography, NO panels or boxes. The negative space and giant silhouette should be breathtaking, a bold contemporary luxury art poster. No decorations, no props, no ceramics shop, no card grid, no historical typography, no people, no pottery wheel, no watermark, no plastic or glass. Landscape 3840x2160 preferred, exact 16:9, full bleed no browser chrome."
+        },
+        {
+          "stage": "production_image_edit",
+          "prompt": "Use case: precise-object-edit. Asset type: original text-free photographic background plate for a production website.\nRemove every typographic and graphic UI element from this amber ceramic exhibition concept. Erase GLAZE at top-left, COLOR FIRED INTO FORM at top-center, Index and plus at top-right, all of the enormous AMBER typography at right, all three bottom-left lines of scene index/title/caption, and bottom-right scroll arrow. Seamlessly reconstruct only the unmarked studio photograph beneath the typography. Keep exact object shape, position, crop, angle, exact short neck opening, thick torus ring body, circular hole, glaze color, mineral flecks and pooled honey-brown ceramic glaze, unglazed clay foot, exact broad left specular highlight, studio background, warm ochre floor, contact shadow and long dramatic shadow cast across lower-right. Preserve every photographic aspect and all texture, camera and light unchanged. No letters, numbers, logos, graphics, UI, watermark, arrows anywhere. Final output JUST the beautiful original ceramic photograph with calm negative space to its right. Keep exact 16:9 landscape composition, highest available resolution, preferably 3840x2160."
+        }
+      ],
+      "note": "逐字保留现存概念与去字生产图提示词；画面为 AI 生成摄影风格作品。"
+    },
+    {
+      "id": "amber-mobile",
+      "record_type": "saved_prompt_text",
+      "source_record": {
+        "authoring_record_path": "art-prompts/amber-mobile.json",
+        "sha256": "a9ab9f312c68341e55845ca79f3fc73d8f2556761c50ee99de16fc3f496ba957",
+        "record_embedded_below": true
+      },
+      "input_generated_asset_id": "amber",
+      "input_image_record": "art-originals/amber.png",
+      "production_source_record": "art-originals/amber-mobile.png",
+      "stages": [
+        {
+          "stage": "portrait_recomposition",
+          "prompt": "Use case: precise-object-edit. Asset type: portrait mobile photographic background plate for a production ceramics art website.\nCreate a newly art-directed PORTRAIT 9:16 composition using the same exact amber stoneware ring vase from the supplied landscape photograph. This should feel like a new camera setup in the same studio, NOT a landscape crop, not letterboxing, not squeezing/distorting the vase.\nKeep the same physical sculptural vase design: thick circular torus ring body, large circular central aperture, one small genuinely open cylindrical neck at its top, visible unglazed earthy clay foot at its bottom. Keep its opaque honey-brown ceramic glaze, iron flecks, vertical glaze runoff, pooled dark amber at lower edge, physical microtexture, and large broad white studio highlight on the upper-left ring. No translucent glass, no plastic. Preserve the same single hard light from high-left, warm ochre seamless backdrop/floor, long beautiful brown shadow cast right/back.\nCompose the full vessel centered horizontally and in the lower portion of the tall image, as large as the portrait frame allows while keeping its outer silhouette, actual neck and actual foot complete. The vessel occupies almost the full available width with small side breathing room; neck begins near y=28-32%, clay foot rests near y=88-92%; the round ring must remain round, substantial and physically plausible. Its complete central aperture is a powerful graphic circle. A very subtle lower camera perspective is welcome. Keep upper quarter of the image entirely clear calm ochre-tan studio space suitable for live typography later; no objects in that negative space. Retain generous tonal separation and a little warmth/light on the ground. This must feel a luxurious museum-grade medium-format photograph with the camera composed intentionally for a phone.\nNo typography, words, letters, numerals, UI, logos, arrows, decorations, borders or watermarks anywhere. JUST one beautiful bare ceramic photograph. Exact 9:16 tall portrait, prefer maximum native resolution 2160x3840."
+        }
+      ],
+      "note": "为手机重新组织同一器物、光线与负空间的生成编辑；并非横幅拉伸。"
+    },
+    {
+      "id": "celadon",
+      "record_type": "direction_summary_only",
+      "original_prompt_available": false,
+      "is_verbatim_original_prompt": false,
+      "summary_basis": [
+        "现存生成源图",
+        "direction-contract.md",
+        "最终页面构图与源码"
+      ],
+      "direction_summary_zh": "青灰绿色的大型陶瓷瓶，保留厚口沿、云状釉色、金褐色开片与釉层变化。透明单体用于首屏文字遮挡与尺度推进，浅矿物色舞台和接触阴影由代码完成。",
+      "note": "方向记录，非逐字原始提示词。现存提示词文件未保存本项的原始生成请求；未补造工具日志、模型编号或种子。"
+    },
+    {
+      "id": "crackle",
+      "record_type": "direction_summary_only",
+      "original_prompt_available": false,
+      "is_verbatim_original_prompt": false,
+      "summary_basis": [
+        "现存生成源图",
+        "direction-contract.md",
+        "最终页面构图与源码"
+      ],
+      "direction_summary_zh": "接近青釉器物肩部的极近距离画面：分叉开片、细小孔隙和斜向白色高光跨过曲面，承担由完整器物进入表面世界的接力。",
+      "note": "方向记录，非逐字原始提示词。现存提示词文件未保存本项的原始生成请求；未补造工具日志、模型编号或种子。"
+    },
+    {
+      "id": "iron",
+      "record_type": "direction_summary_only",
+      "original_prompt_available": false,
+      "is_verbatim_original_prompt": false,
+      "summary_basis": [
+        "现存生成源图",
+        "direction-contract.md",
+        "最终页面构图与源码"
+      ],
+      "direction_summary_zh": "深色陶瓷碗沿横贯画面下方，黑褐色釉面中保留银色矿物斑点和不规则褐色边缘；上方负空间承载结尾文字。",
+      "note": "方向记录，非逐字原始提示词。现存提示词文件未保存本项的原始生成请求；未补造工具日志、模型编号或种子。"
+    }
+  ],
+  "documentation": [
+    "README.md",
+    "DESIGN.md",
+    "ATTRIBUTION.md",
+    "LICENSE.txt"
+  ],
+  "references_not_redistributed": [
+    "https://tortus.dk/pages/craftsmanship",
+    "https://dzekdzekdzek.com/excinere/",
+    "https://apparatusstudio.com/pages/new-york",
+    "https://www.moco.or.jp/en/facilities/point/",
+    "https://www.metmuseum.org/art/collection/search/42249",
+    "https://www.metmuseum.org/art/collection/search/49852",
+    "https://www.clevelandart.org/art/1989.272",
+    "https://fleava.com/works/kevala",
+    "https://www.caiyawen.art/",
+    "https://www.vam.ac.uk/articles/ceramics-a-risky-business"
+  ]
+}

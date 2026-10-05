@@ -18,18 +18,18 @@ const files = [
   ["tyre", "exec-28cd7a0b-42c6-41a0-9280-ddfcc5674570.png", [800, 1400]],
   ["pit", "exec-b656dfc9-4100-4df5-bf30-dd1b63718e2d.png", [960, 1600, 2000]],
 ];
-await fs.mkdir("assets/source", { recursive: true });
-await fs.mkdir("public/media", { recursive: true });
-await fs.mkdir("design/concepts", { recursive: true });
+await fs.mkdir("provenance/f1/source", { recursive: true });
+await fs.mkdir("public/f1/media", { recursive: true });
+await fs.mkdir("provenance/f1/concepts", { recursive: true });
 for (const [name, file, sizes] of files) {
   const input = path.join(sourceDirectory, file);
-  await fs.copyFile(input, `assets/source/${name}.png`);
+  await fs.copyFile(input, `provenance/f1/source/${name}.png`);
   const metadata = await sharp(input).metadata();
   for (const width of sizes) {
     await sharp(input)
       .resize({ width })
       .webp({ quality: name === "hero" ? 90 : 85, effort: 6 })
-      .toFile(`public/media/${name}-${width}.webp`);
+      .toFile(`public/f1/media/${name}-${width}.webp`);
   }
   console.log(name, metadata.width, metadata.height);
 }
@@ -44,5 +44,5 @@ const concepts = {
 for (const [name, file] of Object.entries(concepts))
   await fs.copyFile(
     path.join(sourceDirectory, file),
-    `design/concepts/${name}.png`,
+    `provenance/f1/concepts/${name}.png`,
   );

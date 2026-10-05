@@ -5,7 +5,7 @@ import {
   raceStrategy,
   projectCircuit,
   PIT_LOSS,
-} from "../src/models.ts";
+} from "../experiences/f1/src/models.ts";
 
 test("air forces are quadratic at fixed posture, normalized at 240 km/h", () => {
   assert.equal(aerodynamicForces(240, "corner").downforce, 1);

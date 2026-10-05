@@ -5,3 +5,5 @@
 *.woff2 -text
 *.jpg -text
 *.glb -text
+# Preserve the supplied self-contained historical edition as an opaque artifact.
+provenance/kage/KAGE-VOID.html -text -diff

@@ -1,8 +1,8 @@
 {
   "name": "ai-web-experience-collection",
   "private": true,
-  "version": "2.0.0",
-  "description": "A collection of cinematic, motion-driven web experiences exploring Formula 1, nature, architecture and space.",
+  "version": "3.0.0",
+  "description": "Five independent cinematic web experiences: racing, nature, space, ceramic color and spatial sculpture.",
   "license": "UNLICENSED",
   "homepage": "https://seiya058904.github.io/ai-web-experience-collection/",
   "repository": {
@@ -17,7 +17,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs tests/*.test.ts",
     "verify": "npm test && npm run build && npm run verify:build",
     "verify:build": "node scripts/verify-build.mjs"
   },

@@ -6,13 +6,13 @@
 
 | 材料 / 位置 | 来源 | 权利与使用说明 |
 | --- | --- | --- |
-| 五张概念插画：`assets/source/`，响应式衍生图：`public/media/` | OpenAI 内置 Image Gen，为本项目生成；提示词见 `assets/image-prompts.json` | AI 生成的无车队品牌插画，不是官方照片、精确工程图或真实赛事记录。依据 [OpenAI 内容条款](https://openai.com/policies/terms-of-use/#content)，用户与 OpenAI 之间的输出权利归用户，限于适用法律允许的范围；输出可能不唯一。项目不将这些图片另行声明为 MIT。 |
-| 中文字体：`public/fonts/noto-sans-sc.woff2` | [Noto Sans SC / Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+SC)，Google Fonts 官方文字子集 | [SIL OFL 1.1](https://github.com/google/fonts/blob/main/ofl/notosanssc/OFL.txt)。保留版权、保留名称与完整许可文本；不得单独售卖字体。子集为 Google Fonts 提供的版本。 |
+| 五张概念插画：`provenance/f1/source/`，响应式衍生图：`public/f1/media/` | OpenAI 内置 Image Gen，为本项目生成；提示词见 `provenance/f1/image-prompts.json` | AI 生成的无车队品牌插画，不是官方照片、精确工程图或真实赛事记录。依据 [OpenAI 内容条款](https://openai.com/policies/terms-of-use/#content)，用户与 OpenAI 之间的输出权利归用户，限于适用法律允许的范围；输出可能不唯一。项目不将这些图片另行声明为 MIT。 |
+| 中文字体：`public/f1/fonts/noto-sans-sc.woff2` | [Noto Sans SC / Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+SC)，Google Fonts 官方文字子集 | [SIL OFL 1.1](https://github.com/google/fonts/blob/main/ofl/notosanssc/OFL.txt)。保留版权、保留名称与完整许可文本；不得单独售卖字体。子集为 Google Fonts 提供的版本。 |
 | 拉丁字体：通过 `@fontsource/barlow-condensed` 5.3.0 构建 | [Barlow](https://github.com/jpt/barlow)，The Barlow Project Authors | SIL OFL 1.1；完整文本见 `public/licenses.txt` 和 npm 包的 `LICENSE`。字体不适用项目作者的保留版权声明。 |
-| 蒙扎、铃鹿、摩纳哥坐标：`src/circuits.json` | [f1-circuits](https://github.com/bacinger/f1-circuits)，Tomislav Bacinger | [MIT](https://github.com/bacinger/f1-circuits/blob/master/LICENSE.md)，Copyright 2019–2025 Tomislav Bacinger。仅筛选三条赛道；展示时等比投影，蒙扎为构图旋转。版权与完整许可保留在 `public/licenses.txt`。 |
-| `public/favicon.svg`、界面图标与教学 SVG / Canvas | 本项目编写的几何图形和程序绘制 | 没有使用第三方图标包或官方 F1 标识；适用项目自有版权说明。 |
+| 蒙扎、铃鹿、摩纳哥坐标：`experiences/f1/src/circuits.json` | [f1-circuits](https://github.com/bacinger/f1-circuits)，Tomislav Bacinger | [MIT](https://github.com/bacinger/f1-circuits/blob/master/LICENSE.md)，Copyright 2019–2025 Tomislav Bacinger。仅筛选三条赛道；展示时等比投影，蒙扎为构图旋转。版权与完整许可保留在 `public/licenses.txt`。 |
+| `public/f1/favicon.svg`、界面图标与教学 SVG / Canvas | 本项目编写的几何图形和程序绘制 | 没有使用第三方图标包或官方 F1 标识；适用项目自有版权说明。 |
 
-历史设计概念图包含生成的 F1 / 车队标识及不准确标签，属于本地设计过程材料。`design/concepts/` 已明确排除出公开仓库和生产构建，不作为可重新分发的正式素材。`assets/provenance.json` 保留生成阶段的历史来源记录，其中的本地概念图目录不随仓库提供。
+历史设计概念图包含生成的 F1 / 车队标识及不准确标签，属于本地设计过程材料。`provenance/f1/concepts/` 已明确排除出公开仓库和生产构建，不作为可重新分发的正式素材。`provenance/f1/provenance.json` 保留生成阶段的历史来源记录，其中的本地概念图目录不随仓库提供。
 
 Beyond the Limit 没有生产视频或音频素材。运行时图片、字体和赛道数据均本地提供，无需外部素材 CDN。VERDANT 与 ORBITAL 的素材及声音说明见下方各作品记录。
 
@@ -42,11 +42,24 @@ Beyond the Limit 是 Collection 中独立、非官方的 F1 教育展示作品�
 
 ## Collection additions (2026-10-05)
 
-`assets/imports.json` records the SHA-256 identity of the two user-supplied complete projects and the deliberately selected import boundary. Original ZIP exports are preserved outside the Git checkout. Their unused cloud/server starter and compiled duplicates are not distributed in this repository.
+`provenance/deliveries/legacy-imports.json` records the SHA-256 identity of the two user-supplied complete projects and the deliberately selected import boundary. Original ZIP exports are preserved outside the Git checkout. Their unused cloud/server starter and compiled duplicates are not distributed in this repository.
 
 - **VERDANT:** four original AI-generated botanical / architectural plates and their responsive WebP derivatives; Instrument Serif and DM Sans with their OFL notices. See [the supplied asset record](experiences/verdant/ASSET-SOURCES.md). Runtime resources are now under `public/verdant/`.
 - **ORBITAL:** original illustrative spacecraft GLB, layered compatibility renders and cinematic plates supplied with the project. Earth / Moon / cloud textures credit NASA / Goddard (Reto Stöckli for the cloud composite). Sources are retained in `experiences/orbital/SOURCE.md` and the in-experience credits. Fonts retain their OFL notices. Runtime resources are under `public/orbital/`.
-- **Collection:** reuses those same production image files, including the three-panel `public/collection-social.jpg` social preview; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
+- **Collection:** reuses those same production image files, including the five-world `public/collection-social.jpg` social preview; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
 - React, Radix UI, Lucide, Three.js and the used utility packages retain their own licenses. The imported shadcn stylesheet's MIT notice remains beside it. The production dependency inventory includes the actually bundled libraries; it does not grant rights to imagery or replace GSAP's terms.
 
 ORBITAL synthesizes optional audio in code after the sound control is activated; no audio recording or video file was added. AI Web Experience Collection is independent of Formula 1, FIA, racing teams, NASA and SpaceX. See the production `credits.html` for visitor-facing attribution and license links.
+
+
+## GLAZE — Color Fired Into Form
+
+用户提供的完整成品。原创代码按 [MIT](public/glaze/LICENSE.txt) 许可保留；七组生成的器物图像是虚构陶瓷艺术表达，并非藏品或工坊摄影。[素材说明](provenance/glaze/ATTRIBUTION.md) 与 [逐图 SHA-256 来源记录](provenance/glaze/ASSET-PROVENANCE.json) 保留原始作者依据。运行资源迁移至 `public/glaze/`，图片字节未修改。Archivo 字体使用 [OFL](public/glaze/licenses/Archivo-OFL.txt)，GSAP 使用 [Standard No-Charge License](public/glaze/licenses/GSAP-Standard-License.txt)，Lenis 使用 MIT。
+
+## KAGE / VOID
+
+用户提供的完整程序化雕塑成品。原创代码与几何按 [MIT](public/kage/LICENSE) 保留；没有库存摄影、外部模型或影片。Three.js、Lenis 与 Barlow Condensed、DM Sans、Noto Sans JP 的完整许可见 [第三方声明](public/kage/licenses/THIRD-PARTY-NOTICES.md) 和 `public/kage/licenses/`。Collection 预览与社交图是该作品 FRAME 场景的真实渲染截图，不是重新创作的雕塑。原始离线 HTML 保留于 `provenance/kage/KAGE-VOID.html`，不参与部署。
+
+## 本轮导入与归档
+
+两个新交付 ZIP 的逐项字节和 SHA-256 保存在 [导入清单](provenance/deliveries/import-manifest.json)。独立包的旧配置、启动脚本和 README 已淘汰，保留原始逐项哈希与实际素材来源依据。旧 VERDANT/ORBITAL ZIP 移至本地忽略的 `provenance/deliveries/`，它们含有超出当前运行工程的历史内容，未经逐项证明为重复不删除。
