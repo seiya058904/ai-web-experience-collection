@@ -2,6 +2,8 @@
 
 An immersive, cinematic Formula 1 educational experience built around scroll-driven storytelling.
 
+在线体验：[F1 / Beyond the Limit](https://seiya058904.github.io/f1-beyond-the-limit/)
+
 面向普通观众的中文 F1 科普展示站。以摄影棚、风洞、动力实验室和赛道为场景，将空气动力学、能量回收、轮胎与比赛策略变成可以操作的解释。当前视觉、交互与章节交接已通过用户真人验收，作为正式项目基线保存。
 
 ## 体验与章节
@@ -33,7 +35,20 @@ npm run verify           # 顺序执行 test 和 build
 npm run preview -- --port 4174 --strictPort
 ```
 
-生产预览：`http://127.0.0.1:4174`。`dist/` 可交给根路径静态服务器；当前版本包含根路径资源和 `/licenses.txt` 链接，尚未配置 GitHub Pages 的项目子路径部署。
+生产预览：`http://127.0.0.1:4174`。默认开发与构建保留站点根路径；`dist/` 可交给静态服务器。
+
+### GitHub Pages
+
+`.github/workflows/pages.yml` 在推送 `main` 或手动运行时安装锁定依赖、执行七项测试，再按 Pages 返回的部署路径进行类型检查与构建。只有构建成功后才发布 `dist/`，包括两份许可文本；不提交构建产物或另建发布分支。
+
+本地检查同样的项目子路径：
+
+```sh
+npm run build -- --base=/f1-beyond-the-limit/
+npm run preview -- --port 4175 --strictPort --base=/f1-beyond-the-limit/
+```
+
+访问 `http://127.0.0.1:4175/f1-beyond-the-limit/`，检查图片、字体、交互和页脚许可链接。资源路径由 Vite 处理，许可链接使用 `%BASE_URL%`；子路径部署不改变视觉、滚动时钟或章节交接。
 
 ## 技术与结构
 

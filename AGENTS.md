@@ -47,4 +47,4 @@ After motion or layout changes, scroll the production preview in a real browser 
 
 Physical touch / touchpad momentum, iOS Safari, real background-tab recovery and 120/144 Hz pacing require actual devices / external browsers. Viewport emulation and synthetic events cannot establish those results.
 
-The accepted build uses root-relative resources. GitHub Pages project-path deployment needs a separate reviewed path check (including the footer license link); do not alter the frozen product to force deployment.
+Local development and ordinary builds default to the site root. `.github/workflows/pages.yml` tests and builds with the Pages `base_path`, then deploys only `dist/` from `main`. Keep the footer license link based on `%BASE_URL%`; preserve both production license files. For a project-path preview use the build / preview `--base=/f1-beyond-the-limit/` commands in README, and verify deployed asset bytes, license navigation and core desktop / mobile interactions. Deployment must preserve the frozen visuals and motion architecture.
