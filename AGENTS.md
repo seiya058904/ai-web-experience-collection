@@ -2,7 +2,7 @@
 
 ## Scope and entrypoints
 
-AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of six accepted complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), ORBITAL (space / rockets / deep space), GLAZE (ceramics / color / light), KAGE / VOID (spatial sculpture / light / shadow), and CHRONOS (mechanical watches / time / craft). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
+AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of seven accepted complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), ORBITAL (space / rockets / deep space), GLAZE (ceramics / color / light), KAGE / VOID (spatial sculpture / light / shadow), CHRONOS (mechanical watches / time / craft), and INTERVAL (architecture / light / space / material). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
 
 - `pages/index.html`, `collection/main.ts`, `collection/styles.css`: Collection entrance. Read `docs/collection/DESIGN.md` before changing it.
 - `pages/f1/index.html`, `experiences/f1/src/main.ts`, `experiences/f1/src/styles.css`: F1 document, startup and composition. Read `docs/f1/DESIGN.md` and `docs/f1/SCROLL-AUDIT.md` before changing F1 layout or motion.
@@ -11,15 +11,16 @@ AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a s
 - `experiences/glaze/src/`: supplied seven-study journey; `docs/glaze/DESIGN.md` owns its style.
 - `experiences/kage/src/`: supplied pure score, Three.js sculpture and owned RAF; read `docs/kage/ARCHITECTURE.md`.
 - `experiences/chronos/src/`: supplied watch narrative, pure mechanics and lazy Three.js scene; read `docs/chronos/DESIGN.md` and `docs/chronos/MOTION.md`. Its local Cormorant fonts and image art live in `public/chronos/`; its DM Sans files are byte-identical to VERDANT and live in `public/shared/fonts/`.
+- `experiences/interval/src/`: supplied six-space architectural journey. Read `docs/interval/DESIGN.md`; preserve its doorway/column handoffs, measured captions and independent camera/breath layers. Assets and fonts live in `public/interval/`; original prompt/font records live in `provenance/interval/`.
 - `pages/`: Vite HTML root; `public/<work>/`: runtime media, fonts and notices; `provenance/`: source history, not deployment.
 - `experiences/shared/`: only genuinely shared UI primitives and Collection return control.
 - `ATTRIBUTION.md`, `provenance/deliveries/legacy-imports.json`, `provenance/deliveries/import-manifest.json` and per-work notices: asset provenance. Preserve legal comments and production license inventory.
 
 ## Invariants
 
-- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/`, `/glaze/`, `/kage/`, `/chronos/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
+- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/`, `/glaze/`, `/kage/`, `/chronos/`, `/interval/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
 - HTML/CSS asset URLs go through Vite. Runtime URLs and cross-work links must include `import.meta.env.BASE_URL`; HTML links use `%BASE_URL%`. Keep resources namespaced and test a project-path build.
-- Each experience keeps one Lenis instance and one owned clock (GSAP for F1, VERDANT, ORBITAL, GLAZE and CHRONOS; the supplied RAF for KAGE). Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
+- Each experience keeps one Lenis instance and one owned clock (GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS and INTERVAL; the supplied RAF for KAGE). Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
 - F1 interpolation is 0.105, `syncTouch: false`, direct reversible ScrollTrigger scrub. `experiences/f1/src/motion.ts` owns the idle geometry queue, navigation, preferences and teardown. Register loops via `motion.loop()` and cleanup via `motion.own()` / its abort signal.
 - F1 must retain Enter → complete composition → Living Hold → handoff → Exit. Short measured Hold travel stays in normal flow; no negative overlaps, content masks or fixed-pixel spacer patches. Input must give visible, reversible feedback while the protected text remains readable.
 - F1 remeasure happens before ScrollTrigger refresh and only after active input settles. Do not resize Lenis during a destination. The dev-only `window.__f1Motion.inspect()` is absent from production.

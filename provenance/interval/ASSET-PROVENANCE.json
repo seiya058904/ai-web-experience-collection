@@ -1,0 +1,693 @@
+{
+  "schema_version": 1,
+  "project": "INTERVAL — Architecture Between Light & Space",
+  "created_date": "2026-10-05",
+  "path_base": "All file paths are relative to the project root in the ZIP, which contains package.json.",
+  "scope": "The six final architectural scenes and all their delivered WebP files. No study image, interface concept image, temporary file or absolute workspace path is included.",
+  "disclosure": "Original AI-generated concept visualizations of a fictional coastal building, created for INTERVAL. These are not documentary photographs of existing buildings and are not attributed to any real architect or photography practice.",
+  "generation_context": "Prompts are preserved verbatim. Project-created visual context mentioned in a prompt was used only to maintain fictional materials, light and spatial continuity. Only the six final scenes and their encoded derivatives are catalogued. No third-party architectural photograph is incorporated.",
+  "processing": {
+    "tool": "sharp",
+    "version": "0.35.4",
+    "libvips_version": "8.18.6",
+    "libwebp_version": "1.6.0",
+    "input_format": "PNG returned by the built-in image generation tool",
+    "full_operation": "sharp(input).webp({ quality: 93, effort: 6 }).toFile(output)",
+    "small_operation": "sharp(input).resize({ width: 1120, withoutEnlargement: true }).webp({ quality: 87, effort: 6 }).toFile(output)",
+    "post_generation_operations": [
+      "Full-size WebP encoding at the original returned dimensions.",
+      "Proportional downsampling to 1120-pixel-wide WebP variants without enlargement.",
+      "Add adjacent JSON prompt metadata sidecars without changing image file bytes or decoded pixels."
+    ],
+    "post_generation_content_editing": false,
+    "upscaling": false,
+    "resolution_note": "THRESHOLD was returned at 1672 x 941. The other five scenes were returned at 1586 x 992. Requested larger sizes in the prompts are not delivered pixel dimensions. Displaying these assets on a 4K viewport scales them; it does not make them native 4K imagery.",
+    "production_copy_note": "The production copies in dist/images are byte-identical to the matching source assets in public/images.",
+    "prompt_metadata": {
+      "tool": "Impeccable embed-prompt",
+      "operation": "One sequential metadata command per delivered WebP using the exact scene prompt.",
+      "storage": "The tool uses adjacent <image>.webp.json sidecars for this format. No image was re-encoded.",
+      "raster_scan": "12 rasters, 0 missing",
+      "binary_and_pixel_check": "All 12 WebP file hashes and decoded RGB pixel hashes are identical before and after adding prompt metadata.",
+      "production_note": "The public/images metadata sidecars are copied with public assets during the production build."
+    }
+  },
+  "research_references": [
+    {
+      "title": "Chichu Art Museum",
+      "publisher": "Benesse Art Site Naoshima",
+      "url": "https://benesse-artsite.jp/en/art/chichu.html",
+      "research_focus": "Architectural mass, thresholds and natural light.",
+      "reference_images_included": false
+    },
+    {
+      "title": "GC Prostho Museum Research Center",
+      "publisher": "Kengo Kuma & Associates",
+      "url": "https://kkaa.co.jp/en/project/gc-prostho-museum-research-center/",
+      "research_focus": "Timber structure, repetition and spatial depth.",
+      "reference_images_included": false
+    },
+    {
+      "title": "Architecture and park / Louvre-Lens",
+      "publisher": "Louvre-Lens",
+      "url": "https://www.louvrelens.fr/en/architecture-et-parc/",
+      "research_focus": "Horizontal composition, glass, reflections and landscape continuity.",
+      "reference_images_included": false
+    },
+    {
+      "title": "Teshima Art Museum",
+      "publisher": "Benesse Art Site Naoshima",
+      "url": "https://benesse-artsite.jp/en/art/teshima-artmuseum.html",
+      "research_focus": "Openings, negative space, water and slow natural change.",
+      "reference_images_included": false
+    },
+    {
+      "title": "Stillness",
+      "publisher": "Norm Architects",
+      "url": "https://normcph.com/project/stillness/",
+      "research_focus": "Material sensitivity and architectural editorial rhythm.",
+      "reference_images_included": false
+    }
+  ],
+  "assets": [
+    {
+      "id": "threshold",
+      "title": "THRESHOLD",
+      "generation": {
+        "date": "2026-10-05",
+        "tool": "OpenAI built-in image_gen.imagegen",
+        "mode": "image edit",
+        "prompt_verbatim": "Use case: precise-object-edit, production website architectural photography asset. Reference image is the accepted INTERVAL webpage concept. Remove ALL webpage chrome, ALL lettering, the off-white outer borders, captions, logos, arrows. Return ONLY the architectural photograph from the central picture, faithfully preserved and rendered edge-to-edge as a beautiful full-bleed wide landscape photo. Preserve this SAME original fictional coastal concrete building, its exact rectangular dark doorway centered near 64% across, the slab facade, pine tree at right, reflecting water, leading walkway, sea and rocky hillside at left, original morning light and colors, exact material detail and straight architectural verticals. Compose slightly taller than the original photo to be useful in a cinematic website: landscape 2560x1440 16:9, expand sky and foreground naturally while maintaining the building and doorway scale. Doorway MUST stay a precise rectangle, no arch. Photograph realism and high-end architectural magazine quality, subtle concrete tie holes and surface patina. No text anywhere, no UI, no borders, no watermark, no people, not an existing building. This asset is the first THRESHOLD scene of a continuous original architectural experience.",
+        "requested_dimensions": {
+          "width": 2560,
+          "height": 1440,
+          "status": "requested in prompt; not the actual output resolution"
+        },
+        "transparent_background": false,
+        "original_returned_image": {
+          "format": "PNG",
+          "width": 1672,
+          "height": 941,
+          "color_mode": "RGB",
+          "bytes": 2396304,
+          "sha256": "43d5a3c8611094ffc9c1cd7e32114904ba30e9a920edd2d249d001b4c9a46984",
+          "included_in_distribution": false
+        }
+      },
+      "variants": [
+        {
+          "name": "full",
+          "width": 1672,
+          "height": 941,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 93,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": null,
+          "files": [
+            {
+              "path": "public/images/threshold.webp",
+              "bytes": 413444,
+              "sha256": "9866af099db70f86c4760c38f2c4cea4d621e753ff5de73a1b713d99ccc6dc26"
+            },
+            {
+              "path": "dist/images/threshold.webp",
+              "bytes": 413444,
+              "sha256": "9866af099db70f86c4760c38f2c4cea4d621e753ff5de73a1b713d99ccc6dc26"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/threshold.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 1318,
+            "sha256": "779cefbe7e1a1621385025e057139fd96ee6fcd02360fae797f6a4c70a4621ae",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "31ebb565d54b6f959337ff9d4848f9cd03cdbad05ab857a33fb3f9008ff1b3a6"
+        },
+        {
+          "name": "small",
+          "width": 1120,
+          "height": 630,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 87,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": {
+            "width": 1120,
+            "withoutEnlargement": true,
+            "preserve_aspect_ratio": true
+          },
+          "files": [
+            {
+              "path": "public/images/threshold-small.webp",
+              "bytes": 140384,
+              "sha256": "2534e9e60573a6efaf18068a67314f981a54d0b0038044ba77bd7b12af1520b1"
+            },
+            {
+              "path": "dist/images/threshold-small.webp",
+              "bytes": 140384,
+              "sha256": "2534e9e60573a6efaf18068a67314f981a54d0b0038044ba77bd7b12af1520b1"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/threshold-small.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 1318,
+            "sha256": "46e42608f2f5fcb97ebd1c87025d9c9ec3660d42aacaa8b665462ffd06c8f78a",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "94a53806b2895892fedd09587b8fbe7360c8d7013dce5ed268058fb8c9843e60"
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "title": "LIGHT",
+      "generation": {
+        "date": "2026-10-05",
+        "tool": "OpenAI built-in image_gen.imagegen",
+        "mode": "image generation with project-owned visual context",
+        "prompt_verbatim": "Use case: photorealistic-natural\nAsset type: a single full-bleed high-resolution architectural photograph for the LIGHT scene of the original INTERVAL immersive website.\nInput image 1 is a visual-world reference only. Ignore ALL its graphic design, letters, logo, margins, and UI. Use only its fictional seaside building, naturally warm pale grey concrete, pale stone ground, weathered honesty, early sunlight from the upper left, tranquil blue-grey sea and disciplined architectural photography. Do not reproduce the reference layout.\nPrimary request: enter BEHIND that thick concrete threshold into a broad, quietly monumental skylit interior gallery. The space is austere and serene: massive warm-grey concrete walls, a light limestone floor, deep perspective, a tall rectangular doorway slightly right of centre at the far end. It leads into warm timber and trees, suggesting the next space. A long linear skylight at the upper left sends a luminous diagonal ribbon across the floor; its edge is beautifully crisp with soft realistic bounce light.\nComposition: horizontal 16:10 landscape, approximately 2560 x 1600 pixels, one complete coherent photograph. Level architectural camera at human eye height, perfectly vertical architecturals, one-point perspective with vanishing point at x 64%, y 54%. The left 40% is a large uninterrupted quiet wall plane with rich real concrete material and subtle shadows; the room extends in depth into a doorway with clear rectangular edges at x 61–71%. Floor fills the lower third. Let the top edge reveal the long skylight and structural thickness. The doorway is inviting and spacious, not a tiny dark slot. Keep a calm full composition, not an ultra-wide distorted hallway.\nLighting: morning light from upper left, warm whites, stone, soft concrete greys, deep but readable shadows, a little timber warmth in the distant opening. Photographic exposure retains detail in both shadow and sun. Soft filmic tonal roll-off, elegant natural contrast.\nDetails: credible concrete pores, subtle formwork seams, crisp construction joints, true limestone texture, correct scale and structural continuity. Museum-quality contemporary original architecture, not a depiction of any named architect's built work.\nAvoid: any typography, captions, labels, title, logos, watermark, poster, web UI, borders, frames around the image, people, furniture, lamps, potted plants, fake laser light, cheap CGI, shiny plastic concrete, fisheye, sloping verticals, exaggerated bloom, pitch black or orange colour grading, multiple scenes or collage.",
+        "requested_dimensions": {
+          "width": 2560,
+          "height": 1600,
+          "status": "requested in prompt; not the actual output resolution"
+        },
+        "transparent_background": false,
+        "original_returned_image": {
+          "format": "PNG",
+          "width": 1586,
+          "height": 992,
+          "color_mode": "RGB",
+          "bytes": 2526088,
+          "sha256": "b241a3bc1a785c4daa6d65397d23d212ce19ecdddfffb372af2dc03dd447d5bc",
+          "included_in_distribution": false
+        }
+      },
+      "variants": [
+        {
+          "name": "full",
+          "width": 1586,
+          "height": 992,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 93,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": null,
+          "files": [
+            {
+              "path": "public/images/light.webp",
+              "bytes": 412060,
+              "sha256": "c185a1be5cb0146f2f4b709215110be339ff065538282f7b9cfce6704247bbd2"
+            },
+            {
+              "path": "dist/images/light.webp",
+              "bytes": 412060,
+              "sha256": "c185a1be5cb0146f2f4b709215110be339ff065538282f7b9cfce6704247bbd2"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/light.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2635,
+            "sha256": "f6300defb8e17641e4e44bda8371dd3fc3290c7a66e3fa240f440496ff24fee2",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "c213d7ee741bc3ba3895857e0b0d0d076bdb6aa0f0f3caec5506b6a80ccbb6f5"
+        },
+        {
+          "name": "small",
+          "width": 1120,
+          "height": 701,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 87,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": {
+            "width": 1120,
+            "withoutEnlargement": true,
+            "preserve_aspect_ratio": true
+          },
+          "files": [
+            {
+              "path": "public/images/light-small.webp",
+              "bytes": 141664,
+              "sha256": "906dd8437090887e4fb214afbf36ec36c0962d6018578bb065562c46070d0f1b"
+            },
+            {
+              "path": "dist/images/light-small.webp",
+              "bytes": 141664,
+              "sha256": "906dd8437090887e4fb214afbf36ec36c0962d6018578bb065562c46070d0f1b"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/light-small.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2635,
+            "sha256": "2fa315ebeca1a24730a5383cd434c03734846902914a67166d07773573622b88",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "154023de10913bb4bee14b9283818c35f701367241faeeca3d1377e4147025e0"
+        }
+      ]
+    },
+    {
+      "id": "frame",
+      "title": "FRAME",
+      "generation": {
+        "date": "2026-10-05",
+        "tool": "OpenAI built-in image_gen.imagegen",
+        "mode": "image generation with project-owned visual context",
+        "prompt_verbatim": "Use case: photorealistic-natural\nAsset type: a single full-bleed high-resolution architectural photograph for the FRAME scene of the original INTERVAL immersive website.\nInput image 1 is a fictional-world visual reference only: disregard ALL graphic design, letters, logos, margins and UI, retaining its tranquil coastal location, natural early sunlight from upper left, restrained original concrete architecture and dark green pines. Input image 2 is the immediately preceding room in our visual narrative: keep its human camera height, calm precise eye-level perspective, warm pale concrete, light limestone floor and morning sunlight, and now continue through its distant timber-lined doorway.\nPrimary request: reveal the next room — a long beautiful naturally warm timber gallery with a disciplined sequence of substantial square oak posts and a few slender horizontal beams. Open floor-to-ceiling glazing to the RIGHT reveals a mature sculptural pine tree garden, pale stone terraces and the quiet blue-grey sea beyond. The LEFT third is a continuous solid oak wall with real subtle vertical grain and no objects. The overhead plane is warm timber. The closest thick oak square column stands just right of centre near x 74% and creates a convincing foreground architectural obstruction; further columns recede elegantly, with wide generous bays and large unobstructed views. This is a spacious modern pavilion, never a dense grid or screen.\nComposition: single horizontal 16:10 landscape photograph approximately 2560 x 1600 pixels. Camera level at human eye height. Vertical architectural lines perfectly upright. Clear deep one-point perspective down the timber gallery with vanishing point around x 65%, y 54%, matching the preceding interior image. Pale limestone floor occupies the lower third, runs from foreground towards an open rectangular exit at the far end. The right hand glazing should feel almost invisible but realistic with one restrained cool reflection. Garden and sea belong to this real shared space, never pasted scenery. The architecture has a strong quiet editorial crop and enough empty surface to breathe.\nLighting: low morning sun from upper left, natural amber wood, gentle cream stone, restrained rich green vegetation, pale blue-grey water. Crisp long architectural shadows across floor; realistic soft ambient daylight; preserved highlights and readable deep shadows. Tactile photographic material fidelity, polished high-end architectural editorial.\nDetails: subtle wood grain, precise joints, naturally worn matte material; expertly proportioned original contemporary architecture in the same fictional seaside building, not any named real building. Strong structure, serene silence, credible scale.\nAvoid: all letters, captions, logos, watermark, diagrams, poster, web UI, image borders, people, chairs, tables, lamps, decor, potted plants, dense timber lattice, excessive repeated posts, glaring neon, obvious CGI, orange filter, glossy plastic wood, distorted verticals, fisheye, impossible beams, multiple scenes, collage.",
+        "requested_dimensions": {
+          "width": 2560,
+          "height": 1600,
+          "status": "requested in prompt; not the actual output resolution"
+        },
+        "transparent_background": false,
+        "original_returned_image": {
+          "format": "PNG",
+          "width": 1586,
+          "height": 992,
+          "color_mode": "RGB",
+          "bytes": 2441038,
+          "sha256": "16f864be872531b37f1a790123f0727c5e5ade24879b3f52f6b460e859531846",
+          "included_in_distribution": false
+        }
+      },
+      "variants": [
+        {
+          "name": "full",
+          "width": 1586,
+          "height": 992,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 93,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": null,
+          "files": [
+            {
+              "path": "public/images/frame.webp",
+              "bytes": 397386,
+              "sha256": "05fd67c0f5c7e53be440471fea418e0a6b1ab10215b572d119a6c90ee8ca407c"
+            },
+            {
+              "path": "dist/images/frame.webp",
+              "bytes": 397386,
+              "sha256": "05fd67c0f5c7e53be440471fea418e0a6b1ab10215b572d119a6c90ee8ca407c"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/frame.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 3134,
+            "sha256": "4922426b9053fc88cec66766c6e8f41b0798922b91bf75619ba0ab0c59a64a2e",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "d245aa4235b920174193b1bdb4b3e53e34c3e2f895898128f517a93bc872a62b"
+        },
+        {
+          "name": "small",
+          "width": 1120,
+          "height": 701,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 87,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": {
+            "width": 1120,
+            "withoutEnlargement": true,
+            "preserve_aspect_ratio": true
+          },
+          "files": [
+            {
+              "path": "public/images/frame-small.webp",
+              "bytes": 147862,
+              "sha256": "3227d04faa880fb7e91a33f46f6d14935b38ab6180e268c3a63be0cc58f5b966"
+            },
+            {
+              "path": "dist/images/frame-small.webp",
+              "bytes": 147862,
+              "sha256": "3227d04faa880fb7e91a33f46f6d14935b38ab6180e268c3a63be0cc58f5b966"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/frame-small.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 3134,
+            "sha256": "8ffd18f07f3e2a0b21c40f0c2176db24a9216842e2c9c0576d9b90abb3c2d7d0",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "6b9c09eaba49bc102f07749f28366511ef6d25511e70f4dfd9ab891af4f833a3"
+        }
+      ]
+    },
+    {
+      "id": "matter",
+      "title": "MATTER",
+      "generation": {
+        "date": "2026-10-05",
+        "tool": "OpenAI built-in image_gen.imagegen",
+        "mode": "image generation with project-owned visual context",
+        "prompt_verbatim": "Use case: photorealistic-natural. Asset type: one full-bleed landscape architectural photograph for the MATTER scene of an immersive website, not a website mockup. Generate a NEW original photograph, ideally 2560 x 1600, landscape 16:10. Input image 1 is a MATERIAL, ARCHITECTURAL IDENTITY, AND MORNING LIGHT REFERENCE ONLY. Ignore all interface, typography, borders and graphic design from the reference. Depict a camera moving close past a join in the same fictional quiet coastal concrete architecture: left approximately half of the composition is a warm light gray exposed concrete wall with restrained fine board impressions, believable small formwork tie holes, fine mineral imperfections, no artificial repetition. At about 65% across the image stands a single beautifully proportioned upright natural warm oak structural frame, near the camera, straight vertical, showing tactile fine grain, a real recessed construction joint and a slender darker reveal; a slim glass edge beside the timber subtly catches morning light. Low in the frame a pale cut stone floor and realistic thin joints lead into the right side of the scene. The right third reveals a gently softened open courtyard beyond the frame, a patch of still water and deep green foliage, serene but still legible; do not make this a texture swatch. A warm shaft of morning sun enters from upper left across the concrete and timber, restrained honest highlights, rich soft shadow, quiet air, sophisticated fine detail. Professional large format architectural editorial photography, 50mm lens feeling, precisely corrected architecture verticals, completely photoreal, believable material scale, warm limestone and warm gray concrete, restrained natural colors. The close foreground join and readable far courtyard should invite a camera move forward and right into the next space. Full image contains only this photograph, edge to edge. No people, no furniture vignette, no letters, no words, no numbers, no captions, no logo, no watermark, no UI, no border, no collage, no split image. Avoid CGI shininess, fantasy geometry, over-sharpening and copying a recognizable real building.",
+        "requested_dimensions": {
+          "width": 2560,
+          "height": 1600,
+          "status": "requested in prompt; not the actual output resolution"
+        },
+        "transparent_background": false,
+        "original_returned_image": {
+          "format": "PNG",
+          "width": 1586,
+          "height": 992,
+          "color_mode": "RGB",
+          "bytes": 2908191,
+          "sha256": "22f195fb607d8b808711bd8848a701d08b10378ca2dc787e65934178af6c873f",
+          "included_in_distribution": false
+        }
+      },
+      "variants": [
+        {
+          "name": "full",
+          "width": 1586,
+          "height": 992,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 93,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": null,
+          "files": [
+            {
+              "path": "public/images/matter.webp",
+              "bytes": 554246,
+              "sha256": "6f090c92e42c5f7048c7d117daaa87f067686bd951f0d56e5d95b0fff0358ecd"
+            },
+            {
+              "path": "dist/images/matter.webp",
+              "bytes": 554246,
+              "sha256": "6f090c92e42c5f7048c7d117daaa87f067686bd951f0d56e5d95b0fff0358ecd"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/matter.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2212,
+            "sha256": "ed3b84674d7e804bfb265e7cfebecfb2e05ce0a4bcc18235d0e2ab953e80e0bd",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "c08949399b9dcf9465773d55fb7bd8eb74b9b433bff399d25a11a223dc17087e"
+        },
+        {
+          "name": "small",
+          "width": 1120,
+          "height": 701,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 87,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": {
+            "width": 1120,
+            "withoutEnlargement": true,
+            "preserve_aspect_ratio": true
+          },
+          "files": [
+            {
+              "path": "public/images/matter-small.webp",
+              "bytes": 206850,
+              "sha256": "3c76194a239024de4e673a8b856dca8ee1d44ddc9b14a5e2892ab838f5757612"
+            },
+            {
+              "path": "dist/images/matter-small.webp",
+              "bytes": 206850,
+              "sha256": "3c76194a239024de4e673a8b856dca8ee1d44ddc9b14a5e2892ab838f5757612"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/matter-small.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2212,
+            "sha256": "7d5829dcd60038340a3893e6b72216d9d47a93256f09a76a4a21602b4d508513",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "ece076cf10eac813c535ef04c2b46920cbd8fbccfd043771346fee2441a8fe66"
+        }
+      ]
+    },
+    {
+      "id": "void",
+      "title": "VOID",
+      "generation": {
+        "date": "2026-10-05",
+        "tool": "OpenAI built-in image_gen.imagegen",
+        "mode": "image generation with project-owned visual context",
+        "prompt_verbatim": "Use case: photorealistic-natural. Asset type: one full-bleed landscape architectural photograph for the VOID courtyard scene of an immersive website, not a website mockup. Generate a NEW original photograph, ideally 2560 x 1600, landscape 16:10. Input image 1 is a MATERIAL, ARCHITECTURAL IDENTITY, AND MORNING LIGHT REFERENCE ONLY. Ignore all interface, typography, borders and graphic design from the reference. Depict the interior open rectangular water courtyard of the same fictional serene coastal concrete building. Camera is fully inside the courtyard, eye level, facing the opposite wall, beautifully composed straight architectural verticals and calm central perspective. Large quiet planes of thick warm light-gray exposed concrete, subtle horizontally board-formed texture, honest small formwork tie holes, warm pale stone paving; sparse and carefully proportioned. A shallow still reflecting pool occupies most of the lower half and reflects warm sunlight, dark foliage and pale sky with very slight natural ripples. Along one edge and approaching the far wall, a thin beautifully minimal pale stone walkway allows a continuous journey through the architecture. One elegant mature Japanese black pine, sculptural but natural, sits off-center to the right in a small stone-edged planting island, deep restrained green needles and fine branch detail. The far thick concrete wall has a fully open tall broad rectangular passage, positioned slightly right of center but clearly separate from the tree, through which the calm distant sea horizon is visible; clear uninterrupted path toward the opening. Blue-gray open sky occupies upper part, sunlight from upper left, long soft-edged spatial shadows, reflected light off the water subtly brightens walls. Atmosphere silent, fresh morning, tangible sunlit surfaces, high-end large-format architectural editorial photography, full photographic realism and natural color, not an architectural render. Depth should read clearly: nearest pool edge, pool and path, tree and concrete wall, passage and distant sea. No people, no chairs, no decorative lanterns, no traditional roofs, no text, no letters, no numbers, no captions, no logo, no watermark, no UI, no border, no collage, no split view. Full image contains only one architectural photograph edge to edge. Original fictional architecture, do not replicate a recognizable real building.",
+        "requested_dimensions": {
+          "width": 2560,
+          "height": 1600,
+          "status": "requested in prompt; not the actual output resolution"
+        },
+        "transparent_background": false,
+        "original_returned_image": {
+          "format": "PNG",
+          "width": 1586,
+          "height": 992,
+          "color_mode": "RGB",
+          "bytes": 2423443,
+          "sha256": "bdd759261edcd8abbcb1cf4770973e78d725e764baa1e2631b00b47e8f61fd23",
+          "included_in_distribution": false
+        }
+      },
+      "variants": [
+        {
+          "name": "full",
+          "width": 1586,
+          "height": 992,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 93,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": null,
+          "files": [
+            {
+              "path": "public/images/void.webp",
+              "bytes": 419514,
+              "sha256": "bb91b9db71e33e88471ccac4d3c1f949315995616cb0e72aba1834700b180952"
+            },
+            {
+              "path": "dist/images/void.webp",
+              "bytes": 419514,
+              "sha256": "bb91b9db71e33e88471ccac4d3c1f949315995616cb0e72aba1834700b180952"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/void.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2457,
+            "sha256": "1986e10af9d41f2f66057020e9755d81b6f458c992ad82ccd5edee7547df86bc",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "3991eed18b385b231d031a89d45ca44da94f12eee38b66c7187ed28c2472c2fd"
+        },
+        {
+          "name": "small",
+          "width": 1120,
+          "height": 701,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 87,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": {
+            "width": 1120,
+            "withoutEnlargement": true,
+            "preserve_aspect_ratio": true
+          },
+          "files": [
+            {
+              "path": "public/images/void-small.webp",
+              "bytes": 163184,
+              "sha256": "18995394e8137ba9d893c85ded8083b149529843926e54f133015a62bf8d643a"
+            },
+            {
+              "path": "dist/images/void-small.webp",
+              "bytes": 163184,
+              "sha256": "18995394e8137ba9d893c85ded8083b149529843926e54f133015a62bf8d643a"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/void-small.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2457,
+            "sha256": "d484400bf77e96e0021461972bae813d24b73fa499703a6427ee0efbf8698f2f",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "f3eb14bdc476a820a886a76ee35dcded79c5d9ea819bdf3b2dfc2697aefad8d5"
+        }
+      ]
+    },
+    {
+      "id": "silence",
+      "title": "SILENCE",
+      "generation": {
+        "date": "2026-10-05",
+        "tool": "OpenAI built-in image_gen.imagegen",
+        "mode": "image generation from text",
+        "prompt_verbatim": "Use case: photorealistic-natural.\nAsset type: final full-bleed architectural photograph for the SILENCE scene of INTERVAL, an original fictional coastal architecture experience.\nCreate one single finished landscape image, ideally 2560 x 1600 pixels, not a webpage, not a mockup. The viewpoint has arrived at an extraordinarily quiet open pavilion facing a calm sea. It belongs to a restrained contemporary coastal building made of warm grey board-formed concrete and pale natural limestone.\nComposition: human eye-level camera, rectilinear architectural photography, perfectly vertical columns and a perfectly level horizon at roughly the vertical middle. A very thin, long warm concrete roof and its gently shaded soffit occupy only the upper 18–20 percent of the entire frame. One slender structural column stands near the far right edge, approximately 93 percent across the image, leaving the broad middle completely open. The foreground is an empty pale limestone platform with subtle large-scale joints that leads to the still water; it occupies approximately the bottom quarter. Architecture only frames the sky and sea. Beyond it, a delicate distant island silhouette and hazy coastal hills remain low and quiet. An expansive pale warm sky and calm silver-blue water create excellent soft negative space across the middle for a few words added later in code.\nLight and mood: delicate natural morning sunlight from the upper left, soft warm highlights on limestone and concrete, believable soft shade under the roof, gently cool water, understated atmosphere, tranquil, tactile, precise. Light direction and surfaces should feel continuous with an earlier scene featuring a warm board-formed concrete monolith on a stone pathway over a reflecting pool beside a quiet rocky coast.\nSurface realism: small aggregate and subtle timber-form impressions in concrete, fine limestone grain, realistic construction joints, gently moving water with restrained natural reflections, no dramatic waves. Highest-end architectural editorial photograph, carefully balanced exposure, refined natural color, extraordinary material detail, 40mm tilt-shift lens appearance, no exaggerated wide-angle distortion.\nConstraints: original imaginary architecture, no imitation of a named or recognizable existing building. No people, furniture, signage, sculptures, boats, artificial lights, text, logo, watermark, page border, collage, panels, or decorative UI. No excessive dark areas, no black sky, no orange sunset, no fog hiding the architecture, no impossible unsupported roof. One serene coherent space, beautiful as a still photograph.",
+        "requested_dimensions": {
+          "width": 2560,
+          "height": 1600,
+          "status": "requested in prompt; not the actual output resolution"
+        },
+        "transparent_background": false,
+        "original_returned_image": {
+          "format": "PNG",
+          "width": 1586,
+          "height": 992,
+          "color_mode": "RGB",
+          "bytes": 2090257,
+          "sha256": "ee8d07eb9d8d073236f921e6920bce1790003d39e3adcc5148b598559d7a942f",
+          "included_in_distribution": false
+        }
+      },
+      "variants": [
+        {
+          "name": "full",
+          "width": 1586,
+          "height": 992,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 93,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": null,
+          "files": [
+            {
+              "path": "public/images/silence.webp",
+              "bytes": 290030,
+              "sha256": "f4d61ae0ca8a260d396eca4c7bdd2ccd285a5326020b8b94eec8c7f12db7110b"
+            },
+            {
+              "path": "dist/images/silence.webp",
+              "bytes": 290030,
+              "sha256": "f4d61ae0ca8a260d396eca4c7bdd2ccd285a5326020b8b94eec8c7f12db7110b"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/silence.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2692,
+            "sha256": "93f3b4051ec5244d6d086b73167aeaacc326e2b7ad953e023729ad0041c7099e",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "3a0270a1a5baee7653440658b9022f0796e46885c7be5efc2833f6f6da7a2105"
+        },
+        {
+          "name": "small",
+          "width": 1120,
+          "height": 701,
+          "format": "WEBP",
+          "color_mode": "RGB",
+          "mime_type": "image/webp",
+          "encoding": {
+            "quality": 87,
+            "effort": 6,
+            "lossless": false,
+            "codec": "VP8"
+          },
+          "resize": {
+            "width": 1120,
+            "withoutEnlargement": true,
+            "preserve_aspect_ratio": true
+          },
+          "files": [
+            {
+              "path": "public/images/silence-small.webp",
+              "bytes": 95090,
+              "sha256": "0adcac2caebc779b51aa0bf712f0cec42e6d210c298fa4708e2e357cf625e459"
+            },
+            {
+              "path": "dist/images/silence-small.webp",
+              "bytes": 95090,
+              "sha256": "0adcac2caebc779b51aa0bf712f0cec42e6d210c298fa4708e2e357cf625e459"
+            }
+          ],
+          "prompt_metadata": {
+            "path": "public/images/silence-small.webp.json",
+            "storage": "JSON sidecar fallback for WebP",
+            "bytes": 2692,
+            "sha256": "6dfe2ee3f3e1205408dbb9dca1f9c36220cd5d3b73bd563168bfc0cc333b8988",
+            "prompt_matches_verbatim_record": true
+          },
+          "decoded_rgb_sha256": "24274f9e69475a6b1a36372b8f8db4092247c86b010c32a01239724f7df41959"
+        }
+      ]
+    }
+  ],
+  "resource_validation": {
+    "method": "Decode image headers, measure file sizes, calculate SHA-256 from actual delivered files and compare source/production copies.",
+    "scene_count": 6,
+    "unique_webp_variants": 12,
+    "delivered_webp_file_count": 24,
+    "all_source_and_production_copies_match": true,
+    "scope": "Resource inventory validation only; browser acceptance is recorded separately in README.md.",
+    "prompt_sidecar_count": 12,
+    "all_prompts_match_generation_records": true,
+    "all_image_pixels_unchanged_by_prompt_embedding": true
+  },
+  "credits_document": "ATTRIBUTION.md",
+  "font_provenance_document": "public/fonts/font-provenance.json"
+}

@@ -6,18 +6,18 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
   const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
   assert(sitemap.includes(`<loc>${site}${route}/</loc>`), `Missing sitemap route: ${route}`);
 }
-for (const file of ['glaze/LICENSE.txt', 'glaze/licenses/Archivo-OFL.txt', 'kage/LICENSE', 'kage/licenses/THIRD-PARTY-NOTICES.md', 'chronos/LICENSE', 'chronos/licenses/Cormorant-Garamond-OFL.txt', 'shared/fonts/dm-sans-latin-400-normal.woff2', 'shared/fonts/dm-sans-latin-500-normal.woff2']) {
+for (const file of ['glaze/LICENSE.txt', 'glaze/licenses/Archivo-OFL.txt', 'kage/LICENSE', 'kage/licenses/THIRD-PARTY-NOTICES.md', 'chronos/LICENSE', 'chronos/licenses/Cormorant-Garamond-OFL.txt', 'shared/fonts/dm-sans-latin-400-normal.woff2', 'shared/fonts/dm-sans-latin-500-normal.woff2', 'interval/LICENSE', 'interval/fonts/Bodoni-Moda-OFL.txt', 'interval/fonts/Manrope-OFL.txt', 'interval/licenses/GSAP-NOTICE.txt', 'interval/licenses/Lenis-LICENSE.txt']) {
   assert((await stat(join(root, file))).size > 0, `Missing supplied notice: ${file}`);
 }
 for (const [file, route, title] of [
@@ -29,6 +29,7 @@ for (const [file, route, title] of [
   ['glaze/index.html', 'glaze/', 'GLAZE — Color Fired Into Form'],
   ['kage/index.html', 'kage/', 'KAGE / VOID — A Moving Sculpture of Space'],
   ['chronos/index.html', 'chronos/', 'CHRONOS — The Architecture of Time'],
+  ['interval/index.html', 'interval/', 'INTERVAL — Architecture Between Light &amp; Space'],
 ]) {
   const html = await readFile(join(root, file), 'utf8');
   assert(html.includes(`<title>${title}</title>`), `Incorrect document identity: ${file}`);

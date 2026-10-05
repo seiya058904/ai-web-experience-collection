@@ -6,7 +6,8 @@ This directory is excluded from the website build. It preserves unique material 
 - `glaze/`: original image-generation attribution, final image dimensions and SHA-256. Runtime files are under `public/glaze/`.
 - `kage/`: the unique supplied offline edition and the provenance of its actual FRAME screenshot used by the gallery.
 - `chronos/`: original image/technical attribution and design metadata; runtime art/Cormorant fonts and licenses live in `public/chronos/`; identical DM Sans fonts are shared with VERDANT in `public/shared/fonts/`.
-- `deliveries/`: legacy import notes and the entry-by-entry SHA-256 manifest of the GLAZE, KAGE and CHRONOS deliveries.
+- `interval/`: original image prompts/sidecars, font sources and design metadata. Runtime files and notices live in `public/interval/`; the original ZIP stays outside the repository at `D:/下载/INTERVAL-Architecture-Experience.zip`.
+- `deliveries/`: legacy import notes and the entry-by-entry SHA-256 manifest of the GLAZE, KAGE, CHRONOS and INTERVAL deliveries.
 
 The GLAZE/KAGE delivery ZIPs, extracted intermediate directories, compiled duplicates and standalone configs/startup scripts were removed after verified import. CHRONOS was imported and verified the same way; its external extraction was removed, while the ignored local root ZIP remains because final deletion was blocked by execution policy. All original entry hashes remain in `deliveries/import-manifest.json`.
 

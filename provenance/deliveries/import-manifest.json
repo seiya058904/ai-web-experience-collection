@@ -798,6 +798,463 @@
           "sha256": "c44c52ee5e988669f490ad17fc199da32c0ab2ba09fbbd86219abbca19031184"
         }
       ]
+    },
+    {
+      "archive": "D:\\下载\\INTERVAL-Architecture-Experience.zip",
+      "bytes": 7171361,
+      "sha256": "61d904835344ca8d94676a29169142786096714e16078143f45501b5f1bba8a8",
+      "entries": [
+        {
+          "path": "INTERVAL/.gitignore",
+          "bytes": 53,
+          "sha256": "b0c0c9c58ac3710b01c350165b34e65285438317c179aa6e2f4c88497b4444f7"
+        },
+        {
+          "path": "INTERVAL/.impeccable/design.json",
+          "bytes": 15642,
+          "sha256": "169c596531612dbfc34fd3957a96598d567e83cf8d48bff89acf1a529f02e9aa"
+        },
+        {
+          "path": "INTERVAL/ATTRIBUTION.md",
+          "bytes": 5271,
+          "sha256": "e1353309803b49437e982f8c47dff12f9b36d61c16219ad272e2993e8512f108"
+        },
+        {
+          "path": "INTERVAL/DESIGN.md",
+          "bytes": 10537,
+          "sha256": "238d90749a6ef23b8ec8aa50127b60d92534271524f6356915b58d85cd60f58c"
+        },
+        {
+          "path": "INTERVAL/LICENSE",
+          "bytes": 1374,
+          "sha256": "7ebcd2a2b9e0e316bb054741f5188af2841ba935d447ba9a653dd17ae28beb22"
+        },
+        {
+          "path": "INTERVAL/README.md",
+          "bytes": 8184,
+          "sha256": "0872a6cc173481816af5c04eef47a30ddf70f2a729b45308d786b075398acc8e"
+        },
+        {
+          "path": "INTERVAL/dist/assets/index-D41TtNbg.css",
+          "bytes": 19034,
+          "sha256": "954a44929d598346277c208e223f5df3e8e405a4daa283aa59938f72d6bedf7a"
+        },
+        {
+          "path": "INTERVAL/dist/assets/index-r3NsdvnK.js",
+          "bytes": 157899,
+          "sha256": "059c384cdd664d8a4ad7e7fddfa4c542176b1c5d41f891c79afd4ed452d39f50"
+        },
+        {
+          "path": "INTERVAL/dist/favicon.svg",
+          "bytes": 226,
+          "sha256": "d425ab09d1f6cf75c0bf8429d5bd38c00ae61b8f13674a3be836feb762cd1e4c"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/Bodoni-Moda-OFL.txt",
+          "bytes": 4400,
+          "sha256": "931dfe2e0cd3c9443295f5c1d754b8a8403bf060df50c1d5900267ade83d0046"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/Manrope-FONTLOG.txt",
+          "bytes": 3075,
+          "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/Manrope-OFL.txt",
+          "bytes": 4387,
+          "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/bodoni-moda-latin-ext-variable.woff2",
+          "bytes": 25020,
+          "sha256": "f156e4a7cef0928383fe259021b1f1d715a88d593565d0fc824704e54d07f6fd"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/bodoni-moda-latin-variable.woff2",
+          "bytes": 46260,
+          "sha256": "c032219ef636f7b4932f7d1dc91bdab602c970f090770b546bea4effaab3463c"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/font-provenance.json",
+          "bytes": 5634,
+          "sha256": "04633e497dddc8aa8175ea805b60f37040844dd5947570442bc9ff74e76277db"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/manrope-latin-ext-variable.woff2",
+          "bytes": 15120,
+          "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb"
+        },
+        {
+          "path": "INTERVAL/dist/fonts/manrope-latin-variable.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "INTERVAL/dist/images/frame-small.webp",
+          "bytes": 147862,
+          "sha256": "3227d04faa880fb7e91a33f46f6d14935b38ab6180e268c3a63be0cc58f5b966"
+        },
+        {
+          "path": "INTERVAL/dist/images/frame-small.webp.json",
+          "bytes": 3134,
+          "sha256": "8ffd18f07f3e2a0b21c40f0c2176db24a9216842e2c9c0576d9b90abb3c2d7d0"
+        },
+        {
+          "path": "INTERVAL/dist/images/frame.webp",
+          "bytes": 397386,
+          "sha256": "05fd67c0f5c7e53be440471fea418e0a6b1ab10215b572d119a6c90ee8ca407c"
+        },
+        {
+          "path": "INTERVAL/dist/images/frame.webp.json",
+          "bytes": 3134,
+          "sha256": "4922426b9053fc88cec66766c6e8f41b0798922b91bf75619ba0ab0c59a64a2e"
+        },
+        {
+          "path": "INTERVAL/dist/images/light-small.webp",
+          "bytes": 141664,
+          "sha256": "906dd8437090887e4fb214afbf36ec36c0962d6018578bb065562c46070d0f1b"
+        },
+        {
+          "path": "INTERVAL/dist/images/light-small.webp.json",
+          "bytes": 2635,
+          "sha256": "2fa315ebeca1a24730a5383cd434c03734846902914a67166d07773573622b88"
+        },
+        {
+          "path": "INTERVAL/dist/images/light.webp",
+          "bytes": 412060,
+          "sha256": "c185a1be5cb0146f2f4b709215110be339ff065538282f7b9cfce6704247bbd2"
+        },
+        {
+          "path": "INTERVAL/dist/images/light.webp.json",
+          "bytes": 2635,
+          "sha256": "f6300defb8e17641e4e44bda8371dd3fc3290c7a66e3fa240f440496ff24fee2"
+        },
+        {
+          "path": "INTERVAL/dist/images/matter-small.webp",
+          "bytes": 206850,
+          "sha256": "3c76194a239024de4e673a8b856dca8ee1d44ddc9b14a5e2892ab838f5757612"
+        },
+        {
+          "path": "INTERVAL/dist/images/matter-small.webp.json",
+          "bytes": 2212,
+          "sha256": "7d5829dcd60038340a3893e6b72216d9d47a93256f09a76a4a21602b4d508513"
+        },
+        {
+          "path": "INTERVAL/dist/images/matter.webp",
+          "bytes": 554246,
+          "sha256": "6f090c92e42c5f7048c7d117daaa87f067686bd951f0d56e5d95b0fff0358ecd"
+        },
+        {
+          "path": "INTERVAL/dist/images/matter.webp.json",
+          "bytes": 2212,
+          "sha256": "ed3b84674d7e804bfb265e7cfebecfb2e05ce0a4bcc18235d0e2ab953e80e0bd"
+        },
+        {
+          "path": "INTERVAL/dist/images/silence-small.webp",
+          "bytes": 95090,
+          "sha256": "0adcac2caebc779b51aa0bf712f0cec42e6d210c298fa4708e2e357cf625e459"
+        },
+        {
+          "path": "INTERVAL/dist/images/silence-small.webp.json",
+          "bytes": 2692,
+          "sha256": "6dfe2ee3f3e1205408dbb9dca1f9c36220cd5d3b73bd563168bfc0cc333b8988"
+        },
+        {
+          "path": "INTERVAL/dist/images/silence.webp",
+          "bytes": 290030,
+          "sha256": "f4d61ae0ca8a260d396eca4c7bdd2ccd285a5326020b8b94eec8c7f12db7110b"
+        },
+        {
+          "path": "INTERVAL/dist/images/silence.webp.json",
+          "bytes": 2692,
+          "sha256": "93f3b4051ec5244d6d086b73167aeaacc326e2b7ad953e023729ad0041c7099e"
+        },
+        {
+          "path": "INTERVAL/dist/images/threshold-small.webp",
+          "bytes": 140384,
+          "sha256": "2534e9e60573a6efaf18068a67314f981a54d0b0038044ba77bd7b12af1520b1"
+        },
+        {
+          "path": "INTERVAL/dist/images/threshold-small.webp.json",
+          "bytes": 1318,
+          "sha256": "46e42608f2f5fcb97ebd1c87025d9c9ec3660d42aacaa8b665462ffd06c8f78a"
+        },
+        {
+          "path": "INTERVAL/dist/images/threshold.webp",
+          "bytes": 413444,
+          "sha256": "9866af099db70f86c4760c38f2c4cea4d621e753ff5de73a1b713d99ccc6dc26"
+        },
+        {
+          "path": "INTERVAL/dist/images/threshold.webp.json",
+          "bytes": 1318,
+          "sha256": "779cefbe7e1a1621385025e057139fd96ee6fcd02360fae797f6a4c70a4621ae"
+        },
+        {
+          "path": "INTERVAL/dist/images/void-small.webp",
+          "bytes": 163184,
+          "sha256": "18995394e8137ba9d893c85ded8083b149529843926e54f133015a62bf8d643a"
+        },
+        {
+          "path": "INTERVAL/dist/images/void-small.webp.json",
+          "bytes": 2457,
+          "sha256": "d484400bf77e96e0021461972bae813d24b73fa499703a6427ee0efbf8698f2f"
+        },
+        {
+          "path": "INTERVAL/dist/images/void.webp",
+          "bytes": 419514,
+          "sha256": "bb91b9db71e33e88471ccac4d3c1f949315995616cb0e72aba1834700b180952"
+        },
+        {
+          "path": "INTERVAL/dist/images/void.webp.json",
+          "bytes": 2457,
+          "sha256": "1986e10af9d41f2f66057020e9755d81b6f458c992ad82ccd5edee7547df86bc"
+        },
+        {
+          "path": "INTERVAL/dist/index.html",
+          "bytes": 2915,
+          "sha256": "c234aebeb14f107efa1263f1eb51a8664eb32e17f14ef3010f93aaae71538db8"
+        },
+        {
+          "path": "INTERVAL/docs/ASSET-PROVENANCE.json",
+          "bytes": 39469,
+          "sha256": "266f8d15fb4dd9c83cef5591e39d590801b49ddd19674d22a60caa051571161e"
+        },
+        {
+          "path": "INTERVAL/index.html",
+          "bytes": 2814,
+          "sha256": "6b824875583a54d44a405ea94648fd8f7d04b22f76bee69235b25c91eba4c076"
+        },
+        {
+          "path": "INTERVAL/licenses/GSAP-NOTICE.txt",
+          "bytes": 1019,
+          "sha256": "9c5a4b7e5cdf413826f5cd7798a97312f94e99d9b5860cf0253be39b0b0695a9"
+        },
+        {
+          "path": "INTERVAL/licenses/Lenis-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "INTERVAL/package-lock.json",
+          "bytes": 37298,
+          "sha256": "1c15470eb7f2c5020f82f7220acce108cbd0a29549daff2b24b71dbc661819be"
+        },
+        {
+          "path": "INTERVAL/package.json",
+          "bytes": 559,
+          "sha256": "6085c55fa2e896ee411354106bfed3dde2c82840c2e27811a0d9a599d3e5f1d1"
+        },
+        {
+          "path": "INTERVAL/public/favicon.svg",
+          "bytes": 226,
+          "sha256": "d425ab09d1f6cf75c0bf8429d5bd38c00ae61b8f13674a3be836feb762cd1e4c"
+        },
+        {
+          "path": "INTERVAL/public/fonts/Bodoni-Moda-OFL.txt",
+          "bytes": 4400,
+          "sha256": "931dfe2e0cd3c9443295f5c1d754b8a8403bf060df50c1d5900267ade83d0046"
+        },
+        {
+          "path": "INTERVAL/public/fonts/Manrope-FONTLOG.txt",
+          "bytes": 3075,
+          "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2"
+        },
+        {
+          "path": "INTERVAL/public/fonts/Manrope-OFL.txt",
+          "bytes": 4387,
+          "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+        },
+        {
+          "path": "INTERVAL/public/fonts/bodoni-moda-latin-ext-variable.woff2",
+          "bytes": 25020,
+          "sha256": "f156e4a7cef0928383fe259021b1f1d715a88d593565d0fc824704e54d07f6fd"
+        },
+        {
+          "path": "INTERVAL/public/fonts/bodoni-moda-latin-variable.woff2",
+          "bytes": 46260,
+          "sha256": "c032219ef636f7b4932f7d1dc91bdab602c970f090770b546bea4effaab3463c"
+        },
+        {
+          "path": "INTERVAL/public/fonts/font-provenance.json",
+          "bytes": 5634,
+          "sha256": "04633e497dddc8aa8175ea805b60f37040844dd5947570442bc9ff74e76277db"
+        },
+        {
+          "path": "INTERVAL/public/fonts/manrope-latin-ext-variable.woff2",
+          "bytes": 15120,
+          "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb"
+        },
+        {
+          "path": "INTERVAL/public/fonts/manrope-latin-variable.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "INTERVAL/public/images/frame-small.webp",
+          "bytes": 147862,
+          "sha256": "3227d04faa880fb7e91a33f46f6d14935b38ab6180e268c3a63be0cc58f5b966"
+        },
+        {
+          "path": "INTERVAL/public/images/frame-small.webp.json",
+          "bytes": 3134,
+          "sha256": "8ffd18f07f3e2a0b21c40f0c2176db24a9216842e2c9c0576d9b90abb3c2d7d0"
+        },
+        {
+          "path": "INTERVAL/public/images/frame.webp",
+          "bytes": 397386,
+          "sha256": "05fd67c0f5c7e53be440471fea418e0a6b1ab10215b572d119a6c90ee8ca407c"
+        },
+        {
+          "path": "INTERVAL/public/images/frame.webp.json",
+          "bytes": 3134,
+          "sha256": "4922426b9053fc88cec66766c6e8f41b0798922b91bf75619ba0ab0c59a64a2e"
+        },
+        {
+          "path": "INTERVAL/public/images/light-small.webp",
+          "bytes": 141664,
+          "sha256": "906dd8437090887e4fb214afbf36ec36c0962d6018578bb065562c46070d0f1b"
+        },
+        {
+          "path": "INTERVAL/public/images/light-small.webp.json",
+          "bytes": 2635,
+          "sha256": "2fa315ebeca1a24730a5383cd434c03734846902914a67166d07773573622b88"
+        },
+        {
+          "path": "INTERVAL/public/images/light.webp",
+          "bytes": 412060,
+          "sha256": "c185a1be5cb0146f2f4b709215110be339ff065538282f7b9cfce6704247bbd2"
+        },
+        {
+          "path": "INTERVAL/public/images/light.webp.json",
+          "bytes": 2635,
+          "sha256": "f6300defb8e17641e4e44bda8371dd3fc3290c7a66e3fa240f440496ff24fee2"
+        },
+        {
+          "path": "INTERVAL/public/images/matter-small.webp",
+          "bytes": 206850,
+          "sha256": "3c76194a239024de4e673a8b856dca8ee1d44ddc9b14a5e2892ab838f5757612"
+        },
+        {
+          "path": "INTERVAL/public/images/matter-small.webp.json",
+          "bytes": 2212,
+          "sha256": "7d5829dcd60038340a3893e6b72216d9d47a93256f09a76a4a21602b4d508513"
+        },
+        {
+          "path": "INTERVAL/public/images/matter.webp",
+          "bytes": 554246,
+          "sha256": "6f090c92e42c5f7048c7d117daaa87f067686bd951f0d56e5d95b0fff0358ecd"
+        },
+        {
+          "path": "INTERVAL/public/images/matter.webp.json",
+          "bytes": 2212,
+          "sha256": "ed3b84674d7e804bfb265e7cfebecfb2e05ce0a4bcc18235d0e2ab953e80e0bd"
+        },
+        {
+          "path": "INTERVAL/public/images/silence-small.webp",
+          "bytes": 95090,
+          "sha256": "0adcac2caebc779b51aa0bf712f0cec42e6d210c298fa4708e2e357cf625e459"
+        },
+        {
+          "path": "INTERVAL/public/images/silence-small.webp.json",
+          "bytes": 2692,
+          "sha256": "6dfe2ee3f3e1205408dbb9dca1f9c36220cd5d3b73bd563168bfc0cc333b8988"
+        },
+        {
+          "path": "INTERVAL/public/images/silence.webp",
+          "bytes": 290030,
+          "sha256": "f4d61ae0ca8a260d396eca4c7bdd2ccd285a5326020b8b94eec8c7f12db7110b"
+        },
+        {
+          "path": "INTERVAL/public/images/silence.webp.json",
+          "bytes": 2692,
+          "sha256": "93f3b4051ec5244d6d086b73167aeaacc326e2b7ad953e023729ad0041c7099e"
+        },
+        {
+          "path": "INTERVAL/public/images/threshold-small.webp",
+          "bytes": 140384,
+          "sha256": "2534e9e60573a6efaf18068a67314f981a54d0b0038044ba77bd7b12af1520b1"
+        },
+        {
+          "path": "INTERVAL/public/images/threshold-small.webp.json",
+          "bytes": 1318,
+          "sha256": "46e42608f2f5fcb97ebd1c87025d9c9ec3660d42aacaa8b665462ffd06c8f78a"
+        },
+        {
+          "path": "INTERVAL/public/images/threshold.webp",
+          "bytes": 413444,
+          "sha256": "9866af099db70f86c4760c38f2c4cea4d621e753ff5de73a1b713d99ccc6dc26"
+        },
+        {
+          "path": "INTERVAL/public/images/threshold.webp.json",
+          "bytes": 1318,
+          "sha256": "779cefbe7e1a1621385025e057139fd96ee6fcd02360fae797f6a4c70a4621ae"
+        },
+        {
+          "path": "INTERVAL/public/images/void-small.webp",
+          "bytes": 163184,
+          "sha256": "18995394e8137ba9d893c85ded8083b149529843926e54f133015a62bf8d643a"
+        },
+        {
+          "path": "INTERVAL/public/images/void-small.webp.json",
+          "bytes": 2457,
+          "sha256": "d484400bf77e96e0021461972bae813d24b73fa499703a6427ee0efbf8698f2f"
+        },
+        {
+          "path": "INTERVAL/public/images/void.webp",
+          "bytes": 419514,
+          "sha256": "bb91b9db71e33e88471ccac4d3c1f949315995616cb0e72aba1834700b180952"
+        },
+        {
+          "path": "INTERVAL/public/images/void.webp.json",
+          "bytes": 2457,
+          "sha256": "1986e10af9d41f2f66057020e9755d81b6f458c992ad82ccd5edee7547df86bc"
+        },
+        {
+          "path": "INTERVAL/scripts/serve.mjs",
+          "bytes": 7482,
+          "sha256": "dfdccc70851c66aa289b5c52e61a9c98f7bdba2cea3286911ac7b398883edb46"
+        },
+        {
+          "path": "INTERVAL/serve.bat",
+          "bytes": 299,
+          "sha256": "588b366ef79bc4bee8223ae94c7cef615e06b2b9726a6af84ab615da64b7103e"
+        },
+        {
+          "path": "INTERVAL/src/geometry.ts",
+          "bytes": 2465,
+          "sha256": "e3d749c0a998951de5adb8ea23b1bd3d83f40672bb6e428a75cb1e8aba736537"
+        },
+        {
+          "path": "INTERVAL/src/journey.ts",
+          "bytes": 18826,
+          "sha256": "d3fd3cbcb5ab3c5b524c742b913436798ac443dd47687b724a2c60c0c15a3dc1"
+        },
+        {
+          "path": "INTERVAL/src/main.ts",
+          "bytes": 14810,
+          "sha256": "dfccffa7ca55283a10dbc50bce3fc20c78500ca81f4e6f1a269b42e3fb5acb84"
+        },
+        {
+          "path": "INTERVAL/src/scenes.ts",
+          "bytes": 3224,
+          "sha256": "aaab3a50d1b14399a620c60e99721eddc7f31de741188435b87abd47853f8d0f"
+        },
+        {
+          "path": "INTERVAL/src/style.css",
+          "bytes": 24518,
+          "sha256": "694a1e39f93aedacec130c7a307e5fe87cd8427017f8b9d9c28efd7f356add96"
+        },
+        {
+          "path": "INTERVAL/tsconfig.json",
+          "bytes": 592,
+          "sha256": "bfdb4c5794e732672b80602f2c05c380e220943e5d598b17813ffd944356139c"
+        },
+        {
+          "path": "INTERVAL/vite.config.ts",
+          "bytes": 372,
+          "sha256": "2e5255e977c38a50809c5438e3b93707b4fb2907b8483a0813b6d9e987f74873"
+        }
+      ]
     }
   ]
 }

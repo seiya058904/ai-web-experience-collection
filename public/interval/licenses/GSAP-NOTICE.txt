@@ -1,0 +1,26 @@
+GSAP 3.15.0 (including ScrollTrigger)
+https://gsap.com/
+
+Copyright 2008-2026, GreenSock. All rights reserved.
+
+License: Standard "No Charge" GSAP License
+Official license terms: https://gsap.com/standard-license/
+Canonical page at verification:
+https://gsap.com/community/standard-license/
+
+This component is not licensed under the MIT license used for INTERVAL's
+original source code and written content.
+
+The installed gsap 3.15.0 package.json specifies:
+Standard 'no charge' license: https://gsap.com/standard-license.
+
+The source license banner identifies Copyright 2008-2026, GreenSock,
+and states that use is subject to the terms at the official license URL.
+
+This file is an attribution and license-reference notice, not a replacement
+for or modification of the official GSAP license. Consult the linked
+license for the complete terms and conditions. The official license page
+identifies Webflow as the rights holder.
+
+Verified against the installed package and the official standard-license
+page on 2026-10-05.

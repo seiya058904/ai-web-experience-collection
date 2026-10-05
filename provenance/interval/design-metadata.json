@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T11:39:13.710975+00:00",
+  "title": "Design System: INTERVAL",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "暖纸白",
+        "tonalRamp": [
+          "oklch(15.000% 0.00958 93.572)",
+          "oklch(26.429% 0.00958 93.572)",
+          "oklch(37.857% 0.00958 93.572)",
+          "oklch(49.286% 0.00958 93.572)",
+          "oklch(60.714% 0.00958 93.572)",
+          "oklch(72.143% 0.00958 93.572)",
+          "oklch(83.571% 0.00958 93.572)",
+          "oklch(95.000% 0.00958 93.572)"
+        ],
+        "purpose": "Preview-only synthesized tonal ramp. The canonical implemented color is the matching DESIGN.md frontmatter token."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "深墨色",
+        "tonalRamp": [
+          "oklch(15.000% 0.00832 137.813)",
+          "oklch(26.429% 0.00832 137.813)",
+          "oklch(37.857% 0.00832 137.813)",
+          "oklch(49.286% 0.00832 137.813)",
+          "oklch(60.714% 0.00832 137.813)",
+          "oklch(72.143% 0.00832 137.813)",
+          "oklch(83.571% 0.00832 137.813)",
+          "oklch(95.000% 0.00832 137.813)"
+        ],
+        "purpose": "Preview-only synthesized tonal ramp. The canonical implemented color is the matching DESIGN.md frontmatter token."
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "温灰绿",
+        "tonalRamp": [
+          "oklch(15.000% 0.01620 124.804)",
+          "oklch(26.429% 0.01620 124.804)",
+          "oklch(37.857% 0.01620 124.804)",
+          "oklch(49.286% 0.01620 124.804)",
+          "oklch(60.714% 0.01620 124.804)",
+          "oklch(72.143% 0.01620 124.804)",
+          "oklch(83.571% 0.01620 124.804)",
+          "oklch(95.000% 0.01620 124.804)"
+        ],
+        "purpose": "Preview-only synthesized tonal ramp. The canonical implemented color is the matching DESIGN.md frontmatter token."
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "浅石灰线",
+        "tonalRamp": [
+          "oklch(15.000% 0.01649 106.759)",
+          "oklch(26.429% 0.01649 106.759)",
+          "oklch(37.857% 0.01649 106.759)",
+          "oklch(49.286% 0.01649 106.759)",
+          "oklch(60.714% 0.01649 106.759)",
+          "oklch(72.143% 0.01649 106.759)",
+          "oklch(83.571% 0.01649 106.759)",
+          "oklch(95.000% 0.01649 106.759)"
+        ],
+        "purpose": "Preview-only synthesized tonal ramp. The canonical implemented color is the matching DESIGN.md frontmatter token."
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "深灰绿焦点",
+        "tonalRamp": [
+          "oklch(15.000% 0.04973 125.406)",
+          "oklch(26.429% 0.04973 125.406)",
+          "oklch(37.857% 0.04973 125.406)",
+          "oklch(49.286% 0.04973 125.406)",
+          "oklch(60.714% 0.04973 125.406)",
+          "oklch(72.143% 0.04973 125.406)",
+          "oklch(83.571% 0.04973 125.406)",
+          "oklch(95.000% 0.04973 125.406)"
+        ],
+        "purpose": "Preview-only synthesized tonal ramp. The canonical implemented color is the matching DESIGN.md frontmatter token."
+      },
+      "moss": {
+        "role": "primary",
+        "displayName": "苔灰绿选中态",
+        "tonalRamp": [
+          "oklch(15.000% 0.04063 128.604)",
+          "oklch(26.429% 0.04063 128.604)",
+          "oklch(37.857% 0.04063 128.604)",
+          "oklch(49.286% 0.04063 128.604)",
+          "oklch(60.714% 0.04063 128.604)",
+          "oklch(72.143% 0.04063 128.604)",
+          "oklch(83.571% 0.04063 128.604)",
+          "oklch(95.000% 0.04063 128.604)"
+        ],
+        "purpose": "Preview-only synthesized tonal ramp. The canonical implemented color is the matching DESIGN.md frontmatter token."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "入口字标",
+        "purpose": "只在入口建立横向身份与比例。"
+      },
+      "headline": {
+        "displayName": "空间短标题",
+        "purpose": "影像之外的克制标题。"
+      },
+      "body": {
+        "displayName": "注释正文",
+        "purpose": "材料与空间的短说明。"
+      },
+      "label": {
+        "displayName": "空间编号",
+        "purpose": "大写编号与名称。"
+      },
+      "control": {
+        "displayName": "操作文字",
+        "purpose": "Index、Close 等可操作控件。"
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "index-icon",
+        "value": "transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1)",
+        "purpose": "加号悬停旋转。"
+      },
+      {
+        "name": "enter-arrow",
+        "value": "transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "入口箭头轻移。"
+      },
+      {
+        "name": "navigation-underline",
+        "value": "transform 0.3s ease",
+        "purpose": "当前或悬停导航的细线。"
+      },
+      {
+        "name": "index-row",
+        "value": "transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "目录行的编号与名称以 translateX(12px) 轻推，不改变行布局。"
+      },
+      {
+        "name": "toggle",
+        "value": "0.2s",
+        "purpose": "开关位置与背景状态。"
+      },
+      {
+        "name": "journey-driver",
+        "value": "1 Lenis (autoRaf=false) + 1 GSAP ticker entry + 1 ScrollTrigger",
+        "purpose": "唯一滚动与渲染生命周期。"
+      },
+      {
+        "name": "scene-handoff",
+        "value": "local progress 0.65–1",
+        "purpose": "完整构图之后的建筑交接。"
+      },
+      {
+        "name": "matter-trace",
+        "value": "local progress 0.15–0.56",
+        "purpose": "材料边缘的结构描线。"
+      },
+      {
+        "name": "stable-camera-travel",
+        "value": "1 → 1.038 desktop; 1 → 1.027 mobile",
+        "purpose": "前65%进度中的小幅相机推进。"
+      },
+      {
+        "name": "ambient-breath",
+        "value": "x ±0.45px; y ±0.25px; base scale 1.002",
+        "purpose": "独立子层的极轻呼吸，交接时退去。"
+      },
+      {
+        "name": "reduced-motion",
+        "value": "native document flow; ambient and drawing hidden; spatial engine destroyed",
+        "purpose": "保留内容与导航，关闭连续穿越。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-desktop",
+        "value": "(min-width: 2000px)"
+      },
+      {
+        "name": "tablet",
+        "value": "(max-width: 1000px)"
+      },
+      {
+        "name": "mobile",
+        "value": "(max-width: 700px)"
+      },
+      {
+        "name": "compact-mobile",
+        "value": "(max-width: 380px)"
+      },
+      {
+        "name": "short-desktop",
+        "value": "(max-height: 590px) and (min-width: 701px)",
+        "purpose": "矮横屏入口：字标 min(10.7vw,96px)，介绍标题23px、说明10px，首屏介绍区bottom12px；引擎桌面height<=590时heroBottom76px。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Index button",
+      "kind": "button",
+      "refersTo": "index-button",
+      "description": "文字与细线加号组成的无填色目录入口。",
+      "html": "<button class=\"ds-index-button\" type=\"button\">Index <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M12 3v18M3 12h18\" stroke=\"currentColor\" stroke-width=\"1.1\"/></svg></button>",
+      "css": ".ds-index-button{display:flex;align-items:center;gap:7px;min-height:44px;padding:7px 0 7px 16px;border:0;border-radius:0;background:none;color:var(--ink);font:450 13px Manrope,Arial,sans-serif;cursor:pointer}.ds-index-button svg{width:20px;height:20px;transition:transform .4s cubic-bezier(.2,.7,.2,1)}.ds-index-button:hover svg{transform:rotate(90deg)}.ds-index-button:focus-visible{outline:2px solid #576344;outline-offset:6px;}"
+    },
+    {
+      "name": "Chapter navigation",
+      "kind": "nav",
+      "refersTo": "chapter-nav",
+      "description": "细线、当前幕下划线与克制文字建立行进位置。",
+      "html": "<nav class=\"ds-chapter-nav\" aria-label=\"The six spaces\"><a href=\"#threshold\">Threshold</a><a href=\"#light\" aria-current=\"page\">Light</a><a href=\"#frame\">Frame</a><a href=\"#matter\">Matter</a><a href=\"#void\">Void</a><a href=\"#silence\">Silence</a></nav>",
+      "css": ".ds-chapter-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:54px;border-top:1px solid var(--rule);background:var(--paper);font-family:Manrope,Arial,sans-serif}.ds-chapter-nav a{position:relative;display:flex;align-items:center;min-height:44px;font-size:12px;text-decoration:none;color:var(--muted)}.ds-chapter-nav a::after{content:\"\";position:absolute;bottom:9px;left:0;right:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}.ds-chapter-nav a:hover,.ds-chapter-nav a[aria-current]{color:var(--ink)}.ds-chapter-nav a:hover::after,.ds-chapter-nav a[aria-current]::after{transform:scaleX(1)}.ds-chapter-nav a:focus-visible{outline:2px solid #576344;outline-offset:6px;}"
+    },
+    {
+      "name": "Scene caption",
+      "kind": "custom",
+      "refersTo": "scene-caption",
+      "description": "影像外的编号、短标题与注释；保持建筑画面完整。",
+      "html": "<div class=\"ds-scene-caption\"><div class=\"ds-chapter-copy\"><p class=\"ds-chapter-label\">02 / LIGHT</p><h2>Light, given form.</h2></div><div class=\"ds-chapter-aside\"><p>A wall gives daylight its shape.</p><p>Follow the light. Find the next opening.</p></div></div>",
+      "css": ".ds-scene-caption{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:18px var(--gutter) 26px;color:var(--ink);font-family:Manrope,Arial,sans-serif}.ds-chapter-copy{max-width:69%}.ds-chapter-label{margin:0 0 8px;font-size:10px;letter-spacing:.25em;text-transform:uppercase;font-weight:600}.ds-chapter-copy h2{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(28px,3.3vw,88px);line-height:1.07;letter-spacing:-.035em;text-wrap:balance}.ds-chapter-aside{font-size:clamp(12px,1.01vw,21px);line-height:1.65;color:var(--muted);max-width:31%}.ds-chapter-aside p{margin:0}"
+    },
+    {
+      "name": "Index row",
+      "kind": "custom",
+      "refersTo": "index-row",
+      "description": "完整的一行空间链接，以编号、衬线名称和轻量箭头组成。",
+      "html": "<a class=\"ds-index-row\" href=\"#frame\"><span class=\"ds-index-number\">03</span><span class=\"ds-index-title\">Frame</span><svg viewBox=\"0 0 30 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M2 12h23M17 4l8 8-8 8\" stroke=\"currentColor\" stroke-width=\"1.1\"/></svg></a>",
+      "css": ".ds-index-row{display:flex;gap:25px;align-items:center;min-height:76px;padding:12px 6px 14px 0;border-bottom:1px solid var(--rule);color:var(--ink);text-decoration:none}.ds-index-row>span{transition:transform .3s cubic-bezier(.2,.8,.2,1)}.ds-index-number{font:11px Manrope,Arial,sans-serif;font-variant-numeric:tabular-nums;color:var(--muted)}.ds-index-title{font-family:var(--display);font-size:clamp(29px,3.3vw,76px);letter-spacing:-.03em;line-height:1}.ds-index-row svg{margin-left:auto;width:26px;height:22px;opacity:0;transform:translateX(-10px);transition:transform .3s,opacity .3s}.ds-index-row:hover>span,.ds-index-row[aria-current]>span{transform:translateX(12px)}.ds-index-row:hover svg,.ds-index-row[aria-current] svg{opacity:1;transform:translateX(0)}.ds-index-row:focus-visible{outline:2px solid #576344;outline-offset:6px;}"
+    },
+    {
+      "name": "Motion toggle",
+      "kind": "input",
+      "refersTo": "motion-toggle",
+      "description": "可直接交互的原生 checkbox，用文字解释静态阅读结果。",
+      "html": "<label class=\"ds-motion-setting\"><span><strong>Reduced motion</strong><small>A still, scrollable sequence of spaces.</small></span><input type=\"checkbox\" aria-label=\"Reduced motion\"/><span class=\"ds-toggle-track\" aria-hidden=\"true\"></span></label>",
+      "css": ".ds-motion-setting{position:relative;display:flex;align-items:center;justify-content:space-between;gap:15px;cursor:pointer;border-top:1px solid var(--rule);padding-top:20px;min-height:55px;color:var(--ink);font-family:Manrope,Arial,sans-serif}.ds-motion-setting strong{display:block;font-size:12px;font-weight:500}.ds-motion-setting small{display:block;font-size:10px;color:var(--muted);margin-top:5px;line-height:1.6}.ds-motion-setting input{position:absolute;right:0;width:42px;height:30px;opacity:0;z-index:2;cursor:pointer;margin:0}.ds-toggle-track{width:38px;height:22px;border:1px solid #929989;border-radius:20px;position:relative;flex-shrink:0;transition:background .2s}.ds-toggle-track::after{content:\"\";position:absolute;top:4px;left:4px;width:12px;height:12px;border-radius:50%;background:#7b8670;transition:transform .2s,background .2s}.ds-motion-setting input:checked+.ds-toggle-track{background:#647057;border-color:#647057}.ds-motion-setting input:checked+.ds-toggle-track::after{transform:translateX(15px);background:var(--paper)}.ds-motion-setting input:focus-visible+.ds-toggle-track{outline:2px solid #576344;outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Architecture Between Light & Space",
+    "overview": "INTERVAL 把网页作为一段建筑动线：纸白界面提供秩序，建筑影像决定画面的重量，光、阴影与遮挡引导观看。整体安静、触感真实、比例精确；长时间停留时仍有极轻的空间生命。\n\n视觉连续性来自同一座虚构海边建筑的材料、晨光与视线关系。字体负责入口识别和简短注释，正文避开摄影主体；空间交接由门洞、木柱和材料边缘完成。影像是本项目的 AI 概念创作，研究来源和生成记录分别保留在 ATTRIBUTION.md 与 docs/ASSET-PROVENANCE.json。",
+    "keyCharacteristics": [
+      "建筑影像主导，文字位于明确的安全边界。",
+      "暖纸白、混凝土、石材、木材与克制灰绿。",
+      "一个连续摄影机进度，完整展示之后才交接。",
+      "手机独立裁切，Reduced motion 保留完整可读内容。"
+    ],
+    "rules": [
+      {
+        "name": "The Light Rule",
+        "body": "界面的颜色维持安静的阅读秩序，让摄影中的自然光、阴影与材料承担主要色彩变化。",
+        "section": "colors"
+      },
+      {
+        "name": "The Margin Rule",
+        "body": "标题和正文保持在影像外的注释区；门洞、柱网、地平线与受光面留给建筑。",
+        "section": "typography"
+      },
+      {
+        "name": "The Threshold Rule",
+        "body": "每次空间交接必须依附影像中可辨认的建筑边界，并在该边界离开前建立下一空间。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 保持同一建筑的材料、主光方向、摄影视高和地平线关系。",
+      "Do 在更新影像时同步核对比例、手机焦点、门洞坐标和 Matter 描线。",
+      "Do 先形成完整构图，再让持续的微量运动引向下一空间。",
+      "Do 保留字体许可、影像来源记录、静态阅读与键盘焦点。"
+    ],
+    "donts": [
+      "Don't 把页面扩展成项目卡片墙、图片合集或建筑百科。",
+      "Don't 用黑屏、无依据的遮罩或下一节直接覆盖来替代建筑交接。",
+      "Don't 把大段正文、超大标题或装饰动画压在建筑主体上。",
+      "Don't 把生成影像描述成真实建筑摄影、原生 4K 素材或实测高帧率证明。"
+    ]
+  }
+}

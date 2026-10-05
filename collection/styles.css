@@ -26,7 +26,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 
 .world-orbital .world-title p{text-shadow:0 2px 10px #000,0 1px 3px #000;color:#f0f5f7}
 
-/* Six authored worlds: two triptychs, within one gallery seam. */
+/* Two existing triptychs remain within one gallery seam. */
 @font-face{font-family:Archivo;src:url('/glaze/fonts/archivo-latin-variable.woff2') format('woff2');font-weight:100 900;font-display:swap}
 .worlds{grid-template-columns:repeat(6,minmax(0,1fr))}.world{grid-column:span 2}.world-glaze,.world-kage,.world-chronos{height:65svh;max-height:1400px}
 .world-glaze{background:#e4e8df;color:#282d1b}.world-glaze .world-image img{object-fit:contain;object-position:75% 52%;padding:20px 0}.world-glaze .world-image:after{background:linear-gradient(90deg,#e4e8df,transparent 70%)}.world-glaze h2{font-family:Archivo,sans-serif;font-size:clamp(64px,8vw,280px);font-weight:600;letter-spacing:-.035em;line-height:.9}.world-glaze .world-title p{font-family:Archivo,sans-serif;font-size:clamp(24px,2.5vw,84px);line-height:1.08;margin-top:24px}
@@ -38,3 +38,8 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @font-face{font-family:'Cormorant Garamond';src:url('/chronos/fonts/cormorant-garamond-latin-300-italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
 .world-chronos{background:#0a0b0d;color:#eee9df}.world-chronos .world-image img{object-position:65% 55%}.world-chronos .world-image:after{background:linear-gradient(180deg,#0a0b0d66,transparent 50%,#0a0b0df2)}.world-chronos h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(20px,1.7vw,60px);letter-spacing:.2em}.world-chronos .world-title{text-shadow:0 2px 12px #000,0 1px 3px #000}.world-chronos .world-title p{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(42px,4.1vw,149px);line-height:.98;margin-top:22px;letter-spacing:-.025em}
 @media(max-width:700px){.world-glaze,.world-kage,.world-chronos{grid-column:auto}.world-kage h2{font-size:64px}.world-chronos h2{font-size:26px}.world-chronos .world-title p{font-size:54px}}
+
+/* INTERVAL keeps its architectural horizon and supplied editorial typography. */
+@font-face{font-family:'Bodoni Moda';src:url('/interval/fonts/bodoni-moda-latin-variable.woff2') format('woff2');font-weight:400 900;font-display:swap}
+.world-interval{grid-column:1/-1;height:65svh;max-height:1400px;background:#eeece5;color:#292c28}.world-interval .world-image img{object-position:65% 50%}.world-interval .world-image:after{background:linear-gradient(90deg,#eeece5f5, #eeece5b0 25%,transparent 60%),linear-gradient(0deg,#eeece5df,transparent 30%)}.world-interval h2{font-family:'Bodoni Moda',Georgia,serif;font-size:clamp(46px,6.6vw,240px);font-weight:400;line-height:1;letter-spacing:-.035em}.world-interval .world-title p{font-family:'Bodoni Moda',Georgia,serif;font-size:clamp(27px,3.1vw,100px);line-height:1.08;margin-top:24px}.world-interval:focus-visible{outline-color:#576344}
+@media(max-width:700px){.world-interval{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-interval h2{font-size:clamp(43px,12vw,62px)}.world-interval .world-title p{font-size:34px}.world-interval .world-image img{object-position:63.5% 50%}.world-interval .world-image:after{background:linear-gradient(180deg,#eeece5f2, #eeece540 40%,transparent 60%,#eeece5f5)}}
