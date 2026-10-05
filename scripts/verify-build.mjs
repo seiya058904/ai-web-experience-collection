@@ -9,6 +9,27 @@ assert(base?.startsWith('/'), 'Collection links must carry the configured absolu
 for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
+const site = `https://seiya058904.github.io${base}`;
+for (const [file, route, title] of [
+  ['index.html', '', 'AI Web Experience Collection'],
+  ['credits.html', 'credits.html', 'About & credits — AI Web Experience Collection'],
+  ['f1/index.html', 'f1/', 'F1 / Beyond the Limit — 速度之外'],
+  ['verdant/index.html', 'verdant/', 'VERDANT — A living spring'],
+  ['orbital/index.html', 'orbital/', 'ORBITAL — Beyond Earth'],
+]) {
+  const html = await readFile(join(root, file), 'utf8');
+  assert(html.includes(`<title>${title}</title>`), `Incorrect document identity: ${file}`);
+  assert(html.includes(`rel="canonical" href="${site}${route}"`), `Incorrect canonical URL: ${file}`);
+  assert(html.includes(`property="og:url" content="${site}${route}"`), `Incorrect social URL: ${file}`);
+  assert(html.includes('property="og:site_name" content="AI Web Experience Collection"'), `Missing Collection identity: ${file}`);
+  assert(/name="description"\s+content="[^"]+"/.test(html), `Missing description: ${file}`);
+  assert(/property="og:description"\s+content="[^"]+"/.test(html), `Missing social description: ${file}`);
+  for (const attribute of ['property="og:image"', 'name="twitter:image"']) {
+    const url = html.match(new RegExp(`${attribute} content="([^"]+)"`))?.[1];
+    assert(url?.startsWith(site), `Social image escaped deployment base: ${file}`);
+    assert((await stat(join(root, url.slice(site.length)))).size > 0, `Missing social image: ${file}`);
+  }
+}
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {
   if (!['.html', '.css'].includes(extname(relative))) continue;

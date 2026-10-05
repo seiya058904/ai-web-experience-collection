@@ -2,7 +2,7 @@
 
 ## Scope and entrypoints
 
-Three accepted complete works share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
+AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of three accepted complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), and ORBITAL (space / rockets / deep space). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
 
 - `index.html`, `src/collection.ts`, `src/collection.css`: Collection entrance. Read `design/COLLECTION.md` before changing it.
 - `f1/index.html`, `src/main.ts`, `src/styles.css`: F1 document, startup and composition. Read `DESIGN.md` and `SCROLL-AUDIT.md` before changing F1 layout or motion.
@@ -32,4 +32,4 @@ There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scr
 
 After UI/motion changes, inspect complete frames at 390×844, 768×1024, 1440×900, 1920×1080, 2560×1440 and 3840×2160, plus wide/short VERDANT. Exercise slow/normal/fine/high-frequency wheel, fast down/reverse, arbitrary stops, scene boundaries, disclosures, every control, menus, reduced motion, immediate-load input, resize and tab recovery. Record actual observations; physical touch, iOS and high-refresh hardware require actual devices.
 
-Pages workflow builds with its returned base path, tests output references, then deploys only `dist/` on `main`. Before authorized release, run the README project-path build/preview and verify direct loads, refresh, home/work/back navigation, fonts/images/GLB, WebGL/Canvas and both production license files. After deployment, compare live asset bytes with the verified build and repeat core desktop/mobile flows. Close with exact commit, Git parity and clean state.
+The production entrance is `https://seiya058904.github.io/ai-web-experience-collection/`. Pages workflow builds with its returned base path, tests output references, then deploys only `dist/` on `main`. Canonical/social URLs use the Pages origin and `%BASE_URL%`; preserve each subsite's independent name. Before authorized release, run the README project-path build/preview and verify direct loads, refresh, home/work/back navigation, fonts/images/GLB, WebGL/Canvas and both production license files. After deployment, compare live asset bytes with the verified build and repeat core desktop/mobile flows. Close with exact commit, Git parity and clean state.

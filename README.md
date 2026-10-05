@@ -1,71 +1,63 @@
 # AI Web Experience Collection
 
-[Open the Collection](https://seiya058904.github.io/f1-beyond-the-limit/)
+A showcase of cinematic, motion-driven web experiences exploring speed, nature, architecture and space.
 
-Three complete, independent web experiences, brought together through a restrained visual entrance. No iframe and no client-side route fallback: each work has its own HTML document, CSS, runtime and lifecycle.
+[Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
 
-| Route (relative to the deployment base) | Experience | Runtime |
+## Experiences
+
+| Experience | World | Entrance |
 | --- | --- | --- |
-| `/` | Collection — three visual entrances | HTML / CSS, optional pointer response |
-| `/f1/` | **Beyond the Limit** — Formula 1, Chinese | TypeScript, GSAP, Lenis, SVG / Canvas |
-| `/verdant/` | **VERDANT** — nature, spring and architecture | React, GSAP, Lenis, photographic WebGL surfaces |
-| `/orbital/` | **ORBITAL** — rockets and deep space | React, GSAP, Lenis, Three.js with Canvas fallback |
-| `/credits.html` | Collection provenance and licenses | Static HTML |
+| **Beyond the Limit** | Formula 1, speed and racing engineering through cinematic scroll storytelling. | [`/f1/`](https://seiya058904.github.io/ai-web-experience-collection/f1/) |
+| **VERDANT** | A quiet passage through spring, botanical landscapes, architecture and light. | [`/verdant/`](https://seiya058904.github.io/ai-web-experience-collection/verdant/) |
+| **ORBITAL** | An illustrative journey through rockets, orbital flight and deep space. | [`/orbital/`](https://seiya058904.github.io/ai-web-experience-collection/orbital/) |
 
-VERDANT and ORBITAL were integrated from the supplied complete projects. Their scene code and production imagery are retained; unused server/auth/database starter code and duplicate builds are excluded. The small shared UI directory contains only the original Radix primitives actually used by the works. No account, backend, API key or external asset CDN is required. ORBITAL audio is synthesized after an explicit click; there are no runtime videos.
+Each work keeps its own imagery, typography, interactions and pace. The Collection entrance connects them through full document navigation.
 
-## Develop and build
+## Design Philosophy
 
-Use **Node.js 24 LTS and npm**. One lockfile fixes the dependencies; existing F1 versions were retained and imported dependencies use the versions from the supplied projects.
+Cinematic scrolling, continuous section handoffs and motion-driven storytelling. Responsive compositions and visual-first interaction give each world room to unfold; keyboard access and reduced motion preserve the reading experience. A single owned animation clock and bounded rendering cost support smooth motion on high-refresh displays. Physical-device and high-refresh hardware validation limits are recorded in [SCROLL-AUDIT.md](SCROLL-AUDIT.md).
+
+## Technology
+
+- Vite and TypeScript; HTML and CSS.
+- GSAP / ScrollTrigger and Lenis.
+- React for VERDANT and ORBITAL.
+- SVG / Canvas, photographic WebGL surfaces and Three.js; ORBITAL includes a Canvas compatibility renderer.
+
+## Development
+
+Use **Node.js 24 LTS and npm** with the committed lockfile.
 
 ```sh
 npm ci
-npm run dev                       # http://127.0.0.1:5173
-npm test                          # 7 F1 model + 2 orbital continuity tests
-npm run build                     # TypeScript + Vite multi-page build
-npm run verify:build              # check output routes, links, CSS assets and licenses
-npm run verify                    # all three checks, site-root build
+npm run dev
+npm run build
 npm run preview -- --port 4174 --strictPort
 ```
 
-Open `/`, `/f1/`, `/verdant/` or `/orbital/` on either server. Development uses real document navigation so leaving a work also releases its clocks, listeners, Canvas and WebGL resources.
-
-To reproduce GitHub Pages' project path:
-
-```sh
-npm run build -- --base=/f1-beyond-the-limit/
-npm run verify:build
-npm run preview -- --port 4175 --strictPort --base=/f1-beyond-the-limit/
-```
-
-Then open `http://127.0.0.1:4175/f1-beyond-the-limit/`. Vite rewrites HTML/CSS assets; dynamically loaded imagery, textures, GLB and links use `import.meta.env.BASE_URL`. Keep trailing slashes on work URLs. There is no SPA rewrite requirement. A deployment to a different base needs a rebuild, not an edited compiled bundle.
-
-## Structure
-
-- `index.html`, `src/collection.*`: Collection homepage.
-- `f1/index.html`, `src/{main,motion,choreography,interactions,models}.ts`, `src/styles.css`: original F1 experience.
-- `verdant/index.html`, `experiences/verdant/`: original React scenes, journey and surface renderer.
-- `orbital/index.html`, `experiences/orbital/`: original mission, spacecraft, audio and compatibility renderer.
-- `experiences/shared/`: used Radix UI primitives and the consistent Collection return link.
-- `public/media`, `public/fonts`: F1 resources; `public/verdant` and `public/orbital`: namespaced imported resources.
-- `assets/imports.json`, `ATTRIBUTION.md`, app source notices, `public/licenses.txt`: provenance and licenses.
-- `design/COLLECTION.md`: Collection visual contract; `DESIGN.md`: F1 visual contract; `SCROLL-AUDIT.md`: handoff architecture and bounded verification record.
-- `scripts/verify-build.mjs`: checks actual production documents and referenced local files. `scripts/prepare-*.mjs` are deliberate F1 resource import tools, **not** verification commands.
-
-## Motion and typography changes
-
-F1 retains its single Lenis / GSAP clock, 0.105 interpolation, direct scrub, measured normal-flow sticky shells and protected reading regions. The added Hold travel is shorter; scroll input now advances a reversible 12px foreground drift and restrained existing-image scale during that interval. Text does not fade until the original exit range. The shared trajectory still belongs to the transition. Reduced motion removes sticky storytelling and the new movement.
-
-VERDANT's display typography remains large. Architecture, Understory and Coda now group related text in normal flow with explicit gaps. A wide/short Architecture composition uses two title lines rather than letting a width-scaled three-line title collide with prose positioned by height. Mobile Arrival and Coda use the same safe grouping principle. Resource readiness in both imported works is deferred until scroll inertia settles.
+Open `/`, `/f1/`, `/verdant/` or `/orbital/`. Run `npm run verify` for the nine model/continuity tests, production build and output-reference checks. Asset import scripts are maintenance tools, not verification commands.
 
 ## Deployment
 
-`.github/workflows/pages.yml` runs on `main` push or manual dispatch. It performs `npm ci`, all nine tests, a Pages-base production build, and output verification before uploading **only `dist/`**. GitHub Pages serves the four independent entrances from that artifact. Do not commit `dist/`, dependency caches, ZIP exports or browser evidence.
+GitHub Pages serves separate HTML documents for the Collection and each experience, with no iframe or SPA fallback. Routes above are relative to the deployment base, `/ai-web-experience-collection/`.
 
-Production preserves upstream legal comments and emits `third-party-licenses.md`; ship it with `licenses.txt` and the namespaced font notices. The `credits.html` page links to these files and explains the generated imagery and independent, unofficial nature of the projects.
+[Deploy Pages](.github/workflows/pages.yml) runs on `main` pushes or manual dispatch. It installs locked dependencies, runs tests, builds with the base path returned by GitHub Pages, verifies routes and assets, and deploys only `dist/`. The [Verify workflow](.github/workflows/verify.yml) independently runs `npm run verify`.
 
-## Verification scope
+Reproduce the production path locally:
 
-Browser checks cover desktop 1920×1080, 2560×1440, 3840×2160, 1440×900, tablet 768×1024, phone 390×844 and the 1920×900 overlap reproduction. The release record is in `SCROLL-AUDIT.md`. Model tests and CI do not replace browser acceptance. Browser viewport emulation does not certify physical touchpad momentum, iOS Safari or 120/144 Hz hardware. Do not infer those results from a screenshot, synthetic wheel input or an older supplied-project README.
+```sh
+npm run build -- --base=/ai-web-experience-collection/
+npm run verify:build
+npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
+```
 
-This collection is independent of Formula 1, the FIA, racing teams, NASA and SpaceX. Generated scenes and models are illustrative; original and third-party rights remain distinct.
+Open `http://127.0.0.1:4175/ai-web-experience-collection/`. Asset URLs and Collection links use Vite's configured base; keep trailing slashes on experience URLs. A different deployment base requires a rebuild. Production canonical and social URLs use the GitHub Pages origin and that same base.
+
+## Credits / Assets
+
+See [About & credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html), [ATTRIBUTION.md](ATTRIBUTION.md), [import provenance](assets/imports.json), [VERDANT asset sources](experiences/verdant/ASSET-SOURCES.md) and [ORBITAL source notes](experiences/orbital/SOURCE.md).
+
+Production includes `licenses.txt`, `third-party-licenses.md` and namespaced font notices. Preserve them and upstream legal comments. The social preview reuses the three works' existing illustrations. Imagery and models are illustrative; ORBITAL audio is synthesized only after activation. No runtime video files are used.
+
+Original work is governed by [LICENSE](LICENSE); third-party materials retain their own terms. This independent collection has no affiliation with Formula 1, FIA, racing teams, NASA or SpaceX.

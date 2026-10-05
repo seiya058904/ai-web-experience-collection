@@ -1,4 +1,4 @@
-# F1 / Beyond the Limit
+# AI Web Experience Collection
 
 <!-- impeccable:product-schema 1 -->
 
@@ -8,40 +8,39 @@ web
 
 ## Stack
 
-Vite, TypeScript, Lenis and GSAP / ScrollTrigger; semantic HTML and CSS, with lightweight SVG and Canvas where interaction needs them. No service or account is required.
+Vite and TypeScript; HTML and CSS; GSAP / ScrollTrigger and Lenis. VERDANT and ORBITAL use React. Rendering includes SVG, Canvas, photographic WebGL surfaces and Three.js, with an ORBITAL Canvas compatibility path. No service, account or external asset CDN is required.
 
 ## Users
 
-Chinese-speaking visitors who may know nothing about Formula 1, using desktop, trackpad, mouse or touch devices.
+Visitors exploring immersive visual experiences on desktop, tablet and phone. Beyond the Limit presents Chinese educational content; VERDANT and ORBITAL retain their independent English narratives.
 
 ## Product Purpose
 
-A complete, visually ambitious educational journey that makes the engineering and human decisions behind Formula 1 understandable. Success means visitors enjoy continuing to scroll and can explain downforce, hybrid energy, tyres and race strategy afterwards.
+A showcase collection of complete, independent web experiences. Visitors choose a world, explore its visual story and return to the Collection:
+
+- **Beyond the Limit** (`/f1/`): Formula 1, speed and racing engineering.
+- **VERDANT** (`/verdant/`): spring, nature, botanical landscapes, architecture and light.
+- **ORBITAL** (`/orbital/`): rockets, orbital flight, aerospace engineering and deep space.
 
 ## Capabilities and Constraints
 
-- Cinematic introduction, connected scroll storytelling, technical visual interactions and a purposeful ending.
-- Desktop at 1080p, 1440p and 4K; a separately composed mobile experience.
-- Natural scrolling, reduced-motion support, keyboard operation, no inaccessible scroll traps.
-- Prefer mature animation libraries and a bounded rendering cost over gratuitous 3D.
-- Source factual content from Formula 1, FIA and technical manufacturers. Distinguish current 2026 systems from historical DRS.
-- Retain asset and dependency provenance; publish only materials with a clear distribution basis. The public repository preserves the accepted product baseline and separates author rights from third-party licenses.
-- No subagents; implementation and review remain in this chat.
+- A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
+- Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
+- Preserve the accepted imagery, typography, controls, timing and content of all three works. Do not impose a common visual theme or expand the entrance into a fourth story.
+- One Lenis instance and one owned GSAP clock per experience. Retain rendering caps, visibility suspension, teardown and read-position retention.
+- Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
+- Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
+- F1 educational sources and distinctions between current 2026 systems and historical DRS remain specific to Beyond the Limit.
+- No subagents or dependency updates without explicit authorization.
 
 ## Brand Commitments
 
-The user requests an Apple-calibre sense of restraint, cinematic imagery, strong typography, controlled space and coherent motion. Carbon, metal, white and racing red are permitted. Avoid conventional template layouts and decorative effect accumulation.
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects three distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, and ORBITAL's spacecraft and planetary horizon. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](design/COLLECTION.md) and [F1's design contract](DESIGN.md).
 
 ## Evidence on Hand
 
-The current visual, interaction and section-handoff version has passed user acceptance. Runtime resources are local, seven model tests and a production verification command are maintained, and scroll architecture evidence is recorded in SCROLL-AUDIT.md. Generated illustrative media must not be represented as official team photography or exact engineering drawings. Physical-device and external-browser limits remain documented in README.md.
+The three integrated experiences have passed user acceptance and are deployed through GitHub Pages. Nine model/continuity tests and production-reference verification are maintained. [SCROLL-AUDIT.md](SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 
-Meaningful content remains available with reduced motion; touch retains native scrolling; every interaction needs readable labels and keyboard equivalents.
-
-## Collection expansion — 2026-10-05
-
-The root now introduces three independent finished experiences: Beyond the Limit at `/f1/`, VERDANT at `/verdant/`, ORBITAL at `/orbital/`. The Collection visitor chooses a world and can return through a consistent quiet header link. Each work retains its own identity and runtime. The entrance is an Experience surface: a full-width photographic triptych with a modest pointer response, never a nested app or elaborate fourth story.
-
-The imported React works use the same Vite multi-page build and lockfile. Preserve their existing GSAP/Lenis ownership, WebGL/Canvas fallbacks and accessible controls. The user's current authorization replaces the former frozen-handoff constraint only for F1's excessive static Hold and the documented VERDANT typography collisions. Existing F1 scientific content, generated illustration notices and all asset/license requirements remain.
+Meaningful content remains available with reduced motion; touch retains native scrolling; controls retain readable labels and keyboard equivalents. Browser viewport emulation does not certify physical touch, iOS Safari or high-refresh hardware.

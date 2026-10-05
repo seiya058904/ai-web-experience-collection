@@ -2,7 +2,7 @@
 
 公开分发复核日期：2026-10-05。自有部分保留版权，详见 [LICENSE](LICENSE)；本项目没有为整个仓库授予 MIT 或其他宽松开源许可。下列第三方材料继续适用各自许可证。
 
-## 随仓库分发的素材
+## Beyond the Limit — 随仓库分发的素材
 
 | 材料 / 位置 | 来源 | 权利与使用说明 |
 | --- | --- | --- |
@@ -14,7 +14,7 @@
 
 历史设计概念图包含生成的 F1 / 车队标识及不准确标签，属于本地设计过程材料。`design/concepts/` 已明确排除出公开仓库和生产构建，不作为可重新分发的正式素材。`assets/provenance.json` 保留生成阶段的历史来源记录，其中的本地概念图目录不随仓库提供。
 
-没有生产视频或音频素材。运行时图片、字体和赛道数据均本地提供，无需外部素材 CDN。
+Beyond the Limit 没有生产视频或音频素材。运行时图片、字体和赛道数据均本地提供，无需外部素材 CDN。VERDANT 与 ORBITAL 的素材及声音说明见下方各作品记录。
 
 ## npm 与第三方代码
 
@@ -32,13 +32,13 @@
 
 `vite.config.ts` 显式保留上游 legal comments，并生成 `dist/third-party-licenses.md` 构建依赖许可清单。公开发布构建时保留该清单；Sharp 等离线处理工具的二进制不属于浏览器产物。
 
-## 内容与设计参考
+## Beyond the Limit — 内容与设计参考
 
 正文引用的 Formula 1、FIA 和技术制造商资料可在网站页脚查阅，内容核查基准为 2026-10-04。空气动力、能量条、轮胎性能和进站方案用于教学；它们不是车队遥测、实时赛事数据或最佳策略承诺。
 
 视觉研究参考 [Apple AirPods Pro](https://www.apple.com/airpods-pro/)、[Lenis](https://lenis.darkroom.engineering/) 和 [Apart Collective / Charles Leclerc](https://apart-collective.com/works/charles-leclerc/) 的尺度、节奏与运动表达，没有将这些网站的代码或媒体纳入项目。GitHub 的实际素材复用为上述赛道数据；没有纳入 CodePen 实现或无法确认许可的复制代码。
 
-这是独立、非官方的 F1 教育展示项目，不与 Formula 1、FIA、车队或赞助商存在隶属或认可关系。第三方名称、商标与所链接资料仍属于各自权利人。
+Beyond the Limit 是 Collection 中独立、非官方的 F1 教育展示作品，不与 Formula 1、FIA、车队或赞助商存在隶属或认可关系。第三方名称、商标与所链接资料仍属于各自权利人。
 
 ## Collection additions (2026-10-05)
 
@@ -46,7 +46,7 @@
 
 - **VERDANT:** four original AI-generated botanical / architectural plates and their responsive WebP derivatives; Instrument Serif and DM Sans with their OFL notices. See [the supplied asset record](experiences/verdant/ASSET-SOURCES.md). Runtime resources are now under `public/verdant/`.
 - **ORBITAL:** original illustrative spacecraft GLB, layered compatibility renders and cinematic plates supplied with the project. Earth / Moon / cloud textures credit NASA / Goddard (Reto Stöckli for the cloud composite). Sources are retained in `experiences/orbital/SOURCE.md` and the in-experience credits. Fonts retain their OFL notices. Runtime resources are under `public/orbital/`.
-- **Collection:** reuses those same production image files; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
+- **Collection:** reuses those same production image files, including the three-panel `public/collection-social.jpg` social preview; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
 - React, Radix UI, Lucide, Three.js and the used utility packages retain their own licenses. The imported shadcn stylesheet's MIT notice remains beside it. The production dependency inventory includes the actually bundled libraries; it does not grant rights to imagery or replace GSAP's terms.
 
-The earlier F1-only statement about no audio applies to F1. ORBITAL synthesizes optional audio in code after the sound control is activated; no audio recording or video file was added. The Collection is independent of Formula 1, FIA, racing teams, NASA and SpaceX. See the production `credits.html` for visitor-facing attribution and license links.
+ORBITAL synthesizes optional audio in code after the sound control is activated; no audio recording or video file was added. AI Web Experience Collection is independent of Formula 1, FIA, racing teams, NASA and SpaceX. See the production `credits.html` for visitor-facing attribution and license links.

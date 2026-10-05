@@ -2,6 +2,16 @@
   "name": "ai-web-experience-collection",
   "private": true,
   "version": "2.0.0",
+  "description": "A collection of cinematic, motion-driven web experiences exploring Formula 1, nature, architecture and space.",
+  "license": "UNLICENSED",
+  "homepage": "https://seiya058904.github.io/ai-web-experience-collection/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seiya058904/ai-web-experience-collection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seiya058904/ai-web-experience-collection/issues"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
