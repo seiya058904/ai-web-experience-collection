@@ -457,6 +457,347 @@
           "sha256": "152ba04f17529496b341a29f612b537c8ae29990f155e99a7b274408b87b5e62"
         }
       ]
+    },
+    {
+      "archive": "CHRONOS-complete-project.zip",
+      "sha256": "9b71b309b4068d13f8faed8f4ac208766e8016388dbfaf6c1bd948674b60f446",
+      "entries": [
+        {
+          "path": "CHRONOS/.gitignore",
+          "bytes": 81,
+          "sha256": "69b2e6b6f1b1f10d6a003c5e6d34daa65dd828b3a2d58636d7ed6314ed277946"
+        },
+        {
+          "path": "CHRONOS/.impeccable/design.json",
+          "bytes": 26630,
+          "sha256": "9b86c4dcd3cf7d4aaa0e757d2b1dbb1022417156a519c0783b6b1298c590cca0"
+        },
+        {
+          "path": "CHRONOS/.impeccable/surfaces/experience.md",
+          "bytes": 1578,
+          "sha256": "dc17953939c6ba8e8932f179daaca1501010441935f6aab9249cc06909a26673"
+        },
+        {
+          "path": "CHRONOS/ATTRIBUTION.md",
+          "bytes": 4904,
+          "sha256": "a3490d8a998d02d79990520e2a3cc329d49277379ab368772975f8d64f8c5b82"
+        },
+        {
+          "path": "CHRONOS/DESIGN.md",
+          "bytes": 19676,
+          "sha256": "25f918b1a287ad1ade25007f0036bcd53e37cf5e51d651c181ec50910ea82fd2"
+        },
+        {
+          "path": "CHRONOS/LICENSE",
+          "bytes": 1457,
+          "sha256": "10bc025c7511d2a181197e450ece6dd3f2617665831ae45d27071cbdaaa90c34"
+        },
+        {
+          "path": "CHRONOS/PRODUCT.md",
+          "bytes": 2002,
+          "sha256": "e9b2a50a0b67787c70e199177b89ad47944b2447619f92404185a2f24a73a997"
+        },
+        {
+          "path": "CHRONOS/README.md",
+          "bytes": 8776,
+          "sha256": "bda2c4f565276a7e9955484eb5ecab93ec4febebe933f1ee504cc696c93922cb"
+        },
+        {
+          "path": "CHRONOS/Start-CHRONOS.cmd",
+          "bytes": 630,
+          "sha256": "dd2c6e082def7848bc3139db7e930ef69a1bea524743193ec6b6d235218548eb"
+        },
+        {
+          "path": "CHRONOS/THIRD_PARTY_NOTICES.md",
+          "bytes": 3925,
+          "sha256": "f3769727d404e7efd7fb5b0b6e0d628a3bc75c38b371dd8842a3d5c497c24fa6"
+        },
+        {
+          "path": "CHRONOS/dist/assets/WatchScene-B9eMJm3_.js",
+          "bytes": 36785,
+          "sha256": "8a0d1495ef27930d01dcf8411612bf3446678b669b9ba15c67a567e09419e47f"
+        },
+        {
+          "path": "CHRONOS/dist/assets/cormorant-garamond-latin-300-italic-DRnsRYID.woff",
+          "bytes": 31772,
+          "sha256": "f1fcfb1d2ffbc32dc96f9ade4e6b86cf30d012e51bfc6566ce06a95d9f1f8185"
+        },
+        {
+          "path": "CHRONOS/dist/assets/cormorant-garamond-latin-300-italic-qkwBXYHn.woff2",
+          "bytes": 22484,
+          "sha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a"
+        },
+        {
+          "path": "CHRONOS/dist/assets/cormorant-garamond-latin-300-normal-BuXLI6C0.woff",
+          "bytes": 29960,
+          "sha256": "7e0ceef064d516c531f4634b93ccd035bfefec833f7c03c500c284f12c777d77"
+        },
+        {
+          "path": "CHRONOS/dist/assets/cormorant-garamond-latin-300-normal-Cw-E_7L1.woff2",
+          "bytes": 21908,
+          "sha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7"
+        },
+        {
+          "path": "CHRONOS/dist/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+          "bytes": 22876,
+          "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2"
+        },
+        {
+          "path": "CHRONOS/dist/assets/cormorant-garamond-latin-400-normal-B7YtguxJ.woff",
+          "bytes": 30980,
+          "sha256": "b926f33f9d3d5cb64e639b8fe9ad5380560a63f3e7a29d212f2b80a2d22ec051"
+        },
+        {
+          "path": "CHRONOS/dist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff",
+          "bytes": 18356,
+          "sha256": "38702875fe179437d200e7ba6f7fab4d497ffe48117ef332029b2081751186ad"
+        },
+        {
+          "path": "CHRONOS/dist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2",
+          "bytes": 14200,
+          "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+        },
+        {
+          "path": "CHRONOS/dist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2",
+          "bytes": 14304,
+          "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+        },
+        {
+          "path": "CHRONOS/dist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff",
+          "bytes": 18520,
+          "sha256": "7deb957e430b780ee3272d801af4f9f2211b1330ec40a312a8f25309eacb4034"
+        },
+        {
+          "path": "CHRONOS/dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+          "bytes": 13144,
+          "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381"
+        },
+        {
+          "path": "CHRONOS/dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "bytes": 14708,
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+        },
+        {
+          "path": "CHRONOS/dist/assets/index-Dr5LwtYa.css",
+          "bytes": 23092,
+          "sha256": "5536a27dc56a011351ccc6b19a4798aed68ffdd0504518ea46c53a582978111e"
+        },
+        {
+          "path": "CHRONOS/dist/assets/index-QA3en4iv.js",
+          "bytes": 16597,
+          "sha256": "e89d205237e607629f0039ca04f9489d758bb66511600f22a05a00b010f1fac2"
+        },
+        {
+          "path": "CHRONOS/dist/assets/motion-BuTe_SpI.js",
+          "bytes": 131514,
+          "sha256": "7dc581d5e1f866023550c89e18738af6f58a85c7ad4fef87050357722406ec88"
+        },
+        {
+          "path": "CHRONOS/dist/assets/three-DSZNtcji.js",
+          "bytes": 576078,
+          "sha256": "b3082ce7d44051731ab1809efce484ecc0c417847c55ba7afa1944c0a6d918ed"
+        },
+        {
+          "path": "CHRONOS/dist/favicon.svg",
+          "bytes": 339,
+          "sha256": "7a2d9347002e37fc55e10a7f18b62377b10637c0189909db5d6051f2fdcafa31"
+        },
+        {
+          "path": "CHRONOS/dist/images/chronos-craft.webp",
+          "bytes": 219490,
+          "sha256": "c293494ba0cceefd5dadf8b19180a32ee41f2fef3e66c0a64f38a376e3b410f9"
+        },
+        {
+          "path": "CHRONOS/dist/images/chronos-watch.webp",
+          "bytes": 502662,
+          "sha256": "0fa7de91116ab3c2644e5c6822a8b8aac5568554dd2b2fa52793a0cab197df55"
+        },
+        {
+          "path": "CHRONOS/dist/index.html",
+          "bytes": 13655,
+          "sha256": "dd05de575af9aeac0f47f6222e5027d52048980d627a9fac0997843f193221d9"
+        },
+        {
+          "path": "CHRONOS/docs/MOTION.md",
+          "bytes": 12267,
+          "sha256": "e6546a7df892038e2d6002e986b8a180abb31193d4b46545350baac2d56728ac"
+        },
+        {
+          "path": "CHRONOS/docs/VERIFICATION.md",
+          "bytes": 8271,
+          "sha256": "e96191589357d252fe1ed0d2fb8970e2d548542086efd0900439fcfa6047b11e"
+        },
+        {
+          "path": "CHRONOS/index.html",
+          "bytes": 13476,
+          "sha256": "a3866dfe6d7c8de4e02aab035704b54c20d91aafce024fa9e455011ab5621b78"
+        },
+        {
+          "path": "CHRONOS/licenses/Cormorant-Garamond-OFL.txt",
+          "bytes": 4504,
+          "sha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73"
+        },
+        {
+          "path": "CHRONOS/licenses/DM-Sans-OFL.txt",
+          "bytes": 4502,
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+        },
+        {
+          "path": "CHRONOS/licenses/GSAP-NOTICES.txt",
+          "bytes": 1503,
+          "sha256": "ac2225ae3771e5852abc606600bbbd04146ebbd352fa5f767058541acf1f41c9"
+        },
+        {
+          "path": "CHRONOS/licenses/IBM-Plex-Mono-OFL.txt",
+          "bytes": 5299,
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+        },
+        {
+          "path": "CHRONOS/licenses/lenis-MIT.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "CHRONOS/licenses/three-MIT.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "CHRONOS/licenses/tsx-MIT.txt",
+          "bytes": 1088,
+          "sha256": "8dded67841a9261a622c739fb61c81785e93765de852828ceeb9403d20a74581"
+        },
+        {
+          "path": "CHRONOS/licenses/types-three-MIT.txt",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "CHRONOS/licenses/typescript-Apache-2.0.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "CHRONOS/licenses/typescript-THIRD-PARTY.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        },
+        {
+          "path": "CHRONOS/licenses/vite-LICENSE.md",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "CHRONOS/package-lock.json",
+          "bytes": 46093,
+          "sha256": "b471d41d493182e15ec7f225c2600f9cdfa85f63859e08d2b9f337ee9d0e5920"
+        },
+        {
+          "path": "CHRONOS/package.json",
+          "bytes": 871,
+          "sha256": "9e6956b7a880674e772f195765bbf2899d3e66e781b4cf778ea9b9072bb57d90"
+        },
+        {
+          "path": "CHRONOS/public/favicon.svg",
+          "bytes": 339,
+          "sha256": "7a2d9347002e37fc55e10a7f18b62377b10637c0189909db5d6051f2fdcafa31"
+        },
+        {
+          "path": "CHRONOS/public/images/chronos-craft.webp",
+          "bytes": 219490,
+          "sha256": "c293494ba0cceefd5dadf8b19180a32ee41f2fef3e66c0a64f38a376e3b410f9"
+        },
+        {
+          "path": "CHRONOS/public/images/chronos-watch.webp",
+          "bytes": 502662,
+          "sha256": "0fa7de91116ab3c2644e5c6822a8b8aac5568554dd2b2fa52793a0cab197df55"
+        },
+        {
+          "path": "CHRONOS/scripts/serve.mjs",
+          "bytes": 7127,
+          "sha256": "2481c23778eceb67399aa1a83405264bc6989b27bf2a708a178512d447762368"
+        },
+        {
+          "path": "CHRONOS/src/audio.ts",
+          "bytes": 2082,
+          "sha256": "9fec0331ab773cbea46e77d7fa2cff3845fe5aa8d9a7ba9d0665196f3f8cd223"
+        },
+        {
+          "path": "CHRONOS/src/main.ts",
+          "bytes": 24379,
+          "sha256": "562da65e7122db0b5490966f65097b4b3e42d339a75112a1c8220c5bd42c96f2"
+        },
+        {
+          "path": "CHRONOS/src/mechanics.ts",
+          "bytes": 7217,
+          "sha256": "256930561ce8552e9fa9b9ecb77b751e10f84ca3c14ce01d68f3e1c0270168ae"
+        },
+        {
+          "path": "CHRONOS/src/narrative.ts",
+          "bytes": 2535,
+          "sha256": "6ce8b40f05c5b7019eb932ec114add2671298be17ca6af0b7a7295af2fc493fc"
+        },
+        {
+          "path": "CHRONOS/src/scene/WatchScene.ts",
+          "bytes": 40059,
+          "sha256": "08ed6d54f4d54f45a22b3de086fd294f9662d390bc0d4b42de5172a6ebb7f003"
+        },
+        {
+          "path": "CHRONOS/src/scene/batch.ts",
+          "bytes": 3909,
+          "sha256": "ac1e37070fa730f878d33ee4d207be378a9347087f27513b33ec7cb1c6ad5baa"
+        },
+        {
+          "path": "CHRONOS/src/scene/geometry.ts",
+          "bytes": 13519,
+          "sha256": "ed486441b00389d3e84a63c56a8b4c6a10551a746f620706e2ab0b1873e34f7e"
+        },
+        {
+          "path": "CHRONOS/src/scene/materials.ts",
+          "bytes": 8396,
+          "sha256": "5587efc94b785c7f56bd87d559757c2d91fb02efb98d9bcec603c77c2ef6bfab"
+        },
+        {
+          "path": "CHRONOS/src/scene/studio.ts",
+          "bytes": 1356,
+          "sha256": "079ea6bb20e9b0fda32c4418b12644a57f882f9924f29c751fb733c62018d736"
+        },
+        {
+          "path": "CHRONOS/src/style.css",
+          "bytes": 25409,
+          "sha256": "373f554b874ca85d0c3ade0a9f264cb42aec05c4596c1a7a542e57f68cf350ed"
+        },
+        {
+          "path": "CHRONOS/src/vite-env.d.ts",
+          "bytes": 38,
+          "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+        },
+        {
+          "path": "CHRONOS/tests/mechanics.test.ts",
+          "bytes": 9014,
+          "sha256": "7c56d279f2ff41ee8c957cc17648ef01f782982f962025e99e0ddb7fdd6374ae"
+        },
+        {
+          "path": "CHRONOS/tests/narrative.test.ts",
+          "bytes": 5657,
+          "sha256": "0f60b1297aaee0cb69e7a6910c10a06eb738cc9dc2350236d34d8f3bbb066212"
+        },
+        {
+          "path": "CHRONOS/tests/spring.test.ts",
+          "bytes": 3704,
+          "sha256": "bbad726cc6d02e836e5be5e2e7453b7dd9da4e3bee62ce0508fedef60c983168"
+        },
+        {
+          "path": "CHRONOS/tsconfig.json",
+          "bytes": 444,
+          "sha256": "70232d690f14c70360a3c86c3325b6675e029790830b07464e2c315c849554d5"
+        },
+        {
+          "path": "CHRONOS/vite.config.ts",
+          "bytes": 488,
+          "sha256": "c44c52ee5e988669f490ad17fc199da32c0ab2ba09fbbd86219abbca19031184"
+        }
+      ]
     }
   ]
 }

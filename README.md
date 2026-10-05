@@ -1,6 +1,6 @@
 # AI Web Experience Collection
 
-Five complete, independent web experiences exploring speed, nature, space, ceramic color and spatial sculpture.
+Six complete, independent web experiences exploring speed, nature, space, ceramic color, spatial sculpture and mechanical time.
 
 [Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
 
@@ -13,6 +13,7 @@ Five complete, independent web experiences exploring speed, nature, space, ceram
 | **ORBITAL** | Rockets, orbital flight and deep space | [/orbital/](https://seiya058904.github.io/ai-web-experience-collection/orbital/) |
 | **GLAZE — Color Fired Into Form** | Seven studies of ceramics, glaze, color and light | [/glaze/](https://seiya058904.github.io/ai-web-experience-collection/glaze/) |
 | **KAGE / VOID** | Eight continuous movements in black, white, light and shadow | [/kage/](https://seiya058904.github.io/ai-web-experience-collection/kage/) |
+| **CHRONOS — The Architecture of Time** | A cinematic journey into a mechanical watch | [/chronos/](https://seiya058904.github.io/ai-web-experience-collection/chronos/) |
 
 Each work keeps its own imagery, typography, controls and pace. The gallery uses full document navigation; only the selected work's runtime starts. No iframe or SPA fallback.
 
@@ -20,13 +21,13 @@ Each work keeps its own imagery, typography, controls and pace. The gallery uses
 
 ```text
 collection/          Gallery styles, pointer interaction and credits styles
-pages/               Vite HTML root: home, credits and five route documents
-experiences/         f1, verdant, orbital, glaze, kage and shared UI
+pages/               Vite HTML root: home, credits and six route documents
+experiences/         f1, verdant, orbital, glaze, kage, chronos and shared UI
 public/              Namespaced runtime assets, fonts and license notices
-docs/                Collection, F1, GLAZE and KAGE design/architecture contracts
+docs/                Collection, F1, GLAZE, KAGE and CHRONOS design/architecture contracts
 provenance/          Unique masters, source records, import hashes and delivery history
 scripts/             Build verification and F1 asset maintenance
-tests/               F1, ORBITAL and KAGE model/continuity tests
+tests/               F1, ORBITAL, KAGE and CHRONOS model/continuity tests
 .github/workflows/   Verification and Pages deployment
 ```
 
@@ -43,7 +44,7 @@ npm run verify
 npm run preview -- --port 4174 --strictPort
 ```
 
-`npm run verify` runs 14 model/continuity tests, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
+`npm run verify` runs 29 model/continuity tests, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for the supplied parameter-property geometry classes; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
 
 ## Deployment
 
@@ -57,7 +58,7 @@ npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
-Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all five trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
+Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all six trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
 
 When adding another accepted work, put its HTML in `pages/<route>/`, source in `experiences/<route>/`, resources in `public/<route>/`, and register the input, sitemap and output identity checks in `vite.config.ts` and `scripts/verify-build.mjs`. Update the gallery, credits, product and maintenance guide. Preserve its design and lifecycle; verify both `/` and project-path builds, entry/return, direct loads, mobile and reduced motion.
 
@@ -65,8 +66,8 @@ When adding another accepted work, put its HTML in `pages/<route>/`, source in `
 
 See [About & credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html), [ATTRIBUTION.md](ATTRIBUTION.md), [Delivery records](provenance/deliveries/legacy-imports.json), [GLAZE provenance](provenance/glaze/ASSET-PROVENANCE.json), [VERDANT sources](experiences/verdant/ASSET-SOURCES.md) and [ORBITAL notes](experiences/orbital/SOURCE.md).
 
-`licenses.txt`, `third-party-licenses.md` and namespaced project/font notices ship in production. GLAZE and KAGE original code retains its supplied MIT license; the collection's own [LICENSE](LICENSE) does not replace upstream terms. GSAP uses its Standard No-Charge License. KAGE's gallery/social plate is captured from its actual procedural FRAME scene. Gallery social art reuses all five works; no new third-party art. No runtime videos are used; ORBITAL audio is synthesized only after activation.
+`licenses.txt`, `third-party-licenses.md` and namespaced project/font notices ship in production. GLAZE, KAGE and CHRONOS original code retains its supplied MIT license; the collection's own [LICENSE](LICENSE) does not replace upstream terms. GSAP uses its Standard No-Charge License. KAGE's gallery/social plate is captured from its actual procedural FRAME scene. Gallery social art reuses all six works; no new third-party art. No runtime videos are used; ORBITAL and CHRONOS audio is synthesized only after activation.
 
 Unique source material and import checksums live in [provenance/](provenance/README.md), outside deployment.
 
-See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md) and [KAGE architecture](docs/kage/ARCHITECTURE.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.
+See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md), [KAGE architecture](docs/kage/ARCHITECTURE.md) and [CHRONOS motion](docs/chronos/MOTION.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.

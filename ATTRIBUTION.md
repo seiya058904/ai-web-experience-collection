@@ -46,7 +46,7 @@ Beyond the Limit 是 Collection 中独立、非官方的 F1 教育展示作品�
 
 - **VERDANT:** four original AI-generated botanical / architectural plates and their responsive WebP derivatives; Instrument Serif and DM Sans with their OFL notices. See [the supplied asset record](experiences/verdant/ASSET-SOURCES.md). Runtime resources are now under `public/verdant/`.
 - **ORBITAL:** original illustrative spacecraft GLB, layered compatibility renders and cinematic plates supplied with the project. Earth / Moon / cloud textures credit NASA / Goddard (Reto Stöckli for the cloud composite). Sources are retained in `experiences/orbital/SOURCE.md` and the in-experience credits. Fonts retain their OFL notices. Runtime resources are under `public/orbital/`.
-- **Collection:** reuses those same production image files, including the five-world `public/collection-social.jpg` social preview; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
+- **Collection:** reuses those same production image files, including the six-world `public/collection-social.jpg` social preview; its geometric mark and navigation are authored code. No additional stock imagery or commercial brand assets were introduced.
 - React, Radix UI, Lucide, Three.js and the used utility packages retain their own licenses. The imported shadcn stylesheet's MIT notice remains beside it. The production dependency inventory includes the actually bundled libraries; it does not grant rights to imagery or replace GSAP's terms.
 
 ORBITAL synthesizes optional audio in code after the sound control is activated; no audio recording or video file was added. AI Web Experience Collection is independent of Formula 1, FIA, racing teams, NASA and SpaceX. See the production `credits.html` for visitor-facing attribution and license links.
@@ -62,4 +62,11 @@ ORBITAL synthesizes optional audio in code after the sound control is activated;
 
 ## 本轮导入与归档
 
-两个新交付 ZIP 的逐项字节和 SHA-256 保存在 [导入清单](provenance/deliveries/import-manifest.json)。独立包的旧配置、启动脚本和 README 已淘汰，保留原始逐项哈希与实际素材来源依据。旧 VERDANT/ORBITAL ZIP 移至本地忽略的 `provenance/deliveries/`，它们含有超出当前运行工程的历史内容，未经逐项证明为重复不删除。
+GLAZE、KAGE 与 CHRONOS 三个新交付 ZIP 的逐项字节和 SHA-256 保存在 [导入清单](provenance/deliveries/import-manifest.json)。独立包的旧配置、启动脚本和 README 已淘汰，保留原始逐项哈希与实际素材来源依据。旧 VERDANT/ORBITAL ZIP 移至本地忽略的 `provenance/deliveries/`，它们含有超出当前运行工程的历史内容，未经逐项证明为重复不删除。
+
+
+## CHRONOS — The Architecture of Time
+
+用户提供的完整原创数字腕表成品。原代码、程序几何与文档继续适用 [MIT](public/chronos/LICENSE)；两幅生成摄影艺术保持其原始说明，不声称是真实品牌产品或精确工程图。完整 [素材来源与机械参考](provenance/chronos/ATTRIBUTION.md)、[第三方声明](public/chronos/THIRD_PARTY_NOTICES.md) 与所有许可证已保留。Cormorant Garamond 与 DM Sans 从交付构建中的同版本 WOFF2 无损导入本地命名空间；IBM Plex Mono 使用 Collection 已锁定的相同 5.3.0 软件包。运行库仍为同版本 Three.js、GSAP、Lenis，无依赖升级。
+
+六章的 3D 机芯、机械关系、慢动作与本地合成声音均沿用成品实现；模型是解释性运动研究，不是可制造机芯或精度模拟。原交付的逐项文件 SHA-256 追加在 `provenance/deliveries/import-manifest.json`。

@@ -1,8 +1,8 @@
 {
   "name": "ai-web-experience-collection",
   "private": true,
-  "version": "3.0.0",
-  "description": "Five independent cinematic web experiences: racing, nature, space, ceramic color and spatial sculpture.",
+  "version": "3.1.0",
+  "description": "Six independent cinematic web experiences: racing, nature, space, ceramic color, spatial sculpture and mechanical time.",
   "license": "UNLICENSED",
   "homepage": "https://seiya058904.github.io/ai-web-experience-collection/",
   "repository": {
@@ -17,7 +17,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/*.test.mjs tests/*.test.ts",
+    "test": "node --experimental-transform-types --test tests/*.test.mjs tests/*.test.ts",
     "verify": "npm test && npm run build && npm run verify:build",
     "verify:build": "node scripts/verify-build.mjs"
   },

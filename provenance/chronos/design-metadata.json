@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T11:05:33Z",
+  "title": "Design System: CHRONOS",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00461 264.47)",
+          "oklch(26.43% 0.00461 264.47)",
+          "oklch(37.86% 0.00461 264.47)",
+          "oklch(49.29% 0.00461 264.47)",
+          "oklch(60.71% 0.00461 264.47)",
+          "oklch(72.14% 0.00461 264.47)",
+          "oklch(83.57% 0.00461 264.47)",
+          "oklch(95.00% 0.00461 264.47)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Warm ivory",
+        "tonalRamp": [
+          "oklch(15.00% 0.01441 84.58)",
+          "oklch(26.43% 0.01441 84.58)",
+          "oklch(37.86% 0.01441 84.58)",
+          "oklch(49.29% 0.01441 84.58)",
+          "oklch(60.71% 0.01441 84.58)",
+          "oklch(72.14% 0.01441 84.58)",
+          "oklch(83.57% 0.01441 84.58)",
+          "oklch(95.00% 0.01441 84.58)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.00751 88.66)",
+          "oklch(26.43% 0.00751 88.66)",
+          "oklch(37.86% 0.00751 88.66)",
+          "oklch(49.29% 0.00751 88.66)",
+          "oklch(60.71% 0.00751 88.66)",
+          "oklch(72.14% 0.00751 88.66)",
+          "oklch(83.57% 0.00751 88.66)",
+          "oklch(95.00% 0.00751 88.66)"
+        ]
+      },
+      "champagne": {
+        "role": "primary",
+        "displayName": "Champagne",
+        "tonalRamp": [
+          "oklch(15.00% 0.05692 84.99)",
+          "oklch(26.43% 0.05692 84.99)",
+          "oklch(37.86% 0.05692 84.99)",
+          "oklch(49.29% 0.05692 84.99)",
+          "oklch(60.71% 0.05692 84.99)",
+          "oklch(72.14% 0.05692 84.99)",
+          "oklch(83.57% 0.05692 84.99)",
+          "oklch(95.00% 0.05692 84.99)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Metal hairline",
+        "tonalRamp": [
+          "oklch(15.00% 0.01716 88.01 / 0.25)",
+          "oklch(26.43% 0.01716 88.01 / 0.25)",
+          "oklch(37.86% 0.01716 88.01 / 0.25)",
+          "oklch(49.29% 0.01716 88.01 / 0.25)",
+          "oklch(60.71% 0.01716 88.01 / 0.25)",
+          "oklch(72.14% 0.01716 88.01 / 0.25)",
+          "oklch(83.57% 0.01716 88.01 / 0.25)",
+          "oklch(95.00% 0.01716 88.01 / 0.25)"
+        ]
+      },
+      "dialog-surface": {
+        "role": "neutral",
+        "displayName": "Dialog graphite",
+        "tonalRamp": [
+          "oklch(15.00% 0.00451 264.44)",
+          "oklch(26.43% 0.00451 264.44)",
+          "oklch(37.86% 0.00451 264.44)",
+          "oklch(49.29% 0.00451 264.44)",
+          "oklch(60.71% 0.00451 264.44)",
+          "oklch(72.14% 0.00451 264.44)",
+          "oklch(83.57% 0.00451 264.44)",
+          "oklch(95.00% 0.00451 264.44)"
+        ]
+      },
+      "reading-copy": {
+        "role": "neutral",
+        "displayName": "Reading gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.01169 89.75)",
+          "oklch(26.43% 0.01169 89.75)",
+          "oklch(37.86% 0.01169 89.75)",
+          "oklch(49.29% 0.01169 89.75)",
+          "oklch(60.71% 0.01169 89.75)",
+          "oklch(72.14% 0.01169 89.75)",
+          "oklch(83.57% 0.01169 89.75)",
+          "oklch(95.00% 0.01169 89.75)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Opening narrative title with selective italic emphasis."
+      },
+      "headline": {
+        "displayName": "Chapter headline",
+        "purpose": "Main chapter titles, retaining the local scene overrides."
+      },
+      "headline-compact": {
+        "displayName": "Compact headline",
+        "purpose": "Compact base headline before portrait-tablet, narrow-phone and shallow-landscape overrides."
+      },
+      "dialog-headline": {
+        "displayName": "Dialog headline",
+        "purpose": "Large introduction in the chapter index."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Regular serif CHRONOS identity with wide tracking."
+      },
+      "body": {
+        "displayName": "Chapter body",
+        "purpose": "Short supporting narrative beside the object."
+      },
+      "label": {
+        "displayName": "Navigation label",
+        "purpose": "Uppercase navigation and index trigger."
+      },
+      "action": {
+        "displayName": "Text action",
+        "purpose": "Underlined uppercase links with an inline arrow."
+      },
+      "index-title": {
+        "displayName": "Index title",
+        "purpose": "Light serif chapter names in the ruled index."
+      },
+      "frequency": {
+        "displayName": "Frequency value",
+        "purpose": "Large serif 4 Hz value beside its explanatory label."
+      },
+      "measurement": {
+        "displayName": "Mechanical measurement",
+        "purpose": "Monospaced mechanical seconds; the component also uses tabular numerals."
+      },
+      "reading-body": {
+        "displayName": "Reading body",
+        "purpose": "Longer credits and transcript paragraphs, with a compact-layout override."
+      },
+      "headline-portrait-tablet": {
+        "displayName": "Portrait tablet headline",
+        "purpose": "68–96px light-serif scale for the shared portrait layout at widths 701–1100px."
+      }
+    },
+    "motion": [
+      {
+        "name": "link-color",
+        "value": "220ms ease",
+        "purpose": "Navigation links, text actions and credits change to champagne on hover."
+      },
+      {
+        "name": "entry-arrow",
+        "value": "250ms ease; translate(3px, 2px)",
+        "purpose": "Text action arrow movement."
+      },
+      {
+        "name": "index-cross",
+        "value": "300ms ease; rotate(90deg)",
+        "purpose": "Index trigger hover."
+      },
+      {
+        "name": "index-row-color",
+        "value": "240ms ease",
+        "purpose": "Chapter index row hover color."
+      },
+      {
+        "name": "dialog-open",
+        "value": "300ms ease-out both; opacity 0 to 1",
+        "purpose": "Native dialog opening animation."
+      },
+      {
+        "name": "chapter-camera",
+        "value": "hold 0–28%; smoothstep transition 28–85%; settle 85–100%",
+        "purpose": "Current cameraProgress mapping for each interval."
+      },
+      {
+        "name": "chapter-navigation",
+        "value": "1.65s; 1.2s under portraitLayout(width, height); immediate with reduced motion",
+        "purpose": "Navigation through the existing Lenis instance. Page-scroll keys interrupt active smooth motion; Home/End, including Ctrl variants, then commit the endpoint immediately. Page, Arrow and non-control Space keep native scrolling."
+      },
+      {
+        "name": "smooth-wheel",
+        "value": "lerp 0.115; wheelMultiplier 0.92",
+        "purpose": "Main Lenis configuration; smoothWheel is disabled with reduced motion."
+      },
+      {
+        "name": "mechanical-time",
+        "value": "active delta × 1/8 or 1/32; scroll offset +90p",
+        "purpose": "Shared mechanism time; exact model in docs/chronos/MOTION.md."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.001ms CSS animations/transitions; fixed chapter and mechanism poses",
+        "purpose": "Operating-system preference, separate from the still edition. Stop the old Lenis animation before changing layout and restore its previous stopped/running state."
+      },
+      {
+        "name": "watch-aperture",
+        "value": "open p=0.028–0.125; close p=0.912–0.982",
+        "purpose": "Opaque photograph and live canvas share complementary screen-space circular masks."
+      },
+      {
+        "name": "craft-aperture",
+        "value": "open p=0.717–0.776; close p=0.837–0.904; crop takeover smooth(0, .72, craftIris)",
+        "purpose": "Opaque circular window follows the just-rendered third-wheel ruby surface. Transform the full 1536×1024 photograph so source ruby (1155, 460) remains at the window centre as it settles into the crop; reverse uses the same mapping."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "ultra-wide",
+        "value": "(min-aspect-ratio: 21/9)"
+      },
+      {
+        "name": "intermediate-width",
+        "value": "(max-width: 1100px) and (min-width: 701px)"
+      },
+      {
+        "name": "compact-base",
+        "value": "(max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px)"
+      },
+      {
+        "name": "portrait-tablet",
+        "value": "(min-width: 701px) and (max-width: 1100px) and (max-aspect-ratio: 43/50)"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "(max-width: 359px)"
+      },
+      {
+        "name": "shallow-desktop",
+        "value": "(max-height: 600px) and (min-width: 701px)"
+      },
+      {
+        "name": "short-compact-protection",
+        "value": "(max-width: 700px) and (max-height: 680px)"
+      },
+      {
+        "name": "shallow-landscape-override",
+        "value": "(max-height: 550px) and (min-width: 701px) and (max-width: 950px)"
+      },
+      {
+        "name": "shared-portrait-layout",
+        "value": "width ≤700px OR (width ≤1100px AND width/height ≤43/50); shared by main.ts and WatchScene.resize, matched in CSS"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "text-link",
+      "html": "<div class=\"ds-sample\"><a class=\"ds-text-action\" href=\"#energy\">Enter the movement <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 5l14 14M6 19h13V6\"/></svg></a></div>",
+      "css": ".ds-sample { background: var(--ink, #0a0b0d); color: var(--ivory, #eee9df); padding: 24px; font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; } .ds-text-action { color: var(--ivory, #eee9df); font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; cursor: pointer; text-decoration: none; } .ds-text-action { transition: color 220ms; } .ds-text-action:hover { color: var(--champagne, #c7b48d); } .ds-text-action { display: inline-flex; align-items: center; gap: 20px; text-transform: uppercase; font-size: clamp(10px, .76vw, 26px); letter-spacing: .23em; min-height: 44px; border-bottom: 1px solid rgba(216, 211, 199, .55); margin-top: clamp(24px, 3.9svh, 86px); padding: 8px 0; line-height: 1.7; } .ds-text-action svg { width: 20px; height: 20px; transition: transform 250ms; flex-shrink: 0; } .ds-text-action:hover svg { transform: translate(3px, 2px); } @media (max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px) { .ds-text-action { font-size: 9px; letter-spacing: .19em; margin-top: 16px; gap: 17px; min-height: 38px; padding: 7px 0; } .ds-text-action svg { width: 17px; height: 17px; } } @media (min-width: 701px) and (max-width: 1100px) and (max-aspect-ratio: 43/50) { .ds-text-action { min-height: 44px; font-size: 11px; } } @media (max-height: 600px) and (min-width: 701px) { .ds-text-action { margin-top: 14px; font-size: 9px; } } @media (max-height: 550px) and (min-width: 701px) and (max-width: 950px) { .ds-text-action { margin-top: 8px; min-height: 30px; font-size: 8px; padding-block: 5px; } } .ds-text-action svg { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; } .ds-text-action:focus-visible { outline: 1px solid var(--champagne, #c7b48d); outline-offset: 7px; } .ds-text-action:disabled { cursor: default; opacity: .45; } @media (prefers-reduced-motion: reduce) { .ds-text-action, .ds-text-action * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }",
+      "description": "Ruled uppercase entry action with the existing arrow and hover movement."
+    },
+    {
+      "name": "Index trigger",
+      "kind": "button",
+      "refersTo": "index-trigger",
+      "html": "<div class=\"ds-sample\"><button class=\"ds-index-trigger\" type=\"button\" aria-haspopup=\"dialog\">Index <svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 2v12M2 8h12\"/></svg></button></div>",
+      "css": ".ds-sample { background: var(--ink, #0a0b0d); color: var(--ivory, #eee9df); padding: 24px; font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; } .ds-index-trigger { color: var(--ivory, #eee9df); font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; cursor: pointer; border: 0; background: none; padding: 0; } .ds-index-trigger { text-transform: uppercase; font-size: clamp(10px, .70vw, 25px); letter-spacing: .20em; line-height: 1; min-height: 44px; display: inline-flex; align-items: center; gap: 14px; } .ds-index-trigger svg { width: 15px; height: 15px; transition: transform 300ms; } .ds-index-trigger:hover svg { transform: rotate(90deg); } @media (max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px) { .ds-index-trigger { font-size: 10px; gap: 10px; letter-spacing: .13em; } .ds-index-trigger svg { width: 13px; height: 13px; } } .ds-index-trigger svg { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; } .ds-index-trigger:focus-visible { outline: 1px solid var(--champagne, #c7b48d); outline-offset: 7px; } .ds-index-trigger:disabled { cursor: default; opacity: .45; } @media (prefers-reduced-motion: reduce) { .ds-index-trigger, .ds-index-trigger * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }",
+      "description": "Navigation control whose cross rotates into the chapter index affordance."
+    },
+    {
+      "name": "Chapter index row",
+      "kind": "nav",
+      "refersTo": "index-row",
+      "html": "<div class=\"ds-sample\"><nav aria-label=\"Choose a chapter\"><a class=\"ds-index-row\" href=\"#oscillation\" aria-current=\"step\"><span>04</span><strong>Oscillation</strong><small>The mechanical heartbeat</small><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></nav></div>",
+      "css": ".ds-sample { background: var(--ink, #0a0b0d); color: var(--ivory, #eee9df); padding: 24px; font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; } .ds-index-row { color: var(--ivory, #eee9df); font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; cursor: pointer; text-decoration: none; } .ds-index-row { display: grid; grid-template-columns: 32px 1fr auto 28px; gap: 22px; align-items: center; min-height: clamp(76px, 10.8svh, 235px); border-bottom: 1px solid var(--line, rgba(218, 213, 201, .25)); transition: color 240ms; } .ds-index-row:hover { color: var(--champagne, #c7b48d); } .ds-index-row > span { font-family: var(--measure, 'IBM Plex Mono', monospace); font-size: 11px; color: #a39a86; } .ds-index-row strong { font-family: var(--editorial, 'Cormorant Garamond', Georgia, serif); font-weight: 300; font-size: clamp(34px, 3.3vw, 110px); letter-spacing: -.025em; } .ds-index-row small { color: var(--muted, #a5a39e); font-size: clamp(10px, .72vw, 24px); } .ds-index-row svg { width: 24px; height: 24px; } @media (max-width: 1100px) and (min-width: 701px) { .ds-index-row { grid-template-columns: 25px 1fr 24px; } .ds-index-row small { display: none; } } @media (max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px) { .ds-index-row { grid-template-columns: 22px 1fr 24px; gap: 14px; min-height: 68px; } .ds-index-row strong { font-size: 34px; } .ds-index-row small { display: none; } .ds-index-row > span { font-size: 10px; } } @media (max-height: 550px) and (min-width: 701px) and (max-width: 950px) { .ds-index-row { min-height: 53px; } .ds-index-row strong { font-size: 28px; } } .ds-index-row svg { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; } .ds-index-row:focus-visible { outline: 1px solid var(--champagne, #c7b48d); outline-offset: 7px; } @media (prefers-reduced-motion: reduce) { .ds-index-row, .ds-index-row * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }",
+      "description": "Number, serif chapter name, optional subtitle and arrow on a fine ruled row."
+    },
+    {
+      "name": "Ambient motion control",
+      "kind": "button",
+      "refersTo": "motion-control",
+      "html": "<div class=\"ds-sample\"><button class=\"ds-motion-control\" type=\"button\" aria-label=\"Pause ambient motion\" aria-pressed=\"false\"><svg class=\"ds-pause-symbol\" viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M7 4v12M13 4v12\"/></svg><svg class=\"ds-play-symbol\" viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M6 3l10 7-10 7z\"/></svg></button></div>",
+      "css": ".ds-sample { background: var(--ink, #0a0b0d); color: var(--ivory, #eee9df); padding: 24px; font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; } .ds-motion-control { color: var(--ivory, #eee9df); font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; cursor: pointer; border: 0; background: none; padding: 0; } .ds-motion-control { width: 44px; height: 44px; color: #a9a498; display: grid; place-items: center; } .ds-motion-control svg { width: 17px; height: 17px; } .ds-play-symbol, .ds-motion-control[aria-pressed=\"true\"] .ds-pause-symbol { display: none; } .ds-motion-control[aria-pressed=\"true\"] .ds-play-symbol { display: block; } @media (max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px) { .ds-motion-control { width: 33px; } .ds-motion-control svg { width: 13px; height: 13px; } } .ds-motion-control svg { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; } .ds-motion-control:focus-visible { outline: 1px solid var(--champagne, #c7b48d); outline-offset: 7px; } .ds-motion-control:disabled { cursor: default; opacity: .45; } .ds-motion-control:hover { cursor: pointer; } @media (min-width: 701px) and (max-width: 1100px) and (max-aspect-ratio: 43/50) { .ds-motion-control { width: 42px; } } @media (prefers-reduced-motion: reduce) { .ds-motion-control, .ds-motion-control * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }",
+      "description": "Flat pause/play control; aria-pressed selects the symbol and disabled state follows reduced motion."
+    },
+    {
+      "name": "Sound control",
+      "kind": "button",
+      "refersTo": "sound-control",
+      "html": "<div class=\"ds-sample\"><button class=\"ds-sound-control\" type=\"button\" aria-pressed=\"false\"><svg class=\"ds-sound-wave\" viewBox=\"0 0 32 24\" aria-hidden=\"true\"><path d=\"M3 10v4M7 6v12M11 3v18M15 8v8M19 5v14M23 9v6M27 11v2\"/></svg><span class=\"ds-sound-label\">Sound off</span></button></div>",
+      "css": ".ds-sample { background: var(--ink, #0a0b0d); color: var(--ivory, #eee9df); padding: 24px; font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; } .ds-sound-control { color: var(--ivory, #eee9df); font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; cursor: pointer; border: 0; background: none; padding: 0; } .ds-sound-control { display: inline-flex; align-items: center; gap: 14px; text-transform: uppercase; font-size: clamp(9px, .65vw, 22px); letter-spacing: .20em; min-height: 44px; } .ds-sound-wave { width: clamp(25px, 2.1vw, 76px); height: 26px; color: #b5b0a5; } .ds-sound-control[aria-pressed=\"true\"] { color: var(--champagne, #c7b48d); } @media (max-width: 1100px) and (min-width: 701px) { .ds-sound-control { gap: 7px; } } @media (max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px) { .ds-sound-control { gap: 0; width: 30px; justify-content: flex-end; } .ds-sound-wave { width: 24px; height: 24px; } .ds-sound-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); } } .ds-sound-control svg { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; } .ds-sound-control:focus-visible { outline: 1px solid var(--champagne, #c7b48d); outline-offset: 7px; } .ds-sound-control:disabled { cursor: default; opacity: .45; } .ds-sound-control:hover { cursor: pointer; } @media (min-width: 701px) and (max-width: 1100px) and (max-aspect-ratio: 43/50) { .ds-sound-control { width: 42px; } } @media (prefers-reduced-motion: reduce) { .ds-sound-control, .ds-sound-control * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }",
+      "description": "Optional audio toggle, silent by default, with champagne used only for the active state."
+    },
+    {
+      "name": "Balance frequency pair",
+      "kind": "custom",
+      "refersTo": "frequency-pair",
+      "html": "<div class=\"ds-sample\"><div class=\"ds-frequency\"><span>4 <i>Hz</i></span><span>Balance<br>frequency</span></div></div>",
+      "css": ".ds-sample { background: var(--ink, #0a0b0d); color: var(--ivory, #eee9df); padding: 24px; font-family: var(--sans, 'DM Sans', sans-serif); font-weight: 400; } .ds-frequency { display: flex; align-items: center; gap: 24px; margin-top: clamp(20px, 3.7svh, 82px); } .ds-frequency > span:first-child { font-family: var(--editorial, 'Cormorant Garamond', Georgia, serif); font-size: clamp(42px, 3.7vw, 140px); font-weight: 300; line-height: 1; } .ds-frequency i { font-style: normal; } .ds-frequency > span:last-child { border-left: 1px solid var(--line, rgba(218, 213, 201, .25)); padding-left: 23px; color: var(--muted, #a5a39e); text-transform: uppercase; letter-spacing: .17em; font-size: clamp(9px, .65vw, 20px); line-height: 1.8; } @media (max-width: 700px), (max-width: 1100px) and (max-aspect-ratio: 43/50), (max-height: 550px) and (max-width: 950px) { .ds-frequency { gap: 18px; margin-top: 18px; } .ds-frequency > span:first-child { font-size: 35px; } .ds-frequency > span:last-child { font-size: 8px; line-height: 1.5; padding-left: 17px; } } @media (min-width: 701px) and (max-width: 1100px) and (max-aspect-ratio: 43/50) { .ds-frequency > span:first-child { font-size: 42px; } .ds-frequency > span:last-child { font-size: 10px; } } @media (max-height: 600px) and (min-width: 701px) { .ds-frequency { margin-top: 12px; } .ds-frequency > span:first-child { font-size: 28px; } } @media (max-height: 550px) and (min-width: 701px) and (max-width: 950px) { .ds-frequency { margin-top: 10px; gap: 15px; } .ds-frequency > span:first-child { font-size: 26px; } .ds-frequency > span:last-child { font-size: 7px; padding-left: 14px; } } .ds-frequency svg { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; } @media (prefers-reduced-motion: reduce) { .ds-frequency, .ds-frequency * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }",
+      "description": "Large light-serif frequency paired with a divided uppercase explanation."
+    }
+  ],
+  "narrative": {
+    "northStar": "Time Machine",
+    "overview": "CHRONOS uses the user-defined character **Dark / Luxury / Precise / Minimal / Cinematic**. A mechanical watch occupies a dark field, with silver and graphite surfaces, restrained champagne details, and enough empty space to read both the object and the sentence beside it. The interface remains small in scale relative to the watch and its macro details.\n\nMaterial, typography and movement carry the identity. Thin Cormorant Garamond headlines and italic emphasis establish the narrative voice; compact sans-serif controls and measured monospaced numbers keep navigation precise. A continuous camera and persistent mechanical assembly connect the views, while the reading layer remains semantic HTML. The [Experience direction contract](docs/chronos/EXPERIENCE.md) records the journey-specific arrangement.",
+    "keyCharacteristics": [
+      "Dark graphite space with warm ivory reading contrast.",
+      "Silver surfaces and restrained champagne emphasis.",
+      "Light serif headlines, small sans-serif controls, monospaced measurements.",
+      "One continuous object, with controlled movement between stable compositions.",
+      "Flat navigation, fine rules, circular mechanical forms and photographic depth."
+    ],
+    "rules": [
+      {
+        "name": "The Accent Rule",
+        "body": "Reserve champagne for active, hover, focus and measured mechanical accents.",
+        "section": "colors"
+      },
+      {
+        "name": "The Type Contrast Rule",
+        "body": "Set narrative headlines in Cormorant Garamond and interface text in DM Sans; use IBM Plex Mono for numbers and small mechanical labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Material Depth Rule",
+        "body": "Create depth through lit geometry, restrained reflective surfaces and tonal masks; keep interface controls flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the Time Machine direction and the Dark / Luxury / Precise / Minimal / Cinematic character.",
+      "Do keep the watch and its mechanical detail larger in visual importance than the interface.",
+      "Do use the existing graphite, ivory and champagne roles with their original alpha values.",
+      "Do preserve serif narrative type, sans-serif controls and monospaced measurements as separate roles.",
+      "Do maintain one continuous camera, one persistent assembly and reversible chapter mappings.",
+      "Do preserve complementary opaque masks at each photo/live handoff.",
+      "Do preserve the reading view, visible keyboard focus, optional sound and reduced-motion compositions.",
+      "Do keep page, camera and CSS portrait fitting aligned, while preserving the separate shallow landscape override."
+    ],
+    "donts": [
+      "Don't turn this experience into a shopping layout, card grid or generic section template.",
+      "Don't introduce rounded UI containers or box-shadow elevation into this flat interface.",
+      "Don't replace mechanical relationships with unrelated spins or per-chapter random phases.",
+      "Don't move essential copy into textures, photographs or canvas-only labels.",
+      "Don't describe generated photographic detail or illustrative geometry as a verified manufactured calibre.",
+      "Don't claim a fixed frame rate, a native 4K drawing buffer or unperformed device verification."
+    ]
+  }
+}
