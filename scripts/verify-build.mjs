@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -43,6 +43,7 @@ for (const [file, route, title] of [
   ['optic/index.html', 'optic/', 'OPTIC — The Architecture of an Image'],
   ['inkscape/index.html', 'inkscape/', 'INKSCAPE — Paper, Water, Ink'],
   ['thrust/index.html', 'thrust/', 'THRUST — Anatomy of a Jet Engine'],
+  ['resonance/index.html', 'resonance/', 'RESONANCE — Sound Made Visible'],
   ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
   ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
   ['facet/index.html', 'facet/', 'FACET — The Light Within'],
@@ -65,6 +66,9 @@ for (const file of ["facet/LICENSE", "facet/THIRD_PARTY_NOTICES.md", "facet/font
 }
 for (const file of ["atlas/data/city-aerial-1024.webp", "atlas/data/city-aerial-2048.webp", "atlas/data/city-elevation-129.bin", "atlas/data/city-elevation-257.bin", "atlas/data/city-raster.json", "atlas/data/contours-100m.json", "atlas/data/contours-mobile.json", "atlas/data/elevation-1025.bin", "atlas/data/elevation-129.bin", "atlas/data/elevation-257.bin", "atlas/data/elevation-513.bin", "atlas/data/satellite-1024.webp", "atlas/data/satellite-2048.webp", "atlas/data/terrain.json", "atlas/data/vectors/city-buildings-mobile.geojson", "atlas/data/vectors/city-buildings.geojson", "atlas/data/vectors/city-roads.geojson", "atlas/data/vectors/city-water.geojson", "atlas/data/vectors/globe-land.geojson", "atlas/data/vectors/metadata.json", "atlas/data/vectors/region-roads.geojson", "atlas/data/vectors/region-water.geojson", "atlas/data/vectors/route.geojson"]) {
   assert((await stat(join(root, file))).size > 0, `Missing geographic resource: ${file}`);
+}
+for (const file of ['resonance/ATTRIBUTION.md', 'resonance/licenses/manrope-latin-OFL.txt', 'resonance/licenses/cormorant-garamond-latin-italic-OFL.txt', 'resonance/fonts/manrope-latin.woff2', 'resonance/fonts/cormorant-garamond-latin-italic.woff2', 'resonance/social.jpg']) {
+  assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
 }
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {

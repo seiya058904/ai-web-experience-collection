@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d0d">
+  <meta name="description" content="Begin in silence. Follow one vibration as it becomes space, pattern, signal and memory. An interactive audiovisual installation.">
+  <meta property="og:title" content="RESONANCE — Sound Made Visible">
+  <meta property="og:description" content="Begin in silence. Disturb the field. Let sound become form.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%resonance/">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%resonance/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%resonance/social.jpg">
+  <meta property="og:image:alt" content="RESONANCE's original Chladni-inspired particle plate, captured from its actual runtime">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RESONANCE — Sound Made Visible">
+  <meta name="twitter:description" content="Follow one vibration through eight acoustic acts. Local opt-in synthesis, tone capture and playback.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%resonance/social.jpg">
+  <meta name="twitter:image:alt" content="RESONANCE's original Chladni-inspired particle plate, captured from its actual runtime">
+  <title>RESONANCE — Sound Made Visible</title>
+  <link rel="icon" href="/resonance/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/resonance/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/resonance/fonts/cormorant-garamond-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../experiences/resonance/src/style.css">
+  <script>document.documentElement.classList.add('js');window.__resonanceBoot=setTimeout(()=>{if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},8000);</script>
+</head>
+<body>
+  <a class="skip-link" href="#silence-title">Skip to the experience</a>
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M5 19 19 5"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM17 8c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM17 9l5 6m0-6-5 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path class="filled" d="m8 5 11 7-11 7z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  </defs></svg>
+  <canvas id="world" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand" href="#silence" aria-label="Resonance, return to silence">
+      <svg class="brand-mark" viewBox="0 0 52 52" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><circle cx="26" cy="26" r="23" stroke-dasharray="98 12 24 11"/><circle cx="26" cy="26" r="17" stroke-dasharray="51 7 35 14"/><circle cx="26" cy="26" r="10" stroke-dasharray="38 9 9 7"/></g><circle cx="26" cy="26" r="1.6" fill="var(--energy)"/></svg>
+      <span>RESONANCE</span>
+    </a>
+    <div class="header-actions">
+      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="sound-toggle text-button" id="sound-toggle" aria-pressed="false" aria-label="Enable sound"><svg class="icon" aria-hidden="true"><use href="#i-mute"/></svg><span>Sound off</span></button>
+      <span class="header-divider" aria-hidden="true"></span>
+      <button class="text-button index-toggle" id="index-toggle" aria-haspopup="dialog" aria-controls="index-dialog">Index<span class="index-lines" aria-hidden="true"></span></button>
+    </div>
+  </header>
+  <main id="journey" aria-label="One vibration in eight acts">
+    <section class="act" id="silence" aria-labelledby="silence-title">
+      <div class="scene-panel scene-silence is-active" data-scene="0">
+        <div class="scene-copy">
+          <h1 id="silence-title" tabindex="-1">Sound,<em>made visible.</em></h1>
+          <p>A journey from a single vibration<br class="mobile-break"> to a world of resonance.</p>
+          <button class="circle-action" id="begin"><span class="circle-icon"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span><span>Disturb the silence</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="act" id="vibration" aria-labelledby="vibration-title">
+      <div class="scene-panel scene-vibration" data-scene="1">
+        <div class="scene-copy"><h2 id="vibration-title" tabindex="-1"><em>A disturbance.</em></h2><p>A force. A displacement. A return.</p></div>
+        <button class="outline-action pluck-action" id="pluck">Pluck the string<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+    <section class="act" id="propagation" aria-labelledby="propagation-title">
+      <div class="scene-panel scene-propagation" data-scene="2">
+        <div class="scene-copy"><h2 id="propagation-title" tabindex="-1">Motion stays.<em>Energy travels.</em></h2><p>The medium oscillates.<br>The wave moves on.</p></div>
+      </div>
+    </section>
+    <section class="act" id="interference" aria-labelledby="interference-title">
+      <div class="scene-panel scene-interference" data-scene="3">
+        <div class="scene-copy"><h2 id="interference-title" tabindex="-1">Where waves <em>meet.</em></h2><p>In phase, they reinforce.<br>Out of phase, they cancel.</p>
+          <div class="range-control phase-control"><label class="sr-only" for="phase">Phase difference</label><input id="phase" type="range" min="0" max="180" step="1" value="45" aria-valuetext="45 degrees phase difference"><div class="range-ends"><span>Together</span><output id="phase-value" for="phase">45°</output><span>Opposed</span></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="act" id="resonance" aria-labelledby="resonance-title">
+      <div class="scene-panel scene-resonance" data-scene="4">
+        <div class="scene-copy"><h2 id="resonance-title" tabindex="-1">Sound takes<em>shape.</em></h2><p>Matter gathers where motion rests.</p>
+          <div class="mode-controls" role="group" aria-label="Resonance pattern"><button class="mode-button" data-mode="0" aria-pressed="false" aria-label="Resonance mode 2 by 3">2 : 3</button><button class="mode-button" data-mode="1" aria-pressed="true" aria-label="Resonance mode 3 by 4">3 : 4</button><button class="mode-button" data-mode="2" aria-pressed="false" aria-label="Resonance mode 4 by 5">4 : 5</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="act" id="harmonics" aria-labelledby="harmonics-title">
+      <div class="scene-panel scene-harmonics" data-scene="5">
+        <div class="scene-copy"><h2 id="harmonics-title" tabindex="-1">One note.<em>Many voices.</em></h2><p>A fundamental, and the frequencies within it.</p></div>
+        <div class="range-control frequency-control"><label for="frequency">Fundamental <output id="frequency-value" for="frequency">110 Hz</output></label><input id="frequency" type="range" min="110" max="330" value="110" step="1" aria-valuetext="110 hertz"><div class="range-ends"><span>110</span><span>330</span></div></div>
+      </div>
+    </section>
+    <section class="act" id="memory" aria-labelledby="memory-title">
+      <div class="scene-panel scene-memory" data-scene="6">
+        <div class="scene-copy"><h2 id="memory-title" tabindex="-1">A trace of<em>what was.</em></h2><p>Vibration becomes a signal.<br>A signal becomes memory.</p>
+          <button class="outline-action" id="capture"><span>Capture this tone</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <div class="capture-details" id="capture-details" hidden><p id="capture-status" role="status"></p><button class="text-button download-tone" id="download-tone" hidden><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Save .wav</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="act act-return" id="return" aria-labelledby="return-title">
+      <div class="scene-panel scene-return" data-scene="7">
+        <div class="scene-copy"><h2 id="return-title" tabindex="-1">Into the air.<em>Again.</em></h2><p>What was held is set in motion.</p>
+          <button class="circle-action" id="playback"><span class="circle-icon"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span><span>Release the signal</span></button>
+          <button class="text-button restart" id="restart"><span class="restart-line" aria-hidden="true"></span>Return to silence</button>
+        </div>
+        <p class="closing-line">Every silence holds a beginning.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="journey-footer">
+    <button class="scroll-cue text-button" id="continue"><span>Scroll to begin</span><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+    <nav class="chapter-rail" aria-label="Scene navigation">
+      <div class="rail-track" aria-hidden="true"><span id="rail-progress"></span></div>
+      <a href="#silence" class="is-current" aria-current="step"><span class="rail-dot"></span><span class="rail-label"><span>01</span>Silence</span></a>
+      <a href="#vibration"><span class="rail-dot"></span><span class="rail-label"><span>02</span>Vibration</span></a>
+      <a href="#propagation"><span class="rail-dot"></span><span class="rail-label"><span>03</span>Propagation</span></a>
+      <a href="#interference"><span class="rail-dot"></span><span class="rail-label"><span>04</span>Interference</span></a>
+      <a href="#resonance"><span class="rail-dot"></span><span class="rail-label"><span>05</span>Resonance</span></a>
+      <a href="#harmonics"><span class="rail-dot"></span><span class="rail-label"><span>06</span>Harmonics</span></a>
+      <a href="#memory"><span class="rail-dot"></span><span class="rail-label"><span>07</span>Memory</span></a>
+      <a href="#return"><span class="rail-dot"></span><span class="rail-label"><span>08</span>Return</span></a>
+    </nav>
+    <div class="mobile-scene"><span id="mobile-scene-label">01 / Silence</span><span>Sound made visible</span></div>
+  </footer>
+  <dialog id="index-dialog" aria-labelledby="index-title">
+    <div class="index-header"><h2 id="index-title">The journey</h2><button class="text-button" id="index-close" aria-label="Close index"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <p class="index-intro">One vibration. Eight states.</p>
+    <nav class="index-list" aria-label="Full journey index">
+      <a href="#silence"><span>01</span><strong>Silence</strong><small>The possibility of sound.</small></a>
+      <a href="#vibration"><span>02</span><strong>Vibration</strong><small>A force sets matter in motion.</small></a>
+      <a href="#propagation"><span>03</span><strong>Propagation</strong><small>Energy passes through a medium.</small></a>
+      <a href="#interference"><span>04</span><strong>Interference</strong><small>Two waves, one shared space.</small></a>
+      <a href="#resonance"><span>05</span><strong>Resonance</strong><small>Stillness gives a pattern its shape.</small></a>
+      <a href="#harmonics"><span>06</span><strong>Harmonics</strong><small>The voices within a single note.</small></a>
+      <a href="#memory"><span>07</span><strong>Memory</strong><small>A signal, held in a trace.</small></a>
+      <a href="#return"><span>08</span><strong>Return</strong><small>What was held is released.</small></a>
+    </nav>
+    <div class="index-bottom"><button class="text-button motion-toggle" id="motion-toggle" aria-pressed="false"><span class="motion-dot" aria-hidden="true"></span><span>Calm motion</span></button><span>Best explored at your own pace.</span></div>
+    <details class="about"><summary>About this experience</summary><div><p>RESONANCE is an artistic study of acoustic motion. Visual time and displacement are adjusted so you can see the relationships. The plate patterns are inspired by nodal modes; they are not a calibration of a specific material.</p><p>All sound is synthesized in your browser. Capture holds the current tone for three seconds, without a microphone. The frequency control sets the audible fundamental; the visual motion is slowed.</p><p class="source-links"><a href="https://openstax.org/books/university-physics-volume-1/pages/17-1-sound-waves" target="_blank" rel="noopener noreferrer">Wave behavior</a><a href="https://www.phys.unsw.edu.au/~jw/guitar/guitarchladni_engl.html" target="_blank" rel="noopener noreferrer">Nodal patterns</a><a href="https://www.clir.org/pubs/reports/child/sound/" target="_blank" rel="noopener noreferrer">Sound recording</a></p><p id="graphics-mode"></p></div></details>
+  </dialog>
+  <div class="notice" id="notice" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript-note">The eight acts can be read below. Enable JavaScript to explore their living fields and sound.</p></noscript>
+  <script type="module" src="../../experiences/resonance/src/app.js"></script>
+</body>
+</html>

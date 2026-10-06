@@ -4741,6 +4741,146 @@
         "omitted": "Standalone package/lockfiles, build/server/startup configuration, compiled duplicate JS/CSS/HTML/assets and gitignore. ATLAS raw acquisition rasters/tiles remain in the unchanged external ZIP.",
         "fontException": "SILICON and THRUST supplied compiled WOFF2 assets copied unchanged. ATLAS shares the same SILICON Manrope/IBM Plex bytes and existing OPTIC Cormorant italic bytes; no dependencies added."
       }
+    },
+    {
+      "archive": "RESONANCE-Sound-Made-Visible-v1.0.0.zip",
+      "bytes": 108140,
+      "sha256": "f3432ba9e1067d22b3ee56b34b2fd262777f3cc5ad57c3351f049393bf591513",
+      "entryCount": 24,
+      "mtime": "2026-10-07T00:34:30.922292",
+      "entries": [
+        {
+          "path": "RESONANCE/.gitignore",
+          "bytes": 147,
+          "sha256": "636d098bbb6418513992983e07aecb18b295e27d68d4fb5b4c610a0f7784b3e3"
+        },
+        {
+          "path": "RESONANCE/ARCHITECTURE.md",
+          "bytes": 10611,
+          "sha256": "e4b7e147fdb780f729fa0a89b60db867ef10db7190b76f9dbf4e851aa6dbb31d"
+        },
+        {
+          "path": "RESONANCE/ASSET_PROVENANCE.md",
+          "bytes": 5727,
+          "sha256": "9d76ca43669e973d1c968a21d4baae180eb0eb0cace9d65075bcc7c0133b2d17"
+        },
+        {
+          "path": "RESONANCE/DESIGN.md",
+          "bytes": 2951,
+          "sha256": "45533036870b4883ee7abe81c931118da4482d7174e29f1e6d96e93c7fa09250"
+        },
+        {
+          "path": "RESONANCE/PRODUCT.md",
+          "bytes": 1645,
+          "sha256": "dd53cf7bf77af216fab407fee44175a320f7f005dd35a64479eb97a11c2da450"
+        },
+        {
+          "path": "RESONANCE/README.md",
+          "bytes": 8276,
+          "sha256": "f69238f493e01bd43eb30460c48de9290180003b7dcbb100b0b6a973d2610b34"
+        },
+        {
+          "path": "RESONANCE/START-WINDOWS.cmd",
+          "bytes": 203,
+          "sha256": "876e746b4d8630541e59915f91c6a1ca1a8bae61c2f9922226f329ca1195fe88"
+        },
+        {
+          "path": "RESONANCE/dist/app.js",
+          "bytes": 13631,
+          "sha256": "224bf6b732a5194af14b0b3854ed2fbff5445e3892d8d0efe7ffce340db1693b"
+        },
+        {
+          "path": "RESONANCE/dist/assets/fonts/cormorant-garamond-latin-italic.woff2",
+          "bytes": 23660,
+          "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2"
+        },
+        {
+          "path": "RESONANCE/dist/assets/fonts/manrope-latin.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "RESONANCE/dist/audio.js",
+          "bytes": 16016,
+          "sha256": "6679f55c238ddbf6f59e3a6c13b62144bd19bab77d0ffd1aeb849834fb3592a0"
+        },
+        {
+          "path": "RESONANCE/dist/favicon.svg",
+          "bytes": 406,
+          "sha256": "0b9214d6421fd1d88e8d707619561f28fd11fbcec0421c1d28c33712a38f7f94"
+        },
+        {
+          "path": "RESONANCE/dist/index.html",
+          "bytes": 12640,
+          "sha256": "dce2400acb6f9d420da0361165484d7c7d95dcba03c8e2d57c099f138452546a"
+        },
+        {
+          "path": "RESONANCE/dist/math.js",
+          "bytes": 2976,
+          "sha256": "41c4a15fcc3da8c7e137d628868af5de9203b5af9541d3c6524a8f6c4da9baf2"
+        },
+        {
+          "path": "RESONANCE/dist/scroll-state.js",
+          "bytes": 1402,
+          "sha256": "77eb37cc7072275e8cd1138919fdcb5b183c0262e47666f02a83c017c921e7fc"
+        },
+        {
+          "path": "RESONANCE/dist/style.css",
+          "bytes": 26672,
+          "sha256": "98e8a224c56afabfc2924d3192597de22bc76a6fd6247d65f43b6c0bc9d979dd"
+        },
+        {
+          "path": "RESONANCE/dist/world.js",
+          "bytes": 31138,
+          "sha256": "3d7b69aa5a42163c0804438dd4c4d8019973dc8f9273a6a0ded8db8d8a9f25a3"
+        },
+        {
+          "path": "RESONANCE/licenses/cormorant-garamond-latin-italic-OFL.txt",
+          "bytes": 4387,
+          "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+        },
+        {
+          "path": "RESONANCE/licenses/manrope-latin-OFL.txt",
+          "bytes": 4387,
+          "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+        },
+        {
+          "path": "RESONANCE/package.json",
+          "bytes": 414,
+          "sha256": "ca5aa428cdb7cdbfe8fc6f863dc28a7b532f1a95b0a6d0b00130873115c22cd0"
+        },
+        {
+          "path": "RESONANCE/scripts/serve.mjs",
+          "bytes": 2143,
+          "sha256": "47ecb347784faaa330e0b65a6db4ceaaf38930e4b3da37740dd1a93440cd5d8b"
+        },
+        {
+          "path": "RESONANCE/scripts/validate.mjs",
+          "bytes": 2086,
+          "sha256": "64700756793abb082b477827b1bc38f2f537a3948c53a0db5dfad61f21757f10"
+        },
+        {
+          "path": "RESONANCE/tests/audio.test.mjs",
+          "bytes": 9350,
+          "sha256": "ee0d1177d45b33e9b9410ab1df04a4dee254f6bc98f638282b54277c75b5bd53"
+        },
+        {
+          "path": "RESONANCE/tests/scroll-state.test.mjs",
+          "bytes": 8549,
+          "sha256": "ffdc61212e1ec125036cb20c2b01230a01e7672ee6a01b715b3127241b1ee8fa"
+        }
+      ],
+      "imported": "2026-10-07",
+      "originalLocation": "D:/下载/RESONANCE-Sound-Made-Visible-v1.0.0.zip",
+      "importBoundary": {
+        "source": "experiences/resonance/src/",
+        "page": "pages/resonance/index.html",
+        "assets": "public/resonance/",
+        "docs": "docs/resonance/",
+        "provenance": "provenance/resonance/",
+        "omitted": "Standalone package.json, .gitignore, START-WINDOWS.cmd, scripts/serve.mjs and scripts/validate.mjs; retained unchanged in the external archive.",
+        "sourceException": "Upstream dist/ contains the only authored, editable native ES modules, HTML/CSS and fonts, not generated duplicate build output."
+      }
     }
   ]
 }

@@ -1,0 +1,167 @@
+{
+  "imported": "2026-10-07",
+  "originalZip": "D:/下载/RESONANCE-Sound-Made-Visible-v1.0.0.zip",
+  "bytes": 108140,
+  "sha256": "f3432ba9e1067d22b3ee56b34b2fd262777f3cc5ad57c3351f049393bf591513",
+  "entryCount": 24,
+  "clock": "Native scroll and one owned requestAnimationFrame loop",
+  "dependencies": "No work dependencies; root dependency versions and lockfile retained.",
+  "applicationLicense": "Not declared by supplied project; no MIT or other open-source grant inferred. Font OFL notices preserved.",
+  "adaptations": [
+    "Editable upstream dist source relocated into existing multi-page Vite boundary; namespaced fonts, canonical/social metadata and shared Collection return.",
+    "Portrait tablet up to 900px uses the existing narrow composition in CSS and both renderers; short landscape retains its supplied layout.",
+    "Unavailable WebGL and Canvas now trigger complete semantic reading layout and release failed renderer resources.",
+    "Root tests import the supplied audio/scroll tests with path-only adaptation.",
+    "Readable font notice copies normalize trailing whitespace; original copyright and license content remain intact and original archive hashes are preserved.",
+    "Keyboard chapter focus remains pending on the existing RAF until the visible destination heading is actually focused.",
+    "Collection notes in design/architecture distinguish relocated paths and verified fixes from preserved standalone history."
+  ],
+  "files": [
+    {
+      "source": "RESONANCE/dist/app.js",
+      "destination": "experiences/resonance/src/app.js",
+      "originalSha256": "224bf6b732a5194af14b0b3854ed2fbff5445e3892d8d0efe7ffce340db1693b",
+      "importedSha256": "139472e66e07f4738e74a5d79ecc265330c207727f4fd2d8a2b8b7d4ba780e11",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/dist/audio.js",
+      "destination": "experiences/resonance/src/audio.js",
+      "originalSha256": "6679f55c238ddbf6f59e3a6c13b62144bd19bab77d0ffd1aeb849834fb3592a0",
+      "importedSha256": "6679f55c238ddbf6f59e3a6c13b62144bd19bab77d0ffd1aeb849834fb3592a0",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/dist/math.js",
+      "destination": "experiences/resonance/src/math.js",
+      "originalSha256": "41c4a15fcc3da8c7e137d628868af5de9203b5af9541d3c6524a8f6c4da9baf2",
+      "importedSha256": "41c4a15fcc3da8c7e137d628868af5de9203b5af9541d3c6524a8f6c4da9baf2",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/dist/scroll-state.js",
+      "destination": "experiences/resonance/src/scroll-state.js",
+      "originalSha256": "77eb37cc7072275e8cd1138919fdcb5b183c0262e47666f02a83c017c921e7fc",
+      "importedSha256": "77eb37cc7072275e8cd1138919fdcb5b183c0262e47666f02a83c017c921e7fc",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/dist/world.js",
+      "destination": "experiences/resonance/src/world.js",
+      "originalSha256": "3d7b69aa5a42163c0804438dd4c4d8019973dc8f9273a6a0ded8db8d8a9f25a3",
+      "importedSha256": "204ebd35b0a01b53cb87133f4fdd875c454876770597c9df334363f1433ba966",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/dist/style.css",
+      "destination": "experiences/resonance/src/style.css",
+      "originalSha256": "98e8a224c56afabfc2924d3192597de22bc76a6fd6247d65f43b6c0bc9d979dd",
+      "importedSha256": "78051f3b37a86c11383b8ea0a1757e5f3c200c884ed4d67fa47a9910366f6e5f",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/dist/index.html",
+      "destination": "pages/resonance/index.html",
+      "originalSha256": "dce2400acb6f9d420da0361165484d7c7d95dcba03c8e2d57c099f138452546a",
+      "importedSha256": "acac367fb1cc2b6d0c057c9c92acbc11ab6bcf77089a730a51988224c0664d11",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/dist/assets/fonts/manrope-latin.woff2",
+      "destination": "public/resonance/fonts/manrope-latin.woff2",
+      "originalSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "importedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/dist/assets/fonts/cormorant-garamond-latin-italic.woff2",
+      "destination": "public/resonance/fonts/cormorant-garamond-latin-italic.woff2",
+      "originalSha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "importedSha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/dist/favicon.svg",
+      "destination": "public/resonance/favicon.svg",
+      "originalSha256": "0b9214d6421fd1d88e8d707619561f28fd11fbcec0421c1d28c33712a38f7f94",
+      "importedSha256": "0b9214d6421fd1d88e8d707619561f28fd11fbcec0421c1d28c33712a38f7f94",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/licenses/manrope-latin-OFL.txt",
+      "destination": "public/resonance/licenses/manrope-latin-OFL.txt",
+      "originalSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "importedSha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/licenses/cormorant-garamond-latin-italic-OFL.txt",
+      "destination": "public/resonance/licenses/cormorant-garamond-latin-italic-OFL.txt",
+      "originalSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "importedSha256": "6f5a41d57400577a50aae88475b11f292f3d7de78ee7d5113c69577331d8ad31",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/DESIGN.md",
+      "destination": "docs/resonance/DESIGN.md",
+      "originalSha256": "45533036870b4883ee7abe81c931118da4482d7174e29f1e6d96e93c7fa09250",
+      "importedSha256": "cd10dab14a74a0f16a8e940a546e4877490a89341535652d575868d1c24bab24",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/ARCHITECTURE.md",
+      "destination": "docs/resonance/ARCHITECTURE.md",
+      "originalSha256": "e4b7e147fdb780f729fa0a89b60db867ef10db7190b76f9dbf4e851aa6dbb31d",
+      "importedSha256": "6ab6a3a4eb42be5b474261222d8a19ed850a1f73101a9b0f13df9040a12de3d8",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/README.md",
+      "destination": "docs/resonance/UPSTREAM-README.md",
+      "originalSha256": "f69238f493e01bd43eb30460c48de9290180003b7dcbb100b0b6a973d2610b34",
+      "importedSha256": "f69238f493e01bd43eb30460c48de9290180003b7dcbb100b0b6a973d2610b34",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/PRODUCT.md",
+      "destination": "docs/resonance/UPSTREAM-PRODUCT.md",
+      "originalSha256": "dd53cf7bf77af216fab407fee44175a320f7f005dd35a64479eb97a11c2da450",
+      "importedSha256": "dd53cf7bf77af216fab407fee44175a320f7f005dd35a64479eb97a11c2da450",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/ASSET_PROVENANCE.md",
+      "destination": "provenance/resonance/ASSET_PROVENANCE.md",
+      "originalSha256": "9d76ca43669e973d1c968a21d4baae180eb0eb0cace9d65075bcc7c0133b2d17",
+      "importedSha256": "9d76ca43669e973d1c968a21d4baae180eb0eb0cace9d65075bcc7c0133b2d17",
+      "adapted": false
+    },
+    {
+      "source": "RESONANCE/ASSET_PROVENANCE.md",
+      "destination": "public/resonance/ATTRIBUTION.md",
+      "originalSha256": "9d76ca43669e973d1c968a21d4baae180eb0eb0cace9d65075bcc7c0133b2d17",
+      "importedSha256": "464093b01f596717cb808bcb77a73bad3ad95c5c7faeab4d2b975b7fa742a56f",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/tests/audio.test.mjs",
+      "destination": "tests/resonance-audio.test.mjs",
+      "originalSha256": "ee0d1177d45b33e9b9410ab1df04a4dee254f6bc98f638282b54277c75b5bd53",
+      "importedSha256": "7c32ebe7b255102cdb9e38cfbe5198cc943015f09021f112af60a02716640d23",
+      "adapted": true
+    },
+    {
+      "source": "RESONANCE/tests/scroll-state.test.mjs",
+      "destination": "tests/resonance-scroll-state.test.mjs",
+      "originalSha256": "ffdc61212e1ec125036cb20c2b01230a01e7672ee6a01b715b3127241b1ee8fa",
+      "importedSha256": "3f809061365ab97d451a358fbe6ed48a2bd9f8e0906000805e891f4704015fe8",
+      "adapted": true
+    }
+  ],
+  "gallery": {
+    "path": "public/resonance/social.jpg",
+    "sha256": "3c1bfa0a399a6ef20b7752004c001049afe6a8499a599063646c1a44198e5604",
+    "method": "Actual candidate Chromium runtime capture at 1920x1080 on resonance chapter, interface hidden; JPEG resized to 1600x900."
+  },
+  "upstreamClaims": "UPSTREAM documents describe historical standalone claims. The Collection acceptance record reports checks actually run for this intake."
+}

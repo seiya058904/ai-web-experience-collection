@@ -35,13 +35,14 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 - **SILICON** (`/silicon/`): eight material, optical and electrical semiconductor studies.
 - **ATLAS** (`/atlas/`): real Fuji and Fujiyoshida geography across terrain, city and planetary scale.
 - **THRUST** (`/thrust/`): ten continuous shots inside an original illustrative jet engine.
+- **RESONANCE** (`/resonance/`): eight acoustic acts with opt-in local synthesis, capture, WAV export and playback.
 
 ## Capabilities and Constraints
 
 - A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
 - Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
-- Preserve the accepted imagery, typography, controls, timing and content of all seventeen works. Do not impose a common visual theme or expand the entrance into another story.
-- One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET and SILICON; the supplied RAF for KAGE. OPTIC, ATLAS and THRUST preserve native scrolling and one owned RAF each. Retain rendering caps, visibility suspension, teardown and read-position retention.
+- Preserve the accepted imagery, typography, controls, timing and content of all eighteen works. Do not impose a common visual theme or expand the entrance into another story.
+- One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET and SILICON; the supplied RAF for KAGE. OPTIC, ATLAS, THRUST and RESONANCE preserve native scrolling and one owned RAF each. Retain rendering caps, visibility suspension, teardown and read-position retention.
 - Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
 - Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
 - F1 educational sources and distinctions between current 2026 systems and historical DRS remain specific to Beyond the Limit.
@@ -49,11 +50,11 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 
 ## Brand Commitments
 
-The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects seventeen distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, KAGE's spatial sculpture, CHRONOS's metal, light and mechanical time, INTERVAL's architectural passage, FORM's warm object studio, FUSION's dark tokamak laboratory, GLASSHOUSE's translucent optical space, VEIL's soft textile studio, OPTIC's dark photographic machine, and INKSCAPE's ivory paper and carbon ink, FACET's gemstone exhibition, SILICON's precision object theatre, ATLAS's cartographic paper and THRUST's industrial air narrative. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects eighteen distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, KAGE's spatial sculpture, CHRONOS's metal, light and mechanical time, INTERVAL's architectural passage, FORM's warm object studio, FUSION's dark tokamak laboratory, GLASSHOUSE's translucent optical space, VEIL's soft textile studio, OPTIC's dark photographic machine, and INKSCAPE's ivory paper and carbon ink, FACET's gemstone exhibition, SILICON's precision object theatre, ATLAS's cartographic paper, THRUST's industrial air narrative and RESONANCE's graphite, ivory and amber acoustic field. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
 
 ## Evidence on Hand
 
-Seventeen supplied complete experiences are integrated. One hundred and eighteen model/continuity tests and production-reference verification are maintained at this revision. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
+Eighteen supplied complete experiences are integrated. One hundred and forty-two model/continuity/rendering tests and production-reference verification are maintained at this revision. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 
