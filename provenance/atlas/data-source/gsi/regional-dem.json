@@ -1,0 +1,246 @@
+{
+  "name": "regional-dem",
+  "layer": "dem_png",
+  "zoom": 12,
+  "boundsWGS84": [
+    138.54,
+    35.24,
+    138.99,
+    35.61
+  ],
+  "sourceCropGlobalPixelEdges": [
+    927813,
+    413160,
+    929127,
+    414486
+  ],
+  "sourceCropDimensions": [
+    1314,
+    1326
+  ],
+  "targetGlobalPixelEdges": [
+    927814.9973333332,
+    413161.49717743247,
+    929125.7173333333,
+    414484.03981634846
+  ],
+  "pixelReference": "XYZ/Web Mercator; raster pixels occupy edge-to-edge cells, samples at pixel centres",
+  "retrievedUTC": "2026-10-06T13:06:16Z",
+  "imageFile": "regional-dem.png",
+  "sourceCropSha256": "03b0912462d485d4e95e4352e2f396ad4780c3d59e314a59f67e731b36bcaab9",
+  "tiles": [
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1613.png",
+      "sha256": "a685fe5b1af1a0e6857b5ebb316c3f18f5f3bb14b325fb568aa0fe71cf9e5fa0",
+      "bytes": 62662
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1614.png",
+      "sha256": "70dbae9091bc68de915c23ace36221bf01889710a9b10bc3f8ab7ee7a260b681",
+      "bytes": 110111
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1615.png",
+      "sha256": "563b798845eb11811fee82e5736ae4e9af2d083a681176adcf714a4b81ff4cb1",
+      "bytes": 127998
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1616.png",
+      "sha256": "b6663d1c8da0caab1ed34a0e1d7aa12ed9eb2908df78495d178bfd16e8d58172",
+      "bytes": 123706
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1617.png",
+      "sha256": "9798e5d6bbefd9787ef15435d767c4a099ee24825bbd05be557c5ce323542d28",
+      "bytes": 119820
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1618.png",
+      "sha256": "0a7159a6ce04d1da3a91434923c4ad452fc3d0bc223602fe2d38522907c31a00",
+      "bytes": 120747
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3624/1619.png",
+      "sha256": "b026e92adc1abda8668ea3c7369647c92d74f0eaedfe470125497bb3dd52f114",
+      "bytes": 120389
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1613.png",
+      "sha256": "3e7b942fd3a6585fa2ab66b17a93752e106641e6dda48c4ca371cb83bde02a43",
+      "bytes": 90917
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1614.png",
+      "sha256": "0d015fea4a8d54e70aa12a7479fd8d0189f59ee635ff08736c51992162cf7a0a",
+      "bytes": 129485
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1615.png",
+      "sha256": "ee89a0f4364d18d66d0ef37839bf3d4ea62522ba2c606fe85ee83300f00793fb",
+      "bytes": 117253
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1616.png",
+      "sha256": "d58a00ba15b14f755943b56a83aeaf17aabd723271dc3d0cbc248b8b9d311663",
+      "bytes": 109841
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1617.png",
+      "sha256": "49a7ede24547b3c3e73a1bf667c8cafe540d45008e66c7861a823610e8752866",
+      "bytes": 114896
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1618.png",
+      "sha256": "583e1a8c182ff8cfcf61d7432a7575b0a64eff621fb784474827c6cf6679e009",
+      "bytes": 110859
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3625/1619.png",
+      "sha256": "10cbc4b0eace88f7ed809c5424c4da7abfebd28a57a67b503943fee4a145c1e7",
+      "bytes": 105982
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1613.png",
+      "sha256": "fa68fef1c1c96a1db1c64b042049744cba124225bb2728128ca9de5f456ac396",
+      "bytes": 123627
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1614.png",
+      "sha256": "73e94d2f0cc84a8bca1b18bb10344a22b0dd02412fbd1391241c914d94987eaa",
+      "bytes": 132977
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1615.png",
+      "sha256": "3ee283243890e52f46b1a7c8ea524190d9bc00de57dd7ff32024bd0f18498746",
+      "bytes": 103457
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1616.png",
+      "sha256": "b616a1c546134e06da58085082b997f4c72f1869f67cd058652e8e53ec3a2d95",
+      "bytes": 114817
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1617.png",
+      "sha256": "0ef68d900af0a8f92df3d1cd79f065ffe922b06188e44c411197c843fcfb9e2e",
+      "bytes": 127126
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1618.png",
+      "sha256": "bacde6843a87f7c47977887bfa2ac41093819baee7ad96f99184685f2e19d4c2",
+      "bytes": 112882
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3626/1619.png",
+      "sha256": "9429edcf01449d2f52405a0ef3b5a8d1ccc17878dfc11739b5331b8d3402c8c4",
+      "bytes": 118599
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1613.png",
+      "sha256": "e910b552782c451a6d7ccd730fa15672db874bc352b41da0283a9656dee55422",
+      "bytes": 133694
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1614.png",
+      "sha256": "d8983996b515b9dd62d4e5492413f68e11dc467efe44d6900a50a218ce570514",
+      "bytes": 132862
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1615.png",
+      "sha256": "888dd13570bbef2f7f183bd2fa47e4dc6d11585c2428017cbdc1bb74e519730a",
+      "bytes": 120553
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1616.png",
+      "sha256": "49f6cba18278e025ec36ab6d22ffc52509002e322893a3d84a41c2c2a93ae661",
+      "bytes": 103032
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1617.png",
+      "sha256": "fa1c44682ee52bfba0cd9213db058e9537dd9ea74f377bd9c46e72c45a4ed076",
+      "bytes": 111938
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1618.png",
+      "sha256": "4448c8b15a704e51129bdabc79eae607d502c6b919d33c4337e07e9a1a593fcd",
+      "bytes": 109412
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3627/1619.png",
+      "sha256": "6439d1dffec57492b2369da57b5d64e5fb94638387f81c051268613c97b3616a",
+      "bytes": 130820
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1613.png",
+      "sha256": "1cd753dfb485d76a38e972b5e1fc65b95c7657148ae36f0dba6e4ea8da8894a5",
+      "bytes": 132241
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1614.png",
+      "sha256": "97f31bcf84c8f381723751e0c5d4f3906b257956a078d974acdd7a0e92ef0482",
+      "bytes": 124334
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1615.png",
+      "sha256": "fe1652cd88bbf0c548f89e0379f84618973173aeeffb907f0d8073dbbc2d921f",
+      "bytes": 132587
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1616.png",
+      "sha256": "287596740b3a111ab3e8f56a4fa086ce87fabcd76ac598e8cc34c40df3e08fe2",
+      "bytes": 117689
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1617.png",
+      "sha256": "7d0a71518f4b5275eab32f5599942f3bc76c972bfe7fada4683f3b02b3659ee4",
+      "bytes": 111345
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1618.png",
+      "sha256": "1a7a5d0c8a87c23558cc0c5f536fe5d105df949b168b69ea26c88849a2e4870d",
+      "bytes": 104370
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3628/1619.png",
+      "sha256": "aee938310c0d148b1fac0b519ed76850497c6e50eaf2dd3bfd3283327e637d57",
+      "bytes": 115792
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1613.png",
+      "sha256": "77e6913209a80d12db6fe92cbad414ceeffb18e8b9f9f765f34a236421184811",
+      "bytes": 130896
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1614.png",
+      "sha256": "cfd10fa02cd3adbc27b1dfc94f30432dd0a59c98e9d4fc2f77511245f67556ba",
+      "bytes": 132986
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1615.png",
+      "sha256": "02f69058c350b31779ed1f586871a8cacf9876e5083760e82c6317116361309e",
+      "bytes": 132746
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1616.png",
+      "sha256": "83fa728996f9f904e0849512fc9bd6a6c497853243aae4018b8af29d83bf8e73",
+      "bytes": 133223
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1617.png",
+      "sha256": "ca14c6158e3f46b6be22ef2520866d1a0d8ed43b14303c92e6eafbe34d52e699",
+      "bytes": 124787
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1618.png",
+      "sha256": "51046ef90c03ce39aeeb5322af1c66789cc47a4dd9d0a998b079b1871f82fcdd",
+      "bytes": 125641
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/12/3629/1619.png",
+      "sha256": "fd5af8fd2a010047267d6d3042fe157d0ca7ba97ea19ecf9260d1ddb4a67b85a",
+      "bytes": 116877
+    }
+  ],
+  "termsURL": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+  "catalogURL": "https://maps.gsi.go.jp/help/use.html",
+  "note": "Minimal lossless spatial crop assembled from original source tile pixels. No colors or heights synthesized."
+}

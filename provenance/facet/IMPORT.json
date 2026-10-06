@@ -1,0 +1,286 @@
+{
+  "imported": "2026-10-06",
+  "originalZip": "D:/下载/FACET-The-Light-Within.zip",
+  "sha256": "f14688ce19b8fa31680530988b90406b846ff1194baa806a35e134ea647ef995",
+  "clock": "One Lenis instance and one GSAP ticker",
+  "versions": {
+    "three": "0.186.1",
+    "gsap": "3.15.0 where used",
+    "lenis": "1.3.26 where used",
+    "vite": "8.3.2 root; supplied 8.3.3",
+    "threeTypes": "0.186.0 root; supplied 0.183.1"
+  },
+  "adaptations": [
+    "Independent HTML, base-aware asset/runtime URLs, Collection return and canonical/social metadata; existing dependencies and root lockfile retained.",
+    "Supplied binary resources imported unchanged; source/notice trailing whitespace normalized.",
+    "Runtime gallery capture generated from the actual supplied scene, with only DOM labels hidden during capture.",
+    "Owned GSAP callback suspends while hidden; non-BFCache exits/HMR release Lenis, ScrollTrigger, tweens and GPU resources; pending font callback guards disposed state."
+  ],
+  "upstreamClaims": "UPSTREAM documents preserve historical standalone claims. Collection acceptance is recorded separately.",
+  "files": [
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/i18n.ts",
+      "destination": "experiences/facet/src/i18n.ts",
+      "originalSha256": "a2e3a5c7a6a37e2265e17968900507a540aaac0e313a3706d418ee5940389850",
+      "importedSha256": "a2e3a5c7a6a37e2265e17968900507a540aaac0e313a3706d418ee5940389850",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/main.ts",
+      "destination": "experiences/facet/src/main.ts",
+      "originalSha256": "290bf0ccd24759177f98a44c9acded250f6925dadbe04798ac164291cfaee7a8",
+      "importedSha256": "1e5d2e6a67ff573a113b49f2cdb52110f0ffb6027b27deda084829e2a12b34e3",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/narrative.ts",
+      "destination": "experiences/facet/src/narrative.ts",
+      "originalSha256": "eada838eb6d13763d12130e9c903810719fa49062d243e5b1db473da50942b18",
+      "importedSha256": "eada838eb6d13763d12130e9c903810719fa49062d243e5b1db473da50942b18",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/scene/Exhibition.ts",
+      "destination": "experiences/facet/src/scene/Exhibition.ts",
+      "originalSha256": "0ee155ab70f040980cee66345bd75dca62e21ada23bfaedc1d90d00a5f46259d",
+      "importedSha256": "0ee155ab70f040980cee66345bd75dca62e21ada23bfaedc1d90d00a5f46259d",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/scene/gemGeometry.ts",
+      "destination": "experiences/facet/src/scene/gemGeometry.ts",
+      "originalSha256": "e7576142cea565b5ea97306c94ab9f86f5738235d492ecaec9f6f9e0dbe21761",
+      "importedSha256": "e7576142cea565b5ea97306c94ab9f86f5738235d492ecaec9f6f9e0dbe21761",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/scene/gemMaterial.ts",
+      "destination": "experiences/facet/src/scene/gemMaterial.ts",
+      "originalSha256": "fbd855cfbe7212d0f6a90069af04cda2a06d9e8e0e27b9d4c80e441d23826d35",
+      "importedSha256": "fbd855cfbe7212d0f6a90069af04cda2a06d9e8e0e27b9d4c80e441d23826d35",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/scene/optics.ts",
+      "destination": "experiences/facet/src/scene/optics.ts",
+      "originalSha256": "3ed60b6239cdd57d1cb9188a6822d8a0afbf1ebcf95367b52d2ba80c29c43281",
+      "importedSha256": "3ed60b6239cdd57d1cb9188a6822d8a0afbf1ebcf95367b52d2ba80c29c43281",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/scene/organicStones.ts",
+      "destination": "experiences/facet/src/scene/organicStones.ts",
+      "originalSha256": "fa8f443592b5b11ef0b7fead25c963298ba52ff19e4f2cac2857902a04888858",
+      "importedSha256": "fa8f443592b5b11ef0b7fead25c963298ba52ff19e4f2cac2857902a04888858",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/src/styles/main.css",
+      "destination": "experiences/facet/src/styles/main.css",
+      "originalSha256": "93f0157b84ac0bdaffa255d6ea5752b52ca4eab132869ad03b5c1c9ad61c25a8",
+      "importedSha256": "5e7a6291df006522949cfb14a517f6f134254d436604da85ab9e9acb8cbc226c",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/index.html",
+      "destination": "pages/facet/index.html",
+      "originalSha256": "15c7d4ba0f7c2d2c68d3fd4559b1bf6a167981a3f4bd90d265bab22fe9e98c2f",
+      "importedSha256": "7576bed9d55789da5949617c935a05af787311014eb234332218b749feeea0f3",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/favicon.svg",
+      "destination": "public/facet/favicon.svg",
+      "originalSha256": "222becda3aaf607adee293ac9b621158ae3639456b997e7a94f9cbb036c61aad",
+      "importedSha256": "222becda3aaf607adee293ac9b621158ae3639456b997e7a94f9cbb036c61aad",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/fonts/dm-sans-medium.woff2",
+      "destination": "public/facet/fonts/dm-sans-medium.woff2",
+      "originalSha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "importedSha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/fonts/dm-sans-regular.woff2",
+      "destination": "public/facet/fonts/dm-sans-regular.woff2",
+      "originalSha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "importedSha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/fonts/facet-cjk.ttf",
+      "destination": "public/facet/fonts/facet-cjk.ttf",
+      "originalSha256": "d265c5c034e486eb7495fced1e1c27a93f024049c627ce23bde1b2e6a20cfe44",
+      "importedSha256": "d265c5c034e486eb7495fced1e1c27a93f024049c627ce23bde1b2e6a20cfe44",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/fonts/instrument-serif-italic.woff2",
+      "destination": "public/facet/fonts/instrument-serif-italic.woff2",
+      "originalSha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+      "importedSha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/fonts/instrument-serif-regular.woff2",
+      "destination": "public/facet/fonts/instrument-serif-regular.woff2",
+      "originalSha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "importedSha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/images/gallery-still.webp",
+      "destination": "public/facet/images/gallery-still.webp",
+      "originalSha256": "e7dda969efa149fbee0f3d8350bfed1b5e11a3cb85c0086c8c5d00e2ad111f49",
+      "importedSha256": "e7dda969efa149fbee0f3d8350bfed1b5e11a3cb85c0086c8c5d00e2ad111f49",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/DM-Sans-OFL.txt",
+      "destination": "public/facet/licenses/DM-Sans-OFL.txt",
+      "originalSha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+      "importedSha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/GSAP-Standard-License.md",
+      "destination": "public/facet/licenses/GSAP-Standard-License.md",
+      "originalSha256": "689ea75d71312a0d0f528dc53c7f629d66a26a231c1855cdaf2c32d9b8a9b59b",
+      "importedSha256": "389792057fe1edda71a2a6cb6a226e4a02a51efd0e62ccfd6cdab719ed8e77b3",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/Instrument-Serif-OFL.txt",
+      "destination": "public/facet/licenses/Instrument-Serif-OFL.txt",
+      "originalSha256": "b6106a757902d2d412e09d94dc4a226fe3da80485208a98003969f1b8b6b1d74",
+      "importedSha256": "b6106a757902d2d412e09d94dc4a226fe3da80485208a98003969f1b8b6b1d74",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/LENIS-LICENSE.txt",
+      "destination": "public/facet/licenses/LENIS-LICENSE.txt",
+      "originalSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "importedSha256": "aa0646bd5431b4828d8e4c3312417bd516c6c6b5c96cdc2842700dde31572f50",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/Noto-Serif-SC-OFL.txt",
+      "destination": "public/facet/licenses/Noto-Serif-SC-OFL.txt",
+      "originalSha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "importedSha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/THREE-LICENSE.txt",
+      "destination": "public/facet/licenses/THREE-LICENSE.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/THREE-TYPES-LICENSE.txt",
+      "destination": "public/facet/licenses/THREE-TYPES-LICENSE.txt",
+      "originalSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "importedSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/TYPESCRIPT-LICENSE.txt",
+      "destination": "public/facet/licenses/TYPESCRIPT-LICENSE.txt",
+      "originalSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "importedSha256": "527adf9d4c760f7367c2aeffed6a89afba8ba40ea1b0efbc8f56496ad30ea9cf",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/TYPESCRIPT-ThirdPartyNoticeText.txt",
+      "destination": "public/facet/licenses/TYPESCRIPT-ThirdPartyNoticeText.txt",
+      "originalSha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c",
+      "importedSha256": "f7d7409c091d9d5c09a8bafbc4a27dc30ce2da6e19b7c0f91c59754a7c4b195b",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/public/licenses/VITE-LICENSE.md",
+      "destination": "public/facet/licenses/VITE-LICENSE.md",
+      "originalSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "importedSha256": "8f1715f772cf26b4b91fb4a8401a160ab841ecb2b4ef2b9bcca12b65c5ebe2fd",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/LICENSE",
+      "destination": "public/facet/LICENSE",
+      "originalSha256": "c14aeddd4a5e60644bc86608de3b9358afb4ce5df78f40514fa469210f19cfa7",
+      "importedSha256": "60ddc51a541f1533b87fa63d050fada9ed0f836e9567f5b7add4a21e348b372a",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/THIRD_PARTY_NOTICES.md",
+      "destination": "public/facet/THIRD_PARTY_NOTICES.md",
+      "originalSha256": "ee9cf62b8cc0a987ed8a9d80b242e388d5caab0332ffbb6c4fda7369db2bfba7",
+      "importedSha256": "0b02848730a40752daa4500dc3ef37b0fa4439ca69a4b5b2e94626d48f314159",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/DESIGN.md",
+      "destination": "docs/facet/DESIGN.md",
+      "originalSha256": "a0925cae77531a4c0c267670fb374822215e4f32fa720b7e94b5a76dd63b11c4",
+      "importedSha256": "a0925cae77531a4c0c267670fb374822215e4f32fa720b7e94b5a76dd63b11c4",
+      "adapted": false
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/README.md",
+      "destination": "docs/facet/UPSTREAM-README.md",
+      "originalSha256": "f7cfac600057deaca0483daecc1e45b404e0651166bcbcd9365d149d37d490a1",
+      "importedSha256": "c7a313d9ee92db6b0bfeadeda89b9670f7eab803483c472c7cadbc4ddacc05a5",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/PRODUCT.md",
+      "destination": "docs/facet/UPSTREAM-PRODUCT.md",
+      "originalSha256": "6e564b6bc930c85027b2c21a660eb6026eb4e14fd65871c43a4d52e1ef698a59",
+      "importedSha256": "2d759ccf36f71c0c1a3640ec51c3a468346683ae8699c391415e6363abeea121",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/docs/REFERENCES.md",
+      "destination": "docs/facet/REFERENCES.md",
+      "originalSha256": "b6329e15a0657e5439fd09de569fb6de6943063e8624df297419f00bb901306b",
+      "importedSha256": "5169830ad6bd6248cb2de7fc021b8cbec1b4f518fb022a0e36493735e0a84ff6",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/docs/SCENES.md",
+      "destination": "docs/facet/SCENES.md",
+      "originalSha256": "1e865cb3dd952fa3336ea7729b8e8cf42a394b79666c29eb4ba27c5d3f138d55",
+      "importedSha256": "967ac4a46848f5304b45f01e9c9e39aa46f8e69db408e8aab78f9de50753211a",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/tests/geometry.test.ts",
+      "destination": "tests/facet-geometry.test.ts",
+      "originalSha256": "bb0136e690f64e6cdd06ab001539252b93398d05f35ec73633e5dab4039b3d4e",
+      "importedSha256": "7017ff57d2ba11553ba4c54e662b4ef6376b47032a2c6ca831fbf8e53dd0d4d8",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/tests/narrative.test.ts",
+      "destination": "tests/facet-narrative.test.ts",
+      "originalSha256": "32e9a894ccd7502eb95fc3240a13437b914ad8f0b639c0b1dceb377f22c6cd3c",
+      "importedSha256": "31505e598b67c6e8a444afba39200352b2d1df2da3ee939dc7c1759b13b28807",
+      "adapted": true
+    },
+    {
+      "source": "FACET-The-Light-Within/FACET-The-Light-Within/tests/optics.test.ts",
+      "destination": "tests/facet-optics.test.ts",
+      "originalSha256": "dcc730416f60a34ccca835107f126693248c16da1ab33d70c74c156c0f9be728",
+      "importedSha256": "69be7f53b628c2bd24aa139b48e71b5296e72e1234bac9379bd5ffbec08ea5e0",
+      "adapted": true
+    }
+  ],
+  "gallery": {
+    "path": "public/facet/social.jpg",
+    "sha256": "f443ef246a2a512f294e7dbc08146020ed42b1b7acd7846e3a51d27001e6736b",
+    "method": "Actual Chromium runtime screenshot at 1920x1080, DOM labels hidden; JPEG resized to 1600x900"
+  }
+}

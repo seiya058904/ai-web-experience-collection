@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -42,6 +42,10 @@ for (const [file, route, title] of [
   ['veil/index.html', 'veil/', 'VEIL — Fabric in Motion'],
   ['optic/index.html', 'optic/', 'OPTIC — The Architecture of an Image'],
   ['inkscape/index.html', 'inkscape/', 'INKSCAPE — Paper, Water, Ink'],
+  ['thrust/index.html', 'thrust/', 'THRUST — Anatomy of a Jet Engine'],
+  ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
+  ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
+  ['facet/index.html', 'facet/', 'FACET — The Light Within'],
 ]) {
   const html = await readFile(join(root, file), 'utf8');
   assert(html.includes(`<title>${title}</title>`), `Incorrect document identity: ${file}`);
@@ -55,6 +59,12 @@ for (const [file, route, title] of [
     assert(url?.startsWith(site), `Social image escaped deployment base: ${file}`);
     assert((await stat(join(root, url.slice(site.length)))).size > 0, `Missing social image: ${file}`);
   }
+}
+for (const file of ["facet/LICENSE", "facet/THIRD_PARTY_NOTICES.md", "facet/fonts/dm-sans-medium.woff2", "facet/fonts/dm-sans-regular.woff2", "facet/fonts/instrument-serif-italic.woff2", "facet/fonts/instrument-serif-regular.woff2", "facet/licenses/DM-Sans-OFL.txt", "facet/licenses/GSAP-Standard-License.md", "facet/licenses/Instrument-Serif-OFL.txt", "facet/licenses/LENIS-LICENSE.txt", "facet/licenses/Noto-Serif-SC-OFL.txt", "facet/licenses/THREE-LICENSE.txt", "facet/licenses/THREE-TYPES-LICENSE.txt", "facet/licenses/TYPESCRIPT-LICENSE.txt", "facet/licenses/TYPESCRIPT-ThirdPartyNoticeText.txt", "facet/licenses/VITE-LICENSE.md", "silicon/ATTRIBUTION.md", "silicon/LICENSE", "silicon/fonts/ibm-plex-mono-latin-400-normal.woff2", "silicon/fonts/manrope-latin-wght-normal.woff2", "silicon/licenses/GSAP-NOTICE.txt", "silicon/licenses/IBM-PLEX-MONO-OFL.txt", "silicon/licenses/LENIS-LICENSE.txt", "silicon/licenses/LTC-LICENSE.txt", "silicon/licenses/MANROPE-OFL.txt", "silicon/licenses/THREE-LICENSE.txt", "silicon/licenses/TYPES-THREE-LICENSE.txt", "silicon/licenses/TYPESCRIPT-LICENSE.txt", "silicon/licenses/TYPESCRIPT-THIRD-PARTY-NOTICES.txt", "silicon/licenses/VITE-LICENSE.md", "atlas/ATTRIBUTION.md", "atlas/LICENSE", "atlas/fonts/cormorant-garamond-latin-400-italic.woff2", "atlas/fonts/ibm-plex-mono-latin-400-normal.woff2", "atlas/fonts/manrope-latin-wght-normal.woff2", "atlas/licenses/Cormorant-Garamond-OFL-1.1.txt", "atlas/licenses/Earcut-ISC.txt", "atlas/licenses/GSI-TERMS-ja.txt", "atlas/licenses/IBM-Plex-Mono-OFL-1.1.txt", "atlas/licenses/Manrope-OFL-1.1.txt", "atlas/licenses/Natural-Earth-PUBLIC-DOMAIN.txt", "atlas/licenses/PDL-1.0-ja.txt", "atlas/licenses/README.md", "atlas/licenses/Three-MIT.txt", "atlas/licenses/Types-Three-MIT.txt", "atlas/licenses/TypeScript-Apache-2.0.txt", "atlas/licenses/TypeScript-THIRD-PARTY.txt", "atlas/licenses/Vite-MIT-and-third-party.txt", "thrust/ATTRIBUTION.md", "thrust/LICENSE", "thrust/fonts/barlow-condensed-latin-600-normal.woff2", "thrust/fonts/manrope-latin-400-normal.woff2", "thrust/fonts/manrope-latin-500-normal.woff2", "thrust/licenses/Barlow-Condensed-OFL.txt", "thrust/licenses/Manrope-OFL.txt", "thrust/licenses/rolldown-MIT.txt", "thrust/licenses/rolldown-third-party.txt", "thrust/licenses/three-MIT.txt", "thrust/licenses/vite-MIT-and-notices.txt"]) {
+  assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
+}
+for (const file of ["atlas/data/city-aerial-1024.webp", "atlas/data/city-aerial-2048.webp", "atlas/data/city-elevation-129.bin", "atlas/data/city-elevation-257.bin", "atlas/data/city-raster.json", "atlas/data/contours-100m.json", "atlas/data/contours-mobile.json", "atlas/data/elevation-1025.bin", "atlas/data/elevation-129.bin", "atlas/data/elevation-257.bin", "atlas/data/elevation-513.bin", "atlas/data/satellite-1024.webp", "atlas/data/satellite-2048.webp", "atlas/data/terrain.json", "atlas/data/vectors/city-buildings-mobile.geojson", "atlas/data/vectors/city-buildings.geojson", "atlas/data/vectors/city-roads.geojson", "atlas/data/vectors/city-water.geojson", "atlas/data/vectors/globe-land.geojson", "atlas/data/vectors/metadata.json", "atlas/data/vectors/region-roads.geojson", "atlas/data/vectors/region-water.geojson", "atlas/data/vectors/route.geojson"]) {
+  assert((await stat(join(root, file))).size > 0, `Missing geographic resource: ${file}`);
 }
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {

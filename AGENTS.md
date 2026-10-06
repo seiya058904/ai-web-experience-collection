@@ -2,7 +2,7 @@
 
 ## Scope and entrypoints
 
-AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of thirteen complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), ORBITAL (space / rockets / deep space), GLAZE (ceramics / color / light), KAGE / VOID (spatial sculpture / light / shadow), CHRONOS (mechanical watches / time / craft), INTERVAL (architecture / light / space / material), FORM (objects / structure / material), FUSION (tokamak / magnetic confinement / fusion energy), GLASSHOUSE (glass / light / optical space), VEIL (thread / fabric / soft structure), OPTIC (light / optics / photography), and INKSCAPE (paper / water / ink). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
+AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of seventeen complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), ORBITAL (space / rockets / deep space), GLAZE (ceramics / color / light), KAGE / VOID (spatial sculpture / light / shadow), CHRONOS (mechanical watches / time / craft), INTERVAL (architecture / light / space / material), FORM (objects / structure / material), FUSION (tokamak / magnetic confinement / fusion energy), GLASSHOUSE (glass / light / optical space), VEIL (thread / fabric / soft structure), OPTIC (light / optics / photography), INKSCAPE (paper / water / ink), FACET (gemstones / light / optics), SILICON (semiconductors / light / layers), ATLAS (real geography / scale / cartography), and THRUST (jet engine / air / engineering). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
 
 - `pages/index.html`, `collection/main.ts`, `collection/styles.css`: Collection entrance. Read `docs/collection/DESIGN.md` before changing it.
 - `pages/f1/index.html`, `experiences/f1/src/main.ts`, `experiences/f1/src/styles.css`: F1 document, startup and composition. Read `docs/f1/DESIGN.md` and `docs/f1/SCROLL-AUDIT.md` before changing F1 layout or motion.
@@ -18,15 +18,19 @@ AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a s
 - `experiences/veil/src/`: supplied opening and six-study textile installation. Read `docs/veil/DESIGN.md`; preserve its common cloth surface, chapter handoffs, material controls, fold action and still edition. Resources and notices live in `public/veil/`.
 - `experiences/optic/src/`: supplied nine-chapter native-scroll optical film, one owned RAF and WebGL/Canvas2D renderers. Read `docs/optic/DESIGN.md` and `docs/optic/SOURCES.md`; preserve the shared camera, optical/mechanical controls and generated image caveats. Resources and notices live in `public/optic/`.
 - `experiences/inkscape/src/`: supplied eight-movement paper installation, one Lenis instance and one GSAP ticker. Read `docs/inkscape/DESIGN.md`; preserve the common materials, wetness/lens/mark controls, still mode and normalized history. Resources and notices live in `public/inkscape/`.
+- `experiences/facet/src/`: supplied seven-chapter gemstone exhibition. Read `docs/facet/DESIGN.md`; preserve language, specimen inspection, optical controls and its Lenis/GSAP clock.
+- `experiences/silicon/src/`: supplied eight-scene semiconductor theatre. Read `docs/silicon/DESIGN.md`; preserve the original structures, controls, Canvas fallback and its Lenis/GSAP clock.
+- `experiences/atlas/src/`: supplied native-scroll cartographic journey. Read `docs/atlas/DESIGN.md` and `docs/atlas/SCENE-ARCHITECTURE.md`; preserve real data, geographic registration, data LOD, one owned RAF and source caveats.
+- `experiences/thrust/src/`: supplied native-scroll engine film. Read `docs/thrust/DESIGN.md` and `docs/thrust/ENGINEERING.md`; preserve airflow, cutaway, inspection, opt-in sound, reading fallback and one owned RAF.
 - `pages/`: Vite HTML root; `public/<work>/`: runtime media, fonts and notices; `provenance/`: source history, not deployment.
 - `experiences/shared/`: only genuinely shared UI primitives and Collection return control.
 - `ATTRIBUTION.md`, `provenance/deliveries/legacy-imports.json`, `provenance/deliveries/import-manifest.json` and per-work notices: asset provenance. Preserve legal comments and production license inventory.
 
 ## Invariants
 
-- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/`, `/glaze/`, `/kage/`, `/chronos/`, `/interval/`, `/form/`, `/fusion/`, `/glasshouse/`, `/veil/`, `/optic/` and `/inkscape/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
+- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/`, `/glaze/`, `/kage/`, `/chronos/`, `/interval/`, `/form/`, `/fusion/`, `/glasshouse/`, `/veil/`, `/optic/`, `/inkscape/`, `/facet/`, `/silicon/`, `/atlas/` and `/thrust/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
 - HTML/CSS asset URLs go through Vite. Runtime URLs and cross-work links must include `import.meta.env.BASE_URL`; HTML links use `%BASE_URL%`. Keep resources namespaced and test a project-path build.
-- The smoothed experiences keep one Lenis instance and one owned clock: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL and INKSCAPE; the supplied RAF for KAGE. OPTIC retains its supplied native scroll and one owned RAF. Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
+- The smoothed experiences keep one Lenis instance and one owned clock: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET and SILICON; the supplied RAF for KAGE. OPTIC, ATLAS and THRUST retain their supplied native scroll and one owned RAF each. Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
 - F1 interpolation is 0.105, `syncTouch: false`, direct reversible ScrollTrigger scrub. `experiences/f1/src/motion.ts` owns the idle geometry queue, navigation, preferences and teardown. Register loops via `motion.loop()` and cleanup via `motion.own()` / its abort signal.
 - F1 must retain Enter → complete composition → Living Hold → handoff → Exit. Short measured Hold travel stays in normal flow; no negative overlaps, content masks or fixed-pixel spacer patches. Input must give visible, reversible feedback while the protected text remains readable.
 - F1 remeasure happens before ScrollTrigger refresh and only after active input settles. Do not resize Lenis during a destination. The dev-only `window.__f1Motion.inspect()` is absent from production.
@@ -49,7 +53,7 @@ Follow this sequence for each new independent work. Keep each work's established
 
 ## Validation and deployment
 
-Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (89 model/continuity tests at this revision; Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
+Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (118 model/continuity tests at this revision; Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
 
 There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
 

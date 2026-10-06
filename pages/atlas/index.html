@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#eeede6" />
+    <meta
+      name="description"
+      content="One place. Every scale. A scroll-controlled journey through the real terrain, imagery and urban fabric of Fuji and Fujiyoshida, Japan."
+    />
+    <link rel="icon" type="image/svg+xml" href="/atlas/favicon.svg" />
+    <title>ATLAS — The World in Layers</title>
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%atlas/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:title" content="ATLAS — The World in Layers">
+<meta property="og:description" content="A continuous cartographic journey through the real terrain, imagery and urban fabric of Fuji and Fujiyoshida, Japan.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%atlas/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%atlas/social.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ATLAS — The World in Layers">
+<meta name="twitter:description" content="A continuous cartographic journey through the real terrain, imagery and urban fabric of Fuji and Fujiyoshida, Japan.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%atlas/social.jpg">
+</head>
+  <body>
+    <a class="skip-link" href="#index" id="skip-link">Choose an observation</a>
+    <main id="experience" aria-label="ATLAS cartographic experience">
+      <div id="world" aria-hidden="true"></div>
+      <div id="reading-field" aria-hidden="true"></div>
+      <div class="edge-ticks" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <header class="masthead">
+        <a
+          class="brand"
+          href="#coordinate"
+          aria-label="ATLAS — return to the coordinate"
+        >
+          <svg
+            viewBox="0 0 44 38"
+            class="brand-mark"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 35 20 4 42 35M8 35 23 9 38 35M14 35 24 18 34 35M20 35l6-10 6 10"
+            />
+          </svg>
+          <span>ATLAS</span>
+        </a>
+        <div class="collection-header-actions"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button class="index-trigger" id="open-index" aria-haspopup="dialog">
+          <span>INDEX</span
+          ><svg viewBox="0 0 30 20" fill="none" aria-hidden="true">
+            <path d="M1 5h28M1 15h28" />
+          </svg>
+        </button>
+      </div></header>
+
+      <div class="anchor" id="anchor" aria-hidden="true">
+        <span class="anchor-dot"></span><span class="anchor-ring"></span
+        ><span class="anchor-coordinate"
+          ><span class="anchor-context">ANCHOR · OUTSIDE FRAME<br /></span
+          >35.4875° N<br />138.8079° E</span
+        >
+        <svg class="anchor-direction" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10h11m-5-5 5 5-5 5" />
+        </svg>
+      </div>
+
+      <div class="opening" id="opening">
+        <h1>
+          <span>35.4875° <small>N</small></span
+          ><span>138.8079° <small>E</small></span>
+        </h1>
+        <p class="opening-caption">Every place begins as a coordinate.</p>
+      </div>
+
+      <div class="scene-copy" id="scene-copy" aria-hidden="true">
+        <h2><span id="scene-title"></span><em id="scene-italic"></em></h2>
+        <p class="scene-note" id="scene-note"></p>
+      </div>
+
+      <div id="map-labels" aria-hidden="true"></div>
+      <div class="north" id="north" aria-hidden="true">
+        <span>N</span
+        ><svg viewBox="0 0 24 40">
+          <path d="M12 5 6 30l6-6 6 6Z" fill="none" />
+          <path d="m12 5-6 25 6-6Z" />
+        </svg>
+      </div>
+      <p id="layer-note" class="layer-note" aria-hidden="true"></p>
+
+      <div class="closing-action" id="closing-action" hidden>
+        <button id="return-start">
+          <span class="round-arrow"
+            ><svg viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M5 14h17M15 7l7 7-7 7" /></svg></span
+          ><span>RETURN TO THE COORDINATE</span>
+        </button>
+      </div>
+
+      <footer class="instrument-bar">
+        <div class="observation">
+          <span id="observation-number">01</span
+          ><span class="observation-rule"></span
+          ><span id="observation-name">COORDINATE</span>
+        </div>
+        <button class="sources-trigger" id="open-sources">
+          GSI / NATURAL EARTH <span>↗</span>
+        </button>
+        <div class="measurement" id="measurement">
+          <span id="altitude">ONE PLACE. EVERY SCALE.</span>
+          <div class="scale" id="scale">
+            <span id="scale-label">10 KM</span><i id="scale-rule"></i>
+          </div>
+        </div>
+        <div class="scroll-cue" id="scroll-cue">
+          <span>SCROLL TO CHANGE YOUR ALTITUDE</span><i></i>
+        </div>
+      </footer>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-line"></div>
+      </div>
+      <div
+        class="load-status"
+        id="load-status"
+        role="status"
+        aria-live="polite"
+      >
+        Preparing the first layer…
+      </div>
+      <div class="failure" id="failure" hidden>
+        <h2>This layer could not open.</h2>
+        <p id="failure-message"></p>
+        <button id="retry-load">Try again</button
+        ><a href="#index" id="fallback-index">Read the field notes</a>
+      </div>
+    </main>
+
+    <div id="journey" aria-hidden="true"></div>
+    <p
+      class="sr-only"
+      id="chapter-announcement"
+      role="status"
+      aria-live="polite"
+    ></p>
+    <article class="sr-only" id="accessible-story">
+      <h2>One place. Every scale.</h2>
+      <p>
+        The journey observes Fujiyoshida, Mount Fuji and the Fuji Five Lakes in
+        Japan. It starts at 35.4875 degrees north, 138.8079 degrees east. A
+        coordinate becomes a grid. Actual elevation contours rise together into
+        three-dimensional terrain. Mapped waterways reveal lakes and river
+        valleys. A real Landsat mosaic is registered to that terrain. As the
+        camera approaches Fujiyoshida, aerial orthophotography reveals roads and
+        building footprints. Those same footprints lift to schematic eight-metre
+        buildings. A designed route follows actual mapped streets. An artistic
+        daylight-to-night study changes the appearance of the same city. The
+        camera pulls away continuously, leaving the original coordinate as one
+        point on a cartographic Earth.
+      </p>
+      <p>
+        Scroll, use arrow keys or Page Down, or choose a chapter from the Index.
+        Reduced-motion preferences are respected. Geographic data is provided by
+        the Geospatial Information Authority of Japan and Natural Earth.
+      </p>
+    </article>
+
+    <dialog id="index" class="field-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <a class="dialog-brand" href="#coordinate">ATLAS</a
+        ><button
+          id="close-dialog"
+          class="close-dialog"
+          aria-label="Close index"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m5 5 14 14M19 5 5 19" />
+          </svg>
+        </button>
+      </div>
+      <div class="index-view" id="index-view">
+        <div class="index-intro">
+          <h2 id="dialog-title">The world<br /><em>in layers.</em></h2>
+          <p>
+            One place. Eleven observations.<br />Each one a different way of
+            seeing.
+          </p>
+        </div>
+        <nav
+          id="chapter-list"
+          class="chapter-list"
+          aria-label="Observations"
+        ></nav>
+      </div>
+      <div class="credits-view" id="credits-view" hidden>
+        <h2>Grounded in<br /><em>the real world.</em></h2>
+        <p class="credits-lead">
+          A study of Fuji, Fujiyoshida and the Fuji Five Lakes.<br />35.4875° N
+          / 138.8079° E
+        </p>
+        <dl class="credits-list">
+          <div>
+            <dt>ELEVATION & VECTORS</dt>
+            <dd>
+              Geospatial Information Authority of Japan (GSI);
+              国土地理院ベクトルタイル提供実験. Actual DEM10B elevations, mapped
+              roads, waterways and building footprints. Cropped, resampled and
+              rendered for ATLAS; heights schematic.
+              <a
+                href="https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html"
+                target="_blank"
+                rel="noreferrer"
+                >Japan Public Data License 1.0 ↗</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>THE SURFACE</dt>
+            <dd>
+              Regional Landsat 8 mosaic: GSI, TSIC, GEO Grid/AIST; Landsat 8
+              imagery courtesy of the U.S. Geological Survey; bathymetry: GEBCO.
+              City orthophotography: GSI aerial imagery. These are distinct
+              historical image mosaics.
+              <a
+                href="https://maps.gsi.go.jp/development/ichiran.html"
+                target="_blank"
+                rel="noreferrer"
+                >GSI tile catalogue ↗</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>THE PLANET</dt>
+            <dd>
+              Natural Earth 1:50m land polygons. Public domain. Global
+              coastlines are intentionally simplified for this scale.
+              <a
+                href="https://www.naturalearthdata.com/about/terms-of-use/"
+                target="_blank"
+                rel="noreferrer"
+                >Natural Earth ↗</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>THE INTERPRETATION</dt>
+            <dd>
+              Building footprints are real; their uniform 8 m heights and window
+              patterns are schematic. The route follows actual road geometry and
+              is an exhibition path, not navigation advice. Sunlight and night
+              lighting are artistic studies. No generated images are used as
+              geographic evidence.
+            </dd>
+          </div>
+        </dl>
+        <button class="back-index" id="back-index">
+          Back to the observations
+        </button>
+      </div>
+      <div class="dialog-footer">
+        <button id="motion-toggle" aria-pressed="false">
+          <span class="motion-symbol" aria-hidden="true"></span
+          ><span id="motion-label">QUIET MOTION</span></button
+        ><span>FUJI / JAPAN</span
+        ><button id="dialog-sources">SOURCES & FIELD NOTES</button>
+      </div>
+    </dialog>
+    <noscript
+      ><div class="no-script">
+        <h1>ATLAS</h1>
+        <p>One place. Every scale.</p>
+        <p>
+          This cartographic journey needs JavaScript and WebGL 2. Enable
+          JavaScript, or read the included README and attribution documents for
+          the complete field notes.
+        </p>
+      </div></noscript
+    >
+    <script type="module" src="../../experiences/atlas/src/main.ts"></script>
+  </body>
+</html>

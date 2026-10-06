@@ -1,0 +1,81 @@
+{
+  "name": "city-dem",
+  "layer": "dem_png",
+  "zoom": 14,
+  "boundsWGS84": [
+    138.791,
+    35.474,
+    138.827,
+    35.505
+  ],
+  "sourceCropGlobalPixelEdges": [
+    3714183,
+    1654148,
+    3714605,
+    1654595
+  ],
+  "sourceCropDimensions": [
+    422,
+    447
+  ],
+  "targetGlobalPixelEdges": [
+    3714184.351288889,
+    1654149.7261262662,
+    3714603.781688889,
+    1654593.3105790918
+  ],
+  "pixelReference": "XYZ/Web Mercator; raster pixels occupy edge-to-edge cells, samples at pixel centres",
+  "retrievedUTC": "2026-10-06T13:09:08Z",
+  "imageFile": "city-dem.png",
+  "sourceCropSha256": "168bc9518bd1ba07e15d1a00c1f3c578865556c28b03f860de7cdcbdee95a5dc",
+  "tiles": [
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14508/6461.png",
+      "sha256": "ba3f357263ce807e9d05379527cda89a6614462f41f3ecf6c222ef8d4ef72ff0",
+      "bytes": 103410
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14508/6462.png",
+      "sha256": "2eb3c3b61fa71273f58c2d3f50abbc12553df19b3e1f5ca15d56ab970575f37c",
+      "bytes": 69437
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14508/6463.png",
+      "sha256": "447abe67c3ce792345372d5f2b445eea272dc9092c201f6d0f11c50a4606f46e",
+      "bytes": 73656
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14509/6461.png",
+      "sha256": "e92b62e5e086030f64278d8b222cbdfcd956120f853e95f8cbaef5eb0d149fd2",
+      "bytes": 92036
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14509/6462.png",
+      "sha256": "b6bdbde06cef285f803d1bc420c4cb4ad90ef2d8a185aefa63a4a1d8ca21836a",
+      "bytes": 67506
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14509/6463.png",
+      "sha256": "5df4f623da04d537b2480ca3e0ec794fb053a1002a1539440aae7ffa1dc694aa",
+      "bytes": 86789
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14510/6461.png",
+      "sha256": "e65f5212a516e4fd9ee4887d0c5867263e97f4d33f3845dd7c5fc76e74ea8e2f",
+      "bytes": 96247
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14510/6462.png",
+      "sha256": "ea141a89933d807ea611066b60ee4ed7ecfee8872e67cd2f3a82b644dd488b6a",
+      "bytes": 94440
+    },
+    {
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14510/6463.png",
+      "sha256": "f4eee3a3d6e23368fc66504a1bd8e2f8a5cfcc82083b836bc2511a7f5da2a451",
+      "bytes": 97083
+    }
+  ],
+  "termsURL": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+  "catalogURL": "https://maps.gsi.go.jp/help/use.html",
+  "note": "Minimal lossless spatial crop assembled from original source tile pixels. No colors or heights synthesized."
+}

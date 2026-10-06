@@ -1,0 +1,265 @@
+{
+  "imported": "2026-10-06",
+  "originalZip": "D:/下载/THRUST-Anatomy-of-a-Jet-Engine.zip",
+  "sha256": "8c4324902d0469194438af8516d1bca16debfee81bf732a24f0a16570d821f9f",
+  "clock": "Native scroll and one owned requestAnimationFrame loop",
+  "versions": {
+    "three": "0.186.1",
+    "gsap": "3.15.0 where used",
+    "lenis": "1.3.26 where used",
+    "vite": "8.3.2 root; supplied 8.3.3",
+    "threeTypes": "0.186.0 root; supplied 0.183.1"
+  },
+  "adaptations": [
+    "Independent HTML, base-aware asset/runtime URLs, Collection return and canonical/social metadata; existing dependencies and root lockfile retained.",
+    "Supplied binary resources imported unchanged; source/notice trailing whitespace normalized.",
+    "Runtime gallery capture generated from the actual supplied scene, with only DOM labels hidden during capture.",
+    "Mobile blade-heading shadow retains text contrast over the bright metal cutaway; geometry, authored camera and controls remain unchanged."
+  ],
+  "upstreamClaims": "UPSTREAM documents preserve historical standalone claims. Collection acceptance is recorded separately.",
+  "files": [
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/blade.js",
+      "destination": "experiences/thrust/src/blade.js",
+      "originalSha256": "19f6ce772133fdb2ae791a400018c742c77048a7f561c7d4986d3605b5f348b7",
+      "importedSha256": "19f6ce772133fdb2ae791a400018c742c77048a7f561c7d4986d3605b5f348b7",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/engine.js",
+      "destination": "experiences/thrust/src/engine.js",
+      "originalSha256": "dfea1f8c4e1a9b7a2d67ffedfcd9445f99bc8d24d5ac4490cb3435b47ad3a43b",
+      "importedSha256": "dfea1f8c4e1a9b7a2d67ffedfcd9445f99bc8d24d5ac4490cb3435b47ad3a43b",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/flight.js",
+      "destination": "experiences/thrust/src/flight.js",
+      "originalSha256": "2cdb572c203223a59e93a374f669a3fa35224400cf8d3ec4d56f5edcf4eb6c4b",
+      "importedSha256": "2cdb572c203223a59e93a374f669a3fa35224400cf8d3ec4d56f5edcf4eb6c4b",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/flow.js",
+      "destination": "experiences/thrust/src/flow.js",
+      "originalSha256": "dc294754630f07bc83e4b1eca43b74e08f91a3933127404bcbb1481a7fae008a",
+      "importedSha256": "dc294754630f07bc83e4b1eca43b74e08f91a3933127404bcbb1481a7fae008a",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/main.js",
+      "destination": "experiences/thrust/src/main.js",
+      "originalSha256": "394cda1b726f9739d99769ec2a351a9fec28f163c5561d0d8373b68cfd832ea2",
+      "importedSha256": "394cda1b726f9739d99769ec2a351a9fec28f163c5561d0d8373b68cfd832ea2",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/scene.js",
+      "destination": "experiences/thrust/src/scene.js",
+      "originalSha256": "04da87958a815b5f485839e25c4352f4829eae117e9d250d412f9dc7adf0fda8",
+      "importedSha256": "04da87958a815b5f485839e25c4352f4829eae117e9d250d412f9dc7adf0fda8",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/sound.js",
+      "destination": "experiences/thrust/src/sound.js",
+      "originalSha256": "56c8822dd669695b615034150fc65943d73c0cede95b154906ed6154da2a9c1c",
+      "importedSha256": "56c8822dd669695b615034150fc65943d73c0cede95b154906ed6154da2a9c1c",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/story.js",
+      "destination": "experiences/thrust/src/story.js",
+      "originalSha256": "f3564eb26f9a2b5744a6825270e07656e55d5ca2ea402e57da76e32bd369d411",
+      "importedSha256": "f3564eb26f9a2b5744a6825270e07656e55d5ca2ea402e57da76e32bd369d411",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/src/style.css",
+      "destination": "experiences/thrust/src/style.css",
+      "originalSha256": "eb8bf389fa75d190ac6d63fe8e29454a884f4eb076887860cc861f44d192045b",
+      "importedSha256": "70dea4e8fb9741fe80585e461416d589409b2a61db2a289deab413f0ed678350",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/index.html",
+      "destination": "pages/thrust/index.html",
+      "originalSha256": "c552a0743e9c1840b49e21b84392ccc0290da24fcd08e6426f44d42b3887ce6e",
+      "importedSha256": "43de04b19bc38d0c5ecf7c36d14959ca616b57609cc815f037b76c626105b739",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/public/atmosphere.webp",
+      "destination": "public/thrust/atmosphere.webp",
+      "originalSha256": "d1b6caa2805dd6c62d5095f99ebcda41eae67e4a2c4841af1029e94f2816632a",
+      "importedSha256": "d1b6caa2805dd6c62d5095f99ebcda41eae67e4a2c4841af1029e94f2816632a",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/public/engine-poster.webp",
+      "destination": "public/thrust/engine-poster.webp",
+      "originalSha256": "23a87e4d5cbf9abdaa7359df45f745a4b5c06efd42f7d73203dd8a7b3821c26c",
+      "importedSha256": "23a87e4d5cbf9abdaa7359df45f745a4b5c06efd42f7d73203dd8a7b3821c26c",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/public/favicon.svg",
+      "destination": "public/thrust/favicon.svg",
+      "originalSha256": "6acee10583345117db9e328945b565931357de1b2d17eb52320f54700e1952d7",
+      "importedSha256": "6acee10583345117db9e328945b565931357de1b2d17eb52320f54700e1952d7",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/LICENSE",
+      "destination": "public/thrust/LICENSE",
+      "originalSha256": "846fc323be0bd0d994f14034b5c65579077f3a868df1dd0557eae7fe83ff0491",
+      "importedSha256": "846fc323be0bd0d994f14034b5c65579077f3a868df1dd0557eae7fe83ff0491",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/ATTRIBUTION.md",
+      "destination": "public/thrust/ATTRIBUTION.md",
+      "originalSha256": "79ccedf2910254cf442483a303d9ea5d209a6d58c6feedeccbbff0e955ba690b",
+      "importedSha256": "91bb36278f9bc88e980bd47c66eeff7f88b6bb6ddeb7b8bd0d37344a6812c1fd",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/DESIGN.md",
+      "destination": "docs/thrust/DESIGN.md",
+      "originalSha256": "db7a3d149864841ebe0cb2e6bcc97ca950cd6dd01048714b75b9fb9e74c2f083",
+      "importedSha256": "db7a3d149864841ebe0cb2e6bcc97ca950cd6dd01048714b75b9fb9e74c2f083",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/README.md",
+      "destination": "docs/thrust/UPSTREAM-README.md",
+      "originalSha256": "8dafa53e4b354e99d4044f3456c5a66b9711ff34881a058645ada092bd38b4d9",
+      "importedSha256": "285c59b45a63c8e80cc0d230ad23b97f3b48b1834c8c2d018c499ff503455f75",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/PRODUCT.md",
+      "destination": "docs/thrust/UPSTREAM-PRODUCT.md",
+      "originalSha256": "3a5f031fe288e6cac48164eaf1a014bc881c3ef487635041f1dba087e9178392",
+      "importedSha256": "9bd4d0f69bd0772b62767fe4fffb414435c7daf1a20598356563fdbd66632cd1",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/docs/ENGINEERING.md",
+      "destination": "docs/thrust/ENGINEERING.md",
+      "originalSha256": "a118c0b807acf0f1dbec84c91bbea6e251dc140fde82fb1a2fe41f76e394c397",
+      "importedSha256": "eadfdc0c3c1d1cfbabb881505291e3c279117a1f4b71a418990456da426d1ded",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/docs/PROVENANCE.md",
+      "destination": "docs/thrust/PROVENANCE.md",
+      "originalSha256": "f2ace26452edaa3ffd95ca99e9a444d1d8e87d1085a61c4503c45e546744d469",
+      "importedSha256": "f2ace26452edaa3ffd95ca99e9a444d1d8e87d1085a61c4503c45e546744d469",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/docs/SOURCES.md",
+      "destination": "docs/thrust/SOURCES.md",
+      "originalSha256": "030fd9b3994cb1924e0e07f9556cc875bdf4fdc4c1b03b36e2148ecb40219e93",
+      "importedSha256": "030fd9b3994cb1924e0e07f9556cc875bdf4fdc4c1b03b36e2148ecb40219e93",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/docs/VALIDATION.md",
+      "destination": "docs/thrust/UPSTREAM-VALIDATION.md",
+      "originalSha256": "c4b2d4bac551858a3c430df1927c7c500f8f896657f10d03b43102c6372210a0",
+      "importedSha256": "b7f7805688974ba6a241129557bbd47b09afa114c51e578cbd2f4be853801b30",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/licenses/Barlow-Condensed-OFL.txt",
+      "destination": "public/thrust/licenses/Barlow-Condensed-OFL.txt",
+      "originalSha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31",
+      "importedSha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/licenses/Manrope-OFL.txt",
+      "destination": "public/thrust/licenses/Manrope-OFL.txt",
+      "originalSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "importedSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/licenses/rolldown-MIT.txt",
+      "destination": "public/thrust/licenses/rolldown-MIT.txt",
+      "originalSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "importedSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/licenses/rolldown-third-party.txt",
+      "destination": "public/thrust/licenses/rolldown-third-party.txt",
+      "originalSha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c",
+      "importedSha256": "743d64c1f8a673ddcfd1740aa81672eac950ad7e63f6ba2d7c39f91dd57c5b99",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/licenses/three-MIT.txt",
+      "destination": "public/thrust/licenses/three-MIT.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/licenses/vite-MIT-and-notices.txt",
+      "destination": "public/thrust/licenses/vite-MIT-and-notices.txt",
+      "originalSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "importedSha256": "8f1715f772cf26b4b91fb4a8401a160ab841ecb2b4ef2b9bcca12b65c5ebe2fd",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/tests/engine-clearance.test.js",
+      "destination": "tests/thrust-engine-clearance.test.mjs",
+      "originalSha256": "556b1476d39bcdbc5161e8eb65e81c06b8e7541a1d4854ca97850ed6645e55f6",
+      "importedSha256": "e4d7ed0b1736c0662c53ce95d29abc42531bdbd2c951f7b8b5cc3b840dce2e35",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/tests/engine.test.js",
+      "destination": "tests/thrust-engine.test.mjs",
+      "originalSha256": "1602283f2b79871f7ba7a62e87000c9e98d407e7182cadbce02c9d60558e0d5f",
+      "importedSha256": "98a95aff91c318b96b5906a1f26cbd24f00b3f873c7dae1c7a76ee9839a5ac09",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/tests/story.test.js",
+      "destination": "tests/thrust-story.test.mjs",
+      "originalSha256": "3fe5bc05d7aed30faf414147d9ae3f146847f743b4ba586d6a55f960de780aaa",
+      "importedSha256": "c77e1fc2a4d28af939e19ef500bba0bb48d0fbaf7fe82c82fae3a8eb13ecc311",
+      "adapted": true
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/dist/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+      "destination": "public/thrust/fonts/barlow-condensed-latin-600-normal.woff2",
+      "originalSha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66",
+      "importedSha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+      "destination": "public/thrust/fonts/manrope-latin-400-normal.woff2",
+      "originalSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "importedSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "adapted": false
+    },
+    {
+      "source": "THRUST-Anatomy-of-a-Jet-Engine/THRUST/dist/assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+      "destination": "public/thrust/fonts/manrope-latin-500-normal.woff2",
+      "originalSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "importedSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "adapted": false
+    }
+  ],
+  "gallery": {
+    "path": "public/thrust/social.jpg",
+    "sha256": "b3a90c4061f50f8ec69ebc3a78e2d17c6ae98f3523480941ef5585c2c64c921a",
+    "method": "Actual Chromium runtime screenshot at 1920x1080, DOM labels hidden; JPEG resized to 1600x900"
+  }
+}

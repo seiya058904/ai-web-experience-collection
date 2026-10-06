@@ -1,0 +1,266 @@
+{
+  "imported": "2026-10-06",
+  "originalZip": "D:/下载/SILICON-From-Sand-to-Signal.zip",
+  "sha256": "08c71aeda6e101a60a6b9e706cb03479913a52238fd7bf213a4bd8a2e8cbf868",
+  "clock": "One Lenis instance and one GSAP ticker",
+  "versions": {
+    "three": "0.186.1",
+    "gsap": "3.15.0 where used",
+    "lenis": "1.3.26 where used",
+    "vite": "8.3.2 root; supplied 8.3.3",
+    "threeTypes": "0.186.0 root; supplied 0.183.1"
+  },
+  "adaptations": [
+    "Independent HTML, base-aware asset/runtime URLs, Collection return and canonical/social metadata; existing dependencies and root lockfile retained.",
+    "Supplied binary resources imported unchanged; source/notice trailing whitespace normalized.",
+    "Runtime gallery capture generated from the actual supplied scene, with only DOM labels hidden during capture.",
+    "Owned GSAP callback suspends while hidden; non-BFCache exits/HMR release Lenis, ScrollTrigger and GPU resources; late module/font completions guard disposed state; diagnostics are development-only.",
+    "Portrait tablet camera widens its frustum without changing object poses or desktop/mobile framing. Chapter/auxiliary labels retain an 11px floor, wrapping chapter names on narrower desktop widths."
+  ],
+  "upstreamClaims": "UPSTREAM documents preserve historical standalone claims. Collection acceptance is recorded separately.",
+  "files": [
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/content.ts",
+      "destination": "experiences/silicon/src/content.ts",
+      "originalSha256": "08b2ed85f4154d22410babe5fed411c9d949b8d9ae87d18249ead57c510a482a",
+      "importedSha256": "08b2ed85f4154d22410babe5fed411c9d949b8d9ae87d18249ead57c510a482a",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/main.ts",
+      "destination": "experiences/silicon/src/main.ts",
+      "originalSha256": "6d5c98e3dfcaed9109fe5e622aa2dc8ee4298ae5db856472ae31053b0b3c6832",
+      "importedSha256": "cb1d8908a040a30982923e11f7370ba9d1219bdf7913375515f9e99bae9c8b2b",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/style.css",
+      "destination": "experiences/silicon/src/style.css",
+      "originalSha256": "a24d3de8704654807efc155515c488b85c2e7703d9a0e69f43116e2e8b7f20eb",
+      "importedSha256": "2f3a306010f7abc403ce4b0afd7eb23e639334a696d8a1b0f8fb2628d2c5476c",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/vite-env.d.ts",
+      "destination": "experiences/silicon/src/vite-env.d.ts",
+      "originalSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "importedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/fallback.ts",
+      "destination": "experiences/silicon/src/scene/fallback.ts",
+      "originalSha256": "d7825cfafeab8ec8e404bb07623d05ebd34af4becefd2feb5b5821556bd81d18",
+      "importedSha256": "d7825cfafeab8ec8e404bb07623d05ebd34af4becefd2feb5b5821556bd81d18",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/handoff.ts",
+      "destination": "experiences/silicon/src/scene/handoff.ts",
+      "originalSha256": "ccfdfc20252221f1b73bee7d29eb11e1a561cb70428c1d47b9f70f5406498d91",
+      "importedSha256": "ccfdfc20252221f1b73bee7d29eb11e1a561cb70428c1d47b9f70f5406498d91",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/micro.ts",
+      "destination": "experiences/silicon/src/scene/micro.ts",
+      "originalSha256": "c22d0db30e0b3e8ad99b981a5bdc572a298db6f20befc8928d15d1c713872935",
+      "importedSha256": "c22d0db30e0b3e8ad99b981a5bdc572a298db6f20befc8928d15d1c713872935",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/package.ts",
+      "destination": "experiences/silicon/src/scene/package.ts",
+      "originalSha256": "bd6608cd10c3a46a26297a221d7704ee67c21e532ffb875ba8ce71ced67a4791",
+      "importedSha256": "bd6608cd10c3a46a26297a221d7704ee67c21e532ffb875ba8ce71ced67a4791",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/shared.ts",
+      "destination": "experiences/silicon/src/scene/shared.ts",
+      "originalSha256": "e9b2d2a914a2d0a71aa0a58e2a0315c7178b0954a4453927e23425d2346fef16",
+      "importedSha256": "e9b2d2a914a2d0a71aa0a58e2a0315c7178b0954a4453927e23425d2346fef16",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/stage.ts",
+      "destination": "experiences/silicon/src/scene/stage.ts",
+      "originalSha256": "2014531b3803dfd950d5424736378f8d9afd392254e745a4afc932d7b06d9709",
+      "importedSha256": "471a3f3565b190697d9d7ebfc31ae56bf26debe8f84367834983092b7944606e",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/src/scene/wafer.ts",
+      "destination": "experiences/silicon/src/scene/wafer.ts",
+      "originalSha256": "64a1803a10ec27696d8983b79c9b085c5c5a32cba5cb512b88acc1f74db079b8",
+      "importedSha256": "64a1803a10ec27696d8983b79c9b085c5c5a32cba5cb512b88acc1f74db079b8",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/index.html",
+      "destination": "pages/silicon/index.html",
+      "originalSha256": "979f0d6a085e6a86e69ce01d8a40c5c6c312d34512a3d06a85bf0ba80cc135b5",
+      "importedSha256": "9f897bc7d8b38b7176d562a2a95e41e4b5b7de95d4a86a218aa12b6ecd372ea9",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/public/favicon.svg",
+      "destination": "public/silicon/favicon.svg",
+      "originalSha256": "05f776f9682cdf50791dd7153002880f348eeec3f12218cfed37369f339a876b",
+      "importedSha256": "05f776f9682cdf50791dd7153002880f348eeec3f12218cfed37369f339a876b",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/LICENSE",
+      "destination": "public/silicon/LICENSE",
+      "originalSha256": "49b9c21ee0533483796ad13edd16530dd763e83d7b019b2a93cb59bbd1096b1f",
+      "importedSha256": "49b9c21ee0533483796ad13edd16530dd763e83d7b019b2a93cb59bbd1096b1f",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/ATTRIBUTION.md",
+      "destination": "public/silicon/ATTRIBUTION.md",
+      "originalSha256": "41cb6262df7afabcae67ccf572c71eb88e8de65370ea186a68ed7d4c3fc00a0b",
+      "importedSha256": "b8a878d682bcba3e181111c6b0709b8f5ede944321ae49ca382c9fdc216beb35",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/DESIGN.md",
+      "destination": "docs/silicon/DESIGN.md",
+      "originalSha256": "8e747224127c568924fbf38739a9779378fd5297106e8acf4e460c4265b542bc",
+      "importedSha256": "815cbce400003801f9b18819eadcb48f85575c387c32eac0f2e92eddae9caf6b",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/README.md",
+      "destination": "docs/silicon/UPSTREAM-README.md",
+      "originalSha256": "412aaf8d5d0b409320ed61c85364c1e53ff2deb8242fd174327f1b84b43800e4",
+      "importedSha256": "32106cecd8bda867d8be86d8c18f504496ae1cb0ef3d5e48d75ec14b75409099",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/PRODUCT.md",
+      "destination": "docs/silicon/UPSTREAM-PRODUCT.md",
+      "originalSha256": "ca475e52c6b386b64b16b79ac3058f3fa402ffa6106827de1925f73aacbc2387",
+      "importedSha256": "65e9eac3ace06448a823a18c83c136c4c59aaa2f792b6b808c56bd0902658326",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/SCENE-ARCHITECTURE.md",
+      "destination": "docs/silicon/SCENE-ARCHITECTURE.md",
+      "originalSha256": "2a6bdbf93c2cc133162c5428c1393d75e055cbdbe33e64af14f17d090ab27e86",
+      "importedSha256": "a4aa0447eb240ae163b06e20f4f5c4dc2b9902ca4ee0a66be4fd8087ff80947f",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/SOURCES.md",
+      "destination": "docs/silicon/SOURCES.md",
+      "originalSha256": "ce8e2988fea961898bc75b42d5f5bc03344c4c6d8a39996383839b5941f811d8",
+      "importedSha256": "ce8e2988fea961898bc75b42d5f5bc03344c4c6d8a39996383839b5941f811d8",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/VERIFICATION.md",
+      "destination": "docs/silicon/UPSTREAM-VERIFICATION.md",
+      "originalSha256": "88ca02732244f1adc2ee969b923ff7017d2095bf5f615f3c1e397d6af55515b7",
+      "importedSha256": "142a7334bb41aa10a3afdceaced02b8d788a897c28a923fe6b04aee44c66eb8c",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/GSAP-NOTICE.txt",
+      "destination": "public/silicon/licenses/GSAP-NOTICE.txt",
+      "originalSha256": "4a32359795765b0f4099fbafa08e1899a74745c77d8c92999116be5318d6b60a",
+      "importedSha256": "4a32359795765b0f4099fbafa08e1899a74745c77d8c92999116be5318d6b60a",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/IBM-PLEX-MONO-OFL.txt",
+      "destination": "public/silicon/licenses/IBM-PLEX-MONO-OFL.txt",
+      "originalSha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+      "importedSha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/LENIS-LICENSE.txt",
+      "destination": "public/silicon/licenses/LENIS-LICENSE.txt",
+      "originalSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "importedSha256": "aa0646bd5431b4828d8e4c3312417bd516c6c6b5c96cdc2842700dde31572f50",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/LTC-LICENSE.txt",
+      "destination": "public/silicon/licenses/LTC-LICENSE.txt",
+      "originalSha256": "2d696b421324f504d93786ecaff52fa8ee0e23b54e6480d4c0236a8f36498ab7",
+      "importedSha256": "2d696b421324f504d93786ecaff52fa8ee0e23b54e6480d4c0236a8f36498ab7",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/MANROPE-OFL.txt",
+      "destination": "public/silicon/licenses/MANROPE-OFL.txt",
+      "originalSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "importedSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/THREE-LICENSE.txt",
+      "destination": "public/silicon/licenses/THREE-LICENSE.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/TYPES-THREE-LICENSE.txt",
+      "destination": "public/silicon/licenses/TYPES-THREE-LICENSE.txt",
+      "originalSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "importedSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/TYPESCRIPT-LICENSE.txt",
+      "destination": "public/silicon/licenses/TYPESCRIPT-LICENSE.txt",
+      "originalSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "importedSha256": "527adf9d4c760f7367c2aeffed6a89afba8ba40ea1b0efbc8f56496ad30ea9cf",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/TYPESCRIPT-THIRD-PARTY-NOTICES.txt",
+      "destination": "public/silicon/licenses/TYPESCRIPT-THIRD-PARTY-NOTICES.txt",
+      "originalSha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c",
+      "importedSha256": "f7d7409c091d9d5c09a8bafbc4a27dc30ce2da6e19b7c0f91c59754a7c4b195b",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/docs/licenses/VITE-LICENSE.md",
+      "destination": "public/silicon/licenses/VITE-LICENSE.md",
+      "originalSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "importedSha256": "8f1715f772cf26b4b91fb4a8401a160ab841ecb2b4ef2b9bcca12b65c5ebe2fd",
+      "adapted": true
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/.impeccable/design.json",
+      "destination": "provenance/silicon/design.json",
+      "originalSha256": "4265ea7db1cfb68f28a36a1d9b36db134edd7cf55ff9e54bfbe1e759ba6cad5f",
+      "importedSha256": "4265ea7db1cfb68f28a36a1d9b36db134edd7cf55ff9e54bfbe1e759ba6cad5f",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/dist/assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+      "destination": "public/silicon/fonts/manrope-latin-wght-normal.woff2",
+      "originalSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "importedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "adapted": false
+    },
+    {
+      "source": "SILICON-From-Sand-to-Signal/SILICON/dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+      "destination": "public/silicon/fonts/ibm-plex-mono-latin-400-normal.woff2",
+      "originalSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "importedSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "adapted": false
+    }
+  ],
+  "gallery": {
+    "path": "public/silicon/social.jpg",
+    "sha256": "0f11f7926f8bfc6401ddc13c7b7600bb185acdd9937de0e679e0eafcf13877c1",
+    "method": "Actual Chromium runtime screenshot at 1920x1080, DOM labels hidden; JPEG resized to 1600x900"
+  }
+}

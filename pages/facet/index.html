@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#080b0e" />
+  <meta name="description" content="Follow a beam of light through cut, polish, depth and color. FACET is an immersive, real-time gemstone exhibition." />
+  <title>FACET — The Light Within</title>
+  <link rel="icon" href="/facet/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/facet/fonts/instrument-serif-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/facet/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/facet/fonts/dm-sans-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../../experiences/facet/src/styles/main.css" />
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%facet/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:title" content="FACET — The Light Within">
+<meta property="og:description" content="A continuous real-time gemstone exhibition through light, cut, polish, depth and color.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%facet/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%facet/social.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FACET — The Light Within">
+<meta name="twitter:description" content="A continuous real-time gemstone exhibition through light, cut, polish, depth and color.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%facet/social.jpg">
+</head>
+<body>
+  <a class="skip-link" href="#light" data-i18n="skip">Skip to the exhibition</a>
+  <header class="site-header">
+    <a class="wordmark" href="#light" aria-label="FACET — return to the beginning">FACET</a>
+    <div class="header-actions"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="text-button index-toggle js-only" id="index-toggle" aria-haspopup="dialog" aria-controls="chapter-index" data-i18n="index">Index</button>
+      <span class="header-rule" aria-hidden="true"></span>
+      <div class="languages" role="group" aria-label="Language">
+        <button id="lang-en" lang="en" class="language-button is-active" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button id="lang-zh" lang="zh-CN" class="language-button" aria-pressed="false">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="stage" aria-hidden="true">
+    <div class="still-art"><img src="/facet/images/gallery-still.webp" alt="" width="1672" height="940" fetchpriority="high" /></div>
+    <canvas id="exhibition-canvas"></canvas>
+    <div class="stage-shade"></div>
+  </div>
+  <div class="loading-note" id="loading-note" role="status" data-i18n="loading">Finding the light…</div>
+
+  <main id="exhibition" aria-label="Gemstone exhibition">
+    <div id="scroll-track" aria-hidden="true"></div>
+    <div class="scene-panels">
+      <section class="scene-panel is-current scene-light" id="light" aria-labelledby="light-title" tabindex="-1">
+        <div class="scene-copy copy-left">
+          <h1 id="light-title"><span data-i18n="light.title1">The light</span><em data-i18n="light.title2">within.</em></h1>
+          <p data-i18n="light.body">A journey through cut, color and clarity.</p>
+        </div>
+        <a href="#facet" class="enter-link" data-chapter="1"><span data-i18n="scroll">Scroll to enter</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 7 7 7-7"/></svg></a>
+      </section>
+
+      <section class="scene-panel scene-facet" id="facet" aria-labelledby="facet-title">
+        <div class="scene-copy copy-left">
+          <h2 id="facet-title"><span data-i18n="facet.title1">A language</span><em data-i18n="facet.title2">of planes.</em></h2>
+          <span class="copy-rule" aria-hidden="true"></span>
+          <p data-i18n="facet.body">Every angle gives light a new direction.</p>
+        </div>
+        <div class="facet-labels" aria-hidden="true">
+          <span id="label-crown"><i></i><span data-i18n="crown">Crown</span></span>
+          <span id="label-girdle"><i></i><span data-i18n="girdle">Girdle</span></span>
+          <span id="label-pavilion"><i></i><span data-i18n="pavilion">Pavilion</span></span>
+        </div>
+        <div class="scene-control facet-control">
+          <label for="cut-range" data-i18n="separate">Separate the cut</label>
+          <input id="cut-range" type="range" min="0" max="100" value="65" aria-label="Separate the gemstone cut" />
+          <button class="reset-control" data-reset="cut" data-i18n="followScroll">Follow scroll</button>
+        </div>
+      </section>
+
+      <section class="scene-panel scene-polish" id="polish" aria-labelledby="polish-title">
+        <div class="scene-copy copy-right">
+          <h2 id="polish-title"><span data-i18n="polish.title1">The surface,</span><em data-i18n="polish.title2">awakened.</em></h2>
+          <p data-i18n="polish.body">A veil lifts. Light finds its way in.</p>
+        </div>
+        <div class="scene-control polish-control">
+          <label for="polish-range" data-i18n="rough">Rough</label>
+          <input id="polish-range" type="range" min="0" max="100" value="50" aria-label="Surface polish" />
+          <span data-i18n="polished">Polished</span>
+          <button class="reset-control" data-reset="polish" data-i18n="followScroll">Follow scroll</button>
+        </div>
+      </section>
+
+      <section class="scene-panel scene-depth" id="depth" aria-labelledby="depth-title">
+        <div class="scene-copy copy-left">
+          <h2 id="depth-title"><span data-i18n="depth.title1">Beyond</span><em data-i18n="depth.title2">the surface.</em></h2>
+          <p data-i18n="depth.body">Color held in light.<br />Depth held in silence.</p>
+          <div class="material-tabs" role="group" aria-label="Corundum color">
+            <button data-corundum="ruby" aria-pressed="true" data-i18n="ruby">Ruby</button>
+            <button data-corundum="sapphire" aria-pressed="false" data-i18n="sapphire">Sapphire</button>
+          </div>
+        </div>
+        <div class="depth-inscription" aria-hidden="true"><span data-i18n="inside">A little closer.</span><span class="fine-line"></span></div>
+      </section>
+
+      <section class="scene-panel scene-color" id="color" aria-labelledby="color-title">
+        <div class="scene-copy copy-right">
+          <h2 id="color-title"><span data-i18n="color.title1">Color,</span><em data-i18n="color.title2">felt.</em></h2>
+          <p id="color-description" data-i18n="color.body">From the velvet depth of sapphire to the quiet glow of jade.</p>
+        </div>
+        <div class="scene-control color-control">
+          <div class="material-tabs" role="group" aria-label="Organic gemstone">
+            <button data-organic="jade" aria-pressed="true" data-i18n="jade">Jade</button>
+            <button data-organic="agate" aria-pressed="false" data-i18n="agate">Agate</button>
+          </div>
+          <span class="control-separator" aria-hidden="true"></span>
+          <label for="translucency-range" data-i18n="throughStone">Light through stone</label>
+          <input id="translucency-range" type="range" min="0" max="100" value="65" aria-label="Light through the stone" />
+        </div>
+      </section>
+
+      <section class="scene-panel scene-brilliance" id="brilliance" aria-labelledby="brilliance-title">
+        <div class="scene-copy copy-left">
+          <h2 id="brilliance-title"><span data-i18n="brilliance.title1">Light,</span><em data-i18n="brilliance.title2">unfolded.</em></h2>
+          <p data-i18n="brilliance.body">One beam. Many possibilities.</p>
+        </div>
+        <div class="scene-control brilliance-control">
+          <label for="angle-range" data-i18n="angle">Angle</label>
+          <input id="angle-range" type="range" min="18" max="66" value="48" aria-label="Angle of incident light" />
+          <output for="angle-range" id="angle-value">48°</output>
+        </div>
+      </section>
+
+      <section class="scene-panel scene-exhibit" id="exhibit" aria-labelledby="exhibit-title">
+        <div class="scene-copy copy-center">
+          <h2 id="exhibit-title"><span data-i18n="exhibit.title1">A world</span> <em data-i18n="exhibit.title2">within.</em></h2>
+        </div>
+        <div id="specimen-labels" aria-label="Choose a gemstone">
+          <button class="specimen-label" data-specimen="0" data-i18n="ruby">Ruby</button>
+          <button class="specimen-label" data-specimen="1" data-i18n="sapphire">Sapphire</button>
+          <button class="specimen-label" data-specimen="2" data-i18n="diamond">Diamond</button>
+          <button class="specimen-label" data-specimen="3" data-i18n="jade">Jade</button>
+          <button class="specimen-label" data-specimen="4" data-i18n="agate">Agate</button>
+          <button class="specimen-label" data-specimen="5" data-i18n="quartz">Quartz</button>
+        </div>
+        <div class="exhibit-invitation">
+          <p data-i18n="selectStone">Select a stone to look closer.</p>
+          <a href="#light" data-chapter="0" class="return-link" data-i18n="returnLight">Return to the light</a>
+        </div>
+        <div id="inspect-panel" class="inspect-panel" hidden>
+          <button id="close-inspect" class="back-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h14"/></svg><span data-i18n="backExhibit">Back to the exhibition</span></button>
+          <h3 id="inspect-title">Diamond</h3>
+          <p id="inspect-description"></p>
+          <p class="inspect-hint" data-i18n="dragTurn">Drag to turn. Take your time.</p>
+          <button id="reset-view" class="return-link" data-i18n="resetView">Reset view</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="gem-interaction" class="gem-interaction js-only" role="img" tabindex="0" aria-label="Interactive gemstone. Drag horizontally or use left and right arrow keys to rotate."></div>
+  <div class="chapter-hud js-only">
+    <nav class="chapter-rail" aria-label="Exhibition chapters"></nav>
+    <div class="chapter-position"><span id="current-chapter">01</span><span class="position-divider">/</span><span>07</span></div>
+    <div class="chapter-arrows">
+      <button id="previous-chapter" aria-label="Previous chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+      <button id="next-chapter" aria-label="Next chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    </div>
+  </div>
+
+  <dialog id="chapter-index" aria-labelledby="index-title">
+    <div class="index-header"><span class="wordmark">FACET</span><button class="icon-button" id="close-index" aria-label="Close chapter index"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button></div>
+    <h2 id="index-title" data-i18n="indexTitle">Follow the light.</h2>
+    <nav class="index-chapters" aria-label="Jump to a chapter"></nav>
+    <div class="index-options"><button id="motion-toggle" class="text-button" aria-pressed="false" data-i18n="pauseMotion">Pause ambient motion</button><span data-i18n="exhibitionNote">Seven moments. One continuous journey.</span></div>
+  </dialog>
+  <p class="sr-only" id="scene-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+  <noscript><div class="noscript-note">FACET's live exhibition needs JavaScript. The chapter texts remain available below.</div></noscript>
+  <script type="module" src="../../experiences/facet/src/main.ts"></script>
+</body>
+</html>

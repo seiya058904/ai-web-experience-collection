@@ -1,0 +1,617 @@
+{
+  "snapshot_date": "2026-10-06",
+  "coordinate_reference": "EPSG:4326 longitude, latitude in degrees after MVT/Web Mercator decode",
+  "gsi_source": "https://github.com/gsi-cyberjapan/gsimaps-vector-experiment",
+  "gsi_license": "Japan Public Data License 1.0; source and processing attribution required",
+  "gsi_terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+  "natural_earth_source": "https://github.com/nvkelso/natural-earth-vector",
+  "natural_earth_license": "public domain",
+  "city_bounds": [
+    138.791,
+    35.474,
+    138.827,
+    35.505
+  ],
+  "region_bounds": [
+    138.54,
+    35.24,
+    138.99,
+    35.61
+  ],
+  "files": [
+    {
+      "path": "gsi/12/3624/1613.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1613.pbf",
+      "bytes": 25160,
+      "sha256": "db5ef9885d98ef8cf9b1e165d75809b3ce48b42258f8e6e3a4fbfc1aa56554de"
+    },
+    {
+      "path": "gsi/12/3624/1614.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1614.pbf",
+      "bytes": 28914,
+      "sha256": "ca22621a381cf1976496bdf77fb509b01ff5ddb8439756481fa79b2d473fd291"
+    },
+    {
+      "path": "gsi/12/3624/1615.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1615.pbf",
+      "bytes": 27576,
+      "sha256": "153a4545b09f7aa9ea896e15ac46fa945d14dfd86b66893eb24806a7f0094b2b"
+    },
+    {
+      "path": "gsi/12/3624/1616.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1616.pbf",
+      "bytes": 18222,
+      "sha256": "8ad8bfe589870ab9f8832a4c6f842a2fbb00836b7afaf092ab656ac18e9be893"
+    },
+    {
+      "path": "gsi/12/3624/1617.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1617.pbf",
+      "bytes": 14175,
+      "sha256": "b961c61f6014cd86bb1d06e1f4d9407c0d26025a9a8ab4a70e27505014af03b1"
+    },
+    {
+      "path": "gsi/12/3624/1618.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1618.pbf",
+      "bytes": 23914,
+      "sha256": "47e2ab31fef3488095df3f58342b2400e1adc8b97a269c234ec3b69a19b6c73b"
+    },
+    {
+      "path": "gsi/12/3624/1619.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3624/1619.pbf",
+      "bytes": 27741,
+      "sha256": "9a8386c3c3314e9edab94550fc526cf8026539b094a5789a883ab4c1edbb34af"
+    },
+    {
+      "path": "gsi/12/3625/1613.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1613.pbf",
+      "bytes": 28798,
+      "sha256": "3803e306d2325648d668a3321ae956b3ac39d47427658b7058a9cca10c82ef70"
+    },
+    {
+      "path": "gsi/12/3625/1614.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1614.pbf",
+      "bytes": 22654,
+      "sha256": "f9aa511208aee8a1b06236161bfa7c1bd2e3809e0cfdb2fb5b71bc6dc543250e"
+    },
+    {
+      "path": "gsi/12/3625/1615.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1615.pbf",
+      "bytes": 18799,
+      "sha256": "909d56479151cd7337955762dcc6180ee525262d23093439c83427239fb63836"
+    },
+    {
+      "path": "gsi/12/3625/1616.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1616.pbf",
+      "bytes": 5859,
+      "sha256": "05ec1c9a9c466b0a2a6eca94700a5c72cf263358bf2f62e03bd77ce25f314abe"
+    },
+    {
+      "path": "gsi/12/3625/1617.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1617.pbf",
+      "bytes": 6192,
+      "sha256": "6a76018c93d34aa7d38ec6f699f3c9a3089777f1a5cf19a4b69774a61015ef37"
+    },
+    {
+      "path": "gsi/12/3625/1618.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1618.pbf",
+      "bytes": 9928,
+      "sha256": "7a9dce429b95a0fa9a84c6113d788fe69a2b2c1d4fff0d206d52f96a8d02fe8c"
+    },
+    {
+      "path": "gsi/12/3625/1619.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3625/1619.pbf",
+      "bytes": 23239,
+      "sha256": "fa7cef38048f633fa8971f2be23ff3059755e2ffd8cc424fa91240e534cebbd7"
+    },
+    {
+      "path": "gsi/12/3626/1613.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1613.pbf",
+      "bytes": 29393,
+      "sha256": "7d7e492a7f80fa817de1b3e43378a01f9dd065e9cd330c7a60008a73a5e893e4"
+    },
+    {
+      "path": "gsi/12/3626/1614.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1614.pbf",
+      "bytes": 20508,
+      "sha256": "0c9dab281da89e993aed544186d22a00cb6f84318ffa44226860e501663c9bce"
+    },
+    {
+      "path": "gsi/12/3626/1615.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1615.pbf",
+      "bytes": 18363,
+      "sha256": "268471030c40e4e139899aa8ee1238961368727aec8b58f6ebcddb42d7414886"
+    },
+    {
+      "path": "gsi/12/3626/1616.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1616.pbf",
+      "bytes": 10335,
+      "sha256": "9d5661f8cb7e771889ec5f116e4526e7a8e2281ec0f54b57857234dd571597f3"
+    },
+    {
+      "path": "gsi/12/3626/1617.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1617.pbf",
+      "bytes": 21637,
+      "sha256": "8416dd85194cfcfd8b8bb214ca9617171824bdc686972238b3a46ea79a19edd5"
+    },
+    {
+      "path": "gsi/12/3626/1618.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1618.pbf",
+      "bytes": 7325,
+      "sha256": "93a1bf48ff0cc78308db4c87c08fe399b05e0d8dc235b2fa4f25e251be1159b5"
+    },
+    {
+      "path": "gsi/12/3626/1619.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3626/1619.pbf",
+      "bytes": 12371,
+      "sha256": "3fa5eb111bd8cb5998dfcd3e40723a38ae263270065fc51aa7081bf081784bb0"
+    },
+    {
+      "path": "gsi/12/3627/1613.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1613.pbf",
+      "bytes": 23357,
+      "sha256": "471602717840c552d2fb0bdae17eb93e66b90d2353ccb5bb8f5c69bf4f625cf3"
+    },
+    {
+      "path": "gsi/12/3627/1614.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1614.pbf",
+      "bytes": 23044,
+      "sha256": "ea703f9cd865c034bb3d664b6124af88d34e2a1a5bf0ecd5f39b864c04f7efeb"
+    },
+    {
+      "path": "gsi/12/3627/1615.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1615.pbf",
+      "bytes": 26942,
+      "sha256": "9c4244963b50864b88190b852660420f20825523be2260adecf1a7ae6e461b4d"
+    },
+    {
+      "path": "gsi/12/3627/1616.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1616.pbf",
+      "bytes": 10632,
+      "sha256": "8ea8e2bd3d86b8f4b05d916c95d5106802db1015cdf0d66ecd9f732c2b435c15"
+    },
+    {
+      "path": "gsi/12/3627/1617.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1617.pbf",
+      "bytes": 9961,
+      "sha256": "08adacad94dc4d201c3b5bee8439a7196b3a16c940e775b5195665a42aa970d1"
+    },
+    {
+      "path": "gsi/12/3627/1618.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1618.pbf",
+      "bytes": 10008,
+      "sha256": "86f6410c96392434f6e5c05ad542927f0c73cc0911f0b74061d753126ebaec12"
+    },
+    {
+      "path": "gsi/12/3627/1619.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3627/1619.pbf",
+      "bytes": 18735,
+      "sha256": "11bbc5db561ae00c45a5701577850d261aa749d6dcd732c780f259084c65e1b0"
+    },
+    {
+      "path": "gsi/12/3628/1613.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1613.pbf",
+      "bytes": 24797,
+      "sha256": "d9b2862a161aa1d5157d1e2524bafccfe438673fb4ed66fef5ba196e2664d744"
+    },
+    {
+      "path": "gsi/12/3628/1614.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1614.pbf",
+      "bytes": 30432,
+      "sha256": "87bbe47ab8350f27dfbc520a0100b2fa6b77135ca104d4d89743f51ba308de41"
+    },
+    {
+      "path": "gsi/12/3628/1615.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1615.pbf",
+      "bytes": 20624,
+      "sha256": "9b5843d197456a7810550d2fa8ee40c088a2787ca9e68a0e7bbd3a54248514eb"
+    },
+    {
+      "path": "gsi/12/3628/1616.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1616.pbf",
+      "bytes": 16542,
+      "sha256": "5b293d860b285754d36a27a589509b92207d28cd5d66a31247487828f615763d"
+    },
+    {
+      "path": "gsi/12/3628/1617.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1617.pbf",
+      "bytes": 21148,
+      "sha256": "33132bff57c6247e6aa09af639d6268d30feb6db868741293ae7064bb219220f"
+    },
+    {
+      "path": "gsi/12/3628/1618.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1618.pbf",
+      "bytes": 18928,
+      "sha256": "a183c51b42dce3edac4205e8a45601722f5a49cde4399b878a8ed8969cbef444"
+    },
+    {
+      "path": "gsi/12/3628/1619.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3628/1619.pbf",
+      "bytes": 24107,
+      "sha256": "bc92e245af08f98abb672749cafca88a6bb735cad553f0f70dd728c0eac2c9c7"
+    },
+    {
+      "path": "gsi/12/3629/1613.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1613.pbf",
+      "bytes": 24895,
+      "sha256": "0db0a5e4b5d4273a5bd20b47f7050ca1dac9d6f853318c77a027d6546cf94f49"
+    },
+    {
+      "path": "gsi/12/3629/1614.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1614.pbf",
+      "bytes": 22730,
+      "sha256": "f01385de8f936743ec156f63066945cbb76ab385c9f3dcbbcb556b455d139962"
+    },
+    {
+      "path": "gsi/12/3629/1615.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1615.pbf",
+      "bytes": 17376,
+      "sha256": "c16cefc0bb54e2119f50d589febb49576bc337a8d0289deba957ce48f4495b1d"
+    },
+    {
+      "path": "gsi/12/3629/1616.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1616.pbf",
+      "bytes": 20030,
+      "sha256": "978e212838715f89ed11cd26b2766406deef3bad67faf8077a006d9732d24e06"
+    },
+    {
+      "path": "gsi/12/3629/1617.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1617.pbf",
+      "bytes": 31163,
+      "sha256": "268ce73e598c25987872eb6a25d9669e9c5be12c4db3d85ce39b0268894a68da"
+    },
+    {
+      "path": "gsi/12/3629/1618.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1618.pbf",
+      "bytes": 22836,
+      "sha256": "41059687395154e983ec6c2fa3a83547a27d131d122403fb7b0d19261503a16d"
+    },
+    {
+      "path": "gsi/12/3629/1619.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/12/3629/1619.pbf",
+      "bytes": 21273,
+      "sha256": "1d97698eb1897000569bd49b61a68fbf01c6d9ac9c1901ba655b6ab1fd6cb837"
+    },
+    {
+      "path": "gsi/16/58034/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25846.pbf",
+      "bytes": 10397,
+      "sha256": "56f1d9a00279611aca994683c3f7188cf7b3c48ce1d1f3f9f1972231dcf87b55"
+    },
+    {
+      "path": "gsi/16/58034/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25847.pbf",
+      "bytes": 45611,
+      "sha256": "24c11f26122e93bce2b5de1b05188c5fc1292758e64472987909d2dfa6ed6598"
+    },
+    {
+      "path": "gsi/16/58034/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25848.pbf",
+      "bytes": 48392,
+      "sha256": "81250982b0818e6d9bd37843f4907976b49262675ba3558aa1cd4d34aed545ef"
+    },
+    {
+      "path": "gsi/16/58034/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25849.pbf",
+      "bytes": 57987,
+      "sha256": "9887a18facfe4f75f893f389c6cbf551ab9f6c9230f20786fc547b82fb64a5e7"
+    },
+    {
+      "path": "gsi/16/58034/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25850.pbf",
+      "bytes": 57561,
+      "sha256": "49dcb902100ed964e9e7070143d6a293540db540e01fb88c455de9c68db0cbda"
+    },
+    {
+      "path": "gsi/16/58034/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25851.pbf",
+      "bytes": 59606,
+      "sha256": "c2adf9ccc8e4aece8363605d907150945c79b5c7b06efd9569bf92448135a787"
+    },
+    {
+      "path": "gsi/16/58034/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25852.pbf",
+      "bytes": 62317,
+      "sha256": "d220d33345d4aeeb83673d6c625b438d266ddee317d0068ea2fc5e94ed5f641b"
+    },
+    {
+      "path": "gsi/16/58034/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58034/25853.pbf",
+      "bytes": 34214,
+      "sha256": "15876aece75c80c9954f673303414febea038f173a19f5e56bc5aa1dd6f634a9"
+    },
+    {
+      "path": "gsi/16/58035/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25846.pbf",
+      "bytes": 24313,
+      "sha256": "ded8636a0cbd01fb2da11a07c480723875bbff72ec2b24eedec7fa5401af233a"
+    },
+    {
+      "path": "gsi/16/58035/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25847.pbf",
+      "bytes": 53644,
+      "sha256": "80cd32f23b936e6c0c7dd5ad143cdefe0cfee46b936c2d6934b04354d7f8abe3"
+    },
+    {
+      "path": "gsi/16/58035/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25848.pbf",
+      "bytes": 73247,
+      "sha256": "45fed072d9ec4e68812d6b66f37e2e26dddfd92e9a0d8c95daeb7b008ceddddc"
+    },
+    {
+      "path": "gsi/16/58035/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25849.pbf",
+      "bytes": 74474,
+      "sha256": "83f5958c87c67898398f05eae294ab22e3c8f3790a97b935f8f5340e3a216bc1"
+    },
+    {
+      "path": "gsi/16/58035/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25850.pbf",
+      "bytes": 66895,
+      "sha256": "a0aa2fa8544463d12c943e445f901e0fbc2447dc2761141537340642bea3ced2"
+    },
+    {
+      "path": "gsi/16/58035/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25851.pbf",
+      "bytes": 55050,
+      "sha256": "8590bada4ba634a2878f90394b568beb3625661886f385dfc2cbba25bbf0dea0"
+    },
+    {
+      "path": "gsi/16/58035/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25852.pbf",
+      "bytes": 44532,
+      "sha256": "1d7b2e91f4099bf55b4d60635da6ca1bd31d0ee4c10392e843523cf9af9a3a68"
+    },
+    {
+      "path": "gsi/16/58035/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58035/25853.pbf",
+      "bytes": 44030,
+      "sha256": "08b9b668e7c1147ca1a62cad74f497c550f6ba38acf0b6cc2ad69725afb14475"
+    },
+    {
+      "path": "gsi/16/58036/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25846.pbf",
+      "bytes": 9920,
+      "sha256": "0d4403bba0b5f06c8c53382e636b3e4bafc1005bfa43d5ce4881843bd3ae94b3"
+    },
+    {
+      "path": "gsi/16/58036/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25847.pbf",
+      "bytes": 48131,
+      "sha256": "f057cebcdba2cf405f41c76f42e94a8a4c1579a7c9921dd5eafaeeff6a7fcbf0"
+    },
+    {
+      "path": "gsi/16/58036/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25848.pbf",
+      "bytes": 83578,
+      "sha256": "1f483b08d997ceab362288f5f8c649778f765e81c501d063e934f28a913b532e"
+    },
+    {
+      "path": "gsi/16/58036/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25849.pbf",
+      "bytes": 72777,
+      "sha256": "2d7bda9a8a7824d6942b2683f6b86533b08a1ef86727f8a5cfe852d897f9ed05"
+    },
+    {
+      "path": "gsi/16/58036/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25850.pbf",
+      "bytes": 51695,
+      "sha256": "3db9597ad08049a68fbbc744e2691c34e9a8f836e82119e440cc17c6586c5a40"
+    },
+    {
+      "path": "gsi/16/58036/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25851.pbf",
+      "bytes": 47767,
+      "sha256": "259fa128ac1219766eb47b56bacc58ae18cce82be2a2b35c06679ea34c5172c1"
+    },
+    {
+      "path": "gsi/16/58036/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25852.pbf",
+      "bytes": 52418,
+      "sha256": "dba24d0c5c1a7ea03c5cae669aec9a5dd69b050a5a3649117861b0372d1698a5"
+    },
+    {
+      "path": "gsi/16/58036/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58036/25853.pbf",
+      "bytes": 29736,
+      "sha256": "e91ad6260a8126bd5ad8b460347bff0615aabc272965793d8a3ac335ce210114"
+    },
+    {
+      "path": "gsi/16/58037/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25846.pbf",
+      "bytes": 29097,
+      "sha256": "470dc771551c676e6352b3d65f105bb40fa3820f378250f81826cc5a0d0c107d"
+    },
+    {
+      "path": "gsi/16/58037/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25847.pbf",
+      "bytes": 60351,
+      "sha256": "c35d286c27802a9893b4bef9dfe730016553e1f1d341123d0eb9f1a3cd88572c"
+    },
+    {
+      "path": "gsi/16/58037/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25848.pbf",
+      "bytes": 62459,
+      "sha256": "248138dda3a5102019bfab6bf122b6520166f3f89022c0b85687dc3c2cb57399"
+    },
+    {
+      "path": "gsi/16/58037/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25849.pbf",
+      "bytes": 53131,
+      "sha256": "b562decc10f329bd372a5fbb262fa3c7731ef4d2167976bb4029d166d1b43443"
+    },
+    {
+      "path": "gsi/16/58037/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25850.pbf",
+      "bytes": 36671,
+      "sha256": "da81b507394ef18ee2fbe73f5388a88791644beaa41be09c2e24896261ee4af8"
+    },
+    {
+      "path": "gsi/16/58037/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25851.pbf",
+      "bytes": 38500,
+      "sha256": "0532edb2405c776c06f0a6ef56ebb2fd703623d5f1528d7d41fdc7ac748f232d"
+    },
+    {
+      "path": "gsi/16/58037/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25852.pbf",
+      "bytes": 25177,
+      "sha256": "06b4d37b67df9a203b723f6fcacb3bd357ff7609177f7d75b43ae4fdad8eb3bc"
+    },
+    {
+      "path": "gsi/16/58037/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58037/25853.pbf",
+      "bytes": 15809,
+      "sha256": "ef26eeebd115002048a0e5e9d4a10ef4df196815c82291818605d20a4fe12db6"
+    },
+    {
+      "path": "gsi/16/58038/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25846.pbf",
+      "bytes": 40570,
+      "sha256": "4c4c75f4783c2e30788037f3134da149ffbce41115406d7900bb3387401ed344"
+    },
+    {
+      "path": "gsi/16/58038/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25847.pbf",
+      "bytes": 39713,
+      "sha256": "fccfa07f213fc41412c76f56e6393db1f2aceb6cb8daecb9e5ed2192ec618efe"
+    },
+    {
+      "path": "gsi/16/58038/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25848.pbf",
+      "bytes": 45087,
+      "sha256": "bbd7d4d9a3cc266b5c97215ce03adf050a4d1c35d3ece0a96c15812da44708d5"
+    },
+    {
+      "path": "gsi/16/58038/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25849.pbf",
+      "bytes": 46030,
+      "sha256": "7f6b5b82402336c42d1087ff9b8b234fe3728dfe6a371e8155de403e5a685174"
+    },
+    {
+      "path": "gsi/16/58038/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25850.pbf",
+      "bytes": 55116,
+      "sha256": "92e0334a37d24930b7464d9e4d371f1dd9a6587b4c4c75ed0ffab8b60bf41251"
+    },
+    {
+      "path": "gsi/16/58038/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25851.pbf",
+      "bytes": 44086,
+      "sha256": "4e351c9d657d5190c8b281b1d57a190fdb244bf65ffa067de8db9a7c98b4d357"
+    },
+    {
+      "path": "gsi/16/58038/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25852.pbf",
+      "bytes": 42494,
+      "sha256": "87014a5d3fbe2cd5d9783916c53e54f6c96a9919f466aa1b7b7064c32ea8a0c9"
+    },
+    {
+      "path": "gsi/16/58038/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58038/25853.pbf",
+      "bytes": 30212,
+      "sha256": "b68cd79eeb608a1af18962bc0e54d9c67c40afdb408419903413a8d65f5b499f"
+    },
+    {
+      "path": "gsi/16/58039/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25846.pbf",
+      "bytes": 39664,
+      "sha256": "ac1c86acc544f0587ccef533f3c9082decc1b5c494f6e83670fe10b84a5da81e"
+    },
+    {
+      "path": "gsi/16/58039/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25847.pbf",
+      "bytes": 30593,
+      "sha256": "c983644a929316fe37dc78569f5b5616ed6fdc729f43df514007c46f7642a45d"
+    },
+    {
+      "path": "gsi/16/58039/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25848.pbf",
+      "bytes": 44398,
+      "sha256": "8f1ee4a728a723666eee4aea945891a2b6768516d823d15392c311734cf7a291"
+    },
+    {
+      "path": "gsi/16/58039/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25849.pbf",
+      "bytes": 53781,
+      "sha256": "65a6a787891e9ddb20f622b6c9c6edc8020d6d4ae856d1032c4c7ee538191cfc"
+    },
+    {
+      "path": "gsi/16/58039/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25850.pbf",
+      "bytes": 65081,
+      "sha256": "43b51fcb48fbaa7d8e9a1ebf263ea7fdb427bc43cad8eb54836e51b32ec5271a"
+    },
+    {
+      "path": "gsi/16/58039/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25851.pbf",
+      "bytes": 29562,
+      "sha256": "37303873ead104c1f2669abcc80a268ebb56e15441170c91ffd7f50f2fb1af8c"
+    },
+    {
+      "path": "gsi/16/58039/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25852.pbf",
+      "bytes": 17190,
+      "sha256": "c9d64ad425628eb54498062bce7fb8e8c9f9197a2583791643b15f3161efac1e"
+    },
+    {
+      "path": "gsi/16/58039/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58039/25853.pbf",
+      "bytes": 5468,
+      "sha256": "7c53363df811c064d40ba3f670694407711ba52e5e0f432371fda5791793feff"
+    },
+    {
+      "path": "gsi/16/58040/25846.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25846.pbf",
+      "bytes": 28787,
+      "sha256": "2852b70602c4c1256e6e3545205b2e2398991e01f3367e9465d3dca21703d05d"
+    },
+    {
+      "path": "gsi/16/58040/25847.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25847.pbf",
+      "bytes": 48049,
+      "sha256": "e1cc12b440a212884c5191080f425a5a5de525a3b59b3803ffc4e123bf695e12"
+    },
+    {
+      "path": "gsi/16/58040/25848.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25848.pbf",
+      "bytes": 56430,
+      "sha256": "39973950696e798af1bda7cd1fa1e0e006a339fda5570d0a187b54dc2f638962"
+    },
+    {
+      "path": "gsi/16/58040/25849.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25849.pbf",
+      "bytes": 14118,
+      "sha256": "543864ecc397227dd9e8ab297857df9adbe2f189f3f1641dc653b31de09a406d"
+    },
+    {
+      "path": "gsi/16/58040/25850.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25850.pbf",
+      "bytes": 21720,
+      "sha256": "234a071b7ff8d5ce512b4cdb9cec027fbcb6abd497c745d66d5c70613f4b94f5"
+    },
+    {
+      "path": "gsi/16/58040/25851.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25851.pbf",
+      "bytes": 11820,
+      "sha256": "d80d2c975ea74879e2fee86e67641334c6eb4a90e54c160b922301ef2686d664"
+    },
+    {
+      "path": "gsi/16/58040/25852.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25852.pbf",
+      "bytes": 7226,
+      "sha256": "6e45ec49fe25eb38c9f583a0571860c0e4b4300b86fe45a16dccf045c662ca1d"
+    },
+    {
+      "path": "gsi/16/58040/25853.pbf",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/16/58040/25853.pbf",
+      "bytes": 7609,
+      "sha256": "d1f1e97e64cce810f21b0edda465572d30e41434718189185b83fb0640715ae7"
+    },
+    {
+      "path": "natural-earth/ne_50m_land.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_land.geojson",
+      "bytes": 1636166,
+      "sha256": "e874b27a51d146452be360cafb3cc50c86001074a67d534113e6534682f9826b"
+    }
+  ]
+}

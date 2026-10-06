@@ -13,7 +13,11 @@ This directory is excluded from the website build. It preserves unique material 
 - `veil/`: ZIP identity, supplied art/font hashes, original design metadata and image prompts. Runtime silk studies, fonts and notices live in `public/veil/`.
 - `optic/`: ZIP identity, generated-coast prompt/sidecar, design metadata and the actual camera runtime capture; local font notices remain in `public/optic/`.
 - `inkscape/`: ZIP identity, six generated material-image records, exact font sources and the real ink runtime capture.
-- `deliveries/collection-social.json`: dimensions, output hash and the thirteen source images in the current Collection social preview.
+- `facet/`: ZIP identity, original specimen/font records and the runtime gallery capture.
+- `silicon/`: ZIP identity, original structure/source records and exact local font mappings.
+- `atlas/`: ZIP identity, real geographic source lineage, original acquisition tools and exact runtime data mappings. Raw acquisition binaries remain in the external archive.
+- `thrust/`: ZIP identity, engine/image/font sources and the actual engine gallery capture.
+- `deliveries/collection-social.json`: dimensions, output hash and the seventeen source images in the current Collection social preview.
 - `deliveries/`: legacy import notes and entry-by-entry SHA-256 manifests for the supplied complete works.
 
 The GLAZE/KAGE delivery ZIPs, extracted intermediate directories, compiled duplicates and standalone configs/startup scripts were removed after verified import. CHRONOS was imported and verified the same way; its external extraction was removed, while the ignored local root ZIP remains because final deletion was blocked by execution policy. All original entry hashes remain in `deliveries/import-manifest.json`.
@@ -25,3 +29,5 @@ The supplied `kage/KAGE-VOID.html` retains its embedded licenses and historical 
 The GLASSHOUSE and VEIL ZIPs remain at `D:/下载/`, outside Git and deployment. Their complete original entry hashes are appended to the import manifest; standalone startup/build tools and compiled duplicates are omitted. Supplied upstream READMEs are archived under each scoped `docs/` directory and are historical claims, not verification of the Collection integration.
 
 OPTIC and INKSCAPE source ZIPs also remain in `D:/下载/`. Their upstream READMEs and product records under scoped `docs/` are historical claims; [current Collection acceptance](../docs/collection/OPTIC-INKSCAPE-VALIDATION.md) is recorded separately.
+
+FACET, SILICON, ATLAS and THRUST source ZIPs remain unchanged in `D:/下载/`. Every original entry is recorded in the delivery manifest; scoped `IMPORT.json` files trace source-to-import hashes, font mappings and adaptations. See [four-work Collection acceptance](../docs/collection/FOUR-WORK-VALIDATION.md) for current verification.

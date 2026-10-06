@@ -2841,6 +2841,1906 @@
         "omitted": "compiled JS/CSS/HTML and duplicate media, standalone package manifests/lockfiles, build/server/startup scripts, gitignore; original ZIP retained externally",
         "exception": "OPTIC compiled WOFF2 files copied unchanged; no font dependency added"
       }
+    },
+    {
+      "archive": "ATLAS-The-World-in-Layers.zip",
+      "path": "D:\\下载\\ATLAS-The-World-in-Layers.zip",
+      "bytes": 38368972,
+      "sha256": "51b9efba98ce134388fffc54661586be148bfa3d4bd7f02438a7d52dbc1d03af",
+      "mtime": "2026-10-06T22:39:47.810046",
+      "entryCount": 182,
+      "roots": [
+        "atlas"
+      ],
+      "unsafe": [],
+      "entries": [
+        {
+          "path": "atlas/.gitignore",
+          "bytes": 86,
+          "sha256": "b5045bc422192be5b5a028ab147dc5bd6b6f79af6ee586de55dee82f8d4a18c7"
+        },
+        {
+          "path": "atlas/ATTRIBUTION.md",
+          "bytes": 5629,
+          "sha256": "23d7d0a0ae405d5d802880c51e8e01c670dc88937aa8b4c5d794ebe8851ac74a"
+        },
+        {
+          "path": "atlas/DESIGN.md",
+          "bytes": 8091,
+          "sha256": "dcc59fa37740a4c43e8525ffff89aa9240fc6fb7fa631b05cb4875bae29e88c2"
+        },
+        {
+          "path": "atlas/LICENSE",
+          "bytes": 1075,
+          "sha256": "fe95d3f1dee61e0579fbb1783ac807fd303c353c40119f8a4031bf39b0626c8a"
+        },
+        {
+          "path": "atlas/PRODUCT.md",
+          "bytes": 2005,
+          "sha256": "919b9b20f3fc069a6caa1319378bd7fb7dfd650420085dbd6d233c69bc654b43"
+        },
+        {
+          "path": "atlas/PROVENANCE.json",
+          "bytes": 30818,
+          "sha256": "abca13d581922415d9fdf1317ac7e5b10131b36832251ce4ba36ee284b9af86c"
+        },
+        {
+          "path": "atlas/README.md",
+          "bytes": 15002,
+          "sha256": "66339b700521776a25affdcc7775caea050d7ae3cc9211d93b02befeba31b723"
+        },
+        {
+          "path": "atlas/data-source/gsi/README.md",
+          "bytes": 9192,
+          "sha256": "84e4f68b069c7eccb0e1e386ce4d701f85c1ccb233a55eaf6a532356030201fd"
+        },
+        {
+          "path": "atlas/data-source/gsi/city-aerial.json",
+          "bytes": 12383,
+          "sha256": "8ed00ed6c04b39cfbe62fa7c7f90dc30a0174ddb14c8c69a31ad81cb0d9ec608"
+        },
+        {
+          "path": "atlas/data-source/gsi/city-aerial.png",
+          "bytes": 6788213,
+          "sha256": "0e5857b0e37e95fe8ef727b0c8c3397df5622cdf905313b92c44e609a98e7c83"
+        },
+        {
+          "path": "atlas/data-source/gsi/city-dem.json",
+          "bytes": 2717,
+          "sha256": "c578ed192516c2a4a6b638e25ea59b0e856c90bcf39e46110fc92a4f95d243f9"
+        },
+        {
+          "path": "atlas/data-source/gsi/city-dem.png",
+          "bytes": 207345,
+          "sha256": "168bc9518bd1ba07e15d1a00c1f3c578865556c28b03f860de7cdcbdee95a5dc"
+        },
+        {
+          "path": "atlas/data-source/gsi/regional-dem.json",
+          "bytes": 9217,
+          "sha256": "1de29ca1675c3c9fe11075a20ec293e08a6b4f775546f25b30fc794661dcc505"
+        },
+        {
+          "path": "atlas/data-source/gsi/regional-dem.png",
+          "bytes": 3113161,
+          "sha256": "03b0912462d485d4e95e4352e2f396ad4780c3d59e314a59f67e731b36bcaab9"
+        },
+        {
+          "path": "atlas/data-source/gsi/regional-satellite.json",
+          "bytes": 27629,
+          "sha256": "5c375cf24be42242137df01d0ca3cddc9d4f7188bf252e3aa2eb03b6d90076cd"
+        },
+        {
+          "path": "atlas/data-source/gsi/regional-satellite.png",
+          "bytes": 12744657,
+          "sha256": "efdb8bb00c553a667670a73d4187d3a9a4c7fe8ccaeb2a78d3ff329e35e77390"
+        },
+        {
+          "path": "atlas/data-source/gsi/snapshot-build-environment.json",
+          "bytes": 554,
+          "sha256": "a452209fb4cd3ebb5400e29af7d2bcfa2500ab855cb1760629ff37b195d8ddeb"
+        },
+        {
+          "path": "atlas/data-source/vectors/README.md",
+          "bytes": 8097,
+          "sha256": "abdaa584c5b0ca92b89ba5cb66b21d1dc874ededff046444516a77ec85c31f1c"
+        },
+        {
+          "path": "atlas/data-source/vectors/building-lineage.json.gz",
+          "bytes": 302141,
+          "sha256": "c8e907e737dc35557598a2ffea16344a47ee5ce72771808ca2fac1782b059ee5"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1613.pbf",
+          "bytes": 25160,
+          "sha256": "db5ef9885d98ef8cf9b1e165d75809b3ce48b42258f8e6e3a4fbfc1aa56554de"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1614.pbf",
+          "bytes": 28914,
+          "sha256": "ca22621a381cf1976496bdf77fb509b01ff5ddb8439756481fa79b2d473fd291"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1615.pbf",
+          "bytes": 27576,
+          "sha256": "153a4545b09f7aa9ea896e15ac46fa945d14dfd86b66893eb24806a7f0094b2b"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1616.pbf",
+          "bytes": 18222,
+          "sha256": "8ad8bfe589870ab9f8832a4c6f842a2fbb00836b7afaf092ab656ac18e9be893"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1617.pbf",
+          "bytes": 14175,
+          "sha256": "b961c61f6014cd86bb1d06e1f4d9407c0d26025a9a8ab4a70e27505014af03b1"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1618.pbf",
+          "bytes": 23914,
+          "sha256": "47e2ab31fef3488095df3f58342b2400e1adc8b97a269c234ec3b69a19b6c73b"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3624/1619.pbf",
+          "bytes": 27741,
+          "sha256": "9a8386c3c3314e9edab94550fc526cf8026539b094a5789a883ab4c1edbb34af"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1613.pbf",
+          "bytes": 28798,
+          "sha256": "3803e306d2325648d668a3321ae956b3ac39d47427658b7058a9cca10c82ef70"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1614.pbf",
+          "bytes": 22654,
+          "sha256": "f9aa511208aee8a1b06236161bfa7c1bd2e3809e0cfdb2fb5b71bc6dc543250e"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1615.pbf",
+          "bytes": 18799,
+          "sha256": "909d56479151cd7337955762dcc6180ee525262d23093439c83427239fb63836"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1616.pbf",
+          "bytes": 5859,
+          "sha256": "05ec1c9a9c466b0a2a6eca94700a5c72cf263358bf2f62e03bd77ce25f314abe"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1617.pbf",
+          "bytes": 6192,
+          "sha256": "6a76018c93d34aa7d38ec6f699f3c9a3089777f1a5cf19a4b69774a61015ef37"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1618.pbf",
+          "bytes": 9928,
+          "sha256": "7a9dce429b95a0fa9a84c6113d788fe69a2b2c1d4fff0d206d52f96a8d02fe8c"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3625/1619.pbf",
+          "bytes": 23239,
+          "sha256": "fa7cef38048f633fa8971f2be23ff3059755e2ffd8cc424fa91240e534cebbd7"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1613.pbf",
+          "bytes": 29393,
+          "sha256": "7d7e492a7f80fa817de1b3e43378a01f9dd065e9cd330c7a60008a73a5e893e4"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1614.pbf",
+          "bytes": 20508,
+          "sha256": "0c9dab281da89e993aed544186d22a00cb6f84318ffa44226860e501663c9bce"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1615.pbf",
+          "bytes": 18363,
+          "sha256": "268471030c40e4e139899aa8ee1238961368727aec8b58f6ebcddb42d7414886"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1616.pbf",
+          "bytes": 10335,
+          "sha256": "9d5661f8cb7e771889ec5f116e4526e7a8e2281ec0f54b57857234dd571597f3"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1617.pbf",
+          "bytes": 21637,
+          "sha256": "8416dd85194cfcfd8b8bb214ca9617171824bdc686972238b3a46ea79a19edd5"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1618.pbf",
+          "bytes": 7325,
+          "sha256": "93a1bf48ff0cc78308db4c87c08fe399b05e0d8dc235b2fa4f25e251be1159b5"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3626/1619.pbf",
+          "bytes": 12371,
+          "sha256": "3fa5eb111bd8cb5998dfcd3e40723a38ae263270065fc51aa7081bf081784bb0"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1613.pbf",
+          "bytes": 23357,
+          "sha256": "471602717840c552d2fb0bdae17eb93e66b90d2353ccb5bb8f5c69bf4f625cf3"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1614.pbf",
+          "bytes": 23044,
+          "sha256": "ea703f9cd865c034bb3d664b6124af88d34e2a1a5bf0ecd5f39b864c04f7efeb"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1615.pbf",
+          "bytes": 26942,
+          "sha256": "9c4244963b50864b88190b852660420f20825523be2260adecf1a7ae6e461b4d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1616.pbf",
+          "bytes": 10632,
+          "sha256": "8ea8e2bd3d86b8f4b05d916c95d5106802db1015cdf0d66ecd9f732c2b435c15"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1617.pbf",
+          "bytes": 9961,
+          "sha256": "08adacad94dc4d201c3b5bee8439a7196b3a16c940e775b5195665a42aa970d1"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1618.pbf",
+          "bytes": 10008,
+          "sha256": "86f6410c96392434f6e5c05ad542927f0c73cc0911f0b74061d753126ebaec12"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3627/1619.pbf",
+          "bytes": 18735,
+          "sha256": "11bbc5db561ae00c45a5701577850d261aa749d6dcd732c780f259084c65e1b0"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1613.pbf",
+          "bytes": 24797,
+          "sha256": "d9b2862a161aa1d5157d1e2524bafccfe438673fb4ed66fef5ba196e2664d744"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1614.pbf",
+          "bytes": 30432,
+          "sha256": "87bbe47ab8350f27dfbc520a0100b2fa6b77135ca104d4d89743f51ba308de41"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1615.pbf",
+          "bytes": 20624,
+          "sha256": "9b5843d197456a7810550d2fa8ee40c088a2787ca9e68a0e7bbd3a54248514eb"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1616.pbf",
+          "bytes": 16542,
+          "sha256": "5b293d860b285754d36a27a589509b92207d28cd5d66a31247487828f615763d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1617.pbf",
+          "bytes": 21148,
+          "sha256": "33132bff57c6247e6aa09af639d6268d30feb6db868741293ae7064bb219220f"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1618.pbf",
+          "bytes": 18928,
+          "sha256": "a183c51b42dce3edac4205e8a45601722f5a49cde4399b878a8ed8969cbef444"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3628/1619.pbf",
+          "bytes": 24107,
+          "sha256": "bc92e245af08f98abb672749cafca88a6bb735cad553f0f70dd728c0eac2c9c7"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1613.pbf",
+          "bytes": 24895,
+          "sha256": "0db0a5e4b5d4273a5bd20b47f7050ca1dac9d6f853318c77a027d6546cf94f49"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1614.pbf",
+          "bytes": 22730,
+          "sha256": "f01385de8f936743ec156f63066945cbb76ab385c9f3dcbbcb556b455d139962"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1615.pbf",
+          "bytes": 17376,
+          "sha256": "c16cefc0bb54e2119f50d589febb49576bc337a8d0289deba957ce48f4495b1d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1616.pbf",
+          "bytes": 20030,
+          "sha256": "978e212838715f89ed11cd26b2766406deef3bad67faf8077a006d9732d24e06"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1617.pbf",
+          "bytes": 31163,
+          "sha256": "268ce73e598c25987872eb6a25d9669e9c5be12c4db3d85ce39b0268894a68da"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1618.pbf",
+          "bytes": 22836,
+          "sha256": "41059687395154e983ec6c2fa3a83547a27d131d122403fb7b0d19261503a16d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/12/3629/1619.pbf",
+          "bytes": 21273,
+          "sha256": "1d97698eb1897000569bd49b61a68fbf01c6d9ac9c1901ba655b6ab1fd6cb837"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25846.pbf",
+          "bytes": 10397,
+          "sha256": "56f1d9a00279611aca994683c3f7188cf7b3c48ce1d1f3f9f1972231dcf87b55"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25847.pbf",
+          "bytes": 45611,
+          "sha256": "24c11f26122e93bce2b5de1b05188c5fc1292758e64472987909d2dfa6ed6598"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25848.pbf",
+          "bytes": 48392,
+          "sha256": "81250982b0818e6d9bd37843f4907976b49262675ba3558aa1cd4d34aed545ef"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25849.pbf",
+          "bytes": 57987,
+          "sha256": "9887a18facfe4f75f893f389c6cbf551ab9f6c9230f20786fc547b82fb64a5e7"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25850.pbf",
+          "bytes": 57561,
+          "sha256": "49dcb902100ed964e9e7070143d6a293540db540e01fb88c455de9c68db0cbda"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25851.pbf",
+          "bytes": 59606,
+          "sha256": "c2adf9ccc8e4aece8363605d907150945c79b5c7b06efd9569bf92448135a787"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25852.pbf",
+          "bytes": 62317,
+          "sha256": "d220d33345d4aeeb83673d6c625b438d266ddee317d0068ea2fc5e94ed5f641b"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58034/25853.pbf",
+          "bytes": 34214,
+          "sha256": "15876aece75c80c9954f673303414febea038f173a19f5e56bc5aa1dd6f634a9"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25846.pbf",
+          "bytes": 24313,
+          "sha256": "ded8636a0cbd01fb2da11a07c480723875bbff72ec2b24eedec7fa5401af233a"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25847.pbf",
+          "bytes": 53644,
+          "sha256": "80cd32f23b936e6c0c7dd5ad143cdefe0cfee46b936c2d6934b04354d7f8abe3"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25848.pbf",
+          "bytes": 73247,
+          "sha256": "45fed072d9ec4e68812d6b66f37e2e26dddfd92e9a0d8c95daeb7b008ceddddc"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25849.pbf",
+          "bytes": 74474,
+          "sha256": "83f5958c87c67898398f05eae294ab22e3c8f3790a97b935f8f5340e3a216bc1"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25850.pbf",
+          "bytes": 66895,
+          "sha256": "a0aa2fa8544463d12c943e445f901e0fbc2447dc2761141537340642bea3ced2"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25851.pbf",
+          "bytes": 55050,
+          "sha256": "8590bada4ba634a2878f90394b568beb3625661886f385dfc2cbba25bbf0dea0"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25852.pbf",
+          "bytes": 44532,
+          "sha256": "1d7b2e91f4099bf55b4d60635da6ca1bd31d0ee4c10392e843523cf9af9a3a68"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58035/25853.pbf",
+          "bytes": 44030,
+          "sha256": "08b9b668e7c1147ca1a62cad74f497c550f6ba38acf0b6cc2ad69725afb14475"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25846.pbf",
+          "bytes": 9920,
+          "sha256": "0d4403bba0b5f06c8c53382e636b3e4bafc1005bfa43d5ce4881843bd3ae94b3"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25847.pbf",
+          "bytes": 48131,
+          "sha256": "f057cebcdba2cf405f41c76f42e94a8a4c1579a7c9921dd5eafaeeff6a7fcbf0"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25848.pbf",
+          "bytes": 83578,
+          "sha256": "1f483b08d997ceab362288f5f8c649778f765e81c501d063e934f28a913b532e"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25849.pbf",
+          "bytes": 72777,
+          "sha256": "2d7bda9a8a7824d6942b2683f6b86533b08a1ef86727f8a5cfe852d897f9ed05"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25850.pbf",
+          "bytes": 51695,
+          "sha256": "3db9597ad08049a68fbbc744e2691c34e9a8f836e82119e440cc17c6586c5a40"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25851.pbf",
+          "bytes": 47767,
+          "sha256": "259fa128ac1219766eb47b56bacc58ae18cce82be2a2b35c06679ea34c5172c1"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25852.pbf",
+          "bytes": 52418,
+          "sha256": "dba24d0c5c1a7ea03c5cae669aec9a5dd69b050a5a3649117861b0372d1698a5"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58036/25853.pbf",
+          "bytes": 29736,
+          "sha256": "e91ad6260a8126bd5ad8b460347bff0615aabc272965793d8a3ac335ce210114"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25846.pbf",
+          "bytes": 29097,
+          "sha256": "470dc771551c676e6352b3d65f105bb40fa3820f378250f81826cc5a0d0c107d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25847.pbf",
+          "bytes": 60351,
+          "sha256": "c35d286c27802a9893b4bef9dfe730016553e1f1d341123d0eb9f1a3cd88572c"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25848.pbf",
+          "bytes": 62459,
+          "sha256": "248138dda3a5102019bfab6bf122b6520166f3f89022c0b85687dc3c2cb57399"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25849.pbf",
+          "bytes": 53131,
+          "sha256": "b562decc10f329bd372a5fbb262fa3c7731ef4d2167976bb4029d166d1b43443"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25850.pbf",
+          "bytes": 36671,
+          "sha256": "da81b507394ef18ee2fbe73f5388a88791644beaa41be09c2e24896261ee4af8"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25851.pbf",
+          "bytes": 38500,
+          "sha256": "0532edb2405c776c06f0a6ef56ebb2fd703623d5f1528d7d41fdc7ac748f232d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25852.pbf",
+          "bytes": 25177,
+          "sha256": "06b4d37b67df9a203b723f6fcacb3bd357ff7609177f7d75b43ae4fdad8eb3bc"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58037/25853.pbf",
+          "bytes": 15809,
+          "sha256": "ef26eeebd115002048a0e5e9d4a10ef4df196815c82291818605d20a4fe12db6"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25846.pbf",
+          "bytes": 40570,
+          "sha256": "4c4c75f4783c2e30788037f3134da149ffbce41115406d7900bb3387401ed344"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25847.pbf",
+          "bytes": 39713,
+          "sha256": "fccfa07f213fc41412c76f56e6393db1f2aceb6cb8daecb9e5ed2192ec618efe"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25848.pbf",
+          "bytes": 45087,
+          "sha256": "bbd7d4d9a3cc266b5c97215ce03adf050a4d1c35d3ece0a96c15812da44708d5"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25849.pbf",
+          "bytes": 46030,
+          "sha256": "7f6b5b82402336c42d1087ff9b8b234fe3728dfe6a371e8155de403e5a685174"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25850.pbf",
+          "bytes": 55116,
+          "sha256": "92e0334a37d24930b7464d9e4d371f1dd9a6587b4c4c75ed0ffab8b60bf41251"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25851.pbf",
+          "bytes": 44086,
+          "sha256": "4e351c9d657d5190c8b281b1d57a190fdb244bf65ffa067de8db9a7c98b4d357"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25852.pbf",
+          "bytes": 42494,
+          "sha256": "87014a5d3fbe2cd5d9783916c53e54f6c96a9919f466aa1b7b7064c32ea8a0c9"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58038/25853.pbf",
+          "bytes": 30212,
+          "sha256": "b68cd79eeb608a1af18962bc0e54d9c67c40afdb408419903413a8d65f5b499f"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25846.pbf",
+          "bytes": 39664,
+          "sha256": "ac1c86acc544f0587ccef533f3c9082decc1b5c494f6e83670fe10b84a5da81e"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25847.pbf",
+          "bytes": 30593,
+          "sha256": "c983644a929316fe37dc78569f5b5616ed6fdc729f43df514007c46f7642a45d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25848.pbf",
+          "bytes": 44398,
+          "sha256": "8f1ee4a728a723666eee4aea945891a2b6768516d823d15392c311734cf7a291"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25849.pbf",
+          "bytes": 53781,
+          "sha256": "65a6a787891e9ddb20f622b6c9c6edc8020d6d4ae856d1032c4c7ee538191cfc"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25850.pbf",
+          "bytes": 65081,
+          "sha256": "43b51fcb48fbaa7d8e9a1ebf263ea7fdb427bc43cad8eb54836e51b32ec5271a"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25851.pbf",
+          "bytes": 29562,
+          "sha256": "37303873ead104c1f2669abcc80a268ebb56e15441170c91ffd7f50f2fb1af8c"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25852.pbf",
+          "bytes": 17190,
+          "sha256": "c9d64ad425628eb54498062bce7fb8e8c9f9197a2583791643b15f3161efac1e"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58039/25853.pbf",
+          "bytes": 5468,
+          "sha256": "7c53363df811c064d40ba3f670694407711ba52e5e0f432371fda5791793feff"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25846.pbf",
+          "bytes": 28787,
+          "sha256": "2852b70602c4c1256e6e3545205b2e2398991e01f3367e9465d3dca21703d05d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25847.pbf",
+          "bytes": 48049,
+          "sha256": "e1cc12b440a212884c5191080f425a5a5de525a3b59b3803ffc4e123bf695e12"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25848.pbf",
+          "bytes": 56430,
+          "sha256": "39973950696e798af1bda7cd1fa1e0e006a339fda5570d0a187b54dc2f638962"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25849.pbf",
+          "bytes": 14118,
+          "sha256": "543864ecc397227dd9e8ab297857df9adbe2f189f3f1641dc653b31de09a406d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25850.pbf",
+          "bytes": 21720,
+          "sha256": "234a071b7ff8d5ce512b4cdb9cec027fbcb6abd497c745d66d5c70613f4b94f5"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25851.pbf",
+          "bytes": 11820,
+          "sha256": "d80d2c975ea74879e2fee86e67641334c6eb4a90e54c160b922301ef2686d664"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25852.pbf",
+          "bytes": 7226,
+          "sha256": "6e45ec49fe25eb38c9f583a0571860c0e4b4300b86fe45a16dccf045c662ca1d"
+        },
+        {
+          "path": "atlas/data-source/vectors/gsi/16/58040/25853.pbf",
+          "bytes": 7609,
+          "sha256": "d1f1e97e64cce810f21b0edda465572d30e41434718189185b83fb0640715ae7"
+        },
+        {
+          "path": "atlas/data-source/vectors/natural-earth/ne_50m_land.geojson",
+          "bytes": 1636166,
+          "sha256": "e874b27a51d146452be360cafb3cc50c86001074a67d534113e6534682f9826b"
+        },
+        {
+          "path": "atlas/data-source/vectors/route-lineage.json",
+          "bytes": 5802,
+          "sha256": "89d55ebfe74f28e2df3d3e98dcc8e8a57d1bce56ce9c731b0688b5da357c60b5"
+        },
+        {
+          "path": "atlas/data-source/vectors/sources.json",
+          "bytes": 25179,
+          "sha256": "c5c9de6a53f2b938a40d942356cc1624015205308525a16d2237a0ef27af89bf"
+        },
+        {
+          "path": "atlas/data-source/vectors/validation.json",
+          "bytes": 2468,
+          "sha256": "8efe93acf5ef1f35dd33e058ddbfd41bcc24a9b903e6fe58f6149c60b91b2b90"
+        },
+        {
+          "path": "atlas/docs/SCENE-ARCHITECTURE.md",
+          "bytes": 9154,
+          "sha256": "5c8084041659d854fea4e8da98e63cf8783f43995540bedfaea2ae741fb25d4f"
+        },
+        {
+          "path": "atlas/index.html",
+          "bytes": 10195,
+          "sha256": "9059beb67370f19aedde63f684791f24c1546a3087cd396f876c730f4350706d"
+        },
+        {
+          "path": "atlas/licenses/Cormorant-Garamond-OFL-1.1.txt",
+          "bytes": 4504,
+          "sha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73"
+        },
+        {
+          "path": "atlas/licenses/Earcut-ISC.txt",
+          "bytes": 738,
+          "sha256": "324139c19d87af03fda38afea1590e00ca354c4159bdb2ae9e9cec070cfa46a8"
+        },
+        {
+          "path": "atlas/licenses/GSI-TERMS-ja.txt",
+          "bytes": 6891,
+          "sha256": "c717b3e7d4ecd33f585883d75233f4db723c6e2c100d97a96c504898061fa323"
+        },
+        {
+          "path": "atlas/licenses/IBM-Plex-Mono-OFL-1.1.txt",
+          "bytes": 5299,
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+        },
+        {
+          "path": "atlas/licenses/Manrope-OFL-1.1.txt",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        },
+        {
+          "path": "atlas/licenses/Natural-Earth-PUBLIC-DOMAIN.txt",
+          "bytes": 5358,
+          "sha256": "de178d999d839732d522b8ec367f73522a36f55e2f6abe52e1bbd218a11f84c7"
+        },
+        {
+          "path": "atlas/licenses/PDL-1.0-ja.txt",
+          "bytes": 9792,
+          "sha256": "406b14e401b1dfd051d81716f7631e0474617ee5c7eb1076331e2be1c52dce43"
+        },
+        {
+          "path": "atlas/licenses/README.md",
+          "bytes": 1764,
+          "sha256": "dde761173450652a11d798d38296acbddedc126369fe6fc00d615ee53eabf715"
+        },
+        {
+          "path": "atlas/licenses/Three-MIT.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "atlas/licenses/TypeScript-Apache-2.0.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "atlas/licenses/TypeScript-THIRD-PARTY.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        },
+        {
+          "path": "atlas/licenses/Types-Three-MIT.txt",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "atlas/licenses/Vite-MIT-and-third-party.txt",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "atlas/package-lock.json",
+          "bytes": 30133,
+          "sha256": "d662fb7f46ed3c07b899278cd538e5ae36c774b95a82769402587b2599c188bc"
+        },
+        {
+          "path": "atlas/package.json",
+          "bytes": 791,
+          "sha256": "298ef9a409ced2e2adec3ba5b1dc72a40129cbaaa46a386ca50aa876f72ff230"
+        },
+        {
+          "path": "atlas/public/data/city-aerial-1024.webp",
+          "bytes": 547418,
+          "sha256": "93be44baa6115ba4922a491042dc106b0bf5a85c0dcec798343e145127240929"
+        },
+        {
+          "path": "atlas/public/data/city-aerial-2048.webp",
+          "bytes": 1726400,
+          "sha256": "9df6d84bcc4d5743d7fae82ff50ddb131fa98e41b7f6a04b296e4c1fdcfd20d6"
+        },
+        {
+          "path": "atlas/public/data/city-elevation-129.bin",
+          "bytes": 66564,
+          "sha256": "16e5980b9aee9c0c00abdf973b97d22321520c98d03ae99a1ada7ab716ad750d"
+        },
+        {
+          "path": "atlas/public/data/city-elevation-257.bin",
+          "bytes": 264196,
+          "sha256": "756e5bdaa02dbae735ecca4b5a49fc4613a383ed37c8c18d00ffdef06900f1f8"
+        },
+        {
+          "path": "atlas/public/data/city-raster.json",
+          "bytes": 2971,
+          "sha256": "269ad5591067be6b87b595d2d4a45f8345130772adfb8d3743de78a232b98cd5"
+        },
+        {
+          "path": "atlas/public/data/contours-100m.json",
+          "bytes": 3276290,
+          "sha256": "8015e2b08dcae21adce3a83f1058f943f776997104976edc1008cee8a3ef3642"
+        },
+        {
+          "path": "atlas/public/data/contours-mobile.json",
+          "bytes": 1422710,
+          "sha256": "80b305cba2e9828ac84c7c9a55d02cf56d4c02a49aedff9bb6d216a626db1fd1"
+        },
+        {
+          "path": "atlas/public/data/elevation-1025.bin",
+          "bytes": 4202500,
+          "sha256": "05c348c4e96b916f1edc94c5bb557be5844769f3f8c7cd57cfafda4168788bb8"
+        },
+        {
+          "path": "atlas/public/data/elevation-129.bin",
+          "bytes": 66564,
+          "sha256": "aabceb7eaa9458d71280fbb5f8314d6223720cd3976dc8077254295f539f22a0"
+        },
+        {
+          "path": "atlas/public/data/elevation-257.bin",
+          "bytes": 264196,
+          "sha256": "49d5ac978d0097df86abdc3741bfc6e77708ecd786dfa0d88ac061aaab3053ba"
+        },
+        {
+          "path": "atlas/public/data/elevation-513.bin",
+          "bytes": 1052676,
+          "sha256": "1d7dfd169addfc95dd8fca18248661b3c5cadd8ba748411e3f84bc1282f408de"
+        },
+        {
+          "path": "atlas/public/data/satellite-1024.webp",
+          "bytes": 438198,
+          "sha256": "725f29323a12ec0ab9c32d6ef0345bf37ed817847fc45672102c4ed1ba735450"
+        },
+        {
+          "path": "atlas/public/data/satellite-2048.webp",
+          "bytes": 1453338,
+          "sha256": "482e4099b6513cc7a1b8a447fac5b75c958745692553315e78117c33c786b6c4"
+        },
+        {
+          "path": "atlas/public/data/terrain.json",
+          "bytes": 4071,
+          "sha256": "d6c35c237c42df4af9344880f51be99338a5fc81521824c56572fcb79677a266"
+        },
+        {
+          "path": "atlas/public/data/vectors/city-buildings-mobile.geojson",
+          "bytes": 1265876,
+          "sha256": "99e430585b6491c2382184db7c16adee103dbb232624ed242ee77d7ce1f94cd4"
+        },
+        {
+          "path": "atlas/public/data/vectors/city-buildings.geojson",
+          "bytes": 3239658,
+          "sha256": "766aaa956d502e76ea564fb57a76f600c9b325dd1024057debd26a5f583fd4df"
+        },
+        {
+          "path": "atlas/public/data/vectors/city-roads.geojson",
+          "bytes": 2492258,
+          "sha256": "0caa881adc80d1e73ccc69058c2181313733c2a598e6d77da962a749c17d4a74"
+        },
+        {
+          "path": "atlas/public/data/vectors/city-water.geojson",
+          "bytes": 1009519,
+          "sha256": "d0dcbdcf12c794cd0adc6cf55131e311875dc8ad6030d360908a7c14159ca1f8"
+        },
+        {
+          "path": "atlas/public/data/vectors/globe-land.geojson",
+          "bytes": 1012981,
+          "sha256": "658908cec877ace15313918399ff7172a090aaa1f10ff7b920e418382a6aa007"
+        },
+        {
+          "path": "atlas/public/data/vectors/metadata.json",
+          "bytes": 2125,
+          "sha256": "89e516e863e4988f939d97ddf2ba501420701a05c8207db58a71eb00c191d187"
+        },
+        {
+          "path": "atlas/public/data/vectors/region-roads.geojson",
+          "bytes": 786416,
+          "sha256": "50ba0d99b5e7c2b3c67d561845892476eff3c0849e59d894ea151a54e226cb19"
+        },
+        {
+          "path": "atlas/public/data/vectors/region-water.geojson",
+          "bytes": 1405502,
+          "sha256": "26825ab320d64db194ce22b38a387a24868dd81240b0ff5e2410ecfbec83a7eb"
+        },
+        {
+          "path": "atlas/public/data/vectors/route.geojson",
+          "bytes": 4465,
+          "sha256": "379e858f97319d13bc03610afc6eb380ea19fe7241574c61f3656bdf3b83f7b8"
+        },
+        {
+          "path": "atlas/public/favicon.svg",
+          "bytes": 230,
+          "sha256": "f28c7331c64fa4ef6bab924b7c9974c23c64a62b416affcc45a74bf159cfe102"
+        },
+        {
+          "path": "atlas/scripts/data/acquire_gsi.py",
+          "bytes": 5513,
+          "sha256": "547c818c481110301489d6762225074e34babe6b18c25898aea8f7ac505f42fc"
+        },
+        {
+          "path": "atlas/scripts/data/build_rasters.py",
+          "bytes": 9234,
+          "sha256": "beea59af7c5e6f6a9b96f94c6788892823b5e377257f614fff1dbb7e84d4e104"
+        },
+        {
+          "path": "atlas/scripts/data/mesh_contours.py",
+          "bytes": 8051,
+          "sha256": "f5b57e4c609850f96cbab4e4f3e16eae2e469eef18cf885937f28a7039c14039"
+        },
+        {
+          "path": "atlas/scripts/data/requirements.txt",
+          "bytes": 45,
+          "sha256": "9dfb8dca765a8529d44808bcb87fa135c656003a6f9063d1ad967148ed52c42f"
+        },
+        {
+          "path": "atlas/scripts/data/vectors/build.py",
+          "bytes": 23757,
+          "sha256": "fba9cc2cfc13df4106a412fd4cf4ffdd8aca666506e1c44628b7d50b9280d268"
+        },
+        {
+          "path": "atlas/scripts/data/vectors/fetch.py",
+          "bytes": 3880,
+          "sha256": "26670435020a6baeb3b2107cf21d948f5a5715731126d9fd2d17c5cb43cee5ef"
+        },
+        {
+          "path": "atlas/scripts/data/vectors/mvt.py",
+          "bytes": 5832,
+          "sha256": "dd7b5417406a19be57d85302a1183af5bb802074c121af45b38bfed33c444cf4"
+        },
+        {
+          "path": "atlas/scripts/data/vectors/requirements.txt",
+          "bytes": 15,
+          "sha256": "a9da53f34af90c2cc5b9ee96f0ef865935582d869aba11fb0eeb105cb01d6e63"
+        },
+        {
+          "path": "atlas/scripts/data/vectors/validate.py",
+          "bytes": 5639,
+          "sha256": "663255e79fbe130d24f45cfdff3be9c81257ba6bd8557b01e72d21374be89904"
+        },
+        {
+          "path": "atlas/scripts/verify-data.mjs",
+          "bytes": 17042,
+          "sha256": "2bed52164ef04dcebdb7d050b5f14c01573ef87d769b4d41897dbbeb1afb7f74"
+        },
+        {
+          "path": "atlas/src/geo.ts",
+          "bytes": 6175,
+          "sha256": "073412c1e5535dc507a638e53b57e7e2361250fd7dd07ba2704d42706623eb4b"
+        },
+        {
+          "path": "atlas/src/main.ts",
+          "bytes": 25036,
+          "sha256": "c6ffac20fafde747c0f1a43330cf178098af18991102eb1fc7d8478d5e23e3b6"
+        },
+        {
+          "path": "atlas/src/story.ts",
+          "bytes": 5669,
+          "sha256": "c18ef4e90014c09c68e64b2e456b62b883f429d93c077100554d7162b97045b6"
+        },
+        {
+          "path": "atlas/src/style.css",
+          "bytes": 22451,
+          "sha256": "3587e7dd8ff56cd74a80dc32175c9a0f77eda78e89a07d49ecb1095d1417dd01"
+        },
+        {
+          "path": "atlas/src/world/city.ts",
+          "bytes": 34001,
+          "sha256": "3b5063a6dfe7f90e80094f08011b2a9d72b8f72232f0f1f8592c1cfed8f8da16"
+        },
+        {
+          "path": "atlas/src/world/globe.ts",
+          "bytes": 27433,
+          "sha256": "bcfb713f56fddf2fa32fd8f50799ce3e66d9ed3ce94337d82b6d4c5a8d4b9d6e"
+        },
+        {
+          "path": "atlas/src/world/map.ts",
+          "bytes": 9550,
+          "sha256": "f884ada88d9a0779d433311ac271d4e8316b5cb8a4a3ed62b0d1abacad634712"
+        },
+        {
+          "path": "atlas/src/world/terrain.ts",
+          "bytes": 17264,
+          "sha256": "d2e43a605077d84eaa76cc2f87f3ba7057270baa1251b83dc6eb653e0f1f573a"
+        },
+        {
+          "path": "atlas/tsconfig.json",
+          "bytes": 366,
+          "sha256": "14f376cbf56216a4f7d819422f6bde4c68c379da3c3f7ae0db92f1d95c71b37e"
+        },
+        {
+          "path": "atlas/vite.config.ts",
+          "bytes": 310,
+          "sha256": "4cfad04c17598a2e181406dce3cc429ac7f3672c144785ffac6950f1410bf4a1"
+        }
+      ],
+      "imported": "2026-10-06",
+      "originalLocation": "D:/下载/ATLAS-The-World-in-Layers.zip",
+      "importBoundary": {
+        "source": "experiences/atlas/src",
+        "page": "pages/atlas/index.html",
+        "assets": "public/atlas/",
+        "docs": "docs/atlas/",
+        "provenance": "provenance/atlas/",
+        "omitted": "Standalone package/lockfiles, build/server/startup configuration, compiled duplicate JS/CSS/HTML/assets and gitignore. ATLAS raw acquisition rasters/tiles remain in the unchanged external ZIP.",
+        "fontException": "SILICON and THRUST supplied compiled WOFF2 assets copied unchanged. ATLAS shares the same SILICON Manrope/IBM Plex bytes and existing OPTIC Cormorant italic bytes; no dependencies added."
+      }
+    },
+    {
+      "archive": "FACET-The-Light-Within.zip",
+      "path": "D:\\下载\\FACET-The-Light-Within.zip",
+      "bytes": 1057114,
+      "sha256": "f14688ce19b8fa31680530988b90406b846ff1194baa806a35e134ea647ef995",
+      "mtime": "2026-10-06T19:36:37.096502",
+      "entryCount": 65,
+      "roots": [
+        "FACET-The-Light-Within"
+      ],
+      "unsafe": [],
+      "entries": [
+        {
+          "path": "FACET-The-Light-Within/.gitignore",
+          "bytes": 44,
+          "sha256": "777e889a9a69e1c71e8ae293eb82b1d60ac1cd8a83717f1a32f3192303ea321b"
+        },
+        {
+          "path": "FACET-The-Light-Within/DESIGN.md",
+          "bytes": 3661,
+          "sha256": "a0925cae77531a4c0c267670fb374822215e4f32fa720b7e94b5a76dd63b11c4"
+        },
+        {
+          "path": "FACET-The-Light-Within/LICENSE",
+          "bytes": 1268,
+          "sha256": "c14aeddd4a5e60644bc86608de3b9358afb4ce5df78f40514fa469210f19cfa7"
+        },
+        {
+          "path": "FACET-The-Light-Within/PRODUCT.md",
+          "bytes": 2042,
+          "sha256": "6e564b6bc930c85027b2c21a660eb6026eb4e14fd65871c43a4d52e1ef698a59"
+        },
+        {
+          "path": "FACET-The-Light-Within/README.md",
+          "bytes": 11002,
+          "sha256": "f7cfac600057deaca0483daecc1e45b404e0651166bcbcd9365d149d37d490a1"
+        },
+        {
+          "path": "FACET-The-Light-Within/START-MAC-LINUX.sh",
+          "bytes": 67,
+          "sha256": "122bffd91d15bd9acfb8b64153464248b088237fc1f3f7857f0a85a57265b17b"
+        },
+        {
+          "path": "FACET-The-Light-Within/START-WINDOWS.cmd",
+          "bytes": 45,
+          "sha256": "2222bcd41c31659dcee89af484143eae6720648f835ff1bca46743bc662cbd13"
+        },
+        {
+          "path": "FACET-The-Light-Within/THIRD_PARTY_NOTICES.md",
+          "bytes": 4818,
+          "sha256": "ee9cf62b8cc0a987ed8a9d80b242e388d5caab0332ffbb6c4fda7369db2bfba7"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/assets/index-ADliuj23.css",
+          "bytes": 24776,
+          "sha256": "5b75a6dc58c7e3865bddae254647adb8f29a66ba12f27ccee1898caf09640a15"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/assets/index-BFGmnpIT.js",
+          "bytes": 781149,
+          "sha256": "e3814246728c3d9a8585d3b71b11af12e5abacdeb45f7ca42031b3e989931a9d"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/favicon.svg",
+          "bytes": 288,
+          "sha256": "222becda3aaf607adee293ac9b621158ae3639456b997e7a94f9cbb036c61aad"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/fonts/dm-sans-medium.woff2",
+          "bytes": 14304,
+          "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/fonts/dm-sans-regular.woff2",
+          "bytes": 14200,
+          "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/fonts/facet-cjk.ttf",
+          "bytes": 81372,
+          "sha256": "d265c5c034e486eb7495fced1e1c27a93f024049c627ce23bde1b2e6a20cfe44"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/fonts/instrument-serif-italic.woff2",
+          "bytes": 22128,
+          "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/fonts/instrument-serif-regular.woff2",
+          "bytes": 21032,
+          "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/images/gallery-still.webp",
+          "bytes": 208362,
+          "sha256": "e7dda969efa149fbee0f3d8350bfed1b5e11a3cb85c0086c8c5d00e2ad111f49"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/index.html",
+          "bytes": 10858,
+          "sha256": "900d28ed5ce9a1bfd6c710248e6b30f6bc1fd670494ca436c5985b0f2a92b5b3"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/DM-Sans-OFL.txt",
+          "bytes": 4502,
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/GSAP-Standard-License.md",
+          "bytes": 5382,
+          "sha256": "689ea75d71312a0d0f528dc53c7f629d66a26a231c1855cdaf2c32d9b8a9b59b"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/Instrument-Serif-OFL.txt",
+          "bytes": 4532,
+          "sha256": "b6106a757902d2d412e09d94dc4a226fe3da80485208a98003969f1b8b6b1d74"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/LENIS-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/Noto-Serif-SC-OFL.txt",
+          "bytes": 4350,
+          "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/THREE-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/THREE-TYPES-LICENSE.txt",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/TYPESCRIPT-LICENSE.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/TYPESCRIPT-ThirdPartyNoticeText.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        },
+        {
+          "path": "FACET-The-Light-Within/dist/licenses/VITE-LICENSE.md",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "FACET-The-Light-Within/docs/REFERENCES.md",
+          "bytes": 5896,
+          "sha256": "b6329e15a0657e5439fd09de569fb6de6943063e8624df297419f00bb901306b"
+        },
+        {
+          "path": "FACET-The-Light-Within/docs/SCENES.md",
+          "bytes": 7678,
+          "sha256": "1e865cb3dd952fa3336ea7729b8e8cf42a394b79666c29eb4ba27c5d3f138d55"
+        },
+        {
+          "path": "FACET-The-Light-Within/index.html",
+          "bytes": 10815,
+          "sha256": "15c7d4ba0f7c2d2c68d3fd4559b1bf6a167981a3f4bd90d265bab22fe9e98c2f"
+        },
+        {
+          "path": "FACET-The-Light-Within/package-lock.json",
+          "bytes": 29889,
+          "sha256": "23eb74f82339b12827a264499e7d530a2fc4bbfa059a81ab91febd64ae87fb67"
+        },
+        {
+          "path": "FACET-The-Light-Within/package.json",
+          "bytes": 640,
+          "sha256": "7d692e2508094e761ef545c3eb08d3ca3863f2b296507ff0a8c166758b36af15"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/favicon.svg",
+          "bytes": 288,
+          "sha256": "222becda3aaf607adee293ac9b621158ae3639456b997e7a94f9cbb036c61aad"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/fonts/dm-sans-medium.woff2",
+          "bytes": 14304,
+          "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/fonts/dm-sans-regular.woff2",
+          "bytes": 14200,
+          "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/fonts/facet-cjk.ttf",
+          "bytes": 81372,
+          "sha256": "d265c5c034e486eb7495fced1e1c27a93f024049c627ce23bde1b2e6a20cfe44"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/fonts/instrument-serif-italic.woff2",
+          "bytes": 22128,
+          "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/fonts/instrument-serif-regular.woff2",
+          "bytes": 21032,
+          "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/images/gallery-still.webp",
+          "bytes": 208362,
+          "sha256": "e7dda969efa149fbee0f3d8350bfed1b5e11a3cb85c0086c8c5d00e2ad111f49"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/DM-Sans-OFL.txt",
+          "bytes": 4502,
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/GSAP-Standard-License.md",
+          "bytes": 5382,
+          "sha256": "689ea75d71312a0d0f528dc53c7f629d66a26a231c1855cdaf2c32d9b8a9b59b"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/Instrument-Serif-OFL.txt",
+          "bytes": 4532,
+          "sha256": "b6106a757902d2d412e09d94dc4a226fe3da80485208a98003969f1b8b6b1d74"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/LENIS-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/Noto-Serif-SC-OFL.txt",
+          "bytes": 4350,
+          "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/THREE-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/THREE-TYPES-LICENSE.txt",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/TYPESCRIPT-LICENSE.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/TYPESCRIPT-ThirdPartyNoticeText.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        },
+        {
+          "path": "FACET-The-Light-Within/public/licenses/VITE-LICENSE.md",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "FACET-The-Light-Within/serve.mjs",
+          "bytes": 2911,
+          "sha256": "5ea228b2b9418fafa8180c67f2b5042f1472754fea9be295093bbe76db407e83"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/i18n.ts",
+          "bytes": 6216,
+          "sha256": "a2e3a5c7a6a37e2265e17968900507a540aaac0e313a3706d418ee5940389850"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/main.ts",
+          "bytes": 20614,
+          "sha256": "290bf0ccd24759177f98a44c9acded250f6925dadbe04798ac164291cfaee7a8"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/narrative.ts",
+          "bytes": 2293,
+          "sha256": "eada838eb6d13763d12130e9c903810719fa49062d243e5b1db473da50942b18"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/scene/Exhibition.ts",
+          "bytes": 29846,
+          "sha256": "0ee155ab70f040980cee66345bd75dca62e21ada23bfaedc1d90d00a5f46259d"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/scene/gemGeometry.ts",
+          "bytes": 13753,
+          "sha256": "e7576142cea565b5ea97306c94ab9f86f5738235d492ecaec9f6f9e0dbe21761"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/scene/gemMaterial.ts",
+          "bytes": 13318,
+          "sha256": "fbd855cfbe7212d0f6a90069af04cda2a06d9e8e0e27b9d4c80e441d23826d35"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/scene/optics.ts",
+          "bytes": 2641,
+          "sha256": "3ed60b6239cdd57d1cb9188a6822d8a0afbf1ebcf95367b52d2ba80c29c43281"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/scene/organicStones.ts",
+          "bytes": 22438,
+          "sha256": "fa8f443592b5b11ef0b7fead25c963298ba52ff19e4f2cac2857902a04888858"
+        },
+        {
+          "path": "FACET-The-Light-Within/src/styles/main.css",
+          "bytes": 25009,
+          "sha256": "93f0157b84ac0bdaffa255d6ea5752b52ca4eab132869ad03b5c1c9ad61c25a8"
+        },
+        {
+          "path": "FACET-The-Light-Within/tests/geometry.test.ts",
+          "bytes": 5789,
+          "sha256": "bb0136e690f64e6cdd06ab001539252b93398d05f35ec73633e5dab4039b3d4e"
+        },
+        {
+          "path": "FACET-The-Light-Within/tests/narrative.test.ts",
+          "bytes": 4428,
+          "sha256": "32e9a894ccd7502eb95fc3240a13437b914ad8f0b639c0b1dceb377f22c6cd3c"
+        },
+        {
+          "path": "FACET-The-Light-Within/tests/optics.test.ts",
+          "bytes": 8264,
+          "sha256": "dcc730416f60a34ccca835107f126693248c16da1ab33d70c74c156c0f9be728"
+        },
+        {
+          "path": "FACET-The-Light-Within/tsconfig.json",
+          "bytes": 382,
+          "sha256": "81feee5eadb773799be2123c9682b182daf46aa93354ae9dcad7a99330c854c7"
+        },
+        {
+          "path": "FACET-The-Light-Within/vite.config.ts",
+          "bytes": 330,
+          "sha256": "7bbed65a809e7c07eec0389583436d431c7f590b371663f285195b19792c50ff"
+        }
+      ],
+      "imported": "2026-10-06",
+      "originalLocation": "D:/下载/FACET-The-Light-Within.zip",
+      "importBoundary": {
+        "source": "experiences/facet/src",
+        "page": "pages/facet/index.html",
+        "assets": "public/facet/",
+        "docs": "docs/facet/",
+        "provenance": "provenance/facet/",
+        "omitted": "Standalone package/lockfiles, build/server/startup configuration, compiled duplicate JS/CSS/HTML/assets and gitignore. ATLAS raw acquisition rasters/tiles remain in the unchanged external ZIP.",
+        "fontException": "SILICON and THRUST supplied compiled WOFF2 assets copied unchanged. ATLAS shares the same SILICON Manrope/IBM Plex bytes and existing OPTIC Cormorant italic bytes; no dependencies added."
+      }
+    },
+    {
+      "archive": "SILICON-From-Sand-to-Signal.zip",
+      "path": "D:\\下载\\SILICON-From-Sand-to-Signal.zip",
+      "bytes": 651019,
+      "sha256": "08c71aeda6e101a60a6b9e706cb03479913a52238fd7bf213a4bd8a2e8cbf868",
+      "mtime": "2026-10-06T21:38:44.203553",
+      "entryCount": 62,
+      "roots": [
+        "SILICON"
+      ],
+      "unsafe": [],
+      "entries": [
+        {
+          "path": "SILICON/.impeccable/design.json",
+          "bytes": 34747,
+          "sha256": "4265ea7db1cfb68f28a36a1d9b36db134edd7cf55ff9e54bfbe1e759ba6cad5f"
+        },
+        {
+          "path": "SILICON/ATTRIBUTION.md",
+          "bytes": 5766,
+          "sha256": "41cb6262df7afabcae67ccf572c71eb88e8de65370ea186a68ed7d4c3fc00a0b"
+        },
+        {
+          "path": "SILICON/DESIGN.md",
+          "bytes": 17381,
+          "sha256": "8e747224127c568924fbf38739a9779378fd5297106e8acf4e460c4265b542bc"
+        },
+        {
+          "path": "SILICON/LICENSE",
+          "bytes": 1077,
+          "sha256": "49b9c21ee0533483796ad13edd16530dd763e83d7b019b2a93cb59bbd1096b1f"
+        },
+        {
+          "path": "SILICON/PRODUCT.md",
+          "bytes": 2260,
+          "sha256": "ca475e52c6b386b64b16b79ac3058f3fa402ffa6106827de1925f73aacbc2387"
+        },
+        {
+          "path": "SILICON/README.md",
+          "bytes": 7293,
+          "sha256": "412aaf8d5d0b409320ed61c85364c1e53ff2deb8242fd174327f1b84b43800e4"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2",
+          "bytes": 8356,
+          "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff",
+          "bytes": 7204,
+          "sha256": "42da81a28bbcddda6768a25a4b3105ee291e69d5fa6c74747bc51bbc6718c538"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff",
+          "bytes": 5820,
+          "sha256": "0e4a2393e8ed3185ae300e4a202b6d9149d47d8a0e5bb8f1d1db33e76b86ecd1"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2",
+          "bytes": 6912,
+          "sha256": "f8c22ec1804bd6966b70f43ac7c327025645b4c09597117fca2a5a6c750106fe"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+          "bytes": 13144,
+          "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "bytes": 14708,
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
+          "bytes": 13348,
+          "sha256": "6bc0f226a5b7884a8170e3f62c63d7675609d4631bdc5931b5cdab81821f00eb"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
+          "bytes": 11768,
+          "sha256": "f8ddaa0ab9d3c052c9fe035751c8214b7e0d59e6e7b69b045f8659c2fe4dced2"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2",
+          "bytes": 5868,
+          "sha256": "62632b6375305e70ddcafdd895218e6ae41a184fcd280a69c739460604ca00a9"
+        },
+        {
+          "path": "SILICON/dist/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff",
+          "bytes": 5620,
+          "sha256": "bced561d991e3f81c150c08e71f7fa849fcbff523560f6059245f2edce19b600"
+        },
+        {
+          "path": "SILICON/dist/assets/index-BNo8_UzD.css",
+          "bytes": 24232,
+          "sha256": "5e2f793033cb3cb01fdb444d793608310447cbbc31791c31a17e0b75200033b4"
+        },
+        {
+          "path": "SILICON/dist/assets/index-bCsRB63n.js",
+          "bytes": 21808,
+          "sha256": "b1fe1b31696dda6e367c1e52a7ac063692161f767ec2c9d83a3f79a0b909106f"
+        },
+        {
+          "path": "SILICON/dist/assets/manrope-cyrillic-ext-wght-normal-C8S-KRRz.woff2",
+          "bytes": 2552,
+          "sha256": "de37de877dc17e4577341fa68bb5cb526b53d54cb29721e674208546a3c7849d"
+        },
+        {
+          "path": "SILICON/dist/assets/manrope-cyrillic-wght-normal-Dvxsihut.woff2",
+          "bytes": 14500,
+          "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+        },
+        {
+          "path": "SILICON/dist/assets/manrope-greek-wght-normal-DL7QRZyv.woff2",
+          "bytes": 9444,
+          "sha256": "2fb2e8cbfd52ae46179a8b6024eb162f1f9c6de3d22d6e3a30d8f395de7220be"
+        },
+        {
+          "path": "SILICON/dist/assets/manrope-latin-ext-wght-normal-Ch3YOpNY.woff2",
+          "bytes": 15120,
+          "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb"
+        },
+        {
+          "path": "SILICON/dist/assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "SILICON/dist/assets/manrope-vietnamese-wght-normal-usUDDRr7.woff2",
+          "bytes": 8520,
+          "sha256": "6bbb044ab420e07edb0a3042d2eb314b85e83a0182e945a15ab3b9092668dfd5"
+        },
+        {
+          "path": "SILICON/dist/assets/motion-BT07kGUt.js",
+          "bytes": 131514,
+          "sha256": "7dc581d5e1f866023550c89e18738af6f58a85c7ad4fef87050357722406ec88"
+        },
+        {
+          "path": "SILICON/dist/assets/motion-fOJvfYOR.css",
+          "bytes": 457,
+          "sha256": "7156473bac2d1c3c3900b28d2d3bb052ca2d7291fec03288970a8d57405ab5a9"
+        },
+        {
+          "path": "SILICON/dist/assets/shared-Daw1LuQv.js",
+          "bytes": 2187,
+          "sha256": "bd007850f63e1c3abd428250289fb8e696a3aad8288f481081fbc03957e6349a"
+        },
+        {
+          "path": "SILICON/dist/assets/stage-CIOo5RdT.js",
+          "bytes": 66126,
+          "sha256": "ec496ef2b7b6bcee862ebc4cca776f4fe4b2be9b047e4c1740d2a76ffe66df0b"
+        },
+        {
+          "path": "SILICON/dist/assets/three-C7EJN5lN.js",
+          "bytes": 823746,
+          "sha256": "c1381c3dab15bf7d567c7ad5d734ef74725b0062b79b117b5999ea8e20948250"
+        },
+        {
+          "path": "SILICON/dist/favicon.svg",
+          "bytes": 345,
+          "sha256": "05f776f9682cdf50791dd7153002880f348eeec3f12218cfed37369f339a876b"
+        },
+        {
+          "path": "SILICON/dist/index.html",
+          "bytes": 1476,
+          "sha256": "b73620d05fdfb1e4581fa86587a234f58101725ad51e6888974734e3de065487"
+        },
+        {
+          "path": "SILICON/docs/SCENE-ARCHITECTURE.md",
+          "bytes": 8058,
+          "sha256": "2a6bdbf93c2cc133162c5428c1393d75e055cbdbe33e64af14f17d090ab27e86"
+        },
+        {
+          "path": "SILICON/docs/SOURCES.md",
+          "bytes": 4470,
+          "sha256": "ce8e2988fea961898bc75b42d5f5bc03344c4c6d8a39996383839b5941f811d8"
+        },
+        {
+          "path": "SILICON/docs/VERIFICATION.md",
+          "bytes": 9036,
+          "sha256": "88ca02732244f1adc2ee969b923ff7017d2095bf5f615f3c1e397d6af55515b7"
+        },
+        {
+          "path": "SILICON/docs/licenses/GSAP-NOTICE.txt",
+          "bytes": 1749,
+          "sha256": "4a32359795765b0f4099fbafa08e1899a74745c77d8c92999116be5318d6b60a"
+        },
+        {
+          "path": "SILICON/docs/licenses/IBM-PLEX-MONO-OFL.txt",
+          "bytes": 5299,
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+        },
+        {
+          "path": "SILICON/docs/licenses/LENIS-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "SILICON/docs/licenses/LTC-LICENSE.txt",
+          "bytes": 1715,
+          "sha256": "2d696b421324f504d93786ecaff52fa8ee0e23b54e6480d4c0236a8f36498ab7"
+        },
+        {
+          "path": "SILICON/docs/licenses/MANROPE-OFL.txt",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        },
+        {
+          "path": "SILICON/docs/licenses/THREE-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "SILICON/docs/licenses/TYPES-THREE-LICENSE.txt",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "SILICON/docs/licenses/TYPESCRIPT-LICENSE.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "SILICON/docs/licenses/TYPESCRIPT-THIRD-PARTY-NOTICES.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        },
+        {
+          "path": "SILICON/docs/licenses/VITE-LICENSE.md",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "SILICON/index.html",
+          "bytes": 1066,
+          "sha256": "979f0d6a085e6a86e69ce01d8a40c5c6c312d34512a3d06a85bf0ba80cc135b5"
+        },
+        {
+          "path": "SILICON/package-lock.json",
+          "bytes": 30832,
+          "sha256": "f6497c10e7d2205a3e954c0893562c5e4c4f73db6b12abfad3425b1a1c31cc0d"
+        },
+        {
+          "path": "SILICON/package.json",
+          "bytes": 698,
+          "sha256": "0d42154bd16f4713ed47a09be3479f3b1bf948910a50e5350a027f3c5335eece"
+        },
+        {
+          "path": "SILICON/public/favicon.svg",
+          "bytes": 345,
+          "sha256": "05f776f9682cdf50791dd7153002880f348eeec3f12218cfed37369f339a876b"
+        },
+        {
+          "path": "SILICON/scripts/serve.mjs",
+          "bytes": 5754,
+          "sha256": "d0c64aedf9148ff13a8532c3d954bdc0cf56701e9f75c260fdab9e177ba22e83"
+        },
+        {
+          "path": "SILICON/src/content.ts",
+          "bytes": 2877,
+          "sha256": "08b2ed85f4154d22410babe5fed411c9d949b8d9ae87d18249ead57c510a482a"
+        },
+        {
+          "path": "SILICON/src/main.ts",
+          "bytes": 22330,
+          "sha256": "6d5c98e3dfcaed9109fe5e622aa2dc8ee4298ae5db856472ae31053b0b3c6832"
+        },
+        {
+          "path": "SILICON/src/scene/fallback.ts",
+          "bytes": 5539,
+          "sha256": "d7825cfafeab8ec8e404bb07623d05ebd34af4becefd2feb5b5821556bd81d18"
+        },
+        {
+          "path": "SILICON/src/scene/handoff.ts",
+          "bytes": 27655,
+          "sha256": "ccfdfc20252221f1b73bee7d29eb11e1a561cb70428c1d47b9f70f5406498d91"
+        },
+        {
+          "path": "SILICON/src/scene/micro.ts",
+          "bytes": 37186,
+          "sha256": "c22d0db30e0b3e8ad99b981a5bdc572a298db6f20befc8928d15d1c713872935"
+        },
+        {
+          "path": "SILICON/src/scene/package.ts",
+          "bytes": 33374,
+          "sha256": "bd6608cd10c3a46a26297a221d7704ee67c21e532ffb875ba8ce71ced67a4791"
+        },
+        {
+          "path": "SILICON/src/scene/shared.ts",
+          "bytes": 4628,
+          "sha256": "e9b2d2a914a2d0a71aa0a58e2a0315c7178b0954a4453927e23425d2346fef16"
+        },
+        {
+          "path": "SILICON/src/scene/stage.ts",
+          "bytes": 16376,
+          "sha256": "2014531b3803dfd950d5424736378f8d9afd392254e745a4afc932d7b06d9709"
+        },
+        {
+          "path": "SILICON/src/scene/wafer.ts",
+          "bytes": 22226,
+          "sha256": "64a1803a10ec27696d8983b79c9b085c5c5a32cba5cb512b88acc1f74db079b8"
+        },
+        {
+          "path": "SILICON/src/style.css",
+          "bytes": 25020,
+          "sha256": "a24d3de8704654807efc155515c488b85c2e7703d9a0e69f43116e2e8b7f20eb"
+        },
+        {
+          "path": "SILICON/src/vite-env.d.ts",
+          "bytes": 38,
+          "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+        },
+        {
+          "path": "SILICON/tsconfig.json",
+          "bytes": 347,
+          "sha256": "3044bccf173449d26dfd3920cbb6a8c0b6277197d91f28d33ccce728d6c37cdb"
+        },
+        {
+          "path": "SILICON/vite.config.js",
+          "bytes": 396,
+          "sha256": "f628b8f2363bd586e3cb1c3432d5c75c9ef685f162010626061e8a48f7d0bc8b"
+        }
+      ],
+      "imported": "2026-10-06",
+      "originalLocation": "D:/下载/SILICON-From-Sand-to-Signal.zip",
+      "importBoundary": {
+        "source": "experiences/silicon/src",
+        "page": "pages/silicon/index.html",
+        "assets": "public/silicon/",
+        "docs": "docs/silicon/",
+        "provenance": "provenance/silicon/",
+        "omitted": "Standalone package/lockfiles, build/server/startup configuration, compiled duplicate JS/CSS/HTML/assets and gitignore. ATLAS raw acquisition rasters/tiles remain in the unchanged external ZIP.",
+        "fontException": "SILICON and THRUST supplied compiled WOFF2 assets copied unchanged. ATLAS shares the same SILICON Manrope/IBM Plex bytes and existing OPTIC Cormorant italic bytes; no dependencies added."
+      }
+    },
+    {
+      "archive": "THRUST-Anatomy-of-a-Jet-Engine.zip",
+      "path": "D:\\下载\\THRUST-Anatomy-of-a-Jet-Engine.zip",
+      "bytes": 694889,
+      "sha256": "8c4324902d0469194438af8516d1bca16debfee81bf732a24f0a16570d821f9f",
+      "mtime": "2026-10-06T22:40:44.151171",
+      "entryCount": 51,
+      "roots": [
+        "THRUST"
+      ],
+      "unsafe": [],
+      "entries": [
+        {
+          "path": "THRUST/.gitignore",
+          "bytes": 76,
+          "sha256": "9dc78dd0e6c2b78baa69ebde4c09790961fb0e9d646ed799377f909d8d3eedd9"
+        },
+        {
+          "path": "THRUST/ATTRIBUTION.md",
+          "bytes": 3043,
+          "sha256": "79ccedf2910254cf442483a303d9ea5d209a6d58c6feedeccbbff0e955ba690b"
+        },
+        {
+          "path": "THRUST/DESIGN.md",
+          "bytes": 4879,
+          "sha256": "db7a3d149864841ebe0cb2e6bcc97ca950cd6dd01048714b75b9fb9e74c2f083"
+        },
+        {
+          "path": "THRUST/LICENSE",
+          "bytes": 1292,
+          "sha256": "846fc323be0bd0d994f14034b5c65579077f3a868df1dd0557eae7fe83ff0491"
+        },
+        {
+          "path": "THRUST/PRODUCT.md",
+          "bytes": 2094,
+          "sha256": "3a5f031fe288e6cac48164eaf1a014bc881c3ef487635041f1dba087e9178392"
+        },
+        {
+          "path": "THRUST/README.md",
+          "bytes": 6831,
+          "sha256": "8dafa53e4b354e99d4044f3456c5a66b9711ff34881a058645ada092bd38b4d9"
+        },
+        {
+          "path": "THRUST/START-MAC-LINUX.sh",
+          "bytes": 104,
+          "sha256": "58833326daf64dd3fae96beed66bdf515763c03bce1b2323a1b4530e90339dc6"
+        },
+        {
+          "path": "THRUST/START-WINDOWS.cmd",
+          "bytes": 250,
+          "sha256": "64369b9a696fab441738d07310dea480c5179b5842ec0d4497820fcd4e13e68f"
+        },
+        {
+          "path": "THRUST/dist/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "bytes": 22308,
+          "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+        },
+        {
+          "path": "THRUST/dist/assets/index-CIW4jQHw.js",
+          "bytes": 10436,
+          "sha256": "3f99b32eafa2fd5ce6a41f7a187809f3d7661bef1c0c347a139f5bd8b2d5c2d9"
+        },
+        {
+          "path": "THRUST/dist/assets/index-Dv6xWICq.css",
+          "bytes": 20341,
+          "sha256": "f15fff10ecafc6a022a1b4eef8ab4a53af356544d49786d6c0925d68a22b48ba"
+        },
+        {
+          "path": "THRUST/dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+          "bytes": 14108,
+          "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+        },
+        {
+          "path": "THRUST/dist/assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+          "bytes": 14044,
+          "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+        },
+        {
+          "path": "THRUST/dist/assets/scene-s8_huW59.js",
+          "bytes": 58248,
+          "sha256": "3433befde7d1b46853097e82bc298fe46741c5c475a34a7cf9ad2ab6142f9a7c"
+        },
+        {
+          "path": "THRUST/dist/assets/story-DZxvzrIO.js",
+          "bytes": 3488,
+          "sha256": "53e4726a770aa30014c1668415b70a07667c81d40267defb7128f781320ba277"
+        },
+        {
+          "path": "THRUST/dist/assets/three-CXhDepr-.js",
+          "bytes": 582300,
+          "sha256": "d37cd82c67f7db541af94a671c327aafe5d6e9dc4ad30edb4a4d13f349e8b2f6"
+        },
+        {
+          "path": "THRUST/dist/atmosphere.webp",
+          "bytes": 103324,
+          "sha256": "d1b6caa2805dd6c62d5095f99ebcda41eae67e4a2c4841af1029e94f2816632a"
+        },
+        {
+          "path": "THRUST/dist/engine-poster.webp",
+          "bytes": 75152,
+          "sha256": "23a87e4d5cbf9abdaa7359df45f745a4b5c06efd42f7d73203dd8a7b3821c26c"
+        },
+        {
+          "path": "THRUST/dist/favicon.svg",
+          "bytes": 229,
+          "sha256": "6acee10583345117db9e328945b565931357de1b2d17eb52320f54700e1952d7"
+        },
+        {
+          "path": "THRUST/dist/index.html",
+          "bytes": 10691,
+          "sha256": "5de292f4d4b29c4b1af5b5786d1642f64b7049fcb752c08eee8fea72354877b7"
+        },
+        {
+          "path": "THRUST/docs/ENGINEERING.md",
+          "bytes": 7758,
+          "sha256": "a118c0b807acf0f1dbec84c91bbea6e251dc140fde82fb1a2fe41f76e394c397"
+        },
+        {
+          "path": "THRUST/docs/PROVENANCE.md",
+          "bytes": 3013,
+          "sha256": "f2ace26452edaa3ffd95ca99e9a444d1d8e87d1085a61c4503c45e546744d469"
+        },
+        {
+          "path": "THRUST/docs/SOURCES.md",
+          "bytes": 4423,
+          "sha256": "030fd9b3994cb1924e0e07f9556cc875bdf4fdc4c1b03b36e2148ecb40219e93"
+        },
+        {
+          "path": "THRUST/docs/VALIDATION.md",
+          "bytes": 11179,
+          "sha256": "c4b2d4bac551858a3c430df1927c7c500f8f896657f10d03b43102c6372210a0"
+        },
+        {
+          "path": "THRUST/index.html",
+          "bytes": 10567,
+          "sha256": "c552a0743e9c1840b49e21b84392ccc0290da24fcd08e6426f44d42b3887ce6e"
+        },
+        {
+          "path": "THRUST/licenses/Barlow-Condensed-OFL.txt",
+          "bytes": 6167,
+          "sha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31"
+        },
+        {
+          "path": "THRUST/licenses/Manrope-OFL.txt",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        },
+        {
+          "path": "THRUST/licenses/rolldown-MIT.txt",
+          "bytes": 1302,
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        },
+        {
+          "path": "THRUST/licenses/rolldown-third-party.txt",
+          "bytes": 2209,
+          "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+        },
+        {
+          "path": "THRUST/licenses/three-MIT.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "THRUST/licenses/vite-MIT-and-notices.txt",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "THRUST/package-lock.json",
+          "bytes": 26317,
+          "sha256": "beaf4cf54657668e396cb087d56bccc52b116fc02c567f7f0e1a255624a5da7c"
+        },
+        {
+          "path": "THRUST/package.json",
+          "bytes": 843,
+          "sha256": "4db2b5a7fad7cb236b3324333ab15955f940a955c93b9bb85a383d040817b7ae"
+        },
+        {
+          "path": "THRUST/public/atmosphere.webp",
+          "bytes": 103324,
+          "sha256": "d1b6caa2805dd6c62d5095f99ebcda41eae67e4a2c4841af1029e94f2816632a"
+        },
+        {
+          "path": "THRUST/public/engine-poster.webp",
+          "bytes": 75152,
+          "sha256": "23a87e4d5cbf9abdaa7359df45f745a4b5c06efd42f7d73203dd8a7b3821c26c"
+        },
+        {
+          "path": "THRUST/public/favicon.svg",
+          "bytes": 229,
+          "sha256": "6acee10583345117db9e328945b565931357de1b2d17eb52320f54700e1952d7"
+        },
+        {
+          "path": "THRUST/scripts/serve.mjs",
+          "bytes": 2622,
+          "sha256": "936edaf45979374eeaa5a6120ef7ff83135af6e99de4fab52cfda90604b1d260"
+        },
+        {
+          "path": "THRUST/src/blade.js",
+          "bytes": 21733,
+          "sha256": "19f6ce772133fdb2ae791a400018c742c77048a7f561c7d4986d3605b5f348b7"
+        },
+        {
+          "path": "THRUST/src/engine.js",
+          "bytes": 35857,
+          "sha256": "dfea1f8c4e1a9b7a2d67ffedfcd9445f99bc8d24d5ac4490cb3435b47ad3a43b"
+        },
+        {
+          "path": "THRUST/src/flight.js",
+          "bytes": 21215,
+          "sha256": "2cdb572c203223a59e93a374f669a3fa35224400cf8d3ec4d56f5edcf4eb6c4b"
+        },
+        {
+          "path": "THRUST/src/flow.js",
+          "bytes": 18755,
+          "sha256": "dc294754630f07bc83e4b1eca43b74e08f91a3933127404bcbb1481a7fae008a"
+        },
+        {
+          "path": "THRUST/src/main.js",
+          "bytes": 12537,
+          "sha256": "394cda1b726f9739d99769ec2a351a9fec28f163c5561d0d8373b68cfd832ea2"
+        },
+        {
+          "path": "THRUST/src/scene.js",
+          "bytes": 8341,
+          "sha256": "04da87958a815b5f485839e25c4352f4829eae117e9d250d412f9dc7adf0fda8"
+        },
+        {
+          "path": "THRUST/src/sound.js",
+          "bytes": 2019,
+          "sha256": "56c8822dd669695b615034150fc65943d73c0cede95b154906ed6154da2a9c1c"
+        },
+        {
+          "path": "THRUST/src/story.js",
+          "bytes": 5547,
+          "sha256": "f3564eb26f9a2b5744a6825270e07656e55d5ca2ea402e57da76e32bd369d411"
+        },
+        {
+          "path": "THRUST/src/style.css",
+          "bytes": 20617,
+          "sha256": "eb8bf389fa75d190ac6d63fe8e29454a884f4eb076887860cc861f44d192045b"
+        },
+        {
+          "path": "THRUST/tests/engine-clearance.test.js",
+          "bytes": 4449,
+          "sha256": "556b1476d39bcdbc5161e8eb65e81c06b8e7541a1d4854ca97850ed6645e55f6"
+        },
+        {
+          "path": "THRUST/tests/engine.test.js",
+          "bytes": 1421,
+          "sha256": "1602283f2b79871f7ba7a62e87000c9e98d407e7182cadbce02c9d60558e0d5f"
+        },
+        {
+          "path": "THRUST/tests/server.test.js",
+          "bytes": 1098,
+          "sha256": "a770052209cc286a4ff8a12a751413275332b59a390ea29e2d5c0545f3b1135c"
+        },
+        {
+          "path": "THRUST/tests/story.test.js",
+          "bytes": 2071,
+          "sha256": "3fe5bc05d7aed30faf414147d9ae3f146847f743b4ba586d6a55f960de780aaa"
+        },
+        {
+          "path": "THRUST/vite.config.js",
+          "bytes": 326,
+          "sha256": "cdf0966c64dbd6bc4c35a1783bc23bbdc88cfd185f2941f9ce7b8c7d1122a21a"
+        }
+      ],
+      "imported": "2026-10-06",
+      "originalLocation": "D:/下载/THRUST-Anatomy-of-a-Jet-Engine.zip",
+      "importBoundary": {
+        "source": "experiences/thrust/src",
+        "page": "pages/thrust/index.html",
+        "assets": "public/thrust/",
+        "docs": "docs/thrust/",
+        "provenance": "provenance/thrust/",
+        "omitted": "Standalone package/lockfiles, build/server/startup configuration, compiled duplicate JS/CSS/HTML/assets and gitignore. ATLAS raw acquisition rasters/tiles remain in the unchanged external ZIP.",
+        "fontException": "SILICON and THRUST supplied compiled WOFF2 assets copied unchanged. ATLAS shares the same SILICON Manrope/IBM Plex bytes and existing OPTIC Cormorant italic bytes; no dependencies added."
+      }
     }
   ]
 }

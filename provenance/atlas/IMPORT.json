@@ -1,0 +1,568 @@
+{
+  "imported": "2026-10-06",
+  "originalZip": "D:/下载/ATLAS-The-World-in-Layers.zip",
+  "sha256": "51b9efba98ce134388fffc54661586be148bfa3d4bd7f02438a7d52dbc1d03af",
+  "clock": "Native scroll and one owned requestAnimationFrame loop",
+  "versions": {
+    "three": "0.186.1",
+    "gsap": "3.15.0 where used",
+    "lenis": "1.3.26 where used",
+    "vite": "8.3.2 root; supplied 8.3.3",
+    "threeTypes": "0.186.0 root; supplied 0.183.1"
+  },
+  "adaptations": [
+    "Independent HTML, base-aware asset/runtime URLs, Collection return and canonical/social metadata; existing dependencies and root lockfile retained.",
+    "Supplied binary resources imported unchanged; source/notice trailing whitespace normalized.",
+    "Runtime gallery capture generated from the actual supplied scene, with only DOM labels hidden during capture.",
+    "Failure UI retains usable masthead/Collection return, readable colors and visitor-facing production guidance. Regional and globe resource URLs include the atlas namespace. Normal exits/HMR dispose rendering layers and GPU resources; late resource completions guard disposed state.",
+    "All 23 runtime geographic resources copied unchanged. Source lineage/acquisition metadata retained under scoped provenance; raw PNG/PBF/GeoJSON acquisition snapshots remain traceable in the unchanged external ZIP.",
+    "GSI processing/Landsat credits and Natural Earth public-domain notices retained. Official GSI content terms and Natural Earth terms were read during this intake."
+  ],
+  "upstreamClaims": "UPSTREAM documents preserve historical standalone claims. Collection acceptance is recorded separately.",
+  "files": [
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/geo.ts",
+      "destination": "experiences/atlas/src/geo.ts",
+      "originalSha256": "073412c1e5535dc507a638e53b57e7e2361250fd7dd07ba2704d42706623eb4b",
+      "importedSha256": "073412c1e5535dc507a638e53b57e7e2361250fd7dd07ba2704d42706623eb4b",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/main.ts",
+      "destination": "experiences/atlas/src/main.ts",
+      "originalSha256": "c6ffac20fafde747c0f1a43330cf178098af18991102eb1fc7d8478d5e23e3b6",
+      "importedSha256": "624cc03bf945e015e8ea54767e628223046c024813308d0615ec025e94ab216b",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/story.ts",
+      "destination": "experiences/atlas/src/story.ts",
+      "originalSha256": "c18ef4e90014c09c68e64b2e456b62b883f429d93c077100554d7162b97045b6",
+      "importedSha256": "c18ef4e90014c09c68e64b2e456b62b883f429d93c077100554d7162b97045b6",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/style.css",
+      "destination": "experiences/atlas/src/style.css",
+      "originalSha256": "3587e7dd8ff56cd74a80dc32175c9a0f77eda78e89a07d49ecb1095d1417dd01",
+      "importedSha256": "e29e0aaad04960f03a782cc265126a88718ad44fd639c1e995114676c8a7af03",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/world/city.ts",
+      "destination": "experiences/atlas/src/world/city.ts",
+      "originalSha256": "3b5063a6dfe7f90e80094f08011b2a9d72b8f72232f0f1f8592c1cfed8f8da16",
+      "importedSha256": "3b5063a6dfe7f90e80094f08011b2a9d72b8f72232f0f1f8592c1cfed8f8da16",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/world/globe.ts",
+      "destination": "experiences/atlas/src/world/globe.ts",
+      "originalSha256": "bcfb713f56fddf2fa32fd8f50799ce3e66d9ed3ce94337d82b6d4c5a8d4b9d6e",
+      "importedSha256": "bcfb713f56fddf2fa32fd8f50799ce3e66d9ed3ce94337d82b6d4c5a8d4b9d6e",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/world/map.ts",
+      "destination": "experiences/atlas/src/world/map.ts",
+      "originalSha256": "f884ada88d9a0779d433311ac271d4e8316b5cb8a4a3ed62b0d1abacad634712",
+      "importedSha256": "f884ada88d9a0779d433311ac271d4e8316b5cb8a4a3ed62b0d1abacad634712",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/src/world/terrain.ts",
+      "destination": "experiences/atlas/src/world/terrain.ts",
+      "originalSha256": "d2e43a605077d84eaa76cc2f87f3ba7057270baa1251b83dc6eb653e0f1f573a",
+      "importedSha256": "d2e43a605077d84eaa76cc2f87f3ba7057270baa1251b83dc6eb653e0f1f573a",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/index.html",
+      "destination": "pages/atlas/index.html",
+      "originalSha256": "9059beb67370f19aedde63f684791f24c1546a3087cd396f876c730f4350706d",
+      "importedSha256": "729f08db6ee02f96e0354cc0673c7ceb2f27f59443f350dcff0f4f202b18c714",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/favicon.svg",
+      "destination": "public/atlas/favicon.svg",
+      "originalSha256": "f28c7331c64fa4ef6bab924b7c9974c23c64a62b416affcc45a74bf159cfe102",
+      "importedSha256": "f28c7331c64fa4ef6bab924b7c9974c23c64a62b416affcc45a74bf159cfe102",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/city-aerial-1024.webp",
+      "destination": "public/atlas/data/city-aerial-1024.webp",
+      "originalSha256": "93be44baa6115ba4922a491042dc106b0bf5a85c0dcec798343e145127240929",
+      "importedSha256": "93be44baa6115ba4922a491042dc106b0bf5a85c0dcec798343e145127240929",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/city-aerial-2048.webp",
+      "destination": "public/atlas/data/city-aerial-2048.webp",
+      "originalSha256": "9df6d84bcc4d5743d7fae82ff50ddb131fa98e41b7f6a04b296e4c1fdcfd20d6",
+      "importedSha256": "9df6d84bcc4d5743d7fae82ff50ddb131fa98e41b7f6a04b296e4c1fdcfd20d6",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/city-elevation-129.bin",
+      "destination": "public/atlas/data/city-elevation-129.bin",
+      "originalSha256": "16e5980b9aee9c0c00abdf973b97d22321520c98d03ae99a1ada7ab716ad750d",
+      "importedSha256": "16e5980b9aee9c0c00abdf973b97d22321520c98d03ae99a1ada7ab716ad750d",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/city-elevation-257.bin",
+      "destination": "public/atlas/data/city-elevation-257.bin",
+      "originalSha256": "756e5bdaa02dbae735ecca4b5a49fc4613a383ed37c8c18d00ffdef06900f1f8",
+      "importedSha256": "756e5bdaa02dbae735ecca4b5a49fc4613a383ed37c8c18d00ffdef06900f1f8",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/city-raster.json",
+      "destination": "public/atlas/data/city-raster.json",
+      "originalSha256": "269ad5591067be6b87b595d2d4a45f8345130772adfb8d3743de78a232b98cd5",
+      "importedSha256": "269ad5591067be6b87b595d2d4a45f8345130772adfb8d3743de78a232b98cd5",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/contours-100m.json",
+      "destination": "public/atlas/data/contours-100m.json",
+      "originalSha256": "8015e2b08dcae21adce3a83f1058f943f776997104976edc1008cee8a3ef3642",
+      "importedSha256": "8015e2b08dcae21adce3a83f1058f943f776997104976edc1008cee8a3ef3642",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/contours-mobile.json",
+      "destination": "public/atlas/data/contours-mobile.json",
+      "originalSha256": "80b305cba2e9828ac84c7c9a55d02cf56d4c02a49aedff9bb6d216a626db1fd1",
+      "importedSha256": "80b305cba2e9828ac84c7c9a55d02cf56d4c02a49aedff9bb6d216a626db1fd1",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/elevation-1025.bin",
+      "destination": "public/atlas/data/elevation-1025.bin",
+      "originalSha256": "05c348c4e96b916f1edc94c5bb557be5844769f3f8c7cd57cfafda4168788bb8",
+      "importedSha256": "05c348c4e96b916f1edc94c5bb557be5844769f3f8c7cd57cfafda4168788bb8",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/elevation-129.bin",
+      "destination": "public/atlas/data/elevation-129.bin",
+      "originalSha256": "aabceb7eaa9458d71280fbb5f8314d6223720cd3976dc8077254295f539f22a0",
+      "importedSha256": "aabceb7eaa9458d71280fbb5f8314d6223720cd3976dc8077254295f539f22a0",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/elevation-257.bin",
+      "destination": "public/atlas/data/elevation-257.bin",
+      "originalSha256": "49d5ac978d0097df86abdc3741bfc6e77708ecd786dfa0d88ac061aaab3053ba",
+      "importedSha256": "49d5ac978d0097df86abdc3741bfc6e77708ecd786dfa0d88ac061aaab3053ba",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/elevation-513.bin",
+      "destination": "public/atlas/data/elevation-513.bin",
+      "originalSha256": "1d7dfd169addfc95dd8fca18248661b3c5cadd8ba748411e3f84bc1282f408de",
+      "importedSha256": "1d7dfd169addfc95dd8fca18248661b3c5cadd8ba748411e3f84bc1282f408de",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/satellite-1024.webp",
+      "destination": "public/atlas/data/satellite-1024.webp",
+      "originalSha256": "725f29323a12ec0ab9c32d6ef0345bf37ed817847fc45672102c4ed1ba735450",
+      "importedSha256": "725f29323a12ec0ab9c32d6ef0345bf37ed817847fc45672102c4ed1ba735450",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/satellite-2048.webp",
+      "destination": "public/atlas/data/satellite-2048.webp",
+      "originalSha256": "482e4099b6513cc7a1b8a447fac5b75c958745692553315e78117c33c786b6c4",
+      "importedSha256": "482e4099b6513cc7a1b8a447fac5b75c958745692553315e78117c33c786b6c4",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/terrain.json",
+      "destination": "public/atlas/data/terrain.json",
+      "originalSha256": "d6c35c237c42df4af9344880f51be99338a5fc81521824c56572fcb79677a266",
+      "importedSha256": "d6c35c237c42df4af9344880f51be99338a5fc81521824c56572fcb79677a266",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/city-buildings-mobile.geojson",
+      "destination": "public/atlas/data/vectors/city-buildings-mobile.geojson",
+      "originalSha256": "99e430585b6491c2382184db7c16adee103dbb232624ed242ee77d7ce1f94cd4",
+      "importedSha256": "99e430585b6491c2382184db7c16adee103dbb232624ed242ee77d7ce1f94cd4",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/city-buildings.geojson",
+      "destination": "public/atlas/data/vectors/city-buildings.geojson",
+      "originalSha256": "766aaa956d502e76ea564fb57a76f600c9b325dd1024057debd26a5f583fd4df",
+      "importedSha256": "766aaa956d502e76ea564fb57a76f600c9b325dd1024057debd26a5f583fd4df",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/city-roads.geojson",
+      "destination": "public/atlas/data/vectors/city-roads.geojson",
+      "originalSha256": "0caa881adc80d1e73ccc69058c2181313733c2a598e6d77da962a749c17d4a74",
+      "importedSha256": "0caa881adc80d1e73ccc69058c2181313733c2a598e6d77da962a749c17d4a74",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/city-water.geojson",
+      "destination": "public/atlas/data/vectors/city-water.geojson",
+      "originalSha256": "d0dcbdcf12c794cd0adc6cf55131e311875dc8ad6030d360908a7c14159ca1f8",
+      "importedSha256": "d0dcbdcf12c794cd0adc6cf55131e311875dc8ad6030d360908a7c14159ca1f8",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/globe-land.geojson",
+      "destination": "public/atlas/data/vectors/globe-land.geojson",
+      "originalSha256": "658908cec877ace15313918399ff7172a090aaa1f10ff7b920e418382a6aa007",
+      "importedSha256": "658908cec877ace15313918399ff7172a090aaa1f10ff7b920e418382a6aa007",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/metadata.json",
+      "destination": "public/atlas/data/vectors/metadata.json",
+      "originalSha256": "89e516e863e4988f939d97ddf2ba501420701a05c8207db58a71eb00c191d187",
+      "importedSha256": "89e516e863e4988f939d97ddf2ba501420701a05c8207db58a71eb00c191d187",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/region-roads.geojson",
+      "destination": "public/atlas/data/vectors/region-roads.geojson",
+      "originalSha256": "50ba0d99b5e7c2b3c67d561845892476eff3c0849e59d894ea151a54e226cb19",
+      "importedSha256": "50ba0d99b5e7c2b3c67d561845892476eff3c0849e59d894ea151a54e226cb19",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/region-water.geojson",
+      "destination": "public/atlas/data/vectors/region-water.geojson",
+      "originalSha256": "26825ab320d64db194ce22b38a387a24868dd81240b0ff5e2410ecfbec83a7eb",
+      "importedSha256": "26825ab320d64db194ce22b38a387a24868dd81240b0ff5e2410ecfbec83a7eb",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/public/data/vectors/route.geojson",
+      "destination": "public/atlas/data/vectors/route.geojson",
+      "originalSha256": "379e858f97319d13bc03610afc6eb380ea19fe7241574c61f3656bdf3b83f7b8",
+      "importedSha256": "379e858f97319d13bc03610afc6eb380ea19fe7241574c61f3656bdf3b83f7b8",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/LICENSE",
+      "destination": "public/atlas/LICENSE",
+      "originalSha256": "fe95d3f1dee61e0579fbb1783ac807fd303c353c40119f8a4031bf39b0626c8a",
+      "importedSha256": "fe95d3f1dee61e0579fbb1783ac807fd303c353c40119f8a4031bf39b0626c8a",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/ATTRIBUTION.md",
+      "destination": "public/atlas/ATTRIBUTION.md",
+      "originalSha256": "23d7d0a0ae405d5d802880c51e8e01c670dc88937aa8b4c5d794ebe8851ac74a",
+      "importedSha256": "61fb649fd925ad0c38208926677cd66f861ff4edcee6fe89e4ef292b78210fc6",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/DESIGN.md",
+      "destination": "docs/atlas/DESIGN.md",
+      "originalSha256": "dcc59fa37740a4c43e8525ffff89aa9240fc6fb7fa631b05cb4875bae29e88c2",
+      "importedSha256": "3e7a04f726822e9aceefee642e56574a01c6b270c36696186ea02450f479350a",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/README.md",
+      "destination": "docs/atlas/UPSTREAM-README.md",
+      "originalSha256": "66339b700521776a25affdcc7775caea050d7ae3cc9211d93b02befeba31b723",
+      "importedSha256": "292be308236a57845b7fe1d3c544d1e1d18f27425ffeb291b322178128116292",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/PRODUCT.md",
+      "destination": "docs/atlas/UPSTREAM-PRODUCT.md",
+      "originalSha256": "919b9b20f3fc069a6caa1319378bd7fb7dfd650420085dbd6d233c69bc654b43",
+      "importedSha256": "a21fd1c81531ed93b3dfc8a41d9f2206488218fb2d2e90af8f42269b55b87145",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/docs/SCENE-ARCHITECTURE.md",
+      "destination": "docs/atlas/SCENE-ARCHITECTURE.md",
+      "originalSha256": "5c8084041659d854fea4e8da98e63cf8783f43995540bedfaea2ae741fb25d4f",
+      "importedSha256": "cb3510ce5876f3fffd26fcd5ec3bf50f6b809f6ff6683359d22cd5f8fd4cf782",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Cormorant-Garamond-OFL-1.1.txt",
+      "destination": "public/atlas/licenses/Cormorant-Garamond-OFL-1.1.txt",
+      "originalSha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73",
+      "importedSha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Earcut-ISC.txt",
+      "destination": "public/atlas/licenses/Earcut-ISC.txt",
+      "originalSha256": "324139c19d87af03fda38afea1590e00ca354c4159bdb2ae9e9cec070cfa46a8",
+      "importedSha256": "324139c19d87af03fda38afea1590e00ca354c4159bdb2ae9e9cec070cfa46a8",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/GSI-TERMS-ja.txt",
+      "destination": "public/atlas/licenses/GSI-TERMS-ja.txt",
+      "originalSha256": "c717b3e7d4ecd33f585883d75233f4db723c6e2c100d97a96c504898061fa323",
+      "importedSha256": "c717b3e7d4ecd33f585883d75233f4db723c6e2c100d97a96c504898061fa323",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/IBM-Plex-Mono-OFL-1.1.txt",
+      "destination": "public/atlas/licenses/IBM-Plex-Mono-OFL-1.1.txt",
+      "originalSha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+      "importedSha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Manrope-OFL-1.1.txt",
+      "destination": "public/atlas/licenses/Manrope-OFL-1.1.txt",
+      "originalSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "importedSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Natural-Earth-PUBLIC-DOMAIN.txt",
+      "destination": "public/atlas/licenses/Natural-Earth-PUBLIC-DOMAIN.txt",
+      "originalSha256": "de178d999d839732d522b8ec367f73522a36f55e2f6abe52e1bbd218a11f84c7",
+      "importedSha256": "5c6f3b0576c89df1562667be7a9688e39d8356e938f0802e4593e7647186c6d6",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/PDL-1.0-ja.txt",
+      "destination": "public/atlas/licenses/PDL-1.0-ja.txt",
+      "originalSha256": "406b14e401b1dfd051d81716f7631e0474617ee5c7eb1076331e2be1c52dce43",
+      "importedSha256": "f256596857c94dc37a63c3249c56c44a36b04afeb2f9ba997344a8f7b261a26f",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/README.md",
+      "destination": "public/atlas/licenses/README.md",
+      "originalSha256": "dde761173450652a11d798d38296acbddedc126369fe6fc00d615ee53eabf715",
+      "importedSha256": "dde761173450652a11d798d38296acbddedc126369fe6fc00d615ee53eabf715",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Three-MIT.txt",
+      "destination": "public/atlas/licenses/Three-MIT.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Types-Three-MIT.txt",
+      "destination": "public/atlas/licenses/Types-Three-MIT.txt",
+      "originalSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "importedSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/TypeScript-Apache-2.0.txt",
+      "destination": "public/atlas/licenses/TypeScript-Apache-2.0.txt",
+      "originalSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "importedSha256": "527adf9d4c760f7367c2aeffed6a89afba8ba40ea1b0efbc8f56496ad30ea9cf",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/TypeScript-THIRD-PARTY.txt",
+      "destination": "public/atlas/licenses/TypeScript-THIRD-PARTY.txt",
+      "originalSha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c",
+      "importedSha256": "f7d7409c091d9d5c09a8bafbc4a27dc30ce2da6e19b7c0f91c59754a7c4b195b",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/licenses/Vite-MIT-and-third-party.txt",
+      "destination": "public/atlas/licenses/Vite-MIT-and-third-party.txt",
+      "originalSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "importedSha256": "8f1715f772cf26b4b91fb4a8401a160ab841ecb2b4ef2b9bcca12b65c5ebe2fd",
+      "adapted": true
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/PROVENANCE.json",
+      "destination": "provenance/atlas/PROVENANCE.json",
+      "originalSha256": "abca13d581922415d9fdf1317ac7e5b10131b36832251ce4ba36ee284b9af86c",
+      "importedSha256": "abca13d581922415d9fdf1317ac7e5b10131b36832251ce4ba36ee284b9af86c",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/gsi/city-aerial.json",
+      "destination": "provenance/atlas/data-source/gsi/city-aerial.json",
+      "originalSha256": "8ed00ed6c04b39cfbe62fa7c7f90dc30a0174ddb14c8c69a31ad81cb0d9ec608",
+      "importedSha256": "8ed00ed6c04b39cfbe62fa7c7f90dc30a0174ddb14c8c69a31ad81cb0d9ec608",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/gsi/city-dem.json",
+      "destination": "provenance/atlas/data-source/gsi/city-dem.json",
+      "originalSha256": "c578ed192516c2a4a6b638e25ea59b0e856c90bcf39e46110fc92a4f95d243f9",
+      "importedSha256": "c578ed192516c2a4a6b638e25ea59b0e856c90bcf39e46110fc92a4f95d243f9",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/gsi/README.md",
+      "destination": "provenance/atlas/data-source/gsi/README.md",
+      "originalSha256": "84e4f68b069c7eccb0e1e386ce4d701f85c1ccb233a55eaf6a532356030201fd",
+      "importedSha256": "84e4f68b069c7eccb0e1e386ce4d701f85c1ccb233a55eaf6a532356030201fd",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/gsi/regional-dem.json",
+      "destination": "provenance/atlas/data-source/gsi/regional-dem.json",
+      "originalSha256": "1de29ca1675c3c9fe11075a20ec293e08a6b4f775546f25b30fc794661dcc505",
+      "importedSha256": "1de29ca1675c3c9fe11075a20ec293e08a6b4f775546f25b30fc794661dcc505",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/gsi/regional-satellite.json",
+      "destination": "provenance/atlas/data-source/gsi/regional-satellite.json",
+      "originalSha256": "5c375cf24be42242137df01d0ca3cddc9d4f7188bf252e3aa2eb03b6d90076cd",
+      "importedSha256": "5c375cf24be42242137df01d0ca3cddc9d4f7188bf252e3aa2eb03b6d90076cd",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/gsi/snapshot-build-environment.json",
+      "destination": "provenance/atlas/data-source/gsi/snapshot-build-environment.json",
+      "originalSha256": "a452209fb4cd3ebb5400e29af7d2bcfa2500ab855cb1760629ff37b195d8ddeb",
+      "importedSha256": "a452209fb4cd3ebb5400e29af7d2bcfa2500ab855cb1760629ff37b195d8ddeb",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/vectors/building-lineage.json.gz",
+      "destination": "provenance/atlas/data-source/vectors/building-lineage.json.gz",
+      "originalSha256": "c8e907e737dc35557598a2ffea16344a47ee5ce72771808ca2fac1782b059ee5",
+      "importedSha256": "c8e907e737dc35557598a2ffea16344a47ee5ce72771808ca2fac1782b059ee5",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/vectors/README.md",
+      "destination": "provenance/atlas/data-source/vectors/README.md",
+      "originalSha256": "abdaa584c5b0ca92b89ba5cb66b21d1dc874ededff046444516a77ec85c31f1c",
+      "importedSha256": "abdaa584c5b0ca92b89ba5cb66b21d1dc874ededff046444516a77ec85c31f1c",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/vectors/route-lineage.json",
+      "destination": "provenance/atlas/data-source/vectors/route-lineage.json",
+      "originalSha256": "89d55ebfe74f28e2df3d3e98dcc8e8a57d1bce56ce9c731b0688b5da357c60b5",
+      "importedSha256": "89d55ebfe74f28e2df3d3e98dcc8e8a57d1bce56ce9c731b0688b5da357c60b5",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/vectors/sources.json",
+      "destination": "provenance/atlas/data-source/vectors/sources.json",
+      "originalSha256": "c5c9de6a53f2b938a40d942356cc1624015205308525a16d2237a0ef27af89bf",
+      "importedSha256": "c5c9de6a53f2b938a40d942356cc1624015205308525a16d2237a0ef27af89bf",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/data-source/vectors/validation.json",
+      "destination": "provenance/atlas/data-source/vectors/validation.json",
+      "originalSha256": "8efe93acf5ef1f35dd33e058ddbfd41bcc24a9b903e6fe58f6149c60b91b2b90",
+      "importedSha256": "8efe93acf5ef1f35dd33e058ddbfd41bcc24a9b903e6fe58f6149c60b91b2b90",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/verify-data.mjs",
+      "destination": "provenance/atlas/tools/verify-data.mjs",
+      "originalSha256": "2bed52164ef04dcebdb7d050b5f14c01573ef87d769b4d41897dbbeb1afb7f74",
+      "importedSha256": "2bed52164ef04dcebdb7d050b5f14c01573ef87d769b4d41897dbbeb1afb7f74",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/acquire_gsi.py",
+      "destination": "provenance/atlas/tools/data/acquire_gsi.py",
+      "originalSha256": "547c818c481110301489d6762225074e34babe6b18c25898aea8f7ac505f42fc",
+      "importedSha256": "547c818c481110301489d6762225074e34babe6b18c25898aea8f7ac505f42fc",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/build_rasters.py",
+      "destination": "provenance/atlas/tools/data/build_rasters.py",
+      "originalSha256": "beea59af7c5e6f6a9b96f94c6788892823b5e377257f614fff1dbb7e84d4e104",
+      "importedSha256": "beea59af7c5e6f6a9b96f94c6788892823b5e377257f614fff1dbb7e84d4e104",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/mesh_contours.py",
+      "destination": "provenance/atlas/tools/data/mesh_contours.py",
+      "originalSha256": "f5b57e4c609850f96cbab4e4f3e16eae2e469eef18cf885937f28a7039c14039",
+      "importedSha256": "f5b57e4c609850f96cbab4e4f3e16eae2e469eef18cf885937f28a7039c14039",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/requirements.txt",
+      "destination": "provenance/atlas/tools/data/requirements.txt",
+      "originalSha256": "9dfb8dca765a8529d44808bcb87fa135c656003a6f9063d1ad967148ed52c42f",
+      "importedSha256": "9dfb8dca765a8529d44808bcb87fa135c656003a6f9063d1ad967148ed52c42f",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/vectors/build.py",
+      "destination": "provenance/atlas/tools/data/vectors/build.py",
+      "originalSha256": "fba9cc2cfc13df4106a412fd4cf4ffdd8aca666506e1c44628b7d50b9280d268",
+      "importedSha256": "fba9cc2cfc13df4106a412fd4cf4ffdd8aca666506e1c44628b7d50b9280d268",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/vectors/fetch.py",
+      "destination": "provenance/atlas/tools/data/vectors/fetch.py",
+      "originalSha256": "26670435020a6baeb3b2107cf21d948f5a5715731126d9fd2d17c5cb43cee5ef",
+      "importedSha256": "26670435020a6baeb3b2107cf21d948f5a5715731126d9fd2d17c5cb43cee5ef",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/vectors/mvt.py",
+      "destination": "provenance/atlas/tools/data/vectors/mvt.py",
+      "originalSha256": "dd7b5417406a19be57d85302a1183af5bb802074c121af45b38bfed33c444cf4",
+      "importedSha256": "dd7b5417406a19be57d85302a1183af5bb802074c121af45b38bfed33c444cf4",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/vectors/requirements.txt",
+      "destination": "provenance/atlas/tools/data/vectors/requirements.txt",
+      "originalSha256": "a9da53f34af90c2cc5b9ee96f0ef865935582d869aba11fb0eeb105cb01d6e63",
+      "importedSha256": "a9da53f34af90c2cc5b9ee96f0ef865935582d869aba11fb0eeb105cb01d6e63",
+      "adapted": false
+    },
+    {
+      "source": "ATLAS-The-World-in-Layers/atlas/scripts/data/vectors/validate.py",
+      "destination": "provenance/atlas/tools/data/vectors/validate.py",
+      "originalSha256": "663255e79fbe130d24f45cfdff3be9c81257ba6bd8557b01e72d21374be89904",
+      "importedSha256": "663255e79fbe130d24f45cfdff3be9c81257ba6bd8557b01e72d21374be89904",
+      "adapted": false
+    },
+    {
+      "source": "existing-collection/public/silicon/fonts/manrope-latin-wght-normal.woff2",
+      "destination": "public/atlas/fonts/manrope-latin-wght-normal.woff2",
+      "originalSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "importedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "adapted": false
+    },
+    {
+      "source": "existing-collection/public/silicon/fonts/ibm-plex-mono-latin-400-normal.woff2",
+      "destination": "public/atlas/fonts/ibm-plex-mono-latin-400-normal.woff2",
+      "originalSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "importedSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "adapted": false
+    },
+    {
+      "source": "existing-collection/public/optic/fonts/cormorant-garamond-latin-400-italic.woff2",
+      "destination": "public/atlas/fonts/cormorant-garamond-latin-400-italic.woff2",
+      "originalSha256": "26b41dd185ff48a71f16f50255b6f77011b1c79e8b18811458323313858f2cfa",
+      "importedSha256": "26b41dd185ff48a71f16f50255b6f77011b1c79e8b18811458323313858f2cfa",
+      "adapted": false
+    }
+  ],
+  "gallery": {
+    "path": "public/atlas/social.jpg",
+    "sha256": "725aba2325806250826bb6f9910094310b04b21a1dc6e3156df947e6327eebd5",
+    "method": "Actual Chromium runtime screenshot at 1920x1080, DOM labels hidden; JPEG resized to 1600x900"
+  }
+}

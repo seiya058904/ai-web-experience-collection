@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T13:23:22Z",
+  "title": "Design System: SILICON — From Sand to Signal",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "primary",
+        "displayName": "Cold paper",
+        "canonical": "#edf0ec",
+        "tonalRamp": [
+          "oklch(15.00% 0.00618 137.77)",
+          "oklch(26.43% 0.00618 137.77)",
+          "oklch(37.86% 0.00618 137.77)",
+          "oklch(49.29% 0.00618 137.77)",
+          "oklch(60.71% 0.00618 137.77)",
+          "oklch(72.14% 0.00618 137.77)",
+          "oklch(83.57% 0.00618 137.77)",
+          "oklch(95.00% 0.00618 137.77)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted graphite text",
+        "canonical": "#a0a7a8",
+        "tonalRamp": [
+          "oklch(15.00% 0.00811 207.13)",
+          "oklch(26.43% 0.00811 207.13)",
+          "oklch(37.86% 0.00811 207.13)",
+          "oklch(49.29% 0.00811 207.13)",
+          "oklch(60.71% 0.00811 207.13)",
+          "oklch(72.14% 0.00811 207.13)",
+          "oklch(83.57% 0.00811 207.13)",
+          "oklch(95.00% 0.00811 207.13)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Exhibition black",
+        "canonical": "#080a0b",
+        "tonalRamp": [
+          "oklch(15.00% 0.00421 227.48)",
+          "oklch(26.43% 0.00421 227.48)",
+          "oklch(37.86% 0.00421 227.48)",
+          "oklch(49.29% 0.00421 227.48)",
+          "oklch(60.71% 0.00421 227.48)",
+          "oklch(72.14% 0.00421 227.48)",
+          "oklch(83.57% 0.00421 227.48)",
+          "oklch(95.00% 0.00421 227.48)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Graphite hairline",
+        "canonical": "#343c40",
+        "tonalRamp": [
+          "oklch(15.00% 0.01280 229.28)",
+          "oklch(26.43% 0.01280 229.28)",
+          "oklch(37.86% 0.01280 229.28)",
+          "oklch(49.29% 0.01280 229.28)",
+          "oklch(60.71% 0.01280 229.28)",
+          "oklch(72.14% 0.01280 229.28)",
+          "oklch(83.57% 0.01280 229.28)",
+          "oklch(95.00% 0.01280 229.28)"
+        ]
+      },
+      "dialog": {
+        "role": "neutral",
+        "displayName": "Reading surface",
+        "canonical": "#0e1418",
+        "tonalRamp": [
+          "oklch(15.00% 0.01233 237.51)",
+          "oklch(26.43% 0.01233 237.51)",
+          "oklch(37.86% 0.01233 237.51)",
+          "oklch(49.29% 0.01233 237.51)",
+          "oklch(60.71% 0.01233 237.51)",
+          "oklch(72.14% 0.01233 237.51)",
+          "oklch(83.57% 0.01233 237.51)",
+          "oklch(95.00% 0.01233 237.51)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Cold focus line",
+        "canonical": "#ccdbdf",
+        "tonalRamp": [
+          "oklch(15.00% 0.01709 215.47)",
+          "oklch(26.43% 0.01709 215.47)",
+          "oklch(37.86% 0.01709 215.47)",
+          "oklch(49.29% 0.01709 215.47)",
+          "oklch(60.71% 0.01709 215.47)",
+          "oklch(72.14% 0.01709 215.47)",
+          "oklch(83.57% 0.01709 215.47)",
+          "oklch(95.00% 0.01709 215.47)"
+        ]
+      },
+      "hover": {
+        "role": "neutral",
+        "displayName": "Hover white",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Dark silicon surface",
+        "canonical": "#10191f",
+        "tonalRamp": [
+          "oklch(15.00% 0.01784 237.93)",
+          "oklch(26.43% 0.01784 237.93)",
+          "oklch(37.86% 0.01784 237.93)",
+          "oklch(49.29% 0.01784 237.93)",
+          "oklch(60.71% 0.01784 237.93)",
+          "oklch(72.14% 0.01784 237.93)",
+          "oklch(83.57% 0.01784 237.93)",
+          "oklch(95.00% 0.01784 237.93)"
+        ]
+      },
+      "range-filled": {
+        "role": "neutral",
+        "displayName": "Range progress",
+        "canonical": "#c5d3d2",
+        "tonalRamp": [
+          "oklch(15.00% 0.01524 191.71)",
+          "oklch(26.43% 0.01524 191.71)",
+          "oklch(37.86% 0.01524 191.71)",
+          "oklch(49.29% 0.01524 191.71)",
+          "oklch(60.71% 0.01524 191.71)",
+          "oklch(72.14% 0.01524 191.71)",
+          "oklch(83.57% 0.01524 191.71)",
+          "oklch(95.00% 0.01524 191.71)"
+        ]
+      },
+      "range-track": {
+        "role": "neutral",
+        "displayName": "Unfilled range",
+        "canonical": "#4d595f",
+        "tonalRamp": [
+          "oklch(15.00% 0.01794 229.33)",
+          "oklch(26.43% 0.01794 229.33)",
+          "oklch(37.86% 0.01794 229.33)",
+          "oklch(49.29% 0.01794 229.33)",
+          "oklch(60.71% 0.01794 229.33)",
+          "oklch(72.14% 0.01794 229.33)",
+          "oklch(83.57% 0.01794 229.33)",
+          "oklch(95.00% 0.01794 229.33)"
+        ]
+      },
+      "range-thumb": {
+        "role": "neutral",
+        "displayName": "Range thumb edge",
+        "canonical": "#dbe3df",
+        "tonalRamp": [
+          "oklch(15.00% 0.01012 164.85)",
+          "oklch(26.43% 0.01012 164.85)",
+          "oklch(37.86% 0.01012 164.85)",
+          "oklch(49.29% 0.01012 164.85)",
+          "oklch(60.71% 0.01012 164.85)",
+          "oklch(72.14% 0.01012 164.85)",
+          "oklch(83.57% 0.01012 164.85)",
+          "oklch(95.00% 0.01012 164.85)"
+        ]
+      },
+      "auto-manual": {
+        "role": "secondary",
+        "displayName": "Manual inspection accent",
+        "canonical": "#d9c2a5",
+        "tonalRamp": [
+          "oklch(15.00% 0.04704 73.49)",
+          "oklch(26.43% 0.04704 73.49)",
+          "oklch(37.86% 0.04704 73.49)",
+          "oklch(49.29% 0.04704 73.49)",
+          "oklch(60.71% 0.04704 73.49)",
+          "oklch(72.14% 0.04704 73.49)",
+          "oklch(83.57% 0.04704 73.49)",
+          "oklch(95.00% 0.04704 73.49)"
+        ]
+      },
+      "motion-text": {
+        "role": "neutral",
+        "displayName": "Ambient motion text",
+        "canonical": "#8e9a9f",
+        "tonalRamp": [
+          "oklch(15.00% 0.01564 224.60)",
+          "oklch(26.43% 0.01564 224.60)",
+          "oklch(37.86% 0.01564 224.60)",
+          "oklch(49.29% 0.01564 224.60)",
+          "oklch(60.71% 0.01564 224.60)",
+          "oklch(72.14% 0.01564 224.60)",
+          "oklch(83.57% 0.01564 224.60)",
+          "oklch(95.00% 0.01564 224.60)"
+        ]
+      },
+      "silicon-channel": {
+        "role": "neutral",
+        "displayName": "Silicon channel base",
+        "canonical": "#acb3b7",
+        "tonalRamp": [
+          "oklch(15.00% 0.00974 232.41)",
+          "oklch(26.43% 0.00974 232.41)",
+          "oklch(37.86% 0.00974 232.41)",
+          "oklch(49.29% 0.00974 232.41)",
+          "oklch(60.71% 0.00974 232.41)",
+          "oklch(72.14% 0.00974 232.41)",
+          "oklch(83.57% 0.00974 232.41)",
+          "oklch(95.00% 0.00974 232.41)"
+        ]
+      },
+      "copper-route": {
+        "role": "secondary",
+        "displayName": "Copper conductor base",
+        "canonical": "#b97e55",
+        "tonalRamp": [
+          "oklch(15.00% 0.09244 55.09)",
+          "oklch(26.43% 0.09244 55.09)",
+          "oklch(37.86% 0.09244 55.09)",
+          "oklch(49.29% 0.09244 55.09)",
+          "oklch(60.71% 0.09244 55.09)",
+          "oklch(72.14% 0.09244 55.09)",
+          "oklch(83.57% 0.09244 55.09)",
+          "oklch(95.00% 0.09244 55.09)"
+        ]
+      },
+      "silver-lid": {
+        "role": "neutral",
+        "displayName": "Brushed lid base",
+        "canonical": "#f7f9f8",
+        "tonalRamp": [
+          "oklch(15.00% 0.00249 165.08)",
+          "oklch(26.43% 0.00249 165.08)",
+          "oklch(37.86% 0.00249 165.08)",
+          "oklch(49.29% 0.00249 165.08)",
+          "oklch(60.71% 0.00249 165.08)",
+          "oklch(72.14% 0.00249 165.08)",
+          "oklch(83.57% 0.00249 165.08)",
+          "oklch(95.00% 0.00249 165.08)"
+        ]
+      },
+      "violet": {
+        "role": "secondary",
+        "displayName": "Representational optical violet",
+        "canonical": "#c3a8ee",
+        "tonalRamp": [
+          "oklch(15.00% 0.10169 301.78)",
+          "oklch(26.43% 0.10169 301.78)",
+          "oklch(37.86% 0.10169 301.78)",
+          "oklch(49.29% 0.10169 301.78)",
+          "oklch(60.71% 0.10169 301.78)",
+          "oklch(72.14% 0.10169 301.78)",
+          "oklch(83.57% 0.10169 301.78)",
+          "oklch(95.00% 0.10169 301.78)"
+        ]
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Circuit activity green",
+        "canonical": "#b5ded1",
+        "tonalRamp": [
+          "oklch(15.00% 0.04648 173.93)",
+          "oklch(26.43% 0.04648 173.93)",
+          "oklch(37.86% 0.04648 173.93)",
+          "oklch(49.29% 0.04648 173.93)",
+          "oklch(60.71% 0.04648 173.93)",
+          "oklch(72.14% 0.04648 173.93)",
+          "oklch(83.57% 0.04648 173.93)",
+          "oklch(95.00% 0.04648 173.93)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The oversized opening SILICON word; separate portrait and landscape variants apply."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The primary scene headline, with authored line breaks and a responsive chapter-specific transistor variant."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "The opening From sand to signal sentence."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "The short shared scene paragraph, normally limited to 34ch."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Underlined entry and replay actions."
+      },
+      "chapter-label": {
+        "displayName": "Chapter Label",
+        "purpose": "Functional numbered chapter navigation; visible labels collapse on narrow or short landscape viewports."
+      },
+      "process-row": {
+        "displayName": "Process Row",
+        "purpose": "Large actions in the two-column process index."
+      },
+      "dialog-headline": {
+        "displayName": "Dialog Headline",
+        "purpose": "The process dialog heading."
+      },
+      "motion-label": {
+        "displayName": "Motion Label",
+        "purpose": "Persistent ambient-motion action."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "action-response",
+        "value": "transform .3s ease",
+        "purpose": "Underline shortening and four-pixel directional arrow travel."
+      },
+      {
+        "name": "chapter-state",
+        "value": "color .25s",
+        "purpose": "The chapter label response."
+      },
+      {
+        "name": "switch-state",
+        "value": "transform .2s ease, background-color .2s ease",
+        "purpose": "Indicator translation and active-colour response."
+      },
+      {
+        "name": "dialog-enter",
+        "value": ".28s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Twelve-pixel rise and opacity on opening a dialog."
+      },
+      {
+        "name": "scroll-cue",
+        "value": "2.7s cubic-bezier(.65,0,.3,1) infinite",
+        "purpose": "Opening vertical indicator; suppressed under reduced motion."
+      },
+      {
+        "name": "chapter-navigation",
+        "value": "1.25s",
+        "purpose": "Programmatic Lenis journey between composed chapter targets; immediate under reduced motion and interruptible by visitor input."
+      },
+      {
+        "name": "scroll-response",
+        "value": "lerp .13; one GSAP ticker",
+        "purpose": "Lenis smoothing, ScrollTrigger state and renderer share one time source; native touch momentum is retained."
+      },
+      {
+        "name": "structural-ease",
+        "value": "t * t * (3 - 2 * t)",
+        "purpose": "Deterministic smoothstep for model growth, alignment and structural handoffs."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "ambient clock held; composed chapter states; CSS transition/animation suppression",
+        "purpose": "A useful still composition with direct inspection controls, without continuous carriers or camera breathing."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "portrait",
+        "value": "(max-width: 759px)"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "(max-width: 1100px) and (min-width: 760px)"
+      },
+      {
+        "name": "short-desktop",
+        "value": "(max-height: 730px) and (min-width: 760px)"
+      },
+      {
+        "name": "short-portrait",
+        "value": "(max-width: 759px) and (max-height: 740px)"
+      },
+      {
+        "name": "compact-landscape",
+        "value": "(max-height: 500px) and (min-aspect-ratio: 3/2)"
+      },
+      {
+        "name": "large-desktop",
+        "value": "(min-width: 2400px)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Replay action",
+      "kind": "button",
+      "refersTo": "text-action",
+      "description": "The final underlined action returns to the material scene; horizontal arrow and underline respond to hover.",
+      "html": "<button class=\"ds-text-action\" type=\"button\">Experience again <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:22px;min-height:44px;font-family:'Manrope Variable',sans-serif;font-size:clamp(12px,.85vw,34px);font-weight:450;padding:10px 0;position:relative;color:var(--paper,#edf0ec);background:none;border:0;border-radius:0;cursor:pointer}.ds-text-action::after{content:'';height:1px;background:#899294;position:absolute;left:0;right:0;bottom:4px;transform-origin:left;transition:transform .3s ease}.ds-text-action svg{width:22px;height:22px;transition:transform .3s ease}.ds-text-action:hover{color:#fff}.ds-text-action:hover::after{transform:scaleX(.62)}.ds-text-action:hover svg{transform:translateX(4px)}.ds-text-action:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-text-action::after,.ds-text-action svg{transition:none}}"
+    },
+    {
+      "name": "Begin action",
+      "kind": "button",
+      "refersTo": "text-action-begin",
+      "description": "The opening action points down into the manufacturing journey.",
+      "html": "<button class=\"ds-text-action ds-begin\" type=\"button\">Begin the process <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M12 4v15m-6-6 6 6 6-6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:22px;min-height:44px;font-family:'Manrope Variable',sans-serif;font-size:clamp(12px,.85vw,34px);font-weight:450;padding:10px 0;position:relative;color:var(--paper,#edf0ec);background:none;border:0;border-radius:0;cursor:pointer}.ds-text-action::after{content:'';height:1px;background:#899294;position:absolute;left:0;right:0;bottom:4px;transform-origin:left;transition:transform .3s ease}.ds-text-action svg{width:22px;height:22px;transition:transform .3s ease}.ds-text-action:hover{color:#fff}.ds-text-action:hover::after{transform:scaleX(.62)}.ds-text-action:hover svg{transform:translateX(4px)}.ds-text-action:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-text-action::after,.ds-text-action svg{transition:none}}.ds-begin{margin-top:12px}.ds-begin:hover svg{transform:translateY(4px)}@media(max-width:759px){.ds-begin{min-height:37px;font-size:11px;gap:30px}.ds-begin svg{width:18px;height:18px}}"
+    },
+    {
+      "name": "Quiet action",
+      "kind": "button",
+      "refersTo": "quiet-action",
+      "description": "The secondary closing action opens the exhibit notes without competing with replay.",
+      "html": "<button class=\"ds-quiet-action\" type=\"button\">About this exhibit</button>",
+      "css": ".ds-quiet-action{color:var(--muted,#a0a7a8);font-family:'Manrope Variable',sans-serif;font-size:clamp(12px,.85vw,34px);padding:8px 0;background:none;border:0;border-radius:0;cursor:pointer}.ds-quiet-action:hover{color:#fff}.ds-quiet-action:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}"
+    },
+    {
+      "name": "Inspection range",
+      "kind": "input",
+      "refersTo": "inspection",
+      "description": "Native range, percentage readout and Auto action shown in manual inspection state; the application wires the value and reset behaviour.",
+      "html": "<div class=\"ds-inspection\"><div class=\"ds-inspection-label\"><label for=\"ds-exposure\">Exposure</label><output for=\"ds-exposure\">65%</output></div><input class=\"ds-range\" id=\"ds-exposure\" type=\"range\" min=\"0\" max=\"100\" value=\"65\" style=\"--value:65%\" aria-describedby=\"ds-exposure-hint\"><div class=\"ds-inspection-footer\"><span id=\"ds-exposure-hint\">Scroll to follow · drag to inspect</span><button class=\"ds-auto\" type=\"button\">Auto</button></div></div>",
+      "css": ".ds-inspection{width:clamp(210px,20vw,800px);font-family:'Manrope Variable',sans-serif}.ds-inspection-label{display:flex;align-items:baseline;justify-content:space-between;font-size:clamp(11px,.78vw,32px);line-height:1.5;color:#bbc4c5}.ds-inspection-label output{font-family:var(--mono,'IBM Plex Mono',monospace);color:#d4dcda;font-size:.92em}.ds-range{display:block;width:100%;height:32px;padding:0;margin:8px 0 0;cursor:ew-resize;background:transparent;-webkit-appearance:none;appearance:none;touch-action:pan-y;--value:50%}.ds-range::-webkit-slider-runnable-track{height:1px;background:linear-gradient(to right,#c5d3d2 var(--value),#4d595f var(--value))}.ds-range::-webkit-slider-thumb{-webkit-appearance:none;width:8px;height:14px;margin-top:-6.5px;border:1px solid #dbe3df;background:#10191f;border-radius:1px}.ds-range::-moz-range-track{height:1px;background:#5c6970}.ds-range::-moz-range-progress{height:1px;background:#c5d3d2}.ds-range::-moz-range-thumb{width:6px;height:12px;border:1px solid #dbe3df;background:#10191f;border-radius:1px}.ds-inspection-footer{display:flex;align-items:baseline;justify-content:space-between;margin-top:2px;font:400 clamp(8px,.62vw,25px)/1.5 var(--mono,'IBM Plex Mono',monospace);color:#929fa5;white-space:nowrap;gap:12px}.ds-auto{padding:3px 0 3px 8px;font:inherit;color:#d9c2a5;border:0;border-radius:0;background:none;cursor:pointer}.ds-auto:hover{color:#fff}.ds-auto:disabled{color:#8e9aa0;cursor:default}.ds-range:focus-visible,.ds-auto:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}@media(max-width:759px){.ds-inspection{width:100%;max-width:340px}.ds-inspection-label,.ds-inspection-label output{font-size:11px}.ds-inspection-footer{font-size:9px;margin-top:0}.ds-range{height:27px;margin-top:5px}.ds-auto{min-width:44px;text-align:right;padding-top:5px;padding-bottom:5px}}"
+    },
+    {
+      "name": "Gate switch",
+      "kind": "button",
+      "refersTo": "switch-control",
+      "description": "The same switch shape serves gate and power; this specimen shows the active gate state.",
+      "html": "<button class=\"ds-switch\" type=\"button\" role=\"switch\" aria-checked=\"true\"><span class=\"ds-switch-track\"><i></i></span><span>Gate <b>on</b></span><span class=\"ds-switch-caption\">Channel open</span></button>",
+      "css": ".ds-switch{display:flex;gap:12px;align-items:center;min-height:44px;padding:4px 0;font-family:'Manrope Variable',sans-serif;font-size:clamp(12px,.85vw,34px);color:var(--paper,#edf0ec);background:none;border:0;border-radius:0;cursor:pointer}.ds-switch b{font-weight:500}.ds-switch-track{width:33px;height:17px;border:1px solid #839496;border-radius:10px;position:relative;display:inline-block;flex:0 0 auto}.ds-switch-track i{width:9px;height:9px;position:absolute;top:3px;left:3px;border-radius:50%;background:#808e94;transition:transform .2s ease,background-color .2s ease}.ds-switch[aria-checked='true'] .ds-switch-track i{transform:translateX(15px);background:#d4e4dc}.ds-switch[aria-checked='true'] .ds-switch-track{border-color:#a1beb5}.ds-switch-caption{margin-left:14px;color:#9caaae;font:400 clamp(8px,.6vw,24px)/1.4 var(--mono,'IBM Plex Mono',monospace)}.ds-switch:hover{color:#fff}.ds-switch:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}@media(max-width:759px){.ds-switch{font-size:11px}.ds-switch-caption{font-size:10px;margin-left:8px}}@media(prefers-reduced-motion:reduce){.ds-switch-track i{transition:none}}"
+    },
+    {
+      "name": "Manufacturing chapter rail",
+      "kind": "nav",
+      "refersTo": "chapter-link",
+      "description": "Eight indexed tracks with partial progress in the active chapter; chapter names collapse on narrow screens.",
+      "html": "<nav class=\"ds-chapter-nav\" aria-label=\"Manufacturing chapters\"><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 1: Material\" style=\"--progress:100%\"><span class=\"ds-chapter-name\"><b>01</b> Material</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 2: Pattern\" style=\"--progress:100%\"><span class=\"ds-chapter-name\"><b>02</b> Pattern</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 3: Build\" style=\"--progress:100%\"><span class=\"ds-chapter-name\"><b>03</b> Build</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 4: Transistor\" aria-current=\"step\" style=\"--progress:50%\"><span class=\"ds-chapter-name\"><b>04</b> Transistor</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 5: Interconnect\" style=\"--progress:0%\"><span class=\"ds-chapter-name\"><b>05</b> Interconnect</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 6: Package\" style=\"--progress:0%\"><span class=\"ds-chapter-name\"><b>06</b> Package</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 7: Signal\" style=\"--progress:0%\"><span class=\"ds-chapter-name\"><b>07</b> Signal</span><span class=\"ds-chapter-track\"><i></i></span></button><button class=\"ds-chapter\" type=\"button\" aria-label=\"Chapter 8: Silicon\" style=\"--progress:0%\"><span class=\"ds-chapter-name\"><b>08</b> Silicon</span><span class=\"ds-chapter-track\"><i></i></span></button></nav>",
+      "css": ".ds-chapter-nav{display:grid;grid-template-columns:repeat(8,1fr);gap:clamp(12px,1.8vw,76px)}.ds-chapter{padding:16px 0 6px;text-align:left;background:none;border:0;border-radius:0;cursor:pointer;--progress:0%}.ds-chapter-name{display:block;color:#8d989d;font:400 clamp(9px,.63vw,26px)/1.3 var(--mono,'IBM Plex Mono',monospace);letter-spacing:.065em;text-transform:uppercase;transition:color .25s;white-space:nowrap}.ds-chapter-name b{font-weight:400;display:inline-block;margin-right:clamp(4px,.6vw,26px);color:#839096}.ds-chapter-track{display:block;height:1px;background:#424c50;margin-top:clamp(13px,.78vw,32px);position:relative}.ds-chapter-track i{position:absolute;left:0;top:0;width:var(--progress);height:1px;background:#d2d9d8}.ds-chapter[aria-current='step'] .ds-chapter-name,.ds-chapter[aria-current='step'] .ds-chapter-name b{color:#eff2ee}.ds-chapter[aria-current='step'] .ds-chapter-track{height:2px;background:#788386}.ds-chapter[aria-current='step'] .ds-chapter-track i{height:2px}.ds-chapter:hover .ds-chapter-name{color:#edf0ec}.ds-chapter:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}@media(max-width:759px){.ds-chapter-nav{gap:8px}.ds-chapter{padding:12px 0;min-height:38px}.ds-chapter-name{display:none}.ds-chapter-track{margin:0}}@media(prefers-reduced-motion:reduce){.ds-chapter-name{transition:none}}"
+    },
+    {
+      "name": "Process index",
+      "kind": "nav",
+      "refersTo": "process-index-row",
+      "description": "Two-column chapter list inside the process dialog; every row is a direct chapter action.",
+      "html": "<nav class=\"ds-process-index\" aria-label=\"Choose a chapter\"><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">01</span><span>Material</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">02</span><span>Pattern</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">03</span><span>Build</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">04</span><span>Transistor</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">05</span><span>Interconnect</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">06</span><span>Package</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">07</span><span>Signal</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button><button class=\"ds-process-row\" type=\"button\"><span class=\"ds-index-no\">08</span><span>Silicon</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button></nav>",
+      "css": ".ds-process-index{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}.ds-process-row{display:flex;align-items:center;gap:20px;padding:22px 0;border:0;border-top:1px solid #3b464c;border-radius:0;text-align:left;font-family:'Manrope Variable',sans-serif;font-size:clamp(21px,2.1vw,32px);font-weight:350;color:var(--paper,#edf0ec);background:none;cursor:pointer}.ds-index-no{font:400 11px/1 var(--mono,'IBM Plex Mono',monospace);color:#8f9da5}.ds-process-row svg{width:23px;height:23px;margin-left:auto;color:#8f9da5;transition:transform .2s}.ds-process-row:hover{color:#fff}.ds-process-row:hover svg{transform:translateX(6px);color:#edf0ec}.ds-process-row:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}@media(max-width:759px){.ds-process-index{column-gap:20px}.ds-process-row{font-size:17px;gap:11px;padding:20px 0}.ds-index-no{font-size:8px}.ds-process-row svg{display:none}}@media(prefers-reduced-motion:reduce){.ds-process-row svg{transition:none}}"
+    },
+    {
+      "name": "Process dialog surface",
+      "kind": "custom",
+      "refersTo": "process-dialog",
+      "description": "A native open dialog specimen with its original shell, typographic heading and close action; production uses showModal for backdrop and focus containment.",
+      "html": "<dialog class=\"ds-process-dialog\" open aria-labelledby=\"ds-dialog-heading\"><div class=\"ds-dialog-shell\"><div class=\"ds-dialog-top\"><span class=\"ds-dialog-brand\">SILICON</span><form method=\"dialog\"><button class=\"ds-icon-button\" aria-label=\"Close the process\"><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"m6 6 12 12M6 18 18 6\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg></button></form></div><div class=\"ds-process-heading\"><h2 id=\"ds-dialog-heading\">From matter.<br>To possibility.</h2><p>Eight moments in the making.<br>Enter anywhere. Follow the connection.</p></div></div></dialog>",
+      "css": ".ds-process-dialog{background:#0e1418;color:var(--paper,#edf0ec);font-family:'Manrope Variable',sans-serif;border:none;border-radius:0;padding:0;width:min(1120px,calc(100vw - 64px));max-width:none;max-height:100svh;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#52616b #0e1418}.ds-process-dialog::backdrop{background:#030709dd}.ds-process-dialog[open]{animation:ds-dialog-open .28s cubic-bezier(.16,1,.3,1)}@keyframes ds-dialog-open{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.ds-dialog-shell{padding:28px 42px}.ds-dialog-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line,#343c40)}.ds-dialog-brand{font-size:11px;letter-spacing:.2em;color:#b2bec4}.ds-icon-button{display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:0;background:none;color:var(--paper,#edf0ec);cursor:pointer}.ds-icon-button svg{width:25px;height:25px}.ds-icon-button:hover{color:#fff}.ds-icon-button:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}.ds-process-heading{padding:44px 0 37px;display:flex;align-items:flex-end;justify-content:space-between;gap:25px}.ds-process-heading h2{margin:0;font-size:clamp(40px,4.4vw,69px);font-weight:350;line-height:1.1;letter-spacing:-.04em}.ds-process-heading p{margin:0;color:#a9b5bd;font-size:13px;line-height:1.9;max-width:250px}@media(max-width:759px){.ds-process-dialog{width:calc(100vw - 20px)}.ds-dialog-shell{padding:18px 24px 23px}.ds-dialog-top{padding-bottom:11px}.ds-process-heading{padding:25px 0;display:block}.ds-process-heading h2{font-size:37px}.ds-process-heading p{margin-top:14px;font-size:12px}}@media(prefers-reduced-motion:reduce){.ds-process-dialog[open]{animation:none}}"
+    },
+    {
+      "name": "Ambient motion action",
+      "kind": "button",
+      "refersTo": "motion-control",
+      "description": "Persistent pause action for ambient time, separate from the reduced-motion preference.",
+      "html": "<button class=\"ds-motion-control\" type=\"button\" aria-pressed=\"false\" aria-label=\"Pause ambient motion\"><svg viewBox=\"0 0 20 20\" fill=\"none\" aria-hidden=\"true\"><path d=\"M7 5v10M13 5v10\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg><span>Motion on</span></button>",
+      "css": ".ds-motion-control{display:flex;align-items:center;gap:6px;margin-left:auto;padding:4px 0 4px 9px;color:#8e9a9f;font:400 clamp(10px,.60vw,24px)/1 var(--mono,'IBM Plex Mono',monospace);background:none;border:0;border-radius:0;cursor:pointer}.ds-motion-control svg{width:16px;height:16px}.ds-motion-control:hover{color:#fff}.ds-motion-control:focus-visible{outline:1px solid #ccdbdf;outline-offset:6px;}@media(max-width:759px){.ds-motion-control{font-size:8px}.ds-motion-control svg{width:14px;height:14px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Precision Object Theatre",
+    "overview": "SILICON occupies one dark exhibition space. A polished wafer becomes a patterned film, a microscopic cutaway, a connected metal stack and a finished package. Layers, light, paths and signals supply the recurring visual language. The geometry and its material response carry the experience; typography establishes a quiet editorial frame around it.\n\nThe implemented world is precise, layered, luminous and industrial. Cold reflections reveal silicon and silver; copper belongs to conductors; violet makes an invisible optical process legible; pale green marks circuit activity. Original procedural surfaces, modelled sections and a continuous camera provide the artwork. The restrained controls invite inspection without taking over the exhibit.",
+    "keyCharacteristics": [
+      "One continuous exhibition ground and one shared camera.",
+      "Real layer depth, retained feature identity and connected routes.",
+      "Light-weight editorial type paired with functional monospaced labels.",
+      "Material reflections and sectional geometry instead of decorative UI depth.",
+      "Dedicated portrait and compact landscape compositions."
+    ],
+    "rules": [
+      {
+        "name": "The Material Meaning Rule",
+        "body": "Reserve material and activity colours for what they explain: metal, optics, conduction or heat. Keep the interface predominantly neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Use Manrope for the visitor-facing story and actions; use IBM Plex Mono for chapter indexing, measurements and control readouts.",
+        "section": "typography"
+      },
+      {
+        "name": "The Physical Depth Rule",
+        "body": "Let bevels, layer separation, shadows and reflected light describe the object. Keep surrounding interface surfaces flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the shared ground, camera and four recurring forms: layer, light, path and signal.",
+      "Do align copy, controls and navigation to the common gutter, then reserve clear space for the object.",
+      "Do preserve the same physical feature during a handoff, including the selected die floorplan before subsequent deposition covers it.",
+      "Do use neutral, flat controls with the existing visible focus treatment and native semantic behaviour.",
+      "Do provide a composed still state, direct inspection and semantic exhibit text when motion or WebGL is unavailable.",
+      "Do distinguish silicon channels, dielectric, conductors, logic dies and stacked memory in both geometry and copy."
+    ],
+    "donts": [
+      "Don't turn the exhibition into repeated image-and-headline sections or a card-based content dashboard.",
+      "Don't use optical violet or activity green as a blanket technology theme.",
+      "Don't substitute broad glow, blur or transparent HUD frames for material definition and readable geometry.",
+      "Don't hide the carried feature as soon as it reaches its destination; allow its identity to be read before the next process changes it.",
+      "Don't copy the desktop composition onto a narrow or short viewport without its corresponding layout and camera branch.",
+      "Don't present the illustrative geometry as a foundry blueprint, a scale drawing, a measured thermal field or evidence of consciousness."
+    ]
+  }
+}

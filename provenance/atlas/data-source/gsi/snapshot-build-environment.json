@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "Pillow": "12.3.0",
+  "scipy": "1.17.0",
+  "libwebp": "1.6.0",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "contourMethod": "Exact marching triangles with NumPy; fixed [a,c,b]/[b,c,d] cell diagonal; no contourpy or approximate polyline simplification.",
+  "purpose": "Optional raster regeneration snapshot environment. Ordinary npm build uses included preprocessed assets and does not require Python. Same numerical inputs recreate geography; byte-exact WebP also depends on library versions."
+}
