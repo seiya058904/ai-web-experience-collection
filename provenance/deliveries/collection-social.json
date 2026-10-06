@@ -1,10 +1,10 @@
 {
   "path": "public/collection-social.jpg",
-  "sha256": "fbabc9a6e3aa4d5ea89a061979b7c14c04c18a4f4a37f03f754f66f07cea5cfb",
-  "bytes": 194135,
+  "sha256": "f328ffc9c7e345cb6641c3c03504160e26ffc4e28cddf75a125a711453806e6c",
+  "bytes": 185302,
   "width": 1200,
   "height": 630,
-  "composition": "Eleven center-cropped native-work tiles: three triptychs and one paired row, JPEG quality 90.",
+  "composition": "Thirteen center-cropped native-work tiles: three triptychs and two paired rows, JPEG quality 90.",
   "sources": [
     {
       "path": "public/f1/media/hero-1600.webp",
@@ -49,6 +49,14 @@
     {
       "path": "public/veil/social.jpg",
       "sha256": "e801466159def34c3854652b86bbc55075e8f79da1ced1e4e1c9a34834e6818f"
+    },
+    {
+      "path": "public/optic/social.jpg",
+      "sha256": "d4a0c700d0f8bb262b55856d9720280a1dabbee4419056381cb2a52bd97bd7d6"
+    },
+    {
+      "path": "public/inkscape/social.jpg",
+      "sha256": "131bbf37af7d5cedd9b80db818d5a95312c3957cf46cd855ab98d63adfc1a01d"
     }
   ]
 }

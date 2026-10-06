@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b0d" />
+    <meta
+      name="description"
+      content="Follow a beam of light through an original photographic machine. An interactive film about optics, precision, and the making of an image."
+    />
+    <title>OPTIC — The Architecture of an Image</title>
+    <link rel="icon" type="image/svg+xml" href="/optic/assets/optic-mark.svg" />
+    <link rel="preload" as="image" href="/optic/assets/coast-of-light.webp" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%optic/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:title" content="OPTIC — The Architecture of an Image">
+    <meta property="og:description" content="Nine continuous studies of light, optics and an original photographic machine.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%optic/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%optic/social.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OPTIC — The Architecture of an Image">
+    <meta name="twitter:description" content="Nine continuous studies of light, optics and an original photographic machine.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%optic/social.jpg">
+  </head>
+  <body>
+    <a class="skip-link" href="#experience-controls"
+      >Skip to experience controls</a
+    >
+    <div id="stage" aria-hidden="true"></div>
+    <canvas id="fallback-stage" aria-hidden="true"></canvas>
+    <div class="stage-shade" aria-hidden="true"></div>
+    <div class="loading-indicator" id="loading" role="status">
+      Preparing the light<span></span>
+    </div>
+
+    <header class="masthead">
+      <a
+        class="wordmark"
+        href="#light"
+        aria-label="OPTIC — return to the beginning"
+        >OPTIC</a
+      >
+      <div class="masthead-actions">
+        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+        <button
+          class="motion-button"
+          id="motion-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Pause ambient motion"
+        >
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path class="pause-symbol" d="M7 5v10M13 5v10" />
+            <path class="play-symbol" d="m7 4 8 6-8 6Z" />
+          </svg>
+        </button>
+        <button
+          id="index-open"
+          class="index-toggle"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          The experience<svg viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M4 7h12M4 13h12" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="journey" aria-label="A journey through the camera">
+      <section
+        id="light"
+        class="scene-section"
+        data-scene="0"
+        aria-labelledby="light-title"
+      >
+        <div class="scene-panel panel-light">
+          <h1 id="light-title">
+            The architecture<br />
+            of an <em>image.</em>
+          </h1>
+          <p class="intro-line">A journey from light to photograph.</p>
+          <button class="begin-link" type="button" data-go="1">
+            Follow the light
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v16m-6-6 6 6 6-6" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section
+        id="optics"
+        class="scene-section"
+        data-scene="1"
+        aria-labelledby="optics-title"
+      >
+        <div class="scene-panel panel-optics">
+          <h2 id="optics-title">Glass <em>bends it.</em></h2>
+          <p>Ten elements. One continuous path.</p>
+        </div>
+      </section>
+      <section
+        id="focus"
+        class="scene-section"
+        data-scene="2"
+        aria-labelledby="focus-title"
+      >
+        <div class="scene-panel panel-focus">
+          <h2 id="focus-title">
+            Focus<br />
+            <em>decides.</em>
+          </h2>
+          <p>
+            A small movement.<br />
+            A different way of seeing.
+          </p>
+          <div class="focus-preview photo-study" aria-hidden="true">
+            <div class="depth-image depth-far"></div>
+            <div class="depth-image depth-near"></div>
+            <div class="focus-bracket"></div>
+            <div class="viewfinder-center"></div>
+            <span class="preview-caption">50 MM</span>
+          </div>
+          <div class="control-dock focus-dock">
+            <div class="control-heading">
+              <label for="focus-distance">Focus distance</label
+              ><output id="focus-output" for="focus-distance">1.4 m</output>
+            </div>
+            <input
+              id="focus-distance"
+              type="range"
+              min="0"
+              max="1"
+              step="0.001"
+              value="0.5"
+              aria-label="Focus distance, near to far"
+            />
+            <div class="range-labels">
+              <span>NEAR</span><span>INFINITY</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="aperture"
+        class="scene-section"
+        data-scene="3"
+        aria-labelledby="aperture-title"
+      >
+        <div class="scene-panel panel-aperture">
+          <h2 id="aperture-title">
+            The shape<br />
+            of <em>light.</em>
+          </h2>
+          <div class="aperture-reading">
+            <span>f /</span><output id="aperture-output">1.4</output>
+          </div>
+          <p class="aperture-light">
+            <output id="light-output">100%</output> relative light
+          </p>
+          <div class="aperture-study photo-study" aria-hidden="true">
+            <div class="depth-image depth-far"></div>
+            <div class="depth-image depth-near"></div>
+          </div>
+          <div class="control-dock aperture-dock">
+            <div class="stop-control" role="group" aria-label="Aperture stops">
+              <button type="button" data-aperture="1.4">f/1.4</button
+              ><button type="button" data-aperture="2.8">f/2.8</button
+              ><button type="button" data-aperture="8">f/8</button
+              ><button type="button" data-aperture="16">f/16</button>
+            </div>
+            <p class="control-note">
+              Exposure matched <span id="matched-shutter">1/1000 s</span
+              ><span>ISO 100</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="shutter"
+        class="scene-section"
+        data-scene="4"
+        aria-labelledby="shutter-title"
+      >
+        <div class="scene-panel panel-shutter">
+          <h2 id="shutter-title">Time <em>opens.</em></h2>
+          <p>
+            A fraction of a second.<br />
+            An image that stays.
+          </p>
+          <div class="shutter-reading">
+            <output id="shutter-output">1/125</output><span>SECOND</span>
+          </div>
+          <div class="control-dock shutter-dock">
+            <div class="stop-control" role="group" aria-label="Shutter speed">
+              <button type="button" data-shutter="30">1/30</button
+              ><button type="button" data-shutter="125" aria-pressed="true">
+                1/125</button
+              ><button type="button" data-shutter="2000">1/2000</button>
+            </div>
+            <div class="shutter-actions">
+              <span>MECHANICAL · MOTION SLOWED</span
+              ><button type="button" id="release-shutter">
+                Release shutter
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <circle cx="10" cy="10" r="6" />
+                  <circle cx="10" cy="10" r="2" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="sensor"
+        class="scene-section"
+        data-scene="5"
+        aria-labelledby="sensor-title"
+      >
+        <div class="scene-panel panel-sensor">
+          <h2 id="sensor-title">
+            Light,<br />
+            <em>remembered.</em>
+          </h2>
+          <p>
+            From a photon<br />
+            to a possibility.
+          </p>
+          <div class="sensor-data">
+            <span>36 × 24 <small>MM</small></span
+            ><span>24.0 <small>MEGAPIXELS</small></span>
+          </div>
+          <div class="sensor-macro-data" aria-hidden="true">
+            <strong>6 <span>µm</span></strong
+            ><small>ONE PHOTOSITE · MAGNIFIED</small>
+          </div>
+          <div class="sensor-key">
+            <div class="bayer-tile" aria-hidden="true">
+              <i>R</i><i>G</i><i>G</i><i>B</i>
+            </div>
+            <p>
+              One filtered value per photosite.<br />
+              A complete image, reconstructed.
+            </p>
+          </div>
+          <div class="sensor-layer-labels">
+            <span>MICROLENS</span><span>COLOR FILTER</span
+            ><span>PHOTODIODE</span>
+          </div>
+        </div>
+      </section>
+      <section
+        id="stability"
+        class="scene-section"
+        data-scene="6"
+        aria-labelledby="stability-title"
+      >
+        <div class="scene-panel panel-stability">
+          <h2 id="stability-title">
+            <em>Still.</em><br />
+            In a moving world.
+          </h2>
+          <p>
+            The frame moves.<br />
+            The moment holds.
+          </p>
+          <div class="stability-reticle" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div class="control-dock stability-dock">
+            <div class="control-heading">
+              <span>Sensor-shift stabilization</span
+              ><button
+                type="button"
+                id="stabilization-toggle"
+                role="switch"
+                aria-label="Sensor-shift stabilization"
+                aria-checked="true"
+              >
+                <i></i><span>ON</span>
+              </button>
+            </div>
+            <p class="control-note">PITCH · YAW · ROLL · X · Y</p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="machine"
+        class="scene-section"
+        data-scene="7"
+        aria-labelledby="machine-title"
+      >
+        <div class="scene-panel panel-machine">
+          <h2 id="machine-title">
+            A thousand decisions.<br />
+            <em>One image.</em>
+          </h2>
+          <p>Precision, in every layer.</p>
+        </div>
+      </section>
+      <section
+        id="image"
+        class="scene-section"
+        data-scene="8"
+        aria-labelledby="image-title"
+      >
+        <div class="scene-panel panel-image">
+          <h2 id="image-title">So we can <em>see.</em></h2>
+          <p>All of this. For a moment like this.</p>
+          <button class="replay-link" type="button" data-go="0">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 10a8 8 0 1 1 1 9M4 4v6h6" /></svg
+            >Follow the light again
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="optical-labels" aria-hidden="true">
+      <span id="label-a"></span><span id="label-b"></span
+      ><span id="label-c"></span><span id="label-d"></span>
+    </div>
+    <figure id="final-photograph">
+      <img
+        src="/optic/assets/coast-of-light.webp"
+        alt="Amber wildflowers above a quiet, wave-washed coastline, with distant sea stacks under the last golden light."
+        width="1536"
+        height="1024"
+      />
+      <figcaption>COAST OF LIGHT <span>AN IMAGINED MOMENT</span></figcaption>
+    </figure>
+    <div class="capture-blackout" aria-hidden="true"></div>
+
+    <footer class="experience-footer" id="experience-controls">
+      <div class="footer-meta">
+        <span id="chapter-label">01 — LIGHT</span
+        ><span id="scene-spec">50 MM / f1.4</span>
+      </div>
+      <nav
+        class="chapter-rail"
+        id="chapter-rail"
+        aria-label="Jump to a chapter"
+      ></nav>
+      <span id="renderer-notice" role="status"></span>
+    </footer>
+
+    <dialog id="chapter-index" aria-labelledby="index-title">
+      <div class="index-head">
+        <span class="wordmark">OPTIC</span
+        ><button
+          type="button"
+          id="index-close"
+          aria-label="Close chapter index"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 6 12 12M6 18 18 6" />
+          </svg>
+        </button>
+      </div>
+      <h2 id="index-title">Follow the <em>light.</em></h2>
+      <nav id="index-links" aria-label="Experience chapters"></nav>
+      <p class="index-footnote">An original camera. A continuous journey.</p>
+    </dialog>
+    <noscript
+      ><div class="no-script">
+        <style>.masthead,#loading{display:none}</style>
+        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+        <h1>OPTIC</h1>
+        <p>
+          This interactive optical film needs JavaScript. Enable it to explore
+          the camera and follow the light.
+        </p>
+        <img
+          src="/optic/assets/coast-of-light.webp"
+          alt="Generated coast-of-light artwork"
+        /></div
+    ></noscript>
+    <script type="module" src="../../experiences/optic/src/main.js"></script>
+  </body>
+</html>

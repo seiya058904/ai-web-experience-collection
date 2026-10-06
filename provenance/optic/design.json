@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T08:49:53Z",
+  "title": "Design System: OPTIC — The Architecture of an Image",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Optical black",
+        "tonalRamp": [
+          "oklch(15.00% 0.00550 247.80)",
+          "oklch(26.43% 0.00550 247.80)",
+          "oklch(37.86% 0.00550 247.80)",
+          "oklch(49.29% 0.00550 247.80)",
+          "oklch(60.71% 0.00550 247.80)",
+          "oklch(72.14% 0.00550 247.80)",
+          "oklch(83.57% 0.00550 247.80)",
+          "oklch(95.00% 0.00550 247.80)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Cold-white ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00665 106.53)",
+          "oklch(26.43% 0.00665 106.53)",
+          "oklch(37.86% 0.00665 106.53)",
+          "oklch(49.29% 0.00665 106.53)",
+          "oklch(60.71% 0.00665 106.53)",
+          "oklch(72.14% 0.00665 106.53)",
+          "oklch(83.57% 0.00665 106.53)",
+          "oklch(95.00% 0.00665 106.53)"
+        ]
+      },
+      "sub": {
+        "role": "neutral",
+        "displayName": "Supporting gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.00476 179.68)",
+          "oklch(26.43% 0.00476 179.68)",
+          "oklch(37.86% 0.00476 179.68)",
+          "oklch(49.29% 0.00476 179.68)",
+          "oklch(60.71% 0.00476 179.68)",
+          "oklch(72.14% 0.00476 179.68)",
+          "oklch(83.57% 0.00476 179.68)",
+          "oklch(95.00% 0.00476 179.68)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Structural rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.00960 207.07)",
+          "oklch(26.43% 0.00960 207.07)",
+          "oklch(37.86% 0.00960 207.07)",
+          "oklch(49.29% 0.00960 207.07)",
+          "oklch(60.71% 0.00960 207.07)",
+          "oklch(72.14% 0.00960 207.07)",
+          "oklch(83.57% 0.00960 207.07)",
+          "oklch(95.00% 0.00960 207.07)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Interaction tint",
+        "tonalRamp": [
+          "oklch(15.00% 0.01567 181.72)",
+          "oklch(26.43% 0.01567 181.72)",
+          "oklch(37.86% 0.01567 181.72)",
+          "oklch(49.29% 0.01567 181.72)",
+          "oklch(60.71% 0.01567 181.72)",
+          "oklch(72.14% 0.01567 181.72)",
+          "oklch(83.57% 0.01567 181.72)",
+          "oklch(95.00% 0.01567 181.72)"
+        ]
+      },
+      "focus-ring": {
+        "role": "primary",
+        "displayName": "Keyboard focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.01948 176.37)",
+          "oklch(26.43% 0.01948 176.37)",
+          "oklch(37.86% 0.01948 176.37)",
+          "oklch(49.29% 0.01948 176.37)",
+          "oklch(60.71% 0.01948 176.37)",
+          "oklch(72.14% 0.01948 176.37)",
+          "oklch(83.57% 0.01948 176.37)",
+          "oklch(95.00% 0.01948 176.37)"
+        ]
+      },
+      "hover-ink": {
+        "role": "neutral",
+        "displayName": "Hover white",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "control-muted": {
+        "role": "neutral",
+        "displayName": "Unselected control",
+        "tonalRamp": [
+          "oklch(15.00% 0.01339 164.64)",
+          "oklch(26.43% 0.01339 164.64)",
+          "oklch(37.86% 0.01339 164.64)",
+          "oklch(49.29% 0.01339 164.64)",
+          "oklch(60.71% 0.01339 164.64)",
+          "oklch(72.14% 0.01339 164.64)",
+          "oklch(83.57% 0.01339 164.64)",
+          "oklch(95.00% 0.01339 164.64)"
+        ]
+      },
+      "study-surface": {
+        "role": "neutral",
+        "displayName": "Photographic-study surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00978 219.96)",
+          "oklch(26.43% 0.00978 219.96)",
+          "oklch(37.86% 0.00978 219.96)",
+          "oklch(49.29% 0.00978 219.96)",
+          "oklch(60.71% 0.00978 219.96)",
+          "oklch(72.14% 0.00978 219.96)",
+          "oklch(83.57% 0.00978 219.96)",
+          "oklch(95.00% 0.00978 219.96)"
+        ]
+      },
+      "shell": {
+        "role": "neutral",
+        "displayName": "Dark enclosure",
+        "tonalRamp": [
+          "oklch(15.00% 0.00593 236.81)",
+          "oklch(26.43% 0.00593 236.81)",
+          "oklch(37.86% 0.00593 236.81)",
+          "oklch(49.29% 0.00593 236.81)",
+          "oklch(60.71% 0.00593 236.81)",
+          "oklch(72.14% 0.00593 236.81)",
+          "oklch(83.57% 0.00593 236.81)",
+          "oklch(95.00% 0.00593 236.81)"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite structure",
+        "tonalRamp": [
+          "oklch(15.00% 0.00810 223.74)",
+          "oklch(26.43% 0.00810 223.74)",
+          "oklch(37.86% 0.00810 223.74)",
+          "oklch(49.29% 0.00810 223.74)",
+          "oklch(60.71% 0.00810 223.74)",
+          "oklch(72.14% 0.00810 223.74)",
+          "oklch(83.57% 0.00810 223.74)",
+          "oklch(95.00% 0.00810 223.74)"
+        ]
+      },
+      "magnesium": {
+        "role": "neutral",
+        "displayName": "Exposed magnesium",
+        "tonalRamp": [
+          "oklch(15.00% 0.00962 225.18)",
+          "oklch(26.43% 0.00962 225.18)",
+          "oklch(37.86% 0.00962 225.18)",
+          "oklch(49.29% 0.00962 225.18)",
+          "oklch(60.71% 0.00962 225.18)",
+          "oklch(72.14% 0.00962 225.18)",
+          "oklch(83.57% 0.00962 225.18)",
+          "oklch(95.00% 0.00962 225.18)"
+        ]
+      },
+      "steel": {
+        "role": "neutral",
+        "displayName": "Bright steel",
+        "tonalRamp": [
+          "oklch(15.00% 0.00472 214.33)",
+          "oklch(26.43% 0.00472 214.33)",
+          "oklch(37.86% 0.00472 214.33)",
+          "oklch(49.29% 0.00472 214.33)",
+          "oklch(60.71% 0.00472 214.33)",
+          "oklch(72.14% 0.00472 214.33)",
+          "oklch(83.57% 0.00472 214.33)",
+          "oklch(95.00% 0.00472 214.33)"
+        ]
+      },
+      "sensor-gold": {
+        "role": "secondary",
+        "displayName": "Sensor gold",
+        "tonalRamp": [
+          "oklch(15.00% 0.09126 87.49)",
+          "oklch(26.43% 0.09126 87.49)",
+          "oklch(37.86% 0.09126 87.49)",
+          "oklch(49.29% 0.09126 87.49)",
+          "oklch(60.71% 0.09126 87.49)",
+          "oklch(72.14% 0.09126 87.49)",
+          "oklch(83.57% 0.09126 87.49)",
+          "oklch(95.00% 0.09126 87.49)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Opening display",
+        "purpose": "The opening statement; chapter and responsive overrides remain source-specific."
+      },
+      "headline": {
+        "displayName": "Chapter headline",
+        "purpose": "Baseline for brief chapter statements with balanced wrapping."
+      },
+      "emphasis": {
+        "displayName": "Cormorant italic",
+        "purpose": "A short inherited-size italic phrase within a Manrope heading."
+      },
+      "body": {
+        "displayName": "Supporting copy",
+        "purpose": "Concise explanations that leave the mechanism visible."
+      },
+      "label": {
+        "displayName": "Utility label",
+        "purpose": "Uppercase, tracked experience-navigation language."
+      },
+      "action": {
+        "displayName": "Opening text action",
+        "purpose": "The Follow the light action and its downward arrow."
+      },
+      "control-heading": {
+        "displayName": "Control heading",
+        "purpose": "A readable control name paired with a tabular value."
+      },
+      "readout": {
+        "displayName": "Aperture readout",
+        "purpose": "The large f-number; shutter and sensor readings retain their observed variants."
+      },
+      "wordmark": {
+        "displayName": "OPTIC wordmark",
+        "purpose": "The quiet, widely tracked signature in the masthead and index."
+      },
+      "chapter-title": {
+        "displayName": "Chapter index title",
+        "purpose": "Numbered navigation rows inside the native chapter dialog."
+      }
+    },
+    "shadows": [
+      {
+        "name": "range-thumb-separation",
+        "value": "0 0 0 3px #152019",
+        "purpose": "Small local contrast ring around the WebKit range thumb."
+      },
+      {
+        "name": "focus-bracket-separation",
+        "value": "0 0 0 1px #131b1677",
+        "purpose": "Fine separation around the photographic focus bracket."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-color",
+        "value": "color 0.2s",
+        "purpose": "Quiet text-color transition on optical stop choices."
+      },
+      {
+        "name": "selected-underline",
+        "value": "transform 0.22s",
+        "purpose": "Horizontal expansion of the selected optical stop underline."
+      },
+      {
+        "name": "chapter-hint",
+        "value": "opacity 0.18s, transform 0.18s",
+        "purpose": "Reveal the chapter name on hover or keyboard focus."
+      },
+      {
+        "name": "stage-shade",
+        "value": "opacity 0.6s",
+        "purpose": "The stage-shade opacity transition."
+      },
+      {
+        "name": "smooth-interpolation",
+        "value": "t * t * (3 - 2 * t)",
+        "purpose": "Shared clamped interpolation for adjacent stable poses and mechanism progress."
+      },
+      {
+        "name": "native-scroll-damping",
+        "value": "1 - exp(-dt * 11)",
+        "purpose": "Time-correct display damping applied by the single application RAF."
+      },
+      {
+        "name": "typography-handoff",
+        "value": "smooth(0.50, 0.86, weight)",
+        "purpose": "Outgoing text clears before the incoming chapter text becomes visible."
+      },
+      {
+        "name": "focus-rack",
+        "value": "smooth(0.48, 0.64, local)",
+        "purpose": "Automatic near-to-far rack between two sharp holds in the Focus chapter."
+      },
+      {
+        "name": "sensor-magnification",
+        "value": "smooth(0.44, 0.67, local)",
+        "purpose": "Progress from the 24 × 16 overview to the 4 × 4 layered crop; reduced motion uses a discrete state."
+      },
+      {
+        "name": "machine-reassembly",
+        "value": "1 - smooth(0.57, 0.90, local)",
+        "purpose": "Reversibly close the separated machine before its photographic handoff."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "(max-width: 900px)"
+      },
+      {
+        "name": "phone",
+        "value": "(max-width: 480px)"
+      },
+      {
+        "name": "large-display",
+        "value": "(min-width: 2200px)"
+      },
+      {
+        "name": "short-desktop",
+        "value": "(max-height: 680px) and (min-width: 901px)"
+      },
+      {
+        "name": "compact-landscape",
+        "value": "(max-height: 520px) and (max-width: 900px)"
+      },
+      {
+        "name": "short-portrait",
+        "value": "(max-width: 600px) and (max-height: 700px) and (orientation: portrait)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Follow the light",
+      "kind": "button",
+      "refersTo": "quiet-action",
+      "description": "The opening text action: uppercase Manrope and a fine downward arrow, with a small hover movement.",
+      "html": "<button class=\"ds-begin\" type=\"button\">Follow the light <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v16m-6-6 6 6 6-6\"/></svg></button>",
+      "css": ".ds-begin{display:flex;align-items:center;gap:18px;text-transform:uppercase;font:400 10px Manrope,sans-serif;letter-spacing:.17em;padding:8px 0;color:var(--ink,#eeeee9);background:none;border:0;cursor:pointer}.ds-begin svg{height:25px;width:17px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}.ds-begin:hover{color:#fff}.ds-begin:hover svg{transform:translateY(4px)}.ds-begin:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}@media(prefers-reduced-motion:reduce){.ds-begin svg{transition:none}}"
+    },
+    {
+      "name": "Ambient motion",
+      "kind": "button",
+      "refersTo": "ambient-motion",
+      "description": "The square pause/resume control; its icon state follows aria-pressed in this isolated visual sample.",
+      "html": "<button class=\"ds-motion\" type=\"button\" aria-pressed=\"false\" aria-label=\"Pause ambient motion\"><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path class=\"ds-pause\" d=\"M7 5v10M13 5v10\"/><path class=\"ds-play\" d=\"m7 4 8 6-8 6Z\"/></svg></button>",
+      "css": ".ds-motion{width:44px;height:44px;display:grid;place-items:center;color:var(--sub,#a6aaa9);background:none;border:0;cursor:pointer}.ds-motion svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}.ds-motion .ds-play{display:none}.ds-motion[aria-pressed=true] .ds-pause{display:none}.ds-motion[aria-pressed=true] .ds-play{display:block}.ds-motion:hover{color:#fff}.ds-motion:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}"
+    },
+    {
+      "name": "Optical stop selector",
+      "kind": "custom",
+      "refersTo": "optical-stop",
+      "description": "Aperture and shutter settings use the same ruled selector, selected ink and short active underline.",
+      "html": "<div class=\"ds-stops\" role=\"group\" aria-label=\"Aperture stops\"><button type=\"button\" aria-pressed=\"true\">f/1.4</button><button type=\"button\" aria-pressed=\"false\">f/2.8</button><button type=\"button\" aria-pressed=\"false\">f/8</button><button type=\"button\" aria-pressed=\"false\">f/16</button></div>",
+      "css": ".ds-stops{display:flex;align-items:center;gap:2px;border-bottom:1px solid #44504d}.ds-stops button{position:relative;min-height:44px;padding:10px 17px 12px;color:#9ca6a1;font:400 12px Manrope,sans-serif;font-variant-numeric:tabular-nums;flex:1;white-space:nowrap;transition:color .2s;background:none;border:0;cursor:pointer}.ds-stops button:first-child{padding-left:0;text-align:left}.ds-stops button:last-child{padding-right:0;text-align:right}.ds-stops button:after{content:\"\";position:absolute;height:2px;background:var(--ink,#eeeee9);left:10%;right:10%;bottom:-1px;transform:scaleX(0);transition:transform .22s}.ds-stops button[aria-pressed=true]{color:var(--ink,#eeeee9)}.ds-stops button[aria-pressed=true]:after{transform:scaleX(1)}.ds-stops button:hover{color:#fff}.ds-stops button:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}@media(max-width:900px){.ds-stops button{font-size:11px;min-height:43px;padding:9px 14px 13px}.ds-stops button:first-child{padding-left:0}.ds-stops button:last-child{padding-right:0}}@media(min-width:2200px){.ds-stops button{font-size:16px;min-height:60px}}@media(prefers-reduced-motion:reduce){.ds-stops button:after{transition:none}}"
+    },
+    {
+      "name": "Focus distance",
+      "kind": "input",
+      "refersTo": "focus-distance",
+      "description": "Native range input with a fine track, round thumb, tabular value and near/infinity endpoints. The app binds its output to the photographic depth study.",
+      "html": "<div class=\"ds-focus\"><div class=\"ds-focus-heading\"><label for=\"ds-focus-distance\">Focus distance</label><output for=\"ds-focus-distance\">0.7 m</output></div><input id=\"ds-focus-distance\" type=\"range\" min=\"0\" max=\"1\" step=\"0.001\" value=\"0\" aria-label=\"Focus distance, near to far\" aria-valuetext=\"0.7 m\"/><div class=\"ds-range-labels\"><span>NEAR</span><span>INFINITY</span></div></div>",
+      "css": ".ds-focus{font-family:Manrope,sans-serif;color:var(--ink,#eeeee9)}.ds-focus-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;font-size:11px;letter-spacing:.045em;color:#c0c5c2}.ds-focus-heading output{font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink,#eeeee9)}.ds-focus input{width:100%;height:24px;padding:0;margin:0;background:none;appearance:none;accent-color:#d4ded7;cursor:ew-resize}.ds-focus input::-webkit-slider-runnable-track{height:1px;background:#6b7671}.ds-focus input::-moz-range-track{height:1px;background:#6b7671}.ds-focus input::-webkit-slider-thumb{appearance:none;width:11px;height:11px;background:#e1e9df;border-radius:50%;margin-top:-5px;border:1px solid #0e1210;box-shadow:0 0 0 3px #152019}.ds-focus input::-moz-range-thumb{width:10px;height:10px;border:0;background:#e1e9df;border-radius:50%}.ds-focus input:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}.ds-range-labels{display:flex;justify-content:space-between;margin-top:5px;font-size:9px;letter-spacing:.15em;color:var(--sub,#a6aaa9)}@media(max-width:900px){.ds-focus-heading{font-size:10px;margin-bottom:9px}.ds-focus-heading output{font-size:11px}.ds-range-labels{font-size:8px}}"
+    },
+    {
+      "name": "Shutter release",
+      "kind": "button",
+      "refersTo": "shutter-release",
+      "description": "An explicit release action with a concentric-circle SVG and a quiet explanation of the slowed mechanical cycle.",
+      "html": "<div class=\"ds-shutter-actions\"><span>MECHANICAL · MOTION SLOWED</span><button type=\"button\">Release shutter <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"10\" r=\"6\"/><circle cx=\"10\" cy=\"10\" r=\"2\"/></svg></button></div>",
+      "css": ".ds-shutter-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;font-family:Manrope,sans-serif}.ds-shutter-actions>span{font-size:8px;letter-spacing:.08em;color:var(--sub,#a6aaa9)}.ds-shutter-actions button{min-height:44px;display:flex;align-items:center;gap:10px;font:400 10px Manrope,sans-serif;padding:5px 0;color:var(--ink,#eeeee9);background:none;border:0;cursor:pointer}.ds-shutter-actions svg{width:18px;height:20px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}.ds-shutter-actions button:hover{color:#fff}.ds-shutter-actions button:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}@media(max-width:900px){.ds-shutter-actions{margin-top:14px}.ds-shutter-actions>span{font-size:7px}.ds-shutter-actions button{font-size:9px}}@media(max-height:520px) and (max-width:900px){.ds-shutter-actions>span{display:none}.ds-shutter-actions{margin-top:6px;justify-content:flex-end}.ds-shutter-actions button{font-size:7px}}"
+    },
+    {
+      "name": "Sensor-shift stabilization",
+      "kind": "custom",
+      "refersTo": "stabilization-switch",
+      "description": "The ruled stabilization control retains a stable accessible name; aria-checked and the visible ON/OFF text carry state.",
+      "html": "<div class=\"ds-stability\"><div class=\"ds-stability-heading\"><span>Sensor-shift stabilization</span><button class=\"ds-stability-switch\" type=\"button\" role=\"switch\" aria-label=\"Sensor-shift stabilization\" aria-checked=\"true\"><i aria-hidden=\"true\"></i><span>ON</span></button></div><p class=\"ds-stability-note\">PITCH · YAW · ROLL · X · Y</p></div>",
+      "css": ".ds-stability{font-family:Manrope,sans-serif;color:var(--ink,#eeeee9)}.ds-stability-heading{display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.045em;color:#c0c5c2;min-height:42px;border-bottom:1px solid #46534d;padding-bottom:17px}.ds-stability-switch{min-height:44px;display:flex;gap:10px;align-items:center;font:400 10px Manrope,sans-serif;letter-spacing:.045em;min-width:60px;justify-content:flex-end;color:var(--ink,#eeeee9);background:none;border:0;cursor:pointer}.ds-stability-switch i{width:21px;height:11px;border:1px solid #99a59b;border-radius:12px;position:relative}.ds-stability-switch i:after{content:\"\";width:5px;height:5px;border-radius:50%;background:#d8e9cf;position:absolute;top:2px;right:2px;transition:transform .2s}.ds-stability-switch[aria-checked=false] i:after{transform:translateX(-9px);background:#8a948e}.ds-stability-switch:hover{color:#fff}.ds-stability-switch:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}.ds-stability-note{display:flex;justify-content:center;margin:21px 0 0;font-size:9px;line-height:1.8;font-weight:400;letter-spacing:.13em;color:#a0aaa4}@media(max-width:900px){.ds-stability-heading{font-size:10px;padding-bottom:11px}.ds-stability-note{font-size:7px;margin-top:14px}}"
+    },
+    {
+      "name": "Chapter rail",
+      "kind": "nav",
+      "refersTo": "chapter-link",
+      "description": "Nine native chapter links with a thin progress line, generous hit area and names revealed on hover or keyboard focus.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Jump to a chapter\"><a href=\"#light\" aria-label=\"01 — Light\" style=\"--chapter-progress:1\"><span>Light</span></a><a href=\"#optics\" aria-label=\"02 — Optics\" style=\"--chapter-progress:1\"><span>Optics</span></a><a href=\"#focus\" aria-label=\"03 — Focus\" aria-current=\"step\" style=\"--chapter-progress:.42\"><span>Focus</span></a><a href=\"#aperture\" aria-label=\"04 — Aperture\" style=\"--chapter-progress:0\"><span>Aperture</span></a><a href=\"#shutter\" aria-label=\"05 — Shutter\" style=\"--chapter-progress:0\"><span>Shutter</span></a><a href=\"#sensor\" aria-label=\"06 — Sensor\" style=\"--chapter-progress:0\"><span>Sensor</span></a><a href=\"#stability\" aria-label=\"07 — Stability\" style=\"--chapter-progress:0\"><span>Stability</span></a><a href=\"#machine\" aria-label=\"08 — Machine\" style=\"--chapter-progress:0\"><span>Machine</span></a><a href=\"#image\" aria-label=\"09 — Image\" style=\"--chapter-progress:0\"><span>Image</span></a></nav>",
+      "css": ".ds-rail{display:grid;grid-template-columns:repeat(9,1fr);gap:7px;margin-top:17px;width:100%;font-family:Manrope,sans-serif}.ds-rail a{position:relative;display:block;height:44px;text-decoration:none;color:var(--ink,#eeeee9)}.ds-rail a:before{content:\"\";position:absolute;left:0;right:0;top:8px;height:1px;background:#343e37}.ds-rail a:after{content:\"\";position:absolute;left:0;right:0;top:8px;height:1px;background:#d6dfd2;transform:scaleX(var(--chapter-progress,0));transform-origin:0 50%}.ds-rail a:hover:before{background:#839289}.ds-rail a span{position:absolute;top:-12px;left:50%;transform:translateX(-50%) translateY(4px);font-size:8px;text-transform:uppercase;letter-spacing:.1em;opacity:0;transition:opacity .18s,transform .18s;color:#cbd6cd}.ds-rail a:hover span,.ds-rail a:focus-visible span{opacity:1;transform:translateX(-50%) translateY(0)}.ds-rail a:focus-visible{outline:2px solid #c9dad5;outline-offset:3px}@media(max-width:900px){.ds-rail{gap:5px;margin-top:14px}}"
+    },
+    {
+      "name": "Chapter index rows",
+      "kind": "nav",
+      "refersTo": "chapter-index-row",
+      "description": "The full-screen dialog uses these numbered, ruled chapter rows. The sample shows the navigation itself without opening a modal.",
+      "html": "<nav class=\"ds-index\" aria-label=\"Experience chapters\"><a href=\"#light\"><small>01</small>Light<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#optics\"><small>02</small>Optics<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#focus\"><small>03</small>Focus<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#aperture\"><small>04</small>Aperture<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#shutter\"><small>05</small>Shutter<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#sensor\"><small>06</small>Sensor<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#stability\"><small>07</small>Stability<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#machine\"><small>08</small>Machine<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a><a href=\"#image\"><small>09</small>Image<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a></nav>",
+      "css": ".ds-index{display:grid;grid-template-columns:repeat(3,1fr);column-gap:5vw;row-gap:14px;font-family:Manrope,sans-serif}.ds-index a{padding:20px 0;display:flex;align-items:baseline;gap:22px;border-bottom:1px solid #313c36;text-decoration:none;font-size:clamp(22px,2.2vw,35px);font-weight:350;color:var(--ink,#eeeee9)}.ds-index a small{font-size:9px;letter-spacing:.1em;color:var(--sub,#a6aaa9)}.ds-index a svg{margin-left:auto;width:20px;height:20px;opacity:.5;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;transition:transform .2s}.ds-index a:hover{color:#fff}.ds-index a:hover svg{transform:translateX(6px)}.ds-index a:focus-visible{outline:2px solid #c9dad5;outline-offset:7px}@media(max-width:900px){.ds-index{grid-template-columns:1fr 1fr;gap:8px 25px}.ds-index a{font-size:21px;gap:13px;padding:15px 0}.ds-index a svg{width:17px}.ds-index a small{font-size:8px}}@media(max-height:520px) and (max-width:900px){.ds-index{grid-template-columns:repeat(3,1fr)}.ds-index a{font-size:17px;padding:10px 0}}@media(prefers-reduced-motion:reduce){.ds-index a svg{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Follow the light.",
+    "overview": "OPTIC is a precision optical film. One beam leads through an original, unbranded full-frame camera, and the machine explains each relationship by moving. The composition is quiet and spacious around a materially detailed object: deep black, graphite and titanium-like metal, cold-white type, and restrained cyan/violet glass. The final warm coastline is the emotional destination.\n\nThe visual world remains continuous across Light, Optics, Focus, Aperture, Shutter, Sensor, Stability, Machine and Image. Typography names each idea, then clears while the object carries the handoff. Native HTML controls stay at the frame edges or beside the mechanism they affect. Original procedural geometry, authored studio reflections, photographic depth studies and a complete Canvas2D optical study share this direction. The earlier concept frames established composition and lighting; no concept screenshot is a production backdrop.",
+    "keyCharacteristics": [
+      "One continuous light path connects nine stable compositions.",
+      "Dark, tactile materials carry detail through edges, curvature, grain and reflected light.",
+      "Manrope provides precision; Cormorant italic gives light and photography a human voice.",
+      "Portrait framing is authored independently, with staged parts and reachable controls.",
+      "The final warm photograph settles into a quiet, stable composition."
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep one coherent light path and an intelligible relationship between every optical and mechanical part.",
+      "Do preserve the deep black field, cold-white typography and restrained material color; let the final coastline carry warmth.",
+      "Do let outgoing typography clear before the next headline enters, while the mechanism carries the transition.",
+      "Do preserve the sharp-near hold, the authored focus rack and the sharp-far hold before adding any new focus behavior.",
+      "Do compose portrait scenes with their independent camera poses and staged inspection lanes.",
+      "Do keep projected layer labels attached to actual layer anchors, and keep the two sensor crops clearly illustrative.",
+      "Do retain native controls, visible keyboard focus, stable accessible names, chapter navigation and reduced-motion behavior.",
+      "Do keep one native-scroll/RAF authority and reconstruct all scene positions from current state so reverse travel remains reliable.",
+      "Do stop hidden GPU submissions at the settled photograph and preserve the complete Canvas2D fallback."
+    ],
+    "donts": [
+      "Don't introduce neon HUDs, glowing interface frames, card grids or generic scrolling reveals.",
+      "Don't turn cyan/violet glass coatings or sensor gold into broad interface fills.",
+      "Don't replace the original camera with a branded product clone, a raster slideshow or a concept-image backdrop.",
+      "Don't flatten curved glass into discs, scale iris blades in place, or tip the stabilized sensor out of its focal plane.",
+      "Don't collapse the three housing segments or the detached body layers into one unreadable stack, including on portrait screens.",
+      "Don't add an independent animation clock, a nested scroller or a scroll-interception library.",
+      "Don't present illustrative optical geometry, the 6 µm pitch, exposure labels or the generated coast image as measured hardware data or photographic EXIF.",
+      "Don't add unsupported claims about awards, manufacturing, calibrated optical performance or real-device frame rates."
+    ]
+  }
+}

@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -22,6 +22,9 @@ for (const file of ['glaze/LICENSE.txt', 'glaze/licenses/Archivo-OFL.txt', 'kage
 }
 for (const file of ['glasshouse/LICENSE', 'glasshouse/ATTRIBUTION.md', 'glasshouse/licenses/MANROPE-OFL.txt', 'glasshouse/licenses/GSAP-LICENSE-NOTICE.txt', 'glasshouse/fonts/manrope-latin-wght-normal.woff2', 'glasshouse/media/focused-light.png', 'veil/LICENSE', 'veil/ATTRIBUTION.md', 'veil/licenses/CORMORANT-GARAMOND-OFL.txt', 'veil/licenses/MANROPE-OFL.txt', 'veil/licenses/GSAP-STANDARD-LICENSE.txt', 'veil/fonts/cormorant-garamond-latin-300-normal.woff2', 'veil/fonts/cormorant-garamond-latin-400-normal.woff2', 'veil/fonts/manrope-latin-400-normal.woff2', 'veil/fonts/manrope-latin-500-normal.woff2', 'veil/images/cloth-study.webp', 'veil/images/light-study.webp', 'veil/images/silk-macro.webp']) {
   assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
+}
+for (const file of ['optic/LICENSE', 'optic/THIRD_PARTY_NOTICES.md', 'optic/licenses/THREE-LICENSE.txt', 'optic/licenses/Manrope-OFL.txt', 'optic/licenses/Cormorant-Garamond-OFL.txt', 'optic/fonts/manrope-latin-wght-normal.woff2', 'optic/fonts/cormorant-garamond-latin-400-italic.woff2', 'optic/assets/coast-of-light.webp', 'inkscape/LICENSE', 'inkscape/ATTRIBUTION.md', 'inkscape/licenses/GSAP.txt', 'inkscape/licenses/Lenis.txt', 'inkscape/fonts/OFL-Manrope.txt', 'inkscape/fonts/OFL-Cormorant.txt', 'inkscape/fonts/OFL-IBM-Plex.txt', 'inkscape/fonts/CormorantGaramond-Light.woff2', 'inkscape/fonts/CormorantGaramond-Regular.woff2', 'inkscape/fonts/CormorantGaramond-Italic.woff2', 'inkscape/fonts/Manrope-Variable.woff2', 'inkscape/fonts/IBMPlexMono-Regular.woff2', ...['ink-bloom', 'paper-fibers', 'ink-wash', 'brush-stroke', 'paper-sheet', 'ink-gesture'].map(name => 'inkscape/art/' + name + '.webp')]) {
+  assert((await stat(join(root, file))).size > 0, 'Missing supplied resource: ' + file);
 }
 for (const [file, route, title] of [
   ['index.html', '', 'AI Web Experience Collection'],
@@ -37,6 +40,8 @@ for (const [file, route, title] of [
   ['fusion/index.html', 'fusion/', 'FUSION — Building a Star'],
   ['glasshouse/index.html', 'glasshouse/', 'GLASSHOUSE — Light Through Matter'],
   ['veil/index.html', 'veil/', 'VEIL — Fabric in Motion'],
+  ['optic/index.html', 'optic/', 'OPTIC — The Architecture of an Image'],
+  ['inkscape/index.html', 'inkscape/', 'INKSCAPE — Paper, Water, Ink'],
 ]) {
   const html = await readFile(join(root, file), 'utf8');
   assert(html.includes(`<title>${title}</title>`), `Incorrect document identity: ${file}`);

@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "project": "INKSCAPE — Paper, Water, Ink",
+  "generated_on": "2026-10-06",
+  "generator": {
+    "tool": "OpenAI built-in image_gen.imagegen",
+    "mode": "New image generation; one prompt per asset.",
+    "model_identifier": "Not exposed in the tool result.",
+    "external_reference_images_supplied": false
+  },
+  "rights_note": "Original generated material studies supplied as part of this project. Identified separately from MIT-licensed source code and third-party font/software licenses. No CC0, documentary-photography, scientific-validation, exclusive-rights or blanket third-party-clearance claim is made.",
+  "delivery_note": "Only final WebP production assets are included. Original source PNGs were retained during creation and are fingerprinted below; they are not duplicated in the deliverable. Native returned pixel dimensions are preserved without enlargement.",
+  "assets": [
+    {
+      "id": "ink-bloom",
+      "file": "public/art/ink-bloom.webp",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: a final production texture asset for INKSCAPE, an immersive digital paper-and-ink art installation, NOT a web page, mockup or illustration of an interface.\nPrimary request: one exquisitely detailed black carbon pigment bloom formed by real ink slowly absorbing into wetted Xuan paper, extracted onto a genuinely transparent background. A dense, deep, irregular carbon-black core opens into many layered diluted grey capillary tendrils, uneven granular pigment deposits, feathered fractal edges, and a very pale translucent water halo. Preserve the intricate absorption texture within the ink while the empty surrounding area is real alpha transparency.\nComposition: broad asymmetrical organic shape, subtly wider than tall, off-axis energy, ample transparent margin on every side. Landscape 4:3, ideally 2048 × 1536 pixels. The darkest region sits slightly below and right of center. Multiple scales of authentic paper absorption detail, from pooled carbon to wispy fiber branches.\nStyle: high-resolution macro art reproduction of authentic water-based Chinese ink absorbed in paper, quiet, tactile, materially believable, exceptionally rich fine detail.\nPalette: pure carbon black and diluted warm-neutral greys, with translucent edges.\nConstraints: no visible white or ivory rectangle, no background paper outside the bloom, no checkerboard baked into the pixels, genuine transparent alpha, no perfect circle, no radial uniformity, no floating smoke, no vapor, no explosive splash, no droplets flying outward, no 3D sphere, no text, no calligraphy, no stamp, no watermark.",
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_png": {
+        "included_in_deliverable": false,
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2216575,
+        "sha256": "cac023fcf74bbeeba298d7cb9f45f2ff7783c2ec4440ff7f2765a5b84227374b"
+      },
+      "delivered_webp": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 568394,
+        "sha256": "94ca2dd16d2337071c86b6cef40fcc44e2cfde1c784ddc474acde82175c300ce",
+        "alpha": true
+      },
+      "processing": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "operation": "PNG to WebP conversion at native dimensions",
+        "quality": 94,
+        "alpha_quality": 100,
+        "effort": 6,
+        "resized": false
+      },
+      "asset_quality_checks": [
+        "Original material image visually inspected.",
+        "Source and WebP alpha confirmed.",
+        "Final WebP composited on #f3f0e8 in a 1920 × 1080 frame; no visible pink/yellow fringe observed."
+      ]
+    },
+    {
+      "id": "paper-fibers",
+      "file": "public/art/paper-fibers.webp",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: original high-resolution production texture for INKSCAPE, a digital art installation about paper, water and ink. This must be a material photograph only, never a website screenshot or mockup.\nPrimary request: photorealistic extreme macro of genuine warm ivory Xuan paper. An irregular and sparse network of very fine natural cellulose fibers lies embedded in a soft absorbent paper substrate. Some fibers cross and catch softly raking daylight. Across one limited area, subtle translucent wetted paper reveals deeper fine fibers; a few minute dark carbon pigment particles have caught at fiber intersections. A highly convincing tactile surface at magnification, sophisticated fine art material study.\nComposition: edge-to-edge macro crop, landscape 4:3, ideally 2048 × 1536 pixels. More visual detail toward the lower left and center, a softly quieter region toward the upper right; irregular natural distribution without rows, grids or repeating motifs. Fine fibers, never thick rope or fabric strands.\nLighting: gentle raking daylight with soft micro shadows, luminous rather than grey, refined and quiet.\nPalette: matching warm ivory #f3f0e8, restrained pale beige and delicate warm-grey micro shadows, very sparse dark pigment. Keep the overall surface bright.\nConstraints: no objects, no visible paper sheet border, no typography, no text, no calligraphy, no stamp, no watermark, no mountain or landscape imagery, no fabric weave, no embossed pattern, no repetitive procedural texture, no dramatic contrast, no grungy dirt, no over-sharpening.",
+      "generation_options": {
+        "transparent_background": false
+      },
+      "source_png": {
+        "included_in_deliverable": false,
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2621881,
+        "sha256": "d8bb5de6ae4d5d0a4758ce9c1187297ce8823f4846eb1fae9d7d1e44bbb77b69"
+      },
+      "delivered_webp": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 458888,
+        "sha256": "9330c9b80b7276cc9821d22f554a4df2e3ca54c64878162514586e345305650c",
+        "alpha": false
+      },
+      "processing": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "operation": "PNG to WebP conversion at native dimensions",
+        "quality": 94,
+        "alpha_quality": 100,
+        "effort": 6,
+        "resized": false
+      },
+      "asset_quality_checks": [
+        "Original material image visually inspected.",
+        "Final WebP dimensions checked against the source."
+      ]
+    },
+    {
+      "id": "ink-wash",
+      "file": "public/art/ink-wash.webp",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: an original contemporary ink-on-Xuan material artwork photographed for INKSCAPE, an immersive digital paper-and-ink art installation. Final production artwork only, not a web page, layout mockup or poster with text.\nPrimary request: an extremely refined abstract study of carbon ink absorbed into luminous warm ivory Xuan paper. A restrained horizontally extended layered ink wash sits around the lower third of the sheet, with intense but limited carbon-black concentrations, diluted grey translucencies, delicate capillary-bled edges, sparse fractured dry-brush charcoal traces, and subtle pigment sediment. The physical touch of water, ink and paper must be richly visible. Enormous unoccupied ivory negative space across the upper half gives the work air and authority. This is strictly nonfigurative material art.\nComposition: landscape 4:3, ideally 2048 × 1536 pixels, a flat overhead archival reproduction of a full paper surface that fills the frame edge to edge, no surrounding table, no frame and no visible sheet edges. The main low horizontal wash is asymmetrical and slightly interrupted, never a perfect band. Fine organic paper grain continues through the blank regions. Sparse, authored, painterly, highly sophisticated contemporary gallery art.\nLighting and palette: soft even museum reproduction light, luminous rice-paper ivory close to #f3f0e8, neutral carbon black, diluted warm ash grey. Exquisite material detail, no muddy overall grey cast.\nConstraints: absolutely no mountains, landscape, trees, rocks, horizon, figurative silhouettes, traditional decoration, recognizable symbols, calligraphy, typography, signature, stamp or watermark. No gold, no artificial gloss, no smoke, no fluid splash. Keep the large upper half genuinely blank and calm.",
+      "generation_options": {
+        "transparent_background": false
+      },
+      "source_png": {
+        "included_in_deliverable": false,
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2194082,
+        "sha256": "524fa768a54e4cb2f4470237ecc0624c6e77e437b93ca70ebf87c40cae8bed62"
+      },
+      "delivered_webp": {
+        "width": 1448,
+        "height": 1086,
+        "bytes": 293692,
+        "sha256": "124c27200c99003c4f96457a94901824e292e93ab57cb39881e54a0d38c84400",
+        "alpha": false
+      },
+      "processing": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "operation": "PNG to WebP conversion at native dimensions",
+        "quality": 94,
+        "alpha_quality": 100,
+        "effort": 6,
+        "resized": false
+      },
+      "asset_quality_checks": [
+        "Original material image visually inspected.",
+        "Final WebP dimensions checked against the source."
+      ]
+    },
+    {
+      "id": "brush-stroke",
+      "file": "public/art/brush-stroke.webp",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: original transparent production material asset for INKSCAPE, a digital art installation. A single brush gesture only, no website, no interface, no poster.\nPrimary request: one bold authentic dry Chinese carbon-ink brush gesture sweeping diagonally upward from the lower-left toward the upper-right. The stroke begins with a slightly fuller pressure swell at lower left, then travels with fluid human energy in one broad gently curved gesture before lifting away into tapered individual bristle ends at upper right. Render exceptionally visible parallel bristle ridges, broken open gaps of real alpha transparency through the gesture, individual carbon pigment granules, feathering at the edges, and rich but natural dry-brush texture. The center of the mark is substantial deep carbon-black with intermittent long irregular bristle gaps, never a smooth solid vector.\nComposition: a single continuous diagonal gesture takes about 80 percent of a wide landscape frame with generous transparent margin on every side, fully contained and not touching any frame edge. Requested native resolution 2000 × 1200 pixels, landscape. The stroke rises approximately 22 degrees from left to right, suited for a code-driven progressive brush reveal.\nStyle: high-resolution macro art reproduction of real dry ink on fine absorbent Xuan paper, with the paper removed so only deposited ink remains. Refined contemporary art, tactile carbon granularity, controlled natural force.\nPalette: carbon black with very subtle diluted neutral grey fibers at a few edges.\nConstraints: genuinely transparent alpha background, no white paper rectangle, no white paint in the gaps, no background, no baked checkerboard, no cast shadow, no brush or tool, no hand, no text, no actual calligraphy character, no extra marks, no splatter outside the main stroke, no isolated droplets, no stamp, no watermark, no smoky haze, no artificial glow. This is one authored gesture, not a collection of strokes.",
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_png": {
+        "included_in_deliverable": false,
+        "width": 1619,
+        "height": 971,
+        "bytes": 1135629,
+        "sha256": "3dbc80a9f0463456514baa8900099ecbe0164948b5ae490c8814bbe078e1ab89"
+      },
+      "delivered_webp": {
+        "width": 1619,
+        "height": 971,
+        "bytes": 354600,
+        "sha256": "06ccb825713376d79d0ca14aeefee90ba56c1a4a8b7a19b845d93671f051578e",
+        "alpha": true
+      },
+      "processing": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "operation": "PNG to WebP conversion at native dimensions",
+        "quality": 94,
+        "alpha_quality": 100,
+        "effort": 6,
+        "resized": false
+      },
+      "asset_quality_checks": [
+        "Original material image visually inspected.",
+        "Source and WebP alpha confirmed.",
+        "Final WebP composited on a contrasting background and visually inspected."
+      ]
+    },
+    {
+      "id": "paper-sheet",
+      "file": "public/art/paper-sheet.webp",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: original isolated transparent production asset of one blank Xuan paper sheet for INKSCAPE, a digital art installation. The sheet will be independently folded and lit in browser code; produce the material object alone.\nPrimary request: exactly one exquisite very thin warm ivory Xuan paper sheet, seen directly overhead in strict orthographic view. A simple approximately rectangular landscape sheet with delicate irregular deckled edges, tiny exposed edge fibers, restrained fine natural cellulose texture, and a luminous blank rice-paper surface. It is completely unprinted, calm and beautiful. The fine-fiber paper texture is subtly visible across the surface without dirt, strong mottling, or fabric weave. Paper color close to warm ivory #f3f0e8.\nComposition: the entire perfectly flat thin sheet is isolated with generous real transparent margin on every side, centered, long edges horizontal and short edges vertical, landscape paper aspect ratio approximately 1.35:1. No perspective, no curling, no fold, no roll, no visible thickness. Requested high native output resolution approximately 2048 × 1536, with crisp fine edges.\nLighting: soft even neutral archival reproduction light across the material. There must be absolutely no cast shadow baked into the surrounding transparency, since independent shadows will be rendered in code. Keep the paper surface mostly evenly luminous with authentic subtle tactile fiber variation.\nConstraints: actual alpha transparency outside the paper, no background, no table, no surrounding environment, no gradient backdrop, no checkerboard, no cast shadow, no drop shadow, no ink, no print, no text, no calligraphy, no stamp, no watermark, no fold crease, no decorative border, no torn missing corner, no aged yellow stains, no dark edge vignette. Only one flat blank elegant paper sheet.",
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_png": {
+        "included_in_deliverable": false,
+        "width": 1457,
+        "height": 1079,
+        "bytes": 1975255,
+        "sha256": "dc58736b382e618cc6f17a93a9ae0db50c38a39095c16584d249adc9ee87e4bb"
+      },
+      "delivered_webp": {
+        "width": 1457,
+        "height": 1079,
+        "bytes": 371490,
+        "sha256": "9663a41593319d314d6460504cdff2c22e7eeaaf571a0014958339fd261bb547",
+        "alpha": true
+      },
+      "processing": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "operation": "PNG to WebP conversion at native dimensions",
+        "quality": 94,
+        "alpha_quality": 100,
+        "effort": 6,
+        "resized": false
+      },
+      "asset_quality_checks": [
+        "Original material image visually inspected.",
+        "Source and WebP alpha confirmed.",
+        "Final WebP composited on a contrasting background and visually inspected."
+      ]
+    },
+    {
+      "id": "ink-gesture",
+      "file": "public/art/ink-gesture.webp",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: original transparent production material asset for INKSCAPE, an immersive digital paper-and-ink art installation. Produce one isolated ink gesture only; never a website, interface, poster, or mockup.\nPrimary request: a bold, slender, vertically flowing S-shaped dry carbon-ink brush gesture made by a single confident brush movement on absorbent Xuan paper, extracted so that only the actual ink remains on genuine alpha transparency. The overall movement is a tall organic sinuous wave with two large opposing bends, softly swelling and narrowing with irregular hand pressure. It must feel like authentic brush energy, not a typographic Latin S, calligraphy character, symbol or logo. The upper and lower ends finish in very ragged tapering individual bristles. Extremely rich parallel dry-bristle ridges follow the full curve, with many very thin irregular transparent gaps, individual carbon pigment granules, torn fiber-scale edges and broken deposits. Deep neutral carbon black supplies weight, with material variation and fine texture rather than a flat solid fill or low-contrast grey stroke.\nComposition: portrait, requested native resolution 1200 × 2048 pixels, whole gesture visible and fully contained with transparent margin on all sides. Tall rather than wide, occupying approximately 85 percent of the frame height and 50 percent of its width. Both tapered ends clearly visible. The curve can drift toward the right at the upper tip, bend left in the upper-middle, bend right in the lower-middle, and flow away to the left at the lower tip. Keep the shape asymmetrical, graceful and physically brush-made.\nStyle: exquisite high-resolution macro fine-art reproduction of real dry ink, restrained, tactile, poetic and forceful. The photograph records the deposited carbon material; paper outside and inside the open bristle gaps is removed to true transparency.\nConstraints: genuinely transparent background with preserved partial-alpha bristle edges. No white or ivory background rectangle, no painted white gaps, no baked checkerboard, no cast shadow, no colored edge fringes, no glow, no smoke, no ink splash, no detached droplets, no splatter, no additional marks, no stamp, no text, no signature, no watermark, no tool, no hand. One continuous original gesture, with no recognisable written character.",
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_png": {
+        "included_in_deliverable": false,
+        "width": 960,
+        "height": 1638,
+        "bytes": 948330,
+        "sha256": "61a1eae235a0b8d951bba5d97c0cc6c6a82ba45fdcb46df6fddba5980a20cfe0"
+      },
+      "delivered_webp": {
+        "width": 960,
+        "height": 1638,
+        "bytes": 300008,
+        "sha256": "f4f99711b31d3b969586cbec2af6820c2742368e3c810b733bb7f3f2a943ac66",
+        "alpha": true
+      },
+      "processing": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "operation": "PNG to WebP conversion at native dimensions",
+        "quality": 94,
+        "alpha_quality": 100,
+        "effort": 6,
+        "resized": false
+      },
+      "asset_quality_checks": [
+        "Original material image visually inspected.",
+        "Source and WebP alpha confirmed.",
+        "Final WebP composited on #f3f0e8 and visually inspected; no visible colored fringe."
+      ]
+    }
+  ]
+}

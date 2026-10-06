@@ -1,0 +1,223 @@
+{
+  "imported": "2026-10-06",
+  "originalZip": "D:/下载/OPTIC-The-Architecture-of-an-Image.zip",
+  "clock": "Native scroll and one supplied owned RAF",
+  "versions": {
+    "three": "0.186.1",
+    "gsap": "3.15.0",
+    "lenis": "1.3.26",
+    "vite": "8.3.2 (root; original standalone 8.3.3)"
+  },
+  "adaptations": [
+    "Namespaced asset URLs and local fonts, independent HTML and Collection return; base-aware canonical/social identities.",
+    "Imported upstream notices retain non-whitespace text; selected trailing whitespace/CRLF normalized for Git.",
+    "Original OPTIC tests retain assertions, with imports relocated to the Collection source.",
+    "No-JavaScript optical-film notice exposes its own Collection return link, rather than covering the masthead return."
+  ],
+  "upstreamClaims": "Scoped UPSTREAM-README/PRODUCT records are historical; acceptance is recorded separately.",
+  "files": [
+    {
+      "source": "OPTIC/src/camera-model.js",
+      "destination": "experiences/optic/src/camera-model.js",
+      "originalSha256": "9cec59b46c1c339432b327a6532318305a98f83f46082842fae9e4fba2e5c4b7",
+      "importedSha256": "9cec59b46c1c339432b327a6532318305a98f83f46082842fae9e4fba2e5c4b7",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/fallback.js",
+      "destination": "experiences/optic/src/fallback.js",
+      "originalSha256": "e588c18770b82743b2d1af832ef3443bfe5b523e8053562f8f0b82f8ee573463",
+      "importedSha256": "e588c18770b82743b2d1af832ef3443bfe5b523e8053562f8f0b82f8ee573463",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/light-path.js",
+      "destination": "experiences/optic/src/light-path.js",
+      "originalSha256": "e2f1558bf0b5ecb8e2ac9f21b361b20db97168dba81f14da6b7b21f54354d099",
+      "importedSha256": "e2f1558bf0b5ecb8e2ac9f21b361b20db97168dba81f14da6b7b21f54354d099",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/main.js",
+      "destination": "experiences/optic/src/main.js",
+      "originalSha256": "66469d4f26ef5d95cd37560df95f0ea90e4a39f5733109fe7a6ef45159f018f8",
+      "importedSha256": "66469d4f26ef5d95cd37560df95f0ea90e4a39f5733109fe7a6ef45159f018f8",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/optics-model.js",
+      "destination": "experiences/optic/src/optics-model.js",
+      "originalSha256": "d2a8afe4186f9a7b9b18cb03bc5d8558de87dec88bed1bc1a66c5e679e5e5978",
+      "importedSha256": "d2a8afe4186f9a7b9b18cb03bc5d8558de87dec88bed1bc1a66c5e679e5e5978",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/scene.js",
+      "destination": "experiences/optic/src/scene.js",
+      "originalSha256": "39c791aec83466a6cb9ac81d3f9a932e4be5a09050dba2bf40a0a260779605ed",
+      "importedSha256": "39c791aec83466a6cb9ac81d3f9a932e4be5a09050dba2bf40a0a260779605ed",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/sensor-mechanisms.js",
+      "destination": "experiences/optic/src/sensor-mechanisms.js",
+      "originalSha256": "0b9e0bd0319baaffa03e68ab09a843ed720c79b42cb54478cb882d011405b621",
+      "importedSha256": "0b9e0bd0319baaffa03e68ab09a843ed720c79b42cb54478cb882d011405b621",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/story.js",
+      "destination": "experiences/optic/src/story.js",
+      "originalSha256": "fc7b2ae006ff13a144b9e25862c83a06f9ecb182019bca04fc44c999a8744c1b",
+      "importedSha256": "fc7b2ae006ff13a144b9e25862c83a06f9ecb182019bca04fc44c999a8744c1b",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/src/style.css",
+      "destination": "experiences/optic/src/style.css",
+      "originalSha256": "281a304d3e5498413f06f41a4f563daec7ce01a0e07f8ad20ad086b48ea04514",
+      "importedSha256": "a40b23f616e09cd77209a313e49b8fbc0ef5fcbcfcb756d8a9ed252e80b5774f",
+      "adapted": true
+    },
+    {
+      "source": "OPTIC/index.html",
+      "destination": "pages/optic/index.html",
+      "originalSha256": "f7412849bda4149448d42a02669a46c2ec03a315a92f151361db820bed506819",
+      "importedSha256": "d83254cbbbe9974bca8b74e3bb8fe5f764bca6088daa030eef826ea083f57548",
+      "adapted": true
+    },
+    {
+      "source": "OPTIC/LICENSE",
+      "destination": "public/optic/LICENSE",
+      "originalSha256": "fb77cae670c8abc7d077252f317c73369c7dc6c417f86d0c35e9a43e6ac3ee59",
+      "importedSha256": "fb77cae670c8abc7d077252f317c73369c7dc6c417f86d0c35e9a43e6ac3ee59",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/licenses/Cormorant-Garamond-OFL.txt",
+      "destination": "public/optic/licenses/Cormorant-Garamond-OFL.txt",
+      "originalSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "importedSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/licenses/Manrope-OFL.txt",
+      "destination": "public/optic/licenses/Manrope-OFL.txt",
+      "originalSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "importedSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/licenses/THREE-LICENSE.txt",
+      "destination": "public/optic/licenses/THREE-LICENSE.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/DESIGN.md",
+      "destination": "docs/optic/DESIGN.md",
+      "originalSha256": "4619d3f8df5d841b1e588b4b378a40495ba04e5dc3dc5fac177e48f5492f0e79",
+      "importedSha256": "35b7a4cc082abea9d5958c776bf0a15c56dd64e715e9ad23ed137956b2ffc2a4",
+      "adapted": true
+    },
+    {
+      "source": "OPTIC/README.md",
+      "destination": "docs/optic/UPSTREAM-README.md",
+      "originalSha256": "acefdd6f689932dc36221f1736722c870dc4840da8d8e7ad545313c802711540",
+      "importedSha256": "acefdd6f689932dc36221f1736722c870dc4840da8d8e7ad545313c802711540",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/PRODUCT.md",
+      "destination": "docs/optic/UPSTREAM-PRODUCT.md",
+      "originalSha256": "e2d75f083c4f160bc12c809dd90a2322eb178b4f522ad0fd17b12d3f57e3adb5",
+      "importedSha256": "e2d75f083c4f160bc12c809dd90a2322eb178b4f522ad0fd17b12d3f57e3adb5",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/docs/ASSET_PROMPT.txt",
+      "destination": "provenance/optic/ASSET_PROMPT.txt",
+      "originalSha256": "ddeaed65a38c69252b4552fbab8e36051b9a28f1e0d9c9f43dc150bcc60c68c6",
+      "importedSha256": "ddeaed65a38c69252b4552fbab8e36051b9a28f1e0d9c9f43dc150bcc60c68c6",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/docs/PROVENANCE.md",
+      "destination": "provenance/optic/PROVENANCE.md",
+      "originalSha256": "9f000038aff38588a81fc91d5cd661eeff288825facc9af8fbeb2c9ea059de9e",
+      "importedSha256": "fe3979b173fec3fdd2e788eec4d6910426a545eabeb024893fc0bd861b25a8a0",
+      "adapted": true
+    },
+    {
+      "source": "OPTIC/docs/SOURCES.md",
+      "destination": "docs/optic/SOURCES.md",
+      "originalSha256": "62b6b77101dd20c969ec28c2cc9c8a39e1cdf9fd0696a46571b3736b241e9083",
+      "importedSha256": "62b6b77101dd20c969ec28c2cc9c8a39e1cdf9fd0696a46571b3736b241e9083",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/THIRD_PARTY_NOTICES.md",
+      "destination": "public/optic/THIRD_PARTY_NOTICES.md",
+      "originalSha256": "b117c29983bd3f7bd9370870ee783e4b8fc542cacb302e64df06ea22266cb074",
+      "importedSha256": "fe7e2cc4c3fc8e399568033b7716bdb68b4da356be63bb55f9e289f0351e2526",
+      "adapted": true
+    },
+    {
+      "source": "OPTIC/.impeccable/design.json",
+      "destination": "provenance/optic/design.json",
+      "originalSha256": "1412ea2c6ea14e008bec9b8588ab0a6c9d4944122531088c7ec8ed525c57d369",
+      "importedSha256": "1412ea2c6ea14e008bec9b8588ab0a6c9d4944122531088c7ec8ed525c57d369",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/public/assets/coast-of-light.webp",
+      "destination": "public/optic/assets/coast-of-light.webp",
+      "originalSha256": "15c94185ce767cf16c8cba63fe9e8057dcb92e8c5326c56ad97c725315cec678",
+      "importedSha256": "15c94185ce767cf16c8cba63fe9e8057dcb92e8c5326c56ad97c725315cec678",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/public/assets/coast-of-light.webp.json",
+      "destination": "provenance/optic/coast-of-light.webp.json",
+      "originalSha256": "8ae014e1804f162bf1ddf33a583297a7d831b46c18e7f9d6b3f4ade637b845d1",
+      "importedSha256": "8ae014e1804f162bf1ddf33a583297a7d831b46c18e7f9d6b3f4ade637b845d1",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/public/assets/optic-mark.svg",
+      "destination": "public/optic/assets/optic-mark.svg",
+      "originalSha256": "9d914139344e4a34715391f19466cc9957627a861d86e56e6bf1186eca102146",
+      "importedSha256": "9d914139344e4a34715391f19466cc9957627a861d86e56e6bf1186eca102146",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/dist/assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+      "destination": "public/optic/fonts/manrope-latin-wght-normal.woff2",
+      "originalSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "importedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/dist/assets/cormorant-garamond-latin-400-italic-AK3f4gkg.woff2",
+      "destination": "public/optic/fonts/cormorant-garamond-latin-400-italic.woff2",
+      "originalSha256": "26b41dd185ff48a71f16f50255b6f77011b1c79e8b18811458323313858f2cfa",
+      "importedSha256": "26b41dd185ff48a71f16f50255b6f77011b1c79e8b18811458323313858f2cfa",
+      "adapted": false
+    },
+    {
+      "source": "OPTIC/tests/physics.test.mjs",
+      "destination": "tests/optic-physics.test.mjs",
+      "originalSha256": "4b24aeeb20d9fe66d068c801b1de14a53b7a444de7f3814134f455075ece2b90",
+      "importedSha256": "5fbba10beafbae41d6a73397114db15d447c3de663e7c5b3072ade40cb978980",
+      "adapted": true
+    },
+    {
+      "source": "OPTIC/tests/structure.test.mjs",
+      "destination": "tests/optic-structure.test.mjs",
+      "originalSha256": "c1b277071aebcbcdfd15f3454a3ec24c830700b77e26b6c226d8f060c9bac026",
+      "importedSha256": "c883aace07c313611711c63d95c0a61f4d4487c92f3362cbf3b8d3523d941c07",
+      "adapted": true
+    }
+  ]
+}

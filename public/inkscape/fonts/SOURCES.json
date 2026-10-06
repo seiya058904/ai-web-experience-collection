@@ -1,0 +1,69 @@
+{
+  "retrieved": "2026-10-06",
+  "fonts": [
+    {
+      "file": "CormorantGaramond-Light.woff2",
+      "source": "https://raw.githubusercontent.com/CatharsisFonts/Cormorant/master/fonts/webfonts/CormorantGaramond-Light.woff2",
+      "bytes": 192832,
+      "sha256": "4bafa704ce335aa2fe4ea43fbbf469b135f5824029dcc035f361a79162631d11",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "CormorantGaramond-Regular.woff2",
+      "source": "https://raw.githubusercontent.com/CatharsisFonts/Cormorant/master/fonts/webfonts/CormorantGaramond-Regular.woff2",
+      "bytes": 205872,
+      "sha256": "5c63b39532df3ebb8c6812f68f268335eb35324f9fcd4382e69ed3e7700250c4",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "CormorantGaramond-Italic.woff2",
+      "source": "https://raw.githubusercontent.com/CatharsisFonts/Cormorant/master/fonts/webfonts/CormorantGaramond-Italic.woff2",
+      "bytes": 149444,
+      "sha256": "d4faa626973a7cbb80cbfb88f957c4933e1e68c20d21317e867721869d51cbbf",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "IBMPlexMono-Regular.woff2",
+      "source": "https://raw.githubusercontent.com/IBM/plex/master/packages/plex-mono/fonts/complete/woff2/IBMPlexMono-Regular.woff2",
+      "bytes": 49248,
+      "sha256": "ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "OFL-Cormorant.txt",
+      "source": "https://raw.githubusercontent.com/CatharsisFonts/Cormorant/master/OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "OFL-IBM-Plex.txt",
+      "source": "https://raw.githubusercontent.com/IBM/plex/master/LICENSE.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "Manrope-Variable.woff2",
+      "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "discovery": "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "modification": "None. Original Google Fonts Latin subset variable WOFF2 (weight axis 200\u2013800)."
+    },
+    {
+      "file": "OFL-Manrope.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "modification": "None. Original upstream file."
+    },
+    {
+      "file": "FONTLOG-Manrope.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/FONTLOG.txt",
+      "bytes": 3075,
+      "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+      "modification": "None. Original upstream file."
+    }
+  ]
+}

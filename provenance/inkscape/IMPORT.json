@@ -1,0 +1,350 @@
+{
+  "imported": "2026-10-06",
+  "originalZip": "D:/下载/INKSCAPE-Paper-Water-Ink.zip",
+  "clock": "One Lenis instance and one owned GSAP ticker",
+  "versions": {
+    "three": "0.186.1",
+    "gsap": "3.15.0",
+    "lenis": "1.3.26",
+    "vite": "8.3.2 (root; original standalone 8.3.3)"
+  },
+  "adaptations": [
+    "Namespaced asset URLs and fonts, independent HTML and Collection return; base-aware canonical/social identities.",
+    "Mobile Ink bloom lowered during the Ink hold to preserve the explanation; Water and Paper handoffs unchanged.",
+    "Named GSAP ticker pauses on hidden/pagehide; normal exit and HMR dispose resources, BFCache resumes normalized position; late asset/font/idle callbacks guard disposed state.",
+    "Selected trailing whitespace/CRLF normalized; legal text unchanged.",
+    "Tablet seal moved left to keep the Mark explanation clear; small movement/navigation labels retain at least 11 CSS pixels."
+  ],
+  "upstreamClaims": "Scoped UPSTREAM-README/PRODUCT records are historical; acceptance is recorded separately.",
+  "files": [
+    {
+      "source": "INKSCAPE/src/main.js",
+      "destination": "experiences/inkscape/src/main.js",
+      "originalSha256": "ee27d2a91e1281adff009160bf95d4f5d4be580bd3ae0870bf3fea594b45a00a",
+      "importedSha256": "276d0c4b706b0b6572fd5cbe8d894f2c01594a4521ff4197da6400da204bdad1",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/src/material-engine.js",
+      "destination": "experiences/inkscape/src/material-engine.js",
+      "originalSha256": "4383833d13d018ec3744b199e03fb0b80c3184748d8d5b6aa2d3464d2905dbce",
+      "importedSha256": "4383833d13d018ec3744b199e03fb0b80c3184748d8d5b6aa2d3464d2905dbce",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/src/paper-theatre.css",
+      "destination": "experiences/inkscape/src/paper-theatre.css",
+      "originalSha256": "10b29a68ee0a3c5703bf79608452fc454eee9f2cec46f734f1a6bd9391c48dfd",
+      "importedSha256": "10b29a68ee0a3c5703bf79608452fc454eee9f2cec46f734f1a6bd9391c48dfd",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/src/paper-theatre.js",
+      "destination": "experiences/inkscape/src/paper-theatre.js",
+      "originalSha256": "ca794f180d05bed17b1fa9d86746ca9dc478f76a5b2e6a3fa6a862b952c92fd7",
+      "importedSha256": "ca794f180d05bed17b1fa9d86746ca9dc478f76a5b2e6a3fa6a862b952c92fd7",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/src/style.css",
+      "destination": "experiences/inkscape/src/style.css",
+      "originalSha256": "9f1e31931094c21dd198d49281e99dec319758994fad2b5ea9921e40d8eec0db",
+      "importedSha256": "c6db0d69f60c75a7e26da438debf924aa4b21505a1be0253eb3d05a6842d5595",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/index.html",
+      "destination": "pages/inkscape/index.html",
+      "originalSha256": "82558fdf46169e36e3a6e854f3e040bc924e94a4df9f68212a223e99feb20cd8",
+      "importedSha256": "cc77d94d24203f8acae4b52439c11ea8b8a9df4462b9fad3c7a306c694bca8a1",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/LICENSE",
+      "destination": "public/inkscape/LICENSE",
+      "originalSha256": "35cdd034e4f746b01bd5d2df4f99064fb828c8eff4f82417136fa27fe06a6602",
+      "importedSha256": "35cdd034e4f746b01bd5d2df4f99064fb828c8eff4f82417136fa27fe06a6602",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/DEPENDENCIES.json",
+      "destination": "public/inkscape/licenses/DEPENDENCIES.json",
+      "originalSha256": "1b97a9ddca98ed418b99b5c3f3c64abe8d38f3681b576ce567064061cdbcaf9c",
+      "importedSha256": "1b97a9ddca98ed418b99b5c3f3c64abe8d38f3681b576ce567064061cdbcaf9c",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Detect-Libc.txt",
+      "destination": "public/inkscape/licenses/Detect-Libc.txt",
+      "originalSha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "importedSha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Fdir.txt",
+      "destination": "public/inkscape/licenses/Fdir.txt",
+      "originalSha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "importedSha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/GSAP.txt",
+      "destination": "public/inkscape/licenses/GSAP.txt",
+      "originalSha256": "33f855294336ecfcba3a3263a16d6bcba3e6b103840b339eff22c8df88bcbd82",
+      "importedSha256": "33f855294336ecfcba3a3263a16d6bcba3e6b103840b339eff22c8df88bcbd82",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Lenis.txt",
+      "destination": "public/inkscape/licenses/Lenis.txt",
+      "originalSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "importedSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Lightning-CSS-Linux-x64-gnu.txt",
+      "destination": "public/inkscape/licenses/Lightning-CSS-Linux-x64-gnu.txt",
+      "originalSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "importedSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Lightning-CSS.txt",
+      "destination": "public/inkscape/licenses/Lightning-CSS.txt",
+      "originalSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "importedSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Nanoid.txt",
+      "destination": "public/inkscape/licenses/Nanoid.txt",
+      "originalSha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "importedSha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Oxc-Types.txt",
+      "destination": "public/inkscape/licenses/Oxc-Types.txt",
+      "originalSha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "importedSha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Picocolors.txt",
+      "destination": "public/inkscape/licenses/Picocolors.txt",
+      "originalSha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "importedSha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Picomatch.txt",
+      "destination": "public/inkscape/licenses/Picomatch.txt",
+      "originalSha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "importedSha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/PostCSS.txt",
+      "destination": "public/inkscape/licenses/PostCSS.txt",
+      "originalSha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "importedSha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Rolldown-Pluginutils.txt",
+      "destination": "public/inkscape/licenses/Rolldown-Pluginutils.txt",
+      "originalSha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "importedSha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Rolldown-Third-Party.txt",
+      "destination": "public/inkscape/licenses/Rolldown-Third-Party.txt",
+      "originalSha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c",
+      "importedSha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Rolldown.txt",
+      "destination": "public/inkscape/licenses/Rolldown.txt",
+      "originalSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "importedSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Source-Map-JS.txt",
+      "destination": "public/inkscape/licenses/Source-Map-JS.txt",
+      "originalSha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "importedSha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Tinyglobby.txt",
+      "destination": "public/inkscape/licenses/Tinyglobby.txt",
+      "originalSha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "importedSha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/licenses/Vite.txt",
+      "destination": "public/inkscape/licenses/Vite.txt",
+      "originalSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "importedSha256": "8f1715f772cf26b4b91fb4a8401a160ab841ecb2b4ef2b9bcca12b65c5ebe2fd",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/DESIGN.md",
+      "destination": "docs/inkscape/DESIGN.md",
+      "originalSha256": "e66f99d4d460e58531ea6fddf6fadf8b564dc5d80cf8b92662984f6d5b038359",
+      "importedSha256": "e66f99d4d460e58531ea6fddf6fadf8b564dc5d80cf8b92662984f6d5b038359",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/README.md",
+      "destination": "docs/inkscape/UPSTREAM-README.md",
+      "originalSha256": "37572883cd5d207e10146e47520a960f8e75148785acecec25e95970917d35be",
+      "importedSha256": "37572883cd5d207e10146e47520a960f8e75148785acecec25e95970917d35be",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/PRODUCT.md",
+      "destination": "docs/inkscape/UPSTREAM-PRODUCT.md",
+      "originalSha256": "9737ace3ca42c0799f8f0cf158d49df9fee6e6c405a7cc824cdfe496d77e8e92",
+      "importedSha256": "9737ace3ca42c0799f8f0cf158d49df9fee6e6c405a7cc824cdfe496d77e8e92",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/docs/ASSET_PROVENANCE.json",
+      "destination": "provenance/inkscape/ASSET_PROVENANCE.json",
+      "originalSha256": "49a1ff7a3d140444860995253604868dc1aae7bbab751ac63808ee0214a4f547",
+      "importedSha256": "49a1ff7a3d140444860995253604868dc1aae7bbab751ac63808ee0214a4f547",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/ATTRIBUTION.md",
+      "destination": "public/inkscape/ATTRIBUTION.md",
+      "originalSha256": "b2efdd0ed98955289334338221479d1dd77dfdce5097bfc824f14dde47735aae",
+      "importedSha256": "89848da5ef2268c3bfb351e8955652632d6f3a49750d80b7a3f71bfcc5a6a9da",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/public/art/brush-stroke.webp",
+      "destination": "public/inkscape/art/brush-stroke.webp",
+      "originalSha256": "06ccb825713376d79d0ca14aeefee90ba56c1a4a8b7a19b845d93671f051578e",
+      "importedSha256": "06ccb825713376d79d0ca14aeefee90ba56c1a4a8b7a19b845d93671f051578e",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/art/ink-bloom.webp",
+      "destination": "public/inkscape/art/ink-bloom.webp",
+      "originalSha256": "94ca2dd16d2337071c86b6cef40fcc44e2cfde1c784ddc474acde82175c300ce",
+      "importedSha256": "94ca2dd16d2337071c86b6cef40fcc44e2cfde1c784ddc474acde82175c300ce",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/art/ink-gesture.webp",
+      "destination": "public/inkscape/art/ink-gesture.webp",
+      "originalSha256": "f4f99711b31d3b969586cbec2af6820c2742368e3c810b733bb7f3f2a943ac66",
+      "importedSha256": "f4f99711b31d3b969586cbec2af6820c2742368e3c810b733bb7f3f2a943ac66",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/art/ink-wash.webp",
+      "destination": "public/inkscape/art/ink-wash.webp",
+      "originalSha256": "124c27200c99003c4f96457a94901824e292e93ab57cb39881e54a0d38c84400",
+      "importedSha256": "124c27200c99003c4f96457a94901824e292e93ab57cb39881e54a0d38c84400",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/art/paper-fibers.webp",
+      "destination": "public/inkscape/art/paper-fibers.webp",
+      "originalSha256": "9330c9b80b7276cc9821d22f554a4df2e3ca54c64878162514586e345305650c",
+      "importedSha256": "9330c9b80b7276cc9821d22f554a4df2e3ca54c64878162514586e345305650c",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/art/paper-sheet.webp",
+      "destination": "public/inkscape/art/paper-sheet.webp",
+      "originalSha256": "9663a41593319d314d6460504cdff2c22e7eeaaf571a0014958339fd261bb547",
+      "importedSha256": "9663a41593319d314d6460504cdff2c22e7eeaaf571a0014958339fd261bb547",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/fonts/CormorantGaramond-Italic.woff2",
+      "destination": "public/inkscape/fonts/CormorantGaramond-Italic.woff2",
+      "originalSha256": "d4faa626973a7cbb80cbfb88f957c4933e1e68c20d21317e867721869d51cbbf",
+      "importedSha256": "d4faa626973a7cbb80cbfb88f957c4933e1e68c20d21317e867721869d51cbbf",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/fonts/CormorantGaramond-Light.woff2",
+      "destination": "public/inkscape/fonts/CormorantGaramond-Light.woff2",
+      "originalSha256": "4bafa704ce335aa2fe4ea43fbbf469b135f5824029dcc035f361a79162631d11",
+      "importedSha256": "4bafa704ce335aa2fe4ea43fbbf469b135f5824029dcc035f361a79162631d11",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/fonts/CormorantGaramond-Regular.woff2",
+      "destination": "public/inkscape/fonts/CormorantGaramond-Regular.woff2",
+      "originalSha256": "5c63b39532df3ebb8c6812f68f268335eb35324f9fcd4382e69ed3e7700250c4",
+      "importedSha256": "5c63b39532df3ebb8c6812f68f268335eb35324f9fcd4382e69ed3e7700250c4",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/fonts/FONTLOG-Manrope.txt",
+      "destination": "public/inkscape/fonts/FONTLOG-Manrope.txt",
+      "originalSha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+      "importedSha256": "2bd28869f5b7185ec886aee208434b8c7e38522feb259c917ecf18f864e4c051",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/public/fonts/IBMPlexMono-Regular.woff2",
+      "destination": "public/inkscape/fonts/IBMPlexMono-Regular.woff2",
+      "originalSha256": "ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350",
+      "importedSha256": "ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/fonts/Manrope-Variable.woff2",
+      "destination": "public/inkscape/fonts/Manrope-Variable.woff2",
+      "originalSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "importedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/fonts/OFL-Cormorant.txt",
+      "destination": "public/inkscape/fonts/OFL-Cormorant.txt",
+      "originalSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "importedSha256": "6f5a41d57400577a50aae88475b11f292f3d7de78ee7d5113c69577331d8ad31",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/public/fonts/OFL-IBM-Plex.txt",
+      "destination": "public/inkscape/fonts/OFL-IBM-Plex.txt",
+      "originalSha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "importedSha256": "d741e57d5f865e294df801f96b7b5161a88b211df65887e4358d271c9fc5fb4f",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/public/fonts/OFL-Manrope.txt",
+      "destination": "public/inkscape/fonts/OFL-Manrope.txt",
+      "originalSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "importedSha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
+      "adapted": true
+    },
+    {
+      "source": "INKSCAPE/public/fonts/SOURCES.json",
+      "destination": "provenance/inkscape/font-sources.json",
+      "originalSha256": "e89652c8e9068a06f81530b6092ad93e8c67f08b6a211937ef3e0fd1c7b50cc9",
+      "importedSha256": "e89652c8e9068a06f81530b6092ad93e8c67f08b6a211937ef3e0fd1c7b50cc9",
+      "adapted": false
+    },
+    {
+      "source": "INKSCAPE/public/favicon.svg",
+      "destination": "public/inkscape/favicon.svg",
+      "originalSha256": "e762525cee115e3ff82557a5d822c945176ddc99633ff957aaf2d06535b7aba3",
+      "importedSha256": "e762525cee115e3ff82557a5d822c945176ddc99633ff957aaf2d06535b7aba3",
+      "adapted": false
+    }
+  ]
+}

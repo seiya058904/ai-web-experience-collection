@@ -2145,6 +2145,702 @@
           "sha256": "8e72ad3d84d679b728543d3e219119e8190dacea66d232759397cb4e2afe4e5b"
         }
       ]
+    },
+    {
+      "archive": "OPTIC-The-Architecture-of-an-Image.zip",
+      "bytes": 1640068,
+      "sha256": "a406b091bdb6388608e7c4b3900fdc2e6eb1621557cbb09d0c8eb14b645000f7",
+      "lastWriteTimeUtc": "2026-10-06T09:55:51.515618+00:00",
+      "entries": [
+        {
+          "path": "OPTIC/.gitignore",
+          "bytes": 70,
+          "sha256": "b6e76d08bb895140f21a24e7e5b2336939ea0b83a196c0e95e556f0d3ac7916c"
+        },
+        {
+          "path": "OPTIC/.impeccable/design.json",
+          "bytes": 28987,
+          "sha256": "1412ea2c6ea14e008bec9b8588ab0a6c9d4944122531088c7ec8ed525c57d369"
+        },
+        {
+          "path": "OPTIC/DESIGN.md",
+          "bytes": 25169,
+          "sha256": "4619d3f8df5d841b1e588b4b378a40495ba04e5dc3dc5fac177e48f5492f0e79"
+        },
+        {
+          "path": "OPTIC/LICENSE",
+          "bytes": 1376,
+          "sha256": "fb77cae670c8abc7d077252f317c73369c7dc6c417f86d0c35e9a43e6ac3ee59"
+        },
+        {
+          "path": "OPTIC/PRODUCT.md",
+          "bytes": 1797,
+          "sha256": "e2d75f083c4f160bc12c809dd90a2322eb178b4f522ad0fd17b12d3f57e3adb5"
+        },
+        {
+          "path": "OPTIC/README.md",
+          "bytes": 16034,
+          "sha256": "acefdd6f689932dc36221f1736722c870dc4840da8d8e7ad545313c802711540"
+        },
+        {
+          "path": "OPTIC/THIRD_PARTY_NOTICES.md",
+          "bytes": 4792,
+          "sha256": "b117c29983bd3f7bd9370870ee783e4b8fc542cacb302e64df06ea22266cb074"
+        },
+        {
+          "path": "OPTIC/dist/assets/coast-of-light.webp",
+          "bytes": 580736,
+          "sha256": "15c94185ce767cf16c8cba63fe9e8057dcb92e8c5326c56ad97c725315cec678"
+        },
+        {
+          "path": "OPTIC/dist/assets/coast-of-light.webp.json",
+          "bytes": 1739,
+          "sha256": "8ae014e1804f162bf1ddf33a583297a7d831b46c18e7f9d6b3f4ade637b845d1"
+        },
+        {
+          "path": "OPTIC/dist/assets/cormorant-garamond-latin-400-italic-AK3f4gkg.woff2",
+          "bytes": 23668,
+          "sha256": "26b41dd185ff48a71f16f50255b6f77011b1c79e8b18811458323313858f2cfa"
+        },
+        {
+          "path": "OPTIC/dist/assets/index-CWOsHCRC.js",
+          "bytes": 933940,
+          "sha256": "be4312a44236a21c6c1f098f8c6932e3f8cc10923d12410d55d6d7fe8b1f5b61"
+        },
+        {
+          "path": "OPTIC/dist/assets/index-DVUPGOBt.css",
+          "bytes": 27240,
+          "sha256": "97a26b1f49d728910c0fa8fbf6301cdf60167c68e5cfd583d013f9edc538b3e8"
+        },
+        {
+          "path": "OPTIC/dist/assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "OPTIC/dist/assets/optic-mark.svg",
+          "bytes": 348,
+          "sha256": "9d914139344e4a34715391f19466cc9957627a861d86e56e6bf1186eca102146"
+        },
+        {
+          "path": "OPTIC/dist/index.html",
+          "bytes": 12482,
+          "sha256": "d136716150235f8c6e2003afb367473ea8f13ec99e1e065b0a57f1212dacc01c"
+        },
+        {
+          "path": "OPTIC/docs/ASSET_PROMPT.txt",
+          "bytes": 1671,
+          "sha256": "ddeaed65a38c69252b4552fbab8e36051b9a28f1e0d9c9f43dc150bcc60c68c6"
+        },
+        {
+          "path": "OPTIC/docs/PROVENANCE.md",
+          "bytes": 9861,
+          "sha256": "9f000038aff38588a81fc91d5cd661eeff288825facc9af8fbeb2c9ea059de9e"
+        },
+        {
+          "path": "OPTIC/docs/SOURCES.md",
+          "bytes": 5692,
+          "sha256": "62b6b77101dd20c969ec28c2cc9c8a39e1cdf9fd0696a46571b3736b241e9083"
+        },
+        {
+          "path": "OPTIC/index.html",
+          "bytes": 12381,
+          "sha256": "f7412849bda4149448d42a02669a46c2ec03a315a92f151361db820bed506819"
+        },
+        {
+          "path": "OPTIC/licenses/Cormorant-Garamond-OFL.txt",
+          "bytes": 4314,
+          "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+        },
+        {
+          "path": "OPTIC/licenses/Manrope-OFL.txt",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        },
+        {
+          "path": "OPTIC/licenses/THREE-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "OPTIC/package-lock.json",
+          "bytes": 26360,
+          "sha256": "7a9a87831bc979c0a9fac5984ca1f671aa97a54c16f96d3acc9792ace57414d9"
+        },
+        {
+          "path": "OPTIC/package.json",
+          "bytes": 706,
+          "sha256": "d3559c0748ba65c95e755e0b62cff3ddadd86b0f1eeb66e58d24f660479c8151"
+        },
+        {
+          "path": "OPTIC/public/assets/coast-of-light.webp",
+          "bytes": 580736,
+          "sha256": "15c94185ce767cf16c8cba63fe9e8057dcb92e8c5326c56ad97c725315cec678"
+        },
+        {
+          "path": "OPTIC/public/assets/coast-of-light.webp.json",
+          "bytes": 1739,
+          "sha256": "8ae014e1804f162bf1ddf33a583297a7d831b46c18e7f9d6b3f4ade637b845d1"
+        },
+        {
+          "path": "OPTIC/public/assets/optic-mark.svg",
+          "bytes": 348,
+          "sha256": "9d914139344e4a34715391f19466cc9957627a861d86e56e6bf1186eca102146"
+        },
+        {
+          "path": "OPTIC/scripts/serve.mjs",
+          "bytes": 2842,
+          "sha256": "9f389e8b6a896e306886b57f18229efcb49ed9c9cc6d45ef18c3e3eeaa3ca375"
+        },
+        {
+          "path": "OPTIC/src/camera-model.js",
+          "bytes": 39419,
+          "sha256": "9cec59b46c1c339432b327a6532318305a98f83f46082842fae9e4fba2e5c4b7"
+        },
+        {
+          "path": "OPTIC/src/fallback.js",
+          "bytes": 36303,
+          "sha256": "e588c18770b82743b2d1af832ef3443bfe5b523e8053562f8f0b82f8ee573463"
+        },
+        {
+          "path": "OPTIC/src/light-path.js",
+          "bytes": 6625,
+          "sha256": "e2f1558bf0b5ecb8e2ac9f21b361b20db97168dba81f14da6b7b21f54354d099"
+        },
+        {
+          "path": "OPTIC/src/main.js",
+          "bytes": 18374,
+          "sha256": "66469d4f26ef5d95cd37560df95f0ea90e4a39f5733109fe7a6ef45159f018f8"
+        },
+        {
+          "path": "OPTIC/src/optics-model.js",
+          "bytes": 37795,
+          "sha256": "d2a8afe4186f9a7b9b18cb03bc5d8558de87dec88bed1bc1a66c5e679e5e5978"
+        },
+        {
+          "path": "OPTIC/src/scene.js",
+          "bytes": 20446,
+          "sha256": "39c791aec83466a6cb9ac81d3f9a932e4be5a09050dba2bf40a0a260779605ed"
+        },
+        {
+          "path": "OPTIC/src/sensor-mechanisms.js",
+          "bytes": 52577,
+          "sha256": "0b9e0bd0319baaffa03e68ab09a843ed720c79b42cb54478cb882d011405b621"
+        },
+        {
+          "path": "OPTIC/src/story.js",
+          "bytes": 3612,
+          "sha256": "fc7b2ae006ff13a144b9e25862c83a06f9ecb182019bca04fc44c999a8744c1b"
+        },
+        {
+          "path": "OPTIC/src/style.css",
+          "bytes": 35881,
+          "sha256": "281a304d3e5498413f06f41a4f563daec7ce01a0e07f8ad20ad086b48ea04514"
+        },
+        {
+          "path": "OPTIC/tests/physics.test.mjs",
+          "bytes": 22816,
+          "sha256": "4b24aeeb20d9fe66d068c801b1de14a53b7a444de7f3814134f455075ece2b90"
+        },
+        {
+          "path": "OPTIC/tests/structure.test.mjs",
+          "bytes": 14151,
+          "sha256": "c1b277071aebcbcdfd15f3454a3ec24c830700b77e26b6c226d8f060c9bac026"
+        },
+        {
+          "path": "OPTIC/vite.config.js",
+          "bytes": 333,
+          "sha256": "1ef7ba5abfe4d04fc6d24a92ea386aa109c4aff3aee725569f149a3c02d6a9d4"
+        }
+      ],
+      "entryCount": 40,
+      "uncompressedBytes": 2623660,
+      "root": "OPTIC",
+      "imported": "2026-10-06",
+      "originalLocation": "D:/下载/OPTIC-The-Architecture-of-an-Image.zip",
+      "importBoundary": {
+        "source": "experiences/optic/src",
+        "omitted": "compiled JS/CSS/HTML and duplicate media, standalone package manifests/lockfiles, build/server/startup scripts, gitignore; original ZIP retained externally",
+        "exception": "OPTIC compiled WOFF2 files copied unchanged; no font dependency added"
+      }
+    },
+    {
+      "archive": "INKSCAPE-Paper-Water-Ink.zip",
+      "bytes": 6167353,
+      "sha256": "ae82bf5ab7264fed5102b982f027eaa074355e0bff4323a031c56cac11d8158e",
+      "lastWriteTimeUtc": "2026-10-06T09:56:55.598422+00:00",
+      "entries": [
+        {
+          "path": "INKSCAPE/.gitignore",
+          "bytes": 80,
+          "sha256": "cc8e7fc3b5b6f518dec449c4f408b0abd8b6d8f11a93fee016d27b13740796b2"
+        },
+        {
+          "path": "INKSCAPE/ATTRIBUTION.md",
+          "bytes": 6935,
+          "sha256": "b2efdd0ed98955289334338221479d1dd77dfdce5097bfc824f14dde47735aae"
+        },
+        {
+          "path": "INKSCAPE/DESIGN.md",
+          "bytes": 3819,
+          "sha256": "e66f99d4d460e58531ea6fddf6fadf8b564dc5d80cf8b92662984f6d5b038359"
+        },
+        {
+          "path": "INKSCAPE/LICENSE",
+          "bytes": 1078,
+          "sha256": "35cdd034e4f746b01bd5d2df4f99064fb828c8eff4f82417136fa27fe06a6602"
+        },
+        {
+          "path": "INKSCAPE/PRODUCT.md",
+          "bytes": 1597,
+          "sha256": "9737ace3ca42c0799f8f0cf158d49df9fee6e6c405a7cc824cdfe496d77e8e92"
+        },
+        {
+          "path": "INKSCAPE/README.md",
+          "bytes": 9643,
+          "sha256": "37572883cd5d207e10146e47520a960f8e75148785acecec25e95970917d35be"
+        },
+        {
+          "path": "INKSCAPE/START-PREVIEW.cmd",
+          "bytes": 230,
+          "sha256": "37ccb1725319fc37993d42524b633a3d9aff0784bf1bbf96d1003126a4d9350d"
+        },
+        {
+          "path": "INKSCAPE/dist/art/brush-stroke.webp",
+          "bytes": 354600,
+          "sha256": "06ccb825713376d79d0ca14aeefee90ba56c1a4a8b7a19b845d93671f051578e"
+        },
+        {
+          "path": "INKSCAPE/dist/art/ink-bloom.webp",
+          "bytes": 568394,
+          "sha256": "94ca2dd16d2337071c86b6cef40fcc44e2cfde1c784ddc474acde82175c300ce"
+        },
+        {
+          "path": "INKSCAPE/dist/art/ink-gesture.webp",
+          "bytes": 300008,
+          "sha256": "f4f99711b31d3b969586cbec2af6820c2742368e3c810b733bb7f3f2a943ac66"
+        },
+        {
+          "path": "INKSCAPE/dist/art/ink-wash.webp",
+          "bytes": 293692,
+          "sha256": "124c27200c99003c4f96457a94901824e292e93ab57cb39881e54a0d38c84400"
+        },
+        {
+          "path": "INKSCAPE/dist/art/paper-fibers.webp",
+          "bytes": 458888,
+          "sha256": "9330c9b80b7276cc9821d22f554a4df2e3ca54c64878162514586e345305650c"
+        },
+        {
+          "path": "INKSCAPE/dist/art/paper-sheet.webp",
+          "bytes": 371490,
+          "sha256": "9663a41593319d314d6460504cdff2c22e7eeaaf571a0014958339fd261bb547"
+        },
+        {
+          "path": "INKSCAPE/dist/assets/index-C3WAnbv6.js",
+          "bytes": 172655,
+          "sha256": "9dab704428ad0166a8d86a95b385c997ecc224932895cfde8117e928635f1e0b"
+        },
+        {
+          "path": "INKSCAPE/dist/assets/style-DiMxxbO_.css",
+          "bytes": 28086,
+          "sha256": "74669624a78ff5b4fa759eb5473483814d6e65d79b067c074e6cf63150e86a15"
+        },
+        {
+          "path": "INKSCAPE/dist/favicon.svg",
+          "bytes": 270,
+          "sha256": "e762525cee115e3ff82557a5d822c945176ddc99633ff957aaf2d06535b7aba3"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/CormorantGaramond-Italic.woff2",
+          "bytes": 149444,
+          "sha256": "d4faa626973a7cbb80cbfb88f957c4933e1e68c20d21317e867721869d51cbbf"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/CormorantGaramond-Light.woff2",
+          "bytes": 192832,
+          "sha256": "4bafa704ce335aa2fe4ea43fbbf469b135f5824029dcc035f361a79162631d11"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/CormorantGaramond-Regular.woff2",
+          "bytes": 205872,
+          "sha256": "5c63b39532df3ebb8c6812f68f268335eb35324f9fcd4382e69ed3e7700250c4"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/FONTLOG-Manrope.txt",
+          "bytes": 3075,
+          "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/IBMPlexMono-Regular.woff2",
+          "bytes": 49248,
+          "sha256": "ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/Manrope-Variable.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/OFL-Cormorant.txt",
+          "bytes": 4387,
+          "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/OFL-IBM-Plex.txt",
+          "bytes": 4456,
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/OFL-Manrope.txt",
+          "bytes": 4387,
+          "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+        },
+        {
+          "path": "INKSCAPE/dist/fonts/SOURCES.json",
+          "bytes": 3099,
+          "sha256": "e89652c8e9068a06f81530b6092ad93e8c67f08b6a211937ef3e0fd1c7b50cc9"
+        },
+        {
+          "path": "INKSCAPE/dist/index.html",
+          "bytes": 11649,
+          "sha256": "efac988dc426e0404a7ea36900dd26eb7cce2f90da4dcc631409463b1853b32a"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/DEPENDENCIES.json",
+          "bytes": 9512,
+          "sha256": "1b97a9ddca98ed418b99b5c3f3c64abe8d38f3681b576ce567064061cdbcaf9c"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Detect-Libc.txt",
+          "bytes": 11357,
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Fdir.txt",
+          "bytes": 1053,
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/GSAP.txt",
+          "bytes": 210,
+          "sha256": "33f855294336ecfcba3a3263a16d6bcba3e6b103840b339eff22c8df88bcbd82"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Lenis.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Lightning-CSS-Linux-x64-gnu.txt",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Lightning-CSS.txt",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Nanoid.txt",
+          "bytes": 1095,
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Oxc-Types.txt",
+          "bytes": 1119,
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Picocolors.txt",
+          "bytes": 787,
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Picomatch.txt",
+          "bytes": 1091,
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/PostCSS.txt",
+          "bytes": 1095,
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Rolldown-Pluginutils.txt",
+          "bytes": 1106,
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Rolldown-Third-Party.txt",
+          "bytes": 2209,
+          "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Rolldown.txt",
+          "bytes": 1302,
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Source-Map-JS.txt",
+          "bytes": 1526,
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Tinyglobby.txt",
+          "bytes": 1076,
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        },
+        {
+          "path": "INKSCAPE/dist/licenses/Vite.txt",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "INKSCAPE/docs/ASSET_PROVENANCE.json",
+          "bytes": 18767,
+          "sha256": "49a1ff7a3d140444860995253604868dc1aae7bbab751ac63808ee0214a4f547"
+        },
+        {
+          "path": "INKSCAPE/index.html",
+          "bytes": 11602,
+          "sha256": "82558fdf46169e36e3a6e854f3e040bc924e94a4df9f68212a223e99feb20cd8"
+        },
+        {
+          "path": "INKSCAPE/licenses/DEPENDENCIES.json",
+          "bytes": 9512,
+          "sha256": "1b97a9ddca98ed418b99b5c3f3c64abe8d38f3681b576ce567064061cdbcaf9c"
+        },
+        {
+          "path": "INKSCAPE/licenses/Detect-Libc.txt",
+          "bytes": 11357,
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "INKSCAPE/licenses/Fdir.txt",
+          "bytes": 1053,
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        },
+        {
+          "path": "INKSCAPE/licenses/GSAP.txt",
+          "bytes": 210,
+          "sha256": "33f855294336ecfcba3a3263a16d6bcba3e6b103840b339eff22c8df88bcbd82"
+        },
+        {
+          "path": "INKSCAPE/licenses/Lenis.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "INKSCAPE/licenses/Lightning-CSS-Linux-x64-gnu.txt",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        },
+        {
+          "path": "INKSCAPE/licenses/Lightning-CSS.txt",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        },
+        {
+          "path": "INKSCAPE/licenses/Nanoid.txt",
+          "bytes": 1095,
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        },
+        {
+          "path": "INKSCAPE/licenses/Oxc-Types.txt",
+          "bytes": 1119,
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        },
+        {
+          "path": "INKSCAPE/licenses/Picocolors.txt",
+          "bytes": 787,
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        },
+        {
+          "path": "INKSCAPE/licenses/Picomatch.txt",
+          "bytes": 1091,
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        },
+        {
+          "path": "INKSCAPE/licenses/PostCSS.txt",
+          "bytes": 1095,
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        },
+        {
+          "path": "INKSCAPE/licenses/Rolldown-Pluginutils.txt",
+          "bytes": 1106,
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        },
+        {
+          "path": "INKSCAPE/licenses/Rolldown-Third-Party.txt",
+          "bytes": 2209,
+          "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+        },
+        {
+          "path": "INKSCAPE/licenses/Rolldown.txt",
+          "bytes": 1302,
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        },
+        {
+          "path": "INKSCAPE/licenses/Source-Map-JS.txt",
+          "bytes": 1526,
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        },
+        {
+          "path": "INKSCAPE/licenses/Tinyglobby.txt",
+          "bytes": 1076,
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        },
+        {
+          "path": "INKSCAPE/licenses/Vite.txt",
+          "bytes": 108786,
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        },
+        {
+          "path": "INKSCAPE/package-lock.json",
+          "bytes": 26321,
+          "sha256": "9c0d349e665a14cfba72dc170591918db5ba2da9d356b93864fd437451475019"
+        },
+        {
+          "path": "INKSCAPE/package.json",
+          "bytes": 577,
+          "sha256": "3c3363eac6ba525c4afd984982f3114a1ca78219884889ae1d683c9d8411dcdf"
+        },
+        {
+          "path": "INKSCAPE/public/art/brush-stroke.webp",
+          "bytes": 354600,
+          "sha256": "06ccb825713376d79d0ca14aeefee90ba56c1a4a8b7a19b845d93671f051578e"
+        },
+        {
+          "path": "INKSCAPE/public/art/ink-bloom.webp",
+          "bytes": 568394,
+          "sha256": "94ca2dd16d2337071c86b6cef40fcc44e2cfde1c784ddc474acde82175c300ce"
+        },
+        {
+          "path": "INKSCAPE/public/art/ink-gesture.webp",
+          "bytes": 300008,
+          "sha256": "f4f99711b31d3b969586cbec2af6820c2742368e3c810b733bb7f3f2a943ac66"
+        },
+        {
+          "path": "INKSCAPE/public/art/ink-wash.webp",
+          "bytes": 293692,
+          "sha256": "124c27200c99003c4f96457a94901824e292e93ab57cb39881e54a0d38c84400"
+        },
+        {
+          "path": "INKSCAPE/public/art/paper-fibers.webp",
+          "bytes": 458888,
+          "sha256": "9330c9b80b7276cc9821d22f554a4df2e3ca54c64878162514586e345305650c"
+        },
+        {
+          "path": "INKSCAPE/public/art/paper-sheet.webp",
+          "bytes": 371490,
+          "sha256": "9663a41593319d314d6460504cdff2c22e7eeaaf571a0014958339fd261bb547"
+        },
+        {
+          "path": "INKSCAPE/public/favicon.svg",
+          "bytes": 270,
+          "sha256": "e762525cee115e3ff82557a5d822c945176ddc99633ff957aaf2d06535b7aba3"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/CormorantGaramond-Italic.woff2",
+          "bytes": 149444,
+          "sha256": "d4faa626973a7cbb80cbfb88f957c4933e1e68c20d21317e867721869d51cbbf"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/CormorantGaramond-Light.woff2",
+          "bytes": 192832,
+          "sha256": "4bafa704ce335aa2fe4ea43fbbf469b135f5824029dcc035f361a79162631d11"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/CormorantGaramond-Regular.woff2",
+          "bytes": 205872,
+          "sha256": "5c63b39532df3ebb8c6812f68f268335eb35324f9fcd4382e69ed3e7700250c4"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/FONTLOG-Manrope.txt",
+          "bytes": 3075,
+          "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/IBMPlexMono-Regular.woff2",
+          "bytes": 49248,
+          "sha256": "ba204497f16b6d334cee9d1e963a831b73e3a56e1d6300a8489d18df7214b350"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/Manrope-Variable.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/OFL-Cormorant.txt",
+          "bytes": 4387,
+          "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/OFL-IBM-Plex.txt",
+          "bytes": 4456,
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/OFL-Manrope.txt",
+          "bytes": 4387,
+          "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+        },
+        {
+          "path": "INKSCAPE/public/fonts/SOURCES.json",
+          "bytes": 3099,
+          "sha256": "e89652c8e9068a06f81530b6092ad93e8c67f08b6a211937ef3e0fd1c7b50cc9"
+        },
+        {
+          "path": "INKSCAPE/scripts/check.mjs",
+          "bytes": 1915,
+          "sha256": "d83b2cb5e84a1788755fe29dba05b7f5ae1151cd833dde6b2e531eb2864800ce"
+        },
+        {
+          "path": "INKSCAPE/scripts/serve-built.mjs",
+          "bytes": 3478,
+          "sha256": "7fda1475ec4bff36dfcce3322fb54b355e8015313e320a4898d1f3803c0f35b6"
+        },
+        {
+          "path": "INKSCAPE/src/main.js",
+          "bytes": 28043,
+          "sha256": "ee27d2a91e1281adff009160bf95d4f5d4be580bd3ae0870bf3fea594b45a00a"
+        },
+        {
+          "path": "INKSCAPE/src/material-engine.js",
+          "bytes": 37217,
+          "sha256": "4383833d13d018ec3744b199e03fb0b80c3184748d8d5b6aa2d3464d2905dbce"
+        },
+        {
+          "path": "INKSCAPE/src/paper-theatre.css",
+          "bytes": 4404,
+          "sha256": "10b29a68ee0a3c5703bf79608452fc454eee9f2cec46f734f1a6bd9391c48dfd"
+        },
+        {
+          "path": "INKSCAPE/src/paper-theatre.js",
+          "bytes": 12719,
+          "sha256": "ca794f180d05bed17b1fa9d86746ca9dc478f76a5b2e6a3fa6a862b952c92fd7"
+        },
+        {
+          "path": "INKSCAPE/src/style.css",
+          "bytes": 24906,
+          "sha256": "9f1e31931094c21dd198d49281e99dec319758994fad2b5ea9921e40d8eec0db"
+        },
+        {
+          "path": "INKSCAPE/vite.config.js",
+          "bytes": 1491,
+          "sha256": "fc8a14ae911b13b79cdba23819dab1c6ce3b6a4656d9d92ec6a24c52d77ae6dc"
+        }
+      ],
+      "entryCount": 92,
+      "uncompressedBytes": 6736600,
+      "root": "INKSCAPE",
+      "imported": "2026-10-06",
+      "originalLocation": "D:/下载/INKSCAPE-Paper-Water-Ink.zip",
+      "importBoundary": {
+        "source": "experiences/inkscape/src",
+        "omitted": "compiled JS/CSS/HTML and duplicate media, standalone package manifests/lockfiles, build/server/startup scripts, gitignore; original ZIP retained externally",
+        "exception": "OPTIC compiled WOFF2 files copied unchanged; no font dependency added"
+      }
     }
   ]
 }

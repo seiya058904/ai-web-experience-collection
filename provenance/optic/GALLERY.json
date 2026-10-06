@@ -1,0 +1,9 @@
+{
+  "path": "public/optic/social.jpg",
+  "sha256": "d4a0c700d0f8bb262b55856d9720280a1dabbee4419056381cb2a52bd97bd7d6",
+  "bytes": 46809,
+  "width": 1200,
+  "height": 630,
+  "source": "Captured from the supplied OPTIC production runtime in Chromium, Light chapter; UI hidden for capture, scene unchanged.",
+  "archive": "OPTIC-The-Architecture-of-an-Image.zip"
+}

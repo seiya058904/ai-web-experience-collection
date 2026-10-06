@@ -2,7 +2,7 @@
 
 ## Scope and entrypoints
 
-AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of eleven complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), ORBITAL (space / rockets / deep space), GLAZE (ceramics / color / light), KAGE / VOID (spatial sculpture / light / shadow), CHRONOS (mechanical watches / time / craft), INTERVAL (architecture / light / space / material), FORM (objects / structure / material), FUSION (tokamak / magnetic confinement / fusion energy), GLASSHOUSE (glass / light / optical space), and VEIL (thread / fabric / soft structure). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
+AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a showcase of thirteen complete works: Beyond the Limit (Formula 1 / speed / engineering), VERDANT (nature / botanical / architecture), ORBITAL (space / rockets / deep space), GLAZE (ceramics / color / light), KAGE / VOID (spatial sculpture / light / shadow), CHRONOS (mechanical watches / time / craft), INTERVAL (architecture / light / space / material), FORM (objects / structure / material), FUSION (tokamak / magnetic confinement / fusion energy), GLASSHOUSE (glass / light / optical space), VEIL (thread / fabric / soft structure), OPTIC (light / optics / photography), and INKSCAPE (paper / water / ink). They share a restrained Collection entrance. Preserve each work's imagery, typography, content, interactions and timing outside a requested change. Never rebuild the works from scratch or force a shared visual theme.
 
 - `pages/index.html`, `collection/main.ts`, `collection/styles.css`: Collection entrance. Read `docs/collection/DESIGN.md` before changing it.
 - `pages/f1/index.html`, `experiences/f1/src/main.ts`, `experiences/f1/src/styles.css`: F1 document, startup and composition. Read `docs/f1/DESIGN.md` and `docs/f1/SCROLL-AUDIT.md` before changing F1 layout or motion.
@@ -16,22 +16,24 @@ AI Web Experience Collection (`seiya058904/ai-web-experience-collection`) is a s
 - `experiences/fusion/src/`: supplied eight-chapter tokamak journey, controller, Canvas fallback and optional synthesized audio. Read `docs/fusion/DESIGN.md`, `docs/fusion/SOURCES.md` and `docs/fusion/UPSTREAM-VALIDATION.md`; preserve the scientific caveats, controls, reduced-motion behavior, rendering paths and one GSAP clock. Fonts and notices live in `public/fusion/`.
 - `experiences/glasshouse/src/`: supplied six-study optical installation. Read `docs/glasshouse/DESIGN.md`; preserve its shared glass panes, layered transmission, planar reflections, controls and Canvas interpretation. Resources and notices live in `public/glasshouse/`.
 - `experiences/veil/src/`: supplied opening and six-study textile installation. Read `docs/veil/DESIGN.md`; preserve its common cloth surface, chapter handoffs, material controls, fold action and still edition. Resources and notices live in `public/veil/`.
+- `experiences/optic/src/`: supplied nine-chapter native-scroll optical film, one owned RAF and WebGL/Canvas2D renderers. Read `docs/optic/DESIGN.md` and `docs/optic/SOURCES.md`; preserve the shared camera, optical/mechanical controls and generated image caveats. Resources and notices live in `public/optic/`.
+- `experiences/inkscape/src/`: supplied eight-movement paper installation, one Lenis instance and one GSAP ticker. Read `docs/inkscape/DESIGN.md`; preserve the common materials, wetness/lens/mark controls, still mode and normalized history. Resources and notices live in `public/inkscape/`.
 - `pages/`: Vite HTML root; `public/<work>/`: runtime media, fonts and notices; `provenance/`: source history, not deployment.
 - `experiences/shared/`: only genuinely shared UI primitives and Collection return control.
 - `ATTRIBUTION.md`, `provenance/deliveries/legacy-imports.json`, `provenance/deliveries/import-manifest.json` and per-work notices: asset provenance. Preserve legal comments and production license inventory.
 
 ## Invariants
 
-- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/`, `/glaze/`, `/kage/`, `/chronos/`, `/interval/`, `/form/`, `/fusion/`, `/glasshouse/` and `/veil/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
+- Multi-page Vite build, actual `/`, `/f1/`, `/verdant/`, `/orbital/`, `/glaze/`, `/kage/`, `/chronos/`, `/interval/`, `/form/`, `/fusion/`, `/glasshouse/`, `/veil/`, `/optic/` and `/inkscape/` documents. No iframe or SPA fallback. Every work owns its lifecycle; only that work's runtime starts.
 - HTML/CSS asset URLs go through Vite. Runtime URLs and cross-work links must include `import.meta.env.BASE_URL`; HTML links use `%BASE_URL%`. Keep resources namespaced and test a project-path build.
-- Each experience keeps one Lenis instance and one owned clock (GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE and VEIL; the supplied RAF for KAGE). Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
+- The smoothed experiences keep one Lenis instance and one owned clock: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL and INKSCAPE; the supplied RAF for KAGE. OPTIC retains its supplied native scroll and one owned RAF. Do not introduce an independent RAF clock or more smoothing to disguise a handoff issue.
 - F1 interpolation is 0.105, `syncTouch: false`, direct reversible ScrollTrigger scrub. `experiences/f1/src/motion.ts` owns the idle geometry queue, navigation, preferences and teardown. Register loops via `motion.loop()` and cleanup via `motion.own()` / its abort signal.
 - F1 must retain Enter → complete composition → Living Hold → handoff → Exit. Short measured Hold travel stays in normal flow; no negative overlaps, content masks or fixed-pixel spacer patches. Input must give visible, reversible feedback while the protected text remains readable.
 - F1 remeasure happens before ScrollTrigger refresh and only after active input settles. Do not resize Lenis during a destination. The dev-only `window.__f1Motion.inspect()` is absent from production.
 - VERDANT text groups must own spacing; do not reintroduce independently absolute-positioned prose below a width-scaled heading. Test both 16:9 and wide/short windows after font load. Static/reduced layouts must remain legible.
 - ORBITAL's shared spacecraft, engineering tabs, Moon/Mars, silent-by-default audio, reading companion and Canvas compatibility path are part of the complete experience.
 - Preserve visibility suspension, rendering caps, keyboard access, reduced motion and read-position retention on rebuild. F1 Canvas cap is 1.5 DPR / 3 million pixels; do not add WebGL to F1 for novelty.
-- FORM, FUSION, GLASSHOUSE and VEIL each own one Lenis instance and one GSAP clock. FUSION audio remains silent until activated. Keep their supplied WebGL/Canvas/still fallback behavior and resource teardown.
+- FORM, FUSION, GLASSHOUSE, VEIL and INKSCAPE each own one Lenis instance and one GSAP clock. FUSION audio remains silent until activated. Keep their supplied WebGL/Canvas/still fallback behavior and resource teardown.
 - No subagents without explicit user authorization. No dependency updates or publishing without task authorization. To add a work, register its HTML input/sitemap in `vite.config.ts`, identities in `scripts/verify-build.mjs`, and gallery/credits/docs. Do not add nested lockfiles or standalone build scripts.
 
 ## Adding a supplied website ZIP
@@ -47,7 +49,7 @@ Follow this sequence for each new independent work. Keep each work's established
 
 ## Validation and deployment
 
-Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (61 model/continuity tests at this revision; Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
+Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (89 model/continuity tests at this revision; Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
 
 There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
 

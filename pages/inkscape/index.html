@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f3f0e8" />
+    <meta name="description" content="An unfolding in eight movements. A quiet, interactive study of paper, water, ink and the space between." />
+    <meta name="color-scheme" content="light" />
+    <title>INKSCAPE — Paper, Water, Ink</title>
+    <link rel="icon" type="image/svg+xml" href="/inkscape/favicon.svg" />
+    <link rel="preload" href="/inkscape/fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/inkscape/fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/inkscape/art/ink-bloom.webp" as="image" />
+    <link rel="stylesheet" href="../../experiences/inkscape/src/style.css" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%inkscape/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:title" content="INKSCAPE — Paper, Water, Ink">
+    <meta property="og:description" content="Eight material movements through paper, water, ink and the space between.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%inkscape/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%inkscape/social.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="INKSCAPE — Paper, Water, Ink">
+    <meta name="twitter:description" content="Eight material movements through paper, water, ink and the space between.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%inkscape/social.jpg">
+  </head>
+  <body>
+    <a class="skip-link" href="#index">Explore the eight movements</a>
+
+    <header class="masthead">
+      <a class="wordmark" href="#water" data-jump="0" aria-label="INKSCAPE, return to the beginning">INKSCAPE</a>
+      <span class="masthead-poem" aria-hidden="true">Paper, Water, Ink</span>
+      <div class="masthead-actions"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="index-trigger text-control" type="button" aria-haspopup="dialog" aria-controls="index-dialog">
+        <span>Index</span><svg width="27" height="18" viewBox="0 0 27 18" aria-hidden="true"><path d="M1 4H26M1 13H26" /></svg>
+      </button></div>
+    </header>
+
+    <main id="journey" aria-label="INKSCAPE, eight movements">
+      <div class="stage" id="stage">
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="material-image" id="ink-presence" aria-hidden="true"><img src="/inkscape/art/ink-bloom.webp" alt="" width="1448" height="1086" fetchpriority="high" decoding="async" /></div>
+        <div id="paper-theatre" aria-hidden="true"></div>
+        <div class="fiber-lens" id="fiber-lens" aria-hidden="true">
+          <div class="fiber-lens-image"></div>
+          <div class="lens-rim"></div>
+          <svg class="lens-reticle" viewBox="0 0 48 48"><path d="M24 5V18M24 30V43M5 24H18M30 24H43"/><circle cx="24" cy="24" r="2"/></svg>
+        </div>
+        <canvas id="material-canvas" aria-hidden="true"></canvas>
+        <div class="impressions" id="impressions" aria-hidden="true"></div>
+        <div class="fold-light" aria-hidden="true"></div>
+
+        <section class="scene scene-water" id="water" data-scene="0" aria-labelledby="title-water">
+          <div class="hero-composition scene-copy">
+            <h1 id="title-water">INKSCAPE</h1>
+            <p class="hero-subtitle">Paper, Water, Ink.</p>
+          </div>
+          <p class="hero-note">A quiet study of what remains.<br /><span>An unfolding in eight movements.</span></p>
+          <a class="unfold-link" href="#ink" data-jump="1"><span>Scroll to unfold</span><svg viewBox="0 0 22 47" aria-hidden="true"><path d="M11 1V43M3 35L11 43L19 35"/></svg></a>
+        </section>
+
+        <section class="scene scene-ink" id="ink" data-scene="1" aria-labelledby="title-ink">
+          <div class="scene-copy copy-left">
+            <h2 id="title-ink">A drop.<br /><em>An infinity.</em></h2>
+            <p>The edge is never still.</p>
+          </div>
+          <button type="button" id="add-drop" class="material-invitation text-control"><span class="little-drop" aria-hidden="true"></span>Add a drop</button>
+        </section>
+
+        <section class="scene scene-paper" id="paper" data-scene="2" aria-labelledby="title-paper">
+          <div class="scene-copy copy-right">
+            <h2 id="title-paper">A surface.<br /><em>A memory.</em></h2>
+            <p>Water passes.<br class="mobile-break" /> The paper remembers.</p>
+          </div>
+        </section>
+
+        <section class="scene scene-trace" id="trace" data-scene="3" aria-labelledby="title-trace">
+          <div class="scene-copy copy-trace">
+            <h2 id="title-trace">The gesture<br /><em>stays.</em></h2>
+          </div>
+          <div class="wetness-control">
+            <div class="wetness-row"><span aria-hidden="true">Dry</span><input type="range" id="wetness" min="0" max="100" value="28" step="1" aria-label="Brush wetness" aria-valuetext="28 percent wet" /><span aria-hidden="true">Wet</span></div>
+            <p>Move between the two.</p>
+          </div>
+        </section>
+
+        <section class="scene scene-fiber" id="fiber" data-scene="4" aria-labelledby="title-fiber">
+          <div class="scene-copy copy-right">
+            <h2 id="title-fiber">A world<br /><em>within.</em></h2>
+            <p>Look closer.<br />There is no empty surface.</p>
+          </div>
+          <div class="lens-control">
+            <button id="lens-toggle" type="button" class="text-control" aria-pressed="false" aria-label="Magnify the paper fibers"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2V34M2 18H34" /></svg><span>Look closer</span></button>
+            <p class="pointer-hint">Move to explore</p>
+          </div>
+        </section>
+
+        <section class="scene scene-space" id="space" data-scene="5" aria-labelledby="title-space">
+          <div class="scene-copy copy-left">
+            <h2 id="title-space">Room for<br /><em>nothing.</em></h2>
+            <p>What is left untouched<br />becomes a place.</p>
+          </div>
+        </section>
+
+        <section class="scene scene-mark" id="mark" data-scene="6" aria-labelledby="title-mark">
+          <div class="scene-copy copy-right">
+            <h2 id="title-mark">Something<br /><em>of you.</em></h2>
+            <p>Leave a trace.<br />Let the paper keep it.</p>
+            <button type="button" id="make-mark" class="line-link">Make your mark<svg viewBox="0 0 36 16" aria-hidden="true"><path d="M1 8H33M26 1L33 8L26 15" /></svg></button>
+            <div class="mark-actions"><button type="button" class="text-control" id="clear-marks" hidden>Clear marks</button><span id="mark-status" role="status" aria-live="polite"></span></div>
+          </div>
+          <button id="seal-target" class="seal-target" type="button" aria-label="Place a vermilion impression on the paper">
+            <svg class="seal-art" viewBox="0 0 80 80" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M6 5L74 7L73 74L5 72ZM11 11L11 67L67 68L68 13Z M17 18H37V25H24V34H36V42H17Z M44 18H60V27H52V36H62V44H44Z M18 48H35V57H26V64H18Z M43 49H61V63H53V57H43Z"/></svg>
+          </button>
+        </section>
+
+        <section class="scene scene-finale" id="inkscape" data-scene="7" aria-labelledby="title-finale">
+          <div class="scene-copy finale-copy">
+            <h2 id="title-finale">Nothing is<br /><em>ever blank.</em></h2>
+            <p id="finale-note">Paper, water, ink. And the space between.</p>
+            <div class="finale-links"><a href="#water" data-jump="0" class="line-link">Begin again<svg viewBox="0 0 36 16" aria-hidden="true"><path d="M1 8H33M26 1L33 8L26 15" /></svg></a><button type="button" id="about-trigger" class="line-link">About the work</button></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <nav class="chapter-rail" aria-label="Movement navigation">
+      <span class="rail-line" aria-hidden="true"></span>
+      <a href="#water" data-jump="0" aria-label="01 — Water" aria-current="step"><span>01</span></a>
+      <a href="#ink" data-jump="1" aria-label="02 — Ink"><span>02</span></a>
+      <a href="#paper" data-jump="2" aria-label="03 — Paper"><span>03</span></a>
+      <a href="#trace" data-jump="3" aria-label="04 — Trace"><span>04</span></a>
+      <a href="#fiber" data-jump="4" aria-label="05 — Fiber"><span>05</span></a>
+      <a href="#space" data-jump="5" aria-label="06 — Space"><span>06</span></a>
+      <a href="#mark" data-jump="6" aria-label="07 — Mark"><span>07</span></a>
+      <a href="#inkscape" data-jump="7" aria-label="08 — Inkscape"><span>08</span></a>
+    </nav>
+
+    <footer class="journey-footer">
+      <button type="button" class="chapter-label text-control" id="chapter-label" aria-label="Open the movement index"><span class="chapter-number">01</span><span class="chapter-separator">/</span><span class="chapter-name">Water</span></button>
+      <button type="button" id="motion-toggle" class="motion-toggle text-control" aria-pressed="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3V13M11 3V13"/></svg><span>Still mode</span></button>
+      <div class="chapter-arrows"><button id="previous" type="button" aria-label="Previous movement" disabled><svg viewBox="0 0 35 18" aria-hidden="true"><path d="M33 9H2M9 2L2 9L9 16"/></svg></button><span id="page-count">01 / 08</span><button id="next" type="button" aria-label="Next movement"><svg viewBox="0 0 35 18" aria-hidden="true"><path d="M2 9H33M26 2L33 9L26 16"/></svg></button></div>
+    </footer>
+    <div class="bottom-progress" aria-hidden="true"><span></span></div>
+
+    <dialog id="index-dialog" class="index-dialog" aria-labelledby="index-title" data-lenis-prevent>
+      <div class="dialog-top"><span class="wordmark">INKSCAPE</span><button type="button" class="close-dialog text-control" aria-label="Close index"><span>Close</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4L20 20M20 4L4 20"/></svg></button></div>
+      <div class="index-heading"><h2 id="index-title">An unfolding.</h2><p>Eight movements. One continuous sheet.</p></div>
+      <nav id="index" class="index-list" aria-label="All movements">
+        <a href="#water" data-jump="0"><span>01</span><strong>Water</strong><em>The beginning</em></a>
+        <a href="#ink" data-jump="1"><span>02</span><strong>Ink</strong><em>The spreading</em></a>
+        <a href="#paper" data-jump="2"><span>03</span><strong>Paper</strong><em>The remembering</em></a>
+        <a href="#trace" data-jump="3"><span>04</span><strong>Trace</strong><em>The gesture</em></a>
+        <a href="#fiber" data-jump="4"><span>05</span><strong>Fiber</strong><em>The unseen</em></a>
+        <a href="#space" data-jump="5"><span>06</span><strong>Space</strong><em>The untouched</em></a>
+        <a href="#mark" data-jump="6"><span>07</span><strong>Mark</strong><em>The presence</em></a>
+        <a href="#inkscape" data-jump="7"><span>08</span><strong>Inkscape</strong><em>The becoming</em></a>
+      </nav>
+      <p class="index-endnote">Take your time. The paper is listening.</p>
+    </dialog>
+
+    <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title" data-lenis-prevent>
+      <button type="button" class="close-dialog text-control" aria-label="Close about the work"><span>Close</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4L20 20M20 4L4 20"/></svg></button>
+      <h2 id="about-title">A study in<br /><em>leaving room.</em></h2>
+      <p>INKSCAPE is an interactive material study. Water becomes a boundary. Ink becomes a gesture. Paper becomes a space.</p>
+      <p>The textures are original generated studies. The spreading, bristles, fibers, folds and impressions are brought to life in your browser. Their behavior is an artistic interpretation of matter.</p>
+      <p>Move with your scroll, or use the movement index. In Trace, change the brush’s wetness. In Fiber, look closer. In Mark, leave something of yourself.</p>
+      <p class="about-credit">Typeset in Cormorant Garamond, Manrope and IBM Plex Mono. A quiet work for the open web.</p>
+    </dialog>
+
+    <noscript><div class="noscript-note">The full material experience uses JavaScript. These eight movements remain here to read.</div></noscript>
+    <script type="module" src="../../experiences/inkscape/src/main.js"></script>
+  </body>
+</html>
