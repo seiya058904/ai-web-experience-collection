@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -19,6 +19,9 @@ for (const route of routes) {
 }
 for (const file of ['glaze/LICENSE.txt', 'glaze/licenses/Archivo-OFL.txt', 'kage/LICENSE', 'kage/licenses/THIRD-PARTY-NOTICES.md', 'chronos/LICENSE', 'chronos/licenses/Cormorant-Garamond-OFL.txt', 'shared/fonts/dm-sans-latin-400-normal.woff2', 'shared/fonts/dm-sans-latin-500-normal.woff2', 'interval/LICENSE', 'interval/fonts/Bodoni-Moda-OFL.txt', 'interval/fonts/Manrope-OFL.txt', 'interval/licenses/GSAP-NOTICE.txt', 'interval/licenses/Lenis-LICENSE.txt', 'form/LICENSE', 'form/ATTRIBUTION.md', 'form/fonts/dm-sans-latin-variable.woff2', 'form/fonts/ibm-plex-mono-latin-400-normal.woff2', 'form/licenses/GSAP-STANDARD-LICENSE.txt', 'fusion/LICENSE', 'fusion/ATTRIBUTION.md', 'fusion/SOURCES.md', 'fusion/fonts/manrope-latin-wght-normal.woff2', 'fusion/fonts/ibm-plex-mono-latin-400-normal.woff2', 'fusion/licenses/GSAP-Standard.txt']) {
   assert((await stat(join(root, file))).size > 0, `Missing supplied notice: ${file}`);
+}
+for (const file of ['glasshouse/LICENSE', 'glasshouse/ATTRIBUTION.md', 'glasshouse/licenses/MANROPE-OFL.txt', 'glasshouse/licenses/GSAP-LICENSE-NOTICE.txt', 'glasshouse/fonts/manrope-latin-wght-normal.woff2', 'glasshouse/media/focused-light.png', 'veil/LICENSE', 'veil/ATTRIBUTION.md', 'veil/licenses/CORMORANT-GARAMOND-OFL.txt', 'veil/licenses/MANROPE-OFL.txt', 'veil/licenses/GSAP-STANDARD-LICENSE.txt', 'veil/fonts/cormorant-garamond-latin-300-normal.woff2', 'veil/fonts/cormorant-garamond-latin-400-normal.woff2', 'veil/fonts/manrope-latin-400-normal.woff2', 'veil/fonts/manrope-latin-500-normal.woff2', 'veil/images/cloth-study.webp', 'veil/images/light-study.webp', 'veil/images/silk-macro.webp']) {
+  assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
 }
 for (const [file, route, title] of [
   ['index.html', '', 'AI Web Experience Collection'],
@@ -32,6 +35,8 @@ for (const [file, route, title] of [
   ['interval/index.html', 'interval/', 'INTERVAL — Architecture Between Light &amp; Space'],
   ['form/index.html', 'form/', 'FORM — Objects in Space'],
   ['fusion/index.html', 'fusion/', 'FUSION — Building a Star'],
+  ['glasshouse/index.html', 'glasshouse/', 'GLASSHOUSE — Light Through Matter'],
+  ['veil/index.html', 'veil/', 'VEIL — Fabric in Motion'],
 ]) {
   const html = await readFile(join(root, file), 'utf8');
   assert(html.includes(`<title>${title}</title>`), `Incorrect document identity: ${file}`);

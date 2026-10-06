@@ -1,0 +1,151 @@
+{
+  "archive": "VEIL-Fabric-in-Motion.zip",
+  "sha256": "290a678e3ca58289d6908726dcbe13d82e6fb7846587d38b43bc4822e943c15d",
+  "bytes": 1862876,
+  "entryCount": 53,
+  "sourceLastWriteTimeUtc": "2026-10-06T05:27:42.596433+00:00",
+  "imported": [
+    {
+      "source": "VEIL-Fabric-in-Motion/src/main.ts",
+      "destination": "experiences/veil/src/main.ts"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/src/style.css",
+      "destination": "experiences/veil/src/style.css"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/src/timeline.ts",
+      "destination": "experiences/veil/src/timeline.ts"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/src/visual/geometry.ts",
+      "destination": "experiences/veil/src/visual/geometry.ts"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/src/visual/index.ts",
+      "destination": "experiences/veil/src/visual/index.ts"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/src/visual/material.ts",
+      "destination": "experiences/veil/src/visual/material.ts"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/src/visual/TextileWorld.ts",
+      "destination": "experiences/veil/src/visual/TextileWorld.ts"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/favicon.svg",
+      "destination": "public/veil/favicon.svg"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/images/cloth-study.webp",
+      "destination": "public/veil/images/cloth-study.webp"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/images/light-study.webp",
+      "destination": "public/veil/images/light-study.webp"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/images/silk-macro.webp",
+      "destination": "public/veil/images/silk-macro.webp"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/index.html",
+      "destination": "pages/veil/index.html"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/LICENSE",
+      "destination": "public/veil/LICENSE"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/ATTRIBUTION.md",
+      "destination": "provenance/veil/ATTRIBUTION.md"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/CORMORANT-GARAMOND-OFL.txt",
+      "destination": "public/veil/licenses/CORMORANT-GARAMOND-OFL.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/GSAP-NOTICE.txt",
+      "destination": "public/veil/licenses/GSAP-NOTICE.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/GSAP-STANDARD-LICENSE.txt",
+      "destination": "public/veil/licenses/GSAP-STANDARD-LICENSE.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/LENIS-LICENSE.txt",
+      "destination": "public/veil/licenses/LENIS-LICENSE.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/MANROPE-OFL.txt",
+      "destination": "public/veil/licenses/MANROPE-OFL.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/THREE-LICENSE.txt",
+      "destination": "public/veil/licenses/THREE-LICENSE.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/TYPES-THREE-LICENSE.txt",
+      "destination": "public/veil/licenses/TYPES-THREE-LICENSE.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/TYPESCRIPT-LICENSE.txt",
+      "destination": "public/veil/licenses/TYPESCRIPT-LICENSE.txt"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/licenses/VITE-LICENSE.md",
+      "destination": "public/veil/licenses/VITE-LICENSE.md"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/DESIGN.md",
+      "destination": "docs/veil/DESIGN.md"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/README.md",
+      "destination": "docs/veil/UPSTREAM-README.md"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/PRODUCT.md",
+      "destination": "provenance/veil/UPSTREAM-PRODUCT.md"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/.impeccable/design.json",
+      "destination": "provenance/veil/design.json"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/tests/timeline.test.mjs",
+      "destination": "tests/veil-timeline.test.mjs"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/cormorant-garamond-latin-300-normal-Cw-E_7L1.woff2",
+      "destination": "public/veil/fonts/cormorant-garamond-latin-300-normal.woff2"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+      "destination": "public/veil/fonts/cormorant-garamond-latin-400-normal.woff2"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+      "destination": "public/veil/fonts/manrope-latin-400-normal.woff2"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+      "destination": "public/veil/fonts/manrope-latin-500-normal.woff2"
+    }
+  ],
+  "omitted": [
+    "dist/** (except byte-identical font files absent from source)",
+    "package.json",
+    "package-lock.json",
+    "standalone build/server/startup tooling",
+    ".gitignore"
+  ],
+  "integration": [
+    "Collection base-aware document and asset URLs",
+    "shared Collection return link",
+    "existing locked runtime versions; no dependency update",
+    "preserve native reading position on document Back and reload while retaining chapter history navigation",
+    "trailing whitespace normalized in supplied VITE-LICENSE.md and TYPESCRIPT-LICENSE.txt; legal text unchanged"
+  ]
+}

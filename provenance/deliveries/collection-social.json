@@ -1,10 +1,10 @@
 {
   "path": "public/collection-social.jpg",
-  "sha256": "33c72dfbdf4f6dafe34f4649878799e6b54404603704183a0154309720aa3ed9",
-  "bytes": 175182,
+  "sha256": "fbabc9a6e3aa4d5ea89a061979b7c14c04c18a4f4a37f03f754f66f07cea5cfb",
+  "bytes": 194135,
   "width": 1200,
   "height": 630,
-  "composition": "Nine equal 400x210 center-cropped tiles, three columns by three rows, JPEG quality 90.",
+  "composition": "Eleven center-cropped native-work tiles: three triptychs and one paired row, JPEG quality 90.",
   "sources": [
     {
       "path": "public/f1/media/hero-1600.webp",
@@ -41,6 +41,14 @@
     {
       "path": "public/fusion/social.jpg",
       "sha256": "c514eb4dafa52ceeb7ef7cd88cf23d860dce8b80dd1ca84c6731a52bb7d82f50"
+    },
+    {
+      "path": "public/glasshouse/social.jpg",
+      "sha256": "4b2380aaa42d3d5976611f0d7ff174e8dc83eecffb77e6255f043674f00c68e2"
+    },
+    {
+      "path": "public/veil/social.jpg",
+      "sha256": "e801466159def34c3854652b86bbc55075e8f79da1ced1e4e1c9a34834e6818f"
     }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "archive": "VEIL-Fabric-in-Motion.zip",
+  "assets": [
+    {
+      "source": "VEIL-Fabric-in-Motion/public/favicon.svg",
+      "path": "public/veil/favicon.svg",
+      "bytes": 215,
+      "sha256": "7579def4ef1166f09ce0365bac3350a34a87a4cc21399bf9bd6f02e5477efda3"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/images/cloth-study.webp",
+      "path": "public/veil/images/cloth-study.webp",
+      "bytes": 130922,
+      "sha256": "94b3c93bb611e5d6094fd83bfe8f6413385f4d77da419247593f493f10b75b6d"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/images/light-study.webp",
+      "path": "public/veil/images/light-study.webp",
+      "bytes": 156804,
+      "sha256": "ddf8cf5c5dca2a26b84240260065615a46874e2816ed7e767fd1d7720a269968"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/public/images/silk-macro.webp",
+      "path": "public/veil/images/silk-macro.webp",
+      "bytes": 412748,
+      "sha256": "ba6f020d79b5a22d5d5400410363a1af16bb1f71df09faaf65836d84d963b53b"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/cormorant-garamond-latin-300-normal-Cw-E_7L1.woff2",
+      "path": "public/veil/fonts/cormorant-garamond-latin-300-normal.woff2",
+      "bytes": 21908,
+      "sha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/cormorant-garamond-latin-400-normal-B-1hWBU7.woff2",
+      "path": "public/veil/fonts/cormorant-garamond-latin-400-normal.woff2",
+      "bytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+      "path": "public/veil/fonts/manrope-latin-400-normal.woff2",
+      "bytes": 14108,
+      "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+    },
+    {
+      "source": "VEIL-Fabric-in-Motion/dist/assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+      "path": "public/veil/fonts/manrope-latin-500-normal.woff2",
+      "bytes": 14044,
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+    }
+  ]
+}

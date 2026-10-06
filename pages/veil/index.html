@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#e9e6df" />
+    <meta name="description" content="An original digital installation of thread, cloth and light. Scroll to weave a surface, release a fold and enter a world of soft structure." />
+    <title>VEIL — Fabric in Motion</title>
+    <link rel="icon" type="image/svg+xml" href="/veil/favicon.svg" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%veil/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:title" content="VEIL — Fabric in Motion">
+    <meta property="og:description" content="An original installation of thread, fabric, light and soft structure.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%veil/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%veil/social.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VEIL — Fabric in Motion">
+    <meta name="twitter:description" content="An original installation of thread, fabric, light and soft structure.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%veil/social.jpg">
+  </head>
+  <body>
+    <a class="skip-link" href="#thread">Skip to the studies</a>
+    <header class="site-header">
+      <a class="wordmark" href="#opening" aria-label="VEIL, return to the beginning">VEIL</a>
+      <span class="site-subtitle">Fabric in motion</span>
+      <div class="header-actions">
+        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+        <button class="motion-toggle icon-button" type="button" aria-label="Pause ambient motion" aria-pressed="false" title="Pause ambient motion">
+          <svg class="pause-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg>
+          <svg class="play-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 5 8 5-8 5Z"/></svg>
+        </button>
+        <button class="index-toggle" type="button" aria-haspopup="dialog" aria-controls="index-dialog"><span>Index</span><svg viewBox="0 0 32 18" aria-hidden="true"><path d="M1 5h30M1 13h30"/></svg></button>
+      </div>
+    </header>
+
+    <div class="stage" id="stage">
+      <div class="stage-backdrop" aria-hidden="true"></div>
+      <div class="fallback-art" aria-hidden="true">
+        <img class="fallback-cloth" src="/veil/images/cloth-study.webp" alt="" fetchpriority="high" />
+        <img class="fallback-light" src="/veil/images/light-study.webp" alt="" loading="lazy" />
+      </div>
+      <div class="hero-lettering" aria-hidden="true"><span>V</span><span>E</span><span>I</span><span>L</span></div>
+      <div class="finale-lettering" aria-hidden="true">VEIL</div>
+      <canvas id="fabric-canvas" aria-hidden="true"></canvas>
+      <div class="material-lines" aria-hidden="true">
+        <svg class="thread-mark" viewBox="0 0 460 210"><path d="M0 170C120 170 145 10 255 20S345 190 460 50"/><path d="M0 183C126 183 139 22 255 33S354 202 460 63"/><path d="M0 157C115 157 151 0 255 7S335 177 460 37"/></svg>
+      </div>
+
+      <main class="scene-stack" aria-label="VEIL, six material studies">
+        <section class="scene scene-hero is-active" data-scene="0" aria-labelledby="title-opening">
+          <h1 id="title-opening" class="sr-only">VEIL — Fabric in Motion</h1>
+          <div class="hero-copy">
+            <h2>The poetry of<br />soft structure.</h2>
+            <p>A study of cloth, light and the space between.</p>
+          </div>
+          <a class="scroll-cue" href="#thread"><span>Scroll to unfold</span><svg viewBox="0 0 16 54" aria-hidden="true"><path d="M8 1v49m-4-4 4 4 4-4"/></svg></a>
+        </section>
+
+        <section class="scene scene-thread" data-scene="1" aria-labelledby="title-thread" aria-hidden="true" inert>
+          <div class="scene-copy">
+            <h2 id="title-thread">A line becomes<br />a surface.</h2>
+            <p class="scene-label">01 <span>/</span> Thread &amp; weave</p>
+            <p class="scene-note">One thread crosses another.<br />A surface begins.</p>
+          </div>
+          <div class="material-control">
+            <label for="weave-control">Weave <span id="weave-value">Balanced</span></label>
+            <input id="weave-control" type="range" min="0" max="100" value="55" aria-label="Weave density" />
+            <div class="range-endpoints"><span>Open</span><span>Close</span></div>
+          </div>
+        </section>
+
+        <section class="scene scene-drape" data-scene="2" aria-labelledby="title-drape" aria-hidden="true" inert>
+          <div class="scene-copy">
+            <h2 id="title-drape">The shape<br />of falling.</h2>
+            <p class="scene-label">02 <span>/</span> Drape</p>
+            <p class="scene-note">Weight draws a line.<br />Tension gives it a shape.</p>
+          </div>
+          <div class="material-control">
+            <label for="tension-control">Tension <span id="tension-value">Soft</span></label>
+            <input id="tension-control" type="range" min="0" max="100" value="45" aria-label="Fabric tension" />
+            <div class="range-endpoints"><span>Release</span><span>Draw</span></div>
+          </div>
+        </section>
+
+        <section class="scene scene-light" data-scene="3" aria-labelledby="title-light" aria-hidden="true" inert>
+          <div class="scene-copy">
+            <h2 id="title-light">Light,<br />held softly.</h2>
+            <p class="scene-label">03 <span>/</span> Light</p>
+            <p class="scene-note">What passes through.<br />What stays behind.</p>
+          </div>
+          <div class="material-control">
+            <label for="light-control">Light <span id="light-value">Filtered</span></label>
+            <input id="light-control" type="range" min="0" max="100" value="66" aria-label="Light direction and intensity" />
+            <div class="range-endpoints"><span>Diffuse</span><span>Direct</span></div>
+          </div>
+        </section>
+
+        <section class="scene scene-form" data-scene="4" aria-labelledby="title-form" aria-hidden="true" inert>
+          <div class="scene-copy">
+            <h2 id="title-form">Nothing added.<br />Only a fold.</h2>
+            <p class="scene-label">04 <span>/</span> Form</p>
+            <p class="scene-note">A plane turns. An edge meets.<br />Space appears between.</p>
+          </div>
+          <button class="form-action text-action" type="button" aria-pressed="false"><span>Release the fold</span><svg viewBox="0 0 40 20" aria-hidden="true"><path d="M1 10h34m-6-6 6 6-6 6"/></svg></button>
+        </section>
+
+        <section class="scene scene-detail" data-scene="5" aria-labelledby="title-detail" aria-hidden="true" inert>
+          <div class="detail-sample"><img src="/veil/images/silk-macro.webp" alt="An original generated study of fine, interwoven ivory silk fibres." loading="lazy" width="160" height="160"/><span>Surface / structure</span></div>
+          <svg class="detail-leaders" viewBox="0 0 1536 1024" preserveAspectRatio="none" aria-hidden="true"><path d="M210 270 655 165M210 330 930 580"/><circle cx="655" cy="165" r="3"/><circle cx="930" cy="580" r="3"/></svg>
+          <span class="warp-label" aria-hidden="true">warp<svg viewBox="0 0 50 62"><path d="M24 2 12 54"/><circle cx="12" cy="54" r="2"/></svg></span>
+          <span class="weft-label" aria-hidden="true">weft<svg viewBox="0 0 80 30"><path d="m4 6 72 17"/><circle cx="4" cy="6" r="2"/></svg></span>
+          <div class="scene-copy">
+            <h2 id="title-detail">A world<br />within a thread.</h2>
+            <p class="scene-label">05 <span>/</span> Detail</p>
+            <p class="scene-note">Every surface carries<br />another, smaller world.</p>
+          </div>
+        </section>
+
+        <section class="scene scene-veil" data-scene="6" aria-labelledby="title-veil" aria-hidden="true" inert>
+          <h2 id="title-veil" class="sr-only">Veil, a space made of cloth and light</h2>
+          <div class="finale-copy">
+            <p>A little matter. An infinity of movement.</p>
+            <a class="restart text-action" href="#opening"><span>Begin again</span><svg viewBox="0 0 30 22" aria-hidden="true"><path d="M24 18V9c0-4-3-6-7-6H4m5-4L4 3l5 4" transform="translate(0 3)"/></svg></a>
+          </div>
+          <button class="notes-toggle text-action" type="button" aria-haspopup="dialog" aria-controls="notes-dialog">About this study</button>
+        </section>
+      </main>
+      <div class="fallback-message" role="status">A still study. Your browser is showing the lighter edition.</div>
+    </div>
+
+    <div class="scroll-track" aria-hidden="true">
+      <div id="opening" class="chapter-anchor"></div>
+      <div id="thread" class="chapter-anchor"></div>
+      <div id="drape" class="chapter-anchor"></div>
+      <div id="light" class="chapter-anchor"></div>
+      <div id="form" class="chapter-anchor"></div>
+      <div id="detail" class="chapter-anchor"></div>
+      <div id="veil" class="chapter-anchor"></div>
+    </div>
+
+    <footer class="journey-footer">
+      <nav class="chapter-nav" aria-label="Chapters">
+        <a href="#thread" data-chapter="1"><span>01</span> Thread</a>
+        <a href="#drape" data-chapter="2"><span>02</span> Drape</a>
+        <a href="#light" data-chapter="3"><span>03</span> Light</a>
+        <a href="#form" data-chapter="4"><span>04</span> Form</a>
+        <a href="#detail" data-chapter="5"><span>05</span> Detail</a>
+        <a href="#veil" data-chapter="6"><span>06</span> Veil</a>
+      </nav>
+      <div class="journey-rule"><span></span></div>
+      <div class="mobile-chapters"><button class="previous-chapter icon-button" aria-label="Previous chapter"><svg viewBox="0 0 24 20" aria-hidden="true"><path d="M21 10H3m6-6-6 6 6 6"/></svg></button><span class="current-chapter">VEIL / Opening</span><button class="next-chapter icon-button" aria-label="Next chapter"><svg viewBox="0 0 24 20" aria-hidden="true"><path d="M3 10h18m-6-6 6 6-6 6"/></svg></button></div>
+    </footer>
+
+    <dialog class="index-dialog" id="index-dialog" aria-labelledby="index-heading">
+      <div class="dialog-header"><span class="wordmark">VEIL</span><button class="close-dialog" type="button" aria-label="Close index"><span>Close</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M5 19 19 5"/></svg></button></div>
+      <div class="index-layout">
+        <div class="index-intro"><h2 id="index-heading">Six studies.<br />One material.</h2><p>Follow a thread. Find a form.<br />Enter anywhere, or let the work unfold.</p><svg class="index-thread" viewBox="0 0 300 130" aria-hidden="true"><path d="M0 90C105 170 72-10 164 23S169 140 300 40"/><path d="M0 96C105 176 72-4 164 29S169 146 300 46"/></svg></div>
+        <nav class="index-links" aria-label="Choose a study"><a href="#thread"><span>01</span><strong>Thread</strong><small>A line becomes a surface</small></a><a href="#drape"><span>02</span><strong>Drape</strong><small>The shape of falling</small></a><a href="#light"><span>03</span><strong>Light</strong><small>Light, held softly</small></a><a href="#form"><span>04</span><strong>Form</strong><small>Nothing added. Only a fold.</small></a><a href="#detail"><span>05</span><strong>Detail</strong><small>A world within a thread</small></a><a href="#veil"><span>06</span><strong>Veil</strong><small>A space made of cloth</small></a></nav>
+      </div>
+      <div class="index-bottom"><span>An exploration of soft structure.</span><button class="index-motion text-action" type="button">Pause ambient motion</button></div>
+    </dialog>
+
+    <dialog class="notes-dialog" id="notes-dialog" aria-labelledby="notes-heading">
+      <div class="dialog-header"><span class="wordmark">VEIL</span><button class="close-dialog" type="button" aria-label="Close study notes"><span>Close</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M5 19 19 5"/></svg></button></div>
+      <div class="notes-content"><h2 id="notes-heading">The space<br />between threads.</h2><p>VEIL is an original digital installation about the quiet architecture of cloth. A continuous surface is woven, suspended, folded and opened into light.</p><p>The forms are made in real time. Move your pointer to stir the air; use the material controls to change what you see. Each composition can be explored in either direction.</p><p class="notes-small">An artistic material study, rather than a physical textile simulation. Original generated silk studies accompany procedural geometry. Research references, asset provenance and full license notices are included in the source package.</p><button class="close-notes text-action" type="button">Return to the work<svg viewBox="0 0 40 20" aria-hidden="true"><path d="M1 10h34m-6-6 6 6-6 6"/></svg></button></div>
+    </dialog>
+    <noscript><div class="no-script">VEIL needs JavaScript for its moving installation. Enable JavaScript and reload to explore the six material studies. <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a></div></noscript>
+    <script type="module" src="../../experiences/veil/src/main.ts"></script>
+  </body>
+</html>

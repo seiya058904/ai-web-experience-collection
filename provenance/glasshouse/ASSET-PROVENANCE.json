@@ -1,0 +1,23 @@
+{
+  "archive": "GLASSHOUSE-Light-Through-Matter.zip",
+  "assets": [
+    {
+      "source": "GLASSHOUSE/public/favicon.svg",
+      "path": "public/glasshouse/favicon.svg",
+      "bytes": 250,
+      "sha256": "0d494ef67f2e0dabddcada722f620675c1670d64519ff581c86aab8c49830630"
+    },
+    {
+      "source": "GLASSHOUSE/public/fonts/manrope-latin-wght-normal.woff2",
+      "path": "public/glasshouse/fonts/manrope-latin-wght-normal.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "source": "GLASSHOUSE/src/assets/focused-light.png",
+      "path": "public/glasshouse/media/focused-light.png",
+      "bytes": 1101055,
+      "sha256": "f3447dc801f524ab04d9d5382481e12e7445ad434fe127b6f8823ef7a3e40241"
+    }
+  ]
+}

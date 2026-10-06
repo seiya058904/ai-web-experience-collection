@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T01:40:35.157778+00:00",
+  "title": "VEIL — visual and motion direction",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "material-sample",
+        "value": "10px 18px 30px rgba(63,56,43,.1)",
+        "purpose": "A soft shadow under the small generated silk sample; not a card elevation system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "fold-duration",
+        "value": "1.35s",
+        "purpose": "Deliberate release and restoration; sine.inOut easing, immediate under reduced motion."
+      },
+      {
+        "name": "fold-ease",
+        "value": "sine.inOut",
+        "purpose": "The GSAP easing for the material tension action."
+      },
+      {
+        "name": "chapter-navigation",
+        "value": "1.45s",
+        "purpose": "Direct chapter travel; the material follows the common scroll coordinate."
+      },
+      {
+        "name": "interface-transform",
+        "value": ".35s ease",
+        "purpose": "Underlines, arrows and index labels respond with small structural changes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "700px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "900px"
+      },
+      {
+        "name": "large-display-min",
+        "value": "2200px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "text-action",
+      "description": "A quiet text-and-arrow control for a fold action or a return to the work.",
+      "html": "<button class=\"ds-text-action\"><span>Release the fold</span><svg viewBox=\"0 0 40 20\" aria-hidden=\"true\"><path d=\"M1 10h34m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:22px;min-height:44px;padding:0;border:0;border-radius:0;background:transparent;color:var(--ink,#292a28);font:400 14px var(--body,Manrope,sans-serif);letter-spacing:.025em;cursor:pointer}.ds-text-action span{position:relative}.ds-text-action span:after{content:\"\";position:absolute;left:0;right:0;bottom:-7px;height:1px;background:currentColor;opacity:.4;transform-origin:left;transition:transform .35s ease}.ds-text-action svg{width:34px;height:22px;fill:none;stroke:currentColor;stroke-width:1;transition:transform .35s ease}.ds-text-action:hover span:after{transform:scaleX(.65)}.ds-text-action:hover svg{transform:translateX(5px)}.ds-text-action:focus-visible{outline:1px solid currentColor;outline-offset:7px}"
+    },
+    {
+      "name": "Index control",
+      "kind": "button",
+      "refersTo": "index-toggle",
+      "description": "Small serif navigation with two thin expanding or contracting rules.",
+      "html": "<button class=\"ds-index\"><span>Index</span><svg viewBox=\"0 0 32 18\" aria-hidden=\"true\"><path d=\"M1 5h30M1 13h30\"/></svg></button>",
+      "css": ".ds-index{display:inline-flex;align-items:center;gap:14px;min-height:44px;padding:0;border:0;border-radius:0;background:transparent;color:var(--ink,#292a28);font:400 20px var(--display,\"Cormorant Garamond\",Georgia,serif);cursor:pointer}.ds-index svg{width:36px;height:22px;fill:none;stroke:currentColor;stroke-width:1;transition:transform .3s ease;transform-origin:right}.ds-index:hover svg{transform:scaleX(.82)}.ds-index:focus-visible{outline:1px solid currentColor;outline-offset:7px}"
+    },
+    {
+      "name": "Material control",
+      "kind": "input",
+      "refersTo": "material-control",
+      "description": "A fine range track, compact labels and one precise thumb; hidden in the still edition.",
+      "html": "<label class=\"ds-material\"><span class=\"ds-material-label\">Weave <span>Balanced</span></span><input type=\"range\" min=\"0\" max=\"100\" value=\"55\" aria-label=\"Weave density\"/></label>",
+      "css": ".ds-material{display:block;width:220px;color:var(--ink,#292a28);font:400 12px var(--body,Manrope,sans-serif)}.ds-material-label{display:flex;justify-content:space-between;letter-spacing:.05em}.ds-material-label span{color:var(--muted,#64635e);font-size:.9em}.ds-material input{width:100%;height:34px;margin:4px 0 0;padding:0;background:transparent;appearance:none;-webkit-appearance:none;cursor:ew-resize}.ds-material input::-webkit-slider-runnable-track{height:1px;background:var(--line,rgba(41,42,40,.25))}.ds-material input::-moz-range-track{height:1px;background:var(--line,rgba(41,42,40,.25))}.ds-material input::-webkit-slider-thumb{appearance:none;width:8px;height:8px;margin-top:-3.5px;border:0;border-radius:50%;background:var(--ink,#292a28)}.ds-material input::-moz-range-thumb{width:8px;height:8px;border:0;border-radius:50%;background:var(--ink,#292a28)}.ds-material input:hover::-webkit-slider-thumb{box-shadow:0 0 0 5px var(--line,rgba(41,42,40,.25))}.ds-material input:focus-visible{outline:1px solid currentColor;outline-offset:7px}"
+    }
+  ],
+  "narrative": {
+    "overview": "A single continuous, full-viewport textile installation. Six material studies follow an opening composition. No cards, image galleries, shopping, manufactured statistics or brand claims. English is the exhibition language.",
+    "keyCharacteristics": [
+      "Elegant",
+      "Tactile",
+      "Airy",
+      "Luminous",
+      "Precise",
+      "Cinematic",
+      "Experimental"
+    ]
+  }
+}

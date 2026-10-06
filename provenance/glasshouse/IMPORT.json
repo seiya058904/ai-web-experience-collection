@@ -1,0 +1,124 @@
+{
+  "archive": "GLASSHOUSE-Light-Through-Matter.zip",
+  "sha256": "e5ddb69c7d8335e9fdb496dcd57eb0a387e23ede3a143c5f9ce96d1a020fca81",
+  "bytes": 2541455,
+  "entryCount": 41,
+  "sourceLastWriteTimeUtc": "2026-10-06T05:27:28.481170+00:00",
+  "imported": [
+    {
+      "source": "GLASSHOUSE/src/atmosphere.js",
+      "destination": "experiences/glasshouse/src/atmosphere.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/caustic-field.js",
+      "destination": "experiences/glasshouse/src/caustic-field.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/fallback.js",
+      "destination": "experiences/glasshouse/src/fallback.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/journey.js",
+      "destination": "experiences/glasshouse/src/journey.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/main.js",
+      "destination": "experiences/glasshouse/src/main.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/optical-pass.js",
+      "destination": "experiences/glasshouse/src/optical-pass.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/optics.js",
+      "destination": "experiences/glasshouse/src/optics.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/style.css",
+      "destination": "experiences/glasshouse/src/style.css"
+    },
+    {
+      "source": "GLASSHOUSE/src/type-plane.js",
+      "destination": "experiences/glasshouse/src/type-plane.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/ui.js",
+      "destination": "experiences/glasshouse/src/ui.js"
+    },
+    {
+      "source": "GLASSHOUSE/src/world.js",
+      "destination": "experiences/glasshouse/src/world.js"
+    },
+    {
+      "source": "GLASSHOUSE/public/favicon.svg",
+      "destination": "public/glasshouse/favicon.svg"
+    },
+    {
+      "source": "GLASSHOUSE/public/fonts/manrope-latin-wght-normal.woff2",
+      "destination": "public/glasshouse/fonts/manrope-latin-wght-normal.woff2"
+    },
+    {
+      "source": "GLASSHOUSE/index.html",
+      "destination": "pages/glasshouse/index.html"
+    },
+    {
+      "source": "GLASSHOUSE/LICENSE",
+      "destination": "public/glasshouse/LICENSE"
+    },
+    {
+      "source": "GLASSHOUSE/ATTRIBUTION.md",
+      "destination": "provenance/glasshouse/ATTRIBUTION.md"
+    },
+    {
+      "source": "GLASSHOUSE/third-party-licenses/GSAP-LICENSE-NOTICE.txt",
+      "destination": "public/glasshouse/licenses/GSAP-LICENSE-NOTICE.txt"
+    },
+    {
+      "source": "GLASSHOUSE/third-party-licenses/LENIS-LICENSE.txt",
+      "destination": "public/glasshouse/licenses/LENIS-LICENSE.txt"
+    },
+    {
+      "source": "GLASSHOUSE/third-party-licenses/MANROPE-OFL.txt",
+      "destination": "public/glasshouse/licenses/MANROPE-OFL.txt"
+    },
+    {
+      "source": "GLASSHOUSE/third-party-licenses/THREE-LICENSE.txt",
+      "destination": "public/glasshouse/licenses/THREE-LICENSE.txt"
+    },
+    {
+      "source": "GLASSHOUSE/third-party-licenses/VITE-LICENSE.md",
+      "destination": "public/glasshouse/licenses/VITE-LICENSE.md"
+    },
+    {
+      "source": "GLASSHOUSE/DESIGN.md",
+      "destination": "docs/glasshouse/DESIGN.md"
+    },
+    {
+      "source": "GLASSHOUSE/README.md",
+      "destination": "docs/glasshouse/UPSTREAM-README.md"
+    },
+    {
+      "source": "GLASSHOUSE/tests/journey.test.mjs",
+      "destination": "tests/glasshouse-journey.test.mjs"
+    },
+    {
+      "source": "GLASSHOUSE/src/assets/focused-light.png",
+      "destination": "public/glasshouse/media/focused-light.png"
+    }
+  ],
+  "omitted": [
+    "dist/** (except byte-identical font files absent from source)",
+    "package.json",
+    "package-lock.json",
+    "standalone build/server/startup tooling",
+    ".gitignore"
+  ],
+  "integration": [
+    "Collection base-aware document and asset URLs",
+    "shared Collection return link",
+    "existing locked runtime versions; no dependency update",
+    "non-persisted pagehide teardown and asynchronous startup disposal guard",
+    "mobile header spacing and text contrast in Refraction and Reflection",
+    "trailing whitespace normalized in supplied VITE-LICENSE.md; legal text unchanged"
+  ]
+}
