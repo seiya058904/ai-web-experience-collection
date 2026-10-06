@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090b" />
+    <meta name="description" content="A journey inside a human-built star. Scroll to assemble a tokamak, shape a magnetic field and bring a plasma to life. An original procedural interactive experience." />
+    <title>FUSION — Building a Star</title>
+    <link rel="icon" type="image/svg+xml" href="/fusion/favicon.svg" />
+    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%fusion/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:title" content="FUSION — Building a Star">
+    <meta property="og:description" content="An original interactive journey inside a human-built star, from magnetic confinement to a living plasma.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%fusion/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%fusion/social.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FUSION — Building a Star">
+    <meta name="twitter:description" content="An original interactive journey inside a human-built star, from magnetic confinement to a living plasma.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%fusion/social.jpg">
+  </head>
+  <body>
+    <a class="skip-link" href="#transcript">Skip to the story</a>
+    <div id="app">
+      <div class="stage" aria-hidden="true">
+        <canvas id="reactor"></canvas>
+        <div class="stage-shade"></div>
+        <div class="edge-mark edge-mark--a"></div><div class="edge-mark edge-mark--b"></div>
+      </div>
+
+      <header class="header">
+        <a href="#ignition" class="brand" aria-label="FUSION — return to the beginning">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><ellipse cx="20" cy="20" rx="17" ry="10" transform="rotate(-35 20 20)"/><ellipse cx="20" cy="20" rx="17" ry="10" transform="rotate(35 20 20)"/></svg>
+          <span>FUSION</span>
+        </a>
+        <span class="header-caption">An experiment in extraordinary energy</span>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+          <button class="text-button experience-link" id="chapters-open">The experience <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6h10M3 10h10"/></svg></button>
+          <button class="text-button" id="notes-open">Field notes <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></button>
+        </nav>
+      </header>
+
+      <main id="journey" aria-label="Eight chapters inside a tokamak">
+        <div class="copy-stage">
+          <section class="scene scene--ignition" data-scene="0" aria-labelledby="title-ignition">
+            <div class="scene-copy hero-copy">
+              <h1 id="title-ignition">Building<br>a star<span class="heat-dot">.</span></h1>
+              <p class="hero-intro">The universe does it naturally.<br>We’re learning to do it by design.</p>
+              <a class="begin-link" href="#machine"><span class="begin-line"></span><span>Scroll to ignite</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14m-5-5 5 5 5-5"/></svg></a>
+            </div>
+            <div class="hero-footnote"><span class="small-cross">+</span><span>A journey into magnetic confinement.<br>One machine. An extraordinary possibility.</span></div>
+            <div class="hero-label reactor-label"><span class="label-dot"></span>Tokamak / toroidal chamber</div>
+          </section>
+
+          <section class="scene scene--machine" data-scene="1" aria-labelledby="title-machine" inert>
+            <div class="scene-copy">
+              <h2 id="title-machine">Engineering<br>an absence.</h2>
+              <p>Before the heat, the machine.<br>A vacuum chamber. A cage of magnets.<br>A space where nothing can touch the walls.</p>
+              <button class="action-link" id="section-toggle" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 6 6-3 6 3-6 3-6-3Zm0 4 6 3 6-3M4 14l6 3 6-3"/></svg><span>Open the section</span><span class="action-end">↗</span></button>
+            </div>
+            <div class="machine-index"><span>01 / FIELD COILS</span><span>02 / VACUUM VESSEL</span><span>03 / CENTRAL SOLENOID</span><span>04 / DIVERTOR</span></div>
+            <svg class="annotation-lines" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true"><path id="solenoid-leader" d="M1030 135h60l-100 225"/><path id="coil-leader" d="M1080 690h-80l80-130"/><circle id="solenoid-anchor" cx="990" cy="360" r="2"/><circle id="coil-anchor" cx="1080" cy="560" r="2"/></svg>
+            <span class="annotation annotation--one">Central solenoid</span><span class="annotation annotation--two">Toroidal field coils</span>
+          </section>
+
+          <section class="scene scene--confinement" data-scene="2" aria-labelledby="title-confinement" inert>
+            <div class="scene-copy">
+              <h2 id="title-confinement">Nothing <br>holds it.<br><em>A field does.</em></h2>
+              <p>Two magnetic directions. One twisted path.<br>Charged particles spiral along a geometry<br>that keeps the plasma suspended.</p>
+              <div class="field-switch" role="group" aria-label="Magnetic field visualization">
+                <button data-field="0" aria-pressed="true">Helical</button><button data-field="1" aria-pressed="false">Toroidal</button><button data-field="2" aria-pressed="false">Poloidal</button>
+              </div>
+              <span class="control-caption" id="field-description">The two directions, combined.</span>
+            </div>
+            <div class="field-equation" aria-hidden="true"><span>B<sub>t</sub></span><span>+</span><span>B<sub>p</sub></span><span class="equation-line"></span><span>B</span></div>
+          </section>
+
+          <section class="scene scene--plasma" data-scene="3" aria-labelledby="title-plasma" inert>
+            <div class="scene-copy">
+              <h2 id="title-plasma"><span class="temperature-headline"><span id="big-temperature">150</span><span class="degree-mark">°</span></span><span class="plasma-title-line">million degrees.</span><span class="sr-only">Celsius, illustrative plasma temperature.</span></h2>
+              <p>Electrons break free. Nuclei race.<br>Heat turns a gas into a flowing, luminous<br>world of charged particles.</p>
+              <div class="heat-control">
+                <label for="heat-input">Heating input <output id="heat-output" for="heat-input">100%</output></label>
+                <input type="range" id="heat-input" min="0" max="100" value="100" aria-label="Illustrative heating input" />
+                <div class="range-scale"><span>LOW</span><span>HIGH</span></div>
+              </div>
+            </div>
+            <span class="temperature-unit">ILLUSTRATIVE CORE TEMPERATURE / °C</span>
+            <div class="heat-scale" aria-hidden="true"><span>CORE</span><i></i><span>EDGE</span></div>
+          </section>
+
+          <section class="scene scene--instability" data-scene="4" aria-labelledby="title-instability" inert>
+            <div class="scene-copy">
+              <h2 id="title-instability">Order has<br><em>an edge.</em></h2>
+              <p>At the boundary, a ripple grows.<br>Small disturbances can break the symmetry<br>and let heat escape its invisible cage.</p>
+              <button class="action-link" id="perturb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10h4l2-6 4 12 2-6h4"/></svg><span>Introduce a perturbation</span><span class="action-end">+</span></button>
+            </div>
+            <div class="mode-label"><span class="warning-dot"></span><span>BOUNDARY MODE / ILLUSTRATIVE</span></div>
+          </section>
+
+          <section class="scene scene--control" data-scene="5" aria-labelledby="title-control" inert>
+            <div class="scene-copy">
+              <h2 id="title-control">Meet chaos.<br>With <em>precision.</em></h2>
+              <p>Measure the deviation. Adjust the field.<br>Respond before a ripple becomes a rupture.<br>Control is a conversation that never stops.</p>
+              <button class="action-link" id="feedback-toggle" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 7a6 6 0 1 0 0 6M13 3l4 4-5 1"/></svg><span>Release feedback</span><span class="action-end">−</span></button>
+              <span class="control-caption" id="feedback-description">Feedback engaged. Boundary settling.</span>
+            </div>
+            <div class="feedback-diagram"><span>MEASURE</span><svg viewBox="0 0 42 10" aria-hidden="true"><path d="M0 5h40m-5-4 5 4-5 4"/></svg><span>RESPOND</span><svg viewBox="0 0 42 10" aria-hidden="true"><path d="M0 5h40m-5-4 5 4-5 4"/></svg><span>HOLD</span><i></i></div>
+          </section>
+
+          <section class="scene scene--star" data-scene="6" aria-labelledby="title-star" inert>
+            <div class="scene-copy">
+              <h2 id="title-star">A star.<br><em>Held here.</em></h2>
+              <p>Inside the ring, light nuclei can fuse.<br>Some energy stays to heat the plasma.<br>Some travels outward, carried by neutrons.</p>
+              <div class="reaction"><span class="isotope"><sup>2</sup>H</span><b>+</b><span class="isotope"><sup>3</sup>H</span><svg viewBox="0 0 36 12" aria-hidden="true"><path d="M0 6h34m-6-5 6 5-6 5"/></svg><span class="isotope"><sup>4</sup>He</span><b>+</b><span>n</span></div>
+              <span class="reaction-caption">D–T FUSION / 17.6 MeV PER REACTION</span>
+            </div>
+            <div class="equilibrium-seal"><span class="seal-ring"></span><span class="seal-dot"></span><span>ENERGY, CONFINED.</span></div>
+          </section>
+
+          <section class="scene scene--future" data-scene="7" aria-labelledby="title-future" inert>
+            <div class="scene-copy">
+              <h2 id="title-future">The next star<br><em>is ours to build.</em></h2>
+              <p>From a confined plasma to useful energy.<br>The path is extraordinary. The work is real.<br>The future is still being engineered.</p>
+              <a class="action-link replay-link" href="#ignition"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5a7 7 0 1 1-2 7M5 1v5H1"/></svg><span>Reignite the experience</span><span class="action-end">↗</span></a>
+            </div>
+            <div class="future-network">
+              <svg viewBox="0 0 900 100" aria-hidden="true"><defs><linearGradient id="heat-gradient"><stop stop-color="#ff9861"/><stop offset="1" stop-color="#99cfff"/></linearGradient></defs><g class="network-base"><path d="M0 50H170l30-25h110l30 25h180l30-25h90l30 25h230M0 55h170l30 25h110l30-25h180l30 25h90l30-25h230"/><circle cx="260" cy="50" r="18"/><path d="m251 41 18 18m-18 0 18-18M571 44h50v12h-50M702 50l15-15 15 15-15 15-15-15Z"/></g><path class="network-pulse" d="M0 50H170l30-25h110l30 25h180l30-25h90l30 25h230"/></svg>
+              <div><span>FUSION HEAT</span><span>HEAT EXCHANGE</span><span>GENERATION</span><span>POSSIBILITY</span></div>
+              <p>A future energy pathway. An illustrative concept, not a claim of electrical output.</p>
+            </div>
+            <span class="end-mark">FUSION<span>Building a Star</span></span>
+          </section>
+        </div>
+        <div id="scroll-markers" aria-hidden="true"></div>
+      </main>
+
+      <aside class="diagnostic" id="diagnostic" aria-label="Illustrative boundary diagnostic" hidden>
+        <div class="diagnostic-heading"><span id="diagnostic-title">BOUNDARY DEVIATION</span><span><i class="trace-dot"></i><span id="diagnostic-state">OSCILLATING</span></span></div>
+        <canvas id="trace" aria-hidden="true"></canvas>
+        <div class="diagnostic-footer"><span>t →</span><span id="deviation-number">Δ 14.0</span><span>NORMALIZED / ILLUSTRATIVE</span></div>
+      </aside>
+
+      <div class="telemetry" aria-hidden="true">
+        <div class="telemetry-number"><span id="temperature-value">10.5</span><small>M°C</small></div>
+        <span class="telemetry-label">PLASMA TEMPERATURE</span>
+        <div class="telemetry-field"><span>FIELD EXCITATION</span><span id="field-value">22.0%</span></div>
+        <div class="telemetry-bar"><i id="field-bar"></i></div>
+        <span class="illustrative-label">ILLUSTRATIVE DISCHARGE</span>
+      </div>
+
+      <footer class="controls-footer">
+        <div class="control-strip">
+          <div class="phase-status"><span class="status-dot"></span><span id="phase-status">The first filament</span></div>
+          <div class="playback-controls">
+            <button id="sound-toggle" class="utility-button" aria-pressed="false" aria-label="Turn on generative sound"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 8h3l4-4v12l-4-4H3V8Zm11-1 4 6m0-6-4 6"/></svg><span>Sound off</span></button>
+            <button id="motion-toggle" class="utility-button" aria-pressed="false" aria-label="Pause ambient motion"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4v12M13 4v12"/></svg><span>Pause</span></button>
+          </div>
+        </div>
+        <nav class="chapter-rail" aria-label="Chapters"></nav>
+        <div class="mobile-progress"><span id="mobile-chapter">01 — IGNITION</span><div><i id="mobile-progress-bar"></i></div><span>08</span></div>
+      </footer>
+
+      <dialog id="notes-dialog" class="panel-dialog" aria-labelledby="notes-title" data-lenis-prevent>
+        <div class="dialog-top"><span>FUSION / FIELD NOTES</span><button class="close-button" data-close="notes-dialog" aria-label="Close field notes"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+        <h2 id="notes-title">Inspired by physics.<br>Made of light.</h2>
+        <p>This is an original artistic interpretation of a tokamak, built entirely from geometry, shaders, particles and sound. It is not a reconstruction of a specific facility or a numerical fusion simulation.</p>
+        <div class="notes-facts"><div><span>THE MACHINE</span><p>Vertical toroidal field coils, horizontal poloidal rings and a central solenoid surround a toroidal vacuum vessel. A sectional opening reveals the plasma within.</p></div><div><span>THE FIELD</span><p>Toroidal and poloidal magnetic components combine into twisted paths. Charged particles follow these fields; uncharged fusion neutrons can leave the plasma.</p></div><div><span>THE NUMBERS</span><p>Temperature, field excitation and boundary deviation are illustrative. Colors, particle sizes, timescales and wave amplitudes are artistic. “Ignition” names the narrative beginning, not technical fusion ignition.</p></div><div><span>THE FUTURE</span><p>The final energy pathway is a concept. No net electricity, power-plant performance or real experimental discharge is claimed.</p></div></div>
+        <h3>Primary references</h3>
+        <a class="source-link" href="https://www.iter.org/machine/what-tokamak" target="_blank" rel="noreferrer">ITER <span>Inside a tokamak ↗</span></a>
+        <a class="source-link" href="https://www.iter.org/machine/magnets" target="_blank" rel="noreferrer">ITER <span>Magnetic architecture ↗</span></a>
+        <a class="source-link" href="https://www.energy.gov/science/doe-explainstokamaks" target="_blank" rel="noreferrer">U.S. Department of Energy <span>The geometry of confinement ↗</span></a>
+        <a class="source-link" href="https://www.pppl.gov/news/2024/engineers-use-ai-wrangle-fusion-power-grid" target="_blank" rel="noreferrer">Princeton Plasma Physics Laboratory <span>Instability and control ↗</span></a>
+        <div class="quality-setting"><label for="quality-select">Visual quality</label><select id="quality-select"><option value="auto">Adaptive</option><option value="high">High</option><option value="low">Economy</option></select></div>
+        <p class="notes-small" id="rendering-note">All visuals are rendered on your device. Sound is synthesized locally and starts only when enabled.</p>
+        <div class="dialog-bottom"><span>ORIGINAL PROCEDURAL ARTWORK</span><span>FUSION / 2026</span></div>
+      </dialog>
+
+      <dialog id="chapters-dialog" class="panel-dialog chapters-dialog" aria-labelledby="chapters-title" data-lenis-prevent>
+        <div class="dialog-top"><span>FUSION / THE EXPERIENCE</span><button class="close-button" data-close="chapters-dialog" aria-label="Close chapter navigation"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+        <h2 id="chapters-title">Inside a<br>human-built star.</h2><nav id="chapter-menu" aria-label="Choose a chapter"></nav>
+        <p class="notes-small">Scroll, swipe, or use Page Up / Page Down to move through the experience. Every chapter can be explored in either direction.</p>
+      </dialog>
+
+      <div id="live-announcement" class="sr-only" aria-live="polite"></div>
+      <article id="transcript" class="story-transcript" tabindex="-1" data-lenis-prevent>
+        <h2>The story of FUSION</h2>
+        <p>A procedural journey through eight stages of magnetic-confinement fusion. The visuals and readings are illustrative.</p>
+        <ol><li><h3>Ignition</h3><p>A first current starts the narrative. The word “ignition” here means the beginning of the experience.</p></li><li><h3>The machine</h3><p>A vacuum chamber, toroidal and poloidal field coils, central solenoid and divertor surround the plasma.</p></li><li><h3>Confinement</h3><p>Toroidal and poloidal magnetic fields form twisted paths that help confine charged plasma particles away from the walls.</p></li><li><h3>Plasma</h3><p>Heating ionizes the gas and energizes its particles. The experience illustrates a temperature approaching 150 million degrees Celsius.</p></li><li><h3>Instability</h3><p>Disturbances can disrupt magnetic confinement and increase energy loss.</p></li><li><h3>Control</h3><p>Measurements inform adjustments to magnetic fields and heating to manage the plasma boundary.</p></li><li><h3>Star</h3><p>Deuterium and tritium can fuse into helium-4 and a neutron, releasing 17.6 MeV per reaction. Charged helium can heat the plasma. Neutrons carry energy outward.</p></li><li><h3>Future</h3><p>Future fusion plants aim to turn captured heat into useful electricity. This artwork does not claim net power or plant performance.</p></li></ol>
+        <a href="#ignition">Return to the visual experience</a>
+      </article>
+    </div>
+    <noscript><style>.stage,.header,#journey,.telemetry,.controls-footer,.diagnostic,.skip-link{display:none!important}.story-transcript{position:relative!important;width:auto!important;height:auto!important;clip-path:none!important;padding:40px!important;overflow:visible!important}</style><p style="padding:0 40px 40px;color:#aeb0b5">Enable JavaScript to enter the interactive reactor.</p></noscript>
+    <script type="module" src="../../experiences/fusion/src/main.ts"></script>
+  </body>
+</html>

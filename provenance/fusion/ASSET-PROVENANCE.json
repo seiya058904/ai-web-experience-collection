@@ -1,0 +1,15 @@
+{
+  "sourceArchive": "FUSION-Building-a-Star.zip",
+  "sourceArchiveSha256": "90e652c62f07fd4d0174100c74754e4a54b63bf866087fad5b7d52fc07c1aebc",
+  "preview": {
+    "path": "public/fusion/social.jpg",
+    "sha256": "c514eb4dafa52ceeb7ef7cd88cf23d860dce8b80dd1ca84c6731a52bb7d82f50",
+    "bytes": 110768,
+    "width": 1200,
+    "height": 630,
+    "capturedFrom": "Production preview at /ai-web-experience-collection/fusion/",
+    "viewport": "1200x630 CSS pixels",
+    "scene": "Opening composition after the supplied experience initialized",
+    "format": "JPEG quality 90, rendered from the actual experience; no outside artwork"
+  }
+}

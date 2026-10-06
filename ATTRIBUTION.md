@@ -76,3 +76,7 @@ GLAZE、KAGE、CHRONOS 与 INTERVAL 交付 ZIP 的逐项字节和 SHA-256 保存
 用户提供的完整独立建筑旅程。原创代码和文字继续适用 [MIT](public/interval/LICENSE)，原始 [素材与研究说明](provenance/interval/ATTRIBUTION.md)、[逐图来源](provenance/interval/ASSET-PROVENANCE.json)、[字体来源](provenance/interval/font-provenance.json) 和 [第三方通知](public/interval/THIRD-PARTY-NOTICES.md) 均保留。六组建筑图像描绘虚构海边建筑，未使用研究官网摄影。12 张 WebP 与四份 Bodoni Moda/Manrope WOFF2 均按交付原字节导入，字体使用 OFL。GSAP 3.15.0 与 Lenis 1.3.26 复用 Collection 已锁定版本；原交付 Vite 7 独立构建由现有共享 Vite 8 多页面流程取代，无依赖升级。
 
 原始 ZIP 保留在仓库外 `D:/下载/INTERVAL-Architecture-Experience.zip`，不提交或部署。逐项文件大小与 SHA-256 保存在导入清单；元数据 sidecar、字体下载记录和设计依据归入 `provenance/interval/`，不随网站部署。
+
+## FORM and FUSION — 2026-10-06
+
+The supplied [FORM](public/form/ATTRIBUTION.md) and [FUSION](public/fusion/ATTRIBUTION.md) projects retain their MIT licenses, design/scientific references, GSAP terms, and local font/library notices. Their original ZIP entry hashes are preserved in the import manifest. Runtime code and fonts are integrated without standalone `dist/` builds or nested package lockfiles; both use the Collection's root dependency lockfile. FORM's measurements remain conceptual. FUSION's field, temperature, stability and output values remain illustrative, not experimental data or a plasma simulation. Collection previews are captured from the supplied runtimes and tracked in each work's provenance.

@@ -1,0 +1,25 @@
+{
+  "archive": "FUSION-Building-a-Star.zip",
+  "imported": [
+    "src/**",
+    "index.html",
+    "DESIGN.md",
+    "SOURCES.md",
+    "VALIDATION.md",
+    "LICENSE",
+    "ATTRIBUTION.md",
+    "licenses/**",
+    "public/favicon.svg",
+    "public/fonts/**"
+  ],
+  "omitted": [
+    "dist/**",
+    "package.json",
+    "package-lock.json",
+    "standalone build/server tooling"
+  ],
+  "sha256": "90e652c62f07fd4d0174100c74754e4a54b63bf866087fad5b7d52fc07c1aebc",
+  "bytes": 385423,
+  "entryCount": 38,
+  "sourceLastWriteTimeUtc": "2026-10-05T15:16:40.9820407Z"
+}

@@ -1,0 +1,46 @@
+{
+  "path": "public/collection-social.jpg",
+  "sha256": "33c72dfbdf4f6dafe34f4649878799e6b54404603704183a0154309720aa3ed9",
+  "bytes": 175182,
+  "width": 1200,
+  "height": 630,
+  "composition": "Nine equal 400x210 center-cropped tiles, three columns by three rows, JPEG quality 90.",
+  "sources": [
+    {
+      "path": "public/f1/media/hero-1600.webp",
+      "sha256": "689715491c3fd63ac889d4ab359a4f5df4ce39d571fdb8710946b01d8c3d2d3d"
+    },
+    {
+      "path": "public/verdant/images/pavilion-1672.webp",
+      "sha256": "6de8a46274b983719f2529f24a3080eff1e362e0a4b1e0761b7b16c96742783a"
+    },
+    {
+      "path": "public/orbital/media/hero-earth.webp",
+      "sha256": "739f428493eec24f0d7b7a5eba2d733c33561f84db7e55a1d834dfefe83ec3fe"
+    },
+    {
+      "path": "public/glaze/media/celadon.webp",
+      "sha256": "007c43003812a322f7ae5a5512f9ae06bfa340039395f612302418383e046a1b"
+    },
+    {
+      "path": "public/kage/social.jpg",
+      "sha256": "d2e7d664a6f8d3bbd5b58dc305262303792edf1e6ec72601cdc4f549a3ef758c"
+    },
+    {
+      "path": "public/chronos/images/chronos-watch.webp",
+      "sha256": "0fa7de91116ab3c2644e5c6822a8b8aac5568554dd2b2fa52793a0cab197df55"
+    },
+    {
+      "path": "public/interval/images/threshold.webp",
+      "sha256": "9866af099db70f86c4760c38f2c4cea4d621e753ff5de73a1b713d99ccc6dc26"
+    },
+    {
+      "path": "public/form/social.jpg",
+      "sha256": "20e2e339263f2f98df5a6f4f40564476beac840d971fc3deaa1056038c86395d"
+    },
+    {
+      "path": "public/fusion/social.jpg",
+      "sha256": "c514eb4dafa52ceeb7ef7cd88cf23d860dce8b80dd1ca84c6731a52bb7d82f50"
+    }
+  ]
+}

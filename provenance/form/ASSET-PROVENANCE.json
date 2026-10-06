@@ -1,0 +1,15 @@
+{
+  "sourceArchive": "FORM-Objects-in-Space.zip",
+  "sourceArchiveSha256": "4707c2a24998dbf79fe25db853f44446eeefb9671ac340a288a593059ead94b8",
+  "preview": {
+    "path": "public/form/social.jpg",
+    "sha256": "20e2e339263f2f98df5a6f4f40564476beac840d971fc3deaa1056038c86395d",
+    "bytes": 50860,
+    "width": 1200,
+    "height": 630,
+    "capturedFrom": "Production preview at /ai-web-experience-collection/form/",
+    "viewport": "1200x630 CSS pixels",
+    "scene": "Opening composition after the supplied experience initialized",
+    "format": "JPEG quality 90, rendered from the actual experience; no outside artwork"
+  }
+}

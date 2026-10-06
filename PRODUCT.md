@@ -25,13 +25,15 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 - **KAGE / VOID** (`/kage/`): a continuous sculpture of light, shadow and space.
 - **CHRONOS** (`/chronos/`): the architecture of time inside an original mechanical watch.
 - **INTERVAL** (`/interval/`): architecture between light and space, through six original material and spatial studies.
+- **FORM** (`/form/`): three original furniture objects, their structure, materials and assembly.
+- **FUSION** (`/fusion/`): an illustrative journey through tokamak engineering, magnetic confinement and plasma.
 
 ## Capabilities and Constraints
 
 - A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
 - Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
-- Preserve the accepted imagery, typography, controls, timing and content of all seven works. Do not impose a common visual theme or expand the entrance into another story.
-- One Lenis instance and one owned clock per experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS and INTERVAL; the supplied RAF for KAGE. Retain rendering caps, visibility suspension, teardown and read-position retention.
+- Preserve the accepted imagery, typography, controls, timing and content of all nine works. Do not impose a common visual theme or expand the entrance into another story.
+- One Lenis instance and one owned clock per experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM and FUSION; the supplied RAF for KAGE. Retain rendering caps, visibility suspension, teardown and read-position retention.
 - Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
 - Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
 - F1 educational sources and distinctions between current 2026 systems and historical DRS remain specific to Beyond the Limit.
@@ -39,11 +41,11 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 
 ## Brand Commitments
 
-The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects seven distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, KAGE's spatial sculpture, CHRONOS's metal, light and mechanical time, and INTERVAL's architectural passage. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and [F1's design contract](docs/f1/DESIGN.md).
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects nine distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, KAGE's spatial sculpture, CHRONOS's metal, light and mechanical time, INTERVAL's architectural passage, FORM's warm object studio, and FUSION's dark tokamak laboratory. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
 
 ## Evidence on Hand
 
-The seven supplied experiences are accepted complete works. Twenty-nine model/continuity tests and production-reference verification are maintained. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
+The nine supplied experiences are accepted complete works. Forty-four model/continuity tests and production-reference verification are maintained at this revision. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 

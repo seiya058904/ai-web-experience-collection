@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#eeeae3" />
+    <meta name="description" content="A study of what makes a thing. An original, interactive journey through outline, proportion, structure, material and light." />
+    <title>FORM — Objects in Space</title>
+    <link rel="icon" type="image/svg+xml" href="/form/favicon.svg" />
+    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%form/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:title" content="FORM — Objects in Space">
+    <meta property="og:description" content="Three original objects. Eight ways of looking. One continuous world of form, structure, material and light.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%form/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%form/social.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FORM — Objects in Space">
+    <meta name="twitter:description" content="Three original objects. Eight ways of looking. One continuous world of form, structure, material and light.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%form/social.jpg">
+  </head>
+  <body>
+    <a class="skip-link" href="#chapter-index">Skip to chapter index</a>
+    <main id="experience" aria-label="FORM — Objects in Space">
+      <div id="stage">
+        <div id="stage-backdrop" aria-hidden="true"></div>
+        <div class="hero-word" aria-hidden="true">FORM</div>
+        <canvas id="world" aria-label="Interactive original furniture sculptures"></canvas>
+        <svg id="drawing" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div id="scene-copy"></div>
+        <div id="scene-controls"></div>
+        <div id="object-caption" aria-hidden="true"></div>
+        <button class="begin-cue" type="button" data-go="proportion">
+          <svg viewBox="0 0 24 36" aria-hidden="true"><path d="M12 1v31m-8-8 8 9 8-9"/></svg>
+          <span>Scroll to explore</span>
+        </button>
+        <div id="orbit-area" role="group" aria-label="Orbit the final objects" hidden>
+          <button type="button" id="orbit-left" aria-label="Rotate objects left"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+          <span>Drag to orbit</span>
+          <button type="button" id="orbit-right" aria-label="Rotate objects right"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+        </div>
+        <div class="loading-note" id="loading-note" role="status">Setting the scene<span>…</span></div>
+      </div>
+      <div id="chapter-markers" class="chapter-markers"></div>
+    </main>
+    <header class="site-header">
+      <a class="wordmark" href="#outline" aria-label="FORM — back to the beginning">FORM</a>
+      <span class="header-rule" aria-hidden="true"></span>
+      <span class="site-name">Objects in Space</span>
+      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="index-toggle" type="button" aria-controls="index-dialog" aria-expanded="false">
+        <span>Index</span><svg viewBox="0 0 34 22" aria-hidden="true"><path d="M1 5h32M1 17h32"/></svg>
+      </button>
+    </header>
+    <nav id="chapter-index" class="chapter-rail" aria-label="Chapters"></nav>
+    <dialog id="index-dialog" aria-labelledby="index-title">
+      <div class="index-top"><a href="#outline" class="wordmark">FORM</a><button class="index-close" aria-label="Close chapter index"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m5 5 18 18M23 5 5 23"/></svg></button></div>
+      <div class="index-intro"><h2 id="index-title">A study of<br>what makes a thing.</h2><p>Eight ways of looking.<br>One continuous world.</p></div>
+      <nav class="index-links" aria-label="Jump to a chapter"></nav>
+      <div class="index-bottom"><span>Three original objects. A shared geometry.</span><button id="motion-toggle" type="button" aria-pressed="false">Reduce motion</button></div>
+    </dialog>
+    <section id="fallback" hidden aria-labelledby="fallback-title">
+      <h1 id="fallback-title">FORM<br><span>Objects in Space</span></h1>
+      <p>This experience needs WebGL 2 to render its objects. Enable hardware acceleration in your browser, then reload.</p>
+      <button type="button" id="retry-world">Try again</button>
+      <div class="fallback-chapters"></div>
+    </section>
+    <div class="sr-only" id="chapter-announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+    <noscript><section class="no-script"><h1>FORM — Objects in Space</h1><p>A study of outline, proportion, structure, material, light, detail and assembly. Enable JavaScript to explore the interactive object world.</p></section></noscript>
+    <script type="module" src="../../experiences/form/src/main.js"></script>
+  </body>
+</html>

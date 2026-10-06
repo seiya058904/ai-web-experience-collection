@@ -1255,6 +1255,408 @@
           "sha256": "2e5255e977c38a50809c5438e3b93707b4fb2907b8483a0813b6d9e987f74873"
         }
       ]
+    },
+    {
+      "sha256": "4707c2a24998dbf79fe25db853f44446eeefb9671ac340a288a593059ead94b8",
+      "entries": [
+        {
+          "sha256": "cb3540e6dd201687225d302882138e36ff621db65021171e31766f18a3e72ee7",
+          "bytes": 86,
+          "path": "FORM/.gitignore"
+        },
+        {
+          "sha256": "af1c19f76c74f2c6109662b7c4b19e1aa39935b238c0ba4bac1302b3d1ca621c",
+          "bytes": 5321,
+          "path": "FORM/ATTRIBUTION.md"
+        },
+        {
+          "sha256": "5b62bee874fcc621ad0ac4fdc837db06d938569f38dc3b4463e2001eff0d0ca9",
+          "bytes": 1074,
+          "path": "FORM/LICENSE"
+        },
+        {
+          "sha256": "3459df34ce2cfcccb3973b6a8e6c50fff29382f2bc7d567f6ae6432119e6eeed",
+          "bytes": 12712,
+          "path": "FORM/README.md"
+        },
+        {
+          "sha256": "cb6cfcd2d68e75a4f02d240ad8262d736866b8be2194df0a12eca8887b797060",
+          "bytes": 276,
+          "path": "FORM/START.bat"
+        },
+        {
+          "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+          "bytes": 36932,
+          "path": "FORM/dist/assets/dm-sans-latin-wght-normal-Xz1IZZA0.woff2"
+        },
+        {
+          "sha256": "d2d561a35404f171ee62c41291f410c68105b4392137deb79733d75d418b7762",
+          "bytes": 580563,
+          "path": "FORM/dist/assets/engine-aptJk7Rk.js"
+        },
+        {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "bytes": 14708,
+          "path": "FORM/dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2"
+        },
+        {
+          "sha256": "18f9191a4c3632ff7592262fad4affcf566d956667455c9473efff7eb1cd1f41",
+          "bytes": 20479,
+          "path": "FORM/dist/assets/index-BPXJjm04.css"
+        },
+        {
+          "sha256": "dc0eb04bda5deaa17d226b0f9205eb0154eebbb745ac9fa97ed4138855db410d",
+          "bytes": 65578,
+          "path": "FORM/dist/assets/index-CLUacI1c.js"
+        },
+        {
+          "sha256": "fdbeebaa12dcf8823352cb6992f4f664e4e4bac24e42e4c45b4e616db5a24741",
+          "bytes": 131466,
+          "path": "FORM/dist/assets/motion-Br22T7KJ.js"
+        },
+        {
+          "sha256": "7156473bac2d1c3c3900b28d2d3bb052ca2d7291fec03288970a8d57405ab5a9",
+          "bytes": 457,
+          "path": "FORM/dist/assets/motion-fOJvfYOR.css"
+        },
+        {
+          "sha256": "e719acd70e258624844503732c628088390ca2a4b9e41671b472ed9a4c0c5f05",
+          "bytes": 178,
+          "path": "FORM/dist/favicon.svg"
+        },
+        {
+          "sha256": "9037f482f6bd611b220dc846807cae654dc612fc98596571dc1d7e9daf042561",
+          "bytes": 4405,
+          "path": "FORM/dist/index.html"
+        },
+        {
+          "sha256": "0ec2e33a32bae7794b9d7dc1034523afc5ae1446d64d4ccd866e59cd6f5f0e7a",
+          "bytes": 8268,
+          "path": "FORM/docs/DESIGN.md"
+        },
+        {
+          "sha256": "0be574ef63a71ff5fcf6c5c42d96cd7e3eb9d608a7ed11549828afc1e1e5f1b7",
+          "bytes": 4072,
+          "path": "FORM/index.html"
+        },
+        {
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+          "bytes": 4502,
+          "path": "FORM/licenses/DM-SANS-OFL.txt"
+        },
+        {
+          "sha256": "79ffc44c3699d65c45915b4e665bd97df16c8ba410cb6bd1874b9abd435a02c9",
+          "bytes": 1354,
+          "path": "FORM/licenses/GSAP-NOTICE.txt"
+        },
+        {
+          "sha256": "62c703a903cd4a85c88abb611a89c0446f1f4d9e9019fb84278b68c2ac54ca88",
+          "bytes": 4345,
+          "path": "FORM/licenses/GSAP-STANDARD-LICENSE.txt"
+        },
+        {
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "bytes": 5299,
+          "path": "FORM/licenses/IBM-PLEX-MONO-OFL.txt"
+        },
+        {
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+          "bytes": 1096,
+          "path": "FORM/licenses/LENIS-LICENSE.txt"
+        },
+        {
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+          "bytes": 1081,
+          "path": "FORM/licenses/THREE-LICENSE.txt"
+        },
+        {
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+          "bytes": 108786,
+          "path": "FORM/licenses/VITE-LICENSE.md"
+        },
+        {
+          "sha256": "53a7485f2e19811369c7d0bf080d868ce7e3e70f43f99917fe588c113e2fed44",
+          "bytes": 27506,
+          "path": "FORM/package-lock.json"
+        },
+        {
+          "sha256": "b52aa4d5aacbd25526a7ec95456e6efd91f4dd86faddf06f7c60ee8eaeb6bc99",
+          "bytes": 682,
+          "path": "FORM/package.json"
+        },
+        {
+          "sha256": "e719acd70e258624844503732c628088390ca2a4b9e41671b472ed9a4c0c5f05",
+          "bytes": 178,
+          "path": "FORM/public/favicon.svg"
+        },
+        {
+          "sha256": "82a6b85c453d9f95464b6f44763f37955841425b2ae16e9a908e010ba4215c53",
+          "bytes": 6170,
+          "path": "FORM/scripts/serve.mjs"
+        },
+        {
+          "sha256": "aeb8657ca6dc591199bc86f1fe42a313000d712e99675d23a680249ccf52e652",
+          "bytes": 8078,
+          "path": "FORM/src/director.js"
+        },
+        {
+          "sha256": "59d8c3a6e36494f04329698721e54299b00f44ec53e105d762b78f2479fbc0e0",
+          "bytes": 9714,
+          "path": "FORM/src/main.js"
+        },
+        {
+          "sha256": "e11f22b4f61e276334ffc759f0f75faa4719d9e7d5b92c153e08e27c0ad7ebb4",
+          "bytes": 21102,
+          "path": "FORM/src/styles.css"
+        },
+        {
+          "sha256": "2eb5cba4313defe480d8cbe8ba1892eaf1a51630d275461df56e1b381a8448d0",
+          "bytes": 15702,
+          "path": "FORM/src/ui.js"
+        },
+        {
+          "sha256": "3f6070c31db6411b6a6c2ab291a0c893908d59d3452b59e172746305d6e27484",
+          "bytes": 21164,
+          "path": "FORM/src/world/chair.js"
+        },
+        {
+          "sha256": "8fa38e3465c8f8d449178c4e9e70b7fdb8a4f0f2c3237ad9bed5ab8071b40931",
+          "bytes": 17248,
+          "path": "FORM/src/world/drafting.js"
+        },
+        {
+          "sha256": "a35159aa2a6f5b2e427f2ce18f54ca465f99a590a6b780b62e45815b62ff9609",
+          "bytes": 13823,
+          "path": "FORM/src/world/materials.js"
+        },
+        {
+          "sha256": "7027bfd1a7b99b91c579eced13dd065e2f5c5cea1b5666109e344a024531a126",
+          "bytes": 24930,
+          "path": "FORM/src/world/objects.js"
+        },
+        {
+          "sha256": "9ec971193dcf2980490780fe50511fa7b0cd9a234d056ffd8d6ef0c133f0326d",
+          "bytes": 14362,
+          "path": "FORM/src/world/world.js"
+        },
+        {
+          "sha256": "5b7359ed797f032a020211595a7c60c306e8864b0bb666080dae54ab0c3b4352",
+          "bytes": 3393,
+          "path": "FORM/tests/director.test.js"
+        },
+        {
+          "sha256": "55a75190a4d91b20535a0c7b09b8be996158239487676aba87bcbcbfc9e8561e",
+          "bytes": 7061,
+          "path": "FORM/tests/objects.test.js"
+        },
+        {
+          "sha256": "778fce6509486c40838f46feeb8e90ec3efd2f8917e81f5336adf5262244c62a",
+          "bytes": 3752,
+          "path": "FORM/tests/server.test.js"
+        },
+        {
+          "sha256": "31e777f06d759d663e378f5e64909302189de03bd5011e4a9284c84eab4539e7",
+          "bytes": 563,
+          "path": "FORM/vite.config.js"
+        }
+      ],
+      "archive": "FORM-Objects-in-Space.zip"
+    },
+    {
+      "sha256": "90e652c62f07fd4d0174100c74754e4a54b63bf866087fad5b7d52fc07c1aebc",
+      "entries": [
+        {
+          "sha256": "52340c69f923bf0b9970a8ab624686800c33c34425e44b18483cf958a649f8b1",
+          "bytes": 76,
+          "path": "FUSION/.gitignore"
+        },
+        {
+          "sha256": "a39d40c83338bd9a1c802d207d61febfdca4124ae47d8fd0eb4ccc1a291ce99f",
+          "bytes": 3827,
+          "path": "FUSION/ATTRIBUTION.md"
+        },
+        {
+          "sha256": "f2bb5aaf1daa1db1678fe0279ae2fa3a440e5e14985e81a688c5ed0fc9bafd1f",
+          "bytes": 8805,
+          "path": "FUSION/DESIGN.md"
+        },
+        {
+          "sha256": "182ce3a65d5888d2859e136f7ba2db47b49795ac82370d60d10351ee51d52e29",
+          "bytes": 1370,
+          "path": "FUSION/LICENSE"
+        },
+        {
+          "sha256": "41df9feb845916c1a2e8cc8d74bf67e702e4be0c495833e846b2f89369e8dd53",
+          "bytes": 7064,
+          "path": "FUSION/README.md"
+        },
+        {
+          "sha256": "9897213d7edcae73a4ffbea3ce78f7f9c44190115aef6c5157e31002f9e7c72b",
+          "bytes": 6054,
+          "path": "FUSION/SOURCES.md"
+        },
+        {
+          "sha256": "6f9ef74a08d3025a90e30f44a10278000b4b75a1ffb236de1390b22b33e2c1f5",
+          "bytes": 270,
+          "path": "FUSION/START-FUSION.bat"
+        },
+        {
+          "sha256": "fb8a2c1b25ed275dad969bd6fc56a24c55dcfb639466df5b8545c51ed5dd8972",
+          "bytes": 6269,
+          "path": "FUSION/VALIDATION.md"
+        },
+        {
+          "sha256": "29133a79b4b9558d04a3f86a0c01f29c94d45de48f3b8e0f6011b154a3da491e",
+          "bytes": 57108,
+          "path": "FUSION/dist/assets/index-BbXh6R_T.js"
+        },
+        {
+          "sha256": "1e9aa35b6c50576a918ad81bf2915e4287b561d4a1937d3a19eb2ea87c164437",
+          "bytes": 30001,
+          "path": "FUSION/dist/assets/index-Y9bUtLqv.css"
+        },
+        {
+          "sha256": "aa5f8b8f28e1dfed91e26f698f8f8d94cd5abf99fbd632a38491fd2cd026b9a7",
+          "bytes": 130696,
+          "path": "FUSION/dist/assets/motion-ClvSw4Nl.js"
+        },
+        {
+          "sha256": "24fe8b198abcd8d6bf62b1e8975c6353afc95b5aad6d377cecf4d2e68d58885e",
+          "bytes": 526588,
+          "path": "FUSION/dist/assets/reactor-engine-D2nOLtLr.js"
+        },
+        {
+          "sha256": "71142403d35759171a8c260a0f3cd121d733e1c9d824f1a60d134353dc9b3aa1",
+          "bytes": 362,
+          "path": "FUSION/dist/favicon.svg"
+        },
+        {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "bytes": 14708,
+          "path": "FUSION/dist/fonts/ibm-plex-mono-latin-400-normal.woff2"
+        },
+        {
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+          "bytes": 24836,
+          "path": "FUSION/dist/fonts/manrope-latin-wght-normal.woff2"
+        },
+        {
+          "sha256": "d667c5ff85000420c063c9c8d4a802465cc050404dfa9645db2b6fe1532ee911",
+          "bytes": 18369,
+          "path": "FUSION/dist/index.html"
+        },
+        {
+          "sha256": "e2caf7e12802c221850855823af8a1314b1222302ade23a994f8001df05bff8c",
+          "bytes": 18104,
+          "path": "FUSION/index.html"
+        },
+        {
+          "sha256": "f73f3bd3451ce0b70bbcc2cc34323768b6132bb5da1f187904406c8c3ff160ca",
+          "bytes": 518,
+          "path": "FUSION/licenses/GSAP-Standard.txt"
+        },
+        {
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "bytes": 5299,
+          "path": "FUSION/licenses/IBM-Plex-Mono-OFL.txt"
+        },
+        {
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+          "bytes": 1096,
+          "path": "FUSION/licenses/Lenis-MIT.txt"
+        },
+        {
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+          "bytes": 4383,
+          "path": "FUSION/licenses/Manrope-OFL.txt"
+        },
+        {
+          "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+          "bytes": 1081,
+          "path": "FUSION/licenses/Three-MIT.txt"
+        },
+        {
+          "sha256": "79502d82e18c8265d2ba0f5d8714eec66bdc124e80546a5d4c51be20059aab80",
+          "bytes": 101549,
+          "path": "FUSION/licenses/Vite-MIT.txt"
+        },
+        {
+          "sha256": "0cffedcafa9da06ae11e9585a00ff899b410c96e4bc31b6e0696aa8e36dac5e2",
+          "bytes": 39722,
+          "path": "FUSION/package-lock.json"
+        },
+        {
+          "sha256": "5099a529f2805983630d216dae8eec2662cf0f5a36a19aeade7e8ba54dddc71d",
+          "bytes": 719,
+          "path": "FUSION/package.json"
+        },
+        {
+          "sha256": "71142403d35759171a8c260a0f3cd121d733e1c9d824f1a60d134353dc9b3aa1",
+          "bytes": 362,
+          "path": "FUSION/public/favicon.svg"
+        },
+        {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "bytes": 14708,
+          "path": "FUSION/public/fonts/ibm-plex-mono-latin-400-normal.woff2"
+        },
+        {
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+          "bytes": 24836,
+          "path": "FUSION/public/fonts/manrope-latin-wght-normal.woff2"
+        },
+        {
+          "sha256": "8237dbea7bf6b03fc1082ce940e7326690d37fc333784ac3a9dec04b54e84b7b",
+          "bytes": 3047,
+          "path": "FUSION/scripts/serve.mjs"
+        },
+        {
+          "sha256": "4b6145daadad10b3b7a7824992734325435e43054d97155cf89054910022c41f",
+          "bytes": 3205,
+          "path": "FUSION/src/audio.ts"
+        },
+        {
+          "sha256": "d54c2a0e8f6e798e9ae68b44e99924ffb5d9e4d4bc88cd9977c5ae41ca4a80f4",
+          "bytes": 18220,
+          "path": "FUSION/src/fallback.ts"
+        },
+        {
+          "sha256": "904dbfd67f2b8c9fda220ca51893e2d5c955db614accdcce3e442e8d02a960ab",
+          "bytes": 22241,
+          "path": "FUSION/src/main.ts"
+        },
+        {
+          "sha256": "c9476d1833e529abe03bf6cf3afbb7e7695668a89ee23b0dbba8ce74fa517660",
+          "bytes": 50498,
+          "path": "FUSION/src/reactor.ts"
+        },
+        {
+          "sha256": "89d9fcd63c910c1141ddf6b875cad1d3f3b7aaf740d2fa2feaa68fea4404a488",
+          "bytes": 34539,
+          "path": "FUSION/src/styles.css"
+        },
+        {
+          "sha256": "ba37371583b6f6528fb820794e479bed32e90c72303b150d1f42ea76aede33a2",
+          "bytes": 4102,
+          "path": "FUSION/src/timeline.ts"
+        },
+        {
+          "sha256": "2b9ed8f6c1981fa2b14a1820c52bb4a2b4b94b41ae20cfb0af16bda2e0a35112",
+          "bytes": 3063,
+          "path": "FUSION/tests/timeline.test.ts"
+        },
+        {
+          "sha256": "93d51a564084fe717e7f285df12fed79d14629bf1800515b2ef4a9290f7d0150",
+          "bytes": 335,
+          "path": "FUSION/tsconfig.json"
+        },
+        {
+          "sha256": "dfc4d4b7e62876d1de4dc5cca89c374c9d193348d722b5c534d1dc4ab9908c9e",
+          "bytes": 480,
+          "path": "FUSION/vite.config.ts"
+        }
+      ],
+      "archive": "FUSION-Building-a-Star.zip"
     }
   ]
 }
