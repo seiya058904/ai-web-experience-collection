@@ -2,12 +2,13 @@ import './style.css';
 import '../../shared/collection-return.css';
 import 'lenis/dist/lenis.css';
 import Lenis from 'lenis';
-import { SCENES, clamp, mix, smoothstep, presentationAt, progressFromScroll } from './timeline.js';
+import { SCENES, clamp, mix, smoothstep, presentationAt, progressFromScroll, scrollFromProgress } from './timeline.js';
 
 const root = document.documentElement;
 const body = document.body;
 const canvas = document.querySelector('#spatial-stage');
 const copies = [...document.querySelectorAll('.scene-copy')];
+const chapters = [...document.querySelectorAll('.chapter')];
 const chapterLinks = [...document.querySelectorAll('[data-index]')];
 const dialog = document.querySelector('#exhibition-index');
 const indexButton = document.querySelector('#open-index');
@@ -99,7 +100,7 @@ function setMotion(next, persist = false) {
   if (next && pendingNavigation !== null) {
     const destination = pendingNavigation;
     pendingNavigation = null;
-    lenis.scrollTo(destination * span, { immediate: true, force: true });
+    lenis.scrollTo(scrollFromProgress(destination, span), { immediate: true, force: true });
   }
   updateAccessibleControls();
   invalidate();
@@ -122,14 +123,20 @@ function measure(preserve = true) {
   pixelRatio = Math.min(devicePixelRatio || 1, width < 700 ? 1.75 : 2, Math.sqrt(9_000_000 / (width * height)));
   span = Math.round(height * (width < 700 ? 1.38 : 1.60));
   root.style.setProperty('--scene-span', `${span}px`);
+  chapters.forEach((chapter, i) => {
+    const travel = i < SCENES.length - 1
+      ? scrollFromProgress(i + 1, span) - scrollFromProgress(i, span)
+      : span;
+    chapter.style.setProperty('--chapter-span', `${travel}px`);
+  });
   stage?.resize(width, height, pixelRatio);
   lenis.resize();
   // A changed viewport preserves the authored perspective rather than the old pixel offset.
   if (preserve && (width !== previousWidth || height !== previousHeight)) {
-    lenis.scrollTo(previous * span, { immediate: true, force: true });
+    lenis.scrollTo(scrollFromProgress(previous, span), { immediate: true, force: true });
     // Keep the destination as an index; its pixel position changes with the span.
     if (pendingNavigation !== null) {
-      lenis.scrollTo(pendingNavigation * span, { immediate: reducedMotion });
+      lenis.scrollTo(scrollFromProgress(pendingNavigation, span), { immediate: reducedMotion });
     }
   }
   invalidate();
@@ -148,7 +155,7 @@ function navigateTo(index, { historyEntry = true, replaceHistory = false, immedi
   viewAngle.setAttribute('aria-valuetext', 'Aligned viewpoint');
   const instant = immediate || reducedMotion;
   pendingNavigation = instant ? null : i;
-  lenis.scrollTo(i * span, { immediate: instant });
+  lenis.scrollTo(scrollFromProgress(i, span), { immediate: instant });
   invalidate();
 }
 
@@ -173,7 +180,7 @@ function draw(time) {
   lenis.raf(scrollClock);
   const raw = progressFromScroll(scrollY, span);
   const state = presentationAt(raw, reducedMotion);
-  if (pendingNavigation !== null && Math.abs(scrollY - pendingNavigation * span) <= 1) pendingNavigation = null;
+  if (pendingNavigation !== null && Math.abs(scrollY - scrollFromProgress(pendingNavigation, span)) <= 1) pendingNavigation = null;
   if (Math.abs(raw - 2) > .04) alignLocked = false;
   const prev = activeScene;
   activeScene = state.active;

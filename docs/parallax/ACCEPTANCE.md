@@ -28,7 +28,7 @@ The original source's seven projection/timeline tests passed. Twenty original fr
 
 Lenis is configured with `lerp: .105`, native touch, `autoRaf: false`, and explicit sizing. Its clock advances on the existing RAF before sampling document progress and stops when scrolling/pointer response settles. Reduced motion disables smoothing and uses the supplied complete chapter poses. Index stops background movement and retains native inner scrolling; close resumes synchronously before a chapter destination starts. Reverse wheel input cancels the old destination. Resize preserves normalized progress and rebases an active chapter target. History restoration is immediate. Hidden tabs discard old inertia; BFCache retains the cached instance; final exits/HMR release Lenis, listeners and GPU resources.
 
-## Current Collection checks
+## Intake checks at `d831d47`
 
 - `npm test`: **152 passed**, including the seven imported projection/timeline tests.
 - Root and `/ai-web-experience-collection/` builds: TypeScript/Vite passed; **515 HTML/CSS references** and all route/canonical/social/resource/notice assertions passed for each base.
@@ -43,6 +43,24 @@ Lenis is configured with `lerp: .105`, native touch, `autoRaf: false`, and expli
 - Production asset and imported binary hashes are checked against scoped delivery records. `git diff --check` and scoped final review are required at closeout.
 
 Browser: Chromium 151.0.7922.34 on Windows, normal ANGLE AMD Radeon RX 7900 XT / D3D11 rendering. Browser plugin unavailable; bundled Playwright was used, plus raw CDP for real visibility/BFCache checks. Temporary drivers, state reports and screenshots stay outside the repository; only the actual gallery/social capture is production media.
+
+## Motion refinement — 2026-10-07
+
+The intake's paused-frame checks did not establish that the middle sequence's pacing was comfortable. Subsequent visitor feedback identified fast, abrupt viewpoint changes after Reflection/Rift. Acceptance for this refinement requires a continuous, reversible passage and return, sufficient scroll travel, a gradual architectural handoff, complete chapter destinations and portrait artwork clear of captions. Sculpture geometry, materials outside the architectural fade, imagery, text and the ten-chapter identity remain intact.
+
+**CONFIRMED-STATIC:** the delivered path changed viewing direction by about 128 degrees inside progress 4.35–4.5, then made two further short turns. Independent easing at each closely spaced waypoint repeatedly stopped and restarted the camera. The new path carries velocity through intermediate waypoints, interpolates viewing direction separately from target reach, clears the actual sculpture plane before its side exit and rests at the original membrane destination. Portrait uses a wider, earlier pullback. Architectural material opacity and alignment pointer influence now blend smoothly. No additional RAF, dependency or time-based pose smoothing is introduced.
+
+Reflection → Rift, Rift → Membrane and Membrane → Chroma receive 1.8×, 1.9× and 1.35× travel. The distance map and inverse are monotone with continuous positive rates. Actual semantic section extents, navigation and resize restoration use the same map. Outer chapter travel density and all complete chapter poses are preserved.
+
+**CONFIRMED-RUNTIME:** before/after desktop 1440×900 and phone 390×844 each sampled 101 intermediate poses from progress 3–5.5. Actual wheel bursts and reversal were exercised; scene progress followed the document and all 18 fragment identities persisted. Same-step browser sampling reduced peak direction change per viewport of document travel from approximately 1366 to 143 degrees on desktop and 1592 to 157 on phone. This measures spatial pacing, not FPS. Revised portrait frames at 4.6 and 4.8 keep the re-entering form above the caption.
+
+`npm test`: **168 passed**. New checks cover exact alignment/membrane destinations, crossing before side exit, bounded interpolation, look-at distance, continuous position/direction/FOV velocity, physical scroll-rate limits, reversibility and distance-map round trips. One-sided derivative extrapolation distinguishes true velocity discontinuity from finite-step curvature error. Root and project-path production builds and all **515 HTML/CSS references** passed.
+
+Production review covered all ten chapters at the six intake viewports (**60 complete frames**, plus gallery captures), native section-top agreement, all Index links, Align/range/keyboard, Focus artwork, normal/fine/fast-reverse wheel, fractional refresh, normalized resize, resize during navigation, idle suspension and return navigation. Nine additional source-runtime groups verified exact projection, persistent fragment identity, mirror/membrane captures, high-DPR touch emulation, context recovery and delayed-asset input. No page errors or failed application resources were observed in these normal runs.
+
+A system-reduced-motion probe found a real immediate-navigation error: the supplied global `.01ms` transition duration animated logical chapter heights and initial body margins for one frame. Lenis could therefore measure an old scroll limit or the browser could adjust an initial hash position. Chapter geometry now explicitly has no transition; reduced-mode CSS transitions have zero duration. Production follow-up at 390×844 and 1440×900, each with live and deliberately unavailable WebGL, passed four initial membrane hash positions, **40 immediate Index destinations**, eight viewport rebases and switching back to normal wheel smoothing. JavaScript-disabled semantic chapters, native anchors and home/work/return navigation also passed.
+
+Raw Chromium/CDP verified a real same-window tab switch: document hidden, zero pending application RAF and no frame/position changes; foreground input resumed with maximum application RAF concurrency one. Browser Back used real BFCache and restored 1200px with Lenis retained. Temporary reports and screenshots remain outside the repository. Browser plugin unavailable; bundled Playwright and raw CDP were used on the Windows/AMD environment described above. Live release identity is checked separately after publication.
 
 ## Known observations and limits
 

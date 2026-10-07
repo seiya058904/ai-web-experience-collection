@@ -26,6 +26,8 @@ The Index is a full-page native dialog with ten chapter links, a Reduced motion 
 
 The work owns no perpetual spin or particle layer. One Lenis instance smooths wheel input on the existing on-demand RAF; the document position directly samples authored geometry and camera states. Touch/dialog scrolling remains native; reduced motion and restoration are immediate. Reverse traversal is part of the same choreography. The hero pulls back before a short, scale-matched transfer to persistent geometry. Real mirror and refraction captures respond to the live scene. Ordinary chrome receives warm architectural reflections with narrow dark and bright bands inside the cut faces; the composed CHROMA and HALO states retain their original studio field.
 
+The middle sequence needs enough travel to observe the opening before crossing it and to recognise the same sculpture as the camera returns. Through-passage waypoints carry continuous movement; complete exhibition viewpoints settle for reading. Camera direction and architectural visibility must change gradually through the Rift exit. Keep the memorable close passage, with a broad return arc into the membrane view rather than repeated short turns.
+
 ## Review decisions
 
 The first local review rejected flat gray mirrors, an imperceptible membrane, overlit black stone, hard block shadows, bright fracture seams and a long mismatched hero overlap. The implementation was revised through local paused-frame review. Selected references remain the original design targets; runtime screenshots and temporary review artifacts are excluded from the delivery.

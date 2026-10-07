@@ -4,7 +4,11 @@ This is an independent Collection document at `/parallax/`. `pages/parallax/inde
 
 ## The one timeline
 
-The document position is the only chapter progress authority. `src/app.js` maps `scrollY` to a normalized value from 0 to 9 using the measured chapter span. `src/timeline.js` samples the presentation and `src/spatial.js` samples camera, fragment, light and optical states from that same value.
+The document position is the only chapter progress authority. `src/timeline.js` maps measured document distance to normalized progress from 0 to 9, and exposes the inverse `scrollFromProgress()`. Reflection → Rift receives 1.8 times the original travel, Rift → Membrane 1.9 times, and Membrane → Chroma 1.35 times; the outer journeys retain their original density. A monotone cubic distance curve has shared positive derivatives at chapter joins. This changes available scroll distance, without adding time-based pose easing.
+
+`src/app.js` uses that same inverse for actual section heights, Index destinations, immediate restoration and pending-navigation arrival. Section tops and native anchors therefore agree with the authored poses. The final section retains one base span. Without JavaScript, the semantic chapters retain their original readable layout. Presentation, camera, fragment, light and optical states all sample the same normalized value.
+
+Logical chapter geometry never transitions. Reduced-mode CSS uses zero transition duration as well: a globally applied tiny nonzero duration can animate initial heights or body margins for one frame, causing Lenis to measure an old limit. Both system-reduced initial hashes and immediate Index destinations must agree with the final semantic section tops.
 
 The Collection adds one existing locked Lenis instance: `lerp: .105`, `syncTouch: false`, `autoRaf: false`, `autoResize: false`. Its `raf()` runs before progress sampling on the existing on-demand `draw()` clock. Frames continue only while scrolling or bounded pointer response settles, then stop. A foreground delta capped at 50 ms drives Lenis; idle, visibility and page restoration reset the timestamp. There is no second scene-progress easing, accumulated object rotation or perpetual ambient animation. Returning to the same document and pointer position produces the same authored pose.
 
@@ -54,6 +58,10 @@ The close camera path approaches the aperture, while the heavy side pieces open.
 
 This is a hybrid spatial scene: the distant architecture is an image projection, while the opening and camera passage are live geometry. The entire interior is not a fully modelled building. The same distinction applies to the final monumental room.
 
+The return follows a broad arc after the camera clears the aperture, instead of the original rapid turn at 4.35–4.5 followed by two more short turns. Intermediate waypoints use shape-preserving cubic Hermite interpolation with shared velocities. Complete chapter viewpoints retain their resting ease. Unit viewing direction is interpolated separately from target reach, so a moving target cannot approach the camera and whip its view. The portrait return pulls back earlier to bring the entire form above the captions. The Alignment and Membrane destinations remain unchanged.
+
+The architectural materials fade through the entrance and exit before their group is disabled. Pointer and locked-view influence blend into and out of the exact alignment plateau. All these states remain deterministic functions of document progress; they add no animation clock or delayed pose state.
+
 ## Opening and typography
 
 The opening uses the selected transparent sculpture cutout over a separate empty gallery image. A CSS floor reflection and contact treatment belong to this editorial composition. Small pointer separation is intentionally bounded.
@@ -88,7 +96,7 @@ All headings, navigation and explanatory copy remain DOM text. The h1 sits behin
 | `scripts/export-model.mjs` | Dependency-free portable GLB export from the model source. |
 | `assets/provenance.json` | Machine-readable source asset inventory, prompts and hashes. |
 
-Use the root Collection commands: `npm test`, `npm run build` and `npm run verify:build`, then the project-path build documented in the root README. Seven supplied projection/timeline tests are included in the root suite. There is no nested package, server or model-export command. The historical exporter is retained only as source evidence in `provenance/parallax/tools/`; do not run it against the relocated layout without adapting its original paths. Generated images and the supplied assembled GLB are not regenerated during intake.
+Use the root Collection commands: `npm test`, `npm run build` and `npm run verify:build`, then the project-path build documented in the root README. Supplied projection checks and focused camera, distance-mapping and continuity tests run in the root suite. There is no nested package, server or model-export command. The historical exporter is retained only as source evidence in `provenance/parallax/tools/`; do not run it against the relocated layout without adapting its original paths. Generated images and the supplied assembled GLB are not regenerated during intake.
 
 The GLB preserves the assembled geometry, names, transforms, texture and conventional PBR material mapping. The website's exact studio lighting, custom optical shaders, animated camera and chapter behavior remain in the source modules rather than in the GLB.
 

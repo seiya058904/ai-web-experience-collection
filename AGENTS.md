@@ -56,7 +56,7 @@ Follow this sequence for each new independent work. Keep each work's established
 
 ## Validation and deployment
 
-Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (152 model/continuity/rendering tests at this revision; Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
+Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (168 model/continuity/rendering tests at this revision; Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
 
 There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
 

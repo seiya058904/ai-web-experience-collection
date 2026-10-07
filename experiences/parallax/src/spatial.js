@@ -4,49 +4,8 @@ import { createOptics } from './optics.js';
 import {
   clamp, lerp, smoothstep, smootherstep, envelope, samplePath, scaleAboutCamera,
   ALIGNMENT_CAMERA, ALIGNMENT_TARGET, MOBILE_ALIGNMENT_CAMERA, MOBILE_ALIGNMENT_TARGET,
+  DESKTOP_CAMERA_PATH, MOBILE_CAMERA_PATH, alignmentInfluence,
 } from './spatial-math.js';
-
-const DESKTOP_CAMERA_PATH = [
-  { at: 0, position: [2.6, 1.1, 10.8], target: [-1.95, 0.22, 0] },
-  { at: 1, position: [3.7, 1.45, 14.7], target: [-2.15, -0.30, 0] },
-  { at: 1.55, position: [5.2, 1.5, 12.1], target: [-2.0, 0.1, 0] },
-  { at: 2, position: [...ALIGNMENT_CAMERA], target: [...ALIGNMENT_TARGET] },
-  { at: 2.35, position: [0.7, 0.9, 12.2], target: [-2.0, 0.1, 0] },
-  { at: 3, position: [5.0, 3.1, 14.0], target: [-1.65, -0.45, 0] },
-  { at: 3.45, position: [2.25, 1.0, 10.0], target: [-0.65, -0.1, -1.5] },
-  { at: 3.7, position: [0.1, 0.15, 5.9], target: [0.05, 0.0, -7], fov: 36 },
-  { at: 3.88, position: [-0.20, 0.08, 5.85], target: [0.10, 0.02, -8], fov: 37 },
-  { at: 4, position: [-0.24, 0.04, 5.25], target: [0.10, 0.02, -9], fov: 38 },
-  { at: 4.1, position: [-0.10, 0.04, 1.8], target: [0.10, 0.02, -10], fov: 38 },
-  { at: 4.2, position: [0.03, 0.04, 0], target: [0.10, 0.02, -11], fov: 38 },
-  { at: 4.35, position: [0.05, 0.15, -3.3], target: [0.10, 0.05, -12], fov: 38 },
-  { at: 4.5, position: [-6.0, 1.0, -5.2], target: [0, 0.05, -0.4], fov: 36 },
-  { at: 4.73, position: [-10.0, 1.5, 4.0], target: [-0.6, 0.08, 0], fov: 35 },
-  { at: 5, position: [2.7, 1.0, 12.6], target: [-2.0, 0.10, 0] },
-  { at: 6, position: [3.4, 0.7, 11.8], target: [-1.95, 0.05, 0] },
-  { at: 7, position: [2.7, 1.2, 12.5], target: [-1.85, 0.05, 0] },
-  { at: 8, position: [2.6, 1.2, 12.8], target: [-1.65, -0.40, 0] },
-  { at: 9, position: [2.4, 3.0, 30.0], target: [0, 1.15, 0] },
-].map(stop => ({ ...stop, fov: stop.fov ?? 38 }));
-
-const MOBILE_CAMERA_PATH = DESKTOP_CAMERA_PATH.map(stop => {
-  if (stop.at >= 3.7 && stop.at <= 4.73) return { ...stop, fov: 48 };
-  const map = {
-    0: { position: [1.8, 0.75, 22.4], target: [0, 0.30, 0] },
-    1: { position: [3.6, 1.1, 24.2], target: [0, 0.2, 0] },
-    1.55: { position: [5.3, 1.35, 22.7], target: [0, 0.25, 0] },
-    2: { position: [...MOBILE_ALIGNMENT_CAMERA], target: [...MOBILE_ALIGNMENT_TARGET] },
-    2.35: { position: [-0.8, 0.9, 22.6], target: [0, 0.25, 0] },
-    3: { position: [2.2, 3.3, 34], target: [-3.0, -0.10, 0], fov: 44 },
-    3.45: { position: [1.25, 1, 15], target: [0, 0, -1] },
-    5: { position: [1.5, 0.7, 23], target: [0, 0.25, 0] },
-    6: { position: [2.5, 0.5, 22], target: [0, 0.22, 0] },
-    7: { position: [1.6, 0.9, 23], target: [0, 0.25, 0] },
-    8: { position: [1.7, 0.8, 22.6], target: [0, 0.22, 0] },
-    9: { position: [1.5, 3.1, 34], target: [0, 1.65, 0] },
-  };
-  return { ...stop, ...(map[stop.at] || {}), fov: map[stop.at]?.fov ?? 38 };
-});
 
 function studioEnvironment(renderer, architectural = false) {
   // A high-dynamic-range spherical studio: wide silver windows, black flags,
@@ -141,6 +100,7 @@ function createRiftGallery(galleryTexture) {
     map: limestoneMap, bumpMap: limestoneMap, bumpScale: 0.016,
     envMapIntensity: 0.25, emissive: 0xfff6e8, emissiveMap: limestoneMap,
     emissiveIntensity: 0.22,
+    transparent: true,
   });
   material.onBeforeCompile = shader => {
     shader.vertexShader = `varying vec3 vRiftWorldPosition;\n${shader.vertexShader}`;
@@ -158,7 +118,7 @@ function createRiftGallery(galleryTexture) {
     `);
   };
   material.customProgramCacheKey = () => 'parallax-rift-limestone-v2';
-  const lightMaterial = new THREE.MeshBasicMaterial({ color: 0xffedcf, toneMapped: false });
+  const lightMaterial = new THREE.MeshBasicMaterial({ color: 0xffedcf, toneMapped: false, transparent: true });
   const contactMaterial = new THREE.ShaderMaterial({
     uniforms: { opacity: { value: 0.24 } },
     vertexShader: 'varying vec2 vUv; void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}',
@@ -203,14 +163,18 @@ function createRiftGallery(galleryTexture) {
     addBox([9, 0.6, 5.5], [-4.0, 8.2, z + 0.7]);
     addBox([0.07, 11.5, 0.05], [7.51, 2.1, z - 4.4], lightMaterial);
   }
-  const farMaterial = new THREE.MeshBasicMaterial({ map: galleryTexture, color: 0xffffff, toneMapped: false });
+  const farMaterial = new THREE.MeshBasicMaterial({ map: galleryTexture, color: 0xffffff, toneMapped: false, transparent: true });
   const farArchitecture = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), farMaterial);
   farArchitecture.name = 'Distant authored gallery beyond real piers';
   group.add(farArchitecture);
   group.visible = false;
   return {
     group,
-    update(camera) {
+    update(camera, strength = 1) {
+      material.opacity = strength;
+      lightMaterial.opacity = strength;
+      farMaterial.opacity = strength;
+      contactMaterial.uniforms.opacity.value = 0.24 * strength;
       // An effectively distant architectural plate has no finite rectangle in
       // the passage. Real piers in front still occlude it with camera parallax.
       const direction = new THREE.Vector3();
@@ -511,13 +475,16 @@ export async function createSpatialStage(canvas, { onError } = {}) {
     camera.position.fromArray(cameraPose.position);
     cameraTarget.fromArray(cameraPose.target);
     const alignmentPhase = p >= 1.55 && p <= 2.35;
-    const pointerInfluence = reducedMotion || (alignmentPhase && alignLocked) ? 0 : (alignmentPhase ? 1 : 0.17);
+    const alignmentWeight = alignmentInfluence(p);
+    const pointerInfluence = reducedMotion ? 0 : lerp(0.17, 1, alignmentWeight) * (alignLocked ? 1 - alignmentWeight : 1);
     const riftPointerFade = 1 - envelope(p, 3.4, 4.12, 4.88);
     camera.position.x += clamp(pointer.x ?? 0, -1, 1) * (mobile ? 1.3 : 1.8) * pointerInfluence * riftPointerFade;
     camera.position.y += clamp(pointer.y ?? 0, -1, 1) * 0.45 * pointerInfluence * riftPointerFade;
-    if (alignmentPhase && alignLocked) {
-      camera.position.fromArray(referencePosition);
-      cameraTarget.fromArray(referenceTarget);
+    if (alignLocked) {
+      position.fromArray(referencePosition);
+      camera.position.lerp(position, alignmentWeight);
+      position.fromArray(referenceTarget);
+      cameraTarget.lerp(position, alignmentWeight);
     }
     // Narrow landscape frames need a little more breathing room around the
     // full form and footer. The Rift keeps its authored close passage.
@@ -555,8 +522,9 @@ export async function createSpatialStage(canvas, { onError } = {}) {
     renderer.toneMappingExposure = 1.14 - dark * 0.16 - halo * 0.08;
     floor.visible = reflection < 0.03 && halo < 0.5 && riftAmount < 0.2;
     floor.material.uniforms.opacity.value = 0.25 * (1 - fragmentAmount * 0.45);
-    riftGallery.group.visible = p > 3.62 && p < 4.62;
-    if (riftGallery.group.visible) riftGallery.update(camera);
+    const galleryStrength = smoothstep(3.55, 3.78, p) * (1 - smoothstep(4.32, 4.72, p));
+    riftGallery.group.visible = galleryStrength > 0.001;
+    if (riftGallery.group.visible) riftGallery.update(camera, galleryStrength);
     optics.membrane.position.set(mobile ? 0 : 0.25, 0.1, 2.0);
     optics.membrane.rotation.set(0.035 * membrane, -0.045 * membrane, -0.035 * membrane);
     // A near-X mirror extends in world depth. Mobile's distant camera needs

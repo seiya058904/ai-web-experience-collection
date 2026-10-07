@@ -40,7 +40,8 @@ svg{display:block;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:sq
 .return-labels{margin-left:auto;font-family:Manrope,Arial,sans-serif;font-size:var(--ui-font)}
 .masthead>.identity{margin-right:auto}
 #exhibition{position:relative;z-index:4;outline:0}
-.chapter{position:relative;min-height:100vh;height:var(--scene-span)}
+/* Measured scroll coordinates must stay synchronous under reduced motion too. */
+.chapter{position:relative;min-height:100vh;height:var(--chapter-span,var(--scene-span));transition-property:none}
 .scene-copy{position:relative;min-height:100vh;padding:30vh var(--gutter) 15vh;pointer-events:none}
 .enhanced .scene-copy{position:fixed;inset:0;min-height:0;padding:0;opacity:0;will-change:opacity,transform}
 .enhanced .chapter:first-of-type .scene-copy{opacity:1}
@@ -205,5 +206,5 @@ html:not(.enhanced) .chapter:not(:first-of-type) .scene-copy h2,html:not(.enhanc
  #reflection h2{bottom:11vh}
  #reflection .scene-note{left:auto;right:var(--gutter);width:22vw;bottom:10vh}
 }
-@media(prefers-reduced-motion:reduce){html:not([data-motion]) *,html:not([data-motion]) *::before,html:not([data-motion]) *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-html[data-motion="reduced"] *,html[data-motion="reduced"] *::before,html[data-motion="reduced"] *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){html:not([data-motion]) *,html:not([data-motion]) *::before,html:not([data-motion]) *::after{animation-duration:.01ms!important;transition-duration:0s!important;scroll-behavior:auto!important}}
+html[data-motion="reduced"] *,html[data-motion="reduced"] *::before,html[data-motion="reduced"] *::after{animation-duration:.01ms!important;transition-duration:0s!important;scroll-behavior:auto!important}
