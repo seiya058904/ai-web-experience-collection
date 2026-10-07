@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T17:04:39.763056Z",
+  "title": "Design System: AETERNA",
+  "extensions": {
+    "colorMeta": {
+      "black": {
+        "role": "neutral",
+        "displayName": "Gallery charcoal"
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Deep gallery shadow"
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone-white"
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Muted stone"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Conservation ivory"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Mineral ink"
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "Archive gray"
+      },
+      "body-dark": {
+        "role": "neutral",
+        "displayName": "Warm reading gray"
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Dark-gallery rule"
+      },
+      "rule-light": {
+        "role": "neutral",
+        "displayName": "Light-gallery rule"
+      },
+      "range-track": {
+        "role": "neutral",
+        "displayName": "Worn stone line"
+      },
+      "notes-paper": {
+        "role": "neutral",
+        "displayName": "Notes ivory"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Monumental display",
+        "purpose": "The opening AETERNA title and its matched foreground layer."
+      },
+      "headline": {
+        "displayName": "Chapter headline",
+        "purpose": "The baseline exhibit heading; local compositions retain their specific sizes."
+      },
+      "title": {
+        "displayName": "Object title",
+        "purpose": "The collection object name within the archive record."
+      },
+      "body": {
+        "displayName": "Exhibit interpretation",
+        "purpose": "Short reading columns accompanying the sculpture."
+      },
+      "label": {
+        "displayName": "Exhibit label",
+        "purpose": "The descriptive heading above a direct range."
+      },
+      "action": {
+        "displayName": "Detail action",
+        "purpose": "A fine underlined action with a directional arrow."
+      },
+      "wordmark": {
+        "displayName": "AETERNA wordmark",
+        "purpose": "Small, widely tracked identity in navigation and dialog headers."
+      },
+      "caption": {
+        "displayName": "Image caption",
+        "purpose": "A discreet interpretive or provenance annotation."
+      },
+      "index-title": {
+        "displayName": "Index room title",
+        "purpose": "The typographic room list on ivory."
+      },
+      "notes-body": {
+        "displayName": "Source reading",
+        "purpose": "Longer collection and curatorial notes."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "The shared CSS easing for deliberate reveals and directional control feedback."
+      },
+      {
+        "name": "text-action-state",
+        "value": ".25s",
+        "purpose": "Quiet-link color and lower-rule changes."
+      },
+      {
+        "name": "navigation-theme",
+        "value": ".35s var(--ease)",
+        "purpose": "Persistent header and footer foreground changes; the chapter underline uses the same duration and easing."
+      },
+      {
+        "name": "detail-action",
+        "value": ".45s var(--ease)",
+        "purpose": "The extending detail underline and right-arrow movement."
+      },
+      {
+        "name": "room-reveal",
+        "value": ".62s var(--ease)",
+        "purpose": "A chapter uncovers vertically from an inset clip while brightening."
+      },
+      {
+        "name": "portrait-reveal",
+        "value": ".9s var(--ease)",
+        "purpose": "A directional change between the coordinated portrait plates."
+      },
+      {
+        "name": "marble-inspection",
+        "value": "1.15s var(--ease)",
+        "purpose": "A controlled closer crop of the macro marble image."
+      },
+      {
+        "name": "pointer-response",
+        "value": "135ms exponential damping",
+        "purpose": "The controller damps pointer influence independently of the native scroll state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "(max-width:700px)"
+      },
+      {
+        "name": "tablet",
+        "value": "(max-width:1000px) and (min-width:701px)"
+      },
+      {
+        "name": "large-display",
+        "value": "(min-width:2200px)"
+      },
+      {
+        "name": "compact-short",
+        "value": "(max-width:700px) and (max-height:740px)"
+      },
+      {
+        "name": "wide-short",
+        "value": "(max-height:580px) and (min-width:701px)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Quiet text action",
+      "kind": "button",
+      "refersTo": "text-action",
+      "description": "The header and quiet-link treatment: transparent, with a lower rule on hover and a clear keyboard outline.",
+      "html": "<div class=\"ds-gallery-sample\"><button class=\"ds-text-action\">The exhibition</button></div>",
+      "css": ".ds-gallery-sample{background:var(--black,#111210);color:var(--bone,#ede7dc);padding:24px;}.ds-text-action{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;font-size:clamp(12px,.91vw,28px);color:inherit;background:none;border:0;border-bottom:1px solid transparent;padding:10px 0;cursor:pointer;transition:border-color .25s,color .25s;text-underline-offset:5px;}.ds-text-action:hover{border-color:currentColor;}.ds-text-action:disabled{opacity:.45;cursor:wait;}.ds-text-action:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Exhibit detail action",
+      "kind": "button",
+      "refersTo": "line-action",
+      "description": "A short underline extends toward the right-arrow action; color inherits the room or source context.",
+      "html": "<div class=\"ds-gallery-sample\"><button class=\"ds-line-action\">About this sculpture<svg class=\"ds-arrow\" viewBox=\"0 0 32 24\" aria-hidden=\"true\"><path d=\"M2 12h27M22 5l7 7-7 7\"/></svg></button></div>",
+      "css": ".ds-gallery-sample{background:var(--black,#111210);color:var(--bone,#ede7dc);padding:24px;}.ds-arrow{display:block;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-line-action{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;display:inline-flex;gap:24px;align-items:center;font-size:clamp(12px,.84vw,26px);line-height:1.4;min-height:44px;padding:10px 0;position:relative;color:inherit;background:none;border:0;cursor:pointer;}.ds-line-action:after{content:\"\";position:absolute;bottom:4px;left:0;width:calc(100% - 52px);height:1px;background:currentColor;transform:scaleX(.24);transform-origin:left;transition:transform .45s var(--ease,cubic-bezier(.2,.8,.2,1));opacity:.6;}.ds-line-action:hover:after{transform:scaleX(1);}.ds-line-action .ds-arrow{width:32px;height:24px;transition:transform .45s var(--ease,cubic-bezier(.2,.8,.2,1));}.ds-line-action:hover .ds-arrow{transform:translateX(5px);}.ds-line-action:disabled{opacity:.45;cursor:wait;}.ds-line-action:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(max-width:700px){.ds-line-action{font-size:11px;gap:18px;min-height:40px;padding:9px 0;}.ds-line-action .ds-arrow{width:28px;height:20px;}.ds-line-action:after{width:calc(100% - 44px);}}@media(min-width:2200px){.ds-line-action{gap:36px;}.ds-line-action .ds-arrow{width:48px;height:32px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Marble surface inspection",
+      "kind": "button",
+      "refersTo": "surface-inspection",
+      "description": "A circular plus and dark-backed label remain legible on pale marble. The production control changes its crop and label when pressed.",
+      "html": "<div class=\"ds-gallery-sample\"><button class=\"ds-surface-inspect\" aria-pressed=\"false\" aria-label=\"Look closer at the marble\"><svg class=\"ds-plus\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v16M4 12h16\"/></svg><span>Look closer</span></button></div>",
+      "css": ".ds-gallery-sample{background:var(--black,#111210);color:var(--bone,#ede7dc);padding:24px;}.ds-surface-inspect{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;display:flex;align-items:center;gap:14px;font-size:12px;min-height:48px;color:var(--bone,#ede7dc);background:none;border:0;padding:0;cursor:pointer;}.ds-plus{display:block;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;border:1px solid var(--bone,#ede7dc);border-radius:50%;width:46px;height:46px;padding:12px;background:rgba(17,18,16,.72);transition:transform .5s var(--ease,cubic-bezier(.2,.8,.2,1)),background .5s;}.ds-surface-inspect:hover>.ds-plus{background:rgba(17,18,16,.45);transform:scale(1.1);}.ds-surface-inspect span{background:rgba(17,18,16,.84);padding:8px 12px;}.ds-surface-inspect[aria-pressed=true]>.ds-plus{transform:rotate(45deg);}.ds-surface-inspect:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(max-width:700px){.ds-surface-inspect{gap:9px;}.ds-surface-inspect span{font-size:10px;padding:6px 8px;}.ds-plus{width:42px;height:42px;padding:11px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Portrait choices",
+      "kind": "custom",
+      "refersTo": "portrait-choice",
+      "description": "Plain text comparisons with a fine lower rule; the selected bone treatment is portrait-choice-selected.",
+      "html": "<div class=\"ds-gallery-sample\"><div class=\"ds-portrait-choices\" role=\"group\" aria-label=\"Compare portrait traditions\"><button class=\"ds-portrait-choice\" aria-pressed=\"true\">Experience</button><button class=\"ds-portrait-choice\" aria-pressed=\"false\">Idealization</button></div></div>",
+      "css": ".ds-gallery-sample{background:var(--black,#111210);color:var(--bone,#ede7dc);padding:24px;}.ds-portrait-choices{display:flex;gap:30px;align-items:center;font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;font-size:clamp(12px,.82vw,25px);}.ds-portrait-choice{font:inherit;min-height:44px;border:0;border-bottom:1px solid #686760;color:#a7a197;transition:color .3s,border-color .3s;background:none;padding:0;cursor:pointer;}.ds-portrait-choice:hover{background:none;}.ds-portrait-choice[aria-pressed=true]{color:var(--bone,#ede7dc);border-color:var(--bone,#ede7dc);}.ds-portrait-choice:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(max-width:700px){.ds-portrait-choices{gap:24px;font-size:11px;}.ds-portrait-choice{min-height:35px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Direct exhibit range",
+      "kind": "input",
+      "refersTo": "exhibit-range",
+      "description": "Native range with label, output and named endpoints. The production controller synchronizes output and reveals Follow the scroll after direct input.",
+      "html": "<div class=\"ds-gallery-sample\"><div class=\"ds-exhibit-control\"><div class=\"ds-control-heading\"><label for=\"ds-assembly\">Reassemble the figure</label><output for=\"ds-assembly\">0%</output></div><input id=\"ds-assembly\" class=\"ds-range\" type=\"range\" min=\"0\" max=\"100\" value=\"0\" aria-describedby=\"ds-assembly-help\"><div class=\"ds-control-extents\" id=\"ds-assembly-help\"><span>Fragment</span><span>Form</span></div></div></div>",
+      "css": ".ds-gallery-sample{background:var(--black,#111210);color:var(--bone,#ede7dc);padding:24px;}.ds-exhibit-control{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;width:clamp(225px,25vw,780px);}.ds-control-heading,.ds-control-extents{display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:clamp(11px,.77vw,24px);}.ds-control-heading{min-height:22px;}.ds-control-heading output{font-variant-numeric:tabular-nums;color:#b6aa98;}.ds-range{-webkit-appearance:none;appearance:none;display:block;background:transparent;width:100%;margin:8px 0;height:28px;cursor:ew-resize;accent-color:var(--bone,#ede7dc);}.ds-range::-webkit-slider-runnable-track{height:1px;background:#79776d;}.ds-range::-moz-range-track{height:1px;background:#79776d;}.ds-range::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:9px;height:17px;background:var(--bone,#ede7dc);border:none;border-radius:0;margin-top:-8px;}.ds-range::-moz-range-thumb{width:9px;height:17px;background:var(--bone,#ede7dc);border:none;border-radius:0;}.ds-range:hover{cursor:ew-resize;}.ds-range:focus-visible{outline:1px solid currentColor;outline-offset:3px;}.ds-range:disabled{opacity:.35;cursor:wait;}.ds-control-extents{color:#b7b1a6;font-size:clamp(10px,.68vw,21px);}@media(max-width:700px){.ds-exhibit-control{width:100%;}.ds-control-heading{font-size:11px;}.ds-control-extents{font-size:9px;}.ds-range{height:30px;margin:5px 0;}}@media(min-width:2200px){.ds-control-heading{min-height:32px;}.ds-range{height:46px;margin:12px 0;}.ds-range::-webkit-slider-thumb{width:13px;height:25px;margin-top:-12px;}.ds-range::-moz-range-thumb{width:13px;height:25px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Chapter navigation",
+      "kind": "nav",
+      "refersTo": "chapter-rail",
+      "description": "The nine Roman numerals share one rail; its compact counterpart opens the same full index.",
+      "html": "<div class=\"ds-gallery-sample\"><nav class=\"ds-chapter-rail\" aria-label=\"Exhibition chapters\"><a href=\"#colossus\" aria-label=\"Room 1, The Colossus\" aria-current=\"step\">I</a><a href=\"#stone\" aria-label=\"Room 2, Stone Becomes Flesh\">II</a><a href=\"#power\" aria-label=\"Room 3, The Face of Power\">III</a><a href=\"#body\" aria-label=\"Room 4, Body and Authority\">IV</a><a href=\"#monument\" aria-label=\"Room 5, Monument\">V</a><a href=\"#relief\" aria-label=\"Room 6, History Carved in Stone\">VI</a><a href=\"#fracture-room\" aria-label=\"Room 7, Fracture\">VII</a><a href=\"#afterlife\" aria-label=\"Room 8, Afterlife\">VIII</a><a href=\"#aeterna\" aria-label=\"Room 9, Aeterna\">IX</a></nav><button class=\"ds-mobile-index\" aria-label=\"Open the exhibition index\"><span>01 / 09</span><span>The Colossus</span></button></div>",
+      "css": ".ds-gallery-sample{background:var(--black,#111210);color:var(--bone,#ede7dc);padding:24px;}.ds-chapter-rail{display:flex;width:36vw;max-width:1100px;border-bottom:1px solid var(--rule,rgba(237,231,220,.26));height:38px;align-items:flex-start;}.ds-chapter-rail a{font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;position:relative;flex:1;text-align:center;color:var(--muted,#b7b0a6);font-size:clamp(11px,.83vw,29px);line-height:1;padding:8px 0 18px;min-height:38px;text-decoration:none;transition:color .25s;}.ds-chapter-rail a:first-child{text-align:left;}.ds-chapter-rail a:after{content:\"\";position:absolute;bottom:-1px;left:30%;right:30%;height:2px;background:currentColor;transform:scaleX(0);transition:transform .35s var(--ease,cubic-bezier(.2,.8,.2,1));}.ds-chapter-rail a:first-child:after{left:0;right:60%;}.ds-chapter-rail a[aria-current=step]{color:var(--fg,#ede7dc);}.ds-chapter-rail a[aria-current=step]:after,.ds-chapter-rail a:hover:after{transform:scaleX(1);}.ds-chapter-rail a:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}.ds-mobile-index{display:none;color:inherit;background:none;border:0;padding:0;cursor:pointer;}.ds-mobile-index:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(max-width:700px){.ds-chapter-rail{display:none;}.ds-mobile-index{display:flex;flex-direction:column;gap:6px;align-items:flex-start;min-height:44px;justify-content:center;max-width:67%;}.ds-mobile-index>span:first-child{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;font-size:9px;letter-spacing:.12em;font-variant-numeric:tabular-nums;}.ds-mobile-index>span:last-child{font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;font-size:15px;line-height:1.1;white-space:nowrap;}}@media(min-width:2200px){.ds-chapter-rail{height:54px;}.ds-chapter-rail a{padding:10px 0 24px;min-height:54px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Index room rows",
+      "kind": "nav",
+      "refersTo": "index-row",
+      "description": "Large Bodoni room names and fine dividers on ivory; the current room is italic and hover shifts the row inward.",
+      "html": "<div class=\"ds-archive-sample\"><nav class=\"ds-index-list\" aria-label=\"Jump to a room\"><a href=\"#colossus\"><span>I</span><span>The Colossus</span></a><a href=\"#afterlife\" aria-current=\"step\"><span>VIII</span><span>Afterlife</span></a></nav></div>",
+      "css": ".ds-archive-sample{background:var(--paper,#ded9cf);color:var(--ink,#242521);padding:24px;}.ds-index-list{display:flex;flex-direction:column;}.ds-index-list a{display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center;min-height:6.55vh;border-bottom:1px solid rgba(36,37,33,.23);transition:color .3s;font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;font-size:clamp(23px,2vw,73px);line-height:1.25;color:var(--ink,#242521);text-decoration:none;}.ds-index-list a>span:first-child{font-size:.5em;color:#706b5f;}.ds-index-list a:hover{color:#756c59;}.ds-index-list a[aria-current=step]>span:last-child{font-style:italic;}.ds-index-list a:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(max-width:700px){.ds-index-list a{min-height:47px;font-size:23px;line-height:1.15;grid-template-columns:36px 1fr;}.ds-index-list a>span:first-child{font-size:11px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Motion preference",
+      "kind": "button",
+      "refersTo": "motion-toggle",
+      "description": "The index preference uses a small outlined track; the pressed attribute moves and darkens its circular indicator.",
+      "html": "<div class=\"ds-archive-sample\"><button class=\"ds-motion-toggle\" aria-pressed=\"false\"><span>Reduce motion</span><span class=\"ds-toggle-track\" aria-hidden=\"true\"><i></i></span></button></div>",
+      "css": ".ds-archive-sample{background:var(--paper,#ded9cf);color:var(--ink,#242521);padding:24px;}.ds-motion-toggle{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;display:flex;align-items:center;gap:20px;min-height:44px;font-size:clamp(12px,.8vw,25px);color:inherit;background:none;border:0;padding:0;cursor:pointer;}.ds-motion-toggle:hover{background:none;}.ds-toggle-track{display:block;width:34px;height:18px;border:1px solid #80796b;position:relative;border-radius:12px;}.ds-toggle-track i{position:absolute;left:3px;top:3px;width:10px;height:10px;border-radius:50%;background:#6d675c;transition:transform .25s;}.ds-motion-toggle[aria-pressed=true] .ds-toggle-track i{transform:translateX(16px);background:#282a23;}.ds-motion-toggle:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}@media(max-width:700px){.ds-motion-toggle{gap:13px;min-height:34px;font-size:11px;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    },
+    {
+      "name": "Quiet source panel",
+      "kind": "custom",
+      "refersTo": "source-panel",
+      "description": "A visual excerpt of the source panel: ivory surface, fixed-style heading band and unboxed reading column. The application hosts it in a native full-height modal dialog.",
+      "html": "<section class=\"ds-source-panel\" aria-labelledby=\"ds-notes-title\"><header class=\"ds-notes-header\"><span class=\"ds-wordmark\">AETERNA</span><button class=\"ds-close\" aria-label=\"Close exhibition notes\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m5 5 14 14M19 5 5 19\"/></svg></button></header><div class=\"ds-notes-reading\"><h2 id=\"ds-notes-title\">The exhibition</h2><div class=\"ds-notes-content\"><p class=\"ds-intro-quote\">Rome did not only build an empire.<br>It built an image of eternity.</p><p>AETERNA moves through nine rooms of sculpture and memory. Scroll to enter each room, use the index to move freely, and pause at the objects to look more closely.</p><h3>A quieter visit</h3><p>The index includes Reduce motion. Chapter navigation and direct sculpture controls remain available. The exhibition follows the motion preference of your device until you choose otherwise.</p></div></div></section>",
+      "css": ".ds-source-panel{font-family:var(--sans,Manrope,Arial,sans-serif);font-weight:400;color:var(--ink,#242521);background:#e7e2d8;width:min(860px,72vw);border:0;border-radius:0;padding:0;}.ds-notes-header{display:flex;align-items:center;justify-content:space-between;padding:clamp(24px,3.5vh,66px) var(--gutter,3.2vw);border-bottom:1px solid rgba(36,37,33,.14);height:11vh;min-height:80px;}.ds-wordmark{font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;font-size:clamp(16px,1.22vw,42px);line-height:1;letter-spacing:.32em;text-indent:.32em;}.ds-close{width:44px;height:44px;display:grid;place-items:center;background:none;color:inherit;border:0;padding:0;cursor:pointer;}.ds-close svg{width:24px;height:24px;display:block;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s var(--ease,cubic-bezier(.2,.8,.2,1));}.ds-close:hover svg{transform:rotate(90deg);}.ds-close:focus-visible{outline:1px solid currentColor;outline-offset:6px;border-radius:1px;}.ds-notes-reading{padding:5vh 5vw 8vh;}.ds-notes-reading h2{font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;font-size:clamp(40px,3.5vw,92px);line-height:1.05;letter-spacing:-.028em;margin:0;}.ds-notes-content{margin-top:4vh;font-size:clamp(14px,.95vw,24px);line-height:1.85;}.ds-notes-content p{margin:0 0 1.6em;max-width:66ch;}.ds-notes-content h3{font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;font-size:1.65em;line-height:1.15;margin:1.7em 0 .7em;}.ds-notes-content .ds-intro-quote{font-family:var(--display,Bodoni,'Times New Roman',serif);font-weight:400;font-size:1.8em;line-height:1.35;margin:0 0 1.2em;}@media(max-width:700px){.ds-source-panel{width:100%;}.ds-notes-header{height:80px;padding:20px 24px;}.ds-wordmark{font-size:15px;letter-spacing:.25em;}.ds-notes-reading{padding:30px 24px 65px;}.ds-notes-reading h2{font-size:38px;line-height:1.1;}.ds-notes-content{font-size:13px;margin-top:30px;}.ds-notes-content .ds-intro-quote{font-size:25px;}}@media(min-width:2200px){.ds-source-panel{width:46vw;}.ds-notes-reading{padding:5vh 4vw 8vh;}}@media(prefers-reduced-motion:reduce){:host-context(html:not(.motion-overridden)) *,:host-context(html:not(.motion-overridden)) *:before,:host-context(html:not(.motion-overridden)) *:after{animation-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Rome in Marble and Memory",
+    "overview": "AETERNA is a monumental sculpture exhibition shaped by scale, light, stone and the gaze of a surviving image. A colossal face, a divided body and an almost empty hall belong to the same visual world. The composition gives material and silhouette most of the viewport; a small amount of exact language establishes a point of view. Its character is sculptural, cinematic, tactile and precise.\n\nThe identity comes from oversized classical display type, museum light, deep negative space and close attention to the material. Dark galleries and an ivory conservation room form one restrained palette. Controls feel like exhibit annotations: thin rules, direct labels and deliberate actions. The supplied direction rejects a black-and-gold luxury template, boxed card grids and decorative motion. These are confirmed visual constraints, not inferred conventions for unrelated products.\n\nUse the strongest medium for the image. Interpretive production plates carry the colossal face, marble macro and imagined architecture. Real geometry carries fragment alignment, disassembly, relief travel and the cast inspection. HTML typography and controls remain separate from those materials. The existing title-to-sculpture overlap is a composed spatial relationship, not text baked into an asset. [Visual direction](design/VISUAL_BIBLE.md) · [Product commitments](PRODUCT.md)",
+    "keyCharacteristics": [
+      "Monumental Bodoni display beside quiet Manrope interface text.",
+      "Near-black gallery and ivory archive, with color supplied primarily by the material and lighting.",
+      "Full-viewport exhibits, generous negative space and unboxed reading columns.",
+      "A fine chapter rail, direct exhibit ranges and quiet source panels.",
+      "Purposeful reveal, assembly and fracture; a still final room.",
+      "Mobile compositions that reserve real space for both sculpture and controls."
+    ],
+    "rules": [
+      {
+        "name": "The Image-Legibility Rule",
+        "body": "Choose text color and protection against the actual plate underneath it. Theme alone does not determine legibility.",
+        "section": "colors"
+      },
+      {
+        "name": "The Monumental Type Rule",
+        "body": "Preserve the striking size difference between display and interface. Do not shrink the exhibition into a conventional title, description and button stack.",
+        "section": "typography"
+      },
+      {
+        "name": "The Reserved-Space Rule",
+        "body": "A sculpture, its heading and its direct controls each need a usable area. When the viewport changes, refit the geometry and recompose the text rather than allowing either to overlap the control area.",
+        "section": "layout"
+      },
+      {
+        "name": "The Material-Depth Rule",
+        "body": "Let stone, occlusion and light carry depth. Do not add card shadows or ornamental blur to make the interface compete with the objects.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the extraordinary scale of Bodoni display type beside the quiet Manrope interface.",
+      "**Do** compose the image, typography and negative space as one frame, including a strong still view.",
+      "**Do** keep the neutral gallery and archive palette tied to material and light.",
+      "**Do** reassess text color and protective gradients against the actual image crop and reveal state.",
+      "**Do** reserve measured space for mobile sculpture, headings and controls, then fit the visible geometry to that space.",
+      "**Do** keep exhibit ranges direct, labeled and keyboard-operable, with a clear return to scroll control.",
+      "**Do** preserve the distinction between interpretive imagery, collection objects and artistic digital treatments.",
+      "**Do** retain useful manual exhibit controls when motion is reduced."
+    ],
+    "donts": [
+      "**Don't** replace the identity with a black-and-gold luxury template or an invented accent-color system.",
+      "**Don't** turn the gallery into a boxed card grid or surround its ordinary text actions with filled pills.",
+      "**Don't** bake the real title, navigation, captions or controls into an image.",
+      "**Don't** substitute generic fade-up effects, endless floating, random particles or meaningless parallax for the exhibition's motion grammar.",
+      "**Don't** simulate fragment alignment or relief travel with a flat image when the view requires real geometry.",
+      "**Don't** derive mobile sculpture framing from the desktop crop or from the floor shadow.",
+      "**Don't** identify an imagined plate as a scanned collection object or display an interactive control as ready before its required geometry is available.",
+      "**Don't** shrink the final hall's stillness and negative space to make room for unrelated interface decoration."
+    ]
+  }
+}

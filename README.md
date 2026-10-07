@@ -1,6 +1,6 @@
 # AI Web Experience Collection
 
-Eighteen independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines and acoustic motion.
+Nineteen independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines, acoustic motion and Roman sculpture.
 
 [Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
 
@@ -26,10 +26,13 @@ Eighteen independent cinematic web experiences exploring speed, nature, space, c
 | **ATLAS — The World in Layers** | Real Fuji terrain, imagery, city and planetary scale | [/atlas/](https://seiya058904.github.io/ai-web-experience-collection/atlas/) |
 | **THRUST — Anatomy of a Jet Engine** | Ten continuous shots from intake to flight | [/thrust/](https://seiya058904.github.io/ai-web-experience-collection/thrust/) |
 | **RESONANCE — Sound Made Visible** | Eight acoustic acts with local tone capture and playback | [/resonance/](https://seiya058904.github.io/ai-web-experience-collection/resonance/) |
+| **AETERNA — Rome in Marble and Memory** | Nine sculpture rooms with museum-derived interactive models | [/aeterna/](https://seiya058904.github.io/ai-web-experience-collection/aeterna/) |
 
 Each work keeps its own imagery, typography, controls and pace. The gallery uses full document navigation; only the selected work's runtime starts. No iframe or SPA fallback.
 
 The four-work import, focused repairs and browser acceptance are recorded in [Collection acceptance](docs/collection/FOUR-WORK-VALIDATION.md).
+
+AETERNA's source/model audit and local checks are recorded in [AETERNA acceptance](docs/aeterna/ACCEPTANCE.md). Its museum/font/decoder rights are scoped; no application-wide open-source grant is inferred.
 
 RESONANCE's delivery audit, three runtime repairs and local production checks are recorded in [RESONANCE acceptance](docs/resonance/ACCEPTANCE.md).
 
@@ -37,8 +40,8 @@ RESONANCE's delivery audit, three runtime repairs and local production checks ar
 
 ```text
 collection/          Gallery styles, pointer interaction and credits styles
-pages/               Vite HTML root: home, credits and eighteen route documents
-experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance and shared UI
+pages/               Vite HTML root: home, credits and nineteen route documents
+experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance, aeterna and shared UI
 public/              Namespaced runtime assets, fonts and license notices
 docs/                Collection and scoped work design/architecture contracts
 provenance/          Unique masters, source records, import hashes and delivery history
@@ -60,7 +63,7 @@ npm run verify
 npm run preview -- --port 4174 --strictPort
 ```
 
-`npm run verify` runs 118 supplied model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
+`npm run verify` runs 145 supplied model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
 
 ## Deployment
 
@@ -74,7 +77,7 @@ npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
-Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all eighteen trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
+Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all nineteen trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
 
 When adding another accepted work, put its HTML in `pages/<route>/`, source in `experiences/<route>/`, resources in `public/<route>/`, and register the input, sitemap and output identity checks in `vite.config.ts` and `scripts/verify-build.mjs`. Update the gallery, credits, product and maintenance guide. Preserve its design and lifecycle; verify both `/` and project-path builds, entry/return, direct loads, mobile and reduced motion.
 
@@ -86,4 +89,4 @@ See [About & credits](https://seiya058904.github.io/ai-web-experience-collection
 
 Unique source material and import checksums live in [provenance/](provenance/README.md), outside deployment.
 
-See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md), [KAGE architecture](docs/kage/ARCHITECTURE.md), [CHRONOS motion](docs/chronos/MOTION.md), [INTERVAL design](docs/interval/DESIGN.md), [GLASSHOUSE design](docs/glasshouse/DESIGN.md), [VEIL design](docs/veil/DESIGN.md), [OPTIC design](docs/optic/DESIGN.md) and [INKSCAPE design](docs/inkscape/DESIGN.md), [FACET design](docs/facet/DESIGN.md), [SILICON design](docs/silicon/DESIGN.md), [ATLAS design](docs/atlas/DESIGN.md), [THRUST design](docs/thrust/DESIGN.md) and [RESONANCE design](docs/resonance/DESIGN.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.
+See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md), [KAGE architecture](docs/kage/ARCHITECTURE.md), [CHRONOS motion](docs/chronos/MOTION.md), [INTERVAL design](docs/interval/DESIGN.md), [GLASSHOUSE design](docs/glasshouse/DESIGN.md), [VEIL design](docs/veil/DESIGN.md), [OPTIC design](docs/optic/DESIGN.md) and [INKSCAPE design](docs/inkscape/DESIGN.md), [FACET design](docs/facet/DESIGN.md), [SILICON design](docs/silicon/DESIGN.md), [ATLAS design](docs/atlas/DESIGN.md), [THRUST design](docs/thrust/DESIGN.md), [RESONANCE design](docs/resonance/DESIGN.md) and [AETERNA design](docs/aeterna/DESIGN.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.

@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -44,6 +44,7 @@ for (const [file, route, title] of [
   ['inkscape/index.html', 'inkscape/', 'INKSCAPE — Paper, Water, Ink'],
   ['thrust/index.html', 'thrust/', 'THRUST — Anatomy of a Jet Engine'],
   ['resonance/index.html', 'resonance/', 'RESONANCE — Sound Made Visible'],
+  ['aeterna/index.html', 'aeterna/', 'AETERNA — Rome in Marble and Memory'],
   ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
   ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
   ['facet/index.html', 'facet/', 'FACET — The Light Within'],
@@ -69,6 +70,9 @@ for (const file of ["atlas/data/city-aerial-1024.webp", "atlas/data/city-aerial-
 }
 for (const file of ['resonance/ATTRIBUTION.md', 'resonance/licenses/manrope-latin-OFL.txt', 'resonance/licenses/cormorant-garamond-latin-italic-OFL.txt', 'resonance/fonts/manrope-latin.woff2', 'resonance/fonts/cormorant-garamond-latin-italic.woff2', 'resonance/social.jpg']) {
   assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
+}
+for (const file of ['aeterna/ATTRIBUTION.md','aeterna/MUSEUM_ASSETS.md','aeterna/CURATORIAL_NOTES.md','aeterna/AI_ASSETS.json','aeterna/licenses/bodoni-moda-OFL.txt','aeterna/licenses/manrope-OFL.txt','aeterna/models/herakles-fragments.glb','aeterna/models/roman-wellhead.glb','aeterna/models/draco/LICENSE.txt','aeterna/models/draco/draco_decoder.js','aeterna/models/draco/draco_decoder.wasm','aeterna/models/draco/draco_wasm_wrapper.js','aeterna/fonts/bodoni-moda-latin-400-normal.woff2','aeterna/fonts/bodoni-moda-latin-400-italic.woff2','aeterna/fonts/manrope-latin-400-normal.woff2','aeterna/fonts/manrope-latin-500-normal.woff2']) {
+  assert((await stat(join(root, file))).size > 0, `Missing AETERNA resource: ${file}`);
 }
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {

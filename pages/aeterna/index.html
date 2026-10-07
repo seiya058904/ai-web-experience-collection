@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111210">
+  <meta name="description" content="AETERNA — Rome in Marble and Memory. An immersive digital exhibition of sculpture, power, fragments and the images that survive.">
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%aeterna/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:title" content="AETERNA — Rome in Marble and Memory">
+  <meta property="og:description" content="Nine rooms of sculpture, power, fragments and the images that survive. Museum scans and imagined plates retain distinct identities.">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%aeterna/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%aeterna/assets/hero.webp">
+  <meta property="og:image:alt" content="AETERNA's supplied imagined Roman marble face; an AI-generated contemporary interpretation">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AETERNA — Rome in Marble and Memory">
+  <meta name="twitter:description" content="Nine independent exhibition rooms, locally rendered museum scans and original imagined galleries.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%aeterna/assets/hero.webp">
+  <meta name="twitter:image:alt" content="AETERNA's supplied imagined Roman marble face; an AI-generated contemporary interpretation">
+  <title>AETERNA — Rome in Marble and Memory</title>
+  <link rel="icon" href="/aeterna/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/aeterna/assets/hero.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="/aeterna/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/aeterna/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body data-theme="dark">
+  <a class="skip-link" href="#exhibition">Skip to the exhibition</a>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-down" viewBox="0 0 24 40"><path d="M12 2v34M5 29l7 7 7-7"/></symbol>
+    <symbol id="icon-right" viewBox="0 0 32 24"><path d="M2 12h27M22 5l7 7-7 7"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="icon-out" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="wordmark" href="#colossus" aria-label="Aeterna, return to the first room">AETERNA</a>
+    <div class="header-actions">
+      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="text-button exhibition-button" data-open-notes="introduction">The exhibition</button>
+      <button class="index-button" id="open-index" aria-haspopup="dialog" aria-controls="index-dialog">
+        <span>Index</span><span class="index-mark" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="exhibition" class="exhibition" tabindex="-1" aria-label="Aeterna, a nine-room digital exhibition">
+    <section class="room room-hero is-active" data-room="0" aria-labelledby="title-hero">
+      <div class="room-art hero-art">
+        <img class="hero-base" src="/aeterna/assets/hero.webp" alt="An imagined colossal Roman marble face emerges from a dark gallery." width="1672" height="941" fetchpriority="high">
+        <div class="hero-light" aria-hidden="true"></div>
+      </div>
+      <p class="hero-thought">An empire,<br>held in stone.</p>
+      <div class="hero-type">
+        <h1 id="title-hero">AETERNA</h1>
+        <p>Rome in Marble and Memory</p>
+      </div>
+      <div class="hero-occlusion" aria-hidden="true"></div>
+      <div class="hero-type hero-type-front" aria-hidden="true"><span>AETERNA</span></div>
+    </section>
+
+    <section class="room room-stone" data-room="1" aria-labelledby="title-stone">
+      <div class="room-art macro-art">
+        <img src="/aeterna/assets/stone-macro.webp" alt="An interpretive macro study of carved eyelids, crystalline marble and a fine crack." width="1672" height="941" decoding="async">
+      </div>
+      <div class="room-copy stone-copy">
+        <h2 id="title-stone">Stone<br>becomes <em>flesh.</em></h2>
+        <p class="body-copy">An eyelid. A lip. The turn of a cheek.<br>The material stays stone.<br>The eye begins to see a body.</p>
+        <button class="line-link" data-open-notes="polychromy">And before the white?<svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+      </div>
+      <button id="inspect-marble" class="surface-inspect" aria-pressed="false" aria-label="Look closer at the marble">
+        <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg><span>Look closer</span>
+      </button>
+      <div class="specimen-caption"><span>Grain. Tool. Fracture.</span><p>A surface remembers the hand.</p></div>
+      <p class="art-caption">Interpretive marble study</p>
+    </section>
+
+    <section class="room room-portrait" data-room="2" aria-labelledby="title-portrait">
+      <div class="room-art portrait-art">
+        <img class="portrait-experience" src="/aeterna/assets/portrait-experience.webp" alt="An imagined lined Roman portrait in a veristic tradition." width="1672" height="941" decoding="async">
+        <img class="portrait-ideal" src="/aeterna/assets/portrait-ideal.webp" alt="An imagined youthful portrait in an early imperial visual tradition." width="1672" height="941" decoding="async">
+      </div>
+      <div class="room-copy portrait-copy">
+        <h2 id="title-portrait">A face.<br>A political <em>idea.</em></h2>
+        <div class="portrait-description">
+          <p class="body-copy" id="portrait-description">A lined face could make experience visible. Wrinkles and age became an image of public character.</p>
+          <p class="portrait-era" id="portrait-era">The language of experience</p>
+        </div>
+        <div class="portrait-select" role="group" aria-label="Compare portrait traditions">
+          <button data-portrait="0" aria-pressed="true">Experience</button>
+          <button data-portrait="1" aria-pressed="false">Idealization</button>
+        </div>
+        <button class="line-link" data-open-notes="portraiture">Portraits and power<svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+      </div>
+      <p class="art-caption">Two imagined portraits. Two ways of making authority visible.</p>
+    </section>
+
+    <section class="room room-body" data-room="3" aria-labelledby="title-body">
+      <div class="room-art body-fallback"><img src="/aeterna/assets/body-reference.webp" alt="" width="1672" height="941" decoding="async"></div>
+      <div class="spatial-host" data-spatial="body"></div>
+      <div class="room-copy body-copy-block">
+        <h2 id="title-body">The body<br>as an <em>argument.</em></h2>
+        <p class="body-copy">Weight shifts. The form finds balance.<br>A human body becomes an ideal<br>that can outlive its maker.</p>
+        <div class="exhibit-control">
+          <div class="control-heading"><label for="assembly">Reassemble the figure</label><output id="assembly-value" for="assembly">0%</output></div>
+          <input id="assembly" type="range" min="0" max="100" value="0" aria-describedby="assembly-help" disabled>
+          <div class="control-extents" id="assembly-help"><span>Fragment</span><span>Form</span></div>
+          <button class="follow-scroll" data-follow="body" hidden>Follow the scroll</button>
+        </div>
+        <button class="line-link" data-open-notes="herakles" aria-label="About this sculpture"><span class="label-wide">About this sculpture</span><span class="label-compact" aria-hidden="true">Details</span><svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+      </div>
+      <div class="object-caption"><span>Lansdowne Herakles</span><p class="caption-wide">From the SMK plaster-cast scan<br>Digital assembly study</p><p class="caption-compact">SMK cast · digital assembly study</p></div>
+      <p class="art-caption fallback-caption">Interpretive figure study · imagined image</p>
+      <p class="spatial-status" data-spatial-status role="status">Preparing the sculpture</p>
+    </section>
+
+    <section class="room room-monument" data-room="4" aria-labelledby="title-monument">
+      <div class="room-art monument-art"><img src="/aeterna/assets/monument.webp" alt="An imagined vast gallery, a towering Roman draped statue and an architectural arch, with a small hand fragment in the foreground." width="1672" height="941" decoding="async"></div>
+      <div class="room-copy monument-copy">
+        <h2 id="title-monument">Bigger<br>than a <em>life.</em></h2>
+        <p class="body-copy">The portrait leaves the room.<br>The image enters the city.</p>
+        <button class="line-link" data-open-notes="monument">The monumental image<svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+      </div>
+      <div class="monument-whisper" aria-hidden="true">MONVMENTVM</div>
+      <p class="art-caption">An imagined architecture of power</p>
+    </section>
+
+    <section class="room room-relief" data-room="5" aria-labelledby="title-relief">
+      <div class="room-art relief-plate"><img src="/aeterna/assets/relief.webp" alt="An imagined procession relief establishes the shallow picture plane." width="1672" height="941" decoding="async"></div>
+      <div class="spatial-host" data-spatial="relief"></div>
+      <div class="room-copy relief-copy">
+        <h2 id="title-relief">A world<br>within the <em>stone.</em></h2>
+        <p class="body-copy">Come around the surface.<br>The story keeps going.</p>
+        <div class="exhibit-control">
+          <div class="control-heading"><label for="relief-depth">Explore the relief</label><output for="relief-depth" id="relief-value">Surface</output></div>
+          <input id="relief-depth" type="range" min="0" max="100" value="0" disabled>
+          <div class="control-extents"><span>Surface</span><span>Space</span></div>
+          <button class="follow-scroll" data-follow="relief" hidden>Follow the scroll</button>
+        </div>
+        <button class="line-link" data-open-notes="wellhead" aria-label="The stories on this object"><span class="label-wide">The stories on this object</span><span class="label-compact" aria-hidden="true">Details</span><svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+      </div>
+      <div class="object-caption relief-caption"><span>A Roman wellhead</span><p class="caption-wide">2nd century CE · marble<br>The Metropolitan Museum of Art · 2019.7</p><p class="caption-compact">2nd century CE · The Met · 2019.7</p></div>
+      <p class="spatial-status" data-spatial-status role="status">Preparing the sculpture</p>
+    </section>
+
+    <section class="room room-fracture" data-room="6" aria-labelledby="title-fracture">
+      <div class="room-art fracture-art"><img src="/aeterna/assets/fracture.webp" alt="An interpretive marble face fragment lies on a dusty floor below broken architectural pieces." width="1672" height="941" decoding="async"></div>
+      <div class="spatial-host" data-spatial="fracture"></div>
+      <div class="room-copy fracture-copy">
+        <h2 id="title-fracture">An empire breaks.<br>The image <em>remains.</em></h2>
+        <p class="body-copy">A missing face. An empty plinth.<br>Survival is never the same<br>as being whole.</p>
+        <div class="exhibit-control">
+          <div class="control-heading"><label for="fracture">Separate the fragments</label><output id="fracture-value" for="fracture">0%</output></div>
+          <input id="fracture" type="range" min="0" max="100" value="0" disabled>
+          <div class="control-extents"><span>Held together</span><span>Let go</span></div>
+          <button class="follow-scroll" data-follow="fracture" hidden>Follow the scroll</button>
+        </div>
+        <button class="line-link" data-open-notes="restoration">What a fragment remembers<svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+      </div>
+      <p class="art-caption">A digital fracture study, not a record of historical damage</p>
+      <p class="spatial-status" data-spatial-status role="status">Preparing the sculpture</p>
+    </section>
+
+    <section class="room room-afterlife" data-room="7" aria-labelledby="title-afterlife">
+      <div class="room-art afterlife-art"><img src="/aeterna/assets/afterlife.webp" alt="An imagined ivory conservation gallery with a torso and hand on separate plinths." width="1672" height="941" decoding="async"></div>
+      <div class="spatial-host" data-spatial="afterlife"></div>
+      <div class="room-copy afterlife-copy">
+        <h2 id="title-afterlife">A second <br><em>life.</em></h2>
+        <p class="body-copy gallery-description">Excavated. Collected. Cast. Conserved.<br>The museum does not end the story.<br>It becomes part of it.</p>
+        <div class="archive-record" hidden>
+          <h3>Lansdowne Herakles</h3>
+          <dl>
+            <div><dt>Object</dt><dd>SMK plaster cast, acquired 1897</dd></div>
+            <div><dt>After</dt><dd>Roman marble, c. 125 CE</dd></div>
+            <div><dt>Collection</dt><dd>The Royal Cast Collection · KAS224</dd></div>
+          </dl>
+          <div class="exhibit-control">
+            <div class="control-heading"><label for="museum-light">Move the museum light</label><output id="light-value" for="museum-light">50%</output></div>
+            <input id="museum-light" type="range" min="0" max="100" value="50">
+            <div class="control-extents"><span>Left</span><span>Right</span></div>
+          </div>
+          <p class="drag-hint">Move across the figure to change the view.</p>
+        </div>
+        <button class="line-link" id="inspect-cast" aria-pressed="false" disabled>Inspect the cast<svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
+        <button class="quiet-link" data-open-notes="herakles">Collection record</button>
+      </div>
+      <p class="art-caption afterlife-caption">An imagined conservation gallery</p>
+      <p class="spatial-status" data-spatial-status role="status">Preparing the sculpture</p>
+    </section>
+
+    <section class="room room-ending" data-room="8" aria-labelledby="title-ending">
+      <div class="room-art ending-art"><img src="/aeterna/assets/final-gallery.webp" alt="An imagined solitary marble bust in a vast, silent, dark gallery under a narrow light." width="1672" height="941" decoding="async"></div>
+      <p class="ending-thought">What survives<br>still looks back.</p>
+      <h2 id="title-ending">AETERNA</h2>
+      <p class="ending-credit">Carve the empire. Break the stone. Preserve the image.</p>
+      <button class="ending-notes quiet-link" data-open-notes="sources">Sources &amp; acknowledgements</button>
+    </section>
+  </main>
+
+  <div class="scroll-track" aria-hidden="true">
+    <div class="scroll-stop" id="colossus" data-length="1.45"></div>
+    <div class="scroll-stop" id="stone" data-length="1.5"></div>
+    <div class="scroll-stop" id="power" data-length="1.75"></div>
+    <div class="scroll-stop" id="body" data-length="2.3"></div>
+    <div class="scroll-stop" id="monument" data-length="1.5"></div>
+    <div class="scroll-stop" id="relief" data-length="2.25"></div>
+    <div class="scroll-stop" id="fracture-room" data-length="1.85"></div>
+    <div class="scroll-stop" id="afterlife" data-length="1.6"></div>
+    <div class="scroll-stop" id="aeterna" data-length="1.65"></div>
+  </div>
+
+  <footer class="exhibition-footer">
+    <nav class="chapter-rail" aria-label="Exhibition chapters">
+      <a href="#colossus" aria-label="Room 1, The Colossus" aria-current="step">I</a>
+      <a href="#stone" aria-label="Room 2, Stone Becomes Flesh">II</a>
+      <a href="#power" aria-label="Room 3, The Face of Power">III</a>
+      <a href="#body" aria-label="Room 4, Body and Authority">IV</a>
+      <a href="#monument" aria-label="Room 5, Monument">V</a>
+      <a href="#relief" aria-label="Room 6, History Carved in Stone">VI</a>
+      <a href="#fracture-room" aria-label="Room 7, Fracture">VII</a>
+      <a href="#afterlife" aria-label="Room 8, Afterlife">VIII</a>
+      <a href="#aeterna" aria-label="Room 9, Aeterna">IX</a>
+    </nav>
+    <button class="mobile-room-index" id="mobile-index" aria-label="Open the exhibition index"><span id="room-number">01 / 09</span><span id="room-name">The Colossus</span></button>
+    <button class="next-room" id="next-room"><span>Scroll to enter</span><svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg></button>
+    <div class="overall-progress" aria-hidden="true"><i></i></div>
+  </footer>
+  <p class="visually-hidden" id="room-announcement" role="status" aria-live="polite"></p>
+
+  <dialog id="index-dialog" class="index-dialog" aria-labelledby="index-title">
+    <div class="dialog-header"><span class="wordmark">AETERNA</span><button class="close-dialog" data-close-dialog aria-label="Close index"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button></div>
+    <div class="index-layout">
+      <div class="index-intro"><h2 id="index-title">Nine rooms. <br>One <em>afterlife.</em></h2><p>Move through the exhibition<br>at your own pace.</p></div>
+      <nav class="index-list" aria-label="Jump to a room">
+        <a href="#colossus"><span>I</span><span>The Colossus</span></a>
+        <a href="#stone"><span>II</span><span>Stone Becomes Flesh</span></a>
+        <a href="#power"><span>III</span><span>The Face of Power</span></a>
+        <a href="#body"><span>IV</span><span>Body / Authority</span></a>
+        <a href="#monument"><span>V</span><span>Monument</span></a>
+        <a href="#relief"><span>VI</span><span>History Carved in Stone</span></a>
+        <a href="#fracture-room"><span>VII</span><span>Fracture</span></a>
+        <a href="#afterlife"><span>VIII</span><span>Afterlife</span></a>
+        <a href="#aeterna"><span>IX</span><span>Aeterna</span></a>
+      </nav>
+    </div>
+    <div class="index-settings">
+      <button id="motion-toggle" aria-pressed="false"><span>Reduce motion</span><span class="toggle-track" aria-hidden="true"><i></i></span></button>
+      <button class="quiet-link" data-open-notes="sources">Sources &amp; acknowledgements</button>
+      <span>Rome in Marble and Memory</span>
+    </div>
+  </dialog>
+
+  <dialog id="notes-dialog" class="notes-dialog" aria-labelledby="notes-title">
+    <div class="dialog-header"><span class="wordmark">AETERNA</span><button class="close-dialog" data-close-dialog aria-label="Close exhibition notes"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button></div>
+    <div class="notes-scroll"><h2 id="notes-title">The exhibition</h2><div id="notes-content"></div></div>
+  </dialog>
+
+  <noscript><p class="no-script-note">The nine rooms are shown as a still exhibition. Enable JavaScript for chapter navigation and interactive sculptures.</p></noscript>
+  <script type="module" src="../../experiences/aeterna/src/main.js"></script>
+</body>
+</html>

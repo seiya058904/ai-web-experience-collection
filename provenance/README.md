@@ -17,6 +17,7 @@ This directory is excluded from the website build. It preserves unique material 
 - `silicon/`: ZIP identity, original structure/source records and exact local font mappings.
 - `atlas/`: ZIP identity, real geographic source lineage, original acquisition tools and exact runtime data mappings. Raw acquisition binaries remain in the external archive.
 - `thrust/`: ZIP identity, engine/image/font sources and the actual engine gallery capture.
+- `aeterna/`: ZIP identity, source-to-import hashes, original museum/font/decoder records, image prompts and design references. Runtime resources and readable notices are in `public/aeterna/`; the original archive stays unchanged in `D:/下载/`. See [audited local acceptance](../docs/aeterna/ACCEPTANCE.md).
 - `deliveries/collection-social.json`: dimensions, output hash and the seventeen source images in the current Collection social preview.
 - `deliveries/`: legacy import notes and entry-by-entry SHA-256 manifests for the supplied complete works.
 

@@ -1,0 +1,145 @@
+[
+  {
+    "file": "public/assets/hero.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 216212,
+    "sha256": "e81925e3e586128f9e8958b632bab72eae08e8ade7209bedc2dfbc8c9335c0b1",
+    "prompt": "Use case: precise-object-edit. This is the selected AETERNA hero design concept. Produce its clean production photographic plate, 3840x2160 landscape if possible. REMOVE ALL text, letters, navigation, lines and UI completely including the big AETERNA overlay and restore the marble naturally behind the removed lettering. Preserve the exact marble face, extreme right crop, huge scale, head orientation, ancient pitted material, light direction, tonal palette, near-black negative space on left, and overall composition. The background must remain near-black throughout. No other changes, no new objects, no logos or writing. Exceptionally high detail stone with crisp tool marks."
+  },
+  {
+    "file": "public/assets/stone-macro.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 281680,
+    "sha256": "9072bda72d21223fd8e38b0977c060b9e70e132719968865085126947a1b41c7",
+    "prompt": "Use case: historical-scene. AETERNA chapter STONE BECOMES FLESH: one full-frame 16:9 photographic keyframe and production plate, no text/UI. Extreme macro of a Roman marble sculpture: upper eyelid, deeply shadowed eye socket, bridge of nose and a small hint of flowing carved hair. Monumental skin-like crystalline white marble, small weathering pits, scattered mica-like grains, tiny authentic chisel marks, one ancient hairline crack. The eye occupies the right two-thirds, nose cropped at right, left one-third rich warm-gray shadow with space for code-native typography. Pale chalk and warm gray, exquisite museum raking light from high left. Camera extremely close, no floating eye, no human skin, no living color. A quiet sculptural photograph that could fill 4K screen. NOT a labeled diagram. No writing. Scientifically believable stone grain."
+  },
+  {
+    "file": "public/assets/portrait-experience.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 940,
+    "bytes": 142996,
+    "sha256": "cc1a3c88ead5be5ac8f53872af438ba558ee805aed5549ffb629ddce4553e469",
+    "prompt": "Use case: historical-scene. AETERNA Roman portraiture exhibition, production asset and scene keyframe. Photorealistic ancient Roman marble portrait bust of an anonymous elderly clean-shaven statesman in the veristic tradition: receding closely cropped hair, deeply worked brow and nasolabial folds, narrow face, thoughtful pursed mouth, the shoulders wear a simple toga. Three-quarter turn toward LEFT, head and upper chest large occupying right 58% of landscape 16:9 frame, left 40% near-black empty negative space. Chipped nose tip, limestone-colored weathered crystalline marble, beautiful single raking museum spotlight high left and slight bounce. Torso lower edge cropped. Background seamless almost black #111210. Roman proportions and style, NO laurel, no fantasy armor, no fake inscription, not a named historical person. Very sharp luxurious museum portrait photograph, restrained and silent, no text, no UI."
+  },
+  {
+    "file": "public/assets/portrait-ideal.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 132522,
+    "sha256": "d96a49f6a164391d96fd92a84e63da6aa0c7d4549de082b59745039aa7482939",
+    "prompt": "Use case: historical-scene. AETERNA Roman portraiture exhibition, production asset and scene keyframe matching a dark museum veristic portrait set. Photorealistic ancient Roman marble portrait bust of an anonymous youthful idealized ruler of early imperial visual tradition: short orderly carved Roman fringe, calm smooth broad forehead, slightly idealized face, clean-shaven, classical straight nose, firm mouth, muscular neck, subtle toga shoulder. Three-quarter turn toward LEFT, head and upper chest large occupying right 58% of landscape 16:9 frame, left 40% near-black empty negative space. Ivory weathered crystalline marble, single raking museum spotlight high left and slight bounce, deep shadows. Torso bottom cropped. Background seamless almost black #111210. NO laurel, no fantasy armor, no fake inscription; inspired by early imperial portraits but NOT an exact Augustus reproduction and NOT an excavated real artifact. Exquisite premium museum photo, no text no UI."
+  },
+  {
+    "file": "public/assets/relief.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 392668,
+    "sha256": "03707af206218f31160be851c3db6d0c326f522e7ea048ef6ef254c0c7a0f4ac",
+    "prompt": "Use case: historical-scene. AETERNA chapter HISTORY CARVED IN STONE, a premium museum photographic keyframe without UI or text. A large ancient Roman rectangular marble relief of a procession of FULLY CLOTHED and draped toga figures, carved very deeply so shadows turn surface into a miniature architectural space. Severe 3/4 camera angle reveals raised figures, subtle columns and deep stone planes. The relief fills right 70% of a near-black museum room, left30% shadowed negative space for typography added separately in code. Pale warm-gray ancient marble with grain, small missing edges, chisel and drill marks. Horizontal widescreen 16:9, true sculptural depth, exquisite raking light, no modern people, no written inscriptions, no gold, no nudity. This is an imagined curatorial study, not a claimed reconstruction of a specific monument."
+  },
+  {
+    "file": "public/assets/fracture.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 170610,
+    "sha256": "4f5cfc2ba3fc813fb50757e66de4b7851e535617575e2bc279f565bfd601a05c",
+    "prompt": "Use case: historical-scene. AETERNA chapter FRACTURE, a sublime 16:9 museum photographic keyframe and production plate. Near-black deep charcoal void, on the far right an ancient white marble face fragment lies horizontally on the dusty floor of an empty gallery, just the sculpted eye and nose of an idealized Roman male face, chipped irregular edges; clearly nonliving archaeological stone. Above it on the right a few heavy angular marble ARCHITECTURAL fragments suspended still in a shaft of museum light. Empty narrow plinth in far background, half hidden. Left 45% dark negative space untouched for a large elegant heading. Ivory plasterlike stone, worn aged surfaces, small realistic dust mound, no smoke, no magic, no blue particles, no red, no blood, no humans, no text. Elegiac, monumental, beautiful, archaeological loss and material survival. Extremely convincing photographic realism and fine stone detail."
+  },
+  {
+    "file": "public/assets/body-reference.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 158428,
+    "sha256": "4f220b56b16b3055d3d2d96b6a5cdb315f4eb3319281f804f6b38a8874692c70",
+    "prompt": "Use case: stylized-concept.\nAsset type: a final full-bleed production image for AETERNA, an exceptional Roman sculpture digital exhibition, also a coherent reference for a moving 3D reconstruction.\nPrimary request: a colossal imagined Roman-inspired male marble torso, headless, arms lost, waist and upper thigh fragments, with a beautifully carved draped cloth around one hip. Anatomically convincing ribcage and abdominal planes, refined classical proportions. Its main torso and four fitted fracture sections are subtly separated by narrow calm gaps along their actual mating fracture surfaces, preserving one unmistakable reconstructable standing silhouette. The separated pieces feel intentionally suspended in a conservation study, not an explosion or rubble.\nScene/backdrop: an immense minimal gallery disappearing into near-black charcoal darkness. No other artworks. A barely visible matte stone floor.\nStyle/medium: extraordinarily believable high-end museum sculpture photography blended with precise cinematic CGI, astonishing mineral surface detail, premium editorial art direction, restrained and elegant.\nComposition/framing: wide 16:9 landscape at about 2560 by 1440 pixels. Sculpture occupies the right 58 percent of the frame, fully legible silhouette from neck break to mid-thigh. Left 38 percent is uninterrupted charcoal negative space for separately composited interface text. Low three-quarter camera, a 65mm equivalent lens, no lens distortion.\nLighting/mood: one generous cool-white museum softbox from upper left, beautiful edge light defining the torso, soft gradients across aged marble, dark shadows, no fog. Modest raking light reveals tool marks.\nColor palette: near-black charcoal #111210, luminous bone-white marble, very subtle warm ivory mineral patina, faint restrained deep bronze-green in shadows only; absolutely no gold.\nMaterials/textures: porous ancient marble, tiny mineral veins, old softly eroded chips along fracture edges, convincing milky translucency. No pristine glossy plastic.\nConstraints: imagined Roman-inspired artwork, not a named or identifiable historical artifact. Only small deliberate fitted separations, credible anatomy and drapery. No writing, typography, UI, labels, plaques, inscriptions, logos, or watermarks. No living people, no weapons, no fantasy architecture, no floating random rubble, no giant bloom. Output only the clean image.\n"
+  },
+  {
+    "file": "public/assets/monument.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 266320,
+    "sha256": "9906b36f0c7e744c5203f30668bde55254fdea6aa3b8cf864df788133627361d",
+    "prompt": "Use case: stylized-concept.\nAsset type: final full-bleed production plate for AETERNA, a high-end Roman sculpture digital exhibition.\nPrimary request: an imposing solitary ancient travertine arch fragment and one enormous imagined Roman-inspired draped marble statue, both occupying the right half of an immense near-black abstract museum space. The statue is a serious classical standing male civic figure in a convincingly heavy, intricately folded toga, its head intact and understated, no crown, one damaged forearm. The architecture is a plausible cropped Roman arch and broad pier: massive blocks, rational gravity, carefully fitted joints. A small detached carved marble hand lies on a low dark stone slab in the near foreground as a quietly striking scale motif. The tiny hand is anatomically plausible with five fingers, natural relaxed pose.\nScene/backdrop: immense sober museum chamber of dark charcoal walls and smooth dark stone floor with deep distance. No specific named monument or historical site. A very acute diagonal shaft of white daylight from upper left falls across the arch and draped statue, sharply revealing stone grain and sculptural folds.\nStyle/medium: museum architectural photography of near-photoreal cinematic installation, sophisticated contemporary art direction, historical material credibility.\nComposition/framing: landscape 16:9 at approximately 2560 by 1440 pixels, wide 35mm architecture lens with corrected verticals. Vast uninterrupted left 42 percent negative space, sculpture and arch grouped right; hand occupies lower-right foreground and remains understated. Monument feels enormous through proportional relationships and perspective, no human visitors.\nLighting/mood: near-black ambient, a single diagonal cool-white light shaft, tiny dust motes only in the beam, controlled contrast with sculptural detail visible; no magical glow.\nColor palette: charcoal #111210, pale bone marble, weathered gray-ivory travertine, restrained deep bronze-green shadows; zero gold and zero saturated color.\nMaterials/textures: pitted travertine cut blocks, marble weathering, subtle chisel marks, heavy carved toga folds, exact shadow contact.\nConstraints: all sculptures are imagined Roman-inspired works. No text, typography, UI, plaques, letters, inscriptions, logos, or watermark. No fantasy ruins, repeated colonnades, Gothic elements, glowing eyes, armor, crowns, random rubble, or flying debris. Output only the clean image.\n"
+  },
+  {
+    "file": "public/assets/afterlife.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 162488,
+    "sha256": "d70381855ba50741833eb071b91626d0dbad0512a51c741920710001e40940c2",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: final full-bleed museum photography plate for AETERNA, a premium Roman sculpture digital exhibition.\nPrimary request: a contemporary ivory conservation gallery showing a single beautifully preserved ancient Roman-inspired marble torso on a narrow off-white rectangular plinth at center-right. The torso is headless and armless, classical adult male anatomy with convincing chest, ribs and abdomen; bottom broken at upper thigh and partly draped at one hip. Subtle real restoration fracture lines remain visible rather than exaggerated cracks. A small ancient marble hand fragment rests on one adjacent shorter pedestal farther right.\nScene/backdrop: beautiful spare contemporary museum, very tall warm-ivory plaster walls, pale limestone floor, one shallow vertical architectural wall recess at far right. Huge calm wall negative space across the left half. No visitors.\nStyle/medium: exceptionally tasteful real museum architectural photography, natural light, editorial medium-format clarity, tactile material realism, physically credible proportions.\nComposition/framing: wide horizontal 16:9 at about 2560 by 1440 pixels. Static 50mm equivalent lens and straight architectural verticals. Main torso and plinth center-right at x around 68 percent, full sculpture and plinth visible; smaller hand pedestal at x around 83 percent, sculpture grouping entirely within right half. The left 45 percent remains visually clear for separately coded headings.\nLighting/mood: soft daylight enters from high right, luminous pale marble, restrained warm whites, long soft sculpture shadows cast toward left across floor and wall. Quiet, humane, exacting conservation atmosphere. No spotlight cone.\nColor palette: ivory gallery #dedbd3, bone-white marble, off-white plinth, muted warm-gray shadows, no gold, no orange cast.\nMaterials/textures: powdery old marble, softened ancient fracture edges, faint repaired joints, tiny gray mineral veins, fine plaster and limestone details. Avoid glossy varnish or plastic smoothness.\nConstraints: sculpture is an imagined Roman-inspired object, never a claimed specific historical artifact. Credible classical anatomy and five-finger hand. No text, typography, UI, labels, placards, inscriptions, logos, or watermark. No people, tools, ladders, ropes, museum barriers, extra statues, lush decor or clutter. Output only the clean image.\n"
+  },
+  {
+    "file": "public/assets/final-gallery.webp",
+    "kind": "production asset",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 126834,
+    "sha256": "5470b61025f7a50853eaccda6a9285648e397e073495375355447996690800f9",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: final full-bleed closing scene for AETERNA, a world-class Roman sculpture digital exhibition.\nPrimary request: a vast dark, almost sacred contemporary gallery with one solitary pale Roman-inspired male marble portrait bust very far away at the exact center. The mature male bust has cropped wavy carved hair, a credible classical face, neck and shoulders, no crown. It stands on one narrow charcoal plinth. A very narrow real overhead museum light illuminates only the bust and the top of the pedestal. There is a slight reflected patch of light on the smooth dark stone floor.\nScene/backdrop: immense symmetrical charcoal museum chamber with silent monolithic side walls and barely visible deep architectural planes. Architecture is minimal, believable and contemporary. A deep central recess surrounds the bust, no arches required. The scene feels materially real and exceptionally empty.\nStyle/medium: extraordinary premium architectural photography, high-fidelity pale ancient marble, restrained cinematic chiaroscuro, sophisticated museum installation.\nComposition/framing: wide 16:9 at about 2560 by 1440 pixels. Strictly centered camera, absolute symmetry, stillness, corrected verticals. Bust is tiny, occupying only around 10 percent of the image height, positioned center x 50 percent with its top near y 48 percent; pedestal extends to around y 75 percent. Huge dark negative space above and both sides, readable subtle floor horizon.\nLighting/mood: one extremely narrow overhead white light, no visible fixtures, careful falloff, near-black space with enough shadow gradation to sense monumental volume. Tiny pool and slight reflection on floor. Profound quiet, no haze.\nColor palette: near-black charcoal #111210, restrained deep bronze-green black shadows, luminous pale bone-white marble; no gold, no saturated colors.\nMaterials/textures: softly eroded ancient marble grain and fine carved details, matte charcoal monolithic wall surfaces, polished but not mirrorlike dark limestone floor.\nConstraints: imagined Roman-inspired bust, no identification of a real artifact. No text, typography, UI, logos, watermarks, labels, inscriptions or plaques. No human visitors, fantasy architecture, religious symbols, candles, smoke, stars, extra sculptures, dust glitter, or bloom. Output only the clean image.\n"
+  },
+  {
+    "file": "design/references/hero-selected.webp",
+    "kind": "selected reference",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 229408,
+    "sha256": "bc814b69c4064601e352fba1de5e3f65c06b348f3dba770bc719b717b276a500",
+    "prompt": "Use case: ui-mockup. Create a single exceptionally sophisticated 16:9 desktop website hero concept for AETERNA — Rome in Marble and Memory. It is the first of NINE chapters in a complete digital sculpture exhibition, not a museum marketing site. Art direction: a colossal ancient Roman idealized clean-shaven male marble head, no exact named emperor, extreme crop, asymmetric right 65% of viewport, head turns slightly left, detailed curly hair, ancient unpainted weathered crystalline marble, shadowed eye, nose and lips lit with a sharp high left museum light. Charcoal almost black background, huge negative space on left. Superb photographic material truth, premium campaign. Oversized razor-fine classical Roman serif typography AETERNA across lower middle, letters partly occluded by the sculpture so image and type interlock. Small restrained top left wordmark AETERNA, top right \"The exhibition\" and \"Index\". Left small sentence \"An empire, held in stone.\" Lower left \"Rome in Marble and Memory\", lower right \"Scroll to enter\". Sparse chapter navigation baseline. No cards, no gold, no decorative badges, no gradient text, no fake metrics. Entire page feels monumental and silent. Practical HTML type and controls can be separated from imagery; make all visible text crisp. Downstream visual system must support ivory macro galleries, portrait profiles, a torso assembled from actual spatial fragments, an architectural monument, relief depth, fractured marble, a restoration archive and final still gallery. This image shows only the hero at full fidelity."
+  },
+  {
+    "file": "design/references/material-and-light.webp",
+    "kind": "selected reference",
+    "medium": "OpenAI ImageGen, original interpretive artwork",
+    "historicalStatus": "Imagined Roman-inspired composition; not a documentary photograph of a named ancient object.",
+    "nativeWidth": 1254,
+    "nativeHeight": 1254,
+    "bytes": 443100,
+    "sha256": "c4c0529a780d35a2027e0dcb0f99c80f3fdce9cf102b50642e297703a3e48645",
+    "prompt": "Use case: productivity-visual. High resolution art director reference board for AETERNA Roman sculpture museum exhibit. Nine restrained photo references in a precise 3 by 3 layout, no written words. Panel 1 ancient marble eye macro with tool marks; panel 2 solitary monumental Roman stone head in dark museum; panel 3 carved marble fabric folds and chisel grooves; panel 4 a detached sculpted marble hand lying on travertine, non-violent archaeological artifact; panel 5 abstract gallery architectural arch and deep shadow; panel 6 fully clothed ancient Roman bronze portrait BUST head with deep green patina beside ivory marble; panel 7 a fully draped stone figure in ivory museum conservation room, clothed all over; panel 8 broken geometric architectural fragments and fine stone dust; panel 9 dramatic white shaft of light on black wall. Entire board sublime museum still photography, tactile weathering, accurate Roman visual grammar. No nudity, no living people, no text, no fantastical imagery, no golden ornaments."
+  },
+  {
+    "file": "public/assets/hero-cutout.webp",
+    "kind": "production alpha mask",
+    "medium": "OpenAI ImageGen, background extraction of selected generated hero",
+    "historicalStatus": "Imagined portrait; alpha is used for title occlusion, not as a historical image.",
+    "nativeWidth": 1672,
+    "nativeHeight": 941,
+    "bytes": 267992,
+    "sha256": "61c0fcc543acf5eb0a5e8a31107e4d78bd3ab80bbbfcba66de2aa5611cd2341c",
+    "prompt": "Use case: background-extraction. Edit target is this AETERNA clean hero image. Extract ONLY the EXACT marble sculpture from this image onto a truly transparent background. Preserve its pixels, pose, fine cracks, lighting, photographic material, exact size, aspect ratio and position on the canvas. Remove all the black background to transparent, including left half. The sculpture's edges touch top, right and bottom exactly as before. Do not center or shrink the head. Do not fill in cropped parts. Do not add shadows or a new backdrop. This alpha cutout must register perfectly on top of the original image for a layered website title mask. Original landscape framing, no text."
+  }
+]

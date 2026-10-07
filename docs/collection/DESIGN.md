@@ -1,6 +1,6 @@
 ---
 name: AI Web Experience Collection
-description: Three photographic triptychs, four paired rows and one full-width row opening eighteen independent worlds.
+description: Three photographic triptychs, four paired rows and two full-width rows opening nineteen independent worlds.
 colors:
   ground: "#eeefeb"
   ink: "#20231f"
@@ -26,11 +26,11 @@ rounded:
 
 ## Overview
 
-Experience mode. Eighteen complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
+Experience mode. Nineteen complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
 
 ## Colors
 
-Gallery tokens are above. The images and each work's established typography carry the eighteen distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
+Gallery tokens are above. The images and each work's established typography carry the nineteen distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
 
 ## Typography
 
@@ -38,7 +38,7 @@ Barlow for the quiet gallery voice; Barlow Condensed for the racing and space ti
 
 ## Layout
 
-One restrained header and invitation sit above three edge-to-edge image triptychs, four paired rows and one full-width row, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
+One restrained header and invitation sit above three edge-to-edge image triptychs, four paired rows and two full-width rows, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
 
 ## Elevation & Depth
 
@@ -58,11 +58,11 @@ Preserve the independent work styles. Reuse their actual assets, not recreated t
 
 ## Direction contract
 
-THESIS: a single eighteen-world visual entrance, with the works themselves as the first viewport's substance.
+THESIS: a single nineteen-world visual entrance, with the works themselves as the first viewport's substance.
 OWN-WORLD: pale gallery, sharp photographic edges, racing condensed type, botanical serif and the planetary horizon.
-STORY: recognize eighteen distinct experiences, choose one, explore, return.
+STORY: recognize nineteen distinct experiences, choose one, explore, return.
 FIRST VIEWPORT: quiet header and invitation above a dominant three-panel photographic composition; Explore remains visible at each lower corner.
-FORM: three code-led triptychs, four paired rows and one full-width row using media from the actual works; existing production assets are the reference.
+FORM: three code-led triptychs, four paired rows and two full-width rows using media from the actual works; existing production assets are the reference.
 FINISH: desktop/mobile full-frame review, verified native entry/return links, documented tokens and retained source provenance. Review stays in this chat as required by repository instructions; no additional agents.
 
 GLAZE adds its supplied Archivo voice, celadon jar and pale green ground. KAGE adds its supplied condensed voice and a real FRAME rendering on white. The homepage imports neither work runtime; previews are static local media. The original three-panel composition and native-link behavior remain intact.
@@ -71,10 +71,12 @@ CHRONOS retains its supplied watch image, Cormorant Garamond typography and dark
 
 INTERVAL retains its original threshold imagery and supplied Bodoni Moda voice in the second triptych. Its mobile panel keeps the established vertical sequence. FORM and FUSION complete a third triptych with captured media from their actual runtimes; the homepage still loads no work runtime.
 
-GLASSHOUSE and VEIL add the first paired row, with a real GLASSHOUSE pavilion capture and VEIL's supplied cloth study. Their Manrope and Cormorant voices, warm/cool grounds and native links retain the same restrained gallery frame. On mobile all eighteen panels form the existing vertical sequence; neither runtime is imported by the homepage.
+GLASSHOUSE and VEIL add the first paired row, with a real GLASSHOUSE pavilion capture and VEIL's supplied cloth study. Their Manrope and Cormorant voices, warm/cool grounds and native links retain the same restrained gallery frame. On mobile all nineteen panels form the existing vertical sequence; neither runtime is imported by the homepage.
 
-OPTIC and INKSCAPE add the second paired row, using captures from their supplied runtimes. OPTIC retains its Manrope/Cormorant optical film on black; INKSCAPE retains its light Cormorant voice, ivory paper and carbon ink. The existing eleven entrances keep their compositions. All eighteen panels remain native document links and no new work runtime loads on the homepage.
+OPTIC and INKSCAPE add the second paired row, using captures from their supplied runtimes. OPTIC retains its Manrope/Cormorant optical film on black; INKSCAPE retains its light Cormorant voice, ivory paper and carbon ink. The existing eleven entrances keep their compositions. All nineteen panels remain native document links and no new work runtime loads on the homepage.
 
-FACET and SILICON add a third paired row, retaining Instrument Serif gemstone typography and Manrope semiconductor typography. ATLAS and THRUST add a fourth paired row, retaining real geographic relief and an original engine capture. Previews are captured from the actual work runtimes. All eighteen entrances remain native document links; the Collection imports no work runtime.
+FACET and SILICON add a third paired row, retaining Instrument Serif gemstone typography and Manrope semiconductor typography. ATLAS and THRUST add a fourth paired row, retaining real geographic relief and an original engine capture. Previews are captured from the actual work runtimes. All nineteen entrances remain native document links; the Collection imports no work runtime.
 
-RESONANCE adds a final full-width entrance with its actual resonant-plate runtime capture, original Manrope and Cormorant italic fonts, graphite ground and restrained amber. Existing entrances retain their grid positions. All eighteen panels are native document links and the homepage imports no work runtime.
+RESONANCE adds the first full-width entrance with its actual resonant-plate runtime capture, original Manrope and Cormorant italic fonts, graphite ground and restrained amber. Existing entrances retain their grid positions. All nineteen panels are native document links and the homepage imports no work runtime.
+
+AETERNA adds the second independent full-width row using its unchanged generated colossal-face plate and supplied Bodoni Moda voice. Museum models stay inside its runtime; previews do not imply archaeological photographs. Existing row positions and document links are retained.

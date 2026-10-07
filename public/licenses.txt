@@ -247,3 +247,9 @@ RESONANCE — Sound Made Visible
 Local Manrope and Cormorant Garamond fonts retain SIL OFL 1.1.
 Full copyright and license texts: resonance/licenses/manrope-latin-OFL.txt and resonance/licenses/cormorant-garamond-latin-italic-OFL.txt.
 Asset and reference record: resonance/ATTRIBUTION.md. No application-wide MIT or other open-source grant was included in the delivery.
+
+AETERNA — Rome in Marble and Memory
+SMK KAS224 plaster-cast derivative: Public Domain Mark 1.0; The Met 2019.7 wellhead: CC0 1.0. Digital cuts and generated images are separate artistic interpretations.
+Bodoni Moda and Manrope: SIL OFL 1.1; full texts at aeterna/licenses/bodoni-moda-OFL.txt and aeterna/licenses/manrope-OFL.txt.
+Local Draco decoder: Apache 2.0; full text at aeterna/models/draco/LICENSE.txt. Actual Collection Three.js and build versions are recorded by the production dependency inventory.
+Complete source records: aeterna/ATTRIBUTION.md and aeterna/MUSEUM_ASSETS.md. No whole-application open-source grant was included in the supplied project.

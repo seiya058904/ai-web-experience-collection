@@ -1,0 +1,403 @@
+{
+  "imported": "2026-10-07",
+  "originalZip": "D:/下载/AETERNA-Rome-in-Marble-and-Memory.zip",
+  "bytes": 27993054,
+  "sha256": "e42d84aabd2ebeca9351552a141e5320d406032d97f14ee6ecf2778e1414feb2",
+  "entryCount": 82,
+  "clock": "Native scroll, one owned requestAnimationFrame scheduled on demand",
+  "applicationLicense": "No application-wide open-source grant inferred; museum PDM/CC0, font OFLs and Draco Apache 2.0 remain scoped.",
+  "adaptations": [
+    "Existing multi-page Vite boundary, base-aware images/fonts/models/local decoder, Collection return and canonical/social metadata.",
+    "Remove initial room inert/aria-hidden from the document; the running controller owns inactive rooms. Static reading keeps prose and hides unsupported controls.",
+    "Portrait tablets up to 900px reuse existing compact composition and measured canvas fitting; short landscape retains the supplied layout.",
+    "Public source records use deployed paths and actual root dependency versions; original records retained under provenance. Readable OFL notices normalize trailing whitespace; the public Manrope notice uses the official Google Fonts author copyright instead of the delivery generic Google Inc. header.",
+    "Historical Vite license inventory preserves its full legal text while normalizing trailing whitespace; original archive bytes and hashes remain recorded."
+  ],
+  "files": [
+    {
+      "source": "AETERNA/src/main.js",
+      "destination": "experiences/aeterna/src/main.js",
+      "originalSha256": "b7e06767f5f099a5cdc7855d5a95d1bd0be5142c69704b8788132c00514eb8e5",
+      "importedSha256": "5fa1e49440e5cce20c7986fd2e9f0476d8a5d53735dec989960f731349c69929",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/src/notes.js",
+      "destination": "experiences/aeterna/src/notes.js",
+      "originalSha256": "d999ee33be07ea8369735d33f73179b11809acca72e21e605565bddcc43d2819",
+      "importedSha256": "d999ee33be07ea8369735d33f73179b11809acca72e21e605565bddcc43d2819",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/src/research.js",
+      "destination": "experiences/aeterna/src/research.js",
+      "originalSha256": "608bf15df193cad930cf1eceb67e49ea9c5bc334074dea550fa3756847ec35c9",
+      "importedSha256": "608bf15df193cad930cf1eceb67e49ea9c5bc334074dea550fa3756847ec35c9",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/src/scroll.js",
+      "destination": "experiences/aeterna/src/scroll.js",
+      "originalSha256": "dda8f3464561c10499eeda7e7fd3cdb0733a992d05dcdbd40365ca7462810592",
+      "importedSha256": "dda8f3464561c10499eeda7e7fd3cdb0733a992d05dcdbd40365ca7462810592",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/src/styles.css",
+      "destination": "experiences/aeterna/src/styles.css",
+      "originalSha256": "ab730e790254784980d272b5e8febf353f7330dbca67f8bbca9bbea24e5020ea",
+      "importedSha256": "bbaaa046cdfe3b4d734db956d5802830b628abf487953d1a34da819930fd8a0c",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/src/spatial/index.js",
+      "destination": "experiences/aeterna/src/spatial/index.js",
+      "originalSha256": "2677e5afec861bb65681209c059d58001a5d0acc9bd12ad5063683553b908953",
+      "importedSha256": "75b96992bd18ba9f1d71f3aaed8b2a89dd5a0523275172b5ac7f060d20b8de10",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/public/favicon.svg",
+      "destination": "public/aeterna/favicon.svg",
+      "originalSha256": "c66f0189899a3fe17e8a358767046d94899ae0e7ca5c88cbe5e328f757c17a54",
+      "importedSha256": "c66f0189899a3fe17e8a358767046d94899ae0e7ca5c88cbe5e328f757c17a54",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/afterlife.webp",
+      "destination": "public/aeterna/assets/afterlife.webp",
+      "originalSha256": "d70381855ba50741833eb071b91626d0dbad0512a51c741920710001e40940c2",
+      "importedSha256": "d70381855ba50741833eb071b91626d0dbad0512a51c741920710001e40940c2",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/body-reference.webp",
+      "destination": "public/aeterna/assets/body-reference.webp",
+      "originalSha256": "4f220b56b16b3055d3d2d96b6a5cdb315f4eb3319281f804f6b38a8874692c70",
+      "importedSha256": "4f220b56b16b3055d3d2d96b6a5cdb315f4eb3319281f804f6b38a8874692c70",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/final-gallery.webp",
+      "destination": "public/aeterna/assets/final-gallery.webp",
+      "originalSha256": "5470b61025f7a50853eaccda6a9285648e397e073495375355447996690800f9",
+      "importedSha256": "5470b61025f7a50853eaccda6a9285648e397e073495375355447996690800f9",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/fracture.webp",
+      "destination": "public/aeterna/assets/fracture.webp",
+      "originalSha256": "4f5cfc2ba3fc813fb50757e66de4b7851e535617575e2bc279f565bfd601a05c",
+      "importedSha256": "4f5cfc2ba3fc813fb50757e66de4b7851e535617575e2bc279f565bfd601a05c",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/hero-cutout.webp",
+      "destination": "public/aeterna/assets/hero-cutout.webp",
+      "originalSha256": "61c0fcc543acf5eb0a5e8a31107e4d78bd3ab80bbbfcba66de2aa5611cd2341c",
+      "importedSha256": "61c0fcc543acf5eb0a5e8a31107e4d78bd3ab80bbbfcba66de2aa5611cd2341c",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/hero.webp",
+      "destination": "public/aeterna/assets/hero.webp",
+      "originalSha256": "e81925e3e586128f9e8958b632bab72eae08e8ade7209bedc2dfbc8c9335c0b1",
+      "importedSha256": "e81925e3e586128f9e8958b632bab72eae08e8ade7209bedc2dfbc8c9335c0b1",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/monument.webp",
+      "destination": "public/aeterna/assets/monument.webp",
+      "originalSha256": "9906b36f0c7e744c5203f30668bde55254fdea6aa3b8cf864df788133627361d",
+      "importedSha256": "9906b36f0c7e744c5203f30668bde55254fdea6aa3b8cf864df788133627361d",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/portrait-experience.webp",
+      "destination": "public/aeterna/assets/portrait-experience.webp",
+      "originalSha256": "cc1a3c88ead5be5ac8f53872af438ba558ee805aed5549ffb629ddce4553e469",
+      "importedSha256": "cc1a3c88ead5be5ac8f53872af438ba558ee805aed5549ffb629ddce4553e469",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/portrait-ideal.webp",
+      "destination": "public/aeterna/assets/portrait-ideal.webp",
+      "originalSha256": "d96a49f6a164391d96fd92a84e63da6aa0c7d4549de082b59745039aa7482939",
+      "importedSha256": "d96a49f6a164391d96fd92a84e63da6aa0c7d4549de082b59745039aa7482939",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/relief.webp",
+      "destination": "public/aeterna/assets/relief.webp",
+      "originalSha256": "03707af206218f31160be851c3db6d0c326f522e7ea048ef6ef254c0c7a0f4ac",
+      "importedSha256": "03707af206218f31160be851c3db6d0c326f522e7ea048ef6ef254c0c7a0f4ac",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/assets/stone-macro.webp",
+      "destination": "public/aeterna/assets/stone-macro.webp",
+      "originalSha256": "9072bda72d21223fd8e38b0977c060b9e70e132719968865085126947a1b41c7",
+      "importedSha256": "9072bda72d21223fd8e38b0977c060b9e70e132719968865085126947a1b41c7",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/fonts/bodoni-moda-latin-400-italic.woff2",
+      "destination": "public/aeterna/fonts/bodoni-moda-latin-400-italic.woff2",
+      "originalSha256": "783fd966b8ebb26034e892767b877c475d375d9227f5f5476d05ad5529d18232",
+      "importedSha256": "783fd966b8ebb26034e892767b877c475d375d9227f5f5476d05ad5529d18232",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/fonts/bodoni-moda-latin-400-normal.woff2",
+      "destination": "public/aeterna/fonts/bodoni-moda-latin-400-normal.woff2",
+      "originalSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "importedSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/fonts/manrope-latin-400-normal.woff2",
+      "destination": "public/aeterna/fonts/manrope-latin-400-normal.woff2",
+      "originalSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "importedSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/fonts/manrope-latin-500-normal.woff2",
+      "destination": "public/aeterna/fonts/manrope-latin-500-normal.woff2",
+      "originalSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "importedSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/herakles-fragments.glb",
+      "destination": "public/aeterna/models/herakles-fragments.glb",
+      "originalSha256": "0d73f3a6852023e35b22dd30493f9efacf9813e4744cce2bbc9bd42825f586f7",
+      "importedSha256": "0d73f3a6852023e35b22dd30493f9efacf9813e4744cce2bbc9bd42825f586f7",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/roman-wellhead.glb",
+      "destination": "public/aeterna/models/roman-wellhead.glb",
+      "originalSha256": "08d2718277466e65a195c4cd911e6d84269c89586a89f96eb507f1e951ec4cea",
+      "importedSha256": "08d2718277466e65a195c4cd911e6d84269c89586a89f96eb507f1e951ec4cea",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/draco/draco_decoder.js",
+      "destination": "public/aeterna/models/draco/draco_decoder.js",
+      "originalSha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f",
+      "importedSha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/draco/draco_decoder.wasm",
+      "destination": "public/aeterna/models/draco/draco_decoder.wasm",
+      "originalSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "importedSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/draco/draco_wasm_wrapper.js",
+      "destination": "public/aeterna/models/draco/draco_wasm_wrapper.js",
+      "originalSha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
+      "importedSha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/draco/LICENSE.txt",
+      "destination": "public/aeterna/models/draco/LICENSE.txt",
+      "originalSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "importedSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/public/models/draco/README.md",
+      "destination": "public/aeterna/models/draco/README.md",
+      "originalSha256": "8b9d277bf5743f4ce8d85d63c16690071b53f81796e877d4d395af943bde02a0",
+      "importedSha256": "8b9d277bf5743f4ce8d85d63c16690071b53f81796e877d4d395af943bde02a0",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/index.html",
+      "destination": "pages/aeterna/index.html",
+      "originalSha256": "92b6b9dee93a994ca06f40460465900d708c283d3919bb4350c1a50c066ac872",
+      "importedSha256": "8044a3044643d85f87da0deb589f7b1d9d62e9ae535a9a4f319eaec43d65f4a5",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/DESIGN.md",
+      "destination": "docs/aeterna/DESIGN.md",
+      "originalSha256": "c2094e479bb788b3715036d7e52914e3124c840e3491391e7a29bc81c552f6ad",
+      "importedSha256": "64ded3be6d073a021ace017b85acb4b7e6b9a7d47e9fe3e64296141d4b746666",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/design/VISUAL_BIBLE.md",
+      "destination": "docs/aeterna/VISUAL_BIBLE.md",
+      "originalSha256": "39f29c1c25373caf72073a4342363a59e459cd444bca7cf853e9077b845cd0ee",
+      "importedSha256": "75ab0d34b27221f4ba00dcb6564081e20f0f3b77d2c73a3911e5f651591760bd",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/README.md",
+      "destination": "docs/aeterna/UPSTREAM-README.md",
+      "originalSha256": "876adb01de7520123cc554011f15a60bb09ce8bbaa62a5d3fa122a2502c44bb9",
+      "importedSha256": "52f18a72e0757b24d16952e1e58f582c6a01e9eafbebde7fdae8f1bbdb020374",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/PRODUCT.md",
+      "destination": "docs/aeterna/UPSTREAM-PRODUCT.md",
+      "originalSha256": "1718bfee8d42a05dcf24de99261a30b99e9693e877201439a6f0cc6923a39af7",
+      "importedSha256": "4ae0026f76e5c6161144fd6aabb2f00f65ab56e3ab8b239d09a4218f24766156",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/docs/VERIFICATION.md",
+      "destination": "docs/aeterna/UPSTREAM-VERIFICATION.md",
+      "originalSha256": "b420c64573e3f7fadb43b44acb783161e55d73e725b30c5ffa6ea018f69da213",
+      "importedSha256": "2793dd4a09edb5d0802dfc492791773a41a312770a4a8b281032713efdedca8e",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/.impeccable/design.json",
+      "destination": "provenance/aeterna/design.json",
+      "originalSha256": "56f4d0d28377c45a2cdcebc7051ada5b7493d0370e430f14849434bb1c972319",
+      "importedSha256": "56f4d0d28377c45a2cdcebc7051ada5b7493d0370e430f14849434bb1c972319",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/SHA256SUMS.txt",
+      "destination": "provenance/aeterna/UPSTREAM-SHA256SUMS.txt",
+      "originalSha256": "8227076f8078b2311c0f6a5309e932cf4826158fbb3d40b6bcff592fa5dcc19b",
+      "importedSha256": "8227076f8078b2311c0f6a5309e932cf4826158fbb3d40b6bcff592fa5dcc19b",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/design/references/hero-selected.webp",
+      "destination": "provenance/aeterna/design/references/hero-selected.webp",
+      "originalSha256": "bc814b69c4064601e352fba1de5e3f65c06b348f3dba770bc719b717b276a500",
+      "importedSha256": "bc814b69c4064601e352fba1de5e3f65c06b348f3dba770bc719b717b276a500",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/design/references/material-and-light.webp",
+      "destination": "provenance/aeterna/design/references/material-and-light.webp",
+      "originalSha256": "c4c0529a780d35a2027e0dcb0f99c80f3fdce9cf102b50642e297703a3e48645",
+      "importedSha256": "c4c0529a780d35a2027e0dcb0f99c80f3fdce9cf102b50642e297703a3e48645",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/ASSET_PROVENANCE.md",
+      "destination": "provenance/aeterna/ASSET_PROVENANCE.md",
+      "originalSha256": "2a138815aa9776f75b6cdb8b20c4eda94919800ac743a3025a330e7e949f667c",
+      "importedSha256": "2a138815aa9776f75b6cdb8b20c4eda94919800ac743a3025a330e7e949f667c",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/ASSET_PROVENANCE.md",
+      "destination": "public/aeterna/ATTRIBUTION.md",
+      "originalSha256": "2a138815aa9776f75b6cdb8b20c4eda94919800ac743a3025a330e7e949f667c",
+      "importedSha256": "40d79950c09d9b042abe67d48ef5c0213f98f5e9718c0200489a4a49023a9dfb",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/docs/MUSEUM_ASSETS.md",
+      "destination": "provenance/aeterna/MUSEUM_ASSETS.md",
+      "originalSha256": "901367228e5ea4614bb6ee878aa80b0d06b2d04a13a17741981fb2c25c73471a",
+      "importedSha256": "901367228e5ea4614bb6ee878aa80b0d06b2d04a13a17741981fb2c25c73471a",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/MUSEUM_ASSETS.md",
+      "destination": "public/aeterna/MUSEUM_ASSETS.md",
+      "originalSha256": "901367228e5ea4614bb6ee878aa80b0d06b2d04a13a17741981fb2c25c73471a",
+      "importedSha256": "b4b6e996f6d059a4194cab70fad52a57b9cc2996fcf1a2d221e5a67269c3ff84",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/docs/CURATORIAL_NOTES.md",
+      "destination": "provenance/aeterna/CURATORIAL_NOTES.md",
+      "originalSha256": "e906ae8121b61e2fa066940ccb1cae93ecdf78c0e2576f9665dca5d5fcc73f03",
+      "importedSha256": "e906ae8121b61e2fa066940ccb1cae93ecdf78c0e2576f9665dca5d5fcc73f03",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/CURATORIAL_NOTES.md",
+      "destination": "public/aeterna/CURATORIAL_NOTES.md",
+      "originalSha256": "e906ae8121b61e2fa066940ccb1cae93ecdf78c0e2576f9665dca5d5fcc73f03",
+      "importedSha256": "e39afd52659907934b0e01e0de1623243b0e986e155910c0a6a8ec46357610d4",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/docs/AI_ASSETS.json",
+      "destination": "provenance/aeterna/AI_ASSETS.json",
+      "originalSha256": "482547cd49ef125a9ddf55cbbc87382664bcc9431cfc93de832a5db9ac42eda0",
+      "importedSha256": "482547cd49ef125a9ddf55cbbc87382664bcc9431cfc93de832a5db9ac42eda0",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/AI_ASSETS.json",
+      "destination": "public/aeterna/AI_ASSETS.json",
+      "originalSha256": "482547cd49ef125a9ddf55cbbc87382664bcc9431cfc93de832a5db9ac42eda0",
+      "importedSha256": "482547cd49ef125a9ddf55cbbc87382664bcc9431cfc93de832a5db9ac42eda0",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/licenses/bodoni-moda-OFL.txt",
+      "destination": "provenance/aeterna/licenses/bodoni-moda-OFL.txt",
+      "originalSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "importedSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/licenses/bodoni-moda-OFL.txt",
+      "destination": "public/aeterna/licenses/bodoni-moda-OFL.txt",
+      "originalSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "importedSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/licenses/manrope-OFL.txt",
+      "destination": "provenance/aeterna/licenses/manrope-OFL.txt",
+      "originalSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "importedSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/licenses/manrope-OFL.txt",
+      "destination": "public/aeterna/licenses/manrope-OFL.txt",
+      "originalSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "importedSha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
+      "adapted": true
+    },
+    {
+      "source": "AETERNA/docs/licenses/three-MIT.txt",
+      "destination": "provenance/aeterna/licenses/three-MIT.txt",
+      "originalSha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "importedSha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "adapted": false
+    },
+    {
+      "source": "AETERNA/docs/licenses/vite-MIT.txt",
+      "destination": "provenance/aeterna/licenses/vite-MIT.txt",
+      "originalSha256": "79502d82e18c8265d2ba0f5d8714eec66bdc124e80546a5d4c51be20059aab80",
+      "importedSha256": "a0e9b9a4049a232c439d0345547cd0b88beecac45c9584e71fea05cf3da8a1fa",
+      "adapted": true
+    }
+  ],
+  "gallery": {
+    "path": "public/aeterna/assets/hero.webp",
+    "sha256": "e81925e3e586128f9e8958b632bab72eae08e8ade7209bedc2dfbc8c9335c0b1",
+    "method": "Unchanged supplied generated production plate; no new imagery."
+  },
+  "supplementalNotices": [
+    {
+      "destination": "public/aeterna/licenses/manrope-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+      "retrieved": "2026-10-07",
+      "retrievedSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "reason": "Supply official author copyright and OFL; retain original generic delivery header under provenance/aeterna/licenses/manrope-OFL.txt."
+    }
+  ]
+}
