@@ -1,0 +1,83 @@
+{
+  "project": "GRID — The Architecture of Visual Order",
+  "assets": [
+    {
+      "file": "public/fonts/RobotoFlex-Latin.woff2",
+      "creator": "The Roboto Flex Project Authors",
+      "license": "SIL Open Font License 1.1",
+      "license_file": "licenses/RobotoFlex-OFL.txt",
+      "source": "https://fonts.gstatic.com/s/robotoflex/v30/NaNTepOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGbt8jZktqc2V3Zs0KvDLdBP8SBZtOs2IifRuUZQMsPJtUsR4DEK6cULNeUx9XgTnH37Ha_FIAp4Fm0PP1hw45DntW2x0wZGzhPmr1YNMYKYn9_1IQXGwJAiUJVUMdN5YUW4O8HtSCUhhK.woff2",
+      "upstream": "https://github.com/google/fonts/tree/main/ofl/robotoflex",
+      "changes": "No local font modifications; original Google Fonts Latin web subset with four requested variable axes.",
+      "bytes": 249700,
+      "sha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "acquired_date": "2026-10-07",
+      "glyph_count": 269,
+      "axes": [
+        {
+          "tag": "opsz",
+          "minimum": 8.0,
+          "default": 14.0,
+          "maximum": 144.0
+        },
+        {
+          "tag": "wght",
+          "minimum": 100.0,
+          "default": 400.0,
+          "maximum": 1000.0
+        },
+        {
+          "tag": "wdth",
+          "minimum": 25.0,
+          "default": 100.0,
+          "maximum": 151.0
+        },
+        {
+          "tag": "slnt",
+          "minimum": -10.0,
+          "default": 0.0,
+          "maximum": 0.0
+        }
+      ]
+    },
+    {
+      "file": "public/fonts/InstrumentSerif-Regular.woff2",
+      "creator": "The Instrument Serif Project Authors",
+      "license": "SIL Open Font License 1.1",
+      "license_file": "licenses/InstrumentSerif-OFL.txt",
+      "source": "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2",
+      "upstream": "https://github.com/google/fonts/tree/main/ofl/instrumentserif",
+      "changes": "No local font modifications; original Google Fonts Latin web subset.",
+      "bytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "acquired_date": "2026-10-07",
+      "glyph_count": 220
+    },
+    {
+      "file": "public/fonts/IBMPlexMono-Regular.woff2",
+      "creator": "IBM Corp.",
+      "license": "SIL Open Font License 1.1",
+      "license_file": "licenses/IBMPlexMono-OFL.txt",
+      "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2",
+      "upstream": "https://github.com/google/fonts/tree/main/ofl/ibmplexmono",
+      "changes": "No local font modifications; original Google Fonts Latin web subset.",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "acquired_date": "2026-10-07",
+      "glyph_count": 280
+    },
+    {
+      "file": "public/images/bw-stairs-original.jpg",
+      "creator": "Dmitrijs Milajevs",
+      "title": "Bw Stairs",
+      "license": "Creative Commons Attribution 3.0 Unported",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/9/91/Bw_Stairs_%28258283491%29.jpeg",
+      "source_record": "https://commons.wikimedia.org/wiki/File:Bw_Stairs_(258283491).jpeg",
+      "changes": "Original JPEG distributed unchanged. The website applies live layout and image presentation treatments.",
+      "bytes": 383888,
+      "sha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "acquired_date": "2026-10-07"
+    }
+  ]
+}

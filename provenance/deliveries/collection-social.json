@@ -1,10 +1,10 @@
 {
   "path": "public/collection-social.jpg",
-  "sha256": "6f63a0d1951b094687ac2f0f894a40137c409c85a67ff7141fabe5fd7ea4ff02",
-  "bytes": 178366,
+  "sha256": "c0d43d9853e04b8aca83e3009fda7252c02a92fcb0962dfe5dc19b692e54f4cb",
+  "bytes": 187883,
   "width": 1200,
   "height": 630,
-  "composition": "Twenty-six center-cropped native-work images: six rows of four, then two half-width images in the seventh row, JPEG quality 90. Supplied generated plates remain generated imagery; procedural works use actual runtime captures.",
+  "composition": "Twenty-nine center-cropped native-work images: five rows of five, then four images in the sixth row, JPEG quality 90. Supplied generated plates remain generated imagery; procedural/typographic works use actual runtime captures. GRID retains Bw Stairs CC BY 3.0 attribution in its source record and Collection credits.",
   "sources": [
     {
       "path": "public/f1/media/hero-1600.webp",
@@ -109,6 +109,21 @@
     {
       "path": "public/nib/poster.webp",
       "sha256": "2a64734be44f703c474b4e3602ff83882a09ee22e7a819fd9cb08363700862b0"
+    },
+    {
+      "path": "public/crema/poster.webp",
+      "sha256": "8e4902ef3c79ebfbb68d2da248a660068f8e1b9bd293cecbe08f501f36cc5dec"
+    },
+    {
+      "path": "public/crave/poster.webp",
+      "sha256": "20a1f1ecf99cc2dfbb9260ea8ed27d7306edd6ff208a93165105621da12faa2f"
+    },
+    {
+      "path": "public/grid/poster.webp",
+      "sha256": "f7ba1dc6373d9fc3a48b2422312d906bd675cceeef94dd376de5e159cbe478db",
+      "attribution": "Bw Stairs by Dmitrijs Milajevs, CC BY 3.0, via Wikimedia Commons. Actual GRID runtime typography, crop, contrast and raster presentation.",
+      "source": "https://commons.wikimedia.org/wiki/File:Bw_Stairs_(258283491).jpeg",
+      "license": "https://creativecommons.org/licenses/by/3.0/"
     }
   ]
 }

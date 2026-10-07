@@ -1,0 +1,84 @@
+{
+  "title": "CREMA — reusable procedural model snapshots",
+  "format": "glTF 2.0 binary",
+  "license": "MIT",
+  "generator": "scripts/export-models.mjs using Three.js GLTFExporter",
+  "threeVersion": "186",
+  "canonicalSource": "src/visuals/PorousWorld.js",
+  "canonicalSourceSHA256": "6636b9c15777bf1b33f0396e3da270aa62169f47d04d89458e4b9e9e86540e58",
+  "snapshotStage": 2.65,
+  "interpretation": "Authored visual geometry. Not measured micro-CT, physical particle measurements, or CFD output.",
+  "batches": [
+    {
+      "band": 1,
+      "instances": 212,
+      "verticesPerForm": 540
+    },
+    {
+      "band": 2,
+      "instances": 220,
+      "verticesPerForm": 540
+    },
+    {
+      "band": 3,
+      "instances": 320,
+      "verticesPerForm": 240
+    },
+    {
+      "band": 4,
+      "instances": 330,
+      "verticesPerForm": 240
+    },
+    {
+      "band": 5,
+      "instances": 430,
+      "verticesPerForm": 60
+    }
+  ],
+  "files": [
+    {
+      "filename": "fractured-coffee-granule.glb",
+      "bytes": 49708,
+      "sha256": "f158e7bb2f718880273adf29272171be55d4e331c7cd1c24583d8022bb139e42",
+      "extensionsRequired": [],
+      "geometryForms": 1,
+      "instances": 1,
+      "bounds": {
+        "min": [
+          -0.9222729206085205,
+          -0.4978901445865631,
+          -0.6797672510147095
+        ],
+        "max": [
+          0.5162010192871094,
+          0.7980665564537048,
+          0.540882408618927
+        ]
+      },
+      "verified": "GLB header, embedded-buffer-only structure, no embedded textures, GLTFLoader round-trip, finite bounds and expected instance count."
+    },
+    {
+      "filename": "packed-coffee-bed.glb",
+      "bytes": 142268,
+      "sha256": "64718b65c41b82de2bc21f6f1186ea2fdb1b8432fd58c81d07ce648d7fb423b5",
+      "extensionsRequired": [
+        "EXT_mesh_gpu_instancing"
+      ],
+      "geometryForms": 5,
+      "instances": 1512,
+      "bounds": {
+        "min": [
+          -3.4542833216542044,
+          -2.3202159295870395,
+          -1.4727105758828967
+        ],
+        "max": [
+          3.4839985586716296,
+          2.317686483124544,
+          1.5734687717531926
+        ]
+      },
+      "verified": "GLB header, embedded-buffer-only structure, no embedded textures, GLTFLoader round-trip, finite bounds and expected instance count."
+    }
+  ]
+}

@@ -12,5 +12,8 @@ public/magma/** -text
 public/fossil/** -text
 public/urushi/** -text
 public/nib/** -text
+public/crema/** -text
+public/crave/** -text
+public/grid/** -text
 # Preserve the supplied self-contained historical edition as an opaque artifact.
 provenance/kage/KAGE-VOID.html -text -diff

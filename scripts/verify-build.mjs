@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'crema/index.html', 'crave/index.html', 'grid/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib', 'crema', 'crave', 'grid'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -52,6 +52,9 @@ for (const [file, route, title] of [
   ['fossil/index.html', 'fossil/', 'FOSSIL — Deep Time in Stone'],
   ['urushi/index.html', 'urushi/', 'URUSHI — Layers of Lacquer'],
   ['nib/index.html', 'nib/', 'NIB — Ink Under Pressure'],
+  ['crema/index.html', 'crema/', 'CREMA — 9 Bars'],
+  ['crave/index.html', 'crave/', 'CRAVE — Before the First Bite'],
+  ['grid/index.html', 'grid/', 'GRID — The Architecture of Visual Order'],
   ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
   ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
   ['facet/index.html', 'facet/', 'FACET — The Light Within'],
@@ -95,6 +98,15 @@ for (const file of ['codex/NOTICE.md', 'codex/licenses/Cormorant-Garamond-OFL.tx
 }
 for (const file of ['urushi/LICENSE.txt', 'urushi/NOTICE.md', 'urushi/licenses/README.md', 'urushi/licenses/bodoni-moda-OFL.txt', 'urushi/licenses/manrope-OFL.txt', 'urushi/licenses/noto-serif-sc-OFL.txt', 'urushi/fonts/bodoni-moda-latin-400-normal.woff2', 'urushi/fonts/manrope-latin-400-normal.woff2', 'urushi/assets/fonts/urushi-cjk.woff2', 'urushi/models/urushi-vessel.obj', 'urushi/textures/lacquer-microstructure.png', 'urushi/poster.webp', 'urushi/social.jpg', 'nib/NOTICE.md', 'nib/ATTRIBUTION.md', 'nib/licenses/CormorantGaramond-OFL.txt', 'nib/licenses/Manrope-OFL.txt', 'nib/licenses/GSAP-Standard-License.html', 'nib/licenses/Lenis-MIT.txt', 'nib/fonts/cormorant-garamond-latin-variable.woff2', 'nib/fonts/cormorant-garamond-latin-variable-italic.woff2', 'nib/fonts/manrope-latin-variable.woff2', 'nib/assets/hero.webp', 'nib/assets/hero-mobile.webp', 'nib/assets/meniscus-fluid.webp', 'nib/poster.webp', 'nib/social.jpg']) {
   assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
+}
+for (const file of ['crema/LICENSE.txt', 'crema/NOTICE.md', 'crema/ATTRIBUTION.md', 'crema/licenses/README.md', 'crema/licenses/ARCHIVO-OFL.txt', 'crema/licenses/GSAP-NOTICE.txt', 'crema/licenses/LENIS.txt', 'crema/licenses/THREE.txt', 'crema/fonts/archivo-latin-variable.woff2', 'crema/assets/machine.webp', 'crema/assets/bed.webp', 'crema/assets/granule.webp', 'crema/assets/crema.webp', 'crema/assets/cup.webp', 'crema/poster.webp', 'crema/social.jpg']) {
+  assert((await stat(join(root, file))).size > 0, 'Missing CREMA resource: ' + file);
+}
+for (const file of ['crave/NOTICE.md', 'crave/ATTRIBUTION.md', 'crave/licenses/README.md', 'crave/licenses/CormorantGaramond-OFL.txt', 'crave/licenses/Manrope-OFL.txt', 'crave/licenses/Manrope-FONTLOG.txt', 'crave/licenses/GSAP-NOTICES.txt', 'crave/licenses/Lenis-MIT.txt', 'crave/fonts/cormorant-garamond-regular.woff2', 'crave/fonts/cormorant-garamond-italic.woff2', 'crave/fonts/manrope-variable.woff2', ...['pastry-hero', 'scallop-seared', 'pastry-inside', 'chocolate', 'tart-glaze', 'tart-steam', 'tart-plate', 'tart-cut', 'tart-bitten'].flatMap(name => [768, 1536].map(width => 'crave/media/' + name + '-' + width + '.webp')), 'crave/poster.webp', 'crave/social.jpg']) {
+  assert((await stat(join(root, file))).size > 0, 'Missing CRAVE resource: ' + file);
+}
+for (const file of ['grid/NOTICE.md', 'grid/licenses/README.md', 'grid/licenses/PHOTO-ATTRIBUTION.md', 'grid/licenses/ASSET-PROVENANCE.json', 'grid/licenses/RobotoFlex-OFL.txt', 'grid/licenses/InstrumentSerif-OFL.txt', 'grid/licenses/IBMPlexMono-OFL.txt', 'grid/licenses/GSAP-NOTICES.txt', 'grid/licenses/Lenis-MIT.txt', 'grid/fonts/RobotoFlex-Latin.woff2', 'grid/fonts/InstrumentSerif-Regular.woff2', 'grid/fonts/IBMPlexMono-Regular.woff2', 'grid/images/bw-stairs-original.jpg', 'grid/poster.webp', 'grid/social.jpg']) {
+  assert((await stat(join(root, file))).size > 0, 'Missing GRID resource: ' + file);
 }
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {

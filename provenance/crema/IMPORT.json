@@ -1,0 +1,1448 @@
+{
+  "archive": "CREMA-9-Bars.zip",
+  "bytes": 16544879,
+  "sha256": "a89f2f565c52eb3623e4441c89929dabcf6c4801ee2d9c9ad6641f5b49ee5cda",
+  "modifiedUtc": "2026-10-07T09:24:15.970398+00:00",
+  "entries": [
+    {
+      "path": "CREMA/ATTRIBUTION.md",
+      "bytes": 3018,
+      "sha256": "394140d3c3b197b6ea46b147f935968086c03ff8c225ecd70d9e30d6c8c17041",
+      "directory": false
+    },
+    {
+      "path": "CREMA/DESIGN.md",
+      "bytes": 6509,
+      "sha256": "ae73e9bcd753284f0b921284f4b7116dcd8879586123d28bb4dbcad3e14bbf91",
+      "directory": false
+    },
+    {
+      "path": "CREMA/LICENSE",
+      "bytes": 1544,
+      "sha256": "0bc29c933e17ba0b3ab9e68509f95e67e2711023b3d8e6ea99458dd3566b88b2",
+      "directory": false
+    },
+    {
+      "path": "CREMA/PRODUCT.md",
+      "bytes": 2021,
+      "sha256": "be67e666f027e0768c1d3ce2995754a9a890a40c8a38afee7339a3f71c3f02be",
+      "directory": false
+    },
+    {
+      "path": "CREMA/README.md",
+      "bytes": 7618,
+      "sha256": "1fc9c1c93b0f6497b7e8ebc3128d707d3c3401752828788c84aeeec46cce2139",
+      "directory": false
+    },
+    {
+      "path": "CREMA/SHA256SUMS",
+      "bytes": 6288,
+      "sha256": "ae92bf6db1a9f27afe4b4cc94ef4c7854280a723d54a4dac4aac9cca8a9a72fb",
+      "directory": false
+    },
+    {
+      "path": "CREMA/START_CREMA.bat",
+      "bytes": 1432,
+      "sha256": "5d8bac84d0f10c56324a8d37a5ec29a207df06815356ea7417fb71d88d7e24b0",
+      "directory": false
+    },
+    {
+      "path": "CREMA/START_CREMA.command",
+      "bytes": 1715,
+      "sha256": "d5a597f97f96b7eaa22949354f51d56ab361a21ddca31bdf2810221cc5d5ae6e",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/archivo-latin-wght-normal-E0tuGl4L.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/bed.webp",
+      "bytes": 237778,
+      "sha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/crema.webp",
+      "bytes": 319364,
+      "sha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/cup.webp",
+      "bytes": 52720,
+      "sha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/granule.webp",
+      "bytes": 654676,
+      "sha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/index-qWhfiWXT.js",
+      "bytes": 198681,
+      "sha256": "50e60482e50f26bd59e2ba2704169fe25f35ef21ca37f5ff794274170ed4e6c3",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/machine.webp",
+      "bytes": 87924,
+      "sha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/style-DEQ607TS.css",
+      "bytes": 18110,
+      "sha256": "247fb23ca24d405b8b5fc0bba0a99c75c8d0e7236fb4f87b13cc3bb0265f2fbe",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/assets/three-agwjYPIT.js",
+      "bytes": 557219,
+      "sha256": "ad0819f24b8ed228b718a6fece4d3434acf705ea975a549e47ae085eff3bd165",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/favicon.svg",
+      "bytes": 329,
+      "sha256": "b53f1382711442538d0cd4a3a23f8a61d1bc651cc55d5470640337780954cd22",
+      "directory": false
+    },
+    {
+      "path": "CREMA/dist/index.html",
+      "bytes": 11192,
+      "sha256": "59c586c9d6b337fc1f678b27f9ab2facaeae67692533665142d7a63a13b38b4b",
+      "directory": false
+    },
+    {
+      "path": "CREMA/docs/PROVENANCE.md",
+      "bytes": 9512,
+      "sha256": "b30f6cf68b3f88f9876b1054cf2d4aa73b17e9acbd24048eaf15e6e4311f65ff",
+      "directory": false
+    },
+    {
+      "path": "CREMA/docs/QA.md",
+      "bytes": 7949,
+      "sha256": "772f26de0ad69f379439e0302262415860f599fac984b7899952f70525be76d0",
+      "directory": false
+    },
+    {
+      "path": "CREMA/docs/REFINEMENT.md",
+      "bytes": 4090,
+      "sha256": "8622958bcf2cae828a87eb3b038b4e107a51599415a565dfb39bc456c3f02aa5",
+      "directory": false
+    },
+    {
+      "path": "CREMA/docs/SCIENCE.md",
+      "bytes": 5463,
+      "sha256": "a2f829fe909d9af624c89343e35a47771bcc18c8d16cf0d9a402b56ae5bb4ee3",
+      "directory": false
+    },
+    {
+      "path": "CREMA/index.html",
+      "bytes": 11015,
+      "sha256": "ea1acf20665fbf7cb865476e6846618dd033633bb675312e46acbb341f75989e",
+      "directory": false
+    },
+    {
+      "path": "CREMA/licenses/ARCHIVO-OFL.txt",
+      "bytes": 4503,
+      "sha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b",
+      "directory": false
+    },
+    {
+      "path": "CREMA/licenses/GSAP-NOTICE.txt",
+      "bytes": 694,
+      "sha256": "3d580c6351c3647f026b7d0cab4728800c19683a6cda6e00a4db82a10dc5bd67",
+      "directory": false
+    },
+    {
+      "path": "CREMA/licenses/LENIS.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "directory": false
+    },
+    {
+      "path": "CREMA/licenses/README.md",
+      "bytes": 859,
+      "sha256": "13f61110d3f927a7a6b1564af7ae8a7018dfc6453332ec1f19af0f31ee27b776",
+      "directory": false
+    },
+    {
+      "path": "CREMA/licenses/THREE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "directory": false
+    },
+    {
+      "path": "CREMA/licenses/VITE.md",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "directory": false
+    },
+    {
+      "path": "CREMA/package-lock.json",
+      "bytes": 27059,
+      "sha256": "aa23e9ef2a84e1cbcfeee061922daba493561424f4f06b770e19e55cb5892814",
+      "directory": false
+    },
+    {
+      "path": "CREMA/package.json",
+      "bytes": 550,
+      "sha256": "6e48aab02e3ca38475617a47e10d27665f23dd4d63fe57c01603732bb9149cd0",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/bed-concept.webp",
+      "bytes": 266068,
+      "sha256": "d757f9537a4a1f6f503122ebaae770f693c146d33bc523f75dbeae32d3c9d92a",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/crema-concept.webp",
+      "bytes": 340192,
+      "sha256": "bdb8bda88fceec28d246c33488da3059cae842a54e17d0564438ef342e8480b7",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/cup-concept.webp",
+      "bytes": 70804,
+      "sha256": "a080a9af45721befa80afae04aa95fcfef27e247cfc0cb2e32e481125270cb7a",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/drop-concept.webp",
+      "bytes": 109806,
+      "sha256": "67872b6bd3af47b382841f7754b9bc99bceb1222cdb539726bf62747abdb9e00",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/flow-concept.webp",
+      "bytes": 266102,
+      "sha256": "ea8a7c2bf5f3db89286ed3624f2e45a4d151063340cc496d9a83a54883c0a498",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/hero-b.webp",
+      "bytes": 129428,
+      "sha256": "24aa69d1cb9f263d009472fedd8d1b610e83753c81bee0a80b1bffda1198e4d9",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/mobile-concept.webp",
+      "bytes": 116904,
+      "sha256": "95e5483151c852604ed3633e8f81a15733a209065a84428a5411452cd22e6580",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/pressure-concept.webp",
+      "bytes": 144768,
+      "sha256": "0bbeef07b068a657ae07f27a919819705e0b9f403cf9ea182e879629fa9ba033",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/concepts/saturation-concept.webp",
+      "bytes": 275844,
+      "sha256": "bf57a3e337a19b8a43bc716da0dd2264e48b9f50ff5730d20cceeb1a9a4caf79",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/manifest.json",
+      "bytes": 54427,
+      "sha256": "9963066b02416a9e4fa22ad79af484aa32f0067ca0bee00a8b6eb09a0430361b",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/models/README.md",
+      "bytes": 3577,
+      "sha256": "ea198a7249e5ee2458b75dcfff18206cd4047d0906e43ea6bad41f60c35a978c",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/models/fractured-coffee-granule.glb",
+      "bytes": 49708,
+      "sha256": "f158e7bb2f718880273adf29272171be55d4e331c7cd1c24583d8022bb139e42",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/models/models-manifest.json",
+      "bytes": 2315,
+      "sha256": "e82fce8f59238aef8901bab46b38dcd864d308a5374e521bda372a7d563a78e9",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/models/packed-coffee-bed.glb",
+      "bytes": 142268,
+      "sha256": "64718b65c41b82de2bc21f6f1186ea2fdb1b8432fd58c81d07ce648d7fb423b5",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/originals/bed-master.png",
+      "bytes": 2224747,
+      "sha256": "441e5fdcbe4a365ddbb8f4fe795a197fe606a71490b0dc412b77979a64ad8fcd",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/originals/crema-master.png",
+      "bytes": 2405014,
+      "sha256": "be03d7be53d957a7f95f730e99b61ac19b74e7cd5b95eb53943e9e36fd5c6db7",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/originals/cup-master.png",
+      "bytes": 1618268,
+      "sha256": "63fa8fb2915f60a13cfd79dc54e8a1b2a1367edf98512993ca7fdef3e4e0e207",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/originals/granule-master.png",
+      "bytes": 3697960,
+      "sha256": "ce01b714eb0fef3358387e0d7a37d8866b1ea7aa60b9d0b58540b22a136878f6",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/originals/machine-master.png",
+      "bytes": 1729856,
+      "sha256": "49d91a0000dc5f5a89ee4dd95aeed98ba9adbe0fa3f76b48d7a164635384b4f0",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/textures/README.md",
+      "bytes": 5100,
+      "sha256": "fc68aaec249743a65a45e7e2f04c3bb2bdbc5eef26dd293e67fbe2fb8554f51e",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/textures/coffee-cellular-albedo.png",
+      "bytes": 407755,
+      "sha256": "67ba9e477db2e2859d71d26e67e6302bab9f7a14ed660747f2db37362725ea96",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/textures/coffee-cellular-height.png",
+      "bytes": 301576,
+      "sha256": "c95b26e18b9d7beb5e18c84000c81d13ba837938d8551d8f146e8e04efa5ab77",
+      "directory": false
+    },
+    {
+      "path": "CREMA/production/textures/textures-manifest.json",
+      "bytes": 3318,
+      "sha256": "bd4f25855ad4001f56dabb2aa1c5ee5778f19e3c144722225ddb8bfb0037e6b7",
+      "directory": false
+    },
+    {
+      "path": "CREMA/public/assets/bed.webp",
+      "bytes": 237778,
+      "sha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "directory": false
+    },
+    {
+      "path": "CREMA/public/assets/crema.webp",
+      "bytes": 319364,
+      "sha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "directory": false
+    },
+    {
+      "path": "CREMA/public/assets/cup.webp",
+      "bytes": 52720,
+      "sha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "directory": false
+    },
+    {
+      "path": "CREMA/public/assets/granule.webp",
+      "bytes": 654676,
+      "sha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "directory": false
+    },
+    {
+      "path": "CREMA/public/assets/machine.webp",
+      "bytes": 87924,
+      "sha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "directory": false
+    },
+    {
+      "path": "CREMA/public/favicon.svg",
+      "bytes": 329,
+      "sha256": "b53f1382711442538d0cd4a3a23f8a61d1bc651cc55d5470640337780954cd22",
+      "directory": false
+    },
+    {
+      "path": "CREMA/scripts/export-models.mjs",
+      "bytes": 23777,
+      "sha256": "566d628381e7084c235bb1af351a74445af762698447b5734493d5b76a174a73",
+      "directory": false
+    },
+    {
+      "path": "CREMA/scripts/preview.mjs",
+      "bytes": 7852,
+      "sha256": "1eeaefb94a71586d5e2197280ca7bdb968626170d12f2964d9e3728b143b3215",
+      "directory": false
+    },
+    {
+      "path": "CREMA/src/Soundscape.js",
+      "bytes": 2789,
+      "sha256": "0b89ac554cec0fa570f3609cf2e4e136d3bd4fd741dad6ea2b4a5b6f5c01d3d0",
+      "directory": false
+    },
+    {
+      "path": "CREMA/src/main.js",
+      "bytes": 17936,
+      "sha256": "1ac86541a7e4c0839ad0cd3d0507dc47894e909bf0235c32b6c3ed4dd8f4fc14",
+      "directory": false
+    },
+    {
+      "path": "CREMA/src/styles.css",
+      "bytes": 21630,
+      "sha256": "50e3539403700f640e60cc1d8a2a24ebe27df588f1c75e5795167cf232ea9449",
+      "directory": false
+    },
+    {
+      "path": "CREMA/src/visuals/LiquidWorld.js",
+      "bytes": 31433,
+      "sha256": "5631e0cc9c0414e73e6d9dd9a67e17dc8775a32c948011881f0727597715dcaa",
+      "directory": false
+    },
+    {
+      "path": "CREMA/src/visuals/PorousWorld.js",
+      "bytes": 50253,
+      "sha256": "6636b9c15777bf1b33f0396e3da270aa62169f47d04d89458e4b9e9e86540e58",
+      "directory": false
+    },
+    {
+      "path": "CREMA/vite.config.js",
+      "bytes": 344,
+      "sha256": "5bb290a651a6f6458dc49a9636e1d57a542b3c8e333e268f947aa3291b580e6e",
+      "directory": false
+    }
+  ],
+  "route": "crema",
+  "entryCount": 69,
+  "mapping": [
+    {
+      "source": "CREMA/src/main.js",
+      "target": "experiences/crema/src/main.js",
+      "sourceSha256": "1ac86541a7e4c0839ad0cd3d0507dc47894e909bf0235c32b6c3ed4dd8f4fc14",
+      "sourceBytes": 17936,
+      "mode": "adapted",
+      "bytes": 20891,
+      "sha256": "ed53976a111d95edf7908fefe15c58a23badc8b9e580b2fb37921682c1c97967",
+      "targetBytes": 20891,
+      "targetSha256": "ed53976a111d95edf7908fefe15c58a23badc8b9e580b2fb37921682c1c97967",
+      "kind": "adapted",
+      "byteIdentical": false
+    },
+    {
+      "source": "CREMA/src/Soundscape.js",
+      "target": "experiences/crema/src/Soundscape.js",
+      "sourceSha256": "0b89ac554cec0fa570f3609cf2e4e136d3bd4fd741dad6ea2b4a5b6f5c01d3d0",
+      "sourceBytes": 2789,
+      "mode": "adapted",
+      "bytes": 3093,
+      "sha256": "f9fea15bac741fa96c402e1eeeb26c29fc2d1d6fa31e22c6eba38519c0c4f809",
+      "targetBytes": 3093,
+      "targetSha256": "f9fea15bac741fa96c402e1eeeb26c29fc2d1d6fa31e22c6eba38519c0c4f809",
+      "kind": "adapted",
+      "byteIdentical": false
+    },
+    {
+      "source": "CREMA/src/styles.css",
+      "target": "experiences/crema/src/styles.css",
+      "sourceSha256": "50e3539403700f640e60cc1d8a2a24ebe27df588f1c75e5795167cf232ea9449",
+      "sourceBytes": 21630,
+      "mode": "adapted",
+      "bytes": 21777,
+      "sha256": "61160e6f09c78a308a0879102f8b33e4003ffb5255fe9671eba96676e0a91730",
+      "targetBytes": 21777,
+      "targetSha256": "61160e6f09c78a308a0879102f8b33e4003ffb5255fe9671eba96676e0a91730",
+      "kind": "adapted",
+      "byteIdentical": false
+    },
+    {
+      "source": "CREMA/src/visuals/PorousWorld.js",
+      "target": "experiences/crema/src/visuals/PorousWorld.js",
+      "sourceSha256": "6636b9c15777bf1b33f0396e3da270aa62169f47d04d89458e4b9e9e86540e58",
+      "sourceBytes": 50253,
+      "mode": "byte-preserved",
+      "bytes": 50253,
+      "sha256": "6636b9c15777bf1b33f0396e3da270aa62169f47d04d89458e4b9e9e86540e58",
+      "targetBytes": 50253,
+      "targetSha256": "6636b9c15777bf1b33f0396e3da270aa62169f47d04d89458e4b9e9e86540e58",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/src/visuals/LiquidWorld.js",
+      "target": "experiences/crema/src/visuals/LiquidWorld.js",
+      "sourceSha256": "5631e0cc9c0414e73e6d9dd9a67e17dc8775a32c948011881f0727597715dcaa",
+      "sourceBytes": 31433,
+      "mode": "byte-preserved",
+      "bytes": 31433,
+      "sha256": "5631e0cc9c0414e73e6d9dd9a67e17dc8775a32c948011881f0727597715dcaa",
+      "targetBytes": 31433,
+      "targetSha256": "5631e0cc9c0414e73e6d9dd9a67e17dc8775a32c948011881f0727597715dcaa",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/index.html",
+      "target": "pages/crema/index.html",
+      "sourceSha256": "ea1acf20665fbf7cb865476e6846618dd033633bb675312e46acbb341f75989e",
+      "sourceBytes": 11015,
+      "mode": "adapted",
+      "bytes": 12947,
+      "sha256": "8c7f75091bf498fec053a9f3d1c5c45bc092d70d8a3109c365f5922aeec91b8e",
+      "targetBytes": 12947,
+      "targetSha256": "8c7f75091bf498fec053a9f3d1c5c45bc092d70d8a3109c365f5922aeec91b8e",
+      "kind": "adapted",
+      "byteIdentical": false
+    },
+    {
+      "source": "CREMA/public/assets/machine.webp",
+      "target": "public/crema/assets/machine.webp",
+      "sourceSha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "sourceBytes": 87924,
+      "mode": "byte-preserved",
+      "bytes": 87924,
+      "sha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "targetBytes": 87924,
+      "targetSha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/public/assets/bed.webp",
+      "target": "public/crema/assets/bed.webp",
+      "sourceSha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "sourceBytes": 237778,
+      "mode": "byte-preserved",
+      "bytes": 237778,
+      "sha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "targetBytes": 237778,
+      "targetSha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/public/assets/granule.webp",
+      "target": "public/crema/assets/granule.webp",
+      "sourceSha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "sourceBytes": 654676,
+      "mode": "byte-preserved",
+      "bytes": 654676,
+      "sha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "targetBytes": 654676,
+      "targetSha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/public/assets/crema.webp",
+      "target": "public/crema/assets/crema.webp",
+      "sourceSha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "sourceBytes": 319364,
+      "mode": "byte-preserved",
+      "bytes": 319364,
+      "sha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "targetBytes": 319364,
+      "targetSha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/public/assets/cup.webp",
+      "target": "public/crema/assets/cup.webp",
+      "sourceSha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "sourceBytes": 52720,
+      "mode": "byte-preserved",
+      "bytes": 52720,
+      "sha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "targetBytes": 52720,
+      "targetSha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/public/favicon.svg",
+      "target": "public/crema/favicon.svg",
+      "sourceSha256": "b53f1382711442538d0cd4a3a23f8a61d1bc651cc55d5470640337780954cd22",
+      "sourceBytes": 329,
+      "mode": "byte-preserved",
+      "bytes": 329,
+      "sha256": "b53f1382711442538d0cd4a3a23f8a61d1bc651cc55d5470640337780954cd22",
+      "targetBytes": 329,
+      "targetSha256": "b53f1382711442538d0cd4a3a23f8a61d1bc651cc55d5470640337780954cd22",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/dist/assets/archivo-latin-wght-normal-E0tuGl4L.woff2",
+      "target": "public/crema/fonts/archivo-latin-variable.woff2",
+      "sourceSha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967",
+      "sourceBytes": 34928,
+      "mode": "byte-preserved",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967",
+      "targetBytes": 34928,
+      "targetSha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/LICENSE",
+      "target": "public/crema/LICENSE.txt",
+      "sourceSha256": "0bc29c933e17ba0b3ab9e68509f95e67e2711023b3d8e6ea99458dd3566b88b2",
+      "sourceBytes": 1544,
+      "mode": "byte-preserved",
+      "bytes": 1544,
+      "sha256": "0bc29c933e17ba0b3ab9e68509f95e67e2711023b3d8e6ea99458dd3566b88b2",
+      "targetBytes": 1544,
+      "targetSha256": "0bc29c933e17ba0b3ab9e68509f95e67e2711023b3d8e6ea99458dd3566b88b2",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/ATTRIBUTION.md",
+      "target": "public/crema/ATTRIBUTION.md",
+      "sourceSha256": "394140d3c3b197b6ea46b147f935968086c03ff8c225ecd70d9e30d6c8c17041",
+      "sourceBytes": 3018,
+      "mode": "byte-preserved",
+      "bytes": 3018,
+      "sha256": "394140d3c3b197b6ea46b147f935968086c03ff8c225ecd70d9e30d6c8c17041",
+      "targetBytes": 3018,
+      "targetSha256": "394140d3c3b197b6ea46b147f935968086c03ff8c225ecd70d9e30d6c8c17041",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/licenses/ARCHIVO-OFL.txt",
+      "target": "public/crema/licenses/ARCHIVO-OFL.txt",
+      "sourceSha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b",
+      "sourceBytes": 4503,
+      "mode": "byte-preserved",
+      "bytes": 4503,
+      "sha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b",
+      "targetBytes": 4503,
+      "targetSha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/licenses/GSAP-NOTICE.txt",
+      "target": "public/crema/licenses/GSAP-NOTICE.txt",
+      "sourceSha256": "3d580c6351c3647f026b7d0cab4728800c19683a6cda6e00a4db82a10dc5bd67",
+      "sourceBytes": 694,
+      "mode": "byte-preserved",
+      "bytes": 694,
+      "sha256": "3d580c6351c3647f026b7d0cab4728800c19683a6cda6e00a4db82a10dc5bd67",
+      "targetBytes": 694,
+      "targetSha256": "3d580c6351c3647f026b7d0cab4728800c19683a6cda6e00a4db82a10dc5bd67",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/licenses/LENIS.txt",
+      "target": "public/crema/licenses/LENIS.txt",
+      "sourceSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "sourceBytes": 1096,
+      "mode": "byte-preserved",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "targetBytes": 1096,
+      "targetSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/licenses/README.md",
+      "target": "public/crema/licenses/README.md",
+      "sourceSha256": "13f61110d3f927a7a6b1564af7ae8a7018dfc6453332ec1f19af0f31ee27b776",
+      "sourceBytes": 859,
+      "mode": "byte-preserved",
+      "bytes": 859,
+      "sha256": "13f61110d3f927a7a6b1564af7ae8a7018dfc6453332ec1f19af0f31ee27b776",
+      "targetBytes": 859,
+      "targetSha256": "13f61110d3f927a7a6b1564af7ae8a7018dfc6453332ec1f19af0f31ee27b776",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/licenses/THREE.txt",
+      "target": "public/crema/licenses/THREE.txt",
+      "sourceSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "sourceBytes": 1081,
+      "mode": "byte-preserved",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "targetBytes": 1081,
+      "targetSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/licenses/VITE.md",
+      "target": "public/crema/licenses/VITE.md",
+      "sourceSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "sourceBytes": 108786,
+      "mode": "byte-preserved",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "targetBytes": 108786,
+      "targetSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/models/fractured-coffee-granule.glb",
+      "target": "public/crema/models/fractured-coffee-granule.glb",
+      "sourceSha256": "f158e7bb2f718880273adf29272171be55d4e331c7cd1c24583d8022bb139e42",
+      "sourceBytes": 49708,
+      "mode": "byte-preserved",
+      "bytes": 49708,
+      "sha256": "f158e7bb2f718880273adf29272171be55d4e331c7cd1c24583d8022bb139e42",
+      "targetBytes": 49708,
+      "targetSha256": "f158e7bb2f718880273adf29272171be55d4e331c7cd1c24583d8022bb139e42",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/models/models-manifest.json",
+      "target": "public/crema/models/models-manifest.json",
+      "sourceSha256": "e82fce8f59238aef8901bab46b38dcd864d308a5374e521bda372a7d563a78e9",
+      "sourceBytes": 2315,
+      "mode": "byte-preserved",
+      "bytes": 2315,
+      "sha256": "e82fce8f59238aef8901bab46b38dcd864d308a5374e521bda372a7d563a78e9",
+      "targetBytes": 2315,
+      "targetSha256": "e82fce8f59238aef8901bab46b38dcd864d308a5374e521bda372a7d563a78e9",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/models/packed-coffee-bed.glb",
+      "target": "public/crema/models/packed-coffee-bed.glb",
+      "sourceSha256": "64718b65c41b82de2bc21f6f1186ea2fdb1b8432fd58c81d07ce648d7fb423b5",
+      "sourceBytes": 142268,
+      "mode": "byte-preserved",
+      "bytes": 142268,
+      "sha256": "64718b65c41b82de2bc21f6f1186ea2fdb1b8432fd58c81d07ce648d7fb423b5",
+      "targetBytes": 142268,
+      "targetSha256": "64718b65c41b82de2bc21f6f1186ea2fdb1b8432fd58c81d07ce648d7fb423b5",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/models/README.md",
+      "target": "public/crema/models/README.md",
+      "sourceSha256": "ea198a7249e5ee2458b75dcfff18206cd4047d0906e43ea6bad41f60c35a978c",
+      "sourceBytes": 3577,
+      "mode": "byte-preserved",
+      "bytes": 3577,
+      "sha256": "ea198a7249e5ee2458b75dcfff18206cd4047d0906e43ea6bad41f60c35a978c",
+      "targetBytes": 3577,
+      "targetSha256": "ea198a7249e5ee2458b75dcfff18206cd4047d0906e43ea6bad41f60c35a978c",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/textures/coffee-cellular-albedo.png",
+      "target": "public/crema/textures/coffee-cellular-albedo.png",
+      "sourceSha256": "67ba9e477db2e2859d71d26e67e6302bab9f7a14ed660747f2db37362725ea96",
+      "sourceBytes": 407755,
+      "mode": "byte-preserved",
+      "bytes": 407755,
+      "sha256": "67ba9e477db2e2859d71d26e67e6302bab9f7a14ed660747f2db37362725ea96",
+      "targetBytes": 407755,
+      "targetSha256": "67ba9e477db2e2859d71d26e67e6302bab9f7a14ed660747f2db37362725ea96",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/textures/coffee-cellular-height.png",
+      "target": "public/crema/textures/coffee-cellular-height.png",
+      "sourceSha256": "c95b26e18b9d7beb5e18c84000c81d13ba837938d8551d8f146e8e04efa5ab77",
+      "sourceBytes": 301576,
+      "mode": "byte-preserved",
+      "bytes": 301576,
+      "sha256": "c95b26e18b9d7beb5e18c84000c81d13ba837938d8551d8f146e8e04efa5ab77",
+      "targetBytes": 301576,
+      "targetSha256": "c95b26e18b9d7beb5e18c84000c81d13ba837938d8551d8f146e8e04efa5ab77",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/textures/README.md",
+      "target": "public/crema/textures/README.md",
+      "sourceSha256": "fc68aaec249743a65a45e7e2f04c3bb2bdbc5eef26dd293e67fbe2fb8554f51e",
+      "sourceBytes": 5100,
+      "mode": "byte-preserved",
+      "bytes": 5100,
+      "sha256": "fc68aaec249743a65a45e7e2f04c3bb2bdbc5eef26dd293e67fbe2fb8554f51e",
+      "targetBytes": 5100,
+      "targetSha256": "fc68aaec249743a65a45e7e2f04c3bb2bdbc5eef26dd293e67fbe2fb8554f51e",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/textures/textures-manifest.json",
+      "target": "public/crema/textures/textures-manifest.json",
+      "sourceSha256": "bd4f25855ad4001f56dabb2aa1c5ee5778f19e3c144722225ddb8bfb0037e6b7",
+      "sourceBytes": 3318,
+      "mode": "byte-preserved",
+      "bytes": 3318,
+      "sha256": "bd4f25855ad4001f56dabb2aa1c5ee5778f19e3c144722225ddb8bfb0037e6b7",
+      "targetBytes": 3318,
+      "targetSha256": "bd4f25855ad4001f56dabb2aa1c5ee5778f19e3c144722225ddb8bfb0037e6b7",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/DESIGN.md",
+      "target": "docs/crema/DESIGN.md",
+      "sourceSha256": "ae73e9bcd753284f0b921284f4b7116dcd8879586123d28bb4dbcad3e14bbf91",
+      "sourceBytes": 6509,
+      "mode": "byte-preserved",
+      "bytes": 6509,
+      "sha256": "ae73e9bcd753284f0b921284f4b7116dcd8879586123d28bb4dbcad3e14bbf91",
+      "targetBytes": 6509,
+      "targetSha256": "ae73e9bcd753284f0b921284f4b7116dcd8879586123d28bb4dbcad3e14bbf91",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/docs/SCIENCE.md",
+      "target": "docs/crema/SCIENCE.md",
+      "sourceSha256": "a2f829fe909d9af624c89343e35a47771bcc18c8d16cf0d9a402b56ae5bb4ee3",
+      "sourceBytes": 5463,
+      "mode": "byte-preserved",
+      "bytes": 5463,
+      "sha256": "a2f829fe909d9af624c89343e35a47771bcc18c8d16cf0d9a402b56ae5bb4ee3",
+      "targetBytes": 5463,
+      "targetSha256": "a2f829fe909d9af624c89343e35a47771bcc18c8d16cf0d9a402b56ae5bb4ee3",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/docs/PROVENANCE.md",
+      "target": "docs/crema/PROVENANCE.md",
+      "sourceSha256": "b30f6cf68b3f88f9876b1054cf2d4aa73b17e9acbd24048eaf15e6e4311f65ff",
+      "sourceBytes": 9512,
+      "mode": "byte-preserved",
+      "bytes": 9512,
+      "sha256": "b30f6cf68b3f88f9876b1054cf2d4aa73b17e9acbd24048eaf15e6e4311f65ff",
+      "targetBytes": 9512,
+      "targetSha256": "b30f6cf68b3f88f9876b1054cf2d4aa73b17e9acbd24048eaf15e6e4311f65ff",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/docs/REFINEMENT.md",
+      "target": "docs/crema/REFINEMENT.md",
+      "sourceSha256": "8622958bcf2cae828a87eb3b038b4e107a51599415a565dfb39bc456c3f02aa5",
+      "sourceBytes": 4090,
+      "mode": "byte-preserved",
+      "bytes": 4090,
+      "sha256": "8622958bcf2cae828a87eb3b038b4e107a51599415a565dfb39bc456c3f02aa5",
+      "targetBytes": 4090,
+      "targetSha256": "8622958bcf2cae828a87eb3b038b4e107a51599415a565dfb39bc456c3f02aa5",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/docs/QA.md",
+      "target": "docs/crema/UPSTREAM-QA.md",
+      "sourceSha256": "772f26de0ad69f379439e0302262415860f599fac984b7899952f70525be76d0",
+      "sourceBytes": 7949,
+      "mode": "byte-preserved",
+      "bytes": 7949,
+      "sha256": "772f26de0ad69f379439e0302262415860f599fac984b7899952f70525be76d0",
+      "targetBytes": 7949,
+      "targetSha256": "772f26de0ad69f379439e0302262415860f599fac984b7899952f70525be76d0",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/README.md",
+      "target": "provenance/crema/upstream/README.md",
+      "sourceSha256": "1fc9c1c93b0f6497b7e8ebc3128d707d3c3401752828788c84aeeec46cce2139",
+      "sourceBytes": 7618,
+      "mode": "byte-preserved",
+      "bytes": 7618,
+      "sha256": "1fc9c1c93b0f6497b7e8ebc3128d707d3c3401752828788c84aeeec46cce2139",
+      "targetBytes": 7618,
+      "targetSha256": "1fc9c1c93b0f6497b7e8ebc3128d707d3c3401752828788c84aeeec46cce2139",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/PRODUCT.md",
+      "target": "provenance/crema/upstream/PRODUCT.md",
+      "sourceSha256": "be67e666f027e0768c1d3ce2995754a9a890a40c8a38afee7339a3f71c3f02be",
+      "sourceBytes": 2021,
+      "mode": "byte-preserved",
+      "bytes": 2021,
+      "sha256": "be67e666f027e0768c1d3ce2995754a9a890a40c8a38afee7339a3f71c3f02be",
+      "targetBytes": 2021,
+      "targetSha256": "be67e666f027e0768c1d3ce2995754a9a890a40c8a38afee7339a3f71c3f02be",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/SHA256SUMS",
+      "target": "provenance/crema/upstream/SHA256SUMS",
+      "sourceSha256": "ae92bf6db1a9f27afe4b4cc94ef4c7854280a723d54a4dac4aac9cca8a9a72fb",
+      "sourceBytes": 6288,
+      "mode": "byte-preserved",
+      "bytes": 6288,
+      "sha256": "ae92bf6db1a9f27afe4b4cc94ef4c7854280a723d54a4dac4aac9cca8a9a72fb",
+      "targetBytes": 6288,
+      "targetSha256": "ae92bf6db1a9f27afe4b4cc94ef4c7854280a723d54a4dac4aac9cca8a9a72fb",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/scripts/export-models.mjs",
+      "target": "provenance/crema/verification/export-models.mjs",
+      "sourceSha256": "566d628381e7084c235bb1af351a74445af762698447b5734493d5b76a174a73",
+      "sourceBytes": 23777,
+      "mode": "byte-preserved",
+      "bytes": 23777,
+      "sha256": "566d628381e7084c235bb1af351a74445af762698447b5734493d5b76a174a73",
+      "targetBytes": 23777,
+      "targetSha256": "566d628381e7084c235bb1af351a74445af762698447b5734493d5b76a174a73",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/manifest.json",
+      "target": "provenance/crema/production/manifest.json",
+      "sourceSha256": "9963066b02416a9e4fa22ad79af484aa32f0067ca0bee00a8b6eb09a0430361b",
+      "sourceBytes": 54427,
+      "mode": "byte-preserved",
+      "bytes": 54427,
+      "sha256": "9963066b02416a9e4fa22ad79af484aa32f0067ca0bee00a8b6eb09a0430361b",
+      "targetBytes": 54427,
+      "targetSha256": "9963066b02416a9e4fa22ad79af484aa32f0067ca0bee00a8b6eb09a0430361b",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/bed-concept.webp",
+      "target": "provenance/crema/production/concepts/bed-concept.webp",
+      "sourceSha256": "d757f9537a4a1f6f503122ebaae770f693c146d33bc523f75dbeae32d3c9d92a",
+      "sourceBytes": 266068,
+      "mode": "byte-preserved",
+      "bytes": 266068,
+      "sha256": "d757f9537a4a1f6f503122ebaae770f693c146d33bc523f75dbeae32d3c9d92a",
+      "targetBytes": 266068,
+      "targetSha256": "d757f9537a4a1f6f503122ebaae770f693c146d33bc523f75dbeae32d3c9d92a",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/crema-concept.webp",
+      "target": "provenance/crema/production/concepts/crema-concept.webp",
+      "sourceSha256": "bdb8bda88fceec28d246c33488da3059cae842a54e17d0564438ef342e8480b7",
+      "sourceBytes": 340192,
+      "mode": "byte-preserved",
+      "bytes": 340192,
+      "sha256": "bdb8bda88fceec28d246c33488da3059cae842a54e17d0564438ef342e8480b7",
+      "targetBytes": 340192,
+      "targetSha256": "bdb8bda88fceec28d246c33488da3059cae842a54e17d0564438ef342e8480b7",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/cup-concept.webp",
+      "target": "provenance/crema/production/concepts/cup-concept.webp",
+      "sourceSha256": "a080a9af45721befa80afae04aa95fcfef27e247cfc0cb2e32e481125270cb7a",
+      "sourceBytes": 70804,
+      "mode": "byte-preserved",
+      "bytes": 70804,
+      "sha256": "a080a9af45721befa80afae04aa95fcfef27e247cfc0cb2e32e481125270cb7a",
+      "targetBytes": 70804,
+      "targetSha256": "a080a9af45721befa80afae04aa95fcfef27e247cfc0cb2e32e481125270cb7a",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/drop-concept.webp",
+      "target": "provenance/crema/production/concepts/drop-concept.webp",
+      "sourceSha256": "67872b6bd3af47b382841f7754b9bc99bceb1222cdb539726bf62747abdb9e00",
+      "sourceBytes": 109806,
+      "mode": "byte-preserved",
+      "bytes": 109806,
+      "sha256": "67872b6bd3af47b382841f7754b9bc99bceb1222cdb539726bf62747abdb9e00",
+      "targetBytes": 109806,
+      "targetSha256": "67872b6bd3af47b382841f7754b9bc99bceb1222cdb539726bf62747abdb9e00",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/flow-concept.webp",
+      "target": "provenance/crema/production/concepts/flow-concept.webp",
+      "sourceSha256": "ea8a7c2bf5f3db89286ed3624f2e45a4d151063340cc496d9a83a54883c0a498",
+      "sourceBytes": 266102,
+      "mode": "byte-preserved",
+      "bytes": 266102,
+      "sha256": "ea8a7c2bf5f3db89286ed3624f2e45a4d151063340cc496d9a83a54883c0a498",
+      "targetBytes": 266102,
+      "targetSha256": "ea8a7c2bf5f3db89286ed3624f2e45a4d151063340cc496d9a83a54883c0a498",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/hero-b.webp",
+      "target": "provenance/crema/production/concepts/hero-b.webp",
+      "sourceSha256": "24aa69d1cb9f263d009472fedd8d1b610e83753c81bee0a80b1bffda1198e4d9",
+      "sourceBytes": 129428,
+      "mode": "byte-preserved",
+      "bytes": 129428,
+      "sha256": "24aa69d1cb9f263d009472fedd8d1b610e83753c81bee0a80b1bffda1198e4d9",
+      "targetBytes": 129428,
+      "targetSha256": "24aa69d1cb9f263d009472fedd8d1b610e83753c81bee0a80b1bffda1198e4d9",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/mobile-concept.webp",
+      "target": "provenance/crema/production/concepts/mobile-concept.webp",
+      "sourceSha256": "95e5483151c852604ed3633e8f81a15733a209065a84428a5411452cd22e6580",
+      "sourceBytes": 116904,
+      "mode": "byte-preserved",
+      "bytes": 116904,
+      "sha256": "95e5483151c852604ed3633e8f81a15733a209065a84428a5411452cd22e6580",
+      "targetBytes": 116904,
+      "targetSha256": "95e5483151c852604ed3633e8f81a15733a209065a84428a5411452cd22e6580",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/pressure-concept.webp",
+      "target": "provenance/crema/production/concepts/pressure-concept.webp",
+      "sourceSha256": "0bbeef07b068a657ae07f27a919819705e0b9f403cf9ea182e879629fa9ba033",
+      "sourceBytes": 144768,
+      "mode": "byte-preserved",
+      "bytes": 144768,
+      "sha256": "0bbeef07b068a657ae07f27a919819705e0b9f403cf9ea182e879629fa9ba033",
+      "targetBytes": 144768,
+      "targetSha256": "0bbeef07b068a657ae07f27a919819705e0b9f403cf9ea182e879629fa9ba033",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/concepts/saturation-concept.webp",
+      "target": "provenance/crema/production/concepts/saturation-concept.webp",
+      "sourceSha256": "bf57a3e337a19b8a43bc716da0dd2264e48b9f50ff5730d20cceeb1a9a4caf79",
+      "sourceBytes": 275844,
+      "mode": "byte-preserved",
+      "bytes": 275844,
+      "sha256": "bf57a3e337a19b8a43bc716da0dd2264e48b9f50ff5730d20cceeb1a9a4caf79",
+      "targetBytes": 275844,
+      "targetSha256": "bf57a3e337a19b8a43bc716da0dd2264e48b9f50ff5730d20cceeb1a9a4caf79",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/originals/bed-master.png",
+      "target": "provenance/crema/production/originals/bed-master.png",
+      "sourceSha256": "441e5fdcbe4a365ddbb8f4fe795a197fe606a71490b0dc412b77979a64ad8fcd",
+      "sourceBytes": 2224747,
+      "mode": "byte-preserved",
+      "bytes": 2224747,
+      "sha256": "441e5fdcbe4a365ddbb8f4fe795a197fe606a71490b0dc412b77979a64ad8fcd",
+      "targetBytes": 2224747,
+      "targetSha256": "441e5fdcbe4a365ddbb8f4fe795a197fe606a71490b0dc412b77979a64ad8fcd",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/originals/crema-master.png",
+      "target": "provenance/crema/production/originals/crema-master.png",
+      "sourceSha256": "be03d7be53d957a7f95f730e99b61ac19b74e7cd5b95eb53943e9e36fd5c6db7",
+      "sourceBytes": 2405014,
+      "mode": "byte-preserved",
+      "bytes": 2405014,
+      "sha256": "be03d7be53d957a7f95f730e99b61ac19b74e7cd5b95eb53943e9e36fd5c6db7",
+      "targetBytes": 2405014,
+      "targetSha256": "be03d7be53d957a7f95f730e99b61ac19b74e7cd5b95eb53943e9e36fd5c6db7",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/originals/cup-master.png",
+      "target": "provenance/crema/production/originals/cup-master.png",
+      "sourceSha256": "63fa8fb2915f60a13cfd79dc54e8a1b2a1367edf98512993ca7fdef3e4e0e207",
+      "sourceBytes": 1618268,
+      "mode": "byte-preserved",
+      "bytes": 1618268,
+      "sha256": "63fa8fb2915f60a13cfd79dc54e8a1b2a1367edf98512993ca7fdef3e4e0e207",
+      "targetBytes": 1618268,
+      "targetSha256": "63fa8fb2915f60a13cfd79dc54e8a1b2a1367edf98512993ca7fdef3e4e0e207",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/originals/granule-master.png",
+      "target": "provenance/crema/production/originals/granule-master.png",
+      "sourceSha256": "ce01b714eb0fef3358387e0d7a37d8866b1ea7aa60b9d0b58540b22a136878f6",
+      "sourceBytes": 3697960,
+      "mode": "byte-preserved",
+      "bytes": 3697960,
+      "sha256": "ce01b714eb0fef3358387e0d7a37d8866b1ea7aa60b9d0b58540b22a136878f6",
+      "targetBytes": 3697960,
+      "targetSha256": "ce01b714eb0fef3358387e0d7a37d8866b1ea7aa60b9d0b58540b22a136878f6",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    },
+    {
+      "source": "CREMA/production/originals/machine-master.png",
+      "target": "provenance/crema/production/originals/machine-master.png",
+      "sourceSha256": "49d91a0000dc5f5a89ee4dd95aeed98ba9adbe0fa3f76b48d7a164635384b4f0",
+      "sourceBytes": 1729856,
+      "mode": "byte-preserved",
+      "bytes": 1729856,
+      "sha256": "49d91a0000dc5f5a89ee4dd95aeed98ba9adbe0fa3f76b48d7a164635384b4f0",
+      "targetBytes": 1729856,
+      "targetSha256": "49d91a0000dc5f5a89ee4dd95aeed98ba9adbe0fa3f76b48d7a164635384b4f0",
+      "kind": "byte-preserved",
+      "byteIdentical": true
+    }
+  ],
+  "omissions": [
+    {
+      "path": "CREMA/START_CREMA.bat",
+      "bytes": 1432,
+      "sha256": "5d8bac84d0f10c56324a8d37a5ec29a207df06815356ea7417fb71d88d7e24b0",
+      "directory": false,
+      "reason": "Standalone package/lock/build/server/launch tooling omitted; Collection root dependency/runtime boundary reused."
+    },
+    {
+      "path": "CREMA/START_CREMA.command",
+      "bytes": 1715,
+      "sha256": "d5a597f97f96b7eaa22949354f51d56ab361a21ddca31bdf2810221cc5d5ae6e",
+      "directory": false,
+      "reason": "Standalone package/lock/build/server/launch tooling omitted; Collection root dependency/runtime boundary reused."
+    },
+    {
+      "path": "CREMA/dist/assets/bed.webp",
+      "bytes": 237778,
+      "sha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/crema.webp",
+      "bytes": 319364,
+      "sha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/cup.webp",
+      "bytes": 52720,
+      "sha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/granule.webp",
+      "bytes": 654676,
+      "sha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/index-qWhfiWXT.js",
+      "bytes": 198681,
+      "sha256": "50e60482e50f26bd59e2ba2704169fe25f35ef21ca37f5ff794274170ed4e6c3",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/machine.webp",
+      "bytes": 87924,
+      "sha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/style-DEQ607TS.css",
+      "bytes": 18110,
+      "sha256": "247fb23ca24d405b8b5fc0bba0a99c75c8d0e7236fb4f87b13cc3bb0265f2fbe",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/assets/three-agwjYPIT.js",
+      "bytes": 557219,
+      "sha256": "ad0819f24b8ed228b718a6fece4d3434acf705ea975a549e47ae085eff3bd165",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/favicon.svg",
+      "bytes": 329,
+      "sha256": "b53f1382711442538d0cd4a3a23f8a61d1bc651cc55d5470640337780954cd22",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/dist/index.html",
+      "bytes": 11192,
+      "sha256": "59c586c9d6b337fc1f678b27f9ab2facaeae67692533665142d7a63a13b38b4b",
+      "directory": false,
+      "reason": "Compiled duplicate omitted; supplied editable source and original public assets imported instead."
+    },
+    {
+      "path": "CREMA/package-lock.json",
+      "bytes": 27059,
+      "sha256": "aa23e9ef2a84e1cbcfeee061922daba493561424f4f06b770e19e55cb5892814",
+      "directory": false,
+      "reason": "Standalone package/lock/build/server/launch tooling omitted; Collection root dependency/runtime boundary reused."
+    },
+    {
+      "path": "CREMA/package.json",
+      "bytes": 550,
+      "sha256": "6e48aab02e3ca38475617a47e10d27665f23dd4d63fe57c01603732bb9149cd0",
+      "directory": false,
+      "reason": "Standalone package/lock/build/server/launch tooling omitted; Collection root dependency/runtime boundary reused."
+    },
+    {
+      "path": "CREMA/scripts/preview.mjs",
+      "bytes": 7852,
+      "sha256": "1eeaefb94a71586d5e2197280ca7bdb968626170d12f2964d9e3728b143b3215",
+      "directory": false,
+      "reason": "Standalone package/lock/build/server/launch tooling omitted; Collection root dependency/runtime boundary reused."
+    },
+    {
+      "path": "CREMA/vite.config.js",
+      "bytes": 344,
+      "sha256": "5bb290a651a6f6458dc49a9636e1d57a542b3c8e333e268f947aa3291b580e6e",
+      "directory": false,
+      "reason": "Standalone package/lock/build/server/launch tooling omitted; Collection root dependency/runtime boundary reused."
+    }
+  ],
+  "metadata": {
+    "route": "crema",
+    "title": "CREMA — 9 Bars",
+    "name": "CREMA",
+    "tagline": "Build the pressure. Find the path. Pull the shot.",
+    "descriptionEn": "An eleven-movement journey through coffee particles, pressure, porous flow, a first drop, a stream and crema.",
+    "descriptionZh": "从咖啡颗粒、压力与孔隙水流，到第一滴、流线和油脂泡沫的十一章萃取旅程。",
+    "worldEn": "Espresso / pressure / porous matter and liquid",
+    "worldZh": "浓缩咖啡 / 压力 / 多孔材料与液体",
+    "chapterCount": 11,
+    "chapterNames": [
+      "Machine",
+      "Particle",
+      "Bed",
+      "Pre-infusion",
+      "Pressure",
+      "Percolation",
+      "Extraction",
+      "First drop",
+      "Stream",
+      "Crema",
+      "Cup"
+    ],
+    "chapterIds": [
+      "machine",
+      "particle",
+      "bed",
+      "pre-infusion",
+      "pressure",
+      "percolation",
+      "extraction",
+      "first-drop",
+      "stream",
+      "crema",
+      "cup"
+    ],
+    "languages": [
+      "en"
+    ],
+    "hasAudio": true,
+    "audio": "Original local opt-in synthesis, silent by default, no samples/microphone/network",
+    "galleryFontFamily": "Archivo Variable",
+    "galleryFont": "/crema/fonts/archivo-latin-variable.woff2",
+    "galleryFontWeights": [
+      350,
+      725
+    ],
+    "palette": {
+      "background": "#090b0a",
+      "ink": "#eeede6",
+      "accent": "#c78b4d"
+    },
+    "poster": "/crema/poster.webp",
+    "socialImage": "/crema/social.jpg",
+    "socialAlt": "CREMA’s actual opening composition: supplied generated radial steel machine artwork with an authored procedural coffee drop.",
+    "notice": "/crema/NOTICE.md",
+    "license": "/crema/LICENSE.txt",
+    "licenseInventory": "/crema/licenses/README.md",
+    "attribution": "/crema/ATTRIBUTION.md",
+    "rendering": "Two original procedural worlds on one renderer/GSAP ticker; generated machine/cup plates and granule/crema surfaces, photographic reading fallback.",
+    "imageOrigin": "Five supplied generated runtime WebPs; nine generated research concepts and five original PNG masters remain source history. Geometry/model/texture exports are authored, non-measured offline snapshots, not runtime model loads.",
+    "controls": [
+      "Enter extraction",
+      "Index with eleven destinations",
+      "About study disclosure",
+      "Motion preference",
+      "Opt-in synthesized sound",
+      "Opening wordmark",
+      "Replay"
+    ],
+    "clock": "One original GSAP ticker; one Lenis .105/syncTouch:false/autoRaf:false, native reduced wheel, direct document progress",
+    "archivePath": "D:/下载/CREMA-9-Bars.zip",
+    "archiveSha256": "a89f2f565c52eb3623e4441c89929dabcf6c4801ee2d9c9ad6641f5b49ee5cda"
+  },
+  "capture": {
+    "url": "http://127.0.0.1:4195/crema/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "deviceScaleFactor": 1,
+    "capturedAt": "2026-10-07T09:53:19.328Z",
+    "original": "C:/Users/admin/AppData/Local/Temp/collection-crema-283edc2568b248bdaebd321f719fff24/capture/actual-opening-ui-free.png",
+    "originalSha256": "86b72391ac94b78886b5efc97684849b9401cbbbe3ca84746e7d408281007c5c",
+    "hiddenSelectors": [
+      ".site-header",
+      ".journey",
+      "#story",
+      ".chapter-content",
+      ".skip-link",
+      ".accessibility-status"
+    ],
+    "productSourceChanged": false,
+    "origin": "Actual default opening film. The radial steel machine is the supplied generated machine.webp plate; the attached coffee drop is the authored LiquidWorld geometry. No new AI image or redraw.",
+    "transforms": {
+      "poster": "Full native 1440×900 composition resized to 1200×750",
+      "social": "Native composition center-cropped/resized to 1200×630"
+    },
+    "state": {
+      "stage": 0,
+      "chapter": "machine",
+      "viewport": [
+        1440,
+        900
+      ],
+      "unit": 1206,
+      "gpu": true,
+      "contextLost": false,
+      "reducedMotion": false,
+      "frames": 43,
+      "drawCalls": 2,
+      "pixelRatio": 1,
+      "sound": false,
+      "liquidAnchor": {
+        "x": 0.5,
+        "y": 0.4119999999999999
+      },
+      "porousHandoff": {
+        "progress": 0,
+        "outletX": 0,
+        "outletY": 0,
+        "targetX": 0,
+        "targetY": 0,
+        "errorPx": 0
+      },
+      "renderer": {
+        "geometries": 2,
+        "textures": 1
+      }
+    },
+    "outputs": [
+      {
+        "path": "public/crema/poster.webp",
+        "bytes": 57768,
+        "sha256": "8e4902ef3c79ebfbb68d2da248a660068f8e1b9bd293cecbe08f501f36cc5dec",
+        "width": 1200,
+        "height": 750,
+        "format": "webp"
+      },
+      {
+        "path": "public/crema/social.jpg",
+        "bytes": 88434,
+        "sha256": "1e053ef835d9d8fbf5ba1e6e13353abc1cb8d262e8dc7f0d8cfa68852f50b6cb",
+        "width": 1200,
+        "height": 630,
+        "format": "jpeg"
+      }
+    ],
+    "errors": []
+  },
+  "generatedFiles": [
+    {
+      "path": "public/crema/NOTICE.md",
+      "bytes": 2391,
+      "sha256": "a5baf5146d18cec1058c228a915929fe57f7236206407765d8b0c9b311e888b5"
+    },
+    {
+      "path": "public/crema/poster.webp",
+      "bytes": 57768,
+      "sha256": "8e4902ef3c79ebfbb68d2da248a660068f8e1b9bd293cecbe08f501f36cc5dec"
+    },
+    {
+      "path": "public/crema/social.jpg",
+      "bytes": 88434,
+      "sha256": "1e053ef835d9d8fbf5ba1e6e13353abc1cb8d262e8dc7f0d8cfa68852f50b6cb"
+    },
+    {
+      "path": "docs/crema/ARCHITECTURE.md",
+      "bytes": 3582,
+      "sha256": "14e6970ddbcd07a3cc5a771e473152e3f9991d885018666357dd84ec691c63a3"
+    },
+    {
+      "path": "docs/crema/ACCEPTANCE.md",
+      "bytes": 7185,
+      "sha256": "9b61e96fbafd17d7a662faf1cd3bebed627a21bafa2a431c8ad471d3cb61a374"
+    }
+  ],
+  "review": {
+    "graph": "Ready collection graph 2026-10-07T09:19:21Z; CREMA search had no candidates and six correct path coverage records were missing. Tier 2 actual external source fallback; no external reindex or nonexistent trace/snippet claims.",
+    "securityAndLicenses": "All runtime modules/HTML/CSS and source/legal/science/tooling records reviewed before import. No security/supplied-license/scientific-framing blocker. Original-code MIT scoped correctly, provider terms/non-exclusivity retained for generated art, Three/Lenis MIT, Archivo OFL, GSAP own standard license. No eval/telemetry/upload/microphone/automatic external request.",
+    "assetAudit": "Independent 57/57: 69 inventory entries, 68 SHA256SUMS entries, nineteen images/five original conversion pairs, both GLBs, both exact procedural PNG maps, actual Archivo font axes and original notices; no confirmed asset defect. Both original visual source modules are byte-identical in Collection.",
+    "preaudit": "Independent upstream runtime143/143, eighteen fresh contexts137fullframes, eleven chaptersD/Mnormal/reduced/fallback, original controls/audio/resize/reload/hold/touch-emulation and six sizes. Arbitrary desktop6271/phone5726 reload exact retention disproves claiming upstream reload already broken.",
+    "integration": "Dev main134/134 +focused14/14; thirteen main+four focusedcontexts,122+4fullQAframes. D/M allchaptersnormal/reduced/forcedfallback, controlnativeIndex/wheel/Escape/focus/notes/audio/replay, arbitrary stoppedreload/resize/reverse,16handoff/3reversibleposes,sixsizes,contextloss/restoration,JS+noJSnativeexit. Fresh normalhash readable, unprevented native reduced360pxwheel,1200mslategranule preservesreal360pxinput. Ordinary noJS/HTTP errors; forcedWebGL message explained. Allcontacts and selected completeframes/finalposters viewed.",
+    "collectionChanges": [
+      "Namespaced base-aware independent page/media/metadata/nativeexit",
+      "HTML-ownedCSS/localoriginalfont/noJSuniformreadingshade andunavailablecontrolhiding",
+      "Reducedwheel disabled/nativeTouch/.105 originalGSAPclock/directstage preserved",
+      "Onlyownedticker hidden/BFCache suspension/resume and immediateactualscrollalign",
+      "Terminal/HMR abort and latecallback/partialresource cleanup",
+      "Original arbitrarybrowserreload/back-forward retained;freshhashonlynavigation",
+      "Original visual modules/geometry/assets/snapshot provenance preserved byte-for-byte"
+    ],
+    "production": "Final 29-work project-path production passed main134/134, focused14/14, reverse16/16 and26/26 HTTP resource byte/SHA checks; nineteen fresh contexts128complete captures. Eleven chapters D/Mnormal/reduced/readingfallback, original controls/audio/nativeIndex, freshhash/reload/resize/contextrecovery/noJSreturn/sixsizes/lateinput verified. Contacts and selectedcompleteframes actuallyviewed. Sixteenhandoffcaptures perviewport andthree exactreversibleposes usedmanual reduced mode forgeometrycomparison, notnormalbreathingperformance certification. Root separately passed211tests, root/projectbuilds809referencechecks. No unresolved confirmed productiondefect.",
+    "productionLifecycle": "Root native same-window realtabswitch document.hiddentrue, frames898→898 andY600→600;resumedinputY1200;nativeback pageshow.persistedtrue,Y1200→1200,allfiveflags true. Recorded independentroot evidence, notsyntheticvisibility.",
+    "productionWarning": "Root central desktopentry saw non-fatal THREE.WebGLProgram/X4122 doubleprecision constant1+-1e-17 compilerwarning. Noordinarypageerror orfailedHTTP resource; actualparticlesrendered. OriginalPorousWorld byteunchanged. Nozerowarningsclaim; forcedcontextdenialThreeerrors expected.",
+    "targetedReverse": "Later asymmetric phone wheel evidence showed the standard accumulated Lenis target continuing downward after a smaller opposite delta. Original virtualScroll/publicstop-start now discards only reversed fullwheel oldtargets with noextra clock/easing/delay. Final targeted16/16: desktop actual87.5ms reverseY1702→160ms1368→final1202; phone81.1ms1599→1265→1099; exact500px reverseeventrelative landing, fine2px/burst/nav/nativeoverflowdialog/reduced/replay/error checks pass. Original firstIndexpreconditionfail preserved: desktop had nooverflow untilAbout opened; correctedharness withoutproductchange/thresholdrelaxation. No broaddevmatrix repeated.",
+    "evidence": {
+      "sourceAudit": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\source-audit\\report.md",
+      "assetAudit": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\asset-audit\\report.md",
+      "upstreamRuntime": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\upstream-runtime\\report.md",
+      "devRuntime": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\dev-runtime\\report.md",
+      "devResults": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\dev-runtime\\results.json",
+      "focusedResults": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\dev-runtime\\extras.json",
+      "capture": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\capture\\provenance.json",
+      "productionReport": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\production-runtime\\report.md",
+      "productionSummary": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\production-runtime\\summary.json",
+      "productionResults": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\production-runtime\\results.json",
+      "productionFocused": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\production-runtime\\extras.json",
+      "productionReverse": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\production-runtime\\reverse-regression-final.json",
+      "productionHTTP": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\production-runtime\\http-bytes.json",
+      "productionLifecycle": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crema-283edc2568b248bdaebd321f719fff24\\lifecycle-results.json"
+    },
+    "limitations": [
+      "Foods full text inaccessible; PubMed identity/tenfraction study verified, precise earlyconcentration trend andfulltextlicensing not independentlycertified; noarticlemedia redistribution",
+      "Physicaltouch/iOS/Safari/Firefox/highrefreshhardware unverified",
+      "NoFPS/power orprolongedmemorysoak certification",
+      "Exactdeployedidentity/liveflows subsequentreleasegate"
+    ]
+  }
+}

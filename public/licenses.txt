@@ -253,3 +253,12 @@ SMK KAS224 plaster-cast derivative: Public Domain Mark 1.0; The Met 2019.7 wellh
 Bodoni Moda and Manrope: SIL OFL 1.1; full texts at aeterna/licenses/bodoni-moda-OFL.txt and aeterna/licenses/manrope-OFL.txt.
 Local Draco decoder: Apache 2.0; full text at aeterna/models/draco/LICENSE.txt. Actual Collection Three.js and build versions are recorded by the production dependency inventory.
 Complete source records: aeterna/ATTRIBUTION.md and aeterna/MUSEUM_ASSETS.md. No whole-application open-source grant was included in the supplied project.
+
+CREMA — 9 Bars
+Original source retains its scoped MIT license at crema/LICENSE.txt. Generated imagery retains separate provider terms; authored flow/geometry is not measured CFD. Archivo retains SIL OFL 1.1 at crema/licenses/ARCHIVO-OFL.txt. Original image/software distinctions: crema/ATTRIBUTION.md, crema/NOTICE.md and crema/licenses/README.md.
+
+CRAVE — Before the First Bite
+Cormorant Garamond and Manrope retain SIL OFL 1.1 at crave/licenses/CormorantGaramond-OFL.txt and crave/licenses/Manrope-OFL.txt, with original Manrope FONTLOG. Supplied generic food images are generated; research photographs/films are not redistributed. Original attribution and component notices: crave/ATTRIBUTION.md, crave/NOTICE.md and crave/licenses/README.md. No application-wide open-source grant is inferred.
+
+GRID — The Architecture of Visual Order
+“Bw Stairs” by Dmitrijs Milajevs, CC BY 3.0, via Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Bw_Stairs_(258283491).jpeg ; license: https://creativecommons.org/licenses/by/3.0/ . Live cropping, contrast and Canvas raster processing are presentation changes. Original record: grid/licenses/PHOTO-ATTRIBUTION.md. Generated visual-bible references are not deployed. Roboto Flex, Instrument Serif and IBM Plex Mono retain SIL OFL 1.1 at grid/licenses/RobotoFlex-OFL.txt, grid/licenses/InstrumentSerif-OFL.txt and grid/licenses/IBMPlexMono-OFL.txt. Source and component distinctions: grid/NOTICE.md and grid/licenses/README.md. No application-wide open-source grant is inferred.

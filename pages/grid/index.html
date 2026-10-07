@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f8f3" />
+    <meta name="description" content="One content set. Twelve systems of visual order. An interactive experiment in typography, composition and the rules that change everything." />
+    <title>GRID — The Architecture of Visual Order</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%grid/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Web Experience Collection" />
+    <meta property="og:title" content="GRID — The Architecture of Visual Order" />
+    <meta property="og:description" content="Content stays. System changes. One semantic composition through twelve systems of visual order." />
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%grid/" />
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%grid/social.jpg" />
+    <meta property="og:image:alt" content="Actual GRID runtime composition: live variable typography, specimen 08 and the credited monochrome stairwell photograph." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GRID — The Architecture of Visual Order" />
+    <meta name="twitter:description" content="Content stays. System changes. Twelve systems of visual order." />
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%grid/social.jpg" />
+    <meta name="twitter:image:alt" content="Actual GRID runtime typography and credited stairwell photograph; the specimen lettering belongs to the artwork." />
+    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
+    <link rel="stylesheet" href="../../experiences/grid/src/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/grid/favicon.svg" />
+    <link rel="preload" href="/grid/fonts/RobotoFlex-Latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/grid/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/grid/fonts/IBMPlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      document.documentElement.className = 'js-pending';
+      const startupTimer = window.setTimeout(function () {
+        if (document.documentElement.classList.contains('js-pending')) document.documentElement.className = 'no-js';
+        window.removeEventListener('pagehide', cancelStartup);
+      }, 7000);
+      function cancelStartup(event) {
+        if (!event.persisted) {window.clearTimeout(startupTimer); window.removeEventListener('pagehide', cancelStartup);}
+      }
+      window.addEventListener('pagehide', cancelStartup);
+    </script>
+    <script type="module" src="../../experiences/grid/src/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#specimen">Skip to the composition</a>
+    <div class="startup" aria-hidden="true"><span></span></div>
+    <header class="site-header">
+      <a href="#zero" class="wordmark" aria-label="GRID, return to the beginning">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="7"/></svg>
+        <span>GRID<span class="wordmark-year"> / 2026</span></span>
+      </a>
+      <p class="header-thesis">Content stays. System changes.</p>
+      <div class="header-actions">
+        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a>
+        <div class="grid-system-controls requires-js">
+        <button type="button" data-open="index-dialog" class="text-button">Index <span class="index-count">12</span></button>
+        <button type="button" data-open="about-dialog" class="text-button about-button">About <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10"/></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="experience" aria-label="The visual order experiment">
+      <div id="stage" class="stage">
+        <div id="frame-outline" class="frame-outline" aria-hidden="true"></div>
+        <div id="raw-panel" class="raw-panel" aria-hidden="true"></div>
+        <div class="column-probe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <svg id="guides" class="guides" aria-hidden="true" preserveAspectRatio="none"></svg>
+        <div id="measure-labels" class="measure-labels" aria-hidden="true"><span id="column-label"></span><span id="baseline-label"></span></div>
+
+        <article id="specimen" class="specimen" aria-labelledby="specimen-title" tabindex="-1">
+          <h1 id="specimen-title" data-content="title" class="specimen-title" aria-label="GRID"><span aria-hidden="true">G</span><span aria-hidden="true">R</span><span aria-hidden="true">I</span><span aria-hidden="true">D</span></h1>
+          <p data-content="subtitle" class="specimen-subtitle">The architecture<br class="editorial-break" /> of visual order.</p>
+          <p data-content="number" class="specimen-number" aria-label="Specimen number 08">08</p>
+          <figure data-content="image" class="specimen-image">
+            <img id="source-photo" src="/grid/images/bw-stairs-original.jpg" width="2048" height="1365" alt="Looking down a monochrome stairwell: metal rails and steps converge into nested angular frames." decoding="async" fetchpriority="high" />
+            <canvas id="raster" aria-hidden="true" hidden></canvas>
+            <figcaption class="sr-only">Bw Stairs, Dmitrijs Milajevs, 2018. CC BY 3.0. The same photograph is recropped and processed throughout.</figcaption>
+          </figure>
+          <p data-content="body" class="specimen-body">One set of information. An open field of possibilities. Change the rules. See it again.</p>
+          <p data-content="meta" class="specimen-meta">Visual study / Series 001</p>
+          <p data-content="place" class="specimen-place"><time datetime="2026">2026</time> / Everywhere</p>
+          <a data-content="action" class="specimen-action" href="#zero">Look again <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M4 4h12v12"/></svg></a>
+          <svg data-content="mark" id="registration" class="specimen-mark" viewBox="0 0 100 100" role="img" aria-label="A registration mark: a circle and two crossing axes"><circle cx="50" cy="50" r="31"/><path d="M50 4v92M4 50h92"/></svg>
+        </article>
+
+        <p id="zero-invitation" class="zero-invitation requires-js"><span class="invitation-line"></span>Scroll to establish order <svg viewBox="0 0 16 20" aria-hidden="true"><path d="M8 1v16m-5-5 5 5 5-5"/></svg></p>
+        <div id="frame-tools" class="experiment-tools frame-tools" hidden>
+          <label for="frame-width">Change the screen<span id="frame-readout">— px</span></label>
+          <div class="frame-input-row"><span aria-hidden="true">Narrow</span><input id="frame-width" type="range" min="0" max="100" step="1" value="100" aria-label="Responsive frame width" /><span aria-hidden="true">Wide</span><button id="frame-reset" type="button" class="text-button">Reset</button></div>
+        </div>
+        <div id="axis-tools" class="experiment-tools axis-tools" hidden>
+          <div class="axis-heading"><span>Type, in continuous form.</span><button id="axis-reset" type="button" class="text-button">Reset</button></div>
+          <div class="axis-grid">
+            <label for="axis-wght"><span>Weight <output id="value-wght">390</output></span><input id="axis-wght" data-axis="wght" type="range" min="100" max="1000" value="390" step="1" /></label>
+            <label for="axis-wdth"><span>Width <output id="value-wdth">105</output></span><input id="axis-wdth" data-axis="wdth" type="range" min="25" max="151" value="105" step="1" /></label>
+            <label for="axis-slnt"><span>Slant <output id="value-slnt">0</output></span><input id="axis-slnt" data-axis="slnt" type="range" min="-10" max="0" value="0" step="0.1" /></label>
+            <label for="axis-opsz"><span>Optical size <output id="value-opsz">70</output></span><input id="axis-opsz" data-axis="opsz" type="range" min="8" max="144" value="70" step="1" /></label>
+          </div>
+        </div>
+      </div>
+      <noscript><p class="fallback-note">This is the static composition of GRID. JavaScript enables the twelve reversible systems, responsive frame and variable type controls. All of the specimen’s text and photography remain available here.</p></noscript>
+    </main>
+
+    <footer class="scene-footer requires-js">
+      <div class="scene-caption"><span id="scene-number">00</span><div><span id="scene-name">Zero</span><span id="scene-verb">Establish a point</span></div></div>
+      <nav class="chapter-rail" aria-label="Choose a visual system" id="chapter-rail"></nav>
+      <div class="footer-actions"><button class="icon-button" id="previous-scene" aria-label="Previous system"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"/></svg></button><button class="icon-button" id="next-scene" aria-label="Next system"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></button><button type="button" data-open="rules-dialog" class="rules-button">Rules <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 3v12M3 9h12"/></svg></button></div>
+      <div class="progress-track" aria-hidden="true"><div id="total-progress"></div></div>
+    </footer>
+    <div id="scroll-track" aria-hidden="true"></div>
+    <p class="sr-only" id="scene-announcer" aria-live="polite" aria-atomic="true"></p>
+
+    <dialog id="index-dialog" class="sheet index-sheet" data-lenis-prevent>
+      <div class="sheet-heading"><div><h2>Twelve systems.<br>One content set.</h2></div><button class="icon-button close-dialog" aria-label="Close index"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+      <nav id="index-list" class="index-list" aria-label="All visual systems"></nav>
+      <p class="sheet-footnote">Move through the work with scroll, or with the left and right arrow keys.</p>
+    </dialog>
+    <dialog id="rules-dialog" class="sheet rules-sheet" data-lenis-prevent>
+      <div class="sheet-heading"><div><h2 id="rules-title">System</h2><span class="rules-context" id="rules-number">01 / Rules</span></div><button class="icon-button close-dialog" aria-label="Close rules"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+      <p id="rules-statement" class="rule-thesis"></p>
+      <dl id="rules-list" class="rule-list"></dl>
+      <div class="live-measures"><span>Current field</span><output id="field-measure"></output><span>Underlying columns</span><output id="column-measure"></output></div>
+    </dialog>
+    <dialog id="about-dialog" class="sheet about-sheet" data-lenis-prevent>
+      <div class="sheet-heading"><div><h2>Design is a system<br>of decisions.</h2></div><button class="icon-button close-dialog" aria-label="Close about"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+      <p class="about-intro">The words, the number, the photograph and the mark stay. Their relationships change. This is an original experiment in what a visual system makes us notice, and how it makes us feel.</p>
+      <div class="preference"><label for="reduce-motion">Reduce motion<span>Keep the compositions. Use direct transitions.</span></label><input type="checkbox" id="reduce-motion" /><p id="motion-note"></p></div>
+      <details><summary>Research &amp; references</summary><p>This is a sequence of experiments, not a linear history of design. The rules draw on original works and documented practices.</p><ul><li><a href="https://www.lars-mueller-publishers.com/designing-programmes-0" target="_blank" rel="noreferrer">Karl Gerstner — Designing Programmes</a></li><li><a href="https://www.moma.org/collection/works/7233" target="_blank" rel="noreferrer">Josef Müller-Brockmann — Musica Viva</a></li><li><a href="https://museum-gestaltung.ch/en/article/wolfgang-weingart-typography-context" target="_blank" rel="noreferrer">Museum für Gestaltung — Wolfgang Weingart</a></li><li><a href="https://www.schweizerkulturpreise.ch/en/an-ideal-for-living-3" target="_blank" rel="noreferrer">Julia Born — An Ideal for Living</a></li><li><a href="https://www.moma.org/collection/works/139322" target="_blank" rel="noreferrer">Wim Crouwel — New Alphabet</a></li><li><a href="https://www.moma.org/collection/works/188391" target="_blank" rel="noreferrer">Susan Kare — Graphic icon sketch</a></li></ul></details>
+      <details><summary>Photography &amp; type</summary><p><a href="https://commons.wikimedia.org/wiki/File:Bw_Stairs_(258283491).jpeg" target="_blank" rel="noreferrer">Bw Stairs — Dmitrijs Milajevs, 2018</a>, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noreferrer">CC BY 3.0</a>. Cropping, rotation, contrast and raster processing vary across the work. The original photograph is unchanged.</p><p>Roboto Flex, Instrument Serif and IBM Plex Mono are served locally under the SIL Open Font License. AI was used for composition research only. All live typography, interface elements and geometric forms are built in code.</p></details>
+      <p class="sheet-footnote">GRID / 2026 · An original visual study. The series metadata is a fictional specimen, not a physical exhibition.</p>
+    </dialog>
+  </body>
+</html>

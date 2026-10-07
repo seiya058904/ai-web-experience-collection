@@ -1,6 +1,6 @@
 # AI Web Experience Collection
 
-Twenty-six independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines, acoustic motion, Roman sculpture, spatial perception, violin craft, book binding, volcanic material, deep time, lacquer and fountain-pen mechanisms.
+Twenty-nine independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines, acoustic motion, Roman sculpture, spatial perception, violin craft, book binding, volcanic material, deep time, lacquer, fountain-pen mechanisms, espresso, culinary materials and visual order.
 
 [Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
 
@@ -34,6 +34,9 @@ Twenty-six independent cinematic web experiences exploring speed, nature, space,
 | **FOSSIL — Deep Time in Stone** | Ten movements through sediment, preservation, authored synthetic tomography and the archive | [/fossil/](https://seiya058904.github.io/ai-web-experience-collection/fossil/) |
 | **URUSHI — Layers of Lacquer** | Eleven chapters through lacquer, material, time and reflected light | [/urushi/](https://seiya058904.github.io/ai-web-experience-collection/urushi/) |
 | **NIB — Ink Under Pressure** | Ten chapters through an ink mechanism, pressure and paper | [/nib/](https://seiya058904.github.io/ai-web-experience-collection/nib/) |
+| **CREMA — 9 Bars** | Eleven movements through espresso pressure, porous matter, liquid and crema | [/crema/](https://seiya058904.github.io/ai-web-experience-collection/crema/) |
+| **CRAVE — Before the First Bite** | Eleven movements through heat, crust, melt, glaze, steam and appetite | [/crave/](https://seiya058904.github.io/ai-web-experience-collection/crave/) |
+| **GRID — The Architecture of Visual Order** | One content set and twelve live systems of typography and composition | [/grid/](https://seiya058904.github.io/ai-web-experience-collection/grid/) |
 
 Each work keeps its own imagery, typography, controls and pace. The gallery uses full document navigation; only the selected work's runtime starts. No iframe or SPA fallback.
 
@@ -53,8 +56,8 @@ The URUSHI and NIB delivery audits, independent browser findings and Collection 
 
 ```text
 collection/          Gallery styles, pointer interaction and credits styles
-pages/               Vite HTML root: home, credits and twenty-six route documents
-experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance, aeterna, parallax, luthier, codex, magma, fossil, urushi, nib and shared UI
+pages/               Vite HTML root: home, credits and twenty-nine route documents
+experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance, aeterna, parallax, luthier, codex, magma, fossil, urushi, nib, crema, crave, grid and shared UI
 public/              Namespaced runtime assets, fonts and license notices
 docs/                Collection and scoped work design/architecture contracts
 provenance/          Unique masters, source records, import hashes and delivery history
@@ -76,7 +79,7 @@ npm run verify
 npm run preview -- --port 4174 --strictPort
 ```
 
-`npm run verify` runs 187 model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
+`npm run verify` runs 211 model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
 
 ## Deployment
 
@@ -90,7 +93,7 @@ npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
-Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all twenty-six trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
+Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all twenty-nine trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
 
 When adding another accepted work, put its HTML in `pages/<route>/`, source in `experiences/<route>/`, resources in `public/<route>/`, and register the input, sitemap and output identity checks in `vite.config.ts` and `scripts/verify-build.mjs`. Update the gallery, credits, product and maintenance guide. Preserve its design and lifecycle; verify both `/` and project-path builds, entry/return, direct loads, mobile and reduced motion.
 
@@ -107,3 +110,9 @@ LUTHIER's source and procedural model, and FOSSIL's source/synthetic data/model,
 See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md), [KAGE architecture](docs/kage/ARCHITECTURE.md), [CHRONOS motion](docs/chronos/MOTION.md), [INTERVAL design](docs/interval/DESIGN.md), [GLASSHOUSE design](docs/glasshouse/DESIGN.md), [VEIL design](docs/veil/DESIGN.md), [OPTIC design](docs/optic/DESIGN.md) and [INKSCAPE design](docs/inkscape/DESIGN.md), [FACET design](docs/facet/DESIGN.md), [SILICON design](docs/silicon/DESIGN.md), [ATLAS design](docs/atlas/DESIGN.md), [THRUST design](docs/thrust/DESIGN.md), [RESONANCE design](docs/resonance/DESIGN.md) and [AETERNA design](docs/aeterna/DESIGN.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.
 
 URUSHI’s original lacquer geometry and code retain their supplied MIT grant, while generated visual research remains separately identified. Its Bodoni Moda, Manrope and renamed CJK subset retain OFL. NIB grants no additional whole-project open-source license; its generated material art, source rights, OFL fonts and GSAP/Lenis notices retain their original records. Both reuse the root dependencies and one clock, with native touch, reduced motion and reading alternatives. Neither work includes audio. Original ZIPs stay outside Git and deployment.
+
+CREMA preserves its original eleven-movement extraction and generated inspection-chamber imagery. Original source retains MIT; Archivo retains OFL, and generated artwork remains subject to its separate provider terms. Nine bars is an authored reference, not a universal brewing law; the flow, wetting and liquid systems are qualitative geometry rather than measured CFD. One locked Lenis/GSAP clock, native touch, reduced motion and default-silent synthesized sound remain independent. See [CREMA acceptance](docs/crema/ACCEPTANCE.md).
+
+CRAVE preserves its supplied eleven-movement food/material journey, Cormorant and Manrope typography, native WebGL material stage, photographic fallback and opt-in local sound. Food images are generated generic studies; research photographs and films are not redistributed, and no application-wide MIT license is inferred. One locked Lenis/GSAP clock keeps native touch and reduced-motion behavior. See [CRAVE acceptance](docs/crave/ACCEPTANCE.md).
+
+GRID retains one semantic specimen through twelve reversible visual systems, live responsive-frame and variable-font controls, the original photograph and a bounded Canvas raster. “Bw Stairs” by Dmitrijs Milajevs retains CC BY 3.0 credit; generated visual-bible references remain outside deployment, and no application-wide MIT grant is inferred. One Lenis/GSAP clock and static/reduced editions remain independent. See [GRID acceptance](docs/grid/ACCEPTANCE.md).

@@ -1,0 +1,905 @@
+{
+  "schema_version": 1,
+  "project": "CREMA — 9 Bars",
+  "generation_date": "2026-10-07",
+  "documentation_path": "docs/PROVENANCE.md",
+  "path_convention": "Every packaged file path is relative to the CREMA project root. Generation workspace locations and private output paths are intentionally not recorded.",
+  "generation_tool": {
+    "name": "image_gen",
+    "model_version": null,
+    "model_version_note": "The generation tool did not expose a model-version identifier. No model version is asserted."
+  },
+  "scope": "An authored visual interpretation of pressure-driven espresso extraction. Generated imagery is not photography of an actual machine or experiment, measured physical data, engineering CAD, micro-CT or CFD output. No specific manufacturer or brand provenance is asserted.",
+  "inventory": {
+    "accepted_concepts": 9,
+    "production_originals": 5,
+    "runtime_webp_images": 5,
+    "unique_packaged_image_files": 19,
+    "accepted_generation_records": 14,
+    "packaged_image_bytes": 14748223,
+    "note": "The one prebuilt dist contains runtime copies, not an additional set of source images. Optional procedural model snapshots are recorded in their separate model manifest."
+  },
+  "selection_notes": [
+    "The discarded hero-a study used conventional left-copy/right-product placement and read too close to a product advertisement. The selected hero-b instead placed a monumental radial machine above architectural typography. The rejected image and its failed asset file are not included.",
+    "The accepted portrait study informed the mobile crop and scale. Its handwritten/serif-like secondary type was intentionally not followed; the implemented interface uses Archivo throughout.",
+    "Concept images contain baked example typography and controls only as art-direction references. Interface text, navigation and interactions are implemented in HTML/CSS/JavaScript.",
+    "Prompt-requested dimensions are creative directions. The dimensions_px fields report the actual retained image sizes.",
+    "Production round order is recorded; exact generation times and within-round wall-clock order were not recorded."
+  ],
+  "production_chronology": [
+    {
+      "round": 1,
+      "label": "01 — Initial comparison",
+      "summary": "Two hero directions and the first particle-bed composition were generated. The radial hero and bed study were retained.",
+      "accepted_generation_ids": [
+        "hero-b",
+        "bed-concept"
+      ]
+    },
+    {
+      "round": 2,
+      "label": "02 — Shared scene language",
+      "summary": "Saturation, porous flow, crema and the final cup established the material and composition language across the journey.",
+      "accepted_generation_ids": [
+        "saturation-concept",
+        "flow-concept",
+        "crema-concept",
+        "cup-concept"
+      ]
+    },
+    {
+      "round": 3,
+      "label": "03 — Production refinement and missing moments",
+      "summary": "The selected radial hero was regenerated as a clean production master. Dedicated pressure, first-drop and portrait composition studies completed the accepted visual bible.",
+      "accepted_generation_ids": [
+        "machine-master",
+        "pressure-concept",
+        "drop-concept",
+        "mobile-concept"
+      ]
+    },
+    {
+      "round": 4,
+      "label": "04 — Production asset refinement",
+      "summary": "Selected crema, cup and bed studies were regenerated as clean production masters. A new frame-filling granule texture completed the five production images.",
+      "accepted_generation_ids": [
+        "crema-master",
+        "cup-master",
+        "bed-master",
+        "granule-master"
+      ]
+    }
+  ],
+  "processing_policy": {
+    "generation_edits": "Reference-based image changes, including removing typography, clearing the machine backdrop, removing the static hero droplet and refining material detail, were performed through image_gen using the exact prompts below.",
+    "outside_generation_tool": "Only format/quality conversion from PNG to WebP was applied to the retained raster images outside image_gen: ffmpeg, quality 90, compression level 6; no crop, resize or external retouch.",
+    "runtime": "The website independently composes live typography, responsive framing, particle geometry, wetting, pressure interpretation, porous flow, extraction colour, droplet tension, stream and crema evolution. These are authored visual systems, not edits to the archived production images."
+  },
+  "generations": [
+    {
+      "id": "hero-b",
+      "production_round": 1,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Selected radial machine hero composition; visual reference for the machine production master and live DOM composition.",
+      "prompt_exact": "Use case: ui-mockup. Create a single extremely polished full-viewport 16:9 desktop website art-direction keyframe for CREMA, an immersive digital artwork on pressure-driven espresso extraction. This is one of seven coordinated full-screen chapters (machine, particles/bed, saturation, pressure/percolation, extraction/drop, crema, cup). Visual world: optical inspection chamber, near black graphite #101211, cold chrome versus very restrained warm coffee amber, precise Swiss grotesk typography (Archivo-like), generous negative space, no cafes, lifestyle, beans, latte art, generic brown gradients, neon, cards, gauges, dashboard HUD, eyebrow above heading, browser frame. Navigation and text are intended to be reconstructed in DOM; all material objects are fully rendered photographic assets. Standard small header: top left wordmark CREMA; top right two quiet controls “Index” and “Sound off”. Footer quiet chapter number left and a very thin journey rule. Flat full-bleed composition, not a picture inside a rounded panel. Typography and object must feel precisely composed together, cinematic editorial scale. HERO B exploratory alternative composition. Wide 1536x864. A monumental unbranded polished steel bottomless espresso group head dominates the UPPER center of a symmetrical dark chamber, massive circular radial geometry underside, black rubber, silver concentric machining, very precise perforated filter basket. A TINY amber droplet suspended at x50% y55%, never a stream. No cup. Below group head, gigantic wide white word CREMA spread across almost whole canvas at y65-84%. Small text in left midground 'Before the first drop.' and a short underline link 'Enter the extraction ↓'. Very spare, bold industrial typography; text and chrome partially overlap with machine masking foreground. Footer '01 — MACHINE'. No nine bar text. Compare severe radial monumental composition to editorial asymmetric alternative. Genuine cold polished silver.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:hero-b"
+    },
+    {
+      "id": "bed-concept",
+      "production_round": 1,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Packed-bed cutaway composition and dry material reference.",
+      "prompt_exact": "Use case: ui-mockup. Create a single extremely polished full-viewport 16:9 desktop website art-direction keyframe for CREMA, an immersive digital artwork on pressure-driven espresso extraction. This is one of seven coordinated full-screen chapters (machine, particles/bed, saturation, pressure/percolation, extraction/drop, crema, cup). Visual world: optical inspection chamber, near black graphite #101211, cold chrome versus very restrained warm coffee amber, precise Swiss grotesk typography (Archivo-like), generous negative space, no cafes, lifestyle, beans, latte art, generic brown gradients, neon, cards, gauges, dashboard HUD, eyebrow above heading, browser frame. Navigation and text are intended to be reconstructed in DOM; all material objects are fully rendered photographic assets. Standard small header: top left wordmark CREMA; top right two quiet controls “Index” and “Sound off”. Footer quiet chapter number left and a very thin journey rule. Flat full-bleed composition, not a picture inside a rounded panel. Typography and object must feel precisely composed together, cinematic editorial scale. PARTICLES / BED keyframe. Wide 1536x864. On the RIGHT 64% a huge cutaway packed coffee bed floats in black, a thick flat-topped section resembling dark irregular fractured roasted cellular particles of wildly different sizes, tiny fines between large jagged clumps, porous open spaces visible, not smooth pebbles, not sand. Circular basket bottom is only a thin precisely machined steel perimeter lower edge; coffee bed occupies right from x50% to x95%, y22%-82%. Cold silver grazing top rim, dry matte charcoal cocoa, fine fractured texture. Left large heading 'Packed.' / 'Never solid.' in white 100px medium grotesk. Under small 3 lines 'Between the particles,' / 'an invisible architecture.' / 'Water will find its way.' Thin technical leader under bed pointing to a negative gap labelled 'PORE SPACE'. Footer '03 — BED'. No coffee stream, water or beans. Object lit beautifully from upper left; the geometry gives a credible cutaway into a porous material, never a cake.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:bed-concept"
+    },
+    {
+      "id": "saturation-concept",
+      "production_round": 2,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Uneven advancing wetting boundary and contrasting dry/wet material reference.",
+      "prompt_exact": "Use case: ui-mockup. A single 16:9 widescreen 1672x941 full-viewport art-direction keyframe, part of the complete immersive web artwork CREMA about pressure-driven espresso. Optical inspection chamber aesthetic. Near-black #101211, cold silver with dense coffee amber. Large Swiss grotesk Archivo-like typography in warm white, never serif. No cafe, hands, beans, latte, dashboard, cards, border panels, brown background gradient, neon or hologram. Sparse header wordmark CREMA upper left and 'Index' 'Sound off' upper right. Small chapter footnote and thin timeline at bottom. Full-bleed material world, UI text will be rebuilt in DOM. Each frame differs in composition but shares type, margin and material rigor. SATURATION keyframe. Extreme macro dark ground-coffee porous landscape fills bottom 75% and right 75%, irregular jagged cellular coffee granules various sizes with pores and fines. A shallow silver-white water front advances unevenly through the UPPER HALF of the packed bed, already-wet region visibly near-black glossy and dry region below is rough matte dark cocoa. Delicate silvery menisci wind around particles, dark voids persist below. Horizontal division is irregular, material-based not straight wipe. Top-left in quiet dark pocket large three-line title 'A boundary' / 'begins' / 'to move.' around 85px. Small line lower left 'Water enters the spaces between.' No sci-fi glow, not translucent aquarium. One fine line on right 'SATURATION FRONT'. Footer '04 — PRE-INFUSION'. Macro photographic material realism, depth of field except clear front.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:saturation-concept"
+    },
+    {
+      "id": "flow-concept",
+      "production_round": 2,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Internal porous flow, competing paths and connected void-space composition reference.",
+      "prompt_exact": "Use case: ui-mockup. A single 16:9 widescreen 1672x941 full-viewport art-direction keyframe, part of the complete immersive web artwork CREMA about pressure-driven espresso. Optical inspection chamber aesthetic. Near-black #101211, cold silver with dense coffee amber. Large Swiss grotesk Archivo-like typography in warm white, never serif. No cafe, hands, beans, latte, dashboard, cards, border panels, brown background gradient, neon or hologram. Sparse header wordmark CREMA upper left and 'Index' 'Sound off' upper right. Small chapter footnote and thin timeline at bottom. Full-bleed material world, UI text will be rebuilt in DOM. Each frame differs in composition but shares type, margin and material rigor. PRESSURE / PERCOLATION keyframe. Entire world is a dense highly detailed photorealistic coffee bed cutaway. Dark irregular jagged roasted particles with rough cellular structure, tiny particles, big pieces with deep visible connected voids. Camera is INSIDE bed, travelling through pore network. Narrow warm amber translucent liquid filaments take complex winding competing paths through voids, curve around particles, split, spread and reunite. Many filaments are dim, a few glint. Not lightning, lava, optic cables, uniformly vertical grid or glowing orange noodles. Large off-white left-aligned title in left black pocket 'No two paths' / 'are equal.' 100px, small supporting line 'Resistance gives the water a shape.' at bottom-left. A discrete simple small text 'FLOW THROUGH THE VOIDS' points into a pore at right, no numeric pressure HUD. Footer '06 — PERCOLATION'. Elaborate spatial depth, realistic granules, precise industrial art.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:flow-concept"
+    },
+    {
+      "id": "crema-concept",
+      "production_round": 2,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Dense reddish-brown gas-cell surface composition and production-master reference.",
+      "prompt_exact": "Use case: ui-mockup. A single 16:9 widescreen 1672x941 full-viewport art-direction keyframe, part of the complete immersive web artwork CREMA about pressure-driven espresso. Optical inspection chamber aesthetic. Near-black #101211, cold silver with dense coffee amber. Large Swiss grotesk Archivo-like typography in warm white, never serif. No cafe, hands, beans, latte, dashboard, cards, border panels, brown background gradient, neon or hologram. Sparse header wordmark CREMA upper left and 'Index' 'Sound off' upper right. Small chapter footnote and thin timeline at bottom. Full-bleed material world, UI text will be rebuilt in DOM. Each frame differs in composition but shares type, margin and material rigor. CREMA keyframe. A huge curving ocean of true espresso crema occupies RIGHT 70% from x42% past right edge, coming diagonally toward camera. Extremely dense tiny tightly-packed uneven reddish brown golden-brown gas cells in liquid coffee. Warm crema gold thin films, varying small bubble radii, microblack cell cores, a few larger bubbles; no floating isolated soap spheres, no rainbow iridescence, no smooth honey. Surface microscopically textured and wet with restrained highlights, depth of field. Left 35% black negative space large text 'Gas, held' / 'briefly' / 'in liquid.' weight 400, offwhite. Below two short lines 'A fragile surface.' / 'A changing world beneath.' One tiny label 'CO₂ / LIQUID / OIL'. Footer '10 — CREMA'. Pure physics turned tactile art, very high-end material macro.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:crema-concept"
+    },
+    {
+      "id": "cup-concept",
+      "production_round": 2,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Small porcelain espresso within a large dark field; final still-life reference.",
+      "prompt_exact": "Use case: ui-mockup. A single 16:9 widescreen 1672x941 full-viewport art-direction keyframe, part of the complete immersive web artwork CREMA about pressure-driven espresso. Optical inspection chamber aesthetic. Near-black #101211, cold silver with dense coffee amber. Large Swiss grotesk Archivo-like typography in warm white, never serif. No cafe, hands, beans, latte, dashboard, cards, border panels, brown background gradient, neon or hologram. Sparse header wordmark CREMA upper left and 'Index' 'Sound off' upper right. Small chapter footnote and thin timeline at bottom. Full-bleed material world, UI text will be rebuilt in DOM. Each frame differs in composition but shares type, margin and material rigor. FINAL CUP keyframe. Keep a lot of dark negative space. At center-right x66% y53% one small unbranded white porcelain demitasse filled with reddish brown espresso crema, sitting on a narrow brushed steel plate fading to dark. Slightly elevated camera. Soft specular cool edge light, tiny whisper of real heat immediately above liquid, not background steam. No saucer, spoon, beans, props, cafe or hands. Large left aligned title 'An entire' / 'landscape.' in light 100px grotesk. Under it medium line 'A few millilitres.' and small underline 'Pull it again ↗'. Top logo/header same as other chapters. Bottom small line 'Build the pressure. Find the path. Pull the shot.' Footer '11 — CUP'. The cup is SMALL within vast black space, gives sense that huge preceding microscopic world condenses into a tiny physical object. Final quiet gallery composition.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:cup-concept"
+    },
+    {
+      "id": "machine-master",
+      "production_round": 3,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "reference-image edit",
+      "status": "accepted production master",
+      "purpose": "Clean machine background. The production edit removes baked interface elements and the static drop so the website can compose its own type and animated liquid.",
+      "prompt_exact": "Use case: precise-object-edit. This reference is the chosen CREMA web hero concept. Produce the standalone production photographic background asset from it, same exact 16:9 framing, lighting and cold steel rendering. REMOVE ALL TEXT, logos, UI labels, white letters, timeline, numbers. Remove the entire small amber coffee droplet and amber highlight from center of filter, make the basket underside clean cool metal, because a physically animated droplet will be rendered there in code. Remove the visible drip tray/floor and distant machine support rods in lower 50%, replace with continuous near-black #090b0a empty space. Preserve the top group head's strong polished cold silver concentric radial geometry and hundreds of fine basket holes, attached stem cropped off the top edge. Add genuine fine machining marks. DO NOT turn the espresso head into a shower head. At x50% y40-43% is the filter center, bottommost metal is at about y47%. Object centered upper half, huge, no object in lower half. No text of any kind, no drop, no cup, no branding, no extra items. This is a high quality photographic render of a made-up generic espresso machine, not specific manufacturer. Render the whole screen with original dark negative space.",
+      "reference_generation_ids": [
+        "hero-b"
+      ],
+      "retained_asset_id": "original:machine-master",
+      "reference_note": "The original PNG output of the referenced generation was supplied to image_gen. Its retained, format-converted concept counterpart is identified below; that WebP was not the source of an external image edit.",
+      "reference_archive_paths": [
+        "production/concepts/hero-b.webp"
+      ]
+    },
+    {
+      "id": "pressure-concept",
+      "production_round": 3,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Restrained, brief 9 BAR composition and pressure-as-material-state reference.",
+      "prompt_exact": "Use case: ui-mockup. Create single widescreen 16:9 optical-inspection art website CREMA, same cold-steel/dark-coffee visual world and Archivo-like Swiss sans typography. Screen is an extremely quiet pressure moment. Deep near-black backdrop, ghosted photographic ring of steel basket almost fills screen, elliptical rim. Inside dim rough coffee bed sits very low foreground, clear silvery water spanning its upper surface. No gauges or dashboard. At absolute center only giant off-white '9' around 400px tall, immediately adjacent smaller 'BAR' 50px, very thin type weight 400. The numeral floats in front of barely visible dark water and coffee, not surrounded by graphic instruments. Tiny but readable centered footnote below 'A classical reference. A variable profile.' One small top left brand CREMA, top right Index / Sound off. Bottom left '05 — PRESSURE' and fine bottom journey line. No other headings or fake stats. Build dense quiet tension, relief after granular complexity. Pressure is something in material and space, numeral is a single fleeting statement.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:pressure-concept"
+    },
+    {
+      "id": "drop-concept",
+      "production_round": 3,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Return to machine scale and first-drop departure composition reference.",
+      "prompt_exact": "Use case: ui-mockup. A single 16:9 full-viewport CREMA web artwork scene, chapter 08 FIRST DROP handoff to chapter 09 STREAM. Photoreal cold polished stainless steel unbranded bottomless espresso filter basket fills very upper right two-thirds of frame, cropped at top edge, camera underneath. Numerous perforations carry glistening dark coffee, converging in a small central point at x68% y37%. One exquisite espresso drop has JUST detached at x68% y58%, slender neck still attached above, bright amber edge and dense near-black brown body, a tiny second bead at filter center; delicate tension shape, not honey splash. Thin trailing liquid line suggests imminent stream. Pure near-black background with enormous negative space, no cup or cafe. On LEFT at x5% y30% large thin offwhite grotesk text in 3 lines 'All of that.' / 'In this.' 110px. Small at left bottom 'Every path. Every particle.' / 'One departure.' Top tiny wordmark CREMA, Index / Sound off. Bottom '08 — FIRST DROP' and thin line. Luxuriously precise photographic material with code-native text. Need dramatic but believable clear scale return from microscopic world.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:drop-concept"
+    },
+    {
+      "id": "mobile-concept",
+      "production_round": 3,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted composition study",
+      "purpose": "Portrait framing reference. Its handwritten/serif-like secondary type was not adopted; the implemented interface uses Archivo throughout.",
+      "prompt_exact": "Use case: ui-mockup. Single portrait 9:19.5 screenshot 390x844 aspect for mobile version of immersive artwork CREMA, same cold polished chrome on near-black visual world. Top header small spaced wordmark CREMA left, small 'Index' and speaker icon right, margin 22px. Massive unbranded bottomless espresso group head cropped close across upper width at y18%-45%, radial basket underside, chrome circular curves filling screen beyond left/right, one tiny amber drop suspended at center y47%. Below around y57% small text 'Before the first drop.' followed by simple text button 'Enter the extraction ↓'. Very large offwhite word 'CREMA' in geometric grotesk stretches across width at y68-78%, not clipped horizontally. Tiny bottom-left '01 — MACHINE', thin chapter timeline at y92%. Pure black lower background, no brown overlay, no cup, props, cafe. The same material scale and pressure tension as desktop but new portrait crop, a real responsive composition, no device frame. Clear live-coded UI layout, not crowded.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "concept:mobile-concept"
+    },
+    {
+      "id": "crema-master",
+      "production_round": 4,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "reference-image edit",
+      "status": "accepted production master",
+      "purpose": "Clean crema macro plate for live shader treatment, refined toward smaller irregular cells and restrained highlights.",
+      "prompt_exact": "Use case: precise-object-edit. Derive the standalone production photographic asset from the reference CREMA macro concept. Remove ALL typography, labels, wordmarks, nav controls, rules and timeline, fill those areas seamlessly with surrounding image. Keep exact 16:9 framing and huge diagonal dense crema surface in RIGHT70%, with dark negative LEFT third, same sharp tiny reddish-brown coffee gas cells and limited glossy highlights. Refine the foam so huge protruding bubbles are reduced by half, leaving beautiful fine irregular espresso crema bubbles, not beer, soap or milk, no rainbow. Keep rich chestnut amber but no cartoon orange glow. Maintain microtexture and depth of field, photoreal. No text, cup, objects, decorative imagery. Highest quality standalone material macro background for live shader treatment.",
+      "reference_generation_ids": [
+        "crema-concept"
+      ],
+      "retained_asset_id": "original:crema-master",
+      "reference_note": "The original PNG output of the referenced generation was supplied to image_gen. Its retained, format-converted concept counterpart is identified below; that WebP was not the source of an external image edit.",
+      "reference_archive_paths": [
+        "production/concepts/crema-concept.webp"
+      ]
+    },
+    {
+      "id": "cup-master",
+      "production_round": 4,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "reference-image edit",
+      "status": "accepted production master",
+      "purpose": "Clean final espresso still-life background with empty composition space.",
+      "prompt_exact": "Use case: precise-object-edit. Generate the exact standalone photographic background asset from this chosen final chapter of CREMA. REMOVE every letter and UI element, all text, logo, navigation, bottom lines. Preserve exactly the small white porcelain espresso demitasse at center-right around x67% y53%, the rich reddish crema surface, subtle coffee heat, brushed steel plane, shallow pool of cool reflected light. Keep huge empty near-black space on left and upper background. No new objects, no branding, no spoon, no saucer. Entire frame 16:9, beautifully photographed object SMALL in vast dark space. Small natural foam texture on coffee, no latte art. Production-ready, clean empty compositing room.",
+      "reference_generation_ids": [
+        "cup-concept"
+      ],
+      "retained_asset_id": "original:cup-master",
+      "reference_note": "The original PNG output of the referenced generation was supplied to image_gen. Its retained, format-converted concept counterpart is identified below; that WebP was not the source of an external image edit.",
+      "reference_archive_paths": [
+        "production/concepts/cup-concept.webp"
+      ]
+    },
+    {
+      "id": "bed-master",
+      "production_round": 4,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "reference-image edit",
+      "status": "accepted production master",
+      "purpose": "Clean dry packed-bed reference and fallback image accompanying the realtime reconstruction.",
+      "prompt_exact": "Use case: precise-object-edit. Produce a standalone production macro asset from the reference. Remove ALL text, wordmarks, lines and labels, including annotation. Preserve exact framed view of a packed ground coffee porous cutaway on the RIGHT65%, black negative space left. Refine materials: roast coffee grounds must be small irregular dark cellular fragments across a broad size distribution with fine dust in crevices and visible dark pore spaces, not rocky gravel and not cake, not smooth pebbles or round beans. Keep matte dry roast-coffee surface and strong grazing cold light, steel lower basket edge. 16:9 image, no water yet. Suitable as fallback and photoreal study texture background accompanying a realtime particle reconstruction. Very high quality material realism.",
+      "reference_generation_ids": [
+        "bed-concept"
+      ],
+      "retained_asset_id": "original:bed-master",
+      "reference_note": "The original PNG output of the referenced generation was supplied to image_gen. Its retained, format-converted concept counterpart is identified below; that WebP was not the source of an external image edit.",
+      "reference_archive_paths": [
+        "production/concepts/bed-concept.webp"
+      ]
+    },
+    {
+      "id": "granule-master",
+      "production_round": 4,
+      "generation_date": "2026-10-07",
+      "tool": "image_gen",
+      "model_version": null,
+      "mode": "text-to-image",
+      "status": "accepted production master",
+      "purpose": "Frame-filling, square cellular material image for the authored coffee-particle geometry.",
+      "prompt_exact": "Use case: photorealistic-natural. Create a SQUARE orthographic microscope MATERIAL TEXTURE of one large fractured piece of roasted coffee endosperm; closeup brown-black organic porous cellular interior, thick jagged ridges around deep irregular tiny pits, fine dry woody fractured fibers. It is completely frame filling, evenly lit from upper left, no object outline or background. Not a collection of coffee beans; no whole recognizable coffee bean shape; not geological basalt, soil, sand, or smooth rocks. Dark cocoa to burnt umber with subtle natural tonal variation. Texture should be useful as rough color/bump map on many irregular 3D coffee granules. No labels, UI, text, ruler or microscope border. Extremely detailed tactile dry cellular fragment, square 1024x1024.",
+      "reference_generation_ids": [],
+      "retained_asset_id": "original:granule-master"
+    }
+  ],
+  "assets": [
+    {
+      "id": "concept:hero-b",
+      "category": "accepted-concept",
+      "generation_id": "hero-b",
+      "purpose": "Selected radial machine hero composition; visual reference for the machine production master and live DOM composition.",
+      "path": "production/concepts/hero-b.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 129428,
+      "sha256": "24aa69d1cb9f263d009472fedd8d1b610e83753c81bee0a80b1bffda1198e4d9",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "hero-b",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:bed-concept",
+      "category": "accepted-concept",
+      "generation_id": "bed-concept",
+      "purpose": "Packed-bed cutaway composition and dry material reference.",
+      "path": "production/concepts/bed-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 266068,
+      "sha256": "d757f9537a4a1f6f503122ebaae770f693c146d33bc523f75dbeae32d3c9d92a",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "bed-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:saturation-concept",
+      "category": "accepted-concept",
+      "generation_id": "saturation-concept",
+      "purpose": "Uneven advancing wetting boundary and contrasting dry/wet material reference.",
+      "path": "production/concepts/saturation-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 275844,
+      "sha256": "bf57a3e337a19b8a43bc716da0dd2264e48b9f50ff5730d20cceeb1a9a4caf79",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "saturation-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:flow-concept",
+      "category": "accepted-concept",
+      "generation_id": "flow-concept",
+      "purpose": "Internal porous flow, competing paths and connected void-space composition reference.",
+      "path": "production/concepts/flow-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 266102,
+      "sha256": "ea8a7c2bf5f3db89286ed3624f2e45a4d151063340cc496d9a83a54883c0a498",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "flow-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:crema-concept",
+      "category": "accepted-concept",
+      "generation_id": "crema-concept",
+      "purpose": "Dense reddish-brown gas-cell surface composition and production-master reference.",
+      "path": "production/concepts/crema-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 340192,
+      "sha256": "bdb8bda88fceec28d246c33488da3059cae842a54e17d0564438ef342e8480b7",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "crema-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:cup-concept",
+      "category": "accepted-concept",
+      "generation_id": "cup-concept",
+      "purpose": "Small porcelain espresso within a large dark field; final still-life reference.",
+      "path": "production/concepts/cup-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 70804,
+      "sha256": "a080a9af45721befa80afae04aa95fcfef27e247cfc0cb2e32e481125270cb7a",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "cup-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "original:machine-master",
+      "category": "production-original",
+      "generation_id": "machine-master",
+      "purpose": "Clean machine background. The production edit removes baked interface elements and the static drop so the website can compose its own type and animated liquid.",
+      "path": "production/originals/machine-master.png",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 1729856,
+      "sha256": "49d91a0000dc5f5a89ee4dd95aeed98ba9adbe0fa3f76b48d7a164635384b4f0",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "direct image_gen PNG output",
+        "generation_id": "machine-master"
+      },
+      "processing": {
+        "operation": "Original generated PNG preserved byte-for-byte",
+        "resize": false,
+        "crop": false,
+        "external_retouch": false
+      }
+    },
+    {
+      "id": "concept:pressure-concept",
+      "category": "accepted-concept",
+      "generation_id": "pressure-concept",
+      "purpose": "Restrained, brief 9 BAR composition and pressure-as-material-state reference.",
+      "path": "production/concepts/pressure-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 144768,
+      "sha256": "0bbeef07b068a657ae07f27a919819705e0b9f403cf9ea182e879629fa9ba033",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "pressure-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:drop-concept",
+      "category": "accepted-concept",
+      "generation_id": "drop-concept",
+      "purpose": "Return to machine scale and first-drop departure composition reference.",
+      "path": "production/concepts/drop-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 109806,
+      "sha256": "67872b6bd3af47b382841f7754b9bc99bceb1222cdb539726bf62747abdb9e00",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "drop-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "concept:mobile-concept",
+      "category": "accepted-concept",
+      "generation_id": "mobile-concept",
+      "purpose": "Portrait framing reference. Its handwritten/serif-like secondary type was not adopted; the implemented interface uses Archivo throughout.",
+      "path": "production/concepts/mobile-concept.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 889,
+        "height": 1770
+      },
+      "color_mode": "RGB",
+      "size_bytes": 116904,
+      "sha256": "95e5483151c852604ed3633e8f81a15733a209065a84428a5411452cd22e6580",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "image_gen PNG output",
+        "generation_id": "mobile-concept",
+        "original_png_packaged": false,
+        "note": "The accepted concept output is retained in the format-converted WebP file listed here; the redundant concept PNG is omitted."
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      }
+    },
+    {
+      "id": "original:crema-master",
+      "category": "production-original",
+      "generation_id": "crema-master",
+      "purpose": "Clean crema macro plate for live shader treatment, refined toward smaller irregular cells and restrained highlights.",
+      "path": "production/originals/crema-master.png",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 2405014,
+      "sha256": "be03d7be53d957a7f95f730e99b61ac19b74e7cd5b95eb53943e9e36fd5c6db7",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "direct image_gen PNG output",
+        "generation_id": "crema-master"
+      },
+      "processing": {
+        "operation": "Original generated PNG preserved byte-for-byte",
+        "resize": false,
+        "crop": false,
+        "external_retouch": false
+      }
+    },
+    {
+      "id": "original:cup-master",
+      "category": "production-original",
+      "generation_id": "cup-master",
+      "purpose": "Clean final espresso still-life background with empty composition space.",
+      "path": "production/originals/cup-master.png",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 1618268,
+      "sha256": "63fa8fb2915f60a13cfd79dc54e8a1b2a1367edf98512993ca7fdef3e4e0e207",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "direct image_gen PNG output",
+        "generation_id": "cup-master"
+      },
+      "processing": {
+        "operation": "Original generated PNG preserved byte-for-byte",
+        "resize": false,
+        "crop": false,
+        "external_retouch": false
+      }
+    },
+    {
+      "id": "original:bed-master",
+      "category": "production-original",
+      "generation_id": "bed-master",
+      "purpose": "Clean dry packed-bed reference and fallback image accompanying the realtime reconstruction.",
+      "path": "production/originals/bed-master.png",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 2224747,
+      "sha256": "441e5fdcbe4a365ddbb8f4fe795a197fe606a71490b0dc412b77979a64ad8fcd",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "direct image_gen PNG output",
+        "generation_id": "bed-master"
+      },
+      "processing": {
+        "operation": "Original generated PNG preserved byte-for-byte",
+        "resize": false,
+        "crop": false,
+        "external_retouch": false
+      }
+    },
+    {
+      "id": "original:granule-master",
+      "category": "production-original",
+      "generation_id": "granule-master",
+      "purpose": "Frame-filling, square cellular material image for the authored coffee-particle geometry.",
+      "path": "production/originals/granule-master.png",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 1254,
+        "height": 1254
+      },
+      "color_mode": "RGB",
+      "size_bytes": 3697960,
+      "sha256": "ce01b714eb0fef3358387e0d7a37d8866b1ea7aa60b9d0b58540b22a136878f6",
+      "used_by_runtime": false,
+      "source": {
+        "kind": "direct image_gen PNG output",
+        "generation_id": "granule-master"
+      },
+      "processing": {
+        "operation": "Original generated PNG preserved byte-for-byte",
+        "resize": false,
+        "crop": false,
+        "external_retouch": false
+      }
+    },
+    {
+      "id": "runtime:machine",
+      "category": "runtime-image",
+      "purpose": "Full-bleed machine background used with separately rendered drop and stream geometry.",
+      "path": "public/assets/machine.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 87924,
+      "sha256": "c04f66fdebe520012493b55d863a8b313be7a2a939986198ed8f018392407819",
+      "used_by_runtime": true,
+      "source": {
+        "kind": "included production original",
+        "asset_id": "original:machine-master",
+        "path": "production/originals/machine-master.png"
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      },
+      "prebuilt_copy_path": "dist/assets/machine.webp"
+    },
+    {
+      "id": "runtime:bed",
+      "category": "runtime-image",
+      "purpose": "Dry packed-bed fallback image and material study.",
+      "path": "public/assets/bed.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 237778,
+      "sha256": "a02f8e79a6e32fdbf3bbe5177c2726c4cd5b087ab06ea3e5db93e1c80ccbebd2",
+      "used_by_runtime": true,
+      "source": {
+        "kind": "included production original",
+        "asset_id": "original:bed-master",
+        "path": "production/originals/bed-master.png"
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      },
+      "prebuilt_copy_path": "dist/assets/bed.webp"
+    },
+    {
+      "id": "runtime:granule",
+      "category": "runtime-image",
+      "purpose": "Material detail texture used by the realtime particle-bed system.",
+      "path": "public/assets/granule.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1254,
+        "height": 1254
+      },
+      "color_mode": "RGB",
+      "size_bytes": 654676,
+      "sha256": "4a7e9ead513ba585e8591558f8986c75c363818f97b4bf876b82b2130176b646",
+      "used_by_runtime": true,
+      "source": {
+        "kind": "included production original",
+        "asset_id": "original:granule-master",
+        "path": "production/originals/granule-master.png"
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      },
+      "prebuilt_copy_path": "dist/assets/granule.webp"
+    },
+    {
+      "id": "runtime:crema",
+      "category": "runtime-image",
+      "purpose": "Crema macro texture used by the live microstructure shader.",
+      "path": "public/assets/crema.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 319364,
+      "sha256": "178e5b3c327d0e0ab87790f129af8909dd120e70b5f4bffc2800b66758125b31",
+      "used_by_runtime": true,
+      "source": {
+        "kind": "included production original",
+        "asset_id": "original:crema-master",
+        "path": "production/originals/crema-master.png"
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      },
+      "prebuilt_copy_path": "dist/assets/crema.webp"
+    },
+    {
+      "id": "runtime:cup",
+      "category": "runtime-image",
+      "purpose": "Final espresso still-life background.",
+      "path": "public/assets/cup.webp",
+      "format": "WEBP",
+      "dimensions_px": {
+        "width": 1672,
+        "height": 941
+      },
+      "color_mode": "RGB",
+      "size_bytes": 52720,
+      "sha256": "20096a3f5648dfb34ae3a5390b5ade756737efbe5d199035e22eec536b0a36c4",
+      "used_by_runtime": true,
+      "source": {
+        "kind": "included production original",
+        "asset_id": "original:cup-master",
+        "path": "production/originals/cup-master.png"
+      },
+      "processing": {
+        "tool": "ffmpeg",
+        "operation": "PNG to WebP format/quality conversion",
+        "quality": 90,
+        "compression_level": 6,
+        "resize": false,
+        "crop": false,
+        "external_retouch": false,
+        "note": "No image-content edits were performed outside image_gen. Runtime geometry, framing, material shading and animation are authored separately in the website."
+      },
+      "prebuilt_copy_path": "dist/assets/cup.webp"
+    }
+  ],
+  "procedural_systems": [
+    {
+      "source_path": "src/visuals/PorousWorld.js",
+      "systems": [
+        "irregular fractured particles and packed bed",
+        "compression and retained pore space",
+        "progressive saturation front and changing wet material",
+        "pressure-field interpretation",
+        "competing tortuous pore paths",
+        "extraction colour progression"
+      ],
+      "provenance": "Original project code; authored geometry and qualitative visual behavior, not measured particle distributions or a physical flow solver."
+    },
+    {
+      "source_path": "src/visuals/LiquidWorld.js",
+      "systems": [
+        "meniscus and droplet formation",
+        "necking, detachment and repeated droplets",
+        "converging espresso stream",
+        "crema surface and microstructure evolution"
+      ],
+      "provenance": "Original project geometry and shaders with the identified generated crema texture; visual interpretation, not a measured liquid simulation."
+    },
+    {
+      "source_path": "src/Soundscape.js",
+      "systems": [
+        "opt-in synthesized sound"
+      ],
+      "provenance": "Original procedural Web Audio synthesis; no external recordings or sampled music."
+    }
+  ],
+  "optional_models": {
+    "manifest_path": "production/models/models-manifest.json",
+    "documentation_path": "production/models/README.md",
+    "export_script_path": "scripts/export-models.mjs",
+    "runtime_dependency": false,
+    "provenance": "Optional self-contained GLB snapshots exported from original procedural geometry. Their geometry, counts, dimensions in authored scene units, hashes and compatibility are recorded in the separate model manifest. They are not scans or measured physical data, and no external model download is used."
+  },
+  "rights": {
+    "original_source": "MIT; see LICENSE.",
+    "generated_assets": "Provided as project assets subject to applicable generation-provider terms; no guarantee of exclusivity is made.",
+    "third_party": "Upstream dependency and font licenses remain applicable; see ATTRIBUTION.md and licenses/. GSAP is not MIT.",
+    "research": "Research is referenced in docs/SCIENCE.md. No scientific figures, datasets, article PDFs or third-party advertising photographs are included as production imagery."
+  }
+}

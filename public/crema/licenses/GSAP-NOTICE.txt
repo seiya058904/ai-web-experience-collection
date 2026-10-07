@@ -1,0 +1,17 @@
+GSAP 3.15.0
+
+Copyright 2008-2026, GreenSock. All rights reserved.
+
+Upstream: https://gsap.com/
+Canonical license: https://gsap.com/standard-license/
+
+The installed package declares:
+Standard 'no charge' license: https://gsap.com/standard-license.
+
+GSAP is supplied under its own standard license, not under the CREMA project's
+MIT source-code license. Refer to the canonical upstream terms for the permissions
+and conditions that apply to GSAP. Preserve the copyright and license notices
+present in the GSAP source and distributed bundles.
+
+This notice records the upstream package declaration; it does not replace or
+amend the GSAP license. No independent licensing or endorsement is claimed.

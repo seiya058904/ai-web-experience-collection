@@ -1,0 +1,17 @@
+# GRID supplied delivery intake
+
+The original archive is GRID-The-Architecture-of-Visual-Order.zip, 22,328,651 bytes, SHA-256 a482b66fca3ce9f76fbf08766e211005312770b4dad10b8290c75ca12f320fbc, modified UTC2026-10-07T10:24:58.146516+00:00. Root inventoried all76 entries, checked the single GRID directory and extracted to a fresh external temporary directory. The archive and original source remain outside the repository.
+
+Independent source review passes118/118, all76 source bytes/hashes match, original design tests pass24/24, and supplied seven TypeScript modules compile under installed TypeScript5.9.3. The photograph's author/CC BY3.0 record and three local fonts/OFL/provider bytes were independently checked. No source security or rights blocker was confirmed. No standalone START, install, asset generation or source build was executed for this import.
+
+The import maps60 original entries and omits16 individually recorded standalone entries. Runtime source, independent HTML, local public fonts/photo/legal records, design documents and original Visual Bible/prompts have separate Collection boundaries. Original tests/design.test.mjs becomes tests/grid-design.test.mjs with only source/provenance read paths adapted; its24 cases/assertions remain intact. Compiled dist duplicates, standalone package/lock, startup/server/build/TypeScript configuration and ignore rules are omitted. Their exact original bytes/hashes remain in the entry record.
+
+Public assets and nine original legal files are byte exact. Text outside public is normalized to LF without removing intentional Markdown hard breaks. Original DELIVERY-MANIFEST.json and asset provenance remain historical delivery records; current target bytes/hashes and individual omissions are in provenance/grid/source-mapping.json and the root delivery manifest. The complete generated-target hash set is kept in the root intake record to avoid a circular self-hash.
+
+The photograph is **Bw Stairs**, **Dmitrijs Milajevs (2018)**, **CC BY3.0**. The same2048×1365 JPEG is recropped, rotated, contrast-adjusted and raster-processed. [Photo attribution](../../public/grid/licenses/PHOTO-ATTRIBUTION.md), three OFLs and original dependency/tool notices are public. No whole-application MIT grant is inferred. Twelve AI-assisted Visual Bible composition studies are retained as source history under provenance/grid; live type, geometry and gallery captures are not those studies. The series metadata describes a fictional specimen.
+
+Actual gallery captures retain the supplied Synthesis composition's live GRID lettering, specimen08 and photograph. Only surrounding header/footer/controls are excluded. Capturing the complete stage, containing/resizing and encoding creates poster.webp1200×750 and social.jpg1200×630; no repainting or image generation is performed. Photo attribution also applies to these processed captures.
+
+Structural coverage for the external source returned outside_project/unavailable for the four queried paths. Necessary main/renderer/raster/style/handoff/design sources were read directly. This is an explicit source fallback, not a claim that the new external delivery was indexed or graph coverage proved completeness.
+
+Root owns shared registration, gallery, legal inventory, build/deployment and Git closeout. This owner modifies only the GRID five boundaries and the specifically authorized original test adaptation.

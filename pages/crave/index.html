@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#17120f" />
+    <meta name="description" content="An appetite in eleven movements. See the heat. Break the crust. Want the bite." />
+    <title>CRAVE — Before the First Bite</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%crave/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Web Experience Collection" />
+    <meta property="og:title" content="CRAVE — Before the First Bite" />
+    <meta property="og:description" content="An appetite in eleven movements. See the heat. Break the crust. Want the bite." />
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%crave/" />
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%crave/social.jpg" />
+    <meta property="og:image:alt" content="Actual CRAVE runtime capture with generated laminated pastry, edible golden layers and warm espresso light." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CRAVE — Before the First Bite" />
+    <meta name="twitter:description" content="See the heat. Break the crust. Want the bite." />
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%crave/social.jpg" />
+    <meta name="twitter:image:alt" content="Actual CRAVE runtime capture of generated golden pastry under warm material light." />
+    <link rel="icon" type="image/svg+xml" href="/crave/favicon.svg" />
+    <link rel="preload" as="font" href="/crave/fonts/cormorant-garamond-regular.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="font" href="/crave/fonts/cormorant-garamond-italic.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="image" href="/crave/media/pastry-hero-1536.webp" imagesrcset="/crave/media/pastry-hero-768.webp 768w, /crave/media/pastry-hero-1536.webp 1536w" imagesizes="(max-width: 700px) 130vh, 100vw" />
+    <style>
+      @font-face{font-family:Crave Serif;src:url('/crave/fonts/cormorant-garamond-regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+      @font-face{font-family:Crave Serif;src:url('/crave/fonts/cormorant-garamond-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
+      @font-face{font-family:Crave Sans;src:url('/crave/fonts/manrope-variable.woff2') format('woff2');font-style:normal;font-weight:400 500;font-display:swap}
+      html,body{margin:0;background:#17120f;color:#f0e6d2}
+      .boot-poster{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+    </style>
+    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
+    <link rel="stylesheet" href="../../experiences/crave/src/style.css" />
+  </head>
+  <body data-scene="desire" data-tone="dark">
+    <a class="skip-link" href="#chapter-toggle">Skip to chapter navigation</a>
+    <header class="site-header">
+      <a class="wordmark" href="#desire" aria-label="CRAVE — return to the beginning">CRAVE</a>
+      <nav class="header-controls" aria-label="Experience controls">
+        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a>
+        <button id="chapter-toggle" aria-haspopup="dialog" aria-controls="chapter-index" aria-expanded="false">Index</button>
+        <button id="sound-toggle" aria-pressed="false" aria-label="Turn sensory sound on">Sound <span>off</span></button>
+      </nav>
+    </header>
+
+    <div class="hero-word" id="hero-word" aria-hidden="true">CRAVE</div>
+    <div class="visual-stage" aria-hidden="true">
+      <img class="boot-poster" id="still-media" src="/crave/media/pastry-hero-1536.webp" srcset="/crave/media/pastry-hero-768.webp 768w, /crave/media/pastry-hero-1536.webp 1536w" sizes="(max-width: 700px) 130vh, 100vw" width="1536" height="1024" alt="" fetchpriority="high" />
+      <canvas id="material-canvas"></canvas>
+    </div>
+    <canvas id="atmosphere-canvas" aria-hidden="true"></canvas>
+    <div class="cut-edge" aria-hidden="true"><span></span></div>
+
+    <main id="experience" aria-label="Before the First Bite — eleven movements"></main>
+
+    <footer class="scene-transport" aria-label="Scene navigation">
+      <button id="next-scene" class="next-scene" aria-label="Continue to Heat">
+        <span id="scene-caption">Scroll to feel</span>
+        <svg viewBox="0 0 40 20" aria-hidden="true"><path d="M1 10h35M28 3l8 7-8 7" /></svg>
+      </button>
+      <div class="scene-count"><span id="current-number">01</span><span class="counter-divider">/</span><span>11</span></div>
+    </footer>
+    <div class="journey-progress" role="progressbar" aria-label="Journey progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+    <p class="sr-only" id="live-status" role="status" aria-live="polite"></p>
+
+    <dialog id="chapter-index" aria-labelledby="index-title" data-lenis-prevent>
+      <div class="index-header"><span class="wordmark">CRAVE</span><button id="close-index" aria-label="Close chapter index">Close <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16" /></svg></button></div>
+      <div class="index-body">
+        <div class="index-intro"><h2 id="index-title">A matter <br />of <em>appetite.</em></h2><p>Eleven moments.<br />Before a single bite.</p></div>
+        <nav id="chapter-links" aria-label="Chapters"></nav>
+      </div>
+      <div class="index-footer"><p>Scroll to change the material.<br />Move to catch the light.</p><button id="motion-toggle" aria-pressed="false">Motion <span>on</span></button></div>
+    </dialog>
+
+    <noscript>
+      <style>.site-header,.hero-word,.visual-stage,#atmosphere-canvas,.scene-transport,.journey-progress{display:none}.static-story{padding:6vw;max-width:1100px;margin:auto;font-family:Georgia,serif}.static-story h1{font-size:clamp(3rem,12vw,9rem);font-weight:400}.static-story img{width:100%;margin:2rem 0}.static-story p{font-size:1.4rem;line-height:1.6}.static-story h2{font-size:3rem;font-weight:400}</style>
+      <article class="static-story"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><h1>CRAVE</h1><p><em>Before the first bite.</em></p><img src="/crave/media/pastry-hero-1536.webp" alt="Golden thin layers of a butter croissant." /><h2>Heat. Brown. Crust.</h2><p>A crisp surface. A small fracture. A softer world inside.</p><img src="/crave/media/pastry-inside-1536.webp" loading="lazy" alt="Fine irregular layers inside a freshly torn croissant." /><h2>Melt. Glaze. Steam.</h2><p>A thick ribbon gives in. Light follows a warm glaze. A little heat is held in the air.</p><img src="/crave/media/chocolate-1536.webp" loading="lazy" alt="A thick ribbon of dark chocolate folding onto itself." /><h2>Plate. Cut. The first bite.</h2><p>The rest is yours. Enable JavaScript for the complete scroll-controlled experience.</p><img src="/crave/media/tart-bitten-1536.webp" loading="lazy" alt="Warm apple tart with a fresh wedge missing and a few crumbs on the plate." /></article>
+    </noscript>
+    <script type="module" src="../../experiences/crave/src/main.js"></script>
+  </body>
+</html>

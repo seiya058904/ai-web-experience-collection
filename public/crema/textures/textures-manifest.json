@@ -1,0 +1,64 @@
+{
+  "title": "CREMA — exact original procedural texture snapshots",
+  "license": "MIT",
+  "generator": "scripts/export-models.mjs; lossless PNG writer using Node built-in zlib",
+  "canonicalSource": "src/visuals/PorousWorld.js / coffeeTextures()",
+  "canonicalSourceSHA256": "6636b9c15777bf1b33f0396e3da270aa62169f47d04d89458e4b9e9e86540e58",
+  "provenance": "Original code-generated seeded cellular pores and multiscale noise. No AI image, research figure or external texture is used in these two maps.",
+  "separateAIOverlay": "public/assets/granule.webp; production/originals/granule-master.png",
+  "runtimeProjection": {
+    "source": "src/visuals/PorousWorld.js / applyCoffeeShader()",
+    "coordinates": "p = object-local position * 0.83 + particle seed * (3.13, 1.79, 0.67)",
+    "weights": "abs(normalize(object-local vertex normal)) raised to power 8, divided by the sum",
+    "planes": "Sample YZ, ZX and XY, weighted by X, Y and Z respectively",
+    "height": "88% pow(linear-RGB luminance of blended colour, 0.60) + 12% procedural height sampled at p * 2.60",
+    "cellularField": "clamp(height * 1.60 - 0.10, 0, 1), shared by roughness, coating and cavity shading",
+    "relief": "Height derivatives scaled by bumpScale * instance scale * group scale perturb the view-space normal",
+    "textureTransforms": "RepeatWrapping applies; Texture.repeat, offset, rotation and ordinary geometry UVs are not used by this custom projection",
+    "portability": "Plain UV-mapped PBR and the texture-free GLBs do not reproduce the runtime shader by themselves"
+  },
+  "files": [
+    {
+      "filename": "coffee-cellular-albedo.png",
+      "bytes": 407755,
+      "sha256": "67ba9e477db2e2859d71d26e67e6302bab9f7a14ed660747f2db37362725ea96",
+      "pixelSHA256": "e4781539f73569032339b697b4ff2fe9d333c7b701fda862ac52257fd9a95c2f",
+      "width": 512,
+      "height": 512,
+      "pixelFormat": "RGBA8, lossless; source bytes and row order preserved",
+      "role": "Procedural colour/albedo map",
+      "colorSpace": "sRGB",
+      "runtime": {
+        "flipY": false,
+        "repeat": [
+          1.8,
+          1.8
+        ],
+        "wrap": "RepeatWrapping on both axes",
+        "sampling": "Linear magnification, linear mipmap minification; generate mipmaps",
+        "projection": "The runtime custom shader uses object-space triplanar mapping; ordinary UV texture transforms are ignored."
+      }
+    },
+    {
+      "filename": "coffee-cellular-height.png",
+      "bytes": 301576,
+      "sha256": "c95b26e18b9d7beb5e18c84000c81d13ba837938d8551d8f146e8e04efa5ab77",
+      "pixelSHA256": "7667a96293894d8c296d0135d09ccc8fc7a544dd6a83faa2c5c048885b5f6dde",
+      "width": 512,
+      "height": 512,
+      "pixelFormat": "RGBA8, lossless; source bytes and row order preserved",
+      "role": "Procedural scalar cellular height map, identical R/G/B channels",
+      "colorSpace": "Non-colour data; no PNG gamma or sRGB tag",
+      "runtime": {
+        "flipY": false,
+        "repeat": [
+          1.8,
+          1.8
+        ],
+        "wrap": "RepeatWrapping on both axes",
+        "sampling": "Linear magnification, linear mipmap minification; generate mipmaps",
+        "projection": "The runtime custom shader uses object-space triplanar mapping; ordinary UV texture transforms are ignored."
+      }
+    }
+  ]
+}

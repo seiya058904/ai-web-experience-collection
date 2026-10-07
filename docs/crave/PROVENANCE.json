@@ -1,0 +1,1484 @@
+{
+  "schema_version": 1,
+  "project": "CRAVE — Before the First Bite",
+  "generated_date": "2026-10-07",
+  "document_scope": "Exact prompt, reference-lineage, and final-file provenance. This is not the browser QA report.",
+  "origin": {
+    "provider": "OpenAI",
+    "tool": "image_gen",
+    "tool_api_name": "image_gen.imagegen",
+    "model_version": null,
+    "seed": null,
+    "description": "Food masters are AI-generated or AI-edited project media. They are not photographs of documented real dishes, kitchens, restaurants, or food experiments.",
+    "reference_input_scope": "The image reference inputs recorded below point to other project-generated outputs. External portfolio URLs are research references, not recorded production image inputs.",
+    "output_id_note": "Output IDs are the basenames of the supplied image_gen output paths. They are not claimed to be random seeds or model-version identifiers."
+  },
+  "rights_and_limits": [
+    "This manifest records origin and transformations; it does not grant a new image license or assert exclusive copyright ownership.",
+    "No MIT, CC0, or third-party stock license is asserted for the AI-generated food images. Software and font notices are documented separately in licenses/THIRD-PARTY.md.",
+    "Prompt phrases such as real photograph, exact geometry, 100mm macro, or percentage gloss reductions are verbatim creative instructions, not verified acquisition metadata or measured physical properties.",
+    "Reference-based AI edits can change fine details. Continuity is authored; pixel-identical geometry across generated states is not guaranteed.",
+    "Native masters are 1536 by 1024 pixels. A 4K viewport is a layout/rendering target, not a claim of native 4K image capture or generation.",
+    "The generation interface did not expose a model version or seed in the supplied records. Exact pixel regeneration from prompt text is not promised.",
+    "Unselected concept and study images are intentionally not bundled. Their prompts, output IDs, dimensions, checksums, and lineage remain as text records.",
+    "The runtime material systems are artistic effects, not calibrated heat, chemistry, viscosity, fracture, or steam simulations."
+  ],
+  "recorded_output_counts": {
+    "distinct_generation_outputs": 21,
+    "selected_png_masters": 9,
+    "responsive_webp_assets": 18,
+    "food_materials": 4,
+    "narrative_scenes": 11,
+    "generated_study_contact_sheets": 3,
+    "study_panels_per_sheet": 6,
+    "required_study_families": 6,
+    "unselected_generation_binaries_bundled": 0
+  },
+  "hero_comparison": {
+    "criteria": [
+      "appetite",
+      "material credibility",
+      "crop",
+      "silhouette",
+      "natural color",
+      "motion potential"
+    ],
+    "selected_direction": "A — Laminated",
+    "decision_basis": "The main direction review and independent review selected A for its brittle dry crust, soft layered interior contrast, and strong extreme-crop silhouette.",
+    "candidate_decisions": [
+      {
+        "generation_key": "hero-a-laminated",
+        "decision": "Selected as direction and edit parent. Its concept binary is excluded; text/UI and background were removed and overly wet crust highlights were restrained in pastry-hero."
+      },
+      {
+        "generation_key": "hero-b-seared",
+        "decision": "Not selected as the opening. Retained as the supporting seared-food direction and actual edit reference for scallop-seared; uniform wet gloss and overly dark sear marks were targeted for refinement."
+      },
+      {
+        "generation_key": "hero-c-glazed",
+        "decision": "Not selected as the opening. Its glaze direction informed later concepts, with thin coating, visible fruit texture, and subtler highlights emphasized. It is not recorded as a direct image-edit input to the later glaze production image."
+      }
+    ]
+  },
+  "study_families": [
+    {
+      "family": "CRUST",
+      "study_keys": [
+        "study-crust-moisture"
+      ],
+      "observations": [
+        "irregular laminated flakes",
+        "browned bread fissures",
+        "seared surface relief"
+      ],
+      "selected_use": [
+        "pastry-hero",
+        "scallop-seared"
+      ]
+    },
+    {
+      "family": "JUICE / MOISTURE",
+      "study_keys": [
+        "study-crust-moisture"
+      ],
+      "observations": [
+        "soft connected interior membranes",
+        "unequal open pockets",
+        "localized moisture and fat sheen"
+      ],
+      "selected_use": [
+        "pastry-inside",
+        "scallop-seared"
+      ]
+    },
+    {
+      "family": "MELT",
+      "study_keys": [
+        "study-melt-glaze"
+      ],
+      "observations": [
+        "softening butter",
+        "thick chocolate folds",
+        "short cheese stretch",
+        "heavy caramel flow"
+      ],
+      "selected_use": [
+        "chocolate"
+      ]
+    },
+    {
+      "family": "GLAZE",
+      "study_keys": [
+        "study-melt-glaze"
+      ],
+      "observations": [
+        "thin coating over curved apple",
+        "visible texture under gloss",
+        "restrained sauce trace"
+      ],
+      "selected_use": [
+        "tart-glaze"
+      ]
+    },
+    {
+      "family": "STEAM / HEAT",
+      "study_keys": [
+        "study-heat-plate"
+      ],
+      "observations": [
+        "fine warm-edge wisps",
+        "condensation beads",
+        "small butter bubbles at a seared contact edge"
+      ],
+      "selected_use": [
+        "scallop-seared",
+        "tart-steam"
+      ]
+    },
+    {
+      "family": "PLATING",
+      "study_keys": [
+        "study-heat-plate"
+      ],
+      "observations": [
+        "one object on a large quiet plate",
+        "controlled cut and separation",
+        "missing portion with few crumbs"
+      ],
+      "selected_use": [
+        "tart-plate",
+        "tart-cut",
+        "tart-bitten"
+      ]
+    }
+  ],
+  "responsive_encoding_pipeline": {
+    "encoder": "Sharp",
+    "version": "0.35.4",
+    "exact_recorded_expression": "sharp(source).resize({width,withoutEnlargement:true}).webp({quality:width===1536?90:86,alphaQuality:100,effort:6})",
+    "widths": [
+      1536,
+      768
+    ],
+    "resize_kernel": "lanczos3, the Sharp default; not passed explicitly",
+    "withoutEnlargement": true,
+    "master_handling": "Generated PNG files were copied byte-for-byte to assets/masters. No local upscaling or pixel retouching of those masters is claimed.",
+    "alpha_handling": "The pastry hero retains its real alpha channel in the PNG master and WebP exports. The observed PNG alpha range is 0–254; it was not normalized or flattened.",
+    "encoding_scope": "Two WebP delivery derivatives per master, with native aspect ratio retained. These are lossy color encodings with alphaQuality set to 100 where alpha exists."
+  },
+  "bundle_policy": {
+    "included": [
+      "nine selected original PNG masters",
+      "eighteen responsive WebP derivatives",
+      "exact prompts and lineage text",
+      "software/font licenses and separate font provenance"
+    ],
+    "excluded": [
+      "unselected Hero mockup binaries",
+      "study/contact-sheet binaries",
+      "unselected scene/mobile concept binaries",
+      "rejected generations",
+      "QA screenshots",
+      "traces",
+      "debug media"
+    ],
+    "plate_exception_explained": "concept-plate is the same output as the selected tart-plate master. It is counted once, and included only under its production filename.",
+    "video_assets": [],
+    "encoded_frame_sequences": [],
+    "model_assets": [],
+    "audio_recordings": [],
+    "runtime_note": "Motion uses the still textures and authored browser rendering. Optional audio is synthesized with WebAudio, not supplied as a recording."
+  },
+  "working_record_sources": [
+    {
+      "name": "complete-generation-history.json",
+      "sha256": "b8cf9cd09f5f4d6b975754f3be99f3eff6fa66ab6fb571de81a4d8e1da9734be",
+      "separately_bundled": false
+    },
+    {
+      "name": "generation-paths.json",
+      "sha256": "79c817699d2b9f155f81f7af0fbff32c77df7348967bf05560e3c2b13e000289",
+      "separately_bundled": false
+    },
+    {
+      "name": "scene-architecture.md",
+      "sha256": "b40d017795c109f6b632768c52be67468003eb66a2a47b378bab20d69b1b50be",
+      "separately_bundled": false
+    },
+    {
+      "name": "prompt-history.json",
+      "sha256": "c2857db92cd9ad7b0eddd5552d81e3976833604b1a2a1485be0fcc6578e60802",
+      "separately_bundled": false
+    },
+    {
+      "name": "scene-prompts.json",
+      "sha256": "d0434788f4b6c59d56e932c6bfd7f9ea339653d5299521e079df8ea1ea467984",
+      "separately_bundled": false
+    },
+    {
+      "name": "production-prompts.json",
+      "sha256": "61d546b4f7511c2424bd3c83f74315d51b6c1c8662787e9d260700ef2413ef34",
+      "separately_bundled": false
+    }
+  ],
+  "production_assets": [
+    {
+      "asset_key": "pastry-hero",
+      "food_material": "laminated pastry",
+      "scene_numbers": [
+        1,
+        4
+      ],
+      "generation_key": "pastry-hero",
+      "original_output_id": "exec-c58d1f1e-3b3d-4d91-a32a-418b2786e6fc",
+      "original_filename": "exec-c58d1f1e-3b3d-4d91-a32a-418b2786e6fc.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: background-extraction, precise-object-edit. This is the edit target for the final production food asset of CRAVE. Preserve the croissant's exact position, dramatic extreme crop at right and bottom, real layered silhouette, camera angle, irregular thin flakes, all main structural ridges and warm natural golden color from the reference. REMOVE ALL text, branding, lettering, numbers and UI, and remove the dark background to genuine transparent alpha, leaving only the photographic pastry. Do NOT put any new text. Preserve the upper-left negative space as transparent. Refine only the crown crust surface: reduce the excessive wet syrup-like gloss by about twenty percent so small egg-wash highlights remain but most thin flakes read dry, brittle and delicious. A few natural irregular darker browned patches, no artificial sharpened edges. Maintain soft photography and extremely detailed actual edible layers; no waxy plastic, no new garnishes, no hands, no table, no plate. Final production cutout at landscape 1536x1024 or larger, transparent background. Keep original food image visible in same crop and scale.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "hero-a-laminated",
+          "output_id": "exec-e75ec1c6-715d-42bc-91a5-1b119fafe65f"
+        },
+        {
+          "generation_key": "pastry-hero",
+          "output_id": "exec-c58d1f1e-3b3d-4d91-a32a-418b2786e6fc"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/pastry-hero.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "bytes": 2492489,
+        "sha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7",
+        "alpha_range": [
+          0,
+          254
+        ],
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/pastry-hero-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "bytes": 316052,
+          "sha256": "b6071759552effbf13450443fa73d9e5ab43897c7029f929cc90cae9d2f5c72b",
+          "alpha_range": [
+            0,
+            254
+          ],
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/pastry-hero-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGBA",
+          "has_alpha_channel": true,
+          "bytes": 93938,
+          "sha256": "8e741ad4d183f8c491c676ca6f2954d7729fdd36b7819fcbdbddc340e608872f",
+          "alpha_range": [
+            0,
+            255
+          ],
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "scallop-seared",
+      "food_material": "seared scallop",
+      "scene_numbers": [
+        2,
+        3
+      ],
+      "generation_key": "scallop-seared",
+      "original_output_id": "exec-210b0f70-1e8b-4439-acc8-43d9e0faf0b0",
+      "original_filename": "exec-210b0f70-1e8b-4439-acc8-43d9e0faf0b0.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Reference is a design mockup; produce its standalone photoreal FOOD asset. Preserve the two scallops, exact framing/crop/camera perspective, warmth and dramatic upper-left soft lighting. REMOVE EVERY word, letter, number, line, logo, UI element. Keep the upper-left background near-black espresso #17120f without text, with plenty of dark negative space occupying left30 percent. Keep foreground scallop filling lower-right70 percent and cropped by bottom/right. Refine edible material: reduce the uniform wet gloss on pearly scallop side; leave small natural moisture and butter glints by hot surface. Preserve uneven amber and chestnut sear, make black marks light dark-brown so it reads appetizing not burnt. Tiny realistic clarified-butter bubbles at contact only. No plate, garnish, hands, steam fog or flames. Final production photographic food frame, no text, same perspective and composition. Natural edible colors and soft authentic macro depth. Largest available landscape output.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "hero-b-seared",
+          "output_id": "exec-a266ada7-6d88-4694-85e3-c7feaba99f14"
+        },
+        {
+          "generation_key": "scallop-seared",
+          "output_id": "exec-210b0f70-1e8b-4439-acc8-43d9e0faf0b0"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/scallop-seared.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2181233,
+        "sha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/scallop-seared-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 238744,
+          "sha256": "34ec01297d75fd8003dfcb00901e51ad3139b3ebfbdf28be8061ec69f6d452ba",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/scallop-seared-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 70224,
+          "sha256": "6540d81e939402246a14a55945916d029db6f35e3ab6e1abac153ce52197001f",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "pastry-inside",
+      "food_material": "laminated pastry",
+      "scene_numbers": [
+        4,
+        5
+      ],
+      "generation_key": "pastry-inside",
+      "original_output_id": "exec-0def4029-0d2c-4da8-a7b3-2ea758c78990",
+      "original_filename": "exec-0def4029-0d2c-4da8-a7b3-2ea758c78990.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Edit the supplied CRAVE layout concept into the standalone production food photograph. REMOVE all typography, labels, numbers, logo, controls and UI from everywhere, no new text. Preserve the exact macro view of the torn croissant and its main rim/cross-section, proportions, right/bottom crop, natural warm gold and cream palette, soft beautiful lighting. Retain the ivory/cream empty space at left30percent as a natural backdrop. Improve realism slightly: keep air pockets irregular with very fine connected moist membranes, not a regular sponge; reduce blown highlight intensity on inner layers about10percent so texture remains. Remove the detached floating flake near x35% y25%; retain flakes that actually touch the croissant. Real dry brittle thin crust outside, soft moist airy layered inside. Delicious first, soft optical depth, no 3D toy, no wax, no plate or people. Do not recompose the photo. Final landscape production asset without any letters.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-inside",
+          "output_id": "exec-aa7e0ba1-6614-4609-a0cb-b4d7003a2115"
+        },
+        {
+          "generation_key": "pastry-inside",
+          "output_id": "exec-0def4029-0d2c-4da8-a7b3-2ea758c78990"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/pastry-inside.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2184926,
+        "sha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/pastry-inside-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 215440,
+          "sha256": "ba57c4c6d6d4151ce21d5972c99c60885808d148975fdfbcbd736545ade99870",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/pastry-inside-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 61602,
+          "sha256": "cbc795dde7dd39e6ddb04723e6cb6d78a5614d35334584cafcd66b1021745a5d",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "chocolate",
+      "food_material": "thick chocolate",
+      "scene_numbers": [
+        6
+      ],
+      "generation_key": "chocolate",
+      "original_output_id": "exec-bcc66977-d17c-4ff5-9ef1-416b8442cfe9",
+      "original_filename": "exec-bcc66977-d17c-4ff5-9ef1-416b8442cfe9.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Edit the CRAVE chocolate layout reference to a text-free standalone production photograph. REMOVE ALL text, letters, numbers, icons, control slider, logo, labels and any interface marks. Preserve EXACT composition and chocolate main shape: heavy deep-brown ganache ribbon falling from top around60percent horizontal, folding onto itself lower-right, thick glossy pool cropped by bottom and right, dark espresso negative space left35percent for later HTML typography. Keep natural edible rich brown, soft long upper-left reflection, authentic slow gravity weight. Refine only the surface to make highlights slightly softer and thinner, with tiny natural variation and no oily/waxy plastic appearance. No new items, no spoon, no bowl, no hands, no splash, no floating food. Highest quality photoreal macro food cinema, preserve perspective and crop. Production image largest available landscape.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-melt",
+          "output_id": "exec-e0c5f3db-cdfe-495f-b186-fea1d3f7917a"
+        },
+        {
+          "generation_key": "chocolate",
+          "output_id": "exec-bcc66977-d17c-4ff5-9ef1-416b8442cfe9"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/chocolate.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1687938,
+        "sha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/chocolate-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 83662,
+          "sha256": "e2f2bd17f6b72bc94cb5bb1f70604f1a992b7bebf768120c3a3c297ac11aea38",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/chocolate-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 24944,
+          "sha256": "104b0adaf4dddfcc5dae674093d021e6e2ae806ad09561e7114f23803f64089b",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "tart-glaze",
+      "food_material": "warm caramel apple tart",
+      "scene_numbers": [
+        7
+      ],
+      "generation_key": "tart-glaze",
+      "original_output_id": "exec-9791aff4-eca7-4625-a6ea-ee6607bb67c3",
+      "original_filename": "exec-9791aff4-eca7-4625-a6ea-ee6607bb67c3.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Remove every word, number, logo, mark, icon, navigation text and interface item from the supplied CRAVE apple tart scene. Produce only the standalone photographic food background. Keep EXACT camera angle, apple geometry, golden flaky pastry edge, crop and composition; dark espresso negative space left25 percent, huge caramel fruit landscape on right75percent. Preserve natural apple texture and thin edible caramel coating, soften the largest white highlights slightly; tiny realistic speckling, no wax/resin shine, no oversaturation. No hands, no people, no plates or utensil additions. Highest quality actual edible macro photograph. Text-free final production plate at largest available landscape.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-glaze",
+          "output_id": "exec-5f1cb90b-01d8-4c91-bfe7-5323c1adb1db"
+        },
+        {
+          "generation_key": "tart-glaze",
+          "output_id": "exec-9791aff4-eca7-4625-a6ea-ee6607bb67c3"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/tart-glaze.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2160525,
+        "sha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/tart-glaze-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 234860,
+          "sha256": "fca00a4a84857ab8cf6f269760834f70b1f46576b20ea080af05827fb3b05538",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/tart-glaze-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 69810,
+          "sha256": "fe126f62cf75a400deea1633d1e35ee77eef56b626f03c7b5e841c3299871113",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "tart-steam",
+      "food_material": "warm caramel apple tart",
+      "scene_numbers": [
+        8
+      ],
+      "generation_key": "tart-steam",
+      "original_output_id": "exec-12df1ae6-113c-4c13-92a4-a91e7baf828d",
+      "original_filename": "exec-12df1ae6-113c-4c13-92a4-a91e7baf828d.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Produce clean photographic production asset from this CRAVE STEAM scene. Remove ALL text, logo, labels, numbers and interface elements. Also remove the baked-in steam wisps completely; steam will be generated subtly at runtime. Preserve exact lower-right macro crop of warm caramel apple tart and its natural layers and color; upper/left65 percent is airy warm ivory porcelain #eae4d9 negative space. The food silhouette, framing, lighting and natural background remain unchanged. No visible full plate, hands, people, garnish or additional food. Natural fine flaky pastry and thin glaze, not plastic. Authentic warm food macro photography. Largest available landscape.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-steam",
+          "output_id": "exec-22c48984-c580-4e25-a14f-adb0e35c9e31"
+        },
+        {
+          "generation_key": "tart-steam",
+          "output_id": "exec-12df1ae6-113c-4c13-92a4-a91e7baf828d"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/tart-steam.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1932193,
+        "sha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/tart-steam-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 147888,
+          "sha256": "3a75e5f8b2617333aed0cdd51d5684e25f5889e734f164feecce8b4565d77765",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/tart-steam-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 44654,
+          "sha256": "87e8f67d6dc17723d7021e725363c96c718154e011f40092f6ed1ac69f1ab32e",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "tart-plate",
+      "food_material": "warm caramel apple tart",
+      "scene_numbers": [
+        9,
+        10
+      ],
+      "generation_key": "concept-plate",
+      "original_output_id": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c",
+      "original_filename": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: ui-mockup. One full landscape1536x1024 viewport for scene09 PLATE of CRAVE, high-end food material cinematic exhibition. First pulled-back scene after extreme macro. Warm porcelain #eae4d9 and subtle limestone background, restrained natural shadows from upper-left. A single small round warm caramel apple tart with natural overlapping soft curved apple segments and real flaky pastry, sitting off-center on an oversized matte ivory porcelain plate. Whole plate lies on right60percent of frame with much negative space around tart, seen overhead at gentle angle, entire food visible, plate can be cropped slightly on right. Tart itself occupies only24percent of total image width, caramel is thin not resin-like, natural amber with soft controlled highlights. Left35percent genuinely empty for beautiful huge dark espresso serif type 'A little' / italic 'distance.' Small CRAVE top left, Index / Sound off top right, tiny 'Material becomes a dish.' bottomleft, 09 / 11 bottomright. No utensils yet, no other food, no cloth, no garnish, no restaurants, no cards, no grids. Composition editorial and almost silent. Appetizing physical food small but clear, no fake perfect geometry. Complete implementation-ready screen; text separately code-native later.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-plate",
+          "output_id": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/tart-plate.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2428629,
+        "sha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/tart-plate-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 225482,
+          "sha256": "b96de799ac88c253943657f9406a4c81f778016619239a7614925966ca51f538",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/tart-plate-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 46764,
+          "sha256": "9e9251fe5290e12bed3bfb2122cad660d2eaf4e0b73b6fc3f58d3f0614302c94",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ],
+      "production_selection_note": "Direct selection of the text-free concept-plate output; the original concept prompt is the exact production generation prompt. No nonexistent text-removal edit has been inserted into this record."
+    },
+    {
+      "asset_key": "tart-cut",
+      "food_material": "warm caramel apple tart",
+      "scene_numbers": [
+        10
+      ],
+      "generation_key": "tart-cut",
+      "original_output_id": "exec-d6bbc008-3d0a-47a2-8d73-3d636cd54c6b",
+      "original_filename": "exec-d6bbc008-3d0a-47a2-8d73-3d636cd54c6b.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Precisely edit this same warm apple tart photograph. Preserve camera position, entire plate outline and position, stone surface, light direction, shadows, tart center around x72% y47%, size of the tart, all surrounding negative space. Change ONLY a small wedge of the tart facing lower-left: cut through two neat radial lines and gently separate a narrow wedge (about one sixth of tart) by 1cm, still resting on the same plate close to original position, exposing delicious soft moist cooked apple above a thin golden laminated pastry base. Leave 3–4 tiny natural crumbs beside the cut, a tiny amber glaze trace. Add NO knife yet, no hands, no new dishes, no steam, no text or UI. The wedge must be identifiable as a single cleanly cut edible portion with intact layered bottom and appealing moist interior; no gummy fake crumb. Same image composition and background exactly. Photoreal restrained warm delicious food photography; largest available landscape.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-plate",
+          "output_id": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c"
+        },
+        {
+          "generation_key": "tart-cut",
+          "output_id": "exec-d6bbc008-3d0a-47a2-8d73-3d636cd54c6b"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/tart-cut.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2415015,
+        "sha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/tart-cut-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 229604,
+          "sha256": "21b051ff3c58ebc906b3ca43ddc6ba0474126cf9dd5de4b4f141532c38c340f6",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/tart-cut-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 46768,
+          "sha256": "6b64ea4e51622ac916206741d1441de7e1004ba57c7c1837d68bcbc32a9cc193",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    },
+    {
+      "asset_key": "tart-bitten",
+      "food_material": "warm caramel apple tart",
+      "scene_numbers": [
+        10,
+        11
+      ],
+      "generation_key": "tart-bitten",
+      "original_output_id": "exec-80dc6d17-26ee-4e0c-995c-c081c455cd2c",
+      "original_filename": "exec-80dc6d17-26ee-4e0c-995c-c081c455cd2c.png",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "exact_production_prompt": "Use case: precise-object-edit. Final state of the exact same apple tart photograph. Preserve every detail outside the already separated wedge: entire plate, limestone background, camera angle, lighting, main tart position, original cut edges, shadow positions. Remove ONLY the loose wedge sitting at the lower-left of the tart, as though that first bite has been taken offscreen. Leave the corresponding small empty wedge gap in the remaining tart with its fresh moist apple cross-section visible, preserve the main remaining tart geometry exactly. Keep only a few small crumbs and the tiny amber sauce trace that already sit on the plate; do not add more. Clean the plate area formerly under the removed wedge naturally with the same ivory ceramic, maybe the slightest sauce smear. No person, no hand, no fork, no knife, no new dish, no steam, no text. Do not reframe or move the plate or tart. Photoreal appetizing warm apple, subtle glazing and thin flaky pastry. This is a precise continuity edit, largest available landscape.",
+      "reference_lineage_root_to_output": [
+        {
+          "generation_key": "concept-plate",
+          "output_id": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c"
+        },
+        {
+          "generation_key": "tart-cut",
+          "output_id": "exec-d6bbc008-3d0a-47a2-8d73-3d636cd54c6b"
+        },
+        {
+          "generation_key": "tart-bitten",
+          "output_id": "exec-80dc6d17-26ee-4e0c-995c-c081c455cd2c"
+        }
+      ],
+      "master": {
+        "file": "assets/masters/tart-bitten.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2239213,
+        "sha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271",
+        "unchanged_copy_of_generated_png": true,
+        "original_output_sha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271"
+      },
+      "responsive_assets": [
+        {
+          "file": "public/media/tart-bitten-1536.webp",
+          "format": "WEBP",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 189892,
+          "sha256": "7f73b30ca0a4401f8e3731438984d88fd49d2e46d5d420435105782ef65c6f13",
+          "encoding": {
+            "format": "webp",
+            "quality": 90,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 1536,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        },
+        {
+          "file": "public/media/tart-bitten-768.webp",
+          "format": "WEBP",
+          "width": 768,
+          "height": 512,
+          "mode": "RGB",
+          "has_alpha_channel": false,
+          "bytes": 40168,
+          "sha256": "bbec3e1ad8cd4064aa5b09cfc512d71870bb2db0ad81a2707c7e58abb087cbb7",
+          "encoding": {
+            "format": "webp",
+            "quality": 86,
+            "alphaQuality": 100,
+            "effort": 6,
+            "requested_width": 768,
+            "withoutEnlargement": true,
+            "resize_kernel": "lanczos3 (Sharp default; not explicitly set)",
+            "upscaled": false
+          }
+        }
+      ]
+    }
+  ],
+  "generation_records": [
+    {
+      "generation_key": "hero-a-laminated",
+      "output_id": "exec-e75ec1c6-715d-42bc-91a5-1b119fafe65f",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "visualPrompts",
+      "exact_prompt": "Use case: ui-mockup. Create an extraordinarily appetizing photoreal food-cinema website opening frame for CRAVE — Before the First Bite. Widescreen landscape 1536x1024. This is ONE full browser viewport, no browser chrome. Complete design concept for first scene of an 11-scene continuous sensory film: later Heat, Brown, Crust, Inside, Melt, Glaze, Steam, Plate, Cut, Before the First Bite. The first viewport is extremely editorial and food dominates. Deep espresso-black #17120f background. Gigantic warm ivory high-contrast elegant serif word CRAVE across the upper-middle, monumental but readable, modest left small serif CRAVE brand at top, top-right minimal text Index and Sound off. Hero A LAMINATED: one genuinely delicious golden butter croissant in extreme macro, huge across lower and right 70% of viewport, its right tip and bottom strongly cut off by viewport edges, natural irregular fine flaky layers, amber deep browned ridges and pale gold highlights from large strip light on upper left, soft rich shadows. One foreground shard gently lifted from edge without floating. No plate, table, hands, or other food. Tiny lowercase italic serif text 'Before the first bite.' lower left on dark negative space; discreet 'Scroll to feel' and tiny downward arrow bottom left, scene '01 / 11' bottom right. Palette natural edible gold, chestnut, ivory, warm dark. Highest-end actual macro photography quality, 100mm macro, honest crispy irregular crumb and restrained egg-wash specular highlights, delicious not waxy. Spacious, cinematic, strong cropping. No cards, no pills, no badge or kicker, no prices, no menus. The text and controls will be separately implemented in HTML later; food asset separable. Do not include mockup frames, multiple views, grids or boards.",
+      "prompt_utf8_sha256": "b5797b0aaf7e345a4fb0dd940796668855e133cd2a8bf33b03c1cd25b4bd093b",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2249266,
+        "sha256": "5371b877a97063006a270a4e940b7c826c837f5d00e2b49e2318344b506f567a"
+      },
+      "disposition": "hero_comparison_candidate_binary_excluded"
+    },
+    {
+      "generation_key": "hero-b-seared",
+      "output_id": "exec-a266ada7-6d88-4694-85e3-c7feaba99f14",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "visualPrompts",
+      "exact_prompt": "Use case: ui-mockup. One extraordinary first browser viewport for CRAVE — Before the First Bite, sensual high-end food material cinema, landscape 1536x1024. Design HERO candidate B SEARED. Full screen extreme macro of two very large plump seared scallops, one foreground cropped by lower and right edges; deep caramelized amber/brown crust with tiny irregular crisp edges and natural moisture, succulent pearly ivory side, small clarified butter pool with restrained sharp glints. Food fills right/lower 75 percent, dark warm espresso negative space upper left; no plate, no table visible, no restaurant or people, no garnish. Natural fine browned granular surface, no black char, no raw meat. One broad soft strip light across crust and a tiny butter glint. Giant elegant warm ivory high contrast serif CRAVE title across upper third; quiet small CRAVE brand top left and Index / Sound off top right. Small italic 'Before the first bite.' in lower left negative space, 'Scroll to feel' bottom left and '01 / 11' bottom right. No eyebrow badges, cards, borders or marketing copy. Full implementation-ready editorial experience design with food 80% of the focus and tiny navigation; this is opening of Heat Brown Crust Inside Melt Glaze Steam Plate Cut Bite sequence. Photoreal advertising food photography with real irregularity, delectable golden sear, no wax, no CGI plastic, no uncanny shapes. Single viewport no multi-frame board.",
+      "prompt_utf8_sha256": "20f74d0209b1ba3ad418fb09539ad72e08f5d67e4fe40972893e0e5ac0ef524a",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2134272,
+        "sha256": "68955cc27e728f3cdf80eda56d4b81184c7d7430409dbda18bb9727beff396cd"
+      },
+      "disposition": "hero_comparison_candidate_binary_excluded"
+    },
+    {
+      "generation_key": "hero-c-glazed",
+      "output_id": "exec-661b2167-2e06-41ef-9e02-f9b55d632584",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "visualPrompts",
+      "exact_prompt": "Use case: ui-mockup. Single landscape 1536x1024 browser viewport concept for CRAVE — Before the First Bite. HERO direction C GLAZED. Cinematic extreme macro of a magnificent warm tarte tatin: a single round apple tart made with natural curved soft apple segments under a thin translucent deep amber caramel glaze, pale golden very flaky puff pastry edge, no perfect geometric swirls, genuinely homemade-with-precision fine patisserie. Tart massively cropped at right and bottom, filling lower/right 70 percent, unseen support, warm espresso-black #17120f background on left/top. A very beautiful long narrow window reflection crosses the real sticky caramel surface and softly reveals soft translucent apple texture. Warm glints of butter and amber sauce at pastry edge. Highest end actual macro food advertising photograph, 100mm macro, shallow optical depth but main ridges crisp; no wax, no plastics, no excessive gold, no garnish, no restaurant, hands or table. Monumental ivory elegant high-contrast serif CRAVE across top middle. Small CRAVE logo top left, quiet Index and Sound off top right. Lower left delicate italic 'Before the first bite.' and footer 'Scroll to feel', bottom right '01 / 11'. Dense food but airy typography with immense appetite, not a restaurant landing page. No badges/cards/prices/nav menus. Later scenes will inspect Heat Brown Crust Inside Melt Glaze Steam Plate Cut Before the First Bite. Single full viewport, no frame or collages.",
+      "prompt_utf8_sha256": "378c26c91739e4521801c250065f83cff300256a676bfde9329a8c8c42b16fa9",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2214551,
+        "sha256": "647d42172977c3b629754f31c5115a51705d2c7d5218d24fd85dfbac16e657dd"
+      },
+      "disposition": "hero_comparison_candidate_binary_excluded"
+    },
+    {
+      "generation_key": "pastry-hero",
+      "output_id": "exec-c58d1f1e-3b3d-4d91-a32a-418b2786e6fc",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "assetPrompts",
+      "exact_prompt": "Use case: background-extraction, precise-object-edit. This is the edit target for the final production food asset of CRAVE. Preserve the croissant's exact position, dramatic extreme crop at right and bottom, real layered silhouette, camera angle, irregular thin flakes, all main structural ridges and warm natural golden color from the reference. REMOVE ALL text, branding, lettering, numbers and UI, and remove the dark background to genuine transparent alpha, leaving only the photographic pastry. Do NOT put any new text. Preserve the upper-left negative space as transparent. Refine only the crown crust surface: reduce the excessive wet syrup-like gloss by about twenty percent so small egg-wash highlights remain but most thin flakes read dry, brittle and delicious. A few natural irregular darker browned patches, no artificial sharpened edges. Maintain soft photography and extremely detailed actual edible layers; no waxy plastic, no new garnishes, no hands, no table, no plate. Final production cutout at landscape 1536x1024 or larger, transparent background. Keep original food image visible in same crop and scale.",
+      "prompt_utf8_sha256": "d14157e67187c9cd7affc0454caa264b0fa7e2434814aaf5e91229d82557a13d",
+      "recorded_reference_images": [
+        {
+          "generation_key": "hero-a-laminated",
+          "output_id": "exec-e75ec1c6-715d-42bc-91a5-1b119fafe65f",
+          "sha256": "5371b877a97063006a270a4e940b7c826c837f5d00e2b49e2318344b506f567a",
+          "binary_bundled": false
+        }
+      ],
+      "recorded_transparent_background_parameter": true,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "bytes": 2492489,
+        "sha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7",
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/pastry-hero.png"
+    },
+    {
+      "generation_key": "study-crust-moisture",
+      "output_id": "exec-38cc2caa-fead-46c3-be18-1f828fef7d1b",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "assetPrompts",
+      "exact_prompt": "Use case: photorealistic-natural. High-end food material research contact sheet for CRAVE, 3 columns by 2 rows of SIX DISTINCT real macro photographs with thin dark neutral gutters, no typography anywhere. Top left: believable golden hand-laminated croissant edge with very thin irregular dry flakes. Top middle: browned sourdough crust with natural small fissures. Top right: gently seared scallop with caramel-brown microtexture and small butter highlights. Bottom left: freshly torn croissant interior with moist pale unequal elongated air pockets and soft fine membranes, no perfect honeycomb foam. Bottom middle: close cut face of roast with natural moist opaque fibers, soft side light, no uncanny raw red meat. Bottom right: amber sauce gently coating warm fruit with a few beads at the edge, distinct low sheen rather than plastic. Photographic light same soft upper-left window, dark warm espresso shadows, natural appetizing gold cream chestnut amber. Macro lens 100mm, shallow depth with convincing focus, no excessive sharpening. All food reads delicious and genuinely edible; no garnishes, no floating items, no hands, no chefs, no restaurant. Each tile an independent richly detailed material study, not dishes in a catalog.",
+      "prompt_utf8_sha256": "3e3c61099577721f65a41f705c6e5f1424fcf1c403a48ffb6be471170238d01c",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": false,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2918799,
+        "sha256": "d94b69a532b29b7f6612abd7fae1f19764b8a9305b3037f8e0ccbb7bf78411dc"
+      },
+      "disposition": "research_contact_sheet_binary_excluded"
+    },
+    {
+      "generation_key": "study-melt-glaze",
+      "output_id": "exec-f9c15ebd-1e4b-409b-92bb-2cd10ff0f683",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "assetPrompts",
+      "exact_prompt": "Use case: photorealistic-natural. High quality six-image food-material visual-bible contact sheet, 3 columns 2 rows, no text or labels. Study ONLY real edible viscosity and gloss. Six separate close macro frames with dark espresso backdrops and one soft upper-left strip-light: (1) butter softening on warm flaky pastry, translucent pale yellow rim, no plastic; (2) warm dark chocolate ganache thick ribbon folding heavily onto itself, soft broad highlight; (3) cheese melting over a torn bread edge, short natural uneven stretch not long ropes; (4) deep amber caramel pouring as a heavy silky slow curtain, tiny realistic bubbles, no water splashes; (5) thin caramel glaze coating curved baked apple with partial translucent edges, no mirrored glass; (6) spoon-shaped glossy savory sauce streak on neutral porcelain with very restrained plating negative space. Photoreal premium food macro cinematography stills, irregular real structures, natural colors, tactile delicious believable texture. No CGI 3D toys, no waxy uniform coatings, no floating foods, no people, no packaging. Six clear distinct photos separated only by thin dark gutters.",
+      "prompt_utf8_sha256": "d99277fd661e1016a492a99d49292077016ea9cf65ba5c05d01f429d159f2da5",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": false,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2492060,
+        "sha256": "5e12b9f16d03372c55b831f81088092749a6bca17b680c8292af690cbd2ed90d"
+      },
+      "disposition": "research_contact_sheet_binary_excluded"
+    },
+    {
+      "generation_key": "study-heat-plate",
+      "output_id": "exec-9fc30571-8895-4e99-b80a-4d07edbf8aab",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "assetPrompts",
+      "exact_prompt": "Use case: photorealistic-natural. Six-image visual bible study sheet for CRAVE food-material cinema. 3 columns 2 rows, each tile a real photograph, thin dark gutters, NO labels or text. Top left: one or two very fine nearly invisible irregular wisps rising off a freshly torn warm croissant in dark side light; top middle: tiny natural condensation beads on warm metal with light from upper left, muted shadows; top right: tiny butter bubbles meeting a scallop's golden seared rim, extreme macro, no flames. Bottom left: a small round caramel apple tart alone placed slightly off center on a very large ivory porcelain plate, overhead, generous warm stone negative space, extremely restrained food presentation; bottom middle: same kind of warm tart with one piece gently cut apart showing flaky pastry and soft cooked apple, knife edge only at side no hand; bottom right: minimal end-of-bite remains, a single fresh missing corner in a tart with four tiny crumbs and a narrow smear of amber caramel, porcelain whitespace. Realistically edible and desirable high-end advertising photograph, real irregular fine crumbs and delicious natural browning, no fake fog or smoke, no decorative plant garnish, no restaurants or people.",
+      "prompt_utf8_sha256": "bb31f16523a156990642ad521b8e2891806c5a09aabe7d3136d3f688662f6c9e",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": false,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2640793,
+        "sha256": "a8af0681d034cedee836baf955b77dc48ecec53cb9d9fb41695c144247dfde1a"
+      },
+      "disposition": "research_contact_sheet_binary_excluded"
+    },
+    {
+      "generation_key": "concept-heat",
+      "output_id": "exec-653c5543-1070-4e49-bf70-d6165e708d62",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "sceneConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. Full 1536x1024 browser viewport concept for scene 02 HEAT in CRAVE sensory food cinema. This is a downstream scene, not the opening. Same design system: near black espresso #17120f, warm ivory #f0e6d2, elegant very large Cormorant-like thin serif typography, small quiet CRAVE top left, Index / Sound off top right, restrained footer scene 02 / 11. Main composition: extreme macro seared scallop enters frame from right occupying right70% and lower70%, gold/brown upper surface, pearly flesh, only tiny butter bubbles at contact with dark metal; buttery highlights side-lit from upper-left, no fire, no restaurants or plates. Dark negative space left. Huge beautiful type left center reads 'You can see' and italic 'the heat.' about120px two lines. Very small bottom left sensory text 'Matte. Moist. Shimmer.' and an understated next arrow. One thin warm reflective line barely visible at base of food, photographic not neon. Actual edible gourmet macro photograph, honest irregular browning, no waxy gloss. This scene flows forward into Brown where the same surface becomes deeper chestnut. Airy asymmetrical design; food is a landscape. No cards, no diagrams, no decorative labels, no badges, no measurements.",
+      "prompt_utf8_sha256": "ab1967c33ed8e058b7adbc6ac2d823cbfd94de1e4c1d6be8d9a029f809620d6c",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2081324,
+        "sha256": "1da80abd7f3b16a73250d49ac81474a17f3f70e70c2dca888bd3da028cfcdb10"
+      },
+      "disposition": "scene_or_mobile_concept_binary_excluded"
+    },
+    {
+      "generation_key": "concept-inside",
+      "output_id": "exec-aa7e0ba1-6614-4609-a0cb-b4d7003a2115",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "sceneConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. Full single landscape1536x1024 implementation-ready viewport design for CRAVE scene05 INSIDE immediately after CRUST. Warm cream #ebe4d7 and dark espresso type, macro fine food editorial cinema. Huge freshly torn croissant fills right 75% of frame and is cropped by right/bottom/top; very fine moist pale inner layers with naturally irregular elongated air pockets, thin membranes and a few buttery yellow highlights, darker thin crisp amber flaky rim. No geometrical honeycomb, no CGI, real edible pastry high quality macro photography. Left 30% open cream-colored space with very large dark elegant serif headline 'A softer' and italic 'world.' offset vertically center. Small header CRAVE left, Index / Sound off right. Small footer 05 / 11 right and 'Crisp gives way.' left. One tiny amber flake near the tear, no exploding cloud, no food floating in space. The negative space and food smoothly meet through a soft photographic falloff, no rectangular frame, no cards or panels. Light from upper-left warm and natural. This scene must feel materially different from the brown brittle crust. Separate media asset and code-native type later. No product catalog.",
+      "prompt_utf8_sha256": "90930111f5332173ee7f1801ff8936a6e6c25402ce87348c29bd1c27ef635f14",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2123780,
+        "sha256": "e0783575f36234c3af3a6e735bdcb818c0cb46593fcf40f0f73343b11669a96c"
+      },
+      "disposition": "scene_or_mobile_concept_binary_excluded"
+    },
+    {
+      "generation_key": "concept-melt",
+      "output_id": "exec-e0c5f3db-cdfe-495f-b186-fea1d3f7917a",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "sceneConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. CRAVE scene06 MELT full viewport design, landscape1536x1024. Highest-end warm food material cinema. Deep chocolate espresso black background; a thick glossy dark brown chocolate ganache ribbon comes from beyond top edge near 60% horizontal, slowly folds upon itself into a luxurious deep pool filling lower-right70%. The ribbon has substantial mass, rounded creases and natural sheen from one soft tall side light on upper-left; actual creamy edible chocolate not black paint, not wax, not impossible towers, no splash. Tiny imperfect fold, slow heavy material. Left third is quiet dark negative space. Huge warm ivory elegant italic serif headline 'Give in.' left middle approx180px, with small 'Slow enough to feel its weight.' underneath. Minimal CRAVE top-left, Index / Sound off top-right, bottomright06 / 11. At lowerleft a fine short line control marked 'Thick' at left and 'Flow' at right, small circular handle; a real viscosity control to implement in DOM. No extra UI, cards, pills, badges, labels or restaurant cues. Beautiful sparse typography and photoreal enticing chocolate, continuous specular highlight is visual focus.",
+      "prompt_utf8_sha256": "03007cb5b7db634f51ed75afe8c18057ac260aa78f551d1150243b608ecce6db",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1743041,
+        "sha256": "4f9181c1bc2cc7cde9f02d36cc3365eb6b6dce9f02eb78e3b27bce34808016f9"
+      },
+      "disposition": "scene_or_mobile_concept_binary_excluded"
+    },
+    {
+      "generation_key": "scallop-seared",
+      "output_id": "exec-210b0f70-1e8b-4439-acc8-43d9e0faf0b0",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "sceneConceptPrompts",
+      "exact_prompt": "Use case: precise-object-edit. Reference is a design mockup; produce its standalone photoreal FOOD asset. Preserve the two scallops, exact framing/crop/camera perspective, warmth and dramatic upper-left soft lighting. REMOVE EVERY word, letter, number, line, logo, UI element. Keep the upper-left background near-black espresso #17120f without text, with plenty of dark negative space occupying left30 percent. Keep foreground scallop filling lower-right70 percent and cropped by bottom/right. Refine edible material: reduce the uniform wet gloss on pearly scallop side; leave small natural moisture and butter glints by hot surface. Preserve uneven amber and chestnut sear, make black marks light dark-brown so it reads appetizing not burnt. Tiny realistic clarified-butter bubbles at contact only. No plate, garnish, hands, steam fog or flames. Final production photographic food frame, no text, same perspective and composition. Natural edible colors and soft authentic macro depth. Largest available landscape output.",
+      "prompt_utf8_sha256": "57728e2c8f307597ad39dd3174542fdc6cdde88f0024336084ab484c8fff8a7e",
+      "recorded_reference_images": [
+        {
+          "generation_key": "hero-b-seared",
+          "output_id": "exec-a266ada7-6d88-4694-85e3-c7feaba99f14",
+          "sha256": "68955cc27e728f3cdf80eda56d4b81184c7d7430409dbda18bb9727beff396cd",
+          "binary_bundled": false
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2181233,
+        "sha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/scallop-seared.png"
+    },
+    {
+      "generation_key": "concept-glaze",
+      "output_id": "exec-5f1cb90b-01d8-4c91-bfe7-5323c1adb1db",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "lastConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. Single full landscape1536x1024 screen concept for CRAVE scene07 GLAZE. A warm caramel apple tart shown so close it becomes an amber edible landscape on the right75percent and bottom. Natural curved soft cooked apple segments with thin transparent caramel, flaky pale golden pastry edge and tiny small sauce glints. IMPORTANT realistic edible fruit texture visible under glaze, not glass, not resin, no strong white rectangular window reflection. One soft long narrow specular highlight gently follows curved fruit. Near-black espresso background left25 percent. Large understated high-contrast warm ivory serif text left reads 'A surface' then italic 'made of light.' Small CRAVE top-left, Index and Sound off top-right; very tiny footer 'Flow. Coat. Reflect.' bottom left and 07 / 11 bottomright. Sensual premium food typography balanced with extreme macro food. No badges, no header kicker, no cards, no restaurants, no cooking instructions. This directly follows a dark chocolate ribbon; preserve same upper-left lighting and curved highlight. No UI baked into actual food surfaces. One clear full frame concept.",
+      "prompt_utf8_sha256": "9a97438a3f57b68b45303602071437ef24894916df85d3619a1bc7df77a2b3a9",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2190535,
+        "sha256": "0fb4ebbbb2507b1b3e1af5e7a627ac17ae79a0df902322a9f37774ae56700d84"
+      },
+      "disposition": "scene_or_mobile_concept_binary_excluded"
+    },
+    {
+      "generation_key": "concept-steam",
+      "output_id": "exec-22c48984-c580-4e25-a14f-adb0e35c9e31",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "lastConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. One full landscape1536x1024 viewport for CRAVE scene08 STEAM. Quiet sensory food cinema at transition from dark glaze into light air. Warm porcelain white #eae4d9 background dominates upper and left70percent, gentle subtle soft natural daylight. Extreme close crop of edge of a warm caramel apple tart appears at lower-right edge of frame, fruit and flaky pastry showing only a low rim, no complete plate or full dish yet. Food is at bottom35percent/right65percent with soft falloff into neutral background. Only one or two extremely delicate irregular translucent wisps rise from warm fresh edge; not smoke, not dense white fog. Large dark espresso elegant serif headline left at upper middle reads 'Still' and italic 'warm.' airy and poetic. Tiny dark CRAVE top-left, Index / Sound off top-right; bottom-left tiny 'A little heat, held in the air.' and 08 / 11 bottomright. Luxury culinary editorial minimalism, sumptuous natural fruit color and pastry detail. No cards, badges, diagrams or garnish. Honest edible food. The next scene will pull back to reveal a complete plate; do not reveal plate here.",
+      "prompt_utf8_sha256": "ff08342fc9b72089f421c308a077cf44e383ee850a3cd88542ae6a6ef6a3d8ef",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1942250,
+        "sha256": "115cf5f732414cb6d09683212bd9e283baf395b619ae281dfe8c1a045508275b"
+      },
+      "disposition": "scene_or_mobile_concept_binary_excluded"
+    },
+    {
+      "generation_key": "concept-plate",
+      "output_id": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "lastConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. One full landscape1536x1024 viewport for scene09 PLATE of CRAVE, high-end food material cinematic exhibition. First pulled-back scene after extreme macro. Warm porcelain #eae4d9 and subtle limestone background, restrained natural shadows from upper-left. A single small round warm caramel apple tart with natural overlapping soft curved apple segments and real flaky pastry, sitting off-center on an oversized matte ivory porcelain plate. Whole plate lies on right60percent of frame with much negative space around tart, seen overhead at gentle angle, entire food visible, plate can be cropped slightly on right. Tart itself occupies only24percent of total image width, caramel is thin not resin-like, natural amber with soft controlled highlights. Left35percent genuinely empty for beautiful huge dark espresso serif type 'A little' / italic 'distance.' Small CRAVE top left, Index / Sound off top right, tiny 'Material becomes a dish.' bottomleft, 09 / 11 bottomright. No utensils yet, no other food, no cloth, no garnish, no restaurants, no cards, no grids. Composition editorial and almost silent. Appetizing physical food small but clear, no fake perfect geometry. Complete implementation-ready screen; text separately code-native later.",
+      "prompt_utf8_sha256": "8659e5ec1941db713155f1e0ba6d327fbd4966117cc86a749d66624455459e56",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2428629,
+        "sha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/tart-plate.png",
+      "selection_note": "The full-viewport concept prompt requested typography, but the observed output was already text-free. It was selected unchanged as tart-plate. No later cleanup prompt or generation is claimed."
+    },
+    {
+      "generation_key": "concept-end-mobile",
+      "output_id": "exec-87d1c63c-b511-4497-968f-70210997e711",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "lastConceptPrompts",
+      "exact_prompt": "Use case: ui-mockup. Portrait mobile viewport390x844 proportions, rendered at high resolution. Final scene11 of CRAVE sensory food cinema: Before the First Bite. Warm porcelain #eae4d9 background, dark espresso elegant very large high-contrast serif headline around upper middle 'The rest' / italic 'is yours.' Tiny CRAVE at top left and Index at top right, Sound off small on footer left. Below text a single warm caramel apple tart on matte ivory plate dramatically cropped from left/right of portrait frame, centered lowerhalf. A small fresh wedge is missing from the front of the tart, exposing soft apple and thin flaky pastry; the removed bite is absent and occurs offscreen. Just four natural crumbs and a short little amber sauce trace left on plate. Natural thin caramel sheen, no waxy gloss, warm dark gold. Extremely sparse almost invisible steam from fresh edge. Small understated underlined 'Once more' button below food or bottom-left safe area, 11 / 11 bottom-right. No people, no hands, no eating face, no restaurant, no recipes/prices/cards/navbars. Mobile is intentionally composed: enlarged edible texture, whitespace around text, plate edges cut by screen. Full vertical viewport, no phone device frame, no multi-screen board.",
+      "prompt_utf8_sha256": "2e06142c07a299eb74dc1720b8330bf60095187963732dcca44c20a5cdb36eb8",
+      "recorded_reference_images": [],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 853,
+        "height": 1844,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1959000,
+        "sha256": "e3781c0eab3341fc11002d8ca9295a165236d8ea59184fed1c3df54fe4607476"
+      },
+      "disposition": "scene_or_mobile_concept_binary_excluded"
+    },
+    {
+      "generation_key": "pastry-inside",
+      "output_id": "exec-0def4029-0d2c-4da8-a7b3-2ea758c78990",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "coreProductionPrompts",
+      "exact_prompt": "Use case: precise-object-edit. Edit the supplied CRAVE layout concept into the standalone production food photograph. REMOVE all typography, labels, numbers, logo, controls and UI from everywhere, no new text. Preserve the exact macro view of the torn croissant and its main rim/cross-section, proportions, right/bottom crop, natural warm gold and cream palette, soft beautiful lighting. Retain the ivory/cream empty space at left30percent as a natural backdrop. Improve realism slightly: keep air pockets irregular with very fine connected moist membranes, not a regular sponge; reduce blown highlight intensity on inner layers about10percent so texture remains. Remove the detached floating flake near x35% y25%; retain flakes that actually touch the croissant. Real dry brittle thin crust outside, soft moist airy layered inside. Delicious first, soft optical depth, no 3D toy, no wax, no plate or people. Do not recompose the photo. Final landscape production asset without any letters.",
+      "prompt_utf8_sha256": "beebcd53c8f23bfad02d5f01168b9d24a4c2635ebfe4da9296540afdc4b6c037",
+      "recorded_reference_images": [
+        {
+          "generation_key": "concept-inside",
+          "output_id": "exec-aa7e0ba1-6614-4609-a0cb-b4d7003a2115",
+          "sha256": "e0783575f36234c3af3a6e735bdcb818c0cb46593fcf40f0f73343b11669a96c",
+          "binary_bundled": false
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2184926,
+        "sha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/pastry-inside.png"
+    },
+    {
+      "generation_key": "chocolate",
+      "output_id": "exec-bcc66977-d17c-4ff5-9ef1-416b8442cfe9",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "coreProductionPrompts",
+      "exact_prompt": "Use case: precise-object-edit. Edit the CRAVE chocolate layout reference to a text-free standalone production photograph. REMOVE ALL text, letters, numbers, icons, control slider, logo, labels and any interface marks. Preserve EXACT composition and chocolate main shape: heavy deep-brown ganache ribbon falling from top around60percent horizontal, folding onto itself lower-right, thick glossy pool cropped by bottom and right, dark espresso negative space left35percent for later HTML typography. Keep natural edible rich brown, soft long upper-left reflection, authentic slow gravity weight. Refine only the surface to make highlights slightly softer and thinner, with tiny natural variation and no oily/waxy plastic appearance. No new items, no spoon, no bowl, no hands, no splash, no floating food. Highest quality photoreal macro food cinema, preserve perspective and crop. Production image largest available landscape.",
+      "prompt_utf8_sha256": "af22c8a07613e56d25d55ca29dc79e99189ed57f78083f73e8f3a122e32d841e",
+      "recorded_reference_images": [
+        {
+          "generation_key": "concept-melt",
+          "output_id": "exec-e0c5f3db-cdfe-495f-b186-fea1d3f7917a",
+          "sha256": "4f9181c1bc2cc7cde9f02d36cc3365eb6b6dce9f02eb78e3b27bce34808016f9",
+          "binary_bundled": false
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1687938,
+        "sha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/chocolate.png"
+    },
+    {
+      "generation_key": "tart-glaze",
+      "output_id": "exec-9791aff4-eca7-4625-a6ea-ee6607bb67c3",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "endingProductionPrompts",
+      "exact_prompt": "Use case: precise-object-edit. Remove every word, number, logo, mark, icon, navigation text and interface item from the supplied CRAVE apple tart scene. Produce only the standalone photographic food background. Keep EXACT camera angle, apple geometry, golden flaky pastry edge, crop and composition; dark espresso negative space left25 percent, huge caramel fruit landscape on right75percent. Preserve natural apple texture and thin edible caramel coating, soften the largest white highlights slightly; tiny realistic speckling, no wax/resin shine, no oversaturation. No hands, no people, no plates or utensil additions. Highest quality actual edible macro photograph. Text-free final production plate at largest available landscape.",
+      "prompt_utf8_sha256": "0e743bdc34e3537bfc393e76f4229299da0e35d010873833d202a411bfd6f375",
+      "recorded_reference_images": [
+        {
+          "generation_key": "concept-glaze",
+          "output_id": "exec-5f1cb90b-01d8-4c91-bfe7-5323c1adb1db",
+          "sha256": "0fb4ebbbb2507b1b3e1af5e7a627ac17ae79a0df902322a9f37774ae56700d84",
+          "binary_bundled": false
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2160525,
+        "sha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/tart-glaze.png"
+    },
+    {
+      "generation_key": "tart-steam",
+      "output_id": "exec-12df1ae6-113c-4c13-92a4-a91e7baf828d",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "endingProductionPrompts",
+      "exact_prompt": "Use case: precise-object-edit. Produce clean photographic production asset from this CRAVE STEAM scene. Remove ALL text, logo, labels, numbers and interface elements. Also remove the baked-in steam wisps completely; steam will be generated subtly at runtime. Preserve exact lower-right macro crop of warm caramel apple tart and its natural layers and color; upper/left65 percent is airy warm ivory porcelain #eae4d9 negative space. The food silhouette, framing, lighting and natural background remain unchanged. No visible full plate, hands, people, garnish or additional food. Natural fine flaky pastry and thin glaze, not plastic. Authentic warm food macro photography. Largest available landscape.",
+      "prompt_utf8_sha256": "55ff37caab78fffb180bc447778efd331ce6b23bfbeecdcf2e03a2f99c0038d0",
+      "recorded_reference_images": [
+        {
+          "generation_key": "concept-steam",
+          "output_id": "exec-22c48984-c580-4e25-a14f-adb0e35c9e31",
+          "sha256": "115cf5f732414cb6d09683212bd9e283baf395b619ae281dfe8c1a045508275b",
+          "binary_bundled": false
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 1932193,
+        "sha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/tart-steam.png"
+    },
+    {
+      "generation_key": "tart-cut",
+      "output_id": "exec-d6bbc008-3d0a-47a2-8d73-3d636cd54c6b",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "endingProductionPrompts",
+      "exact_prompt": "Use case: precise-object-edit. Precisely edit this same warm apple tart photograph. Preserve camera position, entire plate outline and position, stone surface, light direction, shadows, tart center around x72% y47%, size of the tart, all surrounding negative space. Change ONLY a small wedge of the tart facing lower-left: cut through two neat radial lines and gently separate a narrow wedge (about one sixth of tart) by 1cm, still resting on the same plate close to original position, exposing delicious soft moist cooked apple above a thin golden laminated pastry base. Leave 3–4 tiny natural crumbs beside the cut, a tiny amber glaze trace. Add NO knife yet, no hands, no new dishes, no steam, no text or UI. The wedge must be identifiable as a single cleanly cut edible portion with intact layered bottom and appealing moist interior; no gummy fake crumb. Same image composition and background exactly. Photoreal restrained warm delicious food photography; largest available landscape.",
+      "prompt_utf8_sha256": "e88f9889f9681f2967d3809598b717f23c15b071194d0acfdfb60ee287a85ca7",
+      "recorded_reference_images": [
+        {
+          "generation_key": "concept-plate",
+          "output_id": "exec-36467513-ae5c-4a7f-88a9-2df3fa0d599c",
+          "sha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3",
+          "bundled_master": "assets/masters/tart-plate.png"
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2415015,
+        "sha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/tart-cut.png"
+    },
+    {
+      "generation_key": "tart-bitten",
+      "output_id": "exec-80dc6d17-26ee-4e0c-995c-c081c455cd2c",
+      "generated_date": "2026-10-07",
+      "provider": "OpenAI",
+      "tool": "image_gen",
+      "source_prompt_group": "finalProductionPrompt",
+      "exact_prompt": "Use case: precise-object-edit. Final state of the exact same apple tart photograph. Preserve every detail outside the already separated wedge: entire plate, limestone background, camera angle, lighting, main tart position, original cut edges, shadow positions. Remove ONLY the loose wedge sitting at the lower-left of the tart, as though that first bite has been taken offscreen. Leave the corresponding small empty wedge gap in the remaining tart with its fresh moist apple cross-section visible, preserve the main remaining tart geometry exactly. Keep only a few small crumbs and the tiny amber sauce trace that already sit on the plate; do not add more. Clean the plate area formerly under the removed wedge naturally with the same ivory ceramic, maybe the slightest sauce smear. No person, no hand, no fork, no knife, no new dish, no steam, no text. Do not reframe or move the plate or tart. Photoreal appetizing warm apple, subtle glazing and thin flaky pastry. This is a precise continuity edit, largest available landscape.",
+      "prompt_utf8_sha256": "ae0cd4fcd019ca5158cac635ae0e55dc454f75c62517ff0774af3dae67134e0f",
+      "recorded_reference_images": [
+        {
+          "generation_key": "tart-cut",
+          "output_id": "exec-d6bbc008-3d0a-47a2-8d73-3d636cd54c6b",
+          "sha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff",
+          "bundled_master": "assets/masters/tart-cut.png"
+        }
+      ],
+      "recorded_transparent_background_parameter": null,
+      "observed_output": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "bytes": 2239213,
+        "sha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271"
+      },
+      "disposition": "selected_production_master",
+      "bundled_master": "assets/masters/tart-bitten.png"
+    }
+  ],
+  "byte_totals": {
+    "selected_png_masters": 19722161,
+    "responsive_webp_assets": 2380496
+  }
+}

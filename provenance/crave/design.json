@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T09:21:01Z",
+  "title": "Design System: CRAVE",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Espresso paper",
+        "tonalRamp": [
+          "oklch(15% 0.01023 52.83)",
+          "oklch(26% 0.01023 52.83)",
+          "oklch(37% 0.01023 52.83)",
+          "oklch(49% 0.01023 52.83)",
+          "oklch(60% 0.01023 52.83)",
+          "oklch(72% 0.01023 52.83)",
+          "oklch(84% 0.01023 52.83)",
+          "oklch(95% 0.01023 52.83)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm ivory ink",
+        "tonalRamp": [
+          "oklch(15% 0.02869 84.59)",
+          "oklch(26% 0.02869 84.59)",
+          "oklch(37% 0.02869 84.59)",
+          "oklch(49% 0.02869 84.59)",
+          "oklch(60% 0.02869 84.59)",
+          "oklch(72% 0.02869 84.59)",
+          "oklch(84% 0.02869 84.59)",
+          "oklch(95% 0.02869 84.59)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Browning accent",
+        "tonalRamp": [
+          "oklch(15% 0.10063 60.65)",
+          "oklch(26% 0.10063 60.65)",
+          "oklch(37% 0.10063 60.65)",
+          "oklch(49% 0.10063 60.65)",
+          "oklch(60% 0.10063 60.65)",
+          "oklch(72% 0.10063 60.65)",
+          "oklch(84% 0.10063 60.65)",
+          "oklch(95% 0.10063 60.65)"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Porcelain paper",
+        "tonalRamp": [
+          "oklch(15% 0.01612 82.79)",
+          "oklch(26% 0.01612 82.79)",
+          "oklch(37% 0.01612 82.79)",
+          "oklch(49% 0.01612 82.79)",
+          "oklch(60% 0.01612 82.79)",
+          "oklch(72% 0.01612 82.79)",
+          "oklch(84% 0.01612 82.79)",
+          "oklch(95% 0.01612 82.79)"
+        ]
+      },
+      "ink-light": {
+        "role": "neutral",
+        "displayName": "Dark brown ink",
+        "tonalRamp": [
+          "oklch(15% 0.03266 53.74)",
+          "oklch(26% 0.03266 53.74)",
+          "oklch(37% 0.03266 53.74)",
+          "oklch(49% 0.03266 53.74)",
+          "oklch(60% 0.03266 53.74)",
+          "oklch(72% 0.03266 53.74)",
+          "oklch(84% 0.03266 53.74)",
+          "oklch(95% 0.03266 53.74)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Opening display",
+        "purpose": "Enormous CRAVE behind the opening food material; mobile has a separate override."
+      },
+      "headline": {
+        "displayName": "Scene headline",
+        "purpose": "Default short sensory title; the second phrase uses the real italic face."
+      },
+      "headline-mobile": {
+        "displayName": "Mobile headline",
+        "purpose": "The default vertical composition headline from the mobile media query."
+      },
+      "melt-headline": {
+        "displayName": "Melt headline",
+        "purpose": "The unusually short, larger phrase Give in. in the Melt scene."
+      },
+      "hero-tagline": {
+        "displayName": "Opening tagline",
+        "purpose": "The native italic Before the first bite. line."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Small tracked CRAVE in the persistent header and chapter index."
+      },
+      "control": {
+        "displayName": "Header control",
+        "purpose": "Serif Index, Sound and Close labels."
+      },
+      "action-label": {
+        "displayName": "Sensory action label",
+        "purpose": "Small sans words attached to a fine arrow and underline."
+      },
+      "range-label": {
+        "displayName": "Range endpoint",
+        "purpose": "Sensory endpoints Gold–Chestnut and Thick–Flow."
+      },
+      "caption": {
+        "displayName": "Journey caption",
+        "purpose": "Next-scene caption in the persistent lower transport."
+      },
+      "chapter-title": {
+        "displayName": "Chapter title",
+        "purpose": "Large serif names in the chapter index."
+      },
+      "chapter-number": {
+        "displayName": "Chapter number",
+        "purpose": "Small tabular sans numerals in the chapter index."
+      },
+      "index-title": {
+        "displayName": "Index title",
+        "purpose": "The editorial A matter of appetite. introduction."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "shared-clock",
+        "value": "gsap.ticker → lenis.raf(time * 1000) → ScrollTrigger/render",
+        "purpose": "One global clock and one scroll authority; custom renderers own no RAF."
+      },
+      {
+        "name": "wheel-lerp",
+        "value": "0.14",
+        "purpose": "The observed Lenis lerp value while motion is enabled."
+      },
+      {
+        "name": "chapter-seek",
+        "value": "0.92s; 1 - Math.pow(1 - t, 4)",
+        "purpose": "Explicit chapter and material-action navigation; reduced motion seeks immediately."
+      },
+      {
+        "name": "replay-seek",
+        "value": "1.3s; 1 - Math.pow(1 - t, 4)",
+        "purpose": "Return to the opening through the same Lenis authority."
+      },
+      {
+        "name": "control-underline-and-arrow",
+        "value": "transform .2s ease-out",
+        "purpose": "Header underline, material arrow and transport arrow feedback."
+      },
+      {
+        "name": "chapter-rule",
+        "value": "transform .24s ease-out",
+        "purpose": "Chapter hover and current-step rule reveal."
+      },
+      {
+        "name": "common-handoff",
+        "value": "smooth(0.77, 1, p)",
+        "purpose": "Default normalized scroll phase for the outgoing-to-incoming material transition."
+      },
+      {
+        "name": "crust-anticipation",
+        "value": "smooth(0.32, 0.46, p) * 0.018",
+        "purpose": "Open only the first thin fracture before the snap."
+      },
+      {
+        "name": "crust-snap",
+        "value": "0.018 + smooth(0.46, 0.52, p) * 0.982",
+        "purpose": "Brief normalized phase in which the crust gives way to the prepared interior."
+      },
+      {
+        "name": "cut-separation",
+        "value": "smooth(0.38, 0.59, p)",
+        "purpose": "Reveal the prepared cut-state image during pressure and release."
+      },
+      {
+        "name": "cut-to-absence",
+        "value": "smooth(0.78, 1, p)",
+        "purpose": "Handoff from the separated tart to the missing wedge."
+      },
+      {
+        "name": "pointer-follow",
+        "value": "1 - Math.exp(-dt * 9)",
+        "purpose": "A small damped mouse response for the shared highlight probe."
+      },
+      {
+        "name": "living-draw-interval",
+        "value": "desktop 1 / 50; mobile 1 / 40 seconds",
+        "purpose": "Cap time-only material draws; changed state may draw immediately."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max-width",
+        "value": "700px"
+      },
+      {
+        "name": "desktop-min-width",
+        "value": "701px"
+      },
+      {
+        "name": "narrow-mobile-max-width",
+        "value": "370px"
+      },
+      {
+        "name": "large-display-min-width",
+        "value": "1900px"
+      },
+      {
+        "name": "short-desktop-max-height",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Wordmark",
+      "kind": "nav",
+      "refersTo": "wordmark",
+      "description": "The small CRAVE wordmark on the default espresso scene tone.",
+      "html": "<div class=\"ds-wordmark-sample\"><a class=\"ds-wordmark\" href=\"#desire\" aria-label=\"CRAVE — return to the beginning\">CRAVE</a></div>",
+      "css": ".ds-wordmark-sample{padding:24px;background:var(--paper,#17120f);color:var(--ink,#f0e6d2)}.ds-wordmark{color:inherit;text-decoration:none;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-weight:400;font-size:clamp(23px,1.8vw,38px);letter-spacing:.16em;line-height:1}.ds-wordmark:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}@media(max-width:700px){.ds-wordmark{font-size:22px;letter-spacing:.12em}}@media(max-width:370px){.ds-wordmark{font-size:20px}}"
+    },
+    {
+      "name": "Header text controls",
+      "kind": "button",
+      "refersTo": "text-control",
+      "description": "Index and opt-in Sound use the same serif control with a growing underline.",
+      "html": "<nav class=\"ds-header-controls\" aria-label=\"Experience controls\"><button class=\"ds-header-control\" aria-haspopup=\"dialog\" aria-expanded=\"false\">Index</button><button class=\"ds-header-control ds-sound-control\" aria-pressed=\"false\" aria-label=\"Turn sensory sound on\">Sound <span>off</span></button></nav>",
+      "css": ".ds-header-controls{display:flex;align-items:center;gap:clamp(28px,3vw,62px);padding:24px;background:var(--paper,#17120f);color:var(--ink,#f0e6d2)}.ds-header-control{position:relative;min-height:44px;padding:0;border:0;border-radius:0;appearance:none;background:none;color:inherit;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-size:clamp(17px,1.28vw,26px);line-height:1.4;cursor:pointer}.ds-header-control::after{content:\"\";position:absolute;left:0;right:0;bottom:7px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .2s ease-out}.ds-header-control:hover::after,.ds-header-control:focus-visible::after{transform:scaleX(1)}.ds-header-control:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}.ds-sound-control{min-width:80px;text-align:left}@media(max-width:700px){.ds-header-controls{gap:20px}.ds-header-control{font-size:17px}.ds-sound-control{min-width:68px}}@media(prefers-reduced-motion:reduce){.ds-header-control::after{transition:none}}"
+    },
+    {
+      "name": "Sensory title — Inside",
+      "kind": "custom",
+      "refersTo": "scene-title-light",
+      "description": "The normal scene headline with a native italic second line on porcelain.",
+      "html": "<div class=\"ds-title-sample\"><h2 class=\"ds-scene-title\"><span>A softer</span><em>world.</em></h2></div>",
+      "css": ".ds-title-sample{padding:24px;background:#eae4d9;color:#322116}.ds-scene-title{margin:0;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-weight:400;font-size:clamp(70px,8.2vw,270px);line-height:.91;letter-spacing:-.033em}.ds-scene-title span,.ds-scene-title em{display:block}.ds-scene-title em{font-weight:400}@media(max-width:700px){.ds-scene-title{font-size:clamp(45px,13.4vw,80px);line-height:.94;letter-spacing:-.026em}}"
+    },
+    {
+      "name": "Material action",
+      "kind": "button",
+      "refersTo": "material-action",
+      "description": "The underlined sensory action shared by crust fracture and the cut.",
+      "html": "<div class=\"ds-action-sample\"><button class=\"ds-material-action\"><span>Break the crust</span><svg viewBox=\"0 0 40 20\" aria-hidden=\"true\"><path d=\"M1 10h35M28 3l8 7-8 7\" /></svg></button></div>",
+      "css": ".ds-action-sample{padding:24px;background:var(--paper,#17120f);color:var(--ink,#f0e6d2)}.ds-material-action{display:inline-flex;align-items:center;gap:20px;min-height:44px;padding:0;border:0;border-radius:0;background:none;color:inherit;font-family:var(--sans, 'Crave Sans', Arial, sans-serif);font-size:clamp(12px,.85vw,18px);letter-spacing:.03em;cursor:pointer}.ds-material-action span{padding-bottom:5px;border-bottom:1px solid currentColor}.ds-material-action svg{width:30px;height:20px;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s ease-out}.ds-material-action:hover svg{transform:translateX(5px)}.ds-material-action:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}@media(max-width:700px){.ds-material-action{font-size:11px;gap:15px}.ds-material-action svg{width:26px}}@media(prefers-reduced-motion:reduce){.ds-material-action svg{transition:none}}"
+    },
+    {
+      "name": "Material range",
+      "kind": "input",
+      "refersTo": "material-range",
+      "description": "A native sensory range with a thin track and a broad interaction area.",
+      "html": "<div class=\"ds-range-sample\"><div class=\"ds-material-range\"><div class=\"ds-range-ends\" aria-hidden=\"true\"><span>Gold</span><span>Chestnut</span></div><input class=\"ds-range-input\" type=\"range\" min=\"0\" max=\"100\" step=\"1\" value=\"42\" aria-label=\"Browning progression\" /></div></div>",
+      "css": ".ds-range-sample{padding:24px;background:var(--paper,#17120f);color:var(--ink,#f0e6d2)}.ds-material-range{width:min(300px,25vw)}.ds-range-ends{display:flex;justify-content:space-between;align-items:center;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-size:clamp(15px,1.2vw,24px)}.ds-range-input{display:block;appearance:none;width:100%;height:44px;margin:2px 0;background:transparent;cursor:ew-resize;accent-color:#f0e6d2}.ds-range-input::-webkit-slider-runnable-track{height:1px;background:rgba(240,230,210,.58)}.ds-range-input::-moz-range-track{height:1px;background:rgba(240,230,210,.58)}.ds-range-input::-webkit-slider-thumb{appearance:none;width:13px;height:13px;margin-top:-6px;border:0;border-radius:50%;background:#f0e6d2}.ds-range-input::-moz-range-thumb{width:13px;height:13px;border:0;border-radius:50%;background:#f0e6d2}.ds-range-input:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}.ds-range-input:disabled{cursor:default;opacity:.5}@media(min-width:1900px){.ds-material-range{width:420px}}@media(max-width:700px){.ds-material-range{width:165px}.ds-range-ends{font-size:15px}.ds-range-input{margin:0}}"
+    },
+    {
+      "name": "Scene transport",
+      "kind": "nav",
+      "refersTo": "scene-next",
+      "description": "A sensory caption leads to the next scene, paired with the aligned journey count.",
+      "html": "<div class=\"ds-transport-sample\"><button class=\"ds-next-scene\" aria-label=\"Continue to Inside\"><span>Crisp gives way.</span><svg viewBox=\"0 0 40 20\" aria-hidden=\"true\"><path d=\"M1 10h35M28 3l8 7-8 7\" /></svg></button><div class=\"ds-scene-count\"><span>04</span><span class=\"ds-count-divider\">/</span><span>11</span></div></div>",
+      "css": ".ds-transport-sample{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:24px;background:var(--paper,#17120f);color:var(--ink,#f0e6d2)}.ds-next-scene{display:flex;align-items:center;gap:24px;min-height:44px;padding:0;border:0;border-radius:0;background:none;color:inherit;text-align:left;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-size:clamp(16px,1.3vw,28px);line-height:1.2;cursor:pointer}.ds-next-scene svg{width:40px;height:20px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s ease-out}.ds-next-scene:hover svg{transform:translateX(6px)}.ds-next-scene:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}.ds-scene-count{display:flex;gap:12px;align-items:center;padding-bottom:12px;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-size:clamp(17px,1.3vw,29px);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}.ds-count-divider{opacity:.6}@media(max-width:700px){.ds-transport-sample{gap:12px}.ds-next-scene{font-size:15px;gap:13px;max-width:75%}.ds-next-scene svg{width:27px}.ds-scene-count{font-size:17px;gap:8px;padding-bottom:13px}}@media(prefers-reduced-motion:reduce){.ds-next-scene svg{transition:none}}"
+    },
+    {
+      "name": "Chapter index links",
+      "kind": "nav",
+      "refersTo": "chapter-link",
+      "description": "Numbered serif links use a fine rule; the current chapter becomes italic.",
+      "html": "<nav class=\"ds-chapter-list\" aria-label=\"Chapters\"><a class=\"ds-chapter-link\" href=\"#heat\"><span>02</span><strong>Heat</strong></a><a class=\"ds-chapter-link\" href=\"#brown\" aria-current=\"step\"><span>03</span><strong>Brown</strong></a><a class=\"ds-chapter-link\" href=\"#crust\"><span>04</span><strong>Crust</strong></a></nav>",
+      "css": ".ds-chapter-list{display:flex;flex-direction:column;padding:24px;background:#eae4d9;color:#322116}.ds-chapter-link{position:relative;display:flex;align-items:baseline;gap:28px;min-height:clamp(43px,5.1vh,95px);padding:5px 5px 7px;border-bottom:1px solid rgba(50,33,22,.16);color:inherit;text-decoration:none}.ds-chapter-link span{font:400 clamp(11px,.83vw,19px)/1 var(--sans, 'Crave Sans', Arial, sans-serif);font-variant-numeric:tabular-nums}.ds-chapter-link strong{font:400 clamp(24px,2.25vw,62px)/1.1 var(--serif, 'Crave Serif', Georgia, serif);letter-spacing:-.01em}.ds-chapter-link::after{content:\"\";position:absolute;left:0;bottom:-1px;width:100%;height:1px;background:#704522;transform:scaleX(0);transform-origin:left;transition:transform .24s ease-out}.ds-chapter-link:hover::after,.ds-chapter-link[aria-current=\"step\"]::after{transform:scaleX(1)}.ds-chapter-link[aria-current=\"step\"] strong{font-style:italic}.ds-chapter-link:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}@media(max-width:700px){.ds-chapter-link{min-height:46px;padding:7px 0;gap:22px}.ds-chapter-link span{font-size:11px}.ds-chapter-link strong{font-size:27px}}@media(prefers-reduced-motion:reduce){.ds-chapter-link::after{transition:none}}"
+    },
+    {
+      "name": "Motion control",
+      "kind": "button",
+      "refersTo": "motion-control",
+      "description": "The plain underlined motion preference within the chapter index.",
+      "html": "<div class=\"ds-motion-sample\"><button class=\"ds-motion-control\" aria-pressed=\"false\" aria-label=\"Pause decorative motion\">Motion <span>on</span></button></div>",
+      "css": ".ds-motion-sample{padding:24px;background:#eae4d9;color:#322116}.ds-motion-control{min-height:44px;padding:0;border:0;border-radius:0;background:none;color:inherit;font-family:var(--serif, 'Crave Serif', Georgia, serif);font-size:clamp(18px,1.4vw,29px);text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:1px;cursor:pointer}.ds-motion-control:focus-visible{outline:2px solid var(--accent,#b27743);outline-offset:7px;}@media(max-width:700px){.ds-motion-control{font-size:18px}}"
+    },
+    {
+      "name": "Journey progress",
+      "kind": "custom",
+      "refersTo": "journey-progress",
+      "description": "A two-pixel trace of total story progress, shown here at a representative 36%.",
+      "html": "<div class=\"ds-progress-sample\"><div class=\"ds-journey-progress\" role=\"progressbar\" aria-label=\"Journey progress\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuenow=\"36\"><span></span></div></div>",
+      "css": ".ds-progress-sample{padding:24px;background:var(--paper,#17120f)}.ds-journey-progress{height:2px;width:100%;background:rgba(167,126,86,.13);pointer-events:none}.ds-journey-progress span{display:block;width:100%;height:100%;transform-origin:left;transform:scaleX(.36);background:#b88951}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Before the First Bite",
+    "overview": "CRAVE is a sensory film about the instant before eating. Food occupies the frame as a warm, edible material: a dry layer, a moist interior, a heavy ribbon, a temporary reflection. The interface gives these differences room to register through sparse editorial language and close observation.\n\nEspresso darkness and porcelain light alternate with the materials. Large serif words share the composition with the food; small controls remain legible and quiet. Desire comes from believable color, irregular structure, restrained moisture and a clear contrast between outside and inside. The visitor completes the final bite in imagination.",
+    "keyCharacteristics": [
+      "Four food materials across eleven movements, with one material relationship in focus at a time.",
+      "Extreme photographic crops, native serif italics and precise, understated controls.",
+      "Material match cuts and one restrained highlight language connect the scenes.",
+      "Hold, anticipation, snap and release give the experience an uneven, deliberate rhythm.",
+      "Mobile compositions, reduced motion and local media are part of the design."
+    ],
+    "rules": [
+      {
+        "name": "The Edible Color Rule",
+        "body": "Let the food establish the warm color range. Use the interface accent for orientation and focus; preserve uneven browning, pale interiors and selective highlights in the imagery.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cropped Voice Rule",
+        "body": "Large type is part of the scene composition. Preserve the explicit oversized display scale, native italics and short sensory phrases; do not impose a generic headline ceiling or add explanatory paragraphs over the food.",
+        "section": "typography"
+      },
+      {
+        "name": "The Material Handoff Rule",
+        "body": "Carry an edge, sheen, fold or field of air across the transition. The authored masks and internal events must remain tied to scene progress so a pause or reverse preserves a coherent material state.",
+        "section": "layout"
+      },
+      {
+        "name": "The Quiet Depth Rule",
+        "body": "Depth belongs to the food, light and framing. Keep controls flat and reserve atmospheric overlays for their actual source; steam rises from the warm tart and flakes appear only after separation begins.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do judge each stable frame by whether the food looks edible and desirable before adding effects.",
+      "Do retain the four-material cast and the distinct role of every scene.",
+      "Do keep the native serif italics, severe crops and small, accessible text controls.",
+      "Do preserve the mobile stage offset, edge mask and per-scene focus coordinates when adjusting layout.",
+      "Do keep Lenis as the sole global scroll authority and render from the shared GSAP clock.",
+      "Do preserve deterministic crack and cut states during arbitrary pauses and reverse scrolling.",
+      "Do keep sound opt-in and honor reduced motion, hidden tabs and the motion control.",
+      "Do reference the production provenance and license files when replacing an image or font."
+    ],
+    "donts": [
+      "Don't introduce restaurant, recipe, price, shop, card-grid or food-catalog interface patterns.",
+      "Don't replace material transitions with a sequence of unrelated image fades.",
+      "Don't add plastic gloss, impossible crumb, excessive steam, floating ingredients or explosive flakes.",
+      "Don't force the display typography into a generic 96px maximum or shrink the desktop composition onto mobile.",
+      "Don't add rounded pill buttons, decorative shadows or extra accent colors to this flat editorial interface.",
+      "Don't add an independent animation loop, autoplay sound or continuous offscreen effects.",
+      "Don't describe the authored browning, flow or heat effects as measured food physics."
+    ]
+  }
+}

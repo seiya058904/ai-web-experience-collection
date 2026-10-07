@@ -1,0 +1,385 @@
+{
+  "project": "GRID — The Architecture of Visual Order",
+  "version": "1.0.0",
+  "createdAt": "2026-10-07T10:22:45.695649Z",
+  "delivery": "Local development and local preview only. No public deployment.",
+  "hashAlgorithm": "SHA-256",
+  "coverage": "Every delivered file except DELIVERY-MANIFEST.json itself. Paths are relative to the GRID directory.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 76,
+      "sha256": "6a3f42856de9e484dee880300a130e2ceeffb00b1c910b8f02d0e817cb7e7a5b"
+    },
+    {
+      "path": ".impeccable/design.json",
+      "bytes": 36435,
+      "sha256": "9ec9ec837b507225affaa3d52da01079d6c8895961447cf9e1b8377d33eabab8"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 29734,
+      "sha256": "a694db48ed01b6314d88b8c65fb245efc0c22e44e886cca609e28a8280e1fc65"
+    },
+    {
+      "path": "PRODUCT.md",
+      "bytes": 2592,
+      "sha256": "f26ac6b248396c28c7ca07d7d4658866f65d06d40a20916053d7af292e713d3f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5419,
+      "sha256": "f1601f5dccddfda0908d821b0831dccf5b40c474d76fd84852cde6e730d752df"
+    },
+    {
+      "path": "START-GRID.cmd",
+      "bytes": 503,
+      "sha256": "7013b11a9b1b12fb9b69157dd34a60ceed3269075768e7e032f519bb0378ef8d"
+    },
+    {
+      "path": "START-GRID.sh",
+      "bytes": 320,
+      "sha256": "3b74abb5c3f34375bda75c1a825e486b098644df00d67c0957fe99d06cff58d6"
+    },
+    {
+      "path": "dist/assets/index-9bcW-kp7.css",
+      "bytes": 25425,
+      "sha256": "9d26363471156a8dd10ce12d0a68db8f96700d82f19aba577fc779e819ac4c86"
+    },
+    {
+      "path": "dist/assets/index-BLgvyZNF.js",
+      "bytes": 185116,
+      "sha256": "460297c903fc611b7dc39ef5fa911c3ce237c6cc4c268e63d4414af731f61dff"
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 305,
+      "sha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3"
+    },
+    {
+      "path": "dist/fonts/IBMPlexMono-Regular.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "dist/fonts/InstrumentSerif-Regular.woff2",
+      "bytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31"
+    },
+    {
+      "path": "dist/fonts/RobotoFlex-Latin.woff2",
+      "bytes": 249700,
+      "sha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613"
+    },
+    {
+      "path": "dist/images/bw-stairs-original.jpg",
+      "bytes": 383888,
+      "sha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 11750,
+      "sha256": "be0765efdbc316a154c73af12c458c0a97b19a89bed4f8e05ba49d499f70408d"
+    },
+    {
+      "path": "docs/DIRECTION.md",
+      "bytes": 1988,
+      "sha256": "5d261f0830bcba5729b6c2ea65f06d9b0409e20a002b8384aa5ec0aeb1679ee7"
+    },
+    {
+      "path": "docs/ENGINE.md",
+      "bytes": 4983,
+      "sha256": "8c0869120a1eb46bfdb1fc1090810071909b8ef909ff56705d74e9be4c762440"
+    },
+    {
+      "path": "docs/QA.md",
+      "bytes": 8251,
+      "sha256": "23d19947b88853849ba1f61a8be9d0d7922c938f0ec73efe22e17ea325f42db0"
+    },
+    {
+      "path": "docs/RESEARCH.md",
+      "bytes": 9119,
+      "sha256": "871e24211a73f0943a8c396cf5edae1e6984907a867ff4124e1edd197be88cd7"
+    },
+    {
+      "path": "docs/RULES.md",
+      "bytes": 10287,
+      "sha256": "095df60ca255d8f6224943d239b2036df26637fbba0f8e482cb122016c40ec40"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11644,
+      "sha256": "cd7880a1d3e5b47a14f4cbae8bca3bced5a3ba61ccc1b480d5235cad811501dc"
+    },
+    {
+      "path": "licenses/ASSET-PROVENANCE.json",
+      "bytes": 3494,
+      "sha256": "a6e67a6d65b893f7e6904a6cee0a6f85faa45346623be875996ffe27a46e33a5"
+    },
+    {
+      "path": "licenses/GSAP-NOTICES.txt",
+      "bytes": 868,
+      "sha256": "9d5f2ab62ce953e0bc1fe3216e8f8474da11ccd4591799c70ecb7882a5d2fd28"
+    },
+    {
+      "path": "licenses/IBMPlexMono-OFL.txt",
+      "bytes": 4364,
+      "sha256": "b5895d3f4ea58b2fc80c3041a8c855d372836c34950d6ebc6e3c8897e7b2c8fb"
+    },
+    {
+      "path": "licenses/InstrumentSerif-OFL.txt",
+      "bytes": 4406,
+      "sha256": "03a0d23feada968b189fe795a5bc9c90dfe1d6f8426d8fca078d4bc90cd53f30"
+    },
+    {
+      "path": "licenses/Lenis-MIT.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+    },
+    {
+      "path": "licenses/PHOTO-ATTRIBUTION.md",
+      "bytes": 1138,
+      "sha256": "c52cf25d5fdc031506a5313d4cd601632737f44d934f5be6dc54e10ab8ec62e4"
+    },
+    {
+      "path": "licenses/RobotoFlex-OFL.txt",
+      "bytes": 4396,
+      "sha256": "85b3673b033b95c028b04a8fac4878f877ffef9b0657e8a71457d7c3a7d57eac"
+    },
+    {
+      "path": "licenses/THIRD-PARTY-NOTICES.md",
+      "bytes": 1529,
+      "sha256": "5634ed0caeb60c0eacef399ec13b97e90f0330ffb3bd11f7e22b875f43a0ed97"
+    },
+    {
+      "path": "licenses/Vite-NOTICES.txt",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 38559,
+      "sha256": "1d2d929dbfa88024a5e40fce37aa6494614874a89334eb2d122b4f0cae0ae9ac"
+    },
+    {
+      "path": "package.json",
+      "bytes": 595,
+      "sha256": "ddca29766491b42bc72b827f38b73bba932862a04f1dbc5a46dbb221299c74dd"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 305,
+      "sha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3"
+    },
+    {
+      "path": "public/fonts/IBMPlexMono-Regular.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "public/fonts/InstrumentSerif-Regular.woff2",
+      "bytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31"
+    },
+    {
+      "path": "public/fonts/RobotoFlex-Latin.woff2",
+      "bytes": 249700,
+      "sha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613"
+    },
+    {
+      "path": "public/images/bw-stairs-original.jpg",
+      "bytes": 383888,
+      "sha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 7304,
+      "sha256": "e6cb1cf3e7bd0cc6330dde2c05841dd4344c9758eeca6dddd83251f3c23d6f4d"
+    },
+    {
+      "path": "src/handoff-desktop.ts",
+      "bytes": 6266,
+      "sha256": "dc291b3eb64729c56f220d306c5906ce3586a22e2b913f1a6886cb69fb686975"
+    },
+    {
+      "path": "src/handoff.ts",
+      "bytes": 18122,
+      "sha256": "e08f822da5db12daa9368e5e5e59135cea7efc97e70c45c1e7250d6c6a9c99b1"
+    },
+    {
+      "path": "src/main.ts",
+      "bytes": 16266,
+      "sha256": "370f3abb72a48c21f0a8918a203814ae9d0a3bdf65aa6d5dd399c26213e70de3"
+    },
+    {
+      "path": "src/math.ts",
+      "bytes": 2042,
+      "sha256": "df9a711269bd7bb83e79a6f0c392e595fc3ebba2d0ef1cb6368fe08de33483b8"
+    },
+    {
+      "path": "src/raster.ts",
+      "bytes": 6308,
+      "sha256": "6d71f790852ac0af2a9bcfbebe2e043c770b7f44b2ad29fb3866e60363898300"
+    },
+    {
+      "path": "src/renderer.ts",
+      "bytes": 12899,
+      "sha256": "2f772522681216496ea9540423734cb54cffd56bc5cdf055989615dbcadde58a"
+    },
+    {
+      "path": "src/scenes.ts",
+      "bytes": 24501,
+      "sha256": "6eea9d44df7e17709648f859ceb3d250fd59fbf5a2d6a37121a099d2b03ca25e"
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 25559,
+      "sha256": "e60eb482fa4e731039b5a2501fd10c28335785fd5472cc2eed43279f69febb26"
+    },
+    {
+      "path": "tests/design.test.mjs",
+      "bytes": 13447,
+      "sha256": "1f246e558c55a1e247068f4ce9c170b31421b7d5022a5f89e277c398844c9e62"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 335,
+      "sha256": "f4808c7cd86f5b75ff9b809ecdd90bf9cbc0467bc36d4a24b028923c45633a9d"
+    },
+    {
+      "path": "visual-bible/00-zero.png",
+      "bytes": 1644998,
+      "sha256": "dbeb19f8fa7fd831930792da47b0128cdeecfaba796fd42259e1125e0d981c05"
+    },
+    {
+      "path": "visual-bible/01-system.png",
+      "bytes": 1846763,
+      "sha256": "00934ba5ca96ef0117d2b28943650bb22a5d086d566b95754d4037d82a54ad64"
+    },
+    {
+      "path": "visual-bible/02-international.png",
+      "bytes": 1721787,
+      "sha256": "aa951c9597165332508311c2d8d7cb528211961c12318baefb5c8328a1ca0f51"
+    },
+    {
+      "path": "visual-bible/03-basel-tension.png",
+      "bytes": 1918047,
+      "sha256": "e0c5df75870b752c5737517d358f835125799bd12c0caa876871256af18d6436"
+    },
+    {
+      "path": "visual-bible/04-type-as-image.png",
+      "bytes": 1683928,
+      "sha256": "da36965b6829f790a82c48dd39341d4ca210f50cd7e9c1acd4ecc2848bcf4ff5"
+    },
+    {
+      "path": "visual-bible/05-editorial.png",
+      "bytes": 1908710,
+      "sha256": "a6d281c08e1cb0e2b9c3ed1bb821283a7c8863811b4947e72905acd56e4ac2f3"
+    },
+    {
+      "path": "visual-bible/06-raw.png",
+      "bytes": 1841604,
+      "sha256": "e202b571d33c57326a94f6042b19cafcfdb25db8933ca24120716dc2bb5c0cb9"
+    },
+    {
+      "path": "visual-bible/07-electronic.png",
+      "bytes": 2257801,
+      "sha256": "09b37049a90a79d567e42913ef7a148a92911d966a4daa7238f8c992da2b953b"
+    },
+    {
+      "path": "visual-bible/08-interface.png",
+      "bytes": 1878981,
+      "sha256": "887d66fdf400a5881d85c08850cc04fed359db2a994b1b74501a00c235421212"
+    },
+    {
+      "path": "visual-bible/09-variable.png",
+      "bytes": 1813968,
+      "sha256": "985b4bcb98f5c9281d9b679ba1a5611736ba225fc7b46a30cc1c968e1a563282"
+    },
+    {
+      "path": "visual-bible/10-synthesis.png",
+      "bytes": 1875428,
+      "sha256": "ac3b3ec28fc2bad6d54a99181a34fa6dc2face93a3a7a81fd3c2c2a86d53d8c3"
+    },
+    {
+      "path": "visual-bible/11-no-grid.png",
+      "bytes": 1963282,
+      "sha256": "e5de1a16019ea566a950b5cfe9ecf12f90c7a4f4db3e22307f421f25563b6326"
+    },
+    {
+      "path": "visual-bible/README.md",
+      "bytes": 7046,
+      "sha256": "423b055c0dea623b0ae22eb7aa0b91442b0ec926d67dec6a29132b6d8d9a50d8"
+    },
+    {
+      "path": "visual-bible/manifest.json",
+      "bytes": 9868,
+      "sha256": "a2587ee7ef8d00458aa3c1d966b72f62eff02fe393fa4a720128a70374150471"
+    },
+    {
+      "path": "visual-bible/prompts/00-zero.txt",
+      "bytes": 4258,
+      "sha256": "5c0e214dd5e254f861fbc111a1875ec022a95233ecd48a13abe053059d435f87"
+    },
+    {
+      "path": "visual-bible/prompts/01-system.txt",
+      "bytes": 4185,
+      "sha256": "29827e6280ff7d839b0ddda3f46e3dc3cddd5b809a84858f0874c4577c8baad5"
+    },
+    {
+      "path": "visual-bible/prompts/02-international.txt",
+      "bytes": 2892,
+      "sha256": "a6aa3295a5f1f14d044cb340e9a6d410ffceb32ee64afa01f77dd322f365866c"
+    },
+    {
+      "path": "visual-bible/prompts/03-basel-tension.txt",
+      "bytes": 4444,
+      "sha256": "480ea67ce0ac043e0c21f6ad57c4fe668bdeb265b31d3d9602ae4c3a7b222eab"
+    },
+    {
+      "path": "visual-bible/prompts/04-type-as-image.txt",
+      "bytes": 3741,
+      "sha256": "43482f961decee01c6460e042963b88a1bbba36d9d1b910cc843edf59046045d"
+    },
+    {
+      "path": "visual-bible/prompts/05-editorial.txt",
+      "bytes": 3802,
+      "sha256": "025002eeb0b07c43a172dcd5dbf59636517bb6f95761bbb6482c7e98a87c73b8"
+    },
+    {
+      "path": "visual-bible/prompts/06-raw.txt",
+      "bytes": 3718,
+      "sha256": "f8034d6cf3ab659abdd2af47189903bad85e369d2f52433a66471202d017d69e"
+    },
+    {
+      "path": "visual-bible/prompts/07-electronic.txt",
+      "bytes": 4962,
+      "sha256": "88534f771b83c1a15fe848bda2d268f7cb8942fc57d754411b7bfc430009c318"
+    },
+    {
+      "path": "visual-bible/prompts/08-interface.txt",
+      "bytes": 3933,
+      "sha256": "e6b7e31086ec931b19735b2156a7730c2614a67faa39a3edb5b44e0708660d56"
+    },
+    {
+      "path": "visual-bible/prompts/09-variable.txt",
+      "bytes": 3851,
+      "sha256": "ba09bcf227d6cf98cfe58f2e55baa12a7db02f77078c96a2100663b83860684b"
+    },
+    {
+      "path": "visual-bible/prompts/10-synthesis.txt",
+      "bytes": 5154,
+      "sha256": "09575167e8f62ccd125a2b5da05bcb5236eaccf0c875ef335e0a057aa2d59eff"
+    },
+    {
+      "path": "visual-bible/prompts/11-no-grid.txt",
+      "bytes": 4013,
+      "sha256": "2d8ced757db941e350776e82d8910b09a2454e9b6d80027af98382b01745b6f7"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 1491,
+      "sha256": "b8e64cf5aee52dc855c60336f968c49c986e30ea38e1becde4fcaad83d473245"
+    }
+  ]
+}

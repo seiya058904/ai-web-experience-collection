@@ -1,0 +1,108 @@
+{
+  "retrieved_at": "2026-10-07T08:33:59.245885+00:00",
+  "source_css": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Manrope:wght@400;500&display=swap",
+  "subset": "latin",
+  "local_transformations": "none; downloaded canonical WOFF2 and license text bytes without modification",
+  "files": [
+    {
+      "file": "public/fonts/cormorant-garamond-regular.woff2",
+      "url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_v86KnTOig.woff2",
+      "family": "Cormorant Garamond",
+      "style": "normal",
+      "requested_weight": 400,
+      "license": "licenses/CormorantGaramond-OFL.txt",
+      "bytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "metadata_validation": "WOFF2 signature validated; optional Brotli decoder unavailable in local fontTools.",
+      "browser_validation": {
+        "browser": "Chromium 153.0.8010.0",
+        "method": "FontFace.load using the downloaded WOFF2 bytes",
+        "results": [
+          {
+            "file": "public/fonts/cormorant-garamond-regular.woff2",
+            "family": "Cormorant Garamond",
+            "style": "normal",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ]
+      }
+    },
+    {
+      "file": "public/fonts/cormorant-garamond-italic.woff2",
+      "url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd58jD-iNM8.woff2",
+      "family": "Cormorant Garamond",
+      "style": "italic",
+      "requested_weight": 400,
+      "license": "licenses/CormorantGaramond-OFL.txt",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "metadata_validation": "WOFF2 signature validated; optional Brotli decoder unavailable in local fontTools.",
+      "browser_validation": {
+        "browser": "Chromium 153.0.8010.0",
+        "method": "FontFace.load using the downloaded WOFF2 bytes",
+        "results": [
+          {
+            "file": "public/fonts/cormorant-garamond-italic.woff2",
+            "family": "Cormorant Garamond",
+            "style": "italic",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ]
+      }
+    },
+    {
+      "file": "public/fonts/manrope-variable.woff2",
+      "url": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "family": "Manrope",
+      "style": "normal",
+      "requested_weights": [
+        400,
+        500
+      ],
+      "license": "licenses/Manrope-OFL.txt",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "metadata_validation": "WOFF2 signature validated; optional Brotli decoder unavailable in local fontTools.",
+      "browser_validation": {
+        "browser": "Chromium 153.0.8010.0",
+        "method": "FontFace.load using the downloaded WOFF2 bytes",
+        "results": [
+          {
+            "file": "public/fonts/manrope-variable.woff2",
+            "family": "Manrope",
+            "style": "normal",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "file": "public/fonts/manrope-variable.woff2",
+            "family": "Manrope",
+            "style": "normal",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ]
+      }
+    },
+    {
+      "file": "licenses/CormorantGaramond-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "file": "licenses/Manrope-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "file": "licenses/Manrope-FONTLOG.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/FONTLOG.txt",
+      "bytes": 3075,
+      "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090b0a" />
+    <meta name="description" content="An immersive study of espresso. Follow water through a world of particles, pressure and resistance, into a single drop." />
+    <title>CREMA — 9 Bars</title>
+    <link rel="icon" type="image/svg+xml" href="/crema/favicon.svg" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%crema/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Web Experience Collection" />
+    <meta property="og:title" content="CREMA — 9 Bars" />
+    <meta property="og:description" content="Build the pressure. Find the path. Pull the shot." />
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%crema/" />
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%crema/social.jpg" />
+    <meta property="og:image:alt" content="CREMA’s generated radial steel machine plate in its actual opening composition." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CREMA — 9 Bars" />
+    <meta name="twitter:description" content="Build the pressure. Find the path. Pull the shot." />
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%crema/social.jpg" />
+    <meta name="twitter:image:alt" content="CREMA’s actual opening composition: supplied generated radial steel machine artwork with an authored procedural coffee drop." />
+    <link rel="stylesheet" href="/experiences/shared/collection-return.css" />
+    <link rel="stylesheet" href="/experiences/crema/src/styles.css" />
+    <noscript><style>.reading-shade{opacity:1!important;background:rgba(9,11,10,.6)!important}.header-controls,.journey{display:none!important}.noscript-note .collection-return{font:inherit!important}</style></noscript>
+    <link rel="preload" as="image" href="/crema/assets/machine.webp" />
+  </head>
+  <body>
+    <a class="skip-link" href="#particle">Enter the story</a>
+    <div class="visual-stage" aria-hidden="true">
+      <div class="machine-frame"><img id="machine-image" src="/crema/assets/machine.webp" alt="" fetchpriority="high" /></div>
+      <div class="fallback-frame"><img id="fallback-image" src="/crema/assets/bed.webp" alt="" /></div>
+      <div class="cup-frame"><img id="cup-image" src="/crema/assets/cup.webp" alt="" /></div>
+      <canvas id="world"></canvas>
+      <div class="reading-shade"></div>
+      <div class="frame-edge"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#machine" aria-label="CREMA — return to the beginning">CREMA</a>
+      <div class="header-actions"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <nav aria-label="Experience controls" class="header-controls">
+        <button class="text-control index-toggle" type="button" aria-controls="chapter-index" aria-expanded="false">Index <span class="index-icon" aria-hidden="true"></span></button>
+        <button class="text-control sound-toggle" type="button" aria-pressed="false" aria-label="Enable sound">
+          <span class="sound-label">Sound off</span><span class="sound-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </button>
+      </nav>
+      </div>
+    </header>
+
+    <main id="story" aria-label="The extraction, in eleven movements">
+      <section class="chapter chapter--machine" id="machine" data-stage="0" aria-label="01. Machine">
+        <div class="chapter-content hero-content">
+          <div class="hero-invitation">
+            <p>Before the first drop.</p>
+            <a class="line-link" href="#particle">Enter the extraction <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v17m-6-6 6 6 6-6"/></svg></a>
+          </div>
+          <h1 class="hero-title">CREMA<span class="sr-only"> — 9 Bars</span></h1>
+          <p class="hero-aside">A study of pressure,<br />resistance and release.</p>
+        </div>
+      </section>
+
+      <section class="chapter" id="particle" data-stage="1" aria-label="02. Particle">
+        <div class="chapter-content copy copy--particle">
+          <h2>A landscape<br />of resistance.</h2>
+          <p class="chapter-description">Fractured surfaces.<br />Uncounted spaces.</p>
+          <div class="material-label"><span class="hairline"></span>ROASTED CELLULAR MATTER</div>
+        </div>
+      </section>
+      <section class="chapter" id="bed" data-stage="2" aria-label="03. Bed">
+        <div class="chapter-content copy copy--bed">
+          <h2>Packed.<br />Never solid.</h2>
+          <p class="chapter-description">Between the particles,<br />an invisible architecture.<br />Water will find its way.</p>
+          <div class="material-label"><span class="hairline"></span>PORE SPACE</div>
+        </div>
+      </section>
+      <section class="chapter" id="pre-infusion" data-stage="3" aria-label="04. Pre-infusion">
+        <div class="chapter-content copy copy--wet">
+          <h2>A boundary<br />begins<br />to move.</h2>
+          <p class="chapter-description">Water enters the spaces between.</p>
+          <div class="material-label"><span class="hairline"></span>SATURATION FRONT</div>
+        </div>
+      </section>
+      <section class="chapter" id="pressure" data-stage="4" aria-label="05. Pressure">
+        <div class="chapter-content pressure-content">
+          <h2 class="pressure-title"><span class="pressure-number">9</span><span class="pressure-unit">BAR</span></h2>
+          <p>A classical reference. A variable profile.</p>
+        </div>
+      </section>
+      <section class="chapter" id="percolation" data-stage="5" aria-label="06. Percolation">
+        <div class="chapter-content copy copy--flow">
+          <h2>No two paths<br />are equal.</h2>
+          <p class="chapter-description">Resistance gives<br />the water a shape.</p>
+          <div class="material-label"><span class="hairline"></span>FLOW THROUGH THE VOIDS</div>
+        </div>
+      </section>
+      <section class="chapter" id="extraction" data-stage="6" aria-label="07. Extraction">
+        <div class="chapter-content copy copy--extract">
+          <h2>Water<br />becomes<br />more.</h2>
+          <p class="chapter-description">It enters clear.<br />It leaves carrying a world.</p>
+          <div class="material-label"><span class="hairline"></span>DISSOLVE / CARRY / CONVERGE</div>
+        </div>
+      </section>
+      <section class="chapter" id="first-drop" data-stage="7" aria-label="08. First drop">
+        <div class="chapter-content copy copy--drop">
+          <h2>All of that.<br />In this.</h2>
+          <p class="chapter-description">Every path. Every particle.<br />One departure.</p>
+        </div>
+      </section>
+      <section class="chapter" id="stream" data-stage="8" aria-label="09. Stream">
+        <div class="chapter-content copy copy--stream">
+          <h2>Resistance<br />becomes<br />a line.</h2>
+          <p class="chapter-description">Dark at the centre.<br />Amber at the edge.</p>
+        </div>
+      </section>
+      <section class="chapter" id="crema" data-stage="9" aria-label="10. Crema">
+        <div class="chapter-content copy copy--crema">
+          <h2>Gas, held<br />briefly<br />in liquid.</h2>
+          <p class="chapter-description">A fragile surface.<br />A changing world beneath.</p>
+          <div class="material-label">CO₂ / LIQUID / OIL</div>
+        </div>
+      </section>
+      <section class="chapter" id="cup" data-stage="10" aria-label="11. Cup">
+        <div class="chapter-content copy copy--cup">
+          <h2>An entire<br />landscape.</h2>
+          <p class="cup-line">A few dozen millilitres.</p>
+          <a class="line-link" href="#machine">Pull it again <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M6 5h13v13"/></svg></a>
+          <p class="closing-line">Build the pressure. Find the path. Pull the shot.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="journey" aria-label="Chapter navigation">
+      <button class="chapter-indicator index-toggle" type="button" aria-label="Open chapter index"><span id="chapter-number">01</span><span class="indicator-dash" aria-hidden="true">—</span><span id="chapter-name">MACHINE</span></button>
+      <nav class="journey-track" aria-label="Jump to a chapter">
+        <span class="journey-fill" aria-hidden="true"></span>
+        <a href="#machine" aria-label="1. Machine" aria-current="step"></a>
+        <a href="#particle" aria-label="2. Particle"></a>
+        <a href="#bed" aria-label="3. Bed"></a>
+        <a href="#pre-infusion" aria-label="4. Pre-infusion"></a>
+        <a href="#pressure" aria-label="5. Pressure"></a>
+        <a href="#percolation" aria-label="6. Percolation"></a>
+        <a href="#extraction" aria-label="7. Extraction"></a>
+        <a href="#first-drop" aria-label="8. First drop"></a>
+        <a href="#stream" aria-label="9. Stream"></a>
+        <a href="#crema" aria-label="10. Crema"></a>
+        <a href="#cup" aria-label="11. Cup"></a>
+      </nav>
+      <span class="journey-hint">SCROLL TO EXTRACT <span aria-hidden="true">↓</span></span>
+    </footer>
+
+    <dialog id="chapter-index" class="chapter-index" aria-labelledby="index-title">
+      <div class="index-header"><a class="wordmark" href="#machine">CREMA</a><button class="text-control close-index" type="button" aria-label="Close chapter index">Close <span class="close-icon" aria-hidden="true"></span></button></div>
+      <div class="index-layout">
+        <div class="index-introduction">
+          <h2 id="index-title">Follow<br /> the water.</h2>
+          <p>A journey through particles,<br />pressure and possibility.</p>
+          <button class="line-link motion-toggle" type="button" aria-pressed="false">Reduce motion <span class="motion-state">Off</span></button>
+          <details class="study-notes">
+            <summary>About this study <span aria-hidden="true">+</span></summary>
+            <div>
+              <p>Nine bar is the classical reference for this work. Pre-infusion and pressure profiles vary.</p>
+              <p>The coffee bed is a porous material. Crema contains CO₂-rich bubbles within a liquid carrying extracted compounds, microscopic oils and fine particles.</p>
+              <p>Flow fields and microstructures are authored interpretations informed by coffee research.</p>
+              <a href="https://doi.org/10.1038/s41598-023-42380-y" target="_blank" rel="noopener noreferrer">Coffee microstructure — Mo et al. ↗</a>
+              <a href="https://doi.org/10.1063/5.0245167" target="_blank" rel="noopener noreferrer">Liquid infiltration — Foster et al. ↗</a>
+              <a href="https://doi.org/10.1007/s11483-011-9220-5" target="_blank" rel="noopener noreferrer">Espresso foam — Illy & Navarini ↗</a>
+            </div>
+          </details>
+        </div>
+        <nav class="index-chapters" aria-label="The eleven movements">
+          <a href="#machine"><span>01</span><strong>Machine</strong><i aria-hidden="true">↗</i></a>
+          <a href="#particle"><span>02</span><strong>Particle</strong><i aria-hidden="true">↗</i></a>
+          <a href="#bed"><span>03</span><strong>Bed</strong><i aria-hidden="true">↗</i></a>
+          <a href="#pre-infusion"><span>04</span><strong>Pre-infusion</strong><i aria-hidden="true">↗</i></a>
+          <a href="#pressure"><span>05</span><strong>Pressure</strong><i aria-hidden="true">↗</i></a>
+          <a href="#percolation"><span>06</span><strong>Percolation</strong><i aria-hidden="true">↗</i></a>
+          <a href="#extraction"><span>07</span><strong>Extraction</strong><i aria-hidden="true">↗</i></a>
+          <a href="#first-drop"><span>08</span><strong>First drop</strong><i aria-hidden="true">↗</i></a>
+          <a href="#stream"><span>09</span><strong>Stream</strong><i aria-hidden="true">↗</i></a>
+          <a href="#crema"><span>10</span><strong>Crema</strong><i aria-hidden="true">↗</i></a>
+          <a href="#cup"><span>11</span><strong>Cup</strong><i aria-hidden="true">↗</i></a>
+        </nav>
+      </div>
+      <div class="index-footer">A study of pressure, resistance and release.<span>CREMA — 9 BARS</span></div>
+    </dialog>
+
+    <div class="accessibility-status sr-only" role="status" aria-live="polite"></div>
+    <noscript><p class="noscript-note">Enable JavaScript for the continuous material journey. You can still read all eleven movements below. <a class="collection-return" href="%BASE_URL%">Return to Collection</a></p></noscript>
+    <script type="module" src="/experiences/crema/src/main.js"></script>
+  </body>
+</html>

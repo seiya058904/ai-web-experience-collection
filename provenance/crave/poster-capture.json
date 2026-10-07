@@ -1,0 +1,108 @@
+{
+  "route": "crave",
+  "capturedUTC": "2026-10-07T10:22:04.295Z",
+  "base": "http://127.0.0.1:4195/",
+  "generatedFoodMedia": true,
+  "uiFree": true,
+  "liveCanvas": true,
+  "captures": [
+    {
+      "target": "public/crave/poster.webp",
+      "width": 1200,
+      "height": 750,
+      "bytes": 174598,
+      "sha256": "20a1f1ecf99cc2dfbb9260ea8ed27d7306edd6ff208a93165105621da12faa2f",
+      "sourceCanvas": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crave-2310b432082d430091094a2d1f1253d5\\dev-accepted\\poster-runtime-canvas.png",
+      "capture": {
+        "y": 0,
+        "hash": "",
+        "scene": "desire",
+        "tone": "dark",
+        "color": "rgb(240, 230, 210)",
+        "background": "rgb(23, 18, 15)",
+        "current": "#desire",
+        "open": false,
+        "focus": "",
+        "overflow": false,
+        "stage": "WebGL",
+        "font": [
+          true,
+          true,
+          true
+        ]
+      },
+      "sourceCanvasSHA256": "e67d3c026560b35afa8b909dde4602e5931066c63f22627085cb9ac80e54957b",
+      "sourceCanvasBytes": 1397000,
+      "sourceCanvasDimensions": [
+        1200,
+        750
+      ],
+      "method": "Actual MaterialStage Canvas toDataURL; DOM UI excluded; flatten alpha against authored #17120f, resize and encode only."
+    },
+    {
+      "target": "public/crave/social.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 207409,
+      "sha256": "0186b9288babb597dd843f1a58a2b5613d707cb5f62702ec5c49143d7432b518",
+      "sourceCanvas": "C:\\Users\\admin\\AppData\\Local\\Temp\\collection-crave-2310b432082d430091094a2d1f1253d5\\dev-accepted\\social-runtime-canvas.png",
+      "capture": {
+        "y": 0,
+        "hash": "",
+        "scene": "desire",
+        "tone": "dark",
+        "color": "rgb(240, 230, 210)",
+        "background": "rgb(23, 18, 15)",
+        "current": "#desire",
+        "open": false,
+        "focus": "",
+        "overflow": false,
+        "stage": "WebGL",
+        "font": [
+          true,
+          true,
+          true
+        ]
+      },
+      "sourceCanvasSHA256": "786c207405f9c5bc4071f6a0eee78c7a2aeae36eb812f73a114bfb79a3bf4683",
+      "sourceCanvasBytes": 1251838,
+      "sourceCanvasDimensions": [
+        1200,
+        630
+      ],
+      "method": "Actual MaterialStage Canvas toDataURL; DOM UI excluded; flatten alpha against authored #17120f, resize and encode only."
+    }
+  ],
+  "runtimeHashes": [
+    {
+      "target": "pages/crave/index.html",
+      "bytes": 7742,
+      "sha256": "d7aa28dfd11fb52ee53e2dc2a93386903fa141c8d94f53567a97b80485622d55"
+    },
+    {
+      "target": "experiences/crave/src/main.js",
+      "bytes": 22098,
+      "sha256": "a06e9fcb121186e1035291a6a9ca5efa75f2fb10c5141345415f2ec62a2cf335"
+    },
+    {
+      "target": "experiences/crave/src/scenes.js",
+      "bytes": 6311,
+      "sha256": "af3c3c6fdb9d32dda44a05884e0fc6bab6be64f30413448b77bf294bf6051ddc"
+    },
+    {
+      "target": "experiences/crave/src/material-stage.js",
+      "bytes": 35231,
+      "sha256": "474c70337dbc0deff44c463a9feff6a2dfed44e224091ae4ee341f14bbf698e3"
+    },
+    {
+      "target": "experiences/crave/src/atmosphere.js",
+      "bytes": 17051,
+      "sha256": "435404ef1d026ed3784ce13aeeb39d9975efda981f09dacecdd228f6a6ba0e5d"
+    },
+    {
+      "target": "experiences/crave/src/style.css",
+      "bytes": 17262,
+      "sha256": "13519d300868b5078ba02b58686fc98fc8210c0d0faeb5bfdac5237fb88374aa"
+    }
+  ]
+}

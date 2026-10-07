@@ -1,0 +1,1216 @@
+{
+  "archive": "CRAVE-Before-the-First-Bite.zip",
+  "bytes": 21395216,
+  "sha256": "c20b9e2f66841d13b5d823122ce3c1b89e13a43b629462494009e349c464ea53",
+  "modifiedUtc": "2026-10-07T09:47:51.547578+00:00",
+  "entryCount": 64,
+  "entries": [
+    {
+      "path": "CRAVE-Before-the-First-Bite/.impeccable/design.json",
+      "bytes": 22849,
+      "sha256": "97d1332aa6b8b915dce995b35916191f3b06e5d746e2387bc92354974502c0f5",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/ATTRIBUTION.md",
+      "bytes": 2104,
+      "sha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/DESIGN.md",
+      "bytes": 21161,
+      "sha256": "6aa9c231f26cf60833fd8767e1cf2a44f99d5f41846e48f5ba17f8121e0fabc4",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/PRODUCT.md",
+      "bytes": 2268,
+      "sha256": "db06fdc1bce284b87061e2921b4429ff6b53033f1b1cf08550dc9dc4018b7567",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/README.md",
+      "bytes": 8889,
+      "sha256": "ffefc562ea30ad913a89082c3ae1e6656859d01167bc1528799ad9b13ecc5503",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/START-MAC-LINUX.sh",
+      "bytes": 375,
+      "sha256": "4b9abbbc9906a7ec9f2130da4cbe53f7ae4d239124b345a298621b06f54b5a02",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/START-WINDOWS.cmd",
+      "bytes": 451,
+      "sha256": "d6d70fd08fee17365ab0208bd8de5512600559821b45144c1403ccd91e8128c6",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/chocolate.png",
+      "bytes": 1687938,
+      "sha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/pastry-hero.png",
+      "bytes": 2492489,
+      "sha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/pastry-inside.png",
+      "bytes": 2184926,
+      "sha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/scallop-seared.png",
+      "bytes": 2181233,
+      "sha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/tart-bitten.png",
+      "bytes": 2239213,
+      "sha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/tart-cut.png",
+      "bytes": 2415015,
+      "sha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/tart-glaze.png",
+      "bytes": 2160525,
+      "sha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/tart-plate.png",
+      "bytes": 2428629,
+      "sha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/assets/masters/tart-steam.png",
+      "bytes": 1932193,
+      "sha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/dist/assets/index-B9CR0uBC.js",
+      "bytes": 184315,
+      "sha256": "08b15f5fb767426db32314a3c026035c2548a151159fc62606f6927a9cbe13af",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/dist/assets/index-wZhvLktg.css",
+      "bytes": 15534,
+      "sha256": "8c60e0c27d877f6cd04122913db085a09f352a91ebf69748157fcc5ead674f83",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/dist/index.html",
+      "bytes": 5751,
+      "sha256": "bdf0e862405d82b411f16bbf8965f05fcb8cc677bb74c35b8dd1c9e198315ff1",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/docs/FONT-PROVENANCE.json",
+      "bytes": 4205,
+      "sha256": "ee3a33fcf36a6478d2b8130a214ddea9ed72583c49a39e5406efc45020dfa166",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/docs/PROVENANCE.json",
+      "bytes": 85877,
+      "sha256": "3887e29d6d7ebdf7f88155a5e55b16433974d90348010997459415d01eeaf1b2",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/docs/QA.md",
+      "bytes": 13813,
+      "sha256": "18f4c3e0f4c4fa702bab17354053f5a87b88ffc6e698a9010f8acab62ce6a30c",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/docs/RESEARCH.md",
+      "bytes": 10769,
+      "sha256": "051991f1754ea9f2a129d6d63157e8ddc868dd94555e599c3770fe707b29afab",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/docs/VISUAL-BIBLE.md",
+      "bytes": 13139,
+      "sha256": "b76dba6b39f3a23f96199869b15dce16aef89682771c7eb5e8958fda4e867571",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/index.html",
+      "bytes": 5703,
+      "sha256": "284bb1beb0beebbe0f454458a7b6e0391f13efcc0b28a5c3ee15f2c962f81492",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/CormorantGaramond-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/GSAP-NOTICES.txt",
+      "bytes": 1399,
+      "sha256": "c5eb201d15fe31e2491b0e034096a8af574e87997ed23803e49d15d0da26c021",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/Lenis-MIT.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/Manrope-FONTLOG.txt",
+      "bytes": 3075,
+      "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/THIRD-PARTY.md",
+      "bytes": 4796,
+      "sha256": "6f42eb7c45553f72b2ddb0c17dfdffd2417c2271c1dc698d3c471f928e5dd3de",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/licenses/Vite-LICENSE.md",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/package-lock.json",
+      "bytes": 26315,
+      "sha256": "bdbebc8f55f4f596ea211cc4477c3cd7bfaf3e34332230467431656b6c77d9c7",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/package.json",
+      "bytes": 403,
+      "sha256": "86fee3c6fa436544711d5fe0128a89eb0c397dc219587e7ddf89a9682e4b9609",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/favicon.svg",
+      "bytes": 277,
+      "sha256": "06e9895c1a8270f3bd5fa92da3547241121f5f6a80b4d36f8d36a0108350b973",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/fonts/cormorant-garamond-italic.woff2",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/fonts/cormorant-garamond-regular.woff2",
+      "bytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/fonts/manrope-variable.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/chocolate-1536.webp",
+      "bytes": 83662,
+      "sha256": "e2f2bd17f6b72bc94cb5bb1f70604f1a992b7bebf768120c3a3c297ac11aea38",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/chocolate-768.webp",
+      "bytes": 24944,
+      "sha256": "104b0adaf4dddfcc5dae674093d021e6e2ae806ad09561e7114f23803f64089b",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/pastry-hero-1536.webp",
+      "bytes": 316052,
+      "sha256": "b6071759552effbf13450443fa73d9e5ab43897c7029f929cc90cae9d2f5c72b",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/pastry-hero-768.webp",
+      "bytes": 93938,
+      "sha256": "8e741ad4d183f8c491c676ca6f2954d7729fdd36b7819fcbdbddc340e608872f",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/pastry-inside-1536.webp",
+      "bytes": 215440,
+      "sha256": "ba57c4c6d6d4151ce21d5972c99c60885808d148975fdfbcbd736545ade99870",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/pastry-inside-768.webp",
+      "bytes": 61602,
+      "sha256": "cbc795dde7dd39e6ddb04723e6cb6d78a5614d35334584cafcd66b1021745a5d",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/scallop-seared-1536.webp",
+      "bytes": 238744,
+      "sha256": "34ec01297d75fd8003dfcb00901e51ad3139b3ebfbdf28be8061ec69f6d452ba",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/scallop-seared-768.webp",
+      "bytes": 70224,
+      "sha256": "6540d81e939402246a14a55945916d029db6f35e3ab6e1abac153ce52197001f",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-bitten-1536.webp",
+      "bytes": 189892,
+      "sha256": "7f73b30ca0a4401f8e3731438984d88fd49d2e46d5d420435105782ef65c6f13",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-bitten-768.webp",
+      "bytes": 40168,
+      "sha256": "bbec3e1ad8cd4064aa5b09cfc512d71870bb2db0ad81a2707c7e58abb087cbb7",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-cut-1536.webp",
+      "bytes": 229604,
+      "sha256": "21b051ff3c58ebc906b3ca43ddc6ba0474126cf9dd5de4b4f141532c38c340f6",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-cut-768.webp",
+      "bytes": 46768,
+      "sha256": "6b64ea4e51622ac916206741d1441de7e1004ba57c7c1837d68bcbc32a9cc193",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-glaze-1536.webp",
+      "bytes": 234860,
+      "sha256": "fca00a4a84857ab8cf6f269760834f70b1f46576b20ea080af05827fb3b05538",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-glaze-768.webp",
+      "bytes": 69810,
+      "sha256": "fe126f62cf75a400deea1633d1e35ee77eef56b626f03c7b5e841c3299871113",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-plate-1536.webp",
+      "bytes": 225482,
+      "sha256": "b96de799ac88c253943657f9406a4c81f778016619239a7614925966ca51f538",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-plate-768.webp",
+      "bytes": 46764,
+      "sha256": "9e9251fe5290e12bed3bfb2122cad660d2eaf4e0b73b6fc3f58d3f0614302c94",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-steam-1536.webp",
+      "bytes": 147888,
+      "sha256": "3a75e5f8b2617333aed0cdd51d5684e25f5889e734f164feecce8b4565d77765",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/public/media/tart-steam-768.webp",
+      "bytes": 44654,
+      "sha256": "87e8f67d6dc17723d7021e725363c96c718154e011f40092f6ed1ac69f1ab32e",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/scripts/preview.mjs",
+      "bytes": 12075,
+      "sha256": "fb99ba5199d14833a335c89b2aa1b9c47dc61fc688d54f7a65d2c21da39a73a6",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/src/atmosphere.js",
+      "bytes": 17051,
+      "sha256": "435404ef1d026ed3784ce13aeeb39d9975efda981f09dacecdd228f6a6ba0e5d",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/src/main.js",
+      "bytes": 19462,
+      "sha256": "9325608a8831acf94ee40669206e2f837cc97ebcdb8581f6aeda07acd1849720",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/src/material-stage.js",
+      "bytes": 35231,
+      "sha256": "474c70337dbc0deff44c463a9feff6a2dfed44e224091ae4ee341f14bbf698e3",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/src/scenes.js",
+      "bytes": 6311,
+      "sha256": "af3c3c6fdb9d32dda44a05884e0fc6bab6be64f30413448b77bf294bf6051ddc",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/src/style.css",
+      "bytes": 17262,
+      "sha256": "13519d300868b5078ba02b58686fc98fc8210c0d0faeb5bfdac5237fb88374aa",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/vite.config.js",
+      "bytes": 253,
+      "sha256": "977e9c51ea4fb0895a0ce2d424bf44e308c03480eca9ecef2e34c9841ff24975",
+      "directory": false
+    },
+    {
+      "path": "CRAVE-Before-the-First-Bite/SHA256SUMS",
+      "bytes": 5819,
+      "sha256": "04757886f3d374f66d1a2639ceeeec98fe0f5d69da3940d6950d80dd8e4f43c4",
+      "directory": false
+    }
+  ],
+  "mappings": [
+    {
+      "source": "CRAVE-Before-the-First-Bite/.impeccable/design.json",
+      "sourcePath": "CRAVE-Before-the-First-Bite/.impeccable/design.json",
+      "sourceBytes": 22849,
+      "sourceSha256": "97d1332aa6b8b915dce995b35916191f3b06e5d746e2387bc92354974502c0f5",
+      "target": "provenance/crave/design.json",
+      "bytes": 22849,
+      "targetBytes": 22849,
+      "sha256": "97d1332aa6b8b915dce995b35916191f3b06e5d746e2387bc92354974502c0f5",
+      "targetSha256": "97d1332aa6b8b915dce995b35916191f3b06e5d746e2387bc92354974502c0f5",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/ATTRIBUTION.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/ATTRIBUTION.md",
+      "sourceBytes": 2104,
+      "sourceSha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "target": "public/crave/ATTRIBUTION.md",
+      "bytes": 2104,
+      "targetBytes": 2104,
+      "sha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "targetSha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/ATTRIBUTION.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/ATTRIBUTION.md",
+      "sourceBytes": 2104,
+      "sourceSha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "target": "provenance/crave/ATTRIBUTION.md",
+      "bytes": 2104,
+      "targetBytes": 2104,
+      "sha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "targetSha256": "4c26d3ca44fd42aacbc875cdd32318e181d31bc8232219e9b6fe4850a42d873c",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/DESIGN.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/DESIGN.md",
+      "sourceBytes": 21161,
+      "sourceSha256": "6aa9c231f26cf60833fd8767e1cf2a44f99d5f41846e48f5ba17f8121e0fabc4",
+      "target": "docs/crave/DESIGN.md",
+      "bytes": 22749,
+      "targetBytes": 22749,
+      "sha256": "29004fb1746f5af4f085e162cf9bcde4599b56b2e45ec3b695e5931aeb9bd052",
+      "targetSha256": "29004fb1746f5af4f085e162cf9bcde4599b56b2e45ec3b695e5931aeb9bd052",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/PRODUCT.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/PRODUCT.md",
+      "sourceBytes": 2268,
+      "sourceSha256": "db06fdc1bce284b87061e2921b4429ff6b53033f1b1cf08550dc9dc4018b7567",
+      "target": "docs/crave/UPSTREAM-PRODUCT.md",
+      "bytes": 2268,
+      "targetBytes": 2268,
+      "sha256": "db06fdc1bce284b87061e2921b4429ff6b53033f1b1cf08550dc9dc4018b7567",
+      "targetSha256": "db06fdc1bce284b87061e2921b4429ff6b53033f1b1cf08550dc9dc4018b7567",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/README.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/README.md",
+      "sourceBytes": 8889,
+      "sourceSha256": "ffefc562ea30ad913a89082c3ae1e6656859d01167bc1528799ad9b13ecc5503",
+      "target": "docs/crave/UPSTREAM-README.md",
+      "bytes": 8889,
+      "targetBytes": 8889,
+      "sha256": "ffefc562ea30ad913a89082c3ae1e6656859d01167bc1528799ad9b13ecc5503",
+      "targetSha256": "ffefc562ea30ad913a89082c3ae1e6656859d01167bc1528799ad9b13ecc5503",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/chocolate.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/chocolate.png",
+      "sourceBytes": 1687938,
+      "sourceSha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71",
+      "target": "provenance/crave/assets/masters/chocolate.png",
+      "bytes": 1687938,
+      "targetBytes": 1687938,
+      "sha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71",
+      "targetSha256": "fca8cf1addbb70ac8c31fe3fe1d50025e4a8ad3cdbcbd2ce31b6401fb6da0e71",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/pastry-hero.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/pastry-hero.png",
+      "sourceBytes": 2492489,
+      "sourceSha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7",
+      "target": "provenance/crave/assets/masters/pastry-hero.png",
+      "bytes": 2492489,
+      "targetBytes": 2492489,
+      "sha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7",
+      "targetSha256": "9208859cb83749bc53c3868db1e1cb022a47d74a73259c736592529ac70bbfd7",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/pastry-inside.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/pastry-inside.png",
+      "sourceBytes": 2184926,
+      "sourceSha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d",
+      "target": "provenance/crave/assets/masters/pastry-inside.png",
+      "bytes": 2184926,
+      "targetBytes": 2184926,
+      "sha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d",
+      "targetSha256": "f0d975af8be07396aee06859d6fb6ec5dfae9dd31e7b045e0f44d59fe7cd784d",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/scallop-seared.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/scallop-seared.png",
+      "sourceBytes": 2181233,
+      "sourceSha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415",
+      "target": "provenance/crave/assets/masters/scallop-seared.png",
+      "bytes": 2181233,
+      "targetBytes": 2181233,
+      "sha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415",
+      "targetSha256": "2c62c2e172034cf9bdb085d473613ad8c726a997d85827535c87c5b3779c2415",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/tart-bitten.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/tart-bitten.png",
+      "sourceBytes": 2239213,
+      "sourceSha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271",
+      "target": "provenance/crave/assets/masters/tart-bitten.png",
+      "bytes": 2239213,
+      "targetBytes": 2239213,
+      "sha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271",
+      "targetSha256": "8655fcf3e928794c601f510ad988a0c1da194ae07203f8010c7de293b510c271",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/tart-cut.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/tart-cut.png",
+      "sourceBytes": 2415015,
+      "sourceSha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff",
+      "target": "provenance/crave/assets/masters/tart-cut.png",
+      "bytes": 2415015,
+      "targetBytes": 2415015,
+      "sha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff",
+      "targetSha256": "acb129c4e721cf6a6b0e0859e5c6c9ed8324cb660aa9db1b07ae13f653a733ff",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/tart-glaze.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/tart-glaze.png",
+      "sourceBytes": 2160525,
+      "sourceSha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97",
+      "target": "provenance/crave/assets/masters/tart-glaze.png",
+      "bytes": 2160525,
+      "targetBytes": 2160525,
+      "sha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97",
+      "targetSha256": "9ef8ecaf9e450a865f67a27d4a1320475418f0de40df2ac23f93e480f8fb5b97",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/tart-plate.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/tart-plate.png",
+      "sourceBytes": 2428629,
+      "sourceSha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3",
+      "target": "provenance/crave/assets/masters/tart-plate.png",
+      "bytes": 2428629,
+      "targetBytes": 2428629,
+      "sha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3",
+      "targetSha256": "0a0db58f4ac44b3ed6f05e1f23e0941975257c591e62f6bf6160abd64c9d2bf3",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/assets/masters/tart-steam.png",
+      "sourcePath": "CRAVE-Before-the-First-Bite/assets/masters/tart-steam.png",
+      "sourceBytes": 1932193,
+      "sourceSha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a",
+      "target": "provenance/crave/assets/masters/tart-steam.png",
+      "bytes": 1932193,
+      "targetBytes": 1932193,
+      "sha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a",
+      "targetSha256": "e378bf5467c0971589e21a43d78b4820279f4537297b4d7c0e80eee57a515b7a",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/docs/FONT-PROVENANCE.json",
+      "sourcePath": "CRAVE-Before-the-First-Bite/docs/FONT-PROVENANCE.json",
+      "sourceBytes": 4205,
+      "sourceSha256": "ee3a33fcf36a6478d2b8130a214ddea9ed72583c49a39e5406efc45020dfa166",
+      "target": "docs/crave/FONT-PROVENANCE.json",
+      "bytes": 4205,
+      "targetBytes": 4205,
+      "sha256": "ee3a33fcf36a6478d2b8130a214ddea9ed72583c49a39e5406efc45020dfa166",
+      "targetSha256": "ee3a33fcf36a6478d2b8130a214ddea9ed72583c49a39e5406efc45020dfa166",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/docs/PROVENANCE.json",
+      "sourcePath": "CRAVE-Before-the-First-Bite/docs/PROVENANCE.json",
+      "sourceBytes": 85877,
+      "sourceSha256": "3887e29d6d7ebdf7f88155a5e55b16433974d90348010997459415d01eeaf1b2",
+      "target": "docs/crave/PROVENANCE.json",
+      "bytes": 85877,
+      "targetBytes": 85877,
+      "sha256": "3887e29d6d7ebdf7f88155a5e55b16433974d90348010997459415d01eeaf1b2",
+      "targetSha256": "3887e29d6d7ebdf7f88155a5e55b16433974d90348010997459415d01eeaf1b2",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/docs/QA.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/docs/QA.md",
+      "sourceBytes": 13813,
+      "sourceSha256": "18f4c3e0f4c4fa702bab17354053f5a87b88ffc6e698a9010f8acab62ce6a30c",
+      "target": "docs/crave/QA.md",
+      "bytes": 13813,
+      "targetBytes": 13813,
+      "sha256": "18f4c3e0f4c4fa702bab17354053f5a87b88ffc6e698a9010f8acab62ce6a30c",
+      "targetSha256": "18f4c3e0f4c4fa702bab17354053f5a87b88ffc6e698a9010f8acab62ce6a30c",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/docs/RESEARCH.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/docs/RESEARCH.md",
+      "sourceBytes": 10769,
+      "sourceSha256": "051991f1754ea9f2a129d6d63157e8ddc868dd94555e599c3770fe707b29afab",
+      "target": "docs/crave/RESEARCH.md",
+      "bytes": 10769,
+      "targetBytes": 10769,
+      "sha256": "051991f1754ea9f2a129d6d63157e8ddc868dd94555e599c3770fe707b29afab",
+      "targetSha256": "051991f1754ea9f2a129d6d63157e8ddc868dd94555e599c3770fe707b29afab",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/docs/VISUAL-BIBLE.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/docs/VISUAL-BIBLE.md",
+      "sourceBytes": 13139,
+      "sourceSha256": "b76dba6b39f3a23f96199869b15dce16aef89682771c7eb5e8958fda4e867571",
+      "target": "docs/crave/VISUAL-BIBLE.md",
+      "bytes": 13335,
+      "targetBytes": 13335,
+      "sha256": "b3e3315c0ccda3f3259a2167077db84f0b8c754d21ed8a07128a6ac1e3595f21",
+      "targetSha256": "b3e3315c0ccda3f3259a2167077db84f0b8c754d21ed8a07128a6ac1e3595f21",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/index.html",
+      "sourcePath": "CRAVE-Before-the-First-Bite/index.html",
+      "sourceBytes": 5703,
+      "sourceSha256": "284bb1beb0beebbe0f454458a7b6e0391f13efcc0b28a5c3ee15f2c962f81492",
+      "target": "pages/crave/index.html",
+      "bytes": 7742,
+      "targetBytes": 7742,
+      "sha256": "d7aa28dfd11fb52ee53e2dc2a93386903fa141c8d94f53567a97b80485622d55",
+      "targetSha256": "d7aa28dfd11fb52ee53e2dc2a93386903fa141c8d94f53567a97b80485622d55",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/CormorantGaramond-OFL.txt",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/CormorantGaramond-OFL.txt",
+      "sourceBytes": 4387,
+      "sourceSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "target": "public/crave/licenses/CormorantGaramond-OFL.txt",
+      "bytes": 4387,
+      "targetBytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "targetSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/GSAP-NOTICES.txt",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/GSAP-NOTICES.txt",
+      "sourceBytes": 1399,
+      "sourceSha256": "c5eb201d15fe31e2491b0e034096a8af574e87997ed23803e49d15d0da26c021",
+      "target": "public/crave/licenses/GSAP-NOTICES.txt",
+      "bytes": 1399,
+      "targetBytes": 1399,
+      "sha256": "c5eb201d15fe31e2491b0e034096a8af574e87997ed23803e49d15d0da26c021",
+      "targetSha256": "c5eb201d15fe31e2491b0e034096a8af574e87997ed23803e49d15d0da26c021",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/Lenis-MIT.txt",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/Lenis-MIT.txt",
+      "sourceBytes": 1096,
+      "sourceSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "target": "public/crave/licenses/Lenis-MIT.txt",
+      "bytes": 1096,
+      "targetBytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "targetSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/Manrope-FONTLOG.txt",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/Manrope-FONTLOG.txt",
+      "sourceBytes": 3075,
+      "sourceSha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+      "target": "public/crave/licenses/Manrope-FONTLOG.txt",
+      "bytes": 3075,
+      "targetBytes": 3075,
+      "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+      "targetSha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/Manrope-OFL.txt",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/Manrope-OFL.txt",
+      "sourceBytes": 4387,
+      "sourceSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "target": "public/crave/licenses/Manrope-OFL.txt",
+      "bytes": 4387,
+      "targetBytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "targetSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/THIRD-PARTY.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/THIRD-PARTY.md",
+      "sourceBytes": 4796,
+      "sourceSha256": "6f42eb7c45553f72b2ddb0c17dfdffd2417c2271c1dc698d3c471f928e5dd3de",
+      "target": "public/crave/licenses/THIRD-PARTY.md",
+      "bytes": 4796,
+      "targetBytes": 4796,
+      "sha256": "6f42eb7c45553f72b2ddb0c17dfdffd2417c2271c1dc698d3c471f928e5dd3de",
+      "targetSha256": "6f42eb7c45553f72b2ddb0c17dfdffd2417c2271c1dc698d3c471f928e5dd3de",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/licenses/Vite-LICENSE.md",
+      "sourcePath": "CRAVE-Before-the-First-Bite/licenses/Vite-LICENSE.md",
+      "sourceBytes": 108786,
+      "sourceSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "target": "public/crave/licenses/Vite-LICENSE.md",
+      "bytes": 108786,
+      "targetBytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "targetSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/favicon.svg",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/favicon.svg",
+      "sourceBytes": 277,
+      "sourceSha256": "06e9895c1a8270f3bd5fa92da3547241121f5f6a80b4d36f8d36a0108350b973",
+      "target": "public/crave/favicon.svg",
+      "bytes": 277,
+      "targetBytes": 277,
+      "sha256": "06e9895c1a8270f3bd5fa92da3547241121f5f6a80b4d36f8d36a0108350b973",
+      "targetSha256": "06e9895c1a8270f3bd5fa92da3547241121f5f6a80b4d36f8d36a0108350b973",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/fonts/cormorant-garamond-italic.woff2",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/fonts/cormorant-garamond-italic.woff2",
+      "sourceBytes": 23660,
+      "sourceSha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "target": "public/crave/fonts/cormorant-garamond-italic.woff2",
+      "bytes": 23660,
+      "targetBytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "targetSha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/fonts/cormorant-garamond-regular.woff2",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/fonts/cormorant-garamond-regular.woff2",
+      "sourceBytes": 22876,
+      "sourceSha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "target": "public/crave/fonts/cormorant-garamond-regular.woff2",
+      "bytes": 22876,
+      "targetBytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "targetSha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/fonts/manrope-variable.woff2",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/fonts/manrope-variable.woff2",
+      "sourceBytes": 24836,
+      "sourceSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "target": "public/crave/fonts/manrope-variable.woff2",
+      "bytes": 24836,
+      "targetBytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "targetSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/chocolate-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/chocolate-1536.webp",
+      "sourceBytes": 83662,
+      "sourceSha256": "e2f2bd17f6b72bc94cb5bb1f70604f1a992b7bebf768120c3a3c297ac11aea38",
+      "target": "public/crave/media/chocolate-1536.webp",
+      "bytes": 83662,
+      "targetBytes": 83662,
+      "sha256": "e2f2bd17f6b72bc94cb5bb1f70604f1a992b7bebf768120c3a3c297ac11aea38",
+      "targetSha256": "e2f2bd17f6b72bc94cb5bb1f70604f1a992b7bebf768120c3a3c297ac11aea38",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/chocolate-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/chocolate-768.webp",
+      "sourceBytes": 24944,
+      "sourceSha256": "104b0adaf4dddfcc5dae674093d021e6e2ae806ad09561e7114f23803f64089b",
+      "target": "public/crave/media/chocolate-768.webp",
+      "bytes": 24944,
+      "targetBytes": 24944,
+      "sha256": "104b0adaf4dddfcc5dae674093d021e6e2ae806ad09561e7114f23803f64089b",
+      "targetSha256": "104b0adaf4dddfcc5dae674093d021e6e2ae806ad09561e7114f23803f64089b",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/pastry-hero-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/pastry-hero-1536.webp",
+      "sourceBytes": 316052,
+      "sourceSha256": "b6071759552effbf13450443fa73d9e5ab43897c7029f929cc90cae9d2f5c72b",
+      "target": "public/crave/media/pastry-hero-1536.webp",
+      "bytes": 316052,
+      "targetBytes": 316052,
+      "sha256": "b6071759552effbf13450443fa73d9e5ab43897c7029f929cc90cae9d2f5c72b",
+      "targetSha256": "b6071759552effbf13450443fa73d9e5ab43897c7029f929cc90cae9d2f5c72b",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/pastry-hero-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/pastry-hero-768.webp",
+      "sourceBytes": 93938,
+      "sourceSha256": "8e741ad4d183f8c491c676ca6f2954d7729fdd36b7819fcbdbddc340e608872f",
+      "target": "public/crave/media/pastry-hero-768.webp",
+      "bytes": 93938,
+      "targetBytes": 93938,
+      "sha256": "8e741ad4d183f8c491c676ca6f2954d7729fdd36b7819fcbdbddc340e608872f",
+      "targetSha256": "8e741ad4d183f8c491c676ca6f2954d7729fdd36b7819fcbdbddc340e608872f",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/pastry-inside-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/pastry-inside-1536.webp",
+      "sourceBytes": 215440,
+      "sourceSha256": "ba57c4c6d6d4151ce21d5972c99c60885808d148975fdfbcbd736545ade99870",
+      "target": "public/crave/media/pastry-inside-1536.webp",
+      "bytes": 215440,
+      "targetBytes": 215440,
+      "sha256": "ba57c4c6d6d4151ce21d5972c99c60885808d148975fdfbcbd736545ade99870",
+      "targetSha256": "ba57c4c6d6d4151ce21d5972c99c60885808d148975fdfbcbd736545ade99870",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/pastry-inside-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/pastry-inside-768.webp",
+      "sourceBytes": 61602,
+      "sourceSha256": "cbc795dde7dd39e6ddb04723e6cb6d78a5614d35334584cafcd66b1021745a5d",
+      "target": "public/crave/media/pastry-inside-768.webp",
+      "bytes": 61602,
+      "targetBytes": 61602,
+      "sha256": "cbc795dde7dd39e6ddb04723e6cb6d78a5614d35334584cafcd66b1021745a5d",
+      "targetSha256": "cbc795dde7dd39e6ddb04723e6cb6d78a5614d35334584cafcd66b1021745a5d",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/scallop-seared-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/scallop-seared-1536.webp",
+      "sourceBytes": 238744,
+      "sourceSha256": "34ec01297d75fd8003dfcb00901e51ad3139b3ebfbdf28be8061ec69f6d452ba",
+      "target": "public/crave/media/scallop-seared-1536.webp",
+      "bytes": 238744,
+      "targetBytes": 238744,
+      "sha256": "34ec01297d75fd8003dfcb00901e51ad3139b3ebfbdf28be8061ec69f6d452ba",
+      "targetSha256": "34ec01297d75fd8003dfcb00901e51ad3139b3ebfbdf28be8061ec69f6d452ba",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/scallop-seared-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/scallop-seared-768.webp",
+      "sourceBytes": 70224,
+      "sourceSha256": "6540d81e939402246a14a55945916d029db6f35e3ab6e1abac153ce52197001f",
+      "target": "public/crave/media/scallop-seared-768.webp",
+      "bytes": 70224,
+      "targetBytes": 70224,
+      "sha256": "6540d81e939402246a14a55945916d029db6f35e3ab6e1abac153ce52197001f",
+      "targetSha256": "6540d81e939402246a14a55945916d029db6f35e3ab6e1abac153ce52197001f",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-bitten-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-bitten-1536.webp",
+      "sourceBytes": 189892,
+      "sourceSha256": "7f73b30ca0a4401f8e3731438984d88fd49d2e46d5d420435105782ef65c6f13",
+      "target": "public/crave/media/tart-bitten-1536.webp",
+      "bytes": 189892,
+      "targetBytes": 189892,
+      "sha256": "7f73b30ca0a4401f8e3731438984d88fd49d2e46d5d420435105782ef65c6f13",
+      "targetSha256": "7f73b30ca0a4401f8e3731438984d88fd49d2e46d5d420435105782ef65c6f13",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-bitten-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-bitten-768.webp",
+      "sourceBytes": 40168,
+      "sourceSha256": "bbec3e1ad8cd4064aa5b09cfc512d71870bb2db0ad81a2707c7e58abb087cbb7",
+      "target": "public/crave/media/tart-bitten-768.webp",
+      "bytes": 40168,
+      "targetBytes": 40168,
+      "sha256": "bbec3e1ad8cd4064aa5b09cfc512d71870bb2db0ad81a2707c7e58abb087cbb7",
+      "targetSha256": "bbec3e1ad8cd4064aa5b09cfc512d71870bb2db0ad81a2707c7e58abb087cbb7",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-cut-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-cut-1536.webp",
+      "sourceBytes": 229604,
+      "sourceSha256": "21b051ff3c58ebc906b3ca43ddc6ba0474126cf9dd5de4b4f141532c38c340f6",
+      "target": "public/crave/media/tart-cut-1536.webp",
+      "bytes": 229604,
+      "targetBytes": 229604,
+      "sha256": "21b051ff3c58ebc906b3ca43ddc6ba0474126cf9dd5de4b4f141532c38c340f6",
+      "targetSha256": "21b051ff3c58ebc906b3ca43ddc6ba0474126cf9dd5de4b4f141532c38c340f6",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-cut-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-cut-768.webp",
+      "sourceBytes": 46768,
+      "sourceSha256": "6b64ea4e51622ac916206741d1441de7e1004ba57c7c1837d68bcbc32a9cc193",
+      "target": "public/crave/media/tart-cut-768.webp",
+      "bytes": 46768,
+      "targetBytes": 46768,
+      "sha256": "6b64ea4e51622ac916206741d1441de7e1004ba57c7c1837d68bcbc32a9cc193",
+      "targetSha256": "6b64ea4e51622ac916206741d1441de7e1004ba57c7c1837d68bcbc32a9cc193",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-glaze-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-glaze-1536.webp",
+      "sourceBytes": 234860,
+      "sourceSha256": "fca00a4a84857ab8cf6f269760834f70b1f46576b20ea080af05827fb3b05538",
+      "target": "public/crave/media/tart-glaze-1536.webp",
+      "bytes": 234860,
+      "targetBytes": 234860,
+      "sha256": "fca00a4a84857ab8cf6f269760834f70b1f46576b20ea080af05827fb3b05538",
+      "targetSha256": "fca00a4a84857ab8cf6f269760834f70b1f46576b20ea080af05827fb3b05538",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-glaze-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-glaze-768.webp",
+      "sourceBytes": 69810,
+      "sourceSha256": "fe126f62cf75a400deea1633d1e35ee77eef56b626f03c7b5e841c3299871113",
+      "target": "public/crave/media/tart-glaze-768.webp",
+      "bytes": 69810,
+      "targetBytes": 69810,
+      "sha256": "fe126f62cf75a400deea1633d1e35ee77eef56b626f03c7b5e841c3299871113",
+      "targetSha256": "fe126f62cf75a400deea1633d1e35ee77eef56b626f03c7b5e841c3299871113",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-plate-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-plate-1536.webp",
+      "sourceBytes": 225482,
+      "sourceSha256": "b96de799ac88c253943657f9406a4c81f778016619239a7614925966ca51f538",
+      "target": "public/crave/media/tart-plate-1536.webp",
+      "bytes": 225482,
+      "targetBytes": 225482,
+      "sha256": "b96de799ac88c253943657f9406a4c81f778016619239a7614925966ca51f538",
+      "targetSha256": "b96de799ac88c253943657f9406a4c81f778016619239a7614925966ca51f538",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-plate-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-plate-768.webp",
+      "sourceBytes": 46764,
+      "sourceSha256": "9e9251fe5290e12bed3bfb2122cad660d2eaf4e0b73b6fc3f58d3f0614302c94",
+      "target": "public/crave/media/tart-plate-768.webp",
+      "bytes": 46764,
+      "targetBytes": 46764,
+      "sha256": "9e9251fe5290e12bed3bfb2122cad660d2eaf4e0b73b6fc3f58d3f0614302c94",
+      "targetSha256": "9e9251fe5290e12bed3bfb2122cad660d2eaf4e0b73b6fc3f58d3f0614302c94",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-steam-1536.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-steam-1536.webp",
+      "sourceBytes": 147888,
+      "sourceSha256": "3a75e5f8b2617333aed0cdd51d5684e25f5889e734f164feecce8b4565d77765",
+      "target": "public/crave/media/tart-steam-1536.webp",
+      "bytes": 147888,
+      "targetBytes": 147888,
+      "sha256": "3a75e5f8b2617333aed0cdd51d5684e25f5889e734f164feecce8b4565d77765",
+      "targetSha256": "3a75e5f8b2617333aed0cdd51d5684e25f5889e734f164feecce8b4565d77765",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/public/media/tart-steam-768.webp",
+      "sourcePath": "CRAVE-Before-the-First-Bite/public/media/tart-steam-768.webp",
+      "sourceBytes": 44654,
+      "sourceSha256": "87e8f67d6dc17723d7021e725363c96c718154e011f40092f6ed1ac69f1ab32e",
+      "target": "public/crave/media/tart-steam-768.webp",
+      "bytes": 44654,
+      "targetBytes": 44654,
+      "sha256": "87e8f67d6dc17723d7021e725363c96c718154e011f40092f6ed1ac69f1ab32e",
+      "targetSha256": "87e8f67d6dc17723d7021e725363c96c718154e011f40092f6ed1ac69f1ab32e",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/src/atmosphere.js",
+      "sourcePath": "CRAVE-Before-the-First-Bite/src/atmosphere.js",
+      "sourceBytes": 17051,
+      "sourceSha256": "435404ef1d026ed3784ce13aeeb39d9975efda981f09dacecdd228f6a6ba0e5d",
+      "target": "experiences/crave/src/atmosphere.js",
+      "bytes": 17051,
+      "targetBytes": 17051,
+      "sha256": "435404ef1d026ed3784ce13aeeb39d9975efda981f09dacecdd228f6a6ba0e5d",
+      "targetSha256": "435404ef1d026ed3784ce13aeeb39d9975efda981f09dacecdd228f6a6ba0e5d",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/src/main.js",
+      "sourcePath": "CRAVE-Before-the-First-Bite/src/main.js",
+      "sourceBytes": 19462,
+      "sourceSha256": "9325608a8831acf94ee40669206e2f837cc97ebcdb8581f6aeda07acd1849720",
+      "target": "experiences/crave/src/main.js",
+      "bytes": 22097,
+      "targetBytes": 22097,
+      "sha256": "c0acfae9651494f1f49d754f6e457661341c01a2a7654dd79ffef9e13a022005",
+      "targetSha256": "c0acfae9651494f1f49d754f6e457661341c01a2a7654dd79ffef9e13a022005",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/src/material-stage.js",
+      "sourcePath": "CRAVE-Before-the-First-Bite/src/material-stage.js",
+      "sourceBytes": 35231,
+      "sourceSha256": "474c70337dbc0deff44c463a9feff6a2dfed44e224091ae4ee341f14bbf698e3",
+      "target": "experiences/crave/src/material-stage.js",
+      "bytes": 35231,
+      "targetBytes": 35231,
+      "sha256": "474c70337dbc0deff44c463a9feff6a2dfed44e224091ae4ee341f14bbf698e3",
+      "targetSha256": "474c70337dbc0deff44c463a9feff6a2dfed44e224091ae4ee341f14bbf698e3",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/src/scenes.js",
+      "sourcePath": "CRAVE-Before-the-First-Bite/src/scenes.js",
+      "sourceBytes": 6311,
+      "sourceSha256": "af3c3c6fdb9d32dda44a05884e0fc6bab6be64f30413448b77bf294bf6051ddc",
+      "target": "experiences/crave/src/scenes.js",
+      "bytes": 6311,
+      "targetBytes": 6311,
+      "sha256": "af3c3c6fdb9d32dda44a05884e0fc6bab6be64f30413448b77bf294bf6051ddc",
+      "targetSha256": "af3c3c6fdb9d32dda44a05884e0fc6bab6be64f30413448b77bf294bf6051ddc",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/src/style.css",
+      "sourcePath": "CRAVE-Before-the-First-Bite/src/style.css",
+      "sourceBytes": 17262,
+      "sourceSha256": "13519d300868b5078ba02b58686fc98fc8210c0d0faeb5bfdac5237fb88374aa",
+      "target": "experiences/crave/src/style.css",
+      "bytes": 17262,
+      "targetBytes": 17262,
+      "sha256": "13519d300868b5078ba02b58686fc98fc8210c0d0faeb5bfdac5237fb88374aa",
+      "targetSha256": "13519d300868b5078ba02b58686fc98fc8210c0d0faeb5bfdac5237fb88374aa",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/SHA256SUMS",
+      "sourcePath": "CRAVE-Before-the-First-Bite/SHA256SUMS",
+      "sourceBytes": 5819,
+      "sourceSha256": "04757886f3d374f66d1a2639ceeeec98fe0f5d69da3940d6950d80dd8e4f43c4",
+      "target": "provenance/crave/SHA256SUMS",
+      "bytes": 5819,
+      "targetBytes": 5819,
+      "sha256": "04757886f3d374f66d1a2639ceeeec98fe0f5d69da3940d6950d80dd8e4f43c4",
+      "targetSha256": "04757886f3d374f66d1a2639ceeeec98fe0f5d69da3940d6950d80dd8e4f43c4",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; original intentional Markdown hard breaks retained"
+    }
+  ],
+  "omissions": [
+    {
+      "source": "CRAVE-Before-the-First-Bite/START-MAC-LINUX.sh",
+      "sourcePath": "CRAVE-Before-the-First-Bite/START-MAC-LINUX.sh",
+      "bytes": 375,
+      "sourceBytes": 375,
+      "sha256": "4b9abbbc9906a7ec9f2130da4cbe53f7ae4d239124b345a298621b06f54b5a02",
+      "sourceSha256": "4b9abbbc9906a7ec9f2130da4cbe53f7ae4d239124b345a298621b06f54b5a02",
+      "disposition": "omitted",
+      "reason": "Standalone startup tool; Collection uses its own root tooling."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/START-WINDOWS.cmd",
+      "sourcePath": "CRAVE-Before-the-First-Bite/START-WINDOWS.cmd",
+      "bytes": 451,
+      "sourceBytes": 451,
+      "sha256": "d6d70fd08fee17365ab0208bd8de5512600559821b45144c1403ccd91e8128c6",
+      "sourceSha256": "d6d70fd08fee17365ab0208bd8de5512600559821b45144c1403ccd91e8128c6",
+      "disposition": "omitted",
+      "reason": "Standalone startup tool; Collection uses its own root tooling."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/dist/assets/index-B9CR0uBC.js",
+      "sourcePath": "CRAVE-Before-the-First-Bite/dist/assets/index-B9CR0uBC.js",
+      "bytes": 184315,
+      "sourceBytes": 184315,
+      "sha256": "08b15f5fb767426db32314a3c026035c2548a151159fc62606f6927a9cbe13af",
+      "sourceSha256": "08b15f5fb767426db32314a3c026035c2548a151159fc62606f6927a9cbe13af",
+      "disposition": "omitted",
+      "reason": "Original compiled reference; rebuilt from retained source by Collection."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/dist/assets/index-wZhvLktg.css",
+      "sourcePath": "CRAVE-Before-the-First-Bite/dist/assets/index-wZhvLktg.css",
+      "bytes": 15534,
+      "sourceBytes": 15534,
+      "sha256": "8c60e0c27d877f6cd04122913db085a09f352a91ebf69748157fcc5ead674f83",
+      "sourceSha256": "8c60e0c27d877f6cd04122913db085a09f352a91ebf69748157fcc5ead674f83",
+      "disposition": "omitted",
+      "reason": "Original compiled reference; rebuilt from retained source by Collection."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/dist/index.html",
+      "sourcePath": "CRAVE-Before-the-First-Bite/dist/index.html",
+      "bytes": 5751,
+      "sourceBytes": 5751,
+      "sha256": "bdf0e862405d82b411f16bbf8965f05fcb8cc677bb74c35b8dd1c9e198315ff1",
+      "sourceSha256": "bdf0e862405d82b411f16bbf8965f05fcb8cc677bb74c35b8dd1c9e198315ff1",
+      "disposition": "omitted",
+      "reason": "Original compiled reference; rebuilt from retained source by Collection."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/package-lock.json",
+      "sourcePath": "CRAVE-Before-the-First-Bite/package-lock.json",
+      "bytes": 26315,
+      "sourceBytes": 26315,
+      "sha256": "bdbebc8f55f4f596ea211cc4477c3cd7bfaf3e34332230467431656b6c77d9c7",
+      "sourceSha256": "bdbebc8f55f4f596ea211cc4477c3cd7bfaf3e34332230467431656b6c77d9c7",
+      "disposition": "omitted",
+      "reason": "Standalone package/lock; reuse the Collection locked dependency graph."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/package.json",
+      "sourcePath": "CRAVE-Before-the-First-Bite/package.json",
+      "bytes": 403,
+      "sourceBytes": 403,
+      "sha256": "86fee3c6fa436544711d5fe0128a89eb0c397dc219587e7ddf89a9682e4b9609",
+      "sourceSha256": "86fee3c6fa436544711d5fe0128a89eb0c397dc219587e7ddf89a9682e4b9609",
+      "disposition": "omitted",
+      "reason": "Standalone package/lock; reuse the Collection locked dependency graph."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/scripts/preview.mjs",
+      "sourcePath": "CRAVE-Before-the-First-Bite/scripts/preview.mjs",
+      "bytes": 12075,
+      "sourceBytes": 12075,
+      "sha256": "fb99ba5199d14833a335c89b2aa1b9c47dc61fc688d54f7a65d2c21da39a73a6",
+      "sourceSha256": "fb99ba5199d14833a335c89b2aa1b9c47dc61fc688d54f7a65d2c21da39a73a6",
+      "disposition": "omitted",
+      "reason": "Standalone original preview server; root Vite serves the independent page."
+    },
+    {
+      "source": "CRAVE-Before-the-First-Bite/vite.config.js",
+      "sourcePath": "CRAVE-Before-the-First-Bite/vite.config.js",
+      "bytes": 253,
+      "sourceBytes": 253,
+      "sha256": "977e9c51ea4fb0895a0ce2d424bf44e308c03480eca9ecef2e34c9841ff24975",
+      "sourceSha256": "977e9c51ea4fb0895a0ce2d424bf44e308c03480eca9ecef2e34c9841ff24975",
+      "disposition": "omitted",
+      "reason": "Standalone build configuration; Collection owns multi-page build configuration."
+    }
+  ],
+  "note": "This source/current map intentionally excludes its own generated hash and separate generated-record hashes to avoid a circular manifest. Complete generated target hashes are in the root intake delivery record."
+}

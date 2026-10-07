@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T10:18:27Z",
+  "title": "Design System: GRID",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.000% 0.006597 106.521)",
+          "oklch(26.429% 0.006597 106.521)",
+          "oklch(37.857% 0.006597 106.521)",
+          "oklch(49.286% 0.006597 106.521)",
+          "oklch(60.714% 0.006597 106.521)",
+          "oklch(72.143% 0.006597 106.521)",
+          "oklch(83.571% 0.006597 106.521)",
+          "oklch(95.000% 0.006597 106.521)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.006746 135.008)",
+          "oklch(26.429% 0.006746 135.008)",
+          "oklch(37.857% 0.006746 135.008)",
+          "oklch(49.286% 0.006746 135.008)",
+          "oklch(60.714% 0.006746 135.008)",
+          "oklch(72.143% 0.006746 135.008)",
+          "oklch(83.571% 0.006746 135.008)",
+          "oklch(95.000% 0.006746 135.008)"
+        ]
+      },
+      "signal-red": {
+        "role": "primary",
+        "displayName": "Signal red",
+        "tonalRamp": [
+          "oklch(15.000% 0.203247 30.009)",
+          "oklch(26.429% 0.203247 30.009)",
+          "oklch(37.857% 0.203247 30.009)",
+          "oklch(49.286% 0.203247 30.009)",
+          "oklch(60.714% 0.203247 30.009)",
+          "oklch(72.143% 0.203247 30.009)",
+          "oklch(83.571% 0.203247 30.009)",
+          "oklch(95.000% 0.203247 30.009)"
+        ]
+      },
+      "muted-default": {
+        "role": "neutral",
+        "displayName": "Muted default",
+        "tonalRamp": [
+          "oklch(15.000% 0.009794 121.829)",
+          "oklch(26.429% 0.009794 121.829)",
+          "oklch(37.857% 0.009794 121.829)",
+          "oklch(49.286% 0.009794 121.829)",
+          "oklch(60.714% 0.009794 121.829)",
+          "oklch(72.143% 0.009794 121.829)",
+          "oklch(83.571% 0.009794 121.829)",
+          "oklch(95.000% 0.009794 121.829)"
+        ]
+      },
+      "line-default": {
+        "role": "neutral",
+        "displayName": "Line default",
+        "tonalRamp": [
+          "oklch(15.000% 0.009663 113.197)",
+          "oklch(26.429% 0.009663 113.197)",
+          "oklch(37.857% 0.009663 113.197)",
+          "oklch(49.286% 0.009663 113.197)",
+          "oklch(60.714% 0.009663 113.197)",
+          "oklch(72.143% 0.009663 113.197)",
+          "oklch(83.571% 0.009663 113.197)",
+          "oklch(95.000% 0.009663 113.197)"
+        ]
+      },
+      "pale-acid": {
+        "role": "primary",
+        "displayName": "Pale acid",
+        "tonalRamp": [
+          "oklch(15.000% 0.124955 109.081)",
+          "oklch(26.429% 0.124955 109.081)",
+          "oklch(37.857% 0.124955 109.081)",
+          "oklch(49.286% 0.124955 109.081)",
+          "oklch(60.714% 0.124955 109.081)",
+          "oklch(72.143% 0.124955 109.081)",
+          "oklch(83.571% 0.124955 109.081)",
+          "oklch(95.000% 0.124955 109.081)"
+        ]
+      },
+      "vermilion": {
+        "role": "primary",
+        "displayName": "Vermilion",
+        "tonalRamp": [
+          "oklch(15.000% 0.216206 30.343)",
+          "oklch(26.429% 0.216206 30.343)",
+          "oklch(37.857% 0.216206 30.343)",
+          "oklch(49.286% 0.216206 30.343)",
+          "oklch(60.714% 0.216206 30.343)",
+          "oklch(72.143% 0.216206 30.343)",
+          "oklch(83.571% 0.216206 30.343)",
+          "oklch(95.000% 0.216206 30.343)"
+        ]
+      },
+      "warm-white": {
+        "role": "neutral",
+        "displayName": "Warm white",
+        "tonalRamp": [
+          "oklch(15.000% 0.019180 72.579)",
+          "oklch(26.429% 0.019180 72.579)",
+          "oklch(37.857% 0.019180 72.579)",
+          "oklch(49.286% 0.019180 72.579)",
+          "oklch(60.714% 0.019180 72.579)",
+          "oklch(72.143% 0.019180 72.579)",
+          "oklch(83.571% 0.019180 72.579)",
+          "oklch(95.000% 0.019180 72.579)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory",
+        "tonalRamp": [
+          "oklch(15.000% 0.012705 86.830)",
+          "oklch(26.429% 0.012705 86.830)",
+          "oklch(37.857% 0.012705 86.830)",
+          "oklch(49.286% 0.012705 86.830)",
+          "oklch(60.714% 0.012705 86.830)",
+          "oklch(72.143% 0.012705 86.830)",
+          "oklch(83.571% 0.012705 86.830)",
+          "oklch(95.000% 0.012705 86.830)"
+        ]
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Cobalt",
+        "tonalRamp": [
+          "oklch(15.000% 0.188550 263.165)",
+          "oklch(26.429% 0.188550 263.165)",
+          "oklch(37.857% 0.188550 263.165)",
+          "oklch(49.286% 0.188550 263.165)",
+          "oklch(60.714% 0.188550 263.165)",
+          "oklch(72.143% 0.188550 263.165)",
+          "oklch(83.571% 0.188550 263.165)",
+          "oklch(95.000% 0.188550 263.165)"
+        ]
+      },
+      "acid-yellow": {
+        "role": "primary",
+        "displayName": "Acid yellow",
+        "tonalRamp": [
+          "oklch(15.000% 0.202343 114.826)",
+          "oklch(26.429% 0.202343 114.826)",
+          "oklch(37.857% 0.202343 114.826)",
+          "oklch(49.286% 0.202343 114.826)",
+          "oklch(60.714% 0.202343 114.826)",
+          "oklch(72.143% 0.202343 114.826)",
+          "oklch(83.571% 0.202343 114.826)",
+          "oklch(95.000% 0.202343 114.826)"
+        ]
+      },
+      "raw-ink": {
+        "role": "neutral",
+        "displayName": "Raw ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.008633 129.012)",
+          "oklch(26.429% 0.008633 129.012)",
+          "oklch(37.857% 0.008633 129.012)",
+          "oklch(49.286% 0.008633 129.012)",
+          "oklch(60.714% 0.008633 129.012)",
+          "oklch(72.143% 0.008633 129.012)",
+          "oklch(83.571% 0.008633 129.012)",
+          "oklch(95.000% 0.008633 129.012)"
+        ]
+      },
+      "electronic-black": {
+        "role": "neutral",
+        "displayName": "Electronic black",
+        "tonalRamp": [
+          "oklch(15.000% 0.011889 151.247)",
+          "oklch(26.429% 0.011889 151.247)",
+          "oklch(37.857% 0.011889 151.247)",
+          "oklch(49.286% 0.011889 151.247)",
+          "oklch(60.714% 0.011889 151.247)",
+          "oklch(72.143% 0.011889 151.247)",
+          "oklch(83.571% 0.011889 151.247)",
+          "oklch(95.000% 0.011889 151.247)"
+        ]
+      },
+      "cool-white": {
+        "role": "neutral",
+        "displayName": "Cool white",
+        "tonalRamp": [
+          "oklch(15.000% 0.017689 131.882)",
+          "oklch(26.429% 0.017689 131.882)",
+          "oklch(37.857% 0.017689 131.882)",
+          "oklch(49.286% 0.017689 131.882)",
+          "oklch(60.714% 0.017689 131.882)",
+          "oklch(72.143% 0.017689 131.882)",
+          "oklch(83.571% 0.017689 131.882)",
+          "oklch(95.000% 0.017689 131.882)"
+        ]
+      },
+      "phosphor-green": {
+        "role": "tertiary",
+        "displayName": "Phosphor green",
+        "tonalRamp": [
+          "oklch(15.000% 0.154005 147.981)",
+          "oklch(26.429% 0.154005 147.981)",
+          "oklch(37.857% 0.154005 147.981)",
+          "oklch(49.286% 0.154005 147.981)",
+          "oklch(60.714% 0.154005 147.981)",
+          "oklch(72.143% 0.154005 147.981)",
+          "oklch(83.571% 0.154005 147.981)",
+          "oklch(95.000% 0.154005 147.981)"
+        ]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "Amber",
+        "tonalRamp": [
+          "oklch(15.000% 0.116975 82.869)",
+          "oklch(26.429% 0.116975 82.869)",
+          "oklch(37.857% 0.116975 82.869)",
+          "oklch(49.286% 0.116975 82.869)",
+          "oklch(60.714% 0.116975 82.869)",
+          "oklch(72.143% 0.116975 82.869)",
+          "oklch(83.571% 0.116975 82.869)",
+          "oklch(95.000% 0.116975 82.869)"
+        ]
+      },
+      "interface-field": {
+        "role": "neutral",
+        "displayName": "Interface field",
+        "tonalRamp": [
+          "oklch(15.000% 0.007026 124.455)",
+          "oklch(26.429% 0.007026 124.455)",
+          "oklch(37.857% 0.007026 124.455)",
+          "oklch(49.286% 0.007026 124.455)",
+          "oklch(60.714% 0.007026 124.455)",
+          "oklch(72.143% 0.007026 124.455)",
+          "oklch(83.571% 0.007026 124.455)",
+          "oklch(95.000% 0.007026 124.455)"
+        ]
+      },
+      "interface-ink": {
+        "role": "neutral",
+        "displayName": "Interface ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.013205 140.453)",
+          "oklch(26.429% 0.013205 140.453)",
+          "oklch(37.857% 0.013205 140.453)",
+          "oklch(49.286% 0.013205 140.453)",
+          "oklch(60.714% 0.013205 140.453)",
+          "oklch(72.143% 0.013205 140.453)",
+          "oklch(83.571% 0.013205 140.453)",
+          "oklch(95.000% 0.013205 140.453)"
+        ]
+      },
+      "functional-blue": {
+        "role": "secondary",
+        "displayName": "Functional blue",
+        "tonalRamp": [
+          "oklch(15.000% 0.220460 263.817)",
+          "oklch(26.429% 0.220460 263.817)",
+          "oklch(37.857% 0.220460 263.817)",
+          "oklch(49.286% 0.220460 263.817)",
+          "oklch(60.714% 0.220460 263.817)",
+          "oklch(72.143% 0.220460 263.817)",
+          "oklch(83.571% 0.220460 263.817)",
+          "oklch(95.000% 0.220460 263.817)"
+        ]
+      },
+      "on-blue": {
+        "role": "neutral",
+        "displayName": "On blue",
+        "tonalRamp": [
+          "oklch(15.000% 0.000000 0.000)",
+          "oklch(26.429% 0.000000 0.000)",
+          "oklch(37.857% 0.000000 0.000)",
+          "oklch(49.286% 0.000000 0.000)",
+          "oklch(60.714% 0.000000 0.000)",
+          "oklch(72.143% 0.000000 0.000)",
+          "oklch(83.571% 0.000000 0.000)",
+          "oklch(95.000% 0.000000 0.000)"
+        ]
+      },
+      "lilac": {
+        "role": "neutral",
+        "displayName": "Lilac",
+        "tonalRamp": [
+          "oklch(15.000% 0.016313 297.518)",
+          "oklch(26.429% 0.016313 297.518)",
+          "oklch(37.857% 0.016313 297.518)",
+          "oklch(49.286% 0.016313 297.518)",
+          "oklch(60.714% 0.016313 297.518)",
+          "oklch(72.143% 0.016313 297.518)",
+          "oklch(83.571% 0.016313 297.518)",
+          "oklch(95.000% 0.016313 297.518)"
+        ]
+      },
+      "variable-ink": {
+        "role": "neutral",
+        "displayName": "Variable ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.015657 290.742)",
+          "oklch(26.429% 0.015657 290.742)",
+          "oklch(37.857% 0.015657 290.742)",
+          "oklch(49.286% 0.015657 290.742)",
+          "oklch(60.714% 0.015657 290.742)",
+          "oklch(72.143% 0.015657 290.742)",
+          "oklch(83.571% 0.015657 290.742)",
+          "oklch(95.000% 0.015657 290.742)"
+        ]
+      },
+      "violet": {
+        "role": "secondary",
+        "displayName": "Violet",
+        "tonalRamp": [
+          "oklch(15.000% 0.210487 292.733)",
+          "oklch(26.429% 0.210487 292.733)",
+          "oklch(37.857% 0.210487 292.733)",
+          "oklch(49.286% 0.210487 292.733)",
+          "oklch(60.714% 0.210487 292.733)",
+          "oklch(72.143% 0.210487 292.733)",
+          "oklch(83.571% 0.210487 292.733)",
+          "oklch(95.000% 0.210487 292.733)"
+        ]
+      },
+      "synthesis-paper": {
+        "role": "neutral",
+        "displayName": "Synthesis paper",
+        "tonalRamp": [
+          "oklch(15.000% 0.011107 89.723)",
+          "oklch(26.429% 0.011107 89.723)",
+          "oklch(37.857% 0.011107 89.723)",
+          "oklch(49.286% 0.011107 89.723)",
+          "oklch(60.714% 0.011107 89.723)",
+          "oklch(72.143% 0.011107 89.723)",
+          "oklch(83.571% 0.011107 89.723)",
+          "oklch(95.000% 0.011107 89.723)"
+        ]
+      },
+      "synthesis-ink": {
+        "role": "neutral",
+        "displayName": "Synthesis ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.007832 118.485)",
+          "oklch(26.429% 0.007832 118.485)",
+          "oklch(37.857% 0.007832 118.485)",
+          "oklch(49.286% 0.007832 118.485)",
+          "oklch(60.714% 0.007832 118.485)",
+          "oklch(72.143% 0.007832 118.485)",
+          "oklch(83.571% 0.007832 118.485)",
+          "oklch(95.000% 0.007832 118.485)"
+        ]
+      },
+      "orange-red": {
+        "role": "primary",
+        "displayName": "Orange red",
+        "tonalRamp": [
+          "oklch(15.000% 0.184471 37.241)",
+          "oklch(26.429% 0.184471 37.241)",
+          "oklch(37.857% 0.184471 37.241)",
+          "oklch(49.286% 0.184471 37.241)",
+          "oklch(60.714% 0.184471 37.241)",
+          "oklch(72.143% 0.184471 37.241)",
+          "oklch(83.571% 0.184471 37.241)",
+          "oklch(95.000% 0.184471 37.241)"
+        ]
+      },
+      "sheet-paper": {
+        "role": "neutral",
+        "displayName": "Sheet paper",
+        "tonalRamp": [
+          "oklch(15.000% 0.008018 98.879)",
+          "oklch(26.429% 0.008018 98.879)",
+          "oklch(37.857% 0.008018 98.879)",
+          "oklch(49.286% 0.008018 98.879)",
+          "oklch(60.714% 0.008018 98.879)",
+          "oklch(72.143% 0.008018 98.879)",
+          "oklch(83.571% 0.008018 98.879)",
+          "oklch(95.000% 0.008018 98.879)"
+        ]
+      },
+      "sheet-ink": {
+        "role": "neutral",
+        "displayName": "Sheet ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.013770 120.580)",
+          "oklch(26.429% 0.013770 120.580)",
+          "oklch(37.857% 0.013770 120.580)",
+          "oklch(49.286% 0.013770 120.580)",
+          "oklch(60.714% 0.013770 120.580)",
+          "oklch(72.143% 0.013770 120.580)",
+          "oklch(83.571% 0.013770 120.580)",
+          "oklch(95.000% 0.013770 120.580)"
+        ]
+      },
+      "sheet-muted": {
+        "role": "neutral",
+        "displayName": "Sheet muted",
+        "tonalRamp": [
+          "oklch(15.000% 0.015834 116.183)",
+          "oklch(26.429% 0.015834 116.183)",
+          "oklch(37.857% 0.015834 116.183)",
+          "oklch(49.286% 0.015834 116.183)",
+          "oklch(60.714% 0.015834 116.183)",
+          "oklch(72.143% 0.015834 116.183)",
+          "oklch(83.571% 0.015834 116.183)",
+          "oklch(95.000% 0.015834 116.183)"
+        ]
+      },
+      "sheet-line": {
+        "role": "neutral",
+        "displayName": "Sheet line",
+        "tonalRamp": [
+          "oklch(15.000% 0.012271 106.658)",
+          "oklch(26.429% 0.012271 106.658)",
+          "oklch(37.857% 0.012271 106.658)",
+          "oklch(49.286% 0.012271 106.658)",
+          "oklch(60.714% 0.012271 106.658)",
+          "oklch(72.143% 0.012271 106.658)",
+          "oklch(83.571% 0.012271 106.658)",
+          "oklch(95.000% 0.012271 106.658)"
+        ]
+      },
+      "sheet-current": {
+        "role": "neutral",
+        "displayName": "Sheet current",
+        "tonalRamp": [
+          "oklch(15.000% 0.189918 30.211)",
+          "oklch(26.429% 0.189918 30.211)",
+          "oklch(37.857% 0.189918 30.211)",
+          "oklch(49.286% 0.189918 30.211)",
+          "oklch(60.714% 0.189918 30.211)",
+          "oklch(72.143% 0.189918 30.211)",
+          "oklch(83.571% 0.189918 30.211)",
+          "oklch(95.000% 0.189918 30.211)"
+        ]
+      },
+      "sheet-link-hover": {
+        "role": "neutral",
+        "displayName": "Sheet link hover",
+        "tonalRamp": [
+          "oklch(15.000% 0.180891 31.514)",
+          "oklch(26.429% 0.180891 31.514)",
+          "oklch(37.857% 0.180891 31.514)",
+          "oklch(49.286% 0.180891 31.514)",
+          "oklch(60.714% 0.180891 31.514)",
+          "oklch(72.143% 0.180891 31.514)",
+          "oklch(83.571% 0.180891 31.514)",
+          "oklch(95.000% 0.180891 31.514)"
+        ]
+      },
+      "modal-scrim": {
+        "role": "neutral",
+        "displayName": "Modal scrim",
+        "tonalRamp": [
+          "oklch(15.000% 0.009744 137.684 / .55)",
+          "oklch(26.429% 0.009744 137.684 / .55)",
+          "oklch(37.857% 0.009744 137.684 / .55)",
+          "oklch(49.286% 0.009744 137.684 / .55)",
+          "oklch(60.714% 0.009744 137.684 / .55)",
+          "oklch(72.143% 0.009744 137.684 / .55)",
+          "oklch(83.571% 0.009744 137.684 / .55)",
+          "oklch(95.000% 0.009744 137.684 / .55)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display-grotesk": {
+        "displayName": "Display grotesk",
+        "purpose": "Live heading: size, tracking, leading and four axes come from the resolved scene; no global display size."
+      },
+      "display-editorial": {
+        "displayName": "Display editorial",
+        "purpose": "Regular Instrument Serif heading in Editorial; scene-specific serif subtitles are separately measured."
+      },
+      "display-electronic": {
+        "displayName": "Display electronic",
+        "purpose": "Regular IBM Plex Mono heading in Electronic, with a live dot-pattern treatment."
+      },
+      "body-base": {
+        "displayName": "Body base",
+        "purpose": "Inherited page body size before scene and native-layout overrides."
+      },
+      "body-interface": {
+        "displayName": "Body interface",
+        "purpose": "Wide native Interface body rule; narrower container rules are separate."
+      },
+      "headline-sheet": {
+        "displayName": "Headline sheet",
+        "purpose": "Index, Rules and About headings, with phone overrides."
+      },
+      "title-system": {
+        "displayName": "Title system",
+        "purpose": "Fixed footer current-system name."
+      },
+      "label-thesis": {
+        "displayName": "Label thesis",
+        "purpose": "Uppercase header thesis, hidden by the compact-chrome breakpoint."
+      },
+      "label-action": {
+        "displayName": "Label action",
+        "purpose": "Unfilled header text-button label. Experiment Reset uses a smaller rule."
+      },
+      "label-specimen-fallback": {
+        "displayName": "Label specimen fallback",
+        "purpose": "Static Look again link; live scenes rewrite its size."
+      },
+      "label-interface-action": {
+        "displayName": "Label interface action",
+        "purpose": "Filled action inside native Interface Grid."
+      },
+      "metadata-fallback": {
+        "displayName": "Metadata fallback",
+        "purpose": "Static metadata/time-place style; live scenes rewrite size and leading."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "single-scroll-clock",
+        "value": "gsap.ticker → lenis.raf(seconds * 1000) → draw()",
+        "purpose": "One application clock and one Lenis smoother; ScrollTrigger maps scroll to deterministic scene progress."
+      },
+      {
+        "name": "wheel-smoothing",
+        "value": "duration: .85; wheelMultiplier: .9; autoRaf: false; syncTouch: false",
+        "purpose": "Actual wheel configuration. Reduced motion disables smoothWheel."
+      },
+      {
+        "name": "scene-interval",
+        "value": "refine: 0–.36; handoff: .36–1",
+        "purpose": "Each local scene coordinate refines its own composition before handing content to the next measured endpoint."
+      },
+      {
+        "name": "alignment-ease",
+        "value": "1 - (1 - t) ** 4",
+        "purpose": "System and International settle rapidly."
+      },
+      {
+        "name": "basel-tension",
+        "value": "t < .72 ? cubic(t / .72) * 1.025 : mix(1.025, 1, smooth((t - .72) / .28))",
+        "purpose": "Controlled overshoot into Basel."
+      },
+      {
+        "name": "editorial-pace",
+        "value": "smooth(smooth(t))",
+        "purpose": "Softer handoff into Editorial."
+      },
+      {
+        "name": "raw-cut",
+        "value": "t < .2 ? t * .1 : .02 + .98 * (1 - (1 - range(.2, 1, t)) ** 6)",
+        "purpose": "Short delay followed by a fast structural change."
+      },
+      {
+        "name": "electronic-quantization",
+        "value": "t === 1 ? 1 : Math.floor(smooth(t) * 28) / 28",
+        "purpose": "Discrete scroll-driven steps; a stopped coordinate remains still."
+      },
+      {
+        "name": "geometric-waypoints",
+        "value": "mix(last, target, smooth(range(lastT, at, t)))",
+        "purpose": "Pure routes through immutable endpoints and explicit waypoints preserve reverse playback."
+      },
+      {
+        "name": "chapter-navigation",
+        "value": "Math.min(1.8, .7 + Math.abs(target - coordinate) * .12) seconds",
+        "purpose": "Chapter, action and keyboard navigation use the same scroll authority."
+      },
+      {
+        "name": "control-hover",
+        "value": ".2s ease",
+        "purpose": "Text-button underlines, chapter ticks and icons."
+      },
+      {
+        "name": "specimen-action-hover",
+        "value": ".23s ease",
+        "purpose": "The action underline grows from .28 scale to full width."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "round(coordinate); smoothWheel: false; transition: none; animation: none",
+        "purpose": "System or in-app preference selects direct compositions and keeps controls available."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-viewport",
+        "value": "(max-width: 600px)"
+      },
+      {
+        "name": "compact-chrome",
+        "value": "(max-width: 1000px)"
+      },
+      {
+        "name": "wide-chrome",
+        "value": "(min-width: 2000px)"
+      },
+      {
+        "name": "short-landscape",
+        "value": "(max-height: 650px) and (min-width: 601px)"
+      },
+      {
+        "name": "interface-tablet-container",
+        "value": "@container (max-width: 650px)"
+      },
+      {
+        "name": "interface-phone-container",
+        "value": "@container (max-width: 380px)"
+      },
+      {
+        "name": "portrait-tablet-stage",
+        "value": "!mobile && stageWidth / stageHeight < 1.1"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Text button",
+      "kind": "button",
+      "description": "The existing Index control, including its count, hover underline and keyboard focus.",
+      "html": "<button type=\"button\" class=\"ds-text-button\">Index <span class=\"ds-index-count\">12</span></button>",
+      "css": ".ds-text-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:40px;font-family:var(--grotesk,'Roboto Flex',Arial,sans-serif);font-size:clamp(12px,.82vw,18px);position:relative;border:0;background:none;color:var(--ink,#121411);cursor:pointer;padding:0}.ds-text-button::after{position:absolute;content:\"\";height:1px;background:currentColor;left:0;right:0;bottom:5px;transform:scaleX(0);transform-origin:left;transition:transform .2s ease}.ds-text-button:hover::after{transform:scaleX(1)}.ds-index-count{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:.67em;align-self:flex-start;margin-top:7px}.ds-text-button:focus-visible{outline:2px solid var(--ink,#121411);outline-offset:5px}@media(max-width:600px){.ds-text-button{font-size:12px;min-height:36px}}@media(prefers-reduced-motion:reduce){.ds-text-button::after{transition:none}}",
+      "refersTo": "text-button"
+    },
+    {
+      "name": "Look again link",
+      "kind": "button",
+      "description": "The persistent monospaced action, isolated from the running scene geometry. The scene supplies its color and destination.",
+      "html": "<a class=\"ds-action\" href=\"#zero\">Look again <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M4 16 16 4M4 4h12v12\"/></svg></a>",
+      "css": ".ds-action{position:relative;display:inline-flex;align-items:center;gap:12px;white-space:nowrap;text-transform:uppercase;font:12px/1 var(--mono,'IBM Plex Mono',monospace);min-height:40px;color:var(--accent,#d63121);text-decoration:none}.ds-action::after{content:\"\";position:absolute;bottom:5px;left:0;width:calc(100% - 1px);height:1px;background:currentColor;transform:scaleX(.28);transform-origin:0 50%;transition:transform .23s ease}.ds-action:hover::after{transform:scaleX(1)}.ds-action svg{display:block;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:square;pointer-events:none;width:15px;height:15px;flex:none}.ds-action:focus-visible{outline:2px solid var(--ink,#121411);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-action::after{transition:none}}",
+      "refersTo": "look-again-fallback"
+    },
+    {
+      "name": "Interface action",
+      "kind": "button",
+      "description": "The same Look again link in the native Interface layout, using the source wide-frame padding and filled surface.",
+      "html": "<a class=\"ds-interface-action\" href=\"#zero\">Look again <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M4 16 16 4M4 4h12v12\"/></svg></a>",
+      "css": ".ds-interface-action{position:relative;display:inline-flex;align-items:center;gap:12px;white-space:nowrap;text-transform:uppercase;text-decoration:none;font:clamp(11px,1.3cqw,19px)/1 var(--mono,'IBM Plex Mono',monospace);background:#194fdb;color:#fff;padding:12px 16px;min-height:44px;width:100%;justify-content:space-between;align-self:end;justify-self:stretch}.ds-interface-action svg{display:block;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:square;pointer-events:none;width:15px;height:15px;flex:none}.ds-interface-action:focus-visible{outline:2px solid var(--ink,#121411);outline-offset:5px}",
+      "refersTo": "interface-action"
+    },
+    {
+      "name": "Chapter rail",
+      "kind": "nav",
+      "description": "All twelve current scene destinations, showing International as the active step.",
+      "html": "<nav class=\"ds-chapter-rail\" aria-label=\"Choose a visual system\"><button type=\"button\" aria-label=\"00 — Zero\" title=\"Zero\">00</button><button type=\"button\" aria-label=\"01 — System\" title=\"System\">01</button><button type=\"button\" aria-label=\"02 — International\" title=\"International\" aria-current=\"step\">02</button><button type=\"button\" aria-label=\"03 — Basel / Tension\" title=\"Basel / Tension\">03</button><button type=\"button\" aria-label=\"04 — Type as image\" title=\"Type as image\">04</button><button type=\"button\" aria-label=\"05 — Editorial\" title=\"Editorial\">05</button><button type=\"button\" aria-label=\"06 — Raw\" title=\"Raw\">06</button><button type=\"button\" aria-label=\"07 — Electronic\" title=\"Electronic\">07</button><button type=\"button\" aria-label=\"08 — Interface\" title=\"Interface\">08</button><button type=\"button\" aria-label=\"09 — Variable\" title=\"Variable\">09</button><button type=\"button\" aria-label=\"10 — Synthesis\" title=\"Synthesis\">10</button><button type=\"button\" aria-label=\"11 — No grid\" title=\"No grid\">11</button></nav>",
+      "css": ".ds-chapter-rail{display:flex;align-items:center;flex:0 1 540px;height:48px;margin-left:auto;margin-right:auto}.ds-chapter-rail button{flex:1;min-width:26px;min-height:46px;font:10px/1 var(--mono,'IBM Plex Mono',monospace);position:relative;color:var(--muted,#5a5c56);border:0;background:none;padding:0;cursor:pointer}.ds-chapter-rail button::before{content:\"\";position:absolute;left:0;right:0;top:2px;height:1px;background:var(--line,#c7c8c1)}.ds-chapter-rail button::after{content:\"\";position:absolute;left:calc(50% - 2px);top:0;width:4px;height:10px;background:var(--muted,#5a5c56);transform:scaleY(.5);transform-origin:top;transition:transform .2s ease,background .2s ease}.ds-chapter-rail button:hover,.ds-chapter-rail button[aria-current=\"step\"]{color:var(--ink,#121411)}.ds-chapter-rail button[aria-current=\"step\"]::after{background:var(--accent,#d63121);height:10px;transform:scaleY(1)}.ds-chapter-rail button:focus-visible{outline:2px solid var(--ink,#121411);outline-offset:5px}@media(max-width:600px){.ds-chapter-rail{height:35px;width:100%}.ds-chapter-rail button{min-width:20px;height:34px;min-height:34px;font-size:8px}.ds-chapter-rail button::after{width:3px;left:calc(50% - 1.5px);height:8px}.ds-chapter-rail button[aria-current=\"step\"]::after{height:8px}}@media(prefers-reduced-motion:reduce){.ds-chapter-rail button::after{transition:none}}"
+    },
+    {
+      "name": "Variable range control",
+      "kind": "input",
+      "description": "The actual Weight range at the initial Variable value. The application binds its output and the real font axis.",
+      "html": "<label class=\"ds-axis-label\" for=\"ds-weight\"><span>Weight <output>390</output></span><input class=\"ds-range\" id=\"ds-weight\" type=\"range\" min=\"100\" max=\"1000\" value=\"390\" step=\"1\"/></label>",
+      "css": ".ds-axis-label{font-family:var(--mono,'IBM Plex Mono',monospace);font-size:clamp(10px,.78vw,15px);color:var(--ink,#121411)}.ds-axis-label>span{display:flex;justify-content:space-between;gap:12px}.ds-axis-label output{font-variant-numeric:tabular-nums;color:var(--muted,#5a5c56)}.ds-range{appearance:none;-webkit-appearance:none;display:block;height:32px;min-width:0;width:100%;margin:0;background:transparent;cursor:ew-resize;accent-color:var(--ink,#121411)}.ds-range::-webkit-slider-runnable-track{height:1px;background:var(--muted,#5a5c56)}.ds-range::-webkit-slider-thumb{appearance:none;width:9px;height:18px;margin-top:-8px;border:0;border-radius:0;background:var(--ink,#121411)}.ds-range::-moz-range-track{height:1px;background:var(--muted,#5a5c56)}.ds-range::-moz-range-thumb{width:9px;height:18px;border:0;border-radius:0;background:var(--ink,#121411)}.ds-range:focus-visible{outline:2px solid var(--ink,#121411);outline-offset:5px}",
+      "refersTo": "range-thumb"
+    },
+    {
+      "name": "Registration mark",
+      "kind": "custom",
+      "description": "The source circle and crossing axes; the running renderer contracts this same SVG into the opening and closing point.",
+      "html": "<svg class=\"ds-registration\" viewBox=\"0 0 100 100\" role=\"img\" aria-label=\"A registration mark: a circle and two crossing axes\"><circle cx=\"50\" cy=\"50\" r=\"31\"/><path d=\"M50 4v92M4 50h92\"/></svg>",
+      "css": ".ds-registration{display:block;width:42px;height:42px;fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:square;overflow:visible;color:var(--ink,#121411)}.ds-registration *{vector-effect:non-scaling-stroke}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Content stays. System changes.",
+    "overview": "GRID — The Architecture of Visual Order makes a visual system observable. One persistent semantic composition changes its hierarchy, rhythm, type, crop and material across twelve systems. The same word, subtitle, number, paragraph, photograph, metadata, time/place, action and registration mark remain recognizable as their relationships change. The named Swiss, Basel, editorial, raw, electronic, interface and variable directions are binding parts of this work. [Product commitments](PRODUCT.md) and the [direction contract](docs/DIRECTION.md) establish this visual authority.\n\nQuiet, instrument-like chrome surrounds an expansive typographic field. The work ranges from a near-empty opening to dense, cropped letterforms, while navigation and reading text retain their practical roles. Precision is visible in baselines, hard image edges, narrow rules, deliberate spacing and the route each element takes through a change. The photograph supplies one constant architectural subject; live typography, layout and processing supply the variation.\n\nMotion belongs to the composition. Scroll reveals the same elements moving through intermediate relationships, with different timing characters for alignment, tension, editorial pacing and quantization. A stopped coordinate produces a stopped composition. Reduced motion retains the compositions and direct navigation. The final composition keeps its established content positions while the guides leave and the registration mark returns to its opening anchor. [Scene definitions](src/scenes.ts), [rendering](src/renderer.ts) and [scroll/control orchestration](src/main.ts) are the implementation sources.",
+    "keyCharacteristics": [
+      "One persistent article with nine content nodes and one semantic heading.",
+      "Twelve distinct systems sharing a fixed content set.",
+      "Local grotesk, serif and monospaced type with real variable-font axes.",
+      "Flat color fields, measured rules, hard photographic crops and one registration mark.",
+      "Separate desktop and mobile compositions, plus real container-driven reflow.",
+      "Reversible, deterministic motion governed by one scroll authority and one clock."
+    ],
+    "rules": [
+      {
+        "name": "The Scene Palette Rule",
+        "body": "Keep each scene's paper, ink and accent relationship intact. Do not collect the sequence's accents into a simultaneous multicolor interface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Surface Contrast Rule",
+        "body": "Evaluate readable text against its composited surface, including the fading Raw panel, Interface frame and partially filled action. Root background color alone is insufficient during a handoff.",
+        "section": "colors"
+      },
+      {
+        "name": "The Real Type Rule",
+        "body": "Change the four real Roboto Flex axes on the existing heading. Do not simulate width with a scaled screenshot or replace the variable font with weight-only presets.",
+        "section": "typography"
+      },
+      {
+        "name": "The Readable Register Rule",
+        "body": "Cropping and letter displacement may affect the display word. Keep the complete subtitle, paragraph, metadata, time/place and action readable in their own spatial register.",
+        "section": "typography"
+      },
+      {
+        "name": "The Persistent Content Rule",
+        "body": "Preserve the identity and text of the nine content nodes. A new visual rule changes their relationships, not the content tree.",
+        "section": "layout"
+      },
+      {
+        "name": "The Actual Reflow Rule",
+        "body": "Interface must change real container width and Grid layout. Preserve its measured text wrapping and media rearrangement through both user control and scene handoff.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Use the existing field, seam, rule, crop and backdrop vocabulary to separate roles. Do not add ambient shadows, lifted cards or glass effects to this system.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Source Shape Rule",
+        "body": "Build lettering, guides, controls and geometric marks in HTML, CSS and SVG. Composition-study bitmaps do not become live interface elements.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** preserve one article, one semantic heading and the nine persistent specimen nodes.",
+      "**Do** keep each scene's authored palette, type roles and spatial relationships distinct.",
+      "**Do** keep readable information and the action complete while the display word experiments with crop, scale and offset.",
+      "**Do** compose phone layouts independently and preserve portrait-tablet page relationships.",
+      "**Do** use real CSS Grid and container queries for Interface, including measured transition endpoints.",
+      "**Do** interpolate the four real Roboto Flex axes and display their actual values in the controls.",
+      "**Do** evaluate reading text and the transitioning action against their composited surfaces.",
+      "**Do** retain deterministic reverse motion, direct reduced-motion navigation and the semantic static fallback.",
+      "**Do** retain the same photograph, attribution, local font assets and registration geometry."
+    ],
+    "donts": [
+      "**Don't** replace scene changes with separate pages, duplicate content trees or whole-page crossfades.",
+      "**Don't** define one display font size, type family or card layout for all twelve systems.",
+      "**Don't** imitate responsive behavior by scaling a screenshot or the entire composition as one object.",
+      "**Don't** accumulate transforms, invent a second smoother or add an independent animation clock.",
+      "**Don't** let a photographic frame, folio or moving action cover the readable information it passes.",
+      "**Don't** add shadows, rounded cards, glass surfaces or decorative imagery outside the established vocabulary.",
+      "**Don't** convert composition-study imagery into live typography, navigation or geometric UI.",
+      "**Don't** move the final title, subtitle, photograph or information merely because the guides disappear.",
+      "**Don't** treat palette swatches or sampled contrast safeguards as a blanket accessibility certification."
+    ]
+  }
+}

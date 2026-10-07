@@ -1,0 +1,1378 @@
+{
+  "archive": "GRID-The-Architecture-of-Visual-Order.zip",
+  "bytes": 22328651,
+  "sha256": "a482b66fca3ce9f76fbf08766e211005312770b4dad10b8290c75ca12f320fbc",
+  "modifiedUtc": "2026-10-07T10:24:58.146516+00:00",
+  "entryCount": 76,
+  "entries": [
+    {
+      "path": "GRID/.gitignore",
+      "bytes": 76,
+      "sha256": "6a3f42856de9e484dee880300a130e2ceeffb00b1c910b8f02d0e817cb7e7a5b",
+      "directory": false
+    },
+    {
+      "path": "GRID/.impeccable/design.json",
+      "bytes": 36435,
+      "sha256": "9ec9ec837b507225affaa3d52da01079d6c8895961447cf9e1b8377d33eabab8",
+      "directory": false
+    },
+    {
+      "path": "GRID/DELIVERY-MANIFEST.json",
+      "bytes": 12413,
+      "sha256": "35870b157f82be0daffdff0bc6b8be1a52e0275e0fe63d0ebb537f36b29fc8d2",
+      "directory": false
+    },
+    {
+      "path": "GRID/DESIGN.md",
+      "bytes": 29734,
+      "sha256": "a694db48ed01b6314d88b8c65fb245efc0c22e44e886cca609e28a8280e1fc65",
+      "directory": false
+    },
+    {
+      "path": "GRID/PRODUCT.md",
+      "bytes": 2592,
+      "sha256": "f26ac6b248396c28c7ca07d7d4658866f65d06d40a20916053d7af292e713d3f",
+      "directory": false
+    },
+    {
+      "path": "GRID/README.md",
+      "bytes": 5419,
+      "sha256": "f1601f5dccddfda0908d821b0831dccf5b40c474d76fd84852cde6e730d752df",
+      "directory": false
+    },
+    {
+      "path": "GRID/START-GRID.cmd",
+      "bytes": 503,
+      "sha256": "7013b11a9b1b12fb9b69157dd34a60ceed3269075768e7e032f519bb0378ef8d",
+      "directory": false
+    },
+    {
+      "path": "GRID/START-GRID.sh",
+      "bytes": 320,
+      "sha256": "3b74abb5c3f34375bda75c1a825e486b098644df00d67c0957fe99d06cff58d6",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/assets/index-9bcW-kp7.css",
+      "bytes": 25425,
+      "sha256": "9d26363471156a8dd10ce12d0a68db8f96700d82f19aba577fc779e819ac4c86",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/assets/index-BLgvyZNF.js",
+      "bytes": 185116,
+      "sha256": "460297c903fc611b7dc39ef5fa911c3ce237c6cc4c268e63d4414af731f61dff",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/favicon.svg",
+      "bytes": 305,
+      "sha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/fonts/IBMPlexMono-Regular.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/fonts/InstrumentSerif-Regular.woff2",
+      "bytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/fonts/RobotoFlex-Latin.woff2",
+      "bytes": 249700,
+      "sha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/images/bw-stairs-original.jpg",
+      "bytes": 383888,
+      "sha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "directory": false
+    },
+    {
+      "path": "GRID/dist/index.html",
+      "bytes": 11750,
+      "sha256": "be0765efdbc316a154c73af12c458c0a97b19a89bed4f8e05ba49d499f70408d",
+      "directory": false
+    },
+    {
+      "path": "GRID/docs/DIRECTION.md",
+      "bytes": 1988,
+      "sha256": "5d261f0830bcba5729b6c2ea65f06d9b0409e20a002b8384aa5ec0aeb1679ee7",
+      "directory": false
+    },
+    {
+      "path": "GRID/docs/ENGINE.md",
+      "bytes": 4983,
+      "sha256": "8c0869120a1eb46bfdb1fc1090810071909b8ef909ff56705d74e9be4c762440",
+      "directory": false
+    },
+    {
+      "path": "GRID/docs/QA.md",
+      "bytes": 8251,
+      "sha256": "23d19947b88853849ba1f61a8be9d0d7922c938f0ec73efe22e17ea325f42db0",
+      "directory": false
+    },
+    {
+      "path": "GRID/docs/RESEARCH.md",
+      "bytes": 9119,
+      "sha256": "871e24211a73f0943a8c396cf5edae1e6984907a867ff4124e1edd197be88cd7",
+      "directory": false
+    },
+    {
+      "path": "GRID/docs/RULES.md",
+      "bytes": 10287,
+      "sha256": "095df60ca255d8f6224943d239b2036df26637fbba0f8e482cb122016c40ec40",
+      "directory": false
+    },
+    {
+      "path": "GRID/index.html",
+      "bytes": 11644,
+      "sha256": "cd7880a1d3e5b47a14f4cbae8bca3bced5a3ba61ccc1b480d5235cad811501dc",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/ASSET-PROVENANCE.json",
+      "bytes": 3494,
+      "sha256": "a6e67a6d65b893f7e6904a6cee0a6f85faa45346623be875996ffe27a46e33a5",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/GSAP-NOTICES.txt",
+      "bytes": 868,
+      "sha256": "9d5f2ab62ce953e0bc1fe3216e8f8474da11ccd4591799c70ecb7882a5d2fd28",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/IBMPlexMono-OFL.txt",
+      "bytes": 4364,
+      "sha256": "b5895d3f4ea58b2fc80c3041a8c855d372836c34950d6ebc6e3c8897e7b2c8fb",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/InstrumentSerif-OFL.txt",
+      "bytes": 4406,
+      "sha256": "03a0d23feada968b189fe795a5bc9c90dfe1d6f8426d8fca078d4bc90cd53f30",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/Lenis-MIT.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/PHOTO-ATTRIBUTION.md",
+      "bytes": 1138,
+      "sha256": "c52cf25d5fdc031506a5313d4cd601632737f44d934f5be6dc54e10ab8ec62e4",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/RobotoFlex-OFL.txt",
+      "bytes": 4396,
+      "sha256": "85b3673b033b95c028b04a8fac4878f877ffef9b0657e8a71457d7c3a7d57eac",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/THIRD-PARTY-NOTICES.md",
+      "bytes": 1529,
+      "sha256": "5634ed0caeb60c0eacef399ec13b97e90f0330ffb3bd11f7e22b875f43a0ed97",
+      "directory": false
+    },
+    {
+      "path": "GRID/licenses/Vite-NOTICES.txt",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "directory": false
+    },
+    {
+      "path": "GRID/package-lock.json",
+      "bytes": 38559,
+      "sha256": "1d2d929dbfa88024a5e40fce37aa6494614874a89334eb2d122b4f0cae0ae9ac",
+      "directory": false
+    },
+    {
+      "path": "GRID/package.json",
+      "bytes": 595,
+      "sha256": "ddca29766491b42bc72b827f38b73bba932862a04f1dbc5a46dbb221299c74dd",
+      "directory": false
+    },
+    {
+      "path": "GRID/public/favicon.svg",
+      "bytes": 305,
+      "sha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3",
+      "directory": false
+    },
+    {
+      "path": "GRID/public/fonts/IBMPlexMono-Regular.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "directory": false
+    },
+    {
+      "path": "GRID/public/fonts/InstrumentSerif-Regular.woff2",
+      "bytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "directory": false
+    },
+    {
+      "path": "GRID/public/fonts/RobotoFlex-Latin.woff2",
+      "bytes": 249700,
+      "sha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "directory": false
+    },
+    {
+      "path": "GRID/public/images/bw-stairs-original.jpg",
+      "bytes": 383888,
+      "sha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "directory": false
+    },
+    {
+      "path": "GRID/scripts/serve.mjs",
+      "bytes": 7304,
+      "sha256": "e6cb1cf3e7bd0cc6330dde2c05841dd4344c9758eeca6dddd83251f3c23d6f4d",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/handoff-desktop.ts",
+      "bytes": 6266,
+      "sha256": "dc291b3eb64729c56f220d306c5906ce3586a22e2b913f1a6886cb69fb686975",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/handoff.ts",
+      "bytes": 18122,
+      "sha256": "e08f822da5db12daa9368e5e5e59135cea7efc97e70c45c1e7250d6c6a9c99b1",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/main.ts",
+      "bytes": 16266,
+      "sha256": "370f3abb72a48c21f0a8918a203814ae9d0a3bdf65aa6d5dd399c26213e70de3",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/math.ts",
+      "bytes": 2042,
+      "sha256": "df9a711269bd7bb83e79a6f0c392e595fc3ebba2d0ef1cb6368fe08de33483b8",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/raster.ts",
+      "bytes": 6308,
+      "sha256": "6d71f790852ac0af2a9bcfbebe2e043c770b7f44b2ad29fb3866e60363898300",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/renderer.ts",
+      "bytes": 12899,
+      "sha256": "2f772522681216496ea9540423734cb54cffd56bc5cdf055989615dbcadde58a",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/scenes.ts",
+      "bytes": 24501,
+      "sha256": "6eea9d44df7e17709648f859ceb3d250fd59fbf5a2d6a37121a099d2b03ca25e",
+      "directory": false
+    },
+    {
+      "path": "GRID/src/style.css",
+      "bytes": 25559,
+      "sha256": "e60eb482fa4e731039b5a2501fd10c28335785fd5472cc2eed43279f69febb26",
+      "directory": false
+    },
+    {
+      "path": "GRID/tests/design.test.mjs",
+      "bytes": 13447,
+      "sha256": "1f246e558c55a1e247068f4ce9c170b31421b7d5022a5f89e277c398844c9e62",
+      "directory": false
+    },
+    {
+      "path": "GRID/tsconfig.json",
+      "bytes": 335,
+      "sha256": "f4808c7cd86f5b75ff9b809ecdd90bf9cbc0467bc36d4a24b028923c45633a9d",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/00-zero.png",
+      "bytes": 1644998,
+      "sha256": "dbeb19f8fa7fd831930792da47b0128cdeecfaba796fd42259e1125e0d981c05",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/01-system.png",
+      "bytes": 1846763,
+      "sha256": "00934ba5ca96ef0117d2b28943650bb22a5d086d566b95754d4037d82a54ad64",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/02-international.png",
+      "bytes": 1721787,
+      "sha256": "aa951c9597165332508311c2d8d7cb528211961c12318baefb5c8328a1ca0f51",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/03-basel-tension.png",
+      "bytes": 1918047,
+      "sha256": "e0c5df75870b752c5737517d358f835125799bd12c0caa876871256af18d6436",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/04-type-as-image.png",
+      "bytes": 1683928,
+      "sha256": "da36965b6829f790a82c48dd39341d4ca210f50cd7e9c1acd4ecc2848bcf4ff5",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/05-editorial.png",
+      "bytes": 1908710,
+      "sha256": "a6d281c08e1cb0e2b9c3ed1bb821283a7c8863811b4947e72905acd56e4ac2f3",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/06-raw.png",
+      "bytes": 1841604,
+      "sha256": "e202b571d33c57326a94f6042b19cafcfdb25db8933ca24120716dc2bb5c0cb9",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/07-electronic.png",
+      "bytes": 2257801,
+      "sha256": "09b37049a90a79d567e42913ef7a148a92911d966a4daa7238f8c992da2b953b",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/08-interface.png",
+      "bytes": 1878981,
+      "sha256": "887d66fdf400a5881d85c08850cc04fed359db2a994b1b74501a00c235421212",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/09-variable.png",
+      "bytes": 1813968,
+      "sha256": "985b4bcb98f5c9281d9b679ba1a5611736ba225fc7b46a30cc1c968e1a563282",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/10-synthesis.png",
+      "bytes": 1875428,
+      "sha256": "ac3b3ec28fc2bad6d54a99181a34fa6dc2face93a3a7a81fd3c2c2a86d53d8c3",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/11-no-grid.png",
+      "bytes": 1963282,
+      "sha256": "e5de1a16019ea566a950b5cfe9ecf12f90c7a4f4db3e22307f421f25563b6326",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/README.md",
+      "bytes": 7046,
+      "sha256": "423b055c0dea623b0ae22eb7aa0b91442b0ec926d67dec6a29132b6d8d9a50d8",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/manifest.json",
+      "bytes": 9868,
+      "sha256": "a2587ee7ef8d00458aa3c1d966b72f62eff02fe393fa4a720128a70374150471",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/00-zero.txt",
+      "bytes": 4258,
+      "sha256": "5c0e214dd5e254f861fbc111a1875ec022a95233ecd48a13abe053059d435f87",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/01-system.txt",
+      "bytes": 4185,
+      "sha256": "29827e6280ff7d839b0ddda3f46e3dc3cddd5b809a84858f0874c4577c8baad5",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/02-international.txt",
+      "bytes": 2892,
+      "sha256": "a6aa3295a5f1f14d044cb340e9a6d410ffceb32ee64afa01f77dd322f365866c",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/03-basel-tension.txt",
+      "bytes": 4444,
+      "sha256": "480ea67ce0ac043e0c21f6ad57c4fe668bdeb265b31d3d9602ae4c3a7b222eab",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/04-type-as-image.txt",
+      "bytes": 3741,
+      "sha256": "43482f961decee01c6460e042963b88a1bbba36d9d1b910cc843edf59046045d",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/05-editorial.txt",
+      "bytes": 3802,
+      "sha256": "025002eeb0b07c43a172dcd5dbf59636517bb6f95761bbb6482c7e98a87c73b8",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/06-raw.txt",
+      "bytes": 3718,
+      "sha256": "f8034d6cf3ab659abdd2af47189903bad85e369d2f52433a66471202d017d69e",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/07-electronic.txt",
+      "bytes": 4962,
+      "sha256": "88534f771b83c1a15fe848bda2d268f7cb8942fc57d754411b7bfc430009c318",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/08-interface.txt",
+      "bytes": 3933,
+      "sha256": "e6b7e31086ec931b19735b2156a7730c2614a67faa39a3edb5b44e0708660d56",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/09-variable.txt",
+      "bytes": 3851,
+      "sha256": "ba09bcf227d6cf98cfe58f2e55baa12a7db02f77078c96a2100663b83860684b",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/10-synthesis.txt",
+      "bytes": 5154,
+      "sha256": "09575167e8f62ccd125a2b5da05bcb5236eaccf0c875ef335e0a057aa2d59eff",
+      "directory": false
+    },
+    {
+      "path": "GRID/visual-bible/prompts/11-no-grid.txt",
+      "bytes": 4013,
+      "sha256": "2d8ced757db941e350776e82d8910b09a2454e9b6d80027af98382b01745b6f7",
+      "directory": false
+    },
+    {
+      "path": "GRID/vite.config.ts",
+      "bytes": 1491,
+      "sha256": "b8e64cf5aee52dc855c60336f968c49c986e30ea38e1becde4fcaad83d473245",
+      "directory": false
+    }
+  ],
+  "mappings": [
+    {
+      "source": "GRID/.impeccable/design.json",
+      "sourcePath": "GRID/.impeccable/design.json",
+      "sourceBytes": 36435,
+      "sourceSha256": "9ec9ec837b507225affaa3d52da01079d6c8895961447cf9e1b8377d33eabab8",
+      "target": "provenance/grid/design.json",
+      "bytes": 36435,
+      "targetBytes": 36435,
+      "sha256": "9ec9ec837b507225affaa3d52da01079d6c8895961447cf9e1b8377d33eabab8",
+      "targetSha256": "9ec9ec837b507225affaa3d52da01079d6c8895961447cf9e1b8377d33eabab8",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/DELIVERY-MANIFEST.json",
+      "sourcePath": "GRID/DELIVERY-MANIFEST.json",
+      "sourceBytes": 12413,
+      "sourceSha256": "35870b157f82be0daffdff0bc6b8be1a52e0275e0fe63d0ebb537f36b29fc8d2",
+      "target": "provenance/grid/DELIVERY-MANIFEST.json",
+      "bytes": 12413,
+      "targetBytes": 12413,
+      "sha256": "35870b157f82be0daffdff0bc6b8be1a52e0275e0fe63d0ebb537f36b29fc8d2",
+      "targetSha256": "35870b157f82be0daffdff0bc6b8be1a52e0275e0fe63d0ebb537f36b29fc8d2",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/DESIGN.md",
+      "sourcePath": "GRID/DESIGN.md",
+      "sourceBytes": 29734,
+      "sourceSha256": "a694db48ed01b6314d88b8c65fb245efc0c22e44e886cca609e28a8280e1fc65",
+      "target": "docs/grid/DESIGN.md",
+      "bytes": 32261,
+      "targetBytes": 32261,
+      "sha256": "9e2038df23ef3a34fb133e503e68e42d9b41b2024f630d5d445ce19c42277cc2",
+      "targetSha256": "9e2038df23ef3a34fb133e503e68e42d9b41b2024f630d5d445ce19c42277cc2",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/PRODUCT.md",
+      "sourcePath": "GRID/PRODUCT.md",
+      "sourceBytes": 2592,
+      "sourceSha256": "f26ac6b248396c28c7ca07d7d4658866f65d06d40a20916053d7af292e713d3f",
+      "target": "docs/grid/UPSTREAM-PRODUCT.md",
+      "bytes": 2592,
+      "targetBytes": 2592,
+      "sha256": "f26ac6b248396c28c7ca07d7d4658866f65d06d40a20916053d7af292e713d3f",
+      "targetSha256": "f26ac6b248396c28c7ca07d7d4658866f65d06d40a20916053d7af292e713d3f",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/README.md",
+      "sourcePath": "GRID/README.md",
+      "sourceBytes": 5419,
+      "sourceSha256": "f1601f5dccddfda0908d821b0831dccf5b40c474d76fd84852cde6e730d752df",
+      "target": "docs/grid/UPSTREAM-README.md",
+      "bytes": 5419,
+      "targetBytes": 5419,
+      "sha256": "f1601f5dccddfda0908d821b0831dccf5b40c474d76fd84852cde6e730d752df",
+      "targetSha256": "f1601f5dccddfda0908d821b0831dccf5b40c474d76fd84852cde6e730d752df",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/docs/DIRECTION.md",
+      "sourcePath": "GRID/docs/DIRECTION.md",
+      "sourceBytes": 1988,
+      "sourceSha256": "5d261f0830bcba5729b6c2ea65f06d9b0409e20a002b8384aa5ec0aeb1679ee7",
+      "target": "docs/grid/DIRECTION.md",
+      "bytes": 1988,
+      "targetBytes": 1988,
+      "sha256": "5d261f0830bcba5729b6c2ea65f06d9b0409e20a002b8384aa5ec0aeb1679ee7",
+      "targetSha256": "5d261f0830bcba5729b6c2ea65f06d9b0409e20a002b8384aa5ec0aeb1679ee7",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/docs/ENGINE.md",
+      "sourcePath": "GRID/docs/ENGINE.md",
+      "sourceBytes": 4983,
+      "sourceSha256": "8c0869120a1eb46bfdb1fc1090810071909b8ef909ff56705d74e9be4c762440",
+      "target": "docs/grid/ENGINE.md",
+      "bytes": 4983,
+      "targetBytes": 4983,
+      "sha256": "8c0869120a1eb46bfdb1fc1090810071909b8ef909ff56705d74e9be4c762440",
+      "targetSha256": "8c0869120a1eb46bfdb1fc1090810071909b8ef909ff56705d74e9be4c762440",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/docs/QA.md",
+      "sourcePath": "GRID/docs/QA.md",
+      "sourceBytes": 8251,
+      "sourceSha256": "23d19947b88853849ba1f61a8be9d0d7922c938f0ec73efe22e17ea325f42db0",
+      "target": "docs/grid/QA.md",
+      "bytes": 8251,
+      "targetBytes": 8251,
+      "sha256": "23d19947b88853849ba1f61a8be9d0d7922c938f0ec73efe22e17ea325f42db0",
+      "targetSha256": "23d19947b88853849ba1f61a8be9d0d7922c938f0ec73efe22e17ea325f42db0",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/docs/RESEARCH.md",
+      "sourcePath": "GRID/docs/RESEARCH.md",
+      "sourceBytes": 9119,
+      "sourceSha256": "871e24211a73f0943a8c396cf5edae1e6984907a867ff4124e1edd197be88cd7",
+      "target": "docs/grid/RESEARCH.md",
+      "bytes": 9119,
+      "targetBytes": 9119,
+      "sha256": "871e24211a73f0943a8c396cf5edae1e6984907a867ff4124e1edd197be88cd7",
+      "targetSha256": "871e24211a73f0943a8c396cf5edae1e6984907a867ff4124e1edd197be88cd7",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/docs/RULES.md",
+      "sourcePath": "GRID/docs/RULES.md",
+      "sourceBytes": 10287,
+      "sourceSha256": "095df60ca255d8f6224943d239b2036df26637fbba0f8e482cb122016c40ec40",
+      "target": "docs/grid/RULES.md",
+      "bytes": 10287,
+      "targetBytes": 10287,
+      "sha256": "095df60ca255d8f6224943d239b2036df26637fbba0f8e482cb122016c40ec40",
+      "targetSha256": "095df60ca255d8f6224943d239b2036df26637fbba0f8e482cb122016c40ec40",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/index.html",
+      "sourcePath": "GRID/index.html",
+      "sourceBytes": 11644,
+      "sourceSha256": "cd7880a1d3e5b47a14f4cbae8bca3bced5a3ba61ccc1b480d5235cad811501dc",
+      "target": "pages/grid/index.html",
+      "bytes": 13865,
+      "targetBytes": 13865,
+      "sha256": "751fe1397df4ae283d774db52c57861fa5e1fe113bc83fc3a1cda1166c5afa3d",
+      "targetSha256": "751fe1397df4ae283d774db52c57861fa5e1fe113bc83fc3a1cda1166c5afa3d",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/licenses/ASSET-PROVENANCE.json",
+      "sourcePath": "GRID/licenses/ASSET-PROVENANCE.json",
+      "sourceBytes": 3494,
+      "sourceSha256": "a6e67a6d65b893f7e6904a6cee0a6f85faa45346623be875996ffe27a46e33a5",
+      "target": "public/grid/licenses/ASSET-PROVENANCE.json",
+      "bytes": 3494,
+      "targetBytes": 3494,
+      "sha256": "a6e67a6d65b893f7e6904a6cee0a6f85faa45346623be875996ffe27a46e33a5",
+      "targetSha256": "a6e67a6d65b893f7e6904a6cee0a6f85faa45346623be875996ffe27a46e33a5",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/GSAP-NOTICES.txt",
+      "sourcePath": "GRID/licenses/GSAP-NOTICES.txt",
+      "sourceBytes": 868,
+      "sourceSha256": "9d5f2ab62ce953e0bc1fe3216e8f8474da11ccd4591799c70ecb7882a5d2fd28",
+      "target": "public/grid/licenses/GSAP-NOTICES.txt",
+      "bytes": 868,
+      "targetBytes": 868,
+      "sha256": "9d5f2ab62ce953e0bc1fe3216e8f8474da11ccd4591799c70ecb7882a5d2fd28",
+      "targetSha256": "9d5f2ab62ce953e0bc1fe3216e8f8474da11ccd4591799c70ecb7882a5d2fd28",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/IBMPlexMono-OFL.txt",
+      "sourcePath": "GRID/licenses/IBMPlexMono-OFL.txt",
+      "sourceBytes": 4364,
+      "sourceSha256": "b5895d3f4ea58b2fc80c3041a8c855d372836c34950d6ebc6e3c8897e7b2c8fb",
+      "target": "public/grid/licenses/IBMPlexMono-OFL.txt",
+      "bytes": 4364,
+      "targetBytes": 4364,
+      "sha256": "b5895d3f4ea58b2fc80c3041a8c855d372836c34950d6ebc6e3c8897e7b2c8fb",
+      "targetSha256": "b5895d3f4ea58b2fc80c3041a8c855d372836c34950d6ebc6e3c8897e7b2c8fb",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/InstrumentSerif-OFL.txt",
+      "sourcePath": "GRID/licenses/InstrumentSerif-OFL.txt",
+      "sourceBytes": 4406,
+      "sourceSha256": "03a0d23feada968b189fe795a5bc9c90dfe1d6f8426d8fca078d4bc90cd53f30",
+      "target": "public/grid/licenses/InstrumentSerif-OFL.txt",
+      "bytes": 4406,
+      "targetBytes": 4406,
+      "sha256": "03a0d23feada968b189fe795a5bc9c90dfe1d6f8426d8fca078d4bc90cd53f30",
+      "targetSha256": "03a0d23feada968b189fe795a5bc9c90dfe1d6f8426d8fca078d4bc90cd53f30",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/Lenis-MIT.txt",
+      "sourcePath": "GRID/licenses/Lenis-MIT.txt",
+      "sourceBytes": 1096,
+      "sourceSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "target": "public/grid/licenses/Lenis-MIT.txt",
+      "bytes": 1096,
+      "targetBytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "targetSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/PHOTO-ATTRIBUTION.md",
+      "sourcePath": "GRID/licenses/PHOTO-ATTRIBUTION.md",
+      "sourceBytes": 1138,
+      "sourceSha256": "c52cf25d5fdc031506a5313d4cd601632737f44d934f5be6dc54e10ab8ec62e4",
+      "target": "public/grid/licenses/PHOTO-ATTRIBUTION.md",
+      "bytes": 1138,
+      "targetBytes": 1138,
+      "sha256": "c52cf25d5fdc031506a5313d4cd601632737f44d934f5be6dc54e10ab8ec62e4",
+      "targetSha256": "c52cf25d5fdc031506a5313d4cd601632737f44d934f5be6dc54e10ab8ec62e4",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/RobotoFlex-OFL.txt",
+      "sourcePath": "GRID/licenses/RobotoFlex-OFL.txt",
+      "sourceBytes": 4396,
+      "sourceSha256": "85b3673b033b95c028b04a8fac4878f877ffef9b0657e8a71457d7c3a7d57eac",
+      "target": "public/grid/licenses/RobotoFlex-OFL.txt",
+      "bytes": 4396,
+      "targetBytes": 4396,
+      "sha256": "85b3673b033b95c028b04a8fac4878f877ffef9b0657e8a71457d7c3a7d57eac",
+      "targetSha256": "85b3673b033b95c028b04a8fac4878f877ffef9b0657e8a71457d7c3a7d57eac",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/THIRD-PARTY-NOTICES.md",
+      "sourcePath": "GRID/licenses/THIRD-PARTY-NOTICES.md",
+      "sourceBytes": 1529,
+      "sourceSha256": "5634ed0caeb60c0eacef399ec13b97e90f0330ffb3bd11f7e22b875f43a0ed97",
+      "target": "public/grid/licenses/THIRD-PARTY-NOTICES.md",
+      "bytes": 1529,
+      "targetBytes": 1529,
+      "sha256": "5634ed0caeb60c0eacef399ec13b97e90f0330ffb3bd11f7e22b875f43a0ed97",
+      "targetSha256": "5634ed0caeb60c0eacef399ec13b97e90f0330ffb3bd11f7e22b875f43a0ed97",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/licenses/Vite-NOTICES.txt",
+      "sourcePath": "GRID/licenses/Vite-NOTICES.txt",
+      "sourceBytes": 108786,
+      "sourceSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "target": "public/grid/licenses/Vite-NOTICES.txt",
+      "bytes": 108786,
+      "targetBytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "targetSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/public/favicon.svg",
+      "sourcePath": "GRID/public/favicon.svg",
+      "sourceBytes": 305,
+      "sourceSha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3",
+      "target": "public/grid/favicon.svg",
+      "bytes": 305,
+      "targetBytes": 305,
+      "sha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3",
+      "targetSha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/public/fonts/IBMPlexMono-Regular.woff2",
+      "sourcePath": "GRID/public/fonts/IBMPlexMono-Regular.woff2",
+      "sourceBytes": 14708,
+      "sourceSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "target": "public/grid/fonts/IBMPlexMono-Regular.woff2",
+      "bytes": 14708,
+      "targetBytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "targetSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/public/fonts/InstrumentSerif-Regular.woff2",
+      "sourcePath": "GRID/public/fonts/InstrumentSerif-Regular.woff2",
+      "sourceBytes": 21032,
+      "sourceSha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "target": "public/grid/fonts/InstrumentSerif-Regular.woff2",
+      "bytes": 21032,
+      "targetBytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "targetSha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/public/fonts/RobotoFlex-Latin.woff2",
+      "sourcePath": "GRID/public/fonts/RobotoFlex-Latin.woff2",
+      "sourceBytes": 249700,
+      "sourceSha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "target": "public/grid/fonts/RobotoFlex-Latin.woff2",
+      "bytes": 249700,
+      "targetBytes": 249700,
+      "sha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "targetSha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/public/images/bw-stairs-original.jpg",
+      "sourcePath": "GRID/public/images/bw-stairs-original.jpg",
+      "sourceBytes": 383888,
+      "sourceSha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "target": "public/grid/images/bw-stairs-original.jpg",
+      "bytes": 383888,
+      "targetBytes": 383888,
+      "sha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "targetSha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/src/handoff-desktop.ts",
+      "sourcePath": "GRID/src/handoff-desktop.ts",
+      "sourceBytes": 6266,
+      "sourceSha256": "dc291b3eb64729c56f220d306c5906ce3586a22e2b913f1a6886cb69fb686975",
+      "target": "experiences/grid/src/handoff-desktop.ts",
+      "bytes": 6266,
+      "targetBytes": 6266,
+      "sha256": "dc291b3eb64729c56f220d306c5906ce3586a22e2b913f1a6886cb69fb686975",
+      "targetSha256": "dc291b3eb64729c56f220d306c5906ce3586a22e2b913f1a6886cb69fb686975",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/handoff.ts",
+      "sourcePath": "GRID/src/handoff.ts",
+      "sourceBytes": 18122,
+      "sourceSha256": "e08f822da5db12daa9368e5e5e59135cea7efc97e70c45c1e7250d6c6a9c99b1",
+      "target": "experiences/grid/src/handoff.ts",
+      "bytes": 18512,
+      "targetBytes": 18512,
+      "sha256": "e64ab87f52d46ee2966e0e1c04de0eb1ca7a5351839aada50c453f43b96de044",
+      "targetSha256": "e64ab87f52d46ee2966e0e1c04de0eb1ca7a5351839aada50c453f43b96de044",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/main.ts",
+      "sourcePath": "GRID/src/main.ts",
+      "sourceBytes": 16266,
+      "sourceSha256": "370f3abb72a48c21f0a8918a203814ae9d0a3bdf65aa6d5dd399c26213e70de3",
+      "target": "experiences/grid/src/main.ts",
+      "bytes": 19323,
+      "targetBytes": 19323,
+      "sha256": "9fe2c1ce7d417276b1d5da7c52550a2155879b20b2699fb4d61f1e946edd7025",
+      "targetSha256": "9fe2c1ce7d417276b1d5da7c52550a2155879b20b2699fb4d61f1e946edd7025",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/math.ts",
+      "sourcePath": "GRID/src/math.ts",
+      "sourceBytes": 2042,
+      "sourceSha256": "df9a711269bd7bb83e79a6f0c392e595fc3ebba2d0ef1cb6368fe08de33483b8",
+      "target": "experiences/grid/src/math.ts",
+      "bytes": 2042,
+      "targetBytes": 2042,
+      "sha256": "df9a711269bd7bb83e79a6f0c392e595fc3ebba2d0ef1cb6368fe08de33483b8",
+      "targetSha256": "df9a711269bd7bb83e79a6f0c392e595fc3ebba2d0ef1cb6368fe08de33483b8",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/raster.ts",
+      "sourcePath": "GRID/src/raster.ts",
+      "sourceBytes": 6308,
+      "sourceSha256": "6d71f790852ac0af2a9bcfbebe2e043c770b7f44b2ad29fb3866e60363898300",
+      "target": "experiences/grid/src/raster.ts",
+      "bytes": 6308,
+      "targetBytes": 6308,
+      "sha256": "6d71f790852ac0af2a9bcfbebe2e043c770b7f44b2ad29fb3866e60363898300",
+      "targetSha256": "6d71f790852ac0af2a9bcfbebe2e043c770b7f44b2ad29fb3866e60363898300",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/renderer.ts",
+      "sourcePath": "GRID/src/renderer.ts",
+      "sourceBytes": 12899,
+      "sourceSha256": "2f772522681216496ea9540423734cb54cffd56bc5cdf055989615dbcadde58a",
+      "target": "experiences/grid/src/renderer.ts",
+      "bytes": 13047,
+      "targetBytes": 13047,
+      "sha256": "2b837c5f26235e122594c07c64b461bfb4a0cf350d4a8b59f5a0737d5044a1ed",
+      "targetSha256": "2b837c5f26235e122594c07c64b461bfb4a0cf350d4a8b59f5a0737d5044a1ed",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/scenes.ts",
+      "sourcePath": "GRID/src/scenes.ts",
+      "sourceBytes": 24501,
+      "sourceSha256": "6eea9d44df7e17709648f859ceb3d250fd59fbf5a2d6a37121a099d2b03ca25e",
+      "target": "experiences/grid/src/scenes.ts",
+      "bytes": 24501,
+      "targetBytes": 24501,
+      "sha256": "6eea9d44df7e17709648f859ceb3d250fd59fbf5a2d6a37121a099d2b03ca25e",
+      "targetSha256": "6eea9d44df7e17709648f859ceb3d250fd59fbf5a2d6a37121a099d2b03ca25e",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/src/style.css",
+      "sourcePath": "GRID/src/style.css",
+      "sourceBytes": 25559,
+      "sourceSha256": "e60eb482fa4e731039b5a2501fd10c28335785fd5472cc2eed43279f69febb26",
+      "target": "experiences/grid/src/style.css",
+      "bytes": 25772,
+      "targetBytes": 25772,
+      "sha256": "c53ef598072afddb1d0db71ba95e2b12a962a31c80e69618086d241f4916cd02",
+      "targetSha256": "c53ef598072afddb1d0db71ba95e2b12a962a31c80e69618086d241f4916cd02",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/tests/design.test.mjs",
+      "sourcePath": "GRID/tests/design.test.mjs",
+      "sourceBytes": 13447,
+      "sourceSha256": "1f246e558c55a1e247068f4ce9c170b31421b7d5022a5f89e277c398844c9e62",
+      "target": "tests/grid-design.test.mjs",
+      "bytes": 13493,
+      "targetBytes": 13493,
+      "sha256": "1743f90d65126d35807c55c3cbcab1df690e61f48983605d102754bd8c3abe73",
+      "targetSha256": "1743f90d65126d35807c55c3cbcab1df690e61f48983605d102754bd8c3abe73",
+      "disposition": "adapted",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/00-zero.png",
+      "sourcePath": "GRID/visual-bible/00-zero.png",
+      "sourceBytes": 1644998,
+      "sourceSha256": "dbeb19f8fa7fd831930792da47b0128cdeecfaba796fd42259e1125e0d981c05",
+      "target": "provenance/grid/visual-bible/00-zero.png",
+      "bytes": 1644998,
+      "targetBytes": 1644998,
+      "sha256": "dbeb19f8fa7fd831930792da47b0128cdeecfaba796fd42259e1125e0d981c05",
+      "targetSha256": "dbeb19f8fa7fd831930792da47b0128cdeecfaba796fd42259e1125e0d981c05",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/01-system.png",
+      "sourcePath": "GRID/visual-bible/01-system.png",
+      "sourceBytes": 1846763,
+      "sourceSha256": "00934ba5ca96ef0117d2b28943650bb22a5d086d566b95754d4037d82a54ad64",
+      "target": "provenance/grid/visual-bible/01-system.png",
+      "bytes": 1846763,
+      "targetBytes": 1846763,
+      "sha256": "00934ba5ca96ef0117d2b28943650bb22a5d086d566b95754d4037d82a54ad64",
+      "targetSha256": "00934ba5ca96ef0117d2b28943650bb22a5d086d566b95754d4037d82a54ad64",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/02-international.png",
+      "sourcePath": "GRID/visual-bible/02-international.png",
+      "sourceBytes": 1721787,
+      "sourceSha256": "aa951c9597165332508311c2d8d7cb528211961c12318baefb5c8328a1ca0f51",
+      "target": "provenance/grid/visual-bible/02-international.png",
+      "bytes": 1721787,
+      "targetBytes": 1721787,
+      "sha256": "aa951c9597165332508311c2d8d7cb528211961c12318baefb5c8328a1ca0f51",
+      "targetSha256": "aa951c9597165332508311c2d8d7cb528211961c12318baefb5c8328a1ca0f51",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/03-basel-tension.png",
+      "sourcePath": "GRID/visual-bible/03-basel-tension.png",
+      "sourceBytes": 1918047,
+      "sourceSha256": "e0c5df75870b752c5737517d358f835125799bd12c0caa876871256af18d6436",
+      "target": "provenance/grid/visual-bible/03-basel-tension.png",
+      "bytes": 1918047,
+      "targetBytes": 1918047,
+      "sha256": "e0c5df75870b752c5737517d358f835125799bd12c0caa876871256af18d6436",
+      "targetSha256": "e0c5df75870b752c5737517d358f835125799bd12c0caa876871256af18d6436",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/04-type-as-image.png",
+      "sourcePath": "GRID/visual-bible/04-type-as-image.png",
+      "sourceBytes": 1683928,
+      "sourceSha256": "da36965b6829f790a82c48dd39341d4ca210f50cd7e9c1acd4ecc2848bcf4ff5",
+      "target": "provenance/grid/visual-bible/04-type-as-image.png",
+      "bytes": 1683928,
+      "targetBytes": 1683928,
+      "sha256": "da36965b6829f790a82c48dd39341d4ca210f50cd7e9c1acd4ecc2848bcf4ff5",
+      "targetSha256": "da36965b6829f790a82c48dd39341d4ca210f50cd7e9c1acd4ecc2848bcf4ff5",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/05-editorial.png",
+      "sourcePath": "GRID/visual-bible/05-editorial.png",
+      "sourceBytes": 1908710,
+      "sourceSha256": "a6d281c08e1cb0e2b9c3ed1bb821283a7c8863811b4947e72905acd56e4ac2f3",
+      "target": "provenance/grid/visual-bible/05-editorial.png",
+      "bytes": 1908710,
+      "targetBytes": 1908710,
+      "sha256": "a6d281c08e1cb0e2b9c3ed1bb821283a7c8863811b4947e72905acd56e4ac2f3",
+      "targetSha256": "a6d281c08e1cb0e2b9c3ed1bb821283a7c8863811b4947e72905acd56e4ac2f3",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/06-raw.png",
+      "sourcePath": "GRID/visual-bible/06-raw.png",
+      "sourceBytes": 1841604,
+      "sourceSha256": "e202b571d33c57326a94f6042b19cafcfdb25db8933ca24120716dc2bb5c0cb9",
+      "target": "provenance/grid/visual-bible/06-raw.png",
+      "bytes": 1841604,
+      "targetBytes": 1841604,
+      "sha256": "e202b571d33c57326a94f6042b19cafcfdb25db8933ca24120716dc2bb5c0cb9",
+      "targetSha256": "e202b571d33c57326a94f6042b19cafcfdb25db8933ca24120716dc2bb5c0cb9",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/07-electronic.png",
+      "sourcePath": "GRID/visual-bible/07-electronic.png",
+      "sourceBytes": 2257801,
+      "sourceSha256": "09b37049a90a79d567e42913ef7a148a92911d966a4daa7238f8c992da2b953b",
+      "target": "provenance/grid/visual-bible/07-electronic.png",
+      "bytes": 2257801,
+      "targetBytes": 2257801,
+      "sha256": "09b37049a90a79d567e42913ef7a148a92911d966a4daa7238f8c992da2b953b",
+      "targetSha256": "09b37049a90a79d567e42913ef7a148a92911d966a4daa7238f8c992da2b953b",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/08-interface.png",
+      "sourcePath": "GRID/visual-bible/08-interface.png",
+      "sourceBytes": 1878981,
+      "sourceSha256": "887d66fdf400a5881d85c08850cc04fed359db2a994b1b74501a00c235421212",
+      "target": "provenance/grid/visual-bible/08-interface.png",
+      "bytes": 1878981,
+      "targetBytes": 1878981,
+      "sha256": "887d66fdf400a5881d85c08850cc04fed359db2a994b1b74501a00c235421212",
+      "targetSha256": "887d66fdf400a5881d85c08850cc04fed359db2a994b1b74501a00c235421212",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/09-variable.png",
+      "sourcePath": "GRID/visual-bible/09-variable.png",
+      "sourceBytes": 1813968,
+      "sourceSha256": "985b4bcb98f5c9281d9b679ba1a5611736ba225fc7b46a30cc1c968e1a563282",
+      "target": "provenance/grid/visual-bible/09-variable.png",
+      "bytes": 1813968,
+      "targetBytes": 1813968,
+      "sha256": "985b4bcb98f5c9281d9b679ba1a5611736ba225fc7b46a30cc1c968e1a563282",
+      "targetSha256": "985b4bcb98f5c9281d9b679ba1a5611736ba225fc7b46a30cc1c968e1a563282",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/10-synthesis.png",
+      "sourcePath": "GRID/visual-bible/10-synthesis.png",
+      "sourceBytes": 1875428,
+      "sourceSha256": "ac3b3ec28fc2bad6d54a99181a34fa6dc2face93a3a7a81fd3c2c2a86d53d8c3",
+      "target": "provenance/grid/visual-bible/10-synthesis.png",
+      "bytes": 1875428,
+      "targetBytes": 1875428,
+      "sha256": "ac3b3ec28fc2bad6d54a99181a34fa6dc2face93a3a7a81fd3c2c2a86d53d8c3",
+      "targetSha256": "ac3b3ec28fc2bad6d54a99181a34fa6dc2face93a3a7a81fd3c2c2a86d53d8c3",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/11-no-grid.png",
+      "sourcePath": "GRID/visual-bible/11-no-grid.png",
+      "sourceBytes": 1963282,
+      "sourceSha256": "e5de1a16019ea566a950b5cfe9ecf12f90c7a4f4db3e22307f421f25563b6326",
+      "target": "provenance/grid/visual-bible/11-no-grid.png",
+      "bytes": 1963282,
+      "targetBytes": 1963282,
+      "sha256": "e5de1a16019ea566a950b5cfe9ecf12f90c7a4f4db3e22307f421f25563b6326",
+      "targetSha256": "e5de1a16019ea566a950b5cfe9ecf12f90c7a4f4db3e22307f421f25563b6326",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "byte-exact"
+    },
+    {
+      "source": "GRID/visual-bible/README.md",
+      "sourcePath": "GRID/visual-bible/README.md",
+      "sourceBytes": 7046,
+      "sourceSha256": "423b055c0dea623b0ae22eb7aa0b91442b0ec926d67dec6a29132b6d8d9a50d8",
+      "target": "provenance/grid/visual-bible/README.md",
+      "bytes": 7046,
+      "targetBytes": 7046,
+      "sha256": "423b055c0dea623b0ae22eb7aa0b91442b0ec926d67dec6a29132b6d8d9a50d8",
+      "targetSha256": "423b055c0dea623b0ae22eb7aa0b91442b0ec926d67dec6a29132b6d8d9a50d8",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/manifest.json",
+      "sourcePath": "GRID/visual-bible/manifest.json",
+      "sourceBytes": 9868,
+      "sourceSha256": "a2587ee7ef8d00458aa3c1d966b72f62eff02fe393fa4a720128a70374150471",
+      "target": "provenance/grid/visual-bible/manifest.json",
+      "bytes": 9868,
+      "targetBytes": 9868,
+      "sha256": "a2587ee7ef8d00458aa3c1d966b72f62eff02fe393fa4a720128a70374150471",
+      "targetSha256": "a2587ee7ef8d00458aa3c1d966b72f62eff02fe393fa4a720128a70374150471",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/00-zero.txt",
+      "sourcePath": "GRID/visual-bible/prompts/00-zero.txt",
+      "sourceBytes": 4258,
+      "sourceSha256": "5c0e214dd5e254f861fbc111a1875ec022a95233ecd48a13abe053059d435f87",
+      "target": "provenance/grid/visual-bible/prompts/00-zero.txt",
+      "bytes": 4258,
+      "targetBytes": 4258,
+      "sha256": "5c0e214dd5e254f861fbc111a1875ec022a95233ecd48a13abe053059d435f87",
+      "targetSha256": "5c0e214dd5e254f861fbc111a1875ec022a95233ecd48a13abe053059d435f87",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/01-system.txt",
+      "sourcePath": "GRID/visual-bible/prompts/01-system.txt",
+      "sourceBytes": 4185,
+      "sourceSha256": "29827e6280ff7d839b0ddda3f46e3dc3cddd5b809a84858f0874c4577c8baad5",
+      "target": "provenance/grid/visual-bible/prompts/01-system.txt",
+      "bytes": 4185,
+      "targetBytes": 4185,
+      "sha256": "29827e6280ff7d839b0ddda3f46e3dc3cddd5b809a84858f0874c4577c8baad5",
+      "targetSha256": "29827e6280ff7d839b0ddda3f46e3dc3cddd5b809a84858f0874c4577c8baad5",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/02-international.txt",
+      "sourcePath": "GRID/visual-bible/prompts/02-international.txt",
+      "sourceBytes": 2892,
+      "sourceSha256": "a6aa3295a5f1f14d044cb340e9a6d410ffceb32ee64afa01f77dd322f365866c",
+      "target": "provenance/grid/visual-bible/prompts/02-international.txt",
+      "bytes": 2892,
+      "targetBytes": 2892,
+      "sha256": "a6aa3295a5f1f14d044cb340e9a6d410ffceb32ee64afa01f77dd322f365866c",
+      "targetSha256": "a6aa3295a5f1f14d044cb340e9a6d410ffceb32ee64afa01f77dd322f365866c",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/03-basel-tension.txt",
+      "sourcePath": "GRID/visual-bible/prompts/03-basel-tension.txt",
+      "sourceBytes": 4444,
+      "sourceSha256": "480ea67ce0ac043e0c21f6ad57c4fe668bdeb265b31d3d9602ae4c3a7b222eab",
+      "target": "provenance/grid/visual-bible/prompts/03-basel-tension.txt",
+      "bytes": 4444,
+      "targetBytes": 4444,
+      "sha256": "480ea67ce0ac043e0c21f6ad57c4fe668bdeb265b31d3d9602ae4c3a7b222eab",
+      "targetSha256": "480ea67ce0ac043e0c21f6ad57c4fe668bdeb265b31d3d9602ae4c3a7b222eab",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/04-type-as-image.txt",
+      "sourcePath": "GRID/visual-bible/prompts/04-type-as-image.txt",
+      "sourceBytes": 3741,
+      "sourceSha256": "43482f961decee01c6460e042963b88a1bbba36d9d1b910cc843edf59046045d",
+      "target": "provenance/grid/visual-bible/prompts/04-type-as-image.txt",
+      "bytes": 3741,
+      "targetBytes": 3741,
+      "sha256": "43482f961decee01c6460e042963b88a1bbba36d9d1b910cc843edf59046045d",
+      "targetSha256": "43482f961decee01c6460e042963b88a1bbba36d9d1b910cc843edf59046045d",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/05-editorial.txt",
+      "sourcePath": "GRID/visual-bible/prompts/05-editorial.txt",
+      "sourceBytes": 3802,
+      "sourceSha256": "025002eeb0b07c43a172dcd5dbf59636517bb6f95761bbb6482c7e98a87c73b8",
+      "target": "provenance/grid/visual-bible/prompts/05-editorial.txt",
+      "bytes": 3802,
+      "targetBytes": 3802,
+      "sha256": "025002eeb0b07c43a172dcd5dbf59636517bb6f95761bbb6482c7e98a87c73b8",
+      "targetSha256": "025002eeb0b07c43a172dcd5dbf59636517bb6f95761bbb6482c7e98a87c73b8",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/06-raw.txt",
+      "sourcePath": "GRID/visual-bible/prompts/06-raw.txt",
+      "sourceBytes": 3718,
+      "sourceSha256": "f8034d6cf3ab659abdd2af47189903bad85e369d2f52433a66471202d017d69e",
+      "target": "provenance/grid/visual-bible/prompts/06-raw.txt",
+      "bytes": 3718,
+      "targetBytes": 3718,
+      "sha256": "f8034d6cf3ab659abdd2af47189903bad85e369d2f52433a66471202d017d69e",
+      "targetSha256": "f8034d6cf3ab659abdd2af47189903bad85e369d2f52433a66471202d017d69e",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/07-electronic.txt",
+      "sourcePath": "GRID/visual-bible/prompts/07-electronic.txt",
+      "sourceBytes": 4962,
+      "sourceSha256": "88534f771b83c1a15fe848bda2d268f7cb8942fc57d754411b7bfc430009c318",
+      "target": "provenance/grid/visual-bible/prompts/07-electronic.txt",
+      "bytes": 4962,
+      "targetBytes": 4962,
+      "sha256": "88534f771b83c1a15fe848bda2d268f7cb8942fc57d754411b7bfc430009c318",
+      "targetSha256": "88534f771b83c1a15fe848bda2d268f7cb8942fc57d754411b7bfc430009c318",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/08-interface.txt",
+      "sourcePath": "GRID/visual-bible/prompts/08-interface.txt",
+      "sourceBytes": 3933,
+      "sourceSha256": "e6b7e31086ec931b19735b2156a7730c2614a67faa39a3edb5b44e0708660d56",
+      "target": "provenance/grid/visual-bible/prompts/08-interface.txt",
+      "bytes": 3933,
+      "targetBytes": 3933,
+      "sha256": "e6b7e31086ec931b19735b2156a7730c2614a67faa39a3edb5b44e0708660d56",
+      "targetSha256": "e6b7e31086ec931b19735b2156a7730c2614a67faa39a3edb5b44e0708660d56",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/09-variable.txt",
+      "sourcePath": "GRID/visual-bible/prompts/09-variable.txt",
+      "sourceBytes": 3851,
+      "sourceSha256": "ba09bcf227d6cf98cfe58f2e55baa12a7db02f77078c96a2100663b83860684b",
+      "target": "provenance/grid/visual-bible/prompts/09-variable.txt",
+      "bytes": 3851,
+      "targetBytes": 3851,
+      "sha256": "ba09bcf227d6cf98cfe58f2e55baa12a7db02f77078c96a2100663b83860684b",
+      "targetSha256": "ba09bcf227d6cf98cfe58f2e55baa12a7db02f77078c96a2100663b83860684b",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/10-synthesis.txt",
+      "sourcePath": "GRID/visual-bible/prompts/10-synthesis.txt",
+      "sourceBytes": 5154,
+      "sourceSha256": "09575167e8f62ccd125a2b5da05bcb5236eaccf0c875ef335e0a057aa2d59eff",
+      "target": "provenance/grid/visual-bible/prompts/10-synthesis.txt",
+      "bytes": 5154,
+      "targetBytes": 5154,
+      "sha256": "09575167e8f62ccd125a2b5da05bcb5236eaccf0c875ef335e0a057aa2d59eff",
+      "targetSha256": "09575167e8f62ccd125a2b5da05bcb5236eaccf0c875ef335e0a057aa2d59eff",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    },
+    {
+      "source": "GRID/visual-bible/prompts/11-no-grid.txt",
+      "sourcePath": "GRID/visual-bible/prompts/11-no-grid.txt",
+      "sourceBytes": 4013,
+      "sourceSha256": "2d8ced757db941e350776e82d8910b09a2454e9b6d80027af98382b01745b6f7",
+      "target": "provenance/grid/visual-bible/prompts/11-no-grid.txt",
+      "bytes": 4013,
+      "targetBytes": 4013,
+      "sha256": "2d8ced757db941e350776e82d8910b09a2454e9b6d80027af98382b01745b6f7",
+      "targetSha256": "2d8ced757db941e350776e82d8910b09a2454e9b6d80027af98382b01745b6f7",
+      "disposition": "byte-identical",
+      "lineEndingPolicy": "LF text; intentional original Markdown hard breaks preserved"
+    }
+  ],
+  "omissions": [
+    {
+      "source": "GRID/.gitignore",
+      "sourcePath": "GRID/.gitignore",
+      "sourceBytes": 76,
+      "sourceSha256": "6a3f42856de9e484dee880300a130e2ceeffb00b1c910b8f02d0e817cb7e7a5b",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/START-GRID.cmd",
+      "sourcePath": "GRID/START-GRID.cmd",
+      "sourceBytes": 503,
+      "sourceSha256": "7013b11a9b1b12fb9b69157dd34a60ceed3269075768e7e032f519bb0378ef8d",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/START-GRID.sh",
+      "sourcePath": "GRID/START-GRID.sh",
+      "sourceBytes": 320,
+      "sourceSha256": "3b74abb5c3f34375bda75c1a825e486b098644df00d67c0957fe99d06cff58d6",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/dist/assets/index-9bcW-kp7.css",
+      "sourcePath": "GRID/dist/assets/index-9bcW-kp7.css",
+      "sourceBytes": 25425,
+      "sourceSha256": "9d26363471156a8dd10ce12d0a68db8f96700d82f19aba577fc779e819ac4c86",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/assets/index-BLgvyZNF.js",
+      "sourcePath": "GRID/dist/assets/index-BLgvyZNF.js",
+      "sourceBytes": 185116,
+      "sourceSha256": "460297c903fc611b7dc39ef5fa911c3ce237c6cc4c268e63d4414af731f61dff",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/favicon.svg",
+      "sourcePath": "GRID/dist/favicon.svg",
+      "sourceBytes": 305,
+      "sourceSha256": "2aca38edcab12b32d1d3fec7088590d2dffd5ac102bc41f83cfdcc67eb958af3",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/fonts/IBMPlexMono-Regular.woff2",
+      "sourcePath": "GRID/dist/fonts/IBMPlexMono-Regular.woff2",
+      "sourceBytes": 14708,
+      "sourceSha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/fonts/InstrumentSerif-Regular.woff2",
+      "sourcePath": "GRID/dist/fonts/InstrumentSerif-Regular.woff2",
+      "sourceBytes": 21032,
+      "sourceSha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/fonts/RobotoFlex-Latin.woff2",
+      "sourcePath": "GRID/dist/fonts/RobotoFlex-Latin.woff2",
+      "sourceBytes": 249700,
+      "sourceSha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/images/bw-stairs-original.jpg",
+      "sourcePath": "GRID/dist/images/bw-stairs-original.jpg",
+      "sourceBytes": 383888,
+      "sourceSha256": "cb51c835e3b7abacc0b30f160b957f8ea962f8a521ae4338faa12565e59c0617",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/dist/index.html",
+      "sourcePath": "GRID/dist/index.html",
+      "sourceBytes": 11750,
+      "sourceSha256": "be0765efdbc316a154c73af12c458c0a97b19a89bed4f8e05ba49d499f70408d",
+      "disposition": "omitted",
+      "reason": "Standalone compiled duplicate; Collection builds supplied editable source. Runtime duplicate fonts/photo/favicon are imported from public/ with identical source hashes."
+    },
+    {
+      "source": "GRID/package-lock.json",
+      "sourcePath": "GRID/package-lock.json",
+      "sourceBytes": 38559,
+      "sourceSha256": "1d2d929dbfa88024a5e40fce37aa6494614874a89334eb2d122b4f0cae0ae9ac",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/package.json",
+      "sourcePath": "GRID/package.json",
+      "sourceBytes": 595,
+      "sourceSha256": "ddca29766491b42bc72b827f38b73bba932862a04f1dbc5a46dbb221299c74dd",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/scripts/serve.mjs",
+      "sourcePath": "GRID/scripts/serve.mjs",
+      "sourceBytes": 7304,
+      "sourceSha256": "e6cb1cf3e7bd0cc6330dde2c05841dd4344c9758eeca6dddd83251f3c23d6f4d",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/tsconfig.json",
+      "sourcePath": "GRID/tsconfig.json",
+      "sourceBytes": 335,
+      "sourceSha256": "f4808c7cd86f5b75ff9b809ecdd90bf9cbc0467bc36d4a24b028923c45633a9d",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    },
+    {
+      "source": "GRID/vite.config.ts",
+      "sourcePath": "GRID/vite.config.ts",
+      "sourceBytes": 1491,
+      "sourceSha256": "b8e64cf5aee52dc855c60336f968c49c986e30ea38e1becde4fcaad83d473245",
+      "disposition": "omitted",
+      "reason": "Standalone local startup, package/lock, server/build/TypeScript configuration or ignore rules; Collection uses its unchanged root environment. Original entry remains in external source."
+    }
+  ],
+  "note": "Historical original DELIVERY-MANIFEST and ASSET-PROVENANCE remain unchanged records. Current generated-target hashes are in the root intake record; excluding this map self-hash avoids a circular manifest."
+}
