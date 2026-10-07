@@ -1,6 +1,6 @@
 # AI Web Experience Collection
 
-Twenty-four independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines, acoustic motion, Roman sculpture, spatial perception, violin craft, book binding, volcanic material and deep time.
+Twenty-six independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines, acoustic motion, Roman sculpture, spatial perception, violin craft, book binding, volcanic material, deep time, lacquer and fountain-pen mechanisms.
 
 [Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
 
@@ -32,6 +32,8 @@ Twenty-four independent cinematic web experiences exploring speed, nature, space
 | **CODEX — The Anatomy of a Book** | A continuous journey through an original sewn case binding, paper, thread, type and reading | [/codex/](https://seiya058904.github.io/ai-web-experience-collection/codex/) |
 | **MAGMA — Stone Before Stone** | Nine movements through heat, cooling, fracture and volcanic material | [/magma/](https://seiya058904.github.io/ai-web-experience-collection/magma/) |
 | **FOSSIL — Deep Time in Stone** | Ten movements through sediment, preservation, authored synthetic tomography and the archive | [/fossil/](https://seiya058904.github.io/ai-web-experience-collection/fossil/) |
+| **URUSHI — Layers of Lacquer** | Eleven chapters through lacquer, material, time and reflected light | [/urushi/](https://seiya058904.github.io/ai-web-experience-collection/urushi/) |
+| **NIB — Ink Under Pressure** | Ten chapters through an ink mechanism, pressure and paper | [/nib/](https://seiya058904.github.io/ai-web-experience-collection/nib/) |
 
 Each work keeps its own imagery, typography, controls and pace. The gallery uses full document navigation; only the selected work's runtime starts. No iframe or SPA fallback.
 
@@ -45,12 +47,14 @@ PARALLAX’s delivery audit, Lenis adaptation and browser results are recorded i
 
 The four new delivery audits and runtime acceptance are recorded in [LUTHIER](docs/luthier/ACCEPTANCE.md), [CODEX](docs/codex/ACCEPTANCE.md), [MAGMA](docs/magma/ACCEPTANCE.md) and [FOSSIL](docs/fossil/ACCEPTANCE.md). The 2026-10-07 Collection repairs and release checks are recorded in [quality closeout](docs/collection/QUALITY-CLOSEOUT-2026-10-07.md).
 
+The URUSHI and NIB delivery audits, independent browser findings and Collection adaptations are recorded in [URUSHI acceptance](docs/urushi/ACCEPTANCE.md) and [NIB acceptance](docs/nib/ACCEPTANCE.md).
+
 ## Repository
 
 ```text
 collection/          Gallery styles, pointer interaction and credits styles
-pages/               Vite HTML root: home, credits and twenty-four route documents
-experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance, aeterna, parallax, luthier, codex, magma, fossil and shared UI
+pages/               Vite HTML root: home, credits and twenty-six route documents
+experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance, aeterna, parallax, luthier, codex, magma, fossil, urushi, nib and shared UI
 public/              Namespaced runtime assets, fonts and license notices
 docs/                Collection and scoped work design/architecture contracts
 provenance/          Unique masters, source records, import hashes and delivery history
@@ -72,7 +76,7 @@ npm run verify
 npm run preview -- --port 4174 --strictPort
 ```
 
-`npm run verify` runs 181 model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
+`npm run verify` runs 187 model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
 
 ## Deployment
 
@@ -86,7 +90,7 @@ npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
-Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all twenty-four trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
+Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all twenty-six trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
 
 When adding another accepted work, put its HTML in `pages/<route>/`, source in `experiences/<route>/`, resources in `public/<route>/`, and register the input, sitemap and output identity checks in `vite.config.ts` and `scripts/verify-build.mjs`. Update the gallery, credits, product and maintenance guide. Preserve its design and lifecycle; verify both `/` and project-path builds, entry/return, direct loads, mobile and reduced motion.
 
@@ -101,3 +105,5 @@ Unique source material and import checksums live in [provenance/](provenance/REA
 LUTHIER's source and procedural model, and FOSSIL's source/synthetic data/model, retain their scoped MIT grants; generated imagery has separate source notices. CODEX and MAGMA have no inferred whole-project open-source grant. Their original font/software notices and image records are preserved. All four reuse the locked Lenis and original clock; optional LUTHIER/MAGMA sound remains off until activated. FOSSIL's volume is authored synthetic data, not a real CT acquisition.
 
 See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md), [KAGE architecture](docs/kage/ARCHITECTURE.md), [CHRONOS motion](docs/chronos/MOTION.md), [INTERVAL design](docs/interval/DESIGN.md), [GLASSHOUSE design](docs/glasshouse/DESIGN.md), [VEIL design](docs/veil/DESIGN.md), [OPTIC design](docs/optic/DESIGN.md) and [INKSCAPE design](docs/inkscape/DESIGN.md), [FACET design](docs/facet/DESIGN.md), [SILICON design](docs/silicon/DESIGN.md), [ATLAS design](docs/atlas/DESIGN.md), [THRUST design](docs/thrust/DESIGN.md), [RESONANCE design](docs/resonance/DESIGN.md) and [AETERNA design](docs/aeterna/DESIGN.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.
+
+URUSHI’s original lacquer geometry and code retain their supplied MIT grant, while generated visual research remains separately identified. Its Bodoni Moda, Manrope and renamed CJK subset retain OFL. NIB grants no additional whole-project open-source license; its generated material art, source rights, OFL fonts and GSAP/Lenis notices retain their original records. Both reuse the root dependencies and one clock, with native touch, reduced motion and reading alternatives. Neither work includes audio. Original ZIPs stay outside Git and deployment.

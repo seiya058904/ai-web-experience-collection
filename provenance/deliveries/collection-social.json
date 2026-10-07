@@ -1,10 +1,10 @@
 {
   "path": "public/collection-social.jpg",
-  "sha256": "8b4e5cc3501598655d0178209f9dad10288d5e9af51e11a0860c2d3ccd499f5a",
-  "bytes": 195311,
+  "sha256": "6f63a0d1951b094687ac2f0f894a40137c409c85a67ff7141fabe5fd7ea4ff02",
+  "bytes": 178366,
   "width": 1200,
   "height": 630,
-  "composition": "Twenty-four center-cropped native-work tiles in four columns and six rows, JPEG quality 90. Supplied generated plates remain generated imagery; procedural works use actual runtime captures.",
+  "composition": "Twenty-six center-cropped native-work images: six rows of four, then two half-width images in the seventh row, JPEG quality 90. Supplied generated plates remain generated imagery; procedural works use actual runtime captures.",
   "sources": [
     {
       "path": "public/f1/media/hero-1600.webp",
@@ -101,6 +101,14 @@
     {
       "path": "public/fossil/poster.webp",
       "sha256": "ab1cae28c2b8c3b072ebbf2a30ff570c6b390242545a1b59d9a071069b2f50f4"
+    },
+    {
+      "path": "public/urushi/poster.webp",
+      "sha256": "b40f1cced476fc052a28c9e326c5d634b252a8c22f408a83edde4edaa3fd1671"
+    },
+    {
+      "path": "public/nib/poster.webp",
+      "sha256": "2a64734be44f703c474b4e3602ff83882a09ee22e7a819fd9cb08363700862b0"
     }
   ]
 }

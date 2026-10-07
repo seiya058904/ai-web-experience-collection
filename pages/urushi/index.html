@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0a09" />
+    <meta name="description" content="A surface becoming depth. An original immersive material study in wood, lacquer, time, and reflected light." />
+    <title>URUSHI — Layers of Lacquer</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%urushi/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Web Experience Collection" />
+    <meta property="og:title" content="URUSHI — Layers of Lacquer" />
+    <meta property="og:description" content="One original lacquer vessel, eleven chapters through wood, coating, humid curing, abrasion, layers, polish and maki-e." />
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%urushi/" />
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%urushi/social.jpg" />
+    <meta property="og:image:alt" content="URUSHI's original procedural lacquer vessel captured from its actual material journey" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="URUSHI — Layers of Lacquer" />
+    <meta name="twitter:description" content="Surface becoming depth. Eleven chapters through an original lacquer vessel." />
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%urushi/social.jpg" />
+    <meta name="twitter:image:alt" content="URUSHI's original procedural lacquer vessel captured from its actual material journey" />
+    <link rel="icon" href="/urushi/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/experiences/shared/collection-return.css" />
+    <link id="urushi-styles" rel="stylesheet" href="/experiences/urushi/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#journey">Skip to the journey</a>
+    <div class="stage" aria-hidden="true">
+      <img id="still-surface" src="/urushi/assets/surface-black.webp" alt="" fetchpriority="high" />
+      <canvas id="surface-canvas"></canvas>
+      <div class="stage-shade"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#beginning" aria-label="URUSHI — return to the beginning">URUSHI</a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a class="text-button collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a>
+        <button id="menu-toggle" class="text-button index-toggle" aria-haspopup="dialog" aria-controls="index-dialog">
+          <span data-ui="index">Index</span><span class="index-lines" aria-hidden="true"></span>
+        </button>
+        <button id="about-toggle" class="text-button" aria-haspopup="dialog" aria-controls="about-dialog" data-ui="about">About</button>
+      </nav>
+    </header>
+
+    <main id="journey" tabindex="-1" aria-label="The making of a lacquer surface"></main>
+    <div id="narrative"></div>
+
+    <footer class="journey-footer">
+      <button id="chapter-trigger" class="text-button current-chapter" aria-haspopup="dialog" aria-controls="index-dialog">
+        <span id="chapter-number">00</span><span aria-hidden="true">/</span><span id="chapter-name">Black without edge</span>
+      </button>
+      <button id="begin-scroll" class="text-button begin-scroll">
+        <span data-ui="scroll">Scroll to begin</span>
+        <svg viewBox="0 0 24 30" fill="none" aria-hidden="true"><path d="M12 1v26M3 18l9 9 9-9" /></svg>
+      </button>
+      <div class="journey-position" aria-hidden="true"><div class="progress-rule"><i></i></div><span id="chapter-note">WOOD TO REFLECTION</span></div>
+    </footer>
+
+    <div id="render-status" class="render-status" role="status" hidden></div>
+
+    <dialog id="index-dialog" class="index-dialog" aria-labelledby="index-title" data-lenis-prevent>
+      <div class="dialog-top"><span class="wordmark" aria-hidden="true">URUSHI</span><button class="close-dialog text-button" data-ui="close">Close</button></div>
+      <div class="index-layout">
+        <div class="index-intro"><h2 id="index-title" data-ui="indexTitle">The making<br />of a surface.</h2><p data-ui="indexIntro">One object. Ten transformations.</p></div>
+        <ol id="chapter-list" class="chapter-list"></ol>
+      </div>
+      <div class="index-settings">
+        <p data-ui="indexFoot">Build the layers. Find the depth.</p>
+        <div class="settings-actions"><button id="language-toggle" class="text-button" lang="zh-Hans">中文</button><button id="motion-toggle" class="text-button" aria-pressed="false">Motion: full</button></div>
+      </div>
+    </dialog>
+
+    <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title" data-lenis-prevent>
+      <div class="dialog-top"><span class="wordmark" aria-hidden="true">URUSHI</span><button class="close-dialog text-button" data-ui="close">Close</button></div>
+      <div class="about-content">
+        <h2 id="about-title" data-ui="aboutTitle">Layers of lacquer.</h2>
+        <p class="about-lead" data-ui="aboutLead">An ordinary wooden form, made extraordinary by what happens to its surface.</p>
+        <p data-ui="aboutBody">This is an original digital material study. A single vessel passes through ground, thin lacquer coats, humid curing, charcoal abrasion, repeated layers, polishing and maki-e. The reflection is the thread that connects them.</p>
+        <h3 data-ui="materialTitle">The material is real. The object is imagined.</h3>
+        <p data-ui="materialBody">Urushi is derived from tree sap. Its hardening involves moisture-dependent, enzyme-mediated oxidation and polymerization. The process is more than evaporation. Here, its time and scale are deliberately compressed.</p>
+        <p data-ui="finishBody">The mirror finish is inspired by roiro. The later conceal-and-reveal sequence draws on togidashi maki-e: a powdered design is covered with lacquer and then polished back into view. This journey brings together selected practices; it is not a universal workshop recipe.</p>
+        <h3 data-ui="sourcesTitle">Research & references</h3>
+        <p class="source-context" data-ui="sourcesIntro">Museum and craft sources informed the material language. Their collection images are not reproduced in this work.</p>
+        <ul id="source-list" class="source-list"></ul>
+        <p class="asset-note" data-ui="assetNote">Original procedural model, textures, materials and animation. AI-generated visual studies informed the art direction. No historical object is represented. No audio, account or network service is required to experience the work.</p>
+        <p class="asset-note"><a href="%BASE_URL%urushi/NOTICE.md">Asset notices</a> · <a href="%BASE_URL%urushi/LICENSE.txt">Original work license</a> · <a href="%BASE_URL%urushi/licenses/README.md">Third-party licenses</a></p>
+        <button id="read-journey" class="text-button reading-toggle" aria-expanded="false" aria-controls="reading-copy" data-ui="readJourney">Read the complete journey</button>
+        <div id="reading-copy" class="reading-copy" hidden></div>
+      </div>
+    </dialog>
+
+    <noscript><style>.header-nav button,.journey-footer{display:none}</style><article class="noscript"><h1>URUSHI — Layers of Lacquer</h1><p>A surface becoming depth. This artwork traces wood, ground, coating, humid curing, abrasion, repeated layers, polishing and maki-e through the same original vessel.</p><p>Enable JavaScript to explore the interactive material study.</p><p><a class="collection-return" href="%BASE_URL%">Return to Collection</a></p></article></noscript>
+    <script type="module" src="/experiences/urushi/src/main.js"></script>
+  </body>
+</html>

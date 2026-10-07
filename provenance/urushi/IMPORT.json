@@ -1,0 +1,1991 @@
+{
+  "archive": "URUSHI-Layers-of-Lacquer.zip",
+  "sha256": "1bc800b28e25ee49520004e852c91202ed9e4f0c5e6e3d7895764f7b51a75b1c",
+  "bytes": 29722674,
+  "modifiedUtc": 1791360690.1091568,
+  "mtime": "2026-10-07T16:11:30.109157+08:00",
+  "route": "urushi",
+  "entries": [
+    {
+      "path": "urushi/.gitignore",
+      "bytes": 37,
+      "sha256": "38263e3dfac75a1b78cd8d3db3488d34512b6d7595c1e01fbb7fd78a0bd55b17",
+      "directory": false
+    },
+    {
+      "path": "urushi/DESIGN.md",
+      "bytes": 10523,
+      "sha256": "3b9c93a84c6eb7665655101d302ced130696488e1585a81d7b0577ca2da46027",
+      "directory": false
+    },
+    {
+      "path": "urushi/LICENSE",
+      "bytes": 1076,
+      "sha256": "2df0009f969cd7ca47b2595cf5f625e47b71eb35831af241f94822a19df2adb5",
+      "directory": false
+    },
+    {
+      "path": "urushi/MANIFEST.sha256",
+      "bytes": 11129,
+      "sha256": "76ed905835ed665271aca453c81ba027aef31dc80ccda1b53f92e2db6cddeb0b",
+      "directory": false
+    },
+    {
+      "path": "urushi/PRODUCT.md",
+      "bytes": 2578,
+      "sha256": "c7857697e32600f18a42c08cda0e7a965f0f77dca61b12b81b6f5bbedff0ae42",
+      "directory": false
+    },
+    {
+      "path": "urushi/PROVENANCE.md",
+      "bytes": 11593,
+      "sha256": "ac29f229f4ddc29f3c2182949310f0540b6c022a9ad706c57de9838d03c42d37",
+      "directory": false
+    },
+    {
+      "path": "urushi/README.md",
+      "bytes": 7340,
+      "sha256": "f593a2a8736a7f42a9fe6adc189260ebe5343eae4fe08fe0deb9c01478c3d41e",
+      "directory": false
+    },
+    {
+      "path": "urushi/Start-URUSHI.cmd",
+      "bytes": 244,
+      "sha256": "b01e415ad032a1e4b5c161e9889cc63add74f10c81832c2d9dbca04f2d4d7604",
+      "directory": false
+    },
+    {
+      "path": "urushi/Start-URUSHI.sh",
+      "bytes": 111,
+      "sha256": "be7f56e7909ed5eac4ab4ef3e67824e9cd516fac0cbaecdbb19ec1bbf8f668f7",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/bodoni-moda-latin-400-normal-9rKXKbpF.woff",
+      "bytes": 18880,
+      "sha256": "1bb97874b6f8362a6ec5158a099aa56702deb25604528a095c0dab2990fb08ff",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/bodoni-moda-latin-400-normal-CIWtV3SY.woff2",
+      "bytes": 14528,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/fonts/urushi-cjk.provenance.json",
+      "bytes": 6853,
+      "sha256": "f9ff6c704d7ff81a13a379cce5e40b8ff33230456de4bcf2e18b790ef5dd10f7",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/fonts/urushi-cjk.woff2",
+      "bytes": 61500,
+      "sha256": "d8a18168c405e50255750af16d6d2764f44f64c5eb7564b1939faa0ab10eb1ef",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/index-CAI_-NSS.css",
+      "bytes": 17749,
+      "sha256": "41840f24339e17746f1b26f45fe9b61e24f328d55758f89ac6f2775723699405",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/index-D17nskJc.js",
+      "bytes": 39994,
+      "sha256": "c6e68a08da5027df54dd028a2f1605f27ae95a77d898c7579ae402bc87ad5037",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/manrope-latin-400-normal-8tf8FM3T.woff",
+      "bytes": 18292,
+      "sha256": "1bf66c29a29f1b71d507cb97fc138cd130b856ed05b55decd3a2944b413cb636",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+      "bytes": 14108,
+      "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+      "bytes": 14044,
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/manrope-latin-500-normal-DMZssgOp.woff",
+      "bytes": 18240,
+      "sha256": "c805ac8fd73fb95ddba74e624500c7d7d9a8ec6434d723bb6a9b76173c9e41b4",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/renderer-BSf8HscA.js",
+      "bytes": 550150,
+      "sha256": "0c37a96e195c7ddc2cbf42bdc8566fa662b3917a2710704ea858ad2627259da5",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/research-sources.json",
+      "bytes": 2095,
+      "sha256": "5a241619ed2e0538742e475a3733aac804d265035c707c38cdcc35a57409f07f",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/abrade.webp",
+      "bytes": 379964,
+      "sha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/coat.webp",
+      "bytes": 383378,
+      "sha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/core.webp",
+      "bytes": 423772,
+      "sha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/cure.webp",
+      "bytes": 366356,
+      "sha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/depth.webp",
+      "bytes": 347524,
+      "sha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/hero.webp",
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/layers.webp",
+      "bytes": 376904,
+      "sha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/maki-e.webp",
+      "bytes": 351236,
+      "sha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/polish.webp",
+      "bytes": 336488,
+      "sha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/provenance.json",
+      "bytes": 4633,
+      "sha256": "3d712921636a936f73f2f91eda4a078289f6554c4231a18374f1721dc85cf016",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/reveal.webp",
+      "bytes": 352118,
+      "sha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/stills/vermilion.webp",
+      "bytes": 339894,
+      "sha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/assets/surface-black.webp",
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/favicon.svg",
+      "bytes": 421,
+      "sha256": "ae00ea4ca8ffee6d8edc0e985102d772f1421b492ddb0a67be8681577b795439",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/index.html",
+      "bytes": 5950,
+      "sha256": "045e8dc29f33b41687d184ace17eb173c71b38c2a356b3073709ae26f750aee8",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/models/urushi-vessel.obj",
+      "bytes": 4641312,
+      "sha256": "2fa4604daee240526b2c5f9aea520218dec60e6c15faef42c21e6489eed28651",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/models/vessel-profile.json",
+      "bytes": 1114,
+      "sha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f",
+      "directory": false
+    },
+    {
+      "path": "urushi/dist/textures/lacquer-microstructure.png",
+      "bytes": 224577,
+      "sha256": "c45a307248fdc4fc11c0ed0a74abd8577944cb5d96db850e3e9eb681b4154c20",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/EXPERIENCE.md",
+      "bytes": 4290,
+      "sha256": "277109037a1c85f7a7d476af48ece92bdf09f8849f8492de7d1fa534b2b37ad8",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/VALIDATION.md",
+      "bytes": 7309,
+      "sha256": "c1bc350890a2811cd97d9a741f8a9c05f377ddb54445a62c806578da88bf3ebf",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/research/RESEARCH.md",
+      "bytes": 7061,
+      "sha256": "be265ac10b999a4277d5593b1c2665630f9760464b8da3186ba060eede69c052",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/00-material-bible.png",
+      "bytes": 2016576,
+      "sha256": "a7696c3e6cd75dfbaed22855f638fe83a58c3014890ed366ec0c095abfedcdda",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/00-material-bible.prompt.txt",
+      "bytes": 2464,
+      "sha256": "f2f05c4dc32ff3bd5b3365df620db2aede4978fd4b876027fdeac4dc2127d427",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/01-hero.png",
+      "bytes": 1510685,
+      "sha256": "8d6aa4755e8eff13e41aa78905db90455b8504a1bbd7fccc9eb4f19997d3a7fe",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/01-hero.prompt.txt",
+      "bytes": 982,
+      "sha256": "e18638a6af200e7cc6f9e449790d26b20daa12829977ff910f6f3a314be8cc6c",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/02-core.png",
+      "bytes": 1784935,
+      "sha256": "e7455455c1dd5db4760171a75dc20e62bd12c9fcfb70332186318c46a38c5364",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/02-core.prompt.txt",
+      "bytes": 1155,
+      "sha256": "346e35d0f84b87ff9753597c9e9ed3c8ffebef3b4bf2f4a0e45a5369a2927e99",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/03-coat.png",
+      "bytes": 1689648,
+      "sha256": "6a08eed337ac2515c4635035b148e87ac495e355d2715d862576bbc4bb4def16",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/03-coat.prompt.txt",
+      "bytes": 1442,
+      "sha256": "0c7965c3d0f96be7a9861e54616cb604c2a8747dcde4fb7018aa11d4d0d0f645",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/04-cure.png",
+      "bytes": 1643868,
+      "sha256": "721948ff404ff67cacab984418fe8912413706abe6079299b464eb3f4f464897",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/04-cure.prompt.txt",
+      "bytes": 1119,
+      "sha256": "dd53354ff54744599c367f35d2ec918e06b50d9998929810c661938535611e6a",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/05-abrade.png",
+      "bytes": 1920375,
+      "sha256": "19fcd8fcd2f383c377e31b745358d2fdea23243d3afc342044c40af176a9fab0",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/05-abrade.prompt.txt",
+      "bytes": 1159,
+      "sha256": "d8d3e1ecddb5ca2d94227fa5e4eb6b2dee98dc8058ae013c1816a29b2a96292c",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/06-layers.png",
+      "bytes": 1707160,
+      "sha256": "6f45f49c7763ec74831013c84517392d2a5b149824243c238d24d120564bc835",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/06-layers.prompt.txt",
+      "bytes": 1594,
+      "sha256": "eb8763c25e84565ec1a7374197561e3f3bc30006d04b3c37570e01b67cacafda",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/07-vermilion.png",
+      "bytes": 1611407,
+      "sha256": "de1992792b22c660aab2f6e3e6aa9f3f0e358cb325eea318b539c57eb605794f",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/07-vermilion.prompt.txt",
+      "bytes": 1576,
+      "sha256": "2b0940ea43811c6bfaab59f03833f4b41e26df57a76fb69784bc7492fbb65729",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/08-polish.png",
+      "bytes": 1597456,
+      "sha256": "d67411b76afd3d8f97ac04850a6e39f9774fbbf4112c6761b1b5d393d5b5f05d",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/08-polish.prompt.txt",
+      "bytes": 1604,
+      "sha256": "397c04486c4e13d7f57afc2c175c4c0f30565845e92239ee288cbc82352511d0",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/09-maki-e.png",
+      "bytes": 1540270,
+      "sha256": "66058ed53a2cff217c3609e6bd27eecc332f675b9af332c822b8a5ca5eeb70a5",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/09-maki-e.prompt.txt",
+      "bytes": 1597,
+      "sha256": "22e97d592e98865e2026b7889bd6cc0463c55a52dfebbf438ee0dfa3591a9402",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/10-reveal.png",
+      "bytes": 1670336,
+      "sha256": "fffcdac2a58286351415e2ddbf2b10629f053c45431ece27c5d5f4f9bb9bae92",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/10-reveal.prompt.txt",
+      "bytes": 1697,
+      "sha256": "263c041460edf618061aae912ef24df73a06d38d6d741f0f9ee8a53097028a45",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/11-depth.png",
+      "bytes": 1572572,
+      "sha256": "f1a04552616bf06f1a385628c282425e2dae62345b19275f877d5fe50bc91b7f",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/11-depth.prompt.txt",
+      "bytes": 1685,
+      "sha256": "3528fffa694197fc13ed54571b381f65f718846e634fe5b5c4d02622dd9fe174",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/12-poster.png",
+      "bytes": 1455330,
+      "sha256": "3cd2a7b1ff14114b6ef8ed614234a0f61bc83d14fbf51510568fa4686993cc9b",
+      "directory": false
+    },
+    {
+      "path": "urushi/docs/visual-bible/12-poster.prompt.txt",
+      "bytes": 767,
+      "sha256": "852ac6cf60989d7af6833021cd304dada48c249bb479a9f929421d84367c067d",
+      "directory": false
+    },
+    {
+      "path": "urushi/index.html",
+      "bytes": 5850,
+      "sha256": "0441a5f3dc28eb84a793cfba782ad939fab79a77b2587629bee52967351791f8",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/ASSET-RIGHTS.md",
+      "bytes": 2412,
+      "sha256": "aaf2b1ed49570514fb147b85030ebbc90c3acea7f54737a49b9d73f0bfdccd9b",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/bodoni-moda-OFL.txt",
+      "bytes": 4526,
+      "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/lenis-MIT.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/manrope-OFL.txt",
+      "bytes": 4383,
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/noto-serif-sc-OFL.txt",
+      "bytes": 4314,
+      "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/three-MIT.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "directory": false
+    },
+    {
+      "path": "urushi/licenses/vite-MIT.txt",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "directory": false
+    },
+    {
+      "path": "urushi/package-lock.json",
+      "bytes": 27117,
+      "sha256": "7180ad888b91d61ac40de268ab06e8c15f2a0df32a3b311fa790ec54d2019561",
+      "directory": false
+    },
+    {
+      "path": "urushi/package.json",
+      "bytes": 648,
+      "sha256": "200433d53db47efb60bf46bcaa6b6438dd8d1680f359ad1b0d1541d650e16298",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/fonts/urushi-cjk.provenance.json",
+      "bytes": 6853,
+      "sha256": "f9ff6c704d7ff81a13a379cce5e40b8ff33230456de4bcf2e18b790ef5dd10f7",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/fonts/urushi-cjk.woff2",
+      "bytes": 61500,
+      "sha256": "d8a18168c405e50255750af16d6d2764f44f64c5eb7564b1939faa0ab10eb1ef",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/research-sources.json",
+      "bytes": 2095,
+      "sha256": "5a241619ed2e0538742e475a3733aac804d265035c707c38cdcc35a57409f07f",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/abrade.webp",
+      "bytes": 379964,
+      "sha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/coat.webp",
+      "bytes": 383378,
+      "sha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/core.webp",
+      "bytes": 423772,
+      "sha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/cure.webp",
+      "bytes": 366356,
+      "sha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/depth.webp",
+      "bytes": 347524,
+      "sha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/hero.webp",
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/layers.webp",
+      "bytes": 376904,
+      "sha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/maki-e.webp",
+      "bytes": 351236,
+      "sha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/polish.webp",
+      "bytes": 336488,
+      "sha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/provenance.json",
+      "bytes": 4633,
+      "sha256": "3d712921636a936f73f2f91eda4a078289f6554c4231a18374f1721dc85cf016",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/reveal.webp",
+      "bytes": 352118,
+      "sha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/stills/vermilion.webp",
+      "bytes": 339894,
+      "sha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/assets/surface-black.webp",
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/favicon.svg",
+      "bytes": 421,
+      "sha256": "ae00ea4ca8ffee6d8edc0e985102d772f1421b492ddb0a67be8681577b795439",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/models/urushi-vessel.obj",
+      "bytes": 4641312,
+      "sha256": "2fa4604daee240526b2c5f9aea520218dec60e6c15faef42c21e6489eed28651",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/models/vessel-profile.json",
+      "bytes": 1114,
+      "sha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f",
+      "directory": false
+    },
+    {
+      "path": "urushi/public/textures/lacquer-microstructure.png",
+      "bytes": 224577,
+      "sha256": "c45a307248fdc4fc11c0ed0a74abd8577944cb5d96db850e3e9eb681b4154c20",
+      "directory": false
+    },
+    {
+      "path": "urushi/scripts/check-delivery.mjs",
+      "bytes": 11702,
+      "sha256": "a0dae00752ec24114ce0674469e450b5724c4c9275410b9d8a6b2691d0306ea7",
+      "directory": false
+    },
+    {
+      "path": "urushi/scripts/export-model.mjs",
+      "bytes": 2918,
+      "sha256": "15e8d52db9ad570109bb07a0ea6418a4bb0e1374e396ea96ec6d5fa8f660da78",
+      "directory": false
+    },
+    {
+      "path": "urushi/scripts/serve.mjs",
+      "bytes": 3111,
+      "sha256": "5687571de922c926eaccef0ce42cc6129edd3ccf9df26400ffbcf9f62b02708e",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/geometry.js",
+      "bytes": 4184,
+      "sha256": "c651b6743675ed908d88c15e4787087168f5ae57494cef4cee540903de625faf",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/i18n.js",
+      "bytes": 3662,
+      "sha256": "9ff3ec4ca1d41c6e59028ca86787d3880688b331560f48ff2c63d3dc58a08574",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/main.js",
+      "bytes": 18285,
+      "sha256": "1bf8134d58243588c2f7de13cfe393dddb0fd9845f53045836bb971365378f58",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/material-textures.js",
+      "bytes": 1067,
+      "sha256": "7038f0f216cf5d31d89a32cd4ab2bb73f256bb06ca9ea8bb4e90d2c2558e7549",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/renderer.js",
+      "bytes": 11890,
+      "sha256": "4406b28aab8a952e9d46bc3a3ad15e14f8c45762bad93ca559ba595f5094b458",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/background.frag.glsl",
+      "bytes": 946,
+      "sha256": "b3b55c2ceab61920cf962cb8b3e508806667ade17b3b2534ca7ac34b41e8b294",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/background.vert.glsl",
+      "bytes": 80,
+      "sha256": "831e1a1197f930e5def6d609ddc8855e9b030b481067286e77b42035fc8aa301",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/floor.frag.glsl",
+      "bytes": 536,
+      "sha256": "f80c41727358ed6029c7bd32390e4f8b2b8db77322a020f56212a0adfb2766e0",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/floor.vert.glsl",
+      "bytes": 115,
+      "sha256": "eeefd4141e2b01329d67ed1111e552432fd8e66a7918144dfb3b5351625996fe",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/gold.frag.glsl",
+      "bytes": 486,
+      "sha256": "fdb540a6968bfe7a40909f7d63da6bca2c9f3239910b2ad52b5f1b7e57998c1d",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/gold.vert.glsl",
+      "bytes": 805,
+      "sha256": "d1c6f7c357d9bad7a9b759026971c0b97b3903bf08e54f6fbc786736b783c144",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/lacquer.frag.glsl",
+      "bytes": 11489,
+      "sha256": "a0c06102488b2b6eedb92be354d22f907d16f52a40b44f57d56beeec9db4504d",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/shaders/vessel.vert.glsl",
+      "bytes": 385,
+      "sha256": "bbdf14e40413b85c821a62785dcfc4f13e99f19400a111eb34c423f902325242",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/story.js",
+      "bytes": 7838,
+      "sha256": "0ce46178104dd815b2b61197191e4d7fa1333e3951f6d8f5ca50e606fda95f03",
+      "directory": false
+    },
+    {
+      "path": "urushi/src/style.css",
+      "bytes": 19467,
+      "sha256": "f7098e8b86c553365e4126562f33875d2aa3fd2ff944100871b765d8557b62fb",
+      "directory": false
+    },
+    {
+      "path": "urushi/vite.config.js",
+      "bytes": 331,
+      "sha256": "1b2c4312b69cf56b6462f9551c220da56b31758db5dee662f820586dc0d9e511",
+      "directory": false
+    }
+  ],
+  "mapping": [
+    {
+      "source": "urushi/DESIGN.md",
+      "target": "docs/urushi/DESIGN.md",
+      "sourceBytes": 10523,
+      "sourceSha256": "3b9c93a84c6eb7665655101d302ced130696488e1585a81d7b0577ca2da46027",
+      "kind": "byte-preserved",
+      "targetBytes": 10523,
+      "targetSha256": "3b9c93a84c6eb7665655101d302ced130696488e1585a81d7b0577ca2da46027",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/LICENSE",
+      "target": "public/urushi/LICENSE.txt",
+      "sourceBytes": 1076,
+      "sourceSha256": "2df0009f969cd7ca47b2595cf5f625e47b71eb35831af241f94822a19df2adb5",
+      "kind": "byte-preserved",
+      "targetBytes": 1076,
+      "targetSha256": "2df0009f969cd7ca47b2595cf5f625e47b71eb35831af241f94822a19df2adb5",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/MANIFEST.sha256",
+      "target": "provenance/urushi/MANIFEST.sha256",
+      "sourceBytes": 11129,
+      "sourceSha256": "76ed905835ed665271aca453c81ba027aef31dc80ccda1b53f92e2db6cddeb0b",
+      "kind": "byte-preserved",
+      "targetBytes": 11129,
+      "targetSha256": "76ed905835ed665271aca453c81ba027aef31dc80ccda1b53f92e2db6cddeb0b",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/PRODUCT.md",
+      "target": "provenance/urushi/PRODUCT.md",
+      "sourceBytes": 2578,
+      "sourceSha256": "c7857697e32600f18a42c08cda0e7a965f0f77dca61b12b81b6f5bbedff0ae42",
+      "kind": "byte-preserved",
+      "targetBytes": 2578,
+      "targetSha256": "c7857697e32600f18a42c08cda0e7a965f0f77dca61b12b81b6f5bbedff0ae42",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/PROVENANCE.md",
+      "target": "provenance/urushi/PROVENANCE.md",
+      "sourceBytes": 11593,
+      "sourceSha256": "ac29f229f4ddc29f3c2182949310f0540b6c022a9ad706c57de9838d03c42d37",
+      "kind": "byte-preserved",
+      "targetBytes": 11593,
+      "targetSha256": "ac29f229f4ddc29f3c2182949310f0540b6c022a9ad706c57de9838d03c42d37",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/README.md",
+      "target": "provenance/urushi/README.md",
+      "sourceBytes": 7340,
+      "sourceSha256": "f593a2a8736a7f42a9fe6adc189260ebe5343eae4fe08fe0deb9c01478c3d41e",
+      "kind": "byte-preserved",
+      "targetBytes": 7340,
+      "targetSha256": "f593a2a8736a7f42a9fe6adc189260ebe5343eae4fe08fe0deb9c01478c3d41e",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/dist/assets/bodoni-moda-latin-400-normal-9rKXKbpF.woff",
+      "target": "public/urushi/fonts/bodoni-moda-latin-400-normal.woff",
+      "sourceBytes": 18880,
+      "sourceSha256": "1bb97874b6f8362a6ec5158a099aa56702deb25604528a095c0dab2990fb08ff",
+      "kind": "byte-preserved",
+      "targetBytes": 18880,
+      "targetSha256": "1bb97874b6f8362a6ec5158a099aa56702deb25604528a095c0dab2990fb08ff",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/dist/assets/bodoni-moda-latin-400-normal-CIWtV3SY.woff2",
+      "target": "public/urushi/fonts/bodoni-moda-latin-400-normal.woff2",
+      "sourceBytes": 14528,
+      "sourceSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "kind": "byte-preserved",
+      "targetBytes": 14528,
+      "targetSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/dist/assets/manrope-latin-400-normal-8tf8FM3T.woff",
+      "target": "public/urushi/fonts/manrope-latin-400-normal.woff",
+      "sourceBytes": 18292,
+      "sourceSha256": "1bf66c29a29f1b71d507cb97fc138cd130b856ed05b55decd3a2944b413cb636",
+      "kind": "byte-preserved",
+      "targetBytes": 18292,
+      "targetSha256": "1bf66c29a29f1b71d507cb97fc138cd130b856ed05b55decd3a2944b413cb636",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2",
+      "target": "public/urushi/fonts/manrope-latin-400-normal.woff2",
+      "sourceBytes": 14108,
+      "sourceSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "kind": "byte-preserved",
+      "targetBytes": 14108,
+      "targetSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/dist/assets/manrope-latin-500-normal-BYYD-dBL.woff2",
+      "target": "public/urushi/fonts/manrope-latin-500-normal.woff2",
+      "sourceBytes": 14044,
+      "sourceSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "kind": "byte-preserved",
+      "targetBytes": 14044,
+      "targetSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/dist/assets/manrope-latin-500-normal-DMZssgOp.woff",
+      "target": "public/urushi/fonts/manrope-latin-500-normal.woff",
+      "sourceBytes": 18240,
+      "sourceSha256": "c805ac8fd73fb95ddba74e624500c7d7d9a8ec6434d723bb6a9b76173c9e41b4",
+      "kind": "byte-preserved",
+      "targetBytes": 18240,
+      "targetSha256": "c805ac8fd73fb95ddba74e624500c7d7d9a8ec6434d723bb6a9b76173c9e41b4",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/EXPERIENCE.md",
+      "target": "docs/urushi/EXPERIENCE.md",
+      "sourceBytes": 4290,
+      "sourceSha256": "277109037a1c85f7a7d476af48ece92bdf09f8849f8492de7d1fa534b2b37ad8",
+      "kind": "byte-preserved",
+      "targetBytes": 4290,
+      "targetSha256": "277109037a1c85f7a7d476af48ece92bdf09f8849f8492de7d1fa534b2b37ad8",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/VALIDATION.md",
+      "target": "docs/urushi/UPSTREAM-VALIDATION.md",
+      "sourceBytes": 7309,
+      "sourceSha256": "c1bc350890a2811cd97d9a741f8a9c05f377ddb54445a62c806578da88bf3ebf",
+      "kind": "byte-preserved",
+      "targetBytes": 7309,
+      "targetSha256": "c1bc350890a2811cd97d9a741f8a9c05f377ddb54445a62c806578da88bf3ebf",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/research/RESEARCH.md",
+      "target": "docs/urushi/research/RESEARCH.md",
+      "sourceBytes": 7061,
+      "sourceSha256": "be265ac10b999a4277d5593b1c2665630f9760464b8da3186ba060eede69c052",
+      "kind": "byte-preserved",
+      "targetBytes": 7061,
+      "targetSha256": "be265ac10b999a4277d5593b1c2665630f9760464b8da3186ba060eede69c052",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/00-material-bible.png",
+      "target": "docs/urushi/visual-bible/00-material-bible.png",
+      "sourceBytes": 2016576,
+      "sourceSha256": "a7696c3e6cd75dfbaed22855f638fe83a58c3014890ed366ec0c095abfedcdda",
+      "kind": "byte-preserved",
+      "targetBytes": 2016576,
+      "targetSha256": "a7696c3e6cd75dfbaed22855f638fe83a58c3014890ed366ec0c095abfedcdda",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/00-material-bible.prompt.txt",
+      "target": "docs/urushi/visual-bible/00-material-bible.prompt.txt",
+      "sourceBytes": 2464,
+      "sourceSha256": "f2f05c4dc32ff3bd5b3365df620db2aede4978fd4b876027fdeac4dc2127d427",
+      "kind": "byte-preserved",
+      "targetBytes": 2464,
+      "targetSha256": "f2f05c4dc32ff3bd5b3365df620db2aede4978fd4b876027fdeac4dc2127d427",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/01-hero.png",
+      "target": "docs/urushi/visual-bible/01-hero.png",
+      "sourceBytes": 1510685,
+      "sourceSha256": "8d6aa4755e8eff13e41aa78905db90455b8504a1bbd7fccc9eb4f19997d3a7fe",
+      "kind": "byte-preserved",
+      "targetBytes": 1510685,
+      "targetSha256": "8d6aa4755e8eff13e41aa78905db90455b8504a1bbd7fccc9eb4f19997d3a7fe",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/01-hero.prompt.txt",
+      "target": "docs/urushi/visual-bible/01-hero.prompt.txt",
+      "sourceBytes": 982,
+      "sourceSha256": "e18638a6af200e7cc6f9e449790d26b20daa12829977ff910f6f3a314be8cc6c",
+      "kind": "byte-preserved",
+      "targetBytes": 982,
+      "targetSha256": "e18638a6af200e7cc6f9e449790d26b20daa12829977ff910f6f3a314be8cc6c",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/02-core.png",
+      "target": "docs/urushi/visual-bible/02-core.png",
+      "sourceBytes": 1784935,
+      "sourceSha256": "e7455455c1dd5db4760171a75dc20e62bd12c9fcfb70332186318c46a38c5364",
+      "kind": "byte-preserved",
+      "targetBytes": 1784935,
+      "targetSha256": "e7455455c1dd5db4760171a75dc20e62bd12c9fcfb70332186318c46a38c5364",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/02-core.prompt.txt",
+      "target": "docs/urushi/visual-bible/02-core.prompt.txt",
+      "sourceBytes": 1155,
+      "sourceSha256": "346e35d0f84b87ff9753597c9e9ed3c8ffebef3b4bf2f4a0e45a5369a2927e99",
+      "kind": "byte-preserved",
+      "targetBytes": 1155,
+      "targetSha256": "346e35d0f84b87ff9753597c9e9ed3c8ffebef3b4bf2f4a0e45a5369a2927e99",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/03-coat.png",
+      "target": "docs/urushi/visual-bible/03-coat.png",
+      "sourceBytes": 1689648,
+      "sourceSha256": "6a08eed337ac2515c4635035b148e87ac495e355d2715d862576bbc4bb4def16",
+      "kind": "byte-preserved",
+      "targetBytes": 1689648,
+      "targetSha256": "6a08eed337ac2515c4635035b148e87ac495e355d2715d862576bbc4bb4def16",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/03-coat.prompt.txt",
+      "target": "docs/urushi/visual-bible/03-coat.prompt.txt",
+      "sourceBytes": 1442,
+      "sourceSha256": "0c7965c3d0f96be7a9861e54616cb604c2a8747dcde4fb7018aa11d4d0d0f645",
+      "kind": "byte-preserved",
+      "targetBytes": 1442,
+      "targetSha256": "0c7965c3d0f96be7a9861e54616cb604c2a8747dcde4fb7018aa11d4d0d0f645",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/04-cure.png",
+      "target": "docs/urushi/visual-bible/04-cure.png",
+      "sourceBytes": 1643868,
+      "sourceSha256": "721948ff404ff67cacab984418fe8912413706abe6079299b464eb3f4f464897",
+      "kind": "byte-preserved",
+      "targetBytes": 1643868,
+      "targetSha256": "721948ff404ff67cacab984418fe8912413706abe6079299b464eb3f4f464897",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/04-cure.prompt.txt",
+      "target": "docs/urushi/visual-bible/04-cure.prompt.txt",
+      "sourceBytes": 1119,
+      "sourceSha256": "dd53354ff54744599c367f35d2ec918e06b50d9998929810c661938535611e6a",
+      "kind": "byte-preserved",
+      "targetBytes": 1119,
+      "targetSha256": "dd53354ff54744599c367f35d2ec918e06b50d9998929810c661938535611e6a",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/05-abrade.png",
+      "target": "docs/urushi/visual-bible/05-abrade.png",
+      "sourceBytes": 1920375,
+      "sourceSha256": "19fcd8fcd2f383c377e31b745358d2fdea23243d3afc342044c40af176a9fab0",
+      "kind": "byte-preserved",
+      "targetBytes": 1920375,
+      "targetSha256": "19fcd8fcd2f383c377e31b745358d2fdea23243d3afc342044c40af176a9fab0",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/05-abrade.prompt.txt",
+      "target": "docs/urushi/visual-bible/05-abrade.prompt.txt",
+      "sourceBytes": 1159,
+      "sourceSha256": "d8d3e1ecddb5ca2d94227fa5e4eb6b2dee98dc8058ae013c1816a29b2a96292c",
+      "kind": "byte-preserved",
+      "targetBytes": 1159,
+      "targetSha256": "d8d3e1ecddb5ca2d94227fa5e4eb6b2dee98dc8058ae013c1816a29b2a96292c",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/06-layers.png",
+      "target": "docs/urushi/visual-bible/06-layers.png",
+      "sourceBytes": 1707160,
+      "sourceSha256": "6f45f49c7763ec74831013c84517392d2a5b149824243c238d24d120564bc835",
+      "kind": "byte-preserved",
+      "targetBytes": 1707160,
+      "targetSha256": "6f45f49c7763ec74831013c84517392d2a5b149824243c238d24d120564bc835",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/06-layers.prompt.txt",
+      "target": "docs/urushi/visual-bible/06-layers.prompt.txt",
+      "sourceBytes": 1594,
+      "sourceSha256": "eb8763c25e84565ec1a7374197561e3f3bc30006d04b3c37570e01b67cacafda",
+      "kind": "byte-preserved",
+      "targetBytes": 1594,
+      "targetSha256": "eb8763c25e84565ec1a7374197561e3f3bc30006d04b3c37570e01b67cacafda",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/07-vermilion.png",
+      "target": "docs/urushi/visual-bible/07-vermilion.png",
+      "sourceBytes": 1611407,
+      "sourceSha256": "de1992792b22c660aab2f6e3e6aa9f3f0e358cb325eea318b539c57eb605794f",
+      "kind": "byte-preserved",
+      "targetBytes": 1611407,
+      "targetSha256": "de1992792b22c660aab2f6e3e6aa9f3f0e358cb325eea318b539c57eb605794f",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/07-vermilion.prompt.txt",
+      "target": "docs/urushi/visual-bible/07-vermilion.prompt.txt",
+      "sourceBytes": 1576,
+      "sourceSha256": "2b0940ea43811c6bfaab59f03833f4b41e26df57a76fb69784bc7492fbb65729",
+      "kind": "byte-preserved",
+      "targetBytes": 1576,
+      "targetSha256": "2b0940ea43811c6bfaab59f03833f4b41e26df57a76fb69784bc7492fbb65729",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/08-polish.png",
+      "target": "docs/urushi/visual-bible/08-polish.png",
+      "sourceBytes": 1597456,
+      "sourceSha256": "d67411b76afd3d8f97ac04850a6e39f9774fbbf4112c6761b1b5d393d5b5f05d",
+      "kind": "byte-preserved",
+      "targetBytes": 1597456,
+      "targetSha256": "d67411b76afd3d8f97ac04850a6e39f9774fbbf4112c6761b1b5d393d5b5f05d",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/08-polish.prompt.txt",
+      "target": "docs/urushi/visual-bible/08-polish.prompt.txt",
+      "sourceBytes": 1604,
+      "sourceSha256": "397c04486c4e13d7f57afc2c175c4c0f30565845e92239ee288cbc82352511d0",
+      "kind": "byte-preserved",
+      "targetBytes": 1604,
+      "targetSha256": "397c04486c4e13d7f57afc2c175c4c0f30565845e92239ee288cbc82352511d0",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/09-maki-e.png",
+      "target": "docs/urushi/visual-bible/09-maki-e.png",
+      "sourceBytes": 1540270,
+      "sourceSha256": "66058ed53a2cff217c3609e6bd27eecc332f675b9af332c822b8a5ca5eeb70a5",
+      "kind": "byte-preserved",
+      "targetBytes": 1540270,
+      "targetSha256": "66058ed53a2cff217c3609e6bd27eecc332f675b9af332c822b8a5ca5eeb70a5",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/09-maki-e.prompt.txt",
+      "target": "docs/urushi/visual-bible/09-maki-e.prompt.txt",
+      "sourceBytes": 1597,
+      "sourceSha256": "22e97d592e98865e2026b7889bd6cc0463c55a52dfebbf438ee0dfa3591a9402",
+      "kind": "byte-preserved",
+      "targetBytes": 1597,
+      "targetSha256": "22e97d592e98865e2026b7889bd6cc0463c55a52dfebbf438ee0dfa3591a9402",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/10-reveal.png",
+      "target": "docs/urushi/visual-bible/10-reveal.png",
+      "sourceBytes": 1670336,
+      "sourceSha256": "fffcdac2a58286351415e2ddbf2b10629f053c45431ece27c5d5f4f9bb9bae92",
+      "kind": "byte-preserved",
+      "targetBytes": 1670336,
+      "targetSha256": "fffcdac2a58286351415e2ddbf2b10629f053c45431ece27c5d5f4f9bb9bae92",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/10-reveal.prompt.txt",
+      "target": "docs/urushi/visual-bible/10-reveal.prompt.txt",
+      "sourceBytes": 1697,
+      "sourceSha256": "263c041460edf618061aae912ef24df73a06d38d6d741f0f9ee8a53097028a45",
+      "kind": "byte-preserved",
+      "targetBytes": 1697,
+      "targetSha256": "263c041460edf618061aae912ef24df73a06d38d6d741f0f9ee8a53097028a45",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/11-depth.png",
+      "target": "docs/urushi/visual-bible/11-depth.png",
+      "sourceBytes": 1572572,
+      "sourceSha256": "f1a04552616bf06f1a385628c282425e2dae62345b19275f877d5fe50bc91b7f",
+      "kind": "byte-preserved",
+      "targetBytes": 1572572,
+      "targetSha256": "f1a04552616bf06f1a385628c282425e2dae62345b19275f877d5fe50bc91b7f",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/11-depth.prompt.txt",
+      "target": "docs/urushi/visual-bible/11-depth.prompt.txt",
+      "sourceBytes": 1685,
+      "sourceSha256": "3528fffa694197fc13ed54571b381f65f718846e634fe5b5c4d02622dd9fe174",
+      "kind": "byte-preserved",
+      "targetBytes": 1685,
+      "targetSha256": "3528fffa694197fc13ed54571b381f65f718846e634fe5b5c4d02622dd9fe174",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/12-poster.png",
+      "target": "docs/urushi/visual-bible/12-poster.png",
+      "sourceBytes": 1455330,
+      "sourceSha256": "3cd2a7b1ff14114b6ef8ed614234a0f61bc83d14fbf51510568fa4686993cc9b",
+      "kind": "byte-preserved",
+      "targetBytes": 1455330,
+      "targetSha256": "3cd2a7b1ff14114b6ef8ed614234a0f61bc83d14fbf51510568fa4686993cc9b",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/docs/visual-bible/12-poster.prompt.txt",
+      "target": "docs/urushi/visual-bible/12-poster.prompt.txt",
+      "sourceBytes": 767,
+      "sourceSha256": "852ac6cf60989d7af6833021cd304dada48c249bb479a9f929421d84367c067d",
+      "kind": "byte-preserved",
+      "targetBytes": 767,
+      "targetSha256": "852ac6cf60989d7af6833021cd304dada48c249bb479a9f929421d84367c067d",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/index.html",
+      "target": "pages/urushi/index.html",
+      "sourceBytes": 5850,
+      "sourceSha256": "0441a5f3dc28eb84a793cfba782ad939fab79a77b2587629bee52967351791f8",
+      "kind": "adapted-runtime",
+      "targetBytes": 8049,
+      "targetSha256": "93ffadceb5c27ed8cbce07881610027d6cba6d8bcd33a612839bdf48928550ee",
+      "byteIdentical": false
+    },
+    {
+      "source": "urushi/licenses/ASSET-RIGHTS.md",
+      "target": "public/urushi/licenses/ASSET-RIGHTS.md",
+      "sourceBytes": 2412,
+      "sourceSha256": "aaf2b1ed49570514fb147b85030ebbc90c3acea7f54737a49b9d73f0bfdccd9b",
+      "kind": "byte-preserved",
+      "targetBytes": 2412,
+      "targetSha256": "aaf2b1ed49570514fb147b85030ebbc90c3acea7f54737a49b9d73f0bfdccd9b",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/licenses/bodoni-moda-OFL.txt",
+      "target": "public/urushi/licenses/bodoni-moda-OFL.txt",
+      "sourceBytes": 4526,
+      "sourceSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "kind": "byte-preserved",
+      "targetBytes": 4526,
+      "targetSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/licenses/lenis-MIT.txt",
+      "target": "public/urushi/licenses/lenis-MIT.txt",
+      "sourceBytes": 1096,
+      "sourceSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "kind": "byte-preserved",
+      "targetBytes": 1096,
+      "targetSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/licenses/manrope-OFL.txt",
+      "target": "public/urushi/licenses/manrope-OFL.txt",
+      "sourceBytes": 4383,
+      "sourceSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "kind": "byte-preserved",
+      "targetBytes": 4383,
+      "targetSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/licenses/noto-serif-sc-OFL.txt",
+      "target": "public/urushi/licenses/noto-serif-sc-OFL.txt",
+      "sourceBytes": 4314,
+      "sourceSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "kind": "byte-preserved",
+      "targetBytes": 4314,
+      "targetSha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/licenses/three-MIT.txt",
+      "target": "public/urushi/licenses/three-MIT.txt",
+      "sourceBytes": 1081,
+      "sourceSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "kind": "byte-preserved",
+      "targetBytes": 1081,
+      "targetSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/licenses/vite-MIT.txt",
+      "target": "public/urushi/licenses/vite-MIT.txt",
+      "sourceBytes": 108786,
+      "sourceSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "kind": "byte-preserved",
+      "targetBytes": 108786,
+      "targetSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/fonts/urushi-cjk.provenance.json",
+      "target": "public/urushi/assets/fonts/urushi-cjk.provenance.json",
+      "sourceBytes": 6853,
+      "sourceSha256": "f9ff6c704d7ff81a13a379cce5e40b8ff33230456de4bcf2e18b790ef5dd10f7",
+      "kind": "byte-preserved",
+      "targetBytes": 6853,
+      "targetSha256": "f9ff6c704d7ff81a13a379cce5e40b8ff33230456de4bcf2e18b790ef5dd10f7",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/fonts/urushi-cjk.woff2",
+      "target": "public/urushi/assets/fonts/urushi-cjk.woff2",
+      "sourceBytes": 61500,
+      "sourceSha256": "d8a18168c405e50255750af16d6d2764f44f64c5eb7564b1939faa0ab10eb1ef",
+      "kind": "byte-preserved",
+      "targetBytes": 61500,
+      "targetSha256": "d8a18168c405e50255750af16d6d2764f44f64c5eb7564b1939faa0ab10eb1ef",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/research-sources.json",
+      "target": "public/urushi/assets/research-sources.json",
+      "sourceBytes": 2095,
+      "sourceSha256": "5a241619ed2e0538742e475a3733aac804d265035c707c38cdcc35a57409f07f",
+      "kind": "byte-preserved",
+      "targetBytes": 2095,
+      "targetSha256": "5a241619ed2e0538742e475a3733aac804d265035c707c38cdcc35a57409f07f",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/abrade.webp",
+      "target": "public/urushi/assets/stills/abrade.webp",
+      "sourceBytes": 379964,
+      "sourceSha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b",
+      "kind": "byte-preserved",
+      "targetBytes": 379964,
+      "targetSha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/coat.webp",
+      "target": "public/urushi/assets/stills/coat.webp",
+      "sourceBytes": 383378,
+      "sourceSha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc",
+      "kind": "byte-preserved",
+      "targetBytes": 383378,
+      "targetSha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/core.webp",
+      "target": "public/urushi/assets/stills/core.webp",
+      "sourceBytes": 423772,
+      "sourceSha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0",
+      "kind": "byte-preserved",
+      "targetBytes": 423772,
+      "targetSha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/cure.webp",
+      "target": "public/urushi/assets/stills/cure.webp",
+      "sourceBytes": 366356,
+      "sourceSha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c",
+      "kind": "byte-preserved",
+      "targetBytes": 366356,
+      "targetSha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/depth.webp",
+      "target": "public/urushi/assets/stills/depth.webp",
+      "sourceBytes": 347524,
+      "sourceSha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3",
+      "kind": "byte-preserved",
+      "targetBytes": 347524,
+      "targetSha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/hero.webp",
+      "target": "public/urushi/assets/stills/hero.webp",
+      "sourceBytes": 331746,
+      "sourceSha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "kind": "byte-preserved",
+      "targetBytes": 331746,
+      "targetSha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/layers.webp",
+      "target": "public/urushi/assets/stills/layers.webp",
+      "sourceBytes": 376904,
+      "sourceSha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810",
+      "kind": "byte-preserved",
+      "targetBytes": 376904,
+      "targetSha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/maki-e.webp",
+      "target": "public/urushi/assets/stills/maki-e.webp",
+      "sourceBytes": 351236,
+      "sourceSha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9",
+      "kind": "byte-preserved",
+      "targetBytes": 351236,
+      "targetSha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/polish.webp",
+      "target": "public/urushi/assets/stills/polish.webp",
+      "sourceBytes": 336488,
+      "sourceSha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9",
+      "kind": "byte-preserved",
+      "targetBytes": 336488,
+      "targetSha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/provenance.json",
+      "target": "public/urushi/assets/stills/provenance.json",
+      "sourceBytes": 4633,
+      "sourceSha256": "3d712921636a936f73f2f91eda4a078289f6554c4231a18374f1721dc85cf016",
+      "kind": "byte-preserved",
+      "targetBytes": 4633,
+      "targetSha256": "3d712921636a936f73f2f91eda4a078289f6554c4231a18374f1721dc85cf016",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/reveal.webp",
+      "target": "public/urushi/assets/stills/reveal.webp",
+      "sourceBytes": 352118,
+      "sourceSha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73",
+      "kind": "byte-preserved",
+      "targetBytes": 352118,
+      "targetSha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/stills/vermilion.webp",
+      "target": "public/urushi/assets/stills/vermilion.webp",
+      "sourceBytes": 339894,
+      "sourceSha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb",
+      "kind": "byte-preserved",
+      "targetBytes": 339894,
+      "targetSha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/assets/surface-black.webp",
+      "target": "public/urushi/assets/surface-black.webp",
+      "sourceBytes": 331746,
+      "sourceSha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "kind": "byte-preserved",
+      "targetBytes": 331746,
+      "targetSha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/favicon.svg",
+      "target": "public/urushi/favicon.svg",
+      "sourceBytes": 421,
+      "sourceSha256": "ae00ea4ca8ffee6d8edc0e985102d772f1421b492ddb0a67be8681577b795439",
+      "kind": "byte-preserved",
+      "targetBytes": 421,
+      "targetSha256": "ae00ea4ca8ffee6d8edc0e985102d772f1421b492ddb0a67be8681577b795439",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/models/urushi-vessel.obj",
+      "target": "public/urushi/models/urushi-vessel.obj",
+      "sourceBytes": 4641312,
+      "sourceSha256": "2fa4604daee240526b2c5f9aea520218dec60e6c15faef42c21e6489eed28651",
+      "kind": "byte-preserved",
+      "targetBytes": 4641312,
+      "targetSha256": "2fa4604daee240526b2c5f9aea520218dec60e6c15faef42c21e6489eed28651",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/models/vessel-profile.json",
+      "target": "public/urushi/models/vessel-profile.json",
+      "sourceBytes": 1114,
+      "sourceSha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f",
+      "kind": "byte-preserved",
+      "targetBytes": 1114,
+      "targetSha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/public/textures/lacquer-microstructure.png",
+      "target": "public/urushi/textures/lacquer-microstructure.png",
+      "sourceBytes": 224577,
+      "sourceSha256": "c45a307248fdc4fc11c0ed0a74abd8577944cb5d96db850e3e9eb681b4154c20",
+      "kind": "byte-preserved",
+      "targetBytes": 224577,
+      "targetSha256": "c45a307248fdc4fc11c0ed0a74abd8577944cb5d96db850e3e9eb681b4154c20",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/scripts/check-delivery.mjs",
+      "target": "provenance/urushi/verification/check-delivery.mjs",
+      "sourceBytes": 11702,
+      "sourceSha256": "a0dae00752ec24114ce0674469e450b5724c4c9275410b9d8a6b2691d0306ea7",
+      "kind": "byte-preserved",
+      "targetBytes": 11702,
+      "targetSha256": "a0dae00752ec24114ce0674469e450b5724c4c9275410b9d8a6b2691d0306ea7",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/scripts/export-model.mjs",
+      "target": "provenance/urushi/verification/export-model.mjs",
+      "sourceBytes": 2918,
+      "sourceSha256": "15e8d52db9ad570109bb07a0ea6418a4bb0e1374e396ea96ec6d5fa8f660da78",
+      "kind": "byte-preserved",
+      "targetBytes": 2918,
+      "targetSha256": "15e8d52db9ad570109bb07a0ea6418a4bb0e1374e396ea96ec6d5fa8f660da78",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/geometry.js",
+      "target": "experiences/urushi/src/geometry.js",
+      "sourceBytes": 4184,
+      "sourceSha256": "c651b6743675ed908d88c15e4787087168f5ae57494cef4cee540903de625faf",
+      "kind": "byte-preserved",
+      "targetBytes": 4184,
+      "targetSha256": "c651b6743675ed908d88c15e4787087168f5ae57494cef4cee540903de625faf",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/i18n.js",
+      "target": "experiences/urushi/src/i18n.js",
+      "sourceBytes": 3662,
+      "sourceSha256": "9ff3ec4ca1d41c6e59028ca86787d3880688b331560f48ff2c63d3dc58a08574",
+      "kind": "byte-preserved",
+      "targetBytes": 3662,
+      "targetSha256": "9ff3ec4ca1d41c6e59028ca86787d3880688b331560f48ff2c63d3dc58a08574",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/main.js",
+      "target": "experiences/urushi/src/main.js",
+      "sourceBytes": 18285,
+      "sourceSha256": "1bf8134d58243588c2f7de13cfe393dddb0fd9845f53045836bb971365378f58",
+      "kind": "adapted-runtime",
+      "targetBytes": 20345,
+      "targetSha256": "6a3973d6484d09cc203f2b9e36f8ea553f91b98a74f41f8f5f7ac994fbad2b3b",
+      "byteIdentical": false
+    },
+    {
+      "source": "urushi/src/material-textures.js",
+      "target": "experiences/urushi/src/material-textures.js",
+      "sourceBytes": 1067,
+      "sourceSha256": "7038f0f216cf5d31d89a32cd4ab2bb73f256bb06ca9ea8bb4e90d2c2558e7549",
+      "kind": "byte-preserved",
+      "targetBytes": 1067,
+      "targetSha256": "7038f0f216cf5d31d89a32cd4ab2bb73f256bb06ca9ea8bb4e90d2c2558e7549",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/renderer.js",
+      "target": "experiences/urushi/src/renderer.js",
+      "sourceBytes": 11890,
+      "sourceSha256": "4406b28aab8a952e9d46bc3a3ad15e14f8c45762bad93ca559ba595f5094b458",
+      "kind": "adapted-runtime",
+      "targetBytes": 11897,
+      "targetSha256": "ccb06ab618ba90e7c927fae84956b66582a99395d70e51d3302d74d0150cf7f9",
+      "byteIdentical": false
+    },
+    {
+      "source": "urushi/src/shaders/background.frag.glsl",
+      "target": "experiences/urushi/src/shaders/background.frag.glsl",
+      "sourceBytes": 946,
+      "sourceSha256": "b3b55c2ceab61920cf962cb8b3e508806667ade17b3b2534ca7ac34b41e8b294",
+      "kind": "byte-preserved",
+      "targetBytes": 946,
+      "targetSha256": "b3b55c2ceab61920cf962cb8b3e508806667ade17b3b2534ca7ac34b41e8b294",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/background.vert.glsl",
+      "target": "experiences/urushi/src/shaders/background.vert.glsl",
+      "sourceBytes": 80,
+      "sourceSha256": "831e1a1197f930e5def6d609ddc8855e9b030b481067286e77b42035fc8aa301",
+      "kind": "byte-preserved",
+      "targetBytes": 80,
+      "targetSha256": "831e1a1197f930e5def6d609ddc8855e9b030b481067286e77b42035fc8aa301",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/floor.frag.glsl",
+      "target": "experiences/urushi/src/shaders/floor.frag.glsl",
+      "sourceBytes": 536,
+      "sourceSha256": "f80c41727358ed6029c7bd32390e4f8b2b8db77322a020f56212a0adfb2766e0",
+      "kind": "byte-preserved",
+      "targetBytes": 536,
+      "targetSha256": "f80c41727358ed6029c7bd32390e4f8b2b8db77322a020f56212a0adfb2766e0",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/floor.vert.glsl",
+      "target": "experiences/urushi/src/shaders/floor.vert.glsl",
+      "sourceBytes": 115,
+      "sourceSha256": "eeefd4141e2b01329d67ed1111e552432fd8e66a7918144dfb3b5351625996fe",
+      "kind": "byte-preserved",
+      "targetBytes": 115,
+      "targetSha256": "eeefd4141e2b01329d67ed1111e552432fd8e66a7918144dfb3b5351625996fe",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/gold.frag.glsl",
+      "target": "experiences/urushi/src/shaders/gold.frag.glsl",
+      "sourceBytes": 486,
+      "sourceSha256": "fdb540a6968bfe7a40909f7d63da6bca2c9f3239910b2ad52b5f1b7e57998c1d",
+      "kind": "byte-preserved",
+      "targetBytes": 486,
+      "targetSha256": "fdb540a6968bfe7a40909f7d63da6bca2c9f3239910b2ad52b5f1b7e57998c1d",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/gold.vert.glsl",
+      "target": "experiences/urushi/src/shaders/gold.vert.glsl",
+      "sourceBytes": 805,
+      "sourceSha256": "d1c6f7c357d9bad7a9b759026971c0b97b3903bf08e54f6fbc786736b783c144",
+      "kind": "byte-preserved",
+      "targetBytes": 805,
+      "targetSha256": "d1c6f7c357d9bad7a9b759026971c0b97b3903bf08e54f6fbc786736b783c144",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/lacquer.frag.glsl",
+      "target": "experiences/urushi/src/shaders/lacquer.frag.glsl",
+      "sourceBytes": 11489,
+      "sourceSha256": "a0c06102488b2b6eedb92be354d22f907d16f52a40b44f57d56beeec9db4504d",
+      "kind": "byte-preserved",
+      "targetBytes": 11489,
+      "targetSha256": "a0c06102488b2b6eedb92be354d22f907d16f52a40b44f57d56beeec9db4504d",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/shaders/vessel.vert.glsl",
+      "target": "experiences/urushi/src/shaders/vessel.vert.glsl",
+      "sourceBytes": 385,
+      "sourceSha256": "bbdf14e40413b85c821a62785dcfc4f13e99f19400a111eb34c423f902325242",
+      "kind": "byte-preserved",
+      "targetBytes": 385,
+      "targetSha256": "bbdf14e40413b85c821a62785dcfc4f13e99f19400a111eb34c423f902325242",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/story.js",
+      "target": "experiences/urushi/src/story.js",
+      "sourceBytes": 7838,
+      "sourceSha256": "0ce46178104dd815b2b61197191e4d7fa1333e3951f6d8f5ca50e606fda95f03",
+      "kind": "byte-preserved",
+      "targetBytes": 7838,
+      "targetSha256": "0ce46178104dd815b2b61197191e4d7fa1333e3951f6d8f5ca50e606fda95f03",
+      "byteIdentical": true
+    },
+    {
+      "source": "urushi/src/style.css",
+      "target": "experiences/urushi/src/style.css",
+      "sourceBytes": 19467,
+      "sourceSha256": "f7098e8b86c553365e4126562f33875d2aa3fd2ff944100871b765d8557b62fb",
+      "kind": "adapted-runtime",
+      "targetBytes": 20388,
+      "targetSha256": "3da4be1ea250e7d28475ef342e2b48092925c488130b20030f23091a17544b6e",
+      "byteIdentical": false
+    }
+  ],
+  "omissions": [
+    {
+      "entry": "urushi/.gitignore",
+      "bytes": 37,
+      "sha256": "38263e3dfac75a1b78cd8d3db3488d34512b6d7595c1e01fbb7fd78a0bd55b17",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    },
+    {
+      "entry": "urushi/Start-URUSHI.cmd",
+      "bytes": 244,
+      "sha256": "b01e415ad032a1e4b5c161e9889cc63add74f10c81832c2d9dbca04f2d4d7604",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    },
+    {
+      "entry": "urushi/Start-URUSHI.sh",
+      "bytes": 111,
+      "sha256": "be7f56e7909ed5eac4ab4ef3e67824e9cd516fac0cbaecdbb19ec1bbf8f668f7",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    },
+    {
+      "entry": "urushi/dist/assets/fonts/urushi-cjk.provenance.json",
+      "bytes": 6853,
+      "sha256": "f9ff6c704d7ff81a13a379cce5e40b8ff33230456de4bcf2e18b790ef5dd10f7",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/fonts/urushi-cjk.woff2",
+      "bytes": 61500,
+      "sha256": "d8a18168c405e50255750af16d6d2764f44f64c5eb7564b1939faa0ab10eb1ef",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/index-CAI_-NSS.css",
+      "bytes": 17749,
+      "sha256": "41840f24339e17746f1b26f45fe9b61e24f328d55758f89ac6f2775723699405",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/index-D17nskJc.js",
+      "bytes": 39994,
+      "sha256": "c6e68a08da5027df54dd028a2f1605f27ae95a77d898c7579ae402bc87ad5037",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/renderer-BSf8HscA.js",
+      "bytes": 550150,
+      "sha256": "0c37a96e195c7ddc2cbf42bdc8566fa662b3917a2710704ea858ad2627259da5",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/research-sources.json",
+      "bytes": 2095,
+      "sha256": "5a241619ed2e0538742e475a3733aac804d265035c707c38cdcc35a57409f07f",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/abrade.webp",
+      "bytes": 379964,
+      "sha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/coat.webp",
+      "bytes": 383378,
+      "sha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/core.webp",
+      "bytes": 423772,
+      "sha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/cure.webp",
+      "bytes": 366356,
+      "sha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/depth.webp",
+      "bytes": 347524,
+      "sha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/hero.webp",
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/layers.webp",
+      "bytes": 376904,
+      "sha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/maki-e.webp",
+      "bytes": 351236,
+      "sha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/polish.webp",
+      "bytes": 336488,
+      "sha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/provenance.json",
+      "bytes": 4633,
+      "sha256": "3d712921636a936f73f2f91eda4a078289f6554c4231a18374f1721dc85cf016",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/reveal.webp",
+      "bytes": 352118,
+      "sha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/stills/vermilion.webp",
+      "bytes": 339894,
+      "sha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/assets/surface-black.webp",
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/favicon.svg",
+      "bytes": 421,
+      "sha256": "ae00ea4ca8ffee6d8edc0e985102d772f1421b492ddb0a67be8681577b795439",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/index.html",
+      "bytes": 5950,
+      "sha256": "045e8dc29f33b41687d184ace17eb173c71b38c2a356b3073709ae26f750aee8",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/models/urushi-vessel.obj",
+      "bytes": 4641312,
+      "sha256": "2fa4604daee240526b2c5f9aea520218dec60e6c15faef42c21e6489eed28651",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/models/vessel-profile.json",
+      "bytes": 1114,
+      "sha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/dist/textures/lacquer-microstructure.png",
+      "bytes": 224577,
+      "sha256": "c45a307248fdc4fc11c0ed0a74abd8577944cb5d96db850e3e9eb681b4154c20",
+      "reason": "Compiled application HTML/JS/CSS or generated duplicate of an imported public asset; source is integrated with the Collection build."
+    },
+    {
+      "entry": "urushi/package-lock.json",
+      "bytes": 27117,
+      "sha256": "7180ad888b91d61ac40de268ab06e8c15f2a0df32a3b311fa790ec54d2019561",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    },
+    {
+      "entry": "urushi/package.json",
+      "bytes": 648,
+      "sha256": "200433d53db47efb60bf46bcaa6b6438dd8d1680f359ad1b0d1541d650e16298",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    },
+    {
+      "entry": "urushi/scripts/serve.mjs",
+      "bytes": 3111,
+      "sha256": "5687571de922c926eaccef0ce42cc6129edd3ccf9df26400ffbcf9f62b02708e",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    },
+    {
+      "entry": "urushi/vite.config.js",
+      "bytes": 331,
+      "sha256": "1b2c4312b69cf56b6462f9551c220da56b31758db5dee662f820586dc0d9e511",
+      "reason": "Standalone package/lock/build/server/startup or ignore configuration; original ZIP remains outside the Collection and root dependencies/tooling are reused."
+    }
+  ],
+  "reviewedAt": "2026-10-07T09:17:51.398140+00:00",
+  "entryCount": 117,
+  "uncompressedBytes": 41301457,
+  "topLevel": [
+    "urushi"
+  ],
+  "archiveIssues": [],
+  "sourceChecksumRecords": 116,
+  "sourceChecksumFailures": [],
+  "importedEntries": 86,
+  "omittedEntries": 31,
+  "protectedByteIdenticalFiles": 34,
+  "normalizedTextFiles": [],
+  "generatedFiles": [
+    {
+      "path": "public/urushi/NOTICE.md",
+      "bytes": 2111,
+      "sha256": "cfbffaa07193e4b0272acd1da662df2d0eb7f3f20ba9c102dbf4c25d0f8cfe98"
+    },
+    {
+      "path": "public/urushi/poster.webp",
+      "bytes": 12204,
+      "sha256": "b40f1cced476fc052a28c9e326c5d634b252a8c22f408a83edde4edaa3fd1671"
+    },
+    {
+      "path": "public/urushi/social.jpg",
+      "bytes": 34574,
+      "sha256": "4f5bb7b132df7b479fbe7b4e563c4213b24ad53bc90d689f00c1c279025a6ae6"
+    },
+    {
+      "path": "public/urushi/licenses/README.md",
+      "bytes": 1170,
+      "sha256": "fa04d572105f47422f1436e2467478e1024003ecb38bd6b13da399201b21a9b6"
+    },
+    {
+      "path": "docs/urushi/ACCEPTANCE.md",
+      "bytes": 7210,
+      "sha256": "5d7d41be77b1d9c131560c8862ac36d015cda402e908971d13e0b5e8d05e8f24"
+    },
+    {
+      "path": "docs/urushi/ARCHITECTURE.md",
+      "bytes": 3614,
+      "sha256": "ecc2977e465a1866ad90429bc78c8e6f48f7e1d1852168571771076c0cf1c73f"
+    }
+  ],
+  "upstreamPackage": {
+    "three": "0.186.1",
+    "lenis": "1.3.26",
+    "fontsourceBodoniModa": "5.3.0",
+    "fontsourceManrope": "5.3.0",
+    "vite": "8.3.3"
+  },
+  "metadata": {
+    "route": "urushi",
+    "title": "URUSHI — Layers of Lacquer",
+    "name": "URUSHI",
+    "tagline": "Surface becoming depth.",
+    "descriptionEn": "One original lacquer vessel, eleven chapters through wood, coating, humid curing, abrasion, layers, polish and maki-e.",
+    "descriptionZh": "沿同一只原创漆盒，走过木胎、薄涂、湿度固化、研磨、层积、抛光与莳绘的十一章材质旅程。",
+    "worldEn": "Lacquer / material / time and reflected light",
+    "worldZh": "漆艺 / 材料 / 光与时间",
+    "chapterCount": 11,
+    "chapterNames": [
+      "Black without edge",
+      "Core",
+      "First coat",
+      "Cure",
+      "Abrade",
+      "Layers",
+      "Vermilion",
+      "Polish",
+      "Maki-e",
+      "Reveal",
+      "Depth"
+    ],
+    "chapterNamesZh": [
+      "无边之黑",
+      "木胎",
+      "初涂",
+      "固化",
+      "研磨",
+      "层积",
+      "朱",
+      "抛光",
+      "莳绘",
+      "研出",
+      "深处"
+    ],
+    "languages": [
+      "en",
+      "zh-Hans"
+    ],
+    "hasAudio": false,
+    "galleryFontFamily": "Bodoni Moda",
+    "galleryFont": "/urushi/fonts/bodoni-moda-latin-400-normal.woff2",
+    "palette": {
+      "background": "#0b0a09",
+      "ink": "#eee4d6",
+      "accent": "#b9afa2"
+    },
+    "poster": "/urushi/poster.webp",
+    "socialImage": "/urushi/social.jpg",
+    "socialAlt": "URUSHI's original procedural lacquer vessel captured from its actual material journey",
+    "notice": "/urushi/NOTICE.md",
+    "license": "/urushi/LICENSE.txt",
+    "licenseInventory": "/urushi/licenses/README.md",
+    "rendering": "One persistent original procedural vessel and authored GLSL material; original renderer-captured stills preserve every chapter when WebGL is unavailable.",
+    "imageOrigin": "Runtime and fallback images are original procedural renders. Thirteen supplied AI-generated images remain visual research with their original prompts, rather than runtime plates.",
+    "controls": [
+      "Index",
+      "About",
+      "Complete reading view",
+      "English/Chinese",
+      "Motion preference",
+      "Move the light",
+      "Replay"
+    ],
+    "clock": "One original requestAnimationFrame owner; one Lenis instance, lerp 0.105, native touch, no autoRaf and no second scene easing",
+    "archivePath": "D:/下载/URUSHI-Layers-of-Lacquer.zip",
+    "archiveSha256": "1bc800b28e25ee49520004e852c91202ed9e4f0c5e6e3d7895764f7b51a75b1c"
+  },
+  "capture": {
+    "capturedAt": "2026-10-07T08:42:09.235Z",
+    "base": "http://127.0.0.1:4195/urushi/",
+    "state": {
+      "url": "http://127.0.0.1:4195/urushi/",
+      "chapter": "0",
+      "renderer": "webgl",
+      "motion": "full",
+      "y": 0,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "drawing": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "source": {
+      "path": "C:/Users/admin/AppData/Local/Temp/collection-urushi-e95e9db7f37443d5b4fa782abc0c3555/opening-ui-free.png",
+      "bytes": 295387,
+      "sha256": "1037641f321f8e3e00e0d3c254ea9fb8806f5773294cd2f37320d4b5d3b2a540",
+      "width": 1440,
+      "height": 900
+    },
+    "temporarilyHidden": [
+      ".site-header",
+      "#narrative",
+      ".scene-copy",
+      ".journey-footer",
+      ".skip-link",
+      "#render-status"
+    ],
+    "productSourceChanged": false,
+    "origin": "Actual opening composition of the supplied original procedural LacquerRenderer. No AI image, museum photograph or redraw was used.",
+    "transforms": {
+      "poster": "Full native 1440x900 composition resized to 1200x750",
+      "social": "Native composition centre-cropped/resized to 1200x630"
+    },
+    "outputs": [
+      {
+        "path": "public/urushi/poster.webp",
+        "bytes": 12204,
+        "sha256": "b40f1cced476fc052a28c9e326c5d634b252a8c22f408a83edde4edaa3fd1671",
+        "format": "webp",
+        "mediaType": "image/webp",
+        "size": 12204,
+        "width": 1200,
+        "height": 750,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 1200,
+          "height": 750
+        }
+      },
+      {
+        "path": "public/urushi/social.jpg",
+        "bytes": 34574,
+        "sha256": "4f5bb7b132df7b479fbe7b4e563c4213b24ad53bc90d689f00c1c279025a6ae6",
+        "format": "jpeg",
+        "mediaType": "image/jpeg",
+        "size": 34574,
+        "width": 1200,
+        "height": 630,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "density": 72,
+        "chromaSubsampling": "4:2:0",
+        "isProgressive": false,
+        "isPalette": false,
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 1200,
+          "height": 630
+        }
+      }
+    ]
+  },
+  "review": {
+    "graph": "MCP graph transport closed and new source unindexed; actual source fallback used, no successful graph claim.",
+    "securityAndLicenses": "Independent source audit passed 14 supplied read-only checks and 116 manifest checks. Scoped MIT original code/model/texture/stills; Latin and renamed CJK OFL; generated visual Bible references identified separately. Only local assets, optional language/motion storage and eight reader-opened HTTPS research links. No telemetry/upload/eval.",
+    "preaudit": "Independent original production UI 176/176 checks across 11 chapters, EN/ZH, reduced and still editions, mid material states, six sizes, controls and context loss/restore; 100 captures independently viewed.",
+    "integration": "Scoped dev main final matrix 108/108 checks, 48 captures, no page errors. Supplemental 22 mid-chapter and two early-input checks passed. Final native anchor/visible-exit/resize regression 12/12; independent stable-source no-HMR fresh cold and actual arbitrary wheel/reload acceptance 7/7 (three fresh navigate .16 opacity1 and four reload exact Y retained). Arbitrary refresh, native dialogs, range keyboard, replay, resize, reverse input, reduced/fallback all chapters, noJS/native return, late-ready pose and six-size composition exercised; current ACCEPTANCE separates dev harness limits and outstanding root production gates.",
+    "collectionChanges": [
+      "Namespaced resources and independent metadata/document",
+      "Original single RAF and one Lenis .105 with native touch/reduced input",
+      "Resize queued on original clock and no second scene ease",
+      "Terminal async-disposal/late-ready guards",
+      "Measured scene scroll margins give native fragments and authored navigation the same stable .16 landing; native reload/history positions retained",
+      "Native visible Collection/noJS navigation, shared visible exit stylesheet and HTML-owned CSS",
+      "Original Latin font bytes extracted as standalone assets; no dependency/package/build changes"
+    ],
+    "production": "Main task: 187 model tests, root/project-path production builds and 728-reference verifications, 52 normal desktop/phone entries across 26 works. Genuine same-window tab hidden/resume and BFCache pageshow.persisted true with URUSHI 1200px-to-1200px restoration passed. Independent URUSHI production five batches executed 187 raw assertions: 181 passed and six original fixed-delay failures remain recorded, closed by strict settled rechecks8/8 without runtime change or weaker tolerance. Two reduced fresh cold links passed; final rebuilt no-JavaScript D/M4/4 independent assertions plus2/2 scoped native text-exit flows passed (17px text164px, real Collection clicks).29fresh contexts119fullframes, complete contacts and selected full-resolution frames visually reviewed. No unresolved confirmed production defect. Main source SHA6a3973d6484d09cc203f2b9e36f8ea553f91b98a74f41f8f5f7ac994fbad2b3b. See final ACCEPTANCE and external urushi-upstream/production/report.md+summary.json.",
+    "limitations": [
+      "Physical touch/iOS/Safari/Firefox/high-refresh devices unverified",
+      "No FPS/power or prolonged memory-soak certification",
+      "Headless dev minimization and Vite Back harness preconditions were not satisfied; separate genuine production native lifecycle acceptance passed",
+      "Exact deployed asset identity/live flows remain a subsequent root release gate"
+    ]
+  }
+}

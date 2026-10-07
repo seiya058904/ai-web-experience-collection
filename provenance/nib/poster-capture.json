@@ -1,0 +1,42 @@
+{
+  "width": 1440,
+  "height": 900,
+  "scrollY": 0,
+  "viewport": [
+    1440,
+    900
+  ],
+  "ready": "true",
+  "url": "http://127.0.0.1:4195/nib/",
+  "at": "2026-10-07T08:43:40.283Z",
+  "pointer": "initial center",
+  "osReducedMotion": false,
+  "source": "actual rendered material-stage Canvas; HTML UI excluded by Canvas export",
+  "derivatives": "Sharp resize/encoding only",
+  "runtimeMaterials": [
+    {
+      "sourcePath": "NIB/public/assets/hero.webp",
+      "sourceSha256": "b95d537634a8d4f21ff268bb8d77cfeabec01df6bfab2e4d1c67482e2f994f8e"
+    },
+    {
+      "sourcePath": "NIB/public/assets/hero-mobile.webp",
+      "sourceSha256": "e64876bb8e3da06b51026a092827174c7391453b74daa4415af8629a10faa224"
+    },
+    {
+      "sourcePath": "NIB/public/assets/meniscus-fluid.webp",
+      "sourceSha256": "aad435dcd75efee882ee758833e27dd3d9cd43434989e3b58ac2b8e9ef36dd91"
+    }
+  ],
+  "generated": [
+    {
+      "target": "public/nib/poster.webp",
+      "bytes": 67060,
+      "sha256": "2a64734be44f703c474b4e3602ff83882a09ee22e7a819fd9cb08363700862b0"
+    },
+    {
+      "target": "public/nib/social.jpg",
+      "bytes": 58869,
+      "sha256": "8d773985aa5f064742ee926f7785ce80bb29190ef89b63fc6f9dc04493a8d425"
+    }
+  ]
+}

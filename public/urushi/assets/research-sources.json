@@ -1,0 +1,50 @@
+[
+  {
+    "id": "S01",
+    "title": "Japan Kogei Association — Urushi work",
+    "url": "https://www.nihonkogeikai.or.jp/en/urushiwork/",
+    "usedFor": "Sap, foundations, finishing choices, and lacquer terminology."
+  },
+  {
+    "id": "S02",
+    "title": "Wajima Museum of Urushi Art — Techniques and History",
+    "url": "https://www.art.city.wajima.ishikawa.jp/exhibition-guide/gl-en",
+    "usedFor": "Wooden bases, ground preparation, wet charcoal abrasion, and finishing."
+  },
+  {
+    "id": "S03",
+    "title": "Tosiko Kenjo — Studies on Films of Japanese Lacquer III",
+    "url": "https://www.jstage.jst.go.jp/article/shikizai1937/46/7/46_419/_article/-char/en",
+    "usedFor": "Laccase-mediated polymerization and the influence of humidity and oxygen."
+  },
+  {
+    "id": "S04",
+    "title": "Japan Artisan Foundation — Roiro",
+    "url": "https://artisanfoundation.jp/wajima/articles/roiro",
+    "usedFor": "Repeated abrasion, rubbed-in lacquer, and mirror-gloss polishing."
+  },
+  {
+    "id": "S05",
+    "title": "The Metropolitan Museum of Art — Lacquerware of East Asia",
+    "url": "https://www.metmuseum.org/essays/lacquerware-of-east-asia",
+    "usedFor": "Maki-e metal-powder deposition and nashiji terminology."
+  },
+  {
+    "id": "S06",
+    "title": "e-Museum — Comb Box with Pine and Camellia in Makie",
+    "url": "https://emuseum.nich.go.jp/detail?content_base_id=101134&content_part_id=022&content_pict_id=0&langId=en&webView=0",
+    "usedFor": "A documented example of covering and polishing out a togidashi design."
+  },
+  {
+    "id": "S07",
+    "title": "Kyoto National Museum — Poetry-Inspired Inkstone Box",
+    "url": "https://www.kyohaku.go.jp/eng/collection/meihin/urusi/item02/",
+    "usedFor": "Nashiji metal particles beneath translucent lacquer."
+  },
+  {
+    "id": "S08",
+    "title": "V&A — Mine Tanigawa's Japanese Urushi Sculptures",
+    "url": "https://www.vam.ac.uk/articles/mine-tanigawas-meticulously-crafted-japanese-urushi-lacquer-sculptures",
+    "usedFor": "Contemporary sculptural form, material finish, and visual research."
+  }
+]

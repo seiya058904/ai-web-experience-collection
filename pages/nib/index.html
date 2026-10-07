@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080a0d">
+  <meta name="description" content="A journey through a tiny fluid machine. Hold the ink. Balance the air. Draw the line.">
+  <title>NIB — Ink Under Pressure</title>
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%nib/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:title" content="NIB — Ink Under Pressure">
+  <meta property="og:description" content="Hold the ink. Balance the air. Draw the line. A qualitative journey through a tiny fluid machine.">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%nib/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%nib/social.jpg">
+  <meta property="og:image:alt" content="Actual NIB runtime capture: generated engraved metal nib holding a small attached meniscus against graphite.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NIB — Ink Under Pressure">
+  <meta name="twitter:description" content="Hold the ink. Balance the air. Draw the line.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%nib/social.jpg">
+  <meta name="twitter:image:alt" content="Actual NIB runtime capture with generated metal and held ink materials.">
+  <link rel="icon" href="/nib/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/nib/fonts/cormorant-garamond-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/nib/fonts/cormorant-garamond-latin-variable-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/nib/assets/hero.webp" as="image">
+  <link rel="stylesheet" href="/nib/fonts/fonts.css">
+  <link rel="stylesheet" href="../../experiences/shared/collection-return.css">
+  <link rel="stylesheet" href="../../experiences/nib/src/styles.css">
+  <script type="module" src="../../experiences/nib/src/main.js"></script>
+</head>
+<body data-world="metal">
+  <a class="skip-link" href="#journey">Skip to the journey</a>
+  <header class="site-header">
+    <a class="wordmark" href="#metal" aria-label="NIB, return to the beginning">NIB</a>
+    <div class="header-actions">
+      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="journey-toggle" type="button" aria-haspopup="dialog" aria-controls="journey-dialog">
+        <span>The journey</span>
+        <svg class="plus-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="film-stage" aria-hidden="true"><canvas id="material-stage"></canvas></div>
+
+  <main id="journey" tabindex="-1">
+    <section class="chapter chapter--metal" id="metal" aria-labelledby="title-metal">
+      <img class="fallback-art" src="/nib/assets/hero.webp" alt="A monumental engraved nib holds a small attached ink meniscus.">
+      <div class="chapter-copy hero-copy">
+        <h1 id="title-metal"><span class="hero-name">NIB</span><span class="hero-subtitle">Ink under<br><em>pressure.</em></span></h1>
+      </div>
+    </section>
+    <section class="chapter" id="reservoir" aria-labelledby="title-reservoir">
+      <img class="fallback-art" src="/nib/assets/reservoir.webp" alt="A dark ink chamber with a liquid surface and room for replacement air." loading="lazy">
+      <div class="chapter-copy">
+        <h2 id="title-reservoir">Room<br><em>to breathe.</em></h2>
+        <p>As ink leaves, air takes its place.</p>
+      </div>
+    </section>
+    <section class="chapter" id="feed" aria-labelledby="title-feed">
+      <img class="fallback-art" src="/nib/assets/feed.webp" alt="A narrow longitudinal ink channel passes between black ebonite buffer fins." loading="lazy">
+      <div class="chapter-copy">
+        <h2 id="title-feed">A measured<br><em>way through.</em></h2>
+        <p>Narrow channels guide.<br>Fine fins hold the excess.</p>
+      </div>
+    </section>
+    <section class="chapter" id="balance" aria-labelledby="title-balance">
+      <div class="chapter-copy balance-copy">
+        <h2 id="title-balance">Ink outward.<br><em>Air inward.</em></h2>
+        <p>A quiet exchange keeps the line alive.</p>
+      </div>
+      <div class="fallback-description">Ink moves toward the nib through a fine passage. As ink is used, small amounts of replacement air enter the reservoir through the feed. The two paths work together.</div>
+    </section>
+    <section class="chapter" id="slit" aria-labelledby="title-slit">
+      <img class="fallback-art" src="/nib/assets/slit.webp" alt="A thin blue-black liquid seam follows the slit between two metal tines." loading="lazy">
+      <div class="chapter-copy">
+        <h2 id="title-slit">Between<br><em>two edges.</em></h2>
+        <p>A liquid seam. A way to the tip.</p>
+      </div>
+    </section>
+    <section class="chapter" id="meniscus" aria-labelledby="title-meniscus">
+      <img class="fallback-art" src="/nib/assets/meniscus.webp" alt="Two rounded tipping halves hold the ink at the edge of contact." loading="lazy">
+      <div class="chapter-copy meniscus-copy">
+        <h2 id="title-meniscus">Almost.<br><em>Not yet.</em></h2>
+        <p>Held at the edge of contact.</p>
+      </div>
+    </section>
+    <section class="chapter chapter--paper" id="contact" aria-labelledby="title-contact">
+      <img class="fallback-art" src="/nib/assets/contact.webp" alt="The rounded nib meets paper; an ink bridge joins the tip to the fibers." loading="lazy">
+      <div class="chapter-copy contact-copy">
+        <h2 id="title-contact">A point<br><em>of exchange.</em></h2>
+        <p>The nib touches. The paper draws.</p>
+      </div>
+    </section>
+    <section class="chapter chapter--paper" id="absorb" aria-labelledby="title-absorb">
+      <div class="chapter-copy">
+        <h2 id="title-absorb">Drawn<br><em>into the grain.</em></h2>
+        <p>The smallest spaces carry the ink.</p>
+      </div>
+      <div class="fallback-description">Within the narrow stroke, ink enters the spaces between cellulose fibers. Fine branches form along the wet edge.</div>
+    </section>
+    <section class="chapter chapter--paper" id="write" aria-labelledby="title-write">
+      <img class="fallback-art" src="/nib/assets/contact.webp" alt="A small movement of the nib leaves a single controlled stroke." loading="lazy">
+      <div class="chapter-copy">
+        <h2 id="title-write">All of this,<br><em>for one line.</em></h2>
+        <p>A small movement makes the hidden system visible.</p>
+      </div>
+    </section>
+    <section class="chapter chapter--paper chapter--trace" id="trace" aria-labelledby="title-trace">
+      <div class="chapter-copy trace-copy">
+        <h2 id="title-trace">The line remains.</h2>
+        <p>Hold the ink. Balance the air. Draw the line.</p>
+        <div class="trace-actions">
+          <a class="text-link" href="#metal">Begin again <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a>
+          <button class="text-link colophon-toggle" type="button" aria-haspopup="dialog">Colophon</button>
+        </div>
+      </div>
+      <div class="fallback-description">The wet reflection fades. The dark line stays in the paper.</div>
+    </section>
+    <div class="scroll-tail" aria-hidden="true"></div>
+  </main>
+
+  <footer class="film-footer">
+    <div class="footer-left">
+      <p class="opening-statement">Hold the ink. Balance the air. Draw the line.</p>
+      <p class="chapter-position"><span class="position-number">01</span><span class="position-slash">/</span><span class="position-name">Metal</span></p>
+    </div>
+    <a class="enter-cue" href="#reservoir"><span>Scroll to enter</span><svg viewBox="0 0 24 28" aria-hidden="true"><path d="M12 2v23M5 18l7 7 7-7"/></svg></a>
+    <nav class="chapter-ticks" aria-label="Jump to a chapter">
+      <a href="#metal" aria-label="01 Metal" aria-current="step"><span></span></a>
+      <a href="#reservoir" aria-label="02 Reservoir"><span></span></a>
+      <a href="#feed" aria-label="03 Feed"><span></span></a>
+      <a href="#balance" aria-label="04 Balance"><span></span></a>
+      <a href="#slit" aria-label="05 Slit"><span></span></a>
+      <a href="#meniscus" aria-label="06 Meniscus"><span></span></a>
+      <a href="#contact" aria-label="07 Contact"><span></span></a>
+      <a href="#absorb" aria-label="08 Absorb"><span></span></a>
+      <a href="#write" aria-label="09 Write"><span></span></a>
+      <a href="#trace" aria-label="10 Trace"><span></span></a>
+    </nav>
+  </footer>
+
+  <dialog class="index-dialog" id="journey-dialog" aria-labelledby="index-title" data-lenis-prevent>
+    <div class="dialog-header"><span class="wordmark">NIB</span><button class="close-dialog" type="button" aria-label="Close the journey"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M5 19 19 5"/></svg></button></div>
+    <div class="index-intro"><h2 id="index-title">Follow <em>the ink.</em></h2><p>From a chamber to a trace.<br>Ten moments. One continuous line.</p></div>
+    <nav class="index-chapters" aria-label="The complete journey">
+      <a href="#metal"><span>01</span>Metal<small>The object</small></a>
+      <a href="#reservoir"><span>02</span>Reservoir<small>The held volume</small></a>
+      <a href="#feed"><span>03</span>Feed<small>The measured path</small></a>
+      <a href="#balance"><span>04</span>Balance<small>The quiet exchange</small></a>
+      <a href="#slit"><span>05</span>Slit<small>The liquid seam</small></a>
+      <a href="#meniscus"><span>06</span>Meniscus<small>The held surface</small></a>
+      <a href="#contact"><span>07</span>Contact<small>The first connection</small></a>
+      <a href="#absorb"><span>08</span>Absorb<small>The smallest spaces</small></a>
+      <a href="#write"><span>09</span>Write<small>The movement</small></a>
+      <a href="#trace"><span>10</span>Trace<small>What remains</small></a>
+    </nav>
+    <div class="index-foot"><span>Ink outward. Air inward.</span><button class="text-link colophon-toggle" type="button">Colophon</button></div>
+  </dialog>
+
+  <dialog class="colophon-dialog" id="colophon-dialog" aria-labelledby="colophon-title" data-lenis-prevent>
+    <div class="dialog-header"><span class="wordmark">NIB</span><button class="close-dialog" type="button" aria-label="Close the colophon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M5 19 19 5"/></svg></button></div>
+    <div class="colophon-content">
+      <h2 id="colophon-title">A small<br><em>fluid machine.</em></h2>
+      <p>NIB follows stored ink through a feed, a slit and an attached meniscus, into paper and finally into a line. Paper draws. The feed supplies and buffers. Replacement air allows the exchange to continue.</p>
+      <p>This is an authored interpretation of a conventional fountain-pen system. Magnification, geometry and timing serve the experience. The final material is an aqueous dye ink on a lightly textured writing paper.</p>
+      <dl class="credits-list"><div><dt>Material studies</dt><dd>Original AI-generated imagery, individually refined and separated.</dd></div><div><dt>Living systems</dt><dd>Authored flow, meniscus, contact, fibers and stroke.</dd></div><div><dt>Type</dt><dd>Cormorant Garamond &amp; Manrope.</dd></div></dl>
+      <div class="colophon-sources"><h3>Mechanism references</h3><a href="https://www.pilot.co.jp/media/knowledge/008.html" target="_blank" rel="noopener noreferrer">PILOT · Ink and air exchange</a><a href="https://www.platinum-pen.co.jp/about-fountain-pen/6/" target="_blank" rel="noopener noreferrer">Platinum · How a fountain pen works</a><a href="https://sailor.co.jp/topics/fountain-pen-structure/" target="_blank" rel="noopener noreferrer">Sailor · Structure of the nib</a><a href="https://doi.org/10.1016/j.jcis.2020.04.123" target="_blank" rel="noopener noreferrer">Nikolov et al. · Capillarity and ink–air flow</a></div>
+      <div class="colophon-sources"><h3>Rights &amp; local records</h3><a href="%BASE_URL%nib/NOTICE.md" target="_blank" rel="noopener noreferrer">NIB rights and asset notice</a><a href="%BASE_URL%nib/ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">Original attribution</a></div>
+      <button class="text-link" id="reading-toggle" type="button">Read the narrative</button>
+    </div>
+  </dialog>
+  <noscript><p class="fallback-note">The narrative below remains readable. Enable JavaScript for the continuous material experience.</p></noscript>
+</body>
+</html>

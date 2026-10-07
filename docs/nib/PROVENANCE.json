@@ -1,0 +1,1190 @@
+{
+  "schemaVersion": 1,
+  "project": "NIB — Ink Under Pressure",
+  "sessionDate": "2026-10-07",
+  "purpose": "Portable provenance for the local-only source ZIP; no public deployment.",
+  "inventory": {
+    "runtimeWebpCount": 11,
+    "finalGeneratedOriginalPngCount": 11,
+    "curatedVisualBiblePngCount": 11,
+    "runtimeImageBytes": 1816290,
+    "finalOriginalPngBytes": 14075777,
+    "visualBiblePngBytes": 21475647,
+    "externalStockImages": 0,
+    "externalTexturePacks": 0,
+    "external3DModels": 0
+  },
+  "evidence": {
+    "sessionMaps": [
+      "concept-map.json",
+      "asset-map.json",
+      "asset-additions.json",
+      "asset-finish-additions.json"
+    ],
+    "mapLocationDuringWork": "Sibling qa directory; retained values are embedded here, and this document does not depend on that temporary directory.",
+    "pathPolicy": "All delivered-file paths are relative to the project root. Generated tool output basenames are identifiers, not runtime paths.",
+    "imageMetadataInspection": "The 22 delivered PNGs contained no text metadata or recoverable prompts when inspected; known prompt text comes from the session maps.",
+    "sourceCopyVerification": "All 22 delivered PNGs were SHA256-identical to their recorded generated output files.",
+    "alphaVerification": "All 6 alpha-bearing PNG/WebP pairs had identical decoded alpha channels.",
+    "inferencePolicy": "Missing prompts and input references remain null; prompt-described lineage is not upgraded to a proven source-file relationship."
+  },
+  "rights": {
+    "originalWork": "Original source, layout, copy and procedural work were created for the user and delivered as the user’s project material. No additional license is granted for original work.",
+    "aiMaterials": "Original AI-generated material made in this session; provenance is disclosed without asserting exclusive copyright.",
+    "thirdParty": "Identified third-party components retain their own licenses. GSAP uses a proprietary Standard No Charge license; it is not MIT or OFL.",
+    "attributionFile": "ATTRIBUTION.md"
+  },
+  "runtimeMaterials": [
+    {
+      "id": "hero-asset",
+      "name": "hero",
+      "chapterUse": "Metal",
+      "kind": "AI-generated photographic material",
+      "role": "Transparent frontal nib with engraved metal and lacquer; a material object, not a complete page.",
+      "original": {
+        "file": "artwork/originals/hero.png",
+        "sha256": "0546e69ed54acfc590c7b8bb245d2ae0ae7e083180ed0d3baa87cc6d6b83a306",
+        "bytes": 520424,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "production": {
+        "file": "public/assets/hero.webp",
+        "sha256": "b95d537634a8d4f21ff268bb8d77cfeabec01df6bfab2e4d1c67482e2f994f8e",
+        "bytes": 100694,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-0004cd2a-f204-4b9e-b7d9-b3a46032b70f.png",
+        "retainedPrompt": null,
+        "promptStatus": "not retained; PNG metadata contains no prompt; not reconstructed",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; no input provenance inferred",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": true,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Composited metal highlights",
+        "Live attached ink meniscus",
+        "Mobile reframing",
+        "Ink Line handoff"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "contact-asset",
+      "name": "contact",
+      "chapterUse": "Metal / short landscape Hero; retained generation reference",
+      "kind": "AI-generated photographic material",
+      "role": "Transparent diagonal nib and lacquer object used for the short landscape Hero and retained as a generation reference for nib-profile.",
+      "original": {
+        "file": "artwork/originals/contact.png",
+        "sha256": "ad733c514de4a16cadcf788070876e1bcf23b582524c40c831c001e50014b1f9",
+        "bytes": 735598,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "production": {
+        "file": "public/assets/contact.webp",
+        "sha256": "71800bff1f110cf382a3a97bdcda18f79756aff7f5696b3f3f53599c6ea013a3",
+        "bytes": 128714,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-5101c551-e03b-4e53-bac1-4a900f5f211e.png",
+        "retainedPrompt": "Use case: background-extraction. Production asset for the NIB website. Edit the supplied contact concept. Extract ONLY the entire existing diagonal fountain nib plus black lacquer grip, preserving its EXACT photographically realistic metal, engraved detail, shoulder shape, all existing proportions, illumination and upper-right to lower-left angle. Preserve the nib tip position and exact edge quality. Remove ALL text, wordmarks, UI, paper, ink stroke, shadow and background. Keep a tiny blue-black ink glint on the nib tip itself, but NO paper and NO trailing ink line. It must be a clean native transparent-background image with real alpha, not a black/white or checkerboard background. Important: the whole nib from visible grip at top-right to tip should stay in original relative composition, with clear empty alpha at left/bottom for code typography and paper. No new elements, no new text, no changing the nib. We will animate this separated nib toward stationary paper and draw ink bridge and stroke live.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": null,
+        "inputReferenceStatus": "prompt describes an input concept but its exact input reference was not retained",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": true,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Short landscape Hero object framing",
+        "Controlled material reflection compositing"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "reservoir-plate",
+      "name": "reservoir",
+      "chapterUse": "Reservoir",
+      "kind": "AI-generated photographic material",
+      "role": "Text-free dark liquid chamber plate.",
+      "original": {
+        "file": "artwork/originals/reservoir.png",
+        "sha256": "ffa1e9f3fb5c1f4f265bc7662a1a7059b867bc4879b7ce7a0fb2d0b9e43354ca",
+        "bytes": 1589706,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "production": {
+        "file": "public/assets/reservoir.webp",
+        "sha256": "609ffbe2850bf71aaac94d8b9bb1917d6680d8c435900cefc381401de558c694",
+        "bytes": 104264,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-90d98178-f974-480f-8a9e-4eca0b2a8f36.png",
+        "retainedPrompt": "Use case: precise-object-edit. Create a text-free production background plate from this NIB reservoir concept. Remove ALL typography, ALL labels, ALL UI and wordmarks. Preserve exactly the chamber geometry, image frame, dark cool lighting, deep blue-black ink, the liquid level at 55% height and refined black lacquer edge materials. Remove the floating air bubbles; these will be drawn live. Subdue the transparent-glass appearance so the rim reads like a deep dark internal chamber wall rather than a teaching specimen bottle. No new elements. The upper-left area must remain quiet graphite negative space for separate HTML typography. The liquid surface will be animated as a live band. No text anywhere.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": "exec-a93dc078-5b9b-4aac-aded-56a97e814eb8.png",
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "exec-a93dc078-5b9b-4aac-aded-56a97e814eb8.png",
+            "status": "matched retained input identifier",
+            "assetId": "reservoir-concept",
+            "file": "docs/visual-bible/02-reservoir.png",
+            "sha256": "f4c44cac2d6b44fa3cd4b84dcdbbfdd963bf458a6f99cfff3c33f7a3a6887bf0",
+            "packaged": true
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": null,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Registered moving liquid interface",
+        "Attached edge reflections",
+        "Sparse air admission rising through liquid"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "feed-plate",
+      "name": "feed",
+      "chapterUse": "Feed / Balance",
+      "kind": "AI-generated photographic material",
+      "role": "Text-free diagonal ebonite feed plate; a small dry crop also supplies material grain to authored Balance geometry.",
+      "original": {
+        "file": "artwork/originals/feed.png",
+        "sha256": "8b257fe4847d4c84399c2013b20c1ed8eb2dd3f7474478b7e8bef51725beddd7",
+        "bytes": 1808124,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "production": {
+        "file": "public/assets/feed.webp",
+        "sha256": "a64907a0d36d67f59ca691f8827cfc4d34d2d51510302ab4914dd490ba4a00ba",
+        "bytes": 159778,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-3c9ff69d-0798-47ad-9c06-01d5bb40cc6f.png",
+        "retainedPrompt": "Use case: precise-object-edit. Extract the production photograph from this exact NIB feed concept. Remove ALL typography, wordmarks, labels, leader lines, dots, UI and text. Preserve frame, scale, lighting, material, positions, diagonal longitudinal ink channel, fine black ebonite buffer fins and pockets exactly. This must remain the same beautiful full-bleed image, not a crop. Upper-left quiet negative space. Reduce bright white highlight in the wet channel slightly so it can be overlaid by a live animated reflection. No new elements. No fake air bubbles. Production macro material plate, no text anywhere.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": "exec-2f88aa66-d1a4-497e-a5c5-046d1df2662a.png",
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "exec-2f88aa66-d1a4-497e-a5c5-046d1df2662a.png",
+            "status": "matched retained input identifier",
+            "assetId": "feed-concept",
+            "file": "docs/visual-bible/03-feed.png",
+            "sha256": "1994f135ae1b5e7777c592abdb9260e289f4bafa855379bf3517adfb3d7a0eda",
+            "packaged": true
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": null,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Longitudinal ink route",
+        "Attached fin-buffer wetting pockets",
+        "Procedural Balance rails and separate passages"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "slit-plate",
+      "name": "slit",
+      "chapterUse": "Slit",
+      "kind": "AI-generated photographic material",
+      "role": "Text-free extreme metal and narrow slit plate.",
+      "original": {
+        "file": "artwork/originals/slit.png",
+        "sha256": "03abf3b530481b478e151533d130aa10ee556365a1ed911f314116402c62112f",
+        "bytes": 2021104,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "production": {
+        "file": "public/assets/slit.webp",
+        "sha256": "a4aecd9bbf35f4335f69b32d712726f45ea107cb52990c827c1b01c19eac31cc",
+        "bytes": 198140,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-bc5295d6-a1a6-4946-b1e0-1119ed6cb49d.png",
+        "retainedPrompt": null,
+        "promptStatus": "not retained; PNG metadata contains no prompt; not reconstructed",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; no input provenance inferred",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": null,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Live liquid seam",
+        "Controlled reflections",
+        "Axial framing and shared line handoff"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "meniscus-asset",
+      "name": "meniscus",
+      "chapterUse": "Meniscus / liquid-interface handoff",
+      "kind": "AI-generated photographic material",
+      "role": "Transparent magnified nib tip, independently registered from liquid; the camera approaches its held interface before entering the optical material.",
+      "original": {
+        "file": "artwork/originals/meniscus.png",
+        "sha256": "13b32b3ec82529e36662fd291666b92895dd3403a2a6b8e2dee17c66561fac85",
+        "bytes": 903044,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "production": {
+        "file": "public/assets/meniscus.webp",
+        "sha256": "fc351c94213208da65f0679502e48ac8eb219cf711ea88e4c2bca526f0892598",
+        "bytes": 185684,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-991e3c9c-63eb-4033-96f9-e3f269bf92b4.png",
+        "retainedPrompt": null,
+        "promptStatus": "not retained; PNG metadata contains no prompt; not reconstructed",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; no input provenance inferred",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": true,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Magnified held-interface composition",
+        "Surface sheen",
+        "Axial travel into the attached meniscus"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "paper-asset",
+      "name": "paper",
+      "chapterUse": "Contact / Write / Trace",
+      "kind": "AI-generated photographic material",
+      "role": "Blank warm ivory writing-paper material.",
+      "original": {
+        "file": "artwork/originals/paper.png",
+        "sha256": "21097eb17fed09bbfb018f419d40c7dd9e29aad5d5993805c88707135dee2968",
+        "bytes": 2496473,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "production": {
+        "file": "public/assets/paper.webp",
+        "sha256": "1cebdb7e905d4d50c11691ca180c5fc2cb267cd71c9eeca813bd483dd8a6a20a",
+        "bytes": 336052,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-eb501127-0103-4d3f-8437-088e3f721ed8.png",
+        "retainedPrompt": "Use case: photorealistic-natural. Production background texture, landscape 16:9. An immaculate blank warm ivory premium fountain-pen paper seen close from above with gentle raking soft studio light from upper left. Fine subtly interlaced cellulose fibers and natural paper tooth, extremely restrained, soft off-white cream color #f1ebdf, uniform across frame with only slight natural tonal variation. No ink, no writing, no pen, no shadows of objects, no lines, no folds, no borders, no ornament. Elegant museum book paper, not aged parchment, not concrete, not canvas fabric, not recycled flecks. High-resolution tiny tactile detail, quiet enough for high-contrast black editorial text. This is a full-bleed production material source and will be combined with live capillary fibers and ink.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; no input provenance inferred",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": null,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Continuous paper world",
+        "Controlled stroke",
+        "Wet-to-dry reflection"
+      ],
+      "evidenceMap": "asset-map.json"
+    },
+    {
+      "id": "meniscus-fluid",
+      "name": "meniscus-fluid",
+      "chapterUse": "Meniscus / liquid-interface handoff",
+      "kind": "AI-generated photographic material",
+      "role": "Transparent held liquid reflection fitted to the meniscus nib registration; the same optical material fills the lens during the scale handoff into paper.",
+      "original": {
+        "file": "artwork/originals/meniscus-fluid.png",
+        "sha256": "d4f655fdfca4e9bf00d03949757eb8eb11c38076efc5193a6d96a179e0712223",
+        "bytes": 115377,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "production": {
+        "file": "public/assets/meniscus-fluid.webp",
+        "sha256": "aad435dcd75efee882ee758833e27dd3d9cd43434989e3b58ac2b8e9ef36dd91",
+        "bytes": 19936,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-fefa655a-cd57-4232-856f-73ea54a4eefe.png",
+        "retainedPrompt": "Use case: precise-object-edit / photorealistic material extraction. Asset: NIB live meniscus liquid reflection plate on transparent background, matching Image 1 pixel registration. Image 1 is the exact target metal nib, keep its geometry as the fitting guide. Image 2 is the reference look for the liquid reflection, not its framing. Produce ONLY the small photoreal deep blue-black held ink meniscus that fits exactly between the two rounded tip pellets of Image 1, with the same 1672x941 full canvas registration and huge transparent margins. Remove all metal, all lettering, all background: the only opaque pixels should be the ink. The liquid narrows upward into the slit around x884,y510, flares gently to touch the inner tips around x782,y715 and x983,y715, and forms a shallow convex bowl ending around x884,y811. Do not let it dangle as a spherical detached droplet. Real aqueous blue-black ink, almost black core, optically smooth curved surface, one beautifully curved softbox reflection with naturally soft edges, restrained cobalt light refracted at the bottom lip, physically convincing surface tension and depth. Perfect photographic cutout with antialiased alpha edges. The held amount is tiny relative to the nib. No extra fluid, no bubbles, no particles. No text, no watermark. Precisely aligned extraction, not a redesigned composition.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": [
+          "artwork/originals/meniscus.png",
+          "docs/visual-bible/06-meniscus.png"
+        ],
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "artwork/originals/meniscus.png",
+            "status": "matched retained input identifier",
+            "assetId": "meniscus-asset",
+            "file": "artwork/originals/meniscus.png",
+            "sha256": "13b32b3ec82529e36662fd291666b92895dd3403a2a6b8e2dee17c66561fac85",
+            "packaged": true
+          },
+          {
+            "recordedReference": "docs/visual-bible/06-meniscus.png",
+            "status": "matched retained input identifier",
+            "assetId": "meniscus-concept",
+            "file": "docs/visual-bible/06-meniscus.png",
+            "sha256": "740429e52e45736ba7e061fe53a085fd6834cb5ef7ebaa27ef0eb4e6bff80bda",
+            "packaged": true
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": true,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Independent liquid compositing",
+        "Surface reflection",
+        "Registered optical lens fill during the axial scale handoff"
+      ],
+      "evidenceMap": "asset-additions.json",
+      "implementationUsage": {
+        "source": "src/renderer.js:enterPaper",
+        "globalChapterProgressRange": [
+          5.56,
+          5.82
+        ],
+        "lensOccupancyProgress": 5.72,
+        "handoff": "Axial travel into the held meniscus, lens occupancy by the same optical liquid material, then a pullback to the nib-profile pose. This is a liquid-interface scale handoff."
+      }
+    },
+    {
+      "id": "fiber-material",
+      "name": "fiber",
+      "chapterUse": "Absorb",
+      "kind": "AI-generated photographic material",
+      "role": "Blank extreme-macro cellulose plate supplying substrate relief, localized interstitial staining cues, sampled capillary paths and raised-fiber occlusion.",
+      "original": {
+        "file": "artwork/originals/fiber.png",
+        "sha256": "e6e96bcd17e9efa1e42d111b0babd542e8e81ad8cfbb588576f888fa00aeec75",
+        "bytes": 2291140,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "production": {
+        "file": "public/assets/fiber.webp",
+        "sha256": "1357368517a75830a025b7129ed2aa0cfb586b19dc3d13c6f74c6a5b42338d58",
+        "bytes": 291674,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-f208b074-c319-42c1-bb51-17c23c39a81e.png",
+        "retainedPrompt": "Use case: precise-object-edit. Asset type: production extreme-macro cellulose texture plate for live NIB ink absorption. Edit target: supplied NIB ABSORB visual reference. Remove ALL text, UI, wordmark, captions, ALL blue/black ink, ALL liquid and every ink-colored branch. Fill the removed stroke area with perfectly plausible matching pristine warm ivory cellulose fibers. Preserve the exact extreme-macro perspective, focus gradient, raking soft light from upper left, 3-dimensional interlocking fiber mesh, tiny matte cylindrical fibers, little pockets between fibers, and soft pale upper-left quiet area. It must look like the same scientific-grade luxurious photographic paper macro with no ink ever put on it. Not twig scratches drawn on a sheet: true cellulose depth and fiber-to-fiber crevices, beautifully tactile. Landscape 1672x941, full-bleed. Mostly warm off-white #f1ebdf, no yellow parchment, no dirt. Lower half and right have larger sculptural macro fibers, upper-left remains quieter. We will draw the narrow wet ink line and capillary branches live along this surface, so this is ONLY paper material. No pen, no letters, no symbols, no ink, no vignette, no border.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": [
+          "docs/visual-bible/08-absorb.png"
+        ],
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "docs/visual-bible/08-absorb.png",
+            "status": "matched retained input identifier",
+            "assetId": "fiber-concept",
+            "file": "docs/visual-bible/08-absorb.png",
+            "sha256": "93680f48ee94300d601f7eb71befcb50abbce3ca40027336d17c0380299e3bb5",
+            "packaged": true
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": null,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Localized staining in sampled darker interstices",
+        "Sampled interstitial capillary paths",
+        "Raised photographic fiber crests partially occlude the wet body",
+        "Narrow live ink edge and deterministic saturation"
+      ],
+      "evidenceMap": "asset-additions.json",
+      "implementationUsage": {
+        "source": "src/paper-scenes.js",
+        "materialAnalysis": "Brightness and opposed local samples from the photographic crop provide interstitial cues and narrow raised-crest masks. These are image-derived visual cues, not measured three-dimensional fiber geometry.",
+        "compositing": "Localized staining and sampled interstitial paths accompany the controlled wet stroke; selected raised photographic fibers partially occlude its wet body."
+      }
+    },
+    {
+      "id": "hero-mobile",
+      "name": "hero-mobile",
+      "chapterUse": "Metal / mobile Hero",
+      "kind": "AI-generated photographic material",
+      "role": "Transparent portrait nib with an optically distinct small attached blue-black bead, preserving the independent mobile composition.",
+      "original": {
+        "file": "artwork/originals/hero-mobile.png",
+        "sha256": "75d5a41a39f2c71189507aaa7631d12766b776d15942101b31120251d83cce37",
+        "bytes": 669796,
+        "width": 853,
+        "height": 1844,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "production": {
+        "file": "public/assets/hero-mobile.webp",
+        "sha256": "e64876bb8e3da06b51026a092827174c7391453b74daa4415af8629a10faa224",
+        "bytes": 126622,
+        "width": 853,
+        "height": 1844,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-d9e27a44-b5d7-4a07-81c3-07c9e0e0b046.png",
+        "retainedPrompt": "Use case: background-extraction. Production asset for NIB mobile Hero. Edit the supplied exact mobile Visual Bible. Extract ONLY the diagonal engraved fountain-pen nib, rounded tipping, upper-right black lacquer grip, and the SMALL HELD BLUE-BLACK INK MENISCUS under the tip. Keep this nib, this metal lighting, this large upper-right diagonal crop, the original object position, and the native tall canvas aspect and margins unchanged. Remove ALL typography, wordmarks, navigation, chapter indicators, arrows and the entire black background; replace all empty space with real transparent alpha. Preserve the small liquid meniscus as an optically distinct attached bead under the rounded tip, with a tiny curved soft white reflection and near-black blue body, never detached and not oversized. This little held bead MUST remain readable when the full portrait image is scaled to a390px-wide phone. Do not replace the nib with a different product. Preserve the original high-fidelity gold/rhodium engravings, shoulder curvature, slit, lacquer edge and precise silhouette. No text anywhere, no shadow on a background, no checkerboard baked in. Keep whole original 854x1846 portrait registration, with nib tip+bead around45% horizontal and57% vertical; lower40% should be fully transparent for separate live typography.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": [
+          "docs/visual-bible/11-mobile.png"
+        ],
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "docs/visual-bible/11-mobile.png",
+            "status": "matched retained input identifier",
+            "assetId": "mobile-concept",
+            "file": "docs/visual-bible/11-mobile.png",
+            "sha256": "701dc2dc2ea1f8f380a011c84365ff972fa459002265dd435ab578f22c95591d",
+            "packaged": true
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {},
+        "dimensionNote": "The prompt is preserved verbatim, including its requested 854x1846 registration. The actual generated and delivered PNG is 853x1844; its WebP is the same size. The input Visual Bible image is 852x1846. These are measured file dimensions, not corrected prompt values; no production resize was applied."
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": true,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Responsive portrait object placement",
+        "Material reflection compositing",
+        "Separate HTML typography below the nib"
+      ],
+      "evidenceMap": "asset-finish-additions.json"
+    },
+    {
+      "id": "nib-profile",
+      "name": "nib-profile",
+      "chapterUse": "Liquid-interface handoff / Contact / Absorb boundary / Write / Trace departure",
+      "kind": "AI-generated photographic material",
+      "role": "Transparent low side-profile nib with visible arched metal and ebonite-feed thickness; one registered pose continues from the liquid-interface handoff through paper contact, writing and final departure.",
+      "original": {
+        "file": "artwork/originals/nib-profile.png",
+        "sha256": "4d1cf1b366d07078281bed3e0233f0829d1561ccadc2a77c709a9b87deb34965",
+        "bytes": 924991,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "production": {
+        "file": "public/assets/nib-profile.webp",
+        "sha256": "a872ce2b023984350c12dc27e98d6a305d2e4075411793eaabc296ac662a99ee",
+        "bytes": 164732,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGBA",
+        "hasAlpha": true
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-d319c4ae-eb20-4120-b52b-a1c370a4ef8d.png",
+        "retainedPrompt": "Use case: precise-object-edit, production transition asset. Image1 shows the NIB writing nib and material identity. Image2 shows the suspended macro ink meniscus. Create one photoreal SIDE PROFILE pose of the SAME gold/rhodium engraved nib with its black feed underneath and a short black lacquer grip continuing out the TOP-RIGHT of the frame. Real transparent background. Landscape1672x941. Its rounded tip and a small attached blue-black liquid bead are centered at x860,y805 (about51.4%,85.5%). Nib body extends diagonally toward upper-right, at about55degrees above the horizon. Camera has moved around the nib to a low profile viewpoint: show visibly three-dimensional arched metal thickness, rhodium tipping, matte black ebonite feed teeth below the nib, engraved metal top surface seen at a grazing angle. This must look like a true profile photograph, NOT an image squeezed horizontally, not a thin hairline, not a flat blade. The nib has readable metal/feed thickness at least80px near its shoulder. Keep the same warm gold with cool rhodium highlights and black lacquer identity. Pen and ink only; no paper, no drawn line, no detached droplet. The small liquid meniscus is held at tip and glints softly. No text, no UI, no labels, no ruler, no glow. Perfect anti-aliased alpha extraction. Only one nib. Advertising-quality macro, true spatial form, gentle raking studio illumination, all edges crisp at the tip with subtle depth toward grip.",
+        "promptStatus": "retained verbatim in session asset map",
+        "recordedReference": [
+          "artwork/originals/contact.png",
+          "artwork/originals/meniscus.png"
+        ],
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "artwork/originals/contact.png",
+            "status": "matched retained input identifier",
+            "assetId": "contact-asset",
+            "file": "artwork/originals/contact.png",
+            "sha256": "ad733c514de4a16cadcf788070876e1bcf23b582524c40c831c001e50014b1f9",
+            "packaged": true
+          },
+          {
+            "recordedReference": "artwork/originals/meniscus.png",
+            "status": "matched retained input identifier",
+            "assetId": "meniscus-asset",
+            "file": "artwork/originals/meniscus.png",
+            "sha256": "13b32b3ec82529e36662fd291666b92895dd3403a2a6b8e2dee17c66561fac85",
+            "packaged": true
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "derivation": {
+        "operation": "PNG to WebP; dimensions unchanged",
+        "quality": 94,
+        "alphaQuality": 100,
+        "settingsEvidence": "production export settings recorded in this session",
+        "encoderBuildVersion": null,
+        "encoderBuildVersionStatus": "not retained in supplied asset maps",
+        "resized": false,
+        "alphaPreserved": true,
+        "decodedAlphaIdentical": true,
+        "runtimeCompositingIsSeparate": true
+      },
+      "authoredLiveSystems": [
+        "Continuous registered nib pose across the paper world",
+        "Fixed uniform scale and rotation around the same tip anchor",
+        "Approach toward stationary paper and live liquid bridge",
+        "Source photographic lacquer-boundary extension",
+        "Writing contact and final lift"
+      ],
+      "evidenceMap": "asset-finish-additions.json",
+      "implementationUsage": {
+        "source": "src/paper-scenes.js",
+        "tipAnchor": "g.tip",
+        "approximateSourceInkTipPixels": {
+          "x": 645,
+          "y": 831
+        },
+        "normalizedTipAnchor": {
+          "x": 0.386,
+          "y": 0.883
+        },
+        "uniformScaleMultiplier": 0.9,
+        "fixedRotationRadians": -0.21,
+        "materialExtension": "The actual top and right photographic lacquer-boundary strips are sampled and extended in code.",
+        "poseContinuity": "The same nib-profile asset continues across Contact, the Absorb boundary, Write and the Trace departure; no intermediate silhouette rotation or reconstructed 3D model is used."
+      }
+    }
+  ],
+  "visualBible": [
+    {
+      "id": "hero-concept-refined",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/01-metal.png",
+        "sha256": "ae078f8f4a253ce065db17ed6227492dbb3a4c9bf25aa3eeef5cee724b810abb",
+        "bytes": 1675181,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-004e2e93-1928-4a9c-9762-fc78f795b450.png",
+        "retainedPrompt": "Use case: lighting-weather. Refine ONLY the metal surface and hanging ink in this exact NIB website design. Keep all typography, composition, nib shape, scale, engraving, color hierarchy and negative space EXACTLY unchanged. Replace the heavily scratched/weathered/cracked gold finish with polished pale champagne gold: clear optical-quality reflectance and minimal fine micro-scratches, clean fine engraved lines, controlled cool rhodium reflections at the edges. This is a new precision object, not an antique or distressed prop. Reduce the pendant ink droplet at bottom by about 35 percent so it reads as a small stable attached meniscus, not an impending drip; retain blue-black depth and just one pale reflection. The centre slit should remain hairline narrow. Leave black background untextured. Everything else identical. Luxury through metal precision, not gold quantity.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": "exec-84d1661a-9725-4af6-a8b1-64c6b2feb8a0.png",
+        "inputReferenceStatus": "retained",
+        "inputs": [
+          {
+            "recordedReference": "exec-84d1661a-9725-4af6-a8b1-64c6b2feb8a0.png",
+            "status": "earlier generated input; not part of curated delivery",
+            "assetId": null,
+            "file": null,
+            "sha256": "3af6f3ca2cd62aaeea47a5ff28c116cb14b083eb079ef3bada4477592562ba58",
+            "packaged": false
+          }
+        ],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "reservoir-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/02-reservoir.png",
+        "sha256": "f4c44cac2d6b44fa3cd4b84dcdbbfdd963bf458a6f99cfff3c33f7a3a6887bf0",
+        "bytes": 1675386,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-a93dc078-5b9b-4aac-aded-56a97e814eb8.png",
+        "retainedPrompt": "Use case: ui-mockup. Single landscape 16:9 cinematic website section for NIB — Ink Under Pressure. An immense dark liquid chamber, cropped like abstract architectural photography, NOT a transparent teaching pen: deep graphite curved enclosure fills middle and right, inner lacquer-like curved edge has cold white studio reflections. Blue-black ink fills bottom 55%, its liquid meniscus is a thin precise silver-blue horizontal curve, subdued burgundy depth. An empty graphite air volume remains above; one tiny exquisite air bubble returns upward near right-side inlet, absolutely restrained. On left a large pale ivory refined high-contrast serif heading “Room” with italic second line “to breathe.”, modest sans copy “As ink leaves, air takes its place.”. NIB small wordmark top left, “The journey +” top right, tiny scene index “02 / RESERVOIR” bottom-left. Large dark breathing room, no metrics, no HUD, no glowing liquid, no particles, no gold text, no complete pen, no empty box. High-end museum editorial meets deep liquid cinematography. This is a stable hold composition for a live fluid surface and counterflow animation; text and controls are separate real DOM.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "feed-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/03-feed.png",
+        "sha256": "1994f135ae1b5e7777c592abdb9260e289f4bafa855379bf3517adfb3d7a0eda",
+        "bytes": 1930730,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-2f88aa66-d1a4-497e-a5c5-046d1df2662a.png",
+        "retainedPrompt": "Use case: ui-mockup. Single landscape 16:9 final website section concept for NIB — Ink Under Pressure. Immersive macro architecture of a black ebonite fountain pen feed, not a technical infographic. A huge diagonal comb-like feed traverses from bottom-left toward top-right, cropped on both sides, rendered photographically with charcoal matte fins and extremely fine silver cut-edge highlights. Parallel fin pockets flank a distinct narrow longitudinal blue-black wet ink channel. Show just a few ink-filled buffer pockets and one separate thin returning-air groove; do not depict all fins as parallel pipes. Deep almost-black graphite background. Small precise chalk-white paths trace ink outward and air inward without arrows everywhere. Upper-left/left-centre roomy editorial text: large off-white serif “A measured” and italic “way through.”, modest text below “Narrow channels guide. Fine fins hold the excess.”. NIB wordmark top left and “The journey +” top right; small “03 / FEED” bottom left. A few directly placed labels “INK OUT” and “AIR IN” near respective paths. Fin construction should be practical as self-built live Canvas geometry, with photographic material quality as reference. No cards, dashboards, gold, neon, exploded pen, bubbles everywhere, huge rounded containers. Museum-quality intimate precision.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "balance-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/04-balance.png",
+        "sha256": "b8d478134afcfb305c85a3edef33eecdb3e1750e51e16c59aecd351876991814",
+        "bytes": 1802281,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-d2ae54cc-b7f5-4c0f-a365-620fc99e7161.png",
+        "retainedPrompt": "Use case: ui-mockup. Single 16:9 cinematic editorial viewport for NIB — Ink Under Pressure, chapter BALANCE. Almost-black blue graphite background. Two immense parallel but opposite-direction fluid paths run vertically through the right two-thirds of the screen: a narrow deeply reflective blue-black ink capillary seam descending between matte black feed walls, beside a quiet air-return seam with just ONE small silver-edged air meniscus rising. Their shared wall is a slender realistic dark ebonite structure, not neon. Composition airy, intimate, simplified close-up geometry. Left third large sophisticated ivory high-contrast serif: “Ink outward.” on first line and italic “Air inward.” on next line, then modest sans “A quiet exchange keeps the line alive.” Direct tiny off-white path labels “INK” and “AIR”. NIB wordmark top left, “The journey +” top right, “04 / BALANCE” bottom left. Physics-aware flowing microarchitecture, near-black ink has a liquid boundary, air visibly different. No full pen, arrows everywhere, particles, graph, HUD, numeric pressures or decorative gold. The image is a design concept for two independently animated opposing live flows on one shared clock.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "slit-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/05-slit.png",
+        "sha256": "e67e3a26de002796a92c00c3536b72e5adc50b744115db1662d9b58d1fb61e3e",
+        "bytes": 2147073,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-f800cbc4-7380-4871-ba87-2aa6fe2f42fa.png",
+        "retainedPrompt": "Use case: ui-mockup. One 16:9 desktop final viewport design for NIB — Ink Under Pressure, SLIT. We travel along an extremely thin blue-black ink seam between two enormous softly curved polished nib surfaces. The nib is so close its outer outline is outside the frame: two pale champagne metal planes, engraved parallel fine lines, shallow metallic micro scratches, a central dark straight slit runs diagonally from top-right to bottom-centre; no giant canyon and no landscape. At lower end a narrow liquid meniscus gathers at two rounded cool-silver tipping halves. Background almost-black graphite. Place elegant cream serif headline at upper-left “Between” and italic second line “two edges.” with small clean sans “A liquid seam. A way to the tip.” on dark uncluttered area. NIB top-left, “The journey +” top-right, tiny “05 / SLIT” bottom-left. Museum material photography, cinematic macro, clean controlled reflective lighting, generous negative space. No neon, no diagrams, no flying particles, no decorative golden glow. Precise geometry will be authored as live Canvas, text as DOM.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "meniscus-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/06-meniscus.png",
+        "sha256": "740429e52e45736ba7e061fe53a085fd6834cb5ef7ebaa27ef0eb4e6bff80bda",
+        "bytes": 1602736,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-320a3614-ab3e-4c6d-ad67-9746a49e6caf.png",
+        "retainedPrompt": "Use case: ui-mockup. One 16:9 luxury editorial viewport concept for NIB — Ink Under Pressure, MENISCUS, nearly still. Profound near-black frame, no atmospheric particles. In right half, extreme macro lower end of a pale champagne/rhodium fountain nib descending from top out of frame. Two smooth rounded cool silver tipping halves hold a SMALL blue-black ink meniscus between and beneath them, no giant pendant teardrop. The tiny attached convex ink surface has one exquisite controlled strip-light reflection and dark indigo depth. It is not falling. Macro magnification makes the joined metal and liquid surface look monumental but physically credible. Left half very spacious high-contrast ivory serif “Almost.” and a smaller italic “Not yet.” underneath. Small sans “Held at the edge of contact.”. NIB wordmark top-left; “The journey +” top-right, small “06 / MENISCUS” bottom-left. No entire pen, no hands, no paper yet, no gold text, no blobs everywhere. It should be a quiet museum cover image.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "contact-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/07-contact.png",
+        "sha256": "32593cf3d794094950f2e7662468ed0be6cc410093b25d4b51712a6f7213ea00",
+        "bytes": 2294548,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-f5bbd232-e69b-4cb2-96df-1b508670598b.png",
+        "retainedPrompt": "Use case: ui-mockup. Create one finished 16:9 immersive website viewport design for the climactic contact scene of NIB — Ink Under Pressure. Minimal high-end editorial digital artwork. Warm ivory matte cotton-paper field fills entire image. A giant photographically realistic fountain pen nib with pale champagne and rhodium metal, small part of black grip entering from upper-right corner, angled diagonally down-left, tip touching paper at 56% width 60% height. NO hand. Tiny blue-black ink bridge visibly joins tipping halves and paper; one narrow wet ink line trails horizontally left from point, dark reflective edge with a fine crisp highlight. Exact precision not calligraphy. Paper has elegant subtle fibers under raking daylight, dramatically tactile but uncluttered. Upper-left open text region: small “07 / CONTACT” then large sophisticated high-contrast black serif words “A point” and italic “of exchange.”. Smaller charcoal sans copy below: “The nib touches. The paper draws.”. Simple small NIB wordmark top-left, “The journey +” top-right. Bottom-left thin label “Metal → Liquid → Paper”; bottom-right tiny chapter tick navigation. No buttons in boxes, no generic cards, no gold typography, no watercolor, no splashes, no ornaments. Intimate, precise, photographed like a museum book on materials. Scene must support a live animated nib approaching paper, liquid bridge forming, and a continuous stroke, with all typography separate in real code.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "fiber-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/08-absorb.png",
+        "sha256": "93680f48ee94300d601f7eb71befcb50abbce3ca40027336d17c0380299e3bb5",
+        "bytes": 2327899,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-f43f784a-9fe5-4a64-872d-62f21e863a27.png",
+        "retainedPrompt": "Use case: ui-mockup. One 16:9 final NIB — Ink Under Pressure website viewport, microscopic paper absorption. Warm ivory paper fills frame, magnified tangled cellulose fibers become visible mostly in lower-right and centre. A single controlled blue-black horizontal stroke crosses lower middle, slight gentle curve, narrow wet edge with tiny branches spreading at microscopic scale only just beyond stroke edge; NOT watercolor diffusion, NOT huge ink cloud, NOT cotton rope. Material macro photography, elegant shallow rake light, charcoal blue ink, the line stays exact. Upper-left clear negative space with black refined serif “Drawn” and italic “into the grain.”, small quiet sans “The smallest spaces carry the ink.” NIB wordmark top-left and “The journey +” top-right; tiny “08 / ABSORB” at bottom-left. Fiber and capillary branching will be live authored canvas, not a background-only animation. A page that feels like touching paper, museum editorial calm. No graphic boxes, no full pen, no spatter, no gold.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "write-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/09-write.png",
+        "sha256": "508c2e933ea937782c3d4749a6a2a340d4d8b9d5e84e65bdc5d1ce89bd99b027",
+        "bytes": 1923956,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-79408d64-5db4-488d-9ad8-30e87bdfa63f.png",
+        "retainedPrompt": "Use case: ui-mockup. Single 16:9 finished digital-art website scene for NIB — Ink Under Pressure, WRITE. Warm ivory matte fine paper fills the frame. A photographically real small polished champagne-gold nib and just a little glossy black grip enter from top-right at a writing angle, its tip at 74% width and 60% height. One thin elegant blue-black line trails from 17% width to that tip, slight controlled curve, a fine wet reflective glint confined to the last quarter near nib. All the preceding microscopic engineering is now pulled back to human scale. Upper-left at 8% width/20% height a restrained refined black high-contrast serif heading “All of this,” then italic “for one line.”, small sans “A small movement makes the hidden system visible.”. NIB small top-left, “The journey +” top-right, tiny “09 / WRITE” bottom-left. No hand, no calligraphy letters, no drawing show, no watercolour, no splatter, no shopping UI, no boxes. Calm large negative spaces and a very precise physical stroke. Code will actually move the nib and trace the line.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "trace-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/10-trace.png",
+        "sha256": "571e62f7443b396594553877ce4de7be05ec33ccc516f3a608f2672a79981073",
+        "bytes": 2319586,
+        "width": 1672,
+        "height": 941,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-d5b77748-47b4-493b-81b5-c3bb795df12b.png",
+        "retainedPrompt": "Use case: ui-mockup. Single 16:9 final closing viewport of NIB — Ink Under Pressure. Almost empty warm ivory matte paper with subtle fine cellulose texture, tactile museum-book photography. One exceptionally beautiful precise blue-black ink stroke curves very gently across centre from 20% width 57% height to 79% width 52% height; it has already dried to a matte edge, no reflective streaks, no splashes, no calligraphy. Above the line, centred small refined high-contrast serif headline “The line remains.”. Under the line tiny understated text “Hold the ink. Balance the air. Draw the line.”. Small NIB wordmark top left, “The journey +” top-right. Bottom left subtle “10 / TRACE”; bottom right minimal text controls “Begin again ↗” and “Colophon”. Spacious, silent, editorial and very confident. No pen remains, no photograph frames, no numbers pretending statistics, no call-to-action boxes, no watermark, no logos other than the NIB wordmark. The final live system is a wet-to-dry stroke whose reflection disappears.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    },
+    {
+      "id": "mobile-concept",
+      "kind": "AI-generated curated design concept; reference only, not a runtime screenshot",
+      "file": {
+        "file": "docs/visual-bible/11-mobile.png",
+        "sha256": "701dc2dc2ea1f8f380a011c84365ff972fa459002265dd435ab578f22c95591d",
+        "bytes": 1776271,
+        "width": 852,
+        "height": 1846,
+        "colorMode": "RGB",
+        "hasAlpha": false
+      },
+      "generation": {
+        "sessionDate": "2026-10-07",
+        "tool": "OpenAI image generation tool",
+        "serviceModelVersion": null,
+        "serviceModelVersionStatus": "not retained",
+        "outputIdentifier": "exec-38f9cf4b-7596-4628-91f1-0a6d08d2288e.png",
+        "retainedPrompt": "Use case: ui-mockup. One tall portrait 9:19.5 mobile viewport, actual mobile adaptation of NIB — Ink Under Pressure. Sophisticated ivory type on almost black graphite. At top-left small NIB serif wordmark and top-right a very small two-line menu icon. A huge photorealistic fountain-pen nib hangs diagonally from cropped upper-right toward lower-centre, occupying upper 63% of screen, pale champagne polished metal with controlled rhodium edges, restrained precise engraving and hairline slit. Tiny stable blue-black attached meniscus at tip around 66% width/57% height. In lower-left safe area from 62% height, very large but refined serif “NIB”, then medium “Ink under” then italic “pressure.”. Bottom-left tiny “Scroll to enter” with thin down arrow, bottom-right fine ten chapter tick marks. Clean extremely legible mobile composition. Do not shrink a desktop screenshot. No black bars, cards, hero badges, gold lettering, whole pen, hands, or glow. The black-ground diagonal object and ivory-paper later scenes must belong to a single calm cinematic artwork.",
+        "promptStatus": "retained verbatim in session concept map",
+        "recordedReference": null,
+        "inputReferenceStatus": "not retained; null does not prove absence of an input image",
+        "inputs": [],
+        "originalMatchesGeneratedOutputSha256": true,
+        "pngTextMetadata": {}
+      },
+      "evidenceMap": "concept-map.json"
+    }
+  ],
+  "curation": {
+    "visualDirectionFile": "docs/VISUAL-BIBLE.md",
+    "selectedCount": 11,
+    "retainedRefinement": "The selected Metal concept records refinement of an earlier generated nib: polished rather than heavily weathered metal, and a smaller held meniscus. The earlier input identifier/hash is retained only as lineage; its rejected image is not packaged.",
+    "productionRefinements": [
+      "Reservoir and Feed have explicit concept-to-clean-plate input records.",
+      "Meniscus-fluid records both the production metal tip and the selected Meniscus concept as inputs.",
+      "Fiber records the selected Absorb concept as its input and removes baked ink for authored live absorption.",
+      "Contact prompt records concept extraction, but its exact input identifier was not retained.",
+      "Hero-mobile records the selected Mobile Visual Bible as its input, preserving a portrait composition and a distinctly held liquid bead. Its actual returned dimensions are recorded separately from the verbatim prompt.",
+      "Nib-profile records the Contact and Meniscus production originals as inputs. Its low side-profile view is revealed by a liquid-interface scale handoff and continues through the paper scenes with a fixed registered tip, replacing the earlier raster-compression approximation."
+    ],
+    "discardedAssets": "Rejected and temporary material is outside the delivered asset inventory. No missing prompt or service/model version has been invented.",
+    "finishMaterialAdditions": {
+      "evidenceMap": "asset-finish-additions.json",
+      "assets": [
+        "hero-mobile",
+        "nib-profile"
+      ],
+      "note": "Two production material additions made during implementation refinement; the eleven curated Visual Bible PNGs and the previous nine final originals remain unchanged. Formal review results are documented separately."
+    }
+  },
+  "proceduralModels": [
+    {
+      "source": "src/main.js",
+      "purpose": "One Lenis instance and one GSAP ticker; shared time, scroll progress, readiness, resizing and restore."
+    },
+    {
+      "source": "src/renderer.js",
+      "purpose": "Single Canvas compositor; Metal/Slit/Meniscus geometry, alpha layering, specular material treatments, Ink Line handoffs, and axial travel through the held optical interface into the paper scene."
+    },
+    {
+      "source": "src/fluid-scenes.js",
+      "purpose": "Reservoir meniscus, registered longitudinal feed flow, fin buffering, original parallel ink/air passages, sparse air admission and controlled reflections."
+    },
+    {
+      "source": "src/paper-scenes.js",
+      "purpose": "One continuous paper-world path and registered nib-profile pose; stationary-paper contact, liquid bridge, photographic lacquer-boundary extension, localized staining, sampled interstitial capillary paths, raised-fiber occlusion, stroke and wet-to-matte finish."
+    },
+    {
+      "source": "src/math.js",
+      "purpose": "Shared chapter identities, interpolation, deterministic random and image framing."
+    },
+    {
+      "source": "src/styles.css",
+      "purpose": "Original responsive typography, scene safety zones, navigation, reading view and reduced-motion presentation."
+    }
+  ],
+  "modelLimits": {
+    "type": "Authored qualitative visual interpretation; not a calibrated CFD or molecular simulation.",
+    "selectedSystem": "Conventional slit nib, feed, aqueous dye ink and ivory writing paper.",
+    "limits": [
+      "Magnification, geometry, timing and bubble frequency are compositional choices, not measured pressures, dimensions or flow rates.",
+      "Counterflow communicates exchange; replacement air is admitted intermittently.",
+      "Fin grooves buffer excess ink; the main route remains longitudinal.",
+      "Held liquid is a magnified attached meniscus, not normal continuous dripping.",
+      "Paper draws liquid at contact; uptake and evaporation overlap.",
+      "A matte trace is the chosen ink/paper finish, not a universal property.",
+      "Reverse scrolling restores prior authored visual states; it does not reverse real thermodynamic processes."
+    ],
+    "details": "docs/MECHANISM.md"
+  },
+  "research": {
+    "accessDate": "2026-10-07",
+    "bibliography": "docs/RESEARCH.md",
+    "use": "Mechanism and visual-anatomy reference only. No manufacturer photograph, article figure or other copyrighted research imagery is included."
+  },
+  "thirdParty": {
+    "manifest": "licenses/vendor-manifest.json",
+    "manifestSha256": "3ad47e993e5498ca5c2350459f2e824955ede61351bed4c2ec254642a8645203",
+    "verifiedFileCount": 5,
+    "allListedFileAndLicenseHashesMatch": true,
+    "licenseClasses": [
+      "MIT: Lenis",
+      "GSAP Standard No Charge License: GSAP; proprietary",
+      "SIL Open Font License 1.1: Cormorant Garamond and Manrope"
+    ],
+    "versionPolicy": "Use the manifest’s retrieved versions. Font URL v21/v20 strings are source URL revisions, not inferred complete font software versions."
+  },
+  "localBuild": {
+    "node": ">=20",
+    "npmInstallRequired": false,
+    "runtimeNetworkDependencies": false,
+    "sourceCommand": "npm start",
+    "sourceUrl": "http://127.0.0.1:4173",
+    "buildCommand": "npm run build",
+    "previewCommand": "npm run preview",
+    "checkCommand": "npm run check",
+    "publicDeployment": false
+  },
+  "qaBoundary": "This record verifies inventories, source-copy identity, dimensions, alpha and third-party hashes. Browser and interaction QA is documented separately; no unsupported performance score or award claim is made."
+}

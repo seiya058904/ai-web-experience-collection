@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T08:11:35Z",
+  "title": "Design System: NIB — Ink Under Pressure",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Graphite Ground",
+        "tonalRamp": [
+          "oklch(15% 0.00747 256.88)",
+          "oklch(26% 0.00747 256.88)",
+          "oklch(38% 0.00747 256.88)",
+          "oklch(49% 0.00747 256.88)",
+          "oklch(61% 0.00747 256.88)",
+          "oklch(72% 0.00747 256.88)",
+          "oklch(84% 0.00747 256.88)",
+          "oklch(95% 0.00747 256.88)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Display Ivory",
+        "tonalRamp": [
+          "oklch(15% 0.01688 88.00)",
+          "oklch(26% 0.01688 88.00)",
+          "oklch(38% 0.01688 88.00)",
+          "oklch(49% 0.01688 88.00)",
+          "oklch(61% 0.01688 88.00)",
+          "oklch(72% 0.01688 88.00)",
+          "oklch(84% 0.01688 88.00)",
+          "oklch(95% 0.01688 88.00)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(15% 0.01724 84.59)",
+          "oklch(26% 0.01724 84.59)",
+          "oklch(38% 0.01724 84.59)",
+          "oklch(49% 0.01724 84.59)",
+          "oklch(61% 0.01724 84.59)",
+          "oklch(72% 0.01724 84.59)",
+          "oklch(84% 0.01724 84.59)",
+          "oklch(95% 0.01724 84.59)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink Text",
+        "tonalRamp": [
+          "oklch(15% 0.01562 256.81)",
+          "oklch(26% 0.01562 256.81)",
+          "oklch(38% 0.01562 256.81)",
+          "oklch(49% 0.01562 256.81)",
+          "oklch(61% 0.01562 256.81)",
+          "oklch(72% 0.01562 256.81)",
+          "oklch(84% 0.01562 256.81)",
+          "oklch(95% 0.01562 256.81)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Gray",
+        "tonalRamp": [
+          "oklch(15% 0.00355 145.54)",
+          "oklch(26% 0.00355 145.54)",
+          "oklch(38% 0.00355 145.54)",
+          "oklch(49% 0.00355 145.54)",
+          "oklch(61% 0.00355 145.54)",
+          "oklch(72% 0.00355 145.54)",
+          "oklch(84% 0.00355 145.54)",
+          "oklch(95% 0.00355 145.54)"
+        ]
+      },
+      "dialog-surface": {
+        "role": "neutral",
+        "displayName": "Dialog Graphite",
+        "tonalRamp": [
+          "oklch(15% 0.00797 248.31)",
+          "oklch(26% 0.00797 248.31)",
+          "oklch(38% 0.00797 248.31)",
+          "oklch(49% 0.00797 248.31)",
+          "oklch(61% 0.00797 248.31)",
+          "oklch(72% 0.00797 248.31)",
+          "oklch(84% 0.00797 248.31)",
+          "oklch(95% 0.00797 248.31)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Fine Rule",
+        "tonalRamp": [
+          "oklch(15% 0.00839 255.56)",
+          "oklch(26% 0.00839 255.56)",
+          "oklch(38% 0.00839 255.56)",
+          "oklch(49% 0.00839 255.56)",
+          "oklch(61% 0.00839 255.56)",
+          "oklch(72% 0.00839 255.56)",
+          "oklch(84% 0.00839 255.56)",
+          "oklch(95% 0.00839 255.56)"
+        ]
+      },
+      "header-ivory": {
+        "role": "neutral",
+        "displayName": "Header Ivory",
+        "tonalRamp": [
+          "oklch(15% 0.00955 93.57)",
+          "oklch(26% 0.00955 93.57)",
+          "oklch(38% 0.00955 93.57)",
+          "oklch(49% 0.00955 93.57)",
+          "oklch(61% 0.00955 93.57)",
+          "oklch(72% 0.00955 93.57)",
+          "oklch(84% 0.00955 93.57)",
+          "oklch(95% 0.00955 93.57)"
+        ]
+      },
+      "bright": {
+        "role": "neutral",
+        "displayName": "Bright Response",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(26% 0.00000 0.00)",
+          "oklch(38% 0.00000 0.00)",
+          "oklch(49% 0.00000 0.00)",
+          "oklch(61% 0.00000 0.00)",
+          "oklch(72% 0.00000 0.00)",
+          "oklch(84% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ]
+      },
+      "paper-hover": {
+        "role": "primary",
+        "displayName": "Paper Hover Blue",
+        "tonalRamp": [
+          "oklch(15% 0.06562 249.61)",
+          "oklch(26% 0.06562 249.61)",
+          "oklch(38% 0.06562 249.61)",
+          "oklch(49% 0.06562 249.61)",
+          "oklch(61% 0.06562 249.61)",
+          "oklch(72% 0.06562 249.61)",
+          "oklch(84% 0.06562 249.61)",
+          "oklch(95% 0.06562 249.61)"
+        ]
+      },
+      "ink-material": {
+        "role": "primary",
+        "displayName": "Blue-black Material Ink",
+        "tonalRamp": [
+          "oklch(15% 0.05219 243.81)",
+          "oklch(26% 0.05219 243.81)",
+          "oklch(38% 0.05219 243.81)",
+          "oklch(49% 0.05219 243.81)",
+          "oklch(61% 0.05219 243.81)",
+          "oklch(72% 0.05219 243.81)",
+          "oklch(84% 0.05219 243.81)",
+          "oklch(95% 0.05219 243.81)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Opening Display",
+        "purpose": "The opening NIB identity only; mobile has an independent display scale."
+      },
+      "headline": {
+        "displayName": "Chapter Headline",
+        "purpose": "Normal narrative chapter headings with upright and italic phrases."
+      },
+      "title": {
+        "displayName": "Dialog Title",
+        "purpose": "Journey index and colophon headings."
+      },
+      "body": {
+        "displayName": "Narrative Body",
+        "purpose": "Short explanations in the material scenes."
+      },
+      "label": {
+        "displayName": "Journey Label",
+        "purpose": "The restrained header journey control."
+      },
+      "position": {
+        "displayName": "Chapter Position",
+        "purpose": "Functional current chapter number and name."
+      },
+      "index-entry": {
+        "displayName": "Index Entry",
+        "purpose": "Serif chapter identity inside the journey list."
+      },
+      "wordmark": {
+        "displayName": "Small Wordmark",
+        "purpose": "Repeated NIB identity in header and dialogs."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "chapter-tick-response",
+        "value": "0.25s ease",
+        "purpose": "Transform and opacity response of navigation ticks; disabled by reduced motion."
+      },
+      {
+        "name": "chapter-jump",
+        "value": "0.92s",
+        "purpose": "Lenis chapter navigation; immediate in reduced motion or reading mode."
+      },
+      {
+        "name": "wheel-interpolation",
+        "value": "0.14",
+        "purpose": "The single Lenis instance interpolation factor; GSAP supplies its only animation clock."
+      },
+      {
+        "name": "scene-handoff",
+        "value": "smoothstep(0.64, 1, local)",
+        "purpose": "Reversible normal chapter handoff. The paper transition has its own registered liquid-interface travel."
+      },
+      {
+        "name": "copy-departure",
+        "value": "smoothstep(0.56, 0.79, local)",
+        "purpose": "Outgoing narrative opacity within the chapter; replaced by stable copy in reduced motion."
+      },
+      {
+        "name": "copy-arrival",
+        "value": "smoothstep(0.78, 1, local)",
+        "purpose": "Incoming narrative opacity within the chapter; keeps text out of the active scale handoff."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-mobile",
+        "value": "(max-width: 380px)"
+      },
+      {
+        "name": "mobile-composition",
+        "value": "(max-width: 800px)"
+      },
+      {
+        "name": "wide-screen",
+        "value": "(min-width: 1900px)"
+      },
+      {
+        "name": "short-landscape",
+        "value": "(max-height: 580px) and (min-width: 650px)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Journey Control",
+      "kind": "button",
+      "refersTo": "journey-toggle",
+      "description": "The header label and actual plus icon open the native journey dialog in the application.",
+      "html": "<div class=\"ds-metal-context\"><button class=\"ds-journey-toggle\" type=\"button\" aria-haspopup=\"dialog\"><span>The journey</span><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M10 3v14M3 10h14\"/></svg></button></div>",
+      "css": ".ds-metal-context{padding:24px;background:var(--ground,#080a0d);color:var(--ivory,#eee9dd)}.ds-journey-toggle{display:flex;align-items:center;gap:20px;min-height:44px;padding:0 0 0 12px;border:0;background:none;color:#f2f0e9;font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:13px;font-weight:400;letter-spacing:.025em;cursor:pointer}.ds-journey-toggle svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.2}.ds-journey-toggle:hover{color:#fff}.ds-journey-toggle:focus-visible{outline:1px solid currentColor;outline-offset:6px}"
+    },
+    {
+      "name": "Dialog Close",
+      "kind": "button",
+      "refersTo": "close-dialog",
+      "description": "The shared square close control for the chapter index and colophon; Escape and focus restoration are handled by the application.",
+      "html": "<div class=\"ds-dialog-context\"><button class=\"ds-close-dialog\" type=\"button\" aria-label=\"Close the journey\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m5 5 14 14M5 19 19 5\"/></svg></button></div>",
+      "css": ".ds-dialog-context{padding:24px;background:#0c0f12;color:var(--ivory,#eee9dd)}.ds-close-dialog{width:44px;height:44px;display:grid;place-items:center;border:0;background:none;color:inherit;cursor:pointer}.ds-close-dialog svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.2}.ds-close-dialog:hover{color:#fff}.ds-close-dialog:focus-visible{outline:1px solid currentColor;outline-offset:6px}"
+    },
+    {
+      "name": "Trace Actions",
+      "kind": "button",
+      "refersTo": "trace-link",
+      "description": "The final paper-world restart link and plain Colophon button; both retain the text-link treatment.",
+      "html": "<div class=\"ds-paper-context\"><div class=\"ds-trace-actions\"><a class=\"ds-text-link\" href=\"#metal\">Begin again <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M5 15 15 5M5 5h10v10\"/></svg></a><button class=\"ds-text-link\" type=\"button\" aria-haspopup=\"dialog\">Colophon</button></div></div>",
+      "css": ".ds-paper-context{padding:24px;background:var(--paper,#f1ebdf);color:var(--ink,#171c23)}.ds-trace-actions{display:flex;gap:38px;justify-content:center;font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:13px}.ds-text-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:2px 0;border:0;background:none;color:inherit;font:inherit;text-decoration:none;text-underline-offset:6px;cursor:pointer}.ds-text-link svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.2}.ds-text-link:hover{color:#315171;text-decoration:underline}.ds-text-link:focus-visible{outline:1px solid currentColor;outline-offset:6px}@media(max-width:800px){.ds-trace-actions{gap:28px;font-size:12px}}"
+    },
+    {
+      "name": "Narrative Toggle",
+      "kind": "button",
+      "refersTo": "narrative-toggle",
+      "description": "A colophon text button that switches the application between readable sections and the continuous film.",
+      "html": "<div class=\"ds-dialog-context\"><button class=\"ds-narrative-toggle\" type=\"button\">Read the narrative</button></div>",
+      "css": ".ds-dialog-context{padding:24px;background:#0c0f12;color:var(--ivory,#eee9dd)}.ds-narrative-toggle{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:2px 0;border:0;background:none;color:inherit;font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:16px;font-weight:400;text-underline-offset:6px;cursor:pointer}.ds-narrative-toggle:hover{color:#fff;text-decoration:underline}.ds-narrative-toggle:focus-visible{outline:1px solid currentColor;outline-offset:6px}"
+    },
+    {
+      "name": "Chapter Ticks",
+      "kind": "nav",
+      "refersTo": "chapter-tick",
+      "description": "Ten accessible chapter anchors; the current step is long and opaque, hover is partially extended.",
+      "html": "<div class=\"ds-metal-context\"><nav class=\"ds-chapter-ticks\" aria-label=\"Jump to a chapter\"><a href=\"#metal\" aria-label=\"01 Metal\"><span></span></a><a href=\"#reservoir\" aria-label=\"02 Reservoir\"><span></span></a><a href=\"#feed\" aria-label=\"03 Feed\"><span></span></a><a href=\"#balance\" aria-label=\"04 Balance\" aria-current=\"step\"><span></span></a><a href=\"#slit\" aria-label=\"05 Slit\"><span></span></a><a href=\"#meniscus\" aria-label=\"06 Meniscus\"><span></span></a><a href=\"#contact\" aria-label=\"07 Contact\"><span></span></a><a href=\"#absorb\" aria-label=\"08 Absorb\"><span></span></a><a href=\"#write\" aria-label=\"09 Write\"><span></span></a><a href=\"#trace\" aria-label=\"10 Trace\"><span></span></a></nav></div>",
+      "css": ".ds-metal-context{padding:24px;background:var(--ground,#080a0d);color:var(--ivory,#eee9dd)}.ds-chapter-ticks{display:flex;align-items:center}.ds-chapter-ticks a{width:25px;height:44px;display:grid;place-items:center;color:inherit;text-decoration:none}.ds-chapter-ticks span{width:1px;height:25px;background:currentColor;opacity:.45;transform:scaleY(.32);transition:transform .25s ease,opacity .25s ease}.ds-chapter-ticks a[aria-current=\"step\"] span{transform:scaleY(1);opacity:1}.ds-chapter-ticks a:hover{color:#fff}.ds-chapter-ticks a:hover span{transform:scaleY(.76);opacity:1}.ds-chapter-ticks a:focus-visible{outline:1px solid currentColor;outline-offset:6px}@media(max-width:800px){.ds-chapter-ticks a{width:19px}}@media(max-width:380px){.ds-chapter-ticks a{width:17px}}@media(prefers-reduced-motion:reduce){.ds-chapter-ticks span{transition:none}}"
+    },
+    {
+      "name": "Chapter Index",
+      "kind": "nav",
+      "refersTo": "chapter-index-entry",
+      "description": "The actual journey list, with semantic chapter names, numbers and descriptions instead of cards.",
+      "html": "<div class=\"ds-dialog-context\"><nav class=\"ds-index-chapters\" aria-label=\"The complete journey\"><a href=\"#metal\"><span>01</span>Metal<small>The object</small></a><a href=\"#reservoir\"><span>02</span>Reservoir<small>The held volume</small></a><a href=\"#feed\"><span>03</span>Feed<small>The measured path</small></a><a href=\"#balance\" aria-current=\"step\"><span>04</span>Balance<small>The quiet exchange</small></a><a href=\"#slit\"><span>05</span>Slit<small>The liquid seam</small></a><a href=\"#meniscus\"><span>06</span>Meniscus<small>The held surface</small></a><a href=\"#contact\"><span>07</span>Contact<small>The first connection</small></a><a href=\"#absorb\"><span>08</span>Absorb<small>The smallest spaces</small></a><a href=\"#write\"><span>09</span>Write<small>The movement</small></a><a href=\"#trace\"><span>10</span>Trace<small>What remains</small></a></nav></div>",
+      "css": ".ds-dialog-context{padding:24px;background:#0c0f12;color:var(--ivory,#eee9dd)}.ds-index-chapters{display:grid;grid-template-columns:1fr 1fr;column-gap:9vw}.ds-index-chapters a{display:grid;grid-template-columns:42px 1fr auto;align-items:baseline;min-height:70px;padding:10px 0;border-top:1px solid #2b2e32;color:inherit;text-decoration:none;font-family:var(--display,'Cormorant Garamond',Georgia,serif);font-size:clamp(26px,3.3vw,56px);font-weight:400}.ds-index-chapters a span{font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:11px;color:#aaadb0;letter-spacing:.1em}.ds-index-chapters small{font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:11px;color:#aaadb0;align-self:center}.ds-index-chapters a[aria-current=\"step\"],.ds-index-chapters a:hover{color:#fff}.ds-index-chapters a:focus-visible{outline:1px solid currentColor;outline-offset:6px}@media(max-width:800px){.ds-index-chapters{grid-template-columns:1fr}.ds-index-chapters a{min-height:63px;font-size:35px;padding:8px 0}}"
+    },
+    {
+      "name": "Chapter Copy",
+      "kind": "custom",
+      "refersTo": "chapter-copy",
+      "description": "The actual Reservoir title and explanation, showing the upright/italic narrative pairing in its quiet material field.",
+      "html": "<div class=\"ds-metal-context\"><div class=\"ds-chapter-copy\"><h2>Room<br><em>to breathe.</em></h2><p>As ink leaves, air takes its place.</p></div></div>",
+      "css": ".ds-metal-context{padding:24px;background:var(--ground,#080a0d);color:var(--ivory,#eee9dd)}.ds-chapter-copy{max-width:850px}.ds-chapter-copy h2{margin:0;font-family:var(--display,'Cormorant Garamond',Georgia,serif);font-weight:400;letter-spacing:-.035em;line-height:.94;font-size:clamp(70px,8.25vw,170px)}.ds-chapter-copy em{font-weight:400}.ds-chapter-copy p{font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:clamp(14px,1.3vw,22px);font-weight:400;line-height:1.65;margin:26px 0 0;letter-spacing:.01em;max-width:40em}@media(max-width:800px){.ds-chapter-copy h2{font-size:clamp(48px,10vw,76px);line-height:.95}.ds-chapter-copy p{font-size:13px;margin-top:21px;max-width:28em}}"
+    },
+    {
+      "name": "Chapter Position",
+      "kind": "custom",
+      "refersTo": "chapter-position",
+      "description": "Functional narrative orientation in the footer, using an actual chapter number and title.",
+      "html": "<div class=\"ds-metal-context\"><p class=\"ds-chapter-position\"><span>08</span><span class=\"ds-position-slash\">/</span><span class=\"ds-position-name\">Absorb</span></p></div>",
+      "css": ".ds-metal-context{padding:24px;background:var(--ground,#080a0d);color:var(--ivory,#eee9dd)}.ds-chapter-position{margin:0;display:flex;align-items:center;gap:14px;font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:11px;font-weight:400;letter-spacing:.19em;text-transform:uppercase}.ds-position-slash{opacity:.6}@media(max-width:800px){.ds-chapter-position{gap:7px;letter-spacing:.1em}}@media(max-width:380px){.ds-position-name{display:none}}"
+    },
+    {
+      "name": "Credits List",
+      "kind": "custom",
+      "refersTo": "credits-row",
+      "description": "The actual colophon definition list, with a quiet label column and fine dividers.",
+      "html": "<div class=\"ds-dialog-context\"><dl class=\"ds-credits-list\"><div><dt>Material studies</dt><dd>Original AI-generated imagery, individually refined and separated.</dd></div><div><dt>Living systems</dt><dd>Authored flow, meniscus, contact, fibers and stroke.</dd></div><div><dt>Type</dt><dd>Cormorant Garamond &amp; Manrope.</dd></div></dl></div>",
+      "css": ".ds-dialog-context{padding:24px;background:#0c0f12;color:var(--ivory,#eee9dd)}.ds-credits-list{font-family:var(--sans,'Manrope',Arial,sans-serif);font-size:12px;line-height:1.8;margin:40px 0}.ds-credits-list>div{display:grid;grid-template-columns:135px 1fr;border-top:1px solid #2b2e32;padding:13px 0;gap:20px}.ds-credits-list dt{color:#aeb3b7}.ds-credits-list dd{margin:0}@media(max-width:800px){.ds-credits-list>div{grid-template-columns:95px 1fr;gap:14px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A tiny fluid machine",
+    "overview": "NIB is precise, liquid, tactile, intimate, metallurgical, editorial and quiet. Its world moves from near-black material space and reflected metal, through blue-black liquid, to warm ivory cellulose. The visual subject is the passage and control of ink. Large typography and close material views share the frame; neither becomes a commercial product presentation.\n\nThe interface stays at the edges while the material carries depth and motion. A held liquid boundary becomes a channel, a slit, a contact bridge and a deposited stroke. Replacement air supplies the counter-direction. Curated photographic plates establish surface fidelity; authored Canvas geometry, masks and lighting establish continuity. Selectable HTML carries the narrative and remains readable without the film.",
+    "keyCharacteristics": [
+      "One continuous Ink Line, with a quieter opposing air path.",
+      "Real metal highlights, restrained blue-black liquid and warm matte paper.",
+      "Cormorant Garamond display forms paired with compact Manrope controls.",
+      "Viewport-wide compositions with sparse edge navigation and deliberate text safety.",
+      "Reversible progress, complete resting frames and an independent mobile composition."
+    ],
+    "rules": [
+      {
+        "name": "The Material Color Rule",
+        "body": "Gold belongs to photographed metal and its highlights. Interface text and controls use the graphite, ivory and ink families.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Use Cormorant Garamond for the expressive narrative and Manrope for navigation and explanation. Serif italic supplies continuity within a headline, not another type family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Material Depth Rule",
+        "body": "Depth comes from the object, liquid and substrate. Keep interface surfaces flat; retain the soft contact shadow and fiber occlusion that explain the material.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the metal → liquid ink → ivory paper transition and carry the Ink Line through changes of scale.",
+      "Do keep replacement air legible as the restrained counter-direction to outgoing ink.",
+      "Do place narrative text in the quiet area of each composition and recompose that area for mobile.",
+      "Do use semantic chapter links, meaningful progress labels, visible keyboard focus and the readable narrative path.",
+      "Do use one Lenis instance and one GSAP ticker for scroll and rendering; keep material state reversible.",
+      "Do show a complete stable chapter frame for reduced motion and allow the final dried trace to become still."
+    ],
+    "donts": [
+      "Don't apply gold to general interface text, controls or decorative chrome.",
+      "Don't introduce commerce cards, decorative badges, invented metrics, a dashboard, or a generic exploded product view.",
+      "Don't turn the controlled stroke into a broad watercolor cloud, a random particle field or a calligraphy performance.",
+      "Don't bake narrative typography into photographic assets or place small text across active material detail.",
+      "Don't add continuous CSS animation or another animation clock beside the existing compositor.",
+      "Don't treat the photographic scale handoff or fiber sampling as a reconstructed physical simulation."
+    ]
+  }
+}

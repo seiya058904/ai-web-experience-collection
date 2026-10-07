@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -50,6 +50,8 @@ for (const [file, route, title] of [
   ['codex/index.html', 'codex/', 'CODEX — The Anatomy of a Book'],
   ['magma/index.html', 'magma/', 'MAGMA — Stone Before Stone'],
   ['fossil/index.html', 'fossil/', 'FOSSIL — Deep Time in Stone'],
+  ['urushi/index.html', 'urushi/', 'URUSHI — Layers of Lacquer'],
+  ['nib/index.html', 'nib/', 'NIB — Ink Under Pressure'],
   ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
   ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
   ['facet/index.html', 'facet/', 'FACET — The Light Within'],
@@ -90,6 +92,9 @@ for (const file of ['magma/NOTICE.md', 'magma/licenses/Archivo-OFL.txt', 'magma/
 }
 for (const file of ['codex/NOTICE.md', 'codex/licenses/Cormorant-Garamond-OFL.txt', 'codex/licenses/Manrope-OFL.txt', 'codex/licenses/dependencies/lenis--LICENSE', 'codex/licenses/dependencies/three--LICENSE', 'codex/fonts/cormorant-garamond-latin-variable.woff2', 'codex/fonts/cormorant-garamond-italic-latin-variable.woff2', 'codex/fonts/manrope-latin-variable.woff2', 'codex/poster.webp', 'codex/social.jpg']) {
   assert((await stat(join(root, file))).size > 0, `Missing CODEX resource: ${file}`);
+}
+for (const file of ['urushi/LICENSE.txt', 'urushi/NOTICE.md', 'urushi/licenses/README.md', 'urushi/licenses/bodoni-moda-OFL.txt', 'urushi/licenses/manrope-OFL.txt', 'urushi/licenses/noto-serif-sc-OFL.txt', 'urushi/fonts/bodoni-moda-latin-400-normal.woff2', 'urushi/fonts/manrope-latin-400-normal.woff2', 'urushi/assets/fonts/urushi-cjk.woff2', 'urushi/models/urushi-vessel.obj', 'urushi/textures/lacquer-microstructure.png', 'urushi/poster.webp', 'urushi/social.jpg', 'nib/NOTICE.md', 'nib/ATTRIBUTION.md', 'nib/licenses/CormorantGaramond-OFL.txt', 'nib/licenses/Manrope-OFL.txt', 'nib/licenses/GSAP-Standard-License.html', 'nib/licenses/Lenis-MIT.txt', 'nib/fonts/cormorant-garamond-latin-variable.woff2', 'nib/fonts/cormorant-garamond-latin-variable-italic.woff2', 'nib/fonts/manrope-latin-variable.woff2', 'nib/assets/hero.webp', 'nib/assets/hero-mobile.webp', 'nib/assets/meniscus-fluid.webp', 'nib/poster.webp', 'nib/social.jpg']) {
+  assert((await stat(join(root, file))).size > 0, `Missing supplied resource: ${file}`);
 }
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {

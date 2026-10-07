@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-07T06:57:07Z",
+  "delivery": "All runtime dependencies and fonts are local files. No runtime CDN requests are required.",
+  "fontCssSource": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap",
+  "fontNotes": "WOFF2 Latin subsets are unmodified. Weight ranges and styles follow the Google Fonts CSS.",
+  "assets": [
+    {
+      "id": "lenis",
+      "name": "Lenis",
+      "version": "1.3.26",
+      "file": "public/vendor/lenis.mjs",
+      "source": "https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.mjs",
+      "license": "MIT",
+      "licenseFile": "licenses/Lenis-MIT.txt",
+      "licenseSource": "https://cdn.jsdelivr.net/npm/lenis@1.3.26/LICENSE",
+      "bytes": 33166,
+      "sha256": "b7a2f6896b9ce086d8192ff17c91aad457447976764971fe5011c42169602e9e",
+      "licenseSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "version": "3.15.0",
+      "file": "public/vendor/gsap.min.js",
+      "source": "https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js",
+      "license": "GSAP Standard No Charge License",
+      "licenseFile": "licenses/GSAP-Standard-License.html",
+      "licenseSource": "https://gsap.com/standard-license/",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "licenseSha256": "ea8b689c296f4cd1e9021db48a083893ae9f7cbc0c65b265fbe43dd6555c54f8",
+      "licenseSourcePageSha256": "3a81f18af27903bf91c2f52db362895addfd4de7ce847e83f646014a834ee838",
+      "licenseExtraction": "Complete visible #license element including FAQ; comments omitted. Standalone offline HTML."
+    },
+    {
+      "id": "cormorant-garamond-regular",
+      "name": "Cormorant Garamond",
+      "version": "Google Fonts v21",
+      "file": "public/fonts/cormorant-garamond-latin-variable.woff2",
+      "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2",
+      "license": "SIL OFL 1.1",
+      "licenseFile": "licenses/CormorantGaramond-OFL.txt",
+      "licenseSource": "https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/cormorantgaramond/OFL.txt",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "licenseSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "style": "normal",
+      "weightRange": [
+        300,
+        700
+      ],
+      "subset": "latin"
+    },
+    {
+      "id": "cormorant-garamond-italic",
+      "name": "Cormorant Garamond",
+      "version": "Google Fonts v21",
+      "file": "public/fonts/cormorant-garamond-latin-variable-italic.woff2",
+      "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2",
+      "license": "SIL OFL 1.1",
+      "licenseFile": "licenses/CormorantGaramond-OFL.txt",
+      "licenseSource": "https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/cormorantgaramond/OFL.txt",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "licenseSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "style": "italic",
+      "weightRange": [
+        300,
+        700
+      ],
+      "subset": "latin"
+    },
+    {
+      "id": "manrope-regular",
+      "name": "Manrope",
+      "version": "Google Fonts v20",
+      "file": "public/fonts/manrope-latin-variable.woff2",
+      "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "license": "SIL OFL 1.1",
+      "licenseFile": "licenses/Manrope-OFL.txt",
+      "licenseSource": "https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/manrope/OFL.txt",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "licenseSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "style": "normal",
+      "weightRange": [
+        200,
+        800
+      ],
+      "subset": "latin"
+    }
+  ]
+}
