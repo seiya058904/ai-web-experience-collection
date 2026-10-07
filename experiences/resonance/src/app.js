@@ -1,3 +1,5 @@
+import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
 import {WaveWorld} from './world.js';
 import {ResonanceAudio} from './audio.js';
 import {clamp,locateScene,panelOpacity,scrollPositionFor} from './scroll-state.js';
@@ -16,6 +18,21 @@ const motionQuery=matchMedia('(prefers-reduced-motion: reduce)');
 let savedMotion=null;
 try{const value=localStorage.getItem('resonance-calm');if(value!==null)savedMotion=value==='true';}catch{/* Privacy mode may disable local storage. */}
 let reducedMotion=savedMotion??motionQuery.matches;
+let wheelDirection=0;
+const lenis=new Lenis({
+  lerp:.105,smoothWheel:!reducedMotion,syncTouch:false,
+  autoRaf:false,respectReducedMotion:false,
+  prevent:node=>Boolean(node.closest('dialog')),
+  virtualScroll:({deltaY,event})=>{
+    if(event.type!=='wheel'||event.ctrlKey||!deltaY)return true;
+    const direction=Math.sign(deltaY);
+    if(wheelDirection&&direction!==wheelDirection&&lenis.isScrolling==='smooth')
+      lenis.scrollTo(lenis.animatedScroll,{immediate:true});
+    wheelDirection=direction;
+    return true;
+  },
+});
+let scrollClock=0;
 let world;
 try{
   world=new WaveWorld($('#world'),{onFallback:()=>{$('#graphics-mode').textContent='A lighter visual field is active on this device.';}});
@@ -48,19 +65,24 @@ function measure(){
   offsets=acts.map(el=>el.offsetTop);
   documentHeight=document.documentElement.scrollHeight;
   world?.resize(width,height,Math.min(devicePixelRatio||1,1.75));
-  if(preserveOnMeasure&&old)window.scrollTo({top:scrollPositionFor(old.raw,offsets,height,documentHeight),behavior:'instant'});
+  if(preserveOnMeasure&&old){lenis.resize();lenis.scrollTo(scrollPositionFor(old.raw,offsets,height,documentHeight),{immediate:true,force:true});}
+  if(lenis.isScrolling!=='smooth')lenis.resize();
   preserveOnMeasure=false;needsMeasure=false;
 }
 function goTo(index,{smooth=true,focus=false,updateHash=true}={}){
   index=Math.round(clamp(index,0,7));
   if(needsMeasure)measure();
   if(dialog.open)dialog.close();
+  lenis.start();
   pendingFocus=focus?index:-1;
   if(updateHash)history.replaceState(null,'',`#${acts[index].id}`);
-  window.scrollTo({top:offsets[index],behavior:smooth&&!reducedMotion?'smooth':'instant'});
+  lenis.resize();
+  lenis.scrollTo(offsets[index],{immediate:!smooth||reducedMotion});
 }
 function setMotion(value,persist=false){
   reducedMotion=Boolean(value);state.reducedMotion=reducedMotion;
+  lenis.options.smoothWheel=!reducedMotion;
+  lenis.scrollTo(scrollY,{immediate:true,force:true});
   root.classList.toggle('calm-motion',reducedMotion);
   $('#motion-toggle').setAttribute('aria-pressed',String(reducedMotion));
   if(persist){savedMotion=reducedMotion;try{localStorage.setItem('resonance-calm',String(reducedMotion));}catch{}}
@@ -128,6 +150,8 @@ function tick(timestamp){
   state.time+=delta;state.impulseAge+=delta;
   if(needsMeasure)measure();
   if(pendingRoute!==null){goTo(pendingRoute,{smooth:false,updateHash:false});pendingRoute=null;}
+  scrollClock+=Math.min(delta,.05)*1000;
+  lenis.raf(scrollClock);
   const position=locateScene(scrollY,offsets,height,documentHeight);
   state.scene=position.scene;state.rawProgress=position.raw;state.ending=position.ending;
   state.mode+=(selectedMode-state.mode)*(1-Math.exp(-delta*4.2));
@@ -226,9 +250,9 @@ $('#playback').addEventListener('click',async()=>{
   }catch{announce('Playback is unavailable. You can still save your captured tone.');}
   finally{button.disabled=false;}
 });
-$('#index-toggle').addEventListener('click',()=>{dialog.showModal();document.body.classList.add('menu-open');});
+$('#index-toggle').addEventListener('click',()=>{lenis.stop();dialog.showModal();document.body.classList.add('menu-open');});
 $('#index-close').addEventListener('click',()=>dialog.close());
-dialog.addEventListener('close',()=>{document.body.classList.remove('menu-open');needsMeasure=true;});
+dialog.addEventListener('close',()=>{lenis.start();document.body.classList.remove('menu-open');needsMeasure=true;});
 dialog.addEventListener('click',event=>{if(event.target===dialog){const box=dialog.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)dialog.close();}});
 $('#motion-toggle').addEventListener('click',()=>setMotion(!reducedMotion,true));
 motionQuery.addEventListener('change',event=>{if(savedMotion===null)setMotion(event.matches);});
@@ -238,9 +262,9 @@ addEventListener('resize',()=>{preserveOnMeasure=innerWidth!==width;needsMeasure
 document.fonts.ready.then(()=>{needsMeasure=true;});
 document.addEventListener('visibilitychange',()=>{
   void audio.setVisibility(document.hidden).catch(()=>{});
-  if(document.hidden)stop();else{needsMeasure=true;start();}
+  if(document.hidden){lenis.scrollTo(scrollY,{immediate:true,force:true});stop();}else{needsMeasure=true;start();}
 });
-addEventListener('pagehide',()=>{stop();void audio.setVisibility(true).catch(()=>{});});
+addEventListener('pagehide',event=>{lenis.scrollTo(scrollY,{immediate:true,force:true});stop();if(!event.persisted)lenis.destroy();void audio.setVisibility(true).catch(()=>{});});
 addEventListener('pageshow',()=>{needsMeasure=true;void audio.setVisibility(document.hidden).catch(()=>{});start();});
 addEventListener('hashchange',()=>{const i=acts.findIndex(act=>`#${act.id}`===location.hash);if(i>=0)goTo(i,{smooth:false,updateHash:false});});
 const navEntry=performance.getEntriesByType('navigation')[0];

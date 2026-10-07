@@ -26,7 +26,7 @@ Mode: Experience. An intimate dark acoustic installation, with a continuous part
 8. Return: “Into the air. / Again.” with re-radiating diaphragm, then quiet collapse.
 
 ## Continuity
-The same seeded field maps into every scene. Native scrolling is authoritative; a single application RAF drives time, geometry, control state and text. The first 54% of each scroll interval is a readable living hold; the last 46% morphs to the next state. Text gives the geometry space during each handoff. The last scene has an additional decay interval.
+The same seeded field maps into every scene. One Lenis instance smooths wheel input on the existing application RAF (`lerp: 0.105`, `syncTouch: false`, `autoRaf: false`); document position remains the narrative source. The same RAF drives time, geometry, control state and text. Calm motion disables wheel smoothing and uses immediate navigation. Touch and dialog scrolling remain native. The first 54% of each scroll interval is a readable living hold; the last 46% morphs to the next state. Text gives the geometry space during each handoff. The last scene has an additional decay interval.
 
 ## Responsive and motion
 At widths up to 760px, and on portrait tablets up to 900px, sculptures are framed above the text, with a compact eight-stop rail below. Landscape and short desktop frames use a smaller display size and tighter controls. Reduced motion retains structure and phase controls, softens autonomous displacement, and removes smooth anchor travel. Sound defaults off; no entrance depends on an audio permission.

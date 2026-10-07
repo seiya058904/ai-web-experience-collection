@@ -1,4 +1,6 @@
 import './styles.css';
+import 'lenis/dist/lenis.css';
+import Lenis from 'lenis';
 import { createScrollTimeline, chapterIds, chapterNames, clamp, smooth } from './scroll.js';
 import { installNotes } from './notes.js';
 
@@ -8,7 +10,6 @@ try { history.scrollRestoration = 'manual'; } catch { /* Chapter progress remain
 const rooms = [...document.querySelectorAll('.room')];
 const rail = [...document.querySelectorAll('.chapter-rail a')];
 const indexLinks = [...document.querySelectorAll('.index-list a')];
-const timeline = createScrollTimeline();
 const indexDialog = document.querySelector('#index-dialog');
 const nextButton = document.querySelector('#next-room');
 const motionButton = document.querySelector('#motion-toggle');
@@ -26,6 +27,22 @@ try {
   if (stored === 'true' || stored === 'false') motionOverride = stored === 'true';
 } catch { /* A restricted storage policy still permits the full exhibition. */ }
 let reducedMotion = motionOverride ?? preference.matches;
+let wheelDirection = 0;
+const lenis = new Lenis({
+  lerp: .105, smoothWheel: !reducedMotion, syncTouch: false,
+  autoRaf: false, respectReducedMotion: false,
+  prevent: node => Boolean(node.closest('dialog')),
+  virtualScroll: ({ deltaY, event }) => {
+    if (event.type !== 'wheel' || event.ctrlKey || !deltaY) return true;
+    const direction = Math.sign(deltaY);
+    if (wheelDirection && direction !== wheelDirection && lenis.isScrolling === 'smooth')
+      lenis.scrollTo(lenis.animatedScroll, { immediate: true });
+    wheelDirection = direction;
+    return true;
+  },
+});
+const timeline = createScrollTimeline(lenis);
+let scrollClock = 0;
 let archiveInspect = false;
 let portraitOverride = null;
 let portraitSelected = -1;
@@ -45,6 +62,8 @@ let previousFrameTime = 0;
 let spatialLayoutKey = '';
 
 function setMotionFlags() {
+  lenis.options.smoothWheel = !reducedMotion;
+  lenis.scrollTo(scrollY, { immediate: true, force: true });
   root.classList.toggle('reduce-motion', reducedMotion);
   root.classList.toggle('motion-overridden', motionOverride !== null);
   motionButton.setAttribute('aria-pressed', String(reducedMotion));
@@ -141,6 +160,7 @@ async function startSpatial() {
 function goTo(index, progress = .08, { push = true, smoothScroll = true } = {}) {
   if (indexDialog.open) indexDialog.close();
   if (document.querySelector('#notes-dialog').open) notes.close(document.querySelector('#notes-dialog'));
+  lenis.start();
   if (resizePending) {
     timeline.measure(reducedMotion);
     resizePending = false;
@@ -157,12 +177,19 @@ function goTo(index, progress = .08, { push = true, smoothScroll = true } = {}) 
   requestRender();
 }
 function openIndex() {
+  lenis.stop();
   indexDialog.showModal();
   const active = indexLinks[currentFrame?.index ?? 0];
   active.focus({ preventScroll: true });
 }
 document.querySelector('#open-index').addEventListener('click', openIndex);
 document.querySelector('#mobile-index').addEventListener('click', openIndex);
+for (const dialog of document.querySelectorAll('dialog')) dialog.addEventListener('toggle', () => {
+  if (document.querySelector('dialog[open]')) lenis.stop();
+  else lenis.start();
+  requestRender();
+});
+lenis.on('virtual-scroll', requestRender);
 nextButton.addEventListener('click', () => {
   goTo(currentIndex >= 8 ? 0 : currentIndex + 1, .08);
 });
@@ -349,11 +376,13 @@ function render(time) {
     spatialLayoutKey = '';
     resizePending = false;
   }
+  const step = Math.min(64, time - (previousFrameTime || time - 16));
+  previousFrameTime = time;
+  scrollClock += Math.min(step, 50);
+  lenis.raf(scrollClock);
   const frame = timeline.snapshot();
   currentFrame = frame;
   if (currentIndex !== frame.index) changeChapter(frame.index);
-  const step = Math.min(64, time - (previousFrameTime || time - 16));
-  previousFrameTime = time;
   const damping = 1 - Math.exp(-step / 135);
   pointerX += (desiredPointerX - pointerX) * damping;
   pointerY += (desiredPointerY - pointerY) * damping;
@@ -414,13 +443,15 @@ function render(time) {
       stage.update({ scene: 'none', visible: false });
     }
   }
-  if (movingPointer && !reducedMotion) requestRender();
+  if ((movingPointer && !reducedMotion) || lenis.isScrolling === 'smooth') requestRender();
+  else previousFrameTime = 0;
 }
 window.addEventListener('scroll', () => { requestRender(); scheduleSave(); }, { passive: true });
 window.addEventListener('resize', () => { resizePending = true; requestRender(); }, { passive: true });
 window.addEventListener('orientationchange', () => { resizePending = true; requestRender(); }, { passive: true });
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
+    lenis.scrollTo(scrollY, { immediate: true, force: true });
     cancelAnimationFrame(frameRequest);
     frameRequest = 0;
     persistPosition();
@@ -430,6 +461,12 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 window.addEventListener('pagehide', persistPosition);
+window.addEventListener('pagehide', event => {
+  lenis.scrollTo(scrollY, { immediate: true, force: true });
+  cancelAnimationFrame(frameRequest);
+  frameRequest = 0;
+  if (!event.persisted) lenis.destroy();
+});
 window.addEventListener('pageshow', requestRender);
 window.addEventListener('popstate', (event) => {
   const state = event.state?.aeterna;

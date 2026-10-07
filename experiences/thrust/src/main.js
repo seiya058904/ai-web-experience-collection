@@ -1,4 +1,6 @@
-import { CHAPTERS, chapterAt, sceneState, clamp, lerp } from './story.js';
+import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
+import { CHAPTERS, chapterAt, sceneState, clamp } from './story.js';
 import { createSound } from './sound.js';
 
 const root = document.documentElement;
@@ -25,6 +27,22 @@ let world, sound, bounds = [], target = 0, progress = 0, time = 0, lastTime = 0,
 let paused = media.matches, motionOverride = false, quality = false, soundEnabled = false;
 let bladeCut = null, lastIndex = -1, inspectAngle = 0, dragStart = null, startingAngle = 0;
 let restoreTimer = 0, resizeTimer = 0, disposed = false, staticMode = false;
+let wheelDirection = 0;
+const lenis = new Lenis({
+  lerp: .105, smoothWheel: !paused, syncTouch: false,
+  autoRaf: false, respectReducedMotion: false,
+  prevent: node => Boolean(node.closest('dialog')),
+  virtualScroll: ({ deltaY, event }) => {
+    if (event.type !== 'wheel' || event.ctrlKey || !deltaY) return true;
+    const direction = Math.sign(deltaY);
+    if (wheelDirection && direction !== wheelDirection && lenis.isScrolling === 'smooth')
+      lenis.scrollTo(lenis.animatedScroll, { immediate: true });
+    wheelDirection = direction;
+    return true;
+  },
+});
+let scrollClock = 0;
+lenis.on('virtual-scroll', requestFrame);
 let pendingFocusIndex = null, layoutViewport = 0, layoutWidth = 0, layoutMobile = null;
 
 function measure(preserveProgress = false) {
@@ -39,8 +57,10 @@ function measure(preserveProgress = false) {
   bounds = sections.map((section, i) => ({ top: section.offsetTop, span: i < sections.length - 1 ? sections[i + 1].offsetTop - section.offsetTop : Math.max(1, pageEnd - section.offsetTop) }));
   if (savedProgress !== null && !staticMode) {
     const i = Math.floor(savedProgress);
-    scrollTo({top:bounds[i].top + bounds[i].span * (savedProgress-i),behavior:'instant'});
+    lenis.resize();
+    lenis.scrollTo(bounds[i].top + bounds[i].span * (savedProgress-i), { immediate: true, force: true });
   }
+  if (lenis.isScrolling !== 'smooth') lenis.resize();
   target = chapterAt(scrollY, bounds);
   world?.resize(quality);
 }
@@ -86,20 +106,25 @@ function frame(now) {
   if (disposed || document.hidden) return;
   const dt = lastTime ? Math.min((now - lastTime) / 1000, .045) : 0;
   lastTime = now;
+  scrollClock += dt * 1000;
+  lenis.raf(scrollClock);
+  target = chapterAt(scrollY, bounds);
   const reduce = media.matches && !motionOverride;
   const moving = !paused && !dialog.open;
   if (moving) time += dt;
-  progress = reduce || paused ? target : lerp(progress, target, 1 - Math.exp(-dt * 14));
-  if (Math.abs(progress - target) < .0001) progress = target;
+  // Lenis owns the input easing; the engine follows that position directly.
+  progress = target;
   const state = sceneState(progress);
   updateUI(state);
   try { world?.render(time, state, { inspectAngle, bladeCut, staticShot: reduce }); }
   catch (error) { console.error('THRUST render failed:', error); enableStaticMode(); }
   sound?.update(progress, state.heat);
-  if ((moving || Math.abs(progress - target) > .0001) && !staticMode) requestFrame();
+  if ((moving && !staticMode) || lenis.isScrolling === 'smooth') requestFrame();
 }
 function requestFrame() { if (!raf && !disposed && !document.hidden) raf = requestAnimationFrame(frame); }
 function syncMotion() {
+  lenis.options.smoothWheel = !paused && !(media.matches && !motionOverride);
+  lenis.scrollTo(scrollY, { immediate: true, force: true });
   motionButton.setAttribute('aria-pressed', String(paused));
   motionButton.setAttribute('aria-label', paused ? 'Resume motion' : 'Pause motion');
   syncSound(); lastTime = 0; requestFrame();
@@ -110,10 +135,12 @@ function navigate(id, smooth = true, keyboard = false) {
   const index = CHAPTERS.findIndex(chapter => chapter.id === id);
   if (index < 0) return;
   if (dialog.open) dialog.close();
+  lenis.start();
   pendingFocusIndex = keyboard ? index : null;
   const y = bounds[index]?.top + (index === 0 ? 0 : (bounds[index]?.span || 0) * .18);
   history.pushState(null, '', `#${id}`);
-  scrollTo({ top: Number.isFinite(y) ? y : 0, behavior: smooth && !media.matches ? 'smooth' : 'instant' });
+  lenis.resize();
+  lenis.scrollTo(Number.isFinite(y) ? y : 0, { immediate: !smooth || !lenis.options.smoothWheel });
   requestFrame();
 }
 on(document, 'click', event => {
@@ -132,9 +159,9 @@ on(window, 'pageshow', () => { measure(); progress = target; lastTime = 0; reque
 on(window, 'hashchange', () => { target = chapterAt(scrollY, bounds); requestFrame(); });
 on(media, 'change', () => { if (!motionOverride) paused = media.matches; syncMotion(); });
 on(motionButton, 'click', () => { paused = !paused; motionOverride = true; syncMotion(); });
-on(indexOpen, 'click', () => { dialog.showModal(); body.classList.add('menu-open'); syncSound(); requestFrame(); });
+on(indexOpen, 'click', () => { lenis.stop(); dialog.showModal(); body.classList.add('menu-open'); syncSound(); requestFrame(); });
 on(document.querySelector('#index-close'), 'click', () => dialog.close());
-on(dialog, 'close', () => { body.classList.remove('menu-open'); lastTime = 0; syncSound(); requestFrame(); });
+on(dialog, 'close', () => { lenis.start(); body.classList.remove('menu-open'); lastTime = 0; syncSound(); requestFrame(); });
 on(qualityButton, 'click', () => { quality = !quality; qualityButton.setAttribute('aria-pressed', String(quality)); qualityButton.querySelector('[data-state]').textContent = quality ? 'DETAIL' : 'AUTO'; world?.resize(quality); requestFrame(); });
 on(soundButton, 'click', async () => {
   try {
@@ -161,7 +188,7 @@ on(worldElement, 'pointermove', event => { if (dragStart === null) return; inspe
 const endDrag = () => { dragStart = null; body.classList.remove('dragging'); };
 on(worldElement, 'pointerup', endDrag); on(worldElement, 'pointercancel', endDrag); on(worldElement, 'lostpointercapture', endDrag);
 on(document, 'visibilitychange', () => {
-  if (document.hidden) { cancelAnimationFrame(raf); raf = 0; } else { lastTime = 0; target = chapterAt(scrollY, bounds); requestFrame(); }
+  if (document.hidden) { lenis.scrollTo(scrollY, { immediate: true, force: true }); cancelAnimationFrame(raf); raf = 0; } else { lastTime = 0; target = chapterAt(scrollY, bounds); requestFrame(); }
   syncSound();
 });
 // Browser-initiated freezing can suspend an outstanding animation callback
@@ -199,14 +226,15 @@ try {
   const navigation = performance.getEntriesByType('navigation')[0];
   if (location.hash && navigation?.type === 'navigate') {
     const index = CHAPTERS.findIndex(chapter => `#${chapter.id}` === location.hash);
-    if (index >= 0) { scrollTo(0, bounds[index].top + bounds[index].span * .18); target = chapterAt(scrollY, bounds); progress = target; }
+    if (index >= 0) { lenis.scrollTo(bounds[index].top + bounds[index].span * .18, { immediate: true }); target = chapterAt(scrollY, bounds); progress = target; }
   }
   requestFrame();
 } catch (error) { console.error('THRUST could not initialize WebGL:', error); enableStaticMode(); }
 
 on(window, 'pagehide', event => {
+  lenis.scrollTo(scrollY, { immediate: true, force: true });
   cancelAnimationFrame(raf); raf = 0;
   if (event.persisted) return;
   disposed = true; clearTimeout(resizeTimer); clearTimeout(restoreTimer);
-  events.abort(); world?.dispose(); sound?.dispose();
+  events.abort(); lenis.destroy(); world?.dispose(); sound?.dispose();
 });

@@ -36,7 +36,7 @@ Three.js builds the original engine, nested shafts, real rotor/stator meshes, bl
 
 ## Motion and responsiveness
 
-Native vertical scroll maps to a deterministic continuous scene coordinate. Camera tracks have enter, hold and exit positions, and are reversible. Local rotations are synchronized by spool. Pause freezes ambient motion but leaves navigation working. Reduced motion snaps between stable compositions while preserving the full story. Mobile uses independently authored camera positions, portrait-oriented whole-engine compositions, taller close views, fewer flow traces, lower resolution and shorter scene distances. No wheel or touch scrolling is trapped.
+One Lenis instance smooths vertical wheel input (`lerp: 0.105`, `syncTouch: false`, `autoRaf: false`) on the existing RAF. Its document position maps directly to the deterministic scene coordinate; the former second progress easing is removed to avoid delayed camera response. Camera tracks have enter, hold and exit positions, and are reversible. Local rotations are synchronized by spool. Pause freezes ambient motion and disables wheel smoothing while leaving navigation working. Reduced motion preserves the full story. Mobile keeps its authored camera positions, portrait whole-engine compositions, fewer flow traces, lower resolution and shorter scene distances. Touch and dialog scrolling remain native; navigation and restoration use the same Lenis instance.
 
 ## Interaction contract
 

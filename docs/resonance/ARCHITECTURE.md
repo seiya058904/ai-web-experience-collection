@@ -24,7 +24,7 @@ The renderer receives scene position, living time, pointer position, selected mo
 
 ## Scroll as the narrative clock
 
-The document contains eight real sections. Their measured offsets define the chapter intervals. Browser-native scrolling is authoritative; there is no virtual scrolling library or duplicate scroll manager.
+The document contains eight real sections. Their measured offsets define the chapter intervals. One Lenis instance smooths wheel input (`lerp: 0.105`, `syncTouch: false`, `autoRaf: false`) on the existing RAF. Document position remains authoritative, with no second narrative-progress easing. Touch and dialog scrolling remain native; calm motion disables wheel smoothing.
 
 Within each interval, normalized progress from **0 to 0.54** holds the scene's stable composition. Progress from **0.54 to 1** passes through a smoothstep curve and morphs into the next scene. Living motion continues during the hold, so a stopped scroll position remains responsive.
 
@@ -36,7 +36,7 @@ Hash routes are:
 
 `#silence`, `#vibration`, `#propagation`, `#interference`, `#resonance`, `#harmonics`, `#memory`, and `#return`.
 
-Chapter navigation updates the hash and moves to a measured section offset. Keyboard-initiated chapter navigation moves focus to the destination heading. Calm mode uses immediate chapter movement rather than smooth anchor travel.
+Chapter navigation updates the hash and moves to a measured section offset through Lenis. Keyboard-initiated navigation moves focus to the destination heading. Calm mode and history restoration use immediate positioning. Opening the Index stops Lenis; closing it resumes input without retaining an old destination.
 
 Measurements refresh after resize, font readiness and page restoration. Width-changing resizes preserve normalized narrative progress against the new section offsets. The browser remains responsible for its native scroll restoration.
 
@@ -63,7 +63,7 @@ The main renderer uses WebGL with shader-defined destinations for shared, seeded
 
 ## Frame and visibility lifecycle
 
-`app.js` owns the application's requestAnimationFrame loop. Each frame updates active elapsed time, maps the current scroll position, eases interactive mode and pointer changes, updates the interface, and asks the visual renderer to draw.
+`app.js` owns the application's requestAnimationFrame loop. Each frame updates active elapsed time, advances Lenis on a capped foreground clock, maps the current scroll position, eases interactive mode and pointer changes, updates the interface, and asks the visual renderer to draw. Lenis has no independent RAF. Hidden pages cancel unfinished inertia; a final page exit destroys the instance, while cached page restoration retains it.
 
 Analytic motion uses actual elapsed foreground time, so a slow frame does not lengthen the capture timer. Hiding the tab cancels the visual loop and requests audio suspension. Resuming clears the previous frame timestamp before continuing. `pagehide` and `pageshow` handle the corresponding page lifecycle. Opening the Index pauses canvas drawing while interface timers continue.
 

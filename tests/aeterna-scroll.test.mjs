@@ -16,7 +16,11 @@ function fixture(run) {
     innerWidth: 1440, innerHeight: 900, scrollY: 0,
     scrollTo({ top }) { this.scrollY = top; },
   };
-  try { run(createScrollTimeline(), stops); }
+  const lenis = {
+    resize() {},
+    scrollTo(top) { window.scrollTo({ top }); },
+  };
+  try { run(createScrollTimeline(lenis), stops); }
   finally {
     if (previous.document === undefined) delete globalThis.document;
     else globalThis.document = previous.document;

@@ -1,4 +1,6 @@
 import "./style.css";
+import "lenis/dist/lenis.css";
+import Lenis from "lenis";
 import * as THREE from "three";
 import {
   Geography,
@@ -35,6 +37,25 @@ try {
   const saved = localStorage.getItem("atlas:quiet");
   if (saved !== null) quiet = saved === "true";
 } catch {}
+let wheelDirection = 0;
+const lenis = new Lenis({
+  lerp: 0.105,
+  smoothWheel: !quiet,
+  syncTouch: false,
+  autoRaf: false,
+  respectReducedMotion: false,
+  prevent: (node) => Boolean(node.closest("dialog")),
+  virtualScroll: ({ deltaY, event }) => {
+    if (event.type !== "wheel" || event.ctrlKey || !deltaY) return true;
+    const direction = Math.sign(deltaY);
+    if (wheelDirection && direction !== wheelDirection && lenis.isScrolling === "smooth") {
+      lenis.scrollTo(lenis.animatedScroll, { immediate: true });
+    }
+    wheelDirection = direction;
+    return true;
+  },
+});
+let scrollClock = 0;
 let renderer: THREE.WebGLRenderer | undefined,
   scene: THREE.Scene,
   camera: THREE.PerspectiveCamera;
@@ -77,14 +98,13 @@ function getProgress() {
     scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight),
   );
 }
-function jump(p: number) {
-  window.scrollTo({
-    top:
-      clamp(p) *
-      Math.max(1, document.documentElement.scrollHeight - innerHeight),
-    behavior: "instant",
-  });
-  lastP = clamp(p);
+function jump(p: number, smoothScroll = false) {
+  lenis.resize();
+  lenis.scrollTo(
+    clamp(p) * Math.max(1, document.documentElement.scrollHeight - innerHeight),
+    { immediate: !smoothScroll || quiet, force: true },
+  );
+  lastP = getProgress();
 }
 function remember() {
   try {
@@ -124,19 +144,23 @@ function openDialog(view: "index" | "credits", opener: HTMLElement) {
   dialogOpener = opener;
   setDialogView(view);
   if (!dialog.open) {
+    lenis.stop();
     dialog.showModal();
     document.body.style.overflow = "hidden";
   }
 }
 function closeDialog() {
   dialog.close();
+  lenis.start();
   document.body.style.overflow = "";
   dialogOpener?.focus({ preventScroll: true });
 }
 dialog.addEventListener("cancel", () => {
+  lenis.start();
   document.body.style.overflow = "";
 });
 dialog.addEventListener("close", () => {
+  lenis.start();
   document.body.style.overflow = "";
 });
 $("open-index").addEventListener("click", (e) =>
@@ -159,6 +183,8 @@ $("fallback-index").addEventListener("click", (e) => {
 $("retry-load").addEventListener("click", () => location.reload());
 function setQuiet(value: boolean) {
   quiet = value;
+  lenis.options.smoothWheel = !quiet;
+  lenis.scrollTo(scrollY, { immediate: true, force: true });
   renderDirty = true;
   $("motion-toggle").setAttribute("aria-pressed", String(quiet));
   $("motion-label").textContent = quiet ? "QUIET MOTION ON" : "QUIET MOTION";
@@ -172,7 +198,7 @@ prefersQuiet.addEventListener("change", (e) => setQuiet(e.matches));
 function returnStart() {
   if (dialog.open) closeDialog();
   history.replaceState(null, "", "#coordinate");
-  jump(0);
+  jump(0, true);
 }
 $("return-start").addEventListener("click", returnStart);
 document
@@ -192,7 +218,7 @@ $("chapter-list").addEventListener("click", (e) => {
   const chapter = CHAPTERS[Number(link.dataset.chapter)];
   closeDialog();
   history.replaceState(null, "", "#" + chapter.id);
-  jump(chapter.position);
+  jump(chapter.position, true);
 });
 addEventListener("keydown", (e) => {
   if (dialog.open || e.ctrlKey || e.metaKey || e.altKey) return;
@@ -672,9 +698,12 @@ function updateChrome(s: StoryState) {
 }
 
 function tick(now: number) {
-  if (disposed || document.hidden || !ready) return;
+  if (disposed || document.hidden) return;
   const dt = Math.min(0.05, (now - (lastTime || now)) / 1000);
   lastTime = now;
+  scrollClock += dt * 1000;
+  lenis.raf(scrollClock);
+  if (!ready) { raf = requestAnimationFrame(tick); return; }
   if (!quiet && !dialog.open) time += dt;
   const p = getProgress();
   lastP = p;
@@ -700,7 +729,7 @@ function tick(now: number) {
   raf = requestAnimationFrame(tick);
 }
 function resume() {
-  if (disposed || !ready) return;
+  if (disposed) return;
   cancelAnimationFrame(raf);
   lastTime = 0;
   raf = requestAnimationFrame(tick);
@@ -725,11 +754,13 @@ addEventListener(
 document.addEventListener("visibilitychange", () => {
   if (document.hidden) {
     cancelAnimationFrame(raf);
+    lenis.scrollTo(scrollY, { immediate: true, force: true });
     remember();
   } else resume();
 });
 addEventListener("pageshow", resume);
 addEventListener("pagehide", (event) => {
+  lenis.scrollTo(scrollY, { immediate: true, force: true });
   cancelAnimationFrame(raf);
   remember();
 });
@@ -786,11 +817,13 @@ async function init() {
   }
 }
 init();
+resume();
 
 function dispose() {
     if (disposed) return;
     disposed = true;
     cancelAnimationFrame(raf);
+    lenis.destroy();
     terrain?.dispose();
     map?.dispose();
     city?.dispose();

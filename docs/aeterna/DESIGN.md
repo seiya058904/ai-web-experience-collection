@@ -118,7 +118,7 @@ components:
 
 ## Collection integration — 2026-10-07
 
-The supplied nine rooms retain their own HTML document, native scroll and one on-demand RAF. Assets, fonts, museum models and the Draco decoder remain local and namespaced. The Collection adds its native return link and gallery entrance. In the static reading edition all nine rooms are accessible; the running controller owns inactive-room hiding. Portrait tablets from 701 to 900px reuse the supplied compact layout to keep the sculpture below its heading and above its controls. See [audited intake and acceptance](ACCEPTANCE.md); upstream claims are historical evidence, not Collection acceptance.
+The supplied nine rooms retain their own HTML document and one on-demand RAF. One Lenis instance smooths wheel input (`lerp: 0.105`, `syncTouch: false`, `autoRaf: false`) on that RAF, which wakes for input and runs until inertia settles. Document position remains the narrative source; geometry has no second progress easing. Reduced motion disables wheel smoothing. Chapter movement, resize, motion changes and history restoration use the same instance, with immediate positioning for restoration. Touch and dialog scrolling remain native; hidden pages discard unfinished inertia and final exit destroys Lenis. Assets, fonts, museum models and the Draco decoder remain local and namespaced. In the static reading edition all nine rooms are accessible. Portrait tablets from 701 to 900px retain the supplied compact layout. See [audited intake and acceptance](ACCEPTANCE.md); upstream claims are historical evidence, not Collection acceptance.
 
 ## Overview
 
@@ -271,7 +271,7 @@ The characteristic input is a horizontal range with a one-pixel track and a squa
 | Fracture | Separate the fragments | Held together → Let go | Percentage |
 | Cast inspection | Move the museum light | Left → Right | Percentage |
 
-For assembly, relief and fracture, direct input temporarily owns that exhibit state and reveals “Follow the scroll.” That action restores the native-scroll mapping. Geometry controls remain unavailable until their required asset is ready. If a scene is unavailable, the image and status communicate the still view; an imagined fallback does not acquire the real object's caption. [Control and readiness behavior](../../experiences/aeterna/src/main.js) · [Fallback presentation](../../experiences/aeterna/src/styles.css)
+For assembly, relief and fracture, direct input temporarily owns that exhibit state and reveals “Follow the scroll.” That action restores the document-position mapping. Geometry controls remain unavailable until their required asset is ready. If a scene is unavailable, the image and status communicate the still view; an imagined fallback does not acquire the real object's caption. [Control and readiness behavior](../../experiences/aeterna/src/main.js) · [Fallback presentation](../../experiences/aeterna/src/styles.css)
 
 ### Navigation and index
 

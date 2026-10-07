@@ -11,8 +11,8 @@ export const smooth = (start, end, x) => {
   return p * p * (3 - 2 * p);
 };
 
-/** Native scroll is the only timeline; rendering never changes wheel/touch input. */
-export function createScrollTimeline() {
+/** Document position is the only narrative timeline; Lenis owns input easing. */
+export function createScrollTimeline(lenis) {
   const stops = [...document.querySelectorAll('.scroll-stop')];
   let positions = [];
   let maxScroll = 1;
@@ -27,6 +27,7 @@ export function createScrollTimeline() {
     });
     positions = stops.map((stop) => stop.offsetTop);
     maxScroll = Math.max(1, document.documentElement.scrollHeight - height);
+    lenis.resize();
   }
   function snapshot() {
     const y = clamp(window.scrollY, 0, maxScroll);
@@ -42,7 +43,7 @@ export function createScrollTimeline() {
     const target = Math.round(clamp(index, 0, stops.length - 1));
     const start = positions[target] || 0;
     const end = target === stops.length - 1 ? maxScroll : positions[target + 1];
-    window.scrollTo({ top: start + Math.max(0, end - start) * clamp(progress), behavior });
+    lenis.scrollTo(start + Math.max(0, end - start) * clamp(progress), { immediate: behavior !== 'smooth', force: true });
   }
   return { measure, snapshot, goTo };
 }
