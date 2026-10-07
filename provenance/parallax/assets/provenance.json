@@ -1,0 +1,710 @@
+{
+  "schema": "parallax.asset-provenance.v1",
+  "project": "PARALLAX — The Museum of Impossible Forms",
+  "path_base": "All asset paths are relative to the extracted package root.",
+  "inventory_policy": "Canonical source assets only; dist contains runtime copies. Only the selected outputs are included, not discarded alternatives or superseded draft images.",
+  "counts": {
+    "selected_reference_images": 13,
+    "production_images": 4,
+    "authored_vectors": 1,
+    "font_files": 3,
+    "vendored_three_files": 3
+  },
+  "ai_use": {
+    "art_direction": "Hero alternatives were evaluated before implementation; this package retains only the selected hero and selected scene, material, transition and mobile references.",
+    "production": "AI generation directly supplies a transparent sculpture cutout, two empty architectural plates and one black-stone texture.",
+    "live_authored_work": "The persistent fragmented sculpture, camera-ray alignment, camera paths, planar mirror reflection, rift depth, membrane refraction, material/light changes and reassembly are authored geometry, shaders and runtime code. They are not pre-rendered AI animation.",
+    "copy": "Reference-image lettering is art direction; navigation, headings and chapter copy in the running site are live DOM text.",
+    "reproducibility": "Prompts and output IDs document the generation history. Re-generating an AI image is not guaranteed to reproduce identical pixels."
+  },
+  "images": [
+    {
+      "id": "basalt",
+      "path": "public/assets/basalt.png",
+      "category": "production_image",
+      "use": "Production black-stone colour texture applied to authored 3D meshes. Requested tileability is qualitative, not an exact pixel-edge guarantee.",
+      "media_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "colour_mode": "RGB",
+      "bytes": 3348617,
+      "sha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-985396d2-5e1e-4a40-875f-b5b53c03fe1b.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation_or_edit",
+            "prompt": "Use case: stylized-concept.\nAsset type: seamless square albedo material texture for a 3D sculpture surface.\nInput image 1 is a material style reference only. Use only the near-black polished basalt shown in the upper-left material sample, but produce a flat seamless texture map, not the object and not the sample board.\nCreate a perfectly square, orthographic, edge-to-edge uniform near-black basalt material texture, fine subtle mineral grain, extremely restrained irregular dark gray crystalline flecks and barely visible sparse warm gray hairline mineral veins. The material is dense and elegant. Base color stays near charcoal black, low contrast, no broad white veins, no gold decoration.\nSeamlessly tileable left-right and top-bottom, identical statistical detail at all four edges. Even diffuse unlit albedo everywhere: no directional light, no highlights, no reflections, no gloss streaks, no shadows, no ambient occlusion, no gradients, no vignette. No borders, no geometry, no perspective, no cubes, no physical objects, no labels, no lettering, no watermarks. The result is the material itself, full square canvas. Large useful production resolution with very fine high-quality natural detail.",
+            "input_images": [
+              {
+                "asset": "reference/material-board.png"
+              }
+            ],
+            "transparent_background": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "gallery-ivory",
+      "path": "public/assets/gallery-ivory.png",
+      "category": "production_image",
+      "use": "Production empty ivory architectural background plate, layered behind live DOM and artwork.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1275537,
+      "sha256": "4e83879ced48396e5cd3a041f146294800187a3f40e3150271acb7b5b3558420",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-af67e659-7efb-4ad5-8e02-ad68c8e04f8b.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation_or_edit",
+            "prompt": "Use case: precise-object-edit.\nAsset type: empty architectural background plate for compositing into a full-screen art website, 16:9 widescreen high-resolution production asset.\nInput image 1 is the architectural lighting and camera reference. Remove the sculpture completely, including every black/chrome surface, its cast shadow and its floor reflection. Remove the bench, all lettering, logo, navigation, labels, numbers and arrows.\nRebuild only the warm ivory monumental gallery behind it: expansive, almost empty pale cream limestone floor with a soft low polished reflection; immense clean matte ivory walls; distant narrow rectangular doorway on the left, same reference scale and subtle architecture. Preserve the reference's low camera height, calm architectural photographic perspective, soft diagonal natural daylight from the upper left, restrained warmth and luminous quiet atmosphere. The doorway should be left of center, about 28 percent from the left edge, and the floor should occupy the lower 27 percent. Keep the broad center and right completely unoccupied so a separate sculpture can be placed there.\nMake a coherent single realistically lit empty room extending to every canvas edge, no hard horizon gradient, no vignette. The atmosphere is minimal premium contemporary art gallery, warm cream and muted ivory, subtle real stone detail. No sculptures, no objects, no furniture, no art, no people, no text, no symbols, no UI, no typography, no watermarks. Render at the largest useful widescreen resolution.",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              }
+            ],
+            "transparent_background": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "gallery-museum",
+      "path": "public/assets/gallery-museum.png",
+      "category": "production_image",
+      "use": "Production empty museum architecture: final-chapter background and distant Rift projection. A cloned texture with independent offset/repeat reuses a quiet limestone crop as colour, subtle bump and textured emissive fill on the live Rift piers. The original bitmap is shared; no extra image asset is created.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1664590,
+      "sha256": "de59695dd9d485336a14bdb4b92ce0f277173632ab1274b575ee74b83fa8272c",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-5f3f8c1a-605d-4523-b0c3-cf5103d29f89.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation_or_edit",
+            "prompt": "Use case: precise-object-edit.\nAsset type: high-resolution empty museum architecture background plate for website compositing.\nInput image 1 is the edit target. Preserve EXACTLY its architecture, camera, perspective, lighting, pale stone material, ceiling, walls, openings and floor. Change only the removal targets.\nRemove the central black sculpture completely. Also remove its dark cast shadow and its object reflection from the polished floor, reconstructing the same ivory limestone wall and continuous floor behind and beneath it. Remove ALL typography, logo, interface lines, navigation, numbers and graphic marks: the upper-left brand, upper-left paragraph and horizontal line, upper-right menu and Index, lower-left large title and 10/10, lower-right Begin again and underline.\nKeep the extraordinary monumental warm-ivory museum: massive floating horizontal gallery volume and narrow vertical columns on the left, towering flat rear wall, long roof opening at the upper right with subtle blue sky, large pale structural supports on the right, diagonal sunlight and precise soft architectural shadows, low wide architectural camera and expansive polished pale stone floor. Preserve the dimensions and placement of all architecture and the same late warm daylight. Do not invent a different room.\nThe result is a single completely empty, realistic architectural photograph, edge-to-edge wide 16:9 composition, as high resolution as useful. No sculpture, no art, no bench, no furniture, no people, no text, no labels, no logos, no UI, no watermarks.",
+            "input_images": [
+              {
+                "asset": "reference/10-museum.png"
+              }
+            ],
+            "transparent_background": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "hero-form",
+      "path": "public/assets/hero-form.png",
+      "category": "production_image",
+      "use": "Production foreground cutout; object and aperture have true alpha transparency. Used as a 2.5D opening/fallback image, not as orbitable geometry.",
+      "media_type": "image/png",
+      "width": 1024,
+      "height": 1536,
+      "colour_mode": "RGBA",
+      "bytes": 2510955,
+      "sha256": "6d8cbeed4ada2ed93a05ff28f83e0d7df3a2622d7acb4c5bb29613c10a98665a",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-f7627501-434b-45be-a042-567fcbb8eb10.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation_or_edit",
+            "prompt": "Use case: background-extraction.\nAsset type: high-resolution transparent foreground sculpture for an immersive art website, production asset.\nInput image 1 is the edit target. Extract and faithfully preserve the sole black architectural sculpture from this reference. This is a thick, tall, asymmetric folded frame of near-black polished basalt with a skew rectangular central aperture, polished reflective chrome on the inward-facing planes, an offset cantilevered top and one very narrow luminous seam. Preserve its distinctive reference identity, proportions, mineral material, facets, bevels, broad heavy feet and same slightly low three-quarter viewing direction.\nRemove the entire gallery, floor, reflections on the floor, bench, background lettering, logo, navigation, labels and all graphic design. Absolutely no text or letters anywhere, including inside the aperture. The central opening is a real hole and must be transparent, as must the entire background.\nShow the COMPLETE silhouette in a large portrait frame with 7 percent clear transparent margin around all sides. The uppermost corner was cropped in the reference: extend that existing angled top conservatively, maintaining the same single object's design, so its highest corner is fully visible. Do not crop any part.\nRetain photorealistic warm soft daylight on the basalt and bright neutral-silver gallery reflections on the chrome planes. Basalt stays predominantly near black with delicate mineral grain, not smooth plastic. Retain the subtle narrow warm seam but no broad bloom. Clean precise anti-aliased edges, actual alpha transparency, no fake checkerboard, no opaque white fill, no environment, no pedestal, no cast shadow, no watermarks. Large portrait production resolution, as detailed as possible.",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              }
+            ],
+            "transparent_background": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "01-object",
+      "path": "reference/01-object.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1906793,
+      "sha256": "b2332617402f7a79db450cc833307cbf91ad7f7f98f74d456d239678bef010ca",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-27824a19-3e61-4ed3-8174-29255b45b554.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Use case: ui-mockup. Create one exceptionally art-directed desktop browser viewport concept for PARALLAX — The Museum of Impossible Forms, an immersive art installation website. Widescreen 16:9, 1920x1080 composition, extremely high detail. This is Scene 01 OBJECT of a coordinated ten-scene journey: Object, Fragment, Alignment, Reflection, Rift, Membrane, Chroma, Halo, Reassembly, The Museum.\nThe ORIGINAL MASTER SCULPTURE is a colossal asymmetric angular folded architectural frame, like a tall offset doorway built from four brutally thick polished black basalt blades joined into an impossible skew quadrilateral. NOT a sphere, torus, blob, soft knot, rounded ring, or Penrose triangle. A large sharp-edged irregular rectangular void cuts the center, a cantilevered top block slides slightly sideways, diagonal oblique ends and planar polished chrome internal fracture surfaces, one hairline luminous ivory slit. It feels like a museum masterpiece with physical weight and an uncanny perspective. Primary black basalt, secondary mirror-chrome cut faces, signature single light slit. Only these materials.\nHero direction A: warm ivory infinite gallery, polished honed stone floor, quiet softbox daylight, deep but legible graphite reflections on object. Hero object huge and off-center at 64% width, sculptural top cropped by viewport top, spans full height, left half has serious negative space. Object is compelling before any animation.\nWebsite typography relationship: enormous refined high-contrast Roman editorial serif word PARALLAX stretches almost edge to edge across upper middle of canvas BEHIND the object, black lettering partially occluded by sculpture, legible as PARALLAX. This is an art museum, no tech UI, no cards, no gradient background, no dashboard. Top left tiny elegant abstract offset-line monogram and small PARALLAX wordmark, top right minimal 'Index' with two fine lines. Bottom left exact text 'One form.\\nInfinite ways of seeing.' in a small generous serif, with subtle line below 'The museum of impossible forms.' Bottom right small 'Scroll to explore' and vertical arrow. Bottom edge tiny '01 / 10' at left and 'OBJECT' at right. Generous margins, crisp actual web UI text that will be recreated in DOM. Only these texts, no invented dates or numbers.\nSophisticated extreme crop, museum-quality lighting, quiet luxury editorial design, photographic CGI by a leading sculpture art director. All image assets separable later; do not produce a collage or moodboard. This is one hero viewport and fully resolved scene image. No browser frame, no watermark.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "02-fragment",
+      "path": "reference/02-fragment.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1957240,
+      "sha256": "e23ac9fe857999b32d926ef7f051395aa3f15a4f9992068ac268c90c433ddf6c",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-2a3669bc-8f80-47de-963d-77a046e88cbd.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Create a new high-end 16:9 1920x1080 desktop website scene concept for PARALLAX. Reference image is the selected art direction and MASTER OBJECT IDENTITY. Keep exactly this black polished architectural stone asymmetric trapezoid open frame, chrome inside aperture, signature narrow slit. Same original object throughout, never a random blob, ring, sphere or different sculpture. Elegant extreme editorial typography in refined high contrast Roman serif with tiny calm sans labels, large negative space. Top left tiny PARALLAX identity, top right Index. Full viewport, no collage, no extra UI or cards. All UI text will be real DOM in final. No invented branding or figures. High-end luxury CGI, beautifully legible stone and chrome, soft architectural light. Scene 02 FRAGMENT: the master object's four sides and top are divided into 16 sharply mitered substantial stone pieces, slowly suspended apart with enough clear air gaps to see where they belong, no shards flying, deliberate single sculpture exploded view. 3/4 perspective, dominant composition at center-right. Each fragment has polished chrome exposed cut face and black exterior. Warm ivory gallery fading toward shadow, floor contact shadows, broad soft light. Large editorial display line on left 'Distance enters\\nthe object.' Small bottom left 'The cuts were always there. Now the space between them becomes visible.' Tiny '02 / 10' and 'FRAGMENT' at bottom.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "03-alignment",
+      "path": "reference/03-alignment.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1864054,
+      "sha256": "6092c5ba5a14343109c69b1d28fdbe047d28482715e4c0790a1e5f7343a8e986",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-43bd8c4f-a7a5-41cc-8d38-6d628ea820af.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Create a new high-end 16:9 1920x1080 desktop website scene concept for PARALLAX. Reference image is the selected art direction and MASTER OBJECT IDENTITY. Keep exactly this black polished architectural stone asymmetric trapezoid open frame, chrome inside aperture, signature narrow slit. Same original object throughout, never a random blob, ring, sphere or different sculpture. Elegant extreme editorial typography in refined high contrast Roman serif with tiny calm sans labels, large negative space. Top left tiny PARALLAX identity, top right Index. Full viewport, no collage, no extra UI or cards. All UI text will be real DOM in final. No invented branding or figures. High-end luxury CGI, beautifully legible stone and chrome, soft architectural light. Scene 03 ALIGNMENT: fragments of the same monolith spread deeply along camera rays but seen at the singular precise almost frontal viewpoint, so their silhouettes align to recreate a tall asymmetric sharply angular architectural doorway. Tiny hairline gaps identify the stone fragments without destroying the coherent shape. A few chrome edges expose subtle depth. Monumental black assembled-looking silhouette at 60% width, warm-gray ivory void with floor, unusually precise strong negative space. Main display line upper left 'A whole,\\nfrom here.' Smaller 'Find the view where the fragments agree.' A refined horizontal hairline with one small tick below the copy and a quiet underlined button 'Align view'. Tiny '03 / 10' bottom left, 'ALIGNMENT' bottom right. This frame is a quiet moment of perceptual resolution, not a cluttered exploded view.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "04-reflection",
+      "path": "reference/04-reflection.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1897031,
+      "sha256": "56e3a8abd2d17d708ad48a6796ac76594c6d2c51f6ecef4ef4fee1c5e6aa828a",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-d858e2c3-d1b2-43cd-911c-a218bfeb5243.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "initial_generation",
+            "prompt": "Use case: stylized-concept. Asset type: selected high-fidelity reference keyframe for PARALLAX, an immersive digital museum website. Create a fresh widescreen 16:9 full-viewport composition, not a contact sheet or browser mockup.\nInput image 1 is the MASTER OBJECT identity reference, not a layout to copy wholesale. Preserve exactly the same recognizable architectural sculpture: monumental angular black-basalt/black-stone offset doorway, thick tapered asymmetric uprights, a strong sloping top cross-member, one large skew rectangular hollow void, polished chrome on its inner cut faces, and a single razor-thin warm ivory luminous incision. Maintain its distinctive angular silhouette and believable black-stone surface microdetail. It is one master form, not a torus, sphere, loop, blob or unrelated new sculpture. Quiet museum-grade luxury CGI, spatial precision, exquisite material rendering, cinematic restraint.\nInterface typography is a restrained visual reference to be rebuilt code-natively later. Place a small letterspaced \"PARALLAX\" wordmark at the top left, and small \"Index\" with two fine horizontal lines at the top right. Use generous 48-64px equivalent margins. All essential type must be legible. No huge hero title. Do not add cards, HUD panels, buttons, metrics, logos, watermarks or decorative particles. The form and negative space own the composition.\nScene 04 — REFLECTION. Ivory and charcoal architectural gallery with a large oblique mirror plane occupying the lower middle and extending diagonally into depth. The single original stone form stands center-right, fully recognizable, seen in a carefully framed three-quarter view. Its genuinely plausible doubled mirror reflection recedes across the oblique plane: matching angular void, chrome inner faces and incision with correct mirrored spatial relationships. The mirror should feel like a monumental polished installation plane, not an extra sculpture or shiny liquid floor effect. Build the composition around the relationship between object and reflection. Use soft ivory ambient light, clear black mass, subtle highlights and deep shadows. Leave composed negative space at left.\nText verbatim, serif display line at lower left: \"Another surface.\" then \"Another reading.\" Small supporting line below: \"Your position changes what the mirror reveals.\" Bottom-left chapter mark: \"04 / 10\". Bottom-right letterspaced label: \"REFLECTION\".",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "05-rift",
+      "path": "reference/05-rift.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 2159153,
+      "sha256": "58e12b995bf7fec9f04b9f5cb1aa8a27f14e7575bc26a0d9fc071b1c4752e0cf",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-4a40740f-fd01-46bb-bdc7-a4c27e6a97c6.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Create a new high-end 16:9 1920x1080 desktop website scene concept for PARALLAX. Reference image is the selected art direction and MASTER OBJECT IDENTITY. Keep exactly this black polished architectural stone asymmetric trapezoid open frame, chrome inside aperture, signature narrow slit. Same original object throughout, never a random blob, ring, sphere or different sculpture. Elegant extreme editorial typography in refined high contrast Roman serif with tiny calm sans labels, large negative space. Top left tiny PARALLAX identity, top right Index. Full viewport, no collage, no extra UI or cards. All UI text will be real DOM in final. No invented branding or figures. High-end luxury CGI, beautifully legible stone and chrome, soft architectural light. Scene 05 RIFT: extreme immersive close-up INSIDE the same black stone frame, now its signature vertical slit has opened into a narrow deep architectural passage. Heavy black basalt monolith faces fill left and right edges, reveal chrome inset surfaces and a distant warm ivory inner chamber with multiple offset angular doorway-like layers deep in space. A thin strong ivory light slices vertically through center-right. Real perspective depth, physically luminous opening, heavy museum installation, almost black close foreground, pale warm farther room. No science-fiction portal, no rings, no beams/particles, no technological panels. Refined ivory serif display line bottom left 'An opening\\nbecomes a place.' Tiny supporting 'Follow the cut beyond the surface.' '05 / 10' bottom, 'RIFT' bottom right. Keep breathtakingly restrained, intimate architectural scale.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "06-membrane",
+      "path": "reference/06-membrane.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1943960,
+      "sha256": "98b29e1f8276417bb591728398d41483e64798650ee1c3e6c8f7ef1ea654f5f5",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-66d23806-0b00-41ea-a79a-2ec0c47a6c96.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "initial_generation",
+            "prompt": "Use case: stylized-concept. Asset type: selected high-fidelity reference keyframe for PARALLAX, an immersive digital museum website. Create a fresh widescreen 16:9 full-viewport composition, not a contact sheet or browser mockup.\nInput image 1 is the MASTER OBJECT identity reference, not a layout to copy wholesale. Preserve exactly the same recognizable architectural sculpture: monumental angular black-basalt/black-stone offset doorway, thick tapered asymmetric uprights, a strong sloping top cross-member, one large skew rectangular hollow void, polished chrome on its inner cut faces, and a single razor-thin warm ivory luminous incision. Maintain its distinctive angular silhouette and believable black-stone surface microdetail. It is one master form, not a torus, sphere, loop, blob or unrelated new sculpture. Quiet museum-grade luxury CGI, spatial precision, exquisite material rendering, cinematic restraint.\nInterface typography is a restrained visual reference to be rebuilt code-natively later. Place a small letterspaced \"PARALLAX\" wordmark at the top left, and small \"Index\" with two fine horizontal lines at the top right. Use generous 48-64px equivalent margins. All essential type must be legible. No huge hero title. Do not add cards, HUD panels, buttons, metrics, logos, watermarks or decorative particles. The form and negative space own the composition.\nScene 06 — MEMBRANE. Light cool-gray gallery atmosphere. The same sculptural black-stone offset doorway occupies center-right. A single enormous, extremely thin translucent optical film crosses the foreground diagonally, gently tensioned with a few exquisitely subtle folds, revealing the unchanged angular sculpture through it. The film is nearly transparent with light smoke-gray tint, faint pearly specular edges and slight believable optical displacement. It should read as a thin optical boundary, not hanging fabric, a curtain, liquid, plastic packaging or a soap bubble. A section of the form remains unobstructed so its identity is unmistakable. Chrome inner faces hold cool soft light; the single incision remains warm ivory. Refined tactile microtexture, large luminous quiet space on the left, calm architectural depth.\nText verbatim, elegant serif at left: \"Seen through\" then \"something.\" Small supporting line below: \"A thin boundary holds the form at a distance.\" Bottom-left chapter mark: \"06 / 10\". Bottom-right letterspaced label: \"MEMBRANE\".",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "07-chroma",
+      "path": "reference/07-chroma.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1798810,
+      "sha256": "c5bbd95157a4e6c401dfbe242811ecaf245dfd0d54b49f5791adab0e410db696",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-28de572f-a9e7-4073-aa27-baa9fc3d3a9d.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "initial_generation",
+            "prompt": "Use case: stylized-concept. Asset type: selected high-fidelity reference keyframe for PARALLAX, an immersive digital museum website. Create a fresh widescreen 16:9 full-viewport composition, not a contact sheet or browser mockup.\nInput image 1 is the MASTER OBJECT identity reference, not a layout to copy wholesale. Preserve exactly the same recognizable architectural sculpture: monumental angular black-basalt/black-stone offset doorway, thick tapered asymmetric uprights, a strong sloping top cross-member, one large skew rectangular hollow void, polished chrome on its inner cut faces, and a single razor-thin warm ivory luminous incision. Maintain its distinctive angular silhouette and believable black-stone surface microdetail. It is one master form, not a torus, sphere, loop, blob or unrelated new sculpture. Quiet museum-grade luxury CGI, spatial precision, exquisite material rendering, cinematic restraint.\nInterface typography is a restrained visual reference to be rebuilt code-natively later. Place a small letterspaced \"PARALLAX\" wordmark at the top left, and small \"Index\" with two fine horizontal lines at the top right. Use generous 48-64px equivalent margins. All essential type must be legible. No huge hero title. Do not add cards, HUD panels, buttons, metrics, logos, watermarks or decorative particles. The form and negative space own the composition.\nScene 07 — CHROMA. Deep graphite-black architectural void, intensely controlled optical colour. Keep the same angular doorway sculpture predominantly black stone, center-right, never a luminous glass object. Its silhouette and hollow skew rectangular opening remain structurally legible. Cobalt and violet appear only as precise grazing reflections on the chrome inner cut faces and thin optical edges. Tiny ruby and amber highlights are permitted at two or three edge intersections. Colour must arise from controlled optical light, not a rainbow gradient smeared across the background. The signature luminous incision is razor-thin. Most of the image remains nearly black and quiet, with exquisite material differentiation and dense shadow. Use dimensional chrome reflections, a few measured slivers of saturated colour, and room for typography at left.\nText verbatim, warm ivory elegant serif at lower left: \"The edge\" then \"acquires colour.\" Small supporting line below: \"Light moves across the cut. The mass remains.\" Bottom-left chapter mark: \"07 / 10\". Bottom-right letterspaced label: \"CHROMA\".",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              }
+            ]
+          },
+          {
+            "role": "selected_refinement",
+            "prompt": "Use case: lighting-weather. Edit target: the supplied PARALLAX CHROMA scene reference. Preserve the exact sculpture geometry, camera, object placement, chrome cut faces, luminous incision, all typography content/placement, wide 16:9 composition, and highly polished museum-grade CGI finish. Change only the coloured environmental light. The current large blue/violet wall light on the left is too broad. Remove coloured architectural wall washes entirely: all walls and the large left negative space must be nearly uniform deep charcoal black. Restrict the vivid cobalt/violet optical colours to the chrome inner cut faces and the narrow edges of this SAME angular black-stone form. Keep tiny ruby/amber accents at optical cut intersections. The floor may carry only very dim narrow reflections directly below those chrome edges; remove the broad purple room/floor illumination. Preserve just enough neutral grazing illumination on black stone to read its silhouette. Keep text exactly as supplied: \"PARALLAX\", \"Index\", \"The edge acquires colour.\", \"Light moves across the cut. The mass remains.\", \"07 / 10\", \"CHROMA\". No new objects or effects. This is a precise lighting refinement, not a redesign.",
+            "input_images": [
+              {
+                "input_generation_id": "exec-ef06bcaf-b4b2-4208-917c-a0c2f0cc0779.png",
+                "included_as_separate_file": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "08-halo",
+      "path": "reference/08-halo.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1376064,
+      "sha256": "109c59566ea1f461fb31ab8628b51a371b0e3bf4e2a9ef39fc1a059f40cfdbde",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-8f2ae78e-cc7c-4d8e-8676-64005161b4dd.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "initial_generation",
+            "prompt": "Use case: stylized-concept. Asset type: selected high-fidelity reference keyframe for PARALLAX, an immersive digital museum website. Create a fresh widescreen 16:9 full-viewport composition, not a contact sheet or browser mockup.\nInput image 1 is the MASTER OBJECT identity reference, not a layout to copy wholesale. Preserve exactly the same recognizable architectural sculpture: monumental angular black-basalt/black-stone offset doorway, thick tapered asymmetric uprights, a strong sloping top cross-member, one large skew rectangular hollow void, polished chrome on its inner cut faces, and a single razor-thin warm ivory luminous incision. Maintain its distinctive angular silhouette and believable black-stone surface microdetail. It is one master form, not a torus, sphere, loop, blob or unrelated new sculpture. Quiet museum-grade luxury CGI, spatial precision, exquisite material rendering, cinematic restraint.\nInterface typography is a restrained visual reference to be rebuilt code-natively later. Place a small letterspaced \"PARALLAX\" wordmark at the top left, and small \"Index\" with two fine horizontal lines at the top right. Use generous 48-64px equivalent margins. All essential type must be legible. No huge hero title. Do not add cards, HUD panels, buttons, metrics, logos, watermarks or decorative particles. The form and negative space own the composition.\nScene 08 — HALO. Deep charcoal-black void. The same architectural stone form remains center-right but nearly disappears into darkness. Reveal only a few exquisitely controlled grazing edges, the chrome interior barely catching light, and a narrow warm ivory silhouette glow tracing selected parts of the angular mass. Preserve the distinctive leaning doorway outline and large skew rectangular void; the visual must never become a circular halo, ring, portal or torus. The single fine incision is a calm short highlight, not a laser. Very subtle atmospheric depth, no visible beams, no star field, no noise, no floating particles. Make this the quietest scene: most of the canvas is carefully composed empty charcoal space, the object discernible by its boundary. Monumental, still and psychologically powerful.\nText verbatim, warm ivory serif, bottom left with generous space: \"Almost absent.\" Smaller line below: \"For a moment, only the boundary remains.\" Bottom-left chapter mark beneath this text: \"08 / 10\". Bottom-right letterspaced label: \"HALO\".",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              }
+            ]
+          },
+          {
+            "role": "selected_refinement",
+            "prompt": "Use case: lighting-weather. Edit target: the supplied PARALLAX HALO scene reference. Preserve the exact master sculpture geometry, skew rectangular opening, camera, center-right placement, typography content and positions, 16:9 widescreen composition. Change only lighting/exposure of the sculpture and floor, not the text. The current frame shows too much stone body. Reduce diffuse illumination on all stone faces by roughly three stops, so the black-stone mass is nearly indistinguishable from deep charcoal darkness, with surface texture barely perceptible. Let extremely narrow warm-ivory grazing edge highlights describe selected parts of its angular outline and preserve the one fine luminous incision. Chrome interior should be almost dark with only one or two restrained edge glints. Reduce bright floor reflections to the faintest contact suggestion. No circular halo, no ring, no portal, no beams, no particles. Leave calm empty left-side space and keep all text legible exactly as supplied: \"PARALLAX\", \"Index\", \"Almost absent.\", \"For a moment, only the boundary remains.\", \"08 / 10\", \"HALO\". The work is now perceived chiefly by its boundary. Exquisitely controlled, minimal, museum-grade art direction.",
+            "input_images": [
+              {
+                "input_generation_id": "exec-f7310079-b4c8-4410-a73e-a71f620f762e.png",
+                "included_as_separate_file": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "09-reassembly",
+      "path": "reference/09-reassembly.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1794515,
+      "sha256": "77723c506839cf846b4569bbf3083412f938def60616ca4bafc018394149be5e",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-cd755bfa-304b-4b5f-ab01-208f2537c1f5.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Use case: ui-mockup. Full 16:9 desktop viewport, scene 09 REASSEMBLY of PARALLAX. Use reference for exact master sculpture and elegant editorial website identity. SAME black polished basalt thick asymmetric trapezoid frame and chrome rectangular interior opening. The top, sides and base are composed of 16 substantial mitered fragments, now closing to almost exactly their original positions; two final narrow offsets in upper blade and right side expose chrome cut faces and single warm hairline slit. Sculpture is centered in pale warm ivory gallery, camera slightly further back than reference so full silhouette visible, solemn steady large form fills 80% vertical height with breathing room. Refined black high-contrast Roman serif text in lower left 'The same form,\\ndifferently seen.' and tiny 'The fragments return. So does everything you have noticed.' Top left small PARALLAX and top right Index; tiny 09 / 10 bottom, REASSEMBLY bottom right. Strong negative space, no collage, no cards, no other objects, no new geometries, no watermark. Museum quality CGI lighting, beautiful tactile stone and mirror chrome.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "10-museum",
+      "path": "reference/10-museum.png",
+      "category": "selected_reference",
+      "use": "Selected chapter art-direction keyframe; final text is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1819447,
+      "sha256": "7370b2b4f53c9505ba7dd2416405f6b75be1ece0224878ddf3d65b275c5876e9",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-57b001cb-620f-418c-8a39-36b023fe825c.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Use case: ui-mockup. Full 16:9 desktop viewport, Scene 10 THE MUSEUM of PARALLAX. Preserve the reference's black basalt and chrome asymmetric architectural frame sculpture exactly, but pull the camera enormously far back: same single object now modest in scale at center, inside an impossible yet minimal monumental warm ivory stone museum hall, extremely high cantilevered ceiling, offset rectangular apertures extending deep to left, enormous shadow planes, one sharp diagonal skylight from upper right, long floor reflection, no crowds, no statues, no other artworks, no benches. Quiet breathtaking architecture reveal, sculpture recognizable as the ONLY exhibit, not turned into building. Vast surrounding negative space. Elegant serif copy lower left: 'One object.\\nAn impossible room.' Smaller philosophical line upper left or beside it: 'A form does not exist only in matter.\\nIt also exists in the act of seeing.' Top left tiny PARALLAX, top right Index. Bottom left 10 / 10; bottom right quiet 'Begin again' underlined. Physical depth, museum-grade photography, restrained luxury editorial. All text code-native later, no cards, no watermark. Maintain warm neutral palette, readable dark type.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "material-board",
+      "path": "reference/material-board.png",
+      "category": "selected_reference",
+      "use": "Selected material study board.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 941,
+      "colour_mode": "RGB",
+      "bytes": 1973210,
+      "sha256": "50e9f56d765ea4bc517c8d235dc6dfc5d7c9ae871d72f8ca49eb004512a12361",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-769ace16-4d5e-4385-b25c-e466f3a388df.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Use case: stylized-concept. Create a museum-grade luxury CGI MATERIAL STUDY BOARD for PARALLAX, widescreen 16:9, exceptionally high tactile detail. Eight precisely composed macro squares on an ivory editorial page, each equally weighted, no large title, tiny labels: 'POLISHED BASALT', 'LIQUID CHROME', 'SMOKED GLASS', 'DICHROIC GLASS', 'OPTICAL FILM', 'MATTE MONOLITH', 'LUMINOUS EDGE', 'VOLUMETRIC HAZE'. Each panel a close crop of a sharp architectural material sample with weight and believable photographic lighting. Black basalt has very subtle fine mineral crystalline marks and a polished chamfer, not gold marble; liquid chrome sharp bent angular reflective plane; smoked glass dark transparent slab; dichroic glass cobalt/violet amber grazing edge on clear surface, NOT candy rainbow; optical film one thin translucent sheet; matte monolith dark tactile block; luminous edge single narrow warm ivory line through black stone; haze a very faint white shaft in charcoal space. Limit palette ivory/obsidian/chrome with tiny cobalt spectral accents. Exquisite material fidelity, restrained shadows, large readable individual samples, no unrelated ornament, no watermark.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mobile-object",
+      "path": "reference/mobile-object.png",
+      "category": "selected_reference",
+      "use": "Selected portrait mobile composition reference; its text is reference-only and is recreated in DOM.",
+      "media_type": "image/png",
+      "width": 853,
+      "height": 1844,
+      "colour_mode": "RGB",
+      "bytes": 1821837,
+      "sha256": "d85fc538093a14df4efcdb63b6dd78901a4104ea8777aabb055e1aabcfb0f31f",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-064d4f2d-bbb7-4e52-b8fc-09d23ecdf578.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation_or_edit",
+            "prompt": "Use case: ui-mockup.\nAsset type: dedicated mobile first-screen art direction reference for the PARALLAX immersive museum website, a complete high-fidelity website screenshot, not a device mockup.\nInput image 1 is the DESKTOP style, sculpture identity, gallery and typography reference. Input image 2 provides the complete sculpture silhouette and materials only. Redesign this composition carefully for a tall MOBILE viewport with the exact proportions of 390 by 844 pixels, about 9:19.48, rendered at high resolution with that same tall aspect ratio. One single portrait screen, no phone bezel and no surrounding mockup.\nPreserve the same premium warm ivory luminous monumental gallery, black polished basalt asymmetric thick architectural frame with skew rectangular central void and bright chrome inner planes, subtle glowing slit, warm diagonal natural daylight and light polished cream floor. Use the same slightly low three-quarter view. The sculpture must be completely visible, including peak and both feet; center it, with its main mass between about 25 and 75 percent screen height, and its peak reaching about 22 percent to overlap only the lower edge of the title. Give it a grounded, soft natural floor reflection.\nDesign the typography as real readable mobile UI. At the very top use a tiny thin geometric portal logo and small spaced PARALLAX at the left, and a thin two-line menu icon with the word 'Index' at the right. Generous air under that header. Around 15 percent screen height put one single line 'PARALLAX' spanning almost the full width in an exceptionally elegant, tall, high-contrast Roman serif. The title is physically BEHIND the sculpture, with only a small part of its lower edge occluded by the sculpture peak; the entire word must remain readable.\nBelow the sculpture, around 80 percent screen height, put the left-aligned two-line headline exactly:\n'One form.'\n'Infinite ways of seeing.'\nSet that headline in refined readable black serif, with 24-pixel-equivalent side margins and no overlap with the sculpture. Keep the phrase on two lines total. Near the bottom right add the very small readable text 'Scroll to explore' with a fine downward arrow. At the bottom left add the restrained small chapter marker '01 / 10'. Add no other copy.\nThe phone composition must feel spacious, intentional and editorial; no desktop screen shrunk down, no tiny illegible UI, no clipped type, no cut-off sculpture, no repeated titles, no extra panels, no cards, no device frame. Warm ivory, near black and subtle chrome only, refined museum-level visual quality.",
+            "input_images": [
+              {
+                "asset": "reference/01-object.png"
+              },
+              {
+                "asset": "public/assets/hero-form.png"
+              }
+            ],
+            "transparent_background": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "rift-study",
+      "path": "reference/rift-study.png",
+      "category": "selected_reference",
+      "use": "Selected four-state rift art-direction study.",
+      "media_type": "image/png",
+      "width": 1672,
+      "height": 940,
+      "colour_mode": "RGB",
+      "bytes": 2250144,
+      "sha256": "bb368cbc3c9229792c57c06f699ba4bcb076a071b7320320f0b3c6632eed9103",
+      "ai_generated": true,
+      "generation": {
+        "tool": "built-in ImageGen",
+        "specific_model_id": "not exposed in the generation record",
+        "selected_output_id": "exec-5f089fa6-8d74-4c9e-b3d3-bf572d61692f.png",
+        "original_preserved_without_image_processing": true,
+        "steps": [
+          {
+            "role": "selected_generation",
+            "prompt": "Use case: stylized-concept. Create one art-director cinematic four-frame progression board for PARALLAX's RIFT, use reference same original black polished stone angular frame with chrome inner surfaces. Wide 16:9 image arranged clean 2x2, each panel a distinct close camera scene. Only small labels 'CLOSED', 'HALF OPEN', 'INSIDE', 'BEYOND'. CLOSED: enormous near-black stone surface nearly fills camera, one impossibly thin pale ivory vertical incision. HALF OPEN: incision widens between two thick oblique stone slabs, chrome side surfaces visible, farther ivory light. INSIDE: camera moving through opening, close chrome/stone faces crop sides, long directional perspective down real spatial depth. BEYOND: quiet vast ivory architectural chamber beyond cut with layered apertures, far light. Fontana incision meets restrained museum architecture, physical real perspective, never circular science-fiction portal, no beam or particles, no neon glow. Exceptionally refined tactile surfaces, directional ivory illumination, convincing spatial scale, no ornamental layout.",
+            "input_parameters_note": "This source record preserves the exact prompt and output ID; it does not list image-input parameters separately."
+          }
+        ]
+      }
+    }
+  ],
+  "authored_assets": [
+    {
+      "path": "public/assets/mark.svg",
+      "bytes": 228,
+      "sha256": "78c8357cc6e01fe2986b9786d9f654c256f0534c314cb0db5dace8e5a07fa4b7",
+      "category": "authored_vector",
+      "ai_generated_bitmap": false,
+      "creation": "Original code-authored portal-line identity for PARALLAX; independent SVG artwork."
+    }
+  ],
+  "fonts": [
+    {
+      "path": "public/fonts/bodoni-moda-latin-400-normal.woff2",
+      "bytes": 14528,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "family": "bodoni-moda",
+      "weight": 400,
+      "style": "normal",
+      "subset": "latin",
+      "package": "@fontsource/bodoni-moda",
+      "package_version": "5.2.7",
+      "package_source_file": "@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff2",
+      "matches_source_package_bytes": true,
+      "license": "OFL-1.1",
+      "license_file": "licenses/BODONI-MODA-LICENSE.txt",
+      "source_links": {
+        "fontsource": "https://fontsource.org/fonts/bodoni-moda",
+        "font_files_repository": "https://github.com/fontsource/font-files",
+        "repository_directory": "fonts/google/bodoni-moda",
+        "upstream_design": "https://github.com/indestructible-type/Bodoni"
+      }
+    },
+    {
+      "path": "public/fonts/manrope-latin-400-normal.woff2",
+      "bytes": 14108,
+      "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "family": "manrope",
+      "weight": 400,
+      "style": "normal",
+      "subset": "latin",
+      "package": "@fontsource/manrope",
+      "package_version": "5.2.6",
+      "package_source_file": "@fontsource/manrope/files/manrope-latin-400-normal.woff2",
+      "matches_source_package_bytes": true,
+      "license": "OFL-1.1",
+      "license_file": "licenses/MANROPE-LICENSE.txt",
+      "source_links": {
+        "fontsource": "https://fontsource.org/fonts/manrope",
+        "font_files_repository": "https://github.com/fontsource/font-files",
+        "repository_directory": "fonts/google/manrope",
+        "upstream_design": "https://github.com/sharanda/manrope"
+      }
+    },
+    {
+      "path": "public/fonts/manrope-latin-500-normal.woff2",
+      "bytes": 14044,
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "family": "manrope",
+      "weight": 500,
+      "style": "normal",
+      "subset": "latin",
+      "package": "@fontsource/manrope",
+      "package_version": "5.2.6",
+      "package_source_file": "@fontsource/manrope/files/manrope-latin-500-normal.woff2",
+      "matches_source_package_bytes": true,
+      "license": "OFL-1.1",
+      "license_file": "licenses/MANROPE-LICENSE.txt",
+      "source_links": {
+        "fontsource": "https://fontsource.org/fonts/manrope",
+        "font_files_repository": "https://github.com/fontsource/font-files",
+        "repository_directory": "fonts/google/manrope",
+        "upstream_design": "https://github.com/sharanda/manrope"
+      }
+    }
+  ],
+  "vendor": {
+    "name": "Three.js",
+    "observed_revision": "186",
+    "exact_npm_patch_version": null,
+    "version_note": "r186 is directly verified from the bundled source. The original npm package manifest is not part of the recoverable acquisition record; no exact patch version is inferred.",
+    "license": "MIT",
+    "license_file": "licenses/THREE-LICENSE.txt",
+    "source_links": {
+      "project": "https://github.com/mrdoob/three.js",
+      "documentation": "https://threejs.org/docs/"
+    },
+    "files": [
+      {
+        "path": "vendor/three/three.module.js",
+        "bytes": 662772,
+        "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+      },
+      {
+        "path": "vendor/three/three.core.js",
+        "bytes": 1458113,
+        "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+      },
+      {
+        "path": "vendor/three/addons/Reflector.js",
+        "bytes": 10943,
+        "sha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b"
+      }
+    ]
+  },
+  "license_files": [
+    {
+      "path": "licenses/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "licenses/BODONI-MODA-LICENSE.txt",
+      "bytes": 4526,
+      "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2"
+    },
+    {
+      "path": "licenses/MANROPE-LICENSE.txt",
+      "bytes": 4383,
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    }
+  ],
+  "model_export": {
+    "script": "scripts/export-model.mjs",
+    "source": "src/model.js",
+    "format": "glTF 2.0 binary / GLB",
+    "standalone": true,
+    "model_source_sha256": "7b921bee5668d8430bec6118c3d4c0a87865982c1de21621aa41e6ef60d9f027",
+    "structural_part_count": 18,
+    "structural_part_names": [
+      "form-base-1",
+      "form-base-2",
+      "form-base-3",
+      "form-base-4",
+      "form-right-1",
+      "form-right-2",
+      "form-right-3",
+      "form-right-4",
+      "form-right-5",
+      "form-crown-1",
+      "form-crown-2",
+      "form-crown-3",
+      "form-crown-4",
+      "form-left-1",
+      "form-left-2",
+      "form-left-3",
+      "form-left-4",
+      "form-left-5"
+    ],
+    "triangle_count": 804,
+    "files": [
+      {
+        "path": "models/impossible-form.glb",
+        "bytes": 3501700,
+        "sha256": "c5792f9b49af9fc200f63f39268011269c9173ca44dc8ccabf596afac0feb858"
+      },
+      {
+        "path": "models/impossible-form.json",
+        "bytes": 16679,
+        "sha256": "fc727c95f1992e9d3a4cff0060901588ba36d4ee67259fbaa70ef13780d88494"
+      }
+    ],
+    "texture_embedded": {
+      "source": "public/assets/basalt.png",
+      "sha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91"
+    },
+    "geometry": "Source beveled geometry, normals and named part transforms. UV V is converted to glTF texture convention while preserving the source mapping.",
+    "runtime_only": [
+      "height-based bump shading",
+      "environment lighting",
+      "moving planar reflection",
+      "membrane refraction",
+      "chapter animation",
+      "edge glow helpers"
+    ],
+    "validation": "GLB header/chunks, accessors, triangle indices, part names, embedded PNG bytes and current model source hash verified. No external validator or graphics-import test is claimed."
+  },
+  "notes": [
+    "PNG copies have been checked byte-for-byte against their selected generated originals.",
+    "Image dimensions are actual source pixel dimensions; these files are not all native 4K.",
+    "The hero cutout contains transparent RGB pixels whose colour values may appear dark in viewers that ignore alpha.",
+    "A generation ID recorded as a refinement input identifies an intermediate ancestor; that intermediate image is not included as a separate deliverable."
+  ]
+}

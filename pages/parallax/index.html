@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9e2d6">
+  <meta name="description" content="One form. Ten perspectives. An immersive exhibition of impossible form, space, material and the act of seeing.">
+  <title>PARALLAX — The Museum of Impossible Forms</title>
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%parallax/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:title" content="PARALLAX — The Museum of Impossible Forms">
+  <meta property="og:description" content="One original black-stone form, ten perspectives, live geometry, reflection and refraction.">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%parallax/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%parallax/social.jpg">
+  <meta property="og:image:alt" content="PARALLAX's original black-stone sculpture captured from its actual live exhibition">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PARALLAX — The Museum of Impossible Forms">
+  <meta name="twitter:description" content="One form. Ten perspectives. A continuous spatial exhibition.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%parallax/social.jpg">
+  <meta name="twitter:image:alt" content="PARALLAX's original black-stone sculpture captured from its actual live exhibition">
+  <link rel="icon" type="image/svg+xml" href="/parallax/assets/mark.svg">
+  <link rel="preload" href="/parallax/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/parallax/assets/hero-form.png" as="image" fetchpriority="high">
+  <link rel="preload" href="/parallax/assets/gallery-ivory.png" as="image">
+</head>
+<body>
+  <a class="skip-link" href="#exhibition">Skip to the exhibition</a>
+  <div class="world" aria-hidden="true">
+    <img class="world-plate world-plate--ivory" src="/parallax/assets/gallery-ivory.png" alt="" fetchpriority="high" decoding="async">
+    <img class="world-plate world-plate--museum" src="/parallax/assets/gallery-museum.png" alt="" decoding="async">
+  </div>
+  <div class="hero-lettering"><h1 id="title">PARALLAX</h1></div>
+  <div class="hero-sculpture" aria-hidden="true">
+    <img class="hero-reflection" src="/parallax/assets/hero-form.png" alt="" decoding="async">
+    <img class="hero-object" src="/parallax/assets/hero-form.png" alt="" fetchpriority="high" decoding="async">
+  </div>
+  <canvas id="spatial-stage" aria-hidden="true"></canvas>
+
+  <header class="masthead">
+    <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+    <a class="identity" href="#object" aria-label="Parallax, return to the opening">
+      <svg viewBox="0 0 28 44" class="identity-mark" aria-hidden="true"><path d="M4 7 22 2v37L4 33V7Zm3 1 13-4M7 8v24l13 5M4 42l18-5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="miter"/></svg>
+      <span>PARALLAX</span>
+    </a>
+    <button class="return-labels text-control" id="return-labels" type="button" hidden>Show labels</button>
+    <button class="index-trigger text-control" id="open-index" type="button" aria-haspopup="dialog" aria-controls="exhibition-index" aria-expanded="false">
+      <span class="two-lines" aria-hidden="true"><i></i><i></i></span><span>Index</span>
+    </button>
+  </header>
+
+  <main id="exhibition" tabindex="-1">
+    <p class="sr-only">An architectural black-stone form with polished chrome cuts and a thin luminous slit, seen in ten changing spatial conditions. Scroll to explore, or open the index to choose a perspective.</p>
+    <section class="chapter" id="object" aria-labelledby="title" data-scene="0">
+      <div class="scene-copy scene-copy--object">
+        <div class="hero-thought"><p>One form.<br>Infinite ways of seeing.</p><div class="subtitle"><span class="fine-rule" aria-hidden="true"></span><span>The museum of impossible forms.</span></div></div>
+        <a class="scroll-invitation" href="#fragment"><span>Scroll to explore</span><svg viewBox="0 0 24 66" aria-hidden="true"><path d="M12 1v62M2 53l10 10 10-10"/></svg></a>
+      </div>
+    </section>
+    <section class="chapter" id="fragment" aria-labelledby="fragment-title" data-scene="1">
+      <div class="scene-copy scene-copy--high">
+        <h2 id="fragment-title">Distance enters<br>the object.</h2>
+        <p class="scene-note">The cuts were always there. Now the space between them becomes visible.</p>
+      </div>
+    </section>
+    <section class="chapter" id="alignment" aria-labelledby="alignment-title" data-scene="2">
+      <div class="scene-copy scene-copy--high scene-copy--alignment">
+        <h2 id="alignment-title">A whole,<br>from here.</h2>
+        <p class="scene-note">Find the view where the fragments agree.</p>
+        <div class="alignment-control">
+          <label class="sr-only" for="view-angle">Change the alignment viewpoint</label>
+          <input id="view-angle" type="range" min="-1" max="1" step="0.01" value="0" aria-valuetext="Aligned viewpoint">
+          <button id="align-view" class="underlined-control" type="button">Align view<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h14M12 5l5 5-5 5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="reflection" aria-labelledby="reflection-title" data-scene="3">
+      <div class="scene-copy scene-copy--low">
+        <h2 id="reflection-title">Another surface.<br>Another reading.</h2>
+        <p class="scene-note">Your position changes what the mirror reveals.</p>
+      </div>
+    </section>
+    <section class="chapter" id="rift" aria-labelledby="rift-title" data-scene="4">
+      <div class="scene-copy scene-copy--low scene-copy--rift">
+        <h2 id="rift-title">An opening<br>becomes a place.</h2>
+        <p class="scene-note">Follow the cut beyond the surface.</p>
+      </div>
+    </section>
+    <section class="chapter" id="membrane" aria-labelledby="membrane-title" data-scene="5">
+      <div class="scene-copy scene-copy--high scene-copy--membrane">
+        <h2 id="membrane-title">Seen through<br>something.</h2>
+        <p class="scene-note">A thin boundary holds the form at a distance.</p>
+      </div>
+    </section>
+    <section class="chapter" id="chroma" aria-labelledby="chroma-title" data-scene="6">
+      <div class="scene-copy scene-copy--low">
+        <h2 id="chroma-title">The edge<br>acquires colour.</h2>
+        <p class="scene-note">Light moves across the cut. The mass remains.</p>
+      </div>
+    </section>
+    <section class="chapter" id="halo" aria-labelledby="halo-title" data-scene="7">
+      <div class="scene-copy scene-copy--low scene-copy--halo">
+        <h2 id="halo-title">Almost absent.</h2>
+        <p class="scene-note">For a moment, only the boundary remains.</p>
+      </div>
+    </section>
+    <section class="chapter" id="reassembly" aria-labelledby="reassembly-title" data-scene="8">
+      <div class="scene-copy scene-copy--low">
+        <h2 id="reassembly-title">The same form,<br>differently seen.</h2>
+        <p class="scene-note">The fragments return. So does everything you have noticed.</p>
+      </div>
+    </section>
+    <section class="chapter" id="museum" aria-labelledby="museum-title" data-scene="9">
+      <div class="scene-copy scene-copy--museum">
+        <p class="museum-thought">A form does not exist only in matter.<br>It also exists in the act of seeing.</p>
+        <h2 id="museum-title">One object.<br>An impossible room.</h2>
+        <a class="begin-again underlined-control" href="#object">Begin again<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 9a6 6 0 1 1 1 6M4 3v6h6"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="exhibition-footer" aria-hidden="true">
+    <span class="scene-counter"><span id="scene-number">01</span><span class="counter-slash">/</span>10</span>
+    <span id="view-hint" class="view-hint"></span>
+    <span id="scene-name" class="scene-name">Object</span>
+  </footer>
+  <div class="journey-line" aria-hidden="true"><span id="journey-progress"></span></div>
+  <div id="render-notice" class="render-notice" role="status" hidden><span>Still-view mode — live spatial rendering is unavailable.</span><button type="button" id="retry-renderer">Try again</button></div>
+
+  <dialog id="exhibition-index" class="index-dialog" aria-labelledby="index-heading">
+    <div class="index-head">
+      <span class="identity"><svg viewBox="0 0 28 44" class="identity-mark" aria-hidden="true"><path d="M4 7 22 2v37L4 33V7Zm3 1 13-4M7 8v24l13 5M4 42l18-5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><span>PARALLAX</span></span>
+      <button id="close-index" class="text-control" type="button"><svg class="close-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 16 16M20 4 4 20"/></svg><span>Close</span></button>
+    </div>
+    <div class="index-body">
+      <div class="index-introduction"><h2 id="index-heading">Ten perspectives. <br>One form.</h2><p>There is no single view<br>that contains the whole.</p><img src="/parallax/assets/hero-form.png" alt="" class="index-object" decoding="async"></div>
+      <nav class="chapter-list" aria-label="Exhibition perspectives">
+        <a href="#object" data-index="0" aria-current="location"><span>01</span><span>Object</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#fragment" data-index="1"><span>02</span><span>Fragment</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#alignment" data-index="2"><span>03</span><span>Alignment</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#reflection" data-index="3"><span>04</span><span>Reflection</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#rift" data-index="4"><span>05</span><span>Rift</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#membrane" data-index="5"><span>06</span><span>Membrane</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#chroma" data-index="6"><span>07</span><span>Chroma</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#halo" data-index="7"><span>08</span><span>Halo</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#reassembly" data-index="8"><span>09</span><span>Reassembly</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+        <a href="#museum" data-index="9"><span>10</span><span>The museum</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
+      </nav>
+    </div>
+    <div class="index-foot"><p>The museum of impossible forms.</p><div class="view-options"><button type="button" id="motion-toggle" aria-pressed="false"><span>Reduced motion</span><span id="motion-state">Off</span></button><button type="button" id="focus-artwork">Focus artwork<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 7V2h5m6 0h5v5M2 13v5h5m6 0h5v-5"/></svg></button></div></div>
+  </dialog>
+  <noscript><p class="no-script">JavaScript enables the spatial exhibition. The ten perspectives and their descriptions remain available below.</p></noscript>
+  <script type="module" src="../../experiences/parallax/src/app.js"></script>
+</body>
+</html>

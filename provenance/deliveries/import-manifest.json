@@ -5310,6 +5310,380 @@
         "provenance": "provenance/aeterna/",
         "omitted": "All upstream dist output, including stale unreferenced compiled JS/CSS; standalone package.json/package-lock.json, Vite config, server/startup tools. Original archive retained unchanged outside Git."
       }
+    },
+    {
+      "archive": "PARALLAX-The-Museum-of-Impossible-Forms.zip",
+      "bytes": 46316092,
+      "sha256": "72768646c6de27b10f99e7ef7de2233e3c6c7a157661aae491084147051937f0",
+      "modifiedTime": "2026-10-07T11:13:09.725708",
+      "entryCount": 73,
+      "entries": [
+        {
+          "path": "PARALLAX/DESIGN.md",
+          "bytes": 3219,
+          "sha256": "e0093392bf49897c1fac36fab1c340d9285ab76e0ee2ee51b9ba4fe9cd7c4ff1"
+        },
+        {
+          "path": "PARALLAX/PRODUCT.md",
+          "bytes": 2499,
+          "sha256": "dc7cfe5e40baeee338c9d232596ebb494bb7c1f54658af010757897f007d1b75"
+        },
+        {
+          "path": "PARALLAX/README.md",
+          "bytes": 11769,
+          "sha256": "10359a60f2d3177e8b5bab7008d0edde64c3db83e39f3be19363ccecdd070d86"
+        },
+        {
+          "path": "PARALLAX/START-MAC.command",
+          "bytes": 1352,
+          "sha256": "fd332c687723e685e6565bc54fc4f7331e24d5eaecca75d5ca54a7dab1c21c8d"
+        },
+        {
+          "path": "PARALLAX/START-WINDOWS.bat",
+          "bytes": 1691,
+          "sha256": "1996ffd8fcba5cb6c75d70808fd805922b45ff9d327f12141fe0d06245b86e00"
+        },
+        {
+          "path": "PARALLAX/assets/provenance.json",
+          "bytes": 59280,
+          "sha256": "4696f2204479d78b7fcd9e884a7fb01f86b399d5b6ffb7abf3041c72fbbd4a82"
+        },
+        {
+          "path": "PARALLAX/dist/assets/basalt.png",
+          "bytes": 3348617,
+          "sha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91"
+        },
+        {
+          "path": "PARALLAX/dist/assets/gallery-ivory.png",
+          "bytes": 1275537,
+          "sha256": "4e83879ced48396e5cd3a041f146294800187a3f40e3150271acb7b5b3558420"
+        },
+        {
+          "path": "PARALLAX/dist/assets/gallery-museum.png",
+          "bytes": 1664590,
+          "sha256": "de59695dd9d485336a14bdb4b92ce0f277173632ab1274b575ee74b83fa8272c"
+        },
+        {
+          "path": "PARALLAX/dist/assets/hero-form.png",
+          "bytes": 2510955,
+          "sha256": "6d8cbeed4ada2ed93a05ff28f83e0d7df3a2622d7acb4c5bb29613c10a98665a"
+        },
+        {
+          "path": "PARALLAX/dist/assets/mark.svg",
+          "bytes": 228,
+          "sha256": "78c8357cc6e01fe2986b9786d9f654c256f0534c314cb0db5dace8e5a07fa4b7"
+        },
+        {
+          "path": "PARALLAX/dist/fonts/bodoni-moda-latin-400-normal.woff2",
+          "bytes": 14528,
+          "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f"
+        },
+        {
+          "path": "PARALLAX/dist/fonts/manrope-latin-400-normal.woff2",
+          "bytes": 14108,
+          "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+        },
+        {
+          "path": "PARALLAX/dist/fonts/manrope-latin-500-normal.woff2",
+          "bytes": 14044,
+          "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+        },
+        {
+          "path": "PARALLAX/dist/index.html",
+          "bytes": 10566,
+          "sha256": "ab27a0028b315490b65520afa4fcc2d60905d3a7e442a084401ea27d119fa21b"
+        },
+        {
+          "path": "PARALLAX/dist/src/app.js",
+          "bytes": 17537,
+          "sha256": "6e9ea1231335049fd761d8e4308458d944b44302fd5cb39936dc9df9cd239493"
+        },
+        {
+          "path": "PARALLAX/dist/src/model.js",
+          "bytes": 10553,
+          "sha256": "7b921bee5668d8430bec6118c3d4c0a87865982c1de21621aa41e6ef60d9f027"
+        },
+        {
+          "path": "PARALLAX/dist/src/optics.js",
+          "bytes": 26429,
+          "sha256": "c2d5ec0718b74813e6f5553bc7c95c82011798c995361cce16dd18946f5db4ff"
+        },
+        {
+          "path": "PARALLAX/dist/src/spatial-math.js",
+          "bytes": 1831,
+          "sha256": "f04493baf09a6fd4df2d336931fd7deb754e65d3b47ecb247e512dafe413a365"
+        },
+        {
+          "path": "PARALLAX/dist/src/spatial.js",
+          "bytes": 34555,
+          "sha256": "05939f48e0948b32023042d9ae84154d8d24aca8ab9b364b524380e4e9c2223c"
+        },
+        {
+          "path": "PARALLAX/dist/src/style.css",
+          "bytes": 20870,
+          "sha256": "475fe91bdfeea588f5cf5c1b1e7feb554304427f750b30ae02a184cb491ff15c"
+        },
+        {
+          "path": "PARALLAX/dist/src/timeline.js",
+          "bytes": 1770,
+          "sha256": "846f61df4e1685c35542e3d7e4f4cc3287486ffe87058bbbe21a7cba44fa61bf"
+        },
+        {
+          "path": "PARALLAX/dist/vendor/three/addons/Reflector.js",
+          "bytes": 10943,
+          "sha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b"
+        },
+        {
+          "path": "PARALLAX/dist/vendor/three/three.core.js",
+          "bytes": 1458113,
+          "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+        },
+        {
+          "path": "PARALLAX/dist/vendor/three/three.module.js",
+          "bytes": 662772,
+          "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+        },
+        {
+          "path": "PARALLAX/docs/ASSET_PROVENANCE.md",
+          "bytes": 5979,
+          "sha256": "80bc2e331683fbb130cc9eb2ed9af685e5db8b0bbad2d3ead98ffa60fd4cd58e"
+        },
+        {
+          "path": "PARALLAX/docs/IMPLEMENTATION.md",
+          "bytes": 10540,
+          "sha256": "b3e7c01477d710b6da47e9a93b21a87ac2ad07279ef9e94710823509c8ddae11"
+        },
+        {
+          "path": "PARALLAX/docs/VISUAL_BIBLE.html",
+          "bytes": 16525,
+          "sha256": "48fb0bdeb167503be38a1047d818a3b5b2e63c78236f39a0f094e992b56cdf8b"
+        },
+        {
+          "path": "PARALLAX/docs/VISUAL_BIBLE.md",
+          "bytes": 10009,
+          "sha256": "5431007c2b031ff22977630168663e7d7dc1bd3c162617950a94f6f45179ceb1"
+        },
+        {
+          "path": "PARALLAX/index.html",
+          "bytes": 10566,
+          "sha256": "ab27a0028b315490b65520afa4fcc2d60905d3a7e442a084401ea27d119fa21b"
+        },
+        {
+          "path": "PARALLAX/licenses/BODONI-MODA-LICENSE.txt",
+          "bytes": 4526,
+          "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2"
+        },
+        {
+          "path": "PARALLAX/licenses/MANROPE-LICENSE.txt",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        },
+        {
+          "path": "PARALLAX/licenses/THREE-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "PARALLAX/models/impossible-form.glb",
+          "bytes": 3501700,
+          "sha256": "c5792f9b49af9fc200f63f39268011269c9173ca44dc8ccabf596afac0feb858"
+        },
+        {
+          "path": "PARALLAX/models/impossible-form.json",
+          "bytes": 16679,
+          "sha256": "fc727c95f1992e9d3a4cff0060901588ba36d4ee67259fbaa70ef13780d88494"
+        },
+        {
+          "path": "PARALLAX/package.json",
+          "bytes": 492,
+          "sha256": "5aaf38380836f3e25d34a30784d9c5d0765cb8a5dd21a205ae3ade91ad510edb"
+        },
+        {
+          "path": "PARALLAX/public/assets/basalt.png",
+          "bytes": 3348617,
+          "sha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91"
+        },
+        {
+          "path": "PARALLAX/public/assets/gallery-ivory.png",
+          "bytes": 1275537,
+          "sha256": "4e83879ced48396e5cd3a041f146294800187a3f40e3150271acb7b5b3558420"
+        },
+        {
+          "path": "PARALLAX/public/assets/gallery-museum.png",
+          "bytes": 1664590,
+          "sha256": "de59695dd9d485336a14bdb4b92ce0f277173632ab1274b575ee74b83fa8272c"
+        },
+        {
+          "path": "PARALLAX/public/assets/hero-form.png",
+          "bytes": 2510955,
+          "sha256": "6d8cbeed4ada2ed93a05ff28f83e0d7df3a2622d7acb4c5bb29613c10a98665a"
+        },
+        {
+          "path": "PARALLAX/public/assets/mark.svg",
+          "bytes": 228,
+          "sha256": "78c8357cc6e01fe2986b9786d9f654c256f0534c314cb0db5dace8e5a07fa4b7"
+        },
+        {
+          "path": "PARALLAX/public/fonts/bodoni-moda-latin-400-normal.woff2",
+          "bytes": 14528,
+          "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f"
+        },
+        {
+          "path": "PARALLAX/public/fonts/manrope-latin-400-normal.woff2",
+          "bytes": 14108,
+          "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+        },
+        {
+          "path": "PARALLAX/public/fonts/manrope-latin-500-normal.woff2",
+          "bytes": 14044,
+          "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+        },
+        {
+          "path": "PARALLAX/reference/01-object.png",
+          "bytes": 1906793,
+          "sha256": "b2332617402f7a79db450cc833307cbf91ad7f7f98f74d456d239678bef010ca"
+        },
+        {
+          "path": "PARALLAX/reference/02-fragment.png",
+          "bytes": 1957240,
+          "sha256": "e23ac9fe857999b32d926ef7f051395aa3f15a4f9992068ac268c90c433ddf6c"
+        },
+        {
+          "path": "PARALLAX/reference/03-alignment.png",
+          "bytes": 1864054,
+          "sha256": "6092c5ba5a14343109c69b1d28fdbe047d28482715e4c0790a1e5f7343a8e986"
+        },
+        {
+          "path": "PARALLAX/reference/04-reflection.png",
+          "bytes": 1897031,
+          "sha256": "56e3a8abd2d17d708ad48a6796ac76594c6d2c51f6ecef4ef4fee1c5e6aa828a"
+        },
+        {
+          "path": "PARALLAX/reference/05-rift.png",
+          "bytes": 2159153,
+          "sha256": "58e12b995bf7fec9f04b9f5cb1aa8a27f14e7575bc26a0d9fc071b1c4752e0cf"
+        },
+        {
+          "path": "PARALLAX/reference/06-membrane.png",
+          "bytes": 1943960,
+          "sha256": "98b29e1f8276417bb591728398d41483e64798650ee1c3e6c8f7ef1ea654f5f5"
+        },
+        {
+          "path": "PARALLAX/reference/07-chroma.png",
+          "bytes": 1798810,
+          "sha256": "c5bbd95157a4e6c401dfbe242811ecaf245dfd0d54b49f5791adab0e410db696"
+        },
+        {
+          "path": "PARALLAX/reference/08-halo.png",
+          "bytes": 1376064,
+          "sha256": "109c59566ea1f461fb31ab8628b51a371b0e3bf4e2a9ef39fc1a059f40cfdbde"
+        },
+        {
+          "path": "PARALLAX/reference/09-reassembly.png",
+          "bytes": 1794515,
+          "sha256": "77723c506839cf846b4569bbf3083412f938def60616ca4bafc018394149be5e"
+        },
+        {
+          "path": "PARALLAX/reference/10-museum.png",
+          "bytes": 1819447,
+          "sha256": "7370b2b4f53c9505ba7dd2416405f6b75be1ece0224878ddf3d65b275c5876e9"
+        },
+        {
+          "path": "PARALLAX/reference/material-board.png",
+          "bytes": 1973210,
+          "sha256": "50e9f56d765ea4bc517c8d235dc6dfc5d7c9ae871d72f8ca49eb004512a12361"
+        },
+        {
+          "path": "PARALLAX/reference/mobile-object.png",
+          "bytes": 1821837,
+          "sha256": "d85fc538093a14df4efcdb63b6dd78901a4104ea8777aabb055e1aabcfb0f31f"
+        },
+        {
+          "path": "PARALLAX/reference/rift-study.png",
+          "bytes": 2250144,
+          "sha256": "bb368cbc3c9229792c57c06f699ba4bcb076a071b7320320f0b3c6632eed9103"
+        },
+        {
+          "path": "PARALLAX/scripts/build.mjs",
+          "bytes": 2413,
+          "sha256": "12cf73579e0eaf2bad35466551bcd640189f3cb4662fe943ef1e5442e56d7b04"
+        },
+        {
+          "path": "PARALLAX/scripts/export-model.mjs",
+          "bytes": 10843,
+          "sha256": "cd91a497e6b1cd6c939557be84e17cae25f1dda0d1f85d84900ee050806ff3d6"
+        },
+        {
+          "path": "PARALLAX/scripts/serve.mjs",
+          "bytes": 6835,
+          "sha256": "dcf31f4d18c643fe255ead87cc195a00a472dd82c330d6fef23586ed8146a252"
+        },
+        {
+          "path": "PARALLAX/scripts/serve.py",
+          "bytes": 6848,
+          "sha256": "5e3112acd030a2e2480d17e71d8ee6b9b38d67a7d0457d2960aecb0e7f7b7516"
+        },
+        {
+          "path": "PARALLAX/src/app.js",
+          "bytes": 17537,
+          "sha256": "6e9ea1231335049fd761d8e4308458d944b44302fd5cb39936dc9df9cd239493"
+        },
+        {
+          "path": "PARALLAX/src/model.js",
+          "bytes": 10553,
+          "sha256": "7b921bee5668d8430bec6118c3d4c0a87865982c1de21621aa41e6ef60d9f027"
+        },
+        {
+          "path": "PARALLAX/src/optics.js",
+          "bytes": 26429,
+          "sha256": "c2d5ec0718b74813e6f5553bc7c95c82011798c995361cce16dd18946f5db4ff"
+        },
+        {
+          "path": "PARALLAX/src/spatial-math.js",
+          "bytes": 1831,
+          "sha256": "f04493baf09a6fd4df2d336931fd7deb754e65d3b47ecb247e512dafe413a365"
+        },
+        {
+          "path": "PARALLAX/src/spatial.js",
+          "bytes": 34555,
+          "sha256": "05939f48e0948b32023042d9ae84154d8d24aca8ab9b364b524380e4e9c2223c"
+        },
+        {
+          "path": "PARALLAX/src/style.css",
+          "bytes": 20870,
+          "sha256": "475fe91bdfeea588f5cf5c1b1e7feb554304427f750b30ae02a184cb491ff15c"
+        },
+        {
+          "path": "PARALLAX/src/timeline.js",
+          "bytes": 1770,
+          "sha256": "846f61df4e1685c35542e3d7e4f4cc3287486ffe87058bbbe21a7cba44fa61bf"
+        },
+        {
+          "path": "PARALLAX/tests/alignment.test.mjs",
+          "bytes": 2410,
+          "sha256": "54c0ebbe1e5bb40b9b04d2eb5b5cedea7a98b6bd8fea844f0fa7800f4061f568"
+        },
+        {
+          "path": "PARALLAX/tests/timeline.test.mjs",
+          "bytes": 2519,
+          "sha256": "df5353fa250a85f1a131cf9d7c3b6946a62c81f42330bd9648de0a8035e72519"
+        },
+        {
+          "path": "PARALLAX/vendor/three/addons/Reflector.js",
+          "bytes": 10943,
+          "sha256": "57836df976f02a474b2dcfbb6609bca8bde0ccc6e77159ad8e418fa11c065d3b"
+        },
+        {
+          "path": "PARALLAX/vendor/three/three.core.js",
+          "bytes": 1458113,
+          "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+        },
+        {
+          "path": "PARALLAX/vendor/three/three.module.js",
+          "bytes": 662772,
+          "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+        }
+      ]
     }
   ]
 }

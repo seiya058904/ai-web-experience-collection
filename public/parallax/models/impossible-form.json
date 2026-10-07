@@ -1,0 +1,952 @@
+{
+  "format": "PARALLAX procedural master model",
+  "export": "models/impossible-form.glb",
+  "formatVersion": "glTF 2.0 / binary GLB",
+  "modelSource": "src/model.js",
+  "exporterSource": "scripts/export-model.mjs",
+  "modelSourceSha256": "7b921bee5668d8430bec6118c3d4c0a87865982c1de21621aa41e6ef60d9f027",
+  "exportSha256": "c5792f9b49af9fc200f63f39268011269c9173ca44dc8ccabf596afac0feb858",
+  "exportBytes": 3501700,
+  "threeRevision": "186",
+  "structuralPartCount": 18,
+  "structuralPartNames": [
+    "form-base-1",
+    "form-base-2",
+    "form-base-3",
+    "form-base-4",
+    "form-right-1",
+    "form-right-2",
+    "form-right-3",
+    "form-right-4",
+    "form-right-5",
+    "form-crown-1",
+    "form-crown-2",
+    "form-crown-3",
+    "form-crown-4",
+    "form-left-1",
+    "form-left-2",
+    "form-left-3",
+    "form-left-4",
+    "form-left-5"
+  ],
+  "triangleCount": 804,
+  "sourceBounds": {
+    "min": [
+      -2.249557490348816,
+      -3.2268626184463503,
+      -0.5799999833106995
+    ],
+    "max": [
+      2.5001366567611694,
+      3.4311113243103026,
+      0.623875000283122
+    ]
+  },
+  "coordinates": "Y-up, right-handed; assembled source pose; artistic scene units",
+  "masterSpec": {
+    "name": "The Impossible Form",
+    "outer": [
+      [
+        -2.22,
+        -3.2
+      ],
+      [
+        2.47,
+        -3.2
+      ],
+      [
+        1.08,
+        3.4
+      ],
+      [
+        -1.55,
+        2.27
+      ]
+    ],
+    "inner": [
+      [
+        -0.7,
+        -2.08
+      ],
+      [
+        1.05,
+        -2.42
+      ],
+      [
+        0.7,
+        1.42
+      ],
+      [
+        -0.84,
+        1.81
+      ]
+    ],
+    "depth": 1.16,
+    "bevel": 0.022,
+    "sections": [
+      4,
+      5,
+      4,
+      5
+    ],
+    "materials": [
+      "Black polished basalt",
+      "Mirror-polished fracture",
+      "Ivory incision"
+    ]
+  },
+  "fragments": [
+    {
+      "id": "form-base-1",
+      "index": 0,
+      "side": 0,
+      "sideName": "base",
+      "section": 0,
+      "t": 0.125,
+      "polygon": [
+        [
+          -2.22,
+          -3.2
+        ],
+        [
+          -1.0475,
+          -3.2
+        ],
+        [
+          -0.26249999999999996,
+          -2.165
+        ],
+        [
+          -0.7,
+          -2.08
+        ]
+      ],
+      "center": [
+        -1.0575,
+        -2.6612500000000003,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.81,
+      "explode": [
+        -0.21931250000000002,
+        -0.25281875000000004,
+        -0.46
+      ],
+      "rotation": [
+        -0.046,
+        -0.078,
+        0.025
+      ]
+    },
+    {
+      "id": "form-base-2",
+      "index": 1,
+      "side": 0,
+      "sideName": "base",
+      "section": 1,
+      "t": 0.375,
+      "polygon": [
+        [
+          -1.0475,
+          -3.2
+        ],
+        [
+          0.125,
+          -3.2
+        ],
+        [
+          0.17500000000000004,
+          -2.25
+        ],
+        [
+          -0.26249999999999996,
+          -2.165
+        ]
+      ],
+      "center": [
+        -0.2525,
+        -2.7037500000000003,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.12,
+      "explode": [
+        0.0010625000000000079,
+        -0.25685625,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.026,
+        0
+      ]
+    },
+    {
+      "id": "form-base-3",
+      "index": 2,
+      "side": 0,
+      "sideName": "base",
+      "section": 2,
+      "t": 0.625,
+      "polygon": [
+        [
+          0.125,
+          -3.2
+        ],
+        [
+          1.2974999999999999,
+          -3.2
+        ],
+        [
+          0.6125,
+          -2.335
+        ],
+        [
+          0.17500000000000004,
+          -2.25
+        ]
+      ],
+      "center": [
+        0.5525,
+        -2.74625,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.95,
+      "explode": [
+        0.061437500000000006,
+        -0.26089375,
+        0.46
+      ],
+      "rotation": [
+        0.046,
+        0.026,
+        0.025
+      ]
+    },
+    {
+      "id": "form-base-4",
+      "index": 3,
+      "side": 0,
+      "sideName": "base",
+      "section": 3,
+      "t": 0.875,
+      "polygon": [
+        [
+          1.2974999999999999,
+          -3.2
+        ],
+        [
+          2.47,
+          -3.2
+        ],
+        [
+          1.05,
+          -2.42
+        ],
+        [
+          0.6125,
+          -2.335
+        ]
+      ],
+      "center": [
+        1.3575,
+        -2.7887500000000003,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.29,
+      "explode": [
+        0.2818125,
+        -0.26493125,
+        -0.23
+      ],
+      "rotation": [
+        -0.046,
+        0.078,
+        -0.025
+      ]
+    },
+    {
+      "id": "form-right-1",
+      "index": 4,
+      "side": 1,
+      "sideName": "right",
+      "section": 0,
+      "t": 0.1,
+      "polygon": [
+        [
+          2.47,
+          -3.2
+        ],
+        [
+          2.192,
+          -1.8800000000000001
+        ],
+        [
+          0.98,
+          -1.652
+        ],
+        [
+          1.05,
+          -2.42
+        ]
+      ],
+      "center": [
+        1.6730000000000003,
+        -2.2880000000000003,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.21,
+      "explode": [
+        0.14547500000000002,
+        -0.21736000000000003,
+        0.23
+      ],
+      "rotation": [
+        0,
+        -0.078,
+        0
+      ]
+    },
+    {
+      "id": "form-right-2",
+      "index": 5,
+      "side": 1,
+      "sideName": "right",
+      "section": 1,
+      "t": 0.30000000000000004,
+      "polygon": [
+        [
+          2.192,
+          -1.8800000000000001
+        ],
+        [
+          1.9140000000000001,
+          -0.56
+        ],
+        [
+          0.91,
+          -0.8839999999999999
+        ],
+        [
+          0.98,
+          -1.652
+        ]
+      ],
+      "center": [
+        1.499,
+        -1.244,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.74,
+      "explode": [
+        0.29242500000000005,
+        -0.11818000000000001,
+        -0.46
+      ],
+      "rotation": [
+        0.046,
+        -0.026,
+        0.025
+      ]
+    },
+    {
+      "id": "form-right-3",
+      "index": 6,
+      "side": 1,
+      "sideName": "right",
+      "section": 2,
+      "t": 0.5,
+      "polygon": [
+        [
+          1.9140000000000001,
+          -0.56
+        ],
+        [
+          1.6360000000000001,
+          0.7599999999999993
+        ],
+        [
+          0.84,
+          -0.1160000000000001
+        ],
+        [
+          0.91,
+          -0.8839999999999999
+        ]
+      ],
+      "center": [
+        1.3250000000000002,
+        -0.20000000000000018,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.13,
+      "explode": [
+        0.11937500000000001,
+        -0.019000000000000017,
+        0
+      ],
+      "rotation": [
+        -0.046,
+        0.026,
+        -0.025
+      ]
+    },
+    {
+      "id": "form-right-4",
+      "index": 7,
+      "side": 1,
+      "sideName": "right",
+      "section": 3,
+      "t": 0.7,
+      "polygon": [
+        [
+          1.6360000000000001,
+          0.7599999999999993
+        ],
+        [
+          1.358,
+          2.08
+        ],
+        [
+          0.77,
+          0.6520000000000001
+        ],
+        [
+          0.84,
+          -0.1160000000000001
+        ]
+      ],
+      "center": [
+        1.151,
+        0.8439999999999999,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.91,
+      "explode": [
+        0.26632500000000003,
+        0.08017999999999999,
+        0.46
+      ],
+      "rotation": [
+        0,
+        0.078,
+        0
+      ]
+    },
+    {
+      "id": "form-right-5",
+      "index": 8,
+      "side": 1,
+      "sideName": "right",
+      "section": 4,
+      "t": 0.9,
+      "polygon": [
+        [
+          1.358,
+          2.08
+        ],
+        [
+          1.08,
+          3.3999999999999995
+        ],
+        [
+          0.7,
+          1.42
+        ],
+        [
+          0.77,
+          0.6520000000000001
+        ]
+      ],
+      "center": [
+        0.977,
+        1.888,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.34,
+      "explode": [
+        0.093275,
+        0.17936,
+        -0.23
+      ],
+      "rotation": [
+        0.046,
+        -0.078,
+        0.025
+      ]
+    },
+    {
+      "id": "form-crown-1",
+      "index": 9,
+      "side": 2,
+      "sideName": "crown",
+      "section": 0,
+      "t": 0.125,
+      "polygon": [
+        [
+          1.08,
+          3.4
+        ],
+        [
+          0.4225000000000001,
+          3.1174999999999997
+        ],
+        [
+          0.31499999999999995,
+          1.5175
+        ],
+        [
+          0.7,
+          1.42
+        ]
+      ],
+      "center": [
+        0.629375,
+        2.36375,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.72,
+      "explode": [
+        0.067203125,
+        0.34455625,
+        0.23
+      ],
+      "rotation": [
+        -0.046,
+        -0.026,
+        -0.025
+      ]
+    },
+    {
+      "id": "form-crown-2",
+      "index": 10,
+      "side": 2,
+      "sideName": "crown",
+      "section": 1,
+      "t": 0.375,
+      "polygon": [
+        [
+          0.4225000000000001,
+          3.1174999999999997
+        ],
+        [
+          -0.23499999999999988,
+          2.835
+        ],
+        [
+          -0.07000000000000006,
+          1.615
+        ],
+        [
+          0.31499999999999995,
+          1.5175
+        ]
+      ],
+      "center": [
+        0.10812500000000003,
+        2.27125,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.16,
+      "explode": [
+        0.18810937500000002,
+        0.33576875,
+        -0.46
+      ],
+      "rotation": [
+        0,
+        0.026,
+        0
+      ]
+    },
+    {
+      "id": "form-crown-3",
+      "index": 11,
+      "side": 2,
+      "sideName": "crown",
+      "section": 2,
+      "t": 0.625,
+      "polygon": [
+        [
+          -0.23499999999999988,
+          2.835
+        ],
+        [
+          -0.8924999999999998,
+          2.5525
+        ],
+        [
+          -0.45500000000000007,
+          1.7125
+        ],
+        [
+          -0.07000000000000006,
+          1.615
+        ]
+      ],
+      "center": [
+        -0.41312499999999996,
+        2.17875,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.88,
+      "explode": [
+        -0.170984375,
+        0.32698125,
+        0
+      ],
+      "rotation": [
+        0.046,
+        0.078,
+        -0.025
+      ]
+    },
+    {
+      "id": "form-crown-4",
+      "index": 12,
+      "side": 2,
+      "sideName": "crown",
+      "section": 3,
+      "t": 0.875,
+      "polygon": [
+        [
+          -0.8924999999999998,
+          2.5525
+        ],
+        [
+          -1.5499999999999998,
+          2.27
+        ],
+        [
+          -0.8400000000000001,
+          1.81
+        ],
+        [
+          -0.45500000000000007,
+          1.7125
+        ]
+      ],
+      "center": [
+        -0.934375,
+        2.08625,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.28,
+      "explode": [
+        -0.050078125,
+        0.31819375000000005,
+        0.46
+      ],
+      "rotation": [
+        -0.046,
+        -0.078,
+        0.025
+      ]
+    },
+    {
+      "id": "form-left-1",
+      "index": 13,
+      "side": 3,
+      "sideName": "left",
+      "section": 0,
+      "t": 0.1,
+      "polygon": [
+        [
+          -1.55,
+          2.27
+        ],
+        [
+          -1.6840000000000002,
+          1.176
+        ],
+        [
+          -0.8119999999999999,
+          1.032
+        ],
+        [
+          -0.84,
+          1.81
+        ]
+      ],
+      "center": [
+        -1.2215,
+        1.572,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.05,
+      "explode": [
+        -0.2316125,
+        0.14934,
+        -0.23
+      ],
+      "rotation": [
+        0,
+        -0.026,
+        0
+      ]
+    },
+    {
+      "id": "form-left-2",
+      "index": 14,
+      "side": 3,
+      "sideName": "left",
+      "section": 1,
+      "t": 0.30000000000000004,
+      "polygon": [
+        [
+          -1.6840000000000002,
+          1.176
+        ],
+        [
+          -1.818,
+          0.08199999999999985
+        ],
+        [
+          -0.7839999999999999,
+          0.254
+        ],
+        [
+          -0.8119999999999999,
+          1.032
+        ]
+      ],
+      "center": [
+        -1.2745000000000002,
+        0.6359999999999999,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.78,
+      "explode": [
+        -0.0755875,
+        0.060419999999999995,
+        0.23
+      ],
+      "rotation": [
+        0.046,
+        0.026,
+        -0.025
+      ]
+    },
+    {
+      "id": "form-left-3",
+      "index": 15,
+      "side": 3,
+      "sideName": "left",
+      "section": 2,
+      "t": 0.5,
+      "polygon": [
+        [
+          -1.818,
+          0.08199999999999985
+        ],
+        [
+          -1.9520000000000002,
+          -1.0120000000000005
+        ],
+        [
+          -0.756,
+          -0.524
+        ],
+        [
+          -0.7839999999999999,
+          0.254
+        ]
+      ],
+      "center": [
+        -1.3275000000000001,
+        -0.30000000000000016,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.23,
+      "explode": [
+        -0.2395625,
+        -0.028500000000000015,
+        -0.46
+      ],
+      "rotation": [
+        -0.046,
+        0.078,
+        0.025
+      ]
+    },
+    {
+      "id": "form-left-4",
+      "index": 16,
+      "side": 3,
+      "sideName": "left",
+      "section": 3,
+      "t": 0.7,
+      "polygon": [
+        [
+          -1.9520000000000002,
+          -1.0120000000000005
+        ],
+        [
+          -2.0860000000000003,
+          -2.1060000000000003
+        ],
+        [
+          -0.728,
+          -1.302
+        ],
+        [
+          -0.756,
+          -0.524
+        ]
+      ],
+      "center": [
+        -1.3805,
+        -1.2360000000000002,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 0.91,
+      "explode": [
+        -0.08353750000000001,
+        -0.11742000000000002,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.078,
+        0
+      ]
+    },
+    {
+      "id": "form-left-5",
+      "index": 17,
+      "side": 3,
+      "sideName": "left",
+      "section": 4,
+      "t": 0.9,
+      "polygon": [
+        [
+          -2.0860000000000003,
+          -2.1060000000000003
+        ],
+        [
+          -2.22,
+          -3.2000000000000006
+        ],
+        [
+          -0.7,
+          -2.08
+        ],
+        [
+          -0.728,
+          -1.302
+        ]
+      ],
+      "center": [
+        -1.4335000000000002,
+        -2.172,
+        0
+      ],
+      "depth": 1.16,
+      "rayScale": 1.11,
+      "explode": [
+        -0.24751250000000002,
+        -0.20634000000000002,
+        0.46
+      ],
+      "rotation": [
+        0.046,
+        -0.026,
+        -0.025
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Polished black basalt",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.287440838,
+          0.323143209,
+          0.36130678,
+          1
+        ],
+        "metallicFactor": 0.02,
+        "roughnessFactor": 0.29,
+        "baseColorTexture": {
+          "index": 0
+        }
+      },
+      "doubleSided": false,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.3,
+          "clearcoatRoughnessFactor": 0.2
+        }
+      }
+    },
+    {
+      "name": "Polished chrome cut faces",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.74540421,
+          0.79129794,
+          0.846873232,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.065
+      },
+      "doubleSided": false
+    },
+    {
+      "name": "Ivory incision",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.871367119,
+          0.651405637,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      }
+    }
+  ],
+  "texture": {
+    "source": "public/assets/basalt.png",
+    "sha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91",
+    "embeddedInGlb": true
+  },
+  "representation": {
+    "geometry": "Source beveled geometry, normals and named part transforms. UV V is converted to glTF texture convention while preserving the source mapping.",
+    "materials": "PBR base colour, roughness, metalness, clearcoat and a physical unlit luminous seam.",
+    "runtimeOnly": [
+      "height-based bump shading",
+      "environment lighting",
+      "moving planar reflection",
+      "membrane refraction",
+      "chapter animation",
+      "edge glow helpers"
+    ],
+    "runtimeSources": [
+      "src/spatial.js",
+      "src/spatial-math.js",
+      "src/optics.js",
+      "src/timeline.js"
+    ]
+  }
+}

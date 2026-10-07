@@ -1,0 +1,373 @@
+{
+  "imported": "2026-10-07",
+  "originalZip": "D:/下载/PARALLAX-The-Museum-of-Impossible-Forms.zip",
+  "bytes": 46316092,
+  "sha256": "72768646c6de27b10f99e7ef7de2233e3c6c7a157661aae491084147051937f0",
+  "entryCount": 73,
+  "clock": "One Lenis instance, existing on-demand RAF; document progress sampled without second easing",
+  "applicationLicense": "No application-wide open-source grant inferred; supplied font OFL and Three MIT remain scoped.",
+  "adaptations": [
+    "Collection multi-page Vite boundary, namespaced base-aware resources, independent identity and return control.",
+    "Existing locked Three.js is byte-identical to the three supplied vendor modules; no dependency or lockfile changes.",
+    "Lenis .105 wheel interpolation driven by the owned RAF, native touch/dialog input, immediate reduced-motion and restoration, reverse input cancellation, idle/visibility suspension and BFCache-safe disposal.",
+    "Namespaced Vite development alias for this work outside the pages HTML root; no machine-specific path in HTML.",
+    "Normalize two trailing blank EOF lines; source math and historical product text retain their meaning."
+  ],
+  "omitted": [
+    "dist/: all 19 files are byte-identical copies of editable source/vendor/public resources.",
+    "vendor/: Three.js core/module/Reflector are byte-identical to existing root three 0.186.1.",
+    "package.json, START-*.bat/command, scripts/build.mjs and scripts/serve.*: standalone local tooling retained in original ZIP."
+  ],
+  "files": [
+    {
+      "source": "PARALLAX/src/app.js",
+      "destination": "experiences/parallax/src/app.js",
+      "originalSha256": "6e9ea1231335049fd761d8e4308458d944b44302fd5cb39936dc9df9cd239493",
+      "importedSha256": "73a16898cc3bac907a5b526e3abbba23955c452c50e1e0ac403db8d418481565",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/src/model.js",
+      "destination": "experiences/parallax/src/model.js",
+      "originalSha256": "7b921bee5668d8430bec6118c3d4c0a87865982c1de21621aa41e6ef60d9f027",
+      "importedSha256": "a76795e16ee96cac70627b4d016f2cc452ed9462d6e9cec394d7adb2f7038215",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/src/optics.js",
+      "destination": "experiences/parallax/src/optics.js",
+      "originalSha256": "c2d5ec0718b74813e6f5553bc7c95c82011798c995361cce16dd18946f5db4ff",
+      "importedSha256": "194b75fe616b5c0c5eb8db57a61c4c1a63148f5e73171f55bda5f6c38b0a3986",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/src/spatial-math.js",
+      "destination": "experiences/parallax/src/spatial-math.js",
+      "originalSha256": "f04493baf09a6fd4df2d336931fd7deb754e65d3b47ecb247e512dafe413a365",
+      "importedSha256": "8e00586d07cb91244c23965bdae293bcfda8bc14effbb0421988ed865b553aba",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/src/spatial.js",
+      "destination": "experiences/parallax/src/spatial.js",
+      "originalSha256": "05939f48e0948b32023042d9ae84154d8d24aca8ab9b364b524380e4e9c2223c",
+      "importedSha256": "d1559a73201d14e0c9388845adaf22cf855c557dd7bf7e1c3cc46bfb99de91c3",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/src/style.css",
+      "destination": "experiences/parallax/src/style.css",
+      "originalSha256": "475fe91bdfeea588f5cf5c1b1e7feb554304427f750b30ae02a184cb491ff15c",
+      "importedSha256": "64ac3fb09105e200a189e49d6cd2ea7ee0fdd279d09b13ef6a9a967357fd36b6",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/src/timeline.js",
+      "destination": "experiences/parallax/src/timeline.js",
+      "originalSha256": "846f61df4e1685c35542e3d7e4f4cc3287486ffe87058bbbe21a7cba44fa61bf",
+      "importedSha256": "846f61df4e1685c35542e3d7e4f4cc3287486ffe87058bbbe21a7cba44fa61bf",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/index.html",
+      "destination": "pages/parallax/index.html",
+      "originalSha256": "ab27a0028b315490b65520afa4fcc2d60905d3a7e442a084401ea27d119fa21b",
+      "importedSha256": "910a8ec1d625a3530bea1521d0d16d894b70188ffe835787e513106562b58613",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/public/assets/basalt.png",
+      "destination": "public/parallax/assets/basalt.png",
+      "originalSha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91",
+      "importedSha256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/assets/gallery-ivory.png",
+      "destination": "public/parallax/assets/gallery-ivory.png",
+      "originalSha256": "4e83879ced48396e5cd3a041f146294800187a3f40e3150271acb7b5b3558420",
+      "importedSha256": "4e83879ced48396e5cd3a041f146294800187a3f40e3150271acb7b5b3558420",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/assets/gallery-museum.png",
+      "destination": "public/parallax/assets/gallery-museum.png",
+      "originalSha256": "de59695dd9d485336a14bdb4b92ce0f277173632ab1274b575ee74b83fa8272c",
+      "importedSha256": "de59695dd9d485336a14bdb4b92ce0f277173632ab1274b575ee74b83fa8272c",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/assets/hero-form.png",
+      "destination": "public/parallax/assets/hero-form.png",
+      "originalSha256": "6d8cbeed4ada2ed93a05ff28f83e0d7df3a2622d7acb4c5bb29613c10a98665a",
+      "importedSha256": "6d8cbeed4ada2ed93a05ff28f83e0d7df3a2622d7acb4c5bb29613c10a98665a",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/assets/mark.svg",
+      "destination": "public/parallax/assets/mark.svg",
+      "originalSha256": "78c8357cc6e01fe2986b9786d9f654c256f0534c314cb0db5dace8e5a07fa4b7",
+      "importedSha256": "78c8357cc6e01fe2986b9786d9f654c256f0534c314cb0db5dace8e5a07fa4b7",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/fonts/bodoni-moda-latin-400-normal.woff2",
+      "destination": "public/parallax/fonts/bodoni-moda-latin-400-normal.woff2",
+      "originalSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "importedSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/fonts/manrope-latin-400-normal.woff2",
+      "destination": "public/parallax/fonts/manrope-latin-400-normal.woff2",
+      "originalSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "importedSha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/public/fonts/manrope-latin-500-normal.woff2",
+      "destination": "public/parallax/fonts/manrope-latin-500-normal.woff2",
+      "originalSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "importedSha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/licenses/BODONI-MODA-LICENSE.txt",
+      "destination": "public/parallax/licenses/BODONI-MODA-LICENSE.txt",
+      "originalSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "importedSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/licenses/BODONI-MODA-LICENSE.txt",
+      "destination": "provenance/parallax/licenses/BODONI-MODA-LICENSE.txt",
+      "originalSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "importedSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/licenses/MANROPE-LICENSE.txt",
+      "destination": "public/parallax/licenses/MANROPE-LICENSE.txt",
+      "originalSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "importedSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/licenses/MANROPE-LICENSE.txt",
+      "destination": "provenance/parallax/licenses/MANROPE-LICENSE.txt",
+      "originalSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "importedSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/licenses/THREE-LICENSE.txt",
+      "destination": "public/parallax/licenses/THREE-LICENSE.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/licenses/THREE-LICENSE.txt",
+      "destination": "provenance/parallax/licenses/THREE-LICENSE.txt",
+      "originalSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/models/impossible-form.glb",
+      "destination": "public/parallax/models/impossible-form.glb",
+      "originalSha256": "c5792f9b49af9fc200f63f39268011269c9173ca44dc8ccabf596afac0feb858",
+      "importedSha256": "c5792f9b49af9fc200f63f39268011269c9173ca44dc8ccabf596afac0feb858",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/models/impossible-form.json",
+      "destination": "public/parallax/models/impossible-form.json",
+      "originalSha256": "fc727c95f1992e9d3a4cff0060901588ba36d4ee67259fbaa70ef13780d88494",
+      "importedSha256": "fc727c95f1992e9d3a4cff0060901588ba36d4ee67259fbaa70ef13780d88494",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/01-object.png",
+      "destination": "provenance/parallax/reference/01-object.png",
+      "originalSha256": "b2332617402f7a79db450cc833307cbf91ad7f7f98f74d456d239678bef010ca",
+      "importedSha256": "b2332617402f7a79db450cc833307cbf91ad7f7f98f74d456d239678bef010ca",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/02-fragment.png",
+      "destination": "provenance/parallax/reference/02-fragment.png",
+      "originalSha256": "e23ac9fe857999b32d926ef7f051395aa3f15a4f9992068ac268c90c433ddf6c",
+      "importedSha256": "e23ac9fe857999b32d926ef7f051395aa3f15a4f9992068ac268c90c433ddf6c",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/03-alignment.png",
+      "destination": "provenance/parallax/reference/03-alignment.png",
+      "originalSha256": "6092c5ba5a14343109c69b1d28fdbe047d28482715e4c0790a1e5f7343a8e986",
+      "importedSha256": "6092c5ba5a14343109c69b1d28fdbe047d28482715e4c0790a1e5f7343a8e986",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/04-reflection.png",
+      "destination": "provenance/parallax/reference/04-reflection.png",
+      "originalSha256": "56e3a8abd2d17d708ad48a6796ac76594c6d2c51f6ecef4ef4fee1c5e6aa828a",
+      "importedSha256": "56e3a8abd2d17d708ad48a6796ac76594c6d2c51f6ecef4ef4fee1c5e6aa828a",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/05-rift.png",
+      "destination": "provenance/parallax/reference/05-rift.png",
+      "originalSha256": "58e12b995bf7fec9f04b9f5cb1aa8a27f14e7575bc26a0d9fc071b1c4752e0cf",
+      "importedSha256": "58e12b995bf7fec9f04b9f5cb1aa8a27f14e7575bc26a0d9fc071b1c4752e0cf",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/06-membrane.png",
+      "destination": "provenance/parallax/reference/06-membrane.png",
+      "originalSha256": "98b29e1f8276417bb591728398d41483e64798650ee1c3e6c8f7ef1ea654f5f5",
+      "importedSha256": "98b29e1f8276417bb591728398d41483e64798650ee1c3e6c8f7ef1ea654f5f5",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/07-chroma.png",
+      "destination": "provenance/parallax/reference/07-chroma.png",
+      "originalSha256": "c5bbd95157a4e6c401dfbe242811ecaf245dfd0d54b49f5791adab0e410db696",
+      "importedSha256": "c5bbd95157a4e6c401dfbe242811ecaf245dfd0d54b49f5791adab0e410db696",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/08-halo.png",
+      "destination": "provenance/parallax/reference/08-halo.png",
+      "originalSha256": "109c59566ea1f461fb31ab8628b51a371b0e3bf4e2a9ef39fc1a059f40cfdbde",
+      "importedSha256": "109c59566ea1f461fb31ab8628b51a371b0e3bf4e2a9ef39fc1a059f40cfdbde",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/09-reassembly.png",
+      "destination": "provenance/parallax/reference/09-reassembly.png",
+      "originalSha256": "77723c506839cf846b4569bbf3083412f938def60616ca4bafc018394149be5e",
+      "importedSha256": "77723c506839cf846b4569bbf3083412f938def60616ca4bafc018394149be5e",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/10-museum.png",
+      "destination": "provenance/parallax/reference/10-museum.png",
+      "originalSha256": "7370b2b4f53c9505ba7dd2416405f6b75be1ece0224878ddf3d65b275c5876e9",
+      "importedSha256": "7370b2b4f53c9505ba7dd2416405f6b75be1ece0224878ddf3d65b275c5876e9",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/material-board.png",
+      "destination": "provenance/parallax/reference/material-board.png",
+      "originalSha256": "50e9f56d765ea4bc517c8d235dc6dfc5d7c9ae871d72f8ca49eb004512a12361",
+      "importedSha256": "50e9f56d765ea4bc517c8d235dc6dfc5d7c9ae871d72f8ca49eb004512a12361",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/mobile-object.png",
+      "destination": "provenance/parallax/reference/mobile-object.png",
+      "originalSha256": "d85fc538093a14df4efcdb63b6dd78901a4104ea8777aabb055e1aabcfb0f31f",
+      "importedSha256": "d85fc538093a14df4efcdb63b6dd78901a4104ea8777aabb055e1aabcfb0f31f",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/reference/rift-study.png",
+      "destination": "provenance/parallax/reference/rift-study.png",
+      "originalSha256": "bb368cbc3c9229792c57c06f699ba4bcb076a071b7320320f0b3c6632eed9103",
+      "importedSha256": "bb368cbc3c9229792c57c06f699ba4bcb076a071b7320320f0b3c6632eed9103",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/assets/provenance.json",
+      "destination": "provenance/parallax/assets/provenance.json",
+      "originalSha256": "4696f2204479d78b7fcd9e884a7fb01f86b399d5b6ffb7abf3041c72fbbd4a82",
+      "importedSha256": "4696f2204479d78b7fcd9e884a7fb01f86b399d5b6ffb7abf3041c72fbbd4a82",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/docs/ASSET_PROVENANCE.md",
+      "destination": "provenance/parallax/docs/ASSET_PROVENANCE.md",
+      "originalSha256": "80bc2e331683fbb130cc9eb2ed9af685e5db8b0bbad2d3ead98ffa60fd4cd58e",
+      "importedSha256": "80bc2e331683fbb130cc9eb2ed9af685e5db8b0bbad2d3ead98ffa60fd4cd58e",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/DESIGN.md",
+      "destination": "docs/parallax/DESIGN.md",
+      "originalSha256": "e0093392bf49897c1fac36fab1c340d9285ab76e0ee2ee51b9ba4fe9cd7c4ff1",
+      "importedSha256": "667e4f16c3ab8205190b8c3ed16d804e6edefa1d8dae2d287aecd4033da4c43a",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/PRODUCT.md",
+      "destination": "docs/parallax/UPSTREAM-PRODUCT.md",
+      "originalSha256": "dc7cfe5e40baeee338c9d232596ebb494bb7c1f54658af010757897f007d1b75",
+      "importedSha256": "d726005f2686d652a8b8dda1cc417e078c163500a5ab4dd3b4a92f589c09dc51",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/README.md",
+      "destination": "docs/parallax/UPSTREAM-README.md",
+      "originalSha256": "10359a60f2d3177e8b5bab7008d0edde64c3db83e39f3be19363ccecdd070d86",
+      "importedSha256": "10359a60f2d3177e8b5bab7008d0edde64c3db83e39f3be19363ccecdd070d86",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/docs/IMPLEMENTATION.md",
+      "destination": "docs/parallax/IMPLEMENTATION.md",
+      "originalSha256": "b3e7c01477d710b6da47e9a93b21a87ac2ad07279ef9e94710823509c8ddae11",
+      "importedSha256": "53b9ac2ecbaee82caa29c52fb758b63512fe2ef12125cc049f0d4af3f43bc369",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/docs/VISUAL_BIBLE.md",
+      "destination": "docs/parallax/VISUAL_BIBLE.md",
+      "originalSha256": "5431007c2b031ff22977630168663e7d7dc1bd3c162617950a94f6f45179ceb1",
+      "importedSha256": "c7abc5887a1cc64366e6c2563312ba98e9aabe0e82b7685b92f1c2a7863e2abd",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/docs/VISUAL_BIBLE.html",
+      "destination": "docs/parallax/VISUAL_BIBLE.html",
+      "originalSha256": "48fb0bdeb167503be38a1047d818a3b5b2e63c78236f39a0f094e992b56cdf8b",
+      "importedSha256": "33be3cc4ca90d7ee52cf4d3af021b095f3d6a5a4277f97c5b4feccc873c5559d",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/scripts/export-model.mjs",
+      "destination": "provenance/parallax/tools/export-model.mjs",
+      "originalSha256": "cd91a497e6b1cd6c939557be84e17cae25f1dda0d1f85d84900ee050806ff3d6",
+      "importedSha256": "cd91a497e6b1cd6c939557be84e17cae25f1dda0d1f85d84900ee050806ff3d6",
+      "adapted": false
+    },
+    {
+      "source": "PARALLAX/tests/alignment.test.mjs",
+      "destination": "tests/parallax-alignment.test.mjs",
+      "originalSha256": "54c0ebbe1e5bb40b9b04d2eb5b5cedea7a98b6bd8fea844f0fa7800f4061f568",
+      "importedSha256": "dd7cb7dbc9eaaff85d2cc57846fb8971a73fbe88869828cd42d5202b3c7810c8",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/tests/timeline.test.mjs",
+      "destination": "tests/parallax-timeline.test.mjs",
+      "originalSha256": "df5353fa250a85f1a131cf9d7c3b6946a62c81f42330bd9648de0a8035e72519",
+      "importedSha256": "c173c8cd0b69c4db7e59b75c06c817d5924856fd2997474c7a86b25bc9f1de5f",
+      "adapted": true
+    },
+    {
+      "source": "PARALLAX/docs/IMPLEMENTATION.md",
+      "destination": "provenance/parallax/docs/IMPLEMENTATION.md",
+      "originalSha256": "b3e7c01477d710b6da47e9a93b21a87ac2ad07279ef9e94710823509c8ddae11",
+      "importedSha256": "b3e7c01477d710b6da47e9a93b21a87ac2ad07279ef9e94710823509c8ddae11",
+      "adapted": false
+    }
+  ],
+  "generatedMedia": [
+    {
+      "destination": "public/parallax/social.jpg",
+      "source": "Actual original reassembly runtime capture at 1200x630 with labels hidden",
+      "sha256": "8a6db21ed287c64d1840afab2640fa60c3161e31bb19ce105982d8181d35c030"
+    }
+  ]
+}
