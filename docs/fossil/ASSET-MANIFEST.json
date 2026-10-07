@@ -1,0 +1,476 @@
+{
+  "project": "FOSSIL — Deep Time in Stone",
+  "schema": 1,
+  "interpretation": "Generated images are not photographs of accessioned specimens. The numerical field and mesh are synthetic, not acquired CT.",
+  "inventory": [
+    {
+      "path": "reference/01-specimen.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3015388,
+      "sha256": "03ea1cab7f992805d17ba328149b215ba394b9ec05bb6e7038251da8df95bb5d",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/01-specimen.prompt.txt",
+          "sha256": "58adf321e114ed00efad1840d7e918d2c06cd31f8bdc920a23443e916c74b324"
+        }
+      ]
+    },
+    {
+      "path": "reference/02-strata.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3171550,
+      "sha256": "9e85724c9fa3ab83896de02274a53b6fc611655bff53908e27ca134124a258ac",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/02-strata.prompt.txt",
+          "sha256": "7d9f1d98e5b128e6409d5d534c3500b2f8b75c411850477977588b6c19d73aa9"
+        }
+      ]
+    },
+    {
+      "path": "reference/03-burial.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3332163,
+      "sha256": "de6abe9a00e53bcec1d42254e9259fc7791a7b8c2ff87f52cfd5a25e6b8082b6",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/03-burial.prompt.txt",
+          "sha256": "f6094e3be7ddd727c1b263a3d49022ca1ae53fb366191d7000707964c03c5f53"
+        }
+      ]
+    },
+    {
+      "path": "reference/04-preservation.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3281487,
+      "sha256": "b2b46fa300a8a21645bd456866d24e582097e180ce48ac0240d81d15f2a4a33b",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/04-preservation.prompt.txt",
+          "sha256": "53b1d3c0ba544a3276851566448608372c258e58bd06485e3172b81f7d78392f"
+        }
+      ]
+    },
+    {
+      "path": "reference/05-exposure.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3286886,
+      "sha256": "d41c8602f9fdf7bc202e798f5b118f0e0f346a9663defa4e1ce36b85750829d7",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/05-exposure.prompt.txt",
+          "sha256": "b1d9d356cdad97c355fbcd84e64a3ae0db5de29c326c8e73d7796028b9116186"
+        }
+      ]
+    },
+    {
+      "path": "reference/06-amber.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 2099815,
+      "sha256": "443a01134b89259a7f7cdb28cea23e8acaf8183fbbb2156d090dd2d44823a10d",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/06-amber.prompt.txt",
+          "sha256": "7022e29dbbd22603b889bfb76301b6edb271ef3634e90b18cec2881512068223"
+        },
+        {
+          "path": "reference/06-amber.refinement.prompt.txt",
+          "sha256": "94141883d9b003869e6f64fbce5b970322a7f363ef4af203f3795c2048b00b1a"
+        }
+      ]
+    },
+    {
+      "path": "reference/07-scan.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 2639783,
+      "sha256": "1d290a86a03da53835e003c323ec5e7e8449baa8c54d4c31cc8d3a933ee7ddbd",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/07-scan.prompt.txt",
+          "sha256": "55caf9b359083b5ff29b5760f266b8827bb30c7e9ec3e271ec0ef10652dc899f"
+        }
+      ]
+    },
+    {
+      "path": "reference/08-reconstruct.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 2668110,
+      "sha256": "03624af1ffb810811e38c0e009bce5997b75ceed0b4f0cbc5fa469ef3e99f695",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/08-reconstruct.prompt.txt",
+          "sha256": "4c62e6fcc3a1f9c2bb43f0722c0b10e74eaa88e57b33ac46e0ebde19d16dd959"
+        }
+      ]
+    },
+    {
+      "path": "reference/09-archive.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 2494374,
+      "sha256": "3fc66547adc1b0ff4e70cc919b2061981e23d5419e7684075f2b09d5a5ab064c",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/09-archive.prompt.txt",
+          "sha256": "98cf6a53e6a85087a1678636d5429c110c9e6f797d1921d25cecd4ef31c2e65b"
+        }
+      ]
+    },
+    {
+      "path": "reference/10-deep-time.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 1825772,
+      "sha256": "615bd7154ceb90412497416ace0d830ec2bf5ddffc98c103bcae699e36300748",
+      "origin": "AI generated for this project",
+      "role": "visual-development reference; not used as website pixels",
+      "prompts": [
+        {
+          "path": "reference/10-deep-time.prompt.txt",
+          "sha256": "0008273298a083abf66d6292a705a5a88c1df68440a1e1128cfc7848531395bc"
+        }
+      ]
+    },
+    {
+      "path": "assets/ai-originals/amber.png",
+      "format": "PNG",
+      "width": 1584,
+      "height": 993,
+      "mode": "RGBA",
+      "bytes": 1484193,
+      "sha256": "41081511351dc402f1a156b33e34724f9658d916554dd92d47ef7f6957e80056",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/amber.prompt.txt",
+        "sha256": "83d871e5015e7a2dd3e5ed3aae7ba648fd49f8a02a325257cb2191fccc3b786e"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/amber.webp",
+      "format": "WEBP",
+      "width": 1584,
+      "height": 993,
+      "mode": "RGBA",
+      "bytes": 264126,
+      "sha256": "636dd53bab9ff54d6ecec43b8683ff6a5cb918c4af456e01b644d08149ff207f",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/amber.png",
+      "source_sha256": "41081511351dc402f1a156b33e34724f9658d916554dd92d47ef7f6957e80056",
+      "prompt": "assets/ai-originals/amber.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    },
+    {
+      "path": "assets/ai-originals/archive-drawer.png",
+      "format": "PNG",
+      "width": 1585,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 2394820,
+      "sha256": "60c17e11ddf984ec31b2c59e46fa96df6c38ab3e143f2e3ee5c7c1ee5f0750e7",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/archive-drawer.prompt.txt",
+        "sha256": "c13cd9d37b0ee64660024144681ab882c39e5ca614d8e5f425c3bd9fcd5fafe2"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/archive-drawer.webp",
+      "format": "WEBP",
+      "width": 1585,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 246554,
+      "sha256": "51ff6d743b04ffbea1b3b207f823757984a6a68f5e9f48e668c3152f24254972",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/archive-drawer.png",
+      "source_sha256": "60c17e11ddf984ec31b2c59e46fa96df6c38ab3e143f2e3ee5c7c1ee5f0750e7",
+      "prompt": "assets/ai-originals/archive-drawer.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    },
+    {
+      "path": "assets/ai-originals/exposure.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3022764,
+      "sha256": "cff25090bb7e272a2fe1ea54aee592d5dfbcce7bbd82439c705e994a19ee7488",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/exposure.prompt.txt",
+        "sha256": "67e8ae5dd8cd3831a0f7c143f23fa27f56d914e10f1e9e867920ef177b7e6cf2"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/exposure.webp",
+      "format": "WEBP",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 398618,
+      "sha256": "d2204b8a8cc51810d9cac489d4fc09cbb8437bcdc82765f9dc23e7fdcde4f638",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/exposure.png",
+      "source_sha256": "cff25090bb7e272a2fe1ea54aee592d5dfbcce7bbd82439c705e994a19ee7488",
+      "prompt": "assets/ai-originals/exposure.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    },
+    {
+      "path": "assets/ai-originals/hero-slab.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGBA",
+      "bytes": 2771846,
+      "sha256": "1e745c2332e579f73483e56511a2832d67d44b59bc69df358e0bc53379a4762e",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/hero-slab.prompt.txt",
+        "sha256": "b80418cfcf131b1a6706a677bd5b9166ba5979d0235967c5b6be4affb0c7198c"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/hero-slab.webp",
+      "format": "WEBP",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGBA",
+      "bytes": 432998,
+      "sha256": "79666a773e3191c5a6b34dc0b3ee4fc4ea795315053046dfdacc10ed7df891f6",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/hero-slab.png",
+      "source_sha256": "1e745c2332e579f73483e56511a2832d67d44b59bc69df358e0bc53379a4762e",
+      "prompt": "assets/ai-originals/hero-slab.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    },
+    {
+      "path": "assets/ai-originals/preservation.png",
+      "format": "PNG",
+      "width": 1585,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 3288509,
+      "sha256": "702a782869e2a791d0512bfab4a93dc4da58a1cc00f16025834351569fe2279d",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/preservation.prompt.txt",
+        "sha256": "a8a1aa358901c6d782df06a23b5d04eab69c4b6d97529b22d6bea26c143e330a"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/preservation.webp",
+      "format": "WEBP",
+      "width": 1585,
+      "height": 992,
+      "mode": "RGB",
+      "bytes": 505734,
+      "sha256": "5b6c8eca9ae2a453dd1a4af42fb071f9157aa0ab39242b59a625d27682673b47",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/preservation.png",
+      "source_sha256": "702a782869e2a791d0512bfab4a93dc4da58a1cc00f16025834351569fe2279d",
+      "prompt": "assets/ai-originals/preservation.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    },
+    {
+      "path": "assets/ai-originals/specimen.png",
+      "format": "PNG",
+      "width": 1585,
+      "height": 992,
+      "mode": "RGBA",
+      "bytes": 2681368,
+      "sha256": "4fd52038d68b34964f3462f99df7fb8f9a17dc960edc59e3ad65c19ddcdb21c1",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/specimen.prompt.txt",
+        "sha256": "c744a85d6e1ca1b115637cf4820b81c330b9786107e2a42dc8f7d6142f2b842a"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/specimen.webp",
+      "format": "WEBP",
+      "width": 1585,
+      "height": 992,
+      "mode": "RGBA",
+      "bytes": 458204,
+      "sha256": "2f272a55c6bc8f7ad4a43d5f10fbc9e209ad8a9738216a69d38ced8f655c75c2",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/specimen.png",
+      "source_sha256": "4fd52038d68b34964f3462f99df7fb8f9a17dc960edc59e3ad65c19ddcdb21c1",
+      "prompt": "assets/ai-originals/specimen.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    },
+    {
+      "path": "assets/ai-originals/strata.png",
+      "format": "PNG",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGBA",
+      "bytes": 4418705,
+      "sha256": "acf971d29e5cb26bedce77e7ed16e54d7bacdb361b2e1dd5825376b47ace352a",
+      "origin": "AI generated for this project",
+      "role": "text-free production original",
+      "prompt": {
+        "path": "assets/ai-originals/strata.prompt.txt",
+        "sha256": "ee5ead20794e8d22238bdbbedb259562a40b2fb41a8669b02734b0f895233a51"
+      },
+      "retained": "Original PNG pixels and transparency retained; no manual image retouching"
+    },
+    {
+      "path": "assets/images/strata.webp",
+      "format": "WEBP",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGBA",
+      "bytes": 958548,
+      "sha256": "7eb457823b2cf3882816714d9336f009028b19da66ac248f7f2165d81478f74d",
+      "origin": "AI-generated production derivative",
+      "role": "website production material",
+      "source": "assets/ai-originals/strata.png",
+      "source_sha256": "acf971d29e5cb26bedce77e7ed16e54d7bacdb361b2e1dd5825376b47ace352a",
+      "prompt": "assets/ai-originals/strata.prompt.txt",
+      "transformation": "ffmpeg libwebp, quality 91, compression_level 6; original dimensions, no cropping; source alpha retained when present",
+      "metadata": "Exact generation prompt embedded in WebP metadata; verified not to change decoded pixels"
+    }
+  ],
+  "procedural_records": [
+    "data/volume-metadata.json",
+    "data/verification.json",
+    "models/procedural-parameters.json",
+    "data/RENDERING.md"
+  ],
+  "third_party_assets": [
+    {
+      "path": "vendor/lenis.min.js",
+      "name": "Lenis 1.3.26",
+      "bytes": 18722,
+      "sha256": "53195c9797e7ce7bf9d7fa9242b08209e57f46de4c9dac126a6494fa780e3346",
+      "license": "licenses/Lenis-MIT.txt"
+    },
+    {
+      "path": "assets/fonts/bodoni-moda.woff2",
+      "name": "Bodoni Moda",
+      "bytes": 14528,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "license": "licenses/Bodoni-Moda-OFL.txt"
+    },
+    {
+      "path": "assets/fonts/cormorant-garamond.woff2",
+      "name": "Cormorant Garamond",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "license": "licenses/Cormorant-Garamond-OFL.txt"
+    },
+    {
+      "path": "assets/fonts/cormorant-garamond-italic.woff2",
+      "name": "Cormorant Garamond Italic",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "license": "licenses/Cormorant-Garamond-OFL.txt"
+    },
+    {
+      "path": "assets/fonts/manrope.woff2",
+      "name": "Manrope",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "license": "licenses/Manrope-OFL.txt"
+    },
+    {
+      "path": "models/marching-cubes-table.json",
+      "name": "Three.js Marching Cubes lookup table",
+      "bytes": 10740,
+      "sha256": "d525cc98d43a140125703477853fccb96fc26fe501ae371bd99d2f7ffda1b154",
+      "license": "models/MARCHING_CUBES_LICENSE.txt"
+    }
+  ],
+  "embedded_font": {
+    "name": "Droid Sans Fallback Regular",
+    "container": "docs/VISUAL-BIBLE.html",
+    "role": "Offline Chinese reading in the Visual Bible only",
+    "format": "WOFF",
+    "bytes": 75564,
+    "sha256": "294deef4e356886f56561079ec0633313d702afb5f8a48eb4faf6badfe6adf49",
+    "source": "Runtime MuPDF / PyMuPDF CJK font resource; Android Droid font",
+    "modification": "Subset to the 750 characters needed by the handbook; converted to WOFF; no glyph redesign",
+    "license": "licenses/Droid-Sans-Fallback-Apache.txt",
+    "embedded_notice": "docs/VISUAL-BIBLE.html#font-license"
+  },
+  "third_party_notices": [
+    "licenses/Lenis-MIT.txt",
+    "licenses/Bodoni-Moda-OFL.txt",
+    "licenses/Cormorant-Garamond-OFL.txt",
+    "licenses/Manrope-OFL.txt",
+    "licenses/Droid-Sans-Fallback-Apache.txt",
+    "models/MARCHING_CUBES_LICENSE.txt"
+  ],
+  "research": "docs/RESEARCH.md; references support terminology, not image or numerical sourcing"
+}

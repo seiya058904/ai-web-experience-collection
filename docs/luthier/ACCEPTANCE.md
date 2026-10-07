@@ -1,0 +1,27 @@
+# LUTHIER — Collection acceptance
+
+The supplied LUTHIER archive passed ZIP and source pre-audit before import: 118 safe entries, one top-level directory, no traversal, absolute path, symbolic link, duplicate/case collision or nested archive. All 117 supplied SHA256SUMS records match. Source and geometry retain the supplied scoped MIT license, fonts retain OFL notices, and generated imagery is identified separately. Original ZIP remains outside the repository.
+
+The original runtime was checked with existing Collection dependencies in a fresh external directory. Its nine chapters at 1440×900 and 390×844, material/structure/bow/resonance/space controls, silent default, opt-in running audio and suspended mute passed. Credits, refresh and reduced-mode checks passed after correcting a driver that initially tried to select the Return-only Credits action from Sound as Space. That driver error is not a product defect. The supplied read-only verification passed nine invariant groups, 27 image files, 3,650 mapping samples and 342 drawing inputs.
+
+The integrated dev route passed 28 recorded check groups at the same two sizes, including all nine chapter destinations, primary controls, actual sound state, refresh, reduced-mode toggles and fresh OS-reduced deep entry. Twenty current full viewport frames were captured and visually reviewed; no pageerror, failed media request, missing image or horizontal overflow was observed. The scoped Collection TypeScript 5.9.3 check passed without dependency updates.
+
+Additional six-size, wheel, resize, native dialog, Collection return, forced WebGL fallback and JavaScript-disabled native return results are recorded in the current external intake evidence. Root production build, project-path checks and published byte identity are separate gates, to be recorded by Collection release closeout. `UPSTREAM-VALIDATION.md` is the supplied historical report, not a claim that its device/browser checks were rerun here.
+
+Physical touch, iOS/Safari, high-refresh hardware, speaker listening quality and a prolonged memory soak are unverified. Current phone results are Chromium viewport emulation; no FPS certification is made.
+
+Final dev follow-up passed 12 further groups: all four extra sizes, actual opposite-input reversal, both resize directions, Index background lock, Collection return, every reduced chapter, Craft fallback under forced WebGL rejection, and an actual JavaScript-disabled return. Raw CDP recorded a genuinely hidden document with no frame/position advance, then native Back with `pageshow.persisted=true` and scrollY 1199 retained. The final HTML-owned stylesheet keeps the no-script notice styled; its native return was clicked successfully. The companion GLB header/length and embedded image records were checked (64 meshes, 12 materials, three embedded images, no external image URI). Imported byte-sensitive source media/fonts/notices remain SHA-256 identical.
+
+## Production project-path preview
+
+The final production files were exercised at `http://127.0.0.1:4195/ai-web-experience-collection/`. This is local production-output acceptance; it does not claim live GitHub Pages deployment.
+
+LUTHIER passed 28 main groups with all nine movements at desktop/phone sizes, primary wood/inside/bow/resonance/space controls, sound silent before activation and running/suspended after opt-in/mute, credits, refresh and reduced motion. FOSSIL passed 58 main groups with all ten movements, preservation/reveal/brush/section/reconstruction controls, native dialogs, local JSON record, refresh and reduced deep links. No main-driver page or resource errors occurred. Both sets of complete chapter frames were actually viewed.
+
+The shared production add-on passed 26 groups: desktop/phone homepage entry, direct refresh and native return, JavaScript-disabled native return and forced WebGL fallback for both works; FOSSIL keyboard Outline/Volume and section Home/End also passed. Twelve HTTP resources match their local public bytes by SHA-256: hero plates, fonts, LUTHIER companion GLB, FOSSIL embedded volume JavaScript, raw density and OBJ, plus both LICENSE and NOTICE files. The unbundled classic FOSSIL data asset initializes Scan/Reconstruct successfully and remains byte preserved. Its synthetic origin remains disclosed.
+
+Both works passed six-size entry/middle checks at 390 × 844, 768 × 1024, 1440 × 900, 1920 × 1080, 2560 × 1440 and 3840 × 2160 (12 work/size groups; 24 complete frames inspected), without horizontal overflow, broken media or page/resource errors. Forced fallback captures were inspected. Physical touch, iOS/Safari, high-refresh hardware, FPS and speaker-quality certification remain unverified.
+
+The Collection's central production lifecycle run recorded a real native tab switch with `document.hidden=true`: LUTHIER's frame count stayed at 938 and scrollY stayed at 600 throughout the hidden interval. Restoration resumed frames and subsequent input reached scrollY 1200. Native Back restored through BFCache (`pageshow.persisted=true`) at scrollY 1200, with zero position difference. All five lifecycle assertions passed. This is recorded in the external release evidence `collection-repair-intake-142bd97f/lifecycle-results.json`; it does not claim live Pages verification.
+
+Desktop Craft emitted an upstream Three.js shader constant-precision warning (X4122). The actual model frame rendered and all controls/resources completed; the warning is retained in the external production log. It is not counted as a demonstrated rendering failure.

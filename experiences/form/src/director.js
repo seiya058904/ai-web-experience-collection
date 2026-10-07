@@ -50,6 +50,13 @@ export const KEYFRAMES = [
 export function chapterAt(progress) { return Math.min(7, Math.floor(clamp(progress, 0, 8))); }
 export function chapterProgress(progress) { return clamp(progress - chapterAt(progress)); }
 
+// Keep Light's complete lamp in a narrow desktop frame. The close material
+// and section studies retain their authored scale; portrait has its own pose.
+export function cameraSpan(pose, aspect, mobile = false) {
+  const widthFit = mobile ? 1 : Math.max(1, 1.6 / Math.max(.1, aspect));
+  return pose.span * mix(1, widthFit, pose.light);
+}
+
 export function samplePose(progress, mobile = false, reduced = false) {
   const p = clamp(progress, 0, 8);
   const q = reduced ? (chapterAt(p) === 0 ? .62 : chapterAt(p) + .40) : p;

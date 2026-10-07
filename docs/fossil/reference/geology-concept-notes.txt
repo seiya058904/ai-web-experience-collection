@@ -1,0 +1,23 @@
+GEOLOGY SCENE REFERENCE EXTRACTION
+
+All three full viewport concept images are 1586 x 992 PNG. Generated using the built-in imagegen tool. No app code is present in this contribution. Scene references include typography and are not production background assets. Rebuild typography and live controls separately; do not crop a UI composition to produce a production asset.
+
+02 STRATA — 02-strata.png
+Primary image prompt: 02-strata.prompt.txt.
+Cream headline region occupies the upper 32–38% of the viewport. Large fine serif / italic pairing is the organizing gesture, around 92 px in the reference. Lower rock fills the width with interleaved cream limestone and dark shale, a naturally irregular upper edge, and prominent raking light. An embedded shell silhouette remains subtle, centred approximately 68% across / 69% down. Right scale is narrow, hairline, and separated from the frame edge by about 45 px. Preserve the scale as live UI and use relative ordinal bands only; the image is an artistic geological interpretation, without measured dates. Wordmark/INDEX baseline sits around 41 px down, headline starts around 149 px down.
+
+04 PRESERVATION — 04-preservation.png
+Primary image prompt: 04-preservation.prompt.txt.
+Cream stone folio runs edge to edge, with the left 36% quiet and the ammonite dominating the right. Ammonite spiral centre is approximately 65% across / 42% down. Very high relief on the left and lower shell edge transitions into a flatter imprint on the right. The fossil reaches the upper frame and the mode baseline is around 930 px down. Main headline begins around 245 px down, fine serif at approximately 108 px with elegant italic secondary line. Four lowercase/title-case preservation labels sit in a single bottom row with small separators. Rebuild as keyboard-operable text controls, with room to wrap on mobile. The exact concept wordmark differs slightly from Strata; unify in implementation.
+
+06 AMBER — 06-amber.png
+Initial image prompt: 06-amber.prompt.txt.
+Final targeted edit prompt: 06-amber.refinement.prompt.txt.
+The amber uses an immense irregular silhouette from roughly 32% across to the right edge and from 8% to 90% down; transmitted warm honey light supplies the focal intensity. Left background stays nearblack with serif/italic title around 100 px beginning approximately 280 px down. Note is around 20 px, two lines, separated from title by about 40 px. Final edit replaces the original too-recognizable bug-like inclusion with a tiny indeterminate organic fleck at approximately 69% across / 46% down. Keep scientific framing modest and preserve an identifiable quiet left text zone in the production composition. No measured-specimen or DNA claim is present.
+
+Shared extraction decisions:
+- Use real live typography: thin editorial serif with a true italic, tiny tracked sans folio labels, consistent FOSSIL wordmark and INDEX + navigation.
+- Use a common 56–64 px desktop side margin and a sparse top bar. Scale typography responsively rather than scaling a whole viewport image.
+- Keep headings within clear material/negative-space regions; material occupies most of the remaining field.
+- No cards, pills, dense overlays, pop-up educational callouts, or decorative icon system.
+- Reference textures are intentionally tactile and photographic. Production geology, ammonite, and amber need separate assets or models with text-free compositions, never crops of these reference frames.

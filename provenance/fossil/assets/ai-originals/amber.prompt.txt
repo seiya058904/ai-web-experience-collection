@@ -1,0 +1,6 @@
+Use case: background-extraction
+Asset type: production transparent museum amber object asset for an immersive website.
+Edit target: the supplied finished AMBER viewport concept. Extract only the polished irregular honey amber piece.
+Remove all typography, wordmark, navigation, labels, catalog note, black background, floor and cast shadow. Replace everything outside the amber silhouette with genuine transparency (native alpha), including the complete left text region.
+Preserve the amber specimen itself faithfully: exactly the same irregular organic outline, scale, framing, honey gold transmitted-light appearance, internal fractures, tiny indeterminate organic fleck, natural surface roughness and polished edges. Do not introduce a recognizable insect, legs, wings, or new inclusions. Do not darken or flatten the amber's transmitted light.
+Keep the same full landscape canvas dimensions and specimen placement: large amber starts approximately 32% across, ends close to the right edge, reaches from 8% to 90% down. The left third and all spaces around the amber must be transparent padding. Crisp, natural anti-aliased silhouette. No pedestal, no shadow, no text, no labels, no watermark, no new objects. Output true RGBA transparency, not checkerboard artwork and not a solid black rectangle.

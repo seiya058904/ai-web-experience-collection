@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "seed": 20261007,
+    "turns": 3.3,
+    "initial_spiral_radius": 0.049,
+    "final_spiral_radius": 0.78,
+    "radial_halfwidth_ratio": 0.402,
+    "axial_halfwidth_ratio": 0.9,
+    "rib_frequency_per_turn": 50,
+    "septa_mean_angular_interval": 0.245,
+    "terminal_unseptated_angle": 0.48,
+    "isosurface_density": 112.0,
+    "mesh_grid_stride": 1,
+    "units": "unitless authored model coordinates; not a measured scale"
+  },
+  "missing_patches": [
+    {
+      "name": "upper outer whorl loss",
+      "theta_before_terminal": 1.38,
+      "angular_halfwidth": 0.145,
+      "radial_fraction_min": -0.56,
+      "z_min": 0.035,
+      "meaning": "authored missing material, not inferred anatomy"
+    },
+    {
+      "name": "lower rim loss",
+      "theta_before_terminal": 3.79,
+      "angular_halfwidth": 0.105,
+      "radial_fraction_min": 0.24,
+      "z_min": -0.045,
+      "meaning": "authored missing material, not inferred anatomy"
+    }
+  ],
+  "source_field_sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+  "mesh": {
+    "method": "marching cubes of stored uint8 volume",
+    "isovalue": 112.0,
+    "grid_stride": 1,
+    "vertices": 190744,
+    "triangles": 378128,
+    "bounds": [
+      [
+        -0.8070915341377258,
+        -0.9932183027267456,
+        -0.3132292628288269
+      ],
+      [
+        0.9267435073852539,
+        0.6535578966140747,
+        0.31591951847076416
+      ]
+    ],
+    "includes": "shell walls and chamber septa; ordinary low-density infill excluded",
+    "source_field_sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553"
+  }
+}

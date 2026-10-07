@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080909">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="An immersive material study. Hold the heat. Blacken the surface. Let fire become form.">
+  <title>MAGMA — Stone Before Stone</title>
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%magma/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:title" content="MAGMA — Stone Before Stone">
+  <meta property="og:description" content="Nine imagined volcanic states. Hold the heat. Blacken the surface. Let fire become form.">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%magma/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%magma/social.jpg">
+  <meta property="og:image:alt" content="MAGMA's actual live material surface: a black stone with a narrow internal glowing seam">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MAGMA — Stone Before Stone">
+  <meta name="twitter:description" content="An imagined material study across nine volcanic states.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%magma/social.jpg">
+  <meta name="twitter:image:alt" content="MAGMA's actual live black-stone surface with its internal glowing seam">
+  <link rel="stylesheet" href="../../experiences/shared/collection-return.css">
+
+  <link rel="icon" type="image/svg+xml" href="/magma/assets/mark.svg">
+  <link rel="preload" href="/magma/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../experiences/magma/src/styles.css">
+  <script type="module" src="../../experiences/magma/src/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#study-index" data-open-index>Open chapter index</a>
+  <div class="stage" aria-hidden="true">
+    <picture id="poster">
+      <source id="poster-mobile" media="(max-width: 700px)" srcset="/magma/materials/pressure-mobile.webp">
+      <img id="poster-image" src="/magma/materials/pressure.webp" alt="" fetchpriority="high" decoding="async" width="1672" height="941">
+    </picture>
+    <canvas id="material-canvas"></canvas>
+  </div>
+
+  <header class="masthead">
+    <a class="wordmark" href="#pressure" data-go="0" aria-label="MAGMA, return to the beginning">MAGMA</a>
+    <div class="header-actions">
+      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="text-button" id="index-toggle" type="button" aria-haspopup="dialog" aria-controls="study-index">Index</button>
+      <button class="text-button sound-toggle" id="sound-toggle" type="button" aria-pressed="false">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="sound-label">Sound off</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="chapter-rail" aria-label="Jump to a material state">
+    <a href="#pressure" data-go="0" aria-label="01, Pressure" aria-current="step"><span>Pressure</span><i></i></a>
+    <a href="#molten" data-go="1" aria-label="02, Molten"><span>Molten</span><i></i></a>
+    <a href="#flow" data-go="2" aria-label="03, Flow"><span>Flow</span><i></i></a>
+    <a href="#skin" data-go="3" aria-label="04, Skin"><span>Skin</span><i></i></a>
+    <a href="#crack" data-go="4" aria-label="05, Crack"><span>Crack</span><i></i></a>
+    <a href="#glass" data-go="5" aria-label="06, Glass"><span>Glass</span><i></i></a>
+    <a href="#fracture" data-go="6" aria-label="07, Fracture"><span>Fracture</span><i></i></a>
+    <a href="#stone" data-go="7" aria-label="08, Crystal and stone"><span>Crystal · Stone</span><i></i></a>
+    <a href="#sealed" data-go="8" aria-label="09, Sealed"><span>Sealed</span><i></i></a>
+  </nav>
+
+  <main id="story" aria-label="From heat to stone">
+    <section class="chapter chapter-pressure" id="pressure" data-scene="0" aria-labelledby="pressure-title" style="--scene-image:url('%BASE_URL%magma/materials/pressure.webp')">
+      <div class="chapter-screen is-active">
+        <div class="hero-type">
+          <h1 id="pressure-title" tabindex="-1">MAGMA</h1>
+          <p class="hero-subtitle"><span>Stone before</span> <span>stone.</span></p>
+        </div>
+        <p class="hero-note">A study of matter becoming still.</p>
+        <a class="begin-link" href="#molten" data-go="1"><span>Begin the descent</span><svg viewBox="0 0 28 46" fill="none" aria-hidden="true"><path d="M14 1v42M2 31l12 12 12-12"/></svg></a>
+      </div>
+    </section>
+
+    <section class="chapter chapter-molten" id="molten" data-scene="1" aria-labelledby="molten-title" style="--scene-image:url('%BASE_URL%magma/materials/molten.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="molten-title" tabindex="-1"><span>Nothing has settled</span><span>into a shape.</span></h2><p>Edges yield.<br>The body remains.</p></div>
+        <p class="scene-whisper">A body still capable of flow.</p>
+      </div>
+    </section>
+
+    <section class="chapter chapter-flow" id="flow" data-scene="2" aria-labelledby="flow-title" style="--scene-image:url('%BASE_URL%magma/materials/flow.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="flow-title" tabindex="-1"><span>Weight finds</span><span>its own way.</span></h2><p>A seam learns to move.</p></div>
+        <p class="scene-whisper">Slow. Dense. Unfinished.</p>
+      </div>
+    </section>
+
+    <section class="chapter chapter-skin" id="skin" data-scene="3" aria-labelledby="skin-title" style="--scene-image:url('%BASE_URL%magma/materials/skin.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="skin-title" tabindex="-1"><span>The surface</span><span>darkens first.</span></h2><p>A cooling crust. A living interior.</p></div>
+        <div class="action-dock"><button class="material-action hold-action" id="cool-control" type="button" aria-pressed="false" aria-describedby="cool-help"><span id="cool-label">Hold to cool</span><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="16"/><path d="M18 10v16M10 18h16"/></svg><span class="action-progress" aria-hidden="true"><i></i></span></button><span class="sr-only" id="cool-help">Hold with a pointer or Space. Press Enter to toggle cooling.</span></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-crack" id="crack" data-scene="4" aria-labelledby="crack-title" style="--scene-image:url('%BASE_URL%magma/materials/crack.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="crack-title" tabindex="-1"><span>What cools,</span><span>contracts.</span></h2><p>A quiet surface.<br>A seam within.</p></div>
+        <div class="action-dock"><button class="material-action" id="crack-control" type="button"><span>Open the seam</span><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M14 7l-5 11 5 11M22 7l5 11-5 11"/></svg></button></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-glass" id="glass" data-scene="5" aria-labelledby="glass-title" style="--scene-image:url('%BASE_URL%magma/materials/glass.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="glass-title" tabindex="-1"><span>Darkness,</span><span>made glass.</span></h2><p>Another cooling history. The light is no longer inside.<br>It returns from the surface.</p></div>
+        <div class="action-dock"><p class="light-instruction"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="16"/><circle cx="18" cy="18" r="1" fill="currentColor"/></svg><span class="pointer-copy">Move to catch the light</span><span class="touch-copy">Touch to catch the light</span></p></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-fracture" id="fracture" data-scene="6" aria-labelledby="fracture-title" style="--scene-image:url('%BASE_URL%magma/materials/fracture.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="fracture-title" tabindex="-1"><span>The break leaves</span><span>a curve behind.</span></h2><p>An edge. A hollow. A trace.</p></div>
+        <div class="action-dock"><button class="material-action" id="fracture-control" type="button" aria-pressed="false"><span id="fracture-label">Trace the fracture</span><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 28c0-13 7-20 20-20M15 28c0-8 5-13 13-13M22 28c0-4 2-6 6-6"/></svg></button></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-stone" id="stone" data-scene="7" aria-labelledby="stone-title" style="--scene-image:url('%BASE_URL%magma/materials/stone.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="stone-title" tabindex="-1"><span>Elsewhere,</span><span>a finer order.</span></h2><p>Minerals hold<br>what motion once carried.</p></div>
+        <p class="scene-whisper">The grain of a different cooling history.</p>
+      </div>
+    </section>
+
+    <section class="chapter chapter-sealed" id="sealed" data-scene="8" aria-labelledby="sealed-title" style="--scene-image:url('%BASE_URL%magma/materials/sealed.webp')">
+      <div class="chapter-screen">
+        <div class="scene-copy"><h2 id="sealed-title" tabindex="-1"><span>The light leaves.</span><span>The form remains.</span></h2><p id="sealed-note">What moved is held.</p></div>
+        <div class="end-actions"><button class="text-button" type="button" data-open-about>About the study</button><a class="replay-link" href="#pressure" data-go="0"><span>Return to the heat</span><svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M6 22L22 6M6 6h16v16"/></svg></a></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="chapter-caption" aria-hidden="true"><span id="chapter-number">01 / 09</span><span class="caption-rule"></span><span id="chapter-name">PRESSURE</span></div>
+  <p class="sr-only" id="chapter-announcement" aria-live="polite" aria-atomic="true"></p>
+  <p class="sr-only" id="status-message" role="status" aria-live="polite"></p>
+
+  <dialog id="study-index" aria-labelledby="index-title" data-lenis-prevent>
+    <div class="dialog-top"><a class="wordmark" href="#pressure" data-go="0">MAGMA</a><button class="close-dialog text-button" type="button" aria-label="Close chapter index"><span>Close</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="index-layout">
+      <div class="index-intro"><h2 id="index-title">Nine states.<br>One becoming.</h2><p>Follow the heat.<br>Stay with the surface.</p><button class="about-link text-button" type="button" data-open-about>About the study <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16L16 4M4 4h12v12"/></svg></button></div>
+      <div class="index-right"><ol class="index-list">
+        <li><a href="#pressure" data-go="0"><span class="index-number">01</span><span>Pressure</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#molten" data-go="1"><span class="index-number">02</span><span>Molten</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#flow" data-go="2"><span class="index-number">03</span><span>Flow</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#skin" data-go="3"><span class="index-number">04</span><span>Skin</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#crack" data-go="4"><span class="index-number">05</span><span>Crack</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#glass" data-go="5"><span class="index-number">06</span><span>Glass</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#fracture" data-go="6"><span class="index-number">07</span><span>Fracture</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#stone" data-go="7"><span class="index-number">08</span><span>Crystal · Stone</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+        <li><a href="#sealed" data-go="8"><span class="index-number">09</span><span>Sealed</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></li>
+      </ol><div class="index-settings"><button class="text-button" id="motion-toggle" type="button" aria-pressed="true">Motion on</button><span>Scroll, or choose a state.</span></div></div>
+    </div>
+  </dialog>
+
+  <dialog id="about-study" aria-labelledby="about-title" data-lenis-prevent>
+    <div class="dialog-top"><span class="wordmark">MAGMA</span><button class="close-dialog text-button" type="button" aria-label="Close about the study"><span>Close</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <div class="about-layout"><div><h2 id="about-title">Heat becomes<br>form.</h2><p class="about-manifesto">Hold the heat.<br>Blacken the surface.<br>Let fire become form.</p></div><div class="about-body">
+      <h3>About the study</h3><p>MAGMA is an imagined material study across volcanic states. A fissure leads from the weight of molten rock to the quiet of a sealed black surface.</p>
+      <p>The sequence compresses geological time. Composition and cooling histories differ: obsidian and crystalline basalt are related observations, rather than compulsory stages of the same specimen.</p>
+      <h3>Image, motion, sound</h3><p>Original AI-generated material studies meet authored cooling, flow, fracture geometry and reflected light. The transformations are artistic, not measured physical simulations. The optional sound is synthesized for this work.</p>
+      <h3>Grounded in observation</h3><ul class="source-list"><li><a href="https://www.usgs.gov/observatories/hvo/news/volcano-watch-how-do-lava-flows-cool-and-how-long-does-it-take" target="_blank" rel="noopener noreferrer">USGS — How lava flows cool <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 15L15 3M3 3h12v12"/></svg></a></li><li><a href="https://www.usgs.gov/observatories/yvo/news/yellowstones-tool-making-lava-flows" target="_blank" rel="noopener noreferrer">USGS — Volcanic glass and fracture <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 15L15 3M3 3h12v12"/></svg></a></li><li><a href="https://www.nps.gov/subjects/geology/igneous.htm" target="_blank" rel="noopener noreferrer">NPS — Igneous materials <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 15L15 3M3 3h12v12"/></svg></a></li></ul>
+      <p class="credits-note">Archivo by Omnibus-Type · Lenis by Darkroom Engineering<br>All image assets and sound run locally.<br><a href="%BASE_URL%magma/NOTICE.md" target="_blank" rel="noopener noreferrer">Asset and license notices</a></p>
+      <button class="text-button back-to-index" type="button" data-open-index>Explore the nine states</button>
+    </div></div>
+  </dialog>
+
+  <noscript><div class="no-script-note">This is the image study. Enable JavaScript for the material transformations.</div></noscript>
+</body>
+</html>

@@ -52,7 +52,7 @@ em { font-weight: inherit; }
 .journey { position: relative; }
 .stage { background: var(--ink); position: relative; min-height: 100svh; overflow: clip; isolation: isolate; }
 .is-enhanced .journey { height: 1300svh; }
-.is-enhanced .stage { height: 100svh; position: sticky; top: 0; min-height: 0; overflow: hidden; }
+.is-enhanced .stage { height: 100svh; position: sticky; top: 0; min-height: 0; overflow: clip; }
 .scene-floor { position: absolute; inset: 0; background: radial-gradient(ellipse at 75% 57%, rgba(63, 62, 57, .15) 0%, transparent 60%); z-index: -1; }
 .mechanism { position: absolute; inset: 0; width: 100%; height: 100%; display: block; z-index: 1; }
 .watch-frame { position: absolute; inset: 0; z-index: 3; pointer-events: none; }

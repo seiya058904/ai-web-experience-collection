@@ -10,6 +10,7 @@ export interface MissionController {goTo:(chapter:number)=>void;setLocked:(locke
 export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,onReduced:(value:boolean)=>void):MissionController {
   gsap.registerPlugin(ScrollTrigger);
   const track=root.querySelector<HTMLElement>('[data-scroll-track]')!;
+  const readingSection=root.querySelector<HTMLElement>('.mission-reading')!;
   const viewport=root.querySelector<HTMLElement>('.mission-viewport')!;
   const canvas=root.querySelector<HTMLCanvasElement>('[data-universe]')!;
   const chapters=Array.from(root.querySelectorAll<HTMLElement>('[data-chapter]'));
@@ -27,6 +28,11 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   let destination:Destination='mars';let destinationMix=0;let subsystem:Subsystem='propulsion';let lastSpeed='',lastAltitude='';let previousY=-1;let dirty=true;let lastStamp=0;let sceneVisible=true;let navigationGoal:number|null=null;let navigationSerial=0;
   const audio=new MissionAudio();
   let pendingReadyMeasure=false;
+  let positionTimer:ReturnType<typeof setTimeout>|undefined;
+  const positionKey='orbitalPosition';
+  const navigationType=(performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming|undefined)?.type;
+  const savedPosition=history.state?.[positionKey] as {progress:number;hash:string;readingOffset?:number}|undefined;
+  const restorePosition=(navigationType==='reload'||navigationType==='back_forward')&&savedPosition?.hash===location.hash&&Number.isFinite(savedPosition?.progress)&&savedPosition!.progress>=0&&savedPosition!.progress<=1?savedPosition:undefined;
   const lenis=new Lenis({autoRaf:false,smoothWheel:!reduced,lerp:.105,syncTouch:false,wheelMultiplier:1,anchors:false,autoResize:true});
   const scene:FlightScene|null=createFlightScene(canvas,status=>{root.dataset.renderer=status;dirty=true;lastStamp=-1;});
   if(!scene)root.dataset.renderer='fallback';
@@ -35,13 +41,18 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
 
   function measure(preserve=true){
     if(destroyed)return;
-    const previousProgress=progress;const resumeNavigation=navigationGoal;
+    // Native restoration can precede the next ticker/ScrollTrigger update.
+    // Preserve the document's actual position, not a cached scene progress.
+    const previousProgress=measured?clamp(window.scrollY/totalTravel)*8:progress;const resumeNavigation=navigationGoal;
+    const readingOffset=root.dataset.reading==='true'?Math.max(0,-readingSection.getBoundingClientRect().top):null;
     const h=viewport.clientHeight;const w=viewport.clientWidth;
     step=Math.max(w<=760?760:1050,h*(reduced?1.06:1.65));totalTravel=step*CHAPTERS.length;
     track.style.height=(totalTravel+h)+'px';
     scene?.resize(w,h);lenis.resize();
     if(measured&&preserve&&!location.hash.includes('mission-reading'))lenis.scrollTo(previousProgress/8*totalTravel,{immediate:true,force:true});
-    measured=true;ScrollTrigger.refresh();dirty=true;lastStamp=-1;if(resumeNavigation!==null)goTo(resumeNavigation);
+    measured=true;ScrollTrigger.refresh();
+    if(readingOffset!==null)lenis.scrollTo(readingSection.getBoundingClientRect().top+window.scrollY+readingOffset,{immediate:true,force:true});
+    dirty=true;lastStamp=-1;if(resumeNavigation!==null)goTo(resumeNavigation);
   }
   measure(false);
   const trigger=ScrollTrigger.create({trigger:track,start:'top top',end:()=>'+='+totalTravel,invalidateOnRefresh:true,onUpdate:self=>{progress=clamp(self.progress)*8;dirty=true;}});
@@ -108,19 +119,43 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   window.addEventListener('wheel',cancelNavigation,{passive:true,capture:true});window.addEventListener('touchstart',cancelNavigation,{passive:true,capture:true});window.addEventListener('pointerdown',cancelNavigation,{passive:true,capture:true});window.addEventListener('keydown',navigationKey,true);
   function resize(){clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>measure(true),160);}
   function visibility(){audio.visibility(document.hidden||!sceneVisible);if(!document.hidden){lenis.scrollTo(window.scrollY,{immediate:true,force:true});ScrollTrigger.update();dirty=true;lastStamp=-1;}}
-  function readingChange(){if(destroyed)return;lenis.resize();ScrollTrigger.refresh();if(location.hash==='#mission-reading'){const reading=root.querySelector<HTMLElement>('#mission-reading')!;lenis.scrollTo(reading,{immediate:true,force:true});reading.querySelector<HTMLElement>('h2')?.focus({preventScroll:true});}}
-  function readingFocus(event:FocusEvent){if((event.target as HTMLElement)?.closest('#mission-reading'))lenis.resize();}
+  function readingChange(){
+    if(destroyed)return;
+    // React inserts this section after initial fragment resolution. Its visible
+    // state must not depend on the browser having assigned :target beforehand.
+    root.dataset.reading=String(location.hash==='#mission-reading');
+    lenis.resize();ScrollTrigger.refresh();
+    if(location.hash==='#mission-reading'){const reading=root.querySelector<HTMLElement>('.mission-reading')!;const target=reading.getBoundingClientRect().top+window.scrollY;lenis.scrollTo(target,{immediate:true,force:true});reading.querySelector<HTMLElement>('h2')?.focus({preventScroll:true});}
+  }
+  function savePosition(){
+    if(destroyed)return;
+    const reading=root.querySelector<HTMLElement>('.mission-reading')!;
+    const position={progress:clamp(window.scrollY/totalTravel),hash:location.hash,readingOffset:location.hash==='#mission-reading'?Math.max(0,-reading.getBoundingClientRect().top):undefined};
+    try{history.replaceState({...history.state,[positionKey]:position},'');}catch{/* Native restoration remains available in restricted embeds. */}
+  }
+  function queuePositionSave(){clearTimeout(positionTimer);positionTimer=setTimeout(savePosition,120);}
+  function readingFocus(event:FocusEvent){if((event.target as HTMLElement)?.closest('.mission-reading'))lenis.resize();}
   window.addEventListener('hashchange',readingChange);root.addEventListener('focusin',readingFocus);
+  window.addEventListener('pagehide',savePosition);
+  window.addEventListener('scroll',queuePositionSave,{passive:true});
   function motionChange(){setReduced(reducedMedia.matches);}
   const sizeObserver=new ResizeObserver(resize);sizeObserver.observe(viewport);
   window.addEventListener('resize',resize);document.addEventListener('visibilitychange',visibility);reducedMedia.addEventListener('change',motionChange);
   void document.fonts.ready.then(()=>{if(!destroyed)pendingReadyMeasure=true;});
   void Promise.allSettled(Array.from(root.querySelectorAll<HTMLImageElement>('.scene-background')).map(img=>img.decode())).then(()=>{if(!destroyed)pendingReadyMeasure=true;});
+  if(location.hash==='#mission-reading')readingChange();
+  if(restorePosition){
+    const reading=root.querySelector<HTMLElement>('.mission-reading')!;
+    const target=location.hash==='#mission-reading'&&Number.isFinite(restorePosition.readingOffset)
+      ?reading.getBoundingClientRect().top+window.scrollY+restorePosition.readingOffset!
+      :restorePosition.progress*totalTravel;
+    lenis.scrollTo(target,{immediate:true,force:true});ScrollTrigger.update();dirty=true;
+  }
   function setReduced(value:boolean){reduced=value;root.dataset.reduced=String(value);onReduced(value);lenis.options.smoothWheel=!value;measure(true);dirty=true;lastStamp=-1;}
   function goTo(index:number){
-    const i=clamp(Math.round(index),0,7);if(location.hash==='#mission-reading'){history.replaceState(null,'',location.pathname+location.search);root.querySelector<HTMLElement>('.wordmark')?.focus({preventScroll:true});lenis.resize();ScrollTrigger.refresh();}
+    const i=clamp(Math.round(index),0,7);if(location.hash==='#mission-reading'){history.replaceState(history.state,'',location.pathname+location.search);root.dataset.reading='false';root.querySelector<HTMLElement>('.wordmark')?.focus({preventScroll:true});lenis.resize();ScrollTrigger.refresh();}
     lenis.start();locked=false;navigationGoal=i;const serial=++navigationSerial;const target=(i===0?0:i+.36)*step;
     lenis.scrollTo(target,{duration:reduced?0:Math.min(2.2,.85+Math.abs(progress-i)*.16),immediate:reduced,force:true,easing:t=>1-Math.pow(1-t,3),onComplete:()=>{if(serial===navigationSerial)navigationGoal=null;}});
   }
-  return{goTo,setLocked(value){locked=value;if(value){cancelNavigation();lenis.stop();}else lenis.start();},setReduced,setDestination(value){destination=value;dirty=true;lastStamp=-1;},setSubsystem(value){subsystem=value;dirty=true;lastStamp=-1;},toggleSound:()=>audio.toggle(),destroy(){destroyed=true;viewportObserver.disconnect();sizeObserver.disconnect();window.removeEventListener('wheel',cancelNavigation,true);window.removeEventListener('touchstart',cancelNavigation,true);window.removeEventListener('pointerdown',cancelNavigation,true);window.removeEventListener('keydown',navigationKey,true);clearTimeout(resizeTimer);window.removeEventListener('hashchange',readingChange);root.removeEventListener('focusin',readingFocus);window.removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);reducedMedia.removeEventListener('change',motionChange);gsap.ticker.remove(tick);trigger.kill();lenis.destroy();audio.destroy();scene?.destroy();chapters.forEach(c=>{c.inert=false;});}};
+  return{goTo,setLocked(value){locked=value;if(value){cancelNavigation();lenis.stop();}else lenis.start();},setReduced,setDestination(value){destination=value;dirty=true;lastStamp=-1;},setSubsystem(value){subsystem=value;dirty=true;lastStamp=-1;},toggleSound:()=>audio.toggle(),destroy(){destroyed=true;viewportObserver.disconnect();sizeObserver.disconnect();window.removeEventListener('wheel',cancelNavigation,true);window.removeEventListener('touchstart',cancelNavigation,true);window.removeEventListener('pointerdown',cancelNavigation,true);window.removeEventListener('keydown',navigationKey,true);clearTimeout(resizeTimer);window.removeEventListener('hashchange',readingChange);window.removeEventListener('pagehide',savePosition);window.removeEventListener('scroll',queuePositionSave);clearTimeout(positionTimer);root.removeEventListener('focusin',readingFocus);window.removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);reducedMedia.removeEventListener('change',motionChange);gsap.ticker.remove(tick);trigger.kill();lenis.destroy();audio.destroy();scene?.destroy();chapters.forEach(c=>{c.inert=false;});}};
 }

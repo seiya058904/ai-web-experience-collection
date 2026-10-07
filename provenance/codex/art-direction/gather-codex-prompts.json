@@ -1,0 +1,42 @@
+{
+  "generator": "OpenAI built-in imagegen",
+  "created_date": "2026-10-07",
+  "purpose": "Selected Visual Bible scene concepts for CODEX. These are art-direction images, not a substitute for the implemented spatial experience.",
+  "reference_images": [
+    {
+      "generation_id": "exec-5a7af964-4f53-4be7-aae7-e7b8bf828acb",
+      "role": "Approved THE VOLUME hero; book identity, black bookcloth, gold stamp, header, editorial hierarchy."
+    },
+    {
+      "generation_id": "exec-4784e5f3-af2f-4253-93a3-420459f2aa23",
+      "role": "Approved FOLD scene; paper material, warm ivory field, typography and shared header."
+    }
+  ],
+  "selected": [
+    {
+      "scene": "IV — GATHER",
+      "file": "04-gather-concept.png",
+      "generation_id": "exec-f514c7c2-401b-4883-8cc6-deeaf880b238",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "935098bf0bf65935109b3b6f07e3c112302a997ae71261265d04beee04d5aa0c",
+      "prompt": "Use case: ui-mockup.\nAsset type: CODEX visual bible, scene IV GATHER, single final full-screen website keyframe, landscape 1536 x 1024, 3:2.\nReference image 1 is the existing approved hero: preserve its restrained museum editorial art direction, delicate serif/small typography hierarchy, overall calm precision. Reference image 2 is the approved FOLD scene: preserve the warm ivory palette, paper character, microfibres and material lighting, and precisely the shared header.\nCreate the next scene, not a collage and not a screenshot inside a device. Warm ivory #eae4d7 ground, full bleed, no cards. Left 40 percent holds generous negative space and exceptionally refined thin high-contrast serif type. At x about 60px and mid-upper left, heading exactly on two lines: \"Many parts.\" then \"One intention.\" Beneath, small readable body on two lines exactly: \"Folded sections find their order.\" then \"The space between them disappears.\"\nDominant physical subject on the right 60 percent: ten real folded book signatures, each made from four nested THIN ivory sheets, arranged as an elegantly receding diagonal stack from the nearer lower-right toward the distant upper-right. They rhythmically converge towards one common spine plane. Each signature must visibly have a gently curved folded back and multiple delicate page-edge lines. Separations are subtle but clear; these are flexible folded paper sections, not solid blocks, slabs, cards, books, or thick cardboard. Fine shadows between every paper layer, realistic paper thickness, restrained deckle-free trimmed edges, slightly springing folded backs. The form should embody order and repeated rhythm, with beautiful architectural perspective. No thread yet, no covers yet.\nSoft raking studio light, quiet tactile warm paper, realistic analogue paper fibre, museum publishing photography quality.\nAt top left \"C O D E X\"; top center \"The anatomy of a book\"; top right \"Contents +\"; tiny refined lettering with generous tracking, same positions as the references. Bottom-left caption exactly \"IV — GATHER\". No other text, no extra controls, no page borders, no stock-photo props, no watermark. Maintain beautiful clear space between text and the physical paper.",
+      "curation": "Selected on first generation. Header and exact body copy correct. Receding signature sequence has visible folded backs and multiple paper-edge lines, restrained warm ivory material and clear left copy area. Reduced section count and enlarged fold gaps are art-direction simplifications."
+    },
+    {
+      "scene": "X — CODEX",
+      "file": "10-codex-concept.png",
+      "generation_id": "exec-22a510ae-059c-49c9-88df-e173580f1e1c",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ef4b18a8056cc914ec98e1d2cfbaeb48db6e9ed2bd81ad2bd62438d949a36f5e",
+      "prompt": "Use case: ui-mockup.\nAsset type: CODEX visual bible, scene X CODEX, single final full-screen website keyframe, landscape 1536 x 1024, 3:2.\nReference image 1 is the approved hero and defines the exact hero book identity: the same heavy black bookcloth hardcover, the same curved spine and board thickness, warm ivory page block, restrained genuine gold stamp, same exquisite museum lighting, editorial typography, and header. Reference image 2 is a paper material and typographic reference only.\nCreate the quiet concluding scene of the same work. Full-bleed warm black #151513 museum ground, no cards or mockup device. Keep the left 40 percent spacious. Large extraordinarily refined thin high-contrast warm-ivory serif heading, exactly two lines: \"A book.\" then \"At last.\" Under it small body exactly on two lines: \"Paper. Thread. Pressure.\" then \"Everything held. Nothing extra.\" Below, two understated typographic controls: \"Open the cover\" and \"Bind again\", with very fine minimal rules or spacing, no filled button rectangles.\nOn the right, dominant completed same black bookcloth book, fully closed and resting with believable mass in a quiet slightly receding three-quarter position. Show the black woven cloth cover, delicately rounded spine, real hinge, precise board overhangs and fine warm ivory page-edge lines. Cover should have the tiny precise gold stamped title \"C O D E X\", physically impressed into the cloth, no floating HTML, no giant metallic plate, no glow. A very thin warm gold page-edge highlight only where light grazes the edge. Keep the book identity consistent with reference 1. Book may be slightly less upright than the hero but still monumental. Choose closed book: do not reveal pages and do not add extra open objects.\nDark soft contact shadow, slight raking light on black weave, exceptional tactile product photography with restraint, no large glossy gold surfaces, no fog or artificial light streaks.\nShared header: top-left \"C O D E X\"; top-center \"The anatomy of a book\"; top-right \"Contents +\"; tiny warm-ivory fine lettering with the same tracking and spacing as reference 1. Bottom-left caption exactly \"X — CODEX\". No other text, no logos, no watermark. End-frame stillness and craft.",
+      "curation": "Selected on first generation. Exact heading, body copy, controls and chapter label correct. Same book identity, matte black woven cover, small gold title, visible page block, fine gilt highlight and quiet closing composition."
+    }
+  ],
+  "notes": [
+    "Museum and conservation references are research references, not redistributed source images.",
+    "No failed generations or alternate outputs are included in this project subset.",
+    "Runtime text and interactions should be implemented as accessible DOM controls and rendered object materials rather than flattened screenshot text."
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "access_date": "2026-10-07",
+  "scope": "Exact installed package license/notice files; dependencies themselves are not included in the ZIP. GSAP URL declaration and source headers are preserved separately.",
+  "packages": [
+    {
+      "name": "@dimforge/rapier3d-compat",
+      "version": "0.12.0",
+      "declared_license": "Apache-2.0",
+      "homepage": "https://rapier.rs",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dimforge/rapier.js"
+      },
+      "files": [
+        {
+          "source": "node_modules/@dimforge/rapier3d-compat/LICENSE",
+          "file": "licenses/dimforge-rapier3d-compat-0.12.0/LICENSE",
+          "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/cormorant-garamond",
+      "version": "5.3.0",
+      "declared_license": "OFL-1.1",
+      "homepage": "https://fontsource.org/fonts/cormorant-garamond",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fontsource/font-files.git",
+        "directory": "fonts/google/cormorant-garamond"
+      },
+      "files": [
+        {
+          "source": "node_modules/@fontsource/cormorant-garamond/LICENSE",
+          "file": "licenses/fontsource-cormorant-garamond-5.3.0/LICENSE",
+          "sha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/dm-sans",
+      "version": "5.3.0",
+      "declared_license": "OFL-1.1",
+      "homepage": "https://fontsource.org/fonts/dm-sans",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fontsource/font-files.git",
+        "directory": "fonts/google/dm-sans"
+      },
+      "files": [
+        {
+          "source": "node_modules/@fontsource/dm-sans/LICENSE",
+          "file": "licenses/fontsource-dm-sans-5.3.0/LICENSE",
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+        }
+      ]
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.152.0",
+      "declared_license": "MIT",
+      "homepage": "https://oxc.rs",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oxc-project/oxc.git",
+        "directory": "npm/oxc-types"
+      },
+      "files": [
+        {
+          "source": "node_modules/@oxc-project/types/LICENSE",
+          "file": "licenses/oxc-project-types-0.152.0/LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        }
+      ]
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.12",
+      "declared_license": "MIT",
+      "homepage": "https://rolldown.rs/",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "files": [],
+      "notice": "No standalone license file present in this installed package. This package is a build-time dependency or platform binding, not a redistributed node_modules payload. Its upstream declaration is retained here.",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/rolldown/plugins/tree/main/packages/pluginutils#readme",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/plugins.git",
+        "directory": "packages/pluginutils"
+      },
+      "files": [
+        {
+          "source": "node_modules/@rolldown/pluginutils/LICENSE",
+          "file": "licenses/rolldown-pluginutils-1.0.1/LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        }
+      ]
+    },
+    {
+      "name": "@tweenjs/tween.js",
+      "version": "23.1.3",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/tweenjs/tween.js",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/tweenjs/tween.js.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/@tweenjs/tween.js/LICENSE",
+          "file": "licenses/tweenjs-tween.js-23.1.3/LICENSE",
+          "sha256": "c95fecd88f2709bfc34e4d1f1ccc36d17048990e6ba26c283cfecdef0432936b"
+        }
+      ]
+    },
+    {
+      "name": "@types/stats.js",
+      "version": "0.17.4",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/stats.js",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/stats.js"
+      },
+      "files": [
+        {
+          "source": "node_modules/@types/stats.js/LICENSE",
+          "file": "licenses/types-stats.js-0.17.4/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/three",
+      "version": "0.186.0",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/three",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/three"
+      },
+      "files": [
+        {
+          "source": "node_modules/@types/three/LICENSE",
+          "file": "licenses/types-three-0.186.0/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/webxr",
+      "version": "0.5.24",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/webxr",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/webxr"
+      },
+      "files": [
+        {
+          "source": "node_modules/@types/webxr/LICENSE",
+          "file": "licenses/types-webxr-0.5.24/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@typescript/typescript-linux-x64",
+      "version": "7.0.2",
+      "declared_license": "Apache-2.0",
+      "homepage": "https://www.typescriptlang.org/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/@typescript/typescript-linux-x64/LICENSE",
+          "file": "licenses/typescript-typescript-linux-x64-7.0.2/LICENSE",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "source": "node_modules/@typescript/typescript-linux-x64/NOTICE.txt",
+          "file": "licenses/typescript-typescript-linux-x64-7.0.2/NOTICE.txt",
+          "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+        }
+      ],
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "declared_license": "Apache-2.0",
+      "homepage": null,
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/lovell/detect-libc.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/detect-libc/LICENSE",
+          "file": "licenses/detect-libc-2.1.2/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/thecodrr/fdir#readme",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thecodrr/fdir.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/fdir/LICENSE",
+          "file": "licenses/fdir-6.5.0/LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ],
+      "engines": {
+        "node": ">=12.0.0"
+      }
+    },
+    {
+      "name": "fflate",
+      "version": "0.8.3",
+      "declared_license": "MIT",
+      "homepage": "https://101arrowz.github.io/fflate",
+      "repository": "https://github.com/101arrowz/fflate",
+      "files": [
+        {
+          "source": "node_modules/fflate/LICENSE",
+          "file": "licenses/fflate-0.8.3/LICENSE",
+          "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+        }
+      ]
+    },
+    {
+      "name": "gsap",
+      "version": "3.15.0",
+      "declared_license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+      "homepage": "https://gsap.com",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/greensock/GSAP.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/gsap/package.json and original source notices",
+          "file": "licenses/gsap-3.15.0/package-license.json",
+          "sha256": "995b7f2587eaae4f34eed9a94649858d21d829052bbe62a19e68824c417ac05f"
+        },
+        {
+          "source": "node_modules/gsap/package.json and original source notices",
+          "file": "licenses/gsap-3.15.0/NOTICE.txt",
+          "sha256": "f91d7ecfae57a03fa8a5aaa54e2eda1a82363771b272a3b38137f0c4f5e9dc2a"
+        }
+      ],
+      "notice": "The installed package declares the Standard No Charge GSAP license by URL; exact declaration and source notices preserved. Full applicable terms remain at the official URL."
+    },
+    {
+      "name": "lenis",
+      "version": "1.3.26",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/darkroomengineering/lenis",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/darkroomengineering/lenis.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/lenis/LICENSE",
+          "file": "licenses/lenis-1.3.26/LICENSE",
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        }
+      ]
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "declared_license": "MPL-2.0",
+      "homepage": null,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/lightningcss/LICENSE",
+          "file": "licenses/lightningcss-1.33.0/LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "declared_license": "MPL-2.0",
+      "homepage": null,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/lightningcss-linux-x64-gnu/LICENSE",
+          "file": "licenses/lightningcss-linux-x64-gnu-1.33.0/LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    {
+      "name": "meshoptimizer",
+      "version": "1.1.1",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/zeux/meshoptimizer",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/zeux/meshoptimizer"
+      },
+      "files": [
+        {
+          "source": "node_modules/meshoptimizer/LICENSE.md",
+          "file": "licenses/meshoptimizer-1.1.1/LICENSE.md",
+          "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26"
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "declared_license": "MIT",
+      "homepage": null,
+      "repository": "ai/nanoid",
+      "files": [
+        {
+          "source": "node_modules/nanoid/LICENSE",
+          "file": "licenses/nanoid-3.3.20/LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ],
+      "engines": {
+        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+      }
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "declared_license": "ISC",
+      "homepage": null,
+      "repository": "alexeyraspopov/picocolors",
+      "files": [
+        {
+          "source": "node_modules/picocolors/LICENSE",
+          "file": "licenses/picocolors-1.1.1/LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "declared_license": "MIT",
+      "homepage": "https://github.com/micromatch/picomatch",
+      "repository": "micromatch/picomatch",
+      "files": [
+        {
+          "source": "node_modules/picomatch/LICENSE",
+          "file": "licenses/picomatch-4.0.7/LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.29",
+      "declared_license": "MIT",
+      "homepage": "https://postcss.org/",
+      "repository": "postcss/postcss",
+      "files": [
+        {
+          "source": "node_modules/postcss/LICENSE",
+          "file": "licenses/postcss-8.5.29/LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ],
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.12",
+      "declared_license": "MIT",
+      "homepage": "https://rolldown.rs/",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "files": [
+        {
+          "source": "node_modules/rolldown/LICENSE",
+          "file": "licenses/rolldown-1.2.12/LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        }
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "declared_license": "BSD-3-Clause",
+      "homepage": "https://github.com/7rulnik/source-map-js",
+      "repository": "7rulnik/source-map-js",
+      "files": [
+        {
+          "source": "node_modules/source-map-js/LICENSE",
+          "file": "licenses/source-map-js-1.2.2/LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ],
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    {
+      "name": "three",
+      "version": "0.186.1",
+      "declared_license": "MIT",
+      "homepage": "https://threejs.org/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mrdoob/three.js"
+      },
+      "files": [
+        {
+          "source": "node_modules/three/LICENSE",
+          "file": "licenses/three-0.186.1/LICENSE",
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        }
+      ]
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "declared_license": "MIT",
+      "homepage": "https://superchupu.dev/tinyglobby",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuperchupuDev/tinyglobby.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/tinyglobby/LICENSE",
+          "file": "licenses/tinyglobby-0.2.17/LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ],
+      "engines": {
+        "node": ">=12.0.0"
+      }
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "declared_license": "Apache-2.0",
+      "homepage": "https://www.typescriptlang.org/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "files": [
+        {
+          "source": "node_modules/typescript/LICENSE",
+          "file": "licenses/typescript-7.0.2/LICENSE",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "source": "node_modules/typescript/NOTICE.txt",
+          "file": "licenses/typescript-7.0.2/NOTICE.txt",
+          "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+        }
+      ],
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    {
+      "name": "vite",
+      "version": "8.3.3",
+      "declared_license": "MIT",
+      "homepage": "https://vite.dev",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite.git",
+        "directory": "packages/vite"
+      },
+      "files": [
+        {
+          "source": "node_modules/vite/LICENSE.md",
+          "file": "licenses/vite-8.3.3/LICENSE.md",
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        }
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    }
+  ],
+  "verification_runtime": {
+    "node": "24.19.0",
+    "note": "Project verify script uses native TypeScript type stripping. Vite package engine declarations are recorded separately."
+  }
+}

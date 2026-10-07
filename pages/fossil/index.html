@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141512">
+  <meta name="description" content="FOSSIL — Deep Time in Stone. An immersive study of how life becomes evidence, from sediment and preservation to virtual sections and the research archive.">
+  <title>FOSSIL — Deep Time in Stone</title>
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%fossil/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:title" content="FOSSIL — Deep Time in Stone">
+  <meta property="og:description" content="Ten movements through sediment, preservation, virtual sections and an interpretive fossil archive.">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%fossil/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%fossil/social.jpg">
+  <meta property="og:image:alt" content="FOSSIL's generated ammonite artwork captured from its actual exhibition">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FOSSIL — Deep Time in Stone">
+  <meta name="twitter:description" content="Life, held in the quiet of stone. An interpretive ten-movement exhibition.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%fossil/social.jpg">
+  <meta name="twitter:image:alt" content="FOSSIL's generated ammonite artwork captured from its actual exhibition">
+  <link rel="icon" href="/fossil/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fossil/assets/images/hero-slab.webp" as="image">
+  <link id="fossil-styles" rel="stylesheet" href="../../experiences/fossil/src/style.css">
+  <script src="%BASE_URL%fossil/data/fossil-volume.js" defer></script>
+  <script type="module" src="../../experiences/fossil/src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#chapter-01">Enter the experience</a>
+  <header class="masthead">
+    <a href="#chapter-01" class="wordmark" aria-label="FOSSIL, return to the specimen">FOSSIL</a>
+    <span class="masthead-title">Deep time in stone</span>
+    <nav class="masthead-controls" aria-label="Experience controls"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><button class="index-toggle text-control" id="open-index" aria-haspopup="dialog" aria-controls="index-dialog">Index <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></nav>
+  </header>
+
+  <div id="world" aria-hidden="true">
+    <div class="world-ground"></div>
+    <div class="visual visual-hero" data-visual="0"><img id="hero-slab" src="/fossil/assets/images/hero-slab.webp" width="1584" height="992" alt="" fetchpriority="high" draggable="false"></div>
+    <div class="visual" data-visual="1"><canvas id="strata-canvas"></canvas></div>
+    <div class="visual" data-visual="2"><canvas id="burial-canvas"></canvas></div>
+    <div class="visual" data-visual="3"><canvas id="preservation-canvas"></canvas></div>
+    <div class="visual" data-visual="4"><canvas id="exposure-canvas"></canvas></div>
+    <div class="visual visual-amber" data-visual="5"><img id="amber-object" src="/fossil/assets/images/amber.webp" width="1584" height="993" alt="" draggable="false"><canvas id="amber-contour"></canvas></div>
+    <div class="visual visual-scan" data-visual="6">
+      <img id="scan-surface" src="/fossil/assets/images/specimen.webp" alt="" draggable="false">
+      <canvas id="scan-canvas"></canvas>
+      <div id="scan-plane"><span>Section</span></div>
+    </div>
+    <div class="visual" data-visual="7"><canvas id="volume-canvas"></canvas></div>
+    <div class="visual visual-archive" data-visual="8">
+      <img id="archive-drawer" src="/fossil/assets/images/archive-drawer.webp" alt="" draggable="false">
+      <div class="physical-record"><span>FSL—001</span><span>Ammonite study</span><span>Interpretive specimen</span><span>Collection: Deep Time</span></div>
+    </div>
+    <div class="visual visual-ending" data-visual="9"><img id="closing-specimen" src="/fossil/assets/images/specimen.webp" alt="" draggable="false"><canvas id="ending-contour"></canvas></div>
+    <div id="brush-cursor"><i></i><span>Study the boundary</span></div>
+  </div>
+
+  <main id="experience" aria-label="FOSSIL, an experience in ten chapters">
+    <section class="chapter" id="chapter-01" data-chapter="0" aria-labelledby="title-01">
+      <div class="composition hero-copy">
+        <h1 id="title-01">FOSSIL</h1>
+        <p class="visually-hidden">A ribbed ammonite appears at monumental scale, held in irregular limestone under grazing museum light.</p>
+        <p class="hero-subtitle"><span>Deep time</span><em>in stone.</em></p>
+        <div class="hero-intro"><p>Life, held in the quiet of stone.</p><p class="serif-note">An exploration of form, preservation<br>and the traces that remain.</p></div>
+        <a class="arrow-link hero-enter" href="#chapter-02"><svg viewBox="0 0 56 18" aria-hidden="true"><path d="M1 9h51m-7-6 7 6-7 6"/></svg><span>Enter the archive</span></a>
+        <span class="plate-note">Plate 001 / Ammonite study</span>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/hero-slab.webp" alt="A monumental, ribbed ammonite fossil embedded in irregular limestone, illuminated like a museum sculpture."></div>
+    </section>
+
+    <section class="chapter" id="chapter-02" data-chapter="1" aria-labelledby="title-02">
+      <div class="composition strata-copy">
+        <h2 id="title-02">Time is not a clock.<br><em>It is a layer.</em></h2>
+        <p class="visually-hidden">Four irregular beds of limestone, shale and iron-brown sediment settle into a layered record. Their thickness does not measure equal time.</p>
+        <p class="chapter-note">Grain over grain. A surface becomes depth.</p>
+        <div class="strata-scale" aria-label="Four illustrative sedimentary beds, not a calibrated timescale"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+        <p class="footnote">Deposition / relative sequence</p>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/strata.webp" alt="Irregular light limestone and dark shale beds. Their thickness is not a uniform clock."></div>
+    </section>
+
+    <section class="chapter" id="chapter-03" data-chapter="2" aria-labelledby="title-03">
+      <div class="composition burial-copy">
+        <h2 id="title-03">The surface<br><em>closes.</em></h2>
+        <p class="visually-hidden">A sediment front gradually covers the ammonite. A faint outline remains in the supporting matrix.</p>
+        <p class="chapter-note">Layer after layer,<br>a form passes out of sight.</p>
+        <div class="burial-registration"><span>Surface</span><i></i><span>Buried form</span></div>
+        <p class="footnote">The contour remains. Its visibility changes.</p>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/specimen.webp" alt="An ammonite contour becomes obscured by successive layers of sediment."></div>
+    </section>
+
+    <section class="chapter" id="chapter-04" data-chapter="3" aria-labelledby="title-04">
+      <div class="composition preservation-copy">
+        <h2 id="title-04">Form leaves.<br><em>A record remains.</em></h2>
+        <p class="visually-hidden">The same shell form is read through pore infill, mineral replacement, a negative mold and a positive cast. Select a pathway below.</p>
+        <p id="preservation-description" class="chapter-note">Minerals enter the pores.<br>The structure holds a new material.</p>
+        <div class="preservation-modes" role="group" aria-label="Explore four preservation pathways">
+          <button data-preserve-mode="0" aria-pressed="true"><span>Pore infill</span><small>01</small></button>
+          <button data-preserve-mode="1" aria-pressed="false"><span>Replacement</span><small>02</small></button>
+          <button data-preserve-mode="2" aria-pressed="false"><span>Mold</span><small>03</small></button>
+          <button data-preserve-mode="3" aria-pressed="false"><span>Cast</span><small>04</small></button>
+        </div>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/preservation.webp" alt="A raised shell and an impression in limestone show different ways that shape can be preserved."></div>
+    </section>
+
+    <section class="chapter" id="chapter-05" data-chapter="4" aria-labelledby="title-05">
+      <div class="composition exposure-copy">
+        <h2 id="title-05">Remove less.<br><em>Read more.</em></h2>
+        <p class="visually-hidden">A preparation plate reveals the shell by clearing small matrix patches and loose dust. Use the slider or inspect the surface to brush the dust.</p>
+        <p class="chapter-note">Clear the loose grains.<br>Follow the boundary.<br>Keep the stone that supports the trace.</p>
+        <div class="exposure-controls">
+          <div class="range-heading"><label for="reveal-range">Surface revealed</label><output id="reveal-output" for="reveal-range">50%</output></div>
+          <input id="reveal-range" class="fine-range" type="range" min="0" max="100" step="1" value="50" aria-label="Reveal the fossil surface">
+          <button class="underlined" id="inspect-surface" aria-pressed="false">Inspect the surface</button>
+          <button class="quiet-link" id="reset-reveal" hidden>Resume the sequence</button>
+          <p class="interaction-note" id="brush-note">A little. Pause. Look again.</p>
+        </div>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/exposure.webp" alt="A conservator's fine tool approaches the boundary between fossil and supporting rock."></div>
+    </section>
+
+    <section class="chapter" id="chapter-06" data-chapter="5" aria-labelledby="title-06">
+      <div class="composition amber-copy">
+        <h2 id="title-06">A different kind<br><em>of stillness.</em></h2>
+        <p class="visually-hidden">A translucent amber study glows around a minute, indeterminate inclusion. It offers another language of enclosure and preservation.</p>
+        <p class="chapter-note">Fossil resin.<br>Another language of preservation.</p>
+        <p class="footnote">A trace enclosed / Amber study</p>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/amber.webp" alt="An irregular piece of honey amber encloses a minute organic trace, lit by transmitted light."></div>
+    </section>
+
+    <section class="chapter" id="chapter-07" data-chapter="6" aria-labelledby="title-07">
+      <div class="composition scan-copy">
+        <h2 id="title-07">Read beneath<br><em>the surface.</em></h2>
+        <p class="visually-hidden">The complete surface gives way to a registered outline and then grayscale sections from an authored synthetic volume. Choose any of the 72 sections below.</p>
+        <div class="scan-contact-sheet" role="group" aria-label="Choose an interpretive section">
+          <button data-slice="10" aria-label="View section 11"><canvas width="160" height="160"></canvas></button>
+          <button data-slice="22" aria-label="View section 23"><canvas width="160" height="160"></canvas></button>
+          <button data-slice="35" aria-label="View section 36"><canvas width="160" height="160"></canvas></button>
+          <button data-slice="48" aria-label="View section 49"><canvas width="160" height="160"></canvas></button>
+          <button data-slice="62" aria-label="View section 63"><canvas width="160" height="160"></canvas></button>
+        </div>
+        <p class="scan-note">Interpretive sections · synthetic volume<span id="scan-status" role="status"></span></p>
+        <div class="scan-range-block">
+          <input id="section-range" class="fine-range" type="range" min="1" max="72" value="36" step="1" aria-label="Select a virtual section through the ammonite">
+          <div class="range-heading"><label for="section-range">Section <output id="section-output">036</output> / 072</label><button class="quiet-link" id="resume-scan" hidden>Follow scroll</button></div>
+        </div>
+      </div>
+      <div class="static-scene"><p>Seventy-two virtual sections reveal the interior of a synthetic ammonite volume. These are interpretive images, not a physical CT acquisition.</p></div>
+    </section>
+
+    <section class="chapter" id="chapter-08" data-chapter="7" aria-labelledby="title-08">
+      <div class="composition reconstruction-copy">
+        <h2 id="title-08">A shape returns.<br><em>Not a life.</em></h2>
+        <p class="visually-hidden">Contours and section planes assemble around an incomplete shell volume. Missing patches remain absent. Switch between outline and volume.</p>
+        <div class="reconstruction-modes" role="group" aria-label="Reconstruction display">
+          <button class="underlined" data-volume-mode="outline" aria-pressed="false">Outline</button><button class="underlined" data-volume-mode="volume" aria-pressed="true">Volume</button>
+        </div>
+        <p class="reconstruction-note">The gaps remain<br>part of the record.</p>
+        <p class="footnote">Interpretive reconstruction</p>
+      </div>
+      <div class="static-scene"><p>The same virtual sections form a partial volume. Missing material stays visible as an absence.</p></div>
+    </section>
+
+    <section class="chapter" id="chapter-09" data-chapter="8" aria-labelledby="title-09">
+      <div class="composition archive-copy">
+        <h2 id="title-09">The past,<br><em>kept present.</em></h2>
+        <p class="visually-hidden">An interpretive specimen rests in a compartmented drawer beside its catalog label. Open the specimen record for provenance and sources.</p>
+        <dl class="catalog-summary"><div><dt>Study</dt><dd>FSL—001</dd></div><div><dt>Form</dt><dd>Ammonite study</dd></div><div><dt>Record</dt><dd>Interpretive specimen</dd></div><div><dt>Collection</dt><dd>Deep Time</dd></div></dl>
+        <button class="underlined open-record" aria-haspopup="dialog" aria-controls="record-dialog">Open specimen record</button>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/archive-drawer.webp" alt="An open archival drawer holds a supported ammonite, a small fragment, and a catalog sheet."></div>
+    </section>
+
+    <section class="chapter" id="chapter-10" data-chapter="9" aria-labelledby="title-10">
+      <div class="composition ending-copy">
+        <h2 id="title-10">Time becomes<br><em>evidence.</em></h2>
+        <p class="visually-hidden">The opening ammonite returns at a quieter scale. The object is unchanged; its status as evidence has become readable.</p>
+        <div class="ending-note"><p>The past has not returned.<br>A trace remains, preserved<br>and open to question.</p><a class="arrow-link" href="#chapter-01"><svg viewBox="0 0 56 18" aria-hidden="true"><path d="M1 9h51m-7-6 7 6-7 6"/></svg><span>Return to the specimen</span></a></div>
+      </div>
+      <div class="static-scene"><img src="/fossil/assets/images/specimen.webp" alt="The same quiet specimen, now understood as evidence of time."></div>
+    </section>
+  </main>
+
+  <nav class="chapter-rail" aria-label="Chapter navigation">
+    <a id="chapter-current" href="#chapter-01"><span id="chapter-number">01</span><span class="rail-dash">—</span><span id="chapter-name">Specimen</span></a>
+    <div class="chapter-ticks">
+      <a href="#chapter-01" aria-label="01 Specimen" aria-current="step"><i></i></a><a href="#chapter-02" aria-label="02 Strata"><i></i></a><a href="#chapter-03" aria-label="03 Burial"><i></i></a><a href="#chapter-04" aria-label="04 Preservation"><i></i></a><a href="#chapter-05" aria-label="05 Exposure"><i></i></a><a href="#chapter-06" aria-label="06 Amber"><i></i></a><a href="#chapter-07" aria-label="07 Scan"><i></i></a><a href="#chapter-08" aria-label="08 Reconstruct"><i></i></a><a href="#chapter-09" aria-label="09 Archive"><i></i></a><a href="#chapter-10" aria-label="10 Deep Time"><i></i></a>
+    </div>
+    <span id="scroll-cue"><i></i>Scroll to explore</span>
+    <div class="rail-progress"><i id="overall-progress"></i></div>
+  </nav>
+
+  <dialog id="index-dialog" class="index-dialog" aria-labelledby="index-title" data-lenis-prevent>
+    <div class="dialog-top"><a class="wordmark" href="#chapter-01">FOSSIL</a><button class="dialog-close text-control" data-close="index-dialog" aria-label="Close chapter index">Close<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16"/></svg></button></div>
+    <div class="index-heading"><h2 id="index-title">An archive,<br><em>in ten movements.</em></h2><p>Bury the form.<br>Reveal the trace.<br>Let time become evidence.</p></div>
+    <nav class="index-list" aria-label="All ten movements"><a href="#chapter-01"><span>01</span>Specimen<small>The object</small></a><a href="#chapter-02"><span>02</span>Strata<small>The layers</small></a><a href="#chapter-03"><span>03</span>Burial<small>The hidden form</small></a><a href="#chapter-04"><span>04</span>Preservation<small>The record</small></a><a href="#chapter-05"><span>05</span>Exposure<small>The boundary</small></a><a href="#chapter-06"><span>06</span>Amber<small>The exception</small></a><a href="#chapter-07"><span>07</span>Scan<small>The interior</small></a><a href="#chapter-08"><span>08</span>Reconstruct<small>The partial volume</small></a><a href="#chapter-09"><span>09</span>Archive<small>The catalog</small></a><a href="#chapter-10"><span>10</span>Deep Time<small>The evidence</small></a></nav>
+    <footer class="index-footer"><button id="motion-toggle" class="underlined" aria-pressed="false">Pause ambient motion</button><button class="underlined open-record">About the specimen &amp; sources</button><span>Best explored at your own pace.</span></footer>
+  </dialog>
+
+  <dialog id="record-dialog" class="record-dialog" aria-labelledby="record-title" data-lenis-prevent>
+    <div class="dialog-top"><span class="wordmark">FOSSIL / RECORD</span><button class="dialog-close text-control" data-close="record-dialog" aria-label="Close specimen record">Close<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16"/></svg></button></div>
+    <div class="record-layout">
+      <div class="record-image"><img src="/fossil/assets/images/specimen.webp" alt="The interpretive FSL—001 ammonite study"><span>FSL—001 · Interpretive specimen</span></div>
+      <div class="record-content"><h2 id="record-title">A trace.<br><em>A record.</em></h2><dl class="record-data"><div><dt>Study identifier</dt><dd>FSL—001</dd></div><div><dt>Object</dt><dd>Ammonite form in a stone matrix</dd></div><div><dt>Collection</dt><dd>FOSSIL — Deep Time in Stone</dd></div><div><dt>Material status</dt><dd>AI-generated specimen imagery</dd></div><div><dt>Imaging</dt><dd>72 sections of a synthetic volume</dd></div><div><dt>Reconstruction</dt><dd>Procedural geometry; intentionally incomplete</dd></div></dl><p>This is an authored digital exhibit. The study number belongs to this artwork. The images, sections and model do not represent an accessioned museum object, a measured fossil, or a real CT acquisition. No collecting locality, geological age or scanner resolution is assigned.</p><p>Its scientific thread is real: sediment can cover remains; several pathways preserve their form; preparation and imaging can make evidence available for continued study. The missing parts remain missing.</p><button class="arrow-link" id="save-record"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v13m-5-5 5 5 5-5M4 17v5h16v-5"/></svg><span>Save this study record</span></button><span id="save-status" role="status"></span></div>
+    </div>
+    <section class="record-sources" aria-labelledby="sources-title"><h3 id="sources-title">Reading the evidence</h3><p>Scientific references that informed this work. Reference photography and measured scan data are not reproduced.</p><ol><li><a href="https://www.nps.gov/subjects/fossils/body-fossils.htm" target="_blank" rel="noreferrer">National Park Service — Body fossils</a><span>Preservation pathways and durable remains</span></li><li><a href="https://www.nps.gov/articles/000/mold-casts-and-steinkerns.htm" target="_blank" rel="noreferrer">National Park Service — Molds, casts &amp; steinkerns</a><span>Shape preserved in positive and negative</span></li><li><a href="https://pubs.usgs.gov/gip/fossils/rocks-layers.html" target="_blank" rel="noreferrer">USGS — Rocks and layers</a><span>Deposition and relative sequence</span></li><li><a href="https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation/revealing/techniques/mechanical-preparation" target="_blank" rel="noreferrer">AMNH — Mechanical preparation</a><span>Controlled removal and retained support</span></li><li><a href="https://www.nps.gov/articles/000/preserved-remains.htm" target="_blank" rel="noreferrer">National Park Service — Preserved remains</a><span>Amber and other preservation settings</span></li><li><a href="https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation/revealing/techniques/digital-preparation" target="_blank" rel="noreferrer">AMNH — Digital preparation</a><span>Internal imaging and its limits</span></li><li><a href="https://www.nhm.ac.uk/discover/what-is-an-ammonite.html" target="_blank" rel="noreferrer">Natural History Museum — What is an ammonite?</a><span>The chambered shell and incomplete evidence</span></li><li><a href="https://collections.nmnh.si.edu/search/paleo/" target="_blank" rel="noreferrer">Smithsonian — Paleobiology collections</a><span>The specimen and its associated record</span></li></ol></section>
+    <p class="record-notices"><a href="%BASE_URL%fossil/NOTICE.md">Sources &amp; notices</a> · <a href="%BASE_URL%fossil/LICENSE.txt">Original source license</a></p>
+    <p class="record-colophon">FOSSIL — Deep Time in Stone<br>A digital work in geology, preservation and interpretation.</p>
+  </dialog>
+  <noscript><div class="noscript-note"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><p>The full scroll and imaging experience uses JavaScript. The ten-chapter text and production imagery remain available below.</p><p><a href="%BASE_URL%fossil/NOTICE.md">Sources and interpretation notes</a></p></div></noscript>
+</body>
+</html>

@@ -1,0 +1,3392 @@
+{
+  "archive": "FOSSIL-Deep-Time-in-Stone.zip",
+  "sha256": "b0f7c0e3e3ed5d73d30d022796c898cb338d942ad7943192c3e2c1e2dce6ff09",
+  "bytes": 63468503,
+  "mtime": "2026-10-07T13:52:20.888777+08:00",
+  "route": "fossil",
+  "entries": [
+    {
+      "path": "FOSSIL/LICENSE",
+      "bytes": 1548,
+      "compressedBytes": 878,
+      "sha256": "2b2efbbc1fb5c98d53190a99452efd058569d7b661d7b3972d8d319310f59e4b",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/PRODUCT.md",
+      "bytes": 2534,
+      "compressedBytes": 1335,
+      "sha256": "4df82768ade922b05117935f43f2a360fa575d4771fffbd7014c5881ccfeddf1",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/Preview-Server.cmd",
+      "bytes": 234,
+      "compressedBytes": 183,
+      "sha256": "ddfe7cd71bdd4e200dc8da661632c572c12cec6de2cc8f5fcb1153d80d9dbb1e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/README.md",
+      "bytes": 11772,
+      "compressedBytes": 6212,
+      "sha256": "4b624cc44b8093516aa632a3fded977ec1f871a3be8200af744c3a70a649df13",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/Start-FOSSIL.cmd",
+      "bytes": 52,
+      "compressedBytes": 54,
+      "sha256": "4495a5d2f2313369592da74af6ac8193a5329f96cadfe0f6e2a44511302ec96f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/amber.png",
+      "bytes": 1484193,
+      "compressedBytes": 1446182,
+      "sha256": "41081511351dc402f1a156b33e34724f9658d916554dd92d47ef7f6957e80056",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/amber.prompt.txt",
+      "bytes": 1302,
+      "compressedBytes": 714,
+      "sha256": "83d871e5015e7a2dd3e5ed3aae7ba648fd49f8a02a325257cb2191fccc3b786e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/archive-drawer.png",
+      "bytes": 2394820,
+      "compressedBytes": 2316428,
+      "sha256": "60c17e11ddf984ec31b2c59e46fa96df6c38ab3e143f2e3ee5c7c1ee5f0750e7",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/archive-drawer.prompt.txt",
+      "bytes": 2173,
+      "compressedBytes": 1091,
+      "sha256": "c13cd9d37b0ee64660024144681ab882c39e5ca614d8e5f425c3bd9fcd5fafe2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/exposure.png",
+      "bytes": 3022764,
+      "compressedBytes": 2966009,
+      "sha256": "cff25090bb7e272a2fe1ea54aee592d5dfbcce7bbd82439c705e994a19ee7488",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/exposure.prompt.txt",
+      "bytes": 1276,
+      "compressedBytes": 666,
+      "sha256": "67e8ae5dd8cd3831a0f7c143f23fa27f56d914e10f1e9e867920ef177b7e6cf2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/hero-slab.png",
+      "bytes": 2771846,
+      "compressedBytes": 2723227,
+      "sha256": "1e745c2332e579f73483e56511a2832d67d44b59bc69df358e0bc53379a4762e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/hero-slab.prompt.txt",
+      "bytes": 1151,
+      "compressedBytes": 638,
+      "sha256": "b80418cfcf131b1a6706a677bd5b9166ba5979d0235967c5b6be4affb0c7198c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/preservation.png",
+      "bytes": 3288509,
+      "compressedBytes": 3240559,
+      "sha256": "702a782869e2a791d0512bfab4a93dc4da58a1cc00f16025834351569fe2279d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/preservation.prompt.txt",
+      "bytes": 1197,
+      "compressedBytes": 675,
+      "sha256": "a8a1aa358901c6d782df06a23b5d04eab69c4b6d97529b22d6bea26c143e330a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/specimen.png",
+      "bytes": 2681368,
+      "compressedBytes": 2628142,
+      "sha256": "4fd52038d68b34964f3462f99df7fb8f9a17dc960edc59e3ad65c19ddcdb21c1",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/specimen.prompt.txt",
+      "bytes": 1095,
+      "compressedBytes": 623,
+      "sha256": "c744a85d6e1ca1b115637cf4820b81c330b9786107e2a42dc8f7d6142f2b842a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/strata.png",
+      "bytes": 4418705,
+      "compressedBytes": 4343423,
+      "sha256": "acf971d29e5cb26bedce77e7ed16e54d7bacdb361b2e1dd5825376b47ace352a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/ai-originals/strata.prompt.txt",
+      "bytes": 1224,
+      "compressedBytes": 702,
+      "sha256": "ee5ead20794e8d22238bdbbedb259562a40b2fb41a8669b02734b0f895233a51",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/favicon.svg",
+      "bytes": 277,
+      "compressedBytes": 201,
+      "sha256": "a49f340257af7d77bc827d06e32329ac8d5f1d9ea319b7ad980c5bfbf0217834",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/fonts/bodoni-moda.woff2",
+      "bytes": 14528,
+      "compressedBytes": 14533,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/fonts/cormorant-garamond-italic.woff2",
+      "bytes": 39260,
+      "compressedBytes": 39275,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/fonts/cormorant-garamond.woff2",
+      "bytes": 37640,
+      "compressedBytes": 37655,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/fonts/manrope.woff2",
+      "bytes": 24836,
+      "compressedBytes": 24846,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/amber.webp",
+      "bytes": 264126,
+      "compressedBytes": 262851,
+      "sha256": "636dd53bab9ff54d6ecec43b8683ff6a5cb918c4af456e01b644d08149ff207f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/amber.webp.json",
+      "bytes": 1369,
+      "compressedBytes": 774,
+      "sha256": "12bb152b7c5f8eacafb3199b762db32137dafd907b2156952c2be8eefe1e14a4",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/archive-drawer.webp",
+      "bytes": 246554,
+      "compressedBytes": 246634,
+      "sha256": "51ff6d743b04ffbea1b3b207f823757984a6a68f5e9f48e668c3152f24254972",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/archive-drawer.webp.json",
+      "bytes": 2241,
+      "compressedBytes": 1153,
+      "sha256": "180df87bdbbafa5099cff4cfde2166028051dfedaa8043293596eacd9f0b3784",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/exposure.webp",
+      "bytes": 398618,
+      "compressedBytes": 398743,
+      "sha256": "d2204b8a8cc51810d9cac489d4fc09cbb8437bcdc82765f9dc23e7fdcde4f638",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/exposure.webp.json",
+      "bytes": 1342,
+      "compressedBytes": 729,
+      "sha256": "2d3c9fb47c85c5e5ab70ce156b91b2c03364d1c40be7a8be418ccd410552ca4e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/hero-slab.webp",
+      "bytes": 432998,
+      "compressedBytes": 432322,
+      "sha256": "79666a773e3191c5a6b34dc0b3ee4fc4ea795315053046dfdacc10ed7df891f6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/hero-slab.webp.json",
+      "bytes": 1213,
+      "compressedBytes": 697,
+      "sha256": "d11f2ad9611e7264f1c29d6971fab6cc3411b4d486cc62e882f5180927cac664",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/preservation.webp",
+      "bytes": 505734,
+      "compressedBytes": 505889,
+      "sha256": "5b6c8eca9ae2a453dd1a4af42fb071f9157aa0ab39242b59a625d27682673b47",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/preservation.webp.json",
+      "bytes": 1269,
+      "compressedBytes": 738,
+      "sha256": "623621df6dc1ba22f70a73a33d4696d903efe49c47a0c9c1c0e49db746160935",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/specimen.webp",
+      "bytes": 458204,
+      "compressedBytes": 457445,
+      "sha256": "2f272a55c6bc8f7ad4a43d5f10fbc9e209ad8a9738216a69d38ced8f655c75c2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/specimen.webp.json",
+      "bytes": 1157,
+      "compressedBytes": 683,
+      "sha256": "f3800f10781e277144005728088775e7bcb2b0b3a4ce47b20f908c6c3baa7e25",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/strata.webp",
+      "bytes": 958548,
+      "compressedBytes": 958820,
+      "sha256": "7eb457823b2cf3882816714d9336f009028b19da66ac248f7f2165d81478f74d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/assets/images/strata.webp.json",
+      "bytes": 1286,
+      "compressedBytes": 758,
+      "sha256": "da27a17fec15b6ccebcdc6e8c9a3e503e42297703cb197aab3eb07e11c56853a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/README.md",
+      "bytes": 2561,
+      "compressedBytes": 1378,
+      "sha256": "535ff5a90a3e3af80b8927bfeb4fa49f84d89502aaea0fcc012cb9751c6cbd44",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/RENDERING.md",
+      "bytes": 3886,
+      "compressedBytes": 1961,
+      "sha256": "f4035107ff9d8dbb8d17e730f31f7a96a2f8daf425c93dd325b6ec26c9b69f74",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/ammonite-density.u8",
+      "bytes": 2654208,
+      "compressedBytes": 400940,
+      "sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/browser-verification.json",
+      "bytes": 468,
+      "compressedBytes": 298,
+      "sha256": "b0376f739a4df3872c790be542a60dee837471c49dece07dc9013b0c82ad3e45",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/fossil-volume.js",
+      "bytes": 11905487,
+      "compressedBytes": 4709139,
+      "sha256": "6eda9762b4d093a6780f1005188bbd9a0ecd3e982a0cdbaeed20880461c81fae",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-000.png",
+      "bytes": 116,
+      "compressedBytes": 77,
+      "sha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-001.png",
+      "bytes": 116,
+      "compressedBytes": 77,
+      "sha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-002.png",
+      "bytes": 150,
+      "compressedBytes": 120,
+      "sha256": "c2058e4117152126c1339627f906411923c6ab8158cc67636eccbbb457a94bd2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-003.png",
+      "bytes": 285,
+      "compressedBytes": 265,
+      "sha256": "ad42a8cc03cfe06e7f48001903a0cd9c3f93f7273ac06a0113e4d7758ef7bed1",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-004.png",
+      "bytes": 454,
+      "compressedBytes": 429,
+      "sha256": "1cd24ae282161b0fbdc45a5c0a3bda014b8913e779151d54805347b1186077f5",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-005.png",
+      "bytes": 764,
+      "compressedBytes": 759,
+      "sha256": "a91cdee0e70b8c65d28298e57fea86092abfccfa078a862a7a7bd3ac2c91715c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-006.png",
+      "bytes": 1130,
+      "compressedBytes": 1129,
+      "sha256": "381c112a13a5efd1100eae6be78d9e28f7070c07d5e638e9189f79b883d4d39f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-007.png",
+      "bytes": 1417,
+      "compressedBytes": 1406,
+      "sha256": "59b4e9ece39553b0892e1a77bba6a73da8f615d93aee7c533247f9ffc040cad7",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-008.png",
+      "bytes": 1799,
+      "compressedBytes": 1792,
+      "sha256": "51c59cd9dbe2b0eef68ceb0cbc4fa96da42dd28ff0daefb47e6358464bee9587",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-009.png",
+      "bytes": 2207,
+      "compressedBytes": 2185,
+      "sha256": "6cd13837c44d9e30822ff38d34c5a99aa4bcc15b2aa5e968db19b7158bc4b234",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-010.png",
+      "bytes": 2621,
+      "compressedBytes": 2595,
+      "sha256": "f69b0aa55160830d5c0d666bc190d1df56ac184f429168ff254d404cb7132512",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-011.png",
+      "bytes": 2940,
+      "compressedBytes": 2926,
+      "sha256": "c5d45a30575e63acfd2c69ec348e1d8cbdfe806a7594406b799a8e41c81b81be",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-012.png",
+      "bytes": 3313,
+      "compressedBytes": 3314,
+      "sha256": "eb1a7db90358f45b0be702832ac0d72042bfcd23ed9b54e7deb49fc99bab8437",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-013.png",
+      "bytes": 3724,
+      "compressedBytes": 3719,
+      "sha256": "a8911ede691f0ac11473ec74385fa17c8f4f9a9da00095c0a6d1fcccaf94446d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-014.png",
+      "bytes": 4174,
+      "compressedBytes": 4170,
+      "sha256": "5c7d597fa1b04d8a9d9756a53dca3252ecb2e1b0f32e4578483ff066bfcafd1c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-015.png",
+      "bytes": 4614,
+      "compressedBytes": 4611,
+      "sha256": "131566190b87a1489647bc06e1bd45d252667d5e788136444884a7bb18be1f55",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-016.png",
+      "bytes": 5047,
+      "compressedBytes": 5041,
+      "sha256": "349e28c8be8771cffa5718b641cd2f6c0eb48a6b6116c2e9eef19fecbac6a07a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-017.png",
+      "bytes": 5480,
+      "compressedBytes": 5471,
+      "sha256": "e711a17b6a8b99ec705c85c1fd96d5620252a820f607ae743c602ea4dd8d94d7",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-018.png",
+      "bytes": 5856,
+      "compressedBytes": 5852,
+      "sha256": "4e2810530a481bf8d4e68ef0855f766c23ccf04554a28f1958a957ca356a843e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-019.png",
+      "bytes": 6254,
+      "compressedBytes": 6244,
+      "sha256": "28f6dfefbd0a08ac953b463bd87b29a763f96ec1c39691bb6d8dd242154fcebd",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-020.png",
+      "bytes": 6621,
+      "compressedBytes": 6618,
+      "sha256": "1f50ecdfeeb2c0262532e67a771271b1aeade04948220853ae82a754d202faff",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-021.png",
+      "bytes": 7039,
+      "compressedBytes": 7034,
+      "sha256": "01863bec59aafb878e675efcda63418067773220605fddd165958533fb8122c9",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-022.png",
+      "bytes": 7468,
+      "compressedBytes": 7458,
+      "sha256": "53b692273a3c90699614c293de3700c542874730cd19a0e1cec67ce86557576f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-023.png",
+      "bytes": 7739,
+      "compressedBytes": 7726,
+      "sha256": "8f1edfec9fc16fbe5877350ac5aba5b945b8c018aa3f58ad2ccd1971c230c992",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-024.png",
+      "bytes": 8158,
+      "compressedBytes": 8156,
+      "sha256": "40357ac63ce342a30bdf315680662f98b375625839972094ec4c3adc433b7309",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-025.png",
+      "bytes": 8477,
+      "compressedBytes": 8470,
+      "sha256": "02e5d310fb9195ea7810a9d8106ea27da8a80f78850aa5cb9457507f690ea584",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-026.png",
+      "bytes": 8798,
+      "compressedBytes": 8782,
+      "sha256": "d6d862a82617a3fa57e74b3518b6074b2f1f5b15346335b675d6cf601c4e9861",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-027.png",
+      "bytes": 9059,
+      "compressedBytes": 9053,
+      "sha256": "dd117a8b4c30ff307cd44aa615026966456c31250769df34b0b90d0cb948c118",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-028.png",
+      "bytes": 9300,
+      "compressedBytes": 9297,
+      "sha256": "a2b9c397debd31dc43f9dbbf17b911ba0a0753bf772e086b3e47e25ec0b915cb",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-029.png",
+      "bytes": 9562,
+      "compressedBytes": 9553,
+      "sha256": "15206d628f40aa6eb82b4a49226bc34147673dc5f6e14c4e8a1f18200111fd3d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-030.png",
+      "bytes": 9578,
+      "compressedBytes": 9576,
+      "sha256": "5aeb448ccea9cf01a90ddd30998fceedac8d95c2c1903f1bd3129c7dcecbd7fa",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-031.png",
+      "bytes": 9658,
+      "compressedBytes": 9658,
+      "sha256": "1d597c3a5370f09931c6f58fc7880ee86ca3e8828ee3138943ca09cadf8ce094",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-032.png",
+      "bytes": 9729,
+      "compressedBytes": 9724,
+      "sha256": "ab8294978e80f4260d86bac5af14cb7178f26a67640dfa71e85eb69d2c54f1ea",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-033.png",
+      "bytes": 9790,
+      "compressedBytes": 9787,
+      "sha256": "e7c32bc06c74a0bfce4a1ffc317b48a414f800d7d99ae32f66f5bf8cf7b19363",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-034.png",
+      "bytes": 9810,
+      "compressedBytes": 9804,
+      "sha256": "dd735e1d13acfbe9301c5ea4ff38f62f9e2c12312368bd72f87bf2005b66d341",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-035.png",
+      "bytes": 9787,
+      "compressedBytes": 9784,
+      "sha256": "b298848c68e5ba3eeb7178987b4a14ec91f394a13bf092dac747229d5cd00e02",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-036.png",
+      "bytes": 9799,
+      "compressedBytes": 9798,
+      "sha256": "8fc55d5964250eb6abbc2a87c9d23e65963b542326af15d92e5bf948411a6516",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-037.png",
+      "bytes": 9821,
+      "compressedBytes": 9821,
+      "sha256": "51edece35a68006deb32010b56e35f1db8ef4350a499c5cb2de07ec6f8e9dd97",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-038.png",
+      "bytes": 9785,
+      "compressedBytes": 9782,
+      "sha256": "c681f39a3ba3634526544a6834804baa3895d585178a3eb637c2784e95af7960",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-039.png",
+      "bytes": 9705,
+      "compressedBytes": 9707,
+      "sha256": "01f47598ef82bb44d5c717cd05f5d13916e4e0f672f53ca50b647bd2fb2995d6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-040.png",
+      "bytes": 9312,
+      "compressedBytes": 9305,
+      "sha256": "10f2960c0d26d728c70ad2e5cae9523a424f689813c515bcff9285cbda1b482e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-041.png",
+      "bytes": 9206,
+      "compressedBytes": 9194,
+      "sha256": "33b281d054fc6f25d70bb5cf5cd7d16adb455976548ca0016202383373074a16",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-042.png",
+      "bytes": 9129,
+      "compressedBytes": 9121,
+      "sha256": "7bbf553d195dbaf16b4942c7fac07f4a5f18716d2c03d71e99f119e9d51877b2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-043.png",
+      "bytes": 8944,
+      "compressedBytes": 8946,
+      "sha256": "9a0cd1ae48d54c28e32a50d687497ab3b003b006ef004a9489ba9bb56be756c9",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-044.png",
+      "bytes": 8723,
+      "compressedBytes": 8718,
+      "sha256": "9b531659de8207b7d93564046341669f9f0a9158146dafa794bb994b7a3dea88",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-045.png",
+      "bytes": 8499,
+      "compressedBytes": 8489,
+      "sha256": "adbf2bd63b7ade9b2e1c6cd070cd326f84c9eefc91db8719e620c87da081db9c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-046.png",
+      "bytes": 8215,
+      "compressedBytes": 8202,
+      "sha256": "a0d5bc788430ed24884801d09ae4e87afb284caaaceed54d9f3a969ad14f977d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-047.png",
+      "bytes": 7891,
+      "compressedBytes": 7886,
+      "sha256": "9de534adaa2ed7d795fa1badda451a16767629fafc01f910781808e50baa6413",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-048.png",
+      "bytes": 7461,
+      "compressedBytes": 7455,
+      "sha256": "f22f89a9cc01bdff3ddc855b43760577cb72f4f862fd2e59b8b0c7a540c5b5e2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-049.png",
+      "bytes": 7197,
+      "compressedBytes": 7184,
+      "sha256": "7bb11d8c804a34328cdb736a54feb36a4573b0011226b3e48e1acbb20d59ea51",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-050.png",
+      "bytes": 6772,
+      "compressedBytes": 6777,
+      "sha256": "02388743a47e78596fa537f0081a866f4a47bf189e5ab1990d94a61e82ef8892",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-051.png",
+      "bytes": 6317,
+      "compressedBytes": 6317,
+      "sha256": "eada4963978188585707e0ede22414a4702140f3dba5203f9932c67406355107",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-052.png",
+      "bytes": 5917,
+      "compressedBytes": 5913,
+      "sha256": "fae3b5c72e1df3a8bd13b22aab20cd9eb48e98e825f115c56b64e14192b7a675",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-053.png",
+      "bytes": 5575,
+      "compressedBytes": 5578,
+      "sha256": "bce9a2553b48411c19fdd48ec89b8d4a67b5a0991c256395a697d0fd1d0a89bb",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-054.png",
+      "bytes": 5205,
+      "compressedBytes": 5202,
+      "sha256": "805313d6afd42460eae57c58fce6028ab015181a8a439da69589aaefab0f62d5",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-055.png",
+      "bytes": 4747,
+      "compressedBytes": 4739,
+      "sha256": "15a1c3597b28ae4fc3751af6594c9ceb8765d23bb809b088400c1ebac2d4f4dc",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-056.png",
+      "bytes": 4327,
+      "compressedBytes": 4319,
+      "sha256": "b5c4f0f805666beb96ec85cac1a6bad5750476d33e5fd4817e6ea4ce075ae1eb",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-057.png",
+      "bytes": 3852,
+      "compressedBytes": 3846,
+      "sha256": "a9cfac82520ee1c4eb6d5d60b1935af915862c7387f8d6db701f361d2f5bdfba",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-058.png",
+      "bytes": 3452,
+      "compressedBytes": 3434,
+      "sha256": "2ae33c7fd3a5ffb6e8be462b6119a23e92f6272fd19a706abc6261e554462e7a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-059.png",
+      "bytes": 3063,
+      "compressedBytes": 3059,
+      "sha256": "c79ccb66f9e45bfe8d4f27d7c7c16ff838c3a086c1fffbb54285853e67aafd7e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-060.png",
+      "bytes": 2692,
+      "compressedBytes": 2676,
+      "sha256": "a421667e743baf3389071f8bab0809b10fa9b615fb68e010f508be46193cb96e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-061.png",
+      "bytes": 2407,
+      "compressedBytes": 2386,
+      "sha256": "e08ae3a7149be9bac681d3722d345a3289b040b2906d61e0f3c69a96df2b10b6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-062.png",
+      "bytes": 2042,
+      "compressedBytes": 2030,
+      "sha256": "0a4c5ac1fbe583a01ea43d8206d50d6916035667b2d3d8a3e584128ec1f8d929",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-063.png",
+      "bytes": 1691,
+      "compressedBytes": 1678,
+      "sha256": "62c2a9056fa1845d3cb6927bc8dcd60bacf2669b5bef83dd68fcd326d3a2fe76",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-064.png",
+      "bytes": 1387,
+      "compressedBytes": 1372,
+      "sha256": "b1cf0cc700230c1b9a0c76ee9ee7994b1b5ff4932776a996f44f3242dd678338",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-065.png",
+      "bytes": 1108,
+      "compressedBytes": 1105,
+      "sha256": "0443840bfcff1028ebd4afd8ec8053df867b46df0b297191471700dd3555ca78",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-066.png",
+      "bytes": 747,
+      "compressedBytes": 741,
+      "sha256": "55f2cac5a7f9245670475b1666038613f400c07fc5d730ebb831b5ba7893e46c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-067.png",
+      "bytes": 445,
+      "compressedBytes": 436,
+      "sha256": "f6f325f683dab510a371178cbc79821a0d28db00925a47f3671873796f360fcf",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-068.png",
+      "bytes": 259,
+      "compressedBytes": 237,
+      "sha256": "fb22210711e0d9992074bc58c4f176c4b37072d2d28a479de1ccd23f93c3fe87",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-069.png",
+      "bytes": 146,
+      "compressedBytes": 115,
+      "sha256": "bf5b6412fdf301a01fb66689ac5b2b0120658f2f02eb0518443f84b7439918c1",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-070.png",
+      "bytes": 116,
+      "compressedBytes": 77,
+      "sha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/sections/section-071.png",
+      "bytes": 116,
+      "compressedBytes": 77,
+      "sha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/verification.json",
+      "bytes": 396,
+      "compressedBytes": 265,
+      "sha256": "14e1076b1ce32c894a1e20229d8e615091d3ae44cdf9f18e59a0c5a390f5b41b",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/volume-metadata.json",
+      "bytes": 8075,
+      "compressedBytes": 4128,
+      "sha256": "ca030a22296500d14c14b74ff9ab411cb744dec64a518b0569eeee44dc057068",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/data/webgl-verification.json",
+      "bytes": 77,
+      "compressedBytes": 59,
+      "sha256": "5818b9d0ebc3e15e007e1d2042571d72c63065c45ce9a5a00882210d27042979",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/docs/ASSET-MANIFEST.json",
+      "bytes": 18700,
+      "compressedBytes": 4092,
+      "sha256": "72c7f2d8a3ec3a60f2dfcc98db8c34f58001cea1e3b50df5c5aefd3dca3d264d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/docs/PROVENANCE.md",
+      "bytes": 12505,
+      "compressedBytes": 5056,
+      "sha256": "9418ff27dd8aaa2f97610471aebb0246e3e2ce62b1b07abf9fed0280b786e3cd",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/docs/QA.md",
+      "bytes": 8031,
+      "compressedBytes": 4499,
+      "sha256": "6944f9dcd182aa3637bb7575b5ffba70e9265a5354a433310ad69ba063d20b6e",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/docs/RESEARCH.md",
+      "bytes": 7239,
+      "compressedBytes": 3393,
+      "sha256": "41a555076be2d5e66a0145ef6d590e96b5e98d3eba33f237aee4772b6cbd8891",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/docs/VISUAL-BIBLE.html",
+      "bytes": 191725,
+      "compressedBytes": 103503,
+      "sha256": "7575af2549716f204ae668989ecd1ea51b989fea9b6482b22f89de9bea6fde10",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/index.html",
+      "bytes": 20734,
+      "compressedBytes": 5817,
+      "sha256": "6208b9329e17fc788ef47ba840104ecbb965d31a379107914a3425c4eff33c04",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/licenses/AI-Assets-Notice.md",
+      "bytes": 3310,
+      "compressedBytes": 1589,
+      "sha256": "9073d9a97bcdb0db42224addf2e11eecd7501297ed49fbc305072a729512a1f0",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/licenses/Bodoni-Moda-OFL.txt",
+      "bytes": 4526,
+      "compressedBytes": 1976,
+      "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/licenses/Cormorant-Garamond-OFL.txt",
+      "bytes": 4387,
+      "compressedBytes": 1941,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/licenses/Droid-Sans-Fallback-Apache.txt",
+      "bytes": 12192,
+      "compressedBytes": 4386,
+      "sha256": "953fb42cc0c6c409205055e476de6d7c4f0912a47e5cfa0141b3628e7f83a72c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/licenses/Lenis-MIT.txt",
+      "bytes": 1096,
+      "compressedBytes": 642,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/licenses/Manrope-OFL.txt",
+      "bytes": 4387,
+      "compressedBytes": 1942,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/models/MARCHING_CUBES_LICENSE.txt",
+      "bytes": 1254,
+      "compressedBytes": 748,
+      "sha256": "3c5982fdb99ce3a5d3b1e31f30eaba9420d3a44d483ed5b9520ad8939ba3ada9",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/models/ammonite-interpretive.obj",
+      "bytes": 28315437,
+      "compressedBytes": 7795418,
+      "sha256": "4fb86cc966d7b154bd88edb213c081dd88da87fecfb55c76871559b3ec5d166a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/models/marching-cubes-table.json",
+      "bytes": 10740,
+      "compressedBytes": 2049,
+      "sha256": "d525cc98d43a140125703477853fccb96fc26fe501ae371bd99d2f7ffda1b154",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/models/procedural-parameters.json",
+      "bytes": 1637,
+      "compressedBytes": 711,
+      "sha256": "7c64883ec7ce71cfb355495f9f9ac553f745c8e3fd16b39300cac175fc9d3309",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/package.json",
+      "bytes": 386,
+      "compressedBytes": 205,
+      "sha256": "38aa29e4bd6e4d202603d2289ef881b0fe1f04b864e4fe415271bed3ab1b529f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/01-specimen.png",
+      "bytes": 3015388,
+      "compressedBytes": 2943895,
+      "sha256": "03ea1cab7f992805d17ba328149b215ba394b9ec05bb6e7038251da8df95bb5d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/01-specimen.prompt.txt",
+      "bytes": 2405,
+      "compressedBytes": 1368,
+      "sha256": "58adf321e114ed00efad1840d7e918d2c06cd31f8bdc920a23443e916c74b324",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/02-strata.png",
+      "bytes": 3171550,
+      "compressedBytes": 3007570,
+      "sha256": "9e85724c9fa3ab83896de02274a53b6fc611655bff53908e27ca134124a258ac",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/02-strata.prompt.txt",
+      "bytes": 2663,
+      "compressedBytes": 1413,
+      "sha256": "7d9f1d98e5b128e6409d5d534c3500b2f8b75c411850477977588b6c19d73aa9",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/03-burial.png",
+      "bytes": 3332163,
+      "compressedBytes": 3258936,
+      "sha256": "de6abe9a00e53bcec1d42254e9259fc7791a7b8c2ff87f52cfd5a25e6b8082b6",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/03-burial.prompt.txt",
+      "bytes": 2607,
+      "compressedBytes": 1425,
+      "sha256": "f6094e3be7ddd727c1b263a3d49022ca1ae53fb366191d7000707964c03c5f53",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/04-preservation.png",
+      "bytes": 3281487,
+      "compressedBytes": 3232453,
+      "sha256": "b2b46fa300a8a21645bd456866d24e582097e180ce48ac0240d81d15f2a4a33b",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/04-preservation.prompt.txt",
+      "bytes": 2735,
+      "compressedBytes": 1457,
+      "sha256": "53b1d3c0ba544a3276851566448608372c258e58bd06485e3172b81f7d78392f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/05-exposure.png",
+      "bytes": 3286886,
+      "compressedBytes": 3219664,
+      "sha256": "d41c8602f9fdf7bc202e798f5b118f0e0f346a9663defa4e1ce36b85750829d7",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/05-exposure.prompt.txt",
+      "bytes": 2835,
+      "compressedBytes": 1543,
+      "sha256": "b1d9d356cdad97c355fbcd84e64a3ae0db5de29c326c8e73d7796028b9116186",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/06-amber.png",
+      "bytes": 2099815,
+      "compressedBytes": 1984795,
+      "sha256": "443a01134b89259a7f7cdb28cea23e8acaf8183fbbb2156d090dd2d44823a10d",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/06-amber.prompt.txt",
+      "bytes": 2769,
+      "compressedBytes": 1489,
+      "sha256": "7022e29dbbd22603b889bfb76301b6edb271ef3634e90b18cec2881512068223",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/06-amber.refinement.prompt.txt",
+      "bytes": 1034,
+      "compressedBytes": 604,
+      "sha256": "94141883d9b003869e6f64fbce5b970322a7f363ef4af203f3795c2048b00b1a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/07-scan.png",
+      "bytes": 2639783,
+      "compressedBytes": 2522914,
+      "sha256": "1d290a86a03da53835e003c323ec5e7e8449baa8c54d4c31cc8d3a933ee7ddbd",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/07-scan.prompt.txt",
+      "bytes": 2781,
+      "compressedBytes": 1481,
+      "sha256": "55caf9b359083b5ff29b5760f266b8827bb30c7e9ec3e271ec0ef10652dc899f",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/08-reconstruct.png",
+      "bytes": 2668110,
+      "compressedBytes": 2591912,
+      "sha256": "03624af1ffb810811e38c0e009bce5997b75ceed0b4f0cbc5fa469ef3e99f695",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/08-reconstruct.prompt.txt",
+      "bytes": 2814,
+      "compressedBytes": 1476,
+      "sha256": "4c62e6fcc3a1f9c2bb43f0722c0b10e74eaa88e57b33ac46e0ebde19d16dd959",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/09-archive.png",
+      "bytes": 2494374,
+      "compressedBytes": 2418314,
+      "sha256": "3fc66547adc1b0ff4e70cc919b2061981e23d5419e7684075f2b09d5a5ab064c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/09-archive.prompt.txt",
+      "bytes": 2971,
+      "compressedBytes": 1490,
+      "sha256": "98cf6a53e6a85087a1678636d5429c110c9e6f797d1921d25cecd4ef31c2e65b",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/10-deep-time.png",
+      "bytes": 1825772,
+      "compressedBytes": 1669814,
+      "sha256": "615bd7154ceb90412497416ace0d830ec2bf5ddffc98c103bcae699e36300748",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/10-deep-time.prompt.txt",
+      "bytes": 1163,
+      "compressedBytes": 706,
+      "sha256": "0008273298a083abf66d6292a705a5a88c1df68440a1e1128cfc7848531395bc",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/reference/geology-concept-notes.txt",
+      "bytes": 3452,
+      "compressedBytes": 1706,
+      "sha256": "9718cebf9bb6fa642aa78978bbb4832c84cccc5bf9240715121c9952a49618ca",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/requirements-procedural.txt",
+      "bytes": 152,
+      "compressedBytes": 125,
+      "sha256": "c51bfe441bc2e8618299184213aee4a49c29f9fed3517143669a0ac897cf7dd4",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/scripts/asset_manifest.py",
+      "bytes": 4866,
+      "compressedBytes": 1958,
+      "sha256": "cdd81687318a7dfbed6c7f1f0b2eb2cd938419d1df9634ff7fda0c8a570e3ad8",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/scripts/build.mjs",
+      "bytes": 1264,
+      "compressedBytes": 507,
+      "sha256": "269c63dc8653c6dcd0c2a314537ee3f41f446eb6db7e2e115fd710a3567d87dc",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/scripts/generate_volume.py",
+      "bytes": 24572,
+      "compressedBytes": 8968,
+      "sha256": "b4e31360f1152e04344361b084299ff7a4b304505b7057685c8c8d62718e2194",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/scripts/serve.mjs",
+      "bytes": 1773,
+      "compressedBytes": 839,
+      "sha256": "8b38ff196a7db9e83e8cb4fbaccd393d3482a9dc1fab469a072a964207ae2f33",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/scripts/verify.mjs",
+      "bytes": 3038,
+      "compressedBytes": 1401,
+      "sha256": "d14ee251640525a70c0761b91fbeda1f67554f56137ff93208a5899e0cd5c716",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/src/app.js",
+      "bytes": 22603,
+      "compressedBytes": 7387,
+      "sha256": "ff4a7409b16e08ed66ced388fc04fd9ee76430948b0389921f2a405ed94b54a7",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/src/geology.js",
+      "bytes": 29303,
+      "compressedBytes": 8639,
+      "sha256": "36e2b944fbb0bc0aedff763205e88711e5391c84f007748c79bbe02049eebfb9",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/src/imaging.js",
+      "bytes": 31930,
+      "compressedBytes": 9896,
+      "sha256": "1e93a22e1f6ce4cd085886bb770f76c0f1a8e99a893cb57dd4750f8c6f6a8866",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/src/math.js",
+      "bytes": 1343,
+      "compressedBytes": 695,
+      "sha256": "8754627292f4e433059e5d7e95cc7d090c5e829403d39624be9da98f890ae027",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/src/style.css",
+      "bytes": 33613,
+      "compressedBytes": 7877,
+      "sha256": "08fdbe2411d7f4887fbaabd917ee970675ecd6538dc72f62e2aa0265cb3f4da3",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/vendor/lenis.min.js",
+      "bytes": 18722,
+      "compressedBytes": 5400,
+      "sha256": "53195c9797e7ce7bf9d7fa9242b08209e57f46de4c9dac126a6494fa780e3346",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/DESIGN.md",
+      "bytes": 19139,
+      "compressedBytes": 7115,
+      "sha256": "b371a72ae0ead2daac76ae10bc47b6ee436d419ebbf9cdba940804dfeeb6dfc1",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/.impeccable/design.json",
+      "bytes": 50976,
+      "compressedBytes": 11356,
+      "sha256": "6c53d7560417de85dc647a3ac899a72fe04395d2eb2877f001cd86de11c1876c",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "FOSSIL/CHECKSUMS.sha256",
+      "bytes": 16173,
+      "compressedBytes": 7943,
+      "sha256": "595f2b941f27bff7b68ccaeed02b2df4caa2e5ef26b237c68d9b87cebd900c2a",
+      "directory": false,
+      "mtime": "2026-10-07T00:00:00",
+      "externalAttributes": 2175008768
+    }
+  ],
+  "mapping": [
+    {
+      "source": "FOSSIL/LICENSE",
+      "target": "public/fossil/LICENSE.txt",
+      "sourceBytes": 1548,
+      "sourceSha256": "2b2efbbc1fb5c98d53190a99452efd058569d7b661d7b3972d8d319310f59e4b",
+      "targetBytes": 1548,
+      "targetSha256": "2b2efbbc1fb5c98d53190a99452efd058569d7b661d7b3972d8d319310f59e4b",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/PRODUCT.md",
+      "target": "provenance/fossil/UPSTREAM-PRODUCT.md",
+      "sourceBytes": 2534,
+      "sourceSha256": "4df82768ade922b05117935f43f2a360fa575d4771fffbd7014c5881ccfeddf1",
+      "targetBytes": 2534,
+      "targetSha256": "4df82768ade922b05117935f43f2a360fa575d4771fffbd7014c5881ccfeddf1",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/README.md",
+      "target": "provenance/fossil/UPSTREAM-README.md",
+      "sourceBytes": 11772,
+      "sourceSha256": "4b624cc44b8093516aa632a3fded977ec1f871a3be8200af744c3a70a649df13",
+      "targetBytes": 11772,
+      "targetSha256": "4b624cc44b8093516aa632a3fded977ec1f871a3be8200af744c3a70a649df13",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/amber.png",
+      "target": "provenance/fossil/assets/ai-originals/amber.png",
+      "sourceBytes": 1484193,
+      "sourceSha256": "41081511351dc402f1a156b33e34724f9658d916554dd92d47ef7f6957e80056",
+      "targetBytes": 1484193,
+      "targetSha256": "41081511351dc402f1a156b33e34724f9658d916554dd92d47ef7f6957e80056",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/amber.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/amber.prompt.txt",
+      "sourceBytes": 1302,
+      "sourceSha256": "83d871e5015e7a2dd3e5ed3aae7ba648fd49f8a02a325257cb2191fccc3b786e",
+      "targetBytes": 1302,
+      "targetSha256": "83d871e5015e7a2dd3e5ed3aae7ba648fd49f8a02a325257cb2191fccc3b786e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/archive-drawer.png",
+      "target": "provenance/fossil/assets/ai-originals/archive-drawer.png",
+      "sourceBytes": 2394820,
+      "sourceSha256": "60c17e11ddf984ec31b2c59e46fa96df6c38ab3e143f2e3ee5c7c1ee5f0750e7",
+      "targetBytes": 2394820,
+      "targetSha256": "60c17e11ddf984ec31b2c59e46fa96df6c38ab3e143f2e3ee5c7c1ee5f0750e7",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/archive-drawer.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/archive-drawer.prompt.txt",
+      "sourceBytes": 2173,
+      "sourceSha256": "c13cd9d37b0ee64660024144681ab882c39e5ca614d8e5f425c3bd9fcd5fafe2",
+      "targetBytes": 2173,
+      "targetSha256": "c13cd9d37b0ee64660024144681ab882c39e5ca614d8e5f425c3bd9fcd5fafe2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/exposure.png",
+      "target": "provenance/fossil/assets/ai-originals/exposure.png",
+      "sourceBytes": 3022764,
+      "sourceSha256": "cff25090bb7e272a2fe1ea54aee592d5dfbcce7bbd82439c705e994a19ee7488",
+      "targetBytes": 3022764,
+      "targetSha256": "cff25090bb7e272a2fe1ea54aee592d5dfbcce7bbd82439c705e994a19ee7488",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/exposure.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/exposure.prompt.txt",
+      "sourceBytes": 1276,
+      "sourceSha256": "67e8ae5dd8cd3831a0f7c143f23fa27f56d914e10f1e9e867920ef177b7e6cf2",
+      "targetBytes": 1276,
+      "targetSha256": "67e8ae5dd8cd3831a0f7c143f23fa27f56d914e10f1e9e867920ef177b7e6cf2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/hero-slab.png",
+      "target": "provenance/fossil/assets/ai-originals/hero-slab.png",
+      "sourceBytes": 2771846,
+      "sourceSha256": "1e745c2332e579f73483e56511a2832d67d44b59bc69df358e0bc53379a4762e",
+      "targetBytes": 2771846,
+      "targetSha256": "1e745c2332e579f73483e56511a2832d67d44b59bc69df358e0bc53379a4762e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/hero-slab.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/hero-slab.prompt.txt",
+      "sourceBytes": 1151,
+      "sourceSha256": "b80418cfcf131b1a6706a677bd5b9166ba5979d0235967c5b6be4affb0c7198c",
+      "targetBytes": 1151,
+      "targetSha256": "b80418cfcf131b1a6706a677bd5b9166ba5979d0235967c5b6be4affb0c7198c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/preservation.png",
+      "target": "provenance/fossil/assets/ai-originals/preservation.png",
+      "sourceBytes": 3288509,
+      "sourceSha256": "702a782869e2a791d0512bfab4a93dc4da58a1cc00f16025834351569fe2279d",
+      "targetBytes": 3288509,
+      "targetSha256": "702a782869e2a791d0512bfab4a93dc4da58a1cc00f16025834351569fe2279d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/preservation.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/preservation.prompt.txt",
+      "sourceBytes": 1197,
+      "sourceSha256": "a8a1aa358901c6d782df06a23b5d04eab69c4b6d97529b22d6bea26c143e330a",
+      "targetBytes": 1197,
+      "targetSha256": "a8a1aa358901c6d782df06a23b5d04eab69c4b6d97529b22d6bea26c143e330a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/specimen.png",
+      "target": "provenance/fossil/assets/ai-originals/specimen.png",
+      "sourceBytes": 2681368,
+      "sourceSha256": "4fd52038d68b34964f3462f99df7fb8f9a17dc960edc59e3ad65c19ddcdb21c1",
+      "targetBytes": 2681368,
+      "targetSha256": "4fd52038d68b34964f3462f99df7fb8f9a17dc960edc59e3ad65c19ddcdb21c1",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/specimen.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/specimen.prompt.txt",
+      "sourceBytes": 1095,
+      "sourceSha256": "c744a85d6e1ca1b115637cf4820b81c330b9786107e2a42dc8f7d6142f2b842a",
+      "targetBytes": 1095,
+      "targetSha256": "c744a85d6e1ca1b115637cf4820b81c330b9786107e2a42dc8f7d6142f2b842a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/strata.png",
+      "target": "provenance/fossil/assets/ai-originals/strata.png",
+      "sourceBytes": 4418705,
+      "sourceSha256": "acf971d29e5cb26bedce77e7ed16e54d7bacdb361b2e1dd5825376b47ace352a",
+      "targetBytes": 4418705,
+      "targetSha256": "acf971d29e5cb26bedce77e7ed16e54d7bacdb361b2e1dd5825376b47ace352a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/ai-originals/strata.prompt.txt",
+      "target": "provenance/fossil/assets/ai-originals/strata.prompt.txt",
+      "sourceBytes": 1224,
+      "sourceSha256": "ee5ead20794e8d22238bdbbedb259562a40b2fb41a8669b02734b0f895233a51",
+      "targetBytes": 1224,
+      "targetSha256": "ee5ead20794e8d22238bdbbedb259562a40b2fb41a8669b02734b0f895233a51",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/favicon.svg",
+      "target": "public/fossil/assets/favicon.svg",
+      "sourceBytes": 277,
+      "sourceSha256": "a49f340257af7d77bc827d06e32329ac8d5f1d9ea319b7ad980c5bfbf0217834",
+      "targetBytes": 277,
+      "targetSha256": "a49f340257af7d77bc827d06e32329ac8d5f1d9ea319b7ad980c5bfbf0217834",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/fonts/bodoni-moda.woff2",
+      "target": "public/fossil/assets/fonts/bodoni-moda.woff2",
+      "sourceBytes": 14528,
+      "sourceSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "targetBytes": 14528,
+      "targetSha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/fonts/cormorant-garamond-italic.woff2",
+      "target": "public/fossil/assets/fonts/cormorant-garamond-italic.woff2",
+      "sourceBytes": 39260,
+      "sourceSha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "targetBytes": 39260,
+      "targetSha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/fonts/cormorant-garamond.woff2",
+      "target": "public/fossil/assets/fonts/cormorant-garamond.woff2",
+      "sourceBytes": 37640,
+      "sourceSha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "targetBytes": 37640,
+      "targetSha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/fonts/manrope.woff2",
+      "target": "public/fossil/assets/fonts/manrope.woff2",
+      "sourceBytes": 24836,
+      "sourceSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "targetBytes": 24836,
+      "targetSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/amber.webp",
+      "target": "public/fossil/assets/images/amber.webp",
+      "sourceBytes": 264126,
+      "sourceSha256": "636dd53bab9ff54d6ecec43b8683ff6a5cb918c4af456e01b644d08149ff207f",
+      "targetBytes": 264126,
+      "targetSha256": "636dd53bab9ff54d6ecec43b8683ff6a5cb918c4af456e01b644d08149ff207f",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/amber.webp.json",
+      "target": "public/fossil/assets/images/amber.webp.json",
+      "sourceBytes": 1369,
+      "sourceSha256": "12bb152b7c5f8eacafb3199b762db32137dafd907b2156952c2be8eefe1e14a4",
+      "targetBytes": 1369,
+      "targetSha256": "12bb152b7c5f8eacafb3199b762db32137dafd907b2156952c2be8eefe1e14a4",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/archive-drawer.webp",
+      "target": "public/fossil/assets/images/archive-drawer.webp",
+      "sourceBytes": 246554,
+      "sourceSha256": "51ff6d743b04ffbea1b3b207f823757984a6a68f5e9f48e668c3152f24254972",
+      "targetBytes": 246554,
+      "targetSha256": "51ff6d743b04ffbea1b3b207f823757984a6a68f5e9f48e668c3152f24254972",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/archive-drawer.webp.json",
+      "target": "public/fossil/assets/images/archive-drawer.webp.json",
+      "sourceBytes": 2241,
+      "sourceSha256": "180df87bdbbafa5099cff4cfde2166028051dfedaa8043293596eacd9f0b3784",
+      "targetBytes": 2241,
+      "targetSha256": "180df87bdbbafa5099cff4cfde2166028051dfedaa8043293596eacd9f0b3784",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/exposure.webp",
+      "target": "public/fossil/assets/images/exposure.webp",
+      "sourceBytes": 398618,
+      "sourceSha256": "d2204b8a8cc51810d9cac489d4fc09cbb8437bcdc82765f9dc23e7fdcde4f638",
+      "targetBytes": 398618,
+      "targetSha256": "d2204b8a8cc51810d9cac489d4fc09cbb8437bcdc82765f9dc23e7fdcde4f638",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/exposure.webp.json",
+      "target": "public/fossil/assets/images/exposure.webp.json",
+      "sourceBytes": 1342,
+      "sourceSha256": "2d3c9fb47c85c5e5ab70ce156b91b2c03364d1c40be7a8be418ccd410552ca4e",
+      "targetBytes": 1342,
+      "targetSha256": "2d3c9fb47c85c5e5ab70ce156b91b2c03364d1c40be7a8be418ccd410552ca4e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/hero-slab.webp",
+      "target": "public/fossil/assets/images/hero-slab.webp",
+      "sourceBytes": 432998,
+      "sourceSha256": "79666a773e3191c5a6b34dc0b3ee4fc4ea795315053046dfdacc10ed7df891f6",
+      "targetBytes": 432998,
+      "targetSha256": "79666a773e3191c5a6b34dc0b3ee4fc4ea795315053046dfdacc10ed7df891f6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/hero-slab.webp.json",
+      "target": "public/fossil/assets/images/hero-slab.webp.json",
+      "sourceBytes": 1213,
+      "sourceSha256": "d11f2ad9611e7264f1c29d6971fab6cc3411b4d486cc62e882f5180927cac664",
+      "targetBytes": 1213,
+      "targetSha256": "d11f2ad9611e7264f1c29d6971fab6cc3411b4d486cc62e882f5180927cac664",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/preservation.webp",
+      "target": "public/fossil/assets/images/preservation.webp",
+      "sourceBytes": 505734,
+      "sourceSha256": "5b6c8eca9ae2a453dd1a4af42fb071f9157aa0ab39242b59a625d27682673b47",
+      "targetBytes": 505734,
+      "targetSha256": "5b6c8eca9ae2a453dd1a4af42fb071f9157aa0ab39242b59a625d27682673b47",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/preservation.webp.json",
+      "target": "public/fossil/assets/images/preservation.webp.json",
+      "sourceBytes": 1269,
+      "sourceSha256": "623621df6dc1ba22f70a73a33d4696d903efe49c47a0c9c1c0e49db746160935",
+      "targetBytes": 1269,
+      "targetSha256": "623621df6dc1ba22f70a73a33d4696d903efe49c47a0c9c1c0e49db746160935",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/specimen.webp",
+      "target": "public/fossil/assets/images/specimen.webp",
+      "sourceBytes": 458204,
+      "sourceSha256": "2f272a55c6bc8f7ad4a43d5f10fbc9e209ad8a9738216a69d38ced8f655c75c2",
+      "targetBytes": 458204,
+      "targetSha256": "2f272a55c6bc8f7ad4a43d5f10fbc9e209ad8a9738216a69d38ced8f655c75c2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/specimen.webp.json",
+      "target": "public/fossil/assets/images/specimen.webp.json",
+      "sourceBytes": 1157,
+      "sourceSha256": "f3800f10781e277144005728088775e7bcb2b0b3a4ce47b20f908c6c3baa7e25",
+      "targetBytes": 1157,
+      "targetSha256": "f3800f10781e277144005728088775e7bcb2b0b3a4ce47b20f908c6c3baa7e25",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/strata.webp",
+      "target": "public/fossil/assets/images/strata.webp",
+      "sourceBytes": 958548,
+      "sourceSha256": "7eb457823b2cf3882816714d9336f009028b19da66ac248f7f2165d81478f74d",
+      "targetBytes": 958548,
+      "targetSha256": "7eb457823b2cf3882816714d9336f009028b19da66ac248f7f2165d81478f74d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/assets/images/strata.webp.json",
+      "target": "public/fossil/assets/images/strata.webp.json",
+      "sourceBytes": 1286,
+      "sourceSha256": "da27a17fec15b6ccebcdc6e8c9a3e503e42297703cb197aab3eb07e11c56853a",
+      "targetBytes": 1286,
+      "targetSha256": "da27a17fec15b6ccebcdc6e8c9a3e503e42297703cb197aab3eb07e11c56853a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/README.md",
+      "target": "public/fossil/data/README.md",
+      "sourceBytes": 2561,
+      "sourceSha256": "535ff5a90a3e3af80b8927bfeb4fa49f84d89502aaea0fcc012cb9751c6cbd44",
+      "targetBytes": 2561,
+      "targetSha256": "535ff5a90a3e3af80b8927bfeb4fa49f84d89502aaea0fcc012cb9751c6cbd44",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/RENDERING.md",
+      "target": "public/fossil/data/RENDERING.md",
+      "sourceBytes": 3886,
+      "sourceSha256": "f4035107ff9d8dbb8d17e730f31f7a96a2f8daf425c93dd325b6ec26c9b69f74",
+      "targetBytes": 3886,
+      "targetSha256": "f4035107ff9d8dbb8d17e730f31f7a96a2f8daf425c93dd325b6ec26c9b69f74",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/ammonite-density.u8",
+      "target": "public/fossil/data/ammonite-density.u8",
+      "sourceBytes": 2654208,
+      "sourceSha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+      "targetBytes": 2654208,
+      "targetSha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/browser-verification.json",
+      "target": "provenance/fossil/upstream-data/browser-verification.json",
+      "sourceBytes": 468,
+      "sourceSha256": "b0376f739a4df3872c790be542a60dee837471c49dece07dc9013b0c82ad3e45",
+      "targetBytes": 468,
+      "targetSha256": "b0376f739a4df3872c790be542a60dee837471c49dece07dc9013b0c82ad3e45",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/fossil-volume.js",
+      "target": "public/fossil/data/fossil-volume.js",
+      "sourceBytes": 11905487,
+      "sourceSha256": "6eda9762b4d093a6780f1005188bbd9a0ecd3e982a0cdbaeed20880461c81fae",
+      "targetBytes": 11905487,
+      "targetSha256": "6eda9762b4d093a6780f1005188bbd9a0ecd3e982a0cdbaeed20880461c81fae",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-000.png",
+      "target": "public/fossil/data/sections/section-000.png",
+      "sourceBytes": 116,
+      "sourceSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "targetBytes": 116,
+      "targetSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-001.png",
+      "target": "public/fossil/data/sections/section-001.png",
+      "sourceBytes": 116,
+      "sourceSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "targetBytes": 116,
+      "targetSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-002.png",
+      "target": "public/fossil/data/sections/section-002.png",
+      "sourceBytes": 150,
+      "sourceSha256": "c2058e4117152126c1339627f906411923c6ab8158cc67636eccbbb457a94bd2",
+      "targetBytes": 150,
+      "targetSha256": "c2058e4117152126c1339627f906411923c6ab8158cc67636eccbbb457a94bd2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-003.png",
+      "target": "public/fossil/data/sections/section-003.png",
+      "sourceBytes": 285,
+      "sourceSha256": "ad42a8cc03cfe06e7f48001903a0cd9c3f93f7273ac06a0113e4d7758ef7bed1",
+      "targetBytes": 285,
+      "targetSha256": "ad42a8cc03cfe06e7f48001903a0cd9c3f93f7273ac06a0113e4d7758ef7bed1",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-004.png",
+      "target": "public/fossil/data/sections/section-004.png",
+      "sourceBytes": 454,
+      "sourceSha256": "1cd24ae282161b0fbdc45a5c0a3bda014b8913e779151d54805347b1186077f5",
+      "targetBytes": 454,
+      "targetSha256": "1cd24ae282161b0fbdc45a5c0a3bda014b8913e779151d54805347b1186077f5",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-005.png",
+      "target": "public/fossil/data/sections/section-005.png",
+      "sourceBytes": 764,
+      "sourceSha256": "a91cdee0e70b8c65d28298e57fea86092abfccfa078a862a7a7bd3ac2c91715c",
+      "targetBytes": 764,
+      "targetSha256": "a91cdee0e70b8c65d28298e57fea86092abfccfa078a862a7a7bd3ac2c91715c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-006.png",
+      "target": "public/fossil/data/sections/section-006.png",
+      "sourceBytes": 1130,
+      "sourceSha256": "381c112a13a5efd1100eae6be78d9e28f7070c07d5e638e9189f79b883d4d39f",
+      "targetBytes": 1130,
+      "targetSha256": "381c112a13a5efd1100eae6be78d9e28f7070c07d5e638e9189f79b883d4d39f",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-007.png",
+      "target": "public/fossil/data/sections/section-007.png",
+      "sourceBytes": 1417,
+      "sourceSha256": "59b4e9ece39553b0892e1a77bba6a73da8f615d93aee7c533247f9ffc040cad7",
+      "targetBytes": 1417,
+      "targetSha256": "59b4e9ece39553b0892e1a77bba6a73da8f615d93aee7c533247f9ffc040cad7",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-008.png",
+      "target": "public/fossil/data/sections/section-008.png",
+      "sourceBytes": 1799,
+      "sourceSha256": "51c59cd9dbe2b0eef68ceb0cbc4fa96da42dd28ff0daefb47e6358464bee9587",
+      "targetBytes": 1799,
+      "targetSha256": "51c59cd9dbe2b0eef68ceb0cbc4fa96da42dd28ff0daefb47e6358464bee9587",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-009.png",
+      "target": "public/fossil/data/sections/section-009.png",
+      "sourceBytes": 2207,
+      "sourceSha256": "6cd13837c44d9e30822ff38d34c5a99aa4bcc15b2aa5e968db19b7158bc4b234",
+      "targetBytes": 2207,
+      "targetSha256": "6cd13837c44d9e30822ff38d34c5a99aa4bcc15b2aa5e968db19b7158bc4b234",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-010.png",
+      "target": "public/fossil/data/sections/section-010.png",
+      "sourceBytes": 2621,
+      "sourceSha256": "f69b0aa55160830d5c0d666bc190d1df56ac184f429168ff254d404cb7132512",
+      "targetBytes": 2621,
+      "targetSha256": "f69b0aa55160830d5c0d666bc190d1df56ac184f429168ff254d404cb7132512",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-011.png",
+      "target": "public/fossil/data/sections/section-011.png",
+      "sourceBytes": 2940,
+      "sourceSha256": "c5d45a30575e63acfd2c69ec348e1d8cbdfe806a7594406b799a8e41c81b81be",
+      "targetBytes": 2940,
+      "targetSha256": "c5d45a30575e63acfd2c69ec348e1d8cbdfe806a7594406b799a8e41c81b81be",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-012.png",
+      "target": "public/fossil/data/sections/section-012.png",
+      "sourceBytes": 3313,
+      "sourceSha256": "eb1a7db90358f45b0be702832ac0d72042bfcd23ed9b54e7deb49fc99bab8437",
+      "targetBytes": 3313,
+      "targetSha256": "eb1a7db90358f45b0be702832ac0d72042bfcd23ed9b54e7deb49fc99bab8437",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-013.png",
+      "target": "public/fossil/data/sections/section-013.png",
+      "sourceBytes": 3724,
+      "sourceSha256": "a8911ede691f0ac11473ec74385fa17c8f4f9a9da00095c0a6d1fcccaf94446d",
+      "targetBytes": 3724,
+      "targetSha256": "a8911ede691f0ac11473ec74385fa17c8f4f9a9da00095c0a6d1fcccaf94446d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-014.png",
+      "target": "public/fossil/data/sections/section-014.png",
+      "sourceBytes": 4174,
+      "sourceSha256": "5c7d597fa1b04d8a9d9756a53dca3252ecb2e1b0f32e4578483ff066bfcafd1c",
+      "targetBytes": 4174,
+      "targetSha256": "5c7d597fa1b04d8a9d9756a53dca3252ecb2e1b0f32e4578483ff066bfcafd1c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-015.png",
+      "target": "public/fossil/data/sections/section-015.png",
+      "sourceBytes": 4614,
+      "sourceSha256": "131566190b87a1489647bc06e1bd45d252667d5e788136444884a7bb18be1f55",
+      "targetBytes": 4614,
+      "targetSha256": "131566190b87a1489647bc06e1bd45d252667d5e788136444884a7bb18be1f55",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-016.png",
+      "target": "public/fossil/data/sections/section-016.png",
+      "sourceBytes": 5047,
+      "sourceSha256": "349e28c8be8771cffa5718b641cd2f6c0eb48a6b6116c2e9eef19fecbac6a07a",
+      "targetBytes": 5047,
+      "targetSha256": "349e28c8be8771cffa5718b641cd2f6c0eb48a6b6116c2e9eef19fecbac6a07a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-017.png",
+      "target": "public/fossil/data/sections/section-017.png",
+      "sourceBytes": 5480,
+      "sourceSha256": "e711a17b6a8b99ec705c85c1fd96d5620252a820f607ae743c602ea4dd8d94d7",
+      "targetBytes": 5480,
+      "targetSha256": "e711a17b6a8b99ec705c85c1fd96d5620252a820f607ae743c602ea4dd8d94d7",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-018.png",
+      "target": "public/fossil/data/sections/section-018.png",
+      "sourceBytes": 5856,
+      "sourceSha256": "4e2810530a481bf8d4e68ef0855f766c23ccf04554a28f1958a957ca356a843e",
+      "targetBytes": 5856,
+      "targetSha256": "4e2810530a481bf8d4e68ef0855f766c23ccf04554a28f1958a957ca356a843e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-019.png",
+      "target": "public/fossil/data/sections/section-019.png",
+      "sourceBytes": 6254,
+      "sourceSha256": "28f6dfefbd0a08ac953b463bd87b29a763f96ec1c39691bb6d8dd242154fcebd",
+      "targetBytes": 6254,
+      "targetSha256": "28f6dfefbd0a08ac953b463bd87b29a763f96ec1c39691bb6d8dd242154fcebd",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-020.png",
+      "target": "public/fossil/data/sections/section-020.png",
+      "sourceBytes": 6621,
+      "sourceSha256": "1f50ecdfeeb2c0262532e67a771271b1aeade04948220853ae82a754d202faff",
+      "targetBytes": 6621,
+      "targetSha256": "1f50ecdfeeb2c0262532e67a771271b1aeade04948220853ae82a754d202faff",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-021.png",
+      "target": "public/fossil/data/sections/section-021.png",
+      "sourceBytes": 7039,
+      "sourceSha256": "01863bec59aafb878e675efcda63418067773220605fddd165958533fb8122c9",
+      "targetBytes": 7039,
+      "targetSha256": "01863bec59aafb878e675efcda63418067773220605fddd165958533fb8122c9",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-022.png",
+      "target": "public/fossil/data/sections/section-022.png",
+      "sourceBytes": 7468,
+      "sourceSha256": "53b692273a3c90699614c293de3700c542874730cd19a0e1cec67ce86557576f",
+      "targetBytes": 7468,
+      "targetSha256": "53b692273a3c90699614c293de3700c542874730cd19a0e1cec67ce86557576f",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-023.png",
+      "target": "public/fossil/data/sections/section-023.png",
+      "sourceBytes": 7739,
+      "sourceSha256": "8f1edfec9fc16fbe5877350ac5aba5b945b8c018aa3f58ad2ccd1971c230c992",
+      "targetBytes": 7739,
+      "targetSha256": "8f1edfec9fc16fbe5877350ac5aba5b945b8c018aa3f58ad2ccd1971c230c992",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-024.png",
+      "target": "public/fossil/data/sections/section-024.png",
+      "sourceBytes": 8158,
+      "sourceSha256": "40357ac63ce342a30bdf315680662f98b375625839972094ec4c3adc433b7309",
+      "targetBytes": 8158,
+      "targetSha256": "40357ac63ce342a30bdf315680662f98b375625839972094ec4c3adc433b7309",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-025.png",
+      "target": "public/fossil/data/sections/section-025.png",
+      "sourceBytes": 8477,
+      "sourceSha256": "02e5d310fb9195ea7810a9d8106ea27da8a80f78850aa5cb9457507f690ea584",
+      "targetBytes": 8477,
+      "targetSha256": "02e5d310fb9195ea7810a9d8106ea27da8a80f78850aa5cb9457507f690ea584",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-026.png",
+      "target": "public/fossil/data/sections/section-026.png",
+      "sourceBytes": 8798,
+      "sourceSha256": "d6d862a82617a3fa57e74b3518b6074b2f1f5b15346335b675d6cf601c4e9861",
+      "targetBytes": 8798,
+      "targetSha256": "d6d862a82617a3fa57e74b3518b6074b2f1f5b15346335b675d6cf601c4e9861",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-027.png",
+      "target": "public/fossil/data/sections/section-027.png",
+      "sourceBytes": 9059,
+      "sourceSha256": "dd117a8b4c30ff307cd44aa615026966456c31250769df34b0b90d0cb948c118",
+      "targetBytes": 9059,
+      "targetSha256": "dd117a8b4c30ff307cd44aa615026966456c31250769df34b0b90d0cb948c118",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-028.png",
+      "target": "public/fossil/data/sections/section-028.png",
+      "sourceBytes": 9300,
+      "sourceSha256": "a2b9c397debd31dc43f9dbbf17b911ba0a0753bf772e086b3e47e25ec0b915cb",
+      "targetBytes": 9300,
+      "targetSha256": "a2b9c397debd31dc43f9dbbf17b911ba0a0753bf772e086b3e47e25ec0b915cb",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-029.png",
+      "target": "public/fossil/data/sections/section-029.png",
+      "sourceBytes": 9562,
+      "sourceSha256": "15206d628f40aa6eb82b4a49226bc34147673dc5f6e14c4e8a1f18200111fd3d",
+      "targetBytes": 9562,
+      "targetSha256": "15206d628f40aa6eb82b4a49226bc34147673dc5f6e14c4e8a1f18200111fd3d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-030.png",
+      "target": "public/fossil/data/sections/section-030.png",
+      "sourceBytes": 9578,
+      "sourceSha256": "5aeb448ccea9cf01a90ddd30998fceedac8d95c2c1903f1bd3129c7dcecbd7fa",
+      "targetBytes": 9578,
+      "targetSha256": "5aeb448ccea9cf01a90ddd30998fceedac8d95c2c1903f1bd3129c7dcecbd7fa",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-031.png",
+      "target": "public/fossil/data/sections/section-031.png",
+      "sourceBytes": 9658,
+      "sourceSha256": "1d597c3a5370f09931c6f58fc7880ee86ca3e8828ee3138943ca09cadf8ce094",
+      "targetBytes": 9658,
+      "targetSha256": "1d597c3a5370f09931c6f58fc7880ee86ca3e8828ee3138943ca09cadf8ce094",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-032.png",
+      "target": "public/fossil/data/sections/section-032.png",
+      "sourceBytes": 9729,
+      "sourceSha256": "ab8294978e80f4260d86bac5af14cb7178f26a67640dfa71e85eb69d2c54f1ea",
+      "targetBytes": 9729,
+      "targetSha256": "ab8294978e80f4260d86bac5af14cb7178f26a67640dfa71e85eb69d2c54f1ea",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-033.png",
+      "target": "public/fossil/data/sections/section-033.png",
+      "sourceBytes": 9790,
+      "sourceSha256": "e7c32bc06c74a0bfce4a1ffc317b48a414f800d7d99ae32f66f5bf8cf7b19363",
+      "targetBytes": 9790,
+      "targetSha256": "e7c32bc06c74a0bfce4a1ffc317b48a414f800d7d99ae32f66f5bf8cf7b19363",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-034.png",
+      "target": "public/fossil/data/sections/section-034.png",
+      "sourceBytes": 9810,
+      "sourceSha256": "dd735e1d13acfbe9301c5ea4ff38f62f9e2c12312368bd72f87bf2005b66d341",
+      "targetBytes": 9810,
+      "targetSha256": "dd735e1d13acfbe9301c5ea4ff38f62f9e2c12312368bd72f87bf2005b66d341",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-035.png",
+      "target": "public/fossil/data/sections/section-035.png",
+      "sourceBytes": 9787,
+      "sourceSha256": "b298848c68e5ba3eeb7178987b4a14ec91f394a13bf092dac747229d5cd00e02",
+      "targetBytes": 9787,
+      "targetSha256": "b298848c68e5ba3eeb7178987b4a14ec91f394a13bf092dac747229d5cd00e02",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-036.png",
+      "target": "public/fossil/data/sections/section-036.png",
+      "sourceBytes": 9799,
+      "sourceSha256": "8fc55d5964250eb6abbc2a87c9d23e65963b542326af15d92e5bf948411a6516",
+      "targetBytes": 9799,
+      "targetSha256": "8fc55d5964250eb6abbc2a87c9d23e65963b542326af15d92e5bf948411a6516",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-037.png",
+      "target": "public/fossil/data/sections/section-037.png",
+      "sourceBytes": 9821,
+      "sourceSha256": "51edece35a68006deb32010b56e35f1db8ef4350a499c5cb2de07ec6f8e9dd97",
+      "targetBytes": 9821,
+      "targetSha256": "51edece35a68006deb32010b56e35f1db8ef4350a499c5cb2de07ec6f8e9dd97",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-038.png",
+      "target": "public/fossil/data/sections/section-038.png",
+      "sourceBytes": 9785,
+      "sourceSha256": "c681f39a3ba3634526544a6834804baa3895d585178a3eb637c2784e95af7960",
+      "targetBytes": 9785,
+      "targetSha256": "c681f39a3ba3634526544a6834804baa3895d585178a3eb637c2784e95af7960",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-039.png",
+      "target": "public/fossil/data/sections/section-039.png",
+      "sourceBytes": 9705,
+      "sourceSha256": "01f47598ef82bb44d5c717cd05f5d13916e4e0f672f53ca50b647bd2fb2995d6",
+      "targetBytes": 9705,
+      "targetSha256": "01f47598ef82bb44d5c717cd05f5d13916e4e0f672f53ca50b647bd2fb2995d6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-040.png",
+      "target": "public/fossil/data/sections/section-040.png",
+      "sourceBytes": 9312,
+      "sourceSha256": "10f2960c0d26d728c70ad2e5cae9523a424f689813c515bcff9285cbda1b482e",
+      "targetBytes": 9312,
+      "targetSha256": "10f2960c0d26d728c70ad2e5cae9523a424f689813c515bcff9285cbda1b482e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-041.png",
+      "target": "public/fossil/data/sections/section-041.png",
+      "sourceBytes": 9206,
+      "sourceSha256": "33b281d054fc6f25d70bb5cf5cd7d16adb455976548ca0016202383373074a16",
+      "targetBytes": 9206,
+      "targetSha256": "33b281d054fc6f25d70bb5cf5cd7d16adb455976548ca0016202383373074a16",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-042.png",
+      "target": "public/fossil/data/sections/section-042.png",
+      "sourceBytes": 9129,
+      "sourceSha256": "7bbf553d195dbaf16b4942c7fac07f4a5f18716d2c03d71e99f119e9d51877b2",
+      "targetBytes": 9129,
+      "targetSha256": "7bbf553d195dbaf16b4942c7fac07f4a5f18716d2c03d71e99f119e9d51877b2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-043.png",
+      "target": "public/fossil/data/sections/section-043.png",
+      "sourceBytes": 8944,
+      "sourceSha256": "9a0cd1ae48d54c28e32a50d687497ab3b003b006ef004a9489ba9bb56be756c9",
+      "targetBytes": 8944,
+      "targetSha256": "9a0cd1ae48d54c28e32a50d687497ab3b003b006ef004a9489ba9bb56be756c9",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-044.png",
+      "target": "public/fossil/data/sections/section-044.png",
+      "sourceBytes": 8723,
+      "sourceSha256": "9b531659de8207b7d93564046341669f9f0a9158146dafa794bb994b7a3dea88",
+      "targetBytes": 8723,
+      "targetSha256": "9b531659de8207b7d93564046341669f9f0a9158146dafa794bb994b7a3dea88",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-045.png",
+      "target": "public/fossil/data/sections/section-045.png",
+      "sourceBytes": 8499,
+      "sourceSha256": "adbf2bd63b7ade9b2e1c6cd070cd326f84c9eefc91db8719e620c87da081db9c",
+      "targetBytes": 8499,
+      "targetSha256": "adbf2bd63b7ade9b2e1c6cd070cd326f84c9eefc91db8719e620c87da081db9c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-046.png",
+      "target": "public/fossil/data/sections/section-046.png",
+      "sourceBytes": 8215,
+      "sourceSha256": "a0d5bc788430ed24884801d09ae4e87afb284caaaceed54d9f3a969ad14f977d",
+      "targetBytes": 8215,
+      "targetSha256": "a0d5bc788430ed24884801d09ae4e87afb284caaaceed54d9f3a969ad14f977d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-047.png",
+      "target": "public/fossil/data/sections/section-047.png",
+      "sourceBytes": 7891,
+      "sourceSha256": "9de534adaa2ed7d795fa1badda451a16767629fafc01f910781808e50baa6413",
+      "targetBytes": 7891,
+      "targetSha256": "9de534adaa2ed7d795fa1badda451a16767629fafc01f910781808e50baa6413",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-048.png",
+      "target": "public/fossil/data/sections/section-048.png",
+      "sourceBytes": 7461,
+      "sourceSha256": "f22f89a9cc01bdff3ddc855b43760577cb72f4f862fd2e59b8b0c7a540c5b5e2",
+      "targetBytes": 7461,
+      "targetSha256": "f22f89a9cc01bdff3ddc855b43760577cb72f4f862fd2e59b8b0c7a540c5b5e2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-049.png",
+      "target": "public/fossil/data/sections/section-049.png",
+      "sourceBytes": 7197,
+      "sourceSha256": "7bb11d8c804a34328cdb736a54feb36a4573b0011226b3e48e1acbb20d59ea51",
+      "targetBytes": 7197,
+      "targetSha256": "7bb11d8c804a34328cdb736a54feb36a4573b0011226b3e48e1acbb20d59ea51",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-050.png",
+      "target": "public/fossil/data/sections/section-050.png",
+      "sourceBytes": 6772,
+      "sourceSha256": "02388743a47e78596fa537f0081a866f4a47bf189e5ab1990d94a61e82ef8892",
+      "targetBytes": 6772,
+      "targetSha256": "02388743a47e78596fa537f0081a866f4a47bf189e5ab1990d94a61e82ef8892",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-051.png",
+      "target": "public/fossil/data/sections/section-051.png",
+      "sourceBytes": 6317,
+      "sourceSha256": "eada4963978188585707e0ede22414a4702140f3dba5203f9932c67406355107",
+      "targetBytes": 6317,
+      "targetSha256": "eada4963978188585707e0ede22414a4702140f3dba5203f9932c67406355107",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-052.png",
+      "target": "public/fossil/data/sections/section-052.png",
+      "sourceBytes": 5917,
+      "sourceSha256": "fae3b5c72e1df3a8bd13b22aab20cd9eb48e98e825f115c56b64e14192b7a675",
+      "targetBytes": 5917,
+      "targetSha256": "fae3b5c72e1df3a8bd13b22aab20cd9eb48e98e825f115c56b64e14192b7a675",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-053.png",
+      "target": "public/fossil/data/sections/section-053.png",
+      "sourceBytes": 5575,
+      "sourceSha256": "bce9a2553b48411c19fdd48ec89b8d4a67b5a0991c256395a697d0fd1d0a89bb",
+      "targetBytes": 5575,
+      "targetSha256": "bce9a2553b48411c19fdd48ec89b8d4a67b5a0991c256395a697d0fd1d0a89bb",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-054.png",
+      "target": "public/fossil/data/sections/section-054.png",
+      "sourceBytes": 5205,
+      "sourceSha256": "805313d6afd42460eae57c58fce6028ab015181a8a439da69589aaefab0f62d5",
+      "targetBytes": 5205,
+      "targetSha256": "805313d6afd42460eae57c58fce6028ab015181a8a439da69589aaefab0f62d5",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-055.png",
+      "target": "public/fossil/data/sections/section-055.png",
+      "sourceBytes": 4747,
+      "sourceSha256": "15a1c3597b28ae4fc3751af6594c9ceb8765d23bb809b088400c1ebac2d4f4dc",
+      "targetBytes": 4747,
+      "targetSha256": "15a1c3597b28ae4fc3751af6594c9ceb8765d23bb809b088400c1ebac2d4f4dc",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-056.png",
+      "target": "public/fossil/data/sections/section-056.png",
+      "sourceBytes": 4327,
+      "sourceSha256": "b5c4f0f805666beb96ec85cac1a6bad5750476d33e5fd4817e6ea4ce075ae1eb",
+      "targetBytes": 4327,
+      "targetSha256": "b5c4f0f805666beb96ec85cac1a6bad5750476d33e5fd4817e6ea4ce075ae1eb",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-057.png",
+      "target": "public/fossil/data/sections/section-057.png",
+      "sourceBytes": 3852,
+      "sourceSha256": "a9cfac82520ee1c4eb6d5d60b1935af915862c7387f8d6db701f361d2f5bdfba",
+      "targetBytes": 3852,
+      "targetSha256": "a9cfac82520ee1c4eb6d5d60b1935af915862c7387f8d6db701f361d2f5bdfba",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-058.png",
+      "target": "public/fossil/data/sections/section-058.png",
+      "sourceBytes": 3452,
+      "sourceSha256": "2ae33c7fd3a5ffb6e8be462b6119a23e92f6272fd19a706abc6261e554462e7a",
+      "targetBytes": 3452,
+      "targetSha256": "2ae33c7fd3a5ffb6e8be462b6119a23e92f6272fd19a706abc6261e554462e7a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-059.png",
+      "target": "public/fossil/data/sections/section-059.png",
+      "sourceBytes": 3063,
+      "sourceSha256": "c79ccb66f9e45bfe8d4f27d7c7c16ff838c3a086c1fffbb54285853e67aafd7e",
+      "targetBytes": 3063,
+      "targetSha256": "c79ccb66f9e45bfe8d4f27d7c7c16ff838c3a086c1fffbb54285853e67aafd7e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-060.png",
+      "target": "public/fossil/data/sections/section-060.png",
+      "sourceBytes": 2692,
+      "sourceSha256": "a421667e743baf3389071f8bab0809b10fa9b615fb68e010f508be46193cb96e",
+      "targetBytes": 2692,
+      "targetSha256": "a421667e743baf3389071f8bab0809b10fa9b615fb68e010f508be46193cb96e",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-061.png",
+      "target": "public/fossil/data/sections/section-061.png",
+      "sourceBytes": 2407,
+      "sourceSha256": "e08ae3a7149be9bac681d3722d345a3289b040b2906d61e0f3c69a96df2b10b6",
+      "targetBytes": 2407,
+      "targetSha256": "e08ae3a7149be9bac681d3722d345a3289b040b2906d61e0f3c69a96df2b10b6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-062.png",
+      "target": "public/fossil/data/sections/section-062.png",
+      "sourceBytes": 2042,
+      "sourceSha256": "0a4c5ac1fbe583a01ea43d8206d50d6916035667b2d3d8a3e584128ec1f8d929",
+      "targetBytes": 2042,
+      "targetSha256": "0a4c5ac1fbe583a01ea43d8206d50d6916035667b2d3d8a3e584128ec1f8d929",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-063.png",
+      "target": "public/fossil/data/sections/section-063.png",
+      "sourceBytes": 1691,
+      "sourceSha256": "62c2a9056fa1845d3cb6927bc8dcd60bacf2669b5bef83dd68fcd326d3a2fe76",
+      "targetBytes": 1691,
+      "targetSha256": "62c2a9056fa1845d3cb6927bc8dcd60bacf2669b5bef83dd68fcd326d3a2fe76",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-064.png",
+      "target": "public/fossil/data/sections/section-064.png",
+      "sourceBytes": 1387,
+      "sourceSha256": "b1cf0cc700230c1b9a0c76ee9ee7994b1b5ff4932776a996f44f3242dd678338",
+      "targetBytes": 1387,
+      "targetSha256": "b1cf0cc700230c1b9a0c76ee9ee7994b1b5ff4932776a996f44f3242dd678338",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-065.png",
+      "target": "public/fossil/data/sections/section-065.png",
+      "sourceBytes": 1108,
+      "sourceSha256": "0443840bfcff1028ebd4afd8ec8053df867b46df0b297191471700dd3555ca78",
+      "targetBytes": 1108,
+      "targetSha256": "0443840bfcff1028ebd4afd8ec8053df867b46df0b297191471700dd3555ca78",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-066.png",
+      "target": "public/fossil/data/sections/section-066.png",
+      "sourceBytes": 747,
+      "sourceSha256": "55f2cac5a7f9245670475b1666038613f400c07fc5d730ebb831b5ba7893e46c",
+      "targetBytes": 747,
+      "targetSha256": "55f2cac5a7f9245670475b1666038613f400c07fc5d730ebb831b5ba7893e46c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-067.png",
+      "target": "public/fossil/data/sections/section-067.png",
+      "sourceBytes": 445,
+      "sourceSha256": "f6f325f683dab510a371178cbc79821a0d28db00925a47f3671873796f360fcf",
+      "targetBytes": 445,
+      "targetSha256": "f6f325f683dab510a371178cbc79821a0d28db00925a47f3671873796f360fcf",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-068.png",
+      "target": "public/fossil/data/sections/section-068.png",
+      "sourceBytes": 259,
+      "sourceSha256": "fb22210711e0d9992074bc58c4f176c4b37072d2d28a479de1ccd23f93c3fe87",
+      "targetBytes": 259,
+      "targetSha256": "fb22210711e0d9992074bc58c4f176c4b37072d2d28a479de1ccd23f93c3fe87",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-069.png",
+      "target": "public/fossil/data/sections/section-069.png",
+      "sourceBytes": 146,
+      "sourceSha256": "bf5b6412fdf301a01fb66689ac5b2b0120658f2f02eb0518443f84b7439918c1",
+      "targetBytes": 146,
+      "targetSha256": "bf5b6412fdf301a01fb66689ac5b2b0120658f2f02eb0518443f84b7439918c1",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-070.png",
+      "target": "public/fossil/data/sections/section-070.png",
+      "sourceBytes": 116,
+      "sourceSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "targetBytes": 116,
+      "targetSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/sections/section-071.png",
+      "target": "public/fossil/data/sections/section-071.png",
+      "sourceBytes": 116,
+      "sourceSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "targetBytes": 116,
+      "targetSha256": "d47def74e608b221363559e1dfc571273eefcb417af8644b5d7578c47224dba6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/verification.json",
+      "target": "provenance/fossil/upstream-data/verification.json",
+      "sourceBytes": 396,
+      "sourceSha256": "14e1076b1ce32c894a1e20229d8e615091d3ae44cdf9f18e59a0c5a390f5b41b",
+      "targetBytes": 396,
+      "targetSha256": "14e1076b1ce32c894a1e20229d8e615091d3ae44cdf9f18e59a0c5a390f5b41b",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/volume-metadata.json",
+      "target": "public/fossil/data/volume-metadata.json",
+      "sourceBytes": 8075,
+      "sourceSha256": "ca030a22296500d14c14b74ff9ab411cb744dec64a518b0569eeee44dc057068",
+      "targetBytes": 8075,
+      "targetSha256": "ca030a22296500d14c14b74ff9ab411cb744dec64a518b0569eeee44dc057068",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/data/webgl-verification.json",
+      "target": "provenance/fossil/upstream-data/webgl-verification.json",
+      "sourceBytes": 77,
+      "sourceSha256": "5818b9d0ebc3e15e007e1d2042571d72c63065c45ce9a5a00882210d27042979",
+      "targetBytes": 77,
+      "targetSha256": "5818b9d0ebc3e15e007e1d2042571d72c63065c45ce9a5a00882210d27042979",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/docs/ASSET-MANIFEST.json",
+      "target": "docs/fossil/ASSET-MANIFEST.json",
+      "sourceBytes": 18700,
+      "sourceSha256": "72c7f2d8a3ec3a60f2dfcc98db8c34f58001cea1e3b50df5c5aefd3dca3d264d",
+      "targetBytes": 18700,
+      "targetSha256": "72c7f2d8a3ec3a60f2dfcc98db8c34f58001cea1e3b50df5c5aefd3dca3d264d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/docs/PROVENANCE.md",
+      "target": "docs/fossil/PROVENANCE.md",
+      "sourceBytes": 12505,
+      "sourceSha256": "9418ff27dd8aaa2f97610471aebb0246e3e2ce62b1b07abf9fed0280b786e3cd",
+      "targetBytes": 12818,
+      "targetSha256": "d4f509f2d2ba6c889d7177f3ef07cd83f03164cbc8c70661546817f0277b1675",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/docs/QA.md",
+      "target": "docs/fossil/UPSTREAM-VALIDATION.md",
+      "sourceBytes": 8031,
+      "sourceSha256": "6944f9dcd182aa3637bb7575b5ffba70e9265a5354a433310ad69ba063d20b6e",
+      "targetBytes": 8082,
+      "targetSha256": "c0e4b1705978a26eb40e3c8dc3132bc456a02d15e479ac18c22b46ea83e67178",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/docs/RESEARCH.md",
+      "target": "docs/fossil/RESEARCH.md",
+      "sourceBytes": 7239,
+      "sourceSha256": "41a555076be2d5e66a0145ef6d590e96b5e98d3eba33f237aee4772b6cbd8891",
+      "targetBytes": 7273,
+      "targetSha256": "ec0bae2f3f2e20a482bf65b8a66e5a46d2525328ecec1dc71aecff6dd69f91de",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/docs/VISUAL-BIBLE.html",
+      "target": "docs/fossil/VISUAL-BIBLE.html",
+      "sourceBytes": 191725,
+      "sourceSha256": "7575af2549716f204ae668989ecd1ea51b989fea9b6482b22f89de9bea6fde10",
+      "targetBytes": 191725,
+      "targetSha256": "7575af2549716f204ae668989ecd1ea51b989fea9b6482b22f89de9bea6fde10",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/index.html",
+      "target": "pages/fossil/index.html",
+      "sourceBytes": 20734,
+      "sourceSha256": "6208b9329e17fc788ef47ba840104ecbb965d31a379107914a3425c4eff33c04",
+      "targetBytes": 22798,
+      "targetSha256": "f5190194c832227ca9b2ff7991eacf1d65d3177536d23185cb341b04621ccae5",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/licenses/AI-Assets-Notice.md",
+      "target": "public/fossil/licenses/AI-Assets-Notice.md",
+      "sourceBytes": 3310,
+      "sourceSha256": "9073d9a97bcdb0db42224addf2e11eecd7501297ed49fbc305072a729512a1f0",
+      "targetBytes": 3310,
+      "targetSha256": "9073d9a97bcdb0db42224addf2e11eecd7501297ed49fbc305072a729512a1f0",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/licenses/Bodoni-Moda-OFL.txt",
+      "target": "public/fossil/licenses/Bodoni-Moda-OFL.txt",
+      "sourceBytes": 4526,
+      "sourceSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "targetBytes": 4526,
+      "targetSha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/licenses/Cormorant-Garamond-OFL.txt",
+      "target": "public/fossil/licenses/Cormorant-Garamond-OFL.txt",
+      "sourceBytes": 4387,
+      "sourceSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "targetBytes": 4387,
+      "targetSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/licenses/Droid-Sans-Fallback-Apache.txt",
+      "target": "public/fossil/licenses/Droid-Sans-Fallback-Apache.txt",
+      "sourceBytes": 12192,
+      "sourceSha256": "953fb42cc0c6c409205055e476de6d7c4f0912a47e5cfa0141b3628e7f83a72c",
+      "targetBytes": 12192,
+      "targetSha256": "953fb42cc0c6c409205055e476de6d7c4f0912a47e5cfa0141b3628e7f83a72c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/licenses/Lenis-MIT.txt",
+      "target": "public/fossil/licenses/Lenis-MIT.txt",
+      "sourceBytes": 1096,
+      "sourceSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "targetBytes": 1096,
+      "targetSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/licenses/Manrope-OFL.txt",
+      "target": "public/fossil/licenses/Manrope-OFL.txt",
+      "sourceBytes": 4387,
+      "sourceSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "targetBytes": 4387,
+      "targetSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/models/MARCHING_CUBES_LICENSE.txt",
+      "target": "public/fossil/models/MARCHING_CUBES_LICENSE.txt",
+      "sourceBytes": 1254,
+      "sourceSha256": "3c5982fdb99ce3a5d3b1e31f30eaba9420d3a44d483ed5b9520ad8939ba3ada9",
+      "targetBytes": 1254,
+      "targetSha256": "3c5982fdb99ce3a5d3b1e31f30eaba9420d3a44d483ed5b9520ad8939ba3ada9",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/models/ammonite-interpretive.obj",
+      "target": "public/fossil/models/ammonite-interpretive.obj",
+      "sourceBytes": 28315437,
+      "sourceSha256": "4fb86cc966d7b154bd88edb213c081dd88da87fecfb55c76871559b3ec5d166a",
+      "targetBytes": 28315437,
+      "targetSha256": "4fb86cc966d7b154bd88edb213c081dd88da87fecfb55c76871559b3ec5d166a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/models/marching-cubes-table.json",
+      "target": "public/fossil/models/marching-cubes-table.json",
+      "sourceBytes": 10740,
+      "sourceSha256": "d525cc98d43a140125703477853fccb96fc26fe501ae371bd99d2f7ffda1b154",
+      "targetBytes": 10740,
+      "targetSha256": "d525cc98d43a140125703477853fccb96fc26fe501ae371bd99d2f7ffda1b154",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/models/procedural-parameters.json",
+      "target": "public/fossil/models/procedural-parameters.json",
+      "sourceBytes": 1637,
+      "sourceSha256": "7c64883ec7ce71cfb355495f9f9ac553f745c8e3fd16b39300cac175fc9d3309",
+      "targetBytes": 1637,
+      "targetSha256": "7c64883ec7ce71cfb355495f9f9ac553f745c8e3fd16b39300cac175fc9d3309",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/01-specimen.png",
+      "target": "docs/fossil/reference/01-specimen.png",
+      "sourceBytes": 3015388,
+      "sourceSha256": "03ea1cab7f992805d17ba328149b215ba394b9ec05bb6e7038251da8df95bb5d",
+      "targetBytes": 3015388,
+      "targetSha256": "03ea1cab7f992805d17ba328149b215ba394b9ec05bb6e7038251da8df95bb5d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/01-specimen.prompt.txt",
+      "target": "docs/fossil/reference/01-specimen.prompt.txt",
+      "sourceBytes": 2405,
+      "sourceSha256": "58adf321e114ed00efad1840d7e918d2c06cd31f8bdc920a23443e916c74b324",
+      "targetBytes": 2405,
+      "targetSha256": "58adf321e114ed00efad1840d7e918d2c06cd31f8bdc920a23443e916c74b324",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/02-strata.png",
+      "target": "docs/fossil/reference/02-strata.png",
+      "sourceBytes": 3171550,
+      "sourceSha256": "9e85724c9fa3ab83896de02274a53b6fc611655bff53908e27ca134124a258ac",
+      "targetBytes": 3171550,
+      "targetSha256": "9e85724c9fa3ab83896de02274a53b6fc611655bff53908e27ca134124a258ac",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/02-strata.prompt.txt",
+      "target": "docs/fossil/reference/02-strata.prompt.txt",
+      "sourceBytes": 2663,
+      "sourceSha256": "7d9f1d98e5b128e6409d5d534c3500b2f8b75c411850477977588b6c19d73aa9",
+      "targetBytes": 2663,
+      "targetSha256": "7d9f1d98e5b128e6409d5d534c3500b2f8b75c411850477977588b6c19d73aa9",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/03-burial.png",
+      "target": "docs/fossil/reference/03-burial.png",
+      "sourceBytes": 3332163,
+      "sourceSha256": "de6abe9a00e53bcec1d42254e9259fc7791a7b8c2ff87f52cfd5a25e6b8082b6",
+      "targetBytes": 3332163,
+      "targetSha256": "de6abe9a00e53bcec1d42254e9259fc7791a7b8c2ff87f52cfd5a25e6b8082b6",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/03-burial.prompt.txt",
+      "target": "docs/fossil/reference/03-burial.prompt.txt",
+      "sourceBytes": 2607,
+      "sourceSha256": "f6094e3be7ddd727c1b263a3d49022ca1ae53fb366191d7000707964c03c5f53",
+      "targetBytes": 2607,
+      "targetSha256": "f6094e3be7ddd727c1b263a3d49022ca1ae53fb366191d7000707964c03c5f53",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/04-preservation.png",
+      "target": "docs/fossil/reference/04-preservation.png",
+      "sourceBytes": 3281487,
+      "sourceSha256": "b2b46fa300a8a21645bd456866d24e582097e180ce48ac0240d81d15f2a4a33b",
+      "targetBytes": 3281487,
+      "targetSha256": "b2b46fa300a8a21645bd456866d24e582097e180ce48ac0240d81d15f2a4a33b",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/04-preservation.prompt.txt",
+      "target": "docs/fossil/reference/04-preservation.prompt.txt",
+      "sourceBytes": 2735,
+      "sourceSha256": "53b1d3c0ba544a3276851566448608372c258e58bd06485e3172b81f7d78392f",
+      "targetBytes": 2735,
+      "targetSha256": "53b1d3c0ba544a3276851566448608372c258e58bd06485e3172b81f7d78392f",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/05-exposure.png",
+      "target": "docs/fossil/reference/05-exposure.png",
+      "sourceBytes": 3286886,
+      "sourceSha256": "d41c8602f9fdf7bc202e798f5b118f0e0f346a9663defa4e1ce36b85750829d7",
+      "targetBytes": 3286886,
+      "targetSha256": "d41c8602f9fdf7bc202e798f5b118f0e0f346a9663defa4e1ce36b85750829d7",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/05-exposure.prompt.txt",
+      "target": "docs/fossil/reference/05-exposure.prompt.txt",
+      "sourceBytes": 2835,
+      "sourceSha256": "b1d9d356cdad97c355fbcd84e64a3ae0db5de29c326c8e73d7796028b9116186",
+      "targetBytes": 2835,
+      "targetSha256": "b1d9d356cdad97c355fbcd84e64a3ae0db5de29c326c8e73d7796028b9116186",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/06-amber.png",
+      "target": "docs/fossil/reference/06-amber.png",
+      "sourceBytes": 2099815,
+      "sourceSha256": "443a01134b89259a7f7cdb28cea23e8acaf8183fbbb2156d090dd2d44823a10d",
+      "targetBytes": 2099815,
+      "targetSha256": "443a01134b89259a7f7cdb28cea23e8acaf8183fbbb2156d090dd2d44823a10d",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/06-amber.prompt.txt",
+      "target": "docs/fossil/reference/06-amber.prompt.txt",
+      "sourceBytes": 2769,
+      "sourceSha256": "7022e29dbbd22603b889bfb76301b6edb271ef3634e90b18cec2881512068223",
+      "targetBytes": 2769,
+      "targetSha256": "7022e29dbbd22603b889bfb76301b6edb271ef3634e90b18cec2881512068223",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/06-amber.refinement.prompt.txt",
+      "target": "docs/fossil/reference/06-amber.refinement.prompt.txt",
+      "sourceBytes": 1034,
+      "sourceSha256": "94141883d9b003869e6f64fbce5b970322a7f363ef4af203f3795c2048b00b1a",
+      "targetBytes": 1034,
+      "targetSha256": "94141883d9b003869e6f64fbce5b970322a7f363ef4af203f3795c2048b00b1a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/07-scan.png",
+      "target": "docs/fossil/reference/07-scan.png",
+      "sourceBytes": 2639783,
+      "sourceSha256": "1d290a86a03da53835e003c323ec5e7e8449baa8c54d4c31cc8d3a933ee7ddbd",
+      "targetBytes": 2639783,
+      "targetSha256": "1d290a86a03da53835e003c323ec5e7e8449baa8c54d4c31cc8d3a933ee7ddbd",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/07-scan.prompt.txt",
+      "target": "docs/fossil/reference/07-scan.prompt.txt",
+      "sourceBytes": 2781,
+      "sourceSha256": "55caf9b359083b5ff29b5760f266b8827bb30c7e9ec3e271ec0ef10652dc899f",
+      "targetBytes": 2781,
+      "targetSha256": "55caf9b359083b5ff29b5760f266b8827bb30c7e9ec3e271ec0ef10652dc899f",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/08-reconstruct.png",
+      "target": "docs/fossil/reference/08-reconstruct.png",
+      "sourceBytes": 2668110,
+      "sourceSha256": "03624af1ffb810811e38c0e009bce5997b75ceed0b4f0cbc5fa469ef3e99f695",
+      "targetBytes": 2668110,
+      "targetSha256": "03624af1ffb810811e38c0e009bce5997b75ceed0b4f0cbc5fa469ef3e99f695",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/08-reconstruct.prompt.txt",
+      "target": "docs/fossil/reference/08-reconstruct.prompt.txt",
+      "sourceBytes": 2814,
+      "sourceSha256": "4c62e6fcc3a1f9c2bb43f0722c0b10e74eaa88e57b33ac46e0ebde19d16dd959",
+      "targetBytes": 2814,
+      "targetSha256": "4c62e6fcc3a1f9c2bb43f0722c0b10e74eaa88e57b33ac46e0ebde19d16dd959",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/09-archive.png",
+      "target": "docs/fossil/reference/09-archive.png",
+      "sourceBytes": 2494374,
+      "sourceSha256": "3fc66547adc1b0ff4e70cc919b2061981e23d5419e7684075f2b09d5a5ab064c",
+      "targetBytes": 2494374,
+      "targetSha256": "3fc66547adc1b0ff4e70cc919b2061981e23d5419e7684075f2b09d5a5ab064c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/09-archive.prompt.txt",
+      "target": "docs/fossil/reference/09-archive.prompt.txt",
+      "sourceBytes": 2971,
+      "sourceSha256": "98cf6a53e6a85087a1678636d5429c110c9e6f797d1921d25cecd4ef31c2e65b",
+      "targetBytes": 2971,
+      "targetSha256": "98cf6a53e6a85087a1678636d5429c110c9e6f797d1921d25cecd4ef31c2e65b",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/10-deep-time.png",
+      "target": "docs/fossil/reference/10-deep-time.png",
+      "sourceBytes": 1825772,
+      "sourceSha256": "615bd7154ceb90412497416ace0d830ec2bf5ddffc98c103bcae699e36300748",
+      "targetBytes": 1825772,
+      "targetSha256": "615bd7154ceb90412497416ace0d830ec2bf5ddffc98c103bcae699e36300748",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/10-deep-time.prompt.txt",
+      "target": "docs/fossil/reference/10-deep-time.prompt.txt",
+      "sourceBytes": 1163,
+      "sourceSha256": "0008273298a083abf66d6292a705a5a88c1df68440a1e1128cfc7848531395bc",
+      "targetBytes": 1163,
+      "targetSha256": "0008273298a083abf66d6292a705a5a88c1df68440a1e1128cfc7848531395bc",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/reference/geology-concept-notes.txt",
+      "target": "docs/fossil/reference/geology-concept-notes.txt",
+      "sourceBytes": 3452,
+      "sourceSha256": "9718cebf9bb6fa642aa78978bbb4832c84cccc5bf9240715121c9952a49618ca",
+      "targetBytes": 3452,
+      "targetSha256": "9718cebf9bb6fa642aa78978bbb4832c84cccc5bf9240715121c9952a49618ca",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/scripts/asset_manifest.py",
+      "target": "provenance/fossil/verification/asset_manifest.py",
+      "sourceBytes": 4866,
+      "sourceSha256": "cdd81687318a7dfbed6c7f1f0b2eb2cd938419d1df9634ff7fda0c8a570e3ad8",
+      "targetBytes": 4866,
+      "targetSha256": "cdd81687318a7dfbed6c7f1f0b2eb2cd938419d1df9634ff7fda0c8a570e3ad8",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/scripts/generate_volume.py",
+      "target": "provenance/fossil/verification/generate_volume.py",
+      "sourceBytes": 24572,
+      "sourceSha256": "b4e31360f1152e04344361b084299ff7a4b304505b7057685c8c8d62718e2194",
+      "targetBytes": 24572,
+      "targetSha256": "b4e31360f1152e04344361b084299ff7a4b304505b7057685c8c8d62718e2194",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/scripts/verify.mjs",
+      "target": "provenance/fossil/verification/verify.mjs",
+      "sourceBytes": 3038,
+      "sourceSha256": "d14ee251640525a70c0761b91fbeda1f67554f56137ff93208a5899e0cd5c716",
+      "targetBytes": 3038,
+      "targetSha256": "d14ee251640525a70c0761b91fbeda1f67554f56137ff93208a5899e0cd5c716",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/src/app.js",
+      "target": "experiences/fossil/src/app.js",
+      "sourceBytes": 22603,
+      "sourceSha256": "ff4a7409b16e08ed66ced388fc04fd9ee76430948b0389921f2a405ed94b54a7",
+      "targetBytes": 24666,
+      "targetSha256": "f7d0aa5f45f6e29930603a77f86a1b2981169b4d9dd0968e8924cfcecf413b18",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/src/geology.js",
+      "target": "experiences/fossil/src/geology.js",
+      "sourceBytes": 29303,
+      "sourceSha256": "36e2b944fbb0bc0aedff763205e88711e5391c84f007748c79bbe02049eebfb9",
+      "targetBytes": 29303,
+      "targetSha256": "36e2b944fbb0bc0aedff763205e88711e5391c84f007748c79bbe02049eebfb9",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/src/imaging.js",
+      "target": "experiences/fossil/src/imaging.js",
+      "sourceBytes": 31930,
+      "sourceSha256": "1e93a22e1f6ce4cd085886bb770f76c0f1a8e99a893cb57dd4750f8c6f6a8866",
+      "targetBytes": 31930,
+      "targetSha256": "1e93a22e1f6ce4cd085886bb770f76c0f1a8e99a893cb57dd4750f8c6f6a8866",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/src/math.js",
+      "target": "experiences/fossil/src/math.js",
+      "sourceBytes": 1343,
+      "sourceSha256": "8754627292f4e433059e5d7e95cc7d090c5e829403d39624be9da98f890ae027",
+      "targetBytes": 1343,
+      "targetSha256": "8754627292f4e433059e5d7e95cc7d090c5e829403d39624be9da98f890ae027",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/src/style.css",
+      "target": "experiences/fossil/src/style.css",
+      "sourceBytes": 33613,
+      "sourceSha256": "08fdbe2411d7f4887fbaabd917ee970675ecd6538dc72f62e2aa0265cb3f4da3",
+      "targetBytes": 34382,
+      "targetSha256": "c99a6647108f04613fdca0e6c6db737248abf71c68d1c9d474e71413188748b1",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/DESIGN.md",
+      "target": "docs/fossil/DESIGN.md",
+      "sourceBytes": 19139,
+      "sourceSha256": "b371a72ae0ead2daac76ae10bc47b6ee436d419ebbf9cdba940804dfeeb6dfc1",
+      "targetBytes": 19685,
+      "targetSha256": "3f3add8b1a83b3bde52f6c143a0f6be1fd12b7808bde3ba6e56a8409e28719d0",
+      "byteIdentical": false,
+      "kind": "collection adaptation"
+    },
+    {
+      "source": "FOSSIL/.impeccable/design.json",
+      "target": "provenance/fossil/design-record.json",
+      "sourceBytes": 50976,
+      "sourceSha256": "6c53d7560417de85dc647a3ac899a72fe04395d2eb2877f001cd86de11c1876c",
+      "targetBytes": 50976,
+      "targetSha256": "6c53d7560417de85dc647a3ac899a72fe04395d2eb2877f001cd86de11c1876c",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    },
+    {
+      "source": "FOSSIL/CHECKSUMS.sha256",
+      "target": "provenance/fossil/UPSTREAM-CHECKSUMS.sha256",
+      "sourceBytes": 16173,
+      "sourceSha256": "595f2b941f27bff7b68ccaeed02b2df4caa2e5ef26b237c68d9b87cebd900c2a",
+      "targetBytes": 16173,
+      "targetSha256": "595f2b941f27bff7b68ccaeed02b2df4caa2e5ef26b237c68d9b87cebd900c2a",
+      "byteIdentical": true,
+      "kind": "byte-preserved"
+    }
+  ],
+  "omissions": [
+    {
+      "path": "FOSSIL/Preview-Server.cmd",
+      "bytes": 234,
+      "sha256": "ddfe7cd71bdd4e200dc8da661632c572c12cec6de2cc8f5fcb1153d80d9dbb1e",
+      "reason": "standalone package/build/server/startup or optional generator dependency tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "FOSSIL/Start-FOSSIL.cmd",
+      "bytes": 52,
+      "sha256": "4495a5d2f2313369592da74af6ac8193a5329f96cadfe0f6e2a44511302ec96f",
+      "reason": "standalone package/build/server/startup or optional generator dependency tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "FOSSIL/package.json",
+      "bytes": 386,
+      "sha256": "38aa29e4bd6e4d202603d2289ef881b0fe1f04b864e4fe415271bed3ab1b529f",
+      "reason": "standalone package/build/server/startup or optional generator dependency tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "FOSSIL/requirements-procedural.txt",
+      "bytes": 152,
+      "sha256": "c51bfe441bc2e8618299184213aee4a49c29f9fed3517143669a0ac897cf7dd4",
+      "reason": "standalone package/build/server/startup or optional generator dependency tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "FOSSIL/scripts/build.mjs",
+      "bytes": 1264,
+      "sha256": "269c63dc8653c6dcd0c2a314537ee3f41f446eb6db7e2e115fd710a3567d87dc",
+      "reason": "standalone package/build/server/startup or optional generator dependency tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "FOSSIL/scripts/serve.mjs",
+      "bytes": 1773,
+      "sha256": "8b38ff196a7db9e83e8cb4fbaccd393d3482a9dc1fab469a072a964207ae2f33",
+      "reason": "standalone package/build/server/startup or optional generator dependency tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "FOSSIL/vendor/lenis.min.js",
+      "bytes": 18722,
+      "sha256": "53195c9797e7ce7bf9d7fa9242b08209e57f46de4c9dac126a6494fa780e3346",
+      "reason": "vendored duplicate Lenis replaced with the byte-compatible installed root dependency; original MIT notice retained"
+    }
+  ],
+  "reviewedAt": "2026-10-07T07:23:28.398676+00:00",
+  "entryCount": 172,
+  "uncompressedBytes": 95156535,
+  "topLevel": [
+    "FOSSIL"
+  ],
+  "archiveIssues": [],
+  "nestedArchives": [],
+  "sourceChecksumRecords": 171,
+  "sourceChecksumFailures": 0,
+  "protectedByteIdenticalFiles": 146,
+  "importedEntries": 165,
+  "omittedEntries": 7,
+  "generatedFiles": [
+    {
+      "path": "public/fossil/NOTICE.md",
+      "bytes": 2264,
+      "sha256": "f37039fbafc962942367bb4ec6d424108da54a4f44cffaa47b11b6b6dd2be377"
+    },
+    {
+      "path": "public/fossil/poster.webp",
+      "bytes": 224246,
+      "sha256": "ab1cae28c2b8c3b072ebbf2a30ff570c6b390242545a1b59d9a071069b2f50f4"
+    },
+    {
+      "path": "public/fossil/social.jpg",
+      "bytes": 242584,
+      "sha256": "f5e40b8a513fc2efb5129ce29d8c0de4438059495b13c919cc3632c05a712447"
+    },
+    {
+      "path": "public/fossil/licenses/README.md",
+      "bytes": 1015,
+      "sha256": "c6d0e4ff23a69e1336c47df4cc14f7395fd5a7044b6d81c0f820c7aa80662305"
+    },
+    {
+      "path": "docs/fossil/ACCEPTANCE.md",
+      "bytes": 6581,
+      "sha256": "ef04a73632a8acf8366911e7fa462fd464b5fdd89468d8d999d6fda4697ae551"
+    },
+    {
+      "path": "docs/fossil/ARCHITECTURE.md",
+      "bytes": 2991,
+      "sha256": "d96e266194bac6938ec147bb780af6ec28ca9b597b19cd125db529c069374f9b"
+    }
+  ],
+  "capture": {
+    "url": "http://127.0.0.1:4199/fossil/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "source": "Actual opening composition: supplied AI-generated hero-slab.webp with native positioning, scaling and original museum ground. It is not the authored Reconstruct mesh or a real fossil photograph.",
+    "hiddenOnlyForCapture": [
+      ".composition",
+      ".masthead",
+      ".chapter-rail",
+      ".skip-link",
+      "#brush-cursor"
+    ],
+    "productSourceChangedForCapture": false,
+    "capture": "C:/Users/admin/AppData/Local/Temp/collection-fossil-intake-39ec821a/fossil-ui-free-capture.png",
+    "outputs": {
+      "poster": {
+        "path": "public/fossil/poster.webp",
+        "size": [
+          1200,
+          750
+        ],
+        "resize": "1440×900 full viewport"
+      },
+      "social": {
+        "path": "public/fossil/social.jpg",
+        "size": [
+          1200,
+          630
+        ],
+        "crop": {
+          "left": 0,
+          "top": 72,
+          "width": 1440,
+          "height": 756
+        }
+      }
+    }
+  },
+  "dataValidation": {
+    "dimensions": [
+      192,
+      192,
+      72
+    ],
+    "rawBytes": 2654208,
+    "embeddedBytes": 2654208,
+    "equal": true,
+    "sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+    "meshKeys": [
+      "positionsBase64",
+      "normalsBase64",
+      "indicesBase64",
+      "indexType",
+      "positionScale",
+      "vertexCount",
+      "triangleCount",
+      "iso"
+    ],
+    "meshIndicesBytes": 4537536,
+    "sectionBounds": 72,
+    "thumbSections": [
+      10,
+      22,
+      35,
+      48,
+      62
+    ]
+  },
+  "sectionValidation": {
+    "count": 72,
+    "allByteIdenticalToRawPlanes": true
+  },
+  "review": {
+    "sourceSafety": "Runtime source contains no network request, telemetry or executable user input. LocalStorage only stores ambient-motion preference; fixed authored innerHTML; JSON download is user initiated.",
+    "licenses": "Supplied scoped MIT source/docs/synthetic field/model; OFL fonts; Lenis and Marching Cubes lookup-table MIT; AI plates and references have separate source notice. All original license bytes retained.",
+    "preaudit": "Eight upstream read-only gates; 171 source checksums; 72 density planes; 58 fresh desktop/phone runtime checks and 22 inspected frames, all passed before import.",
+    "integration": "58 final main checks passed; extra34/35 passes with actual-event counter-evidence refuting one snapshot reversal assertion; both targeted actual-wheel and all-Canvas-disabled checks passed. Six viewport sizes inspected, actual hidden/BFCache exercised.",
+    "collectionChanges": [
+      "one root Lenis .105 on the original RAF; native touch and reduced-wheel policy",
+      "namespace HTML/CSS/runtime resource URLs and native Collection return",
+      "canonical/social metadata and honest material notices",
+      "atomic chapter geometry, first owned-frame immediate hash restoration and normalized resize retention",
+      "terminal disposal with static semantic fallback; BFCache retained",
+      "portrait-tablet hero copy contrast protected without altering supplied image bytes"
+    ],
+    "limitations": [
+      "Physical touch and iOS/Safari not verified",
+      "No FPS or high-refresh hardware certification",
+      "Production base/build/Pages verification is the parent closeout gate"
+    ],
+    "productionPreview": "Local final project-path preview: LUTHIER28 and FOSSIL58 main groups, shared26 addon and12 six-size groups passed; all chapter/viewport/fallback frames inspected;12 representative HTTP source assets byte-identical. Central production lifecycle evidence confirms real hidden tab suspension, resumed input and BFCache position retention for both works; all five assertions pass per work. Live deployment remains a separate root gate."
+  }
+}

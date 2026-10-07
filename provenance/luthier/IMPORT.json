@@ -1,0 +1,2253 @@
+{
+  "archive": "LUTHIER.zip",
+  "sha256": "d8933ed1dec2f77d409e5df0ff528affd814a87b2334d5ac602cb9373c89ab9f",
+  "bytes": 23097009,
+  "mtime": "2026-10-07T14:12:42.097727+08:00",
+  "route": "luthier",
+  "entries": [
+    {
+      "path": "LUTHIER/ATTRIBUTION.md",
+      "bytes": 4417,
+      "compressedBytes": 2041,
+      "sha256": "f56b98cd98f8f5a6c173314b866f6356665b3f9feae4afe8d19658e50b35ff1e",
+      "directory": false,
+      "mtime": "2026-10-07T00:17:38",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/DESIGN.md",
+      "bytes": 6958,
+      "compressedBytes": 3359,
+      "sha256": "0fa37d2364fe7f3164d0d0f1a8ba1fb6d83a78c4441241da008169b44110abbd",
+      "directory": false,
+      "mtime": "2026-10-07T00:56:34",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/LICENSE",
+      "bytes": 1458,
+      "compressedBytes": 822,
+      "sha256": "d204711b203b35f8b29e56b6ec89d9cb5886ea361650a54feae5ca8edbbbd9b2",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/PRODUCT.md",
+      "bytes": 2162,
+      "compressedBytes": 1224,
+      "sha256": "d107d8e6a09cc7026f87ef42b02a24aafeebc99012042421b560ce0c249b628e",
+      "directory": false,
+      "mtime": "2026-10-06T23:43:30",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/README.md",
+      "bytes": 8456,
+      "compressedBytes": 4609,
+      "sha256": "438a9d33c39b3cbdef50f1aaa30aa1802f7e83d3c8cd132c0fb0b6dc59c8aada",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:06",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/Start-LUTHIER.cmd",
+      "bytes": 556,
+      "compressedBytes": 323,
+      "sha256": "e69bb6c0b2369a7007fb416775db66df83348042db95445d5647d8ab1caac531",
+      "directory": false,
+      "mtime": "2026-10-07T00:18:14",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/bow.png",
+      "bytes": 1470576,
+      "compressedBytes": 1402926,
+      "sha256": "55b3460de560c5cb904899a2bad5555490db97c8c801f05d4d9605b6369a3e43",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:54",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/craft.png",
+      "bytes": 1766556,
+      "compressedBytes": 1593128,
+      "sha256": "8be721ba3f65c5dc5d4bf4930431e7de5384a710575abeafee98bd1c33048334",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:54",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/ebony.png",
+      "bytes": 2212475,
+      "compressedBytes": 2080123,
+      "sha256": "1a01e47555f2dea3510db974b47c0db8a6dd9828865c7d8a7beea1e9fb95162c",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/hero.png",
+      "bytes": 1788856,
+      "compressedBytes": 1745629,
+      "sha256": "32e3144264530f89312ad1547c5e68127afcf4f4bc6dc41614276c1b386b432f",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/inside.png",
+      "bytes": 2030796,
+      "compressedBytes": 1883220,
+      "sha256": "1835594352b8cc97ca65a1b478aaed9b7654e79525fd5a4cd5a6f408d032e84c",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:24",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/manifest.json",
+      "bytes": 22299,
+      "compressedBytes": 7686,
+      "sha256": "054e7a4033dfef32d96bae48ac6020fe9ec5ab9be2e8adef5ca81b559dbed088",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/spruce.png",
+      "bytes": 2234786,
+      "compressedBytes": 2137250,
+      "sha256": "98821f29dbf6a90ca06a1cac55511db7da0ba32baf2aa62cd63a30f9f8f9652e",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/tension.png",
+      "bytes": 1539051,
+      "compressedBytes": 1280728,
+      "sha256": "6b50d2e92e107fe07a99c4e5db7cd5dac8ddb7f0264738d1aa394d7490d5c34a",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:54",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/assets-originals/wood.png",
+      "bytes": 2405913,
+      "compressedBytes": 2323908,
+      "sha256": "ca12a17912f14cccb0d4a01f9bbe28f476a8fcd8c76fa4ff0829ba32745e59f4",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:24",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/GLTFExporter-D2rnJVV1.js",
+      "bytes": 36770,
+      "compressedBytes": 10650,
+      "sha256": "8870c7d3d1636ee53f9555945d47ada15f8c089a3b47176fd05521263617451d",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/bow.webp",
+      "bytes": 302072,
+      "compressedBytes": 301289,
+      "sha256": "c8c18662c910a96f2f6a1b765fe8c3c80507274324ffd4cd61e28a49e41b59b2",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/craft.webp",
+      "bytes": 134322,
+      "compressedBytes": 134363,
+      "sha256": "a16d397626ab52b48d734efd24f4caae47447111835b779fe1d6de204f44e222",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/ebony.webp",
+      "bytes": 175562,
+      "compressedBytes": 175617,
+      "sha256": "80c5ab3f83bc702615dcf293951e85ac3ed752cfbb0f6b465c173d9c0a66d277",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/hero.webp",
+      "bytes": 305800,
+      "compressedBytes": 305103,
+      "sha256": "4b0c35014ece0fc1e557a133ab96de476d994a18a47bd67bfcdc51f9e4dce8bf",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/index-QhfxHLbg.js",
+      "bytes": 169011,
+      "compressedBytes": 62250,
+      "sha256": "a01bf55743070f07d7ea1ad4aee210edf3c9963bb10e19c48279b5ecba629cb8",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/index-YN6dkWIt.css",
+      "bytes": 31567,
+      "compressedBytes": 7404,
+      "sha256": "f41c899f0ae35ef79e60505da66990d7e4aa8897aa1c90d1aad7debd7847453c",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/inside.webp",
+      "bytes": 182386,
+      "compressedBytes": 182446,
+      "sha256": "450c1bcedeaab45e0e65839487a275a870e149c72c238dd26ef8619a4ecacd89",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/maple-texture.webp",
+      "bytes": 34274,
+      "compressedBytes": 34289,
+      "sha256": "0997adccff96e4f8d960adfe35f01dc0c36defef7728bf135950d399ac01a6bf",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/spruce-texture.webp",
+      "bytes": 40522,
+      "compressedBytes": 40537,
+      "sha256": "7f53fa72fe56920e5e2e5e54d79433ee8185df25e58e56744cb943b26c1d0c6c",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/spruce.webp",
+      "bytes": 208476,
+      "compressedBytes": 208541,
+      "sha256": "abce954aa6a7d5f93951fb732db601a9c362243a75b8838856c518d0ef8871eb",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/tension.webp",
+      "bytes": 64020,
+      "compressedBytes": 63832,
+      "sha256": "a13dff05dd27bcc390e063a837f02d33a68b8d7f750353a10c77e8e246484f0d",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/violin-model-BTFGyyWq.js",
+      "bytes": 591876,
+      "compressedBytes": 149698,
+      "sha256": "34446843811851ef905d40620ee40f974e1208c256283555b6ea72a7eb10b8be",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/assets/wood.webp",
+      "bytes": 278736,
+      "compressedBytes": 278826,
+      "sha256": "2db511ad663ea8bdc4581aa66acdbe59b0c7258d725e54ef23f7a2332d4cf289",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/favicon.svg",
+      "bytes": 287,
+      "compressedBytes": 206,
+      "sha256": "af1ff8b8b3b1cef884ad8ec916986e10c1353d666c748af013145fbfd51a9c41",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-300-italic.woff2",
+      "bytes": 22484,
+      "compressedBytes": 22494,
+      "sha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-300.woff2",
+      "bytes": 21908,
+      "compressedBytes": 21918,
+      "sha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-400-italic.woff2",
+      "bytes": 23660,
+      "compressedBytes": 23670,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-400.woff2",
+      "bytes": 22876,
+      "compressedBytes": 22886,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/fonts/dm-sans-400.woff2",
+      "bytes": 14200,
+      "compressedBytes": 14139,
+      "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/fonts/dm-sans-500.woff2",
+      "bytes": 14304,
+      "compressedBytes": 14217,
+      "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/dist/index.html",
+      "bytes": 16112,
+      "compressedBytes": 4776,
+      "sha256": "663c6b67daa706ad136d50335a91e1a39106d1dd8552497e32a42d636e86d7d9",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:08",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/CONTENT.md",
+      "bytes": 4701,
+      "compressedBytes": 2566,
+      "sha256": "f378b80757eaadd45d6835f01f198e02c43ef5768e2496423e3633f5bc4d12c6",
+      "directory": false,
+      "mtime": "2026-10-06T23:37:32",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/MODEL.md",
+      "bytes": 5815,
+      "compressedBytes": 2726,
+      "sha256": "d96a14eb3b6dd63c510954e62fa25c563cfd1d1adae89c93f5b87d8b084ea392",
+      "directory": false,
+      "mtime": "2026-10-07T00:24:02",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/PROVENANCE.md",
+      "bytes": 10975,
+      "compressedBytes": 4583,
+      "sha256": "ba1e76bfeb9f626ae50650f10ffe18c842c52825220732945cdedb2363efc30d",
+      "directory": false,
+      "mtime": "2026-10-07T00:56:34",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/QA.md",
+      "bytes": 13916,
+      "compressedBytes": 7247,
+      "sha256": "8a07ec80d2711b0d99cb105b6038b2d05951e25a5f7d9dde9168c178c9d37ab0",
+      "directory": false,
+      "mtime": "2026-10-07T01:09:30",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/RESEARCH.md",
+      "bytes": 9626,
+      "compressedBytes": 4277,
+      "sha256": "7671227c6542d4f55ab4d835db32964f3a522c0dd72f5a8a319a18dc3390c552",
+      "directory": false,
+      "mtime": "2026-10-06T23:37:32",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/01-presence.webp",
+      "bytes": 186858,
+      "compressedBytes": 186884,
+      "sha256": "bbc1e0f812147237f37f1ceea479f4735b51395057bfa68f30c424f02ec3d7e0",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:20",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/02-wood.webp",
+      "bytes": 220574,
+      "compressedBytes": 220644,
+      "sha256": "3b6cca9967cde3ea92a71b2aa3221f3f7ff1251f47fa799fc5eec4963145a66b",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/03-craft.webp",
+      "bytes": 114804,
+      "compressedBytes": 114637,
+      "sha256": "6ed7ec39dcab2c371c39b98915898fe61ce3da3a6c5e5043e13e06b4cf33c5d3",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/04-inside.webp",
+      "bytes": 151170,
+      "compressedBytes": 151220,
+      "sha256": "f9b967dea0c8e2314be48041a51693b0b4b800b147f3283fa0419ac6d487998a",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/05-tension.webp",
+      "bytes": 78004,
+      "compressedBytes": 77619,
+      "sha256": "38cfc24ba68ecc4baa958352edd74cc933f8bbadfb339590c0b6c7ec463024d2",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/06-bow.webp",
+      "bytes": 80210,
+      "compressedBytes": 80235,
+      "sha256": "86550daaf3a25c802ae6847eee6050f90d0d9694ff0e9126f6874c939ce65a52",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/07-resonance.webp",
+      "bytes": 151238,
+      "compressedBytes": 150719,
+      "sha256": "e2b5f36701bfde539eb60a1f597f0df631a32bed82df942920f6713118bf21ec",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/08-space.webp",
+      "bytes": 247476,
+      "compressedBytes": 247556,
+      "sha256": "69101316697deb598797bfbb2f3945bb71c2643c3c857120b70c2edf729989ea",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/docs/concepts/09-return.webp",
+      "bytes": 173962,
+      "compressedBytes": 174017,
+      "sha256": "50ac8d3f47690f265afdec21f9fa3111c9451ba41336bcd8ea8ca8f9daf02129",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:22",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/index.html",
+      "bytes": 16012,
+      "compressedBytes": 4736,
+      "sha256": "39c738993b56545facec70dc0d803423b577f16e2b104e96808eac0c8cfc89cb",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/README.md",
+      "bytes": 3936,
+      "compressedBytes": 1514,
+      "sha256": "03de89c01246172fbe9ec4e03a7744ec125c6b06a17cbabd9853fcf6c321a6c2",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/detect-libc-2.1.2/LICENSE",
+      "bytes": 11357,
+      "compressedBytes": 3949,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/dimforge-rapier3d-compat-0.12.0/LICENSE",
+      "bytes": 11343,
+      "compressedBytes": 3950,
+      "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/fdir-6.5.0/LICENSE",
+      "bytes": 1053,
+      "compressedBytes": 608,
+      "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/fflate-0.8.3/LICENSE",
+      "bytes": 1069,
+      "compressedBytes": 631,
+      "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/fontsource-cormorant-garamond-5.3.0/LICENSE",
+      "bytes": 4504,
+      "compressedBytes": 1967,
+      "sha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/fontsource-dm-sans-5.3.0/LICENSE",
+      "bytes": 4502,
+      "compressedBytes": 1972,
+      "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/gsap-3.15.0/NOTICE.txt",
+      "bytes": 1062,
+      "compressedBytes": 454,
+      "sha256": "f91d7ecfae57a03fa8a5aaa54e2eda1a82363771b272a3b38137f0c4f5e9dc2a",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/gsap-3.15.0/package-license.json",
+      "bytes": 256,
+      "compressedBytes": 162,
+      "sha256": "995b7f2587eaae4f34eed9a94649858d21d829052bbe62a19e68824c417ac05f",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/lenis-1.3.26/LICENSE",
+      "bytes": 1096,
+      "compressedBytes": 642,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/lightningcss-1.33.0/LICENSE",
+      "bytes": 15648,
+      "compressedBytes": 5198,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/lightningcss-linux-x64-gnu-1.33.0/LICENSE",
+      "bytes": 15648,
+      "compressedBytes": 5198,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/manifest.json",
+      "bytes": 17487,
+      "compressedBytes": 3339,
+      "sha256": "1ece8cf9dcbfc11ab377ffa404872cd1084cfac0b28324291f9cfc0ff2d1a7c0",
+      "directory": false,
+      "mtime": "2026-10-07T00:18:14",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/meshoptimizer-1.1.1/LICENSE.md",
+      "bytes": 1079,
+      "compressedBytes": 639,
+      "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/nanoid-3.3.20/LICENSE",
+      "bytes": 1095,
+      "compressedBytes": 648,
+      "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/oxc-project-types-0.152.0/LICENSE",
+      "bytes": 1119,
+      "compressedBytes": 656,
+      "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/picocolors-1.1.1/LICENSE",
+      "bytes": 787,
+      "compressedBytes": 494,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/picomatch-4.0.7/LICENSE",
+      "bytes": 1091,
+      "compressedBytes": 646,
+      "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/postcss-8.5.29/LICENSE",
+      "bytes": 1095,
+      "compressedBytes": 647,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/rolldown-1.2.12/LICENSE",
+      "bytes": 1302,
+      "compressedBytes": 773,
+      "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/rolldown-pluginutils-1.0.1/LICENSE",
+      "bytes": 1106,
+      "compressedBytes": 655,
+      "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/source-map-js-1.2.2/LICENSE",
+      "bytes": 1526,
+      "compressedBytes": 787,
+      "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/three-0.186.1/LICENSE",
+      "bytes": 1081,
+      "compressedBytes": 644,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/tinyglobby-0.2.17/LICENSE",
+      "bytes": 1076,
+      "compressedBytes": 639,
+      "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/tweenjs-tween.js-23.1.3/LICENSE",
+      "bytes": 1166,
+      "compressedBytes": 685,
+      "sha256": "c95fecd88f2709bfc34e4d1f1ccc36d17048990e6ba26c283cfecdef0432936b",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/types-stats.js-0.17.4/LICENSE",
+      "bytes": 1141,
+      "compressedBytes": 637,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/types-three-0.186.0/LICENSE",
+      "bytes": 1141,
+      "compressedBytes": 637,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/types-webxr-0.5.24/LICENSE",
+      "bytes": 1141,
+      "compressedBytes": 637,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/typescript-7.0.2/LICENSE",
+      "bytes": 9197,
+      "compressedBytes": 3313,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/typescript-7.0.2/NOTICE.txt",
+      "bytes": 48860,
+      "compressedBytes": 13153,
+      "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/typescript-typescript-linux-x64-7.0.2/LICENSE",
+      "bytes": 9197,
+      "compressedBytes": 3313,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/typescript-typescript-linux-x64-7.0.2/NOTICE.txt",
+      "bytes": 48860,
+      "compressedBytes": 13153,
+      "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/licenses/vite-8.3.3/LICENSE.md",
+      "bytes": 108786,
+      "compressedBytes": 10915,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "directory": false,
+      "mtime": "2026-10-07T00:15:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/models/violin-study.glb",
+      "bytes": 5089116,
+      "compressedBytes": 3109842,
+      "sha256": "77129fd0bbe63515ee20c7a8c3de39fdf939452ce2c6ea192e61d45a51aed027",
+      "directory": false,
+      "mtime": "2026-10-07T00:04:44",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/package-lock.json",
+      "bytes": 42242,
+      "compressedBytes": 8435,
+      "sha256": "d9b389d7e560db70584f52a76f5d918861c4a911ff5f657d1e6fe7f36fdec4f0",
+      "directory": false,
+      "mtime": "2026-10-06T23:44:14",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/package.json",
+      "bytes": 772,
+      "compressedBytes": 379,
+      "sha256": "67d18e221bcbf6b8b62b49b494cc51b0c34d5a676d42839c7b34660da956cc93",
+      "directory": false,
+      "mtime": "2026-10-06T23:44:14",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/bow.webp",
+      "bytes": 302072,
+      "compressedBytes": 301289,
+      "sha256": "c8c18662c910a96f2f6a1b765fe8c3c80507274324ffd4cd61e28a49e41b59b2",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:54",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/craft.webp",
+      "bytes": 134322,
+      "compressedBytes": 134363,
+      "sha256": "a16d397626ab52b48d734efd24f4caae47447111835b779fe1d6de204f44e222",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/ebony.webp",
+      "bytes": 175562,
+      "compressedBytes": 175617,
+      "sha256": "80c5ab3f83bc702615dcf293951e85ac3ed752cfbb0f6b465c173d9c0a66d277",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/hero.webp",
+      "bytes": 305800,
+      "compressedBytes": 305103,
+      "sha256": "4b0c35014ece0fc1e557a133ab96de476d994a18a47bd67bfcdc51f9e4dce8bf",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:24",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/inside.webp",
+      "bytes": 182386,
+      "compressedBytes": 182446,
+      "sha256": "450c1bcedeaab45e0e65839487a275a870e149c72c238dd26ef8619a4ecacd89",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:24",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/maple-texture.webp",
+      "bytes": 34274,
+      "compressedBytes": 34289,
+      "sha256": "0997adccff96e4f8d960adfe35f01dc0c36defef7728bf135950d399ac01a6bf",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/spruce-texture.webp",
+      "bytes": 40522,
+      "compressedBytes": 40537,
+      "sha256": "7f53fa72fe56920e5e2e5e54d79433ee8185df25e58e56744cb943b26c1d0c6c",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/spruce.webp",
+      "bytes": 208476,
+      "compressedBytes": 208541,
+      "sha256": "abce954aa6a7d5f93951fb732db601a9c362243a75b8838856c518d0ef8871eb",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:56",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/tension.webp",
+      "bytes": 64020,
+      "compressedBytes": 63832,
+      "sha256": "a13dff05dd27bcc390e063a837f02d33a68b8d7f750353a10c77e8e246484f0d",
+      "directory": false,
+      "mtime": "2026-10-06T23:52:54",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/assets/wood.webp",
+      "bytes": 278736,
+      "compressedBytes": 278826,
+      "sha256": "2db511ad663ea8bdc4581aa66acdbe59b0c7258d725e54ef23f7a2332d4cf289",
+      "directory": false,
+      "mtime": "2026-10-06T23:45:24",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/favicon.svg",
+      "bytes": 287,
+      "compressedBytes": 206,
+      "sha256": "af1ff8b8b3b1cef884ad8ec916986e10c1353d666c748af013145fbfd51a9c41",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/fonts/cormorant-300-italic.woff2",
+      "bytes": 22484,
+      "compressedBytes": 22494,
+      "sha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/fonts/cormorant-300.woff2",
+      "bytes": 21908,
+      "compressedBytes": 21918,
+      "sha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/fonts/cormorant-400-italic.woff2",
+      "bytes": 23660,
+      "compressedBytes": 23670,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/fonts/cormorant-400.woff2",
+      "bytes": 22876,
+      "compressedBytes": 22886,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/fonts/dm-sans-400.woff2",
+      "bytes": 14200,
+      "compressedBytes": 14139,
+      "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/public/fonts/dm-sans-500.woff2",
+      "bytes": 14304,
+      "compressedBytes": 14217,
+      "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "directory": false,
+      "mtime": "2026-10-06T23:51:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/scripts/serve.mjs",
+      "bytes": 8866,
+      "compressedBytes": 3247,
+      "sha256": "fbfb6036ba609686bcf440a94bf945fc0a012e5d9955f5577764d98c772b5ac0",
+      "directory": false,
+      "mtime": "2026-10-07T00:14:58",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/scripts/verify.mjs",
+      "bytes": 23843,
+      "compressedBytes": 7718,
+      "sha256": "73b6205aa812f22008f88e813fd9f4fc85308d57da763b8ec468aac30d7a2be0",
+      "directory": false,
+      "mtime": "2026-10-07T00:29:52",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/audio.ts",
+      "bytes": 16439,
+      "compressedBytes": 4667,
+      "sha256": "e8d80d35a6a10593ee5cefabe3de87b32fca59d1db787db7357532f759179ddb",
+      "directory": false,
+      "mtime": "2026-10-06T23:50:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/field.ts",
+      "bytes": 31542,
+      "compressedBytes": 8822,
+      "sha256": "85a58de2cb39f706b39c3af71cb29270c943fb56255bca6d904de9b0837e9330",
+      "directory": false,
+      "mtime": "2026-10-07T00:54:02",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/main.ts",
+      "bytes": 25173,
+      "compressedBytes": 7967,
+      "sha256": "8b5147ef9d4c83e444dc5b305b8a196870ba797f1cb841005a885685037774c6",
+      "directory": false,
+      "mtime": "2026-10-07T01:02:40",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/model-geometry.ts",
+      "bytes": 11871,
+      "compressedBytes": 3722,
+      "sha256": "4c0e2dca80646f7e110523b84354740f60c6df6ca15b73866abd962eeccb0c29",
+      "directory": false,
+      "mtime": "2026-10-07T00:02:20",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/story.ts",
+      "bytes": 1646,
+      "compressedBytes": 697,
+      "sha256": "8378af3c086abca14a321f47b802589293835f8477a34641b05aec3b68cb4b3d",
+      "directory": false,
+      "mtime": "2026-10-07T00:05:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/style.css",
+      "bytes": 32308,
+      "compressedBytes": 7621,
+      "sha256": "dcad70b575550bbf705afbc0cfd28075e6dc7ac5b237e0b29c45348f6a48509b",
+      "directory": false,
+      "mtime": "2026-10-07T00:54:02",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/src/violin-model.ts",
+      "bytes": 23629,
+      "compressedBytes": 7618,
+      "sha256": "b7dd8b298c4f0a5454a78503bd468de27e8cdddd47a883ef4ff0b0589141dd1f",
+      "directory": false,
+      "mtime": "2026-10-07T00:24:00",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/start.sh",
+      "bytes": 451,
+      "compressedBytes": 310,
+      "sha256": "b0eeb1247cc375f1acbc01901797362a9fc2a96d87e4a420928f302d30de4687",
+      "directory": false,
+      "mtime": "2026-10-07T00:18:14",
+      "externalAttributes": 2179792896
+    },
+    {
+      "path": "LUTHIER/tsconfig.json",
+      "bytes": 437,
+      "compressedBytes": 249,
+      "sha256": "a5611c6cee1011a849bea13820dd9c772f39ebc485a4bd51e1f93915570e0600",
+      "directory": false,
+      "mtime": "2026-10-06T23:50:58",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/vite.config.ts",
+      "bytes": 303,
+      "compressedBytes": 188,
+      "sha256": "eba986eb0cb81553ae1bbd47f8f0de4d7d9bcb4e96eb3a9a3b2d6ffa69e18c0a",
+      "directory": false,
+      "mtime": "2026-10-07T01:07:06",
+      "externalAttributes": 2175008768
+    },
+    {
+      "path": "LUTHIER/SHA256SUMS",
+      "bytes": 10963,
+      "compressedBytes": 4960,
+      "sha256": "28d2741c0a9f05f3d108e6d932de4b6667199ece913debe79efa8dab33f5ace0",
+      "directory": false,
+      "mtime": "2026-10-07T01:09:30",
+      "externalAttributes": 2175008768
+    }
+  ],
+  "mapping": [
+    {
+      "source": "LUTHIER/ATTRIBUTION.md",
+      "target": "provenance/luthier/UPSTREAM-ATTRIBUTION.md",
+      "sourceBytes": 4417,
+      "sourceSha256": "f56b98cd98f8f5a6c173314b866f6356665b3f9feae4afe8d19658e50b35ff1e",
+      "kind": "byte-preserved",
+      "targetBytes": 4417,
+      "targetSha256": "f56b98cd98f8f5a6c173314b866f6356665b3f9feae4afe8d19658e50b35ff1e",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/DESIGN.md",
+      "target": "docs/luthier/DESIGN.md",
+      "sourceBytes": 6958,
+      "sourceSha256": "0fa37d2364fe7f3164d0d0f1a8ba1fb6d83a78c4441241da008169b44110abbd",
+      "kind": "collection adaptation",
+      "targetBytes": 7449,
+      "targetSha256": "9202841e6546206f3475ae568ea15a49924c6a82ae1d75cdcba4892f981cedc4",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/LICENSE",
+      "target": "public/luthier/LICENSE.txt",
+      "sourceBytes": 1458,
+      "sourceSha256": "d204711b203b35f8b29e56b6ec89d9cb5886ea361650a54feae5ca8edbbbd9b2",
+      "kind": "byte-preserved",
+      "targetBytes": 1458,
+      "targetSha256": "d204711b203b35f8b29e56b6ec89d9cb5886ea361650a54feae5ca8edbbbd9b2",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/PRODUCT.md",
+      "target": "provenance/luthier/UPSTREAM-PRODUCT.md",
+      "sourceBytes": 2162,
+      "sourceSha256": "d107d8e6a09cc7026f87ef42b02a24aafeebc99012042421b560ce0c249b628e",
+      "kind": "byte-preserved",
+      "targetBytes": 2162,
+      "targetSha256": "d107d8e6a09cc7026f87ef42b02a24aafeebc99012042421b560ce0c249b628e",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/README.md",
+      "target": "provenance/luthier/UPSTREAM-README.md",
+      "sourceBytes": 8456,
+      "sourceSha256": "438a9d33c39b3cbdef50f1aaa30aa1802f7e83d3c8cd132c0fb0b6dc59c8aada",
+      "kind": "byte-preserved",
+      "targetBytes": 8456,
+      "targetSha256": "438a9d33c39b3cbdef50f1aaa30aa1802f7e83d3c8cd132c0fb0b6dc59c8aada",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/bow.png",
+      "target": "provenance/luthier/assets-originals/bow.png",
+      "sourceBytes": 1470576,
+      "sourceSha256": "55b3460de560c5cb904899a2bad5555490db97c8c801f05d4d9605b6369a3e43",
+      "kind": "byte-preserved",
+      "targetBytes": 1470576,
+      "targetSha256": "55b3460de560c5cb904899a2bad5555490db97c8c801f05d4d9605b6369a3e43",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/craft.png",
+      "target": "provenance/luthier/assets-originals/craft.png",
+      "sourceBytes": 1766556,
+      "sourceSha256": "8be721ba3f65c5dc5d4bf4930431e7de5384a710575abeafee98bd1c33048334",
+      "kind": "byte-preserved",
+      "targetBytes": 1766556,
+      "targetSha256": "8be721ba3f65c5dc5d4bf4930431e7de5384a710575abeafee98bd1c33048334",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/ebony.png",
+      "target": "provenance/luthier/assets-originals/ebony.png",
+      "sourceBytes": 2212475,
+      "sourceSha256": "1a01e47555f2dea3510db974b47c0db8a6dd9828865c7d8a7beea1e9fb95162c",
+      "kind": "byte-preserved",
+      "targetBytes": 2212475,
+      "targetSha256": "1a01e47555f2dea3510db974b47c0db8a6dd9828865c7d8a7beea1e9fb95162c",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/hero.png",
+      "target": "provenance/luthier/assets-originals/hero.png",
+      "sourceBytes": 1788856,
+      "sourceSha256": "32e3144264530f89312ad1547c5e68127afcf4f4bc6dc41614276c1b386b432f",
+      "kind": "byte-preserved",
+      "targetBytes": 1788856,
+      "targetSha256": "32e3144264530f89312ad1547c5e68127afcf4f4bc6dc41614276c1b386b432f",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/inside.png",
+      "target": "provenance/luthier/assets-originals/inside.png",
+      "sourceBytes": 2030796,
+      "sourceSha256": "1835594352b8cc97ca65a1b478aaed9b7654e79525fd5a4cd5a6f408d032e84c",
+      "kind": "byte-preserved",
+      "targetBytes": 2030796,
+      "targetSha256": "1835594352b8cc97ca65a1b478aaed9b7654e79525fd5a4cd5a6f408d032e84c",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/manifest.json",
+      "target": "provenance/luthier/assets-originals/manifest.json",
+      "sourceBytes": 22299,
+      "sourceSha256": "054e7a4033dfef32d96bae48ac6020fe9ec5ab9be2e8adef5ca81b559dbed088",
+      "kind": "byte-preserved",
+      "targetBytes": 22299,
+      "targetSha256": "054e7a4033dfef32d96bae48ac6020fe9ec5ab9be2e8adef5ca81b559dbed088",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/spruce.png",
+      "target": "provenance/luthier/assets-originals/spruce.png",
+      "sourceBytes": 2234786,
+      "sourceSha256": "98821f29dbf6a90ca06a1cac55511db7da0ba32baf2aa62cd63a30f9f8f9652e",
+      "kind": "byte-preserved",
+      "targetBytes": 2234786,
+      "targetSha256": "98821f29dbf6a90ca06a1cac55511db7da0ba32baf2aa62cd63a30f9f8f9652e",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/tension.png",
+      "target": "provenance/luthier/assets-originals/tension.png",
+      "sourceBytes": 1539051,
+      "sourceSha256": "6b50d2e92e107fe07a99c4e5db7cd5dac8ddb7f0264738d1aa394d7490d5c34a",
+      "kind": "byte-preserved",
+      "targetBytes": 1539051,
+      "targetSha256": "6b50d2e92e107fe07a99c4e5db7cd5dac8ddb7f0264738d1aa394d7490d5c34a",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/assets-originals/wood.png",
+      "target": "provenance/luthier/assets-originals/wood.png",
+      "sourceBytes": 2405913,
+      "sourceSha256": "ca12a17912f14cccb0d4a01f9bbe28f476a8fcd8c76fa4ff0829ba32745e59f4",
+      "kind": "byte-preserved",
+      "targetBytes": 2405913,
+      "targetSha256": "ca12a17912f14cccb0d4a01f9bbe28f476a8fcd8c76fa4ff0829ba32745e59f4",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/CONTENT.md",
+      "target": "docs/luthier/CONTENT.md",
+      "sourceBytes": 4701,
+      "sourceSha256": "f378b80757eaadd45d6835f01f198e02c43ef5768e2496423e3633f5bc4d12c6",
+      "kind": "byte-preserved",
+      "targetBytes": 4701,
+      "targetSha256": "f378b80757eaadd45d6835f01f198e02c43ef5768e2496423e3633f5bc4d12c6",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/MODEL.md",
+      "target": "docs/luthier/MODEL.md",
+      "sourceBytes": 5815,
+      "sourceSha256": "d96a14eb3b6dd63c510954e62fa25c563cfd1d1adae89c93f5b87d8b084ea392",
+      "kind": "byte-preserved",
+      "targetBytes": 5815,
+      "targetSha256": "d96a14eb3b6dd63c510954e62fa25c563cfd1d1adae89c93f5b87d8b084ea392",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/PROVENANCE.md",
+      "target": "docs/luthier/PROVENANCE.md",
+      "sourceBytes": 10975,
+      "sourceSha256": "ba1e76bfeb9f626ae50650f10ffe18c842c52825220732945cdedb2363efc30d",
+      "kind": "collection adaptation",
+      "targetBytes": 11012,
+      "targetSha256": "42cce406ca0b66786223f55abfbc0cfc4bc4ac2b401b1459c0a04354296e62a8",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/docs/QA.md",
+      "target": "docs/luthier/UPSTREAM-VALIDATION.md",
+      "sourceBytes": 13916,
+      "sourceSha256": "8a07ec80d2711b0d99cb105b6038b2d05951e25a5f7d9dde9168c178c9d37ab0",
+      "kind": "collection adaptation",
+      "targetBytes": 13913,
+      "targetSha256": "cdd3a9cce93ce2a9f4a9dc841ce7c475338fdc55c22109ed727634c851ccfb1f",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/docs/RESEARCH.md",
+      "target": "docs/luthier/RESEARCH.md",
+      "sourceBytes": 9626,
+      "sourceSha256": "7671227c6542d4f55ab4d835db32964f3a522c0dd72f5a8a319a18dc3390c552",
+      "kind": "byte-preserved",
+      "targetBytes": 9626,
+      "targetSha256": "7671227c6542d4f55ab4d835db32964f3a522c0dd72f5a8a319a18dc3390c552",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/01-presence.webp",
+      "target": "docs/luthier/concepts/01-presence.webp",
+      "sourceBytes": 186858,
+      "sourceSha256": "bbc1e0f812147237f37f1ceea479f4735b51395057bfa68f30c424f02ec3d7e0",
+      "kind": "byte-preserved",
+      "targetBytes": 186858,
+      "targetSha256": "bbc1e0f812147237f37f1ceea479f4735b51395057bfa68f30c424f02ec3d7e0",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/02-wood.webp",
+      "target": "docs/luthier/concepts/02-wood.webp",
+      "sourceBytes": 220574,
+      "sourceSha256": "3b6cca9967cde3ea92a71b2aa3221f3f7ff1251f47fa799fc5eec4963145a66b",
+      "kind": "byte-preserved",
+      "targetBytes": 220574,
+      "targetSha256": "3b6cca9967cde3ea92a71b2aa3221f3f7ff1251f47fa799fc5eec4963145a66b",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/03-craft.webp",
+      "target": "docs/luthier/concepts/03-craft.webp",
+      "sourceBytes": 114804,
+      "sourceSha256": "6ed7ec39dcab2c371c39b98915898fe61ce3da3a6c5e5043e13e06b4cf33c5d3",
+      "kind": "byte-preserved",
+      "targetBytes": 114804,
+      "targetSha256": "6ed7ec39dcab2c371c39b98915898fe61ce3da3a6c5e5043e13e06b4cf33c5d3",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/04-inside.webp",
+      "target": "docs/luthier/concepts/04-inside.webp",
+      "sourceBytes": 151170,
+      "sourceSha256": "f9b967dea0c8e2314be48041a51693b0b4b800b147f3283fa0419ac6d487998a",
+      "kind": "byte-preserved",
+      "targetBytes": 151170,
+      "targetSha256": "f9b967dea0c8e2314be48041a51693b0b4b800b147f3283fa0419ac6d487998a",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/05-tension.webp",
+      "target": "docs/luthier/concepts/05-tension.webp",
+      "sourceBytes": 78004,
+      "sourceSha256": "38cfc24ba68ecc4baa958352edd74cc933f8bbadfb339590c0b6c7ec463024d2",
+      "kind": "byte-preserved",
+      "targetBytes": 78004,
+      "targetSha256": "38cfc24ba68ecc4baa958352edd74cc933f8bbadfb339590c0b6c7ec463024d2",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/06-bow.webp",
+      "target": "docs/luthier/concepts/06-bow.webp",
+      "sourceBytes": 80210,
+      "sourceSha256": "86550daaf3a25c802ae6847eee6050f90d0d9694ff0e9126f6874c939ce65a52",
+      "kind": "byte-preserved",
+      "targetBytes": 80210,
+      "targetSha256": "86550daaf3a25c802ae6847eee6050f90d0d9694ff0e9126f6874c939ce65a52",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/07-resonance.webp",
+      "target": "docs/luthier/concepts/07-resonance.webp",
+      "sourceBytes": 151238,
+      "sourceSha256": "e2b5f36701bfde539eb60a1f597f0df631a32bed82df942920f6713118bf21ec",
+      "kind": "byte-preserved",
+      "targetBytes": 151238,
+      "targetSha256": "e2b5f36701bfde539eb60a1f597f0df631a32bed82df942920f6713118bf21ec",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/08-space.webp",
+      "target": "docs/luthier/concepts/08-space.webp",
+      "sourceBytes": 247476,
+      "sourceSha256": "69101316697deb598797bfbb2f3945bb71c2643c3c857120b70c2edf729989ea",
+      "kind": "byte-preserved",
+      "targetBytes": 247476,
+      "targetSha256": "69101316697deb598797bfbb2f3945bb71c2643c3c857120b70c2edf729989ea",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/docs/concepts/09-return.webp",
+      "target": "docs/luthier/concepts/09-return.webp",
+      "sourceBytes": 173962,
+      "sourceSha256": "50ac8d3f47690f265afdec21f9fa3111c9451ba41336bcd8ea8ca8f9daf02129",
+      "kind": "byte-preserved",
+      "targetBytes": 173962,
+      "targetSha256": "50ac8d3f47690f265afdec21f9fa3111c9451ba41336bcd8ea8ca8f9daf02129",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/index.html",
+      "target": "pages/luthier/index.html",
+      "sourceBytes": 16012,
+      "sourceSha256": "39c738993b56545facec70dc0d803423b577f16e2b104e96808eac0c8cfc89cb",
+      "kind": "collection adaptation",
+      "targetBytes": 18200,
+      "targetSha256": "f6dcf4384a977c5ceb1f2f079dd0f82d491bcbff578f1f6cfb61bd773d07ab2a",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/licenses/README.md",
+      "target": "public/luthier/licenses/README.md",
+      "sourceBytes": 3936,
+      "sourceSha256": "03de89c01246172fbe9ec4e03a7744ec125c6b06a17cbabd9853fcf6c321a6c2",
+      "kind": "byte-preserved",
+      "targetBytes": 3936,
+      "targetSha256": "03de89c01246172fbe9ec4e03a7744ec125c6b06a17cbabd9853fcf6c321a6c2",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/detect-libc-2.1.2/LICENSE",
+      "target": "public/luthier/licenses/detect-libc-2.1.2/LICENSE",
+      "sourceBytes": 11357,
+      "sourceSha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "kind": "byte-preserved",
+      "targetBytes": 11357,
+      "targetSha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/dimforge-rapier3d-compat-0.12.0/LICENSE",
+      "target": "public/luthier/licenses/dimforge-rapier3d-compat-0.12.0/LICENSE",
+      "sourceBytes": 11343,
+      "sourceSha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519",
+      "kind": "byte-preserved",
+      "targetBytes": 11343,
+      "targetSha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/fdir-6.5.0/LICENSE",
+      "target": "public/luthier/licenses/fdir-6.5.0/LICENSE",
+      "sourceBytes": 1053,
+      "sourceSha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "kind": "byte-preserved",
+      "targetBytes": 1053,
+      "targetSha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/fflate-0.8.3/LICENSE",
+      "target": "public/luthier/licenses/fflate-0.8.3/LICENSE",
+      "sourceBytes": 1069,
+      "sourceSha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
+      "kind": "byte-preserved",
+      "targetBytes": 1069,
+      "targetSha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/fontsource-cormorant-garamond-5.3.0/LICENSE",
+      "target": "public/luthier/licenses/fontsource-cormorant-garamond-5.3.0/LICENSE",
+      "sourceBytes": 4504,
+      "sourceSha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73",
+      "kind": "byte-preserved",
+      "targetBytes": 4504,
+      "targetSha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/fontsource-dm-sans-5.3.0/LICENSE",
+      "target": "public/luthier/licenses/fontsource-dm-sans-5.3.0/LICENSE",
+      "sourceBytes": 4502,
+      "sourceSha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+      "kind": "byte-preserved",
+      "targetBytes": 4502,
+      "targetSha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/gsap-3.15.0/NOTICE.txt",
+      "target": "public/luthier/licenses/gsap-3.15.0/NOTICE.txt",
+      "sourceBytes": 1062,
+      "sourceSha256": "f91d7ecfae57a03fa8a5aaa54e2eda1a82363771b272a3b38137f0c4f5e9dc2a",
+      "kind": "byte-preserved",
+      "targetBytes": 1062,
+      "targetSha256": "f91d7ecfae57a03fa8a5aaa54e2eda1a82363771b272a3b38137f0c4f5e9dc2a",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/gsap-3.15.0/package-license.json",
+      "target": "public/luthier/licenses/gsap-3.15.0/package-license.json",
+      "sourceBytes": 256,
+      "sourceSha256": "995b7f2587eaae4f34eed9a94649858d21d829052bbe62a19e68824c417ac05f",
+      "kind": "byte-preserved",
+      "targetBytes": 256,
+      "targetSha256": "995b7f2587eaae4f34eed9a94649858d21d829052bbe62a19e68824c417ac05f",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/lenis-1.3.26/LICENSE",
+      "target": "public/luthier/licenses/lenis-1.3.26/LICENSE",
+      "sourceBytes": 1096,
+      "sourceSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "kind": "byte-preserved",
+      "targetBytes": 1096,
+      "targetSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/lightningcss-1.33.0/LICENSE",
+      "target": "public/luthier/licenses/lightningcss-1.33.0/LICENSE",
+      "sourceBytes": 15648,
+      "sourceSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "kind": "byte-preserved",
+      "targetBytes": 15648,
+      "targetSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/lightningcss-linux-x64-gnu-1.33.0/LICENSE",
+      "target": "public/luthier/licenses/lightningcss-linux-x64-gnu-1.33.0/LICENSE",
+      "sourceBytes": 15648,
+      "sourceSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "kind": "byte-preserved",
+      "targetBytes": 15648,
+      "targetSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/manifest.json",
+      "target": "public/luthier/licenses/manifest.json",
+      "sourceBytes": 17487,
+      "sourceSha256": "1ece8cf9dcbfc11ab377ffa404872cd1084cfac0b28324291f9cfc0ff2d1a7c0",
+      "kind": "byte-preserved",
+      "targetBytes": 17487,
+      "targetSha256": "1ece8cf9dcbfc11ab377ffa404872cd1084cfac0b28324291f9cfc0ff2d1a7c0",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/meshoptimizer-1.1.1/LICENSE.md",
+      "target": "public/luthier/licenses/meshoptimizer-1.1.1/LICENSE.md",
+      "sourceBytes": 1079,
+      "sourceSha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26",
+      "kind": "byte-preserved",
+      "targetBytes": 1079,
+      "targetSha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/nanoid-3.3.20/LICENSE",
+      "target": "public/luthier/licenses/nanoid-3.3.20/LICENSE",
+      "sourceBytes": 1095,
+      "sourceSha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "kind": "byte-preserved",
+      "targetBytes": 1095,
+      "targetSha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/oxc-project-types-0.152.0/LICENSE",
+      "target": "public/luthier/licenses/oxc-project-types-0.152.0/LICENSE",
+      "sourceBytes": 1119,
+      "sourceSha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "kind": "byte-preserved",
+      "targetBytes": 1119,
+      "targetSha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/picocolors-1.1.1/LICENSE",
+      "target": "public/luthier/licenses/picocolors-1.1.1/LICENSE",
+      "sourceBytes": 787,
+      "sourceSha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "kind": "byte-preserved",
+      "targetBytes": 787,
+      "targetSha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/picomatch-4.0.7/LICENSE",
+      "target": "public/luthier/licenses/picomatch-4.0.7/LICENSE",
+      "sourceBytes": 1091,
+      "sourceSha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "kind": "byte-preserved",
+      "targetBytes": 1091,
+      "targetSha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/postcss-8.5.29/LICENSE",
+      "target": "public/luthier/licenses/postcss-8.5.29/LICENSE",
+      "sourceBytes": 1095,
+      "sourceSha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "kind": "byte-preserved",
+      "targetBytes": 1095,
+      "targetSha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/rolldown-1.2.12/LICENSE",
+      "target": "public/luthier/licenses/rolldown-1.2.12/LICENSE",
+      "sourceBytes": 1302,
+      "sourceSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "kind": "byte-preserved",
+      "targetBytes": 1302,
+      "targetSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/rolldown-pluginutils-1.0.1/LICENSE",
+      "target": "public/luthier/licenses/rolldown-pluginutils-1.0.1/LICENSE",
+      "sourceBytes": 1106,
+      "sourceSha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "kind": "byte-preserved",
+      "targetBytes": 1106,
+      "targetSha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/source-map-js-1.2.2/LICENSE",
+      "target": "public/luthier/licenses/source-map-js-1.2.2/LICENSE",
+      "sourceBytes": 1526,
+      "sourceSha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "kind": "byte-preserved",
+      "targetBytes": 1526,
+      "targetSha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/three-0.186.1/LICENSE",
+      "target": "public/luthier/licenses/three-0.186.1/LICENSE",
+      "sourceBytes": 1081,
+      "sourceSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "kind": "byte-preserved",
+      "targetBytes": 1081,
+      "targetSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/tinyglobby-0.2.17/LICENSE",
+      "target": "public/luthier/licenses/tinyglobby-0.2.17/LICENSE",
+      "sourceBytes": 1076,
+      "sourceSha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "kind": "byte-preserved",
+      "targetBytes": 1076,
+      "targetSha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/tweenjs-tween.js-23.1.3/LICENSE",
+      "target": "public/luthier/licenses/tweenjs-tween.js-23.1.3/LICENSE",
+      "sourceBytes": 1166,
+      "sourceSha256": "c95fecd88f2709bfc34e4d1f1ccc36d17048990e6ba26c283cfecdef0432936b",
+      "kind": "byte-preserved",
+      "targetBytes": 1166,
+      "targetSha256": "c95fecd88f2709bfc34e4d1f1ccc36d17048990e6ba26c283cfecdef0432936b",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/types-stats.js-0.17.4/LICENSE",
+      "target": "public/luthier/licenses/types-stats.js-0.17.4/LICENSE",
+      "sourceBytes": 1141,
+      "sourceSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "kind": "byte-preserved",
+      "targetBytes": 1141,
+      "targetSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/types-three-0.186.0/LICENSE",
+      "target": "public/luthier/licenses/types-three-0.186.0/LICENSE",
+      "sourceBytes": 1141,
+      "sourceSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "kind": "byte-preserved",
+      "targetBytes": 1141,
+      "targetSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/types-webxr-0.5.24/LICENSE",
+      "target": "public/luthier/licenses/types-webxr-0.5.24/LICENSE",
+      "sourceBytes": 1141,
+      "sourceSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "kind": "byte-preserved",
+      "targetBytes": 1141,
+      "targetSha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/typescript-7.0.2/LICENSE",
+      "target": "public/luthier/licenses/typescript-7.0.2/LICENSE",
+      "sourceBytes": 9197,
+      "sourceSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "kind": "byte-preserved",
+      "targetBytes": 9197,
+      "targetSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/typescript-7.0.2/NOTICE.txt",
+      "target": "public/luthier/licenses/typescript-7.0.2/NOTICE.txt",
+      "sourceBytes": 48860,
+      "sourceSha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "kind": "byte-preserved",
+      "targetBytes": 48860,
+      "targetSha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/typescript-typescript-linux-x64-7.0.2/LICENSE",
+      "target": "public/luthier/licenses/typescript-typescript-linux-x64-7.0.2/LICENSE",
+      "sourceBytes": 9197,
+      "sourceSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "kind": "byte-preserved",
+      "targetBytes": 9197,
+      "targetSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/typescript-typescript-linux-x64-7.0.2/NOTICE.txt",
+      "target": "public/luthier/licenses/typescript-typescript-linux-x64-7.0.2/NOTICE.txt",
+      "sourceBytes": 48860,
+      "sourceSha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "kind": "byte-preserved",
+      "targetBytes": 48860,
+      "targetSha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/licenses/vite-8.3.3/LICENSE.md",
+      "target": "public/luthier/licenses/vite-8.3.3/LICENSE.md",
+      "sourceBytes": 108786,
+      "sourceSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "kind": "byte-preserved",
+      "targetBytes": 108786,
+      "targetSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/models/violin-study.glb",
+      "target": "public/luthier/models/violin-study.glb",
+      "sourceBytes": 5089116,
+      "sourceSha256": "77129fd0bbe63515ee20c7a8c3de39fdf939452ce2c6ea192e61d45a51aed027",
+      "kind": "byte-preserved",
+      "targetBytes": 5089116,
+      "targetSha256": "77129fd0bbe63515ee20c7a8c3de39fdf939452ce2c6ea192e61d45a51aed027",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/bow.webp",
+      "target": "public/luthier/assets/bow.webp",
+      "sourceBytes": 302072,
+      "sourceSha256": "c8c18662c910a96f2f6a1b765fe8c3c80507274324ffd4cd61e28a49e41b59b2",
+      "kind": "byte-preserved",
+      "targetBytes": 302072,
+      "targetSha256": "c8c18662c910a96f2f6a1b765fe8c3c80507274324ffd4cd61e28a49e41b59b2",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/craft.webp",
+      "target": "public/luthier/assets/craft.webp",
+      "sourceBytes": 134322,
+      "sourceSha256": "a16d397626ab52b48d734efd24f4caae47447111835b779fe1d6de204f44e222",
+      "kind": "byte-preserved",
+      "targetBytes": 134322,
+      "targetSha256": "a16d397626ab52b48d734efd24f4caae47447111835b779fe1d6de204f44e222",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/ebony.webp",
+      "target": "public/luthier/assets/ebony.webp",
+      "sourceBytes": 175562,
+      "sourceSha256": "80c5ab3f83bc702615dcf293951e85ac3ed752cfbb0f6b465c173d9c0a66d277",
+      "kind": "byte-preserved",
+      "targetBytes": 175562,
+      "targetSha256": "80c5ab3f83bc702615dcf293951e85ac3ed752cfbb0f6b465c173d9c0a66d277",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/hero.webp",
+      "target": "public/luthier/assets/hero.webp",
+      "sourceBytes": 305800,
+      "sourceSha256": "4b0c35014ece0fc1e557a133ab96de476d994a18a47bd67bfcdc51f9e4dce8bf",
+      "kind": "byte-preserved",
+      "targetBytes": 305800,
+      "targetSha256": "4b0c35014ece0fc1e557a133ab96de476d994a18a47bd67bfcdc51f9e4dce8bf",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/inside.webp",
+      "target": "public/luthier/assets/inside.webp",
+      "sourceBytes": 182386,
+      "sourceSha256": "450c1bcedeaab45e0e65839487a275a870e149c72c238dd26ef8619a4ecacd89",
+      "kind": "byte-preserved",
+      "targetBytes": 182386,
+      "targetSha256": "450c1bcedeaab45e0e65839487a275a870e149c72c238dd26ef8619a4ecacd89",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/maple-texture.webp",
+      "target": "public/luthier/assets/maple-texture.webp",
+      "sourceBytes": 34274,
+      "sourceSha256": "0997adccff96e4f8d960adfe35f01dc0c36defef7728bf135950d399ac01a6bf",
+      "kind": "byte-preserved",
+      "targetBytes": 34274,
+      "targetSha256": "0997adccff96e4f8d960adfe35f01dc0c36defef7728bf135950d399ac01a6bf",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/spruce-texture.webp",
+      "target": "public/luthier/assets/spruce-texture.webp",
+      "sourceBytes": 40522,
+      "sourceSha256": "7f53fa72fe56920e5e2e5e54d79433ee8185df25e58e56744cb943b26c1d0c6c",
+      "kind": "byte-preserved",
+      "targetBytes": 40522,
+      "targetSha256": "7f53fa72fe56920e5e2e5e54d79433ee8185df25e58e56744cb943b26c1d0c6c",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/spruce.webp",
+      "target": "public/luthier/assets/spruce.webp",
+      "sourceBytes": 208476,
+      "sourceSha256": "abce954aa6a7d5f93951fb732db601a9c362243a75b8838856c518d0ef8871eb",
+      "kind": "byte-preserved",
+      "targetBytes": 208476,
+      "targetSha256": "abce954aa6a7d5f93951fb732db601a9c362243a75b8838856c518d0ef8871eb",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/tension.webp",
+      "target": "public/luthier/assets/tension.webp",
+      "sourceBytes": 64020,
+      "sourceSha256": "a13dff05dd27bcc390e063a837f02d33a68b8d7f750353a10c77e8e246484f0d",
+      "kind": "byte-preserved",
+      "targetBytes": 64020,
+      "targetSha256": "a13dff05dd27bcc390e063a837f02d33a68b8d7f750353a10c77e8e246484f0d",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/assets/wood.webp",
+      "target": "public/luthier/assets/wood.webp",
+      "sourceBytes": 278736,
+      "sourceSha256": "2db511ad663ea8bdc4581aa66acdbe59b0c7258d725e54ef23f7a2332d4cf289",
+      "kind": "byte-preserved",
+      "targetBytes": 278736,
+      "targetSha256": "2db511ad663ea8bdc4581aa66acdbe59b0c7258d725e54ef23f7a2332d4cf289",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/favicon.svg",
+      "target": "public/luthier/favicon.svg",
+      "sourceBytes": 287,
+      "sourceSha256": "af1ff8b8b3b1cef884ad8ec916986e10c1353d666c748af013145fbfd51a9c41",
+      "kind": "byte-preserved",
+      "targetBytes": 287,
+      "targetSha256": "af1ff8b8b3b1cef884ad8ec916986e10c1353d666c748af013145fbfd51a9c41",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/fonts/cormorant-300-italic.woff2",
+      "target": "public/luthier/fonts/cormorant-300-italic.woff2",
+      "sourceBytes": 22484,
+      "sourceSha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a",
+      "kind": "byte-preserved",
+      "targetBytes": 22484,
+      "targetSha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/fonts/cormorant-300.woff2",
+      "target": "public/luthier/fonts/cormorant-300.woff2",
+      "sourceBytes": 21908,
+      "sourceSha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7",
+      "kind": "byte-preserved",
+      "targetBytes": 21908,
+      "targetSha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/fonts/cormorant-400-italic.woff2",
+      "target": "public/luthier/fonts/cormorant-400-italic.woff2",
+      "sourceBytes": 23660,
+      "sourceSha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "kind": "byte-preserved",
+      "targetBytes": 23660,
+      "targetSha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/fonts/cormorant-400.woff2",
+      "target": "public/luthier/fonts/cormorant-400.woff2",
+      "sourceBytes": 22876,
+      "sourceSha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "kind": "byte-preserved",
+      "targetBytes": 22876,
+      "targetSha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/fonts/dm-sans-400.woff2",
+      "target": "public/luthier/fonts/dm-sans-400.woff2",
+      "sourceBytes": 14200,
+      "sourceSha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "kind": "byte-preserved",
+      "targetBytes": 14200,
+      "targetSha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/public/fonts/dm-sans-500.woff2",
+      "target": "public/luthier/fonts/dm-sans-500.woff2",
+      "sourceBytes": 14304,
+      "sourceSha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "kind": "byte-preserved",
+      "targetBytes": 14304,
+      "targetSha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/scripts/verify.mjs",
+      "target": "provenance/luthier/verification/verify.mjs",
+      "sourceBytes": 23843,
+      "sourceSha256": "73b6205aa812f22008f88e813fd9f4fc85308d57da763b8ec468aac30d7a2be0",
+      "kind": "byte-preserved",
+      "targetBytes": 23843,
+      "targetSha256": "73b6205aa812f22008f88e813fd9f4fc85308d57da763b8ec468aac30d7a2be0",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/src/audio.ts",
+      "target": "experiences/luthier/src/audio.ts",
+      "sourceBytes": 16439,
+      "sourceSha256": "e8d80d35a6a10593ee5cefabe3de87b32fca59d1db787db7357532f759179ddb",
+      "kind": "byte-preserved",
+      "targetBytes": 16439,
+      "targetSha256": "e8d80d35a6a10593ee5cefabe3de87b32fca59d1db787db7357532f759179ddb",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/src/field.ts",
+      "target": "experiences/luthier/src/field.ts",
+      "sourceBytes": 31542,
+      "sourceSha256": "85a58de2cb39f706b39c3af71cb29270c943fb56255bca6d904de9b0837e9330",
+      "kind": "byte-preserved",
+      "targetBytes": 31542,
+      "targetSha256": "85a58de2cb39f706b39c3af71cb29270c943fb56255bca6d904de9b0837e9330",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/src/main.ts",
+      "target": "experiences/luthier/src/main.ts",
+      "sourceBytes": 25173,
+      "sourceSha256": "8b5147ef9d4c83e444dc5b305b8a196870ba797f1cb841005a885685037774c6",
+      "kind": "collection adaptation",
+      "targetBytes": 25456,
+      "targetSha256": "b965da55e2b21cf44f526d85f95d92deb49ab2abb9270d305736d2139984d124",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/src/model-geometry.ts",
+      "target": "experiences/luthier/src/model-geometry.ts",
+      "sourceBytes": 11871,
+      "sourceSha256": "4c0e2dca80646f7e110523b84354740f60c6df6ca15b73866abd962eeccb0c29",
+      "kind": "byte-preserved",
+      "targetBytes": 11871,
+      "targetSha256": "4c0e2dca80646f7e110523b84354740f60c6df6ca15b73866abd962eeccb0c29",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/src/story.ts",
+      "target": "experiences/luthier/src/story.ts",
+      "sourceBytes": 1646,
+      "sourceSha256": "8378af3c086abca14a321f47b802589293835f8477a34641b05aec3b68cb4b3d",
+      "kind": "byte-preserved",
+      "targetBytes": 1646,
+      "targetSha256": "8378af3c086abca14a321f47b802589293835f8477a34641b05aec3b68cb4b3d",
+      "byteIdentical": true
+    },
+    {
+      "source": "LUTHIER/src/style.css",
+      "target": "experiences/luthier/src/style.css",
+      "sourceBytes": 32308,
+      "sourceSha256": "dcad70b575550bbf705afbc0cfd28075e6dc7ac5b237e0b29c45348f6a48509b",
+      "kind": "collection adaptation",
+      "targetBytes": 32689,
+      "targetSha256": "35384ecd69c1704db056c8d3b11cf9486c0b62fc481347b1c77680e975668241",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/src/violin-model.ts",
+      "target": "experiences/luthier/src/violin-model.ts",
+      "sourceBytes": 23629,
+      "sourceSha256": "b7dd8b298c4f0a5454a78503bd468de27e8cdddd47a883ef4ff0b0589141dd1f",
+      "kind": "collection adaptation",
+      "targetBytes": 23670,
+      "targetSha256": "a8eceec671eadd92b632d13f9607c408e6dad939c627a720a3a9bc086e8ec9d9",
+      "byteIdentical": false
+    },
+    {
+      "source": "LUTHIER/SHA256SUMS",
+      "target": "provenance/luthier/UPSTREAM-SHA256SUMS.txt",
+      "sourceBytes": 10963,
+      "sourceSha256": "28d2741c0a9f05f3d108e6d932de4b6667199ece913debe79efa8dab33f5ace0",
+      "kind": "byte-preserved",
+      "targetBytes": 10963,
+      "targetSha256": "28d2741c0a9f05f3d108e6d932de4b6667199ece913debe79efa8dab33f5ace0",
+      "byteIdentical": true
+    }
+  ],
+  "omissions": [
+    {
+      "path": "LUTHIER/Start-LUTHIER.cmd",
+      "bytes": 556,
+      "sha256": "e69bb6c0b2369a7007fb416775db66df83348042db95445d5647d8ab1caac531",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "LUTHIER/dist/assets/GLTFExporter-D2rnJVV1.js",
+      "bytes": 36770,
+      "sha256": "8870c7d3d1636ee53f9555945d47ada15f8c089a3b47176fd05521263617451d",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/bow.webp",
+      "bytes": 302072,
+      "sha256": "c8c18662c910a96f2f6a1b765fe8c3c80507274324ffd4cd61e28a49e41b59b2",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/craft.webp",
+      "bytes": 134322,
+      "sha256": "a16d397626ab52b48d734efd24f4caae47447111835b779fe1d6de204f44e222",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/ebony.webp",
+      "bytes": 175562,
+      "sha256": "80c5ab3f83bc702615dcf293951e85ac3ed752cfbb0f6b465c173d9c0a66d277",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/hero.webp",
+      "bytes": 305800,
+      "sha256": "4b0c35014ece0fc1e557a133ab96de476d994a18a47bd67bfcdc51f9e4dce8bf",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/index-QhfxHLbg.js",
+      "bytes": 169011,
+      "sha256": "a01bf55743070f07d7ea1ad4aee210edf3c9963bb10e19c48279b5ecba629cb8",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/index-YN6dkWIt.css",
+      "bytes": 31567,
+      "sha256": "f41c899f0ae35ef79e60505da66990d7e4aa8897aa1c90d1aad7debd7847453c",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/inside.webp",
+      "bytes": 182386,
+      "sha256": "450c1bcedeaab45e0e65839487a275a870e149c72c238dd26ef8619a4ecacd89",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/maple-texture.webp",
+      "bytes": 34274,
+      "sha256": "0997adccff96e4f8d960adfe35f01dc0c36defef7728bf135950d399ac01a6bf",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/spruce-texture.webp",
+      "bytes": 40522,
+      "sha256": "7f53fa72fe56920e5e2e5e54d79433ee8185df25e58e56744cb943b26c1d0c6c",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/spruce.webp",
+      "bytes": 208476,
+      "sha256": "abce954aa6a7d5f93951fb732db601a9c362243a75b8838856c518d0ef8871eb",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/tension.webp",
+      "bytes": 64020,
+      "sha256": "a13dff05dd27bcc390e063a837f02d33a68b8d7f750353a10c77e8e246484f0d",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/violin-model-BTFGyyWq.js",
+      "bytes": 591876,
+      "sha256": "34446843811851ef905d40620ee40f974e1208c256283555b6ea72a7eb10b8be",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/assets/wood.webp",
+      "bytes": 278736,
+      "sha256": "2db511ad663ea8bdc4581aa66acdbe59b0c7258d725e54ef23f7a2332d4cf289",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/favicon.svg",
+      "bytes": 287,
+      "sha256": "af1ff8b8b3b1cef884ad8ec916986e10c1353d666c748af013145fbfd51a9c41",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-300-italic.woff2",
+      "bytes": 22484,
+      "sha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-300.woff2",
+      "bytes": 21908,
+      "sha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-400-italic.woff2",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/fonts/cormorant-400.woff2",
+      "bytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/fonts/dm-sans-400.woff2",
+      "bytes": 14200,
+      "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/fonts/dm-sans-500.woff2",
+      "bytes": 14304,
+      "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/dist/index.html",
+      "bytes": 16112,
+      "sha256": "663c6b67daa706ad136d50335a91e1a39106d1dd8552497e32a42d636e86d7d9",
+      "reason": "compiled duplicate"
+    },
+    {
+      "path": "LUTHIER/package-lock.json",
+      "bytes": 42242,
+      "sha256": "d9b389d7e560db70584f52a76f5d918861c4a911ff5f657d1e6fe7f36fdec4f0",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "LUTHIER/package.json",
+      "bytes": 772,
+      "sha256": "67d18e221bcbf6b8b62b49b494cc51b0c34d5a676d42839c7b34660da956cc93",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "LUTHIER/scripts/serve.mjs",
+      "bytes": 8866,
+      "sha256": "fbfb6036ba609686bcf440a94bf945fc0a012e5d9955f5577764d98c772b5ac0",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "LUTHIER/start.sh",
+      "bytes": 451,
+      "sha256": "b0eeb1247cc375f1acbc01901797362a9fc2a96d87e4a420928f302d30de4687",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "LUTHIER/tsconfig.json",
+      "bytes": 437,
+      "sha256": "a5611c6cee1011a849bea13820dd9c772f39ebc485a4bd51e1f93915570e0600",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    },
+    {
+      "path": "LUTHIER/vite.config.ts",
+      "bytes": 303,
+      "sha256": "eba986eb0cb81553ae1bbd47f8f0de4d7d9bcb4e96eb3a9a3b2d6ffa69e18c0a",
+      "reason": "standalone dependency/build/server/start tooling; Collection root toolchain reused"
+    }
+  ],
+  "reviewedAt": "2026-10-07T06:35:22.401301+00:00",
+  "entryCount": 118,
+  "uncompressedBytes": 27148178,
+  "topLevel": [
+    "LUTHIER"
+  ],
+  "archiveIssues": [],
+  "nestedArchives": [],
+  "sourceChecksumRecords": 117,
+  "sourceChecksumFailures": 0,
+  "protectedByteIdenticalFiles": 70,
+  "importedEntries": 89,
+  "omittedEntries": 29,
+  "generatedFiles": [
+    {
+      "path": "public/luthier/NOTICE.md",
+      "bytes": 2170,
+      "sha256": "e952652b7dc2b0c5deff92787d5652b12d1f7f6e026fb48a3dec3f26e0edeb8f"
+    },
+    {
+      "path": "public/luthier/poster.webp",
+      "bytes": 139812,
+      "sha256": "9f4503e9be7cd9077154446ef2439c97f8bae1cda55560ead22992e9eb2ffe7c"
+    },
+    {
+      "path": "public/luthier/social.jpg",
+      "bytes": 158862,
+      "sha256": "e69b524a4f1f855242899695b8d58873783c588b6b6c36540b5d2aa840b92619"
+    },
+    {
+      "path": "docs/luthier/ACCEPTANCE.md",
+      "bytes": 5547,
+      "sha256": "a981bdd70df1da8d98fcab99c2614e5db476c30a6a16982893892ea12063a40a"
+    },
+    {
+      "path": "docs/luthier/ARCHITECTURE.md",
+      "bytes": 3132,
+      "sha256": "f1628cf02b0255f3ff6cefee5a8a0951b4517fc569f227aab294733d01031f96"
+    }
+  ],
+  "modelValidation": {
+    "glbBytes": 5089116,
+    "version": 2,
+    "meshes": 64,
+    "materials": 12,
+    "embeddedImages": 3,
+    "externalImageUris": false
+  },
+  "upstreamPackage": {
+    "name": "luthier-anatomy-of-a-violin",
+    "version": "1.0.0",
+    "runtime": {
+      "gsap": "3.15.0",
+      "lenis": "1.3.26",
+      "three": "0.186.1"
+    },
+    "historicalBuild": {
+      "typescript": "7.0.2",
+      "vite": "8.3.3"
+    },
+    "collectionBuild": {
+      "typescript": "~5.9.3",
+      "vite": "8.3.2"
+    }
+  },
+  "review": {
+    "sourceSafety": "Runtime source contains no fetch/XHR/WebSocket/dynamic execution API; localStorage is only the optional luthier-motion preference. SVG innerHTML is a fixed authored string. No remote service is required by the artwork.",
+    "licenses": "Original source/docs/procedural geometry scoped MIT; fonts OFL; Three/Lenis MIT; exact GSAP notice preserved. Generated imagery separately identified, no exclusive or MIT image claim.",
+    "preaudit": "117 checksums, 9 pure invariant groups / 27 media / 3650 mapping samples / 342 draw inputs; original desktop/phone nine scenes and controls; credits-harness error corrected in correct Return chapter.",
+    "integration": "28 main dev check groups +12 extra groups; real hidden/BFCache one-route check; scoped TS5.9.3 passed; static no-JS stylesheet and native return captured and clicked.",
+    "collectionChanges": [
+      "namespaced Vite HTML/CSS assets and runtime textures",
+      "independent page metadata + actual native Collection return and notices",
+      "one original GSAP ticker with Lenis .105 and opposite-input cancellation",
+      "persisted lifecycle retained; terminal pagehide idempotent disposal",
+      "stylesheet HTML-owned for an styled JavaScript-disabled fallback"
+    ],
+    "limitations": [
+      "Physical touch and iOS/Safari not verified",
+      "No FPS or speaker-quality certification",
+      "Production base/build/Pages deployment are parent gates, not this subtask"
+    ],
+    "productionPreview": "Local final project-path preview: LUTHIER28 and FOSSIL58 main groups, shared26 addon and12 six-size groups passed; all chapter/viewport/fallback frames inspected;12 representative HTTP source assets byte-identical. Central production lifecycle evidence confirms real hidden tab suspension, resumed input and BFCache position retention for both works; all five assertions pass per work. Live deployment remains a separate root gate."
+  },
+  "capture": {
+    "url": "http://127.0.0.1:4199/luthier/",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scene": 0,
+    "hiddenSelectors": [
+      ".scene-copy",
+      ".masthead",
+      ".experience-footer",
+      ".skip-link"
+    ],
+    "screenshot": "luthier-ui-free-capture.png",
+    "source": "generated hero violin plate + live varnish and Canvas STRING; not procedural Craft geometry",
+    "poster": {
+      "width": 1200,
+      "height": 750
+    },
+    "social": {
+      "width": 1200,
+      "height": 630,
+      "crop": {
+        "left": 0,
+        "top": 72,
+        "width": 1440,
+        "height": 756
+      }
+    }
+  }
+}

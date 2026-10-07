@@ -88,6 +88,8 @@ mechanism time = t + 90 × p
 
 ## 检查入口
 
+增强模式的章节 hash 由原有导航控制器解释。舞台使用 `overflow: clip`，场景 article 的原生 id 添加 `-view` 后缀；标题的 aria 引用保持原样，源码 HTML 的普通章节锚点仍服务于无 JavaScript 版本。这样直接打开或刷新 `#oscillation` 时，浏览器不会另行滚动 sticky 舞台或将文档推到末尾。销毁时恢复原章节 id，便于热更新重新初始化。
+
 仓库根目录的 `npm run build` 检查类型并构建，`npm test` 运行共享测试；浏览器中的 `?inspect` 可启用只读诊断入口 `window.__CHRONOS__.inspect()`。`?render=still` 可直接检查没有实时机芯时的内容与导航。这些是复查方式，不构成未实际运行平台的通过声明。
 
 ## English model notes

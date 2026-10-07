@@ -1,0 +1,86 @@
+{
+  "name": "CODEX — contemporary cloth sewn case binding",
+  "version": 1,
+  "source": "src/book.js and src/model/paper.js",
+  "format": "Deterministic parameterized Three.js model; geometry is generated locally at startup.",
+  "coordinate_system": {
+    "front": "+Z",
+    "long_axis": "Y",
+    "spine_x": -1.7,
+    "fore_edge_x": 1.7
+  },
+  "dimensions": {
+    "page_width": 3.4,
+    "page_height": 4.8,
+    "text_block_depth": 0.66,
+    "board_thickness": 0.055,
+    "board_overhang": 0.055,
+    "hinge_clearance": 0.012,
+    "modeled_paper_thickness": 0.0048,
+    "note": "Units describe a display model. Microstructure, crease radii, and thread diameter are enlarged slightly for legibility."
+  },
+  "signatures": {
+    "desktop_count": 12,
+    "mobile_initial_count": 8,
+    "nested_sheets_per_signature": 4,
+    "fold_radii_outer_to_inner": [0.025, 0.0187, 0.0124, 0.0061],
+    "instanced": true,
+    "fold_model": "Two continuous leaves meet through a circular, arc-length-controlled Y-axis bend. Front, back, and perimeter form a thin closed solid with analytic normals.",
+    "trimmed_edge_detail": "Procedural fine folio-edge relief supplements individual modeled sheet edges once the signatures align."
+  },
+  "sewing": {
+    "supports": "Three woven linen tapes transverse to the spine",
+    "tape_y": [-1.28, 0, 1.28],
+    "needle_hole_y": [-2.08, -1.425, -1.135, -0.145, 0.145, 1.135, 1.425, 2.08],
+    "route": "The continuous path alternates through the fold interior and around each tape, then links to the next gathering at the head or tail. Hole mouths are small dark surface insets; no boolean drill geometry is used.",
+    "thread_radius": 0.0062,
+    "path_segments_per_signature": 52,
+    "radial_segments": 5
+  },
+  "spine": {
+    "rounded_by": "Subtle signature offsets along a common convex spine profile",
+    "lining": "Thin following cream lining on a shared dynamic buffer",
+    "endbands": "Alternating ivory and warm-grey wound thread at both head and tail"
+  },
+  "case": {
+    "construction": "Separate rounded board cores, cloth skins, four hinged turn-ins per board, cloth edge returns, hollow curved spine cloth, marbled pastedowns, and attached flyleaf",
+    "front_hinge_x": -1.7,
+    "front_open_degrees": 100,
+    "marbled_uv": "Full original plate from 0 to 1; no recrop, randomized offset, or repeat"
+  },
+  "physical_typography": {
+    "cover_title": "CODEX",
+    "cover_subtitle": "THE ANATOMY OF A BOOK",
+    "families": ["Cormorant", "Manrope"],
+    "method": "Canvas mask on native cover UVs changes albedo, metalness, roughness, and a recessed normal gradient in the actual cloth material. Spine type follows the curved spine shell.",
+    "gold": "Title and subtitle, spine title, one narrow fore-edge and a short corresponding head-edge line. No emission."
+  },
+  "textures": {
+    "paper": "textures/paper-albedo.webp",
+    "cloth": "textures/cloth-albedo.webp",
+    "endpaper": "textures/marbled-endpaper.webp",
+    "generated_locally": ["fallback seeded paper fiber albedo", "paper relief", "cloth weave relief", "linen weave relief", "trimmed folio edges", "cover and spine type masks"],
+    "procedural_seeds": [17081926, 911, 920, 4101],
+    "maximum_procedural_canvas": [1024, 1536]
+  },
+  "chapters": [
+    {"index": 0, "name": "THE VOLUME", "state": "Complete closed book"},
+    {"index": 1, "name": "SHEET", "state": "One flexible thin sheet"},
+    {"index": 2, "name": "FOLD", "state": "Continuous centre fold, then four nested sheets"},
+    {"index": 3, "name": "GATHER", "state": "Instanced signatures emerge, order, align and compress"},
+    {"index": 4, "name": "SEW", "state": "Tape supports and one progressively drawn through-fold thread path"},
+    {"index": 5, "name": "SPINE", "state": "Spine lining settles and two endbands are formed"},
+    {"index": 6, "name": "MARBLE", "state": "Text block remains behind the separate marbling scene"},
+    {"index": 7, "name": "CASE", "state": "Separate boards receive cloth, turn-ins wrap, and the case closes"},
+    {"index": 8, "name": "PRESS / GILD / STAMP", "state": "A small die contacts the cover and the physical impression appears"},
+    {"index": 9, "name": "CODEX", "state": "Finished book; optional 100-degree hinged opening reveals endpaper"}
+  ],
+  "motion_contract": {
+    "inputs": ["chapter", "progress", "time", "reducedMotion", "mobile", "open"],
+    "reversible": true,
+    "cumulative_tweens": false,
+    "camera_owner": "src/stage.js",
+    "render_owner": "src/main.js",
+    "allocations": "All meshes, buffers, curves, maps, and reusable matrix helpers are created at startup. Update mutates existing transforms, shader uniforms, draw ranges and typed buffers."
+  }
+}

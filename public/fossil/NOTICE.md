@@ -1,0 +1,11 @@
+# FOSSIL — sources and interpretation
+
+FOSSIL — Deep Time in Stone is an authored ten-movement exhibition. The FSL—001 study identifier belongs to the artwork. No museum accession, collecting locality, geological age, scan resolution or calibrated physical units are assigned.
+
+The hero, specimen, strata, preparation, preservation, amber and archive image plates are AI generated. They are illustrations, not documentary photographs. Their separate [source notice](licenses/AI-Assets-Notice.md) is retained; the code license does not grant or assert exclusive rights in generated raster images.
+
+The 192 × 192 × 72 density field, all 72 virtual sections and intentionally incomplete Marching Cubes model are seeded authored data. The reconstruction is not derived from image pixels, a downloaded fossil dataset or real CT acquisition. The hardware and CPU paths render the same isosurface. Original synthetic outputs and source are covered by the supplied [scoped MIT license](LICENSE.txt).
+
+The research references inform the scientific narrative; their photographs and measured data are not reproduced: [National Park Service — Body fossils](https://www.nps.gov/subjects/fossils/body-fossils.htm), [Molds, casts and steinkerns](https://www.nps.gov/articles/000/mold-casts-and-steinkerns.htm), [USGS — Rocks and layers](https://pubs.usgs.gov/gip/fossils/rocks-layers.html), [AMNH — Mechanical preparation](https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation/revealing/techniques/mechanical-preparation), [NPS — Preserved remains](https://www.nps.gov/articles/000/preserved-remains.htm), [AMNH — Digital preparation](https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation/revealing/techniques/digital-preparation), [Natural History Museum — Ammonites](https://www.nhm.ac.uk/discover/what-is-an-ammonite.html), and [Smithsonian — Paleobiology collections](https://collections.nmnh.si.edu/search/paleo/).
+
+Local Bodoni Moda, Cormorant Garamond and Manrope remain OFL fonts. Lenis retains its MIT notice. The Three.js Marching Cubes lookup table retains its [MIT notice](models/MARCHING_CUBES_LICENSE.txt); the Three.js runtime is not loaded by FOSSIL. [Full local license inventory](licenses/README.md).

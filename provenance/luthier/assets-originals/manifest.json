@@ -1,0 +1,126 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "date": "2026-10-07",
+  "interpretation": "Synthetic unnamed violin. Not a scan or photograph of a historical instrument.",
+  "assets": [
+    {
+      "id": "hero",
+      "original": "hero.png",
+      "production": "../public/assets/hero.webp",
+      "prompt": "Use case: background-extraction / precise-object-edit. This is the approved LUTHIER hero concept. Create the FINAL PRODUCTION VIOLIN CUTOUT from this reference, preserve exactly the instrument identity, dramatic scale, 16:9 framing, body location, perspective, f-holes, four strings, tailpiece, fine wood grain and raking amber varnish light. Remove ALL typography, letters, words, navigation, buttons, icons, counters and rules. Remove the dark background completely so everything around the violin is genuinely transparent alpha. Violin stays on the RIGHT of the image with left 40% transparent; neck continues out of top, body out of bottom and right as in reference. Absolutely no replacement words or marks. This asset will be composited behind/in front of REAL HTML text; no text may remain. Refine just the varnish highlights to keep microtexture in the brightest band, premium natural amber-brown, avoid plastic orange. Preserve same geometry; accurate fine spruce grain. Highest possible clean resolution, original 16:9 canvas. Native transparency, no baked checkerboard."
+    },
+    {
+      "id": "wood",
+      "original": "wood.png",
+      "production": "../public/assets/wood.webp",
+      "prompt": "Use case: precise-object-edit. Create the clean FINAL PRODUCTION BACKGROUND plate from this approved WOOD screen. Preserve exactly the beautiful macro flamed maple slab on the right, its curls and shaving, raw matte wood grain, cream paper background, original wide 16:9 camera, lighting, scale and object positioning. Remove ALL typography, text, labels, navigation, rules, indicators, buttons and ALL the white thin contour/tracer lines drawn over the wood. Reconstruct clean natural wood underneath them. Keep blank ivory left space completely clean for real HTML type. This is an asset, not a mockup, no writing of any kind. Highest detail and natural cream #ded3bd backdrop, don't tint or recolor object."
+    },
+    {
+      "id": "inside",
+      "original": "inside.png",
+      "production": "../public/assets/inside.webp",
+      "prompt": "Use case: precise-object-edit. Create clean FINAL PRODUCTION BACKGROUND image for LUTHIER INSIDE from this approved scene. Preserve exact viewpoint and composition of violin interior, pale unfinished raw wood, curved spruce ceiling, maple back floor, ribs, slender soundpost on RIGHT and bass bar attached lengthwise under ceiling LEFT, warm narrow f-hole light. Remove ALL text, all lettering, logos, navigation, thin diagram and labels from lower right, and counters/rules. Reconstruct natural wood where text was. Make the soundpost slightly more slender (about 15% narrower) to read as violin dowel not building column; retain its top/back contact. No fantasy architecture, realistic tiny wooden cavity macro. Full wide 16:9 image, high quality real grain; empty darker lower-left zone retained for HTML text. No text anywhere."
+    },
+    {
+      "id": "tension",
+      "original": "tension.png",
+      "production": "../public/assets/tension.webp",
+      "prompt": "Use case: precise-object-edit. This approved LUTHIER TENSION screen needs a clean production background. Keep the realistically pale maple bridge at far RIGHT, its four top string grooves, partial amber violin body and f-hole at bottom, exactly same wide black composition and macro lighting. Remove ALL words, UI, counters, logos, marks, rules. Crucially REMOVE ALL FOUR STRINGS completely from everywhere, filling their old positions with clean black background; strings will be drawn live by code. Preserve bridge top grooves but no strings. Leave black negative space upper 65% and left80%, keep realistic bridge location exactly. Highest quality wide 16:9 matte photographic plate, zero text."
+    },
+    {
+      "id": "bow",
+      "original": "bow.png",
+      "production": "../public/assets/bow.webp",
+      "prompt": "Use case: background-extraction. From this approved bow-contact concept extract ONLY the vertical violin bow segment: the rich reddish-brown smooth wooden stick with its bundle of ivory parallel horsehairs along its LEFT edge. Remove everything else: no violin body, no horizontal string, no glow, no text, no icons, no UI, no background. Genuinely transparent alpha around the bow. Keep bow's near-vertical slightly slanted angle and material texture, fills entire height, centered horizontally within a TALL 1:3 portrait canvas for easy use. Hair ribbon is about 20% of total combined bow-stick width, wood stick about70%, 10% visible gap between hair and stick (make separation clearer and anatomically believable); ivory horsehair very fine individually resolved fibers. Bottom and top naturally cut off as a macro segment. No need for frog or tip. High quality artifact, no baked checkerboard."
+    },
+    {
+      "id": "craft",
+      "original": "craft.png",
+      "production": "../public/assets/craft.webp",
+      "prompt": "Use case: precise-object-edit. Clean final photographic fallback plate for LUTHIER craft scene: remove ALL text, labels, leader lines, words, header, counters from reference. Preserve same black wide 16:9 composition, amber violin body on right and empty left45% for real HTML. Correct awkward exploded anatomy by shortening gaps between top/ribs/back by 25%, still gently revealed. REMOVE silver strings dangling through the hollow cavity (strings will be omitted in this study). Keep spruce top with 2 fholes, maple ribs with realthinwalls and maple back, ebonyfingerboard and neck. Ensure raw light wood interior not glossy varnish. All textgone no replacement marks. Gentle, crafted object held in darkness. Highest quality wide plate."
+    },
+    {
+      "id": "spruce",
+      "original": "spruce.png",
+      "production": "../public/assets/spruce.webp",
+      "prompt": "Use case: product-mockup. Clean photographic production material plate for the LUTHIER WOOD chapter. Wide16:9 composition closely matching a luxury materials exhibition: entirely blank warm ivory #ded3bd background at LEFT40%, a large raw spruce violin top billet placed obliquely from bottomcenter to top-right, far edge extends outside frame, soft museum daylight. Fine pale straight longitudinal spruce grain, tiny visible pores, subtle verylight honey sheen, one delicate curled shaving at center, small handtool planing traces. Wood is RAW, not varnished. Do not make curly maple tigerfigure. Closemacro hyperreal understated tactile grain, strong dark-to-light withinwood but airy background. No text, no UI, no lines, no icons, no logos, no tools or hands. Highquality graphic diagonal composition with useful blank left zone for nativeHTML typography."
+    },
+    {
+      "id": "ebony",
+      "original": "ebony.png",
+      "production": "../public/assets/ebony.webp",
+      "prompt": "Use case: product-mockup. Clean photographic production material plate for LUTHIER WOOD chapter. Wide16:9 composition matching a luxury materials exhibition: blank warm ivory #ded3bd background at LEFT45%, a beautiful large dense ebony fingerboard blank placed obliquely from bottomcenter toward upper-right, camera macro and slightly oblique, object crossing right frame boundary. Deep blackbrown ebony with extremely subtle closegrain, satin unvarnished finish, a gently curved top face with sculpted thinbeveled edge. A tiny curled dark shaving near the back topedge. Highcontrast elegant study: cream and ebony, minimal perfect material light, rich visibleblacktexture, not blackplastic. No text, no UI, no diagrams, nopeople. Photoreal materials productplate with empty leftzone for realHTML heading."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "presence_a",
+      "file": "../docs/concepts/01-presence.webp",
+      "prompt": "Use case: ui-mockup. Create a finished world-class desktop website screen concept, 16:9 wide, for LUTHIER — The Anatomy of a Violin, scene 01 PRESENCE. This is a digital museum artwork, not a store or article. A monumental real amber orange-brown varnished violin in near black gallery darkness dominates the RIGHT 62%, dramatically cropped: neck leaves the top, lower body leaves the bottom, beautifully accurate f-hole at center right, small maple bridge and four tense silver strings vertically. Camera nearly frontal but 15 degree oblique, extreme tangible spruce grain, lacquer highlights like translucent resin. LEFT 45% near black negative space. Elegant enormous thin high-contrast ivory serif typography “Silence,” on left above italic “shaped.”, its right edge slightly occluded by violin body to create real depth. Top left tiny refined logotype LUTHIER; top right simple code-native links “The anatomy” and “Sound off” with minimal line icon. Bottom left small paragraph “A piece of wood. A world of sound.” and fine hairline button “Enter the instrument” with thin arrow. Bottom right discreet “01 / 09”. Very restrained amber, not gold luxury template. Black 68%, wood 26%, typography 6%. Gallery publication editorial composition, extraordinary instrument photographic quality, generous negative space, sophisticated asymmetry. A single hair-thin warm-white string crossing the image vertically as shared narrative element. No cards, no badges, no eyebrow over headline, no ornamental music notes, no HUD, no gradients washing over the instrument, no podium. Render entire first viewport including refined header/footer controls clearly at readable scale. This scene will later connect to WOOD, CRAFT, INSIDE, TENSION, FIRST BOW, RESONANCE, SOUND AS SPACE and RETURN."
+    },
+    {
+      "id": "wood",
+      "file": "../docs/concepts/02-wood.webp",
+      "prompt": "Use case: ui-mockup. Finished 16:9 desktop section concept for LUTHIER — The Anatomy of a Violin, scene 02 WOOD. A radical luminous interlude in a gallery: warm raw-paper ivory background #ded3bd, ink-black sophisticated typography. Large obliquely cut flamed maple wood plate with beautiful natural tiger-flame grain fills RIGHT two-thirds, one thin spruce shaving curls above it. Grain is realistic matte bare timber, not varnished, macro surface light. Left top header LUTHIER and minimal “The anatomy” “Sound off” at right, visually same thin restrained museum masthead as previous black scene. Left middle heading very large high contrast serif “Before sound,” with second line italic “a living grain.” Below small short copy “Spruce carries. Maple returns. Ebony holds.” At lower left a clean vertical materials index with fine rules, real clickable text choices “01 Spruce”, “02 Maple”, “03 Ebony”, Maple active with modest horizontal line. No cards or boxes. Across the wood, 5–8 hair-fine organic contour/grain tracer curves carefully aligned to grain; these will be code-native live SVG, not decoration. Bottom footer 02 / 09. This must feel like a costly material study in an independent design museum, vivid real wood fibers, strong editorial asymmetry, not shopping, not a wood-material infographic. Complete readable section composition."
+    },
+    {
+      "id": "craft",
+      "file": "../docs/concepts/03-craft.webp",
+      "prompt": "Use case: ui-mockup. Finished world-class 16:9 immersive website scene for LUTHIER, scene 03 CRAFT. Gallery black #080808, ivory typography and glowing amber varnish. Center right a realistically made violin body in a quiet shallow oblique view, hovering with its arched spruce top lifted gently only 6cm above the maple ribs and back, the ebony fingerboard and neck aligned above, not an explosive mechanical diagram. Raw pale inner surfaces glow softly with raking light. 4 silver strings continue vertically as a central compositional line; a fine outline traces the curved edge from the prior wood scene. Extreme material quality and correct instrument anatomy. Left third big elegant high-contrast serif “Made by hand.” and italic “Held by curves.” Small body text “An arched surface. A hollow body. A thousand quiet decisions.” Upper left LUTHIER, upper right simple The anatomy / Sound off links. Thin precise ivory leader lines on right quietly identify “Spruce top”, “Maple ribs”, “Maple back”, no floating panels. Bottom right 03 / 09. Wide black negative space, believable proportions, museum object conservation photography, hand crafted warmth. No pedestal, no music notes, no cards, no gold HUD. Full readable screen, not a collage."
+    },
+    {
+      "id": "inside",
+      "file": "../docs/concepts/04-inside.webp",
+      "prompt": "Use case: ui-mockup. Finished 16:9 immersive desktop website screen for LUTHIER — scene 04 INSIDE. The viewport is the cavernous yet physically plausible hollow interior of a violin: low arched bare spruce ceiling at upper half, maple curved back as floor lower half, organically curving ribs at far side, a slender vertical wooden sound post on the RIGHT joining top and back, a low wooden bass bar lengthwise under the ceiling at the LEFT. Very real unfinished wood grain, tool marks, warm narrow daylight entering an f-hole as beautiful slit of illumination. Like extraordinary macro lens architectural museum object photography, but not a literal fantasy cathedral. Large serif ivory heading bottom-left “A small space.” italic below “An enormous voice.” Small readable copy below “The sound post connects. The bass bar distributes. The body answers.” In clear negative space at lower right a small fine code-native sectional outline with two restrained labels Sound post / Bass bar, no dashboard container. Persistent small LUTHIER top left / The anatomy and Sound off top right. Footer 04 / 09. The warm timber world occupies 80% and the text remains cleanly readable in the darker foreground. No people, no tools, no musical notation. Dramatic tangible high fidelity wood and elegant museum editorial design."
+    },
+    {
+      "id": "tension",
+      "file": "../docs/concepts/05-tension.webp",
+      "prompt": "Use case: ui-mockup. Generate one finished highly refined 16:9 desktop screen concept for the immersive museum website LUTHIER — The Anatomy of a Violin. Shared world: gallery black #080808, warm ivory high-contrast thin serif typography with italic second line, amber wood and extremely restrained warm-white lines. Header LUTHIER left, The anatomy / Sound off right. Tiny scene count at bottom. No badges, cards, notes, equalizer bars, gold luxury ornaments, dashboards or generic particles. Scene 05 TENSION. The instrument has dissolved into near-black space; four extraordinarily fine horizontal silver violin strings stretched left to right across the lower half, a monumental softly lit maple bridge on far RIGHT, fragment of an amber violin surface below it. Macro details of wound string. Large serif “Hold the almost.” in upper left, small copy “Four strings. Every line waiting for a touch.” below. Empty black upper space. Single string has a restrained amber highlight traveling towards the bridge. Composition feels like a still suspended breath just before sound. A restrained label “G · D · A · E” directly under four strings. Bottom count 05 / 09. Real material and strong graphic horizontal line geometry, exact separate strings no bow yet."
+    },
+    {
+      "id": "bow",
+      "file": "../docs/concepts/06-bow.webp",
+      "prompt": "Use case: ui-mockup. Generate one finished highly refined 16:9 desktop screen concept for the immersive museum website LUTHIER — The Anatomy of a Violin. Shared world: gallery black #080808, warm ivory high-contrast thin serif typography with italic second line, amber wood and extremely restrained warm-white lines. Header LUTHIER left, The anatomy / Sound off right. Tiny scene count at bottom. No badges, cards, notes, equalizer bars, gold luxury ornaments, dashboards or generic particles. Scene 06 FIRST BOW, the conceptual ignition of the entire website. Macro nearly top-down dark diagonal composition: a silver violin string stretches HORIZONTALLY across center, a real narrow ivory horsehair ribbon from a long dark reddish-brown wooden violin bow approaches it VERTICALLY at about x=62%. Hair barely makes contact with silver string, one very small amber point of warm light, no spark. First extremely subtle sinusoidal ripples extend along the string, no explosion. The wood stick is adjacent to but distinctly above the hair ribbon; keep horsehair clean and visible. A few believable amber violin rim fragments recede into darkness. Left upper negative space huge serif “Then,” italic line “contact.” Lower left copy “The hair catches. The string yields. Motion begins.” Bottom near left a thin underline control “Draw the bow” with small drag gesture icon; footer 06 / 09. Ultra slow exact contact, cinematic silence, real tangible material. The contact geometry will be code-native SVG and canvas; this is the visual north star."
+    },
+    {
+      "id": "resonance",
+      "file": "../docs/concepts/07-resonance.webp",
+      "prompt": "Use case: ui-mockup. Generate one finished highly refined 16:9 desktop screen concept for the immersive museum website LUTHIER — The Anatomy of a Violin. Shared world: gallery black #080808, warm ivory high-contrast thin serif typography with italic second line, amber wood and extremely restrained warm-white lines. Header LUTHIER left, The anatomy / Sound off right. Tiny scene count at bottom. No badges, cards, notes, equalizer bars, gold luxury ornaments, dashboards or generic particles. Scene 07 RESONANCE. A huge violin body outline constructed from about twenty extremely fine elegant ivory and copper contour lines floats at RIGHT two-thirds, no physical photograph. The nested outlines are recognizable curved violin shapes, with indented waists, rounded upper and lower bouts, and f-hole gestures inside. Lines have gentle material displacement, thin traveling resonance paths, quiet nodes and moving regions. A line from the left becomes a bridge structure then fans into the contour body. Large editorial serif text LEFT “One motion.” italic “A thousand echoes.” Small below “From string to bridge. Through wood. Into air.” Three subtle live native text controls along bottom left “String”, “Body”, “Air” with only active Air underlined. Footer 07 / 09. Almost mathematical sculptural line art at remarkable scale, mostly black void, not sci-fi concentric tunnel, no noise or particle cloud. Beautiful clear airy visual, not flat infographics. This will be a custom canvas continuous curved field."
+    },
+    {
+      "id": "space",
+      "file": "../docs/concepts/08-space.webp",
+      "prompt": "Use case: ui-mockup. Generate one finished highly refined 16:9 desktop screen concept for the immersive museum website LUTHIER — The Anatomy of a Violin. Shared world: gallery black #080808, warm ivory high-contrast thin serif typography with italic second line, amber wood and extremely restrained warm-white lines. Header LUTHIER left, The anatomy / Sound off right. Tiny scene count at bottom. No badges, cards, notes, equalizer bars, gold luxury ornaments, dashboards or generic particles. Scene 08 SOUND AS SPACE. Full screen spatial acoustic sculpture made of 60 luminous hair-thin ivory and muted amber curves morphing out of a violin waist and f-hole into broad flowing 3D-like folds of sound. They sweep bottom left to upper right and open the middle as an irregular breathing eye of black silence, variable curve spacing, two restrained warm light accents, immense negative-space beauty. Curves remain crisp and soft subtle shadows, no blur or neon. Small centered-left enormous serif “Sound,” italic “without edges.” with the word edges partly interleaving behind strands. Small text lower left “The instrument ends. Its voice continues.” At bottom a subtle horizontal slider labeled “Open the space” with no box; count 08 / 09. This is an original living generative acoustic geometry, not a static photograph. No loud waveform symbols. Museum digital sculpture with mesmerizing mathematically controlled motion."
+    },
+    {
+      "id": "return",
+      "file": "../docs/concepts/09-return.webp",
+      "prompt": "Use case: ui-mockup. Generate one finished highly refined 16:9 desktop screen concept for the immersive museum website LUTHIER — The Anatomy of a Violin. Shared world: gallery black #080808, warm ivory high-contrast thin serif typography with italic second line, amber wood and extremely restrained warm-white lines. Header LUTHIER left, The anatomy / Sound off right. Tiny scene count at bottom. No badges, cards, notes, equalizer bars, gold luxury ornaments, dashboards or generic particles. Scene 09 RETURN. Reprise opening composition: tremendous amber orange-brown varnished violin occupies right 62%, cropped neck above and lower bout below viewport, accurate spruce grain, f-hole, bridge and four fine strings. Side light much quieter than first scene, instrument still highly tangible, no fake glows. Left heading enormous delicate serif “Now,” italic second line “listen.” Same layout as opening 'Silence, shaped.' but a calm resolved coda. Below “The same wood. The same light. A different silence.” and a fine underline “Begin again” arrow button. Footer has “Shape the wood. Hold the tension. Let silence become sound.” and “Credits” link and 09 / 09. Hero itself must be a poster. Readable complete composition, no extra frame."
+    }
+  ],
+  "derivatives": [
+    {
+      "file": "../public/assets/spruce-texture.webp",
+      "source": "spruce.png",
+      "crop": {
+        "left": 1310,
+        "top": 590,
+        "width": 300,
+        "height": 340
+      },
+      "operation": "Crop and resample for runtime material UV mapping."
+    },
+    {
+      "file": "../public/assets/maple-texture.webp",
+      "source": "wood.png",
+      "crop": {
+        "left": 1090,
+        "top": 560,
+        "width": 440,
+        "height": 340
+      },
+      "operation": "Crop and resample for runtime material UV mapping."
+    }
+  ]
+}

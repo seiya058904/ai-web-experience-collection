@@ -38,13 +38,18 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 - **RESONANCE** (`/resonance/`): eight acoustic acts with opt-in local synthesis, capture, WAV export and playback.
 - **AETERNA** (`/aeterna/`): nine Roman sculpture rooms with local museum-derived models and distinct generated imagery.
 - **PARALLAX** (`/parallax/`): ten perspectives of an original sculpture with live alignment, mirrors and optical film.
+- **LUTHIER** (`/luthier/`): nine movements through violin material, craft, tension, bowing and resonance.
+
+- **CODEX** (`/codex/`): a continuous journey through an original sewn case binding, paper, thread, type and reading.
+- **MAGMA** (`/magma/`): nine movements through heat, cooling, fracture and volcanic material.
+- **FOSSIL** (`/fossil/`): ten movements through sediment, preservation, authored synthetic tomography and the archive.
 
 ## Capabilities and Constraints
 
 - A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
 - Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
-- Preserve the accepted imagery, typography, controls, timing and content of all twenty works. Do not impose a common visual theme or expand the entrance into another story.
-- One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET and SILICON; the existing RAF for KAGE, ATLAS, THRUST, RESONANCE, AETERNA and PARALLAX. OPTIC retains native scrolling and one owned RAF. ATLAS, THRUST, RESONANCE, AETERNA and PARALLAX use wheel interpolation of 0.105, native touch, immediate reduced-motion/restoration positioning and no second scene-progress easing. Retain rendering caps, visibility suspension, teardown and read-position retention.
+- Preserve the accepted imagery, typography, controls, timing and content of all twenty-four works. Do not impose a common visual theme or expand the entrance into another story.
+- One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET, SILICON and LUTHIER; the existing RAF for KAGE, OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, CODEX, MAGMA and FOSSIL. OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, LUTHIER, CODEX, MAGMA and FOSSIL use wheel interpolation of 0.105, native touch, immediate reduced-motion/restoration positioning and no second scene-progress easing. Retain rendering caps, visibility suspension, teardown and read-position retention.
 - Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
 - Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
 - F1 educational sources and distinctions between current 2026 systems and historical DRS remain specific to Beyond the Limit.
@@ -52,11 +57,11 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 
 ## Brand Commitments
 
-The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects twenty distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, KAGE's spatial sculpture, CHRONOS's metal, light and mechanical time, INTERVAL's architectural passage, FORM's warm object studio, FUSION's dark tokamak laboratory, GLASSHOUSE's translucent optical space, VEIL's soft textile studio, OPTIC's dark photographic machine, and INKSCAPE's ivory paper and carbon ink, FACET's gemstone exhibition, SILICON's precision object theatre, ATLAS's cartographic paper, THRUST's industrial air narrative, RESONANCE's graphite, ivory and amber acoustic field, AETERNA's monumental marble and classical typography, and PARALLAX's ivory gallery, black stone and chrome cuts. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects twenty-four distinct identities: Beyond the Limit's racing imagery and condensed typography, VERDANT's botanical architecture and serif voice, ORBITAL's spacecraft and planetary horizon, GLAZE's ceramic color, KAGE's spatial sculpture, CHRONOS's metal, light and mechanical time, INTERVAL's architectural passage, FORM's warm object studio, FUSION's dark tokamak laboratory, GLASSHOUSE's translucent optical space, VEIL's soft textile studio, OPTIC's dark photographic machine, and INKSCAPE's ivory paper and carbon ink, FACET's gemstone exhibition, SILICON's precision object theatre, ATLAS's cartographic paper, THRUST's industrial air narrative, RESONANCE's graphite, ivory and amber acoustic field, AETERNA's monumental marble and classical typography, PARALLAX's ivory gallery, black stone and chrome cuts, LUTHIER's wood, amber and violin craft, CODEX's black cloth, paper and binding, MAGMA's cooling black sculpture, and FOSSIL's stone and preservation archive. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
 
 ## Evidence on Hand
 
-Twenty supplied complete experiences are integrated. One hundred and fifty-two model/continuity/rendering tests and production-reference verification are maintained at this revision. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
+Twenty-four supplied complete experiences are integrated. 181 model/continuity/rendering tests and production-reference verification are maintained at this revision. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 

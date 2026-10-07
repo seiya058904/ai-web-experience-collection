@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T05:39:45Z",
+  "title": "Design System: FOSSIL — Deep Time in Stone",
+  "extensions": {
+    "colorMeta": {
+      "museum": {
+        "role": "neutral",
+        "displayName": "Museum black"
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone ivory"
+      },
+      "limestone": {
+        "role": "neutral",
+        "displayName": "Limestone"
+      },
+      "preservation-ground": {
+        "role": "neutral",
+        "displayName": "Preservation limestone"
+      },
+      "ash": {
+        "role": "neutral",
+        "displayName": "Ash"
+      },
+      "warm-ground": {
+        "role": "neutral",
+        "displayName": "Warm stone"
+      },
+      "ink-light": {
+        "role": "neutral",
+        "displayName": "Light-world ink"
+      },
+      "folio-ink": {
+        "role": "neutral",
+        "displayName": "Folio ink"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted bone"
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "Muted mineral ink"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Dark-world rule"
+      },
+      "rule-light": {
+        "role": "neutral",
+        "displayName": "Light-world rule"
+      },
+      "folio-rule": {
+        "role": "neutral",
+        "displayName": "Folio rule"
+      },
+      "veil": {
+        "role": "neutral",
+        "displayName": "Museum veil"
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus amber"
+      },
+      "focus-light": {
+        "role": "primary",
+        "displayName": "Focus umber"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Monumental display",
+        "purpose": "Opening native FOSSIL title."
+      },
+      "display-italic": {
+        "displayName": "Opening italic",
+        "purpose": "Two-line native opening subtitle.",
+        "fontStyle": "italic"
+      },
+      "headline": {
+        "displayName": "Narrative headline",
+        "purpose": "Common chapter-title baseline.",
+        "emphasis": {
+          "fontStyle": "italic",
+          "fontSize": "1.08em",
+          "fontWeight": 400,
+          "letterSpacing": "-.035em"
+        }
+      },
+      "title": {
+        "displayName": "Serif mode title",
+        "purpose": "Outline and Volume choices."
+      },
+      "body": {
+        "displayName": "Chapter note",
+        "purpose": "Brief curatorial explanation.",
+        "maxWidth": "34ch"
+      },
+      "body-small": {
+        "displayName": "Record prose",
+        "purpose": "Longer folio explanations.",
+        "maxWidth": "65ch"
+      },
+      "label": {
+        "displayName": "Catalog annotation",
+        "purpose": "Common footnote and annotation baseline."
+      },
+      "label-control": {
+        "displayName": "Tracked control",
+        "purpose": "Index and Close.",
+        "textTransform": "uppercase"
+      },
+      "label-quiet": {
+        "displayName": "Recovery action",
+        "purpose": "Resume the sequence and Follow scroll."
+      },
+      "action": {
+        "displayName": "Underlined action",
+        "purpose": "Inspection, record opening and motion settings."
+      },
+      "link": {
+        "displayName": "Directional serif link",
+        "purpose": "Enter, return and save actions."
+      }
+    },
+    "focus": {
+      "outline": "2px solid var(--focus)",
+      "outlineOffset": "7px",
+      "darkColor": "{colors.focus}",
+      "lightColor": "{colors.focus-light}",
+      "selectors": [
+        "button:focus-visible",
+        "a:focus-visible",
+        "input:focus-visible"
+      ],
+      "dialogMethod": "showModal()",
+      "inactiveComposition": {
+        "inert": true,
+        "aria-hidden": "true"
+      },
+      "skipLink": {
+        "left": "20px",
+        "restingTop": "-100px",
+        "focusedTop": "12px",
+        "padding": "14px 22px",
+        "zIndex": 200
+      },
+      "source": "src/style.css; src/app.js"
+    },
+    "borders": {
+      "ruleWidth": "1px",
+      "iconStrokeWidth": 1,
+      "iconStrokeLinecap": "round",
+      "iconStrokeLinejoin": "round",
+      "rangeThumb": {
+        "width": "3px",
+        "height": "17px",
+        "border": "0",
+        "borderRadius": "{rounded.square}"
+      }
+    },
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Shared transform and index-hover easing; source custom property --ease."
+      },
+      {
+        "name": "opacity-state",
+        "value": ".25s ease",
+        "purpose": "Underlined-action hover and contact-sheet opacity."
+      },
+      {
+        "name": "directional-transform",
+        "value": ".45s var(--ease)",
+        "purpose": "Arrow and contact-sheet transforms."
+      },
+      {
+        "name": "tick-state",
+        "value": ".35s ease",
+        "purpose": "Chapter tick opacity and thickness changes."
+      },
+      {
+        "name": "reduced-css-duration",
+        "value": ".01ms",
+        "purpose": "Animation and transition duration under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "700px",
+        "query": "(max-width:700px)"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1100px",
+        "query": "(max-width:1100px) and (min-width:701px)"
+      },
+      {
+        "name": "wide",
+        "value": "2000px",
+        "query": "(min-width:2000px)"
+      },
+      {
+        "name": "short",
+        "value": "620px",
+        "query": "(max-height:620px) and (min-width:701px)"
+      },
+      {
+        "name": "imaging-webgl-width",
+        "value": "760px",
+        "query": "renderer width >= 760; WebGL also requires active motion and an available context"
+      }
+    ],
+    "layout": {
+      "source": "src/style.css; src/app.js",
+      "world": {
+        "position": "fixed",
+        "inset": "0",
+        "zIndex": 0,
+        "overflow": "hidden"
+      },
+      "composition": {
+        "position": "fixed",
+        "inset": "0",
+        "zIndex": 4
+      },
+      "gutter": "{spacing.gutter}",
+      "masthead": {
+        "zIndex": 50,
+        "padding": "28px var(--gutter)"
+      },
+      "rail": {
+        "zIndex": 40,
+        "left": "var(--gutter)",
+        "right": "var(--gutter)",
+        "bottom": "2.8vh",
+        "minHeight": "43px",
+        "paddingTop": "17px",
+        "gap": "20px"
+      },
+      "chapterSpan": {
+        "desktop": "innerHeight * 1.8",
+        "mobile": "innerHeight * 1.52",
+        "lastDesktop": "135svh",
+        "lastMobile": "145svh"
+      },
+      "index": {
+        "width": "100%",
+        "height": "100%",
+        "padding": "28px var(--gutter) 26px",
+        "columns": "1fr 1fr",
+        "rows": "repeat(5,1fr)",
+        "autoFlow": "column",
+        "gap": "0 6vw"
+      },
+      "record": {
+        "width": "min(1450px,94vw)",
+        "height": "min(930px,94svh)",
+        "padding": "30px 40px",
+        "columns": ".85fr 1fr",
+        "gap": "7vw",
+        "marginTop": "45px"
+      },
+      "nativeStaticFallback": {
+        "chapterMinHeight": "100svh",
+        "chapterPadding": "130px var(--gutter) 90px",
+        "imageMaxHeight": "80svh",
+        "sceneMaxWidth": "1100px"
+      }
+    },
+    "responsive": {
+      "mobile": {
+        "query": "(max-width:700px)",
+        "gutter": "24px",
+        "mastheadPadding": "22px var(--gutter)",
+        "mastheadSubtitle": "hidden",
+        "display": {
+          "fontSize": "26vw",
+          "lineHeight": ".9",
+          "letterSpacing": "-.035em",
+          "top": "12vh"
+        },
+        "displayItalic": {
+          "fontSize": "clamp(48px,13vw,77px)",
+          "lineHeight": ".85",
+          "top": "26.4vh"
+        },
+        "headline": {
+          "fontSize": "clamp(47px,12.5vw,79px)",
+          "lineHeight": ".94",
+          "letterSpacing": "-.035em",
+          "top": "13.5vh",
+          "maxWidth": "calc(100vw - 42px)"
+        },
+        "body": {
+          "fontSize": "12px",
+          "lineHeight": "1.7",
+          "letterSpacing": ".035em",
+          "maxWidth": "29ch"
+        },
+        "catalogAnnotations": {
+          "fontSize": "11px",
+          "letterSpacing": ".035em"
+        },
+        "textControl": {
+          "minHeight": "44px",
+          "gap": "8px",
+          "letterSpacing": ".17em"
+        },
+        "heroObject": {
+          "top": "37.5vh",
+          "height": "43.5vh",
+          "left": "50%",
+          "translation": "translateX(-66%)",
+          "objectFit": "contain"
+        },
+        "heroIntro": {
+          "bottom": "16vh",
+          "fontSize": "12px",
+          "letterSpacing": ".03em",
+          "secondaryNote": "hidden"
+        },
+        "heroEnter": {
+          "bottom": "9vh",
+          "fontSize": "18px",
+          "gap": "13px",
+          "arrowWidth": "40px"
+        },
+        "rail": {
+          "bottom": "max(16px,env(safe-area-inset-bottom))",
+          "minHeight": "30px",
+          "paddingTop": "12px",
+          "gap": "8px",
+          "chapterFontSize": "11px",
+          "chapterLetterSpacing": ".06em",
+          "chapterGap": "7px",
+          "tickWidth": "15px",
+          "tickHeight": "20px",
+          "tickLineWidth": "9px",
+          "scrollCue": "hidden"
+        },
+        "preservation": {
+          "noteTop": "27.5vh",
+          "noteFontSize": "12px",
+          "modeFontSize": "16px",
+          "modeMinHeight": "44px",
+          "modeNumbers": "hidden",
+          "modeGap": "6px",
+          "modePadding": "4px 0 4px 8px"
+        },
+        "exposure": {
+          "noteTop": "29.5vh",
+          "noteFontSize": "12px",
+          "noteLineHeight": "1.65",
+          "controlWidth": "calc(100vw - 48px)",
+          "controlBottom": "10vh",
+          "rangeHeight": "29px",
+          "rangeLabelSize": "11px",
+          "inspectionMinHeight": "28px",
+          "inspectionFontSize": "11px",
+          "brushRadius": 24
+        },
+        "scan": {
+          "previewCount": 3,
+          "visibleZeroBasedSections": [
+            22,
+            35,
+            48
+          ],
+          "contactSheetLayout": "flex",
+          "contactSheetWidth": "48vw",
+          "contactSheetGap": "6px",
+          "contactSheetBottom": "16.4vh",
+          "previewMinWidth": "24px",
+          "previewMinHeight": "44px",
+          "rangeWidth": "33vw",
+          "rangeBottom": "16.9vh",
+          "sectionRange": [
+            1,
+            72
+          ],
+          "noteFontSize": "11px",
+          "noteBottom": "10vh"
+        },
+        "reconstruction": {
+          "modeFontSize": "21px",
+          "modeGap": "31px",
+          "modeMinHeight": "30px",
+          "modePaddingTop": "0",
+          "noteFontSize": "17px",
+          "noteLineHeight": "1.2",
+          "noteMaxWidth": "18ch",
+          "footnoteFontSize": "11px"
+        },
+        "archive": {
+          "visibleSummaryRows": 1,
+          "physicalRecord": "hidden",
+          "summaryWidth": "42vw",
+          "summaryFontSize": "11px"
+        },
+        "index": {
+          "padding": "22px 24px",
+          "columns": "1fr",
+          "autoFlow": "row",
+          "rows": "none",
+          "gap": "0",
+          "rowFontSize": "29px",
+          "rowMinHeight": "48px",
+          "rowPadding": "8px 0",
+          "numberFontSize": "11px",
+          "descriptorFontSize": "11px"
+        },
+        "record": {
+          "width": "100%",
+          "height": "100%",
+          "padding": "22px 24px",
+          "columns": "1fr",
+          "gap": "30px",
+          "marginTop": "20px",
+          "imageMaxHeight": "33svh",
+          "dataColumns": "105px 1fr",
+          "dataGap": "12px",
+          "dataTermFontSize": "11px",
+          "dataValueFontSize": "18px"
+        }
+      },
+      "compactDesktop": {
+        "query": "(max-width:1100px) and (min-width:701px)",
+        "displayFontSize": "17vw",
+        "displayTop": "17vh",
+        "displayItalicFontSize": "8vw",
+        "displayItalicTop": "38vh",
+        "headlineFontSize": "7.4vw",
+        "bodyFontSize": "12px",
+        "arrowFontSize": "19px",
+        "preservationModeFontSize": "22px",
+        "preservationModeNumbers": "hidden",
+        "exposureControlWidth": "29vw",
+        "indexDescriptors": "hidden",
+        "tickGap": "2px",
+        "tickPadding": "0 6px"
+      },
+      "wide": {
+        "query": "(min-width:2000px)",
+        "gutter": "4.2vw",
+        "mastheadPaddingTop": "3.1vh",
+        "wordmarkFontSize": "1vw",
+        "mastheadSubtitleFontSize": ".68vw",
+        "bodyFontSize": "1vw",
+        "catalogLabelFloor": "max(11px,.65vw)",
+        "arrowFontSize": "1.4vw",
+        "arrowGap": "1.2vw",
+        "arrowWidth": "3.5vw",
+        "underlinedFontSize": ".8vw",
+        "tickWidth": "1.5vw",
+        "tickLineWidth": "1vw"
+      },
+      "shortDesktop": {
+        "query": "(max-height:620px) and (min-width:701px)",
+        "mastheadBlockPadding": "15px",
+        "displayFontSize": "18vh",
+        "displayTop": "16vh",
+        "displayItalicFontSize": "10vh",
+        "displayItalicTop": "39vh",
+        "headlineFontSize": "10.2vh",
+        "bodyFontSize": "11px",
+        "railBottom": "12px",
+        "indexHeadingFontSize": "50px",
+        "indexRowMinHeight": "48px",
+        "indexRowFontSize": "30px",
+        "indexRowPadding": "9px 0"
+      },
+      "finalDesktopCompositionOverrides": {
+        "query": "(min-width:701px)",
+        "preservationHeadlineFontSize": "clamp(49px,6.6vw,154px)",
+        "preservationEmphasisFontSize": ".82em",
+        "archiveHeadlineFontSize": "clamp(60px,6.6vw,154px)",
+        "archiveHeadlineTop": "11vh",
+        "preservationControlGround": {
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "bottom": "0",
+          "height": "25vh",
+          "background": "linear-gradient(to bottom,rgba(229,221,204,0),#e5ddcc 38%,#e5ddcc)",
+          "pointerEvents": "none"
+        },
+        "preservationModeNumbers": {
+          "fontSize": "11px",
+          "opacity": ".75"
+        }
+      }
+    },
+    "scroll": {
+      "owner": "single Lenis instance in src/app.js",
+      "autoRaf": false,
+      "lerp": 0.07,
+      "smoothWheel": true,
+      "wheelMultiplier": 0.9,
+      "syncTouch": false,
+      "anchors": false,
+      "respectReducedMotion": true,
+      "chapterNavigationDurationSeconds": 1.65,
+      "reducedNavigation": "immediate",
+      "nativeFallbackNavigation": "instant",
+      "dialogBehavior": "stop Lenis on showModal; restart after the last dialog closes",
+      "chapterProgress": "clamp(window.scrollY / span, 0, 9.8)",
+      "activeChapter": "clamp(floor(position + .10), 0, 9)",
+      "visualEnter": "i === 0 ? 1 : smooth(i - .18, i + .02, position)",
+      "visualLeave": "i === 9 ? 1 : 1 - smooth(i + .82, i + 1.02, position)",
+      "copyEnter": "i === 0 ? 1 : smooth(i - .05, i + .11, position)",
+      "copyLeave": "i === 9 ? 1 : 1 - smooth(i + .72, i + .88, position)",
+      "backgroundBlend": "smooth(.82, 1.02, position - floor(position))",
+      "smoothDefinition": "t * t * (3 - 2 * t), where t = clamp((v - a) / (b - a))",
+      "source": "src/app.js; src/math.js"
+    },
+    "motionPolicy": {
+      "clock": "one requestAnimationFrame owner in src/app.js",
+      "pointerSmoothing": 0.045,
+      "sharedDriftX": "(pointer.sx - .5) * 5 + sin(timeMilliseconds * .00013) * 1.8",
+      "sharedDriftY": "(pointer.sy - .5) * 3 + cos(timeMilliseconds * .00011) * 1.3",
+      "pauseStorageKey": "fossil:ambient-paused",
+      "pauseControl": "Pause ambient motion / Resume ambient motion",
+      "reducedQuery": "(prefers-reduced-motion: reduce)",
+      "reducedMotion": {
+        "stableChapterProgress": 0.43,
+        "sectionZeroBased": 35,
+        "reveal": 0.7,
+        "reconstructionProgress": 0.76,
+        "ambientDrift": false,
+        "crossfade": false,
+        "arrowHoverTranslation": "none",
+        "scrollBehavior": "auto",
+        "willChange": "auto",
+        "manualControls": "retained",
+        "motionToggle": "disabled while the system preference is active"
+      },
+      "backgroundPage": "cancel the main RAF until visible again",
+      "modalFolio": "no world render while a dialog is open",
+      "materialRetention": "Preservation repaints when mode changes; Exposure repaints when rounded reveal or brush-mark count changes; other geology uses rounded progress and motion state.",
+      "materialProgressQuantization": 500
+    },
+    "rendering": {
+      "source": "src/app.js; src/imaging.js",
+      "dpr": "min(devicePixelRatio || 1, width <= 700 ? 1.5 : 1.35, sqrt(2800000 / (width * height)))",
+      "ambientFrameGapMs": {
+        "desktop": 40,
+        "mobile": 66
+      },
+      "visibleWeightThreshold": 0.002,
+      "resizeDebounceMs": 100,
+      "cpuMeshRasterWidth": 768,
+      "cpuFallback": "Same extracted mesh, normals and missing regions; fixed readable pose.",
+      "noJavaScript": "Semantic ten-chapter text and production imagery remain in normal document flow."
+    },
+    "imaging": {
+      "identity": "Authored synthetic volume; not a physical CT acquisition.",
+      "sectionCount": 72,
+      "initialSectionZeroBased": 35,
+      "desktopPreviewSectionsZeroBased": [
+        10,
+        22,
+        35,
+        48,
+        62
+      ],
+      "manualSelection": "Sets a persistent section override and exposes Follow scroll.",
+      "followScroll": "Clears the manual section override.",
+      "sequence": [
+        "complete generated surface",
+        "contour transition",
+        "complete synthetic section"
+      ],
+      "photoOpacity": "1 - smooth(.16, .32, p)",
+      "contourOpacity": "smooth(.20, .34, p) * (1 - smooth(.48, .64, p)) * .78",
+      "sectionOpacity": "smooth(.39, .62, p)",
+      "manualOrReduced": "photo and transition plane hidden; selected section fully visible",
+      "volumeModes": [
+        "outline",
+        "volume"
+      ],
+      "dataRelationship": "Section previews, current section, data contours and partial mesh use the stored synthetic field.",
+      "source": "index.html; src/app.js; src/imaging.js"
+    },
+    "evidence": {
+      "styleSource": "src/style.css, with final cascade overrides applied",
+      "markupSource": "index.html",
+      "behaviorSources": [
+        "src/app.js",
+        "src/math.js",
+        "src/geology.js",
+        "src/imaging.js"
+      ],
+      "worldSources": [
+        "PRODUCT.md",
+        "docs/VISUAL-BIBLE.html"
+      ],
+      "extractionPolicy": "Only implemented primitives and states are recorded. No synthesized tonal ramps, unimplemented cards or inputs, unused material-color declarations, or superseded tiny-label scale.",
+      "componentPreviewPolicy": "The snippets use scoped source CSS and native HTML, with a material-ground wrapper. Fixed page placement is omitted for the chapter-rail preview. The exhibit controller owns dynamic selection state."
+    }
+  },
+  "components": [
+    {
+      "name": "Text control",
+      "kind": "button",
+      "refersTo": "text-control",
+      "description": "Tracked Index text with the native line glyph. Close shares its typography and focus.",
+      "html": "<div class=\"ds-text-preview\"><button type=\"button\" class=\"ds-text-control ds-index-toggle\" aria-haspopup=\"dialog\">Index <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M10 3v14M3 10h14\"/></svg></button></div>",
+      "css": ".ds-text-preview{--focus:#d8ac64;--rule:rgba(233,227,214,.55);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#141512;color:#e9e3d6;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-text-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-text-preview :where(a){color:inherit;text-decoration:none}.ds-text-preview button svg,.ds-text-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-text-preview button:disabled{opacity:.45;cursor:default}.ds-text-preview button:focus-visible,.ds-text-preview a:focus-visible,.ds-text-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-text-control{display:flex;align-items:center;gap:13px;font-size:11px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;min-height:36px}.ds-text-control svg{width:17px;height:17px;transition:transform .5s var(--ease)}.ds-index-toggle:hover svg{transform:rotate(90deg)}@media(min-width:2000px){.ds-text-control{font-size:.63vw;gap:.7vw}}@media(max-width:700px){.ds-text-control{gap:8px;letter-spacing:.17em;min-height:32px}.ds-text-control svg{width:17px}}.ds-text-control{font-size:max(11px,.65vw)}@media(max-width:700px){.ds-text-control{min-height:44px}}@media(prefers-reduced-motion:reduce){.ds-text-preview *,.ds-text-preview *::before,.ds-text-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-text-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Directional serif link",
+      "kind": "button",
+      "refersTo": "arrow-link",
+      "description": "The base serif directional action and its fine SVG arrow.",
+      "html": "<div class=\"ds-arrow-preview\"><a class=\"ds-arrow-link\" href=\"#chapter-02\"><svg viewBox=\"0 0 56 18\" aria-hidden=\"true\"><path d=\"M1 9h51m-7-6 7 6-7 6\"/></svg><span>Enter the archive</span></a></div>",
+      "css": ".ds-arrow-preview{--focus:#d8ac64;--rule:rgba(233,227,214,.55);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#141512;color:#e9e3d6;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-arrow-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-arrow-preview :where(a){color:inherit;text-decoration:none}.ds-arrow-preview button svg,.ds-arrow-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-arrow-preview button:disabled{opacity:.45;cursor:default}.ds-arrow-preview button:focus-visible,.ds-arrow-preview a:focus-visible,.ds-arrow-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-arrow-link{display:inline-flex;gap:20px;align-items:center;line-height:1.5;font-family:var(--serif);font-size:23px;letter-spacing:.075em;min-height:44px}.ds-arrow-link svg{width:56px;height:20px;transition:transform .45s var(--ease)}.ds-arrow-link:hover svg{transform:translateX(7px)}@media(min-width:2000px){.ds-arrow-link{font-size:1.4vw;gap:1.2vw}.ds-arrow-link svg{width:3.5vw}}@media(max-width:1100px) and (min-width:701px){.ds-arrow-link{font-size:19px}}@media(prefers-reduced-motion:reduce){.ds-arrow-link:hover svg{transform:none}}@media(prefers-reduced-motion:reduce){.ds-arrow-preview *,.ds-arrow-preview *::before,.ds-arrow-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-arrow-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Underlined action",
+      "kind": "button",
+      "refersTo": "underlined-action",
+      "description": "The shared underlined action; scene-specific mobile adjustments are recorded under responsive.",
+      "html": "<div class=\"ds-action-preview\"><button type=\"button\" class=\"ds-underlined\" aria-pressed=\"false\">Inspect the surface</button></div>",
+      "css": ".ds-action-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#e5dece;color:#20221d;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-action-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-action-preview :where(a){color:inherit;text-decoration:none}.ds-action-preview button svg,.ds-action-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-action-preview button:disabled{opacity:.45;cursor:default}.ds-action-preview button:focus-visible,.ds-action-preview a:focus-visible,.ds-action-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-underlined{display:inline-block;font-size:12px;font-weight:600;line-height:1.8;letter-spacing:.05em;border-bottom:1px solid currentColor;padding:6px 0 4px;min-height:36px;transition:opacity .25s ease}.ds-underlined:hover{opacity:.65}@media(min-width:2000px){.ds-underlined{font-size:.8vw}}@media(prefers-reduced-motion:reduce){.ds-action-preview *,.ds-action-preview *::before,.ds-action-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-action-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Quiet recovery action",
+      "kind": "button",
+      "refersTo": "quiet-action",
+      "description": "Secondary recovery action shown after a manual override.",
+      "html": "<div class=\"ds-quiet-preview\"><button type=\"button\" class=\"ds-quiet-link\">Resume the sequence</button></div>",
+      "css": ".ds-quiet-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#e5dece;color:#20221d;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-quiet-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-quiet-preview :where(a){color:inherit;text-decoration:none}.ds-quiet-preview button svg,.ds-quiet-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-quiet-preview button:disabled{opacity:.45;cursor:default}.ds-quiet-preview button:focus-visible,.ds-quiet-preview a:focus-visible,.ds-quiet-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-quiet-link{letter-spacing:.035em;line-height:1.7;text-decoration:underline;text-underline-offset:4px;min-height:32px}.ds-quiet-link{font-size:max(11px,.65vw)}@media(prefers-reduced-motion:reduce){.ds-quiet-preview *,.ds-quiet-preview *::before,.ds-quiet-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-quiet-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Fine native range",
+      "kind": "input",
+      "refersTo": "fine-range",
+      "description": "Current-color track, square vertical thumb and native percentage range.",
+      "html": "<div class=\"ds-range-preview\"><div class=\"ds-range-heading\"><label for=\"ds-reveal-range\">Surface revealed</label><output for=\"ds-reveal-range\">50%</output></div><input id=\"ds-reveal-range\" class=\"ds-fine-range\" type=\"range\" min=\"0\" max=\"100\" step=\"1\" value=\"50\" aria-label=\"Reveal the fossil surface\"></div>",
+      "css": ".ds-range-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#e5dece;color:#20221d;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-range-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-range-preview :where(a){color:inherit;text-decoration:none}.ds-range-preview button svg,.ds-range-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-range-preview button:disabled{opacity:.45;cursor:default}.ds-range-preview button:focus-visible,.ds-range-preview a:focus-visible,.ds-range-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-range-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;letter-spacing:.1em;line-height:1.6}.ds-range-heading output{font-variant-numeric:tabular-nums}.ds-fine-range{-webkit-appearance:none;appearance:none;display:block;width:100%;height:30px;background:transparent;margin:6px 0 15px;color:inherit;cursor:ew-resize;touch-action:pan-y}.ds-fine-range::-webkit-slider-runnable-track{height:1px;background:currentColor;opacity:.7}.ds-fine-range::-moz-range-track{height:1px;background:currentColor}.ds-fine-range::-webkit-slider-thumb{-webkit-appearance:none;width:3px;height:17px;background:currentColor;border:0;border-radius:0;margin-top:-8px}.ds-fine-range::-moz-range-thumb{width:3px;height:17px;background:currentColor;border:0;border-radius:0}@media(min-width:2000px){.ds-range-heading{font-size:.65vw}}.ds-range-heading{font-size:max(11px,.65vw)}@media(prefers-reduced-motion:reduce){.ds-range-preview *,.ds-range-preview *::before,.ds-range-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-range-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Preservation pathways",
+      "kind": "custom",
+      "refersTo": "preservation-mode",
+      "description": "Four open text choices, final readable mode numbers and a pressed-state rule.",
+      "html": "<div class=\"ds-preservation-preview\"><div class=\"ds-preservation-modes\" role=\"group\" aria-label=\"Explore four preservation pathways\"><button type=\"button\" aria-pressed=\"true\"><span>Pore infill</span><small>01</small></button><button type=\"button\" aria-pressed=\"false\"><span>Replacement</span><small>02</small></button><button type=\"button\" aria-pressed=\"false\"><span>Mold</span><small>03</small></button><button type=\"button\" aria-pressed=\"false\"><span>Cast</span><small>04</small></button></div></div>",
+      "css": ".ds-preservation-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#e5ddcc;color:#20221d;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-preservation-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-preservation-preview :where(a){color:inherit;text-decoration:none}.ds-preservation-preview button svg,.ds-preservation-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-preservation-preview button:disabled{opacity:.45;cursor:default}.ds-preservation-preview button:focus-visible,.ds-preservation-preview a:focus-visible,.ds-preservation-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-preservation-modes{display:flex;align-items:stretch;justify-content:space-between;gap:0}.ds-preservation-modes button{flex:1;display:flex;align-items:baseline;justify-content:space-between;padding:6px 8% 8px 4%;border-left:1px solid var(--rule);position:relative;min-height:44px;text-align:left}.ds-preservation-modes button:first-child{padding-left:0;border-left:0}.ds-preservation-modes button:last-child{padding-right:0}.ds-preservation-modes span{font-family:var(--serif);font-size:clamp(21px,1.8vw,35px);white-space:nowrap}.ds-preservation-modes small{letter-spacing:.12em;margin-left:15px;opacity:.6}.ds-preservation-modes button:after{content:'';position:absolute;bottom:0;left:16%;width:54%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}.ds-preservation-modes button:first-child:after{left:0}.ds-preservation-modes button[aria-pressed='true']:after,.ds-preservation-modes button:hover:after{transform:scaleX(1)}@media(max-width:1100px) and (min-width:701px){.ds-preservation-modes span{font-size:22px}.ds-preservation-modes button{padding-right:4%}.ds-preservation-modes small{display:none}}@media(max-width:700px){.ds-preservation-modes button{display:block;padding:4px 0 4px 8px;border-left:1px solid var(--rule);min-height:33px}.ds-preservation-modes button:first-child{padding-left:0}.ds-preservation-modes span{font-size:16px}.ds-preservation-modes small{display:none}.ds-preservation-modes button:after{left:8px;bottom:0;width:70%}}@media(max-height:620px) and (min-width:701px){.ds-preservation-modes span{font-size:20px}}@media(max-width:700px){.ds-preservation-modes button{min-height:44px}}@media(min-width:701px){.ds-preservation-modes small{font-size:11px;opacity:.75}}@media(prefers-reduced-motion:reduce){.ds-preservation-preview *,.ds-preservation-preview *::before,.ds-preservation-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-preservation-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Reconstruction modes",
+      "kind": "custom",
+      "refersTo": "reconstruction-mode",
+      "description": "Serif Outline and Volume controls retain an underline on the selected reading.",
+      "html": "<div class=\"ds-reconstruction-preview\"><div class=\"ds-reconstruction-modes\" role=\"group\" aria-label=\"Reconstruction display\"><button type=\"button\" class=\"ds-underlined\" aria-pressed=\"false\">Outline</button><button type=\"button\" class=\"ds-underlined\" aria-pressed=\"true\">Volume</button></div></div>",
+      "css": ".ds-reconstruction-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#bfc1b9;color:#20221d;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-reconstruction-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-reconstruction-preview :where(a){color:inherit;text-decoration:none}.ds-reconstruction-preview button svg,.ds-reconstruction-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-reconstruction-preview button:disabled{opacity:.45;cursor:default}.ds-reconstruction-preview button:focus-visible,.ds-reconstruction-preview a:focus-visible,.ds-reconstruction-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-underlined{display:inline-block;font-size:12px;font-weight:600;line-height:1.8;letter-spacing:.05em;border-bottom:1px solid currentColor;padding:6px 0 4px;min-height:36px;transition:opacity .25s ease}.ds-underlined:hover{opacity:.65}.ds-reconstruction-modes{display:flex;gap:48px}.ds-reconstruction-modes .ds-underlined{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:.015em;border-bottom-color:transparent}.ds-reconstruction-modes .ds-underlined[aria-pressed='true']{border-color:currentColor}@media(min-width:2000px){.ds-underlined{font-size:.8vw}}@media(max-width:700px){.ds-reconstruction-modes .ds-underlined{font-size:21px;min-height:30px;padding-top:0}}@media(prefers-reduced-motion:reduce){.ds-reconstruction-preview *,.ds-reconstruction-preview *::before,.ds-reconstruction-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-reconstruction-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Sequential chapter rail",
+      "kind": "nav",
+      "refersTo": "chapter-rail",
+      "description": "Current numbered chapter, all ten ticks and the progress line; page fixation is omitted only in the preview.",
+      "html": "<div class=\"ds-rail-preview\"><nav class=\"ds-chapter-rail\" aria-label=\"Chapter navigation\"><a id=\"ds-chapter-current\" href=\"#chapter-07\"><span>07</span><span class=\"ds-rail-dash\">—</span><span>Scan</span></a><div class=\"ds-chapter-ticks\"><a href=\"#chapter-01\" aria-label=\"01 Specimen\"><i></i></a><a href=\"#chapter-02\" aria-label=\"02 Strata\"><i></i></a><a href=\"#chapter-03\" aria-label=\"03 Burial\"><i></i></a><a href=\"#chapter-04\" aria-label=\"04 Preservation\"><i></i></a><a href=\"#chapter-05\" aria-label=\"05 Exposure\"><i></i></a><a href=\"#chapter-06\" aria-label=\"06 Amber\"><i></i></a><a href=\"#chapter-07\" aria-label=\"07 Scan\" aria-current=\"step\"><i></i></a><a href=\"#chapter-08\" aria-label=\"08 Reconstruct\"><i></i></a><a href=\"#chapter-09\" aria-label=\"09 Archive\"><i></i></a><a href=\"#chapter-10\" aria-label=\"10 Deep Time\"><i></i></a></div><span id=\"ds-scroll-cue\"><i></i>Scroll to explore</span><div class=\"ds-rail-progress\"><i style=\"transform:scaleX(.72)\"></i></div></nav></div>",
+      "css": ".ds-rail-preview{--focus:#d8ac64;--rule:rgba(233,227,214,.55);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#141512;color:#e9e3d6;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-rail-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-rail-preview :where(a){color:inherit;text-decoration:none}.ds-rail-preview button svg,.ds-rail-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-rail-preview button:disabled{opacity:.45;cursor:default}.ds-rail-preview button:focus-visible,.ds-rail-preview a:focus-visible,.ds-rail-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-chapter-rail{position:relative;min-height:43px;padding-top:17px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--ink)}.ds-chapter-rail a{pointer-events:auto}.ds-rail-progress{position:absolute;top:0;left:0;right:0;height:1px;background:var(--rule)}.ds-rail-progress i{position:absolute;left:0;top:0;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left}.ds-chapter-rail #ds-chapter-current{display:flex;align-items:center;gap:14px;letter-spacing:.23em;text-transform:uppercase;white-space:nowrap;min-height:24px}.ds-rail-dash{opacity:.7}.ds-chapter-ticks{display:flex;gap:8px;margin-left:auto;margin-right:auto;padding:0 28px}.ds-chapter-ticks a{display:flex;align-items:center;justify-content:center;width:24px;height:25px}.ds-chapter-ticks i{display:block;height:1px;width:15px;background:currentColor;opacity:.3;transition:transform .35s ease,opacity .35s ease}.ds-chapter-ticks a[aria-current='step'] i{opacity:1;transform:scaleY(4)}.ds-chapter-ticks a:hover i{opacity:.9}.ds-chapter-rail #ds-scroll-cue{display:flex;align-items:center;gap:18px;font-family:var(--serif);letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}.ds-chapter-rail #ds-scroll-cue i{display:inline-block;width:40px;border-top:1px solid currentColor;transform-origin:left}@media(min-width:2000px){.ds-chapter-rail #ds-chapter-current,.ds-chapter-rail #ds-scroll-cue{font-size:.65vw}.ds-chapter-ticks a{width:1.5vw}.ds-chapter-ticks i{width:1vw}}@media(max-width:1100px) and (min-width:701px){.ds-chapter-ticks{gap:2px;padding:0 6px}.ds-chapter-rail #ds-scroll-cue{gap:8px}.ds-chapter-rail #ds-scroll-cue i{width:20px}}@media(max-width:700px){.ds-chapter-rail{position:relative;min-height:30px;padding-top:12px;gap:8px}.ds-chapter-rail #ds-chapter-current{gap:9px;letter-spacing:.13em}.ds-chapter-ticks{gap:0;margin-right:0;margin-left:auto;padding:0}.ds-chapter-ticks a{width:15px;height:20px}.ds-chapter-ticks i{width:9px}.ds-chapter-rail #ds-scroll-cue{display:none}}@media(max-height:620px) and (min-width:701px){.ds-chapter-rail{position:relative;}}.ds-chapter-rail #ds-chapter-current,.ds-chapter-rail #ds-scroll-cue{font-size:max(11px,.65vw)}@media(max-width:700px){.ds-chapter-rail #ds-chapter-current{font-size:11px;letter-spacing:.06em;gap:7px}}@media(prefers-reduced-motion:reduce){.ds-rail-preview *,.ds-rail-preview *::before,.ds-rail-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-rail-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Chapter index",
+      "kind": "nav",
+      "refersTo": "index-row",
+      "description": "Numbered, ruled chapter links on bone paper; two columns become one on mobile.",
+      "html": "<div class=\"ds-index-preview\"><nav class=\"ds-index-list\" aria-label=\"All ten movements\"><a href=\"#chapter-01\"><span>01</span>Specimen<small>The object</small></a><a href=\"#chapter-02\"><span>02</span>Strata<small>The layers</small></a><a href=\"#chapter-03\"><span>03</span>Burial<small>The hidden form</small></a><a href=\"#chapter-04\"><span>04</span>Preservation<small>The record</small></a><a href=\"#chapter-05\"><span>05</span>Exposure<small>The boundary</small></a><a href=\"#chapter-06\"><span>06</span>Amber<small>The exception</small></a><a href=\"#chapter-07\"><span>07</span>Scan<small>The interior</small></a><a href=\"#chapter-08\"><span>08</span>Reconstruct<small>The partial volume</small></a><a href=\"#chapter-09\"><span>09</span>Archive<small>The catalog</small></a><a href=\"#chapter-10\"><span>10</span>Deep Time<small>The evidence</small></a></nav></div>",
+      "css": ".ds-index-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#e9e3d6;color:#22241e;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-index-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-index-preview :where(a){color:inherit;text-decoration:none}.ds-index-preview button svg,.ds-index-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-index-preview button:disabled{opacity:.45;cursor:default}.ds-index-preview button:focus-visible,.ds-index-preview a:focus-visible,.ds-index-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-index-list{display:grid;grid-template-columns:1fr 1fr;grid-auto-flow:column;grid-template-rows:repeat(5,1fr);gap:0 6vw}.ds-index-list a{display:flex;align-items:baseline;gap:20px;min-height:66px;padding:12px 0;border-top:1px solid #ada697;font-family:var(--serif);font-size:clamp(30px,2.7vw,52px);line-height:1.1;transition:color .35s var(--ease)}.ds-index-list a:hover{color:#765126}.ds-index-list a span{font-family:var(--sans);letter-spacing:.1em;min-width:18px}.ds-index-list a small{font-family:var(--sans);letter-spacing:.05em;margin-left:auto;color:#535448}@media(max-width:1100px) and (min-width:701px){.ds-index-list a small{display:none}}@media(max-width:700px){.ds-index-list{grid-template-columns:1fr;grid-auto-flow:row;grid-template-rows:none;gap:0}.ds-index-list a{font-size:29px;min-height:48px;padding:8px 0;gap:18px}.ds-index-list a small{}.ds-index-list a span{}}@media(max-height:620px) and (min-width:701px){.ds-index-list a{min-height:48px;font-size:30px;padding:9px 0}}.ds-index-list a span,.ds-index-list a small{font-size:max(11px,.65vw)}@media(max-width:700px){.ds-index-list a span,.ds-index-list a small{font-size:11px}}@media(prefers-reduced-motion:reduce){.ds-index-preview *,.ds-index-preview *::before,.ds-index-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-index-preview .ds-arrow-link:hover svg{transform:none}}"
+    },
+    {
+      "name": "Specimen record rows",
+      "kind": "custom",
+      "refersTo": "record-row",
+      "description": "Native definition-list metadata with the artwork identity retained.",
+      "html": "<div class=\"ds-record-preview\"><dl class=\"ds-record-data\"><div><dt>Study identifier</dt><dd>FSL—001</dd></div><div><dt>Object</dt><dd>Ammonite form in a stone matrix</dd></div><div><dt>Material status</dt><dd>AI-generated specimen imagery</dd></div><div><dt>Imaging</dt><dd>72 sections of a synthetic volume</dd></div><div><dt>Reconstruction</dt><dd>Procedural geometry; intentionally incomplete</dd></div></dl></div>",
+      "css": ".ds-record-preview{--focus:#765126;--rule:rgba(39,40,32,.45);--serif:'Cormorant Garamond',Georgia,serif;--display:'Bodoni Moda',Georgia,serif;--sans:Manrope,Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);background:#e9e3d6;color:#22241e;padding:24px;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:15px}.ds-record-preview :where(button){border:0;padding:0;background:transparent;color:inherit;cursor:pointer;font-family:var(--sans,Manrope,Arial,sans-serif);font-size:inherit}.ds-record-preview :where(a){color:inherit;text-decoration:none}.ds-record-preview button svg,.ds-record-preview .ds-arrow-link svg{fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-record-preview button:disabled{opacity:.45;cursor:default}.ds-record-preview button:focus-visible,.ds-record-preview a:focus-visible,.ds-record-preview input:focus-visible{outline:2px solid var(--focus);outline-offset:7px}.ds-record-data{margin:0 0 27px}.ds-record-data>div{display:grid;grid-template-columns:130px 1fr;gap:20px;border-top:1px solid #b8b0a0;padding:12px 0}.ds-record-data dt{letter-spacing:.05em;color:#5a5a4f}.ds-record-data dd{font-family:var(--serif);font-size:19px;line-height:1.3;margin:0}@media(max-width:700px){.ds-record-data>div{grid-template-columns:105px 1fr;gap:12px}.ds-record-data dt{}.ds-record-data dd{font-size:18px}}.ds-record-data dt{font-size:max(11px,.65vw)}@media(max-width:700px){.ds-record-data dt{font-size:11px}}@media(prefers-reduced-motion:reduce){.ds-record-preview *,.ds-record-preview *::before,.ds-record-preview *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.ds-record-preview .ds-arrow-link:hover svg{transform:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Time becomes evidence.",
+    "overview": "FOSSIL joins museum display, geology, sculpture and scientific imaging. A stone object establishes weight and scale; layers, exposed boundaries, sections and records make its traces readable. The atmosphere is quiet, curatorial and tactile. Monumental native typography and generous open space let the specimen carry the image.\n\nMaterial worlds change while the visual language remains continuous. Museum black supports the slab and grayscale sections; warm stone grounds support preparation and cataloging; ash holds the partial reconstruction. Amber is a concentrated exception created by transmitted light. Fine rules, true italic text and restrained controls hold these worlds together. Motion permits deliberate observation and reverse reading, with one scroll owner and one main animation clock.",
+    "keyCharacteristics": [
+      "Monumental specimens, grazing light and native serif typography.",
+      "Limestone, bone, ash and museum black, with amber confined to its material role.",
+      "Fine catalog rules and transparent text controls instead of generic cards.",
+      "Shared layers, contours, sections and incomplete geometry across the ten movements.",
+      "Reversible progress, quiet optional motion and useful controls on small screens."
+    ],
+    "rules": [
+      {
+        "name": "The Material Color Rule",
+        "body": "Let the specimen supply color variation. Keep amber concentrated in resin and light, and keep imaging grayscale or quietly neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Native Lettering Rule",
+        "body": "Keep titles, navigation, catalog labels and controls in HTML. Use the local italic font for the italic voice; do not bake production typography into specimen images.",
+        "section": "typography"
+      },
+      {
+        "name": "The Material Depth Rule",
+        "body": "Keep interface surfaces flat. Let lighting, texture, occlusion and the actual specimen or data geometry provide the depth.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Shared Evidence Rule",
+        "body": "Preserve the declared relationship among the stored synthetic field, its section images, contours and partial mesh. Keep generated specimen photography and synthetic imaging clearly identified as different representations.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do preserve the monumental specimen scale, native serif hierarchy and reserved reading space.",
+      "Do switch ink, muted text, rules and focus with the light or dark material world.",
+      "Do use the final readable catalog-label scale and maintain visible keyboard focus.",
+      "Do keep sequential chapter numbering and all ten movements accessible on mobile.",
+      "Do retain all 72 section choices, both reconstruction modes and the same mesh in the CPU fallback.",
+      "Do keep state derived from the shared scroll progression and preserve manual recovery controls.",
+      "Do identify generated imagery, synthetic imaging and the internal study record honestly."
+    ],
+    "donts": [
+      "Don't replace the material world with generic cards, capsule tags, dense dashboards or decorative medical HUDs.",
+      "Don't use amber as a routine interface fill or turn grayscale imaging into a decorative color theme.",
+      "Don't bake titles, navigation, controls or catalog lettering into production images.",
+      "Don't present unmatched photograph and section halves as a measured registration.",
+      "Don't complete missing reconstruction regions, depict revival or assign the amber inclusion a species identity.",
+      "Don't invent collecting locality, specimen age, accession, physical scan measurements or verified provenance.",
+      "Don't introduce another global scroll owner, independent scene animation loops or background rendering that ignores the existing pause states."
+    ]
+  }
+}

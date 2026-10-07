@@ -12,6 +12,8 @@ gsap.ticker.lagSmoothing(0);
 ScrollTrigger.config({ ignoreMobileResize: true, autoRefreshEvents: 'none' });
 
 const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+const navigationType = performance.getEntriesByType('navigation')[0]?.type;
+const restoringDocument = navigationType === 'reload' || navigationType === 'back_forward';
 const controls = {
   reduced: preference.matches,
   finish: 0,
@@ -129,7 +131,7 @@ function tick(time) {
   lastRenderTime = time;
   state = samplePose(progress, mobile, controls.reduced);
   const intro = controls.reduced || progress > .35 ? 1 : smooth(.12, 1.25, activeTime);
-  const annotations = world.update(state, controls, renderDt, activeTime, intro);
+  const annotations = world.update(state, controls, renderDt, activeTime, intro, mobile);
   ui.update(state, world, annotations, mobile);
   if (pendingFocus === CHAPTERS[state.chapter].id && !ui.dialog.open) {
     document.querySelector(`#title-${pendingFocus}`)?.focus({ preventScroll: true });
@@ -249,7 +251,9 @@ async function start() {
     createScroll();
     trigger = ScrollTrigger.create({ trigger: '#experience', start: 'top top', end: 'bottom bottom', invalidateOnRefresh: true });
     resize(false);
-    route();
+    // Reload and document Back already restore a real observation point. A
+    // fresh hash entry alone should seek the chapter's authored destination.
+    if (!restoringDocument) route();
     gsap.ticker.add(tick);
     if (import.meta.hot) import.meta.hot.dispose(cleanup);
   } catch (error) {

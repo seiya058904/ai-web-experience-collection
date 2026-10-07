@@ -1,0 +1,20 @@
+{
+  "ready": true,
+  "renderer": "canvas",
+  "sections": 72,
+  "meshRaster": [
+    768,
+    776
+  ],
+  "sectionContourVertices": 292840,
+  "twentyCachedCPUFramesMs": 109.30000000074506,
+  "scanCacheCount": 12,
+  "subOneScaleCanvas": [
+    2112,
+    1188
+  ],
+  "browser": "153.0.8010.0",
+  "fileProtocol": true,
+  "errors": [],
+  "note": "Consistency and offline smoke check; cached CPU draw timing in headless Chromium is not an end-to-end hardware FPS guarantee."
+}

@@ -29,6 +29,8 @@ Use a CSS sticky stage and an explicit scroll range. Lenis supplies wheel/touch 
 
 Desktop scenes alternate their spatial centers. Mobile uses the upper portion for type and the lower portion for material; it does not scale down desktop layouts. Navigation and material controls support keyboard operation. The index is a native dialog. Reduced motion uses stable compositions, direct scrolling, a shorter journey and no autonomous material drift. The unenhanced HTML remains readable if JavaScript fails.
 
+The Index uses an opaque ivory sheet so the underlying film's titles and edge controls cannot overlap its rows. Its background is the existing paper color; a zero-sized repeating image is not part of the sheet treatment.
+
 ## Asset treatment
 
 Original generated material studies only: transparent ink bloom, fiber macro, ink wash, transparent bristle stroke, a vertical dry gesture and deckled paper. Photos of museum works are references only and are not distributed. Runtime fonts and assets are local. No stock image tint overlays. Transparency, original deckled edges and material-driven masks carry compositing.

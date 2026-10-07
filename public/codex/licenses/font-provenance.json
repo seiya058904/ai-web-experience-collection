@@ -1,0 +1,56 @@
+{
+  "retrieved_utc": "2026-10-07T04:34:44.635013+00:00",
+  "description": "Official Google Fonts variable WOFF2 Latin subsets, self-hosted without modification. Font-family and style metadata are retained.",
+  "assets": [
+    {
+      "path": "public/fonts/cormorant-garamond-latin-variable.woff2",
+      "source_url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2",
+      "family": "Cormorant Garamond",
+      "style": "normal",
+      "weight": "300 700",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "public/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "source_url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2",
+      "family": "Cormorant Garamond",
+      "style": "italic",
+      "weight": "300 700",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "public/fonts/manrope-latin-variable.woff2",
+      "source_url": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "200 800",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "licenses/Cormorant-Garamond-OFL.txt",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt",
+      "family": "Cormorant Garamond",
+      "style": "license",
+      "weight": "",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "licenses/Manrope-OFL.txt",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+      "family": "Manrope",
+      "style": "license",
+      "weight": "",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "license": "SIL Open Font License 1.1"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-07",
+  "generator": "OpenAI built-in image_gen tool",
+  "purpose": "Standalone section concepts for CODEX Visual Bible. These are concept design references, not screenshot UI used as implementation.",
+  "images": [
+    {
+      "scene": "05 / SEW",
+      "file": "05-sew-concept.png",
+      "source": "generated_images/exec-c7df643e-bcfb-45a8-9827-7ac013fc551b.png",
+      "status": "selected",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: ui-mockup. Asset type: a single complete landscape key-frame concept for a premium interactive museum publishing website, CODEX — The Anatomy of a Book. One standalone 1536 by 1024 landscape scene, NOT a multi-panel board and NOT a laptop mockup. Imagine exceptional art direction for Hermès craft and fine bookbinding: precision, physical paper mass, quiet asymmetry, large negative space.\nSCENE 05, SEW: an extreme but readable product-photography view of eight densely folded ivory paper signatures, their folded spines aligned in an ordered rhythmic stack running diagonally from lower middle toward upper right. Individual thin paper edges visible, true softly rounded creases, minute paper fiber, consistent needle holes along each signature. A warm waxed linen thread visibly passes in and out through the holes and links successive signatures to form a coherent sewn structure; a loose elegant strand extends toward lower left. Thread thin, tangible, matte, properly connected rather than a random decorative string. Very subtle shadows establish thickness. No hands, tools, bookcases, antiques, or dust.\nBackground uniform warm pale ivory #eee9dd. Deep muted ink #22251f. Natural soft directional museum-studio lighting, neutral warmth, almost architectural control. Macro fiber without coarse rustic parchment. The signatures dominate the center-right half; left third remains open.\nTypography and exact readable copy: tiny sans uppercase 'CODEX' at the top-left, restrained sans 'Contents' top-right. Tiny '05 / SEW' left above main headline. Large elegant restrained high-contrast serif, with refined editorial spacing, at left: 'A line becomes' on first line, 'structure.' on second line. Make title beautifully composed with plenty of breathing room, no giant extra subtitles. Small caption near lower left, 'Connection gives the pages a spine.' Tiny bottom-right 'The Anatomy of a Book'. Typography is a separable UI design layer except no text on the physical paper. No buttons, rounded cards, gradients, glows, borders, faux paper UI, fake statistics, or floating dashboard elements. Complete production-ready visual composition, realistic spatial geometry, physically believable material, professional fine publishing art direction.",
+      "review": "Accepted. Strong real paper fibers, rounded folds, connected linen stitch structure, exact title and adequate separation."
+    },
+    {
+      "scene": "07 / MARBLE",
+      "file": "07-marble-concept.png",
+      "source": "generated_images/exec-5542bbb8-bb8c-4d03-832a-1bc467eaf13a.png",
+      "status": "selected",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: ui-mockup. Asset type: a single complete landscape key-frame concept for the premium immersive website CODEX — The Anatomy of a Book. One readable 1536 by 1024 landscape website scene; NO multi-panel moodboard, device frame, or mockup.\nSCENE 07, MARBLE: full bleed, exquisitely handcrafted marbled endpaper seen dead straight-on. This is true paper marbling, NOT geological stone, NOT psychedelic digital fluid or fluorescent shader. Dense tiny nested charcoal/sage/bone/ochre ink veins, subtle hand combed fan-like curves and flowing feather structures, drawn together with discipline. Very fine high resolution pigment lines with quiet uneven paper absorption and matte paper fiber. Colors charcoal #252922, greyed sage #657365, bone #d5cfb9, a very small aged ochre #a99052 accent. The marbling flows from upper right and center toward lower right, a broad intentional deep charcoal pooled pigment area on the left offers clean negative space for typography. Rich and sophisticated without high saturation or shiny wet highlights. Endpaper quality for an extraordinary black cloth bound contemporary book, not antique nostalgia.\nExact readable typography: tiny warm-ivory uppercase sans 'CODEX' upper left, 'Contents' top-right. Tiny sans '07 / MARBLE' above left headline. Beautiful large restrained ivory serif at left/bottom-left: 'An ordered' on first line, 'kind of chance.' on second line. The title has the same elegant museum-publishing typographic system throughout: airy tracking in utility text, excellent spacing, no trendy oversized thin hairline font. Short small lower-left caption 'The pattern becomes part of the binding.' Preserve enough undisturbed dark ink around every letter for excellent readability. No frames, cards, buttons, statistics, icon rows, gradients or extra decorative UI. Museum level photography of true handmade marbled paper, almost tactile, extraordinary material discipline.",
+      "review": "Accepted. Charcoal negative space, disciplined sage/bone/ochre marbled paper, restrained pigment, readable title."
+    },
+    {
+      "scene": "08 / CASE",
+      "file": "08-case-concept.png",
+      "source": "generated_images/exec-61366573-c4fa-4b47-8c2a-17fa80987a23.png",
+      "status": "selected after refinement",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: ui-mockup. Asset type: a single complete standalone 1536 by 1024 landscape key-frame website concept for CODEX — The Anatomy of a Book. Premium contemporary museum publishing, physical construction of one serious fine-bound book, not a bookstore or blog. No device frame and no multi-panel board.\nSCENE 08, CASE: warm ivory #eee9dd museum studio background. A precisely organized spatial exploded hardback binding in the center-right, coherent parallel geometry in three-quarter view, all components share the exact same dimensions and vanishing points. It is one thick portrait-format modern book: outer black bookcloth front board hovering closest to viewer, dense ivory paper text block in the middle with realistic fine page edges and subtly rounded sewn spine, rear black bookcloth board behind and below, matching rounded black spine cloth connecting through flexible narrow hinge regions. A sage, bone and charcoal marbled pastedown/endpaper opens gently alongside the inside of the front board. Boards have real 3mm thickness, cloth texture fine not coarse; paper block heavier than the boards, dozens of signature creases visible along one side; minute natural separation gaps display sequence of assembly. Paper and board geometry physically plausible, no disconnected folded boxes or gadget parts. The entire book should read as an accurate beautiful fine binding about to close into one object. Soft shadow falls subtly on ground. No hands, tools, shelves or clutter. Black, ivory, subdued marbled sage, a minute dull-gold accent only. Real material microtexture, high-end studio product photography with controlled illumination.\nTypography is a separate code-native UI layer: tiny dark-ink uppercase sans 'CODEX' top-left and 'Contents' top-right. Tiny '08 / CASE' at left above headline. Large elegant dark-ink serif left: 'A body,' on first line, 'held together.' on second line, generous negative space and exceptional editorial spacing. Small caption near lower left: 'The structure receives its enclosure.' No card UI, rounded buttons, bright highlights, fake system data, ornamental borders, or extra copy. Strong asymmetrical composition and impressive physical presence, just one hero object with clean hierarchy.",
+      "refinementPrompt": "Use case: ui-mockup refinement. Edit the supplied CODEX SCENE 08 / CASE concept with exactly one layout correction: move the entire exploded book assembly approximately 140 pixels to the right and scale the assembly down to 87% of its current size, so its leftmost edge starts at approximately 680px on the 1536px-wide canvas. Keep every word of the headline and all other copy exactly unchanged, with the text remaining in its current left-hand position. The headline 'A body,' / 'held together.' must have at least 80px clean ivory negative space between its rightmost letters and the leftmost black cover board. Keep the full object visible and inside the right canvas margin. Preserve the elegant existing serif, small header, label, caption, fine black bookcloth texture, dense ivory page block, subdued sage/charcoal marbled pastedown, lighting, warm ivory #eee9dd background, and all coherent binding geometry exactly as in the source. No new text, no cards, no new parts, no additional decoration. Correct layout only.",
+      "review": "Initial generation rejected because the headline touched the front board. Revised generation preserves materials and geometry with clear separation between headline and object."
+    }
+  ],
+  "selectionCriteria": [
+    "Material legibility",
+    "Typography and exact copy",
+    "No card or template decoration",
+    "Warm ivory and muted charcoal/sage palette",
+    "Ordered physical structure",
+    "Readable 1536 × 1024 standalone section"
+  ],
+  "implementationNotes": {
+    "sew": "Paper and thread structural scene should be live geometry or SVG. Concept title is code-native UI.",
+    "marble": "Extract marbled endpaper as a standalone texture without UI. Apply to endpaper geometry and use limited dynamic marbling response.",
+    "case": "Live boards, spine, paper text block and endpaper use the concept's coherent proportions; UI remains code-native."
+  }
+}

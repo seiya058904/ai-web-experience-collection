@@ -18,10 +18,12 @@ This directory is excluded from the website build. It preserves unique material 
 - `atlas/`: ZIP identity, real geographic source lineage, original acquisition tools and exact runtime data mappings. Raw acquisition binaries remain in the external archive.
 - `thrust/`: ZIP identity, engine/image/font sources and the actual engine gallery capture.
 - `aeterna/`: ZIP identity, source-to-import hashes, original museum/font/decoder records, image prompts and design references. Runtime resources and readable notices are in `public/aeterna/`; the original archive stays unchanged in `D:/下载/`. See [audited local acceptance](../docs/aeterna/ACCEPTANCE.md).
-- `deliveries/collection-social.json`: dimensions, output hash and the seventeen source images in the current Collection social preview.
+- `luthier/`: ZIP inventory, source-to-import hashes, original image/font/model records and supplied pure-model verification history. The original archive remains at `D:/下载/LUTHIER.zip`.
+- `codex/`, `magma/`, `fossil/`: inventories and source-to-import mappings for book binding, cooling material and deep-time exhibitions. Generated images, authored models/data and third-party notices retain their separate provenance.
+- `deliveries/collection-social.json`: dimensions, output hash and the twenty-four source images in the current Collection social preview.
 - `deliveries/`: legacy import notes and entry-by-entry SHA-256 manifests for the supplied complete works.
 
-The GLAZE/KAGE delivery ZIPs, extracted intermediate directories, compiled duplicates and standalone configs/startup scripts were removed after verified import. CHRONOS was imported and verified the same way; its external extraction was removed, while the ignored local root ZIP remains because final deletion was blocked by execution policy. All original entry hashes remain in `deliveries/import-manifest.json`.
+The GLAZE/KAGE delivery ZIPs, extracted intermediate directories, compiled duplicates and standalone configs/startup scripts were removed after verified import. CHRONOS was imported and verified the same way. Its original archive is now retained outside the repository at `D:/下载/Collection-source-archives/CHRONOS-complete-project.zip`; the 2026-10-07 relocation preserved SHA-256 `9b71b309b4068d13f8faed8f4ac208766e8016388dbfaf6c1bd948674b60f446`. All original entry hashes remain in `deliveries/import-manifest.json`.
 
 The older VERDANT/ORBITAL ZIPs remain locally under ignored `deliveries/`. VERDANT contains unique original PNGs and design references absent from runtime source. ORBITAL preserves the original complete delivery, including unreconciled historical assets and font variants. These are not submitted or deployed; they have not been proven entirely disposable.
 

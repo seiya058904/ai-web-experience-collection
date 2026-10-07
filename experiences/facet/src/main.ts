@@ -21,6 +21,8 @@ const interaction=$<HTMLDivElement>('#gem-interaction');
 const track=$<HTMLDivElement>('#scroll-track');
 const loading=$<HTMLDivElement>('#loading-note');
 const reduceQuery=window.matchMedia('(prefers-reduced-motion: reduce)');
+const navigationType=(performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming|undefined)?.type;
+const restoringDocument=navigationType==='reload'||navigationType==='back_forward';
 const scenes=Array.from(document.querySelectorAll<HTMLElement>('.scene-panel'));
 const inputs=Array.from(document.querySelectorAll<HTMLInputElement>('input[type=range]'));
 let language:Language='en';
@@ -341,8 +343,12 @@ Promise.allSettled([document.fonts.ready]).then(()=>{
  if(disposed)return;
  refresh(false);
  const hashIndex=CHAPTERS.findIndex(chapter=>initialHash===`#${chapter.id}`);
- if(storedPosition!==null)goPosition(storedPosition,true,'none');
- else if(hashIndex>0)goPosition(chapterTarget(hashIndex),true,'none');
+ // On reload/document Back the browser restores the latest native stop. The
+ // saved history target can still be the earlier chapter navigation point.
+ if(!restoringDocument){
+  if(storedPosition!==null)goPosition(storedPosition,true,'none');
+  else if(hashIndex>0)goPosition(chapterTarget(hashIndex),true,'none');
+ }
  initialised=true;activeIndex=-1;
 });
 

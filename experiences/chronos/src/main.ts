@@ -75,6 +75,10 @@ const listener = { signal: abort.signal };
 
 root.classList.add('is-enhanced');
 root.classList.toggle('is-reduced', reduced);
+// Enhanced chapters occupy one sticky stage. Their URL fragments are virtual
+// destinations, rather than native targets that can scroll the stage/document.
+// The HTML keeps ordinary chapter anchors when JavaScript is unavailable.
+copies.forEach(copy => { copy.id += '-view'; });
 
 const lenis = new Lenis({
   autoRaf: false,
@@ -496,6 +500,7 @@ function dispose() {
   trigger.kill();
   lenis.off('scroll', ScrollTrigger.update);
   lenis.destroy();
+  copies.forEach((copy, index) => { copy.id = CHAPTERS[index].id; });
   scene?.dispose();
   sound.dispose();
 }

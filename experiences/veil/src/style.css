@@ -1,8 +1,8 @@
+@import 'lenis/dist/lenis.css';
 @font-face { font-family: 'Cormorant Garamond'; src: url('/veil/fonts/cormorant-garamond-latin-300-normal.woff2') format('woff2'); font-style: normal; font-weight: 300; font-display: swap; }
 @font-face { font-family: 'Cormorant Garamond'; src: url('/veil/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
 @font-face { font-family: 'Manrope'; src: url('/veil/fonts/manrope-latin-400-normal.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
 @font-face { font-family: 'Manrope'; src: url('/veil/fonts/manrope-latin-500-normal.woff2') format('woff2'); font-style: normal; font-weight: 500; font-display: swap; }
-@import 'lenis/dist/lenis.css';
 
 :root {
   --paper: #e9e6df;

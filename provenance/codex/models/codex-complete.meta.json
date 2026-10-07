@@ -1,0 +1,155 @@
+{
+  "file": "codex-complete.glb",
+  "format": "glTF 2.0 binary",
+  "exportedUtc": "2026-10-07T05:58:36.038Z",
+  "sha256": "6f89aad1df21db1bbb4de4ee19451ebd064f950e2cc6c0dec5146eec3895433d",
+  "byteLength": 7663592,
+  "meshCount": 152,
+  "materialCount": 15,
+  "textureImageCount": 15,
+  "vertexCount": 23223,
+  "triangleCount": 26312,
+  "bounds": {
+    "min": [
+      -1.7893650531768799,
+      -2.4605000001080333,
+      -0.4135000001341105
+    ],
+    "max": [
+      1.7605000001080333,
+      2.4605000001080333,
+      0.4135000001341105
+    ],
+    "size": [
+      3.549865053284913,
+      4.9210000002160665,
+      0.827000000268221
+    ]
+  },
+  "skippedConstructionGroups": [
+    "sheet / centre fold / nested gathering",
+    "Group",
+    "small dark stamping die"
+  ],
+  "sourceDiagnostics": {
+    "signatureCount": 12,
+    "sheetsPerSignature": 4,
+    "representedLeaves": 96,
+    "visibleModelTriangles": 26312,
+    "modelGeometries": 50,
+    "modelMaterials": 22,
+    "modelTextures": 9,
+    "textureFallbacks": [],
+    "bookState": {
+      "chapter": 9,
+      "progress": 0,
+      "foldAngle": 3.141592653589793,
+      "sewn": 1,
+      "lining": 1,
+      "case": 1,
+      "stamp": 1,
+      "open": 0
+    },
+    "coordinateSystem": "+Z front; −X spine; Y long axis",
+    "geometrySystems": [
+      "continuous-thickness fold",
+      "instanced nested signatures",
+      "through-fold sewing",
+      "transverse linen tapes",
+      "laid spine lining",
+      "wound endbands",
+      "hinged boards and turn-ins",
+      "physical foil / deboss"
+    ]
+  },
+  "renderer": {
+    "calls": 153,
+    "triangles": 26504
+  },
+  "textureOptimization": {
+    "maxTextureSize": 1024,
+    "photographicAlbedoMime": "image/jpeg",
+    "jpegSourceAssets": [
+      "cloth-albedo.webp",
+      "paper-albedo.webp",
+      "marbled-endpaper.webp"
+    ],
+    "jpegQuality": "Chromium canvas default (approximately 0.92)",
+    "nonTitleBumpNormalMaximum": 512,
+    "preservedPNG": [
+      "cover with baked text",
+      "alpha",
+      "normal",
+      "metallicRoughness"
+    ]
+  },
+  "coverBake": {
+    "channels": [
+      "baseColor",
+      "metallicRoughness",
+      "normal"
+    ],
+    "sourceResolution": [
+      1024,
+      1536
+    ],
+    "resolution": [
+      1024,
+      1024
+    ],
+    "recessedNormalDepth": 0.003,
+    "customShaders": false
+  },
+  "runtimeRasterDepthBias": [
+    {
+      "target": "trimmed folio edges",
+      "enabled": true,
+      "factor": -1,
+      "units": -2,
+      "encodedInGLB": false
+    },
+    {
+      "target": "one fine gilded fore-edge",
+      "enabled": false,
+      "factor": 0,
+      "units": 0,
+      "encodedInGLB": false
+    }
+  ],
+  "foreGiltLocalPosition": [
+    1.7029999999999998,
+    0,
+    0.2
+  ],
+  "structure": {
+    "meshes": 41,
+    "primitives": 46,
+    "materials": 15,
+    "nodes": 170,
+    "images": 15,
+    "buffers": 1,
+    "bufferViews": 183,
+    "embeddedBufferBytes": 7594268,
+    "extensionsUsed": [
+      "KHR_texture_transform"
+    ],
+    "externalReferences": 0,
+    "animations": 0,
+    "imageMimeCounts": {
+      "image/jpeg": 3,
+      "image/png": 12
+    }
+  },
+  "sourceSHA256": {
+    "src/book.js": "49570c0498e97f31f511c1f3d6f436ed78ff0be9885bce63374e09d326f9f86e",
+    "src/model/paper.js": "3324d8dd9dcb3decebc5a853e36aa2d9834ce29c80c34cdb64279f8a66f375e7"
+  },
+  "validation": {
+    "binaryHeader": "PASS",
+    "embeddedImagesAndBuffers": "PASS",
+    "GLTFLoaderReload": "PASS",
+    "finiteVerticesAndBounds": "PASS",
+    "renderedReload": "PASS",
+    "consoleMessages": []
+  }
+}

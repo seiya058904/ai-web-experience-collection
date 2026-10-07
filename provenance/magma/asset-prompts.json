@@ -1,0 +1,1235 @@
+{
+  "schemaVersion": 1,
+  "project": "MAGMA — Stone Before Stone",
+  "recordDate": "2026-10-07",
+  "generator": "OpenAI built-in image_gen__imagegen",
+  "scope": "Complete prompts and curation of 21 generation/edit rounds recorded in six source logs, including dedicated FLOW, GLASS and STONE portraits produced after real mobile browser QA. The 22 delivered WebP files exclude rejected images, superseded mobile variants and all source PNGs. Records are grouped by source log, not a timed execution transcript.",
+  "pathConvention": "Every deliveredFiles/artifacts.path value is relative to the MAGMA project root. Raw PNGs, rejected images and working copies are omitted. Temporary absolute paths are replaced by generation record IDs. supersededArtifacts.formerDeliveryPath is a reused historical path, not a link to an included old file.",
+  "artisticInterpretation": "All imagery is AI-generated artwork. Words such as photograph, photographic, physically real and geological truth in the preserved prompts describe visual intentions, not documentary provenance or scientific validation. Prompt percentages, coordinates and ideal sizes are creative requests, not measured material data or guaranteed output dimensions.",
+  "processing": {
+    "tool": "sharp",
+    "format": "WebP",
+    "desktop": "Nine selected native 1672 x 941 material plates; no artificial upscaling.",
+    "portraitMobile": "Five dedicated portrait plates: PRESSURE, FLOW, GLASS and SEALED are 853 x 1844; STONE is native 830 x 1896.",
+    "otherMobile": "Four retained mobile variants (MOLTEN, SKIN, CRACK and FRACTURE) are 960 x 540 downsampled desktop plates.",
+    "concepts": "Four selected full-frame concept references in docs/concepts; three landscape and one portrait.",
+    "generationResolutionNote": "Several prompts requested 2560 x 1440 or higher. Actual native output dimensions, verified against image files, are recorded per round and artifact.",
+    "mobileQaRefinement": "FLOW, GLASS and STONE were recomposed through image-generation edits after real mobile QA. Their final WebP conversion used sharp quality 91, effort 6 at native dimensions. The previous three 960 x 540 variants are recorded as superseded and not included.",
+    "promptMetadata": {
+      "status": "complete via sidecar + central manifest",
+      "payload": "Complete prompt of the selected or repurposed generation round identified by each artifact.generationRecordId.",
+      "pixelHashMethod": "SHA-256 of Pillow-decoded RGB bytes at native dimensions; before/after provenance-pass values match for all 22 images. These are image-integrity checks, not thermal measurements.",
+      "storage": "A same-name .webp.json provenance sidecar accompanies each of the 22 delivered WebP raster files. Full prompts and curation are also collected in this manifest.",
+      "tool": "Impeccable embed-prompt; its WebP path writes a JSON sidecar rather than an embedded RIFF/XMP/EXIF chunk.",
+      "webpContainerModified": false,
+      "verification": "All 22 sidecar prompts match the corresponding generation-round strings exactly. All sidecar bytes and SHA-256 hashes are recorded per artifact."
+    }
+  },
+  "sourceNotes": {
+    "hot-assets": {
+      "date": "2026-10-07",
+      "sourceNote": "AI-generated photographic material assets; no third-party source imagery was supplied for these images. The crack v2 edit used the generated crack v1 as its only reference.",
+      "resolutionNote": "Requested 16:9 at 2560x1440 or higher in prompts. Actual native tool output is 1672x941 for every image; no artificial upscaling was performed."
+    },
+    "mobile-assets": {
+      "date": "2026-10-07",
+      "sourceNote": "Production images edited from the project's AI-generated mobile UI concept. No third-party photography. All outputs preserve the native 853x1844 canvas with no resizing or post-generation repainting.",
+      "referenceConceptRecordId": "concept-mobile"
+    },
+    "mobile-refinement-hot": {
+      "date": "2026-10-07",
+      "sourceNote": "Both source material images belong to the project's AI-generated visual series. Outputs were recomposed as portrait assets by image generation, not cropped, rotated, resized, or manually repainted.",
+      "qaScope": "Real mobile FLOW and GLASS browser screenshots were examined for composition; screenshots are not included as assets.",
+      "pixelInspectionNote": "The retained numerical negative-space inspections measure image pixel values only, not physical material data."
+    },
+    "mobile-refinement-stone": {
+      "date": "2026-10-07",
+      "reason": "Real mobile QA showed that the desktop-derived STONE crop placed bright, detailed basalt directly behind the heading and body copy.",
+      "sourceNote": "The original project AI-generated STONE plate was the sole image-generation reference. The real browser screenshot was inspected for layout diagnosis but was not supplied to image generation. No third-party photography was used.",
+      "resolutionNote": "Requested approximately 9:19.5 portrait, ideally 853 x 1844. The tool produced native 830 x 1896. This selected PNG retains its actual native dimensions with no resizing, cropping, recoloring or post-generation compositing."
+    }
+  },
+  "curationSummary": {
+    "generationRounds": 21,
+    "selected": 17,
+    "repurposed": 1,
+    "rejected": 3,
+    "deliveredConcepts": 4,
+    "deliveredDesktopPlates": 9,
+    "deliveredMobilePlates": 9,
+    "dedicatedPortraitMobilePlates": 5,
+    "downsampledMobilePlates": 4,
+    "supersededMobileFilesRecorded": 3,
+    "supersededMobileFilesIncluded": 0,
+    "rawPngFilesIncluded": 0,
+    "rejectedImagesIncluded": 0,
+    "deliveredRasterFiles": 22,
+    "deliveredPromptSidecars": 22,
+    "deliveredRasterAndSidecarFiles": 44
+  },
+  "generationRounds": [
+    {
+      "id": "concept-hero-v1",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "rejected",
+      "selectedForDelivery": false,
+      "prompt": "Use case: ui-mockup. Create a complete high-fidelity desktop website first viewport concept for MAGMA — Stone Before Stone, an extraordinary contemporary digital sculpture, editorial art installation about heat becoming stone. 16:9 landscape, 2560 x 1440 quality. A museum-caliber premium art direction, no sci-fi UI. Almost-black background #090909. A gigantic heavy irregular sculptural basalt monolith fills the center and right, rough dense true basalt texture barely revealed by raking soft grey light. A SINGLE very narrow molten orange fissure diagonally descends through the black monolith from upper center to lower right; inside near-white heat, short red falloff, physically contained light, 90 percent of frame black/charcoal. No lava landscape. No eruption. No particles. No smoke. Exceptional tonal separation between black object and black background. Typography is code-native UI shown here for concept only: in upper left a small refined wordmark \"MAGMA\"; upper right two simple text controls \"Index\" and \"Sound off\". The enormous clean neo-grotesk headline \"MAGMA\" in warm mineral white, lower left over some of the rock, spanning 75 percent width, tight letter spacing, authoritative and architectural. Under it small sentence \"Stone before stone.\" Left below is \"A study of matter becoming still.\" Lower right a hairline down arrow with \"Begin the descent\". Tiny footer counter \"01 / 09\" with \"PRESSURE\". Minimal chrome, no pills, no cards, no boxes, no commercial CTA, no fake numerical readings, no gradients behind text, no extra text. Show a complete strong usable first viewport with generous margins, crisp actual typography, art-directed crop, rock extending out of frame. This is the opening of a NINE-scene scroll artwork PRESSURE / MOLTEN / FLOW / SKIN / CRACK / GLASS / FRACTURE / STONE / SEALED; not a whole webpage squeezed into one screenshot.",
+      "promptSha256": "6d880b8c836dafb3a657be3b3dc6a2eb1a6734beb6de89d5509a829f08e3d776",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [],
+      "referenceRecordIds": [],
+      "evaluation": "Rejected: mountain-like outline and external lighting too bright.",
+      "originalSelectedFlag": false
+    },
+    {
+      "id": "concept-hero-v2",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: ui-mockup. A fresh refined final desktop first-viewport design for MAGMA — Stone Before Stone, 16:9 2560x1440 high fidelity. An editorial digital sculpture, not a volcano site. Refine the earlier direction: DARKER, much more sculptural, no pointed mountain profile. A gigantic uneven oval monolithic block of dense matte black basalt fills center/right at 70% of width and 90% height, cropped at lower/right edge, heavy rounded weathered rectangular form with blunt top, no triangular peak, no levitation. Its near-black surface stays 80 percent in shadow, detailed granular roughness only softly revealed on one thin shoulder. One incredibly narrow winding fissure runs down the monolith, starting at upper center and exiting bottom right. Deep inside, a restrained hot amber-red line with only tiny ivory-white spots. Thin close emission, no flames, no lightning, no bloom fog. Absolute charcoal-black surrounding void. Grey rim light separates black rock from black background while keeping the rock black. Foreground typography: enormous tightly tracked pale mineral-white grotesk \"MAGMA\", a full 70% viewport wide across lower left, strong architectural letters, and directly beneath it \"Stone before stone.\" at modest size. A small wordmark \"MAGMA\" at top left, simple text \"Index\" and \"Sound off\" at top right. Small \"A study of matter becoming still.\" bottom left, \"Begin the descent\" with a fine drawn downward arrow at bottom right, bottom counter \"01 / 09\" \"PRESSURE\". No more text. No pills, no metric displays, no cards, no color overlays, no extra decoration. Every visual relationship must be beautifully calibrated like a contemporary museum film title. Complete readable browser viewport, calm controlled margins, object is not a mountain or landscape, no horizon, no sky, no particles, no sci-fi, no fantasy. Rich photorealistic blacks. This is chapter 01 of a continuous nine-scene artwork.",
+      "promptSha256": "96155ecf6d09d0216862e697833aa739eb03ad1b825a012b40d6a0a525118881",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "docs/concepts/pressure.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "",
+      "originalSelectedFlag": true,
+      "replacesRecordId": "concept-hero-v1"
+    },
+    {
+      "id": "concept-glass",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: ui-mockup. Create one gorgeous complete desktop browser viewport of chapter 06 GLASS of MAGMA — Stone Before Stone, 16:9 2560x1440 quality. Coordinated design system: pitch-black #08090a full-bleed art, mineral-white Archivo-like neo-grotesk typography, extremely restrained editorial museum interfaces. In center/right, a monumental glossy obsidian shard with naturally curved conchoidal planes, black volcanic glass lit with broad soft grey reflection strips, extraordinary tactile smoothness, scalpel-fine curved edges. It is geological black glass, not metal or acrylic, no iridescence, no neon blue, absolutely no internal orange glow. Left third mostly calm near black. Large left-aligned text at x=6% y=36%: \"Darkness,\" and on a new line \"made glass.\" Wide modern grotesk font, 110px-equivalent, light weight, ivory. A very small supporting sentence below at y=64%: \"Another cooling history. The light is no longer inside.\" Then smaller \"It returns from the surface.\" Top left small wordmark \"MAGMA\", top right text controls \"Index\" and \"Sound off\". Along the right edge a very thin vertical nine-step progression indicator, current sixth line ivory. Bottom left \"06 / 09\" and \"GLASS\". Bottom right simple unobtrusive text action \"Move to catch the light\" with fine line cursor icon. No cards no commerce no stats no labels hovering on object. Composition should feel like a masterful art exhibition on screen. Asset and text must be separable for code-native implementation. A single section viewport only, not a full long webpage collage.",
+      "promptSha256": "95873f3e3c1a34b0b33857cf4d00b507f117ddb4d793b3c17b4baaade572b237",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "docs/concepts/glass.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "molten-study-v1",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "repurposed",
+      "selectedForDelivery": true,
+      "prompt": "Use case: photorealistic-natural. Asset type: production material key visual for an avant-garde digital sculpture MAGMA — Stone Before Stone. Single uninterrupted 16:9 2560x1440 photoreal macro image, no text, no panel border, no labels. Extreme close-up of thick molten rock pushing beneath black cooling skin: enormous slow viscous folds of black silicate material resembling heavy ropes, glowing orange-red inside a few narrow tears, near-white heat only deep at the small center. A heavy molten fold sweeps across the right two thirds, left third mostly near black as natural negative space. Shot like extraordinary geological macro fine art photography: wet-black skin with ash silver tiny ripples and porous edges, black crust covers 70% of the frame, only 15% orange emissive area. Internal light with physical red-to-orange-to-pale core falloff, no broad neon bloom. The image must have weight, density, resistance, not water or honey. Macro-to-monumental ambiguity. Raking grey side light shows rough skin without turning it grey. Pitch-black studio-like void around edges; no horizon, no volcano, no flames, no eruption, no smoke, no particles, no stars, no fantasy, no game textures, no lava river landscape, no plastic. Quiet dangerous heat inside material, deep dimensional creases, micro-detail. Make a fully rendered beautiful material image, not a UI.",
+      "promptSha256": "7bff07d77de532f7763ddb1e7136bf1b91bc48e7afe98f54e8197753601173d5",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/flow.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "Curated as FLOW, not MOLTEN: partially cooled ropy folds.",
+      "originalSelectedFlag": true,
+      "originalIntendedScene": "MOLTEN",
+      "selectedScene": "FLOW"
+    },
+    {
+      "id": "asset-pressure",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Edit target: the supplied MAGMA hero website concept. Create the final clean standalone background asset at the same 16:9 framing and highest resolution. Remove ALL text, letters, controls, wordmarks, arrows and interface elements, carefully reconstructing the basalt beneath the giant letters. Preserve the exact same rock, blunt-top large monolith silhouette, camera, framing, position, continuous thin orange fissure coordinates and soft neutral grazing light. Keep the same near-black backdrop. Do not change the rock composition or add anything. The result is only the photoreal geological material background with no UI anywhere. Preserve photoreal microscopic detail and deep blacks. No haze, no particles. Every background pixel should feel like the same exact visual after the UI layer is removed.",
+      "promptSha256": "b0634a660224c665ab1ad4d8dd2aee87a96ee613eb3cc677fff83c1af67a4bd4",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/pressure.webp"
+      ],
+      "referenceRecordIds": [
+        "concept-hero-v2"
+      ],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "asset-glass",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Edit target: supplied GLASS website concept. Produce a clean standalone high-resolution 16:9 background plate for actual website use. Remove ALL typography, text, wordmark, numbers, UI, vertical lines, circles, cursor symbols and controls. Preserve the identical black obsidian shard, its position at center-right, original curve and geometry, camera, large naturally curved fracture faces, glass reflections and dark background. Reconstruct perfectly black negative space on left where text was. No orange, no glow, no color tint, no added objects. The rock should remain authentic obsidian glass and not metal. Keep large grey reflections with gorgeous tonal blacks. The output is only the material asset without any lettering, no border, no watermarks.",
+      "promptSha256": "6ba6e0175ccbb99baad267dc291507e110e4b7cb8d3695a6e1a779c0f9481e58",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/glass.webp"
+      ],
+      "referenceRecordIds": [
+        "concept-glass"
+      ],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "asset-fracture",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: photorealistic-natural. Final production material background for MAGMA — Stone Before Stone. 16:9 landscape 2560x1440 high detail, NO TEXT NO UI. An extreme close-up of a natural BLACK OBSIDIAN CONCHOIDAL FRACTURE: a broad shallow scooped concave glass face filling the upper right and center of frame, overlapping shell-like fracture arcs, elegantly curved sharp edges, not diamond facets. Macro-to-monumental ambiguous scale. The resulting black glass form looks like sculpture carved by one curved break. Smooth black surface with hair-fine concentric undulations, specular grey line tracing one crescent-shaped edge at a diagonal from lower left to top right, dark interior falls to pure black. At bottom right another smooth scooped face joins in a crisp shadowed edge. Lower left 25 percent natural near-black shadow with enough space for a short headline. 85% tonal blacks, 14% broad very dark grey reflection, 1% fine ash-white edge reflections. Controlled studio-raking illumination, cinematic, minimal, premium geological photography, deep dimensional black reflection, precise fine surface ripples. No fire, no molten orange, no neon, no rainbow, no quartz crystals, no shattered flying fragments, no impact, no smoke, no metal, no plastic. A complete uninterrupted image, not a collage.",
+      "promptSha256": "5dea5d6a130612d4ab28f031ad0de5f3df5227414f4a836d423f3bac19272c8b",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/fracture.webp",
+        "assets/materials/fracture-mobile.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "asset-stone",
+      "sourceRecordGroup": "root-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: photorealistic-natural. Production macro geological asset for MAGMA — Stone Before Stone, 16:9 2560x1440 high-resolution. The final mineral structure of dark BASALT, a beautifully heavy piece of black fine-grained igneous rock extremely close, with a few small naturally embedded grey-green olivine and black pyroxene crystal facets catching sparse grazing light. Fine irregular granular dark grey groundmass dominates. Some small real vesicles with natural irregular depths, not a repeating tiled texture, not holes everywhere. A broad dense rock slab sweeps diagonally from left foreground lower edge to right upper edge, shadows and natural fractured planes produce monumental weight. Camera very close and low, no landscape, no horizon, no volcanic cones. Black charcoal background and rock kept mostly dark; right third and upper-left corner include deep shadow negative space for editorial copy. Mineral glints are subtle natural grey/olive, NOT fantasy bright green gems. NO luminous cracks, no hot orange, no glow, no giant crystal clusters, no quartz/amethyst, no hexagonal columns mislabelled as crystals, no text, no typography, no labels, no UI. Museum mineral photography meets cinematic material sculpture, true black rock micro-detail and well-defined raking shadow.",
+      "promptSha256": "f540d0ad7f07d4dca54183d92b175dd9ae9f30d7152814ea55e189a1d6e53ff2",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/stone.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "asset-sealed",
+      "sourceRecordGroup": "final-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Edit target: this exact black basalt monolith background plate. This is the final completely cooled state of the SAME object. Keep identical geometry, camera position, framing, texture registration, silhouette, size and backdrop. Change ONLY the molten fissure: it has cooled and fully sealed into black stone. All orange/red/yellow/white emission disappears completely; the previous glowing seam is now an extremely thin dark mineral scar, closed, black, barely detectable. Reconstruct believable black stone grain across the former opening. Keep the existing neutral grazing illumination and black texture beautiful and readable. The final image contains NO warm light anywhere, no glow, no embers. Do not substantially brighten or darken unrelated outer rock surfaces. No text, no UI, no added objects. Preserve the exact same 16:9 composition so before and after can be registered and blended by shader.",
+      "promptSha256": "a05a3c58142803a7a5de8c6fa75347f4c5e18404a56ea9290ee035ba517cf411",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/sealed.webp"
+      ],
+      "referenceRecordIds": [
+        "asset-pressure"
+      ],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "concept-skin",
+      "sourceRecordGroup": "final-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Create the final desktop UI concept of chapter 04 SKIN for MAGMA — Stone Before Stone using the supplied material photo as the exact unchanged full-bleed background. Landscape 16:9. Museum-caliber editorial digital sculpture. Keep image same dark color. Add only code-native UI: small \"MAGMA\" top left, \"Index\" and \"Sound off\" top right. Left aligned at x=6% y=19%, a large light-weight mineral-white geometric grotesk headline on two lines: \"The surface\" and \"darkens first.\" Size about 100px at 1672px width, exquisite fine kerning, not bold. Under it a small 16px sentence \"A cooling crust. A living interior.\" positioned at x=6%, y=48%. The fine diagonal hot boundary of the source remains uncovered across lower right. Bottom left chapter identifier \"04 / 09\" plus \"SKIN\", subtle small type with spacing. Bottom right an understated flat text button \"Hold to cool\" with a tiny round outline plus-sign icon and a thin horizontal progress line beneath, no pill/no box. A nine-step fine vertical progress rail sits at far right near y=40-65%, fourth step white. No other copy, no stats, no boxes, no fake scientific readings. Clean open composition, black surface takes most of frame. Everything readable with wide margins. Use neo-grotesk typography akin Archivo, visually consistent with MAGMA hero and GLASS concept.",
+      "promptSha256": "238670d0c5cdf36e416f424caf067cb77f2a593f4d8132eac6ea7ecb1a8631bb",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "docs/concepts/skin.webp"
+      ],
+      "referenceRecordIds": [
+        "asset-skin-v1"
+      ],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "concept-mobile",
+      "sourceRecordGroup": "final-prompts",
+      "generator": "OpenAI built-in image generation",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Reformat the supplied MAGMA desktop website hero into a refined mobile website first viewport concept, portrait 9:19.5, actual full phone viewport design without phone mockup or bezel. Preserve the exact art direction, this exact black basalt monolith and its single orange fissure. Recompose crop so the glowing seam stays visible in middle-right of mobile frame, rock fills the screen, dark negative space above, not a new object. Small \"MAGMA\" at top left, \"Index\" and \"Sound off\" top right spaced compactly. At y=65% giant but fully visible one-line \"MAGMA\" spanning 90% screen width with balanced side margins, bold mineral-white grotesk Archivo-like type. Directly below smaller two-line title \"Stone before\" / \"stone.\" Only this subtitle can wrap. At bottom left small \"A study of matter\" / \"becoming still.\" At bottom right a thin drawn down arrow and the text \"Begin the descent\". Tiny \"01 / 09\" \"PRESSURE\" in quiet space above bottom actions if room permits. Clear readable all text, accessible spacing and unobstructed material art, no card, no pills, no navigation grid, no border, no extra labels. Respect safe areas. Black dominates. No orange background, no gaming effects.",
+      "promptSha256": "3752bc37b6cbde7b60c2725c155c571c909ff3bb06ed5608729de95fabf88082",
+      "nativeDimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "docs/concepts/mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "concept-hero-v2"
+      ],
+      "evaluation": "",
+      "originalSelectedFlag": true
+    },
+    {
+      "id": "asset-molten-v1",
+      "sourceRecordGroup": "hot-assets",
+      "generator": "Built-in image_gen__imagegen",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: photorealistic-natural.\nAsset type: high-resolution photographic key visual for an immersive digital material sculpture. Output a single full-bleed 16:9 landscape image, ideally 2560 by 1440 or higher, without any letters, labels, graphics, UI or border.\nPrimary request: an extreme close view of genuinely MOLTEN ROCK while its luminous interior is being pulled into two thick slowly folding viscous lobes. This is not a solid rock with cracks: it is a heavy half-liquid mass, with a continuous stretched dark-red skin wrapping around a thick incandescent fold. Think extremely viscous melted black glass carrying its enormous weight under gravity, a quiet arrested ooze, rounded swollen shoulders, a hot fold curling over itself at center-right. Large flowing forms rather than many little crust tiles.\nComposition: panoramic close camera, low grazing three-quarter angle. The massive molten fold fills the right two thirds, approaching monumental sculpture scale, cropped beyond the frame. One restrained long red-orange crease along the folded inner lip exposes a near-white hot sliver. Top and left fade into rich volcanic-black surroundings. The lower-left quarter should naturally stay very dark, almost silent, with broad smooth shadow for later typography; do not render typography. No horizon or landscape.\nMaterial and light: 78-85 percent of the image is charcoal/obsidian-black/dark burgundy, but shadow carries exquisite tactile detail. A surface that feels thick, glossy in tiny grazing areas, stretched and fluid; a very thin blackening skin, not a network of dry cracks. The exposed hot inner fold glows internally from deep oxblood red to ember orange with a tiny yellow-white center, casting short-range warm light only on adjacent folds. Subtle neutral side light defines the dense black shoulders. Pin-sharp real geological macro photography, controlled high dynamic range, museum-grade large format still life, black mineral realism.\nConstraints: no flames, no eruptions, no smoke, no sparks, no particles, no landscapes, no planet, no stars, no red background, no neon bloom, no web of glowing cracks, no rocks floating, no waterlike splash, no thin liquid ribbons, no game VFX, no lava-shader-demo texture, no illustration or fantasy. A physically convincing thick fluid, dark outside and dangerously hot inside.",
+      "promptSha256": "b7a5b8deaa690be766488b3908323eedbd0f094b8b48a315d1f43b08189b5938",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/molten.webp",
+        "assets/materials/molten-mobile.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "Selected v1. Convincing thick, weighty curling molten lobes with a continuous hot inner fold. Highly detailed black skin has strong viscosity cues; left-lower natural dark region supports copy. More internal heat than skin/crack is intentional for narrative peak. No landscape, particles, flames or game-shader patterns.",
+      "selectedVersion": "v1"
+    },
+    {
+      "id": "asset-skin-v1",
+      "sourceRecordGroup": "hot-assets",
+      "generator": "Built-in image_gen__imagegen",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: photorealistic-natural.\nAsset type: high-resolution photographic key visual for an immersive digital material sculpture. A single full-bleed 16:9 landscape image, ideally 2560 by 1440 or higher, absolutely no text, labels, typography, border or UI.\nPrimary request: directly overhead intimate geological macro photography of freshly cooling basaltic lava SKIN. A broad almost flat expanse of heavy black lava crust fills the entire image, cropped at all edges. A distinct cooling front travels diagonally from upper-left toward lower-right. Upper-left is older deeply black, dense, cooled surface with real fine pores; lower-right is newly blackened stretched thin skin with subtle broad rounded wrinkles. The entire image is dark, quiet and physically tactile.\nComposition: clear restrained graphic order. Just four or five large curving plates of skin separated by narrow, uneven, red-orange seams, oriented mainly along one diagonal cooling boundary; avoid a spiderweb and avoid dry cracked earth. The plates feel pliable and slightly folded, not angular paving stones. Tiny pores and subtle nested wrinkles in the foreground, a little glassy reflection on black ridges. Leave a generous broad dark region in the upper-left with restrained surface detail, suitable for readable later overlay.\nLight and palette: 85 percent volcanic black, obsidian black and graphite, at most a few percent restrained hot seams. Fine black details should be legible in very soft cool neutral raking illumination. Interior heat exposes only thin ember red lips between thick black crust plates; small near-white core at one short point where newest skin separates. Heat lights only millimeters of adjacent crust. Photorealistic large format macro photography, rich real mineral texture, dense tonal blacks without crushing to featureless flat black, dramatic but calm.\nConstraints: no volcanic landscape, no flames, no smoke, no particles, no molten river, no orange ocean, no disaster imagery, no polygons, no crystalline blue, no neon web, no fantasy or gaming lava shader look, no CGI plastic. This image shows believable formation of cooling skin with a clear surface progression, not a collection of broken dry rocks.",
+      "promptSha256": "b83ecc351b9ead8a18e0867ef6a5c5817fe15905ea76d1bed26636a043e4ce62",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/skin.webp",
+        "assets/materials/skin-mobile.webp"
+      ],
+      "referenceRecordIds": [],
+      "evaluation": "Selected v1. Broad older porous black skin against younger wrinkled thin skin. A legible diagonal cooling boundary creates a clear large-scale graphic composition; thin hot seam remains subordinate. Neutral surface highlights are a little stronger than molten, useful for showing cooling texture; dim subtly in runtime if needed.",
+      "selectedVersion": "v1"
+    },
+    {
+      "id": "asset-crack-v1",
+      "sourceRecordGroup": "hot-assets",
+      "generator": "Built-in image_gen__imagegen",
+      "status": "rejected",
+      "selectedForDelivery": false,
+      "prompt": "Use case: photorealistic-natural.\nAsset type: high-resolution photographic key visual for a digital exhibition about hot rock becoming stone. Single full-bleed wide 16:9 image, ideally 2560 by 1440 or higher. No text, no UI, no borders or diagram markings.\nPrimary request: a nearly flat, monumental macro surface of almost black basalt has quietly contracted and split. Two giant uninterrupted black stone faces fill the frame. A SINGLE VERY THIN wandering vertical fissure sits at about 62 percent of the width, extending from the upper to the lower edge. This is a close flat fracture face, not a whole freestanding rock, not a monolith in a studio. The crack is irregular, physically broken and uneven with just THREE or FOUR small short side branches. The broad masses on either side stay continuous and solid, offering extraordinarily strong restrained graphic composition.\nMaterial: true black fine-grained rough basalt, dense stone with minute pits and soft subtle ridges. The left black face is wide and restrained, not cluttered. The right face is slightly more sharply illuminated by a very dim neutral raking light. No landscape, no horizon. The hairline gap exposes pressurized interior heat: a tiny near-white warm sliver deep in the core, then a very narrow orange lip and deeper red short-distance glow on physical fractured inner walls. Glow falls off within millimeters; there must not be any halo across the surface.\nAesthetic: contained violence, blackness holding internal fire, luxurious severe material photography, full natural geological truth, fine photographic detail, 90 percent volcanic black and graphite, heat less than 2 percent area. Dramatic graphic force comes from a single thin seam and black weight, not brightness.\nAvoid: lightning bolts, neon line, luminescent paint, laser cut, circuit traces, decorative glowing lines, spiderweb cracks, shattered rubble, dry cracked ground, lava river, visible volcano, smoke, fire, sparks, particles, fantasy CGI or game texture. The heat belongs inside the dark stone and only briefly peeks out.",
+      "promptSha256": "3acf7c9d15404686c6bd69bdd8d82be709833cb5125d2e1f62ed29c089f77e99",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [],
+      "referenceRecordIds": [],
+      "evaluation": "Too much exterior fill light, comparatively grey surface; v2 improves black density.",
+      "usedAsReferenceFor": [
+        "asset-crack-v2"
+      ]
+    },
+    {
+      "id": "asset-crack-v2",
+      "sourceRecordGroup": "hot-assets",
+      "generator": "Built-in image_gen__imagegen",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Edit this photographic geological surface asset. Preserve exactly the two large stone masses, nearly vertical thin fissure at x=62%, its tiny side branches, the flat macro framing, real pits and rough mineral texture, and the 16:9 composition. Change only the lighting: reduce the broad exterior neutral fill light by about one photographic stop so the black basalt becomes richer, denser, nearly black while the fine grain remains visible. Preserve a tiny warm ivory incandescent core deep inside the fissure and extremely narrow red-orange inner walls. Make the glowing core slightly finer and more continuous; eliminate broad yellow patches. No halo, no orange surface wash. A severe quiet black-on-black geological photograph with one thin physically real internal ember. Retain material realism and natural textures. No text, no UI, no frame. Please render at 2560x1440 or higher if possible; keep this exact composition.",
+      "promptSha256": "13bf3ef4492952b910bc4447c2192b4a903d4f1f07b419466532c40619eb1120",
+      "nativeDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/crack.webp",
+        "assets/materials/crack-mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "asset-crack-v1"
+      ],
+      "evaluation": "Selected v2 over v1. First image had overly strong exterior neutral fill and a broad yellow hot patch. Targeted refinement deepened the volcanic blacks, retained grain, reduced the broad hot patch, and kept one severe restrained seam. V2 is more consistent with contained internal heat. Not a whole rock or hero monolith.",
+      "initialPromptRecordId": "asset-crack-v1",
+      "selectedVersion": "v2"
+    },
+    {
+      "id": "asset-pressure-mobile-v1",
+      "sourceRecordGroup": "mobile-assets",
+      "generator": "Built-in image_gen__imagegen, image edit mode",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: precise-object-edit.\nEdit target: the supplied portrait mobile concept image. Produce the clean production photographic background asset that was behind its UI.\nChange ONLY this: remove absolutely all text, logos, numerals, typography, captions, navigation items, the arrow, and every other interface mark. Specifically erase the top-left MAGMA logo, top-right Index and Sound off, giant MAGMA title, Stone before. stone. subtitle, bottom study caption, 01 / 09, PRESSURE, Begin the descent and down arrow. Inpaint the removed regions with the natural underlying basalt texture or black background, seamlessly.\nStrict invariants: keep exactly the same original portrait aspect ratio, canvas dimensions, camera, composition, crop, rock shape, rock position, angle, deep black background at the top, large rugged basalt face, all surface texture, existing lighting, and narrow glowing orange/white fissure following its same path. Keep the rock and fissure at exactly the same image coordinates. Do not move, rotate, crop, resize, zoom, recolor, relight or redesign the object. This is interface removal only.\nOutput: one extremely detailed photorealistic portrait basalt monolith with internal fire and upper black negative space. No writing, symbols, UI, borders, watermark or additional objects anywhere.",
+      "promptSha256": "891ba8766586a2b65a9061bffcb7c767c41780566359b9064210ef3009e0c8ac",
+      "nativeDimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/pressure-mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "concept-mobile"
+      ],
+      "evaluation": "Visually inspected before subsequent edit. All lettering, numerals, arrow and interface removed. Original portrait composition, upper black negative space and rock silhouette retained; hot fissure remains along the same path. Generated fill reconstructs natural rock and fissure where giant title previously hid them."
+    },
+    {
+      "id": "asset-sealed-mobile-v1",
+      "sourceRecordGroup": "mobile-assets",
+      "generator": "Built-in image_gen__imagegen, image edit mode",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: precise-object-edit.\nEdit target: the supplied clean portrait photographic basalt image. Create the final SEALED, completely cooled material state as an exact matching image for a smooth crossfade.\nChange ONLY the thermal state of the existing seam: turn every incandescent white, yellow, orange, and red part of the fissure completely black. The lava within has fully solidified and contracted into a closed dark mineral trace. Preserve the exact wandering path of the seam, but make it a subtle black-on-black healed line with very shallow cool graphite mineral detail, no open luminous gap. Remove every warm reflection and every orange or red cast on the adjacent inner walls. There must be zero remaining glow or warm coloration anywhere, including top entrance, center, the lower-right bright stretch and the right image edge.\nStrict invariants: keep exactly the same portrait aspect ratio and canvas dimensions, exact rock silhouette, exact camera, crop, rock position, huge rugged basalt face, original black empty area at the top, all rough pores and ridges outside the seam, and the existing cool neutral grazing light on the stone. No changing object coordinates, no rotation, no zoom, no new object, no added smoke, no background change. Let only the inner heat become cooled black stone. Dark, dense, quiet material; fine surface texture still visible in neutral light.\nOutput a single matching production photograph. No text, symbols, interface, border or watermark.",
+      "promptSha256": "951170ce437e766e2de9b1c01b32ebfa068bd270a04d100943b9dcf0ef65c99e",
+      "nativeDimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/sealed-mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "asset-pressure-mobile-v1"
+      ],
+      "evaluation": "Visually inspected. Entire seam and nearby reflection cooled to neutral black/graphite with no remaining visible red/orange/white incandescent area. Global rock composition, silhouette, canvas size and seam path match pressure-mobile. Fine local surface texture varies slightly as expected of a generative edit; the pair is compositionally aligned rather than pixel-identical."
+    },
+    {
+      "id": "asset-flow-mobile-v1",
+      "sourceRecordGroup": "mobile-refinement-hot",
+      "generator": "Built-in image_gen__imagegen (reference image edits)",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: precise-object-edit.\nRecompose the supplied wide photographic molten-rock asset into a NEW TALL PORTRAIT production plate, 853 x 1844 pixels, approximately 9:19.5 aspect ratio. The final image MUST be portrait, not landscape. Do not rotate or simply crop the source. Use its exact tactile material family and lighting vocabulary to build an intentionally composed vertical image.\nSubject: enormous heavy black molten rock in thick rope-like folded lobes, dense viscous ridges, a continuous narrow meandering orange internal heat path. Preserve the original's pitted cooling skin, restrained glassy grazing highlights, luminous inner fold, weight, and real volcanic photography. This is a close material sculpture, not a volcano, river, product card or landscape.\nCRITICAL LAYOUT: the top 7 percent of the portrait is completely pure black. The entire LEFT 70 percent between 15 and 40 percent of image height is nearly pure black smooth NEGATIVE SPACE with no bright texture, no orange, no rock edge and no object. This precisely reserved area will hold two lines of large white type and one line of smaller type later. Do not render any text. Keep this upper-left void genuinely dark and visually simple.\nPlace the giant thick folds down the RIGHT EDGE and across the LOWER HALF. The rock begins as a narrow black shoulder at the far-right edge around 25-35 percent height, then swells massively into the frame below 45 percent height. The lower 50 percent should be occupied by large sculptural folds and dense tactile crust reaching and cropping beyond the left, right and bottom boundaries. A single narrow hot internal path descends through these lower folds, quietly winding right-to-center-to-right; the strongest tiny incandescent slit is below 55 percent height. Keep hot color under 7 percent of the whole picture, 80-90 percent of the image rich black/graphite, with subtle local black detail and no broad grey/white reflection sheets.\nLighting: contained inner fire, short-range red-orange light only inside fold creases. Minimal cool neutral raking light on the LOWER folds shows real heavy mineral material. The upper copy void must remain black. Museum-grade geological macro photography, extremely high detail, no stylized lava shader.\nAbsolutely no UI, writing, title, letters, numbers, arrows, border or watermark. No flames, smoke, particles, glowing web, fantasy rock, gaming VFX, orange background or waterlike fluid.",
+      "promptSha256": "0180619de596accc97a316c0f5049c2c9ef1855467258ea0c58072a277801404",
+      "nativeDimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/flow-mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "molten-study-v1"
+      ],
+      "evaluation": "Selected first portrait edit after comparing with a targeted refinement. Giant rope-like folds occupy right and lower areas, with a restrained interior hot path. The real headline / description region is clean black and the object retains sculptural scale. The requested broad negative-space region has a tiny bright edge only at its extreme lower-right corner (about x69%, y40%); it is outside the current QA text footprint.",
+      "selectedVersion": "v1",
+      "negativeSpaceInspection": {
+        "requestedRegion": {
+          "x": [
+            0,
+            0.7
+          ],
+          "y": [
+            0.15,
+            0.4
+          ],
+          "fractionOfPixelsWhoseMaxRGBChannelExceeds16": 0.00048688852796157213,
+          "maxChannel99thPercentile": 2
+        },
+        "currentCopyRegion": {
+          "x": [
+            0.04,
+            0.65
+          ],
+          "y": [
+            0.22,
+            0.39
+          ],
+          "maximumRGBChannel": 3
+        },
+        "header": {
+          "y": [
+            0,
+            0.07
+          ],
+          "maximumRGBChannel": 3
+        },
+        "note": "Measurements inspect native image pixels only; final runtime motion/contrast still needs browser QA."
+      }
+    },
+    {
+      "id": "asset-flow-mobile-v2",
+      "sourceRecordGroup": "mobile-refinement-hot",
+      "generator": "Built-in image_gen__imagegen (reference image edits)",
+      "status": "rejected",
+      "selectedForDelivery": false,
+      "prompt": "Edit this portrait production photograph with ONE narrow compositional correction. Preserve the 853x1844 portrait canvas, the large lower molten folds, their texture, the orange inner path, the lower half's material scale, lighting and arrangement.\nThe upper-left negative-space rectangle must be completely clean: from the left image edge to 73 percent of image width, and from the top to 43 percent of image height, keep a uniform natural almost-black backdrop, with no bright rock edge, no highlight, no glow and no texture. In particular remove the small bright stone ridge that currently slightly intrudes near the lower-right corner of this reserved rectangle around x=68-72%, y=39-43%. Recede only that upper rock edge behind the right boundary or below y=45%, naturally continuing the black background; do not cover the image with a visibly rectangular patch.\nKeep the far-right shoulder of the rock outside that rectangle. Keep the bottom 55 percent full of massive viscous black folds and narrow hot inner creases, unchanged in scale. This is a subtle cleanup of the negative space, not a new object, new crop or redesign. The result must remain photographic, beautifully dark, tactile and continuous. No text, labels, UI, borders, symbols or watermark.",
+      "promptSha256": "498a35a5863c892f555415608bd7af6ca89651d3416b8bdb781fe34defd72da0",
+      "nativeDimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [],
+      "referenceRecordIds": [
+        "asset-flow-mobile-v1"
+      ],
+      "evaluation": "Rejected. The edit changed fine texture and emphasized specular sharpness, but did not materially improve the tiny lower-right edge intrusion. V1 has more natural material coherence. Both keep the current actual copy region near black.",
+      "refinementOfRecordId": "asset-flow-mobile-v1",
+      "originalSelectedFlag": false
+    },
+    {
+      "id": "asset-glass-mobile-v1",
+      "sourceRecordGroup": "mobile-refinement-hot",
+      "generator": "Built-in image_gen__imagegen (reference image edits)",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: precise-object-edit.\nRecompose the supplied wide photographic black-obsidian asset into a NEW TALL PORTRAIT production plate, 853 x 1844 pixels, approximately 9:19.5 aspect ratio. Final canvas MUST be portrait. Do not rotate or simply crop the source. Preserve the source's true obsidian material, conchoidal curved fracture, mineral weight, black studio atmosphere and natural sculptural character.\nSubject: one monumental dense black volcanic-glass sculpture, recognizably obsidian, with its large or almost complete outer contour visible. It has beautiful curved shell-like fracture planes and a few precise soft grey-white reflected bands on LOWER curves. It is not chrome, polished metal, plastic or a faceted gemstone. Absolutely no internal heat or warm light.\nCRITICAL LAYOUT: the entire top 7 percent is pure black. The LEFT 85 percent from 18 to 43 percent of image height must be smooth near-pure-black NEGATIVE SPACE, entirely empty of object, grey reflections and texture. This area will later hold a two-line large headline and three lines of small copy; render no text. All upper background is deep black.\nPlace the main obsidian sculpture across the LOWER HALF, from approximately 51 to 93 percent of image height. Its high point can be just right of center at 51 percent height. Give it monumental scale: it occupies almost the full portrait width, with a wide heavy base around 92 percent height and one lower corner gently cropped at the right boundary. Most of the silhouette is visible against black; it must never look like a small e-commerce product isolated at the bottom. Its impressive curved black planes dominate the lower half. Make all pale reflections occur below 57 percent height, exactly along selected long conchoidal curves; leave the upper parts of the rock dark with only thin quiet edge light. A near-black stone floor below may carry the faintest reflection, no pedestal, no rectangle, no product card.\nThe visual thesis is dense black glass discovering reflected light. Natural black material, sharp broken edges, curved fracture, extremely fine geological detail, restrained controlled still-life lighting, warm-neutral black background with neutral white reflections. Create exquisite material photography, not CG metal.\nNo text, numbers, UI, buttons, lines, arrows, borders, watermark or other objects. No orange, red, fire, smoke, particles, blue neon, translucent colored glass or broad white-lit surface.",
+      "promptSha256": "e470ab3dbc1edce32503a60bea649f381fd1d490af13c6ca1d34089ddb5154b9",
+      "nativeDimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/glass-mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "asset-glass"
+      ],
+      "evaluation": "Selected first portrait edit. Near-complete monumental obsidian outline fills the lower half at near-full width, with a slightly cropped lower-right corner. Upper copy region is empty near black. Reflections are restricted to conchoidal planes in the lower portion; no heat or warm light. Source-series glass texture retained without reducing the sculpture to a small product card.",
+      "selectedVersion": "v1",
+      "negativeSpaceInspection": {
+        "requestedRegion": {
+          "x": [
+            0,
+            0.85
+          ],
+          "y": [
+            0.18,
+            0.43
+          ],
+          "maximumRGBChannel": 2,
+          "maxChannel99thPercentile": 1
+        },
+        "header": {
+          "y": [
+            0,
+            0.07
+          ],
+          "maximumRGBChannel": 2
+        },
+        "note": "Measurements inspect native image pixels only; final runtime motion/contrast still needs browser QA."
+      }
+    },
+    {
+      "id": "asset-stone-mobile-v1",
+      "sourceRecordGroup": "mobile-refinement-stone",
+      "generator": "Built-in image_gen__imagegen, image edit mode",
+      "status": "selected",
+      "selectedForDelivery": true,
+      "prompt": "Use case: precise-object-edit.\nAsset type: dedicated portrait mobile material background for chapter CRYSTAL / STONE of MAGMA — Stone Before Stone. Output a VERTICAL 9:19.5 image, ideally the native 853 x 1844 portrait canvas. Change the supplied landscape composition into a deliberately composed portrait; do not retain the landscape aspect ratio.\nInput image: the supplied original AI-generated black basalt macro photograph is the material and visual reference. Preserve its material identity: very dark dense granular basalt, hard irregular fractured faces, fine crystalline grain, sparse tiny natural muted olive-green olivine inclusions and dark pyroxene facets, a few irregular pores. Preserve its severe cool neutral lighting and photographic geological realism. Recompose only the camera/framing and empty space for mobile.\nComposition: the upper 7 percent is uninterrupted nearly pure black for a header. From y=15 to 42 percent, the left 85 percent of the portrait must be quiet near-black negative space without bright texture, rock, inclusions, lines or details. This is deliberately clear space for later HTML typography; DO NOT render any text. The actual huge rock face should dominate the LOWER half, mainly y=55 to 95 percent and extending beyond the bottom and both side edges. Its upper boundary rises gently from the lower-left at about y=65 percent toward the right at about y=49 percent, making a monumental heavy diagonal slope. Only a very subtle far-right dark shoulder may approach y=45 percent. Keep the whole y=15–42 percent text zone empty black. This must still feel like an extreme close material face, not a small isolated stone or a rock placed on a plinth.\nMaterial: use the same convincing hard, compact fine-grained volcanic groundmass with tactile irregular facets as the reference. A few very small embedded olive-green crystals can catch low neutral grazing light in the lower rock area, but must remain subordinate to the black basalt. Fine ash-grey glints reveal local edges and grain without turning the rock pale. Good close-up texture and depth; no soft rubber, no smoothly melted glass, no repeating texture, no giant crystal clusters.\nStrict exclusions: no typography, symbols, numerals, labels, UI or borders anywhere; no glowing cracks, orange, red heat, embers, neon, particles or smoke; no hexagonal columns, pillars, quartz/amethyst, jewelry, gemstones as hero objects, metal, isolated floating rock, volcanic landscape or horizon. The result is a dark, weighty, cold crystalline-stone material plate with clear upper negative space and rich lower-half detail.",
+      "promptSha256": "3b66902550b976ff1f201e0ff5cc03bc11893c59b5d599823725c322f055a521",
+      "nativeDimensions": {
+        "width": 830,
+        "height": 1896
+      },
+      "sourcePngIncluded": false,
+      "deliveredFiles": [
+        "assets/materials/stone-mobile.webp"
+      ],
+      "referenceRecordIds": [
+        "asset-stone"
+      ],
+      "evaluation": "Selected after direct original-size visual inspection against the original STONE material and real mobile QA. The top is nearly pure black; the left title and body-copy zone through roughly 42% height is clear. A large granular basalt slope occupies the lower half, rising toward the right without entering the main upper-left copy zone. Hard irregular mineral grain, dark pores and a few muted olive-green inclusions preserve the original material identity. No lettering, interface, glow, columns, jewelry or added atmospheric effects. Actual native aspect ratio is slightly narrower than the requested ideal, but the dedicated negative-space composition meets the mobile layout intent. No further refinement was necessary for composition.",
+      "selectedVersion": "v1",
+      "requestedWidth": 853,
+      "requestedHeight": 1844
+    }
+  ],
+  "assetManifest": [
+    {
+      "id": "pressure",
+      "src": "assets/materials/pressure.webp",
+      "mobileSrc": "assets/materials/pressure-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 853,
+      "mobileHeight": 1844
+    },
+    {
+      "id": "molten",
+      "src": "assets/materials/molten.webp",
+      "mobileSrc": "assets/materials/molten-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 960,
+      "mobileHeight": 540
+    },
+    {
+      "id": "flow",
+      "src": "assets/materials/flow.webp",
+      "mobileSrc": "assets/materials/flow-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 853,
+      "mobileHeight": 1844
+    },
+    {
+      "id": "skin",
+      "src": "assets/materials/skin.webp",
+      "mobileSrc": "assets/materials/skin-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 960,
+      "mobileHeight": 540
+    },
+    {
+      "id": "crack",
+      "src": "assets/materials/crack.webp",
+      "mobileSrc": "assets/materials/crack-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 960,
+      "mobileHeight": 540
+    },
+    {
+      "id": "glass",
+      "src": "assets/materials/glass.webp",
+      "mobileSrc": "assets/materials/glass-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 853,
+      "mobileHeight": 1844
+    },
+    {
+      "id": "fracture",
+      "src": "assets/materials/fracture.webp",
+      "mobileSrc": "assets/materials/fracture-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 960,
+      "mobileHeight": 540
+    },
+    {
+      "id": "stone",
+      "src": "assets/materials/stone.webp",
+      "mobileSrc": "assets/materials/stone-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 830,
+      "mobileHeight": 1896
+    },
+    {
+      "id": "sealed",
+      "src": "assets/materials/sealed.webp",
+      "mobileSrc": "assets/materials/sealed-mobile.webp",
+      "width": 1672,
+      "height": 941,
+      "mobileWidth": 853,
+      "mobileHeight": 1844
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/concepts/pressure.webp",
+      "role": "selected full-frame UI concept",
+      "generationRecordId": "concept-hero-v2",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Full-frame generated concept encoded to WebP with sharp. UI remains in this design reference only.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 195676,
+      "sha256": "c3138ede81805c648fb7dd1e00b3375ae132acc62644322b8415e14767af5e68",
+      "pixelSha256BeforeProvenancePass": "be6250285540c6be549d161a431d3b55a6700b35e20eb88442570eda5408359b",
+      "pixelSha256AfterProvenancePass": "be6250285540c6be549d161a431d3b55a6700b35e20eb88442570eda5408359b",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "docs/concepts/pressure.webp.json",
+        "bytes": 2000,
+        "sha256": "412036bd686f0cbb10f90f6adde78342726fa6985cc20fc7153075e8056f8a23",
+        "promptSha256": "96155ecf6d09d0216862e697833aa739eb03ad1b825a012b40d6a0a525118881",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "docs/concepts/skin.webp",
+      "role": "selected full-frame UI concept",
+      "generationRecordId": "concept-skin",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Full-frame generated concept encoded to WebP with sharp. UI remains in this design reference only.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 421132,
+      "sha256": "65abfa4538a2cf4531eaa291f27f5c341c82d4646a1ca4ae769f02355ea6d4f9",
+      "pixelSha256BeforeProvenancePass": "ee0e68e631c875d1c049971fd0533b8b9deeb5bec9c50605a343da60bc0c34b7",
+      "pixelSha256AfterProvenancePass": "ee0e68e631c875d1c049971fd0533b8b9deeb5bec9c50605a343da60bc0c34b7",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "docs/concepts/skin.webp.json",
+        "bytes": 1402,
+        "sha256": "5c79fdbce9e0cad1161a9add60b7be07b84f5025b6d6c25b38cdced2f6a407fb",
+        "promptSha256": "238670d0c5cdf36e416f424caf067cb77f2a593f4d8132eac6ea7ecb1a8631bb",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "docs/concepts/glass.webp",
+      "role": "selected full-frame UI concept",
+      "generationRecordId": "concept-glass",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Full-frame generated concept encoded to WebP with sharp. UI remains in this design reference only.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 123798,
+      "sha256": "7f11074908036bf63bee5bf2a879d8c1fdb7cf8ac97bc4405b2525dc9de527fd",
+      "pixelSha256BeforeProvenancePass": "687057d12a6bd287771fae9c8d88f889ae28ae62705a18077a61963912f6050e",
+      "pixelSha256AfterProvenancePass": "687057d12a6bd287771fae9c8d88f889ae28ae62705a18077a61963912f6050e",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "docs/concepts/glass.webp.json",
+        "bytes": 1640,
+        "sha256": "09e2a4df124d47175a3bf61ae6ecb004e4640d5225a491153ea869350d085a10",
+        "promptSha256": "95873f3e3c1a34b0b33857cf4d00b507f117ddb4d793b3c17b4baaade572b237",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "docs/concepts/mobile.webp",
+      "role": "selected full-frame UI concept",
+      "generationRecordId": "concept-mobile",
+      "format": "WebP",
+      "width": 853,
+      "height": 1844,
+      "processing": "Full-frame generated concept encoded to WebP with sharp. UI remains in this design reference only.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 194680,
+      "sha256": "c460541d4e50d370583d37e49d807ceb3ee95c122c4c6555ab59815d8cd05f88",
+      "pixelSha256BeforeProvenancePass": "1dc8b2dc535e993d93d575464f2fb7fbaaec61c55d0d3dc3a88369790053ec78",
+      "pixelSha256AfterProvenancePass": "1dc8b2dc535e993d93d575464f2fb7fbaaec61c55d0d3dc3a88369790053ec78",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "docs/concepts/mobile.webp.json",
+        "bytes": 1271,
+        "sha256": "76f8ed4befa7e3d5f6c4accba63cf6609ffedc5cc967d9856759e496766049c2",
+        "promptSha256": "3752bc37b6cbde7b60c2725c155c571c909ff3bb06ed5608729de95fabf88082",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/pressure.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-pressure",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 317880,
+      "sha256": "70ce6017447a0c0430e56b3d18b65c462bf93d09540a8246965cb6ae3f94dfc8",
+      "pixelSha256BeforeProvenancePass": "96c520ca80a26fd8b1edfeeccd627b2e1fe246b3a2055641d6095dda2f46429c",
+      "pixelSha256AfterProvenancePass": "96c520ca80a26fd8b1edfeeccd627b2e1fe246b3a2055641d6095dda2f46429c",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/pressure.webp.json",
+        "bytes": 867,
+        "sha256": "dbfb0a3475ca2c2c7ff5bab6fa908999da4e284e04d0c6c74d166e051ae14780",
+        "promptSha256": "b0634a660224c665ab1ad4d8dd2aee87a96ee613eb3cc677fff83c1af67a4bd4",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/pressure-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-pressure-mobile-v1",
+      "format": "WebP",
+      "width": 853,
+      "height": 1844,
+      "processing": "Separate portrait generative edit encoded to WebP with sharp; native 853 x 1844 canvas retained.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 263404,
+      "sha256": "e77210ac00e47788d631d43f0fda8e2e881caff1429be5ac47bb3834e42c0a01",
+      "pixelSha256BeforeProvenancePass": "a3b69f353795bd56f4010c75954a7d9d361973a66c7c406b2ebabc37dc355e7f",
+      "pixelSha256AfterProvenancePass": "a3b69f353795bd56f4010c75954a7d9d361973a66c7c406b2ebabc37dc355e7f",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/pressure-mobile.webp.json",
+        "bytes": 1380,
+        "sha256": "4497bef1c9d7cef663df3453b932d857e3b891c8d4e147455450aaa49680f38d",
+        "promptSha256": "891ba8766586a2b65a9061bffcb7c767c41780566359b9064210ef3009e0c8ac",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/molten.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-molten-v1",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 431878,
+      "sha256": "f572205471a2b5a8c9705eb7b290be008307408ad27e9771c8a7872d96d300fa",
+      "pixelSha256BeforeProvenancePass": "b5a4cf304b7833c3061bc089493d05810a278a844be2506cace36e59b02070cf",
+      "pixelSha256AfterProvenancePass": "b5a4cf304b7833c3061bc089493d05810a278a844be2506cace36e59b02070cf",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/molten.webp.json",
+        "bytes": 2412,
+        "sha256": "ebea9362a7f945207bc0b22cd760cbca0a2d18cac07a04e983eb7501a36326b0",
+        "promptSha256": "b7a5b8deaa690be766488b3908323eedbd0f094b8b48a315d1f43b08189b5938",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/molten-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-molten-v1",
+      "format": "WebP",
+      "width": 960,
+      "height": 540,
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 133614,
+      "sha256": "0f2c06abfd8287311cf35cadb73796d0e150d5c8b7b33680b66e1e7d24dd4737",
+      "pixelSha256BeforeProvenancePass": "92c44517ed8c569d6207b20b7d8d290facc58819910c22f0b5cfd782a1b9a196",
+      "pixelSha256AfterProvenancePass": "92c44517ed8c569d6207b20b7d8d290facc58819910c22f0b5cfd782a1b9a196",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/molten-mobile.webp.json",
+        "bytes": 2412,
+        "sha256": "3933a68126b2567294814cc56ca16a2763f6f195324d495b4c55f2ed69a3c7dc",
+        "promptSha256": "b7a5b8deaa690be766488b3908323eedbd0f094b8b48a315d1f43b08189b5938",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/flow.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "molten-study-v1",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 441998,
+      "sha256": "5c1ecdc150b88913a797cc8582a29dad58ecd3c70446716d93f4edbbb8d13d3d",
+      "pixelSha256BeforeProvenancePass": "5ea5dec90c9ed59e800aa45368fae9edaf4dfb9106052e4c58b94f59f27cc02a",
+      "pixelSha256AfterProvenancePass": "5ea5dec90c9ed59e800aa45368fae9edaf4dfb9106052e4c58b94f59f27cc02a",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/flow.webp.json",
+        "bytes": 1430,
+        "sha256": "d0f044a04b9c6fa9652413ffd8ea7e254872ea6a546a7c7095e7d56133149c36",
+        "promptSha256": "7bff07d77de532f7763ddb1e7136bf1b91bc48e7afe98f54e8197753601173d5",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/flow-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-flow-mobile-v1",
+      "format": "WebP",
+      "width": 853,
+      "height": 1844,
+      "processing": "Dedicated portrait generation/edit after real mobile QA; native-size WebP encoding with sharp, quality 91, effort 6. No resizing or cropping.",
+      "encoding": {
+        "tool": "sharp",
+        "format": "WebP",
+        "quality": 91,
+        "effort": 6,
+        "resize": false
+      },
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 298066,
+      "sha256": "340d17a0bbd46faefa94be114fae6508c63675e040e1ba38963a09fd3e265cf0",
+      "pixelSha256BeforeProvenancePass": "8ca408cd2eee6707db3bea20bb112de7f3241c81bfdd2a5619220d0335e5bfc2",
+      "pixelSha256AfterProvenancePass": "8ca408cd2eee6707db3bea20bb112de7f3241c81bfdd2a5619220d0335e5bfc2",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/flow-mobile.webp.json",
+        "bytes": 2515,
+        "sha256": "d2d553829c17e817cd0be5db44aef584a5e757635cc5083741cfd564fa079f08",
+        "promptSha256": "0180619de596accc97a316c0f5049c2c9ef1855467258ea0c58072a277801404",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/skin.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-skin-v1",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 749018,
+      "sha256": "c25b827c6cba8c6d1228990c718e476548c2aa4a2aa08f3b4eabd1bbbb35e80a",
+      "pixelSha256BeforeProvenancePass": "6ae4e6b36bf2baee40dc2c4587481df31d0a0f488ac56a471a0b1c1f0653ccdf",
+      "pixelSha256AfterProvenancePass": "6ae4e6b36bf2baee40dc2c4587481df31d0a0f488ac56a471a0b1c1f0653ccdf",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/skin.webp.json",
+        "bytes": 2283,
+        "sha256": "f44b99754ebd73def0eaa7632b22793e9ed3d4a335545c803423b9d1bd4eb709",
+        "promptSha256": "b83ecc351b9ead8a18e0867ef6a5c5817fe15905ea76d1bed26636a043e4ce62",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/skin-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-skin-v1",
+      "format": "WebP",
+      "width": 960,
+      "height": 540,
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 199680,
+      "sha256": "010956147cf02b8b876eb990258c1dc125388fe688d73b3073153bf2667aa972",
+      "pixelSha256BeforeProvenancePass": "33ec5549a2701ad43ade0954498ce3ae852a803a894237ed27a18c0888505523",
+      "pixelSha256AfterProvenancePass": "33ec5549a2701ad43ade0954498ce3ae852a803a894237ed27a18c0888505523",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/skin-mobile.webp.json",
+        "bytes": 2283,
+        "sha256": "15ec17af5f0d0abe90e02a69adce9e4983a49e0213c6e12bdb94449197b21827",
+        "promptSha256": "b83ecc351b9ead8a18e0867ef6a5c5817fe15905ea76d1bed26636a043e4ce62",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/crack.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-crack-v2",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 436582,
+      "sha256": "e529e1a60606aa209832e9e906cbd42d235d532d14c9c4c343d8019076bd63ba",
+      "pixelSha256BeforeProvenancePass": "30fd17d9f9994ff9e01d83611a8eb32b00f6e77cf5f4d24cca7245b4cd6e9bf8",
+      "pixelSha256AfterProvenancePass": "30fd17d9f9994ff9e01d83611a8eb32b00f6e77cf5f4d24cca7245b4cd6e9bf8",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/crack.webp.json",
+        "bytes": 987,
+        "sha256": "c3425374bf4e9821db4623039f0e5474172f5e8817ed3d20c7aaff33e8eb5e95",
+        "promptSha256": "13bf3ef4492952b910bc4447c2192b4a903d4f1f07b419466532c40619eb1120",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/crack-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-crack-v2",
+      "format": "WebP",
+      "width": 960,
+      "height": 540,
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 131042,
+      "sha256": "9499b5a4fecd34836898206e92b8af731665875842232efbf0cfcd9da3c1b18a",
+      "pixelSha256BeforeProvenancePass": "0610e54f4505e21928188504175d6e0f6453f181f96365c4918b28bd62588818",
+      "pixelSha256AfterProvenancePass": "0610e54f4505e21928188504175d6e0f6453f181f96365c4918b28bd62588818",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/crack-mobile.webp.json",
+        "bytes": 987,
+        "sha256": "057fcb10bc123a6f413a69196b28effa9fcf195a450c47cbb55eae68c588972a",
+        "promptSha256": "13bf3ef4492952b910bc4447c2192b4a903d4f1f07b419466532c40619eb1120",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/glass.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-glass",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 144844,
+      "sha256": "e1aee978426199de3232395cb44309ceb2cc49f8c49be39fc49d34ff5cb6e056",
+      "pixelSha256BeforeProvenancePass": "31c7e14876fef2e2ff1384799cfe8b3a088ed71b5948179353dc92eef989751c",
+      "pixelSha256AfterProvenancePass": "31c7e14876fef2e2ff1384799cfe8b3a088ed71b5948179353dc92eef989751c",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/glass.webp.json",
+        "bytes": 816,
+        "sha256": "ba3eb3ff1354350d82721ece64a94a5769c836db7ca146a1047ec0a8eb3f0d72",
+        "promptSha256": "6ba6e0175ccbb99baad267dc291507e110e4b7cb8d3695a6e1a779c0f9481e58",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/glass-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-glass-mobile-v1",
+      "format": "WebP",
+      "width": 853,
+      "height": 1844,
+      "processing": "Dedicated portrait generation/edit after real mobile QA; native-size WebP encoding with sharp, quality 91, effort 6. No resizing or cropping.",
+      "encoding": {
+        "tool": "sharp",
+        "format": "WebP",
+        "quality": 91,
+        "effort": 6,
+        "resize": false
+      },
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 117466,
+      "sha256": "337c472ec357952d235068b3ecbb9cc4ccfe933028203335fcdb0ea156b15669",
+      "pixelSha256BeforeProvenancePass": "a4774cef7e6ee08bbafa0eb0446bccf39bed8d33734e2d6110738311064343c9",
+      "pixelSha256AfterProvenancePass": "a4774cef7e6ee08bbafa0eb0446bccf39bed8d33734e2d6110738311064343c9",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/glass-mobile.webp.json",
+        "bytes": 2528,
+        "sha256": "120f38a779c6b880c31a5d1c6f8ffa5b672fef20f7c2aae739b169ce95b004b5",
+        "promptSha256": "e470ab3dbc1edce32503a60bea649f381fd1d490af13c6ca1d34089ddb5154b9",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/fracture.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-fracture",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 167672,
+      "sha256": "dac51f931561d361d09d4cadc5607b2559cfb7bf70beb1a390565d6dde4d090b",
+      "pixelSha256BeforeProvenancePass": "aabeb9910e9024422f3f5a781e1ee6eeba24e16b72e8a70320afb498c712c8d1",
+      "pixelSha256AfterProvenancePass": "aabeb9910e9024422f3f5a781e1ee6eeba24e16b72e8a70320afb498c712c8d1",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/fracture.webp.json",
+        "bytes": 1371,
+        "sha256": "5fcdba4f4ba8082f106f66d58914520dccc74ca8c8f8a148e82722216ec38b7d",
+        "promptSha256": "5dea5d6a130612d4ab28f031ad0de5f3df5227414f4a836d423f3bac19272c8b",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/fracture-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-fracture",
+      "format": "WebP",
+      "width": 960,
+      "height": 540,
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 52662,
+      "sha256": "e8289c70a4ce3d12dce4a6df1c73d83cacaf1cb35e0ee6aacd6385ff5a003066",
+      "pixelSha256BeforeProvenancePass": "37c856e57fe032447887e21ae2fec092563cde59f3e50dc283405c54241f41b6",
+      "pixelSha256AfterProvenancePass": "37c856e57fe032447887e21ae2fec092563cde59f3e50dc283405c54241f41b6",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/fracture-mobile.webp.json",
+        "bytes": 1371,
+        "sha256": "69b7fee315bf8f3e17f43d0e3023c38f6e7cad88576dbe04526131727365fdc0",
+        "promptSha256": "5dea5d6a130612d4ab28f031ad0de5f3df5227414f4a836d423f3bac19272c8b",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/stone.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-stone",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 435752,
+      "sha256": "383ee62cef82599baf5183c8b5c93554e50992c029bf0a8700e446b8e8ced5a9",
+      "pixelSha256BeforeProvenancePass": "5c9d03c08448d1c9bfc6601c1873b421c2764c204abc4717aafa3c758ad3b8e5",
+      "pixelSha256AfterProvenancePass": "5c9d03c08448d1c9bfc6601c1873b421c2764c204abc4717aafa3c758ad3b8e5",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/stone.webp.json",
+        "bytes": 1354,
+        "sha256": "65b89695bf70b9748a50f3a7980c7d39e0ab643d887506c454f38e9bcf1f2510",
+        "promptSha256": "f540d0ad7f07d4dca54183d92b175dd9ae9f30d7152814ea55e189a1d6e53ff2",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/stone-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-stone-mobile-v1",
+      "format": "WebP",
+      "width": 830,
+      "height": 1896,
+      "processing": "Dedicated portrait generation/edit after real mobile QA; native-size WebP encoding with sharp, quality 91, effort 6. No resizing or cropping.",
+      "encoding": {
+        "tool": "sharp",
+        "format": "WebP",
+        "quality": 91,
+        "effort": 6,
+        "resize": false
+      },
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 274626,
+      "sha256": "64f05906fc524114d963ee39ff9f46488716c9ea83099fe87e6603fc1e617a58",
+      "pixelSha256BeforeProvenancePass": "16d2f004c8a0341dc212b6585491f0eb139625939d644b90db834e94d8d901a3",
+      "pixelSha256AfterProvenancePass": "16d2f004c8a0341dc212b6585491f0eb139625939d644b90db834e94d8d901a3",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/stone-mobile.webp.json",
+        "bytes": 2683,
+        "sha256": "fc4dd4a4ac3c052684961b9e970fd06af071c661d9eec94a0f29ca4a627c0069",
+        "promptSha256": "3b66902550b976ff1f201e0ff5cc03bc11893c59b5d599823725c322f055a521",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/sealed.webp",
+      "role": "desktop material plate",
+      "generationRecordId": "asset-sealed",
+      "format": "WebP",
+      "width": 1672,
+      "height": 941,
+      "processing": "Native generated PNG encoded to WebP with sharp; no artificial upscaling.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 282128,
+      "sha256": "b4e039bc5255a6aebc2057bbb33256030ce259eb8697b8d92ef662327481382f",
+      "pixelSha256BeforeProvenancePass": "ed0b2dbad6bf0696c9ae73869a38f216bca74d416d76bcff44991f9bf9f894a8",
+      "pixelSha256AfterProvenancePass": "ed0b2dbad6bf0696c9ae73869a38f216bca74d416d76bcff44991f9bf9f894a8",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/sealed.webp.json",
+        "bytes": 968,
+        "sha256": "e56e0067a6d7f4144519f6676e716e8091fc365c997a06291efda498eaa2d7c1",
+        "promptSha256": "a05a3c58142803a7a5de8c6fa75347f4c5e18404a56ea9290ee035ba517cf411",
+        "promptMatchesGenerationRecord": true
+      }
+    },
+    {
+      "path": "assets/materials/sealed-mobile.webp",
+      "role": "mobile material plate",
+      "generationRecordId": "asset-sealed-mobile-v1",
+      "format": "WebP",
+      "width": 853,
+      "height": 1844,
+      "processing": "Separate portrait generative edit encoded to WebP with sharp; native 853 x 1844 canvas retained.",
+      "integrityStatus": "verified: image dimensions, container bytes/hash, unchanged decoded RGB pixels, and exact sidecar prompt",
+      "bytes": 252032,
+      "sha256": "0a7ef33e0094ea2871f5a1dc2acc8bfd0066ffa879927699ea8e0b1258fcc204",
+      "pixelSha256BeforeProvenancePass": "b0fef0180346b187965716ab0f477e8e57d8af50d1d9ef66137048ca4e1cf1e5",
+      "pixelSha256AfterProvenancePass": "b0fef0180346b187965716ab0f477e8e57d8af50d1d9ef66137048ca4e1cf1e5",
+      "pixelsUnchangedByProvenancePass": true,
+      "promptSidecar": {
+        "path": "assets/materials/sealed-mobile.webp.json",
+        "bytes": 1555,
+        "sha256": "4ce42562f7dc40b9fb757aea2775ccce99612cc6ec5af36a851598ae92b66226",
+        "promptSha256": "951170ce437e766e2de9b1c01b32ebfa068bd270a04d100943b9dcf0ef65c99e",
+        "promptMatchesGenerationRecord": true
+      }
+    }
+  ],
+  "thirdPartyAssets": [
+    {
+      "name": "Archivo",
+      "distributionPackage": "@fontsource-variable/archivo",
+      "packageVersion": "5.3.0",
+      "versionMeaning": "npm distribution package version, not the embedded font design/version identifier",
+      "upstreamFile": "files/archivo-latin-wght-normal.woff2",
+      "localFile": "assets/fonts/archivo-latin-variable.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/Archivo-OFL.txt"
+    },
+    {
+      "name": "Lenis",
+      "distributionPackage": "lenis",
+      "packageVersion": "1.3.26",
+      "localFiles": [
+        "vendor/lenis.mjs",
+        "vendor/lenis.css"
+      ],
+      "license": "MIT",
+      "licenseFile": "licenses/Lenis-MIT.txt"
+    }
+  ],
+  "supersededArtifacts": [
+    {
+      "id": "flow-mobile-downsampled-v1",
+      "status": "replaced",
+      "fileIncluded": false,
+      "formerDeliveryPath": "assets/materials/flow-mobile.webp",
+      "formerGenerationRecordId": "molten-study-v1",
+      "width": 960,
+      "height": 540,
+      "bytes": 143850,
+      "sha256": "f630c73eed8c8eb6ca547b88b1d41eb1e994e31a59a92c12f6a0db34add9aa57",
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "replacedByGenerationRecordId": "asset-flow-mobile-v1",
+      "reason": "Real mobile browser QA exposed material/detail or reflections behind the copy; replaced by a dedicated portrait composition with authored upper negative space. The former path is reused by the replacement, not a link to this omitted version."
+    },
+    {
+      "id": "glass-mobile-downsampled-v1",
+      "status": "replaced",
+      "fileIncluded": false,
+      "formerDeliveryPath": "assets/materials/glass-mobile.webp",
+      "formerGenerationRecordId": "asset-glass",
+      "width": 960,
+      "height": 540,
+      "bytes": 46606,
+      "sha256": "5306be9802fec1d778d389427f6f2e7bbc5f3c35c6d800f52fd4ae743b7f5e87",
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "replacedByGenerationRecordId": "asset-glass-mobile-v1",
+      "reason": "Real mobile browser QA exposed material/detail or reflections behind the copy; replaced by a dedicated portrait composition with authored upper negative space. The former path is reused by the replacement, not a link to this omitted version."
+    },
+    {
+      "id": "stone-mobile-downsampled-v1",
+      "status": "replaced",
+      "fileIncluded": false,
+      "formerDeliveryPath": "assets/materials/stone-mobile.webp",
+      "formerGenerationRecordId": "asset-stone",
+      "width": 960,
+      "height": 540,
+      "bytes": 138006,
+      "sha256": "14d31f107bdbe940c58b8ced01eeead7bd74440b584b7674709615daba5b9d9d",
+      "processing": "Desktop plate downsampled to 960 x 540 and encoded to WebP with sharp.",
+      "replacedByGenerationRecordId": "asset-stone-mobile-v1",
+      "reason": "Real mobile browser QA exposed material/detail or reflections behind the copy; replaced by a dedicated portrait composition with authored upper negative space. The former path is reused by the replacement, not a link to this omitted version."
+    }
+  ],
+  "artifactIntegrityStatus": "complete: 22 WebP rasters and 22 provenance sidecars verified; image pixels and containers were not modified by sidecar creation",
+  "integrityVerifiedOn": "2026-10-07"
+}

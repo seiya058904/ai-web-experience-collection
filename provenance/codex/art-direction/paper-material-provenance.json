@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "prompt": "Use case: product-mockup. Production PBR material albedo texture only, square 1024x1024 or 1536x1536. A perfectly flat frontal macro scan of luxurious uncoated ivory book paper, dense refined cotton rag with subtly visible interlocked pale cellulose fibres and very tiny pores. Surface should feel smooth and pressed with fine tactile fibers, NOT felt, handmade rough cardboard, crumpled paper, a napkin or fabric. Warm creamy bone near #eee6d1, extremely subtle low contrast longer fibres at varying angles, a natural exceptionally finely detailed material to map onto a folded paper model. Absolutely uniform diffuse neutral illumination, no highlight, no directional shadow, no vignette, no gradient, no fold, no edges, no page silhouette, no border, no typography, no text, no watermark. An edge-to-edge seamless texture. Contemporary museum publishing material photographed with restrained realism.",
+  "source": "/workspace/scratch/cb0fcf985649/generated_images/exec-63db7d44-0881-4917-90d7-9e02d8365994.png",
+  "original": "assets/ai-final/paper-albedo.png",
+  "runtime": "public/textures/paper-albedo.webp",
+  "processing": "ffmpeg WebP quality 95, resized to 1024x1024; no semantic editing",
+  "purpose": "Production paper albedo to reinforce fine cellulose fibres on the real folded geometry."
+}

@@ -33,3 +33,5 @@ Open text links and thin underline tabs; low-profile range controls with diamond
 
 ## State and access
 All controls have native semantics, focus treatment and English/Chinese labels. Reduced motion removes continuous rotation and smoothing and shortens the travel. The still-art fallback is readable without WebGL; text and chapter navigation remain available. Visibility changes pause rendering, and resource disposal is explicit.
+
+Reload and document Back preserve the browser's latest scroll stop. Fresh entry can use the saved chapter destination or explicit hash; it must not apply that older navigation target over a browser-restored observation point. Meaningful resize continues to preserve normalized exhibition progress.

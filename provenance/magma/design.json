@@ -1,0 +1,1495 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T06:07:43Z",
+  "title": "Design System: MAGMA — Stone Before Stone",
+  "extensions": {
+    "provenance": {
+      "mode": "scan",
+      "primitiveAuthority": "../DESIGN.md",
+      "pathBase": "Paths in this sidecar are relative to .impeccable/. Narrative links retain their DESIGN.md origin.",
+      "sources": [
+        "../PRODUCT.md",
+        "../docs/VISUAL_BIBLE.md",
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js",
+        "../src/material-state.js",
+        "../src/material-renderer.js",
+        "../src/shaders/material.js",
+        "../src/fracture-geometry.js"
+      ],
+      "conceptReferences": [
+        "../docs/concepts/pressure.webp",
+        "../docs/concepts/skin.webp",
+        "../docs/concepts/glass.webp",
+        "../docs/concepts/mobile.webp"
+      ],
+      "authority": "当前交付源码与图版；概念是视觉方向参照。",
+      "tonalRampStatus": "色阶只供面板预览，由 canonical 自动计算。生产实现没有色阶，也不把这些派生值作为新设计选择。"
+    },
+    "colorMeta": {
+      "black": {
+        "role": "neutral",
+        "displayName": "连续近黑",
+        "canonical": "#080909",
+        "tonalRamp": [
+          "oklch(15.000% 0.001891 196.938)",
+          "oklch(26.429% 0.001891 196.938)",
+          "oklch(37.857% 0.001891 196.938)",
+          "oklch(49.286% 0.001891 196.938)",
+          "oklch(60.714% 0.001891 196.938)",
+          "oklch(72.143% 0.001891 196.938)",
+          "oklch(83.571% 0.001891 196.938)",
+          "oklch(95.000% 0.001891 196.938)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "cssCustomProperty": "--black",
+        "source": "../src/styles.css"
+      },
+      "paper": {
+        "role": "primary",
+        "displayName": "矿物白",
+        "canonical": "#e9e7e2",
+        "tonalRamp": [
+          "oklch(15.000% 0.007045 88.645)",
+          "oklch(26.429% 0.007045 88.645)",
+          "oklch(37.857% 0.007045 88.645)",
+          "oklch(49.286% 0.007045 88.645)",
+          "oklch(60.714% 0.007045 88.645)",
+          "oklch(72.143% 0.007045 88.645)",
+          "oklch(83.571% 0.007045 88.645)",
+          "oklch(95.000% 0.007045 88.645)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "cssCustomProperty": "--paper",
+        "source": "../src/styles.css"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "灰白辅助文字",
+        "canonical": "#b7b5b0",
+        "tonalRamp": [
+          "oklch(15.000% 0.007368 88.656)",
+          "oklch(26.429% 0.007368 88.656)",
+          "oklch(37.857% 0.007368 88.656)",
+          "oklch(49.286% 0.007368 88.656)",
+          "oklch(60.714% 0.007368 88.656)",
+          "oklch(72.143% 0.007368 88.656)",
+          "oklch(83.571% 0.007368 88.656)",
+          "oklch(95.000% 0.007368 88.656)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "cssCustomProperty": "--muted",
+        "source": "../src/styles.css"
+      },
+      "active-white": {
+        "role": "primary",
+        "displayName": "状态亮白",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15.000% 0.000000 0.000)",
+          "oklch(26.429% 0.000000 0.000)",
+          "oklch(37.857% 0.000000 0.000)",
+          "oklch(49.286% 0.000000 0.000)",
+          "oklch(60.714% 0.000000 0.000)",
+          "oklch(72.143% 0.000000 0.000)",
+          "oklch(83.571% 0.000000 0.000)",
+          "oklch(95.000% 0.000000 0.000)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "dialog-surface": {
+        "role": "neutral",
+        "displayName": "面板深黑",
+        "canonical": "#0d0e0e",
+        "tonalRamp": [
+          "oklch(15.000% 0.001654 196.993)",
+          "oklch(26.429% 0.001654 196.993)",
+          "oklch(37.857% 0.001654 196.993)",
+          "oklch(49.286% 0.001654 196.993)",
+          "oklch(60.714% 0.001654 196.993)",
+          "oklch(72.143% 0.001654 196.993)",
+          "oklch(83.571% 0.001654 196.993)",
+          "oklch(95.000% 0.001654 196.993)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "index-line": {
+        "role": "neutral",
+        "displayName": "章节行界",
+        "canonical": "#30312f",
+        "tonalRamp": [
+          "oklch(15.000% 0.003773 128.596)",
+          "oklch(26.429% 0.003773 128.596)",
+          "oklch(37.857% 0.003773 128.596)",
+          "oklch(49.286% 0.003773 128.596)",
+          "oklch(60.714% 0.003773 128.596)",
+          "oklch(72.143% 0.003773 128.596)",
+          "oklch(83.571% 0.003773 128.596)",
+          "oklch(95.000% 0.003773 128.596)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "index-text": {
+        "role": "neutral",
+        "displayName": "章节行名",
+        "canonical": "#c4c3bd",
+        "tonalRamp": [
+          "oklch(15.000% 0.008357 98.906)",
+          "oklch(26.429% 0.008357 98.906)",
+          "oklch(37.857% 0.008357 98.906)",
+          "oklch(49.286% 0.008357 98.906)",
+          "oklch(60.714% 0.008357 98.906)",
+          "oklch(72.143% 0.008357 98.906)",
+          "oklch(83.571% 0.008357 98.906)",
+          "oklch(95.000% 0.008357 98.906)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "index-number": {
+        "role": "neutral",
+        "displayName": "章节编号",
+        "canonical": "#9a9b95",
+        "tonalRamp": [
+          "oklch(15.000% 0.008702 114.301)",
+          "oklch(26.429% 0.008702 114.301)",
+          "oklch(37.857% 0.008702 114.301)",
+          "oklch(49.286% 0.008702 114.301)",
+          "oklch(60.714% 0.008702 114.301)",
+          "oklch(72.143% 0.008702 114.301)",
+          "oklch(83.571% 0.008702 114.301)",
+          "oklch(95.000% 0.008702 114.301)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "rail-rest": {
+        "role": "neutral",
+        "displayName": "未选刻度",
+        "canonical": "#555753",
+        "tonalRamp": [
+          "oklch(15.000% 0.006868 128.630)",
+          "oklch(26.429% 0.006868 128.630)",
+          "oklch(37.857% 0.006868 128.630)",
+          "oklch(49.286% 0.006868 128.630)",
+          "oklch(60.714% 0.006868 128.630)",
+          "oklch(72.143% 0.006868 128.630)",
+          "oklch(83.571% 0.006868 128.630)",
+          "oklch(95.000% 0.006868 128.630)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "caption-rule": {
+        "role": "neutral",
+        "displayName": "章节分隔",
+        "canonical": "#747572",
+        "tonalRamp": [
+          "oklch(15.000% 0.004698 121.628)",
+          "oklch(26.429% 0.004698 121.628)",
+          "oklch(37.857% 0.004698 121.628)",
+          "oklch(49.286% 0.004698 121.628)",
+          "oklch(60.714% 0.004698 121.628)",
+          "oklch(72.143% 0.004698 121.628)",
+          "oklch(83.571% 0.004698 121.628)",
+          "oklch(95.000% 0.004698 121.628)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "cooling-track": {
+        "role": "neutral",
+        "displayName": "冷却底线",
+        "canonical": "#494a46",
+        "tonalRamp": [
+          "oklch(15.000% 0.006679 118.116)",
+          "oklch(26.429% 0.006679 118.116)",
+          "oklch(37.857% 0.006679 118.116)",
+          "oklch(49.286% 0.006679 118.116)",
+          "oklch(60.714% 0.006679 118.116)",
+          "oklch(72.143% 0.006679 118.116)",
+          "oklch(83.571% 0.006679 118.116)",
+          "oklch(95.000% 0.006679 118.116)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      },
+      "setting-ring": {
+        "role": "neutral",
+        "displayName": "动态空心状态点",
+        "canonical": "#a6a69e",
+        "tonalRamp": [
+          "oklch(15.000% 0.011350 106.680)",
+          "oklch(26.429% 0.011350 106.680)",
+          "oklch(37.857% 0.011350 106.680)",
+          "oklch(49.286% 0.011350 106.680)",
+          "oklch(60.714% 0.011350 106.680)",
+          "oklch(72.143% 0.011350 106.680)",
+          "oklch(83.571% 0.011350 106.680)",
+          "oklch(95.000% 0.011350 106.680)"
+        ],
+        "tonalRampPurpose": "机械派生的面板预览；当前实现没有使用此色阶，不属于生产配色 token。",
+        "source": "../src/styles.css"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "display",
+        "purpose": "PRESSURE 唯一 h1；桌面。",
+        "source": "../src/styles.css"
+      },
+      "display-mobile": {
+        "displayName": "display-mobile",
+        "purpose": "宽度不超过 700px 的开场 h1。",
+        "source": "../src/styles.css"
+      },
+      "display-short-landscape": {
+        "displayName": "display-short-landscape",
+        "purpose": "宽度至少 701px、高度不超过 580px 的开场 h1。",
+        "source": "../src/styles.css"
+      },
+      "display-subtitle": {
+        "displayName": "display-subtitle",
+        "purpose": "开场 Stone before stone. 副标题。",
+        "source": "../src/styles.css"
+      },
+      "headline": {
+        "displayName": "headline",
+        "purpose": "普通场景 h2 的基础尺度；存在作者定义的场景覆盖。",
+        "source": "../src/styles.css"
+      },
+      "headline-mobile": {
+        "displayName": "headline-mobile",
+        "purpose": "手机场景 h2 的基础尺度；保留各幕覆盖。",
+        "source": "../src/styles.css"
+      },
+      "dialog-headline": {
+        "displayName": "dialog-headline",
+        "purpose": "Index 与 About 的说明性大标题。",
+        "source": "../src/styles.css"
+      },
+      "body": {
+        "displayName": "body",
+        "purpose": "桌面场景解释句。",
+        "source": "../src/styles.css"
+      },
+      "body-mobile": {
+        "displayName": "body-mobile",
+        "purpose": "手机场景解释句。",
+        "source": "../src/styles.css"
+      },
+      "body-long": {
+        "displayName": "body-long",
+        "purpose": "About 长正文。",
+        "source": "../src/styles.css"
+      },
+      "title": {
+        "displayName": "title",
+        "purpose": "About 小节标题。",
+        "source": "../src/styles.css"
+      },
+      "label": {
+        "displayName": "label",
+        "purpose": "顶部文本按钮。",
+        "source": "../src/styles.css"
+      },
+      "label-chapter": {
+        "displayName": "label-chapter",
+        "purpose": "章节定位与进度。",
+        "source": "../src/styles.css"
+      },
+      "label-whisper": {
+        "displayName": "label-whisper",
+        "purpose": "场景短补充句。",
+        "source": "../src/styles.css"
+      },
+      "wordmark": {
+        "displayName": "wordmark",
+        "purpose": "顶部小型 MAGMA 字标。",
+        "source": "../src/styles.css"
+      },
+      "index-row": {
+        "displayName": "index-row",
+        "purpose": "Index 可点选章节行。",
+        "source": "../src/styles.css"
+      },
+      "action": {
+        "displayName": "action",
+        "purpose": "上下文材料操作。",
+        "source": "../src/styles.css"
+      },
+      "light-instruction": {
+        "displayName": "light-instruction",
+        "purpose": "GLASS 的指针或触摸反光提示。",
+        "source": "../src/styles.css"
+      }
+    },
+    "shadows": [
+      {
+        "name": "small-text-protection",
+        "type": "text-shadow",
+        "value": "0 1px 8px rgb(0 0 0 / .85)",
+        "purpose": "保护页首、章节状态、whisper、操作、光线提示与场景解释句；不用于大标题或容器。"
+      }
+    ],
+    "elevation": [
+      {
+        "name": "material-stage",
+        "value": 0
+      },
+      {
+        "name": "active-copy",
+        "value": 5
+      },
+      {
+        "name": "chapter-caption",
+        "value": 12
+      },
+      {
+        "name": "chapter-rail",
+        "value": 20
+      },
+      {
+        "name": "masthead",
+        "value": 30
+      },
+      {
+        "name": "no-script-note",
+        "value": 40
+      },
+      {
+        "name": "file-help",
+        "value": 100
+      },
+      {
+        "name": "skip-link",
+        "value": 110
+      },
+      {
+        "name": "modal-dialog",
+        "value": "browser top layer"
+      }
+    ],
+    "motion": [
+      {
+        "name": "scroll-lerp",
+        "value": ".09",
+        "purpose": "Lenis 唯一滚轮平滑系数；autoRaf=false，syncTouch=false。"
+      },
+      {
+        "name": "navigation-duration",
+        "value": "Math.min(2.1, 1.1 + Math.abs(target - position) * .1)",
+        "unit": "seconds",
+        "purpose": "章节定位随距离变化；减少动态立即跳转。"
+      },
+      {
+        "name": "arrow-transition",
+        "value": "transform .4s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Begin 与 Return 的方向提示。"
+      },
+      {
+        "name": "rail-mark-transition",
+        "value": "background .25s, transform .25s",
+        "purpose": "刻度的当前与悬停状态。"
+      },
+      {
+        "name": "label-reveal-transition",
+        "value": "opacity .2s, transform .2s",
+        "purpose": "轨道名称及 Index 箭头出现。"
+      },
+      {
+        "name": "sound-bars",
+        "value": "2s ease-in-out infinite alternate",
+        "purpose": "可选声音开启后的细线呼吸。",
+        "keyframeTo": "scaleY(.35)",
+        "delays": [
+          "0s",
+          "-.7s",
+          "-1.2s"
+        ]
+      },
+      {
+        "name": "cool-rise",
+        "value": ".55",
+        "unit": "normalized amount/second",
+        "purpose": "按住或锁定冷却的增长速率。"
+      },
+      {
+        "name": "cool-release",
+        "value": ".38",
+        "unit": "normalized amount/second",
+        "purpose": "松开冷却后的回落速率。"
+      },
+      {
+        "name": "crack-decay",
+        "value": ".28",
+        "unit": "normalized amount/second",
+        "purpose": "单次开缝脉冲回落。"
+      },
+      {
+        "name": "fracture-response",
+        "value": "1 - Math.exp(-dt * 2.6)",
+        "purpose": "断面趋近开关目标。"
+      },
+      {
+        "name": "pointer-response",
+        "value": "1 - Math.exp(-dt * 4)",
+        "purpose": "GLASS / FRACTURE 输入方向的平滑；减少动态不送入 shader。"
+      },
+      {
+        "name": "stone-reflection-cycle",
+        "value": "64s",
+        "purpose": "只穿过既有明亮矿物面的克制冷反光。"
+      },
+      {
+        "name": "shader-time-wrap",
+        "value": "4096s",
+        "purpose": "与 STONE 的 64 秒周期整除对应。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-composition",
+        "value": "700px",
+        "query": "(max-width: 700px)",
+        "purpose": "图版、排版、面板与 30fps 调度；不等同渲染轻量档。"
+      },
+      {
+        "name": "small-phone-stone",
+        "value": "360px",
+        "query": "(max-width: 360px)",
+        "purpose": "STONE 网格首行改为 18%。"
+      },
+      {
+        "name": "mid-width",
+        "value": "1000px",
+        "query": "(max-width: 1000px) and (min-width: 701px)"
+      },
+      {
+        "name": "tall-tablet-glass",
+        "value": "1024px",
+        "query": "(min-width: 701px) and (max-width: 1024px) and (orientation: portrait)"
+      },
+      {
+        "name": "short-landscape",
+        "value": "580px",
+        "query": "(max-height: 580px) and (min-width: 701px)"
+      },
+      {
+        "name": "large-display",
+        "value": "2200px",
+        "query": "(min-width: 2200px)"
+      },
+      {
+        "name": "coarse-input",
+        "value": "coarse",
+        "query": "(pointer: coarse)"
+      },
+      {
+        "name": "system-reduced-motion",
+        "value": "reduce",
+        "query": "(prefers-reduced-motion: reduce)"
+      }
+    ],
+    "layout": {
+      "source": "../src/styles.css",
+      "minimumViewportWidth": "280px",
+      "screenHeight": "100svh",
+      "scrollStep": {
+        "desktop": "180svh",
+        "mobile": "155svh",
+        "finalExtra": "100svh"
+      },
+      "copyMaxWidth": {
+        "desktop": "78vw",
+        "mobile": "calc(100vw - 48px)"
+      },
+      "bodyMeasure": {
+        "desktop": "45ch",
+        "mobile": "30ch",
+        "stoneDesktop": "28ch",
+        "glassTablet": "24ch",
+        "about": "64ch"
+      },
+      "responsiveCompositionCss": {
+        "mobile-flow": ".chapter-flow .chapter-screen { display:grid; grid-template-rows:23% min-content min-content 1fr; } .chapter-flow .scene-copy { position:relative; top:auto; bottom:auto; grid-row:2; } .chapter-flow .scene-whisper { position:relative; top:auto; bottom:auto; grid-row:3; margin-top:20px; }",
+        "mobile-stone": ".chapter-stone .chapter-screen { display:grid; grid-template-rows:24% min-content min-content 1fr; } .chapter-stone .scene-copy { position:relative; top:auto; bottom:auto; grid-row:2; } .chapter-stone .scene-whisper { position:relative; top:auto; bottom:auto; grid-row:3; margin-top:20px; max-width:23ch; }",
+        "small-phone-stone": "@media (max-width:360px) { .chapter-stone .chapter-screen { grid-template-rows:18% min-content min-content 1fr; } }",
+        "tall-tablet-glass": "@media (min-width:701px) and (max-width:1024px) and (orientation:portrait) { .chapter-glass .scene-copy { top:12%; left:5vw; } .chapter-glass .scene-copy h2 { font-size:clamp(44px,5.8vw,64px); } .chapter-glass .scene-copy p { max-width:24ch; } }"
+      },
+      "dialog": {
+        "desktopIndexColumns": "1fr 1.02fr",
+        "desktopAboutColumns": "1fr 1fr",
+        "desktopIndexPadding": "8vh 7vw 6vh 5vw",
+        "desktopAboutPadding": "8vh 7vw 8vh 5vw",
+        "mobileColumns": "1fr",
+        "mobileIndexPadding": "28px 25px 32px",
+        "mobileAboutPadding": "28px 25px 50px"
+      },
+      "crackTypeSplit": {
+        "desktop": {
+          "secondLineMarginTop": "4vh",
+          "secondLineMarginLeft": "51%"
+        },
+        "mobile": {
+          "secondLineMarginTop": "5vh",
+          "secondLineMarginLeft": "11vw"
+        }
+      },
+      "safeArea": {
+        "header": "max(23px, env(safe-area-inset-top))",
+        "mobileHeader": "max(20px, env(safe-area-inset-top))",
+        "mobileActionsBottom": "max(11%, 68px)",
+        "mobileCaptionBottom": "max(5%, 26px)"
+      }
+    },
+    "accessibility": {
+      "sourceFiles": [
+        "../index.html",
+        "../src/main.js",
+        "../src/styles.css"
+      ],
+      "focusRing": {
+        "value": "1px solid var(--paper)",
+        "offset": "6px"
+      },
+      "minimumControlHeights": {
+        "textButton": "36px",
+        "mobileTextButton": "38px",
+        "materialAction": "46px",
+        "mobileMaterialAction": "48px",
+        "replay": "44px",
+        "indexRow": "clamp(48px, 6.4vh, 85px)",
+        "mobileIndexRow": "48px",
+        "shortLandscapeIndexRow": "43px",
+        "desktopRail": "34px"
+      },
+      "railMinimumWidth": "44px",
+      "navigationCurrentAttribute": "aria-current=\"step\"",
+      "inactiveScenes": [
+        "inert",
+        "aria-hidden=\"true\""
+      ],
+      "dialog": {
+        "element": "dialog",
+        "openMethod": "showModal()",
+        "initialFocus": "Close button",
+        "escape": "close and restore focus",
+        "backgroundScroll": "stopped",
+        "returnFocus": true
+      },
+      "chapterNavigationFocus": "destination h1 / h2, tabindex=-1",
+      "announcements": {
+        "chapter": "aria-live=polite, aria-atomic=true",
+        "status": "role=status, aria-live=polite"
+      },
+      "coolingKeys": {
+        "Space": "hold",
+        "Enter": "toggle latched cooling"
+      },
+      "reducedMotion": {
+        "storageKey": "magma-motion",
+        "values": [
+          "full",
+          "reduced"
+        ],
+        "default": "system preference when no stored choice",
+        "navigation": "immediate",
+        "autonomousShaderMotion": 0,
+        "pointerShaderInput": [
+          0,
+          0
+        ],
+        "activeMaterialControlsRetained": true
+      },
+      "fallback": {
+        "imageModeRetains": [
+          "nine scenes",
+          "semantic copy",
+          "navigation",
+          "cooling control",
+          "ending"
+        ],
+        "imageModeHides": [
+          "crack control",
+          "fracture control",
+          "light instruction"
+        ],
+        "imageCooling": "saturate(calc(1 - var(--cool-amount, 0))) brightness(calc(1 - var(--cool-amount, 0) * .32))",
+        "withoutJavascript": "normal image chapters; script-dependent controls hidden"
+      }
+    },
+    "timeline": {
+      "sourceFiles": [
+        "../src/material-state.js",
+        "../src/main.js"
+      ],
+      "positionRange": [
+        0,
+        9
+      ],
+      "chapterNavigationLocalProgress": 0.2,
+      "openingNavigationPosition": 0,
+      "phases": [
+        {
+          "name": "enter",
+          "range": [
+            0,
+            0.14
+          ]
+        },
+        {
+          "name": "stable",
+          "range": [
+            0.14,
+            0.36
+          ]
+        },
+        {
+          "name": "hold",
+          "range": [
+            0.36,
+            0.72
+          ]
+        },
+        {
+          "name": "handoff",
+          "range": [
+            0.72,
+            0.94
+          ]
+        },
+        {
+          "name": "exit",
+          "range": [
+            0.94,
+            1
+          ]
+        }
+      ],
+      "rangeConvention": "lower inclusive, upper exclusive except final endpoint",
+      "sourceDevelopment": "clamp(progress / .76)",
+      "ordinaryBlend": "smoothstep(.76, 1, progress)",
+      "textEntrance": "smooth(.015, .14, progress)",
+      "textDeparture": "1 - smooth(.75, .97, progress)",
+      "textEntranceTranslationPx": 15,
+      "textExitTranslationPx": -14,
+      "railOpacity": "smooth(.3, .9, position)",
+      "railVisibleAfter": 0.6,
+      "sealedBlend": "smoothstep(.04, .86, progress)",
+      "completePosition": 8.86,
+      "sealedTextExit": "1 - smooth(.72, .96, progress)",
+      "reducedSealedText": "complete ? 0 : 1",
+      "endingPlatePath": {
+        "stoneDestination": 0,
+        "sealedSource": 0,
+        "sealedDestination": 8
+      },
+      "completionZeroes": [
+        "heat",
+        "flow",
+        "pulse",
+        "motion",
+        "split",
+        "glass",
+        "relief",
+        "camera",
+        "driftX",
+        "driftY"
+      ],
+      "completeSeal": 1,
+      "determinism": "滚动与交互决定可重复的材料 score；时间与指针另行影响正常动态画面，不能声称每个像素只由滚动决定。"
+    },
+    "material": {
+      "sourceFiles": [
+        "../src/shaders/material.js",
+        "../src/material-state.js",
+        "../src/fracture-geometry.js",
+        "../src/material-renderer.js"
+      ],
+      "units": "作者定义的无量纲视觉参数；不代表温度、应力或实测冷却时间。",
+      "shaderMotionGate": "reducedMotion || state.complete ? 0 : 1",
+      "camera": {
+        "maxSourceZoom": 1.035,
+        "pointerMovesCamera": false,
+        "reducedZoom": 1,
+        "reducedDrift": [
+          0,
+          0
+        ]
+      },
+      "hotFlow": {
+        "timeRate": 0.145,
+        "uvAmplitude": 0.0028,
+        "scales": [
+          "flow",
+          "thermalMask",
+          "uMotion",
+          "uQuality"
+        ]
+      },
+      "thermalMask": {
+        "redMinusBlueSmoothstep": [
+          0.027,
+          0.16
+        ],
+        "redMinusGreenFactor": 0.8,
+        "warmSmoothstep": [
+          0.025,
+          0.14
+        ]
+      },
+      "whiteCoreCooling": {
+        "neighbourReachTexels": 7,
+        "maxNeighbourSamples": 4,
+        "candidateBrightnessAbove": 0.6,
+        "coldBlueRejection": 0.012,
+        "nearbyWarmSmoothstep": [
+          0.07,
+          0.28
+        ],
+        "whiteBrightnessSmoothstep": [
+          0.5,
+          0.74
+        ]
+      },
+      "coolingFront": {
+        "direction": [
+          0.62,
+          0.38
+        ],
+        "halfWidth": 0.035,
+        "skinAttenuation": 0.97,
+        "baseGeologyScale": 9,
+        "baseGeologyAmplitude": 0.095,
+        "fineGeologyScale": 31,
+        "fineGeologyAmplitude": 0.022,
+        "fineQualityGate": 0.8
+      },
+      "hotHandoff": {
+        "fieldDirection": [
+          0.56,
+          0.44
+        ],
+        "spatialMix": 0.7,
+        "noiseScale": 6,
+        "noiseAmplitude": 0.055
+      },
+      "glassReflection": {
+        "tint": [
+          0.97,
+          0.99,
+          1
+        ],
+        "gain": 0.047,
+        "pointerAngleCoefficients": [
+          0.35,
+          0.12
+        ],
+        "baseAngle": 1.25,
+        "autonomousRate": 0.17,
+        "autonomousAmplitude": 0.025
+      },
+      "stoneReflection": {
+        "cycleSeconds": 64,
+        "timeAngularRate": 0.0981747704,
+        "lightTrackCenter": 0.36,
+        "lightTrackAmplitude": 0.18,
+        "ribbonDistances": [
+          0.008,
+          0.032
+        ],
+        "mineralLuminanceRise": [
+          0.24,
+          0.48
+        ],
+        "mineralLuminanceFall": [
+          0.86,
+          0.98
+        ],
+        "tint": [
+          0.87,
+          0.93,
+          1
+        ],
+        "gain": 0.038,
+        "portraitGroundY": "(uv.y - .50) * 2",
+        "portraitDetection": "source image aspect ratio",
+        "newTextureSamples": 0,
+        "movesSilhouette": false,
+        "usesAnimatedNoise": false,
+        "disabledWhen": [
+          "reduced motion",
+          "completed SEALED"
+        ],
+        "gateNote": "STONE state.motion=0 does not disable this effect; renderer uMotion is the controlling gate."
+      },
+      "fractureGeometry": {
+        "coordinates": "original image UV; x right, y down, before cover crop",
+        "independentSeamVertices": true,
+        "trianglesAcrossOpening": false,
+        "splitAmplitude": 0.0085,
+        "distanceFalloff": 6,
+        "outerEdgeFade": [
+          0.075,
+          0.07
+        ],
+        "reliefCenter": [
+          0.63,
+          0.21
+        ],
+        "reliefEllipse": [
+          0.53,
+          0.62
+        ],
+        "bowlHeight": 0.26,
+        "ringAmplitude": 0.018,
+        "cavityDistances": [
+          0.008,
+          0.027
+        ],
+        "handoffMultiplier": "1 - mix",
+        "pathTextureDimensions": [
+          512,
+          1
+        ],
+        "pathEncoding": "two 16-bit paths in RGBA",
+        "crackControlPoints": [
+          [
+            0,
+            0.619
+          ],
+          [
+            0.1,
+            0.632
+          ],
+          [
+            0.21,
+            0.641
+          ],
+          [
+            0.32,
+            0.642
+          ],
+          [
+            0.46,
+            0.631
+          ],
+          [
+            0.58,
+            0.64
+          ],
+          [
+            0.73,
+            0.646
+          ],
+          [
+            0.83,
+            0.652
+          ],
+          [
+            0.93,
+            0.657
+          ],
+          [
+            1,
+            0.657
+          ]
+        ],
+        "fractureControlPoints": [
+          [
+            0,
+            0.145
+          ],
+          [
+            0.13,
+            0.21
+          ],
+          [
+            0.26,
+            0.31
+          ],
+          [
+            0.36,
+            0.435
+          ],
+          [
+            0.46,
+            0.57
+          ],
+          [
+            0.56,
+            0.67
+          ],
+          [
+            0.64,
+            0.731
+          ],
+          [
+            0.7,
+            0.718
+          ],
+          [
+            0.78,
+            0.635
+          ],
+          [
+            0.86,
+            0.52
+          ],
+          [
+            0.95,
+            0.49
+          ],
+          [
+            1,
+            0.56
+          ]
+        ]
+      }
+    },
+    "rendering": {
+      "source": "../src/material-renderer.js",
+      "webglVersion": 1,
+      "contexts": 1,
+      "artDirectionCondition": "width <= 700",
+      "lightQualityCondition": "width < 768 || (coarsePointer && width < 1024)",
+      "light": {
+        "dprCap": 1.25,
+        "pixelBudget": 1100000,
+        "meshColumnsPerHalf": 26,
+        "meshRowsPerHalf": 36,
+        "shaderQuality": 0.6
+      },
+      "standard": {
+        "dprCap": 1.5,
+        "pixelBudget": 3200000,
+        "meshColumnsPerHalf": 40,
+        "meshRowsPerHalf": 56,
+        "shaderQuality": 1
+      },
+      "dprFormula": "min(devicePixelRatio, cap, sqrt(pixelBudget / viewportArea), maxRenderbufferDimension / max(viewportWidth, viewportHeight))",
+      "residentPhotographicTextures": 3,
+      "concurrentImageLoads": 2,
+      "pathTextures": 1,
+      "passes": "one composite pass plus optional split-surface pass",
+      "frameSchedule": {
+        "widthAtMost700": 30,
+        "otherWidths": 60,
+        "unit": "maximum scheduled draws/second"
+      },
+      "missingDestination": "hold available source at mix=0",
+      "hiddenPage": "pause host RAF and audio",
+      "staticFrame": "avoid unnecessary redraw when reduced or complete and no state change"
+    },
+    "assetRegistration": [
+      {
+        "index": 0,
+        "id": "pressure",
+        "title": "PRESSURE",
+        "desktop": {
+          "path": "../assets/materials/pressure.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/pressure-mobile.webp",
+          "dimensions": [
+            853,
+            1844
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "index": 1,
+        "id": "molten",
+        "title": "MOLTEN",
+        "desktop": {
+          "path": "../assets/materials/molten.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.59,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/molten-mobile.webp",
+          "dimensions": [
+            960,
+            540
+          ],
+          "focal": [
+            0.51,
+            0.55
+          ]
+        }
+      },
+      {
+        "index": 2,
+        "id": "flow",
+        "title": "FLOW",
+        "desktop": {
+          "path": "../assets/materials/flow.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.53,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/flow-mobile.webp",
+          "dimensions": [
+            853,
+            1844
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "index": 3,
+        "id": "skin",
+        "title": "SKIN",
+        "desktop": {
+          "path": "../assets/materials/skin.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.55,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/skin-mobile.webp",
+          "dimensions": [
+            960,
+            540
+          ],
+          "focal": [
+            0.51,
+            0.5
+          ]
+        }
+      },
+      {
+        "index": 4,
+        "id": "crack",
+        "title": "CRACK",
+        "desktop": {
+          "path": "../assets/materials/crack.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.62,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/crack-mobile.webp",
+          "dimensions": [
+            960,
+            540
+          ],
+          "focal": [
+            0.61,
+            0.5
+          ]
+        }
+      },
+      {
+        "index": 5,
+        "id": "glass",
+        "title": "GLASS",
+        "desktop": {
+          "path": "../assets/materials/glass.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.54,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/glass-mobile.webp",
+          "dimensions": [
+            853,
+            1844
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "index": 6,
+        "id": "fracture",
+        "title": "FRACTURE",
+        "desktop": {
+          "path": "../assets/materials/fracture.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.54,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/fracture-mobile.webp",
+          "dimensions": [
+            960,
+            540
+          ],
+          "focal": [
+            0.44,
+            0.6
+          ]
+        }
+      },
+      {
+        "index": 7,
+        "id": "stone",
+        "title": "CRYSTAL · STONE",
+        "desktop": {
+          "path": "../assets/materials/stone.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.58,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/stone-mobile.webp",
+          "dimensions": [
+            830,
+            1896
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "index": 8,
+        "id": "sealed",
+        "title": "SEALED",
+        "desktop": {
+          "path": "../assets/materials/sealed.webp",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        },
+        "mobile": {
+          "path": "../assets/materials/sealed-mobile.webp",
+          "dimensions": [
+            853,
+            1844
+          ],
+          "focal": [
+            0.5,
+            0.5
+          ]
+        }
+      }
+    ],
+    "changeSensitiveRelationships": [
+      {
+        "name": "type-and-negative-space",
+        "members": [
+          "Archivo face and weight",
+          "headline size and -.04em tracking",
+          "authored line breaks",
+          "artwork focal point",
+          "copy anchor and line measure"
+        ],
+        "purpose": "不能单独收紧字距来修复图版或构图宽度。"
+      },
+      {
+        "name": "mobile-flow-stone",
+        "members": [
+          "dedicated portrait plates",
+          "upper copy grid",
+          "whisper in row 3",
+          "20px whisper gap",
+          "STONE 23ch measure",
+          "STONE 18% first row only at width <=360"
+        ],
+        "purpose": "保持文字与亮岩脊分离。"
+      },
+      {
+        "name": "tablet-glass",
+        "members": [
+          "portrait viewport 701–1024px",
+          "copy top 12%",
+          "copy left 5vw",
+          "clamp(44px, 5.8vw, 64px) heading",
+          "24ch body measure"
+        ],
+        "purpose": "位置、尺度与行长同时避开反光肩部。"
+      },
+      {
+        "name": "geometry-and-plate",
+        "members": [
+          "source dimensions and aspect",
+          "focal point",
+          "cover transform",
+          "seamAt control points",
+          "split meshes",
+          "path data texture",
+          "shader cavity"
+        ],
+        "purpose": "同一原图坐标保证裂口与图版断边对应。"
+      },
+      {
+        "name": "stone-reflection-and-source-aspect",
+        "members": [
+          "luminance mask",
+          "lower-half remap for portrait source",
+          "source aspect ratio",
+          "uMotion gate",
+          "64s cycle",
+          "4096s time wrap"
+        ],
+        "purpose": "保持颗粒静止及减少动态、完成态的排除条件。"
+      },
+      {
+        "name": "pressure-sealed-return",
+        "members": [
+          "PRESSURE index 0",
+          "SEALED index 8",
+          "corresponding silhouette and focal point",
+          "warm-neighbour white-core mask",
+          "complete at 8.86"
+        ],
+        "purpose": "封存余光，同时保持返回原岩体的视觉闭环。"
+      }
+    ],
+    "notCanonized": [
+      {
+        "item": "--ember: #ec6a35; --line: #454644",
+        "reason": "当前只有声明，没有实际样式引用；不作为已使用的 UI 角色。"
+      },
+      {
+        "item": "concept-versus-code numeric drift",
+        "reason": "概念用于视觉方向参照；本记录采用当前 CSS 的实际 gutter，VISUAL_BIBLE 已同步这些数值。"
+      },
+      {
+        "item": "unscored or uninspected defects",
+        "reason": "本文是已交付实现的设计记录，不将既有五项修复的 ship 结论扩展为整个界面或所有设备的证明。"
+      }
+    ],
+    "documentationLimitations": [
+      "组件 HTML/CSS 片段不执行应用 JavaScript；音频、连续冷却、模态焦点和材料引擎行为由链接的原始模块定义。",
+      "派生色阶仅供面板预览；基础颜色、字体、圆角、间距与组件原语的权威值位于 DESIGN.md 的 YAML。",
+      "记录依据现有源码、图版与已存在画面；此文档阶段未进行新的浏览器验证或通用无障碍认证。"
+    ]
+  },
+  "components": [
+    {
+      "name": "Index 文本入口",
+      "kind": "button",
+      "refersTo": "text-button",
+      "description": "透明底、矿物白文字；仅凭文字与焦点线承担顶部入口。",
+      "html": "<button class=\"ds-text-button\" type=\"button\" aria-haspopup=\"dialog\">Index</button>",
+      "css": ".ds-text-button{font-family:Archivo,Helvetica,Arial,sans-serif;display:inline-flex;align-items:center;gap:10px;min-height:36px;padding:0;border:0;border-radius:0;background:none;color:var(--paper,#e9e7e2);font-size:clamp(13px,.9vw,18px);line-height:1.3;font-weight:400;cursor:pointer;touch-action:manipulation;}.ds-text-button:hover{color:#fff}.ds-text-button:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}.ds-text-button:disabled{cursor:default;opacity:.5}@media(max-width:700px){.ds-text-button{font-size:12px;min-height:38px}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "Sound 声音开关",
+      "kind": "button",
+      "refersTo": "text-button",
+      "description": "展示实际开启状态；应用负责音频与 aria-pressed 切换。",
+      "html": "<button class=\"ds-sound-toggle\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-sound-bars\" aria-hidden=\"true\"><i></i><i></i><i></i></span><span>Sound on</span></button>",
+      "css": ".ds-sound-toggle{font-family:Archivo,Helvetica,Arial,sans-serif;display:inline-flex;align-items:center;gap:10px;min-height:36px;padding:0;border:0;border-radius:0;background:none;color:var(--paper,#e9e7e2);font-size:clamp(13px,.9vw,18px);line-height:1.3;font-weight:400;cursor:pointer;touch-action:manipulation;min-width:76px}.ds-sound-toggle:hover{color:#fff}.ds-sound-toggle:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}.ds-sound-bars{display:none;width:14px;height:14px;align-items:center;gap:2px}.ds-sound-bars i{display:block;background:currentColor;width:1px;height:4px}.ds-sound-bars i:nth-child(2){height:11px;animation-delay:-.7s!important}.ds-sound-bars i:nth-child(3){height:7px;animation-delay:-1.2s!important}.ds-sound-toggle[aria-pressed=\"true\"] .ds-sound-bars{display:flex}.ds-sound-toggle[aria-pressed=\"true\"] .ds-sound-bars i{animation:ds-sound-breathe 2s ease-in-out infinite alternate}@keyframes ds-sound-breathe{to{transform:scaleY(.35)}}@media(max-width:700px){.ds-sound-toggle{font-size:12px;min-height:38px;min-width:58px}.ds-sound-bars{width:10px}}@media(prefers-reduced-motion:reduce){.ds-sound-bars i{animation:none!important}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "Hold to cool 冷却操作",
+      "kind": "button",
+      "refersTo": "hold-action",
+      "description": "双输入方式的连续控制；下划线展示当前冷却值，真实键盘逻辑见 main.js。",
+      "html": "<button class=\"ds-cool-action\" type=\"button\" aria-pressed=\"false\" aria-describedby=\"ds-cool-help\"><span>Hold to cool</span><svg viewBox=\"0 0 36 36\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"18\" r=\"16\"/><path d=\"M18 10v16M10 18h16\"/></svg><span class=\"ds-cool-progress\" aria-hidden=\"true\"><i></i></span></button><span class=\"ds-cool-help\" id=\"ds-cool-help\">Hold with a pointer or Space. Press Enter to toggle cooling.</span>",
+      "css": ".ds-cool-action{font-family:Archivo,Helvetica,Arial,sans-serif;position:relative;display:inline-flex;align-items:center;gap:22px;min-height:46px;padding:0;border:0;border-radius:0;background:none;color:var(--paper,#e9e7e2);font-size:clamp(14px,1.05vw,21px);font-weight:350;line-height:1.3;cursor:pointer;user-select:none;-webkit-user-select:none;text-shadow:0 1px 8px rgb(0 0 0 / .85);padding-bottom:12px;touch-action:none}.ds-cool-action svg{display:block;flex:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;width:34px;height:34px}.ds-cool-action:hover svg{color:#fff}.ds-cool-action:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}.ds-cool-progress{position:absolute;left:0;right:0;height:2px;bottom:0;background:#494a46;overflow:hidden}.ds-cool-progress i{display:block;width:100%;height:100%;background:var(--paper,#e9e7e2);transform:scaleX(var(--cool-amount,0));transform-origin:0 50%}.ds-cool-help{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}@media(max-width:700px){.ds-cool-action{font-size:13px;gap:15px;min-height:48px}.ds-cool-action svg{width:28px;height:28px}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "Open the seam 开缝操作",
+      "kind": "button",
+      "refersTo": "material-action",
+      "description": "一次性脉冲，不以持久选中样式表示。",
+      "html": "<button class=\"ds-seam-action\" type=\"button\"><span>Open the seam</span><svg viewBox=\"0 0 36 36\" fill=\"none\" aria-hidden=\"true\"><path d=\"M14 7l-5 11 5 11M22 7l5 11-5 11\"/></svg></button>",
+      "css": ".ds-seam-action{font-family:Archivo,Helvetica,Arial,sans-serif;position:relative;display:inline-flex;align-items:center;gap:22px;min-height:46px;padding:0;border:0;border-radius:0;background:none;color:var(--paper,#e9e7e2);font-size:clamp(14px,1.05vw,21px);font-weight:350;line-height:1.3;cursor:pointer;user-select:none;-webkit-user-select:none;text-shadow:0 1px 8px rgb(0 0 0 / .85);}.ds-seam-action svg{display:block;flex:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;width:34px;height:34px}.ds-seam-action:hover svg{color:#fff}.ds-seam-action:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}@media(max-width:700px){.ds-seam-action{font-size:13px;gap:15px;min-height:48px}.ds-seam-action svg{width:28px;height:28px}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "Trace the fracture 断面操作",
+      "kind": "button",
+      "refersTo": "material-action",
+      "description": "显现状态同时改变 aria-pressed 与按钮文字；示例保留默认状态。",
+      "html": "<button class=\"ds-fracture-action\" type=\"button\" aria-pressed=\"false\"><span>Trace the fracture</span><svg viewBox=\"0 0 36 36\" fill=\"none\" aria-hidden=\"true\"><path d=\"M8 28c0-13 7-20 20-20M15 28c0-8 5-13 13-13M22 28c0-4 2-6 6-6\"/></svg></button>",
+      "css": ".ds-fracture-action{font-family:Archivo,Helvetica,Arial,sans-serif;position:relative;display:inline-flex;align-items:center;gap:22px;min-height:46px;padding:0;border:0;border-radius:0;background:none;color:var(--paper,#e9e7e2);font-size:clamp(14px,1.05vw,21px);font-weight:350;line-height:1.3;cursor:pointer;user-select:none;-webkit-user-select:none;text-shadow:0 1px 8px rgb(0 0 0 / .85);}.ds-fracture-action svg{display:block;flex:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;width:34px;height:34px}.ds-fracture-action:hover svg{color:#fff}.ds-fracture-action:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}@media(max-width:700px){.ds-fracture-action{font-size:13px;gap:15px;min-height:48px}.ds-fracture-action svg{width:28px;height:28px}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "章节刻度导航",
+      "kind": "nav",
+      "refersTo": "chapter-rail-mark",
+      "description": "展示静止状态的九个定位刻度；固定视口位置与出现时机由宿主布局负责。",
+      "html": "<nav class=\"ds-chapter-rail\" aria-label=\"Jump to a material state\"><a href=\"#pressure\" aria-label=\"01, Pressure\"><span>Pressure</span><i></i></a><a href=\"#molten\" aria-label=\"02, Molten\"><span>Molten</span><i></i></a><a href=\"#flow\" aria-label=\"03, Flow\"><span>Flow</span><i></i></a><a href=\"#skin\" aria-label=\"04, Skin\"><span>Skin</span><i></i></a><a href=\"#crack\" aria-label=\"05, Crack\"><span>Crack</span><i></i></a><a href=\"#glass\" aria-label=\"06, Glass\" aria-current=\"step\"><span>Glass</span><i></i></a><a href=\"#fracture\" aria-label=\"07, Fracture\"><span>Fracture</span><i></i></a><a href=\"#stone\" aria-label=\"08, Crystal · Stone\"><span>Crystal · Stone</span><i></i></a><a href=\"#sealed\" aria-label=\"09, Sealed\"><span>Sealed</span><i></i></a></nav>",
+      "css": ".ds-chapter-rail{font-family:Archivo,Helvetica,Arial,sans-serif;display:flex;flex-direction:column;align-items:flex-end;color:var(--paper,#e9e7e2)}.ds-chapter-rail a{position:relative;display:flex;align-items:center;justify-content:flex-end;min-width:44px;height:34px;padding:0 15px;color:inherit;text-decoration:none}.ds-chapter-rail i{display:block;width:1px;height:23px;background:#555753;transform:scaleY(.609);transition:background .25s,transform .25s}.ds-chapter-rail a[aria-current=\"step\"] i{background:var(--paper,#e9e7e2);transform:scaleY(1)}.ds-chapter-rail span{position:absolute;right:37px;white-space:nowrap;font-size:11px;letter-spacing:.02em;opacity:0;transform:translateX(5px);transition:opacity .2s,transform .2s;background:#080909;padding:6px 8px}.ds-chapter-rail a:hover span,.ds-chapter-rail a:focus-visible span{opacity:1;transform:none}.ds-chapter-rail a:hover i{background:var(--paper,#e9e7e2)}.ds-chapter-rail a:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}@media(max-width:700px){.ds-chapter-rail{display:none}}@media(min-width:2200px){.ds-chapter-rail a{height:4.1vh}.ds-chapter-rail i{height:2.4vh;transform:scaleY(.708)}.ds-chapter-rail a[aria-current=\"step\"] i{transform:scaleY(1)}}@media(max-height:580px) and (min-width:701px){.ds-chapter-rail a{height:27px}}@media(prefers-reduced-motion:reduce){.ds-chapter-rail span{transition:none}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "Index 章节列表",
+      "kind": "nav",
+      "refersTo": "index-row",
+      "description": "实线行边界和三列文字网格；默认及当前章节均来自实际列表。",
+      "html": "<ol class=\"ds-index-list\"><li><a href=\"#pressure\"><span class=\"ds-index-number\">01</span><span>Pressure</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#molten\"><span class=\"ds-index-number\">02</span><span>Molten</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#flow\"><span class=\"ds-index-number\">03</span><span>Flow</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#skin\"><span class=\"ds-index-number\">04</span><span>Skin</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#crack\"><span class=\"ds-index-number\">05</span><span>Crack</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#glass\" aria-current=\"step\"><span class=\"ds-index-number\">06</span><span>Glass</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#fracture\"><span class=\"ds-index-number\">07</span><span>Fracture</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#stone\"><span class=\"ds-index-number\">08</span><span>Crystal · Stone</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#sealed\"><span class=\"ds-index-number\">09</span><span>Sealed</span><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h16M13 5l7 7-7 7\"/></svg></a></li></ol>",
+      "css": ".ds-index-list{font-family:Archivo,Helvetica,Arial,sans-serif;margin:0;padding:0;list-style:none}.ds-index-list a{display:grid;grid-template-columns:40px 1fr 24px;align-items:center;gap:15px;min-height:clamp(48px,6.4vh,85px);border-bottom:1px solid #30312f;font-size:clamp(21px,1.7vw,42px);font-weight:350;letter-spacing:-.015em;color:#c4c3bd;text-decoration:none}.ds-index-list li:first-child a{border-top:1px solid #30312f}.ds-index-number{font-size:12px;color:#9a9b95;letter-spacing:.03em}.ds-index-list a svg{display:block;flex:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;width:20px;height:20px;opacity:0;transform:translateX(-7px);transition:opacity .2s,transform .2s}.ds-index-list a:hover,.ds-index-list a[aria-current=\"step\"]{color:#fff}.ds-index-list a:hover svg,.ds-index-list a[aria-current=\"step\"] svg{opacity:1;transform:none}.ds-index-list a:focus-visible{outline:1px solid var(--paper,#e9e7e2);outline-offset:6px;}@media(max-width:1000px) and (min-width:701px){.ds-index-list a{font-size:24px}}@media(max-width:700px){.ds-index-list a{min-height:48px;grid-template-columns:27px 1fr 20px;font-size:23px}.ds-index-number{font-size:11px}.ds-index-list a svg{width:18px;height:18px}}@media(max-height:580px) and (min-width:701px){.ds-index-list a{min-height:43px}}@media(prefers-reduced-motion:reduce){.ds-index-list a svg{transition:none}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "章节状态",
+      "kind": "custom",
+      "refersTo": "chapter-caption",
+      "description": "实际定位信息，不能当作新增装饰性眉题的样式依据。",
+      "html": "<div class=\"ds-chapter-caption\" aria-hidden=\"true\"><span>06 / 09</span><span class=\"ds-caption-rule\"></span><span class=\"ds-chapter-name\">GLASS</span></div>",
+      "css": ".ds-chapter-caption{font-family:Archivo,Helvetica,Arial,sans-serif;display:flex;align-items:center;gap:24px;font-size:clamp(11px,.83vw,17px);line-height:1;letter-spacing:.08em;font-weight:400;color:var(--paper,#e9e7e2);pointer-events:none;text-shadow:0 1px 8px rgb(0 0 0 / .85)}.ds-caption-rule{height:20px;width:1px;background:#747572}.ds-chapter-name{letter-spacing:.16em}@media(max-width:700px){.ds-chapter-caption{font-size:11px;gap:16px}.ds-caption-rule{height:15px}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    },
+    {
+      "name": "GLASS 光线提示",
+      "kind": "custom",
+      "refersTo": "light-instruction",
+      "description": "输入能力决定提示词；这是操作说明，不是按钮。",
+      "html": "<p class=\"ds-light-instruction\"><svg viewBox=\"0 0 36 36\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"18\" r=\"16\"/><circle cx=\"18\" cy=\"18\" r=\"1\" fill=\"currentColor\"/></svg><span class=\"ds-pointer-copy\">Move to catch the light</span><span class=\"ds-touch-copy\">Touch to catch the light</span></p>",
+      "css": ".ds-light-instruction{font-family:Archivo,Helvetica,Arial,sans-serif;display:flex;align-items:center;gap:18px;margin:0;color:var(--paper,#e9e7e2);font-size:clamp(12px,.85vw,18px);font-weight:350;text-shadow:0 1px 8px rgb(0 0 0 / .85)}.ds-light-instruction svg{display:block;flex:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;width:34px;height:34px}.ds-touch-copy{display:none}@media(pointer:coarse){.ds-touch-copy{display:inline}.ds-pointer-copy{display:none}}@media(max-width:700px){.ds-light-instruction{font-size:12px;gap:12px}.ds-light-instruction svg{width:28px;height:28px}}",
+      "sourceFiles": [
+        "../index.html",
+        "../src/styles.css",
+        "../src/main.js"
+      ]
+    }
+  ],
+  "narrative": {
+    "northStar": "Darkness holding internal fire.",
+    "overview": "黑色不是一层背景装饰，而是有重量、有表皮、能够遮住热量的主体。开场以钝重岩体和建筑般的 MAGMA 字形占据视口，随后由较轻的文字让出材料表面。褶皱、冷壳、裂隙、玻璃反光与颗粒矿物构成不同的黑；界面只承担进入、定位和少量主动干预。\n\n这套系统依靠图版质量和代码编排共同成立。图版提供地质细节与负空间；HTML 保留文字、导航和操作的语义；滚动把它们绑定到同一材料状态。正常停留时的变化局限于材料内部，最终 SEALED 将余光和自主运动归零。声音是默认关闭的可选层，不承担理解作品的必要信息。",
+    "keyCharacteristics": [
+      "连续的近黑空间，矿物白主字，灰白辅助文字；热色只在有材料依据的位置出现。",
+      "巨大的实心开场字形，较轻的场景标题，细小但明确的章节与操作层级。",
+      "每幕独立安排负空间；响应式构图同时调整图版、文字锚点与行长。",
+      "单一滚动状态组织进入、稳定、停留、交接与退出；材料变化克制且可逆。",
+      "圆形只用于小型操作线图与状态点；主体、面板和文字布局不套卡片外框。"
+    ],
+    "rules": [
+      {
+        "name": "The Contained Heat Rule",
+        "body": "热区必须仍属于裂隙或熔融褶皱；不能把整页、控件或中性冷反光染成橙色。该规则不禁止材料自身的暖色、矿物包体或微小白热芯。",
+        "section": "colors"
+      },
+      {
+        "name": "The Monument and Voice Rule",
+        "body": "以开场的重字与后续轻标题建立反差；标题字距保持在当前下限（−.04em），不要用继续压缩字距来补偿宽度。修改字库、字重、字号或英文断行时，必须连同它们占用的材料负空间一起处理。",
+        "section": "typography"
+      },
+      {
+        "name": "The Registered Surface Rule",
+        "body": "裂口轮廓、浅凹面与图版使用同一套原图坐标，再共同经过 cover 裁切、焦点和相机变换。CRACK 与 FRACTURE 的两边分别拥有缝边顶点，没有跨过开口的三角形；换图时必须同时核对几何路径与焦点。",
+        "section": "elevation"
+      },
+      {
+        "name": "The Shared State Rule",
+        "body": "滚动位置同时决定材料与文本；Lenis 是唯一的平滑滚动控制者，应用只有一个 RAF 负责调度。不能给文案或相机再加一层独立滚动平滑。",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** 保持材料优先的层级：黑色体量、有限内热、主标题、辅助句与操作各有自己的可读区域。",
+      "**Do** 将图版焦点、文字锚点、标题断行和行长作为一组关系修改；手机 FLOW / STONE 与竖向平板 GLASS 保留各自已实现的协同布局。",
+      "**Do** 让 PRESSURE 与 SEALED 的构图对应，保留从细缝余光到冷图完全接管的闭环。",
+      "**Do** 在替换 CRACK / FRACTURE 图版时同步核对原图尺寸、路径、独立网格、cover 裁切与焦点。",
+      "**Do** 保留原生语义、可见键盘焦点、章节入口、关闭后的焦点恢复及减少动态下的主动操作。",
+      "**Do** 让视觉变更继续遵循单一滚动状态、局部材质运动和明确的最终静止条件。"
+    ],
+    "donts": [
+      "**Don't** 把整个页面染成热橙色，或让中性白灰反光产生无材料依据的橙光。",
+      "**Don't** 以粒子雨、爆炸、屏幕震动、漂浮环绕镜头或持续随机噪声替代已有的重量与表面变化。",
+      "**Don't** 将数字雕塑改造成产品拆解、卡片陈列或带装饰外框的图像画廊。",
+      "**Don't** 通过比（−.04em）更紧的标题字距补偿构图问题，也不要把章节定位信息扩展成装饰性眉题体系。",
+      "**Don't** 将小型圆环操作图形推广为通用胶囊按钮，或把文字保护阴影当成浮层阴影。",
+      "**Don't** 用屏幕宽度替代输入能力判断，也不要把渲染轻量档与手机图版切换合并成同一个断点。",
+      "**Don't** 将白热芯残留、无效声明或验证范围之外的假设写成可复用设计规则；同样不要把本作品的材料演变描述为实测物理模拟。"
+    ]
+  }
+}

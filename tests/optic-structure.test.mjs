@@ -67,6 +67,20 @@ test("nine scenes cover one contiguous desktop and mobile timeline with nonzero 
   }
 });
 
+test("integer document pixels at an exact chapter start select the incoming chapter", () => {
+  const timeline = makeTimeline(false);
+  assert.equal(sampleTimeline(timeline, 6615 / 900).active, 4,
+    "Shutter's native desktop anchor must not round into Aperture");
+  for (const mobile of [false, true]) {
+    const track = makeTimeline(mobile);
+    for (const scene of track.scenes.slice(1)) {
+      assert.equal(sampleTimeline(track, scene.start).active, scene.index);
+      assert.equal(sampleTimeline(track, scene.start - 1e-7).active, scene.index - 1);
+      assert.equal(sampleTimeline(track, scene.start + 1e-7).active, scene.index);
+    }
+  }
+});
+
 test("sampling covers every point and boundary with finite normalized state and unit total visibility", () => {
   for (const mobile of [false, true]) {
     const timeline = makeTimeline(mobile);

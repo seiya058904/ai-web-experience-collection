@@ -211,7 +211,7 @@ At widths up to (900px), the application uses a mobile timeline and wider propor
 
 At widths up to (480px), headline sizes and selected line breaks are adjusted per chapter. The short-portrait aperture rule applies at widths up to (600px) and heights up to (700px), moving its reading and depth study together while retaining the lower control area. At widths up to (900px) and heights up to (520px), the compact layout uses two visual columns and removes nonessential supporting copy; the viewing camera uses the wide composition with a wider field of view. Short desktop viewports and displays from (2200px) have separate spacing and type adjustments.
 
-Do not infer a universal grid from these compositions. The repeated structure is the outer frame, the native-scroll timeline, a clear object region, and a control region with room for the footer.
+Do not infer a universal grid from these compositions. The repeated structure is the outer frame, the document-scroll timeline, a clear object region, and a control region with room for the footer.
 
 ## Elevation & Depth
 
@@ -228,9 +228,9 @@ Their exact CSS values are carried in the sidecar. They are local contrast treat
 
 ### Scene continuity and motion
 
-A single application `requestAnimationFrame` loop samples native scroll, applies time-correct damping and updates the scene, controls, typography and rail together. Model modules own geometry and resources, not clocks. Neighboring stable poses interpolate deterministically; repeated mechanical details are instanced. No nested scroller or external scroll-interception animation system is present.
+A single Lenis instance advances from the existing application `requestAnimationFrame` loop (`lerp: 0.105`, `syncTouch: false`, `autoRaf: false`). Scene, controls, typography and rail sample the resulting document position directly; there is no second camera easing clock. Native touch, keyboard input and the Index's own scrolling remain available. Model modules own geometry and resources, not clocks. Neighboring stable poses interpolate deterministically; repeated mechanical details are instanced. There is no nested document scroller.
 
-Ambient motion is deliberately small and can be paused. Native reduced motion removes ambient movement, changes the camera between chapter keyframes, disables the capture flash, and keeps mechanism controls available. Hidden tabs cancel the scheduled callback; returning to the page reconstructs the current scroll state.
+Ambient motion is deliberately small and can be paused. Native reduced motion disables wheel smoothing, removes ambient movement, changes the camera between chapter keyframes, disables the capture flash, and keeps mechanism controls available. Hidden tabs stop Lenis and cancel the scheduled callback; returning reconstructs the current document position without resuming stale inertia. Resize retains normalized reading position. Reload and document Back keep their actual stop; fresh hash entry navigates immediately into the named chapter, without replacing input made during initialization. Lenis and the renderers are disposed with the owning clock.
 
 Drawing-buffer sizing targets approximately (1.7 million pixels) on mobile and (4.2 million pixels) on desktop, with DPR limits of (1.6) and (1.5) respectively and a lower ratio bound of (0.65). These are implementation budgets, not measured frame-rate claims. Once the final chapter passes local progress (0.42), the visual stage is hidden and WebGL submissions stop. Reverse navigation restores scene rendering. Canvas2D provides an explicit optical study for all nine chapters when WebGL is unavailable or its context is lost; renderer-specific 3D labels and the magnified 4 × 4 crop are not represented as identical 3D output in that mode.
 
@@ -293,7 +293,7 @@ The same original coast image appears in depth studies, sensor/display surfaces 
 - Do compose portrait scenes with their independent camera poses and staged inspection lanes.
 - Do keep projected layer labels attached to actual layer anchors, and keep the two sensor crops clearly illustrative.
 - Do retain native controls, visible keyboard focus, stable accessible names, chapter navigation and reduced-motion behavior.
-- Do keep one native-scroll/RAF authority and reconstruct all scene positions from current state so reverse travel remains reliable.
+- Do keep one Lenis/document/RAF authority and reconstruct all scene positions from current state so reverse travel remains reliable.
 - Do stop hidden GPU submissions at the settled photograph and preserve the complete Canvas2D fallback.
 
 ### Don't:
@@ -303,6 +303,6 @@ The same original coast image appears in depth studies, sensor/display surfaces 
 - Don't replace the original camera with a branded product clone, a raster slideshow or a concept-image backdrop.
 - Don't flatten curved glass into discs, scale iris blades in place, or tip the stabilized sensor out of its focal plane.
 - Don't collapse the three housing segments or the detached body layers into one unreadable stack, including on portrait screens.
-- Don't add an independent animation clock, a nested scroller or a scroll-interception library.
+- Don't add an independent animation clock, a nested document scroller or a second easing layer after Lenis.
 - Don't present illustrative optical geometry, the 6 µm pitch, exposure labels or the generated coast image as measured hardware data or photographic EXIF.
 - Don't add unsupported claims about awards, manufacturing, calibrated optical performance or real-device frame rates.

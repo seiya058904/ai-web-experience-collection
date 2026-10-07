@@ -1,0 +1,1237 @@
+{
+  "imported": "2026-10-07",
+  "route": "codex",
+  "sourceZip": "D:\\下载\\CODEX-The-Anatomy-of-a-Book.zip",
+  "archive": "CODEX-The-Anatomy-of-a-Book.zip",
+  "bytes": 42806519,
+  "sha256": "10f89d184d7a3a9f2098badf90fdb774c90aff0eb829014ca69df2e393b7f74f",
+  "modifiedAtUtc": "2026-10-07T06:08:30.0057932Z",
+  "entries": [
+    {
+      "path": "CODEX/DESIGN.md",
+      "bytes": 5708,
+      "sha256": "9989a57a02f15776519da9c793caa92492f1a3600c7f810a0fb49e1b214c5cda"
+    },
+    {
+      "path": "CODEX/PRODUCT.md",
+      "bytes": 2408,
+      "sha256": "f3e3c4cd63cb8cbb0fb8726229025e9997f647023e38ef9ff7321a0037b7d4f9"
+    },
+    {
+      "path": "CODEX/README.md",
+      "bytes": 8946,
+      "sha256": "daa8d55eae05ab0940fbf3c56651963a9c7c7110df342be8b23862e7052615a4"
+    },
+    {
+      "path": "CODEX/art-direction/01-volume-concept.png",
+      "bytes": 2115313,
+      "sha256": "93d967c6a44aff01a2d30357a24d5d930d18e095314fd2af48e8b8591e4d6ec0"
+    },
+    {
+      "path": "CODEX/art-direction/02-sheet-final.png",
+      "bytes": 1935171,
+      "sha256": "6293efddd537bd75ee48415ea1e1e743db92968d4c89b1b916317c3a6fb0b721"
+    },
+    {
+      "path": "CODEX/art-direction/03-fold-concept.png",
+      "bytes": 1960618,
+      "sha256": "ef152a871cdb1849416d3fe9c367fb9cb4afd84812de981e1c77a37fb6369336"
+    },
+    {
+      "path": "CODEX/art-direction/04-gather-concept.png",
+      "bytes": 1976222,
+      "sha256": "935098bf0bf65935109b3b6f07e3c112302a997ae71261265d04beee04d5aa0c"
+    },
+    {
+      "path": "CODEX/art-direction/05-sew-concept.png",
+      "bytes": 2312477,
+      "sha256": "eb8e495087d261c64e1012c1f8b00ec6191f6ed5151c006b44cbf9d12625fcf5"
+    },
+    {
+      "path": "CODEX/art-direction/06-spine-final.png",
+      "bytes": 2126012,
+      "sha256": "22e72ae4302442ad9e9647385be71a3066d2f62b50963eed3e175790cb23de07"
+    },
+    {
+      "path": "CODEX/art-direction/07-marble-concept.png",
+      "bytes": 3558306,
+      "sha256": "3e454a67a17843886cae9366d70ec4471ad09e549c74b4bbcc87715971c80914"
+    },
+    {
+      "path": "CODEX/art-direction/08-case-concept.png",
+      "bytes": 1917793,
+      "sha256": "ec526908481b2a5d86a31edab31fa2a76d2953b3c34abc3c7e455c92b9ad5d50"
+    },
+    {
+      "path": "CODEX/art-direction/09-impression-concept.png",
+      "bytes": 2064656,
+      "sha256": "c01962c2d5ffe68ae641d201c1506c2a557db634ae0fecba8e7963a977bd93a5"
+    },
+    {
+      "path": "CODEX/art-direction/10-codex-concept.png",
+      "bytes": 2176013,
+      "sha256": "ef4b18a8056cc914ec98e1d2cfbaeb48db6e9ed2bd81ad2bd62438d949a36f5e"
+    },
+    {
+      "path": "CODEX/art-direction/VISUAL-BIBLE.md",
+      "bytes": 6793,
+      "sha256": "9d512ab40868011abf05cd8ff4dd4c884c32faf0f9c6740c8f5b8db40aff7325"
+    },
+    {
+      "path": "CODEX/art-direction/gather-codex-prompts.json",
+      "bytes": 6659,
+      "sha256": "644c89429293be90f293a7378e04b30773d7a652352fb702e78269b952996df0"
+    },
+    {
+      "path": "CODEX/art-direction/material-assets-provenance.json",
+      "bytes": 4741,
+      "sha256": "7cea3adb02555d02e9a06c8a0848d5c090b1002253ecc6259c51a628006835be"
+    },
+    {
+      "path": "CODEX/art-direction/paper-material-provenance.json",
+      "bytes": 1362,
+      "sha256": "09905f4d8ca8252238edbcc50b7044935e31c78ba9e0c0367637312612e39414"
+    },
+    {
+      "path": "CODEX/art-direction/root-concepts-provenance.json",
+      "bytes": 6404,
+      "sha256": "34f4681cdaf838e5a512ecf16a07157ca9c6a5ea4e96d380ef74a5cdf82161aa"
+    },
+    {
+      "path": "CODEX/art-direction/section-concepts-provenance.json",
+      "bytes": 9669,
+      "sha256": "69fbbd8f0e735288e6be9a8d19f5bb5e0ff778336e61698cbb555d49ecd59dc3"
+    },
+    {
+      "path": "CODEX/art-direction/sheet-spine-prompts.json",
+      "bytes": 6622,
+      "sha256": "04335972da47613a85f8a3ceeab160a9acdd410ee24512978ec0adefa440697e"
+    },
+    {
+      "path": "CODEX/assets/ai-final/cloth-albedo.png",
+      "bytes": 3107358,
+      "sha256": "fdbc7cd4512901d7b78b8e3a147ac27ca7dc07718cef9b84e31e3dd857715ece"
+    },
+    {
+      "path": "CODEX/assets/ai-final/marbled-endpaper.png",
+      "bytes": 3511967,
+      "sha256": "c37230300f1ca4fe5f838749e4091aca1fe72f990c645154ab85e5df1ccbbdc1"
+    },
+    {
+      "path": "CODEX/assets/ai-final/paper-albedo.png",
+      "bytes": 2658939,
+      "sha256": "21d51790362ab94a0115d83f9389475600a9881e5124a3c788d04b4d139912df"
+    },
+    {
+      "path": "CODEX/assets/ai-final/volume-still.png",
+      "bytes": 2003848,
+      "sha256": "d73366e0e96f0ad91e355ea84e657412116f73fe9a89b2d50bb31f0c29a70ab2"
+    },
+    {
+      "path": "CODEX/dist/assets/index-D9t1E-_m.css",
+      "bytes": 16883,
+      "sha256": "d42f8ffe4c69ea0213f17319871134a29c15bccdacce7e18541cb56740bf2c16"
+    },
+    {
+      "path": "CODEX/dist/assets/index-DhN0s8Sm.js",
+      "bytes": 54660,
+      "sha256": "ca33dd2c40611d34d242c6e8373f2c7b6e0918c047803c31daef57a1c55cf2e8"
+    },
+    {
+      "path": "CODEX/dist/assets/spatial-DiH5RqzV.js",
+      "bytes": 565459,
+      "sha256": "0b877552d2912d12d6b043200af887906de4a05dff0f8687e9bfae43946458a9"
+    },
+    {
+      "path": "CODEX/dist/assets/volume-still.webp",
+      "bytes": 297548,
+      "sha256": "806a00114543eff9113535c8b72d34c99de021d5410b424bb9836c36cdda5fba"
+    },
+    {
+      "path": "CODEX/dist/favicon.svg",
+      "bytes": 321,
+      "sha256": "75b58a536639f58bbe9dd870fe36c925611bbd85afe5fcca6ac1da7a3155e277"
+    },
+    {
+      "path": "CODEX/dist/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55"
+    },
+    {
+      "path": "CODEX/dist/fonts/cormorant-garamond-latin-variable.woff2",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235"
+    },
+    {
+      "path": "CODEX/dist/fonts/manrope-latin-variable.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "path": "CODEX/dist/index.html",
+      "bytes": 11534,
+      "sha256": "2935846136594fbb2f5259f3f0e05dbe5c73c15065849b7fa5577b40f122edd0"
+    },
+    {
+      "path": "CODEX/dist/models/book-spec.json",
+      "bytes": 4705,
+      "sha256": "8cf7debf558285db9b3cb23965faf6523695f598cbefabdb52710caa218353b1"
+    },
+    {
+      "path": "CODEX/dist/textures/cloth-albedo.webp",
+      "bytes": 386606,
+      "sha256": "76d18257cf61fbe82dac9055a98ea8319b815fb45506f625b1db48bb2c6b0c1c"
+    },
+    {
+      "path": "CODEX/dist/textures/marbled-endpaper.webp",
+      "bytes": 777672,
+      "sha256": "f704507f265d86803544c781580a85c353db058444064d20eb503e993e296b62"
+    },
+    {
+      "path": "CODEX/dist/textures/paper-albedo.webp",
+      "bytes": 297062,
+      "sha256": "95b897004803c3ff3df11a6570baf2c335c91d40847110e35bc61963edf70212"
+    },
+    {
+      "path": "CODEX/docs/ARCHITECTURE.md",
+      "bytes": 7191,
+      "sha256": "4c7c82535f24fd88d22bda5f492da5f8aa839fd1a56e8df02fce27a8ace2d03a"
+    },
+    {
+      "path": "CODEX/docs/CRAFT-SOURCES.md",
+      "bytes": 5734,
+      "sha256": "fe8b2db523c2c9fcf921543c8365167f3bbde9928bef7ea2b5ea6e50074b48df"
+    },
+    {
+      "path": "CODEX/docs/PROVENANCE.md",
+      "bytes": 9288,
+      "sha256": "99cc7a6dd9028d72b6dd71e5f6681284ec05beaaad5fb0a779fd9ad17b8c9f36"
+    },
+    {
+      "path": "CODEX/docs/QA.md",
+      "bytes": 6932,
+      "sha256": "82cfac0fd385b664ff6e8a668adbd8c7f7665fd6fa78e83b4b87a287d9a45ceb"
+    },
+    {
+      "path": "CODEX/index.html",
+      "bytes": 11354,
+      "sha256": "7e9caeef6d2d0ec014201df97ee0093f1e4decab166d9ffeaf4fca12ad9e76b7"
+    },
+    {
+      "path": "CODEX/licenses/Cormorant-Garamond-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "path": "CODEX/licenses/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/detect-libc--LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/fdir--LICENSE",
+      "bytes": 1053,
+      "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/lenis--LICENSE",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/lightningcss--LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/lightningcss-linux-x64-gnu--LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/nanoid--LICENSE",
+      "bytes": 1095,
+      "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/oxc-project__types--LICENSE",
+      "bytes": 1119,
+      "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/picocolors--LICENSE",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/picomatch--LICENSE",
+      "bytes": 1091,
+      "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/postcss--LICENSE",
+      "bytes": 1095,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/rolldown--LICENSE",
+      "bytes": 1302,
+      "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/rolldown--THIRD-PARTY-LICENSE.txt",
+      "bytes": 2209,
+      "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/rolldown__pluginutils--LICENSE",
+      "bytes": 1106,
+      "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/source-map-js--LICENSE",
+      "bytes": 1526,
+      "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/three--LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/tinyglobby--LICENSE",
+      "bytes": 1076,
+      "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+    },
+    {
+      "path": "CODEX/licenses/dependencies/vite--LICENSE.md",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+    },
+    {
+      "path": "CODEX/licenses/dependency-provenance.json",
+      "bytes": 6374,
+      "sha256": "fb279018357118bdf9886c88f3ec796a300ea670bae166c92b0c1410833860d0"
+    },
+    {
+      "path": "CODEX/licenses/font-provenance.json",
+      "bytes": 2289,
+      "sha256": "2ba91a24c1c3e8ba538bbfce2db4867041472df6102f44ebce2b059e821f00fd"
+    },
+    {
+      "path": "CODEX/models/README.md",
+      "bytes": 6687,
+      "sha256": "4451994d1735a540ccadc397d9444e8ac4f2bfb2eddf79664c14931a41bc9865"
+    },
+    {
+      "path": "CODEX/models/codex-complete.glb",
+      "bytes": 7663592,
+      "sha256": "6f89aad1df21db1bbb4de4ee19451ebd064f950e2cc6c0dec5146eec3895433d"
+    },
+    {
+      "path": "CODEX/models/codex-complete.meta.json",
+      "bytes": 3546,
+      "sha256": "87dedb9a7f0721372b3e798387a3f5a312b61517724e0936af8bf5c94e2dbc95"
+    },
+    {
+      "path": "CODEX/package-lock.json",
+      "bytes": 26253,
+      "sha256": "b5c8dadceceb3827ff94104b175a83587227de12ee5acb804c85c905a7baedb1"
+    },
+    {
+      "path": "CODEX/package.json",
+      "bytes": 499,
+      "sha256": "9ce3317461a102156f8d0aec2ff1d189f5092ca8c3c00ce92b922acab0c84dcf"
+    },
+    {
+      "path": "CODEX/public/assets/volume-still.webp",
+      "bytes": 297548,
+      "sha256": "806a00114543eff9113535c8b72d34c99de021d5410b424bb9836c36cdda5fba"
+    },
+    {
+      "path": "CODEX/public/favicon.svg",
+      "bytes": 321,
+      "sha256": "75b58a536639f58bbe9dd870fe36c925611bbd85afe5fcca6ac1da7a3155e277"
+    },
+    {
+      "path": "CODEX/public/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55"
+    },
+    {
+      "path": "CODEX/public/fonts/cormorant-garamond-latin-variable.woff2",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235"
+    },
+    {
+      "path": "CODEX/public/fonts/manrope-latin-variable.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "path": "CODEX/public/models/book-spec.json",
+      "bytes": 4705,
+      "sha256": "8cf7debf558285db9b3cb23965faf6523695f598cbefabdb52710caa218353b1"
+    },
+    {
+      "path": "CODEX/public/textures/cloth-albedo.webp",
+      "bytes": 386606,
+      "sha256": "76d18257cf61fbe82dac9055a98ea8319b815fb45506f625b1db48bb2c6b0c1c"
+    },
+    {
+      "path": "CODEX/public/textures/marbled-endpaper.webp",
+      "bytes": 777672,
+      "sha256": "f704507f265d86803544c781580a85c353db058444064d20eb503e993e296b62"
+    },
+    {
+      "path": "CODEX/public/textures/paper-albedo.webp",
+      "bytes": 297062,
+      "sha256": "95b897004803c3ff3df11a6570baf2c335c91d40847110e35bc61963edf70212"
+    },
+    {
+      "path": "CODEX/src/book.js",
+      "bytes": 35013,
+      "sha256": "49570c0498e97f31f511c1f3d6f436ed78ff0be9885bce63374e09d326f9f86e"
+    },
+    {
+      "path": "CODEX/src/main.js",
+      "bytes": 12261,
+      "sha256": "3ec4e142abec2d978dddb5069193b3db266c09b90ca1e7cf203b3e029f1397ef"
+    },
+    {
+      "path": "CODEX/src/marbling.js",
+      "bytes": 11095,
+      "sha256": "c8c1871e57a7cb9df03b6c80b1584b39b479f0440a2747599ea73b6adb5a6200"
+    },
+    {
+      "path": "CODEX/src/model/paper.js",
+      "bytes": 6171,
+      "sha256": "3324d8dd9dcb3decebc5a853e36aa2d9834ce29c80c34cdb64279f8a66f375e7"
+    },
+    {
+      "path": "CODEX/src/stage.js",
+      "bytes": 6715,
+      "sha256": "3d9bf39a2cca32375e63cd980255511b5aa3ce7bdfa469c6410298ac25ec2800"
+    },
+    {
+      "path": "CODEX/src/style.css",
+      "bytes": 16498,
+      "sha256": "f9ede23378dff61c301f77fcdccb2a4fd4e2d14a5957852c2a50b20184b285cb"
+    },
+    {
+      "path": "CODEX/src/timeline.js",
+      "bytes": 2500,
+      "sha256": "7591a61f894fc2724acbebf507b41cdc611fecc7c1e895ec84af7b9ed0f1df11"
+    },
+    {
+      "path": "CODEX/vite.config.js",
+      "bytes": 302,
+      "sha256": "d3f3d41d5e05b37fb9439bb03b6f669c53bfac737eb96620afff4bd4ddb1324a"
+    },
+    {
+      "path": "CODEX/MANIFEST.sha256",
+      "bytes": 8365,
+      "sha256": "9acbc288d64435648b6c98430450a55948b0f866b10f9a23fa1b712f2e82ac23"
+    }
+  ],
+  "mapping": [
+    {
+      "source": "CODEX/DESIGN.md",
+      "target": "docs/codex/DESIGN.md",
+      "bytes": 5708,
+      "sha256": "9989a57a02f15776519da9c793caa92492f1a3600c7f810a0fb49e1b214c5cda",
+      "importedBytes": 6071,
+      "importedSha256": "2829ae06bc6fb1eb24972d0855edcde123a3f67c8587e8c4153720d1deda63fc",
+      "modified": true
+    },
+    {
+      "source": "CODEX/PRODUCT.md",
+      "target": "docs/codex/PRODUCT.md",
+      "bytes": 2408,
+      "sha256": "f3e3c4cd63cb8cbb0fb8726229025e9997f647023e38ef9ff7321a0037b7d4f9",
+      "importedBytes": 2771,
+      "importedSha256": "b17d0bb9523bc678da2a016dd72eb560ff850e8537cbbeaedb44b761d7911c1c",
+      "modified": true
+    },
+    {
+      "source": "CODEX/README.md",
+      "target": "provenance/codex/UPSTREAM-README.md",
+      "bytes": 8946,
+      "sha256": "daa8d55eae05ab0940fbf3c56651963a9c7c7110df342be8b23862e7052615a4",
+      "importedBytes": 8946,
+      "importedSha256": "daa8d55eae05ab0940fbf3c56651963a9c7c7110df342be8b23862e7052615a4",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/01-volume-concept.png",
+      "target": "provenance/codex/art-direction/01-volume-concept.png",
+      "bytes": 2115313,
+      "sha256": "93d967c6a44aff01a2d30357a24d5d930d18e095314fd2af48e8b8591e4d6ec0",
+      "importedBytes": 2115313,
+      "importedSha256": "93d967c6a44aff01a2d30357a24d5d930d18e095314fd2af48e8b8591e4d6ec0",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/02-sheet-final.png",
+      "target": "provenance/codex/art-direction/02-sheet-final.png",
+      "bytes": 1935171,
+      "sha256": "6293efddd537bd75ee48415ea1e1e743db92968d4c89b1b916317c3a6fb0b721",
+      "importedBytes": 1935171,
+      "importedSha256": "6293efddd537bd75ee48415ea1e1e743db92968d4c89b1b916317c3a6fb0b721",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/03-fold-concept.png",
+      "target": "provenance/codex/art-direction/03-fold-concept.png",
+      "bytes": 1960618,
+      "sha256": "ef152a871cdb1849416d3fe9c367fb9cb4afd84812de981e1c77a37fb6369336",
+      "importedBytes": 1960618,
+      "importedSha256": "ef152a871cdb1849416d3fe9c367fb9cb4afd84812de981e1c77a37fb6369336",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/04-gather-concept.png",
+      "target": "provenance/codex/art-direction/04-gather-concept.png",
+      "bytes": 1976222,
+      "sha256": "935098bf0bf65935109b3b6f07e3c112302a997ae71261265d04beee04d5aa0c",
+      "importedBytes": 1976222,
+      "importedSha256": "935098bf0bf65935109b3b6f07e3c112302a997ae71261265d04beee04d5aa0c",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/05-sew-concept.png",
+      "target": "provenance/codex/art-direction/05-sew-concept.png",
+      "bytes": 2312477,
+      "sha256": "eb8e495087d261c64e1012c1f8b00ec6191f6ed5151c006b44cbf9d12625fcf5",
+      "importedBytes": 2312477,
+      "importedSha256": "eb8e495087d261c64e1012c1f8b00ec6191f6ed5151c006b44cbf9d12625fcf5",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/06-spine-final.png",
+      "target": "provenance/codex/art-direction/06-spine-final.png",
+      "bytes": 2126012,
+      "sha256": "22e72ae4302442ad9e9647385be71a3066d2f62b50963eed3e175790cb23de07",
+      "importedBytes": 2126012,
+      "importedSha256": "22e72ae4302442ad9e9647385be71a3066d2f62b50963eed3e175790cb23de07",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/07-marble-concept.png",
+      "target": "provenance/codex/art-direction/07-marble-concept.png",
+      "bytes": 3558306,
+      "sha256": "3e454a67a17843886cae9366d70ec4471ad09e549c74b4bbcc87715971c80914",
+      "importedBytes": 3558306,
+      "importedSha256": "3e454a67a17843886cae9366d70ec4471ad09e549c74b4bbcc87715971c80914",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/08-case-concept.png",
+      "target": "provenance/codex/art-direction/08-case-concept.png",
+      "bytes": 1917793,
+      "sha256": "ec526908481b2a5d86a31edab31fa2a76d2953b3c34abc3c7e455c92b9ad5d50",
+      "importedBytes": 1917793,
+      "importedSha256": "ec526908481b2a5d86a31edab31fa2a76d2953b3c34abc3c7e455c92b9ad5d50",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/09-impression-concept.png",
+      "target": "provenance/codex/art-direction/09-impression-concept.png",
+      "bytes": 2064656,
+      "sha256": "c01962c2d5ffe68ae641d201c1506c2a557db634ae0fecba8e7963a977bd93a5",
+      "importedBytes": 2064656,
+      "importedSha256": "c01962c2d5ffe68ae641d201c1506c2a557db634ae0fecba8e7963a977bd93a5",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/10-codex-concept.png",
+      "target": "provenance/codex/art-direction/10-codex-concept.png",
+      "bytes": 2176013,
+      "sha256": "ef4b18a8056cc914ec98e1d2cfbaeb48db6e9ed2bd81ad2bd62438d949a36f5e",
+      "importedBytes": 2176013,
+      "importedSha256": "ef4b18a8056cc914ec98e1d2cfbaeb48db6e9ed2bd81ad2bd62438d949a36f5e",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/VISUAL-BIBLE.md",
+      "target": "provenance/codex/art-direction/VISUAL-BIBLE.md",
+      "bytes": 6793,
+      "sha256": "9d512ab40868011abf05cd8ff4dd4c884c32faf0f9c6740c8f5b8db40aff7325",
+      "importedBytes": 6793,
+      "importedSha256": "9d512ab40868011abf05cd8ff4dd4c884c32faf0f9c6740c8f5b8db40aff7325",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/gather-codex-prompts.json",
+      "target": "provenance/codex/art-direction/gather-codex-prompts.json",
+      "bytes": 6659,
+      "sha256": "644c89429293be90f293a7378e04b30773d7a652352fb702e78269b952996df0",
+      "importedBytes": 6659,
+      "importedSha256": "644c89429293be90f293a7378e04b30773d7a652352fb702e78269b952996df0",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/material-assets-provenance.json",
+      "target": "provenance/codex/art-direction/material-assets-provenance.json",
+      "bytes": 4741,
+      "sha256": "7cea3adb02555d02e9a06c8a0848d5c090b1002253ecc6259c51a628006835be",
+      "importedBytes": 4741,
+      "importedSha256": "7cea3adb02555d02e9a06c8a0848d5c090b1002253ecc6259c51a628006835be",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/paper-material-provenance.json",
+      "target": "provenance/codex/art-direction/paper-material-provenance.json",
+      "bytes": 1362,
+      "sha256": "09905f4d8ca8252238edbcc50b7044935e31c78ba9e0c0367637312612e39414",
+      "importedBytes": 1362,
+      "importedSha256": "09905f4d8ca8252238edbcc50b7044935e31c78ba9e0c0367637312612e39414",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/root-concepts-provenance.json",
+      "target": "provenance/codex/art-direction/root-concepts-provenance.json",
+      "bytes": 6404,
+      "sha256": "34f4681cdaf838e5a512ecf16a07157ca9c6a5ea4e96d380ef74a5cdf82161aa",
+      "importedBytes": 6404,
+      "importedSha256": "34f4681cdaf838e5a512ecf16a07157ca9c6a5ea4e96d380ef74a5cdf82161aa",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/section-concepts-provenance.json",
+      "target": "provenance/codex/art-direction/section-concepts-provenance.json",
+      "bytes": 9669,
+      "sha256": "69fbbd8f0e735288e6be9a8d19f5bb5e0ff778336e61698cbb555d49ecd59dc3",
+      "importedBytes": 9669,
+      "importedSha256": "69fbbd8f0e735288e6be9a8d19f5bb5e0ff778336e61698cbb555d49ecd59dc3",
+      "modified": false
+    },
+    {
+      "source": "CODEX/art-direction/sheet-spine-prompts.json",
+      "target": "provenance/codex/art-direction/sheet-spine-prompts.json",
+      "bytes": 6622,
+      "sha256": "04335972da47613a85f8a3ceeab160a9acdd410ee24512978ec0adefa440697e",
+      "importedBytes": 6622,
+      "importedSha256": "04335972da47613a85f8a3ceeab160a9acdd410ee24512978ec0adefa440697e",
+      "modified": false
+    },
+    {
+      "source": "CODEX/assets/ai-final/cloth-albedo.png",
+      "target": "provenance/codex/assets/ai-final/cloth-albedo.png",
+      "bytes": 3107358,
+      "sha256": "fdbc7cd4512901d7b78b8e3a147ac27ca7dc07718cef9b84e31e3dd857715ece",
+      "importedBytes": 3107358,
+      "importedSha256": "fdbc7cd4512901d7b78b8e3a147ac27ca7dc07718cef9b84e31e3dd857715ece",
+      "modified": false
+    },
+    {
+      "source": "CODEX/assets/ai-final/marbled-endpaper.png",
+      "target": "provenance/codex/assets/ai-final/marbled-endpaper.png",
+      "bytes": 3511967,
+      "sha256": "c37230300f1ca4fe5f838749e4091aca1fe72f990c645154ab85e5df1ccbbdc1",
+      "importedBytes": 3511967,
+      "importedSha256": "c37230300f1ca4fe5f838749e4091aca1fe72f990c645154ab85e5df1ccbbdc1",
+      "modified": false
+    },
+    {
+      "source": "CODEX/assets/ai-final/paper-albedo.png",
+      "target": "provenance/codex/assets/ai-final/paper-albedo.png",
+      "bytes": 2658939,
+      "sha256": "21d51790362ab94a0115d83f9389475600a9881e5124a3c788d04b4d139912df",
+      "importedBytes": 2658939,
+      "importedSha256": "21d51790362ab94a0115d83f9389475600a9881e5124a3c788d04b4d139912df",
+      "modified": false
+    },
+    {
+      "source": "CODEX/assets/ai-final/volume-still.png",
+      "target": "provenance/codex/assets/ai-final/volume-still.png",
+      "bytes": 2003848,
+      "sha256": "d73366e0e96f0ad91e355ea84e657412116f73fe9a89b2d50bb31f0c29a70ab2",
+      "importedBytes": 2003848,
+      "importedSha256": "d73366e0e96f0ad91e355ea84e657412116f73fe9a89b2d50bb31f0c29a70ab2",
+      "modified": false
+    },
+    {
+      "source": "CODEX/docs/ARCHITECTURE.md",
+      "target": "docs/codex/ARCHITECTURE.md",
+      "bytes": 7191,
+      "sha256": "4c7c82535f24fd88d22bda5f492da5f8aa839fd1a56e8df02fce27a8ace2d03a",
+      "importedBytes": 7632,
+      "importedSha256": "794cee14f009abcdf505d50e4e98c8f78bbaa7edb2113a0230b9c55a373f6dee",
+      "modified": true
+    },
+    {
+      "source": "CODEX/docs/CRAFT-SOURCES.md",
+      "target": "docs/codex/CRAFT-SOURCES.md",
+      "bytes": 5734,
+      "sha256": "fe8b2db523c2c9fcf921543c8365167f3bbde9928bef7ea2b5ea6e50074b48df",
+      "importedBytes": 6097,
+      "importedSha256": "b84343b03bd306215ad09f426093888928fc90eea58239befb8ff8691f80ce04",
+      "modified": true
+    },
+    {
+      "source": "CODEX/docs/PROVENANCE.md",
+      "target": "docs/codex/PROVENANCE.md",
+      "bytes": 9288,
+      "sha256": "99cc7a6dd9028d72b6dd71e5f6681284ec05beaaad5fb0a779fd9ad17b8c9f36",
+      "importedBytes": 10179,
+      "importedSha256": "d6b9a0a12db5d670bfd3fd5d5b6a227509e5de63c907c5e8351908b96c0847f9",
+      "modified": true
+    },
+    {
+      "source": "CODEX/docs/QA.md",
+      "target": "docs/codex/QA.md",
+      "bytes": 6932,
+      "sha256": "82cfac0fd385b664ff6e8a668adbd8c7f7665fd6fa78e83b4b87a287d9a45ceb",
+      "importedBytes": 7210,
+      "importedSha256": "bee7cca463b635c449c3caade3c0e4d6edc064cb4b5a8ef85b3b7385c49dbc60",
+      "modified": true
+    },
+    {
+      "source": "CODEX/index.html",
+      "target": "pages/codex/index.html",
+      "bytes": 11354,
+      "sha256": "7e9caeef6d2d0ec014201df97ee0093f1e4decab166d9ffeaf4fca12ad9e76b7",
+      "importedBytes": 13182,
+      "importedSha256": "4493a50f5a0abfcabdb94ccf3b010faf955f64aeb76ecdd0ffedc30c3ddbfdb9",
+      "modified": true
+    },
+    {
+      "source": "CODEX/licenses/Cormorant-Garamond-OFL.txt",
+      "target": "public/codex/licenses/Cormorant-Garamond-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "importedBytes": 4387,
+      "importedSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/Manrope-OFL.txt",
+      "target": "public/codex/licenses/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "importedBytes": 4387,
+      "importedSha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/detect-libc--LICENSE",
+      "target": "public/codex/licenses/dependencies/detect-libc--LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "importedBytes": 11357,
+      "importedSha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/fdir--LICENSE",
+      "target": "public/codex/licenses/dependencies/fdir--LICENSE",
+      "bytes": 1053,
+      "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "importedBytes": 1053,
+      "importedSha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/lenis--LICENSE",
+      "target": "public/codex/licenses/dependencies/lenis--LICENSE",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "importedBytes": 1096,
+      "importedSha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/lightningcss--LICENSE",
+      "target": "public/codex/licenses/dependencies/lightningcss--LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "importedBytes": 15648,
+      "importedSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/lightningcss-linux-x64-gnu--LICENSE",
+      "target": "public/codex/licenses/dependencies/lightningcss-linux-x64-gnu--LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "importedBytes": 15648,
+      "importedSha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/nanoid--LICENSE",
+      "target": "public/codex/licenses/dependencies/nanoid--LICENSE",
+      "bytes": 1095,
+      "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "importedBytes": 1095,
+      "importedSha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/oxc-project__types--LICENSE",
+      "target": "public/codex/licenses/dependencies/oxc-project__types--LICENSE",
+      "bytes": 1119,
+      "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "importedBytes": 1119,
+      "importedSha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/picocolors--LICENSE",
+      "target": "public/codex/licenses/dependencies/picocolors--LICENSE",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "importedBytes": 787,
+      "importedSha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/picomatch--LICENSE",
+      "target": "public/codex/licenses/dependencies/picomatch--LICENSE",
+      "bytes": 1091,
+      "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "importedBytes": 1091,
+      "importedSha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/postcss--LICENSE",
+      "target": "public/codex/licenses/dependencies/postcss--LICENSE",
+      "bytes": 1095,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "importedBytes": 1095,
+      "importedSha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/rolldown--LICENSE",
+      "target": "public/codex/licenses/dependencies/rolldown--LICENSE",
+      "bytes": 1302,
+      "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "importedBytes": 1302,
+      "importedSha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/rolldown--THIRD-PARTY-LICENSE.txt",
+      "target": "public/codex/licenses/dependencies/rolldown--THIRD-PARTY-LICENSE.txt",
+      "bytes": 2209,
+      "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c",
+      "importedBytes": 2209,
+      "importedSha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/rolldown__pluginutils--LICENSE",
+      "target": "public/codex/licenses/dependencies/rolldown__pluginutils--LICENSE",
+      "bytes": 1106,
+      "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "importedBytes": 1106,
+      "importedSha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/source-map-js--LICENSE",
+      "target": "public/codex/licenses/dependencies/source-map-js--LICENSE",
+      "bytes": 1526,
+      "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "importedBytes": 1526,
+      "importedSha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/three--LICENSE",
+      "target": "public/codex/licenses/dependencies/three--LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "importedBytes": 1081,
+      "importedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/tinyglobby--LICENSE",
+      "target": "public/codex/licenses/dependencies/tinyglobby--LICENSE",
+      "bytes": 1076,
+      "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "importedBytes": 1076,
+      "importedSha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependencies/vite--LICENSE.md",
+      "target": "public/codex/licenses/dependencies/vite--LICENSE.md",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "importedBytes": 108786,
+      "importedSha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/dependency-provenance.json",
+      "target": "public/codex/licenses/dependency-provenance.json",
+      "bytes": 6374,
+      "sha256": "fb279018357118bdf9886c88f3ec796a300ea670bae166c92b0c1410833860d0",
+      "importedBytes": 6374,
+      "importedSha256": "fb279018357118bdf9886c88f3ec796a300ea670bae166c92b0c1410833860d0",
+      "modified": false
+    },
+    {
+      "source": "CODEX/licenses/font-provenance.json",
+      "target": "public/codex/licenses/font-provenance.json",
+      "bytes": 2289,
+      "sha256": "2ba91a24c1c3e8ba538bbfce2db4867041472df6102f44ebce2b059e821f00fd",
+      "importedBytes": 2289,
+      "importedSha256": "2ba91a24c1c3e8ba538bbfce2db4867041472df6102f44ebce2b059e821f00fd",
+      "modified": false
+    },
+    {
+      "source": "CODEX/models/README.md",
+      "target": "provenance/codex/models/README.md",
+      "bytes": 6687,
+      "sha256": "4451994d1735a540ccadc397d9444e8ac4f2bfb2eddf79664c14931a41bc9865",
+      "importedBytes": 6687,
+      "importedSha256": "4451994d1735a540ccadc397d9444e8ac4f2bfb2eddf79664c14931a41bc9865",
+      "modified": false
+    },
+    {
+      "source": "CODEX/models/codex-complete.glb",
+      "target": "provenance/codex/models/codex-complete.glb",
+      "bytes": 7663592,
+      "sha256": "6f89aad1df21db1bbb4de4ee19451ebd064f950e2cc6c0dec5146eec3895433d",
+      "importedBytes": 7663592,
+      "importedSha256": "6f89aad1df21db1bbb4de4ee19451ebd064f950e2cc6c0dec5146eec3895433d",
+      "modified": false
+    },
+    {
+      "source": "CODEX/models/codex-complete.meta.json",
+      "target": "provenance/codex/models/codex-complete.meta.json",
+      "bytes": 3546,
+      "sha256": "87dedb9a7f0721372b3e798387a3f5a312b61517724e0936af8bf5c94e2dbc95",
+      "importedBytes": 3546,
+      "importedSha256": "87dedb9a7f0721372b3e798387a3f5a312b61517724e0936af8bf5c94e2dbc95",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/assets/volume-still.webp",
+      "target": "public/codex/assets/volume-still.webp",
+      "bytes": 297548,
+      "sha256": "806a00114543eff9113535c8b72d34c99de021d5410b424bb9836c36cdda5fba",
+      "importedBytes": 297548,
+      "importedSha256": "806a00114543eff9113535c8b72d34c99de021d5410b424bb9836c36cdda5fba",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/favicon.svg",
+      "target": "public/codex/favicon.svg",
+      "bytes": 321,
+      "sha256": "75b58a536639f58bbe9dd870fe36c925611bbd85afe5fcca6ac1da7a3155e277",
+      "importedBytes": 321,
+      "importedSha256": "75b58a536639f58bbe9dd870fe36c925611bbd85afe5fcca6ac1da7a3155e277",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "target": "public/codex/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "importedBytes": 39260,
+      "importedSha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/fonts/cormorant-garamond-latin-variable.woff2",
+      "target": "public/codex/fonts/cormorant-garamond-latin-variable.woff2",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "importedBytes": 37640,
+      "importedSha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/fonts/manrope-latin-variable.woff2",
+      "target": "public/codex/fonts/manrope-latin-variable.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "importedBytes": 24836,
+      "importedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/models/book-spec.json",
+      "target": "public/codex/models/book-spec.json",
+      "bytes": 4705,
+      "sha256": "8cf7debf558285db9b3cb23965faf6523695f598cbefabdb52710caa218353b1",
+      "importedBytes": 4705,
+      "importedSha256": "8cf7debf558285db9b3cb23965faf6523695f598cbefabdb52710caa218353b1",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/textures/cloth-albedo.webp",
+      "target": "public/codex/textures/cloth-albedo.webp",
+      "bytes": 386606,
+      "sha256": "76d18257cf61fbe82dac9055a98ea8319b815fb45506f625b1db48bb2c6b0c1c",
+      "importedBytes": 386606,
+      "importedSha256": "76d18257cf61fbe82dac9055a98ea8319b815fb45506f625b1db48bb2c6b0c1c",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/textures/marbled-endpaper.webp",
+      "target": "public/codex/textures/marbled-endpaper.webp",
+      "bytes": 777672,
+      "sha256": "f704507f265d86803544c781580a85c353db058444064d20eb503e993e296b62",
+      "importedBytes": 777672,
+      "importedSha256": "f704507f265d86803544c781580a85c353db058444064d20eb503e993e296b62",
+      "modified": false
+    },
+    {
+      "source": "CODEX/public/textures/paper-albedo.webp",
+      "target": "public/codex/textures/paper-albedo.webp",
+      "bytes": 297062,
+      "sha256": "95b897004803c3ff3df11a6570baf2c335c91d40847110e35bc61963edf70212",
+      "importedBytes": 297062,
+      "importedSha256": "95b897004803c3ff3df11a6570baf2c335c91d40847110e35bc61963edf70212",
+      "modified": false
+    },
+    {
+      "source": "CODEX/src/book.js",
+      "target": "experiences/codex/src/book.js",
+      "bytes": 35013,
+      "sha256": "49570c0498e97f31f511c1f3d6f436ed78ff0be9885bce63374e09d326f9f86e",
+      "importedBytes": 35019,
+      "importedSha256": "4c185fa2516a581b0bddada507714712b7e44265433dff94df6d01eb85196f72",
+      "modified": true
+    },
+    {
+      "source": "CODEX/src/main.js",
+      "target": "experiences/codex/src/main.js",
+      "bytes": 12261,
+      "sha256": "3ec4e142abec2d978dddb5069193b3db266c09b90ca1e7cf203b3e029f1397ef",
+      "importedBytes": 14904,
+      "importedSha256": "195005e85ce9d9d8ebed030fb786656e7f1c50a6d039ad37bb8b758a47febdae",
+      "modified": true
+    },
+    {
+      "source": "CODEX/src/marbling.js",
+      "target": "experiences/codex/src/marbling.js",
+      "bytes": 11095,
+      "sha256": "c8c1871e57a7cb9df03b6c80b1584b39b479f0440a2747599ea73b6adb5a6200",
+      "importedBytes": 11101,
+      "importedSha256": "0ed22b1eb62aa1626e228f7260097512489c6ccd12c830bbb021bf8d82e0182e",
+      "modified": true
+    },
+    {
+      "source": "CODEX/src/model/paper.js",
+      "target": "experiences/codex/src/model/paper.js",
+      "bytes": 6171,
+      "sha256": "3324d8dd9dcb3decebc5a853e36aa2d9834ce29c80c34cdb64279f8a66f375e7",
+      "importedBytes": 6171,
+      "importedSha256": "3324d8dd9dcb3decebc5a853e36aa2d9834ce29c80c34cdb64279f8a66f375e7",
+      "modified": false
+    },
+    {
+      "source": "CODEX/src/stage.js",
+      "target": "experiences/codex/src/stage.js",
+      "bytes": 6715,
+      "sha256": "3d9bf39a2cca32375e63cd980255511b5aa3ce7bdfa469c6410298ac25ec2800",
+      "importedBytes": 6715,
+      "importedSha256": "3d9bf39a2cca32375e63cd980255511b5aa3ce7bdfa469c6410298ac25ec2800",
+      "modified": false
+    },
+    {
+      "source": "CODEX/src/style.css",
+      "target": "experiences/codex/src/style.css",
+      "bytes": 16498,
+      "sha256": "f9ede23378dff61c301f77fcdccb2a4fd4e2d14a5957852c2a50b20184b285cb",
+      "importedBytes": 16663,
+      "importedSha256": "f2695fd39b540bc99d9f6e0d43ce4ddfbdc36f55e4389fa2ec31b87ee8ff133b",
+      "modified": true
+    },
+    {
+      "source": "CODEX/src/timeline.js",
+      "target": "experiences/codex/src/timeline.js",
+      "bytes": 2500,
+      "sha256": "7591a61f894fc2724acbebf507b41cdc611fecc7c1e895ec84af7b9ed0f1df11",
+      "importedBytes": 2500,
+      "importedSha256": "7591a61f894fc2724acbebf507b41cdc611fecc7c1e895ec84af7b9ed0f1df11",
+      "modified": false
+    },
+    {
+      "source": "CODEX/MANIFEST.sha256",
+      "target": "provenance/codex/UPSTREAM-MANIFEST.sha256",
+      "bytes": 8365,
+      "sha256": "9acbc288d64435648b6c98430450a55948b0f866b10f9a23fa1b712f2e82ac23",
+      "importedBytes": 8365,
+      "importedSha256": "9acbc288d64435648b6c98430450a55948b0f866b10f9a23fa1b712f2e82ac23",
+      "modified": false
+    }
+  ],
+  "omissions": [
+    {
+      "path": "CODEX/dist/assets/index-D9t1E-_m.css",
+      "bytes": 16883,
+      "sha256": "d42f8ffe4c69ea0213f17319871134a29c15bccdacce7e18541cb56740bf2c16",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/assets/index-DhN0s8Sm.js",
+      "bytes": 54660,
+      "sha256": "ca33dd2c40611d34d242c6e8373f2c7b6e0918c047803c31daef57a1c55cf2e8",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/assets/spatial-DiH5RqzV.js",
+      "bytes": 565459,
+      "sha256": "0b877552d2912d12d6b043200af887906de4a05dff0f8687e9bfae43946458a9",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/assets/volume-still.webp",
+      "bytes": 297548,
+      "sha256": "806a00114543eff9113535c8b72d34c99de021d5410b424bb9836c36cdda5fba",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/favicon.svg",
+      "bytes": 321,
+      "sha256": "75b58a536639f58bbe9dd870fe36c925611bbd85afe5fcca6ac1da7a3155e277",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/fonts/cormorant-garamond-latin-variable.woff2",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/fonts/manrope-latin-variable.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/index.html",
+      "bytes": 11534,
+      "sha256": "2935846136594fbb2f5259f3f0e05dbe5c73c15065849b7fa5577b40f122edd0",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/models/book-spec.json",
+      "bytes": 4705,
+      "sha256": "8cf7debf558285db9b3cb23965faf6523695f598cbefabdb52710caa218353b1",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/textures/cloth-albedo.webp",
+      "bytes": 386606,
+      "sha256": "76d18257cf61fbe82dac9055a98ea8319b815fb45506f625b1db48bb2c6b0c1c",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/textures/marbled-endpaper.webp",
+      "bytes": 777672,
+      "sha256": "f704507f265d86803544c781580a85c353db058444064d20eb503e993e296b62",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/dist/textures/paper-albedo.webp",
+      "bytes": 297062,
+      "sha256": "95b897004803c3ff3df11a6570baf2c335c91d40847110e35bc61963edf70212",
+      "reason": "Supplied compiled duplicate; Collection rebuilds source with its root Vite config."
+    },
+    {
+      "path": "CODEX/package-lock.json",
+      "bytes": 26253,
+      "sha256": "b5c8dadceceb3827ff94104b175a83587227de12ee5acb804c85c905a7baedb1",
+      "reason": "Standalone package/lock/build configuration omitted; root installed dependencies and lockfile reused."
+    },
+    {
+      "path": "CODEX/package.json",
+      "bytes": 499,
+      "sha256": "9ce3317461a102156f8d0aec2ff1d189f5092ca8c3c00ce92b922acab0c84dcf",
+      "reason": "Standalone package/lock/build configuration omitted; root installed dependencies and lockfile reused."
+    },
+    {
+      "path": "CODEX/vite.config.js",
+      "bytes": 302,
+      "sha256": "d3f3d41d5e05b37fb9439bb03b6f669c53bfac737eb96620afff4bd4ddb1324a",
+      "reason": "Standalone package/lock/build configuration omitted; root installed dependencies and lockfile reused."
+    }
+  ],
+  "preaudit": {
+    "entryCount": 86,
+    "topLevels": [
+      "CODEX"
+    ],
+    "unsafeEntries": [],
+    "nestedArchives": [],
+    "fontHashChecks": "3 fonts and 2 OFLs match supplied font provenance",
+    "runtime": "20 upstream desktop/mobile chapter frames; no JS or resource errors; controls intact"
+  },
+  "boundary": [
+    "experiences/codex/",
+    "pages/codex/",
+    "public/codex/",
+    "docs/codex/",
+    "provenance/codex/"
+  ],
+  "originalLicense": "Original source/copy/procedural model/AI art have no declared project-wide license; supplied font/dependency notices preserved. No blanket MIT/CC0 claim.",
+  "runtimeEdits": [
+    "Root dependency imports and base-aware resource namespace",
+    "Native Collection return and canonical/social metadata",
+    "Direct HTML stylesheet for the no-JavaScript reading edition",
+    "One original RAF advances one Lenis (.105, autoRaf false, syncTouch false); reduced wheel smoothing disabled",
+    "Virtual enhanced chapter IDs; immediate cold hash and validated scoped normalized-history restore",
+    "Abortable input listeners, timer cleanup, early page lifecycle hooks, hidden/BFCache pause/resume and late-resource disposal"
+  ],
+  "generated": [
+    {
+      "path": "public/codex/NOTICE.md",
+      "bytes": 2234,
+      "sha256": "19f8f271f4786f5bdb02d8cfa1c87c1bf77600e83860ae0ce3b2e7c556c1c051"
+    },
+    {
+      "path": "public/codex/poster.webp",
+      "bytes": 22234,
+      "sha256": "e685f351aef6c4adbc2422ada5ddfafdcb63d69a6f11dd13ac1d339f513a6a04"
+    },
+    {
+      "path": "public/codex/social.jpg",
+      "bytes": 24479,
+      "sha256": "75d2f4ff7492fc6c53a152fffe4692b8313e1545ea0eb8465971a6a2a4bd0392"
+    }
+  ],
+  "capture": {
+    "source": "Actual final closed runtime model at 1600×1000, OS reduced motion, #codex",
+    "hide": ".masthead and descendants, .binding and descendants, .journey-footer and descendants, fallback notice, skip link; book canvas unchanged",
+    "crop": {
+      "left": 740,
+      "top": 50,
+      "width": 820,
+      "height": 920
+    },
+    "poster": {
+      "width": 1000,
+      "height": 900,
+      "fit": "contain",
+      "quality": 91
+    },
+    "social": {
+      "width": 1200,
+      "height": 630,
+      "fit": "contain",
+      "quality": 91
+    },
+    "retained": "Original physical gold CODEX lettering; no DOM title/controls, no conceptual frame substituted."
+  }
+}

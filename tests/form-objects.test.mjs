@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import { createChair } from '../experiences/form/src/world/chair.js';
 import { createLamp, createTable } from '../experiences/form/src/world/objects.js';
+import { samplePose, cameraSpan, mix } from '../experiences/form/src/director.js';
 
 const factories = [createChair, createLamp, createTable];
 
@@ -33,6 +34,46 @@ function transformState(group) {
   });
   return result;
 }
+
+test('Light retains the complete lamp body in narrow desktop and portrait cameras', t => {
+  const lamp = setup(t, createLamp);
+  const point = new THREE.Vector3();
+  for (const [width, height, mobile] of [[751, 1024, false], [768, 1024, false], [1425, 900, false], [390, 844, true]]) {
+    const aspect = width / height;
+    for (const progress of [4.18, 4.25, 4.4, 4.68]) {
+      const pose = samplePose(progress, mobile);
+      lamp.group.position.set(pose.lx, pose.ly, pose.lz);
+      lamp.group.rotation.set(0, pose.lr, 0);
+      lamp.group.scale.setScalar(pose.ls);
+      lamp.setExplode(pose.le);
+      lamp.group.updateMatrixWorld(true);
+      const camera = new THREE.PerspectiveCamera(mix(32, 6, pose.dimensions), aspect, .01, 100);
+      const distance = cameraSpan(pose, aspect, mobile) / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+      camera.position.set(0, pose.lookY + Math.sin(pose.pitch) * distance, Math.cos(pose.pitch) * distance);
+      camera.lookAt(0, pose.lookY, 0);
+      camera.updateMatrixWorld();
+      lamp.group.traverse(mesh => {
+        // The trailing floor cable is allowed to leave the composed picture;
+        // the shade, stem and weighted base are the complete study subject.
+        if (!mesh.isMesh || !mesh.visible || lamp.cable.getObjectById(mesh.id)) return;
+        const positions = mesh.geometry.attributes.position;
+        for (let i = 0; i < positions.count; i++) {
+          point.fromBufferAttribute(positions, i).applyMatrix4(mesh.matrixWorld).project(camera);
+          assert.ok(Math.abs(point.x) < .96 && Math.abs(point.y) < .96,
+            `${width}×${height}, Light ${progress}: ${mesh.name} left the stable frame`);
+        }
+      });
+    }
+  }
+  for (const progress of [0, 1.4, 2.4, 3.4, 5.4, 6.4, 7.4]) {
+    const pose = samplePose(progress);
+    assert.equal(cameraSpan(pose, .75), pose.span, 'other studies must retain their camera scale');
+  }
+  const portrait = samplePose(4.4, true);
+  assert.equal(cameraSpan(portrait, 390 / 844, true), portrait.span);
+  const wide = samplePose(4.4);
+  assert.equal(cameraSpan(wide, 1.6), wide.span);
+});
 
 test('original meshes have finite vertices, valid indices and unit surface normals', t => {
   for (const factory of factories) {

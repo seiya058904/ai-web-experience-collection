@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "field_sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+  "sections_checked": 72,
+  "browser_data_identical": true,
+  "obj_browser_alignment": "within 0.00004 unitless model units",
+  "mesh_density_error_median": 0.115,
+  "mesh_density_error_p90": 0.253,
+  "note": "Checks representation consistency; does not establish scientific accuracy."
+}

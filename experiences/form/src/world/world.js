@@ -4,7 +4,7 @@ import { createChair } from './chair.js';
 import { createLamp, createTable } from './objects.js';
 import { createMaterials } from './materials.js';
 import { createDrafting } from './drafting.js';
-import { clamp, mix, smooth } from '../director.js';
+import { clamp, mix, smooth, cameraSpan } from '../director.js';
 
 const WARM = new THREE.Color('#eeeae3');
 const DARK = new THREE.Color('#22221f');
@@ -190,7 +190,7 @@ export class ObjectWorld {
     object.group.visible = scale > .004;
   }
 
-  update(state, controls, dt, time, intro = 1) {
+  update(state, controls, dt, time, intro = 1, mobile = false) {
     const s = state;
     this.stageGroup.rotation.y = (controls.orbit || 0) * s.final;
     const live = controls.reduced ? 0 : 1;
@@ -221,7 +221,8 @@ export class ObjectWorld {
     // underside and the floor it lights, as a real studio camera would.
     this.camera.fov = mix(32, 6, s.dimensions);
     this.camera.aspect = aspect;
-    const distance = s.span / (2 * Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2)));
+    const span = cameraSpan(s, aspect, mobile);
+    const distance = span / (2 * Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2)));
     this.camera.position.set(0, s.lookY + Math.sin(s.pitch) * distance, Math.cos(s.pitch) * distance);
     this.camera.lookAt(0, s.lookY, 0);
     this.camera.updateProjectionMatrix();

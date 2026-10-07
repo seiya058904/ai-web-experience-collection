@@ -23,6 +23,7 @@ export interface MotionOptions {
 
 export interface MotionController {
   goTo: (index: number, immediate?: boolean) => void;
+  restoreProgress: (progress: number) => void;
   getActiveIndex: () => number;
   destroy: () => void;
   pause: () => void;
@@ -141,6 +142,8 @@ function createImmersiveMotion(options: MotionOptions): MotionController {
   let paused = false;
   let suspended = document.hidden;
   let pendingNavigation: Navigation | null = null;
+  let navigationGoal: Navigation | null = null;
+  let navigationSerial = 0;
   let timeline: gsap.core.Timeline;
   let trigger!: ScrollTrigger;
   let ready = false;
@@ -159,6 +162,14 @@ function createImmersiveMotion(options: MotionOptions): MotionController {
     anchors: false,
     prevent: node => node.hasAttribute('data-lenis-prevent') || node.tagName === 'DIALOG',
   });
+  function cancelNavigation(event: Event) {
+    if (event.type === 'keydown' && !['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes((event as KeyboardEvent).key)) return;
+    navigationGoal = null;
+    navigationSerial++;
+  }
+  window.addEventListener('wheel', cancelNavigation, { passive: true, capture: true });
+  window.addEventListener('touchstart', cancelNavigation, { passive: true, capture: true });
+  window.addEventListener('keydown', cancelNavigation, true);
 
   function setHint(element: HTMLElement | null, value: string) {
     if (!element) return;
@@ -331,6 +342,7 @@ function createImmersiveMotion(options: MotionOptions): MotionController {
   };
   const onRefresh = () => {
     if (destroyed) return;
+    const resumeNavigation = navigationGoal;
     refreshInProgress = false;
     restoringRefresh = true;
     lenis.resize();
@@ -342,14 +354,19 @@ function createImmersiveMotion(options: MotionOptions): MotionController {
     ScrollTrigger.update();
     restoringRefresh = false;
     updateStatus();
+    if (resumeNavigation) navigate(resumeNavigation.index, resumeNavigation.immediate);
   };
   ScrollTrigger.addEventListener('refreshInit', onRefreshInit);
   ScrollTrigger.addEventListener('refresh', onRefresh);
 
   function navigate(index: number, immediate: boolean) {
+    navigationGoal = { index, immediate };
+    const serial = ++navigationSerial;
     const time = index === 0 ? 0 : Math.min(duration, arrival(index) + 0.26);
     const target = trigger.start + (time / duration) * (trigger.end - trigger.start);
-    lenis.scrollTo(target, { immediate, force: true });
+    lenis.scrollTo(target, { immediate, force: true, onComplete: () => {
+      if (serial === navigationSerial) navigationGoal = null;
+    } });
     if (immediate) ScrollTrigger.update();
   }
 
@@ -392,6 +409,13 @@ function createImmersiveMotion(options: MotionOptions): MotionController {
       if (paused || suspended) pendingNavigation = { index: target, immediate };
       else navigate(target, immediate);
     },
+    restoreProgress(progress) {
+      if (destroyed) return;
+      lenis.resize();
+      lenis.scrollTo(clamp(progress) * lenis.limit, { immediate: true, force: true });
+      ScrollTrigger.update();
+      updateStatus();
+    },
     getActiveIndex: () => Math.max(activeIndex, 0),
     pause() {
       if (destroyed || paused) return;
@@ -412,6 +436,10 @@ function createImmersiveMotion(options: MotionOptions): MotionController {
       if (destroyed) return;
       destroyed = true;
       pendingNavigation = null;
+      navigationGoal = null;
+      window.removeEventListener('wheel', cancelNavigation, true);
+      window.removeEventListener('touchstart', cancelNavigation, true);
+      window.removeEventListener('keydown', cancelNavigation, true);
       document.removeEventListener('visibilitychange', onVisibility, true);
       ScrollTrigger.removeEventListener('refreshInit', onRefreshInit);
       ScrollTrigger.removeEventListener('refresh', onRefresh);
@@ -439,6 +467,9 @@ function createReducedMotion(options: MotionOptions): MotionController {
   let firstTop = 0;
   let travel = 1;
   let viewportHeight = window.innerHeight;
+  let viewportWidth = window.innerWidth;
+  let documentRange = 1;
+  let documentProgress = 0;
   let previousOverflow: { value: string; priority: string } | null = null;
 
   const context = gsap.context(() => {
@@ -451,6 +482,9 @@ function createReducedMotion(options: MotionOptions): MotionController {
 
   function report() {
     if (destroyed || paused) return;
+    if (window.innerWidth === viewportWidth && window.innerHeight === viewportHeight) {
+      documentProgress = clamp(window.scrollY / documentRange);
+    }
     const center = window.scrollY + viewportHeight * 0.5;
     let index = 0;
     let distance = Infinity;
@@ -462,9 +496,13 @@ function createReducedMotion(options: MotionOptions): MotionController {
     onProgress?.(clamp((window.scrollY - firstTop) / travel));
   }
 
-  function measure() {
+  function measure(preserve = true) {
     if (destroyed) return;
+    const previousProgress = documentProgress;
     viewportHeight = window.innerHeight;
+    viewportWidth = window.innerWidth;
+    documentRange = Math.max(1, document.documentElement.scrollHeight - viewportHeight);
+    if (preserve) window.scrollTo({ top: previousProgress * documentRange, behavior: 'instant' });
     const y = window.scrollY;
     const rectangles = scenes.map(scene => scene.getBoundingClientRect());
     centers = rectangles.map(rect => rect.top + y + rect.height * 0.5);
@@ -480,7 +518,8 @@ function createReducedMotion(options: MotionOptions): MotionController {
   });
   scenes.forEach(scene => observer.observe(scene));
   window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', measure, { passive: true });
+  const onResize = () => measure();
+  window.addEventListener('resize', onResize, { passive: true });
 
   const restoreOverflow = () => {
     if (!previousOverflow) return;
@@ -488,7 +527,7 @@ function createReducedMotion(options: MotionOptions): MotionController {
     else document.documentElement.style.removeProperty('overflow');
     previousOverflow = null;
   };
-  measure();
+  measure(false);
 
   return {
     goTo(index, immediate = true) {
@@ -499,6 +538,12 @@ function createReducedMotion(options: MotionOptions): MotionController {
         scenes[target].scrollIntoView({ block: 'start', behavior: 'auto' });
         report();
       }
+    },
+    restoreProgress(progress) {
+      if (destroyed) return;
+      const range = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      window.scrollTo({ top: clamp(progress) * range, behavior: 'instant' });
+      report();
     },
     getActiveIndex: () => Math.max(activeIndex, 0),
     pause() {
@@ -528,7 +573,7 @@ function createReducedMotion(options: MotionOptions): MotionController {
       pendingNavigation = null;
       observer.disconnect();
       window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', measure);
+      window.removeEventListener('resize', onResize);
       restoreOverflow();
       context.revert();
     },

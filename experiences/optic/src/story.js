@@ -1,4 +1,4 @@
-/** Shared scroll vocabulary. One native scroll position drives every scene. */
+/** Shared scroll vocabulary. One document scroll position drives every scene. */
 export const chapters = [
   {
     id: "light",
@@ -96,7 +96,10 @@ export function makeTimeline(mobile = false) {
 export function sampleTimeline(timeline, position) {
   const u = clamp(position, 0, timeline.total);
   const scenes = timeline.scenes;
-  const active = scenes.find((scene) => u < scene.end) || scenes.at(-1);
+  // Integer document pixels can round an exact chapter boundary a few ULPs
+  // below its summed duration. A mathematical start belongs to that chapter.
+  const epsilon = Number.EPSILON * Math.max(1, timeline.total) * 4;
+  const active = scenes.find((scene) => u < scene.end - epsilon) || scenes.at(-1);
   const weights = Array(scenes.length).fill(0);
   let from = 0,
     to = 0,

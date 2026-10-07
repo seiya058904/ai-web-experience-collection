@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-10-07",
+  "generator": "OpenAI built-in image_gen",
+  "assets": [
+    {
+      "file": "assets/ai-final/marbled-endpaper.png",
+      "runtimeDerivative": "public/textures/marbled-endpaper.webp",
+      "conversion": "ffmpeg WebP, quality 96; full 1536 × 1024 plate preserved",
+      "width": 1536,
+      "height": 1024,
+      "source": "generated_images/exec-92a5c246-dfde-4ae5-8338-05a68394e883.png",
+      "reference": "art-direction/07-marble-concept.png",
+      "method": "Image Gen edit: removed all typography and UI while preserving fine combed material composition.",
+      "prompt": "Use case: precise-object-edit. Asset type: production marbled endpaper albedo texture for a real 3D book model.\nEDIT the provided CODEX marbling concept. Remove ALL typography, letters, UI, captions and numbers, completely and cleanly, including 'CODEX', 'Contents', '07 / MARBLE', the large headline and the lower caption. Reconstruct the underlying dark ink and fine paper texture exactly where those elements were.\nPreserve the existing fine combed charcoal, subdued sage, bone, and tiny ochre marbling composition with its fan-like nest of thin pigment veins. Preserve the quiet deep-charcoal area on the left and all principal vein shapes. This is handcrafted marbled paper, not stone, no neon, no psychedelic colors. Preserve existing restrained palette and matte surface.\nOutput a standalone flat edge-to-edge 1536 by 1024 landscape albedo texture: straight orthographic view, evenly lit, no perspective, no border, no frame, no white margins, no cast shadows, no shading gradients, no highlights, no mockup, no objects, no lettering anywhere. Render fine texture and pigment detail appropriate for a premium endpaper surface on a clothbound museum book. Only the marbled material fills the entire canvas.",
+      "review": "Accepted after view_image inspection. Flat edge-to-edge marbled paper, all UI removed, muted charcoal/sage/bone/ochre; faithful to the section concept. This map contains no exact scientific or structural information.",
+      "intendedUse": "Frozen endpaper material on the live 3D book; optional deformation in marbling scene before freeze."
+    },
+    {
+      "file": "assets/ai-final/cloth-albedo.png",
+      "runtimeDerivative": "public/textures/cloth-albedo.webp",
+      "conversion": "ffmpeg WebP, quality 94; 1024 × 1024 runtime derivative",
+      "width": 1254,
+      "height": 1254,
+      "source": "generated_images/exec-26e51619-a86a-49e1-b383-5c4ca1e09430.png",
+      "method": "Standalone Image Gen material generation.",
+      "prompt": "Use case: product-mockup. Asset type: seamless square physically based bookcloth albedo texture, not a website mockup.\nGenerate one 1024 by 1024 square texture of premium tightly woven true near-black bookbinding cloth. The weave is extremely fine, neat and regular: fine horizontal warp and vertical weft fibers, each thread thin, a subtle textile grain suitable for a beautiful contemporary black hardback museum publication. Predominant diffuse color is near-black charcoal around RGB 20,21,20, fine fibers no lighter than muted charcoal around RGB 35,36,33. It must read as luxurious BLACK cloth, never grey fabric, burlap, denim, carbon fiber, velvet or leather. Woven texture visible only through subtle restrained material tonal variation.\nDead straight-on orthographic material scan. Perfectly flat and evenly lit diffuse illumination, no direction of light baked into the texture. Seamless/tileable on all four sides with weave matching across boundaries. No folds, creases, seams, fringes, stitching, dust, vignetting, color gradients, directional shadows, shine, specular reflections, relief lighting or perspective. Absolutely no words, letters, logos, stamps, UI, labels, borders, additional objects or margin. Only the albedo surface fills the canvas with ultra-fine regular woven detail. High fidelity material for an exacting photorealistic 3D book.",
+      "review": "Accepted after view_image inspection. Fine uniform near-black woven texture with no words, folds, or major directional lighting. Mean RGB approximately [23.43,24.49,22.26], consistent with intended black bookcloth. Requested tileability is not a mathematical guarantee; choose UV repeat and filtering by rendered QA.",
+      "intendedUse": "Bookcloth diffuse/albedo surface. Use modest repeat scale and renderer lighting; subtle microtexture, not coarse cloth."
+    }
+  ],
+  "changes": "Selected original generated PNG files are preserved unchanged in assets/ai-final. Runtime WebP derivatives are exported with ffmpeg for resolution and format optimization. UI concepts remain separate from production assets. No failed generations are included."
+}

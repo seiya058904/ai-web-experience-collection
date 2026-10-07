@@ -1,4 +1,6 @@
 import "./style.css";
+import "lenis/dist/lenis.css";
+import Lenis from "lenis";
 import { createScene } from "./scene.js";
 import { createFallback } from "./fallback.js";
 import {
@@ -31,6 +33,10 @@ const shutterButtons = [...document.querySelectorAll("[data-shutter]")];
 const stabilizeButton = document.getElementById("stabilization-toggle");
 const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const parameters = new URLSearchParams(location.search);
+const navigationType = performance.getEntriesByType("navigation")[0]?.type;
+const restoringDocument = navigationType === "reload" || navigationType === "back_forward";
+const lifecycle = new AbortController();
+const events = { signal: lifecycle.signal };
 const pointer = { x: 0, y: 0 };
 const override = { focus: null, aperture: null };
 const outputCache = new Map();
@@ -38,8 +44,7 @@ let timeline = makeTimeline(innerWidth <= 900);
 let width = 0,
   height = 0,
   mobile = false,
-  renderPosition = 0,
-  targetPosition = 0;
+  renderPosition = 0;
 let lastTimestamp = 0,
   elapsed = 0,
   ambient = 0,
@@ -57,6 +62,33 @@ let lastActive = -1,
   stabilized = true;
 let lastRenderKey = "";
 let frame = sampleTimeline(timeline, 0);
+let initialInput = false;
+const lenis = new Lenis({
+  lerp: 0.105,
+  smoothWheel: !reduced,
+  syncTouch: false,
+  autoRaf: false,
+  autoResize: false,
+  respectReducedMotion: false,
+  anchors: false,
+  prevent: (node) => node.closest?.("#chapter-index"),
+  virtualScroll: ({ deltaY, event }) => {
+    if (
+      event.type === "wheel" &&
+      !event.ctrlKey &&
+      !reduced &&
+      !dialog.open &&
+      !lenis.isStopped &&
+      deltaY * (lenis.targetScroll - lenis.actualScroll) < 0
+    ) {
+      // A reversed wheel gesture starts from the visible document position.
+      lenis.stop();
+      lenis.start();
+    }
+  },
+});
+lenis.on("scroll", schedule);
+dialog.dataset.lenisPrevent = "";
 
 // An absolute, document-resolved URL also works when the compiled stylesheet
 // lives inside assets/ or the whole experience is served from a subdirectory.
@@ -88,18 +120,19 @@ function writeText(id, value) {
 function closeIndex() {
   if (dialog.open) dialog.close();
   document.body.style.overflow = "";
+  if (!destroyed && !document.hidden) lenis.start();
 }
 function navigate(index, animated = true) {
+  if (destroyed) return;
   const chapter = timeline.scenes[clamp(index, 0, 8)];
   closeIndex();
   const position =
     index === 0
       ? 0
       : chapter.start + chapter.length * (index === 8 ? 0.55 : 0.42);
-  if (!animated || reduced) renderPosition = position;
-  window.scrollTo({
-    top: position * height,
-    behavior: animated && !reduced ? "smooth" : "auto",
+  lenis.scrollTo(position * height, {
+    immediate: !animated || reduced,
+    force: true,
   });
   schedule();
 }
@@ -107,50 +140,52 @@ document.querySelectorAll("[data-go]").forEach((link) =>
   link.addEventListener("click", (event) => {
     event.preventDefault();
     navigate(Number(link.dataset.go));
-  }),
+  }, events),
 );
 document.querySelector(".wordmark").addEventListener("click", (event) => {
   event.preventDefault();
   navigate(0);
-});
+}, events);
 document.getElementById("index-open").addEventListener("click", () => {
+  lenis.stop();
   dialog.showModal();
   document.body.style.overflow = "hidden";
-});
-document.getElementById("index-close").addEventListener("click", closeIndex);
+}, events);
+document.getElementById("index-close").addEventListener("click", closeIndex, events);
 dialog.addEventListener("close", () => {
   document.body.style.overflow = "";
-});
+  if (!destroyed && !document.hidden) lenis.start();
+}, events);
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) closeIndex();
-});
+}, events);
 focusInput.addEventListener("input", () => {
   override.focus = Number(focusInput.value);
   schedule();
-});
+}, events);
 apertureButtons.forEach((button) =>
   button.addEventListener("click", () => {
     override.aperture = Number(button.dataset.aperture);
     schedule();
-  }),
+  }, events),
 );
 shutterButtons.forEach((button) =>
   button.addEventListener("click", () => {
     shutterDenominator = Number(button.dataset.shutter);
     manualExposure = elapsed;
     schedule();
-  }),
+  }, events),
 );
 document.getElementById("release-shutter").addEventListener("click", () => {
   manualExposure = elapsed;
   schedule();
-});
+}, events);
 stabilizeButton.addEventListener("click", () => {
   stabilized = !stabilized;
   stabilizeButton.setAttribute("aria-checked", String(stabilized));
   stabilizeButton.querySelector("span").textContent = stabilized ? "ON" : "OFF";
   schedule();
-});
+}, events);
 motionButton.addEventListener("click", () => {
   paused = !paused;
   root.classList.toggle("is-paused", paused);
@@ -160,7 +195,7 @@ motionButton.addEventListener("click", () => {
     paused ? "Resume ambient motion" : "Pause ambient motion",
   );
   schedule();
-});
+}, events);
 document.addEventListener("keydown", (event) => {
   const element = event.target;
   if (
@@ -176,7 +211,7 @@ document.addEventListener("keydown", (event) => {
     event.preventDefault();
     navigate(Math.max(0, frame.active - 1));
   }
-});
+}, events);
 document.addEventListener(
   "pointermove",
   (event) => {
@@ -185,11 +220,11 @@ document.addEventListener(
       pointer.y = (event.clientY / Math.max(1, height) - 0.5) * 2;
     }
   },
-  { passive: true },
+  { passive: true, ...events },
 );
 document.addEventListener("pointerleave", () => {
   pointer.x = pointer.y = 0;
-});
+}, events);
 
 function measure() {
   const previousTotal = timeline.total;
@@ -205,18 +240,18 @@ function measure() {
   timeline.scenes.forEach((scene, index) => {
     sections[index].style.height = `${scene.length * height}px`;
   });
+  lenis.resize();
   if (
     previousHeight &&
     (previousHeight !== height || previousTotal !== timeline.total)
   ) {
-    window.scrollTo({
-      top: previousNormalized * timeline.total * height,
-      behavior: "auto",
+    lenis.scrollTo(previousNormalized * timeline.total * height, {
+      immediate: true,
+      force: true,
     });
     renderPosition = previousNormalized * timeline.total;
   }
-  targetPosition = window.scrollY / height;
-  if (!ready) renderPosition = targetPosition;
+  renderPosition = window.scrollY / height;
   renderer?.resize(width, height);
   fallback?.resize(width, height);
   lastRenderKey = "";
@@ -417,14 +452,10 @@ function tick(timestamp) {
   elapsed += dt;
   if (!paused && !reduced && !dialog.open) ambient += dt;
   if (resizePending) measure();
-  targetPosition = clamp(window.scrollY / height, 0, timeline.total);
-  // Native scroll remains authoritative; this one display clock only damps the camera.
-  const gap = targetPosition - renderPosition;
-  if (reduced || !ready || Math.abs(gap) > timeline.total * 0.5)
-    renderPosition = targetPosition;
-  else renderPosition += gap * (1 - Math.exp(-dt * 11));
-  if (Math.abs(targetPosition - renderPosition) < 0.00002)
-    renderPosition = targetPosition;
+  lenis.raf(timestamp);
+  // Lenis advances the document on this same clock. Geometry and type sample
+  // that position directly, including native touch and keyboard scrolling.
+  renderPosition = clamp(window.scrollY / height, 0, timeline.total);
   frame = sampleTimeline(timeline, renderPosition);
   if (reduced) {
     frame.weights.fill(0);
@@ -476,47 +507,73 @@ function schedule() {
 }
 function visibility() {
   if (document.hidden) {
+    lenis.stop();
     if (raf) cancelAnimationFrame(raf);
     raf = 0;
     lastTimestamp = 0;
   } else {
+    if (!dialog.open) lenis.start();
     lastTimestamp = 0;
-    targetPosition = window.scrollY / (height || innerHeight);
-    renderPosition = targetPosition;
+    renderPosition = window.scrollY / (height || innerHeight);
     resizePending = true;
     schedule();
   }
 }
-window.addEventListener("scroll", schedule, { passive: true });
+window.addEventListener("scroll", schedule, { passive: true, ...events });
 window.addEventListener(
   "resize",
   () => {
     resizePending = true;
     schedule();
   },
-  { passive: true },
+  { passive: true, ...events },
 );
-document.addEventListener("visibilitychange", visibility);
+document.addEventListener("visibilitychange", visibility, events);
 reducedQuery.addEventListener("change", (event) => {
   reduced = event.matches;
+  lenis.options.smoothWheel = !reduced;
+  lenis.scrollTo(window.scrollY, { immediate: true, force: true });
   lastTimestamp = 0;
   schedule();
-});
+}, events);
 window.addEventListener("pageshow", () => {
+  if (!dialog.open) lenis.start();
   lastTimestamp = 0;
   resizePending = true;
   renderPosition = window.scrollY / (height || innerHeight);
   schedule();
-});
+}, events);
 window.addEventListener("pagehide", (event) => {
+  lenis.stop();
   if (raf) cancelAnimationFrame(raf);
   raf = 0;
   if (!event.persisted) {
-    destroyed = true;
-    renderer?.dispose();
-    fallback?.dispose();
+    dispose();
   }
-});
+}, events);
+
+function dispose() {
+  if (destroyed) return;
+  destroyed = true;
+  if (raf) cancelAnimationFrame(raf);
+  raf = 0;
+  lifecycle.abort();
+  lenis.destroy();
+  renderer?.dispose();
+  fallback?.dispose();
+}
+const onInitialInput = () => { initialInput = true; };
+window.addEventListener("wheel", onInitialInput, { passive: true, ...events });
+window.addEventListener("touchstart", onInitialInput, { passive: true, ...events });
+window.addEventListener("keydown", onInitialInput, events);
+function syncNativeNavigation() {
+  lenis.stop();
+  if (!dialog.open) lenis.start();
+  schedule();
+}
+window.addEventListener("popstate", syncNativeNavigation, events);
+window.addEventListener("hashchange", syncNativeNavigation, events);
+if (import.meta.hot) import.meta.hot.dispose(dispose);
 
 measure();
 schedule();
@@ -549,7 +606,8 @@ async function initialize() {
   const initialChapter = chapters.findIndex(
     (chapter) => `#${chapter.id}` === location.hash,
   );
-  if (initialChapter > 0 && window.scrollY < 5) navigate(initialChapter, false);
+  if (initialChapter > 0 && !restoringDocument && !initialInput)
+    navigate(initialChapter, false);
   renderPosition = window.scrollY / height;
   if (import.meta.env.DEV) {
     window.__OPTIC_DEBUG__ = {

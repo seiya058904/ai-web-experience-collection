@@ -11,6 +11,7 @@ const $ = <T extends HTMLElement>(selector: string): T => {
 
 const stage = $('#stage');
 const scenes = Array.from(document.querySelectorAll<HTMLElement>('.scene'));
+const studyIds = scenes.map(scene => scene.id);
 const dialog = $<HTMLDialogElement>('#study-index');
 const openIndexButton = $<HTMLButtonElement>('#open-index');
 const closeIndexButton = $<HTMLButtonElement>('#close-index');
@@ -39,6 +40,32 @@ let reduced = preference === 'reduced' || (preference === 'auto' && systemMotion
 let dialogClosing = false;
 let pendingNavigation: number | null = null;
 let disposed = false;
+let positionTimer: ReturnType<typeof setTimeout> | undefined;
+
+// A reload rebuilds the pinned track after the browser's first restoration.
+// Save the actual stop in this history entry, rather than its nearest study.
+const positionKey = 'glazePosition';
+const navigationType = (performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined)?.type;
+const savedPosition = history.state?.[positionKey] as { progress: number; hash: string } | undefined;
+const restorePosition = (navigationType === 'reload' || navigationType === 'back_forward')
+  && savedPosition?.hash === location.hash && Number.isFinite(savedPosition?.progress)
+  && savedPosition!.progress >= 0 && savedPosition!.progress <= 1
+  ? savedPosition : undefined;
+
+function savePosition() {
+  if (!controller || disposed) return;
+  const range = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+  const progress = Math.max(0, Math.min(1, window.scrollY / range));
+  try {
+    history.replaceState({ ...history.state, [positionKey]: { progress, hash: location.hash } }, '');
+  } catch { /* Native browser restoration remains available in restricted embeds. */ }
+}
+
+function queuePositionSave() {
+  clearTimeout(positionTimer);
+  positionTimer = setTimeout(savePosition, 120);
+}
+window.addEventListener('scroll', queuePositionSave, { passive: true, ...listenOptions });
 
 function updateCurrent(index: number) {
   activeIndex = index;
@@ -60,6 +87,9 @@ function updateCurrent(index: number) {
 
 function mountMotion(restoreIndex = 0) {
   controller?.destroy();
+  // Immersive chapters share a pinned stage, so their URL fragments are
+  // controller destinations. Keep native anchors in the ordinary reading flow.
+  scenes.forEach((scene, index) => { scene.id = reduced ? studyIds[index] : `${studyIds[index]}-view`; });
   root.classList.toggle('is-reduced', reduced);
   root.classList.toggle('is-animated', !reduced);
   motionToggle.setAttribute('aria-pressed', String(reduced));
@@ -158,7 +188,7 @@ systemMotion.addEventListener('change', onSystemMotionChange, listenOptions);
 
 function handleHash() {
   const id = location.hash.slice(1);
-  const index = scenes.findIndex(scene => scene.id === id);
+  const index = studyIds.indexOf(id);
   if (index >= 0) goTo(index);
 }
 window.addEventListener('hashchange', handleHash, listenOptions);
@@ -173,21 +203,27 @@ async function boot() {
   mountMotion();
   root.classList.add('is-ready');
   showPreview(0);
-  handleHash();
+  if (restorePosition) controller?.restoreProgress(restorePosition.progress);
+  else {
+    const initialStudy = studyIds.indexOf(location.hash.slice(1));
+    if (initialStudy >= 0) controller?.goTo(initialStudy, true);
+  }
 }
 
 void boot();
 
 function teardown() {
   disposed = true;
+  clearTimeout(positionTimer);
   events.abort();
   controller?.destroy();
+  scenes.forEach((scene, index) => { scene.id = studyIds[index]; });
   systemMotion.removeEventListener('change', onSystemMotionChange);
   window.removeEventListener('hashchange', handleHash);
   gsap.killTweensOf(dialog);
 }
 
 if (import.meta.hot) import.meta.hot.dispose(teardown);
-window.addEventListener('pagehide', event => { if (!event.persisted) teardown(); });
+window.addEventListener('pagehide', event => { savePosition(); if (!event.persisted) teardown(); });
 
 import '../../shared/collection-return.css';

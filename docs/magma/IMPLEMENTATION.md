@@ -1,0 +1,15 @@
+# MAGMA in the Collection
+
+The supplied nine-state material study retains its generated desktop/portrait plates, Archivo typography, WebGL 1 compositor, registered fracture surfaces, cooling/seam/fracture actions, native Index/About dialogs, opt-in Web Audio and complete image edition. No framework or additional dependency is introduced.
+
+`experiences/magma/src/main.js` owns the sole continuing RAF and one installed Lenis 1.3.26 instance. Lenis uses `lerp: .105`, `syncTouch: false`, `autoRaf: false` and explicit measurement. Wheel smoothing is disabled for either reduced mode or the OS preference, including an explicit Motion-on choice. Touch and dialog scroll remain native. A reversed wheel direction cancels the previous destination from the visible document position through public stop/start. Scene progress reads actual document scroll; material interactions and pointer light retain their authored, separate local response.
+
+Chapter destination and inverse position use the actual semantic section offsets. Meaningful resize preserves exhibition position immediately. Fresh hashes keep the original bounded post-load landing correction, canceled by input or teardown. Reload/document Back retain the browser's latest stop instead of replaying an older saved target. In-document chapter history continues to use the supplied position records. No persistent second progress-easing system is added.
+
+Visibility/pagehide cancel the owned RAF, stop Lenis, release a held cooling action and suspend drawing/audio. BFCache recovery reconstructs the actual document stop and schedules at most one owned loop. Nonpersisted pagehide and HMR abort UI/global listeners, cancel the bounded landing callbacks and destroy Lenis, WebGL resources and audio. Renderer image-loading callbacks respect the host's suspended state.
+
+`pages/magma/index.html` is an independent Vite document with a native Collection return link, local notice links and base-aware canonical/social identity. Runtime media and font files live under `public/magma/`; runtime URL construction uses `import.meta.env.BASE_URL`. Static HTML/CSS resource references go through Vite. The nine inline chapter background URLs use `%BASE_URL%magma/materials/` explicitly, so the no-JavaScript semantic image chapters resolve from both the root and the project subpath. Their stylesheet remains available without JavaScript.
+
+The source ZIP remains outside the repository. Standalone package/lock/build/check/server/batch files, file-URL help and duplicate vendor Lenis are omitted from runtime. Supplied license texts, eighteen material images, Archivo bytes, prompt sidecars, concepts and generation records remain intact; the per-entry import mapping records moved and adapted files.
+
+The current design contract is [DESIGN.md](DESIGN.md). Supplied standalone claims are historical records in [UPSTREAM-README.md](UPSTREAM-README.md) and [UPSTREAM-ACCEPTANCE.md](UPSTREAM-ACCEPTANCE.md); they do not replace Collection production acceptance.

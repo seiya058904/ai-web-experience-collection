@@ -1,0 +1,184 @@
+{
+  "title": "FOSSIL — interpretive ammonite density volume",
+  "status": "SYNTHETIC / ILLUSTRATIVE — not real CT data or a scientific reconstruction",
+  "generator": "scripts/generate_volume.py",
+  "dimensions": {
+    "x": 192,
+    "y": 192,
+    "z": 72
+  },
+  "array_order": "z, y, x; x contiguous; y down in PNG sections",
+  "dtype": "uint8",
+  "density_meaning": "authored relative grayscale only; no calibrated physical units",
+  "coordinates": {
+    "x": [
+      -1.2,
+      1.2
+    ],
+    "y": [
+      -1.2,
+      1.2
+    ],
+    "z": [
+      -0.34,
+      0.34
+    ],
+    "model_y": "up",
+    "section_y": "down",
+    "units": "unitless"
+  },
+  "seed": 20261007,
+  "field_sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553",
+  "section_sha256": [
+    "1c0273095382988333e2f2b5ae487cea460737ed9be65cbad9c5de537f95bf75",
+    "1c0273095382988333e2f2b5ae487cea460737ed9be65cbad9c5de537f95bf75",
+    "49fa1a2394e5d81401b08349f034646dab69a063947e641cecff722fbd86956c",
+    "0f8382f730042551da49ca03e3b4f61f0936a5d36e445572c911ab99ffdd37df",
+    "1408849628e03e98042215e58f7b1b03944e9a1edd9c77dea31ed2ecdc1e6d52",
+    "2b26d7568bc2c65e08fe5a45468700eea20c28f03aa6b2125cfde8f679fb1ecb",
+    "b2985f3072fa7e161ef5df79553a033ec87c276017a580f532aa43d49c536c45",
+    "f4107e240a0c14351cf81afd92cb0ec2f2f3905dcb73fbbafdd74fe95d85df82",
+    "0ee52ae98867583f6dfd946a27908d70efd23d9cb274b5c2147af0bc95c781db",
+    "43cb6e0cb3d9a1f765820f57a0359e95531ba5ee2fec05010ac062bda5c00cce",
+    "b9e70faca7141bc7db4831048024c5602267f365f11ea779449d75e71e84c3b8",
+    "0b4b4c06ff9108c1e334312cc8938b4a5e4a34d90c252bc11cd1b0ed6c318ce1",
+    "0dbf217c2218a72d3f1585a5372c3fde21200090d86e989930b678c1ea6cda5d",
+    "69ce0a622a56032e5ad6b736496f6121a11a2728dbd03660bd50ec5bff28ccc3",
+    "83b178250641a4d900fdbbd77f6a3931f0059f7ec8a52ee0c4c9c956b6156341",
+    "e58849770b12e5dbc78e87186a952fa19561c699d27507afcc4840662d4a4db7",
+    "4406a137ab822d299f847b37be868e67c76decdd228d3c730984bfd1090129e4",
+    "10ae9ea942b78ab4e09171e28bf05242a4c73c88dcef8299a366940cafc6cd49",
+    "518a052fdb0f3a6d17492eb139f0e630fff1cfef0e77ce84ba1bb4848fb5a7ab",
+    "34bc442f8f6b0bcbad9d22bd0a8a2de1367c8ef99fd66dcce4eda577385e4633",
+    "da370c9c7ef53a058b2135031274dd4a507b891254d429067a827a1958a2a9b5",
+    "06bb49d073257efe9aa71c5375d9c428cd592e0cac3a0192e734478e73cd27b2",
+    "5f5602b2190ecd9e75b770a629aecc25fb644dc138a954a46b6c68837d002274",
+    "38665f8ea2aa59848ee8097e1f1014281c79682f77e015a28252dd65950d1a3b",
+    "7c07c3e458ab4939e2c7d302ad66b8e95e96f37da812ce913d489a512b2aac93",
+    "b8e60a91fc4af4a9468fc18a0db4e0e8d59932fcf9354d86f7b0c4ff9b7b0981",
+    "0d23147344b5cd2706efe2aac647365dd75feb36a707d31fd83fc5ec784e7904",
+    "d9998e88ab7fd1665d5a67ac359ce889c60c7cd321f36c9ec9ed9fcf0693b687",
+    "601d7a37525851dda3020bce6a2a3000cf2f8ce8a89d9c1ed9d1ae518d5314e6",
+    "fb71c507ba4c6795e337ef2cd73c7c293812bd264cdc12754ce46ce0027afa53",
+    "134acd6b92284bb5a62e88e2493e9c83bd95dac56e95d79fc9027f8ca586084e",
+    "c6c1a94d44fd0b274317fad427585859c12a57b40908817f7e703d5266425543",
+    "10437023d622ae4b4dd12104ea232a0b4d1e32ff987c5b0e99a8451eaa817bd2",
+    "88a39af70cb8848600ab69002d59be7ceb84113fba15ad13b0c5c8fc99d19ca6",
+    "3a05fd115aa8e09bd8d7d6431806021583e0eae1e12822f759db81aa8a2b2ac2",
+    "ec5559cf339da4e56111c941172c2d3e2b14dee225f48a11c5deb84cdd06692f",
+    "48d77a46a71760752bf74f569b27c0082918811602ee4eb50d652dee2c3fb42f",
+    "f06d59629905dfb5c0eb4cacc6a3c7241f1069f78d2f42b1c921879d0ebfc728",
+    "5b3b1cb3fbb899f451e543d70183d256f7b11dd708993680ca2bdbebbf597633",
+    "8932a8822e73055e2f6f5a2a00d661f319deff2c21f60d0bc7ad267237ef0d2d",
+    "c97bff79446946ffb20fe08f18acdad32e20215cf870a82e8a3ac857a0caa8c7",
+    "b22f744ddfa8febafa586e1e34cf0c0440ed6b590e5a1d27fabdfe1292b1bf52",
+    "d363a23b003dcec8a9a426c4819c62a0d76fe47ef9b065362f0f14f6849e51d2",
+    "23abbd1c58dc9dea5abd635612800d43e9e562467389c74499b813859b5e5892",
+    "52426b4228b8a6274cfec2d2c8f2c480b72f02adc6e3396d05e6ab64f3ca4442",
+    "4eb1861e08de2ee7e6bd12b21a94351c40d2e88f0615c09bdae22843c91eab8e",
+    "4a3f3da2542504c17c4547431cbc339aca9c609e13d8503f2148c10e8d64d58b",
+    "c5ed922ce138769ba8c0a81b0bf036958f59fe2f33159d095a377b0d1445bb1b",
+    "d59fbe96cf000b982c2f551b4172d4373923c618f8197a6601e870c71f24cdd7",
+    "fb1f37febcffbd50405fea733f03edd3bfa47117e4ff6fe038c7caf2ba08e4a8",
+    "2dd9656e86031daf886c32e721910fa06e7b1cb720b257fc758561565db9b02a",
+    "6783f46213c2090298b5caab7bd9b33fbe9cb9bfe77515cf3f5464ed6fda1872",
+    "f6349262520fcda4fa0a09708156515d10ab1c915c9328690613f963dcd3cb21",
+    "91c07cca8b716adc3115aad4768b616cb30d1c0779be7a6f93ddac70d3f32c28",
+    "f14ebd4f10864a9eb4c5b692c91281bfc6201e80ebabb13fcb7eac9e7c52ccfc",
+    "3073b6092533fccd18c0db3a353a72a426110959903f9733c44c6b1fa35076d1",
+    "e7e2d525f69e4ca79eba73495c9db2a466d23d4fc7a3a8ee7c922a90c71fac1c",
+    "ef48bba237810d104a154abf63019e22d9eb19c8539cf5e9425b24cd0c38fc19",
+    "cf015ecfce3cb8e05fc8281a9d85ad6db261d20cd173e77be860b18060c15eb3",
+    "75a106e7ffc968cfc70a97171d7d457c5e0171c6c07ef97ea3f4e950e1a3fc08",
+    "664da208c141e61532b82663c0acc19be56b45334155aa45127665bdb79ab4f9",
+    "ed2c75ba6880ee6d38f8ee27d25778dc96fb7ad1e5185fd981f800750a61a12e",
+    "16bceb90110f51cc6b51ebb7a7eca0ec4a285e469901aea2bdfd4f7bbe186a4d",
+    "800a17b001192c71a47282f472043f8fc762a5a8904229107a57e286c6e14054",
+    "49446ddc629c531f60af844b04d475d44b0888591a4c9bf992f874cac3922a80",
+    "830da0f8a52949c429a3a6a87c4ac2125742fc408b1c61350badd07c69711517",
+    "4ffcdcf0c51b2ca52a8c00de243226bbe7ad7dc52112bf1f383c7b51793f370e",
+    "7bab98277172126bf61c5c0880cdaca7f4129fa8738c9ee7ab78cefe3d53a8ea",
+    "fd6f931cf68318e77c1ab48ff56dc8848991ef93f3a5a43fa2201022c1430c6b",
+    "2a62f0b905c531f559ff18bb5c9c27235572c1f25c2c5a05bbc11f88adced0fb",
+    "1c0273095382988333e2f2b5ae487cea460737ed9be65cbad9c5de537f95bf75",
+    "1c0273095382988333e2f2b5ae487cea460737ed9be65cbad9c5de537f95bf75"
+  ],
+  "occupied_voxel_bounds_zyx": [
+    [
+      2,
+      43,
+      31
+    ],
+    [
+      69,
+      175,
+      169
+    ]
+  ],
+  "procedural_parameters": {
+    "seed": 20261007,
+    "turns": 3.3,
+    "initial_spiral_radius": 0.049,
+    "final_spiral_radius": 0.78,
+    "radial_halfwidth_ratio": 0.402,
+    "axial_halfwidth_ratio": 0.9,
+    "rib_frequency_per_turn": 50,
+    "septa_mean_angular_interval": 0.245,
+    "terminal_unseptated_angle": 0.48,
+    "isosurface_density": 112.0,
+    "mesh_grid_stride": 1,
+    "units": "unitless authored model coordinates; not a measured scale"
+  },
+  "missing_patches": [
+    {
+      "name": "upper outer whorl loss",
+      "theta_before_terminal": 1.38,
+      "angular_halfwidth": 0.145,
+      "radial_fraction_min": -0.56,
+      "z_min": 0.035,
+      "meaning": "authored missing material, not inferred anatomy"
+    },
+    {
+      "name": "lower rim loss",
+      "theta_before_terminal": 3.79,
+      "angular_halfwidth": 0.105,
+      "radial_fraction_min": 0.24,
+      "z_min": -0.045,
+      "meaning": "authored missing material, not inferred anatomy"
+    }
+  ],
+  "mesh": {
+    "method": "marching cubes of stored uint8 volume",
+    "isovalue": 112.0,
+    "grid_stride": 1,
+    "vertices": 190744,
+    "triangles": 378128,
+    "bounds": [
+      [
+        -0.8070915341377258,
+        -0.9932183027267456,
+        -0.3132292628288269
+      ],
+      [
+        0.9267435073852539,
+        0.6535578966140747,
+        0.31591951847076416
+      ]
+    ],
+    "includes": "shell walls and chamber septa; ordinary low-density infill excluded",
+    "source_field_sha256": "e094feca61ea5cdf318d5b32d60cf402cce36d5a010af563b22ed22bdb6c9553"
+  },
+  "display_sections": [
+    10,
+    22,
+    35,
+    48,
+    62
+  ],
+  "limitations": [
+    "No claim of real specimen anatomy, age, locality or preservation history.",
+    "Ribs, chambers, mineral density, fractures and missing patches are authored.",
+    "The mesh is an isosurface of authored relative density, not calibrated material.",
+    "The model is deliberately incomplete; gaps do not encode quantified confidence."
+  ]
+}

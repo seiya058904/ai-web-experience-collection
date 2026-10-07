@@ -1,5 +1,9 @@
 # Third-party notices
 
+## Collection scroll adaptation — 2026-10-07
+
+The Collection edition also uses the root's locked Lenis 1.3.26 on OPTIC's existing animation clock. Lenis retains its MIT terms in the Collection's [license inventory](../licenses.txt) and generated `third-party-licenses.md`. The original delivery versions and notices below remain source history; the generated inventory identifies the deployed dependencies.
+
 The original OPTIC code is licensed under [MIT](LICENSE). The following third-party components retain their own copyright and license terms.
 
 | Component                                                                                                    | Pinned version | Role                                                                | License and included notice                                                                                      |

@@ -34,6 +34,8 @@ Celadon 使用透明器物与代码绘制的背景、阴影组合。Cobalt 以�
 
 [Lenis 官方集成方式](https://github.com/darkroomengineering/lenis#gsap-scrolltrigger) 决定了单一时钟：关闭 Lenis 自动 RAF，由 GSAP ticker 驱动，再将滚动同步到 ScrollTrigger。重建、退出和动效切换负责销毁旧实例与监听。布局刷新保留展览进度；切回标签页时清除隐藏期间累积的惯性。减少动效模式回到普通文档流，展示完整的七幅构图。
 
+滚动停止后，当前 history entry 保存实际文档进度。刷新或非 BFCache 返回在舞台重建后即时恢复该停点，不将章节内的位置舍入到章节入口。新打开的章节 URL 仍直接进入指定研究。动效版章节的 URL 由控制器解析，DOM 场景使用 `-view` 后缀避免浏览器再次定位固定舞台；普通阅读流保留原生章节 id。history state 受限时继续提供原有导航与浏览器恢复能力。
+
 [GSAP 的 preventOverlaps / fastScrollEnd 示例](https://codepen.io/GreenSock/pen/ZEyXPGj) 展示了独立触发动画在快速滚动时需要处理的结束状态。这里选择统一的 scrub 进度，不使用这些强制结束选项，保留快速反向时的中间构图。上述案例用于研究行为与架构，没有复制其场景代码、样式或素材。许可说明见 [ATTRIBUTION.md](../../provenance/glaze/ATTRIBUTION.md)。
 
 ## 实际素材规格

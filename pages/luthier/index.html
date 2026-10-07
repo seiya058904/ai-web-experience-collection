@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="description" content="A silent wooden object becomes sound. An immersive journey through the shape, craft, tension and resonance of a violin." />
+    <title>LUTHIER — The Anatomy of a Violin</title>
+    <link rel="stylesheet" href="../../experiences/luthier/src/style.css" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%luthier/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Web Experience Collection" />
+    <meta property="og:title" content="LUTHIER — The Anatomy of a Violin" />
+    <meta property="og:description" content="A silent wooden object becomes sound. Nine movements through material, craft, tension and resonance." />
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%luthier/" />
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%luthier/social.jpg" />
+    <meta property="og:image:alt" content="LUTHIER's generated violin artwork captured from its actual interactive exhibition" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LUTHIER — The Anatomy of a Violin" />
+    <meta name="twitter:description" content="Silence, shaped. Nine movements through the anatomy of a violin." />
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%luthier/social.jpg" />
+    <meta name="twitter:image:alt" content="LUTHIER's generated violin artwork captured from its actual interactive exhibition" />
+    <link rel="icon" type="image/svg+xml" href="/luthier/favicon.svg" />
+    <link rel="preload" href="/luthier/fonts/cormorant-300.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/luthier/fonts/cormorant-300-italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/luthier/assets/hero.webp" as="image" />
+  </head>
+  <body>
+    <a class="skip-link" href="#chapter-index">Skip to the nine chapters</a>
+    <header class="masthead">
+      <a class="wordmark" href="#presence" aria-label="Luthier, return to the beginning">LUTHIER</a>
+      <nav class="top-nav" aria-label="Experience controls">
+        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a>
+        <button class="text-control" id="anatomy-toggle" aria-haspopup="dialog">The anatomy<span class="menu-mark" aria-hidden="true"><i></i><i></i></span></button>
+        <button class="text-control sound-control" id="sound-toggle" aria-pressed="false" aria-label="Enable sound">
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 9h3l4-4v12l-4-4H3z"/><path class="sound-waves" d="M14 7c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/><path class="sound-slash" d="m14 8 5 6m0-6-5 6"/></svg>
+          <span id="sound-label">Sound off</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="experience" aria-label="The anatomy of a violin, an experience in nine chapters">
+      <div id="stage">
+        <section class="scene scene-presence is-current" data-scene="0" aria-labelledby="presence-heading">
+          <div class="hero-title scene-copy">
+            <h1 id="presence-heading">Silence,<br /><em>shaped.</em></h1>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <img class="hero-instrument" src="/luthier/assets/hero.webp" width="1672" height="941" alt="" fetchpriority="high" />
+            <div class="varnish-light"></div>
+          </div>
+          <div class="hero-note scene-copy">
+            <p>A piece of wood. A world of sound.</p>
+            <a class="line-link" href="#wood">Enter the instrument<svg viewBox="0 0 52 14" aria-hidden="true"><path d="M1 7h48m-6-6 6 6-6 6"/></svg></a>
+          </div>
+          <span class="sr-only">A monumental amber violin in darkness. The curve of its body, its f-hole and four fine strings are revealed by a moving side light.</span>
+        </section>
+
+        <section class="scene scene-wood" data-scene="1" aria-labelledby="wood-heading" inert>
+          <div class="wood-art" aria-hidden="true">
+            <img class="material-image" data-material="spruce" src="/luthier/assets/spruce.webp" width="1672" height="941" alt="" loading="lazy" />
+            <img class="material-image is-selected" data-material="maple" src="/luthier/assets/wood.webp" width="1672" height="941" alt="" loading="eager" />
+            <img class="material-image" data-material="ebony" src="/luthier/assets/ebony.webp" width="1672" height="941" alt="" loading="lazy" />
+          </div>
+          <div class="wood-copy scene-copy">
+            <h2 id="wood-heading">Before sound,<br /><em>a living grain.</em></h2>
+            <p class="wood-poem">Spruce carries.<br />Maple returns.<br />Ebony holds.</p>
+          </div>
+          <div class="material-select scene-copy" role="group" aria-label="Explore the three woods">
+            <button data-wood="spruce" aria-pressed="false"><span>01</span>Spruce<i aria-hidden="true"></i></button>
+            <button data-wood="maple" aria-pressed="true"><span>02</span>Maple<i aria-hidden="true"></i></button>
+            <button data-wood="ebony" aria-pressed="false"><span>03</span>Ebony<i aria-hidden="true"></i></button>
+            <p id="material-description">Figured grain. The back, ribs and neck.</p>
+          </div>
+          <span class="sr-only">Live grain paths follow each material. Select a wood to change the material study and its description.</span>
+        </section>
+
+        <section class="scene scene-craft" data-scene="2" aria-labelledby="craft-heading" inert>
+          <img class="craft-fallback" src="/luthier/assets/craft.webp" width="1672" height="941" alt="A violin with its spruce top gently lifted from maple ribs and back." loading="lazy" />
+          <div id="violin-study" role="img" aria-label="A live structural study: arched top, hollow ribs, maple back, ebony fingerboard, bridge and four strings. The top lifts gently as you scroll."></div>
+          <div class="craft-copy scene-copy">
+            <h2 id="craft-heading">Made by hand.<br /><em>Held by curves.</em></h2>
+            <p>An arched surface. A hollow body.<br />A thousand quiet decisions.</p>
+          </div>
+          <ol class="parts-legend scene-copy" aria-label="The body layers">
+            <li><span class="part-tick"></span>Spruce top</li>
+            <li><span class="part-tick"></span>Maple ribs</li>
+            <li><span class="part-tick"></span>Maple back</li>
+          </ol>
+          <span class="craft-hint scene-copy">Follow the edge. Look between the layers.</span>
+        </section>
+
+        <section class="scene scene-inside" data-scene="3" aria-labelledby="inside-heading" inert>
+          <div class="inside-art" aria-hidden="true"><img src="/luthier/assets/inside.webp" width="1672" height="941" alt="" loading="lazy" /><div class="interior-light"></div></div>
+          <div class="inside-copy scene-copy">
+            <h2 id="inside-heading">A small space.<br /><em>An enormous voice.</em></h2>
+            <p>The sound post connects. The bass bar distributes.<br class="desktop-break" /> The body answers.</p>
+          </div>
+          <div class="inside-section scene-copy">
+            <svg class="section-drawing" viewBox="0 0 400 170" role="img" aria-label="Illustrative cross section: bass bar beneath the top at left; sound post connects the top and back at the treble side on the right.">
+              <path class="section-plate" d="M21 64C70 9 321 9 377 64L374 71C307 26 90 26 24 71ZM21 67L24 132Q199 164 376 132L377 67M24 132Q201 150 376 132M23 74V130M375 75V130"/>
+              <path class="section-bridge" d="m176 25 4-22q20-8 40 0l5 22m-44-7h38m-18-15v14"/>
+              <path class="section-bar" d="m117 39 7-4 12 0 7 3-1 18-23 3z"/>
+              <path class="section-post" d="M276 37v105m9-104v103m-9-105 9 1"/>
+              <path class="energy-path" d="M200 0v17C191 27 156 31 129 39L128 57M201 17C231 23 260 25 280 37V140Q201 156 110 142" pathLength="1"/>
+              <path class="diagram-leader" d="m70 13 56 33m212-31-55 44"/>
+            </svg>
+            <div class="inside-controls" role="group" aria-label="Explore the interior supports">
+              <button data-inside="bar" aria-pressed="false">Bass bar</button>
+              <button data-inside="post" aria-pressed="true">Sound post</button>
+            </div>
+            <p id="inside-description">A slender connection between top and back.</p>
+          </div>
+        </section>
+
+        <section class="scene scene-tension" data-scene="4" aria-labelledby="tension-heading" inert>
+          <img class="bridge-plate" src="/luthier/assets/tension.webp" width="1672" height="941" alt="A pale maple bridge rests on the amber violin top beneath four taut strings." loading="lazy" />
+          <div class="tension-copy scene-copy">
+            <h2 id="tension-heading">Hold the <em>almost.</em></h2>
+            <p>Four strings. Every line waiting for a touch.</p>
+          </div>
+          <div class="string-notes scene-copy" aria-label="The four violin strings">G<span>·</span>D<span>·</span>A<span>·</span>E</div>
+        </section>
+
+        <section class="scene scene-bow" data-scene="5" aria-labelledby="bow-heading" inert>
+          <img class="bow-body" src="/luthier/assets/tension.webp" width="1672" height="941" alt="" loading="lazy" aria-hidden="true" />
+          <div id="bow-rig" aria-hidden="true"><img id="bow-image" src="/luthier/assets/bow.webp" alt="" loading="lazy" /></div>
+          <div class="bow-copy scene-copy"><h2 id="bow-heading">Then,<br /><em>contact.</em></h2></div>
+          <div class="bow-note scene-copy">
+            <p>The hair catches.<br />The string yields.<br />Motion begins.</p>
+            <label class="range-control bow-control" for="bow-progress"><span>Draw the bow</span><input id="bow-progress" type="range" min="0" max="100" step="0.1" value="0" aria-label="Draw the bow, from approach to resonance" /></label>
+          </div>
+          <span class="sr-only">An intentionally slow visualization of bow hair contacting and driving a string. Continued friction sustains vibration.</span>
+        </section>
+
+        <section class="scene scene-resonance" data-scene="6" aria-labelledby="resonance-heading" inert>
+          <div class="resonance-copy scene-copy">
+            <h2 id="resonance-heading">One motion.<br /><em>A thousand echoes.</em></h2>
+            <p>From string to bridge.<br />Through wood. Into air.</p>
+          </div>
+          <div class="resonance-select scene-copy" role="group" aria-label="Follow the resonance">
+            <button data-resonance="string" aria-pressed="false">String</button><span aria-hidden="true"></span>
+            <button data-resonance="body" aria-pressed="false">Body</button><span aria-hidden="true"></span>
+            <button data-resonance="air" aria-pressed="true">Air</button>
+          </div>
+          <span class="sr-only">A family of moving contours grows from the string into the violin body and surrounding air. These original patterns are an artistic interpretation, not measured acoustic modes.</span>
+        </section>
+
+        <section class="scene scene-space" data-scene="7" aria-labelledby="space-heading" inert>
+          <div class="space-copy scene-copy"><h2 id="space-heading">Sound,<br /><em>without edges.</em></h2></div>
+          <p class="space-note scene-copy">The instrument ends.<br />Its voice continues.</p>
+          <label class="range-control space-control scene-copy" for="space-open"><span>Open the space</span><input id="space-open" type="range" min="0" max="100" value="55" aria-label="Open the acoustic space" /></label>
+          <span class="sr-only">The violin's curves unfold into a full-screen moving sculpture. Change its opening with the slider.</span>
+        </section>
+
+        <section class="scene scene-return" data-scene="8" aria-labelledby="return-heading" inert>
+          <div class="return-title scene-copy"><h2 id="return-heading">Now,<br /><em>listen.</em></h2></div>
+          <div class="return-art" aria-hidden="true"><img src="/luthier/assets/hero.webp" width="1672" height="941" alt="" loading="lazy" /><div class="varnish-light"></div></div>
+          <div class="return-note scene-copy"><p>The same wood. The same light.<br />A different silence.</p><a class="line-link" href="#presence">Begin again<svg viewBox="0 0 52 14" aria-hidden="true"><path d="M1 7h48m-6-6 6 6-6 6"/></svg></a></div>
+          <p class="closing-line scene-copy">Shape the wood. Hold the tension.<br class="mobile-break" /> Let silence become sound.</p>
+          <button class="credits-link scene-copy" id="credits-toggle" aria-haspopup="dialog">Credits</button>
+        </section>
+        <canvas id="resonance-field" aria-hidden="true"></canvas>
+        <div id="handoff-shade" aria-hidden="true"></div>
+      </div>
+      <div id="scroll-score" aria-hidden="true"></div>
+    </main>
+
+    <footer class="experience-footer" aria-label="Chapter progress">
+      <button class="chapter-current" id="chapter-current" aria-haspopup="dialog"><span class="chapter-count">01</span><span class="chapter-divider">/</span><span>09</span><span class="chapter-name">Presence</span></button>
+      <div class="score-line" aria-hidden="true"><span id="score-progress"></span></div>
+      <span class="scroll-cue">Scroll to discover<svg viewBox="0 0 14 22" aria-hidden="true"><path d="M7 1v18m-5-5 5 5 5-5"/></svg></span>
+    </footer>
+
+    <dialog id="chapter-dialog" class="gallery-dialog" aria-labelledby="chapter-dialog-title" data-lenis-prevent>
+      <div class="dialog-top"><span class="wordmark">LUTHIER</span><button class="close-dialog" aria-label="Close chapter index"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button></div>
+      <div class="index-intro"><p>The Anatomy of a Violin</p><h2 id="chapter-dialog-title">From silence<br /><em>to sound.</em></h2><p class="index-description">Nine movements.<br />One continuous instrument.</p></div>
+      <nav id="chapter-index" class="chapter-index" aria-label="Choose a chapter">
+        <a href="#presence"><span>01</span>Presence<em>Object</em></a><a href="#wood"><span>02</span>Wood<em>Material</em></a><a href="#craft"><span>03</span>Craft<em>Shape</em></a><a href="#inside"><span>04</span>Inside<em>Space</em></a><a href="#tension"><span>05</span>Tension<em>Energy</em></a><a href="#first-bow"><span>06</span>First bow<em>Contact</em></a><a href="#resonance"><span>07</span>Resonance<em>Response</em></a><a href="#sound-as-space"><span>08</span>Sound as space<em>Air</em></a><a href="#return"><span>09</span>Return<em>Silence</em></a>
+      </nav>
+      <button class="motion-toggle" id="motion-toggle" aria-pressed="false">Motion: full</button>
+    </dialog>
+
+    <dialog id="credits-dialog" class="gallery-dialog credits-dialog" aria-labelledby="credits-title" data-lenis-prevent>
+      <div class="dialog-top"><span class="wordmark">LUTHIER</span><button class="close-dialog" aria-label="Close credits"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button></div>
+      <div class="credits-content"><h2 id="credits-title">The making<br /><em>of a silence.</em></h2>
+        <div class="credit-columns">
+          <section><h3>The object</h3><p>An original digital interpretation of an unnamed violin. The photographic imagery was generated for this work; the structural study is an original parametric model.</p><p>It is not a photograph, scan or measured reconstruction of a historical instrument.</p></section>
+          <section><h3>The movement</h3><p>One string becomes grain, structure, tension and a field of sound. Time and displacement are deliberately enlarged so the transition can be seen.</p><p>The contours are artistic interpretations, not measured acoustic modes. Audio is original synthesized sound, enabled only by you.</p></section>
+          <section><h3>The research</h3><a href="https://www.metmuseum.org/art/collection/search/503045" target="_blank" rel="noopener noreferrer">The Met — the Gould violin<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M4 4h10v10"/></svg></a><a href="https://newt.phys.unsw.edu.au/jw/violintro.html" target="_blank" rel="noopener noreferrer">UNSW — violin acoustics<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M4 4h10v10"/></svg></a><a href="https://newt.phys.unsw.edu.au/jw/Bows.html" target="_blank" rel="noopener noreferrer">UNSW — bows and strings<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M4 4h10v10"/></svg></a><p>Type: Cormorant Garamond &amp; DM Sans.<br />Built with Lenis, GSAP &amp; Three.js.</p></section>
+        </div>
+        <p class="collection-notice"><a href="%BASE_URL%luthier/NOTICE.md">Sources &amp; notices</a> · <a href="%BASE_URL%luthier/LICENSE.txt">Original source license</a></p>
+        <p class="credit-ending">Shape the wood. Hold the tension. Let silence become sound.</p>
+      </div>
+    </dialog>
+    <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
+    <noscript><div class="noscript-note">This experience uses JavaScript for its moving instrument. Enable JavaScript to enter the nine chapters. <p><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a></p><p><a href="%BASE_URL%luthier/NOTICE.md">Sources and interpretation notes</a></p></div></noscript>
+    <script type="module" src="../../experiences/luthier/src/main.ts"></script>
+  </body>
+</html>

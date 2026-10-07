@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#151513" />
+    <meta name="description" content="A digital craft study. Follow a sheet of paper through folding, gathering, sewing and pressure as it becomes a complete bound object." />
+    <title>CODEX — The Anatomy of a Book</title>
+    <link rel="stylesheet" href="../../experiences/codex/src/style.css" />
+    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%codex/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Web Experience Collection" />
+    <meta property="og:title" content="CODEX — The Anatomy of a Book" />
+    <meta property="og:description" content="The anatomy of a book. Ten chapters through paper, thread, cloth and type." />
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%codex/" />
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%codex/social.jpg" />
+    <meta property="og:image:alt" content="The original CODEX book captured from its actual binding theatre" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CODEX — The Anatomy of a Book" />
+    <meta name="twitter:description" content="The anatomy of a book. Ten chapters, one continuous object." />
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%codex/social.jpg" />
+    <meta name="twitter:image:alt" content="The original CODEX book captured from its actual binding theatre" />
+    <link rel="icon" href="/codex/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/codex/fonts/cormorant-garamond-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/codex/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/codex/assets/volume-still.webp" as="image" />
+  </head>
+  <body>
+    <a class="skip-link" href="#the-volume">Skip to the binding</a>
+
+    <header class="masthead" id="masthead">
+      <div class="masthead-start"><a class="wordmark" href="#the-volume" data-chapter="0" aria-label="CODEX, return to the beginning">CODEX</a><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a></div>
+      <p class="masthead-title">The anatomy of a book</p>
+      <button class="contents-toggle" id="contents-toggle" aria-controls="contents" aria-expanded="false">Contents <span class="plus" aria-hidden="true"></span></button>
+    </header>
+
+    <div class="stage" id="stage" aria-hidden="true">
+      <div class="volume-still" id="volume-still"><img src="/codex/assets/volume-still.webp" alt="" width="1536" height="1024" fetchpriority="high" draggable="false" /></div>
+      <canvas class="book-canvas" id="book-canvas"></canvas>
+      <canvas class="marble-canvas" id="marble-canvas"></canvas>
+      <div class="stage-shade"></div>
+    </div>
+
+    <main id="binding" class="binding" aria-label="The making of a book">
+      <section class="chapter" id="the-volume" data-scene="0" aria-labelledby="volume-title">
+        <div class="scene-copy scene-copy--volume">
+          <h1 id="volume-title">The anatomy<br />of a book.</h1>
+          <p class="scene-description">A study in paper, thread and the quiet<br class="desktop-break" /> architecture of a bound object.</p>
+          <a class="text-action begin-action" href="#sheet" data-chapter="1">Begin the binding<svg viewBox="0 0 24 42" aria-hidden="true"><path d="M12 1v36M4 29l8 9 8-9" /></svg></a>
+        </div>
+      </section>
+      <section class="chapter" id="sheet" data-scene="1" aria-labelledby="sheet-title">
+        <div class="scene-copy">
+          <h2 id="sheet-title">Before the book,<br /><em>a sheet.</em></h2>
+          <p class="scene-description">Flat, but never without depth.<br /><span class="phrase">Light finds the fibres.</span> <span class="phrase">A fold finds the grain.</span></p>
+        </div>
+      </section>
+      <section class="chapter" id="fold" data-scene="2" aria-labelledby="fold-title">
+        <div class="scene-copy scene-copy--fold">
+          <h2 id="fold-title">Order begins<br />with a fold.</h2>
+          <p class="scene-description">A crease gives the sheet an axis.<br />A gathering gives it depth.</p>
+        </div>
+      </section>
+      <section class="chapter" id="gather" data-scene="3" aria-labelledby="gather-title">
+        <div class="scene-copy">
+          <h2 id="gather-title">Many parts.<br /><em>One intention.</em></h2>
+          <p class="scene-description">Folded sections find their order.<br />The space between them disappears.</p>
+        </div>
+      </section>
+      <section class="chapter" id="sew" data-scene="4" aria-labelledby="sew-title">
+        <div class="scene-copy scene-copy--sew">
+          <h2 id="sew-title">A line becomes<br />structure.</h2>
+          <p class="scene-description">Connection gives the pages a spine.</p>
+        </div>
+      </section>
+      <section class="chapter" id="spine" data-scene="5" aria-labelledby="spine-title">
+        <div class="scene-copy">
+          <h2 id="spine-title">The quiet<br /><em>backbone.</em></h2>
+          <p class="scene-description">A thousand edges.<br />One continuous body.</p>
+        </div>
+      </section>
+      <section class="chapter chapter--marble" id="marble" data-scene="6" aria-labelledby="marble-title">
+        <div class="scene-copy scene-copy--marble">
+          <h2 id="marble-title">An ordered<br />kind of chance.</h2>
+          <p class="scene-description">The pattern becomes part of the binding.</p>
+        </div>
+      </section>
+      <section class="chapter" id="case" data-scene="7" aria-labelledby="case-title">
+        <div class="scene-copy">
+          <h2 id="case-title">A body,<br />held together.</h2>
+          <p class="scene-description">The structure receives its enclosure.</p>
+        </div>
+      </section>
+      <section class="chapter" id="impression" data-scene="8" aria-labelledby="impression-title">
+        <div class="scene-copy scene-copy--impression">
+          <h2 id="impression-title">Pressure leaves<br />an impression.</h2>
+          <p class="scene-description">Type becomes part of the material.<br />A trace of gold catches the light.</p>
+        </div>
+      </section>
+      <section class="chapter" id="codex" data-scene="9" aria-labelledby="codex-title">
+        <div class="scene-copy scene-copy--codex">
+          <h2 id="codex-title">A book.<br /><em>At last.</em></h2>
+          <p class="scene-description">Paper. Thread. Pressure.<br />Everything held. Nothing extra.</p>
+          <div class="final-actions">
+            <button class="text-action" id="open-cover" aria-pressed="false">Open the cover<svg viewBox="0 0 28 20" aria-hidden="true"><path d="M1 10h23M17 3l7 7-7 7" /></svg></button>
+            <a class="text-action replay-action" href="#the-volume" data-chapter="0">Bind again<svg viewBox="0 0 22 22" aria-hidden="true"><path d="M5 7a7 7 0 1 1-1 7M5 2v6h6" /></svg></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="journey-footer" id="journey-footer">
+      <p class="chapter-label" id="chapter-label" aria-live="polite" aria-atomic="true"><span>I</span><i aria-hidden="true"></i><span>The volume</span></p>
+      <nav class="chapter-rail" aria-label="Binding chapters">
+        <a href="#the-volume" data-chapter="0" aria-label="1. The volume" aria-current="step">I</a>
+        <a href="#sheet" data-chapter="1" aria-label="2. Sheet">II</a>
+        <a href="#fold" data-chapter="2" aria-label="3. Fold">III</a>
+        <a href="#gather" data-chapter="3" aria-label="4. Gather">IV</a>
+        <a href="#sew" data-chapter="4" aria-label="5. Sew">V</a>
+        <a href="#spine" data-chapter="5" aria-label="6. Spine">VI</a>
+        <a href="#marble" data-chapter="6" aria-label="7. Marble">VII</a>
+        <a href="#case" data-chapter="7" aria-label="8. Case">VIII</a>
+        <a href="#impression" data-chapter="8" aria-label="9. Impression">IX</a>
+        <a href="#codex" data-chapter="9" aria-label="10. Codex">X</a>
+        <span class="rail-progress" id="rail-progress" aria-hidden="true"></span>
+      </nav>
+      <div class="mobile-navigation">
+        <button id="previous-chapter" class="icon-button" aria-label="Previous chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" /></svg></button>
+        <span id="mobile-count" aria-hidden="true">01 / 10</span>
+        <button id="next-chapter" class="icon-button" aria-label="Next chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg></button>
+      </div>
+    </footer>
+
+    <dialog class="contents" id="contents" aria-labelledby="contents-title" data-lenis-prevent>
+      <div class="contents-header"><a class="wordmark" href="#the-volume" data-chapter="0">CODEX</a><button class="dialog-close" id="contents-close" aria-label="Close contents">Close <span class="plus" aria-hidden="true"></span></button></div>
+      <div class="contents-layout">
+        <div class="contents-intro"><h2 id="contents-title">The making<br /><em>of a book.</em></h2><p>Fold the sheet.<br />Sew the structure.<br />Close the object.</p><span class="contents-note">TEN CHAPTERS / ONE CONTINUOUS OBJECT</span></div>
+        <nav class="contents-list" aria-label="Table of contents">
+          <a href="#the-volume" data-chapter="0"><span>I</span><strong>The volume</strong><small>Existence</small></a>
+          <a href="#sheet" data-chapter="1"><span>II</span><strong>Sheet</strong><small>Material</small></a>
+          <a href="#fold" data-chapter="2"><span>III</span><strong>Fold</strong><small>Geometry</small></a>
+          <a href="#gather" data-chapter="3"><span>IV</span><strong>Gather</strong><small>Order</small></a>
+          <a href="#sew" data-chapter="4"><span>V</span><strong>Sew</strong><small>Connection</small></a>
+          <a href="#spine" data-chapter="5"><span>VI</span><strong>Spine</strong><small>Structure</small></a>
+          <a href="#marble" data-chapter="6"><span>VII</span><strong>Marble</strong><small>Chance</small></a>
+          <a href="#case" data-chapter="7"><span>VIII</span><strong>Case</strong><small>Enclosure</small></a>
+          <a href="#impression" data-chapter="8"><span>IX</span><strong>Impression</strong><small>Pressure</small></a>
+          <a href="#codex" data-chapter="9"><span>X</span><strong>Codex</strong><small>Completion</small></a>
+        </nav>
+      </div>
+      <div class="contents-footer"><button id="motion-toggle" class="utility-button" aria-pressed="true">Motion <span id="motion-state">on</span></button><button id="colophon-toggle" class="utility-button">Colophon</button><span>A DIGITAL CRAFT STUDY</span></div>
+    </dialog>
+
+    <dialog class="colophon" id="colophon" aria-labelledby="colophon-title" data-lenis-prevent>
+      <button class="dialog-close colophon-close" id="colophon-close" aria-label="Close colophon">Close <span class="plus" aria-hidden="true"></span></button>
+      <h2 id="colophon-title">Colophon.</h2>
+      <p class="colophon-lead">Assembly through<br /><em>order and pressure.</em></p>
+      <p>CODEX is an original digital study of a sewn, cloth-cased book. Its ten chapters bring together the quiet transformations of paper, thread, cloth and type.</p>
+      <dl><div><dt>Type</dt><dd>Cormorant Garamond<br />Manrope</dd></div><div><dt>Materials</dt><dd>Ivory paper · linen thread<br />Black bookcloth · marbled endpaper</dd></div></dl>
+      <p class="colophon-small">An artistic interpretation of binding craft. The sequence brings related processes into one continuous view; it is not a manufacturing manual. The imagery is original and includes AI-assisted material studies.</p>
+      <p class="colophon-small"><a href="%BASE_URL%codex/NOTICE.md">Sources and licenses</a></p>
+      <p class="colophon-small">Craft references: <a href="https://psap.library.illinois.edu/collection-id-guide/bookbound" target="_blank" rel="noreferrer">University of Illinois</a>, <a href="https://www.metmuseum.org/perspectives/marbled-paper" target="_blank" rel="noreferrer">The Metropolitan Museum of Art</a> and <a href="https://www.getty.edu/art/exhibitions/making/" target="_blank" rel="noreferrer">Getty</a>.</p>
+    </dialog>
+    <p class="fallback-notice" role="status">The still edition is shown because spatial rendering is unavailable.</p>
+    <noscript><p class="noscript-note">Enable JavaScript to experience the binding in motion. The chapter text remains available below.</p></noscript>
+    <script type="module" src="/experiences/codex/src/main.js"></script>
+  </body>
+</html>
