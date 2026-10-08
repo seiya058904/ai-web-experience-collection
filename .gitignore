@@ -15,6 +15,7 @@ Desktop.ini
 .idea/
 .playwright-cli/
 .impeccable/
+.workbuddy/
 playwright-report/
 test-results/
 # Original delivery archives stay local and are not deployment inputs.
