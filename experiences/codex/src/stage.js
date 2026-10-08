@@ -76,7 +76,7 @@ export async function createStage(canvas, { mobile = false, onContextLost } = {}
   function update({ chapter, progress, time = 0, reducedMotion = false, pointer = { x: 0, y: 0 }, open = 0 }) {
     const visibleOpen = chapter === 9 ? open * smooth(0, 0.12, progress) : 0;
     const incoming = Math.min(chapter + 1, 9);
-    const transition = smooth(0.81, 1, progress);
+    const transition = smooth(0.68, 1, progress);
     const mobilePose = index => {
       const base = [...POSES[index]];
       base[0] = 0.25; base[1] = -1.28;

@@ -320,7 +320,7 @@ function changeChapter(index) {
     entryTimeout = window.setTimeout(() => {
       rooms[former].classList.remove('is-previous');
       rooms[index].classList.remove('is-entering');
-    }, 660);
+    }, 1000);
   }
   currentIndex = index;
   document.body.dataset.chapter = String(index);

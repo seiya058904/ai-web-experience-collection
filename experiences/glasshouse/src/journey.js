@@ -54,5 +54,5 @@ export function chapterProgress(index) {
 
 export function scrollLength(height, { mobile = false, reduced = false } = {}) {
   const viewport = Math.max(320, height);
-  return Math.round(viewport * CHAPTERS.length * (reduced ? 1 : mobile ? 1.85 : 2.25));
+  return Math.round(viewport * CHAPTERS.length * (reduced ? 1 : mobile ? 1.45 : 1.5));
 }

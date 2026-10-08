@@ -6,8 +6,8 @@
   function smooth(a, b, v) { var t = clamp((v - a) / (b - a)); return t * t * (3 - 2 * t); }
   function weights(position, count = 10) {
     return Array.from({ length: count }, (_, i) => {
-      var enter = i === 0 ? 1 : smooth(i - 0.18, i + 0.02, position);
-      var leave = i === count - 1 ? 1 : 1 - smooth(i + 0.82, i + 1.02, position);
+      var enter = i === 0 ? 1 : smooth(i - 0.28, i + 0.04, position);
+      var leave = i === count - 1 ? 1 : 1 - smooth(i + 0.72, i + 1.04, position);
       return clamp(enter * leave);
     });
   }

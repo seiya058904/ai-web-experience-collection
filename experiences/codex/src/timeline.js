@@ -23,7 +23,7 @@ export function sampleTimeline(position) {
   const chapter = Math.floor(pos);
   const progress = pos - chapter;
   const next = Math.min(chapter + 1, 9);
-  const handoff = smooth(0.79, 1, progress);
+  const handoff = smooth(0.66, 1, progress);
   const fromInk = isDark(chapter) ? LIGHT : INK;
   const toInk = isDark(next) ? LIGHT : INK;
   const fromMuted = isDark(chapter) ? [186, 181, 167] : [101, 98, 88];
@@ -48,5 +48,5 @@ export function sampleTimeline(position) {
 export function copyOpacity(position, index) {
   const p = position - index;
   if (index === 9 && p >= 0) return 1;
-  return smooth(-0.08, 0.04, p) * (1 - smooth(0.72, 0.91, p));
+  return smooth(-0.1, 0.06, p) * (1 - smooth(0.64, 0.9, p));
 }

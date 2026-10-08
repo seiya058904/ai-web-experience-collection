@@ -18,10 +18,10 @@ export interface HandoffDefinition {
 
 /** Registered context sections beneath the persistent physical feature carriers. */
 export const HANDOFFS: readonly HandoffDefinition[] = [
-  { from: 'wafer', to: 'build', start: 1.78, end: 2, normal: [1, 0, 0], range: [-4.45, 4.45], colour: 0xd4c7e8, trace: 'exposure' },
-  { from: 'build', to: 'transistor', start: 2.78, end: 3, normal: [0, 1, 0], range: [-2.05, 2.85], colour: 0xd3dcd9, trace: 'layer' },
-  { from: 'transistor', to: 'interconnect', start: 3.78, end: 4, normal: [0, -1, 0], range: [-3.75, 2.05], colour: 0xddc7a8, trace: 'contact' },
-  { from: 'interconnect', to: 'package', start: 4.78, end: 5, normal: [0, 0, 1], range: [-4.65, 3.45], colour: 0xddc09a, trace: 'routing' },
+  { from: 'wafer', to: 'build', start: 1.64, end: 2, normal: [1, 0, 0], range: [-4.45, 4.45], colour: 0xd4c7e8, trace: 'exposure' },
+  { from: 'build', to: 'transistor', start: 2.64, end: 3, normal: [0, 1, 0], range: [-2.05, 2.85], colour: 0xd3dcd9, trace: 'layer' },
+  { from: 'transistor', to: 'interconnect', start: 3.64, end: 4, normal: [0, -1, 0], range: [-3.75, 2.05], colour: 0xddc7a8, trace: 'contact' },
+  { from: 'interconnect', to: 'package', start: 4.64, end: 5, normal: [0, 0, 1], range: [-4.65, 3.45], colour: 0xddc09a, trace: 'routing' },
 ];
 
 /**
@@ -30,7 +30,7 @@ export const HANDOFFS: readonly HandoffDefinition[] = [
  * the chapter title changes. Use for BUILD / TRANSISTOR / INTERCONNECT.
  */
 export function continuousSceneProgress(globalProgress: number, chapter: number) {
-  const phase = clamp((globalProgress - (chapter - .22)) / 1.22);
+  const phase = clamp((globalProgress - (chapter - .36)) / 1.36);
   // Wiring is already taking shape while contacts enter its upper vias.
   return chapter === 4 ? .20 + .80 * phase : phase;
 }

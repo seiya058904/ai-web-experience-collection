@@ -424,7 +424,7 @@ function requestAssets(p: number) {
     ...(p > 0.53 && p < 0.94 ? ["imagery"] : []),
     ...(p > 0.62 && p < 0.91 ? ["detail"] : []),
     ...(p > 0.66 && p < 0.91 ? ["city"] : []),
-    ...(p > 0.924 ? ["globe"] : []),
+    ...(p > 0.93 ? ["globe"] : []),
   ];
   const failure = required.find((n) => failed.has(n));
   if (failure) {
@@ -509,7 +509,7 @@ function updateCamera(s: StoryState) {
   const offsetY =
     height *
     (0.1 * (1 - smooth(0.005, 0.12, s.p)) -
-      (mobile ? 0.12 : 0) * smooth(0.95, 0.98, s.p));
+      (mobile ? 0.12 : 0) * smooth(0.955, 0.985, s.p));
   camera.setViewOffset(width, height, 0, offsetY, width, height);
   camera.updateProjectionMatrix();
   camera.updateMatrixWorld();
@@ -651,7 +651,7 @@ function updateChrome(s: StoryState) {
   sceneCopy.classList.toggle("final", s.chapter === 10);
   sceneCopy.style.opacity = String(s.chapter === 0 ? 0 : 1 - intro);
   $("closing-action").hidden = s.p < 0.977;
-  const dark = Math.max(s.night, smooth(0.91, 0.945, s.p));
+  const dark = Math.max(s.night, smooth(0.915, 0.952, s.p));
   const background = reusableColour.copy(paper).lerp(nightPaper, dark);
   root.style.setProperty("--paper", "#" + background.getHexString());
   const luminance =

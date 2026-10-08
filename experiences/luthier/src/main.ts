@@ -365,10 +365,16 @@ function paint() {
     const p = clamp(story - i);
     scene.style.setProperty('--local', p.toFixed(4));
     const out = smooth(.73, 1, p);
+    // Copy exchanges ahead of the imagery, so two voices never share the
+    // middle of the longer scene crossfade at reading strength.
+    const copyAlpha = (i === 0 ? 1 : smooth(.72, .98, clamp(story - (i - 1)))) * (i === 8 ? 1 : 1 - smooth(.66, .9, p));
     // Each composition keeps an individual direction; no repeated fade-up choreography.
     const dx = i === 1 ? -out * width * .017 : i === 7 ? out * width * .024 : 0;
     const dy = i === 3 ? out * height * .025 : i === 0 || i === 8 ? -p * height * .012 : 0;
-    for (const copy of sceneCopies[i]) copy.style.transform = `translate3d(${dx}px,${dy}px,0)`;
+    for (const copy of sceneCopies[i]) {
+      copy.style.transform = `translate3d(${dx}px,${dy}px,0)`;
+      copy.style.opacity = copyAlpha.toFixed(4);
+    }
   }
 
   if (activeWeights[0] > 0) {

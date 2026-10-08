@@ -236,7 +236,7 @@ function initializeFossil() {
     setActive(index);
     const ww = reduced ? names.map((_,i) => i===index ? 1 : 0) : weights(pos);
     const left = clamp(Math.floor(pos),0,9);
-    const bgT = reduced ? 0 : smooth(.82,1.02,pos-left);
+    const bgT = reduced ? 0 : smooth(.70,1.04,pos-left);
     const bg = reduced ? grounds[index] : mixColor(grounds[left],grounds[Math.min(left+1,9)],bgT);
     document.body.style.setProperty('--ground',bg);
     $('overall-progress').style.transform = 'scaleX('+clamp(pos/9.2)+')';
@@ -246,7 +246,7 @@ function initializeFossil() {
       const visible = ww[i] > .002;
       visuals[i].style.opacity = String(ww[i]);
       visuals[i].style.visibility = visible ? 'visible' : 'hidden';
-      const copyAlpha=reduced?ww[i]:(i===0?1:smooth(i-.05,i+.11,pos))*(i===9?1:1-smooth(i+.72,i+.88,pos));
+      const copyAlpha=reduced?ww[i]:(i===0?1:smooth(i-.08,i+.14,pos))*(i===9?1:1-smooth(i+.66,i+.9,pos));
       compositions[i].style.opacity = String(copyAlpha);
       compositions[i].style.visibility = copyAlpha>.002 ? 'visible' : 'hidden';
       if (!visible) continue;

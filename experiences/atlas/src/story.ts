@@ -127,10 +127,10 @@ const POSES: Pose[] = [
   { p: 0.787, span: 0.21, pitch: 1.28, yaw: -0.2, x: -0.18, y: 0.79, z: 0.14 },
   { p: 0.833, span: 0.24, pitch: 1.27, yaw: -0.12, x: -0.25, y: 0.79, z: 0.1 },
   { p: 0.863, span: 1.25, pitch: 1.02, yaw: -0.1, x: -0.32, y: 0.79, z: 0.1 },
-  { p: 0.903, span: 42, pitch: 0.38, yaw: -0.08, x: -8, y: 0, z: 4 },
-  { p: 0.934, span: 610, pitch: 0.22, yaw: 0.02, x: -110, y: -15, z: 0 },
-  { p: 0.957, span: 6800, pitch: 0.15, yaw: 0.04, x: -1050, y: -1500, z: 0 },
-  { p: 0.979, span: 15000, pitch: 0.16, yaw: 0.1, x: -2850, y: -6371, z: 500 },
+  { p: 0.898, span: 42, pitch: 0.38, yaw: -0.08, x: -8, y: 0, z: 4 },
+  { p: 0.938, span: 610, pitch: 0.22, yaw: 0.02, x: -110, y: -15, z: 0 },
+  { p: 0.97, span: 6800, pitch: 0.15, yaw: 0.04, x: -1050, y: -1500, z: 0 },
+  { p: 0.99, span: 15000, pitch: 0.16, yaw: 0.1, x: -2850, y: -6371, z: 500 },
   { p: 1, span: 14800, pitch: 0.17, yaw: 0.1, x: -2850, y: -6371, z: 500 },
 ];
 
@@ -151,8 +151,8 @@ export function evaluateStory(p: number, mobile: boolean) {
     z: mix(a.z, b.z, t),
   };
   if (mobile) {
-    const city = smooth(0.6, 0.66, p) * (1 - smooth(0.87, 0.905, p));
-    const globe = smooth(0.94, 0.98, p);
+    const city = smooth(0.6, 0.66, p) * (1 - smooth(0.875, 0.915, p));
+    const globe = smooth(0.95, 0.988, p);
     pose.span *= mix(1.23, 2.45, globe);
     pose.x = mix(pose.x * 0.42, -200, globe);
     pose.x -= 1.9 * smooth(0.505, 0.54, p) * (1 - smooth(0.582, 0.615, p));
@@ -160,7 +160,7 @@ export function evaluateStory(p: number, mobile: boolean) {
     pose.yaw *= 0.6;
   }
   const lift = smooth(0.225, 0.335, p);
-  const orbit = smooth(0.895, 0.978, p);
+  const orbit = smooth(0.888, 0.986, p);
   return {
     p,
     pose,
@@ -170,7 +170,7 @@ export function evaluateStory(p: number, mobile: boolean) {
     morph: smooth(0.075, 0.17, p),
     lines:
       smooth(0.016, 0.12, p) * (1 - smooth(0.53, 0.615, p)) +
-      0.12 * smooth(0.885, 0.9, p) * (1 - smooth(0.925, 0.94, p)),
+      0.12 * smooth(0.895, 0.91, p) * (1 - smooth(0.94, 0.955, p)),
     surface: smooth(0.245, 0.315, p),
     water: smooth(0.412, 0.475, p),
     drape: smooth(0.512, 0.576, p),
@@ -178,12 +178,12 @@ export function evaluateStory(p: number, mobile: boolean) {
     city: smooth(0.625, 0.682, p),
     extrude: smooth(0.66, 0.717, p),
     route: smooth(0.744, 0.802, p),
-    night: smooth(0.817, 0.852, p) * (1 - smooth(0.87, 0.91, p)),
+    night: smooth(0.817, 0.852, p) * (1 - smooth(0.87, 0.915, p)),
     orbit,
-    globe: smooth(0.917, 0.934, p),
-    terrainVisibility: 1 - smooth(0.93, 0.955, p),
-    cityVisibility: smooth(0.608, 0.652, p) * (1 - smooth(0.885, 0.918, p)),
-    curvature: smooth(0.9, 0.93, p),
+    globe: smooth(0.93, 0.955, p),
+    terrainVisibility: 1 - smooth(0.948, 0.978, p),
+    cityVisibility: smooth(0.608, 0.652, p) * (1 - smooth(0.89, 0.93, p)),
+    curvature: smooth(0.9, 0.948, p),
   };
 }
 export type StoryState = ReturnType<typeof evaluateStory>;

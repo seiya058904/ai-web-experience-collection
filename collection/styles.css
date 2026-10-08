@@ -132,3 +132,94 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @font-face{font-family:"Collection Grid Roboto";src:url("/grid/fonts/RobotoFlex-Latin.woff2") format("woff2");font-weight:100 1000;font-stretch:25% 151%;font-display:swap}
 .world-grid{grid-column:span 6;height:65svh;max-height:1400px;background:#f8f8f3;color:#121411}.world-grid .world-image img{object-position:65% 50%}.world-grid .world-image:after{background:linear-gradient(90deg,#f8f8f3d6,transparent 75%),linear-gradient(180deg,transparent 40%,#f8f8f3ee)}.world-grid h2,.world-grid .world-title p{font-family:"Collection Grid Roboto",Arial,sans-serif}.world-grid h2{font-size:clamp(70px,12vw,430px);font-weight:700;font-variation-settings:"wght" 700,"wdth" 95,"opsz" 60,"slnt" 0;letter-spacing:-.055em;line-height:.9}.world-grid .world-title p{font-size:clamp(27px,3vw,108px);font-weight:400;letter-spacing:-.03em;line-height:1.1;margin-top:24px}
 @media(max-width:700px){.world-grid{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-grid h2{font-size:17vw}.world-grid .world-title p{font-size:37px}}
+
+/* ===== Collection editorial rhythm — 2026 refinement =====
+   One unifying system above the twenty-nine independent worlds:
+   a recurring ghost index numeral, alternating editorial spreads,
+   a three-tier height rhythm, eased image gradients, a scroll
+   reveal and a deeper hover response. No work runtime loads. */
+
+/* Scroll reveal, gated on JS so the entrance stays functional without it. */
+.js .world{opacity:0;transform:translateY(30px)}
+.js .world.is-visible{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.22,.61,.21,1),transform .9s cubic-bezier(.22,.61,.21,1)}
+
+/* Intro kicker above the invitation. */
+.intro-kicker{display:flex;align-items:center;gap:14px;font-size:clamp(10px,.72vw,19px);letter-spacing:.22em;color:#596052;margin-bottom:clamp(16px,2.4vh,34px)}
+.intro-kicker:before{content:'';width:clamp(28px,3vw,64px);height:1px;background:#20231f}
+
+/* Ghost index numerals — the recurring collection-level device.
+   (Indices are stamped by main.ts: style containment scopes counters,
+   so attr() carries the decorative number instead.) */
+.world{container-type:inline-size}
+.world:before{content:attr(data-index);position:absolute;top:50%;right:clamp(18px,4cqi,86px);transform:translateY(-50%);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(96px,23cqi,340px);line-height:1;letter-spacing:-.03em;color:currentColor;opacity:.06;pointer-events:none}
+.world-top{opacity:.78}
+
+/* Height rhythm across the twelve full-width rows: 58 / 64 / 72svh tiers. */
+@media(min-width:701px){
+.world:nth-child(n+18){height:58svh}
+.world:nth-child(19),.world:nth-child(24),.world:nth-child(28),.world:nth-child(29){height:72svh}
+.world:nth-child(21),.world:nth-child(23),.world:nth-child(26){height:64svh}
+}
+
+/* Alternating editorial spreads: every second full-width row flips composition.
+   GRID stays left-set: its poster carries its own large type. */
+.world:nth-child(n+19):nth-child(-n+27):nth-child(odd) .world-top,.world:nth-child(n+19):nth-child(-n+27):nth-child(odd) .world-bottom{flex-direction:row-reverse}
+.world:nth-child(n+19):nth-child(-n+27):nth-child(odd) .world-title{text-align:right}
+.world:nth-child(n+19):nth-child(-n+27):nth-child(odd):before{right:auto;left:clamp(18px,4cqi,86px)}
+
+/* Eased gradients let the actual work imagery breathe again (text side kept). */
+.world-resonance .world-image:after{background:linear-gradient(90deg,#0b0d0de6,transparent 62%),linear-gradient(180deg,transparent 48%,#0b0d0def)}
+.world-parallax .world-image:after{background:linear-gradient(90deg,#e9e2d6dd,transparent 62%),linear-gradient(180deg,#e9e2d644,transparent 48%,#e9e2d6ef)}
+.world-codex .world-image:after{background:linear-gradient(90deg,#151513e6,transparent 62%),linear-gradient(180deg,transparent 42%,#151513e8)}
+.world-fossil .world-image:after{background:linear-gradient(90deg,#141512e2,transparent 64%),linear-gradient(180deg,transparent 42%,#141512e8)}
+.world-nib .world-image:after{background:linear-gradient(90deg,#080a0de2,transparent 64%),linear-gradient(180deg,transparent 42%,#080a0de8)}
+.world-crave .world-image:after{background:linear-gradient(90deg,#17120fb8,transparent 62%),linear-gradient(180deg,transparent 42%,#17120fe2)}
+
+/* Mirrored gradients and re-framed imagery for the flipped spreads. */
+.world-aeterna .world-image:after{background:linear-gradient(270deg,#111210d0,transparent 62%),linear-gradient(180deg,transparent 42%,#111210e0)}
+.world-aeterna .world-image img{object-position:32% 50%}
+.world-luthier .world-image:after{background:linear-gradient(270deg,#080808e2,transparent 62%),linear-gradient(180deg,transparent 42%,#080808e8)}
+.world-luthier .world-image img{object-position:32% 50%}
+.world-magma .world-image:after{background:linear-gradient(270deg,#080909e4,transparent 62%),linear-gradient(180deg,transparent 42%,#080909e8)}
+.world-magma .world-image img{object-position:32% 50%}
+.world-urushi .world-image:after{background:linear-gradient(270deg,#0b0a09e4,transparent 62%),linear-gradient(180deg,transparent 42%,#0b0a09e8)}
+.world-urushi .world-image img{object-position:32% 50%}
+.world-crema .world-image:after{background:linear-gradient(270deg,#090b0ac2,transparent 62%),linear-gradient(180deg,transparent 42%,#090b0ae6)}
+.world-crema .world-image img{object-position:32% 50%}
+.world-grid .world-image:after{background:linear-gradient(90deg,#f8f8f3d2,transparent 62%),linear-gradient(180deg,transparent 42%,#f8f8f3e8)}
+.world-grid .world-image img{object-position:65% 50%}
+
+/* Deeper hover response: image breathes, title lifts, numeral wakes. */
+@media(hover:hover){
+.world .world-title{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.world:hover .world-title{transform:translateY(-8px)}
+.world:hover .world-image img{transform:scale(1.06) translate(var(--pointer-x,0px),var(--pointer-y,0px))}
+.world:before{transition:opacity .6s ease}
+.world:hover:before{opacity:.12}
+}
+
+/* Mobile: flipped spreads return to the shared vertical reading order. */
+@media(max-width:700px){
+.intro-kicker{font-size:9px;margin-bottom:14px;letter-spacing:.18em}
+.world:before{font-size:34cqi;right:22px;opacity:.07}
+.world:nth-child(n+19):nth-child(-n+27):nth-child(odd) .world-top,.world:nth-child(n+19):nth-child(-n+27):nth-child(odd) .world-bottom{flex-direction:row}
+.world:nth-child(n+19):nth-child(-n+27):nth-child(odd) .world-title{text-align:left}
+.world:nth-child(n+19):nth-child(-n+27):nth-child(odd):before{left:auto;right:22px}
+.world-aeterna .world-image:after{background:linear-gradient(90deg,#111210d9,transparent 70%),linear-gradient(180deg,transparent 40%,#111210e6)}
+.world-aeterna .world-image img{object-position:63% 50%}
+.world-luthier .world-image:after{background:linear-gradient(90deg,#080808ee,transparent 70%),linear-gradient(180deg,transparent 40%,#080808ed)}
+.world-luthier .world-image img{object-position:65% 50%}
+.world-magma .world-image:after{background:linear-gradient(90deg,#080909eb,transparent 70%),linear-gradient(180deg,transparent 40%,#080909ed)}
+.world-magma .world-image img{object-position:65% 50%}
+.world-urushi .world-image:after{background:linear-gradient(90deg,#0b0a09eb,transparent 70%),linear-gradient(180deg,transparent 40%,#0b0a09ed)}
+.world-urushi .world-image img{object-position:65% 50%}
+.world-crema .world-image:after{background:linear-gradient(90deg,#090b0ac9,transparent 70%),linear-gradient(180deg,transparent 40%,#090b0aeb)}
+.world-crema .world-image img{object-position:65% 50%}
+.world-grid .world-image:after{background:linear-gradient(90deg,#f8f8f3d6,transparent 70%),linear-gradient(180deg,transparent 40%,#f8f8f3ee)}
+.world-grid .world-image img{object-position:100% 50%}
+}
+
+/* Reduced motion: the reveal never gates content. */
+@media(prefers-reduced-motion:reduce){
+.js .world{opacity:1;transform:none}
+}

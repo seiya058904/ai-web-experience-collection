@@ -1,6 +1,6 @@
 ---
 name: AI Web Experience Collection
-description: Three photographic triptychs, four paired rows and twelve full-width rows opening twenty-nine independent worlds.
+description: Three photographic triptychs, four paired rows and twelve alternating editorial spreads opening twenty-nine independent worlds.
 colors:
   ground: "#eeefeb"
   ink: "#20231f"
@@ -38,13 +38,15 @@ Barlow for the quiet gallery voice; Barlow Condensed for the racing and space ti
 
 ## Layout
 
-One restrained header and invitation sit above three edge-to-edge image triptychs, four paired rows and twelve full-width rows, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
+One restrained header and invitation (with a TWENTY-NINE WORLDS · ONE COLLECTION kicker) sit above three edge-to-edge image triptychs, four paired rows and twelve full-width editorial spreads, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
+
+The twelve full-width spreads follow one collection-level rhythm so the sequence reads as an edited magazine, not a stack of identical banners: a three-tier height cadence (58 / 64 / 72svh), alternating left/right compositions (AETERNA, LUTHIER, MAGMA, URUSHI and CREMA mirror their gradients, imagery and text to the right; GRID stays left-set because its poster already carries large type), and a recurring ghost index numeral (Barlow Condensed, stamped from main.ts as `data-index` because style containment scopes CSS counters) at six percent ink. Every spread keeps its own work's typography, palette and captured media; the shared system only sets cadence, alignment and the numeral.
 
 INTERVAL’s display title scales from its panel’s content width, so the full name remains inside the triptych at narrow desktop widths. Its phone composition retains the existing typography.
 
 ## Elevation & Depth
 
-Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. Reduced motion removes it.
+Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels reveal once on scroll (IntersectionObserver, gated on a `.js` class so the entrance is complete without JavaScript; the reveal never gates content under reduced motion). Reduced motion removes all of it.
 
 ## Shapes
 
@@ -64,7 +66,7 @@ THESIS: a single twenty-nine-world visual entrance, with the works themselves as
 OWN-WORLD: pale gallery, sharp photographic edges, racing condensed type, botanical serif and the planetary horizon.
 STORY: recognize twenty-nine distinct experiences, choose one, explore, return.
 FIRST VIEWPORT: quiet header and invitation above a dominant three-panel photographic composition; Explore remains visible at each lower corner.
-FORM: three code-led triptychs, four paired rows and twelve full-width rows using media from the actual works; existing production assets are the reference.
+FORM: three code-led triptychs, four paired rows and twelve alternating editorial spreads using media from the actual works; existing production assets are the reference.
 FINISH: desktop/mobile full-frame review, verified native entry/return links, documented tokens and retained source provenance. Review stays in this chat as required by repository instructions; no additional agents.
 
 GLAZE adds its supplied Archivo voice, celadon jar and pale green ground. KAGE adds its supplied condensed voice and a real FRAME rendering on white. The homepage imports neither work runtime; previews are static local media. The original three-panel composition and native-link behavior remain intact.

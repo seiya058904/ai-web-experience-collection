@@ -311,8 +311,11 @@ export function interpolate(a: Design,b: Design,t: number,next: number): Design 
   for(const key of scalars)d[key]=mix(a[key],b[key],safe);
   for(const key of Object.keys(a.axes) as (keyof Axes)[])d.axes[key]=mix(a.axes[key],b.axes[key],safe);
   for(const key of Object.keys(a.frame) as (keyof Frame)[])d.frame[key]=mix(a.frame[key],b.frame[key],f);
-  d.paper=colorMix(a.paper,b.paper,safe);d.ink=readable(colorMix(a.ink,b.ink,safe),d.paper);
-  d.accent=colorMix(a.accent,b.accent,safe);
+  // Colour trails geometry slightly: complementary grounds cross their muddy
+  // midpoint faster while the composition is already mostly re-formed.
+  const colour = smooth(range(.12, 1, safe));
+  d.paper=colorMix(a.paper,b.paper,colour);d.ink=readable(colorMix(a.ink,b.ink,colour),d.paper);
+  d.accent=colorMix(a.accent,b.accent,colour);
   return routeDesktopSupplement(routeHandoff(d,a,b,safe,next),a,b,safe,next);
 }
 

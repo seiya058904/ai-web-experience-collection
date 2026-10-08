@@ -115,7 +115,7 @@ lenis = new Lenis({
   syncTouch: false,
   respectReducedMotion: true,
   overscroll: false,
-  wheelMultiplier: 0.9
+  wheelMultiplier: 1
 });
 lenis.on('scroll', ScrollTrigger.update);
 scrollTrigger = ScrollTrigger.create({

@@ -84,8 +84,8 @@ export function makeTimeline(mobile = false) {
       start: offset,
       length,
       end: offset + length,
-      holdStart: offset + length * 0.21,
-      holdEnd: offset + length * 0.76,
+      holdStart: offset + length * 0.25,
+      holdEnd: offset + length * 0.71,
     };
     offset += length;
     return scene;
