@@ -9,7 +9,7 @@
   --display: 'Cormorant Garamond', Georgia, serif;
   --sans: 'Manrope', Arial, sans-serif;
   --vh: 100svh;
-  --chapter-height: 118svh;
+  --chapter-height: 150svh;
 }
 * { box-sizing: border-box; }
 html { background: var(--ground); scroll-behavior: auto; scrollbar-color: #5e6266 var(--ground); }

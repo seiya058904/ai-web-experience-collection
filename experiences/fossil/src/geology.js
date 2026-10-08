@@ -138,7 +138,7 @@
       this.ctx.globalAlpha *= a;
       if (scene === 1) this._strata(p, motion);
       else if (scene === 2) this._burial(p, r, motion);
-      else if (scene === 3) this._preservation(p, r, Math.round(clamp(mode, 0, 3)), motion);
+      else if (scene === 3) this._preservation(p, r, clamp(mode, 0, 3), motion);
       else {
         this._lastExposureRect = r;
         if (pointer && pointer.down && Number.isFinite(pointer.x) && Number.isFinite(pointer.y)) {
@@ -419,6 +419,20 @@
     }
 
     _preservation(p, r, mode, motion) {
+      // The four preservation states are blended rather than cut. A fractional
+      // mode renders its two neighbours and cross-fades them, so the form
+      // changes over time instead of snapping between frames.
+      const lo = Math.max(0, Math.min(3, Math.floor(mode)));
+      const hi = Math.max(0, Math.min(3, Math.ceil(mode)));
+      const blend = clamp(mode - lo, 0, 1);
+      if (blend < .004 || lo === hi) { this._preservationState(p, r, lo, motion, 1); return; }
+      this._preservationState(p, r, lo, motion, 1 - blend);
+      this._preservationState(p, r, hi, motion, blend);
+    }
+
+    _preservationState(p, r, mode, motion, weight = 1) {
+      const baseAlpha = this.ctx.globalAlpha;
+      this.ctx.globalAlpha = baseAlpha * clamp(weight);
       const im = imageReady(this.preservationImage) ? this.preservationImage : this.specimenImage;
       const kind = imageReady(this.preservationImage) ? 'preservation' : 'specimen';
       this._prepareModes(im);
@@ -468,6 +482,7 @@
       }
       this._feather(g, r, .070);
       this._composite(b.canvas, r);
+      this.ctx.globalAlpha = baseAlpha;
     }
 
     _patchPath(patch, project) {

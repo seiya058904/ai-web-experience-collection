@@ -162,19 +162,21 @@ function onKeyboardScroll(event) {
   if (state.menu || event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey) return;
   if (event.target instanceof Element && event.target.closest('input, textarea, select, button, [contenteditable="true"]')) return;
   const page = innerHeight * .88;
-  const movement = { ArrowDown: 64, ArrowUp: -64, PageDown: page, PageUp: -page, ' ': event.shiftKey ? -page : page };
+  const movement = { ArrowDown: 40, ArrowUp: -40, PageDown: page, PageUp: -page, ' ': event.shiftKey ? -page : page };
   if (!(event.key in movement) && event.key !== 'Home' && event.key !== 'End') return;
   event.preventDefault();
   // Held keys auto-repeat every ~33ms. Chaining each repeat to the previous
   // destination keeps the real scroll moving at the key's own speed instead of
-  // restarting a long tween from a lagging position on every repeat.
+  // restarting a long tween from a lagging position on every repeat. The step
+  // is deliberately smaller than a full "screenful" so a held arrow key walks
+  // the exhibition rather than racing through it.
   const base = keyboardTarget ?? lenis?.targetScroll ?? window.scrollY;
   const destination = event.key === 'Home' ? 0 : event.key === 'End' ? maxScroll
     : clamp(base + movement[event.key], 0, maxScroll);
   pendingNavigation = null;
   navigationSerial++;
   keyboardTarget = destination;
-  lenis?.scrollTo(destination, { immediate: state.reduced, duration: .38, easing: t => 1 - Math.pow(1 - t, 3) });
+  lenis?.scrollTo(destination, { immediate: state.reduced, duration: .45, easing: t => 1 - Math.pow(1 - t, 3) });
   dirty = true;
 }
 function onResize() {

@@ -22,10 +22,12 @@ export function personality(index: number, t: number) {
   t = clamp(t);
   // Every curve is monotonic and continuous; each re-voices the same handoff.
   // Hold-to-handoff pacing is deliberately even: a change of system should be
-  // read as a movement, not as a cut.
-  if (index === 1 || index === 2) return 1 - (1 - t) ** 2.2;
+  // read as a movement, not as a cut. The curves are all ease-in-out now — the
+  // two that used to lead with a hard ease-out read as a snap next to the
+  // others, so the copy appeared to lurch into place.
+  if (index === 1 || index === 2) return smooth(t);
   if (index === 3) return t < .72 ? cubic(t / .72) * 1.025 : mix(1.025, 1, smooth((t - .72) / .28));
-  if (index === 6) return t < .2 ? t * .1 : .02 + .98 * (1 - (1 - range(.2, 1, t)) ** 2.4);
+  if (index === 6) return cubic(range(.06, .9, t));
   if (index === 7) return smooth(t);
   if (index === 5) return smooth(smooth(t));
   return cubic(t);

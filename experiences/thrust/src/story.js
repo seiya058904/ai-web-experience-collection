@@ -30,9 +30,13 @@ export function sceneState(p) {
     index, local: p - index, p,
     cutaway: smooth(1.5, 2.05, p) * (1 - smooth(7.72, 8.12, p)),
     heat: smooth(3.88, 4.48, p) * (1 - smooth(8.72, 9.1, p)),
-    energy: smooth(4.85, 5.5, p) * (1 - smooth(5.8, 6.05, p)),
+    // The turbine-to-blade handoff used to resolve inside ~0.23 of a chapter:
+    // the blade scaled from 7.5% to 155% while the engine cut out, which read as
+    // a snap. Both windows are wider now, so the single blade grows into the
+    // frame and the core fades instead of swapping.
+    energy: smooth(4.85, 5.5, p) * (1 - smooth(5.76, 6.26, p)),
     explode: smooth(6.98, 7.35, p) * (1 - smooth(7.70, 8.03, p)),
-    blade: smooth(5.90, 6.13, p) * (1 - smooth(6.84, 7.07, p)),
+    blade: smooth(5.86, 6.28, p) * (1 - smooth(6.84, 7.07, p)),
     bladeCut: smooth(6.18, 6.58, p) * (1-smooth(6.80, 7.03, p)),
     sky: smooth(8.55, 9.03, p),
     aircraft: smooth(8.55, 8.93, p),

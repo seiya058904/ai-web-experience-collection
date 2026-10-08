@@ -304,6 +304,16 @@ window.addEventListener('pointerleave', () => {
   requestRender();
 }, { passive: true });
 
+/** Rooms are visibility:hidden until they are current, so the browser is free
+ *  to drop their decoded art. Re-decode on demand (and ahead of time for the
+ *  neighbouring rooms) so a reveal never shows the room's black background. */
+function warmRoomArt(index) {
+  const room = rooms[index];
+  if (!room) return;
+  room.querySelectorAll('.room-art img').forEach((img) => {
+    if (img.complete && img.naturalWidth) img.decode?.().catch(() => {});
+  });
+}
 function changeChapter(index) {
   const former = currentIndex;
   clearTimeout(entryTimeout);
@@ -320,8 +330,12 @@ function changeChapter(index) {
     entryTimeout = window.setTimeout(() => {
       rooms[former].classList.remove('is-previous');
       rooms[index].classList.remove('is-entering');
-    }, 1300);
+    }, 1000);
   }
+  // Keep the rooms either side decoded: an undecoded room-art image paints as
+  // the room's black background for a frame or two on reveal.
+  warmRoomArt(index - 1);
+  warmRoomArt(index + 1);
   currentIndex = index;
   document.body.dataset.chapter = String(index);
   rail.forEach((a, i) => i === index ? a.setAttribute('aria-current', 'step') : a.removeAttribute('aria-current'));
@@ -500,6 +514,11 @@ if (initial && initial.index === hashIndex) {
 requestRender();
 if ('requestIdleCallback' in window) window.requestIdleCallback(startSpatial, { timeout: 1800 });
 else window.setTimeout(startSpatial, 1000);
+// Warm every room's art once the page is idle so the first visit to any room
+// (including a jump from the index) reveals an already-decoded image.
+const warmAllRoomArt = () => rooms.forEach((_, i) => warmRoomArt(i));
+if ('requestIdleCallback' in window) window.requestIdleCallback(warmAllRoomArt, { timeout: 2400 });
+else window.setTimeout(warmAllRoomArt, 1200);
 document.fonts.ready.then(() => { spatialLayoutKey = ''; requestRender(); });
 document.querySelectorAll('.room-art img').forEach((img) => {
   img.addEventListener('load', requestRender, { once: true });

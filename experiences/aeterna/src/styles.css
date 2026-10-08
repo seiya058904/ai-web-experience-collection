@@ -49,12 +49,13 @@ button[hidden],[hidden]{display:none!important}
 .exhibition{position:fixed;inset:0;z-index:1;overflow:hidden;background:var(--black);outline:none}
 .room{position:absolute;inset:0;isolation:isolate;overflow:hidden;background:var(--black);visibility:hidden;opacity:0;pointer-events:none;color:var(--bone);--local-p:0;--portrait-reveal:0%;--relief-reveal:0;--fracture-reveal:0}
 .room.is-active{opacity:1;visibility:visible;pointer-events:auto}
-/* The outgoing room stays fully opaque underneath the incoming one, so the two
-   cross-fade instead of wiping. The previous clip-path reveal left a moving
-   seam across the bottom edge where the room below showed through. */
+/* Restored from the original release: the incoming room wipes in from the top
+   over the outgoing one, which stays fully opaque underneath. The opacity
+   cross-fade that replaced it started the room at zero opacity, which read as
+   a black flash on every chapter change. */
 .room.is-previous{visibility:visible;opacity:1}
-.room.is-active.is-entering{animation:room-reveal 1.15s var(--ease) both}
-@keyframes room-reveal{from{opacity:0}to{opacity:1}}
+.room.is-active.is-entering{animation:room-reveal .9s var(--ease) both}
+@keyframes room-reveal{from{clip-path:inset(0 0 8% 0);filter:brightness(.72)}to{clip-path:inset(0);filter:brightness(1)}}
 .room-art{position:absolute;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
 .room-art>img{height:100%;width:100%;object-fit:cover;display:block;max-width:none}
 .hero-art,.hero-occlusion,.hero-light{transform:scale(calc(1 + var(--p)*.07)) translate3d(calc(var(--px)*-.14vw),calc(var(--p)*-1.2vh + var(--py)*-.1vh),0);transform-origin:66% 45%;will-change:transform}

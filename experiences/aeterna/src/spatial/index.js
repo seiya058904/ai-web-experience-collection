@@ -396,7 +396,13 @@ export async function createSpatialStage(canvas, options = {}) {
     const sceneName = activeScenes.has(s.scene) ? s.scene : 'none';
     if (contextLost || document.hidden) return;
     if (sceneName === 'none' || s.visible === false) {
-      if (lastScene !== 'none') renderer.clear();
+      // Retain the last rendered frame instead of clearing. The canvas is
+      // transparent (clear alpha 0), so clearing left the outgoing sculpture
+      // room showing nothing but its black background while it was still on
+      // screen during a chapter change — the flickering black block. Keeping
+      // the frame means the room keeps showing its sculpture until it is
+      // actually hidden, and a newly chosen sculpture room repaints on the
+      // same frame the canvas is moved into it.
       lastScene = 'none';
       return;
     }

@@ -93,7 +93,7 @@ function updateSize(preservePosition = false) {
   const oldUnit = unit;
   const oldPosition = oldUnit > 1 ? window.scrollY / oldUnit : 0;
   viewport = { width: innerWidth, height: innerHeight };
-  unit = viewport.height * (viewport.width < 760 ? 1.48 : 1.4);
+  unit = viewport.height * (viewport.width < 760 ? 1.55 : 1.5);
   root.style.setProperty('--chapter-length', `${unit}px`);
   root.style.setProperty('--viewport-height', `${viewport.height}px`);
   stage?.resize(viewport.width, viewport.height);

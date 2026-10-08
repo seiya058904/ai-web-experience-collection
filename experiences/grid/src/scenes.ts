@@ -290,7 +290,10 @@ export function refine(state: Design, index: number, local: number, overrides: P
     d.axes=sanitizeAxes(overrides,{wght:mix(390,920,smooth(t)),wdth:mix(105,62,smooth(t)),slnt:mix(0,-9,smooth(t)),opsz:mix(70,144,smooth(t))});
     d.cols=mix(8,12,smooth(t));d.parts.title.tracking=mix(-.04,-.026,smooth(t));
   } else if(index!==8&&index!==10&&index!==11){
-    d.parts.title.tracking+=wave*.0025;d.cropX+=wave*2.2;d.zoom+=wave*.014;
+    // A wave that ran 0→1→0 across the opening third of every scene also grew
+    // the crop window and the zoom, so each new system seemed to zoom in and
+    // back out. The typographic drift stays; the camera-like pulse does not.
+    d.parts.title.tracking+=wave*.0025;
     d.guide+=wave*.026;d.parts.number.y+=wave*1.5;
     if(index===3){d.parts.title.rotate-=wave*.8;d.tension+=wave*.15;}
   }
@@ -305,7 +308,13 @@ export function interpolate(a: Design,b: Design,t: number,next: number): Design 
       if(prop==='family'){z.family=(safe<.5?x.family:y.family);continue;}
       z[prop]=mix(x[prop],y[prop],f);
     }
-    if(x.family!==y.family&&(key==='title'||key==='number')) z.sy*=.035+.965*Math.pow(Math.abs(2*safe-1),.55);
+    // A font-family change squashes the line and expands it again. The old
+    // |2s-1|^0.55 curve had an infinite slope at the midpoint, so the copy
+    // snapped back; a smoothstep keeps the same shape without the jerk.
+    if(x.family!==y.family&&(key==='title'||key==='number')){
+      const r=Math.abs(2*safe-1);
+      z.sy*=.035+.965*smooth(r);
+    }
   }
   const scalars=['cols','rows','guide','skew','cropX','cropY','zoom','raster','outline','numberOutline','typeCrop','stack','tension','point','rawPanel'] as const;
   for(const key of scalars)d[key]=mix(a[key],b[key],safe);

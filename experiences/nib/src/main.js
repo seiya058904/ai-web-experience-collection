@@ -33,7 +33,7 @@ let disposed = false, clockAttached = false;
 
 let lenis, renderer, ready = false, reading = false;
 let reduced = reducedQuery.matches;
-let width = innerWidth, height = innerHeight, step = height * 1.18;
+let width = innerWidth, height = innerHeight, step = height * 1.5;
 let resizePending = false, lastWorld = '', lastIndex = -1;
 let liveTime = 0, previousTime = 0, lastDraw = -1, lastQ = 0;
 let returnFocus = null, pendingHeadingFocus = null;
@@ -163,7 +163,7 @@ function resize(initial = false) {
   const meaningfulChange = initial || Math.abs(width - nw) > 2 || Math.abs(height - nh) > 125;
   width = nw; height = nh;
   // A phone browser's collapsing address bar must not continuously rewrite scroll distances.
-  if (meaningfulChange) step = Math.max(510, height) * (width <= 800 ? 1.04 : 1.18);
+  if (meaningfulChange) step = Math.max(510, height) * (width <= 800 ? 1.3 : 1.5);
   html.style.setProperty('--vh', `${height}px`);
   html.style.setProperty('--chapter-height', `${step}px`);
   const dpr = Math.min(devicePixelRatio || 1, width <= 800 ? 1.55 : 1.75, Math.sqrt(4400000 / (width * height)));

@@ -429,7 +429,10 @@ export function createWorld(canvas, initial = {}) {
     lastTime = time;
     const { from, to, blend, darkness } = view;
     const light = weight(view, 0);
-    const holdMotion = state.reduced ? 0 : Math.sin(view.hold * Math.PI);
+    // A sine that ran 0→1→0 inside every chapter used to nudge the camera 0.16
+    // units closer and back and swing the panes with it. On screen that read as
+    // the whole scene zooming in and out after each chapter. The hold keeps the
+    // slow incidence drift below; the camera itself no longer pulses.
     const surface = weight(view, 1);
     const refraction = weight(view, 2);
     const reflection = weight(view, 3);
@@ -463,10 +466,8 @@ export function createWorld(canvas, initial = {}) {
       pane.scale.set(Math.max(0.0001, pose[3] / 3), Math.max(0.0001, pose[4] / 5), Math.max(0.0001, pose[5] / 0.26));
       pane.rotation.set(pose[6], pose[7], pose[8]);
       // Tiny changes of incidence sustain a hold without orbiting the artwork.
-      pane.rotation.y += ambient * 0.010 * (1 - house) * (i % 2 === 0 ? 1 : -1);
-      pane.rotation.y += holdMotion * .012 * (1 - house);
+      pane.rotation.y += ambient * 0.013 * (1 - house) * (i % 2 === 0 ? 1 : -1);
       pane.position.z += layers * (state.reduced ? 0 : Math.sin(time * 0.16 + i * 0.22) * 0.035);
-      pane.position.z += holdMotion * layers * i * .016;
       pane.children[0].morphTargetInfluences[0] = i < 2 ? light : 0;
       edges[i].material.uniforms.uWedge.value = i < 2 ? light : 0;
       const finish = i < 3 ? order[i] : 0;
@@ -562,7 +563,7 @@ export function createWorld(canvas, initial = {}) {
     camera.position.set(
       mix(c1.p[0], c2.p[0], blend) + pointerX * (mobile ? 0 : 0.14),
       mix(c1.p[1], c2.p[1], blend) + pointerY * (mobile ? 0 : 0.085),
-      mix(c1.p[2], c2.p[2], blend) + ambient * 0.024 - holdMotion * .16
+      mix(c1.p[2], c2.p[2], blend) + ambient * 0.024
     );
     target.set(mix(c1.t[0], c2.t[0], blend), mix(c1.t[1], c2.t[1], blend), mix(c1.t[2], c2.t[2], blend));
     camera.fov = mix(c1.f, c2.f, blend);

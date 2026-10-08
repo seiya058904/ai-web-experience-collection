@@ -54,5 +54,8 @@ export function chapterProgress(index) {
 
 export function scrollLength(height, { mobile = false, reduced = false } = {}) {
   const viewport = Math.max(320, height);
-  return Math.round(viewport * CHAPTERS.length * (reduced ? 1 : mobile ? 1.45 : 1.5));
+  // 1.8 screens per chapter (1.7 on mobile). The piece was the shortest in the
+  // collection at 1.5, so every handoff arrived before the eye had settled on
+  // the pose it was leaving — it read as the installation rushing.
+  return Math.round(viewport * CHAPTERS.length * (reduced ? 1 : mobile ? 1.7 : 1.8));
 }

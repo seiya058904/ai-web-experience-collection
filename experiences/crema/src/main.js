@@ -93,7 +93,10 @@ function resize({ keepPosition = false } = {}) {
   state.width = innerWidth;
   state.height = innerHeight;
   const mobile = state.width < 700;
-  state.unit = Math.round(state.height * (mobile ? 1.3 : 1.34));
+  // One chapter per 1.5 screens (1.4 on mobile). At 1.34 the pour stages were
+  // the second-shortest scroll-per-scene in the collection, so each mix arrived
+  // before the previous one had been read.
+  state.unit = Math.round(state.height * (mobile ? 1.4 : 1.5));
   for (let i = 0; i < chapters.length; i++) chapters[i].style.height = `${i < 10 ? state.unit : state.height + state.unit * .35}px`;
   const imageHeight = mobile ? state.height * .98 : Math.max(state.height, state.width / (1672 / 941));
   const imageWidth = imageHeight * 1672 / 941;

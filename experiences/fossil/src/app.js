@@ -27,7 +27,7 @@ function initializeFossil() {
   const recordUrls = new Set();
   const geologyKeys = ['', '', '', ''];
   let inspect = false, revealOverride = null, preserveOverride = null, sectionOverride = null, volumeMode = 'volume';
-  let renderedSection = 35, renderedReveal = .5, renderedMode = 0;
+  let renderedSection = 35, renderedReveal = .5, renderedMode = 0, renderedMix = 0;
   const pointer = { x: .5, y: .5, sx: .5, sy: .5, px: 0, py: 0, down: false, inside: false };
   const images = {};
   const assetPaths = { specimen:'specimen',strata:'strata',preservation:'preservation',exposure:'exposure' };
@@ -257,8 +257,16 @@ function initializeFossil() {
         const g = geologies[i-1];
         let mode = renderedMode, reveal = renderedReveal;
         if (i===3) {
-          mode = preserveOverride !== null ? preserveOverride : Math.min(3,Math.floor(clamp((p-.12)/.76)*4));
-          if (renderedMode!==mode) setPreserve(mode,false);
+          // Four preservation states, each held and then blended into the next.
+          // The old Math.floor() snapped between them inside a single frame; the
+          // blend now occupies most of each segment so the material morphs.
+          const segment = clamp((p-.10)/.84);
+          const unit = Math.min(3.9999, segment*4);
+          const form = Math.min(3, Math.floor(unit));
+          mode = preserveOverride !== null ? preserveOverride
+            : Math.min(3, form + smooth(.38,1,clamp(unit-form)));
+          if (renderedMode!==Math.round(mode)) setPreserve(mode,false);
+          renderedMix = mode;
         }
         if (i===4) {
           reveal = revealOverride !== null ? revealOverride : reduced ? .70 : .16 + smooth(.06,.85,p)*.72;
@@ -268,7 +276,7 @@ function initializeFossil() {
         }
         // Material plates are retained between meaningful changes. Repainting
         // hundreds of clipped grains on an unchanged surface wastes GPU work.
-        const geoKey = i===3 ? String(mode) : i===4 ? Math.round(reveal*500)+'/'+g.getStatus().brushMarks : Math.round(p*500)+'/'+motion();
+        const geoKey = i===3 ? mode.toFixed(3) : i===4 ? Math.round(reveal*500)+'/'+g.getStatus().brushMarks : Math.round(p*500)+'/'+motion();
         if (geologyKeys[i-1]!==geoKey) {
           g.clear();
           g.render({scene:i,progress:p,rect:rectFor(i),alpha:1,motion:motion(),time:time/1000,reveal,mode,pointer:{x:pointer.x,y:pointer.y,down:false}});
@@ -391,7 +399,7 @@ function initializeFossil() {
   window.addEventListener('pageshow',()=>{force=true;if(!disposed && !raf)raf=requestAnimationFrame(frame);});
   window.FossilExperience=Object.freeze({
     navigate:index=>navigate(index),
-    getState:()=>({chapter:active,position,ready:imageReady,motion:motion(),reducedMotion:preference.matches,section:renderedSection,reveal:renderedReveal,preservationMode:renderedMode,volumeMode,inspecting:inspect,scrollAuthority:lenis?'Lenis':'native fallback',imagingReady:Boolean(imaging&&imaging.ready),geology:geologies.map(g=>g.getStatus?g.getStatus():null)})
+    getState:()=>({chapter:active,position,ready:imageReady,motion:motion(),reducedMotion:preference.matches,section:renderedSection,reveal:renderedReveal,preservationMode:renderedMode,preservationMix:Number(renderedMix.toFixed(3)),volumeMode,inspecting:inspect,scrollAuthority:lenis?'Lenis':'native fallback',imagingReady:Boolean(imaging&&imaging.ready),geology:geologies.map(g=>g.getStatus?g.getStatus():null)})
   });
   function staticFallback(error) {
     // Keep the complete semantic exhibit available even when Canvas is disabled.
