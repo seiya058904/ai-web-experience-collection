@@ -102,7 +102,10 @@ export async function createSpatialStage(canvas, options = {}) {
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 0.93;
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  // PCFSoftShadowMap was removed from the bundled three.js build: assigning it
+  // only logs a warning and silently falls back to PCFShadowMap. Name the
+  // supported type directly so the shadows we ship are the shadows we ask for.
+  renderer.shadowMap.type = THREE.PCFShadowMap;
 
   const world = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(31, 1, 0.08, 60);

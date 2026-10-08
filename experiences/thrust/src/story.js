@@ -75,10 +75,10 @@ function mobileOffset(p) {
     [0,.55,21],[1.35,-.55,10],[0,.7,24],[0,-1.90,10],[37,10,13],
   ];
   let index = Math.floor(clamp(p,0,9));
-  const blend = smooth(index-.14, index+.16, p);
-  if (index > 0 && p < index+.16) return offsets[index-1].map((v,i)=>lerp(v,offsets[index][i],blend));
+  const blend = smooth(index-.28, index+.26, p);
+  if (index > 0 && p < index+.26) return offsets[index-1].map((v,i)=>lerp(v,offsets[index][i],blend));
   const next = Math.min(9,index+1);
-  const intoNext = smooth(next-.14,next+.16,p);
+  const intoNext = smooth(next-.28,next+.26,p);
   return offsets[index].map((v,i)=>lerp(v,offsets[next][i],intoNext));
 }
 

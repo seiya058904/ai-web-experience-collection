@@ -179,7 +179,9 @@ async function start() {
     const bounds = stage.getBoundingClientRect();
     view = {w: bounds.width, h: bounds.height, mobile: innerWidth <= 600};
     renderer.resize(view);
-    extent = Math.round(innerHeight * 1.52 * 11);
+    // 1.95 viewports of travel per system: the handoff owns roughly a third of
+    // that, so each change of system takes appreciably longer to read through.
+    extent = Math.round(innerHeight * 1.95 * 11);
     track.style.height = `${extent + innerHeight}px`;
     frameMax = view.w * .92;
     frameMin = Math.min(280, frameMax * .88);

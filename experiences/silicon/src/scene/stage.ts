@@ -277,7 +277,7 @@ export class SiliconStage {
     this.poseModel(this.build, 2, p, state, 'laminate');
     this.poseModel(this.transistor, 3, p, state, 'micro');
     this.poseModel(this.interconnect, 4, p, state, 'wiring');
-    if (p >= 4.64) {
+    if (p >= 4.50) {
       this.package.group.visible = true;
       this.package.group.scale.setScalar(this.mobile ? mix(.98, this.height <= 740 ? .88 : .90, openPackage) : .98);
       this.package.group.position.set(0, 0, 0);
@@ -293,7 +293,7 @@ export class SiliconStage {
   }
 
   private poseModel(model: ExhibitModel, chapter: number, p: number, state: SceneState, kind: string) {
-    if (p < chapter - .36 || p >= chapter + 1) return;
+    if (p < chapter - .50 || p >= chapter + 1) return;
     model.group.visible = true;
     model.group.scale.setScalar(kind === 'wiring' ? 1.12 : 1.20);
     model.group.position.set(0, 0, 0);

@@ -30,6 +30,7 @@ let fallback = false;
 let resizeTimer;
 let previousProgress = -1;
 let pendingNavigation = null;
+let keyboardTarget = null;
 let navigationSerial = 0;
 let qualityFrames = 0;
 let qualityTime = 0;
@@ -54,6 +55,7 @@ function navigation(index, immediate = false) {
   const targetY = nextProgress * maxScroll;
   const serial = ++navigationSerial;
   pendingNavigation = nextProgress;
+  keyboardTarget = null;
   ui?.setMenuOpen(false);
   if (lenis) lenis.scrollTo(targetY, {
     immediate: immediate || state.reduced,
@@ -87,6 +89,7 @@ ui = createUI(document.getElementById('ui'), {
 
 function updateGeometry(preserve = true) {
   const oldProgress = preserve ? (pendingNavigation ?? clamp(window.scrollY / maxScroll)) : 0;
+  keyboardTarget = null;
   state.mobile = innerWidth <= MOBILE_BREAKPOINT;
   const w = innerWidth, h = innerHeight;
   maxScroll = scrollLength(h, state);
@@ -154,7 +157,7 @@ function onPointer(event) {
 }
 
 function onPointerLeave() { pointerTarget.x = 0; pointerTarget.y = 0; }
-function onDirectInput() { pendingNavigation = null; navigationSerial++; }
+function onDirectInput() { pendingNavigation = null; navigationSerial++; keyboardTarget = null; }
 function onKeyboardScroll(event) {
   if (state.menu || event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey) return;
   if (event.target instanceof Element && event.target.closest('input, textarea, select, button, [contenteditable="true"]')) return;
@@ -162,10 +165,16 @@ function onKeyboardScroll(event) {
   const movement = { ArrowDown: 64, ArrowUp: -64, PageDown: page, PageUp: -page, ' ': event.shiftKey ? -page : page };
   if (!(event.key in movement) && event.key !== 'Home' && event.key !== 'End') return;
   event.preventDefault();
-  onDirectInput();
+  // Held keys auto-repeat every ~33ms. Chaining each repeat to the previous
+  // destination keeps the real scroll moving at the key's own speed instead of
+  // restarting a long tween from a lagging position on every repeat.
+  const base = keyboardTarget ?? lenis?.targetScroll ?? window.scrollY;
   const destination = event.key === 'Home' ? 0 : event.key === 'End' ? maxScroll
-    : clamp((lenis?.targetScroll ?? window.scrollY) + movement[event.key], 0, maxScroll);
-  lenis?.scrollTo(destination, { immediate: state.reduced, duration: .72, easing: t => 1 - Math.pow(1 - t, 3) });
+    : clamp(base + movement[event.key], 0, maxScroll);
+  pendingNavigation = null;
+  navigationSerial++;
+  keyboardTarget = destination;
+  lenis?.scrollTo(destination, { immediate: state.reduced, duration: .38, easing: t => 1 - Math.pow(1 - t, 3) });
   dirty = true;
 }
 function onResize() {

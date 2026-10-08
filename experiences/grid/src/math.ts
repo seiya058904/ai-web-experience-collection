@@ -20,12 +20,13 @@ export function readable(ink: RGB, paper: RGB, ratio = 4.5): RGB {
 
 export function personality(index: number, t: number) {
   t = clamp(t);
-  // Fast, exact alignment — but a cubic arrival keeps the first fifth of the
-  // handoff moving instead of snapping to 59% and stalling.
-  if (index === 1 || index === 2) return 1 - (1 - t) ** 3;
+  // Every curve is monotonic and continuous; each re-voices the same handoff.
+  // Hold-to-handoff pacing is deliberately even: a change of system should be
+  // read as a movement, not as a cut.
+  if (index === 1 || index === 2) return 1 - (1 - t) ** 2.2;
   if (index === 3) return t < .72 ? cubic(t / .72) * 1.025 : mix(1.025, 1, smooth((t - .72) / .28));
-  if (index === 6) return t < .2 ? t * .1 : .02 + .98 * (1 - (1 - range(.2, 1, t)) ** 6);
-  if (index === 7) return t === 1 ? 1 : Math.floor(smooth(t) * 28) / 28;
+  if (index === 6) return t < .2 ? t * .1 : .02 + .98 * (1 - (1 - range(.2, 1, t)) ** 2.4);
+  if (index === 7) return smooth(t);
   if (index === 5) return smooth(smooth(t));
   return cubic(t);
 }

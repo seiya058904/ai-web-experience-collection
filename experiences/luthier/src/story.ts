@@ -37,8 +37,8 @@ export function unitsToStory(position: number, units: readonly number[]): number
 
 export function sceneWeight(scene: number, story: number): number {
   const index = Math.min(8, Math.max(0, Math.floor(story)));
-  // A third of each chapter carries the handoff, so one composition yields
-  // to the next gradually instead of exchanging in the final fifth.
-  const blend = index < 8 ? smooth(.68, 1, story - index) : 0;
+  // Half of each chapter carries the handoff, so one composition yields to the
+  // next across a long measured movement instead of a quick exchange.
+  const blend = index < 8 ? smooth(.50, 1, story - index) : 0;
   return scene === index ? 1 - blend : scene === index + 1 ? blend : 0;
 }

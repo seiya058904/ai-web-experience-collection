@@ -32,6 +32,15 @@ export class Renderer {
   private readonly markCircle = this.parts.mark.querySelector('circle')!;
   private readonly markCross = this.parts.mark.querySelector('path')!;
   private view: View = {w: 1, h: 1, mobile: false};
+  // A handful of properties are expensive to invalidate — a colour scheme swap,
+  // an image filter, a clipped display word. They are written only on change,
+  // so a still system costs nothing while it holds.
+  private scheme = '';
+  private phosphor = '';
+  private imageFilter = '';
+  private clipPath = '';
+  private textStroke = '';
+  private textFill = '';
 
   constructor() {
     for (let i = 0; i <= 48; i++) this.vertical.push(this.makeLine());
@@ -81,7 +90,8 @@ export class Renderer {
     rs.setProperty('--line', cssColor(colorMix(d.ink, d.paper, .76)));
     rs.setProperty('--grid-columns', String(Math.round(d.cols)));
     rs.setProperty('--canvas-paper', native ? '#f8f8f3' : paper);
-    this.root.style.colorScheme = coordinate >= 6.8 && coordinate < 7.65 ? 'dark' : 'light';
+    const scheme = coordinate >= 6.8 && coordinate < 7.65 ? 'dark' : 'light';
+    if (scheme !== this.scheme) { this.scheme = scheme; this.root.style.colorScheme = scheme; }
     this.stage.dataset.scene = String(Math.round(coordinate));
     this.article.classList.toggle('native-layout', Boolean(native));
     if (native) this.nativeFrame(native);
@@ -117,12 +127,16 @@ export class Renderer {
     }
 
     const title = this.parts.title;
-    title.style.setProperty('-webkit-text-stroke', d.outline > .001 ? `${fixed(d.outline * 1.3)}px ${ink}` : '0px');
-    title.style.setProperty('-webkit-text-fill-color', d.outline > .001 ? `rgb(${d.ink.map(Math.round).join(' ')} / ${fixed(1 - d.outline)})` : 'currentColor');
+    const stroke = d.outline > .001 ? `${fixed(d.outline * 1.3)}px ${ink}` : '0px';
+    const fill = d.outline > .001 ? `rgb(${d.ink.map(Math.round).join(' ')} / ${fixed(1 - d.outline)})` : 'currentColor';
+    if (stroke !== this.textStroke) { this.textStroke = stroke; title.style.setProperty('-webkit-text-stroke', stroke); }
+    if (fill !== this.textFill) { this.textFill = fill; title.style.setProperty('-webkit-text-fill-color', fill); }
     title.classList.toggle('electronic-type', !native && d.raster > .72);
-    title.style.setProperty('--phosphor', cssColor(readable(d.accent, d.paper, 3)));
+    const phosphor = cssColor(readable(d.accent, d.paper, 3));
+    if (phosphor !== this.phosphor) { this.phosphor = phosphor; title.style.setProperty('--phosphor', phosphor); }
     const lowerInset = (d.parts.title.size * d.parts.title.leading - d.parts.title.h) * d.typeCrop;
-    title.style.clipPath = d.typeCrop > .001 ? `inset(-1000px -4000px ${fixed(lowerInset)}px -4000px)` : 'none';
+    const clip = d.typeCrop > .001 ? `inset(-1000px -4000px ${fixed(lowerInset)}px -4000px)` : 'none';
+    if (clip !== this.clipPath) { this.clipPath = clip; title.style.clipPath = clip; }
     this.parts.subtitle.classList.toggle('editorial-mode', d.parts.subtitle.family === 1 && (coordinate >= 4.65 || native !== undefined));
     this.letters.forEach((letter, i) => {
       const stackX = i > 1 ? -1.325 * d.stack : 0;
@@ -138,7 +152,8 @@ export class Renderer {
 
     this.image.style.objectPosition = `${fixed(d.cropX)}% ${fixed(d.cropY)}%`;
     this.image.style.transform = `scale(${fixed(d.zoom)})`;
-    this.image.style.filter = d.rawPanel > .01 ? `contrast(${fixed(1 + d.rawPanel * .15)})` : 'none';
+    const imageFilter = d.rawPanel > .01 ? `contrast(${fixed(1 + d.rawPanel * .15)})` : 'none';
+    if (imageFilter !== this.imageFilter) { this.imageFilter = imageFilter; this.image.style.filter = imageFilter; }
     if (!native && d.raster > .01) {
       this.raster.render({width: d.parts.image.w, height: d.parts.image.h, cropX: d.cropX, cropY: d.cropY, zoom: d.zoom, progress: range(6.36, 7.36, coordinate), intensity: d.raster});
       this.canvas.style.opacity = String(clamp(d.raster * 2));

@@ -49,10 +49,12 @@ button[hidden],[hidden]{display:none!important}
 .exhibition{position:fixed;inset:0;z-index:1;overflow:hidden;background:var(--black);outline:none}
 .room{position:absolute;inset:0;isolation:isolate;overflow:hidden;background:var(--black);visibility:hidden;opacity:0;pointer-events:none;color:var(--bone);--local-p:0;--portrait-reveal:0%;--relief-reveal:0;--fracture-reveal:0}
 .room.is-active{opacity:1;visibility:visible;pointer-events:auto}
-.room.is-previous{visibility:visible;opacity:1;animation:room-dissolve .95s var(--ease) both}
-.room.is-active.is-entering{animation:room-reveal .95s var(--ease) both}
-@keyframes room-reveal{from{clip-path:inset(0 0 6% 0);filter:brightness(.68)}to{clip-path:inset(0);filter:brightness(1)}}
-@keyframes room-dissolve{from{opacity:1}to{opacity:0}}
+/* The outgoing room stays fully opaque underneath the incoming one, so the two
+   cross-fade instead of wiping. The previous clip-path reveal left a moving
+   seam across the bottom edge where the room below showed through. */
+.room.is-previous{visibility:visible;opacity:1}
+.room.is-active.is-entering{animation:room-reveal 1.15s var(--ease) both}
+@keyframes room-reveal{from{opacity:0}to{opacity:1}}
 .room-art{position:absolute;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
 .room-art>img{height:100%;width:100%;object-fit:cover;display:block;max-width:none}
 .hero-art,.hero-occlusion,.hero-light{transform:scale(calc(1 + var(--p)*.07)) translate3d(calc(var(--px)*-.14vw),calc(var(--p)*-1.2vh + var(--py)*-.1vh),0);transform-origin:66% 45%;will-change:transform}
@@ -240,7 +242,7 @@ html:not(.js) .room-copy{position:relative;top:auto;padding:24vh 0;width:48vw}
 html:not(.js) .room-hero,html:not(.js) .room-ending{height:100svh}
 html:not(.js) button,html:not(.js) input{display:none}
 
-html.reduce-motion .room.is-entering,html.reduce-motion .room.is-previous,html.reduce-motion dialog[open]{animation:none}
+html.reduce-motion .room.is-entering,html.reduce-motion dialog[open]{animation:none}
 html.reduce-motion .hero-art,html.reduce-motion .hero-occlusion,html.reduce-motion .hero-type{transform:none;will-change:auto}
 html.reduce-motion .hero-light{display:none}
 html.reduce-motion .room-art img{transform:none;transition:none}
