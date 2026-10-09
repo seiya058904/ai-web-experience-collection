@@ -1,118 +1,129 @@
-# AI Web Experience Collection
+# ✦ AI Web Experience Collection
 
-Twenty-nine independent cinematic web experiences exploring speed, nature, space, ceramic color, spatial sculpture, mechanical time, architectural light, designed objects, fusion energy, glass, fabric, photography, ink, gemstones, semiconductors, geography, jet engines, acoustic motion, Roman sculpture, spatial perception, violin craft, book binding, volcanic material, deep time, lacquer, fountain-pen mechanisms, espresso, culinary materials and visual order.
+**29 independent worlds. One curated journey through motion, matter and interaction.**
 
-[Explore the Collection](https://seiya058904.github.io/ai-web-experience-collection/)
+A collection of cinematic, browser-native experiences exploring how a single idea can become its own visual and interactive world.
 
-## Experiences
+**[Explore the collection ↗](https://seiya058904.github.io/ai-web-experience-collection/)** · [Choose a theme](#begin-with-an-idea) · [All 29 experiences](#all-29-experiences) · [Development](#development) · [Credits](#rights-and-provenance)
 
-| Experience | World | Entrance |
+## Begin with an idea
+
+This is a **directory of independent experiences**, not a gallery of screenshots. Choose a subject below and enter the work itself; the web page is the medium.
+
+Each work has its own visual language, pace, materials and interaction model — ranging from optics and machinery to sculpture, food, typography and natural landscapes. The collection homepage offers a single place to discover them, while each experience opens as a **full document** with its own runtime; it is not one giant always-running WebGL canvas or an iframe carousel.
+
+**Recommended starting points**
+
+| If you're drawn to… | Begin with |
+| --- | --- |
+| **Physical mechanisms** | [OPTIC](https://seiya058904.github.io/ai-web-experience-collection/optic/) · [THRUST](https://seiya058904.github.io/ai-web-experience-collection/thrust/) · [SILICON](https://seiya058904.github.io/ai-web-experience-collection/silicon/) |
+| **Craft and transformation** | [CODEX](https://seiya058904.github.io/ai-web-experience-collection/codex/) · [URUSHI](https://seiya058904.github.io/ai-web-experience-collection/urushi/) · [LUTHIER](https://seiya058904.github.io/ai-web-experience-collection/luthier/) |
+| **Space and light** | [GLASSHOUSE](https://seiya058904.github.io/ai-web-experience-collection/glasshouse/) · [PARALLAX](https://seiya058904.github.io/ai-web-experience-collection/parallax/) · [AETERNA](https://seiya058904.github.io/ai-web-experience-collection/aeterna/) |
+| **Design systems** | [GRID](https://seiya058904.github.io/ai-web-experience-collection/grid/) · [KAGE / VOID](https://seiya058904.github.io/ai-web-experience-collection/kage/) |
+
+## All 29 experiences
+
+The following is the complete set of **29** experiences represented in the current repository. Paths are the published subroutes, not separate GitHub repositories.
+
+### Machines, energy & motion
+
+| Experience | Explore | Core idea |
 | --- | --- | --- |
-| **Beyond the Limit** | Formula 1, speed and racing engineering | [/f1/](https://seiya058904.github.io/ai-web-experience-collection/f1/) |
-| **VERDANT** | Nature, botanical landscapes, architecture and light | [/verdant/](https://seiya058904.github.io/ai-web-experience-collection/verdant/) |
-| **ORBITAL** | Rockets, orbital flight and deep space | [/orbital/](https://seiya058904.github.io/ai-web-experience-collection/orbital/) |
-| **GLAZE — Color Fired Into Form** | Seven studies of ceramics, glaze, color and light | [/glaze/](https://seiya058904.github.io/ai-web-experience-collection/glaze/) |
-| **KAGE / VOID** | Eight continuous movements in black, white, light and shadow | [/kage/](https://seiya058904.github.io/ai-web-experience-collection/kage/) |
-| **CHRONOS — The Architecture of Time** | A cinematic journey into a mechanical watch | [/chronos/](https://seiya058904.github.io/ai-web-experience-collection/chronos/) |
-| **INTERVAL — Architecture Between Light & Space** | Architecture, material, light and shadow across six original spaces | [/interval/](https://seiya058904.github.io/ai-web-experience-collection/interval/) |
-| **FORM — Objects in Space** | Three original objects, structure, material and light | [/form/](https://seiya058904.github.io/ai-web-experience-collection/form/) |
-| **FUSION — Building a Star** | Tokamak structure, magnetic confinement and an illustrative plasma journey | [/fusion/](https://seiya058904.github.io/ai-web-experience-collection/fusion/) |
-| **GLASSHOUSE — Light Through Matter** | Six continuous glass, light and spatial studies | [/glasshouse/](https://seiya058904.github.io/ai-web-experience-collection/glasshouse/) |
-| **VEIL — Fabric in Motion** | Thread, fabric, light and soft structure | [/veil/](https://seiya058904.github.io/ai-web-experience-collection/veil/) |
-| **OPTIC — The Architecture of an Image** | Nine studies of light, optics and a photographic machine | [/optic/](https://seiya058904.github.io/ai-web-experience-collection/optic/) |
-| **INKSCAPE — Paper, Water, Ink** | Eight movements through paper, water, ink and space | [/inkscape/](https://seiya058904.github.io/ai-web-experience-collection/inkscape/) |
-| **FACET — The Light Within** | Light, cut and six original gemstone specimens | [/facet/](https://seiya058904.github.io/ai-web-experience-collection/facet/) |
-| **SILICON — From Sand to Signal** | Eight studies of a semiconductor architecture | [/silicon/](https://seiya058904.github.io/ai-web-experience-collection/silicon/) |
-| **ATLAS — The World in Layers** | Real Fuji terrain, imagery, city and planetary scale | [/atlas/](https://seiya058904.github.io/ai-web-experience-collection/atlas/) |
-| **THRUST — Anatomy of a Jet Engine** | Ten continuous shots from intake to flight | [/thrust/](https://seiya058904.github.io/ai-web-experience-collection/thrust/) |
-| **RESONANCE — Sound Made Visible** | Eight acoustic acts with local tone capture and playback | [/resonance/](https://seiya058904.github.io/ai-web-experience-collection/resonance/) |
-| **AETERNA — Rome in Marble and Memory** | Nine sculpture rooms with museum-derived interactive models | [/aeterna/](https://seiya058904.github.io/ai-web-experience-collection/aeterna/) |
-| **PARALLAX — The Museum of Impossible Forms** | Ten perspectives of one original sculpture, with live reflection and refraction | [/parallax/](https://seiya058904.github.io/ai-web-experience-collection/parallax/) |
-| **LUTHIER — The Anatomy of a Violin** | Nine movements through material, craft, tension and resonance | [/luthier/](https://seiya058904.github.io/ai-web-experience-collection/luthier/) |
-| **CODEX — The Anatomy of a Book** | A continuous journey through an original sewn case binding, paper, thread, type and reading | [/codex/](https://seiya058904.github.io/ai-web-experience-collection/codex/) |
-| **MAGMA — Stone Before Stone** | Nine movements through heat, cooling, fracture and volcanic material | [/magma/](https://seiya058904.github.io/ai-web-experience-collection/magma/) |
-| **FOSSIL — Deep Time in Stone** | Ten movements through sediment, preservation, authored synthetic tomography and the archive | [/fossil/](https://seiya058904.github.io/ai-web-experience-collection/fossil/) |
-| **URUSHI — Layers of Lacquer** | Eleven chapters through lacquer, material, time and reflected light | [/urushi/](https://seiya058904.github.io/ai-web-experience-collection/urushi/) |
-| **NIB — Ink Under Pressure** | Ten chapters through an ink mechanism, pressure and paper | [/nib/](https://seiya058904.github.io/ai-web-experience-collection/nib/) |
-| **CREMA — 9 Bars** | Eleven movements through espresso pressure, porous matter, liquid and crema | [/crema/](https://seiya058904.github.io/ai-web-experience-collection/crema/) |
-| **CRAVE — Before the First Bite** | Eleven movements through heat, crust, melt, glaze, steam and appetite | [/crave/](https://seiya058904.github.io/ai-web-experience-collection/crave/) |
-| **GRID — The Architecture of Visual Order** | One content set and twelve live systems of typography and composition | [/grid/](https://seiya058904.github.io/ai-web-experience-collection/grid/) |
+| **Beyond the Limit** | [F1 →](https://seiya058904.github.io/ai-web-experience-collection/f1/) | Formula 1, speed and racing engineering |
+| **ORBITAL** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/orbital/) | Rockets, orbital flight and the deep-space scale |
+| **CHRONOS** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/chronos/) | Mechanical time and the anatomy of a watch |
+| **FUSION** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/fusion/) | Tokamak structure and an illustrative plasma journey |
+| **OPTIC** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/optic/) | Light through a photographic machine |
+| **SILICON** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/silicon/) | Semiconductor layers, precision and signal |
+| **THRUST** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/thrust/) | A jet engine, from intake to flight |
+| **RESONANCE** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/resonance/) | Sound, vibration, local capture and playback |
 
-Each work keeps its own imagery, typography, controls and pace. The gallery uses full document navigation; only the selected work's runtime starts. No iframe or SPA fallback.
+### Landscapes, buildings & space
 
-The four-work import, focused repairs and browser acceptance are recorded in [Collection acceptance](docs/collection/FOUR-WORK-VALIDATION.md).
+| Experience | Explore | Core idea |
+| --- | --- | --- |
+| **VERDANT** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/verdant/) | Nature, architecture and light |
+| **INTERVAL** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/interval/) | Architecture through six continuous spaces |
+| **GLASSHOUSE** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/glasshouse/) | Light and transparency as spatial material |
+| **ATLAS** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/atlas/) | Real geography across different scales |
+| **PARALLAX** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/parallax/) | Ten perspectives of one impossible form |
 
-AETERNA's source/model audit and local checks are recorded in [AETERNA acceptance](docs/aeterna/ACCEPTANCE.md). Its museum/font/decoder rights are scoped; no application-wide open-source grant is inferred.
+### Craft, objects & materials
 
-RESONANCE's delivery audit, three runtime repairs and local production checks are recorded in [RESONANCE acceptance](docs/resonance/ACCEPTANCE.md).
+| Experience | Explore | Core idea |
+| --- | --- | --- |
+| **GLAZE** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/glaze/) | Ceramic color, material and fired surfaces |
+| **FORM** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/form/) | Three designed objects in space |
+| **VEIL** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/veil/) | Fabric, thread, folds and light |
+| **FACET** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/facet/) | Light and six original gemstone specimens |
+| **LUTHIER** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/luthier/) | A violin from wood and craft to sound |
+| **CODEX** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/codex/) | A book formed from signatures, thread and cover |
+| **URUSHI** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/urushi/) | Lacquer, curing, layering and reflected light |
+| **NIB** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/nib/) | Ink, capillary flow and contact with paper |
+| **CREMA** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/crema/) | Espresso, pressure, porosity and emulsion |
+| **CRAVE** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/crave/) | Heat, crust, glaze, steam and appetite |
 
-PARALLAX’s delivery audit, Lenis adaptation and browser results are recorded in [PARALLAX acceptance](docs/parallax/ACCEPTANCE.md).
+### Image, memory & perception
 
-The four new delivery audits and runtime acceptance are recorded in [LUTHIER](docs/luthier/ACCEPTANCE.md), [CODEX](docs/codex/ACCEPTANCE.md), [MAGMA](docs/magma/ACCEPTANCE.md) and [FOSSIL](docs/fossil/ACCEPTANCE.md). The 2026-10-07 Collection repairs and release checks are recorded in [quality closeout](docs/collection/QUALITY-CLOSEOUT-2026-10-07.md).
+| Experience | Explore | Core idea |
+| --- | --- | --- |
+| **KAGE / VOID** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/kage/) | Eight movements in light and shadow |
+| **INKSCAPE** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/inkscape/) | Paper, water and ink across eight movements |
+| **AETERNA** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/aeterna/) | Roman sculpture and museum memory |
 
-The URUSHI and NIB delivery audits, independent browser findings and Collection adaptations are recorded in [URUSHI acceptance](docs/urushi/ACCEPTANCE.md) and [NIB acceptance](docs/nib/ACCEPTANCE.md).
+### Deep time & visual systems
 
-## Repository
-
-```text
-collection/          Gallery styles, pointer interaction and credits styles
-pages/               Vite HTML root: home, credits and twenty-nine route documents
-experiences/         f1, verdant, orbital, glaze, kage, chronos, interval, form, fusion, glasshouse, veil, optic, inkscape, facet, silicon, atlas, thrust, resonance, aeterna, parallax, luthier, codex, magma, fossil, urushi, nib, crema, crave, grid and shared UI
-public/              Namespaced runtime assets, fonts and license notices
-docs/                Collection and scoped work design/architecture contracts
-provenance/          Unique masters, source records, import hashes and delivery history
-scripts/             Build verification and F1 asset maintenance
-tests/               Supplied model/continuity tests, including OPTIC
-.github/workflows/   Verification and Pages deployment
-```
-
-One package manifest and lockfile govern the entire collection. Vite's `root` is `pages/`; output is root `dist/`. Source lives outside the HTML root and is imported explicitly. Runtime resources live under `public/<work>/`; shared gallery assets remain at the top of `public/`. Only byte-identical VERDANT/CHRONOS DM Sans fonts are shared under `public/shared/fonts/`; each work retains its license notice.
+| Experience | Explore | Core idea |
+| --- | --- | --- |
+| **MAGMA** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/magma/) | Heat, cooling, fracture and volcanic stone |
+| **FOSSIL** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/fossil/) | Preservation, synthetic tomography and archival evidence |
+| **GRID** | [Enter →](https://seiya058904.github.io/ai-web-experience-collection/grid/) | One information set transformed by twelve design systems |
 
 ## Development
 
-Use **Node.js 24 LTS and npm**.
+The collection uses a shared Vite build, with independent experience modules and namespaced public assets. **Node.js 24 LTS** and the committed lockfile are the supported development baseline.
 
-```sh
+```bash
 npm ci
 npm run dev
 npm run verify
 npm run preview -- --port 4174 --strictPort
 ```
 
-`npm run verify` runs 211 model/continuity tests at this revision, TypeScript, production build and route/asset checks. There is no lint or browser-test npm script. Tests use Node’s built-in TypeScript transformation for supplied TypeScript fixtures; no additional test dependency is required. The two `scripts/prepare-*.mjs` tools regenerate F1 resources from original sources; do not run them as verification.
+GitHub Pages serves the project under `/ai-web-experience-collection/`. To validate the production base explicitly:
 
-## Deployment
-
-[Deploy Pages](.github/workflows/pages.yml) installs locked dependencies, tests, builds with the Pages base path, verifies output references, and deploys only `dist/` on `main`. [Verify](.github/workflows/verify.yml) independently runs `npm run verify`.
-
-Reproduce the production path locally:
-
-```sh
+```bash
 npm run build -- --base=/ai-web-experience-collection/
 npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
-Open `http://127.0.0.1:4175/ai-web-experience-collection/`; all twenty-nine trailing-slash routes support direct entry and refresh. HTML links use `%BASE_URL%`, runtime links use `import.meta.env.BASE_URL`, and HTML/CSS assets pass through Vite. Canonical, social URLs and generated `sitemap.xml` carry the configured base.
+| Location | Responsibility |
+| --- | --- |
+| [`pages/`](pages/) | 29 route documents and collection HTML entry |
+| [`collection/`](collection/) | Gallery presentation and controls |
+| [`experiences/`](experiences/) | Independent experience implementations |
+| [`public/`](public/) | Namespaced runtime images, fonts and notices |
+| [`docs/`](docs/) | Project-specific design and acceptance records |
+| [`provenance/`](provenance/) | Import histories, original references and rights evidence |
+| [`tests/`](tests/) | Continuity, runtime and project verification |
 
-When adding another accepted work, put its HTML in `pages/<route>/`, source in `experiences/<route>/`, resources in `public/<route>/`, and register the input, sitemap and output identity checks in `vite.config.ts` and `scripts/verify-build.mjs`. Update the gallery, credits, product and maintenance guide. Preserve its design and lifecycle; verify both `/` and project-path builds, entry/return, direct loads, mobile and reduced motion.
+## Documentation and acceptance
 
-## Credits and provenance
+For this multi-work project, **source and acceptance evidence are scoped per experience**; passing one site's check does not validate all others. Start with [collection design](docs/collection/DESIGN.md) and [quality closeout](docs/collection/QUALITY-CLOSEOUT-2026-10-07.md), then open the corresponding `docs/<experience>/DESIGN.md` or `ACCEPTANCE.md` when making scoped changes.
 
-See [About & credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html), [ATTRIBUTION.md](ATTRIBUTION.md), [Delivery records](provenance/deliveries/legacy-imports.json), [GLAZE provenance](provenance/glaze/ASSET-PROVENANCE.json), [VERDANT sources](experiences/verdant/ASSET-SOURCES.md) and [ORBITAL notes](experiences/orbital/SOURCE.md).
+Representative records: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [RESONANCE](docs/resonance/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md). Maintenance boundaries and preservation rules are in [`AGENTS.md`](AGENTS.md).
 
-`licenses.txt`, `third-party-licenses.md` and namespaced project/font notices ship in production. GLAZE, KAGE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, OPTIC, INKSCAPE, FACET, SILICON, ATLAS and THRUST original code retains its supplied MIT license; the collection's own [LICENSE](LICENSE) does not replace upstream terms. GSAP uses its Standard No-Charge License. KAGE's gallery/social plate is captured from its actual procedural FRAME scene. Gallery previews use media from the included works; no new third-party art. ORBITAL and CHRONOS audio is synthesized only after activation; FUSION, THRUST and RESONANCE audio remain silent until activated. RESONANCE uses dependency-free native ES modules and declares no application-wide open-source license; its font OFL notices and source records are preserved.
+## Rights and provenance
 
-Unique source material and import checksums live in [provenance/](provenance/README.md), outside deployment.
+Different works contain different original, supplied, generated and third-party material. **The collection's root license does not supersede each work's own source or asset terms.** Do not treat all 29 experiences as universally MIT-licensed, or infer the rights to generated artwork from a source-code license.
 
-LUTHIER's source and procedural model, and FOSSIL's source/synthetic data/model, retain their scoped MIT grants; generated imagery has separate source notices. CODEX and MAGMA have no inferred whole-project open-source grant. Their original font/software notices and image records are preserved. All four reuse the locked Lenis and original clock; optional LUTHIER/MAGMA sound remains off until activated. FOSSIL's volume is authored synthetic data, not a real CT acquisition.
+Read [ATTRIBUTION.md](ATTRIBUTION.md), [About & credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html), [provenance records](provenance/README.md) and the namespaced notices shipped with each experience. Examples of important distinctions:
 
-See [Collection design](docs/collection/DESIGN.md), [F1 design](docs/f1/DESIGN.md), [F1 motion audit](docs/f1/SCROLL-AUDIT.md), [GLAZE design](docs/glaze/DESIGN.md), [KAGE architecture](docs/kage/ARCHITECTURE.md), [CHRONOS motion](docs/chronos/MOTION.md), [INTERVAL design](docs/interval/DESIGN.md), [GLASSHOUSE design](docs/glasshouse/DESIGN.md), [VEIL design](docs/veil/DESIGN.md), [OPTIC design](docs/optic/DESIGN.md) and [INKSCAPE design](docs/inkscape/DESIGN.md), [FACET design](docs/facet/DESIGN.md), [SILICON design](docs/silicon/DESIGN.md), [ATLAS design](docs/atlas/DESIGN.md), [THRUST design](docs/thrust/DESIGN.md), [RESONANCE design](docs/resonance/DESIGN.md) and [AETERNA design](docs/aeterna/DESIGN.md). Browser emulation does not certify physical touch, iOS Safari or high-refresh hardware.
+- **AETERNA:** museum-derived materials, models, fonts and generated references have separate sources and terms.
+- **FOSSIL:** the showcased tomography is authored **synthetic** data, not a real scientific CT acquisition.
+- **CREMA:** nine bars is a reference point, not a universal espresso law; fluid behavior is qualitative visualization.
+- **GRID:** third-party photography retains its own attribution and license, separate from implementation code.
+- **Audio:** opt-in sounds must not be misrepresented as autoplaying or as unrestricted audio assets.
 
-URUSHI’s original lacquer geometry and code retain their supplied MIT grant, while generated visual research remains separately identified. Its Bodoni Moda, Manrope and renamed CJK subset retain OFL. NIB grants no additional whole-project open-source license; its generated material art, source rights, OFL fonts and GSAP/Lenis notices retain their original records. Both reuse the root dependencies and one clock, with native touch, reduced motion and reading alternatives. Neither work includes audio. Original ZIPs stay outside Git and deployment.
-
-CREMA preserves its original eleven-movement extraction and generated inspection-chamber imagery. Original source retains MIT; Archivo retains OFL, and generated artwork remains subject to its separate provider terms. Nine bars is an authored reference, not a universal brewing law; the flow, wetting and liquid systems are qualitative geometry rather than measured CFD. One locked Lenis/GSAP clock, native touch, reduced motion and default-silent synthesized sound remain independent. See [CREMA acceptance](docs/crema/ACCEPTANCE.md).
-
-CRAVE preserves its supplied eleven-movement food/material journey, Cormorant and Manrope typography, native WebGL material stage, photographic fallback and opt-in local sound. Food images are generated generic studies; research photographs and films are not redistributed, and no application-wide MIT license is inferred. One locked Lenis/GSAP clock keeps native touch and reduced-motion behavior. See [CRAVE acceptance](docs/crave/ACCEPTANCE.md).
-
-GRID retains one semantic specimen through twelve reversible visual systems, live responsive-frame and variable-font controls, the original photograph and a bounded Canvas raster. “Bw Stairs” by Dmitrijs Milajevs retains CC BY 3.0 credit; generated visual-bible references remain outside deployment, and no application-wide MIT grant is inferred. One Lenis/GSAP clock and static/reduced editions remain independent. See [GRID acceptance](docs/grid/ACCEPTANCE.md).
+The original supplied work identities, render fallbacks, reduced-motion behavior and source records are part of the collection's preservation contract.
