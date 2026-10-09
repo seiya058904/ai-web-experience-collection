@@ -25,6 +25,7 @@
   <link rel="preload" href="/aeterna/assets/hero.webp" as="image" fetchpriority="high">
   <link rel="preload" href="/aeterna/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/aeterna/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" src="../../experiences/aeterna/src/main.js"></script>
 </head>
 <body data-theme="dark">
   <a class="skip-link" href="#exhibition">Skip to the exhibition</a>
@@ -46,6 +47,7 @@
       </button>
     </div>
   </header>
+  <p id="art-preparing" class="art-preparing" role="status" aria-live="polite" hidden>Preparing the gallery</p>
 
   <main id="exhibition" class="exhibition" tabindex="-1" aria-label="Aeterna, a nine-room digital exhibition">
     <section class="room room-hero is-active" data-room="0" aria-labelledby="title-hero">
@@ -64,7 +66,7 @@
 
     <section class="room room-stone" data-room="1" aria-labelledby="title-stone">
       <div class="room-art macro-art">
-        <img src="/aeterna/assets/stone-macro.webp" alt="An interpretive macro study of carved eyelids, crystalline marble and a fine crack." width="1672" height="941" decoding="async">
+        <img src="/aeterna/assets/stone-macro.webp" alt="An interpretive macro study of carved eyelids, crystalline marble and a fine crack." width="1672" height="941" decoding="sync">
       </div>
       <div class="room-copy stone-copy">
         <h2 id="title-stone">Stone<br>becomes <em>flesh.</em></h2>
@@ -80,8 +82,8 @@
 
     <section class="room room-portrait" data-room="2" aria-labelledby="title-portrait">
       <div class="room-art portrait-art">
-        <img class="portrait-experience" src="/aeterna/assets/portrait-experience.webp" alt="An imagined lined Roman portrait in a veristic tradition." width="1672" height="941" decoding="async">
-        <img class="portrait-ideal" src="/aeterna/assets/portrait-ideal.webp" alt="An imagined youthful portrait in an early imperial visual tradition." width="1672" height="941" decoding="async">
+        <img class="portrait-experience" src="/aeterna/assets/portrait-experience.webp" alt="An imagined lined Roman portrait in a veristic tradition." width="1672" height="941" decoding="sync">
+        <img class="portrait-ideal" src="/aeterna/assets/portrait-ideal.webp" alt="An imagined youthful portrait in an early imperial visual tradition." width="1672" height="941" decoding="sync">
       </div>
       <div class="room-copy portrait-copy">
         <h2 id="title-portrait">A face.<br>A political <em>idea.</em></h2>
@@ -99,7 +101,7 @@
     </section>
 
     <section class="room room-body" data-room="3" aria-labelledby="title-body">
-      <div class="room-art body-fallback"><img src="/aeterna/assets/body-reference.webp" alt="" width="1672" height="941" decoding="async"></div>
+      <div class="room-art body-fallback"><img src="/aeterna/assets/body-reference.webp" alt="" width="1672" height="941" decoding="sync"></div>
       <div class="spatial-host" data-spatial="body"></div>
       <div class="room-copy body-copy-block">
         <h2 id="title-body">The body<br>as an <em>argument.</em></h2>
@@ -118,7 +120,7 @@
     </section>
 
     <section class="room room-monument" data-room="4" aria-labelledby="title-monument">
-      <div class="room-art monument-art"><img src="/aeterna/assets/monument.webp" alt="An imagined vast gallery, a towering Roman draped statue and an architectural arch, with a small hand fragment in the foreground." width="1672" height="941" decoding="async"></div>
+      <div class="room-art monument-art"><img src="/aeterna/assets/monument.webp" alt="An imagined vast gallery, a towering Roman draped statue and an architectural arch, with a small hand fragment in the foreground." width="1672" height="941" decoding="sync"></div>
       <div class="room-copy monument-copy">
         <h2 id="title-monument">Bigger<br>than a <em>life.</em></h2>
         <p class="body-copy">The portrait leaves the room.<br>The image enters the city.</p>
@@ -129,7 +131,7 @@
     </section>
 
     <section class="room room-relief" data-room="5" aria-labelledby="title-relief">
-      <div class="room-art relief-plate"><img src="/aeterna/assets/relief.webp" alt="An imagined procession relief establishes the shallow picture plane." width="1672" height="941" decoding="async"></div>
+      <div class="room-art relief-plate"><img src="/aeterna/assets/relief.webp" alt="An imagined procession relief establishes the shallow picture plane." width="1672" height="941" decoding="sync"></div>
       <div class="spatial-host" data-spatial="relief"></div>
       <div class="room-copy relief-copy">
         <h2 id="title-relief">A world<br>within the <em>stone.</em></h2>
@@ -143,11 +145,12 @@
         <button class="line-link" data-open-notes="wellhead" aria-label="The stories on this object"><span class="label-wide">The stories on this object</span><span class="label-compact" aria-hidden="true">Details</span><svg class="icon" aria-hidden="true"><use href="#icon-right"/></svg></button>
       </div>
       <div class="object-caption relief-caption"><span>A Roman wellhead</span><p class="caption-wide">2nd century CE · marble<br>The Metropolitan Museum of Art · 2019.7</p><p class="caption-compact">2nd century CE · The Met · 2019.7</p></div>
+      <p class="art-caption relief-fallback-caption">Imagined procession relief · interpretive image</p>
       <p class="spatial-status" data-spatial-status role="status">Preparing the sculpture</p>
     </section>
 
     <section class="room room-fracture" data-room="6" aria-labelledby="title-fracture">
-      <div class="room-art fracture-art"><img src="/aeterna/assets/fracture.webp" alt="An interpretive marble face fragment lies on a dusty floor below broken architectural pieces." width="1672" height="941" decoding="async"></div>
+      <div class="room-art fracture-art"><img src="/aeterna/assets/fracture.webp" alt="An interpretive marble face fragment lies on a dusty floor below broken architectural pieces." width="1672" height="941" decoding="sync"></div>
       <div class="spatial-host" data-spatial="fracture"></div>
       <div class="room-copy fracture-copy">
         <h2 id="title-fracture">An empire breaks.<br>The image <em>remains.</em></h2>
@@ -165,7 +168,7 @@
     </section>
 
     <section class="room room-afterlife" data-room="7" aria-labelledby="title-afterlife">
-      <div class="room-art afterlife-art"><img src="/aeterna/assets/afterlife.webp" alt="An imagined ivory conservation gallery with a torso and hand on separate plinths." width="1672" height="941" decoding="async"></div>
+      <div class="room-art afterlife-art"><img src="/aeterna/assets/afterlife.webp" alt="An imagined ivory conservation gallery with a torso and hand on separate plinths." width="1672" height="941" decoding="sync"></div>
       <div class="spatial-host" data-spatial="afterlife"></div>
       <div class="room-copy afterlife-copy">
         <h2 id="title-afterlife">A second <br><em>life.</em></h2>
@@ -192,7 +195,7 @@
     </section>
 
     <section class="room room-ending" data-room="8" aria-labelledby="title-ending">
-      <div class="room-art ending-art"><img src="/aeterna/assets/final-gallery.webp" alt="An imagined solitary marble bust in a vast, silent, dark gallery under a narrow light." width="1672" height="941" decoding="async"></div>
+      <div class="room-art ending-art"><img src="/aeterna/assets/final-gallery.webp" alt="An imagined solitary marble bust in a vast, silent, dark gallery under a narrow light." width="1672" height="941" decoding="sync"></div>
       <p class="ending-thought">What survives<br>still looks back.</p>
       <h2 id="title-ending">AETERNA</h2>
       <p class="ending-credit">Carve the empire. Break the stone. Preserve the image.</p>
@@ -259,6 +262,5 @@
   </dialog>
 
   <noscript><p class="no-script-note">The nine rooms are shown as a still exhibition. Enable JavaScript for chapter navigation and interactive sculptures.</p></noscript>
-  <script type="module" src="../../experiences/aeterna/src/main.js"></script>
 </body>
 </html>

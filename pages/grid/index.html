@@ -21,8 +21,6 @@
     <meta name="twitter:description" content="Content stays. System changes. Twelve systems of visual order." />
     <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%grid/social.jpg" />
     <meta name="twitter:image:alt" content="Actual GRID runtime typography and credited stairwell photograph; the specimen lettering belongs to the artwork." />
-    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
-    <link rel="stylesheet" href="../../experiences/grid/src/style.css" />
     <link rel="icon" type="image/svg+xml" href="/grid/favicon.svg" />
     <link rel="preload" href="/grid/fonts/RobotoFlex-Latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/grid/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -38,8 +36,11 @@
       }
       window.addEventListener('pagehide', cancelStartup);
     </script>
-    <script type="module" src="../../experiences/grid/src/main.ts"></script>
-  </head>
+    <link rel="stylesheet" href="../../experiences/shared/collection-return.css" />
+  <link rel="stylesheet" href="../../experiences/grid/src/style.css" />
+    <link rel="stylesheet" href="../../experiences/grid/src/refinement.css" />
+  <script type="module" src="../../experiences/grid/src/main.ts"></script>
+</head>
   <body>
     <a class="skip-link" href="#specimen">Skip to the composition</a>
     <div class="startup" aria-hidden="true"><span></span></div>
@@ -64,8 +65,6 @@
         <div id="raw-panel" class="raw-panel" aria-hidden="true"></div>
         <div class="column-probe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <svg id="guides" class="guides" aria-hidden="true" preserveAspectRatio="none"></svg>
-        <div id="measure-labels" class="measure-labels" aria-hidden="true"><span id="column-label"></span><span id="baseline-label"></span></div>
-
         <article id="specimen" class="specimen" aria-labelledby="specimen-title" tabindex="-1">
           <h1 id="specimen-title" data-content="title" class="specimen-title" aria-label="GRID"><span aria-hidden="true">G</span><span aria-hidden="true">R</span><span aria-hidden="true">I</span><span aria-hidden="true">D</span></h1>
           <p data-content="subtitle" class="specimen-subtitle">The architecture<br class="editorial-break" /> of visual order.</p>
@@ -73,6 +72,7 @@
           <figure data-content="image" class="specimen-image">
             <img id="source-photo" src="/grid/images/bw-stairs-original.jpg" width="2048" height="1365" alt="Looking down a monochrome stairwell: metal rails and steps converge into nested angular frames." decoding="async" fetchpriority="high" />
             <canvas id="raster" aria-hidden="true" hidden></canvas>
+            <div class="photo-state" role="status"><span>Image</span><span>unavailable</span></div>
             <figcaption class="sr-only">Bw Stairs, Dmitrijs Milajevs, 2018. CC BY 3.0. The same photograph is recropped and processed throughout.</figcaption>
           </figure>
           <p data-content="body" class="specimen-body">One set of information. An open field of possibilities. Change the rules. See it again.</p>
@@ -101,7 +101,7 @@
     </main>
 
     <footer class="scene-footer requires-js">
-      <div class="scene-caption"><span id="scene-number">00</span><div><span id="scene-name">Zero</span><span id="scene-verb">Establish a point</span></div></div>
+      <div class="scene-caption"><span id="scene-number">00</span><div><span id="scene-name">Zero</span><span id="scene-verb">Establish a point</span><div id="measure-labels" class="measure-labels" aria-hidden="true"><span id="column-label"></span><span id="baseline-label"></span></div></div></div>
       <nav class="chapter-rail" aria-label="Choose a visual system" id="chapter-rail"></nav>
       <div class="footer-actions"><button class="icon-button" id="previous-scene" aria-label="Previous system"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"/></svg></button><button class="icon-button" id="next-scene" aria-label="Next system"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></button><button type="button" data-open="rules-dialog" class="rules-button">Rules <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 3v12M3 9h12"/></svg></button></div>
       <div class="progress-track" aria-hidden="true"><div id="total-progress"></div></div>

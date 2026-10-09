@@ -2,6 +2,7 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import { chapters, getStoryState, positionFromScroll, clamp, smooth } from './story.js';
 import { ui } from './i18n.js';
+import { createStillQueue, stillVariant, stillPath } from './still-frames.js';
 
 const root = document.documentElement;
 const byId = id => document.getElementById(id);
@@ -10,7 +11,7 @@ const narrative = byId('narrative');
 const chapterList = byId('chapter-list');
 const readingCopy = byId('reading-copy');
 const canvas = byId('surface-canvas');
-const still = byId('still-surface');
+let still = byId('still-surface');
 const indexDialog = byId('index-dialog');
 const aboutDialog = byId('about-dialog');
 const dialogs = [indexDialog, aboutDialog];
@@ -33,6 +34,7 @@ let disposed = false;
 let hasRendered = false;
 let dirty = true;
 let renderAvailable = false;
+let restorePending = false;
 let light = 0.5;
 const pointer = { x: 0, y: 0 };
 const pointerTarget = { x: 0, y: 0 };
@@ -40,9 +42,12 @@ const copies = [];
 const sceneElements = [];
 const indexLinks = [];
 const assetURL = name => new URL(`${import.meta.env.BASE_URL}urushi/assets/${name}`, document.baseURI).href;
-const fallbackFiles = ['hero', 'core', 'coat', 'cure', 'abrade', 'layers', 'vermilion', 'polish', 'maki-e', 'reveal', 'depth'];
-let fallbackChapter = -1;
-let fallbackRequest = 0;
+const stillQueue = createStillQueue({
+  initial: { chapter: 0, variant: stillVariant(window.innerWidth, window.innerHeight) },
+  initialReady: false,
+  prepare: ({ chapter, variant }) => prepareStillImage(assetURL(stillPath(chapter, variant))),
+  onSettled: () => { dirty = true; },
+});
 
 function setLines(element, text) {
   element.replaceChildren();
@@ -152,7 +157,8 @@ function applyLanguage() {
     indexLinks[i].querySelector('.index-name').textContent = name;
     sceneElements[i].setAttribute('aria-label', name);
     readingCopy.children[i].querySelector('h4').textContent = `${String(i).padStart(2, '0')} / ${name}`;
-    readingCopy.children[i].querySelector('p').textContent = `${title.replaceAll('\n', ' ')} ${body}`;
+    const readingDetail = language === 'zh' ? chapter.detailZh : chapter.detail;
+    readingCopy.children[i].querySelector('p').textContent = [title.replaceAll('\n', ' '), body, readingDetail].filter(Boolean).join(' ');
   });
   byId('language-toggle').textContent = language === 'zh' ? 'English' : '中文';
   byId('language-toggle').lang = language === 'zh' ? 'en' : 'zh-Hans';
@@ -163,7 +169,7 @@ function applyLanguage() {
   document.querySelector('.skip-link').textContent = language === 'zh' ? '跳至叙事' : 'Skip to the journey';
   currentChapter = -1;
   dirty = true;
-  if (!byId('render-status').hidden) byId('render-status').textContent = words.fallback;
+  updateRenderStatus();
 }
 
 function configureMotion() {
@@ -256,26 +262,84 @@ byId('read-journey').addEventListener('click', () => {
   byId('read-journey').textContent = readingCopy.hidden ? ui[language].readJourney : ui[language].hideJourney;
 });
 
-function useStillFrame(chapter) {
-  if (chapter === fallbackChapter) return;
-  fallbackChapter = chapter;
-  const request = ++fallbackRequest;
-  const image = new Image();
-  image.onload = () => { if (!disposed && request === fallbackRequest) still.src = image.src; };
-  image.onerror = () => { if (!disposed && request === fallbackRequest) still.src = assetURL('surface-black.webp'); };
-  image.src = assetURL(`stills/${fallbackFiles[chapter]}.webp`);
+function prepareStillImage(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.decoding = 'sync';
+    image.loading = 'eager';
+    image.onload = async () => {
+      image.onload = image.onerror = null;
+      try {
+        if (image.decode) await image.decode();
+        if (!image.naturalWidth) throw new Error('The still image has no pixels');
+        resolve(image);
+      } catch (error) { reject(error); }
+    };
+    image.onerror = () => {
+      image.onload = image.onerror = null;
+      reject(new Error('The still image is unavailable'));
+    };
+    image.src = url;
+  });
+}
+
+function requestStillFrame(chapter) {
+  stillQueue.request(chapter, stillVariant(window.innerWidth, viewportHeight));
+}
+
+function commitStillFrame() {
+  const ready = stillQueue.commit();
+  if (!ready) return;
+  // Publish the decoded node into the ordinary stage. Inserting it into the
+  // initial <picture> restarts responsive source selection in the browser,
+  // invalidating the readiness just established by decode(). Replace that
+  // whole container once; subsequent swaps keep a standalone image.
+  const image = ready.image;
+  for (const attribute of still.attributes) {
+    if (!['src', 'srcset', 'sizes', 'decoding', 'loading'].includes(attribute.name)) image.setAttribute(attribute.name, attribute.value);
+  }
+  image.dataset.chapter = String(ready.chapter);
+  image.dataset.variant = ready.variant;
+  const previousSurface = still.parentElement?.tagName === 'PICTURE' ? still.parentElement : still;
+  previousSurface.replaceWith(image);
+  still = image;
+  root.dataset.stillReady = 'true';
+}
+
+function displayedStillState() {
+  // A still plate is a complete reading composition, independent of a live
+  // chapter's enter/exit fade or a request that has not decoded yet.
+  return getStoryState((stillQueue.state.displayed?.chapter ?? 0) + 0.16);
+}
+
+function updateRenderStatus() {
+  const status = byId('render-status');
+  if (root.dataset.renderer === 'webgl') { status.hidden = true; return; }
+  const pending = stillQueue.state;
+  const chapter = chapters[pending.requested.chapter];
+  const name = language === 'zh' ? chapter.zh : chapter.name;
+  const words = ui[language];
+  const message = pending.status === 'failed' ? words.stillFailed
+    : ['pending', 'prepared'].includes(pending.status) ? (pending.displayed ? words.stillLoading : words.firstStillLoading)
+    : root.dataset.renderer === 'still' ? words.fallback : words.loading;
+  status.textContent = message.replace('{chapter}', name);
+  status.hidden = false;
 }
 
 function fallback() {
+  if (disposed) return;
   renderAvailable = false;
+  restorePending = false;
   root.dataset.renderer = 'still';
-  byId('render-status').textContent = ui[language].fallback;
-  byId('render-status').hidden = false;
-  useStillFrame(Math.min(10, Math.floor(phase)));
+  requestStillFrame(Math.min(10, Math.floor(phase)));
+  // Context loss invalidates the live drawing surface immediately. Restore
+  // the already valid image/copy pair together; later arrivals use the RAF.
+  updateNarrative(displayedStillState(), true);
+  updateRenderStatus();
   dirty = true;
 }
 
-function updateNarrative(state) {
+function updateNarrative(state, isStill = false) {
   const index = state.chapter;
   const local = state.local;
   if (index !== currentChapter) {
@@ -292,12 +356,11 @@ function updateNarrative(state) {
     byId('chapter-number').textContent = String(index).padStart(2, '0');
     byId('chapter-name').textContent = language === 'zh' ? chapters[index].zh : chapters[index].name;
     byId('chapter-note').textContent = language === 'zh' ? chapters[index].noteZh : chapters[index].note;
-    if (root.dataset.renderer === 'still') useStillFrame(index);
   }
-  const enter = index === 0 || reducedMotion ? 1 : smooth(0, 0.13, local);
-  const leave = index === 10 || reducedMotion ? 0 : smooth(0.78, 0.98, local);
+  const enter = index === 0 || reducedMotion || isStill ? 1 : smooth(0, 0.13, local);
+  const leave = index === 10 || reducedMotion || isStill ? 0 : smooth(0.78, 0.98, local);
   currentCopy.style.setProperty('--copy-opacity', String(enter * (1 - leave)));
-  currentCopy.style.setProperty('--copy-offset', `${reducedMotion ? 0 : (1 - enter) * 12 - leave * 10}px`);
+  currentCopy.style.setProperty('--copy-offset', `${reducedMotion || isStill ? 0 : (1 - enter) * 12 - leave * 10}px`);
   const atOpening = index === 0;
   byId('begin-scroll').hidden = !atOpening;
   byId('chapter-trigger').hidden = atOpening;
@@ -319,12 +382,24 @@ function frame(time) {
     pointer.x += (pointerTarget.x - pointer.x) * 0.12;
     pointer.y += (pointerTarget.y - pointer.y) * 0.12;
   }
-  if (dirty || !hasRendered || (!reducedMotion && (renderAvailable || pointerMoving))) {
-    updateNarrative(state);
+  if (dirty || !hasRendered || restorePending || (!reducedMotion && !indexDialog.open && (renderAvailable || pointerMoving))) {
+    // Prepare the current chapter while WebGL is healthy as well. The queue
+    // ignores unchanged identities; a context loss can use this valid plate.
+    requestStillFrame(state.chapter);
+    commitStillFrame();
     if (renderAvailable) {
-      try { engine.render(state, reducedMotion ? 0 : time / 1000, pointer, light); }
+      try {
+        const submitted = engine.render(state, reducedMotion ? 0 : time / 1000, pointer, light);
+        if (submitted && restorePending) {
+          restorePending = false;
+          root.dataset.renderer = 'webgl';
+        }
+      }
       catch { fallback(); }
     }
+    if (root.dataset.renderer === 'webgl') updateNarrative(state);
+    else updateNarrative(displayedStillState(), true);
+    updateRenderStatus();
     dirty = false; hasRendered = true;
   }
   if (!disposed && !document.hidden) frameRequest = requestAnimationFrame(frame);
@@ -407,16 +482,17 @@ async function start() {
     if (disposed) return;
     engine = new LacquerRenderer(canvas, {
       onContextLost: fallback,
-      onContextRestored: () => { if (!disposed) { renderAvailable = true; root.dataset.renderer = 'webgl'; byId('render-status').hidden = true; dirty = true; } },
+      // Three's own restored listener runs after ours. Defer the first draw to
+      // the existing main clock, then expose WebGL only when it was submitted.
+      onContextRestored: () => {
+        if (!disposed) { renderAvailable = true; restorePending = true; dirty = true; }
+      },
     });
     await engine.init();
     if (disposed) { engine.dispose(); return; }
     engine.resize(window.innerWidth, viewportHeight);
-    phase = positionFromScroll(window.scrollY, sections, viewportHeight);
-    engine.render(getStoryState(phase), reducedMotion ? 0 : performance.now() / 1000, pointer, light);
     renderAvailable = true;
-    root.dataset.renderer = 'webgl';
-    byId('render-status').hidden = true;
+    restorePending = true;
     dirty = true;
   } catch {
     engine?.dispose();
@@ -429,7 +505,7 @@ async function start() {
 window.addEventListener('pagehide', event => {
   if (event.persisted) return;
   disposed = true;
-  fallbackRequest += 1;
+  stillQueue.dispose();
   cancelAnimationFrame(frameRequest);
   frameRequest = 0;
   lenis?.destroy();

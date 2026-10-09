@@ -24,6 +24,10 @@
 <meta name="twitter:title" content="ATLAS — The World in Layers">
 <meta name="twitter:description" content="A continuous cartographic journey through the real terrain, imagery and urban fabric of Fuji and Fujiyoshida, Japan.">
 <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%atlas/social.jpg">
+  <script type="module" src="../../experiences/atlas/src/main.ts"></script>
+<link rel="preload" href="/atlas/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/atlas/fonts/cormorant-garamond-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/atlas/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 </head>
   <body>
     <a class="skip-link" href="#index" id="skip-link">Choose an observation</a>
@@ -60,6 +64,7 @@
       </div></header>
 
       <div class="anchor" id="anchor" aria-hidden="true">
+        <span class="anchor-leader"></span>
         <span class="anchor-dot"></span><span class="anchor-ring"></span
         ><span class="anchor-coordinate"
           ><span class="anchor-context">ANCHOR · OUTSIDE FRAME<br /></span
@@ -197,7 +202,7 @@
         ></nav>
       </div>
       <div class="credits-view" id="credits-view" hidden>
-        <h2>Grounded in<br /><em>the real world.</em></h2>
+        <h2 id="credits-title">Grounded in<br /><em>the real world.</em></h2>
         <p class="credits-lead">
           A study of Fuji, Fujiyoshida and the Fuji Five Lakes.<br />35.4875° N
           / 138.8079° E
@@ -281,6 +286,5 @@
         <p><a href="%BASE_URL%">Return to Collection</a></p>
       </div></noscript
     >
-    <script type="module" src="../../experiences/atlas/src/main.ts"></script>
   </body>
 </html>

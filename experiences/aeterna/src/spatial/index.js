@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 
 const clamp = (n, a = 0, b = 1) => Math.max(a, Math.min(b, Number.isFinite(n) ? n : a));
 const mix = (a, b, t) => a + (b - a) * t;
@@ -50,23 +51,55 @@ function disposeObject(root, resources = new Set()) {
   });
 }
 
-function addStoneGrain(material) {
+/** A quiet plaster surface attached to the scan's assembled coordinates.
+ * Continuous value noise replaces the old per-cell 1130 Hz albedo hash. Each
+ * octave fades with its screen-space footprint before it becomes subpixel;
+ * fragment motion therefore never exposes a fresh random pattern or sparkle.
+ * This is an exhibition material, not a reconstruction of the cast's surface. */
+function addCastSurface(material) {
   material.onBeforeCompile = (shader) => {
     shader.vertexShader = `attribute vec3 restPosition;\nvarying vec3 vAeternaRest;\n${shader.vertexShader}`;
     shader.vertexShader = shader.vertexShader.replace(
       '#include <begin_vertex>',
       '#include <begin_vertex>\nvAeternaRest = restPosition;',
     );
-    shader.fragmentShader = `varying vec3 vAeternaRest;\n${shader.fragmentShader}`;
+    shader.fragmentShader = `
+      varying vec3 vAeternaRest;
+      float aeternaHash(vec3 p) {
+        p = fract(p * 0.1031);
+        p += dot(p, p.yzx + 33.33);
+        return fract((p.x + p.y) * p.z);
+      }
+      float aeternaNoise(vec3 p) {
+        vec3 cell = floor(p);
+        vec3 f = fract(p);
+        f = f * f * (3.0 - 2.0 * f);
+        return mix(
+          mix(mix(aeternaHash(cell), aeternaHash(cell + vec3(1, 0, 0)), f.x),
+              mix(aeternaHash(cell + vec3(0, 1, 0)), aeternaHash(cell + vec3(1, 1, 0)), f.x), f.y),
+          mix(mix(aeternaHash(cell + vec3(0, 0, 1)), aeternaHash(cell + vec3(1, 0, 1)), f.x),
+              mix(aeternaHash(cell + vec3(0, 1, 1)), aeternaHash(cell + vec3(1, 1, 1)), f.x), f.y), f.z);
+      }
+      float aeternaGrain(float frequency, float footprint) {
+        float resolved = 1.0 - smoothstep(0.25, 0.8, footprint * frequency);
+        return (aeternaNoise(vAeternaRest * frequency) - 0.5) * resolved;
+      }
+      ${shader.fragmentShader}`;
     shader.fragmentShader = shader.fragmentShader.replace(
       '#include <color_fragment>',
       `#include <color_fragment>
-      float stoneGrain = fract(sin(dot(floor(vAeternaRest * 1130.0), vec3(12.9898, 78.233, 41.317))) * 43758.5453);
-      float stoneVein = pow(0.5 + 0.5 * sin(vAeternaRest.y * 12.0 + sin(vAeternaRest.x * 7.0) * 1.6 + vAeternaRest.z * 8.0), 18.0);
-      diffuseColor.rgb *= 1.0 - stoneVein * 0.025 + (stoneGrain - 0.5) * 0.028;`,
+      float castFootprint = max(length(dFdx(vAeternaRest)), length(dFdy(vAeternaRest)));
+      float castGrain = aeternaGrain(44.0, castFootprint) * 0.72
+                      + aeternaGrain(150.0, castFootprint) * 0.28;
+      diffuseColor.rgb *= 1.0 + castGrain * 0.016;`,
+    );
+    shader.fragmentShader = shader.fragmentShader.replace(
+      '#include <roughnessmap_fragment>',
+      `#include <roughnessmap_fragment>
+      roughnessFactor = clamp(roughnessFactor + castGrain * 0.035, 0.72, 0.985);`,
     );
   };
-  material.customProgramCacheKey = () => 'aeterna-stone-grain-1';
+  material.customProgramCacheKey = () => 'aeterna-filtered-cast-2';
 }
 
 /**
@@ -114,8 +147,8 @@ export async function createSpatialStage(canvas, options = {}) {
   const subject = new THREE.Group();
   world.add(subject);
 
-  const hemisphere = new THREE.HemisphereLight(0xf6eee1, 0x403a32, 0.72);
-  const key = new THREE.DirectionalLight(0xffebcd, 3.45);
+  const hemisphere = new THREE.HemisphereLight(0xefece5, 0x353b3c, 0.72);
+  const key = new THREE.DirectionalLight(0xfff1df, 3.0);
   key.position.set(-3.6, 5.5, 4.8);
   key.castShadow = true;
   key.shadow.mapSize.set(2048, 2048);
@@ -127,22 +160,22 @@ export async function createSpatialStage(canvas, options = {}) {
   key.shadow.camera.far = 20;
   key.shadow.normalBias = 0.025;
   key.shadow.bias = -0.00012;
-  key.shadow.radius = 3;
+  key.shadow.radius = 3.5;
   key.target.position.set(0.8, 0, 0);
-  const fill = new THREE.DirectionalLight(0xb5c0cb, 0.52);
+  const fill = new THREE.DirectionalLight(0xbac8d6, 0.52);
   fill.position.set(4, 0.8, 2);
-  const rim = new THREE.DirectionalLight(0xffefd6, 1.55);
+  const rim = new THREE.DirectionalLight(0xf4f0e6, 1.0);
   rim.position.set(2.5, 3.2, -3.5);
   world.add(hemisphere, key, key.target, fill, rim);
 
   const pedestal = new THREE.Mesh(
-    new THREE.BoxGeometry(1.72, 0.12, 1.36),
-    new THREE.MeshStandardMaterial({ color: 0x2b2823, roughness: 0.92, metalness: 0 }),
+    new RoundedBoxGeometry(1.72, 0.12, 1.36, 2, 0.012),
+    new THREE.MeshStandardMaterial({ color: 0x2b2925, roughness: 0.88, metalness: 0 }),
   );
   pedestal.position.y = -2.20;
   pedestal.castShadow = true;
   pedestal.receiveShadow = true;
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(30, 30), new THREE.ShadowMaterial({ opacity: 0.24 }));
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(30, 30), new THREE.ShadowMaterial({ color: 0x282824, opacity: 0.10 }));
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -2.27;
   floor.receiveShadow = true;
@@ -309,9 +342,9 @@ export async function createSpatialStage(canvas, options = {}) {
     const stoneMaterials = new Map();
     bodyRoot.traverse((mesh) => {
       if (mesh.isLineSegments) {
-        mesh.material.color.set(0x51432f);
+        mesh.material.color.set(0x575348);
         mesh.material.transparent = true;
-        mesh.material.opacity = 0.17;
+        mesh.material.opacity = 0.13;
         mesh.material.depthWrite = false;
         return;
       }
@@ -329,11 +362,11 @@ export async function createSpatialStage(canvas, options = {}) {
         if (stoneMaterials.has(original)) return stoneMaterials.get(original);
         const material = original.clone();
         const isCut = /cut|interior/i.test(material.name || '');
-        material.color.set(isCut ? 0xc9b994 : 0xe0d3bc);
+        material.color.set(isCut ? 0xc4bca9 : 0xe1ded5);
         material.metalness = 0;
-        material.roughness = isCut ? 0.96 : 0.81;
-        material.envMapIntensity = isCut ? 0.18 : 0.32;
-        addStoneGrain(material);
+        material.roughness = isCut ? 0.95 : 0.82;
+        material.envMapIntensity = isCut ? 0.16 : 0.30;
+        addCastSurface(material);
         stoneMaterials.set(original, material);
         return material;
       });
@@ -396,13 +429,9 @@ export async function createSpatialStage(canvas, options = {}) {
     const sceneName = activeScenes.has(s.scene) ? s.scene : 'none';
     if (contextLost || document.hidden) return;
     if (sceneName === 'none' || s.visible === false) {
-      // Retain the last rendered frame instead of clearing. The canvas is
-      // transparent (clear alpha 0), so clearing left the outgoing sculpture
-      // room showing nothing but its black background while it was still on
-      // screen during a chapter change — the flickering black block. Keeping
-      // the frame means the room keeps showing its sculpture until it is
-      // actually hidden, and a newly chosen sculpture room repaints on the
-      // same frame the canvas is moved into it.
+      // The host owns image readiness and chapter compositing. Leave the last
+      // sculpture frame intact while it hides or captures this shared canvas;
+      // an active scene is rendered synchronously below, without another clock.
       lastScene = 'none';
       return;
     }
@@ -450,22 +479,22 @@ export async function createSpatialStage(canvas, options = {}) {
 
     let light = typeof s.light === 'number' ? clamp(s.light) : s.light === 'right' ? 0.86 : s.light === 'left' ? 0.14 : 0.14;
     const azimuth = mix(-1.12, 1.12, light);
-    key.position.set(Math.sin(azimuth) * 6.2 + subject.position.x, 4.6, Math.cos(azimuth) * 5.5);
+    key.position.set(Math.sin(azimuth) * 6.2 + subject.position.x, 5.1, Math.cos(azimuth) * 5.5);
     key.target.position.set(subject.position.x, -0.1, 0);
-    key.color.set(ivory ? 0xfff0d9 : 0xffe8c4);
-    key.intensity = ivory ? 2.8 : isRelief ? 2.9 : 2.75;
-    hemisphere.intensity = ivory ? 0.78 : isRelief ? 0.44 : 0.20;
-    fill.intensity = ivory ? 0.49 : isRelief ? 0.26 : 0.14;
-    rim.intensity = ivory ? 0.70 : 1.08;
-    world.environmentIntensity = ivory ? 0.36 : 0.15;
-    renderer.toneMappingExposure = ivory ? 0.94 : 0.88;
+    key.color.set(ivory ? 0xfff4e7 : 0xfff1df);
+    key.intensity = ivory ? 2.72 : isRelief ? 2.85 : 2.95;
+    hemisphere.intensity = ivory ? 0.76 : isRelief ? 0.50 : 0.26;
+    fill.intensity = ivory ? 0.43 : isRelief ? 0.29 : 0.20;
+    rim.intensity = ivory ? 0.62 : isRelief ? 0.88 : 0.82;
+    world.environmentIntensity = ivory ? 0.34 : 0.17;
+    renderer.toneMappingExposure = ivory ? 0.94 : 0.90;
 
     pedestal.visible = explosion < 0.20 || ivory || isRelief;
     pedestal.position.set(subject.position.x, isRelief ? -2.20 * framingScale : -2.19 * framingScale, 0);
     pedestal.scale.set(isRelief ? 1.42 * framingScale : framingScale, framingScale, isRelief ? 1.7 * framingScale : framingScale);
-    pedestal.material.color.set(ivory ? 0xbab09a : 0x29261f);
+    pedestal.material.color.set(ivory ? 0xbcb6aa : 0x292824);
     floor.position.y = pedestal.position.y - 0.069 * framingScale;
-    floor.material.opacity = ivory ? 0.13 : 0.14;
+    floor.material.opacity = ivory ? 0.085 : isRelief ? 0.095 : 0.10;
 
     const reliefApproach = reduce && !s.manualProgress ? 0.35 : smooth(0.16, 0.9, p);
     const activeModel = isRelief ? reliefRoot : bodyRoot;

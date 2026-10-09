@@ -6,12 +6,17 @@ import { clamp, mix, range, smooth } from './math.ts';
 import { CONTENT_KEYS, SCENES, layout, resolve } from './scenes.ts';
 import type { Axes, Design, Frame, View } from './scenes.ts';
 import { Renderer } from './renderer.ts';
+import { isWideShort } from './layout-short.ts';
+import './interface-short.css';
 
 const $ = <T extends Element = HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 const root = document.documentElement;
 const media = matchMedia('(prefers-reduced-motion: reduce)');
 const readStore = (key: string, session = false) => {try {return (session ? sessionStorage : localStorage).getItem(key);} catch {return null;}};
 const writeStore = (key: string, value: string, session = false) => {try {(session ? sessionStorage : localStorage).setItem(key, value);} catch {/* Private browsing still works. */}};
+const storedPosition = (value: unknown) => typeof value === 'number' ? value
+  : typeof value === 'string' && value.trim() !== '' ? Number(value) : NaN;
+const extentForViewport = () => Math.round(innerHeight * 1.95 * 11);
 let reduced = media.matches || readStore('grid:reduce-motion') === '1';
 const lifecycle = new AbortController();
 const cleanups: (() => void)[] = [];
@@ -55,6 +60,9 @@ async function start() {
   if (destroyed) return;
   await document.fonts.ready;
   if (destroyed) return;
+  // Font arrival may already have changed the static document's height. Keep
+  // the actual remaining position before the fixed live layout replaces it.
+  const nativeStartY = window.scrollY;
   root.className = 'js-ready';
   gsap.registerPlugin(ScrollTrigger);
   gsap.ticker.lagSmoothing(0);
@@ -83,6 +91,9 @@ async function start() {
   let axisOverrides: Partial<Axes> = {};
   let frameMin = 280;
   let frameMax = 1000;
+  let shortFrame = false;
+  let shortFrameTop = 0;
+  let shortFrameHeight = 0;
   let lastViewport = '';
   let lastDesign: Design;
 
@@ -133,11 +144,122 @@ async function start() {
     return button;
   });
 
-  function frameFor(percent: number): Frame {
-    const width = mix(frameMin, frameMax, clamp(percent / 100));
+  function frameAtWidth(width: number): Frame {
+    if (shortFrame) return {x: (view.w - width) / 2, y: shortFrameTop, w: width, h: shortFrameHeight, opacity: 1, border: 1};
     const availableHeight = Math.max(230, view.h - (view.mobile ? 78 : 86));
     const height = Math.min(availableHeight, width * 1.9);
     return {x: (view.w - width) / 2, y: view.h * .016 + (availableHeight - height) / 2, w: width, h: height, opacity: 1, border: 1};
+  }
+
+  function frameFor(percent: number): Frame {
+    return frameAtWidth(mix(frameMin, frameMax, clamp(percent / 100)));
+  }
+
+  // Width limits are a layout decision, measured only during reconstruction.
+  // The existing nine nodes supply their real intrinsic text and cell heights.
+  function readableShortFrame(width: number) {
+    renderer.nativeFrame(frameAtWidth(width));
+    const bounds = renderer.article.getBoundingClientRect();
+    const padding = 8, tolerance = .75;
+    // A minmax(0, 1fr) track can be shorter than its end-aligned body even
+    // when the overflowing text still remains inside the whole frame.
+    const rowHeights = getComputedStyle(renderer.article).gridTemplateRows.split(/\s+/).map(parseFloat);
+    const body = renderer.parts.body;
+    const bodyRow = Number.parseInt(getComputedStyle(body).gridRowStart, 10) - 1;
+    if (!Number.isFinite(rowHeights[bodyRow]) || body.getBoundingClientRect().height > rowHeights[bodyRow] + tolerance) return false;
+    const inside = (r: DOMRect) => r.left >= bounds.left + padding - tolerance &&
+      r.right <= bounds.right - padding + tolerance &&
+      r.top >= bounds.top + padding - tolerance && r.bottom <= bounds.bottom - padding + tolerance;
+    const boxes = CONTENT_KEYS.map(key => ({key, rect: renderer.parts[key].getBoundingClientRect()}));
+    if (boxes.some(item => !inside(item.rect))) return false;
+    if (renderer.parts.image.getBoundingClientRect().height < 49.5 || renderer.parts.action.getBoundingClientRect().height < 43.5) return false;
+    for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
+      const a = boxes[i].rect, b = boxes[j].rect;
+      if (Math.min(a.right, b.right) - Math.max(a.left, b.left) > tolerance &&
+          Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > tolerance) return false;
+    }
+    for (const key of ['title', 'subtitle', 'number', 'body', 'meta', 'place', 'action'] as const) {
+      const node = renderer.parts[key], cell = node.getBoundingClientRect(), range = document.createRange();
+      const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+      let text: Node | null;
+      while ((text = walker.nextNode())) {
+        if (!text.textContent?.trim()) continue;
+        range.selectNodeContents(text);
+        if (Array.from(range.getClientRects()).some(rect => rect.width > 0 && rect.height > 0 &&
+          (!inside(rect) || rect.left < cell.left - tolerance || rect.right > cell.right + tolerance))) return false;
+      }
+    }
+    return true;
+  }
+
+  function measureFrameLimits() {
+    frameMax = view.w * .92;
+    frameMin = Math.min(280, frameMax * .88);
+    shortFrame = isWideShort(view) && view.h < 520;
+    renderer.article.dataset.shortFrame = String(shortFrame);
+    if (!shortFrame) return;
+    // The toolbar is usually hidden at reconstruction time. A synchronous
+    // measurement is restored before the same task submits the current scene.
+    const wasHidden = frameTools.hidden;
+    frameTools.hidden = false;
+    const toolbarHeight = frameTools.getBoundingClientRect().height;
+    frameTools.hidden = wasHidden;
+    shortFrameTop = Math.min(8, view.h * .016);
+    shortFrameHeight = Math.max(1, view.h - toolbarHeight - shortFrameTop - 8);
+    const wasNative = renderer.article.classList.contains('native-layout');
+    renderer.article.classList.add('native-layout');
+    try {
+      // Preserve the existing no-fit boundary: do not invent a different frame
+      // when the physical maximum itself cannot accommodate the real content.
+      if (!readableShortFrame(frameMax)) { frameMin = frameMax; return; }
+      renderer.nativeFrame(frameAtWidth(frameMax));
+      const style = getComputedStyle(renderer.article);
+      const inset = [style.paddingLeft, style.paddingRight, style.borderLeftWidth, style.borderRightWidth]
+        .reduce((sum, value) => sum + (parseFloat(value) || 0), 0);
+      // The compact CSS branch has a full-width body; the narrower wide body
+      // can gain a third line. Readability is monotonic only within each branch.
+      // Observe the applied grid rule: a fractional width just above 540px did
+      // not select the wide branch in the real browser. The numeric breakpoint
+      // seeds the search, but never labels either endpoint's actual CSS state.
+      const compactAt = (width: number) => {
+        renderer.nativeFrame(frameAtWidth(width));
+        return getComputedStyle(renderer.parts.body).gridColumnEnd === '13';
+      };
+      const branches = [{low: frameMin, high: frameMax}];
+      if (!compactAt(frameMax) && compactAt(frameMin)) {
+        let compact = clamp(540 + inset, frameMin, frameMax), wide = frameMax;
+        if (!compactAt(compact)) { wide = compact; compact = frameMin; }
+        // Both endpoints retain their measured CSS branch throughout the
+        // bounded search. These layout reads occur only during reconstruction.
+        while (wide - compact > 1 / 16) {
+          const middle = (compact + wide) / 2;
+          if (compactAt(middle)) compact = middle; else wide = middle;
+        }
+        branches.splice(0, 1, {low: frameMin, high: compact}, {low: wide, high: frameMax});
+      }
+      let connectedFloor: number | null = null;
+      const keepFloor = (width: number) => { frameMin = Math.min(frameMax, Math.ceil(width) + 1); };
+      for (let i = branches.length - 1; i >= 0; i--) {
+        const branch = branches[i];
+        if (branch.low > branch.high) continue;
+        if (!readableShortFrame(branch.high)) {
+          if (connectedFloor !== null) { keepFloor(connectedFloor); return; }
+          continue;
+        }
+        if (readableShortFrame(branch.low)) { connectedFloor = branch.low; continue; }
+        let low = branch.low, high = branch.high;
+        while (high - low > .5) {
+          const middle = (low + high) / 2;
+          if (readableShortFrame(middle)) high = middle; else low = middle;
+        }
+        keepFloor(high);
+        return;
+      }
+      if (connectedFloor !== null) keepFloor(connectedFloor);
+      else frameMin = frameMax; // No readable branch: leave the real content visible for review.
+    } finally {
+      if (!wasNative) renderer.article.classList.remove('native-layout');
+    }
   }
 
   function measureInterface(percent: number): Design {
@@ -156,6 +278,8 @@ async function start() {
         w: rect.width, h: rect.height, size,
         rotate: 0, sx: 1, sy: 1, opacity: 1, tracking: (parseFloat(style.letterSpacing) || 0) / size,
         leading: (parseFloat(style.lineHeight) || size * 1.3) / size,
+        paddingX: parseFloat(style.paddingLeft) || 0,
+        paddingY: parseFloat(style.paddingTop) || 0,
         family: style.fontFamily.includes('Instrument') ? 1 : style.fontFamily.includes('Mono') ? 2 : 0,
         weight: parseFloat(style.fontWeight) || 400,
         accent: key === 'action' ? 1 : 0
@@ -181,10 +305,9 @@ async function start() {
     renderer.resize(view);
     // 1.95 viewports of travel per system: the handoff owns roughly a third of
     // that, so each change of system takes appreciably longer to read through.
-    extent = Math.round(innerHeight * 1.95 * 11);
+    extent = extentForViewport();
     track.style.height = `${extent + innerHeight}px`;
-    frameMax = view.w * .92;
-    frameMin = Math.min(280, frameMax * .88);
+    measureFrameLimits();
     states = SCENES.map((_, i) => layout(i, view));
     wideInterface = measureInterface(100);
     narrowInterface = measureInterface(0);
@@ -347,14 +470,15 @@ async function start() {
     invalidateOnRefresh: true
   });
   cleanups.push(() => trigger.kill());
-  const saved = Number(readStore('grid:position', true));
+  const saved = storedPosition(readStore('grid:position', true));
   const hashIndex = SCENES.findIndex(scene => `#${scene.slug}` === location.hash);
   const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
   const restoring = navigation?.type === 'reload' || navigation?.type === 'back_forward';
-  const historyPosition = Number(history.state?.gridPosition);
+  const historyPosition = storedPosition(history.state?.gridPosition);
   const retained = Number.isFinite(historyPosition) ? historyPosition : saved;
   const initial = restoring && Number.isFinite(retained) ? clamp(retained, 0, 11)
-    : hashIndex >= 0 ? hashIndex : Number.isFinite(saved) ? clamp(saved, 0, 11) : 0;
+    : hashIndex >= 0 ? hashIndex : Number.isFinite(saved) ? clamp(saved, 0, 11)
+      : nativeStartY > 0 ? clamp(nativeStartY / extentForViewport() * 11, 0, 11) : 0;
   reconstruct(initial);
   syncMotion();
 

@@ -4,6 +4,7 @@ import { LineGeometry } from "three/addons/lines/LineGeometry.js";
 import { LineMaterial } from "three/addons/lines/LineMaterial.js";
 import { Geography, readJSON, smooth } from "../geo";
 import type { StoryState } from "../story";
+import { observationRadius, observationFragment } from "./observation.ts";
 
 type Coord = [number, number];
 type Feature = {
@@ -37,13 +38,24 @@ function resample(points: THREE.Vector3[], count: number) {
 const mapVertex = /* glsl */ `
 uniform float uLift;
 uniform float uCurvature;
-void main(){vec3 p=position;p.y=p.y*uLift+0.013;p.y-=uCurvature*dot(p.xz,p.xz)/12742.0;gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);}`;
+varying vec2 vMap;
+void main(){
+  vec3 p=position;vMap=p.xz;
+  p.y=p.y*uLift+0.013;
+  p.y-=uCurvature*dot(p.xz,p.xz)/12742.0;
+  gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);
+}`;
 const mapFragment = /* glsl */ `
-uniform vec3 uColour;uniform float uOpacity;
-void main(){gl_FragColor=vec4(uColour,uOpacity);#include <colorspace_fragment>}`.replace(
-  ";#include",
-  ";\n#include",
-);
+uniform vec3 uColour;
+uniform float uOpacity;
+varying vec2 vMap;
+${observationFragment}
+void main(){
+  float alpha=uOpacity*observationExposure(vMap);
+  if(alpha<=0.0)discard;
+  gl_FragColor=vec4(uColour,alpha);
+  #include <colorspace_fragment>
+}`;
 
 export class MapLayer {
   group = new THREE.Group();
@@ -72,6 +84,7 @@ export class MapLayer {
         uOpacity: { value: 0 },
         uLift: { value: 0 },
         uCurvature: { value: 0 },
+        uObservationRadius: { value: 50 },
       },
     });
     this.materials.push(m);
@@ -135,6 +148,7 @@ export class MapLayer {
       g.setAttribute("position", new THREE.Float32BufferAttribute(points, 3));
       const l = new THREE.LineSegments(g, this.material(colour));
       l.frustumCulled = false;
+      l.visible = false;
       this.group.add(l);
       return l;
     };
@@ -147,6 +161,7 @@ export class MapLayer {
     );
     this.waterMesh = new THREE.Mesh(fill, this.material("#37595a"));
     this.waterMesh.renderOrder = 2;
+    this.waterMesh.visible = false;
     this.group.add(this.waterMesh);
     const chosen = contours.lines
       .filter((l) => l.elevation === 1500)
@@ -181,6 +196,7 @@ export class MapLayer {
       m.resolution.set(this.width, this.height);
       this.shared = new Line2(g, m);
       this.shared.frustumCulled = false;
+      this.shared.visible = false;
       this.shared.renderOrder = 5;
       this.group.add(this.shared);
     }
@@ -196,6 +212,7 @@ export class MapLayer {
     for (const m of this.materials) {
       m.uniforms.uLift.value = s.lift;
       m.uniforms.uCurvature.value = s.curvature;
+      m.uniforms.uObservationRadius.value = observationRadius(s.p, s.baseSpan);
     }
     if (this.water)
       (this.water.material as THREE.ShaderMaterial).uniforms.uOpacity.value =
@@ -214,6 +231,10 @@ export class MapLayer {
     if (this.roads)
       (this.roads.material as THREE.ShaderMaterial).uniforms.uOpacity.value =
         smooth(0.155, 0.205, s.p) * 0.16 * (1 - s.aerial) * s.terrainVisibility;
+    // Cull only zero contribution. Water retains its real residual opacity.
+    for (const object of [this.water, this.waterMesh, this.roads]) {
+      if (object) object.visible = (object.material as THREE.ShaderMaterial).uniforms.uOpacity.value > 0;
+    }
     if (this.shared && this.group.visible) {
       const morph = smooth(0.425, 0.466, s.p),
         draw = smooth(0.128, 0.203, s.p);
@@ -245,6 +266,9 @@ export class MapLayer {
       }
       (this.shared.material as LineMaterial).opacity =
         draw * 0.9 * (1 - smooth(0.545, 0.625, s.p));
+      this.shared.visible = (this.shared.material as LineMaterial).opacity > 0;
+    } else if (this.shared) {
+      this.shared.visible = false;
     }
   }
   dispose() {

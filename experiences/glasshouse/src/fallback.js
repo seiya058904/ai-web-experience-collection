@@ -1,97 +1,80 @@
-import { mix } from './journey.js';
+import { isPortraitComposition } from './framing.js';
+import { sampleFallback, paneStops, RAY_STOPS, PAINTER_ORDER } from './fallback-scene.js';
+import { createSVGDiagram } from './fallback-svg.js';
 
-/** Lightweight original Canvas 2D interpretation when WebGL is unavailable.
- * It preserves chapter navigation and useful material/light interactions.
- */
+/** Original diagram interpretation when WebGL is unavailable. Both backends
+ * share the same reversible geometry, finishes, beam and daylight state. */
 export function createFallback(canvas) {
-  const ctx = canvas.getContext('2d', { alpha: false });
-  let w = 1, h = 1, ratio = 1, lastView, lastState, lastTime, sunlight = 0;
-  function pane(points, material, darkness, time, index) {
-    const outline = () => {
-      ctx.beginPath();
-      points.forEach(([x, y], i) => i ? ctx.lineTo(x * w, y * h) : ctx.moveTo(x * w, y * h));
-      ctx.closePath();
-    };
-    const g = ctx.createLinearGradient(points[0][0] * w, 0, points[2][0] * w, h);
-    const a = material === 'frosted' ? 0.48 : material === 'mirror' ? 0.85 : 0.075;
-    g.addColorStop(0, `rgba(200,226,239,${a})`);
-    g.addColorStop(0.45, `rgba(240,250,255,${a * 0.45})`);
-    g.addColorStop(0.49, `rgba(255,255,255,${a + 0.10})`);
-    g.addColorStop(0.53, `rgba(80,111,130,${a * 0.4})`);
-    g.addColorStop(1, `rgba(179,213,227,${a})`);
-    outline();
-    ctx.fillStyle = g;
-    ctx.fill();
-    ctx.strokeStyle = darkness > 0.5 ? 'rgba(209,238,249,.7)' : 'rgba(34,71,90,.4)';
-    ctx.lineWidth = 1;
-    ctx.stroke();
-    ctx.save();
-    ctx.translate(3, 1.5);
-    outline();
-    ctx.strokeStyle = 'rgba(255,255,255,.85)';
-    ctx.stroke();
-    ctx.restore();
-    ctx.save();
-    outline(); ctx.clip();
-    const x = (Math.sin(time * 0.1 + index) * 0.08 + 0.7 + sunlight * .22) * w;
-    const ray = ctx.createLinearGradient(x - 30, 0, x + 30, h);
-    ray.addColorStop(0, 'rgba(255,255,255,0)');
-    ray.addColorStop(0.48, 'rgba(255,255,255,.02)');
-    ray.addColorStop(0.5, 'rgba(255,255,255,.48)');
-    ray.addColorStop(0.52, 'rgba(255,255,255,.02)');
-    ray.addColorStop(1, 'rgba(255,255,255,0)');
-    ctx.fillStyle = ray; ctx.fillRect(0, 0, w, h);
-    ctx.restore();
+  let ctx;
+  try { ctx = canvas.getContext('2d', { alpha: false }); } catch { ctx = null; }
+  const svg = ctx ? null : createSVGDiagram(canvas);
+  let w = 1, h = 1, ratio = 1, last, frame, disposed = false;
+  const path = points => {
+    ctx.beginPath();
+    points.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y));
+    ctx.closePath();
+  };
+  const gradient = (x1, y1, x2, y2, stops) => {
+    const g = ctx.createLinearGradient(x1, y1, x2, y2);
+    stops.forEach(([at, color]) => g.addColorStop(at, color));
+    return g;
+  };
+  function update(view, time, state) {
+    if (disposed) return;
+    last = { view, time, state };
+    frame = sampleFallback(view, time, state, w, h, isPortraitComposition(w, h));
   }
-  function update(view, time, state) { lastView = view; lastState = state; lastTime = time; }
   function render() {
-    if (!lastView || !ctx) return;
-    const view = lastView, state = lastState, time = lastTime;
-    const d = view.darkness;
-    const house = (view.from === 5 ? 1 - view.blend : 0) + (view.to === 5 ? view.blend : 0);
-    sunlight = Math.sin((state.daylight || 0) * Math.PI / 180) * house;
+    if (disposed || !frame) return false;
+    if (svg) return svg.render(frame);
+    const f = frame;
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const value = Math.round(mix(233, 20, d));
-    ctx.fillStyle = `rgb(${value - 3},${value},${value + 3})`;
-    ctx.fillRect(0, 0, w, h);
-    const ambient = ctx.createRadialGradient(w * (.77 + sunlight * .22), h * .3, 0, w * (.65 + sunlight * .22), h * .3, w * .8);
-    ambient.addColorStop(0, `rgba(255,255,255,${mix(0.85, 0.05, d)})`);
-    ambient.addColorStop(1, 'rgba(125,150,164,0.08)');
+    ctx.globalAlpha = 1;
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = `rgb(${f.base.join(',')})`; ctx.fillRect(0, 0, w, h);
+    const a = f.ambient, ambient = ctx.createRadialGradient(a.fx, a.cy, 0, a.cx, a.cy, a.radius);
+    ambient.addColorStop(0, `rgba(255,255,255,${a.alpha})`);
+    ambient.addColorStop(1, 'rgba(125,150,164,.08)');
     ctx.fillStyle = ambient; ctx.fillRect(0, 0, w, h);
-    const floor = ctx.createLinearGradient(0, h * 0.61, 0, h);
-    floor.addColorStop(0, `rgba(110,132,145,${mix(0.03, 0.09, d)})`);
-    floor.addColorStop(1, `rgba(50,72,90,${mix(0.12, 0.32, d)})`);
-    ctx.fillStyle = floor; ctx.fillRect(0, h * 0.61, w, h * 0.4);
-    const chapter = view.chapter;
-    const m = w <= 760;
-    ctx.save();
-    if (m) { ctx.translate(-w * 0.7, h * 0.02); ctx.scale(1.8, 0.8); }
-    if (chapter === 0) {
-      pane([[.41,.18],[.61,.30],[.61,.74],[.41,.69]], 'clear', d,time,0);
-      pane([[.57,.09],[.85,.32],[.85,.72],[.57,.78]], 'clear', d,time,1);
-      pane([[.62,.47],[.95,.40],[.95,.72],[.62,.79]], 'clear', d,time,2);
-    } else if (chapter === 1) {
-      ctx.font = `500 ${w * .09}px Manrope, sans-serif`; ctx.fillStyle = '#253c48';
-      ctx.fillText('UNSEEN', w * .31, h * .52);
-      for (let i=0;i<3;i++) { const x=.39+i*.18; pane([[x,.18],[x+.14,.12],[x+.14,.66],[x,.72]], i===1?state.material:['frosted','clear','mirror'][i],d,time,i); }
-    } else if (chapter === 2) {
-      pane([[.7,.14],[.89,.76],[.48,.71]],'clear',d,time,0);
-      ctx.save(); ctx.globalCompositeOperation='screen';
-      const angle = (state.lightAngle||0) * .004;
-      ctx.beginPath(); ctx.moveTo(w*.02,h*(.12+angle)); ctx.lineTo(w*.7,h*.43); ctx.lineTo(w*.02,h*(.115+angle)); ctx.fillStyle='#f8fcff';ctx.fill();
-      ['#e7a3a0','#eacf99','#b3d4ac','#a6d7e8','#baa4d0'].forEach((c,i)=>{ctx.beginPath();ctx.moveTo(w*.7,h*.43);ctx.lineTo(w,h*(.64+i*.018-angle));ctx.lineTo(w,h*(.65+i*.018-angle));ctx.fillStyle=c;ctx.globalAlpha=.48;ctx.fill();}); ctx.restore();
-    } else if (chapter === 3 || chapter === 4) {
-      for(let i=6;i>=0;i--){const s=1-i*.078,x=.61+i*.033,y=.11+i*.035;pane([[x,y],[x+.25*s,y+.03],[x+.25*s,.76-i*.02],[x,.8-i*.02]],chapter===3?'mirror':'clear',d,time,i);}
-    } else {
-      for(let i=5;i>=0;i--){const x=.39+i*.087;pane([[x,.30-i*.017],[x+.15,.2-i*.005],[x+.15,.69-i*.002],[x,.79-i*.02]],'clear',d,time,i);}
-      pane([[.32,.31],[.78,.11],[.98,.21],[.50,.43]],'clear',d,time,9);
+    ctx.fillStyle = gradient(0, f.floor.y, 0, h, [[0, `rgba(110,132,145,${f.floor.a})`], [1, `rgba(50,72,90,${f.floor.b})`]]);
+    ctx.fillRect(0, f.floor.y, w, h - f.floor.y);
+    ctx.globalAlpha = f.word.opacity;
+    ctx.font = `500 ${f.word.size}px Manrope, sans-serif`;
+    ctx.fillStyle = '#253c48'; ctx.fillText(f.word.text, f.word.x, f.word.y);
+    for (const id of PAINTER_ORDER) {
+      const p = f.panes[id];
+      if (p.life <= 0) continue;
+      ctx.globalAlpha = p.life;
+      path(p.points);
+      ctx.fillStyle = gradient(p.points[0][0], 0, p.points[2][0], h, paneStops(p.alpha)); ctx.fill();
+      ctx.strokeStyle = f.darkness > .5 ? 'rgba(209,238,249,.7)' : 'rgba(34,71,90,.4)';
+      ctx.lineWidth = 1; ctx.stroke();
+      ctx.save(); ctx.translate(3, 1.5); path(p.points); ctx.strokeStyle = 'rgba(255,255,255,.85)'; ctx.stroke(); ctx.restore();
+      ctx.save(); path(p.points); ctx.clip();
+      ctx.fillStyle = gradient(p.rayX - 30, 0, p.rayX + 30, h, RAY_STOPS); ctx.fillRect(0, 0, w, h); ctx.restore();
     }
-    ctx.restore();
+    ctx.globalCompositeOperation = 'screen';
+    ctx.globalAlpha = f.beam.opacity; path(f.beam.incoming); ctx.fillStyle = '#f8fcff'; ctx.fill();
+    ctx.globalAlpha = .48 * f.beam.opacity;
+    for (const b of f.beam.outgoing) { path(b.points); ctx.fillStyle = b.color; ctx.fill(); }
+    ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1;
+    return true;
+  }
+  function resize(width, height) {
+    w = Math.max(1, width); h = Math.max(1, height);
+    if (svg) svg.resize(w, h);
+    else {
+      ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+      const bw = Math.round(w * ratio), bh = Math.round(h * ratio);
+      if (canvas.width !== bw) canvas.width = bw;
+      if (canvas.height !== bh) canvas.height = bh;
+    }
+    if (last) update(last.view, last.time, last.state);
   }
   return {
-    update, render,
-    resize(width,height){w=width;h=height;ratio=Math.min(window.devicePixelRatio||1,1.5);canvas.width=w*ratio;canvas.height=h*ratio;},
-    warmup:async()=>{},dispose:()=>{},lowerQuality:()=>{},
-    get info(){return {mode:'canvas-2d'};}
+    element: svg ? svg.element : canvas, update, render, resize,
+    warmup: async () => {}, lowerQuality: () => {},
+    dispose() { if (disposed) return; disposed = true; frame = last = null; svg?.dispose(); },
+    get info() { return { mode: svg ? 'svg-diagram' : 'canvas-2d', panes: 8 }; },
   };
 }

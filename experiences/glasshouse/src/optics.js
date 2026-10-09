@@ -408,13 +408,15 @@ function setRibbon(geometry, start, end, startWidth, endWidth, zShift = 0) {
   geometry.computeBoundingSphere();
 }
 
-function beamMaterial({ core = false, spectral = false } = {}) {
+function beamMaterial({ core = false, spectral = false, fadeStart = false, fadeEnd = true } = {}) {
   return new ShaderMaterial({
     name: spectral ? 'GLASSHOUSE / dispersed light ribbon' : 'GLASSHOUSE / white light ribbon',
     uniforms: {
       uOpacity: { value: 0 },
       uTime: { value: 0 },
       uDarkness: { value: 0 },
+      uFadeStart: { value: fadeStart ? 1 : 0 },
+      uFadeEnd: { value: fadeEnd ? 1 : 0 },
     },
     defines: { IS_CORE: core ? 1 : 0, IS_SPECTRAL: spectral ? 1 : 0 },
     vertexColors: spectral,
@@ -440,6 +442,8 @@ function beamMaterial({ core = false, spectral = false } = {}) {
       uniform float uOpacity;
       uniform float uTime;
       uniform float uDarkness;
+      uniform float uFadeStart;
+      uniform float uFadeEnd;
       varying vec2 vUv;
       #if IS_SPECTRAL == 1
         varying vec3 vSpectrum;
@@ -447,15 +451,14 @@ function beamMaterial({ core = false, spectral = false } = {}) {
       void main() {
         float crossSection = abs(vUv.y * 2.0 - 1.0);
         float edge = 1.0 - smoothstep(0.18, 1.0, crossSection);
-        float endFalloff = smoothstep(0.0, 0.055, vUv.x)
-          * (1.0 - smoothstep(0.69, 1.0, vUv.x));
+        float endFalloff = mix(1.0, smoothstep(0.0, 0.16, vUv.x), uFadeStart)
+          * mix(1.0, 1.0 - smoothstep(0.62, 1.0, vUv.x), uFadeEnd);
         float breath = 0.985 + 0.015 * sin(uTime * 0.30 + vUv.x * 0.7);
         vec3 light = vec3(0.94, 0.975, 1.0);
         #if IS_SPECTRAL == 1
           light = vSpectrum;
           edge = pow(max(0.0, sin(vUv.y * 3.14159265)), 0.40);
-          endFalloff = smoothstep(0.0, 0.045, vUv.x)
-            * (1.0 - smoothstep(0.54, 1.0, vUv.x));
+          endFalloff = 1.0 - smoothstep(0.54, 1.0, vUv.x);
         #endif
         #if IS_CORE == 1
           edge = 1.0 - smoothstep(0.40, 1.0, crossSection);
@@ -471,8 +474,9 @@ function beamMaterial({ core = false, spectral = false } = {}) {
 
 /**
  * Visible beams are an artistic participating-air approximation. The fan uses
- * explicit wavelength-coloured geometry; its central bend follows Snell's law
- * with a small material dispersion. No unsupported WebGL line widths are used.
+ * explicit wavelength-coloured geometry. The ports follow the real prism
+ * facets; the exit direction uses a restrained, Snell-inspired choreography,
+ * not a full prism or multi-bounce optical solver. No wide GL lines are used.
  * `angle` is the interactive incidence control in degrees, from -50 to +50.
  */
 export function createLightBeam() {
@@ -480,8 +484,10 @@ export function createLightBeam() {
   group.name = 'GLASSHOUSE / light through material';
   group.position.set(1.5, 0.22, 0.50);
 
-  const incomingCore = new Mesh(ribbonGeometry(), beamMaterial({ core: true }));
-  const incomingAir = new Mesh(ribbonGeometry(), beamMaterial());
+  const incomingCore = new Mesh(ribbonGeometry(), beamMaterial({ core: true, fadeStart: true, fadeEnd: false }));
+  const incomingAir = new Mesh(ribbonGeometry(), beamMaterial({ fadeStart: true, fadeEnd: false }));
+  const internalCore = new Mesh(ribbonGeometry(), beamMaterial({ core: true, fadeEnd: false }));
+  const internalAir = new Mesh(ribbonGeometry(), beamMaterial({ fadeEnd: false }));
   const outgoingCore = new Mesh(ribbonGeometry(), beamMaterial({ core: true }));
   const outgoingAir = new Mesh(ribbonGeometry(), beamMaterial());
   const divisions = 30;
@@ -514,15 +520,18 @@ export function createLightBeam() {
   fanGeometry.setAttribute('uv', new BufferAttribute(uvs, 2));
   fanGeometry.setIndex(indices);
   const fan = new Mesh(fanGeometry, beamMaterial({ spectral: true }));
-  for (const mesh of [incomingAir, outgoingAir, fan, incomingCore, outgoingCore]) {
+  for (const mesh of [incomingAir, internalAir, outgoingAir, fan, incomingCore, internalCore, outgoingCore]) {
     mesh.renderOrder = 3;
     mesh.frustumCulled = false;
     group.add(mesh);
   }
 
   const origin = new Vector3();
+  const departure = new Vector3();
   const start = new Vector3();
   const end = new Vector3();
+  const previousOrigin = new Vector3(Infinity, Infinity, Infinity);
+  const previousDeparture = new Vector3(Infinity, Infinity, Infinity);
   let previousAngle = Number.NaN;
   let previousSpectrum = Number.NaN;
 
@@ -530,15 +539,17 @@ export function createLightBeam() {
     const incidence = MathUtils.degToRad(angle);
     // The mounting angle keeps the source above-left across the whole control.
     const incomingAngle = -Math.PI / 5 + incidence * 0.45;
-    start.set(-Math.cos(incomingAngle) * 10.0, -Math.sin(incomingAngle) * 10.0, -0.03);
+    start.set(-Math.cos(incomingAngle) * 10.0, -Math.sin(incomingAngle) * 10.0, -0.03).add(origin);
     setRibbon(incomingCore.geometry, start, origin, 0.009, 0.012, 0.024);
     setRibbon(incomingAir.geometry, start, origin, 0.040, 0.120);
+    setRibbon(internalCore.geometry, origin, departure, .012, .016, .018);
+    setRibbon(internalAir.geometry, origin, departure, .035, .055);
 
     const refracted = Math.asin(Math.sin(incidence) / 1.46);
     const middleAngle = -0.105 + refracted * 0.26;
-    end.set(Math.cos(middleAngle) * 8.1, Math.sin(middleAngle) * 8.1, 0.015);
-    setRibbon(outgoingCore.geometry, origin, end, 0.010, 0.025, 0.028);
-    setRibbon(outgoingAir.geometry, origin, end, 0.055, 0.30, 0.01);
+    end.set(Math.cos(middleAngle) * 8.1, Math.sin(middleAngle) * 8.1, 0.015).add(departure);
+    setRibbon(outgoingCore.geometry, departure, end, 0.010, 0.025, 0.028);
+    setRibbon(outgoingAir.geometry, departure, end, 0.055, 0.25, 0.01);
 
     const fanPositions = fanGeometry.attributes.position;
     for (let i = 0; i <= divisions; i += 1) {
@@ -546,10 +557,10 @@ export function createLightBeam() {
       const refractiveIndex = MathUtils.lerp(1.478, 1.452, t);
       const wavelengthAngle = Math.asin(Math.sin(incidence) / refractiveIndex);
       // A thin prismatic wedge makes the spectral split readable at room scale.
-      const spread = (t - 0.5) * (0.030 + spectrum * 0.225);
+      const spread = (t - 0.5) * (0.030 + spectrum * 0.160);
       const direction = middleAngle + spread + (wavelengthAngle - refracted) * 1.6;
-      fanPositions.setXYZ(i * 2, 0, (t - 0.5) * 0.035, 0);
-      fanPositions.setXYZ(i * 2 + 1, Math.cos(direction) * 8.3, Math.sin(direction) * 8.3, 0.018);
+      fanPositions.setXYZ(i * 2, departure.x, departure.y + (t - 0.5) * .035, departure.z);
+      fanPositions.setXYZ(i * 2 + 1, departure.x + Math.cos(direction) * 8.3, departure.y + Math.sin(direction) * 8.3, departure.z + .018);
     }
     fanPositions.needsUpdate = true;
     fanGeometry.computeBoundingSphere();
@@ -557,23 +568,37 @@ export function createLightBeam() {
 
   return {
     group,
-    update({ time = 0, opacity = 1, angle = 0, spectrum = 0, darkness = 0 } = {}) {
+    update({ time = 0, opacity = 1, angle = 0, spectrum = 0, darkness = 0, entry, exit } = {}) {
       const amount = clamp01(opacity);
       const spectralAmount = clamp01(spectrum);
       const degrees = MathUtils.clamp(angle, -50, 50);
       group.visible = amount > 0.002;
+      if (spectralAmount > 0 && entry && exit) {
+        origin.copy(entry).sub(group.position);
+        departure.copy(exit).sub(group.position);
+      } else {
+        origin.set(0, 0, 0);
+        departure.set(0, 0, 0);
+      }
+      internalCore.visible = internalAir.visible = spectralAmount > .002;
 
       if (Math.abs(degrees - previousAngle) > 0.005
         || Math.abs(spectralAmount - previousSpectrum) > 0.002
+        || origin.distanceToSquared(previousOrigin) > 1e-10
+        || departure.distanceToSquared(previousDeparture) > 1e-10
         || !Number.isFinite(previousAngle)) {
         rebuild(degrees, spectralAmount);
         previousAngle = degrees;
         previousSpectrum = spectralAmount;
+        previousOrigin.copy(origin);
+        previousDeparture.copy(departure);
       }
 
       const intensities = [
         [incomingCore, 0.67],
         [incomingAir, 0.105],
+        [internalCore, .38 * spectralAmount],
+        [internalAir, .055 * spectralAmount],
         [outgoingCore, 0.44 * (1.0 - spectralAmount * 0.80)],
         [outgoingAir, 0.078 * (1.0 - spectralAmount * 0.65)],
         [fan, 0.36 * spectralAmount],

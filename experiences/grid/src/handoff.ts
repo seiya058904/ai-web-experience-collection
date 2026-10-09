@@ -56,6 +56,76 @@ export function routeHandoff(d: Design, a: Design, b: Design, progress: number, 
     ]);
   };
 
+  if (!mobile && next === 1) {
+    // Lift the small word before growing it. Reading copy clears the opening
+    // register in sequence, and only then does the photograph take its column.
+    route('title', [
+      [.30, { x: b.parts.title.x, y: b.parts.title.y, size: a.parts.title.size }],
+      land('title', .90)
+    ]);
+    route('subtitle', [keep('subtitle', .20), land('subtitle', .55)]);
+    route('body', [keep('body', .52), land('body', .80)]);
+    route('meta', [keep('meta', .78), land('meta', .98)]);
+    route('place', [keep('place', .74), land('place', .96)]);
+    route('image', [
+      [.18, { ...xy(.92, .68, .08, .32) }],
+      [.82, { ...xy(.92, .68, .08, .32) }], land('image', .98)
+    ]);
+    return d;
+  }
+
+  if (!mobile && next === 2) {
+    // Rise in the empty right column before crossing above the reading copy.
+    // The registration symbol keeps its real dimensions throughout the route.
+    route('mark', [
+      [.24, { x: a.parts.mark.x, y: b.parts.mark.y }],
+      [.82, { x: b.parts.mark.x, y: b.parts.mark.y }],
+      land('mark', .96)
+    ]);
+    return d;
+  }
+
+  if (!mobile && next === 3) {
+    // Exchange columns in the upper gap first; descend only after the symbol
+    // reaches the open column between Basel's prose and photograph.
+    route('mark', [
+      [.42, { x: b.parts.mark.x, y: a.parts.mark.y }],
+      [.82, { x: b.parts.mark.x, y: b.parts.mark.y }],
+      land('mark', .96)
+    ]);
+    return d;
+  }
+
+  if (next === 4) {
+    // The numbered specimen leaves the expanding letter contour first.
+    // Title cropping is deliberate; losing the persistent folio is not.
+    const lane = mobile ? .76 : .77;
+    const smallNumber = Math.min(a.parts.number.size, b.parts.number.size, mobile ? 42 : H * .13);
+    route('number', [
+      [.18, { x: W * lane, y: a.parts.number.y, size: smallNumber, rotate: 0 }],
+      [.48, { x: W * lane, y: b.parts.number.y, size: smallNumber, rotate: 0 }],
+      [.77, { x: b.parts.number.x, y: b.parts.number.y, size: smallNumber }],
+      land('number', .94)
+    ]);
+    route('title', [keep('title', .49), land('title', .95)]);
+    // Delay stacking with the word's expansion, so its second row never
+    // catches the folio while the latter is still travelling down the edge.
+    d.stack = mix(a.stack, b.stack, smooth(range(.49, .95, t)));
+    d.typeCrop = mix(a.typeCrop, b.typeCrop, smooth(range(.49, .95, t)));
+    route('image', [
+      [.18, { ...xy(.94, mobile ? .60 : .49, .06, mobile ? .40 : .51), rotate: 0 }],
+      [.83, { x: W * .94, y: b.parts.image.y, w: W * .06, h: b.parts.image.h, rotate: 0 }],
+      land('image', .98)
+    ]);
+    route('mark', [
+      [.16, { x: W * .90, y: a.parts.mark.y, w: 6, h: 6 }],
+      [.48, { x: W * .90, y: mobile ? H * .51 : H * .69, w: 6, h: 6 }],
+      [.79, { x: b.parts.mark.x, y: mobile ? H * .51 : H * .69, w: 6, h: 6 }],
+      land('mark', .98)
+    ]);
+    return d;
+  }
+
   if (mobile && next === 1) {
     // Lift the opening evidence beside the copy before it gains the full row.
     // The same photograph and both original endpoint boxes stay intact.
@@ -64,6 +134,9 @@ export function routeHandoff(d: Design, a: Design, b: Design, progress: number, 
       [.62, { ...xy(.82, .465, .18, .22) }],
       land('image', .90)
     ]);
+    // The folio reaches the white space above the travelling photograph first.
+    // Only its vertical timing changes; its other properties keep their route.
+    route('number', [[.18, { y: b.parts.number.y }], [.62, { y: b.parts.number.y }]]);
     return d;
   }
 
@@ -82,9 +155,15 @@ export function routeHandoff(d: Design, a: Design, b: Design, progress: number, 
     ]);
     compactTitle(.12, .50, W * .40, 0, .03);
     route('subtitle', [keep('subtitle', .20), land('subtitle', .72)]);
+    // Two digits need a real transit column, not a one-em box. Shrink while
+    // moving right, rise beside the compact heading, then return above Basel.
+    // Its full endpoint size and rotation arrive after that crossing is clear.
+    const folioSize = Math.min(36, W * .105);
     route('number', [
-      [.18, { ...xy(.82, .28, .18), size: W * .18, rotate: 0 }],
-      [.72, { ...xy(.82, .08, .18), size: W * .18, rotate: -4 }]
+      [.14, { x: W * .87, y: a.parts.number.y, w: W * .13, size: folioSize, rotate: 0 }],
+      [.44, { x: W * .87, y: b.parts.number.y, w: W * .13, size: folioSize, rotate: 0 }],
+      [.74, { x: W * .87, y: b.parts.number.y, w: W * .13, size: folioSize, rotate: 0 }],
+      [.87, { x: b.parts.number.x, y: b.parts.number.y, w: b.parts.number.w, size: folioSize, rotate: 0 }]
     ]);
     route('action', [land('action', .34)]);
     route('mark', [
@@ -318,9 +397,13 @@ export function routeHandoff(d: Design, a: Design, b: Design, progress: number, 
       land('meta', .73),
       land('meta', .78)
     ]);
+    // The narrow metadata lane has three real lines at 390px. Its companion
+    // follows the whole caption, rather than a height-relative one-line gap.
+    const captionGap = 3 * Math.max(a.parts.meta.size, b.parts.meta.size)
+      * Math.max(a.parts.meta.leading, b.parts.meta.leading) + 8;
     route('place', [
-      keep('place', .43), [.51, { ...xy(.63, .067, .24) }],
-      [.65, { ...xy(.63, .925, .24) }],
+      keep('place', .43), [.51, { x: W * .63, y: H * .012 + captionGap, w: W * .24 }],
+      [.65, { x: W * .63, y: H * .87 + captionGap, w: W * .24 }],
       land('place', .73),
       land('place', .78)
     ]);
@@ -404,6 +487,47 @@ export function routeHandoff(d: Design, a: Design, b: Design, progress: number, 
     ]);
     route('action', [keep('action', .64), land('action', .92)]);
     footerMark(.17, .84);
+    return d;
+  }
+
+  if (!mobile && next === 8) {
+    // The place label travels beside the raster, rather than across it.
+    // Actual Grid measurements remain the destination for every width.
+    // Establish the measured destination's title hierarchy before the serif
+    // subtitle arrives. The late family exchange must not regrow a larger
+    // proof heading over copy that has already reached its native position.
+    const proofTop = Math.min(H * .13, b.parts.title.y);
+    const proofSize = Math.min(W * .20, H * .32, b.parts.title.size,
+      (b.parts.subtitle.y - proofTop - Math.max(12, H * .016)) / .82);
+    compactTitle(.16, .82, Math.max(1, proofSize), .018, proofTop / H);
+    route('image', [
+      [.18, { ...xy(.94, .15, .06, .67) }],
+      [.89, { x: W * .94, y: b.parts.image.y, w: W * .06, h: b.parts.image.h }],
+      land('image', .99)
+    ]);
+    route('subtitle', [
+      [.19, { x: a.parts.subtitle.x, y: a.parts.subtitle.y, w: W * .49, size: Math.min(a.parts.subtitle.size, b.parts.subtitle.size) }],
+      [.60, { x: b.parts.subtitle.x, y: b.parts.subtitle.y, w: Math.min(W * .49, b.parts.subtitle.w), size: b.parts.subtitle.size }],
+      land('subtitle', .88)
+    ]);
+    route('body', [keep('body', .24), land('body', .73)]);
+    route('number', [
+      [.18, { x: W * .018, y: a.parts.number.y, size: 28 }],
+      [.62, { x: W * .018, y: b.parts.number.y, size: 28 }],
+      land('number', .79)
+    ]);
+    route('place', [
+      keep('place', .18), [.30, { x: W * .67, y: a.parts.place.y, w: W * .23 }],
+      [.65, { x: W * .67, y: b.parts.place.y, w: W * .23 }],
+      land('place', .82)
+    ]);
+    route('meta', [land('meta', .34)]);
+    route('action', [keep('action', .38), land('action', .79)]);
+    route('mark', [
+      [.18, { x: W * .91, y: a.parts.mark.y, w: 6, h: 6 }],
+      [.68, { x: W * .91, y: b.parts.mark.y, w: 6, h: 6 }],
+      land('mark', .84)
+    ]);
     return d;
   }
 

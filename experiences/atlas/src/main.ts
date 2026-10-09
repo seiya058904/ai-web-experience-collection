@@ -6,13 +6,14 @@ import {
   Geography,
   RasterMeta,
   clamp,
-  mix,
   readGrid,
   readJSON,
   registeredDetail,
   smooth,
 } from "./geo";
-import { CHAPTERS, evaluateStory, type StoryState } from "./story";
+import { CHAPTERS, CHAPTER_THRESHOLDS, evaluateStory, type StoryState } from "./story";
+import { createRouteGuide, type RouteGuide } from "./camera";
+import { placeCoordinateAnnotation } from "./annotation";
 import { TerrainLayer } from "./world/terrain";
 import { MapLayer } from "./world/map";
 import type { CityLayer } from "./world/city";
@@ -31,6 +32,11 @@ const opening = $("opening"),
   italic = $("scene-italic"),
   note = $("scene-note"),
   status = $("load-status");
+const coordinate = anchor.querySelector<HTMLElement>(".anchor-coordinate")!;
+const coordinateLeader = anchor.querySelector<HTMLElement>(".anchor-leader")!;
+const masthead = root.querySelector<HTMLElement>(".masthead")!;
+let annotationMetricKey = "", coordinateWidth = 110, coordinateHeight = 39, headerBottom = 72;
+let annotationTextRects: { left: number; top: number; right: number; bottom: number }[] = [];
 const prefersQuiet = matchMedia("(prefers-reduced-motion: reduce)");
 let quiet = prefersQuiet.matches;
 try {
@@ -64,10 +70,10 @@ let terrain: TerrainLayer | undefined,
   city: CityLayer | undefined,
   globe: GlobeLayer | undefined,
   geo: Geography;
-let width = innerWidth,
-  height = innerHeight,
-  mobile = width <= 760;
-const compactData = mobile;
+function portraitComposition(w: number, h: number) { return w <= 760 || (w <= 1100 && h > w); }
+let width = innerWidth, height = innerHeight, mobile = portraitComposition(width, height);
+// Viewport composition does not change the original data-precision selection.
+const compactData = width <= 760;
 let raf = 0,
   time = 0,
   lastTime = 0,
@@ -89,16 +95,23 @@ const target = new THREE.Vector3(),
   projected = new THREE.Vector3(),
   anchorWorld = new THREE.Vector3();
 const currentPose = { x: 0, y: 0, z: 0, span: 42, pitch: 0, yaw: 0 };
-const cameraRoute: THREE.Vector3[] = [],
-  cameraRouteDistances: number[] = [];
-const routeCameraPoint = new THREE.Vector3();
+let cameraGuide: RouteGuide | undefined;
 
 function getProgress() {
   return clamp(
     scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight),
   );
 }
+function settleScrollInput() {
+  const stopped = lenis.isStopped;
+  if (stopped) lenis.start();
+  lenis.stop();
+  if (!stopped) lenis.start();
+  lastTime = 0;
+  wheelDirection = 0;
+}
 function jump(p: number, smoothScroll = false) {
+  settleScrollInput();
   lenis.resize();
   lenis.scrollTo(
     clamp(p) * Math.max(1, document.documentElement.scrollHeight - innerHeight),
@@ -120,7 +133,7 @@ function showFailure(message: string) {
   $("failure").hidden = false;
   $("failure-message").textContent = message;
   root.style.setProperty("--ink", "#29312d");
-  root.style.setProperty("--muted", "#66716a");
+  root.style.setProperty("--muted", "#5d6861");
   status.textContent = "";
 }
 
@@ -138,6 +151,8 @@ function setDialogView(view: "index" | "credits") {
     "aria-label",
     view === "credits" ? "Sources and field notes" : "Choose an observation",
   );
+  dialog.setAttribute("aria-labelledby", view === "credits" ? "credits-title" : "dialog-title");
+  $("close-dialog").setAttribute("aria-label", view === "credits" ? "Close sources" : "Close index");
   dialog.scrollTop = 0;
 }
 function openDialog(view: "index" | "credits", opener: HTMLElement) {
@@ -148,6 +163,9 @@ function openDialog(view: "index" | "credits", opener: HTMLElement) {
     dialog.showModal();
     document.body.style.overflow = "hidden";
   }
+  // A closed dialog has no layout box: its old scroll offset can be restored
+  // by showModal(). Reset after it becomes visible, before the next paint.
+  dialog.scrollTop = 0;
 }
 function closeDialog() {
   dialog.close();
@@ -184,7 +202,7 @@ $("retry-load").addEventListener("click", () => location.reload());
 function setQuiet(value: boolean) {
   quiet = value;
   lenis.options.smoothWheel = !quiet;
-  lenis.scrollTo(scrollY, { immediate: true, force: true });
+  settleScrollInput();
   renderDirty = true;
   $("motion-toggle").setAttribute("aria-pressed", String(quiet));
   $("motion-label").textContent = quiet ? "QUIET MOTION ON" : "QUIET MOTION";
@@ -220,6 +238,16 @@ $("chapter-list").addEventListener("click", (e) => {
   history.replaceState(null, "", "#" + chapter.id);
   jump(chapter.position, true);
 });
+function restoreLocation() {
+  if (disposed) return;
+  const chapter = location.hash ? CHAPTERS.find(c => "#" + c.id === location.hash) : CHAPTERS[0];
+  // Clear a queued chapter jump synchronously. Native popstate + hashchange
+  // are idempotent because both assign the same absolute progress.
+  if (chapter) jump(chapter.position); else settleScrollInput();
+  renderDirty = true;
+}
+addEventListener("popstate", restoreLocation);
+addEventListener("hashchange", restoreLocation);
 addEventListener("keydown", (e) => {
   if (dialog.open || e.ctrlKey || e.metaKey || e.altKey) return;
   if ((e.target as Element)?.matches("input,textarea,select,button,a")) return;
@@ -309,27 +337,7 @@ async function prepareCameraRoute() {
     ),
   ]);
   const detail = registeredDetail(geo, new Geography(meta, heights, size));
-  for (const [lon, lat] of route.features[0].geometry.coordinates) {
-    cameraRoute.push(geo.project(lon, lat, detail.height(lon, lat)));
-  }
-  cameraRouteDistances.push(0);
-  for (let i = 1; i < cameraRoute.length; i++)
-    cameraRouteDistances.push(
-      cameraRouteDistances[i - 1] +
-        cameraRoute[i].distanceTo(cameraRoute[i - 1]),
-    );
-}
-function cameraRouteAt(t: number) {
-  const d = clamp(t) * cameraRouteDistances.at(-1)!;
-  let i = 1;
-  while (i < cameraRoute.length - 1 && cameraRouteDistances[i] < d) i++;
-  return routeCameraPoint
-    .copy(cameraRoute[i - 1])
-    .lerp(
-      cameraRoute[i],
-      (d - cameraRouteDistances[i - 1]) /
-        Math.max(1e-9, cameraRouteDistances[i] - cameraRouteDistances[i - 1]),
-    );
+  cameraGuide = createRouteGuide(route.features[0].geometry.coordinates.map(([lon,lat]) => geo.project(lon,lat,detail.height(lon,lat))));
 }
 async function prepareContourLabels() {
   const data = await readJSON<{
@@ -376,62 +384,38 @@ function load(name: string, task: () => Promise<void>) {
     .finally(() => pending.delete(name));
   pending.set(name, promise);
 }
-function requestAssets(p: number) {
+function requestAssets(s: StoryState) {
+  const p = s.p;
   if (!terrain) return;
-  if (p > 0.3 && p < 0.967)
-    load("imagery", () => terrain!.loadImagery(dataBase, compactData));
-  if (p > 0.48 && p < 0.967)
-    load("detail", () => terrain!.loadDetail(dataBase, compactData));
-  if (p > 0.51 && p < 0.967)
-    load("city", async () => {
-      const module = await import("./world/city");
-      const instance = new module.CityLayer();
-      await instance.load(dataBase, geo, compactData);
-      if (disposed) {
-        instance.dispose();
-        return;
-      }
-      city = instance;
-      scene.add(city.group);
-    });
-  if (p > 0.81)
-    load("globe", async () => {
-      const module = await import("./world/globe");
-      const instance = new module.GlobeLayer();
-      await instance.load(base + "atlas/");
-      if (disposed) {
-        instance.dispose();
-        return;
-      }
-      globe = instance;
-      scene.add(globe.group);
-    });
-  if (
-    p > 0.977 &&
-    loaded.has("globe") &&
-    ["imagery", "detail", "city"].some((n) => loaded.has(n))
-  ) {
-    if (city) {
-      scene.remove(city.group);
-      city.dispose();
-      city = undefined;
-    }
-    terrain.releaseFineAssets();
-    for (const name of ["imagery", "detail", "city"]) loaded.delete(name);
-    renderDirty = true;
-  }
+  if (p > .3 && p < .967) load("imagery", () => terrain!.loadImagery(dataBase, compactData));
+  if (p > .48 && p < .967) load("detail", () => terrain!.loadDetail(dataBase, compactData));
+  if (p > .51 && p < .967) load("city", async () => {
+    const module = await import("./world/city");
+    const instance = new module.CityLayer();
+    await instance.load(dataBase, geo, compactData);
+    if (disposed) { instance.dispose(); return; }
+    city = instance; scene.add(city.group);
+  });
+  if (p > .70) load("globe", async () => {
+    const module = await import("./world/globe");
+    const instance = new module.GlobeLayer();
+    await instance.load(base);
+    if (disposed) { instance.dispose(); return; }
+    globe = instance; scene.add(globe.group);
+  });
+  // Keep prepared local layers until actual disposal; final-to-city reversal
+  // must not destroy and recreate already visible geometry or image textures.
   const required = [
-    ...(p > 0.53 && p < 0.94 ? ["imagery"] : []),
-    ...(p > 0.62 && p < 0.91 ? ["detail"] : []),
-    ...(p > 0.66 && p < 0.91 ? ["city"] : []),
-    ...(p > 0.93 ? ["globe"] : []),
+    ...(p > .744 && p < .887 ? ["route-guide"] : []),
+    ...(p > .53 && s.imageVisibility > .01 ? ["imagery"] : []),
+    ...(p > .62 && s.terrainVisibility > .01 ? ["detail"] : []),
+    ...(p > .66 && s.cityVisibility > .01 ? ["city"] : []),
+    ...(s.globe > .01 ? ["globe"] : []),
   ];
-  const failure = required.find((n) => failed.has(n));
-  if (failure) {
-    status.textContent = failed.get(failure)! + " Reload to retry.";
-  } else if (required.some((n) => !loaded.has(n))) {
-    status.textContent = "Preparing this scale…";
-  } else status.textContent = "";
+  const names: Record<string,string> = { "route-guide":"Route guide",imagery:"Satellite image",detail:"Detailed terrain",city:"City layer",globe:"Globe layer" };
+  const failure = required.find(n => failed.has(n));
+  const waiting = required.find(n => !loaded.has(n));
+  status.textContent = failure ? `${names[failure]} unavailable. Loaded layers remain visible. Reload to retry.` : waiting ? `Preparing ${names[waiting].toLowerCase()}…` : "";
 }
 
 function configureRenderer() {
@@ -459,7 +443,7 @@ function configureRenderer() {
 function resizeRenderer() {
   width = innerWidth;
   height = innerHeight;
-  mobile = width <= 760;
+  mobile = portraitComposition(width, height);
   renderDirty = true;
   const dpr = Math.min(
     devicePixelRatio,
@@ -475,22 +459,7 @@ function resizeRenderer() {
 }
 
 function updateCamera(s: StoryState) {
-  const pose = { ...s.pose };
-  if (cameraRoute.length > 1 && s.p > 0.737 && s.p < 0.877) {
-    const follow = smooth(0.737, 0.764, s.p) * (1 - smooth(0.85, 0.877, s.p));
-    const routePoint = cameraRouteAt(
-      mix(0.24, 0.72, smooth(0.749, 0.825, s.p)),
-    );
-    if (routePoint) {
-      pose.x = mix(
-        pose.x,
-        routePoint.x - (mobile ? 0.04 : 0.19) * Math.min(1, pose.span / 0.83),
-        follow,
-      );
-      pose.z = mix(pose.z, routePoint.z, follow);
-      pose.y = mix(pose.y, routePoint.y, follow);
-    }
-  }
+  const pose = s.pose;
   Object.assign(currentPose, pose);
   target.set(pose.x, pose.y, pose.z);
   const distance =
@@ -520,9 +489,8 @@ const plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0),
   pa = new THREE.Vector3(),
   pb = new THREE.Vector3();
 function updateScale(s: StoryState) {
-  const intro = 1 - smooth(0.035, 0.075, s.p);
-  $("measurement").style.opacity = String(1 - intro);
-  $("scroll-cue").style.opacity = String(intro);
+  $("measurement").style.opacity = String(smooth(.049,.075,s.p));
+  $("scroll-cue").style.opacity = String(1-smooth(.03,.046,s.p));
   if (s.p > 0.96) {
     $("scale").style.display = "none";
     $("altitude").textContent = "EARTH / 6,371 KM";
@@ -578,7 +546,10 @@ function updateLabels(s: StoryState) {
     const dx = projected.x * direction,
       dy = -projected.y * direction;
     ax = clamp(width * 0.5 + dx * width * 0.5, 24, width - 24);
-    ay = clamp(height * 0.5 + dy * height * 0.5, height * 0.47, height - 195);
+    // Keep the off-frame direction indicator at the viewport edge. The label
+    // has its own reading-space constraints below; the point need not jump
+    // into the lower half of the map to keep its text away from the title.
+    ay = clamp(height * .5 + dy * height * .5, 90, height - 105);
     anchor.style.setProperty("--bearing", Math.atan2(dy, dx) + "rad");
   }
   anchor.style.transform = `translate3d(${ax}px,${ay}px,0)`;
@@ -587,9 +558,57 @@ function updateLabels(s: StoryState) {
   anchor.style.opacity = "1";
   anchor.classList.toggle("outside", outside);
   anchor.classList.toggle("compact", s.p > 0.07);
-  const coordinate = anchor.querySelector<HTMLElement>(".anchor-coordinate")!;
-  coordinate.style.left = ax > width - 145 ? "-145px" : "22px";
-  if (mobile) coordinate.style.left = ax > width - 116 ? "-116px" : "16px";
+  // Position the label from its rendered type metrics. The geographic marker
+  // stays fixed; readable labels must not depend on an old 8 px width estimate.
+  const metricKey = `${width}/${height}/${document.fonts.status}/${s.chapter}/${outside ? 1 : 0}`;
+  if (metricKey !== annotationMetricKey) {
+    coordinateWidth = coordinate.offsetWidth;
+    coordinateHeight = coordinate.offsetHeight;
+    headerBottom = masthead.getBoundingClientRect().bottom;
+    annotationTextRects = [];
+    // Use actual glyph-line boxes, not the full-width copy container. This
+    // leaves the empty space beside a short note available to the annotation.
+    for (const element of [title, italic, note]) {
+      const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+      let node: Node | null;
+      while ((node = walker.nextNode())) {
+        if (!node.textContent?.trim()) continue;
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        for (const rect of range.getClientRects()) {
+          if (rect.width > 0 && rect.height > 0) annotationTextRects.push({
+            left: rect.left, top: rect.top, right: rect.right, bottom: rect.bottom,
+          });
+        }
+      }
+    }
+    annotationMetricKey = metricKey;
+  }
+  const gap = mobile ? 16 : 22;
+  let coordinateTop = width <= 760 ? 5 : -5;
+  if (width > 760 && height <= 650 && !outside && s.p > .07) {
+    coordinateTop = Math.max(headerBottom + 12 - ay, -coordinateHeight - 18);
+  }
+  const placement = placeCoordinateAnnotation({
+    point: { x: ax, y: ay }, size: { width: coordinateWidth, height: coordinateHeight },
+    viewport: { width, height }, gap, preferredY: ay + coordinateTop,
+    headerBottom, footerInset: width <= 760 ? 124 : 95,
+    textRects: s.chapter > 0 ? annotationTextRects : [],
+  });
+  const localLeft = placement.left - ax, localTop = placement.top - ay;
+  coordinate.style.left = `${localLeft}px`;
+  coordinate.style.top = `${localTop}px`;
+  // A displaced card keeps a quiet visual connection to its unchanged point.
+  const endX = clamp(0, localLeft, localLeft + coordinateWidth);
+  const endY = clamp(0, localTop, localTop + coordinateHeight);
+  const leaderLength = Math.hypot(endX, endY);
+  const hasLeader = s.p > .07 && leaderLength > gap + 14;
+  const ux = leaderLength ? endX / leaderLength : 0, uy = leaderLength ? endY / leaderLength : 0;
+  coordinateLeader.style.left = `${ux * 12}px`;
+  coordinateLeader.style.top = `${uy * 12}px`;
+  coordinateLeader.style.width = `${Math.max(0, leaderLength - 14)}px`;
+  coordinateLeader.style.transform = `rotate(${Math.atan2(endY, endX)}rad)`;
+  coordinateLeader.style.opacity = hasLeader ? ".36" : "0";
   const placed: [number, number][] = [];
   for (const label of labels) {
     const opacity =
@@ -624,6 +643,11 @@ function updateLabels(s: StoryState) {
     label.element.style.top = y + "px";
   }
 }
+function copyExposure(s: StoryState) {
+  if (!s.chapter) return 0;
+  const start = CHAPTER_THRESHOLDS[s.chapter], end = CHAPTER_THRESHOLDS[s.chapter+1] ?? 1.02;
+  return smooth(start,start+.008,s.p)*(1-smooth(end-.008,end,s.p));
+}
 function updateChrome(s: StoryState) {
   const intro = 1 - smooth(0.032, 0.073, s.p);
   opening.style.opacity = String(intro);
@@ -649,9 +673,12 @@ function updateChrome(s: StoryState) {
       });
   }
   sceneCopy.classList.toggle("final", s.chapter === 10);
-  sceneCopy.style.opacity = String(s.chapter === 0 ? 0 : 1 - intro);
-  $("closing-action").hidden = s.p < 0.977;
-  const dark = Math.max(s.night, smooth(0.915, 0.952, s.p));
+  sceneCopy.style.opacity = String(copyExposure(s)*(1-intro));
+  const closing = smooth(.977,.986,s.p);
+  $("closing-action").hidden = closing === 0;
+  $("closing-action").style.opacity = String(closing);
+  $("closing-action").inert = closing < .5;
+  const dark = s.backdrop;
   const background = reusableColour.copy(paper).lerp(nightPaper, dark);
   root.style.setProperty("--paper", "#" + background.getHexString());
   const luminance =
@@ -665,10 +692,10 @@ function updateChrome(s: StoryState) {
           ? "#080e0b"
           : "#ffffff";
   root.style.setProperty("--ink", ink);
-  root.style.setProperty("--muted", dark < 0.25 ? "#66716a" : ink);
+  root.style.setProperty("--muted", dark < 0.25 ? "#5d6861" : ink);
   root.classList.toggle(
     "photographic",
-    s.drape > 0.45 && s.city < 0.55 && s.p < 0.91,
+    loaded.has("imagery") && s.drape > 0.45 && s.city < 0.55 && s.p < 0.91,
   );
   $("reading-field").style.opacity = String(smooth(0.27, 0.39, s.p) * 0.78);
   $("progress-line").style.transform = `scaleX(${s.p})`;
@@ -691,7 +718,7 @@ function updateChrome(s: StoryState) {
               : s.p > 0.118 && s.p < 0.235
                 ? "GSI ELEVATION · 100 M INTERVAL"
                 : "";
-  $("layer-note").textContent = layerNote;
+  $("layer-note").textContent = s.p > .511 && s.p < .583 && failed.has("imagery") ? "ELEVATION VIEW / SATELLITE IMAGE UNAVAILABLE" : layerNote;
   $("layer-note").style.opacity = layerNote ? "1" : "0";
   updateScale(s);
   updateLabels(s);
@@ -699,25 +726,28 @@ function updateChrome(s: StoryState) {
 
 function tick(now: number) {
   if (disposed || document.hidden) return;
-  const dt = Math.min(0.05, (now - (lastTime || now)) / 1000);
+  const elapsed = Math.max(0, now - (lastTime || now));
+  const dt = Math.min(.05, elapsed / 1000);
   lastTime = now;
-  scrollClock += dt * 1000;
+  scrollClock += elapsed;
   lenis.raf(scrollClock);
   if (!ready) { raf = requestAnimationFrame(tick); return; }
   if (!quiet && !dialog.open) time += dt;
   const p = getProgress();
   lastP = p;
-  const s = evaluateStory(p, mobile);
-  requestAssets(p);
+  const s = evaluateStory(p, mobile, cameraGuide);
+  requestAssets(s);
   updateCamera(s);
   terrain!.update(s, time);
   map?.update(s);
   city?.update(s, time);
   globe?.update({ visibility: s.globe, night: 0, time: quiet ? 0 : time });
-  const dark = Math.max(s.night, smooth(0.92, 0.973, p));
+  const dark = s.backdrop;
   renderer!.setClearColor(reusableColour.copy(paper).lerp(nightPaper, dark));
   updateChrome(s);
-  if (!quiet || renderDirty || Math.abs(p - lastRenderedProgress) > 0.000001) {
+  // The opaque dialog already pauses living time. Render its hidden scene only
+  // when loading, resizing or actual scroll makes a new frame necessary.
+  if ((!quiet && !dialog.open) || renderDirty || Math.abs(p - lastRenderedProgress) > 0.000001) {
     renderer!.render(scene, camera);
     lastRenderedProgress = p;
     renderDirty = false;
@@ -754,13 +784,13 @@ addEventListener(
 document.addEventListener("visibilitychange", () => {
   if (document.hidden) {
     cancelAnimationFrame(raf);
-    lenis.scrollTo(scrollY, { immediate: true, force: true });
+    settleScrollInput();
     remember();
   } else resume();
 });
 addEventListener("pageshow", resume);
 addEventListener("pagehide", (event) => {
-  lenis.scrollTo(scrollY, { immediate: true, force: true });
+  settleScrollInput();
   cancelAnimationFrame(raf);
   remember();
 });
@@ -797,7 +827,13 @@ async function init() {
     await Promise.all([
       terrain.loadContours(dataBase, compactData),
       map.load(dataBase, compactData),
-      prepareCameraRoute(),
+      prepareCameraRoute().then(() => loaded.add("route-guide")).catch(error => {
+        // An unavailable local road/detail file must not suppress the valid
+        // regional map. Resolve this before ready, so a late guide never snaps
+        // the active camera onto a different path.
+        failed.set("route-guide", safeError(error));
+        console.warn("ATLAS route guide unavailable:", safeError(error));
+      }),
       prepareContourLabels(),
     ]);
     if (disposed) return;

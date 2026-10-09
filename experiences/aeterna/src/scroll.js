@@ -11,6 +11,14 @@ export const smooth = (start, end, x) => {
   return p * p * (3 - 2 * p);
 };
 
+/** Cancel pending input without releasing a modal's stopped state. */
+export function settleScrollInput(lenis) {
+  const stopped = lenis.isStopped;
+  if (stopped) lenis.start();
+  lenis.stop();
+  if (!stopped) lenis.start();
+}
+
 /** Document position is the only narrative timeline; Lenis owns input easing. */
 export function createScrollTimeline(lenis) {
   const stops = [...document.querySelectorAll('.scroll-stop')];
@@ -43,6 +51,7 @@ export function createScrollTimeline(lenis) {
     const target = Math.round(clamp(index, 0, stops.length - 1));
     const start = positions[target] || 0;
     const end = target === stops.length - 1 ? maxScroll : positions[target + 1];
+    if (behavior !== 'smooth') settleScrollInput(lenis);
     lenis.scrollTo(start + Math.max(0, end - start) * clamp(progress), { immediate: behavior !== 'smooth', force: true });
   }
   return { measure, snapshot, goTo };

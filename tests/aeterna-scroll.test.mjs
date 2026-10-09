@@ -19,6 +19,9 @@ function fixture(run) {
   const lenis = {
     resize() {},
     scrollTo(top) { window.scrollTo({ top }); },
+    isStopped: false,
+    stop() {},
+    start() {},
   };
   try { run(createScrollTimeline(lenis), stops); }
   finally {

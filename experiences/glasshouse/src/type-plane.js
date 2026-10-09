@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { smooth } from './journey.js';
+import { isPortraitComposition } from './framing.js';
 
 /** The opening headline is genuinely behind the glass in the optical pass. */
 export function createTypePlane(element) {
@@ -10,7 +11,10 @@ export function createTypePlane(element) {
   texture.anisotropy = 4;
   const reveal = { value: 1 };
   const start = { value: .82 };
-  const material = new THREE.MeshBasicMaterial({ map: texture, alphaTest: .001, depthWrite: false, transparent: true });
+  // This is the screen-anchored part of a DOM headline. Composite it into the
+  // base image after the floor; the later optical passes still put glass in
+  // front. World-floor depth must not erase glyphs on a short viewport.
+  const material = new THREE.MeshBasicMaterial({ map: texture, alphaTest: .001, depthWrite: false, depthTest: false, transparent: true });
   material.onBeforeCompile = shader => {
     shader.uniforms.uTypeReveal = reveal;
     shader.uniforms.uTypeStart = start;
@@ -18,6 +22,7 @@ export function createTypePlane(element) {
       .replace('#include <alphatest_fragment>', '#include <alphatest_fragment>\nif (vMapUv.x > uTypeReveal || vMapUv.x < uTypeStart) discard;');
   };
   const mesh = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), material);
+  mesh.renderOrder = 30;
   mesh.userData.texture = texture;
   const forward = new THREE.Vector3(), right = new THREE.Vector3(), up = new THREE.Vector3();
   let box = { left: 0, top: 0, width: 1, height: 1 };
@@ -62,7 +67,7 @@ export function createTypePlane(element) {
   function update(camera, view, width, height) {
     const local = view.progress * 6;
     reveal.value = view.from === 0 ? 1 - smooth(.71, .98, local) : 0;
-    mesh.visible = reveal.value > .001 && width > 760;
+    mesh.visible = reveal.value > .001 && !isPortraitComposition(width, height);
     if (!mesh.visible) return;
     const distance = 20;
     const perPixel = 2 * distance * Math.tan(THREE.MathUtils.degToRad(camera.fov * .5)) / height;

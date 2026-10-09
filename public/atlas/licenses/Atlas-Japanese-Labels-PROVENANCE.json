@@ -1,0 +1,58 @@
+{
+  "repository": "https://github.com/google/fonts",
+  "commit": "66a36c8c94b1a5d992ee4e7f392fccfe4945767c",
+  "commit_api": "https://api.github.com/repos/google/fonts/commits?path=ofl/notosansjp&per_page=1",
+  "files": [
+    {
+      "name": "NotoSansJP[wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/66a36c8c94b1a5d992ee4e7f392fccfe4945767c/ofl/notosansjp/NotoSansJP%5Bwght%5D.ttf",
+      "bytes": 9589900,
+      "sha256": "c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f"
+    },
+    {
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/66a36c8c94b1a5d992ee4e7f392fccfe4945767c/ofl/notosansjp/OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "name": "METADATA.pb",
+      "url": "https://raw.githubusercontent.com/google/fonts/66a36c8c94b1a5d992ee4e7f392fccfe4945767c/ofl/notosansjp/METADATA.pb",
+      "bytes": 983,
+      "sha256": "5aa23f70fba3eb1afa6d92cb89de3b5c4690018caddbdded678b5e595e56825b"
+    }
+  ],
+  "derivative_family": "Atlas Japanese Labels",
+  "derivative_full_name": "Atlas Japanese Labels Regular",
+  "reserved_font_name": "Source",
+  "rename_note": "Independent derivative family avoids the OFL reserved name; original copyright and license remain embedded and alongside the subset.",
+  "text": "国土地理院ベクトルタイル提供実験",
+  "unique_unicode_count": 15,
+  "unicode_range": "U+30A4,U+30AF,U+30BF,U+30C8,U+30D9,U+30EB,U+4F9B,U+56FD,U+571F,U+5730,U+5B9F,U+63D0,U+7406,U+9662,U+9A13",
+  "weight": 400,
+  "variable": false,
+  "fontTools_version": "4.61.1",
+  "Brotli_version": "1.1.0",
+  "python_version": "3.12.14",
+  "generator_sha256": "b4fc0cd6b95267f8189ffa78dd43a59a824fe40729d085279d5aa407db14e281",
+  "output": {
+    "path": "public/fonts/atlas-japanese-labels-400.woff2",
+    "bytes": 4096,
+    "sha256": "8ac7795304daa27e71d9be1daee1439a499e229478e12038d106099170f86cc2"
+  },
+  "license": {
+    "path": "public/licenses/Atlas-Japanese-Labels-OFL-1.1.txt",
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  "derivation": "Subset original Japanese cmap with layout closure and hinting retained; instantiate wght=400; rename derivative; retain original timestamp; WOFF2 encode.",
+  "verification": {
+    "cmap_exactly_requested_characters": true,
+    "latin_codepoints": 0,
+    "source_default_japanese_outline_commands_equal": true,
+    "maximum_weight400_coordinate_rounding_units": 0.499267578125,
+    "woff2_reopened": true,
+    "ui_browser_verified": false
+  },
+  "source_packaging": "Original 9.59MB TTF is research-only and excluded from production source ZIP; frozen download URL/hash and full generation code are retained here.",
+  "rebuild_record": "Atlas-Japanese-Labels-GENERATION.md"
+}

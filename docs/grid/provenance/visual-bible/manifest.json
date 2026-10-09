@@ -1,0 +1,259 @@
+{
+  "title": "GRID — The Architecture of Visual Order: Visual Bible",
+  "version": 1,
+  "generatedAtUTC": "2026-10-07 08:57:48 UTC",
+  "generationTool": "image_gen.imagegen (built-in)",
+  "model": "Not exposed by the built-in tool",
+  "purpose": "Pre-implementation visual direction and composition research",
+  "runtimeUse": false,
+  "authoritativeSceneIndex": "The filenames and this manifest identify the scene; small AI-rendered study labels are not implementation specifications.",
+  "intendedPrimaryFrame": {
+    "width": 1440,
+    "height": 900
+  },
+  "intendedMobileStudy": {
+    "width": 390,
+    "height": 844
+  },
+  "requestedStudyTypes": [
+    "primary poster-like frame",
+    "editorial spread",
+    "mobile composition",
+    "typography scale",
+    "grid density",
+    "color study",
+    "transition keyframe"
+  ],
+  "contentSet": {
+    "title": "GRID",
+    "subtitle": "The architecture of visual order.",
+    "number": "08",
+    "paragraph": "One set of information. An open field of possibilities. Change the rules. See it again.",
+    "metadata": "VISUAL STUDY / SERIES 001",
+    "locationTime": "2026 / EVERYWHERE",
+    "action": "LOOK AGAIN ↗",
+    "mark": "Circle and cross registration mark",
+    "photograph": "One monochrome staircase photograph; see project photography attribution."
+  },
+  "provenanceNotes": [
+    "All included PNG boards were generated with the built-in image tool in this task.",
+    "02 INTERNATIONAL is the initial composition exploration and contains an AI-created staircase placeholder. It is not an authoritative photograph or a runtime asset.",
+    "00, 01, and 03 were developed from the 02 board and the actual project photograph. Remaining boards used the actual project photograph as a supplied visual reference.",
+    "AI-generated board lettering and proportions are exploratory. Runtime typography, UI, labels, spacing, grids, and responsive relationships must be rebuilt with DOM/CSS/SVG/Canvas and locally licensed fonts.",
+    "No failed or superseded image variants are included in this directory.",
+    "Only the image-generation outputs selected for the final Visual Bible are included. No board is intended to be imported by the website."
+  ],
+  "assets": [
+    {
+      "id": "00",
+      "name": "ZERO",
+      "file": "00-zero.png",
+      "prompt": "prompts/00-zero.txt",
+      "generatorArtifact": "exec-f282c10d-4c0f-4956-8d5e-68d5f79590f7.png",
+      "referenceAssets": [
+        "02-international.png",
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "notes": "One focused correction to the outer board heading; no generated studies from the pre-correction state are packaged.",
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1644998,
+      "sha256": "dbeb19f8fa7fd831930792da47b0128cdeecfaba796fd42259e1125e0d981c05",
+      "promptSha256": "5c0e214dd5e254f861fbc111a1875ec022a95233ecd48a13abe053059d435f87"
+    },
+    {
+      "id": "01",
+      "name": "SYSTEM",
+      "file": "01-system.png",
+      "prompt": "prompts/01-system.txt",
+      "generatorArtifact": "exec-a2934eda-53b5-4157-9c25-e211d60423be.png",
+      "referenceAssets": [
+        "02-international.png",
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "notes": "One focused correction to the outer board heading; no generated studies from the pre-correction state are packaged.",
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1846763,
+      "sha256": "00934ba5ca96ef0117d2b28943650bb22a5d086d566b95754d4037d82a54ad64",
+      "promptSha256": "29827e6280ff7d839b0ddda3f46e3dc3cddd5b809a84858f0874c4577c8baad5"
+    },
+    {
+      "id": "02",
+      "name": "INTERNATIONAL",
+      "file": "02-international.png",
+      "prompt": "prompts/02-international.txt",
+      "generatorArtifact": "exec-efc53ef3-b706-4c39-98bc-deadb3aa7851.png",
+      "referenceAssets": [],
+      "notes": "Initial standalone generation; generated staircase placeholder, not the actual project photography.",
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1721787,
+      "sha256": "aa951c9597165332508311c2d8d7cb528211961c12318baefb5c8328a1ca0f51",
+      "promptSha256": "a6aa3295a5f1f14d044cb340e9a6d410ffceb32ee64afa01f77dd322f365866c"
+    },
+    {
+      "id": "03",
+      "name": "BASEL / TENSION",
+      "file": "03-basel-tension.png",
+      "prompt": "prompts/03-basel-tension.txt",
+      "generatorArtifact": "exec-3deeb4f1-0013-4ee6-bfe3-954938d3613f.png",
+      "referenceAssets": [
+        "02-international.png",
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "notes": "One focused correction to the outer board heading; no generated studies from the pre-correction state are packaged.",
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1918047,
+      "sha256": "e0c5df75870b752c5737517d358f835125799bd12c0caa876871256af18d6436",
+      "promptSha256": "480ea67ce0ac043e0c21f6ad57c4fe668bdeb265b31d3d9602ae4c3a7b222eab"
+    },
+    {
+      "id": "04",
+      "name": "TYPE AS IMAGE",
+      "file": "04-type-as-image.png",
+      "prompt": "prompts/04-type-as-image.txt",
+      "generatorArtifact": "exec-430c43b7-9461-4fcd-971a-d658cc393b76.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1683928,
+      "sha256": "da36965b6829f790a82c48dd39341d4ca210f50cd7e9c1acd4ecc2848bcf4ff5",
+      "promptSha256": "43482f961decee01c6460e042963b88a1bbba36d9d1b910cc843edf59046045d"
+    },
+    {
+      "id": "05",
+      "name": "EDITORIAL",
+      "file": "05-editorial.png",
+      "prompt": "prompts/05-editorial.txt",
+      "generatorArtifact": "exec-bb77ebad-2e6e-4ab3-9218-7a541cea07e7.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1908710,
+      "sha256": "a6d281c08e1cb0e2b9c3ed1bb821283a7c8863811b4947e72905acd56e4ac2f3",
+      "promptSha256": "025002eeb0b07c43a172dcd5dbf59636517bb6f95761bbb6482c7e98a87c73b8"
+    },
+    {
+      "id": "06",
+      "name": "RAW",
+      "file": "06-raw.png",
+      "prompt": "prompts/06-raw.txt",
+      "generatorArtifact": "exec-c91e3c54-81d8-4ff9-910e-24b55ce99f00.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1841604,
+      "sha256": "e202b571d33c57326a94f6042b19cafcfdb25db8933ca24120716dc2bb5c0cb9",
+      "promptSha256": "f8034d6cf3ab659abdd2af47189903bad85e369d2f52433a66471202d017d69e"
+    },
+    {
+      "id": "07",
+      "name": "ELECTRONIC",
+      "file": "07-electronic.png",
+      "prompt": "prompts/07-electronic.txt",
+      "generatorArtifact": "exec-609b1c4c-1fa5-4605-be22-eb9e5b94c8f6.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "notes": "Focused completion edit added a missing color-study panel; only final complete board packaged.",
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 2257801,
+      "sha256": "09b37049a90a79d567e42913ef7a148a92911d966a4daa7238f8c992da2b953b",
+      "promptSha256": "88534f771b83c1a15fe848bda2d268f7cb8942fc57d754411b7bfc430009c318"
+    },
+    {
+      "id": "08",
+      "name": "INTERFACE",
+      "file": "08-interface.png",
+      "prompt": "prompts/08-interface.txt",
+      "generatorArtifact": "exec-84d5ed35-357a-466d-8f4c-14536901b003.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1878981,
+      "sha256": "887d66fdf400a5881d85c08850cc04fed359db2a994b1b74501a00c235421212",
+      "promptSha256": "e6b7e31086ec931b19735b2156a7730c2614a67faa39a3edb5b44e0708660d56"
+    },
+    {
+      "id": "09",
+      "name": "VARIABLE",
+      "file": "09-variable.png",
+      "prompt": "prompts/09-variable.txt",
+      "generatorArtifact": "exec-b9f5cec2-668b-48c6-a4be-2ea072edecf1.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1813968,
+      "sha256": "985b4bcb98f5c9281d9b679ba1a5611736ba225fc7b46a30cc1c968e1a563282",
+      "promptSha256": "ba09bcf227d6cf98cfe58f2e55baa12a7db02f77078c96a2100663b83860684b"
+    },
+    {
+      "id": "10",
+      "name": "SYNTHESIS",
+      "file": "10-synthesis.png",
+      "prompt": "prompts/10-synthesis.txt",
+      "generatorArtifact": "exec-fca54809-0411-4033-ba91-b9857a28e049.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "notes": "Focused completion edit added a missing transition-keyframe panel; only final complete board packaged.",
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1875428,
+      "sha256": "ac3b3ec28fc2bad6d54a99181a34fa6dc2face93a3a7a81fd3c2c2a86d53d8c3",
+      "promptSha256": "09575167e8f62ccd125a2b5da05bcb5236eaccf0c875ef335e0a057aa2d59eff"
+    },
+    {
+      "id": "11",
+      "name": "NO GRID",
+      "file": "11-no-grid.png",
+      "prompt": "prompts/11-no-grid.txt",
+      "generatorArtifact": "exec-e1410eb6-693c-488e-972c-e1e0517dddd6.png",
+      "referenceAssets": [
+        "../public/images/bw-stairs-original.jpg"
+      ],
+      "pixelSize": {
+        "width": 1448,
+        "height": 1086
+      },
+      "bytes": 1963282,
+      "sha256": "e5de1a16019ea566a950b5cfe9ecf12f90c7a4f4db3e22307f421f25563b6326",
+      "promptSha256": "2d8ced757db941e350776e82d8910b09a2454e9b6d80027af98382b01745b6f7"
+    }
+  ]
+}

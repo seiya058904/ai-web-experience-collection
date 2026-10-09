@@ -2,12 +2,16 @@ import { clamp, mix, smooth, range, colorMix, readable, rgb, personality } from 
 import type { RGB } from './math.ts';
 import { routeHandoff } from './handoff.ts';
 import { routeDesktopSupplement } from './handoff-desktop.ts';
+import { isWideShort, layoutShort } from './layout-short.ts';
+import { routeShortHandoff } from './handoff-short.ts';
+import { transitionType } from './type-transition.ts';
+import { gridAdvanceEm, fitGridFontSize } from './type-metrics.ts';
 
 export const CONTENT_KEYS = ['title', 'subtitle', 'number', 'image', 'body', 'meta', 'place', 'action', 'mark'] as const;
 export type ContentKey = typeof CONTENT_KEYS[number];
 export type Family = 0 | 1 | 2;
 export type Axes = { wght: number; wdth: number; slnt: number; opsz: number };
-export type Box = { x: number; y: number; w: number; h: number; size: number; rotate: number; sx: number; sy: number; opacity: number; tracking: number; leading: number; family: Family; weight: number; accent: number; border: number; z: number };
+export type Box = { x: number; y: number; w: number; h: number; size: number; rotate: number; sx: number; sy: number; opacity: number; tracking: number; leading: number; family: Family; weight: number; accent: number; border: number; z: number; paddingX: number; paddingY: number };
 export type View = { w: number; h: number; mobile: boolean };
 export type Frame = { x: number; y: number; w: number; h: number; opacity: number; border: number };
 export type Design = {
@@ -48,7 +52,7 @@ export function layout(index: number, v: View): Design {
   const W = v.w, H = v.h, M = v.mobile;
   const body = clamp(W * .015, 15, 27), small = clamp(W * .009, 10, 17);
   const col = (n: number) => W * n / 12;
-  const box = (x: number,y: number,w: number,h: number,size=body,extra: Partial<Box>={}): Box => ({x:x*W,y:y*H,w:w*W,h:h*H,size,rotate:0,sx:1,sy:1,opacity:1,tracking:0,leading:1.32,family:0,weight:440,accent:0,border:0,z:3,...extra});
+  const box = (x: number,y: number,w: number,h: number,size=body,extra: Partial<Box>={}): Box => ({x:x*W,y:y*H,w:w*W,h:h*H,size,rotate:0,sx:1,sy:1,opacity:1,tracking:0,leading:1.32,family:0,weight:440,accent:0,border:0,z:3,paddingX:0,paddingY:0,...extra});
   const p: Record<ContentKey,Box> = {
     title:box(0,.04,.72,.38,W*.30,{weight:850,tracking:-.04,leading:.82,z:4}),
     subtitle:box(0,.50,.53,.20,clamp(W*.042,28,90),{weight:650,tracking:-.025,leading:1.03}),
@@ -104,7 +108,8 @@ export function layout(index: number, v: View): Design {
   }
   if (index === 3) {
     d.paper=rgb('#f0f18b');d.guide=.24;d.skew=-7;d.tension=1;
-    d.axes={wght:960,wdth:76,slnt:-6,opsz:144};
+    d.axes={wght:930,wdth:78,slnt:-3,opsz:144};
+    p.title.tracking=.008;
     p.title.rotate=-7;p.title.x=-W*.012;p.title.y=H*.12;p.title.size=Math.min(W*.35,H*.63);
     p.subtitle.x=W*.04;p.subtitle.y=H*.66;p.subtitle.w=W*.52;p.subtitle.size=clamp(W*.034,28,70);
     p.image.x=W*.60;p.image.y=H*.49;p.image.w=W*.40;p.image.h=H*.51;p.image.rotate=-7;
@@ -145,7 +150,7 @@ export function layout(index: number, v: View): Design {
         number:box(.76,.775,.24,.14,W*.265,{weight:400,accent:1,leading:.85}),
         image:box(.785,.926,.215,.074,0,{z:2}),
         meta:box(0,.87,.75,.03,9,{family:2}),place:box(0,.908,.7,.03,9,{family:2}),
-        action:box(0,.951,.42,.065,10,{family:2}),mark:box(.90,.52,.08,.044,0,{z:5})
+        action:box(0,.951,.42,.065,10,{family:2}),mark:box(.90,.52,.08,.044,0,{z:5,accent:1})
       });
     }
   }
@@ -171,21 +176,21 @@ export function layout(index: number, v: View): Design {
   }
   if(index===6){
     d.paper=rgb('#e5f629');d.ink=rgb('#10120e');d.accent=rgb('#10120e');d.cols=6;d.rows=3;d.guide=.28;d.rawPanel=1;
-    d.frame={x:0,y:0,w:W,h:H,opacity:1,border:3};d.axes={wght:1000,wdth:65,slnt:0,opsz:144};
+    d.frame={x:0,y:0,w:W,h:H,opacity:1,border:3};d.axes={wght:960,wdth:70,slnt:0,opsz:144};
     Object.assign(p,{
-      title:box(.017,.035,.605,.47,W*.325,{weight:1000,tracking:-.045,leading:.82,z:4}),
+      title:box(.017,.035,.605,.47,W*.325,{weight:960,tracking:.014,leading:.82,z:4}),
       subtitle:box(.03,.55,.56,.20,clamp(W*.055,32,100),{family:1,leading:.98}),
       image:box(.64,.025,.342,.49,0,{z:2}),
       body:box(.03,.79,.54,.11,body*.9,{family:2}),
-      number:box(.72,.568,.24,.31,H*.39,{weight:1000,leading:.8,tracking:-.05}),
+      number:box(.72,.568,.24,.31,H*.39,{weight:960,leading:.8,tracking:.01}),
       meta:box(.03,.935,.35,.04,small,{family:2}),place:box(.40,.935,.24,.04,small,{family:2}),
       action:box(.735,.92,.17,.074,small+1,{family:2}),mark:box(.932,.93,.035,.06,0,{z:5})
     });
     if(M) Object.assign(p,{
-      title:box(.035,.035,.92,.19,W*.49,{weight:1000,tracking:-.045,leading:.82,z:4}),
+      title:box(.035,.035,.92,.19,W*.49,{weight:960,tracking:.014,leading:.82,z:4}),
       image:box(.03,.27,.94,.24,0,{z:2}),
       subtitle:box(.04,.548,.72,.135,28,{family:1,leading:1.03}),
-      number:box(.78,.56,.20,.14,W*.205,{weight:1000,leading:.8,tracking:-.05}),
+      number:box(.78,.56,.20,.14,W*.205,{weight:960,leading:.8,tracking:.01}),
       body:box(.04,.725,.92,.105,13.5,{family:2}),
       meta:box(.04,.865,.92,.035,9,{family:2}),place:box(.04,.904,.92,.035,9,{family:2}),
       action:box(.04,.941,.61,.06,11,{family:2}),mark:box(.88,.94,.075,.044,0,{z:5})
@@ -223,13 +228,13 @@ export function layout(index: number, v: View): Design {
     d.paper=rgb('#eeebf7');d.ink=rgb('#191820');d.accent=rgb('#6c3acc');d.cols=8;d.rows=5;d.guide=.22;
     d.axes={wght:390,wdth:105,slnt:0,opsz:70};
     Object.assign(p,{
-      title:box(-.005,.045,1,.58,W*.405,{weight:390,tracking:-.04,leading:.82,z:4}),
+      title:box(0,.045,1,.58,W*.405,{weight:390,tracking:-.04,leading:.82,z:4}),
       subtitle:box(.0,.69,.40,.17,clamp(W*.033,26,76),{family:1,leading:1.04}),
       body:box(.43,.71,.30,.15,body*.82,{family:2}),
       image:box(.80,.69,.20,.17,0,{z:2}),
       number:box(.85,.23,.14,.14,H*.17,{weight:240,leading:.85}),
       meta:box(0,.018,.4,.04,small,{family:2}),place:box(.40,.018,.4,.04,small,{family:2}),
-      action:box(.83,.013,.17,.06,small,{family:2}),mark:box(.72,.727,.045,.08,0,{z:5})
+      action:box(.83,.013,.17,.06,small,{family:2}),mark:box(.755,.018,24/W,24/H,0,{z:5})
     });
     if(M)Object.assign(p,{
       title:box(0,.14,1,.24,W*.46,{weight:390,tracking:-.04,leading:.82,z:4}),
@@ -269,6 +274,36 @@ export function layout(index: number, v: View): Design {
     if(index===0){p.title.size=Math.min(p.title.size,W*.052);p.subtitle.x=W*.155;p.subtitle.w=W*.18;p.body.size=12;}
     if(index===3){p.subtitle.y=H*.60;p.body.y=H*.77;}
   }
+  // Keep the established word footprints while opening actual inter-letter ink.
+  // These ratios use the unchanged font's advance, not a horizontal distortion.
+  if(index===3){
+    const original=gridAdvanceEm({wght:960,wdth:76,slnt:-6,opsz:144},M?-.045:-.04);
+    p.title.size*=original/gridAdvanceEm(d.axes,p.title.tracking);
+    if(M)p.title.size*=.97;
+  }
+  if(index===6){
+    const original=gridAdvanceEm({wght:1000,wdth:65,slnt:0,opsz:144},-.045);
+    p.title.size*=original/gridAdvanceEm(d.axes,p.title.tracking);
+  }
+  if(index===5 && (M || W/H>=1.5)){
+    // Instrument Serif's actual capitals need an optical gap, not just a line box.
+    p.subtitle.y=Math.max(p.subtitle.y,p.title.y+p.title.size*.80+Math.max(16,H*.027));
+    if(M){
+      const bottom=p.image.y+p.image.h;
+      p.image.y=Math.max(p.image.y,p.subtitle.y+2*p.subtitle.size*p.subtitle.leading+12);
+      p.image.h=Math.max(1,bottom-p.image.y);
+    }
+  }
+  if (!M && !isWideShort(v) && (index===1 || index===2)) {
+    // These two systems share a width-driven display word above a height-
+    // driven reading lane. Spend the existing upper whitespace first, then
+    // constrain only the remaining height when a wide viewport needs it.
+    // .77em is a conservative glyph budget, not a browser-measured ink bound.
+    const gap=Math.max(12,H*.018), glyphBudget=.77;
+    p.title.y=Math.min(p.title.y,Math.max(H*.008,p.subtitle.y-p.title.size*glyphBudget-gap));
+    p.title.size=Math.min(p.title.size,(p.subtitle.y-p.title.y-gap)/glyphBudget);
+  }
+  layoutShort(index,d);
   // The two-digit specimen must fit its actual column, including on a tall
   // tablet where a height-derived display size would otherwise crop the 8.
   p.number.w=Math.min(p.number.w,W-p.number.x);
@@ -276,7 +311,7 @@ export function layout(index: number, v: View): Design {
   // Geometry never depends on accumulated animation state.
   for(const [key,b] of Object.entries(p)){
     b.w=Math.max(1,b.w);b.h=Math.max(1,b.h);
-    if(M&&['meta','place','action'].includes(key))b.size=Math.max(key==='action'?11:10,b.size);
+    if(M&&['meta','place','action'].includes(key))b.size=Math.max(11,b.size);
     if(M&&key==='body')b.size=Math.max(13,b.size);
   }
   d.ink=readable(d.ink,d.paper);
@@ -288,7 +323,12 @@ export function refine(state: Design, index: number, local: number, overrides: P
   if(index===0){d.guide=.16*smooth(range(0,.36,local));d.cols=12;d.rows=1;}
   else if(index===9){
     d.axes=sanitizeAxes(overrides,{wght:mix(390,920,smooth(t)),wdth:mix(105,62,smooth(t)),slnt:mix(0,-9,smooth(t)),opsz:mix(70,144,smooth(t))});
-    d.cols=mix(8,12,smooth(t));d.parts.title.tracking=mix(-.04,-.026,smooth(t));
+    d.cols=mix(8,12,smooth(t));
+    d.parts.title.tracking=Math.max(mix(-.04,-.026,smooth(t)),mix(-.04,.009,smooth(range(650,1000,d.axes.wght))));
+    // A persistent folio owns the right column; phone keeps its folio above type.
+    const budget=d.viewport.w*(d.viewport.mobile?.985:.80);
+    const overhang=Math.max(3,Math.abs(d.axes.slnt)*d.parts.title.size*.0015);
+    d.parts.title.size=fitGridFontSize(d.parts.title.size,budget-overhang,d.axes,d.parts.title.tracking);
   } else if(index!==8&&index!==10&&index!==11){
     // A wave that ran 0→1→0 across the opening third of every scene also grew
     // the crop window and the zoom, so each new system seemed to zoom in and
@@ -306,15 +346,13 @@ export function interpolate(a: Design,b: Design,t: number,next: number): Design 
     const x=a.parts[key],y=b.parts[key],z=d.parts[key];
     for(const prop of Object.keys(x) as (keyof Box)[]) {
       if(prop==='family'){z.family=(safe<.5?x.family:y.family);continue;}
-      z[prop]=mix(x[prop],y[prop],f);
+      const reading=['subtitle','body','meta','place','action'].includes(key);
+      // Basel's display word keeps its overshoot. Its folio and registration
+      // symbol must land exactly when their bounded safety routes have ended.
+      const bounded=reading || (next===3 && (key==='number' || key==='mark'));
+      z[prop]=mix(x[prop],y[prop],bounded?safe:f);
     }
-    // A font-family change squashes the line and expands it again. The old
-    // |2s-1|^0.55 curve had an infinite slope at the midpoint, so the copy
-    // snapped back; a smoothstep keeps the same shape without the jerk.
-    if(x.family!==y.family&&(key==='title'||key==='number')){
-      const r=Math.abs(2*safe-1);
-      z.sy*=.035+.965*smooth(r);
-    }
+
   }
   const scalars=['cols','rows','guide','skew','cropX','cropY','zoom','raster','outline','numberOutline','typeCrop','stack','tension','point','rawPanel'] as const;
   for(const key of scalars)d[key]=mix(a[key],b[key],safe);
@@ -325,7 +363,8 @@ export function interpolate(a: Design,b: Design,t: number,next: number): Design 
   const colour = smooth(range(.12, 1, safe));
   d.paper=colorMix(a.paper,b.paper,colour);d.ink=readable(colorMix(a.ink,b.ink,colour),d.paper);
   d.accent=colorMix(a.accent,b.accent,colour);
-  return routeDesktopSupplement(routeHandoff(d,a,b,safe,next),a,b,safe,next);
+  const posed=isWideShort(d.viewport)?routeShortHandoff(d,a,b,safe,next):routeDesktopSupplement(routeHandoff(d,a,b,safe,next),a,b,safe,next);
+  return transitionType(posed,a,b,safe);
 }
 
 export function resolve(coordinate:number,states:Design[],overrides:Partial<Axes>={},interfaceExit?:Design,reduced=false):Design {
@@ -335,5 +374,6 @@ export function resolve(coordinate:number,states:Design[],overrides:Partial<Axes
   if(i===11)return clone(states[11]);
   if(local<=.36)return refine(states[i],i,local,i===9?overrides:{});
   const a=i===8&&interfaceExit?interfaceExit:refine(states[i],i,.36,i===9?overrides:{});
-  return interpolate(a,states[i+1],range(.36,1,local),i+1);
+  const target=i+1===9?refine(states[9],9,0,overrides):states[i+1];
+  return interpolate(a,target,range(.36,1,local),i+1);
 }

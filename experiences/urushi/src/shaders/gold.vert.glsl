@@ -14,11 +14,11 @@ void main(){
   vOpacity=begin*end;
   vSeed=aSeed;
   vNormal=normalize(mat3(modelMatrix)*aNormal);
-  float height=pow(1.0-approach,1.55)*(.10+aSeed*.19);
+  float height=pow(1.0-approach,1.55)*(.004+aSeed*.014);
   vec3 p=position+aNormal*height;
-  p.x+=(1.0-approach)*sin(aSeed*19.0)*.018;
-  p.z+=(1.0-approach)*cos(aSeed*13.0)*.013;
+  p.x+=(1.0-approach)*sin(aSeed*19.0)*.002;
+  p.z+=(1.0-approach)*cos(aSeed*13.0)*.0015;
   vec4 mv=modelViewMatrix*vec4(p,1.0);
   gl_Position=projectionMatrix*mv;
-  gl_PointSize=clamp(aSize*uDpr*4.3/max(1.0,-mv.z),.65,2.6*uDpr);
+  gl_PointSize=clamp(aSize*uDpr*3.4/max(1.0,-mv.z),.55,1.9*uDpr);
 }

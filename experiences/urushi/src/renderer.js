@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { createVesselData, pointOnFront } from './geometry.js';
 import { makeMaterialField } from './material-textures.js';
+import { getCameraState, getCameraFrame } from './camera.js';
 import vesselVertex from './shaders/vessel.vert.glsl?raw';
 import lacquerFragment from './shaders/lacquer.frag.glsl?raw';
 import backgroundVertex from './shaders/background.vert.glsl?raw';
@@ -11,9 +12,9 @@ import goldVertex from './shaders/gold.vert.glsl?raw';
 import goldFragment from './shaders/gold.frag.glsl?raw';
 
 const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
-const materialFields=['wood','ground','coat','cure','abrasion','abradeFront','layers','vermilion','polish','gold','goldVeil','goldReveal','chamber','section','reflectionShift'];
+const materialFields=['wood','ground','coat','cure','abrasion','abradeFront','layers','vermilion','polish','gold','goldVeil','goldReveal','chamber','section','reflectionShift','recoatMode','recoat'];
 const uniformName=field=>'u'+field[0].toUpperCase()+field.slice(1);
-const defaults={wood:0,ground:1,coat:1,cure:1,abrasion:0,abradeFront:1,layers:1,vermilion:0,polish:.9,gold:0,goldVeil:0,goldReveal:0,chamber:0,section:0,zoom:1,turn:0,lift:0,reflectionShift:0,phase:0};
+const defaults={wood:0,ground:1,coat:1,cure:1,abrasion:0,abradeFront:1,layers:1,vermilion:0,polish:.9,gold:0,goldVeil:0,goldReveal:0,chamber:0,section:0,reflectionShift:0,recoatMode:0,recoat:0,phase:0,...getCameraState(0)};
 
 function makeUniforms(){
   const uniforms={
@@ -79,7 +80,9 @@ export class LacquerRenderer {
       event.preventDefault();this.contextLost=true;this.onContextLost?.();
     };
     this.handleContextRestored=()=>{
-      this.contextLost=false;this.resize(this.width,this.height);this.onContextRestored?.();
+      // Three's own restore listener is registered later. The host's next
+      // animation tick follows its reinitialization and owns the first draw.
+      this.contextLost=false;this.needsRestoreResize=true;this.onContextRestored?.();
     };
     canvas.addEventListener('webglcontextlost',this.handleContextLost,false);
     canvas.addEventListener('webglcontextrestored',this.handleContextRestored,false);
@@ -142,7 +145,6 @@ export class LacquerRenderer {
     this.resources.push(powder,powderMaterial);
     this.ready=true;
     this.resize(this.width,this.height);
-    this.render(this.lastState,0);
   }
 
   resize(width,height){
@@ -165,7 +167,8 @@ export class LacquerRenderer {
   }
 
   render(state,timeSeconds=0,pointer={x:0,y:0},light=.5){
-    if(!this.ready||this.contextLost||this.disposed)return;
+    if(!this.ready||this.contextLost||this.disposed)return false;
+    if(this.needsRestoreResize){this.resize(this.width,this.height);this.needsRestoreResize=false;}
     const current={...defaults,...state};
     this.lastState=current;
     for(const field of materialFields){
@@ -176,28 +179,16 @@ export class LacquerRenderer {
     this.uniforms.uLight.value=clamp(Number(light)||0);
     this.uniforms.uPointer.value.set(clamp(pointer.x||0,-1,1),clamp(pointer.y||0,-1,1));
 
-    const aspect=this.width/this.height;
-    const tallLayout=this.width<=1100&&aspect<=1.0;
-    const portrait=tallLayout?1:clamp((.90-aspect)/.45);
-    const distance=THREE.MathUtils.lerp(4.32,6.65,portrait);
-    const elevation=THREE.MathUtils.degToRad(16.8);
-    const targetY=.02;
-    this.camera.position.set(0,Math.sin(elevation)*distance+targetY,Math.cos(elevation)*distance);
-    this.camera.lookAt(0,targetY,0);
-    const visibleHeight=2*distance*Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2));
-    const visibleWidth=visibleHeight*aspect;
-    const zoom=clamp(Number(current.zoom)||1,.55,1.65);
-    const macroCompensation=(zoom-1)*(3.48*1.04)/(2*visibleWidth)*(1-portrait);
-    const narrowLandscape=this.width>700&&this.width<=1100&&!tallLayout;
-    const desktopCenter=narrowLandscape?Math.max(.790,.365+(3.48*1.04)/(2*visibleWidth)):.790;
-    const centerX=THREE.MathUtils.lerp(desktopCenter,1.11,portrait)+macroCompensation;
-    const centerY=THREE.MathUtils.lerp(.52,.64,portrait);
-    this.object.position.x=(centerX-.5)*visibleWidth;
-    this.object.position.y=-(centerY-.5)*visibleHeight+.13+Number(current.lift||0);
+    const frame=getCameraFrame(current,this.width,this.height);
+    this.camera.position.fromArray(frame.position);
+    this.camera.lookAt(0,0,0);
+    this.object.position.fromArray(frame.objectPosition);
     this.object.rotation.set(0,Number(current.turn)||0,0);
-    this.object.scale.setScalar(zoom*1.04);
+    this.object.scale.setScalar(frame.scale);
     this.powder.visible=current.gold>0&&current.gold<.999&&current.goldVeil<.02;
+    const previousFrame=this.renderer.info.render.frame;
     this.renderer.render(this.scene,this.camera);
+    return this.renderer.info.render.frame>previousFrame&&this.renderer.info.render.calls>0;
   }
 
   setQuality(quality='auto'){
@@ -211,7 +202,7 @@ export class LacquerRenderer {
       initialized:this.ready,contextLost:this.contextLost,disposed:this.disposed,
       quality:this.quality,width:this.width,height:this.height,pixelRatio:this.dpr||1,
       drawingWidth:Math.round(this.width*(this.dpr||1)),drawingHeight:Math.round(this.height*(this.dpr||1)),
-      phase:this.lastState.phase??0,drawCalls:info?.render.calls??0,triangles:info?.render.triangles??0,
+      phase:this.lastState.phase??0,renderFrame:info?.render.frame??0,drawCalls:info?.render.calls??0,triangles:info?.render.triangles??0,
       points:info?.render.points??0,geometries:info?.memory.geometries??0,textures:info?.memory.textures??0,
       programs:info?.programs?.length??0,webgl2:!!this.renderer?.capabilities.isWebGL2,
       material:'authored non-metallic lacquer shader',model:this.profile?.id??null,

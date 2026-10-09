@@ -1,0 +1,98 @@
+{
+  "route": "grid",
+  "base": "http://127.0.0.1:4195/",
+  "captures": [
+    {
+      "target": "public/grid/poster.webp",
+      "bytes": 65340,
+      "sha256": "f7ba1dc6373d9fc3a48b2422312d906bd675cceeef94dd376de5e159cbe478db",
+      "dimensions": [
+        1200,
+        750
+      ],
+      "source": "C:/Users/admin/AppData/Local/Temp/collection-grid-b7bdec35db594757b89f110bfd6ae6a4/final-captures/poster-runtime-stage.png",
+      "sourceSHA256": "9a294cb3c0ff8d12b1ab3e0c2babd568777d209d7562ab0841e6ad4925e59d9d",
+      "sourceDimensions": [
+        1201,
+        751
+      ],
+      "viewport": [
+        1298,
+        950
+      ],
+      "coordinate": 10,
+      "method": "Actual complete GRID stage screenshot; semantic live lettering, photograph and guides remain artwork; surrounding header/footer/controls excluded. Resize contain and encode only."
+    },
+    {
+      "target": "public/grid/social.jpg",
+      "bytes": 126911,
+      "sha256": "32480341719cb11d9d7f6e5037ad263f87256ab3ebb3f4764e95799630791c7b",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "source": "C:/Users/admin/AppData/Local/Temp/collection-grid-b7bdec35db594757b89f110bfd6ae6a4/final-captures/social-runtime-stage.png",
+      "sourceSHA256": "fabc183d640b252d505a1219f63725832d54506e48bb8dd0d457c4623987faf4",
+      "sourceDimensions": [
+        1201,
+        630
+      ],
+      "viewport": [
+        1298,
+        816
+      ],
+      "coordinate": 10.000293169158605,
+      "method": "Actual complete GRID stage screenshot; semantic live lettering, photograph and guides remain artwork; surrounding header/footer/controls excluded. Resize contain and encode only."
+    }
+  ],
+  "artwork": "Actual supplied Synthesis typography/specimen/photograph; original CC BY3.0 photograph attribution applies. No Visual Bible bitmap used.",
+  "capturedMainSHA256": "dd262156b4d67078d4a83a410e0d4d1de42d8e007b8f129a27950bae338170d8",
+  "postCaptureChange": "Only cleanup iteration changed from toReversed() to copied-array reverse() for root ES2022 compatibility; all rendering sources and output remain unchanged.",
+  "currentRuntimeHashes": [
+    {
+      "target": "pages/grid/index.html",
+      "bytes": 13865,
+      "sha256": "751fe1397df4ae283d774db52c57861fa5e1fe113bc83fc3a1cda1166c5afa3d"
+    },
+    {
+      "target": "experiences/grid/src/main.ts",
+      "bytes": 19323,
+      "sha256": "9fe2c1ce7d417276b1d5da7c52550a2155879b20b2699fb4d61f1e946edd7025"
+    },
+    {
+      "target": "experiences/grid/src/renderer.ts",
+      "bytes": 13047,
+      "sha256": "2b837c5f26235e122594c07c64b461bfb4a0cf350d4a8b59f5a0737d5044a1ed"
+    },
+    {
+      "target": "experiences/grid/src/raster.ts",
+      "bytes": 6308,
+      "sha256": "6d71f790852ac0af2a9bcfbebe2e043c770b7f44b2ad29fb3866e60363898300"
+    },
+    {
+      "target": "experiences/grid/src/math.ts",
+      "bytes": 2042,
+      "sha256": "df9a711269bd7bb83e79a6f0c392e595fc3ebba2d0ef1cb6368fe08de33483b8"
+    },
+    {
+      "target": "experiences/grid/src/scenes.ts",
+      "bytes": 24501,
+      "sha256": "6eea9d44df7e17709648f859ceb3d250fd59fbf5a2d6a37121a099d2b03ca25e"
+    },
+    {
+      "target": "experiences/grid/src/handoff.ts",
+      "bytes": 18512,
+      "sha256": "e64ab87f52d46ee2966e0e1c04de0eb1ca7a5351839aada50c453f43b96de044"
+    },
+    {
+      "target": "experiences/grid/src/handoff-desktop.ts",
+      "bytes": 6266,
+      "sha256": "dc291b3eb64729c56f220d306c5906ce3586a22e2b913f1a6886cb69fb686975"
+    },
+    {
+      "target": "experiences/grid/src/style.css",
+      "bytes": 25772,
+      "sha256": "c53ef598072afddb1d0db71ba95e2b12a962a31c80e69618086d241f4916cd02"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "restoredAt": "2026-10-08T21:55:12.866036+00:00",
+  "commit": "186381f8da01aa8cf23771eb1514834d32b4d95c",
+  "treeSHA": "186381f8da01aa8cf23771eb1514834d32b4d95c",
+  "source": "Exact read-only fixed-commit GitHub bytes; not extracted or guessed from a compiled bundle",
+  "files": [
+    {
+      "path": "experiences/urushi/src/shaders/background.frag.glsl",
+      "workPath": "work/urushi/src/shaders/background.frag.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/background.frag.glsl",
+      "bytes": 946,
+      "gitBlobSHA1": "cd6c6f75c8f7f2344582de3910aed13195e3b94c",
+      "sha256": "b3b55c2ceab61920cf962cb8b3e508806667ade17b3b2534ca7ac34b41e8b294"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/background.vert.glsl",
+      "workPath": "work/urushi/src/shaders/background.vert.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/background.vert.glsl",
+      "bytes": 80,
+      "gitBlobSHA1": "b03299d471ec657b3b6e392f0e79c956fe518374",
+      "sha256": "831e1a1197f930e5def6d609ddc8855e9b030b481067286e77b42035fc8aa301"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/floor.frag.glsl",
+      "workPath": "work/urushi/src/shaders/floor.frag.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/floor.frag.glsl",
+      "bytes": 536,
+      "gitBlobSHA1": "cde4096bec28cf5b5536027c17405b557e5c88b7",
+      "sha256": "f80c41727358ed6029c7bd32390e4f8b2b8db77322a020f56212a0adfb2766e0"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/floor.vert.glsl",
+      "workPath": "work/urushi/src/shaders/floor.vert.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/floor.vert.glsl",
+      "bytes": 115,
+      "gitBlobSHA1": "ffe1d726a445f1a51fa53645c955ebe565d03544",
+      "sha256": "eeefd4141e2b01329d67ed1111e552432fd8e66a7918144dfb3b5351625996fe"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/gold.frag.glsl",
+      "workPath": "work/urushi/src/shaders/gold.frag.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/gold.frag.glsl",
+      "bytes": 486,
+      "gitBlobSHA1": "5c9f39d7ce98aeacc561d9466c0106596a0d1c05",
+      "sha256": "fdb540a6968bfe7a40909f7d63da6bca2c9f3239910b2ad52b5f1b7e57998c1d"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/gold.vert.glsl",
+      "workPath": "work/urushi/src/shaders/gold.vert.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/gold.vert.glsl",
+      "bytes": 805,
+      "gitBlobSHA1": "0689003806b038f4356c05a645398dfb446746d1",
+      "sha256": "d1c6f7c357d9bad7a9b759026971c0b97b3903bf08e54f6fbc786736b783c144"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/lacquer.frag.glsl",
+      "workPath": "work/urushi/src/shaders/lacquer.frag.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/lacquer.frag.glsl",
+      "bytes": 11489,
+      "gitBlobSHA1": "0d89f025fcf4bdf49d286e7402874171eea8d014",
+      "sha256": "a0c06102488b2b6eedb92be354d22f907d16f52a40b44f57d56beeec9db4504d"
+    },
+    {
+      "path": "experiences/urushi/src/shaders/vessel.vert.glsl",
+      "workPath": "work/urushi/src/shaders/vessel.vert.glsl",
+      "url": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/experiences/urushi/src/shaders/vessel.vert.glsl",
+      "bytes": 385,
+      "gitBlobSHA1": "bb6249e49120d9f7f3808a7478c356ce0ee1f3ae",
+      "sha256": "bbdf14e40413b85c821a62785dcfc4f13e99f19400a111eb34c423f902325242"
+    }
+  ],
+  "relativeSourceImports": [
+    {
+      "file": "work/urushi/src/main.js",
+      "import": "./story.js",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/main.js",
+      "import": "./i18n.js",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/main.js",
+      "import": "./renderer.js",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./geometry.js",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./material-textures.js",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/vessel.vert.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/lacquer.frag.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/background.vert.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/background.frag.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/floor.vert.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/floor.frag.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/gold.vert.glsl?raw",
+      "exists": true
+    },
+    {
+      "file": "work/urushi/src/renderer.js",
+      "import": "./shaders/gold.frag.glsl?raw",
+      "exists": true
+    }
+  ],
+  "missingRelativeSourceImports": [],
+  "scope": "Only8missingGLSL copied into work; noJS/CSS/story modification",
+  "uploadedBundleCorrespondence": "All8 authored shader byte strings match the uploaded renderer; external evidence/urushi-material-audit/ZIP-GITHUB-SHADER-COMPARISON.json"
+}

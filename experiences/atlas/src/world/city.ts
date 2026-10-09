@@ -55,6 +55,7 @@ float cityHaze(vec3 worldPosition){
 const buildingVertex = /* glsl */ `
 attribute float aExtrusion;
 attribute float aFace;
+attribute float aTopDistance;
 attribute float aSeed;
 attribute float aReveal;
 uniform float uExtrude;
@@ -63,6 +64,7 @@ varying vec3 vNormal;
 varying vec3 vWorld;
 varying vec2 vUv;
 varying float vFace;
+varying float vTopDistance;
 varying float vSeed;
 varying float vReveal;
 void main() {
@@ -72,6 +74,7 @@ void main() {
   vWorld=p;
   vNormal=normal;
   vUv=vec2(uv.x,uv.y*uExtrude);
+  vTopDistance=aTopDistance*uExtrude;
   vFace=aFace;
   vSeed=aSeed;
   vReveal=aReveal;
@@ -88,6 +91,7 @@ varying vec3 vNormal;
 varying vec3 vWorld;
 varying vec2 vUv;
 varying float vFace;
+varying float vTopDistance;
 varying float vSeed;
 varying float vReveal;
 ${cityFog}
@@ -100,25 +104,32 @@ void main() {
   vec3 n=normalize(vNormal);
   float light=max(0.0,dot(n,uSun));
   float variation=mix(0.94,1.06,vSeed);
-  vec3 limestone=mix(vec3(0.59,0.55,0.47),vec3(0.72,0.68,0.59),1.0-wall);
+  vec3 limestone=mix(vec3(0.57,0.565,0.525),vec3(0.73,0.705,0.635),1.0-wall);
   float shade=0.56+light*0.51;
   float grounded=mix(0.65,1.0,smoothstep(0.0,2.6,vUv.y));
   shade*=mix(1.0,grounded,wall);
   vec3 day=limestone*shade*variation;
   // A restrained roof lip gives the true footprint a readable, tangible edge.
-  float topBand=smoothstep(6.8,7.5,vUv.y)*(1.0-smoothstep(7.75,8.0,vUv.y));
+  // Attach the roof lip to the actual level roof, including sloping foundations.
+  float topBand=(1.0-smoothstep(0.5,1.2,vTopDistance))*smoothstep(0.0,0.25,vTopDistance);
   day+=wall*topBand*0.024;
   vec3 night=vec3(0.023,0.034,0.036)+limestone*(0.028+light*0.036);
   vec3 colour=mix(day,night,uNight);
   float golden=sin(uNight*3.14159265);
   colour*=mix(vec3(1.0),vec3(1.20,0.87,0.62),golden*0.60);
   // Windows are an explicitly schematic lighting treatment, not surveyed facades.
-  vec2 cell=fract(vUv/vec2(3.05,3.0));
-  vec2 aa=max(fwidth(vUv/vec2(3.05,3.0)),vec2(0.005));
+  vec2 windowUV=vUv/vec2(3.05,3.0);
+  vec2 footprint=fwidth(windowUV);
+  vec2 cell=fract(windowUV);
+  vec2 aa=max(footprint,vec2(0.005));
   vec2 pane=smoothstep(vec2(0.20)-aa,vec2(0.20)+aa,cell)
             *(1.0-smoothstep(vec2(0.76)-aa,vec2(0.76)+aa,cell));
-  float occupied=step(0.35,hash(floor(vUv/vec2(3.05,3.0))));
-  float windowLight=pane.x*pane.y*occupied*wall*step(1.0,vUv.y)*step(vUv.y,7.4);
+  float occupied=step(0.35,hash(floor(windowUV)));
+  // At less than one pixel per cell, integrate area and occupancy rather
+  // than allowing a binary window hash to sparkle under subpixel motion.
+  float unresolved=smoothstep(0.25,0.85,max(footprint.x,footprint.y));
+  float windows=mix(pane.x*pane.y*occupied,0.56*0.56*0.65,unresolved);
+  float windowLight=windows*wall*step(1.0,vUv.y)*step(0.6,vTopDistance);
   colour+=vec3(0.88,0.46,0.14)*windowLight*uNight*smoothstep(0.25,0.95,uExtrude)*0.82;
   colour=mix(colour,uFog,cityHaze(vWorld)*0.985);
   gl_FragColor=vec4(colour,alpha);
@@ -367,6 +378,9 @@ export class CityLayer {
   private endpoint?: THREE.Group;
   private startpoint?: THREE.Mesh<THREE.RingGeometry, THREE.MeshBasicMaterial>;
   private endpointMaterials: THREE.MeshBasicMaterial[] = [];
+  private contactShade?: THREE.Mesh;
+  private groundRoads?: THREE.LineSegments;
+  private groundWater: (THREE.Mesh | THREE.LineSegments)[] = [];
 
   constructor() {
     this.group.name = "ATLAS / Fujiyoshida — registered city";
@@ -410,7 +424,16 @@ export class CityLayer {
       project([meta.west, meta.south]),
       project([meta.east, meta.north]),
     ]);
-    await this.buildBuildings(buildings, project, mobile, token);
+    // Sample expanded contact shade in the unchanged reference projection.
+    const groundScale = geo.meta.groundScaleCosLatitude / 1000;
+    const groundAt = (x: number, z: number) => {
+      const mx = geo.anchorMercator[0] + x / groundScale;
+      const my = geo.anchorMercator[1] - z / groundScale;
+      const b = meta.mercatorBounds;
+      return detail.sampleMeshUV((mx - b.west) / (b.east - b.west),
+        (b.north - my) / (b.north - b.south)) / 1000 + 0.00065;
+    };
+    await this.buildBuildings(buildings, project, mobile, token, groundAt);
     if (token !== this.generation) return;
     this.buildRoads(roads, project, trace, mobile);
     this.buildWater(water, project, trace);
@@ -442,6 +465,7 @@ export class CityLayer {
     project: (p: Coordinate, offset?: number) => THREE.Vector3,
     mobile: boolean,
     token: number,
+    groundAt: (x: number, z: number) => number,
   ) {
     const positions: number[] = [],
       normals: number[] = [],
@@ -449,7 +473,8 @@ export class CityLayer {
     const surfaceUV: number[] = [],
       faces: number[] = [],
       seeds: number[] = [],
-      reveal: number[] = [];
+      reveal: number[] = [],
+      topDistances: number[] = [];
     const edgePositions: number[] = [],
       edgeExtrusion: number[] = [],
       edgeReveal: number[] = [],
@@ -465,7 +490,9 @@ export class CityLayer {
       face: number,
       seed: number,
       threshold: number,
+      topDistance = 0,
     ) => {
+      topDistances.push(topDistance);
       positions.push(p.x, p.y, p.z);
       normals.push(n.x, n.y, n.z);
       extrusion.push(rise);
@@ -572,7 +599,7 @@ export class CityLayer {
               [b, 0, wallLength, 0],
               [b, rb, wallLength, rb * 1000],
             ] as [THREE.Vector3, number, number, number][])
-              append(p, normal, rise, u, v, 1, seed, threshold);
+              append(p, normal, rise, u, v, 1, seed, threshold, (roof - p.y - rise) * 1000);
             appendEdge(a, ra, threshold, travelled / perimeter);
             appendEdge(b, rb, threshold, (travelled + lengths[i]) / perimeter);
             if (!mobile || i % 2 === 0) {
@@ -584,12 +611,12 @@ export class CityLayer {
             const spread = 0.0018;
             const aa = new THREE.Vector3(
               a.x + normal.x * spread,
-              a.y - 0.00006,
+              groundAt(a.x + normal.x * spread, a.z + normal.z * spread) - 0.00006,
               a.z + normal.z * spread,
             );
             const bb = new THREE.Vector3(
               b.x + normal.x * spread,
-              b.y - 0.00006,
+              groundAt(b.x + normal.x * spread, b.z + normal.z * spread) - 0.00006,
               b.z + normal.z * spread,
             );
             for (const [p, uv] of [
@@ -622,6 +649,7 @@ export class CityLayer {
       ["uv", surfaceUV, 2],
       ["aExtrusion", extrusion, 1],
       ["aFace", faces, 1],
+      ["aTopDistance", topDistances, 1],
       ["aSeed", seeds, 1],
       ["aReveal", reveal, 1],
     ] as [string, number[], number][])
@@ -671,6 +699,8 @@ export class CityLayer {
       this.material(groundVertex, shadowFragment),
     );
     shade.name = "Footprint contact shade";
+    this.contactShade = shade;
+    shade.visible = false;
     shade.renderOrder = 3;
     this.group.add(shade);
   }
@@ -717,6 +747,8 @@ export class CityLayer {
       this.material(roadVertex, roadFragment),
     );
     roads.name = "Registered GSI road centerlines";
+    this.groundRoads = roads;
+    roads.visible = false;
     roads.renderOrder = 4;
     this.group.add(roads);
   }
@@ -777,6 +809,8 @@ export class CityLayer {
           ? new THREE.Mesh(geometry, material)
           : new THREE.LineSegments(geometry, material);
       object.name = `Registered GSI city water / ${kind}`;
+      object.visible = false;
+      this.groundWater.push(object);
       object.renderOrder = 3;
       this.group.add(object);
     }
@@ -906,6 +940,8 @@ export class CityLayer {
       new THREE.RingGeometry(0.72, 1, 32),
       startMat,
     );
+    this.startpoint.name = "Registered route start";
+    this.startpoint.visible = false;
     this.startpoint.rotation.x = -Math.PI / 2;
     this.startpoint.position.copy(points[0]);
     this.startpoint.position.y += 0.0004;
@@ -942,7 +978,7 @@ export class CityLayer {
     u.uCurvature.value = state.curvature;
     u.uSpan.value = state.pose.span;
     u.uFogStrength.value = state.city * (1 - smooth(0.87, 0.91, state.p));
-    u.uFog.value.set("#eeede6").lerp(this.nightFog, state.night);
+    u.uFog.value.set("#eeede6").lerp(this.nightFog, state.backdrop);
     u.uSun.value
       .set(
         -0.62 + Math.sin(time * 0.026) * 0.1,
@@ -950,6 +986,14 @@ export class CityLayer {
         -0.4 + Math.cos(time * 0.02) * 0.07,
       )
       .normalize();
+    // Cull only exactly zero shader contributions. Flat footprint roofs are
+    // retained before extrusion, and each object is restored on reverse.
+    if (this.contactShade)
+      this.contactShade.visible = state.extrude > 0 && state.cityVisibility > 0 && smooth(0.15, 0.75, state.city) > 0;
+    if (this.groundRoads)
+      this.groundRoads.visible = state.cityVisibility > 0 && smooth(0.02, 0.68, state.city) > 0;
+    for (const object of this.groundWater)
+      object.visible = state.cityVisibility > 0 && smooth(0, 0.45, state.city) > 0;
     const traceVisibility =
       smooth(0, 0.015, state.route) * state.cityVisibility;
     for (const layer of this.routeLayers) {
@@ -985,6 +1029,7 @@ export class CityLayer {
         clamp(state.pose.span * 0.0035, 0.003, 0.011),
       );
       this.startpoint.material.opacity = traceVisibility * 0.7;
+      this.startpoint.visible = this.startpoint.material.opacity > 0;
     }
   }
 
@@ -1012,6 +1057,9 @@ export class CityLayer {
     this.endpoint = undefined;
     this.startpoint = undefined;
     this.endpointMaterials = [];
+    this.contactShade = undefined;
+    this.groundRoads = undefined;
+    this.groundWater = [];
     this.routeLength = 0;
     this.buildingCount = 0;
     this.ready = false;

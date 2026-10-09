@@ -1,4 +1,5 @@
-import { clamp, mix, smooth } from "./geo";
+import { clamp, mix, smooth } from "./geo.ts";
+import { refineCamera, smoother, scaleProgress, type RouteGuide } from "./camera.ts";
 
 export const CHAPTERS = [
   {
@@ -91,12 +92,12 @@ export const CHAPTERS = [
   },
 ] as const;
 
-const thresholds = [
+export const CHAPTER_THRESHOLDS = [
   0, 0.046, 0.122, 0.245, 0.422, 0.512, 0.625, 0.747, 0.813, 0.863, 0.972,
 ];
 export function chapterAt(p: number) {
   let i = 0;
-  for (let j = 1; j < thresholds.length; j++) if (p >= thresholds[j]) i = j;
+  for (let j = 1; j < CHAPTER_THRESHOLDS.length; j++) if (p >= CHAPTER_THRESHOLDS[j]) i = j;
   return i;
 }
 
@@ -134,7 +135,7 @@ const POSES: Pose[] = [
   { p: 1, span: 14800, pitch: 0.17, yaw: 0.1, x: -2850, y: -6371, z: 500 },
 ];
 
-export function evaluateStory(p: number, mobile: boolean) {
+export function evaluateStory(p: number, mobile: boolean, guide?: RouteGuide) {
   p = clamp(p);
   let i = 0;
   while (i < POSES.length - 2 && p > POSES[i + 1].p) i++;
@@ -142,7 +143,7 @@ export function evaluateStory(p: number, mobile: boolean) {
     b = POSES[i + 1],
     t = smooth(a.p, b.p, p);
   const span = Math.exp(mix(Math.log(a.span), Math.log(b.span), t));
-  const pose = {
+  const initialPose = {
     span,
     pitch: mix(a.pitch, b.pitch, t),
     yaw: mix(a.yaw, b.yaw, t),
@@ -150,20 +151,13 @@ export function evaluateStory(p: number, mobile: boolean) {
     y: mix(a.y, b.y, t),
     z: mix(a.z, b.z, t),
   };
-  if (mobile) {
-    const city = smooth(0.6, 0.66, p) * (1 - smooth(0.875, 0.915, p));
-    const globe = smooth(0.95, 0.988, p);
-    pose.span *= mix(1.23, 2.45, globe);
-    pose.x = mix(pose.x * 0.42, -200, globe);
-    pose.x -= 1.9 * smooth(0.505, 0.54, p) * (1 - smooth(0.582, 0.615, p));
-    pose.z += mix(2.4, 0.25, city) * (1 - globe);
-    pose.yaw *= 0.6;
-  }
+  const { pose, baseSpan } = refineCamera(p, initialPose, mobile, guide);
   const lift = smooth(0.225, 0.335, p);
   const orbit = smooth(0.888, 0.986, p);
   return {
     p,
     pose,
+    baseSpan,
     chapter: chapterAt(p),
     lift,
     grid: smooth(0.012, 0.075, p) * (1 - smooth(0.1, 0.19, p)),
@@ -178,12 +172,14 @@ export function evaluateStory(p: number, mobile: boolean) {
     city: smooth(0.625, 0.682, p),
     extrude: smooth(0.66, 0.717, p),
     route: smooth(0.744, 0.802, p),
-    night: smooth(0.817, 0.852, p) * (1 - smooth(0.87, 0.915, p)),
+    night: smoother(.804, .832, p) * (1 - scaleProgress(1.4, 85, baseSpan)),
+    backdrop: Math.max(smoother(.804,.832,p)*(1-scaleProgress(1.4,85,baseSpan)), smoother(.915,.96,p)),
     orbit,
-    globe: smooth(0.93, 0.955, p),
-    terrainVisibility: 1 - smooth(0.948, 0.978, p),
-    cityVisibility: smooth(0.608, 0.652, p) * (1 - smooth(0.89, 0.93, p)),
-    curvature: smooth(0.9, 0.948, p),
+    globe: scaleProgress(80, 650, baseSpan),
+    imageVisibility: 1 - scaleProgress(70, 350, baseSpan),
+    terrainVisibility: 1 - scaleProgress(120, 1200, baseSpan),
+    cityVisibility: smooth(0.608, 0.652, p) * (1 - scaleProgress(5, 60, baseSpan)),
+    curvature: scaleProgress(12, 140, baseSpan),
   };
 }
 export type StoryState = ReturnType<typeof evaluateStory>;

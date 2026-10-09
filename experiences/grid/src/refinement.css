@@ -1,0 +1,80 @@
+/* Integer paint layers: frame 0, paper 1, photo 2, guides 3,
+   reading text 4, title 5, registration 6, measurements 8, tools 12. */
+.js-ready .specimen.native-layout { z-index:4; }
+.js-ready .specimen-action::after { opacity:var(--action-underline,1); }
+
+/* System measurements belong to the caption, clear of the nine content nodes. */
+.js-ready .scene-caption .measure-labels {
+  display:flex;
+  position:static;
+  inset:auto;
+  gap:12px;
+  font:clamp(8px,.55vw,12px)/1.3 var(--mono);
+  letter-spacing:.02em;
+  white-space:nowrap;
+  color:var(--muted);
+}
+.scene-caption .measure-labels span {
+  position:static;
+  inset:auto;
+}
+
+/* A fallback face can have a substantially wider GRID than Roboto Flex. */
+.no-js .specimen-title { font-size:clamp(90px,24vw,680px); }
+/* Keep the reading fallback stable while webfonts arrive. The live specimen
+   changes to its three original fonts together, after layout is ready. */
+.no-js .specimen-title,
+.no-js .specimen-subtitle,
+.no-js .specimen-number,
+.no-js .specimen-body { font-family:Arial,sans-serif; }
+
+.photo-state { display:none; }
+.specimen-image[data-photo-state="unavailable"] > img,
+.specimen-image[data-photo-state="unavailable"] > canvas { visibility:hidden; }
+.specimen-image[data-photo-state="unavailable"] .photo-state {
+  display:flex;
+  position:absolute;
+  inset:0;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:2px;
+  padding:4px 6px;
+  border:1px solid var(--line);
+  background:var(--paper);
+  color:var(--ink);
+  font:11px/1.2 var(--mono);
+  text-align:center;
+  overflow-wrap:anywhere;
+}
+.photo-state span { max-width:100%; }
+
+/* Keep the whole keyboard focus indicator inside the range's own region. */
+.experiment-tools input[type="range"]:focus-visible {
+  outline:1px solid var(--ink);
+  outline-offset:-2px;
+}
+
+.stage[data-proportion="wide-short"] .zero-invitation { top:43%; }
+.stage[data-proportion="wide-short"] .raw-panel { top:57%; width:72%; height:43%; }
+.stage[data-proportion="wide-short"] .axis-tools { padding-top:4px; }
+.stage[data-proportion="wide-short"] .axis-heading { height:18px; margin-bottom:4px; font-size:11px; }
+.stage[data-proportion="wide-short"] .axis-grid { gap:18px; }
+.stage[data-proportion="wide-short"] .axis-grid label > span { font-size:11px; line-height:14px; }
+.stage[data-proportion="wide-short"] .axis-grid input { height:28px; }
+
+@media (max-width:600px) {
+  .no-js .specimen-title { font-size:34vw; }
+  .scene-footer { height:92px; }
+  .scene-caption #scene-verb { font-size:9px; }
+  .footer-actions > .icon-button { width:40px; height:44px; }
+  .rules-button { min-height:44px; font-size:10px; }
+  .chapter-rail { height:40px; }
+  .chapter-rail button { height:40px; min-height:40px; font-size:9px; }
+  .axis-grid label > span { font-size:11px; line-height:14px; }
+  .axis-heading { font-size:11px; }
+  .axis-heading .text-button, .frame-input-row .text-button { font-size:11px; }
+  .frame-tools { font-size:11px; }
+  .rule-list dt { font-size:9px; }
+  .rules-context { font-size:9px; }
+}

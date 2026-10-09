@@ -14,6 +14,9 @@ export const ui = {
     light: 'Move the light', replay: 'Begin again',
     motionFull: 'Motion: full', motionReduced: 'Motion: reduced',
     fallback: 'Still-image edition. Every chapter remains available.',
+    stillLoading: 'Preparing {chapter}. The current image remains in view.',
+    firstStillLoading: 'Preparing {chapter}.',
+    stillFailed: 'The image for {chapter} is unavailable. Read the complete journey in About.',
     loading: 'The surface is gathering light.',
   },
   zh: {
@@ -31,6 +34,9 @@ export const ui = {
     light: '移动光线', replay: '再看一次',
     motionFull: '动态：完整', motionReduced: '动态：减弱',
     fallback: '静帧版本，仍可浏览全部章节。',
+    stillLoading: '正在准备：{chapter}。当前画面继续保留。',
+    firstStillLoading: '正在准备：{chapter}。',
+    stillFailed: '暂时无法读取{chapter}的静帧。可在关于中阅读完整叙事。',
     loading: '表面，正在聚拢光。',
   },
 };

@@ -1,0 +1,141 @@
+{
+  "completedAt": "2026-10-08T21:57:46.612425+00:00",
+  "commit": "186381f8da01aa8cf23771eb1514834d32b4d95c",
+  "documents": [
+    {
+      "source": "docs/urushi/research/RESEARCH.md",
+      "target": "docs/upstream/research/RESEARCH.md",
+      "gitBlobSHA1": "ff70cb86696974e84454c21f1caff264f1d6d279",
+      "sha256": "be265ac10b999a4277d5593b1c2665630f9760464b8da3186ba060eede69c052"
+    },
+    {
+      "source": "docs/urushi/visual-bible/00-material-bible.prompt.txt",
+      "target": "docs/upstream/visual-bible/00-material-bible.prompt.txt",
+      "gitBlobSHA1": "86907e3ce6d423e8a5b5cbbb084d44f691d559f1",
+      "sha256": "f2f05c4dc32ff3bd5b3365df620db2aede4978fd4b876027fdeac4dc2127d427"
+    },
+    {
+      "source": "docs/urushi/visual-bible/01-hero.prompt.txt",
+      "target": "docs/upstream/visual-bible/01-hero.prompt.txt",
+      "gitBlobSHA1": "fa9a26be5b8f205f5dcd93e9cab5ead06c3217b2",
+      "sha256": "e18638a6af200e7cc6f9e449790d26b20daa12829977ff910f6f3a314be8cc6c"
+    },
+    {
+      "source": "docs/urushi/visual-bible/02-core.prompt.txt",
+      "target": "docs/upstream/visual-bible/02-core.prompt.txt",
+      "gitBlobSHA1": "629f996d91c44838aa3de30cb042b0d77dffc749",
+      "sha256": "346e35d0f84b87ff9753597c9e9ed3c8ffebef3b4bf2f4a0e45a5369a2927e99"
+    },
+    {
+      "source": "docs/urushi/visual-bible/03-coat.prompt.txt",
+      "target": "docs/upstream/visual-bible/03-coat.prompt.txt",
+      "gitBlobSHA1": "1783b6d6e07eb8e07f66ba310e1b5d866e8c0aa8",
+      "sha256": "0c7965c3d0f96be7a9861e54616cb604c2a8747dcde4fb7018aa11d4d0d0f645"
+    },
+    {
+      "source": "docs/urushi/visual-bible/04-cure.prompt.txt",
+      "target": "docs/upstream/visual-bible/04-cure.prompt.txt",
+      "gitBlobSHA1": "19463df41e8f7099d29e9c320bb7a8f8665012f5",
+      "sha256": "dd53354ff54744599c367f35d2ec918e06b50d9998929810c661938535611e6a"
+    },
+    {
+      "source": "docs/urushi/visual-bible/05-abrade.prompt.txt",
+      "target": "docs/upstream/visual-bible/05-abrade.prompt.txt",
+      "gitBlobSHA1": "4ba061e73e6e946b605354853e69554635a7f2de",
+      "sha256": "d8d3e1ecddb5ca2d94227fa5e4eb6b2dee98dc8058ae013c1816a29b2a96292c"
+    },
+    {
+      "source": "docs/urushi/visual-bible/06-layers.prompt.txt",
+      "target": "docs/upstream/visual-bible/06-layers.prompt.txt",
+      "gitBlobSHA1": "fb127607759f2ac5d6f08869dea624f64d0c198b",
+      "sha256": "eb8763c25e84565ec1a7374197561e3f3bc30006d04b3c37570e01b67cacafda"
+    },
+    {
+      "source": "docs/urushi/visual-bible/07-vermilion.prompt.txt",
+      "target": "docs/upstream/visual-bible/07-vermilion.prompt.txt",
+      "gitBlobSHA1": "11313b573f3e92b0044f169731cd82b042c094c8",
+      "sha256": "2b0940ea43811c6bfaab59f03833f4b41e26df57a76fb69784bc7492fbb65729"
+    },
+    {
+      "source": "docs/urushi/visual-bible/08-polish.prompt.txt",
+      "target": "docs/upstream/visual-bible/08-polish.prompt.txt",
+      "gitBlobSHA1": "38b725ca0ce68cb9385ea8ca876d9d639ade14d8",
+      "sha256": "397c04486c4e13d7f57afc2c175c4c0f30565845e92239ee288cbc82352511d0"
+    },
+    {
+      "source": "docs/urushi/visual-bible/09-maki-e.prompt.txt",
+      "target": "docs/upstream/visual-bible/09-maki-e.prompt.txt",
+      "gitBlobSHA1": "182cdd1a2c0cb8657a60c45b9cb04d2662079e77",
+      "sha256": "22e97d592e98865e2026b7889bd6cc0463c55a52dfebbf438ee0dfa3591a9402"
+    },
+    {
+      "source": "docs/urushi/visual-bible/10-reveal.prompt.txt",
+      "target": "docs/upstream/visual-bible/10-reveal.prompt.txt",
+      "gitBlobSHA1": "fd4b355158dcbbedd082e329a551c6f218d78002",
+      "sha256": "263c041460edf618061aae912ef24df73a06d38d6d741f0f9ee8a53097028a45"
+    },
+    {
+      "source": "docs/urushi/visual-bible/11-depth.prompt.txt",
+      "target": "docs/upstream/visual-bible/11-depth.prompt.txt",
+      "gitBlobSHA1": "3e0db0ab76cd13aeae4cae5ca43041bfd55d9c4d",
+      "sha256": "3528fffa694197fc13ed54571b381f65f718846e634fe5b5c4d02622dd9fe174"
+    },
+    {
+      "source": "docs/urushi/visual-bible/12-poster.prompt.txt",
+      "target": "docs/upstream/visual-bible/12-poster.prompt.txt",
+      "gitBlobSHA1": "9e7a461aaca1ae2462786876e171a8a2495e40a4",
+      "sha256": "852ac6cf60989d7af6833021cd304dada48c249bb479a9f929421d84367c067d"
+    },
+    {
+      "source": "provenance/urushi/PROVENANCE.md",
+      "target": "docs/upstream/collection-provenance/PROVENANCE.md",
+      "gitBlobSHA1": "cc675e62bfe290735dadfab9221f235b039cb988",
+      "sha256": "ac29f229f4ddc29f3c2182949310f0540b6c022a9ad706c57de9838d03c42d37"
+    },
+    {
+      "source": "provenance/urushi/PRODUCT.md",
+      "target": "docs/upstream/collection-provenance/PRODUCT.md",
+      "gitBlobSHA1": "352b912c64c34ef90f90c49d285923eb7b9e6676",
+      "sha256": "c7857697e32600f18a42c08cda0e7a965f0f77dca61b12b81b6f5bbedff0ae42"
+    },
+    {
+      "source": "provenance/urushi/IMPORT.json",
+      "target": "docs/upstream/collection-provenance/IMPORT.json",
+      "gitBlobSHA1": "b3a19cb91f0c5702ecd7367a4fc026b021d5e90f",
+      "sha256": "2d424751351861df555a2dec84b2b4eef823a12bbfdcf9fff867eed037fc1678"
+    },
+    {
+      "source": "provenance/urushi/MANIFEST.sha256",
+      "target": "docs/upstream/collection-provenance/MANIFEST.sha256",
+      "gitBlobSHA1": "f98c5de0c8557c83513760bb8b2a79cd82b5499c",
+      "sha256": "76ed905835ed665271aca453c81ba027aef31dc80ccda1b53f92e2db6cddeb0b"
+    },
+    {
+      "source": "provenance/urushi/README.md",
+      "target": "docs/upstream/collection-provenance/README.md",
+      "gitBlobSHA1": "ddc5a3e3ac566a9afef0ee2efc8d2c18313f6324",
+      "sha256": "f593a2a8736a7f42a9fe6adc189260ebe5343eae4fe08fe0deb9c01478c3d41e"
+    },
+    {
+      "source": "public/chronos/licenses/DM-Sans-OFL.txt",
+      "target": "public/licenses/DM-Sans-OFL.txt",
+      "gitBlobSHA1": "917aaa663125b07671987742a0e805661e08e624",
+      "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+    }
+  ],
+  "sharedFonts": [
+    {
+      "path": "public/shared/fonts/dm-sans-latin-400-normal.woff2",
+      "frozenGitBlobSHA1": "0b8bc556cf4b4cbd5c82418947a159f9aaa3c6cc",
+      "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+    },
+    {
+      "path": "public/shared/fonts/dm-sans-latin-500-normal.woff2",
+      "frozenGitBlobSHA1": "48e161289603aa2d4c9b83f294dc73af969b339a",
+      "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+    }
+  ],
+  "dmSansLicenseSource": "https://raw.githubusercontent.com/seiya058904/ai-web-experience-collection/186381f8da01aa8cf23771eb1514834d32b4d95c/public/chronos/licenses/DM-Sans-OFL.txt",
+  "originalPublicNoticesUnmodified": true,
+  "upstreamVisualBiblePNGs": "Not shipped; research-only records and prompts preserved. Optional reference retrieval may occur separately."
+}

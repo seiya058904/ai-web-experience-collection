@@ -1,0 +1,26 @@
+Copyright (c) 2026 seiya058904
+All rights reserved.
+
+The project author's original source code, text, design and original assets
+are made publicly available for inspection and preservation. Except as
+required by applicable law or the GitHub Terms of Service, no additional
+permission is granted to reuse, modify, redistribute, sublicense or sell
+these materials. Obtain permission from the copyright holder for such uses.
+
+Rights in AI-generated illustrations are reserved only to the extent that
+such rights exist under applicable law. No exclusive ownership of third-party
+material or of independently generated similar output is claimed.
+
+Third-party software, font files, circuit geometry and associated notices
+are excluded from this notice. They remain subject to their respective
+licenses, as identified in ATTRIBUTION.md and public/licenses.txt. This
+project does not relicense those materials under the author's copyright.
+
+The supplied GLAZE, KAGE / VOID, CHRONOS and INTERVAL application code and procedural geometry
+retain their original MIT licenses, included in public/glaze/LICENSE.txt,
+public/kage/LICENSE, public/chronos/LICENSE and public/interval/LICENSE. This collection notice does not override them.
+
+Formula 1, F1, team names, NASA, SpaceX and other third-party marks belong
+to their respective owners. AI Web Experience Collection and its individual
+works are independent and unofficial; no affiliation, endorsement or rights
+in those marks are claimed.

@@ -1,5 +1,7 @@
 /** The interface stays still while the optical world moves through it. */
-// Keep the camera, scroll distance and CSS composition on this same boundary.
+import { isPortraitComposition } from './framing.js';
+import { interfacePalette, portraitButtonThresholds } from './ui-ink.js';
+// Scroll length keeps the original phone boundary; portrait composition also uses framing.js.
 export const MOBILE_BREAKPOINT = 760;
 
 export const CHAPTERS = Object.freeze([
@@ -41,7 +43,9 @@ export function createUI(root, callbacks = {}) {
     offset: '',
     clipDirection: '',
     captionInteractive: undefined,
-    dark: undefined,
+    palettes: new Map(),
+    inkViewport: '',
+    buttonThresholds: { motion: .83, index: .83 },
     paused: undefined,
     reduced: undefined,
     material: 'clear',
@@ -57,7 +61,6 @@ export function createUI(root, callbacks = {}) {
     <header class="site-header">
       <a class="brand" href="#light" data-navigate="0" aria-label="Glasshouse — return to the beginning">${logo}<span>Glasshouse</span></a>
       <nav class="header-actions" aria-label="Experience controls">
-        <a class="collection-return" href="${import.meta.env.BASE_URL}" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
         <button class="text-button motion-toggle" type="button" aria-label="Pause motion" aria-pressed="false"><span>Motion</span><span class="motion-icon">${pause}</span></button>
         <button class="text-button index-toggle" type="button" aria-label="Open chapter index" aria-haspopup="dialog" aria-controls="chapter-index" aria-expanded="false"><span>Index</span>${plus}</button>
       </nav>
@@ -144,6 +147,35 @@ export function createUI(root, callbacks = {}) {
   const dialog = root.querySelector('.chapter-index');
   const mobileNumber = root.querySelector('.mobile-chapter-number');
   const mobileName = root.querySelector('.mobile-chapter-name');
+  const inkRegions = [
+    [root, 'caption'],
+    [root.querySelector('.site-header .brand'), 'brand'],
+    [root.querySelector('.header-actions'), 'actions'],
+    [motionButton, 'motion'],
+    [indexButton, 'index'],
+    [root.querySelector('.journey-footer'), 'footer'],
+    ...Array.from(root.querySelectorAll('.scene-controls'), element => [element, 'footer']),
+  ];
+
+  function updateInk(darkness, renderMode) {
+    const portrait = isPortraitComposition(innerWidth, innerHeight);
+    const viewport = `${innerWidth}/${innerHeight}`;
+    if (state.inkViewport !== viewport) {
+      state.buttonThresholds = portrait ? portraitButtonThresholds(innerWidth, innerHeight) : { motion: .83, index: .83 };
+      state.inkViewport = viewport;
+    }
+    for (const [element, region] of inkRegions) {
+      const palette = interfacePalette(darkness, region, renderMode, portrait, state.buttonThresholds);
+      const signature = `${palette.dark}/${palette.muted}`;
+      if (state.palettes.get(element) === signature) continue;
+      element.dataset.theme = palette.dark ? 'dark' : 'light';
+      element.style.setProperty('--ink', palette.ink);
+      element.style.setProperty('--muted', palette.muted);
+      element.style.setProperty('--line', palette.line);
+      element.style.color = 'var(--ink)';
+      state.palettes.set(element, signature);
+    }
+  }
 
   function syncMenuState(open) {
     if (state.menuOpen === open) return;
@@ -258,7 +290,7 @@ export function createUI(root, callbacks = {}) {
   bindRange('light-angle', 'onLightAngle');
   bindRange('daylight-angle', 'onDaylight');
 
-  function update({ chapter = 0, localProgress = 0, progress = 0, darkness = 0, captionOpacity = 1, captionOffset = 0, paused = false, reduced = false } = {}) {
+  function update({ chapter = 0, localProgress = 0, progress = 0, darkness = 0, captionOpacity = 1, captionOffset = 0, paused = false, reduced = false, renderMode = 'webgl' } = {}) {
     if (state.disposed) return;
     const requested = typeof chapter === 'string' ? CHAPTERS.findIndex(item => item.id === chapter.toLowerCase()) : chapter;
     const index = Math.max(0, Math.min(CHAPTERS.length - 1, Math.round(Number.isFinite(requested) ? requested : 0)));
@@ -308,14 +340,9 @@ export function createUI(root, callbacks = {}) {
       state.offset = offset;
     }
 
-    const dark = darkness > 0.5;
-    if (state.dark !== dark) {
-      root.dataset.theme = dark ? 'dark' : 'light';
-      root.style.setProperty('--ink', dark ? '#f2f2ed' : '#171a1b');
-      root.style.setProperty('--muted', dark ? '#c2c6c6' : '#41484b');
-      root.style.setProperty('--line', dark ? 'rgba(235, 241, 241, 0.30)' : 'rgba(23, 31, 35, 0.28)');
-      state.dark = dark;
-    }
+    // One sky contains both a dark flag and a bright aperture. Keep each
+    // reading region legible without a second clock, DOM measurement or tint.
+    updateInk(darkness, renderMode);
 
     // Earlier segments remain complete; only the current segment advances.
     const segmentProgress = Number.isFinite(localProgress) ? clamp01(localProgress) : clamp01(progress * CHAPTERS.length - index);

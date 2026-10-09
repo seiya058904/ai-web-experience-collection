@@ -1,0 +1,150 @@
+{
+  "description": "Original production still edition rendered from the same authored object, material shaders and scene state as the live artwork. No DOM, typography or UI is baked into these frames.",
+  "license": "MIT; see LICENSE and licenses/ASSET-RIGHTS.md.",
+  "method": "Chromium 153 WebGL2 / ANGLE SwiftShader; 1440 × 900; fixed time 0; centered pointer; reflection control 0.5; lossless WebP.",
+  "poster": "../surface-black.webp is an identical copy of hero.webp",
+  "frames": [
+    {
+      "file": "hero.webp",
+      "phase": 0,
+      "width": 1440,
+      "height": 900,
+      "bytes": 331746,
+      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657"
+    },
+    {
+      "file": "core.webp",
+      "phase": 1.2,
+      "width": 1440,
+      "height": 900,
+      "bytes": 423772,
+      "sha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0"
+    },
+    {
+      "file": "coat.webp",
+      "phase": 2.45,
+      "width": 1440,
+      "height": 900,
+      "bytes": 383378,
+      "sha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc"
+    },
+    {
+      "file": "cure.webp",
+      "phase": 3.55,
+      "width": 1440,
+      "height": 900,
+      "bytes": 366356,
+      "sha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c"
+    },
+    {
+      "file": "abrade.webp",
+      "phase": 4.85,
+      "width": 1440,
+      "height": 900,
+      "bytes": 379964,
+      "sha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b"
+    },
+    {
+      "file": "layers.webp",
+      "phase": 5.55,
+      "width": 1440,
+      "height": 900,
+      "bytes": 376904,
+      "sha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810"
+    },
+    {
+      "file": "vermilion.webp",
+      "phase": 6.75,
+      "width": 1440,
+      "height": 900,
+      "bytes": 339894,
+      "sha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb"
+    },
+    {
+      "file": "polish.webp",
+      "phase": 7.9,
+      "width": 1440,
+      "height": 900,
+      "bytes": 336488,
+      "sha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9"
+    },
+    {
+      "file": "maki-e.webp",
+      "phase": 8.7,
+      "width": 1440,
+      "height": 900,
+      "bytes": 351236,
+      "sha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9"
+    },
+    {
+      "file": "reveal.webp",
+      "phase": 9.85,
+      "width": 1440,
+      "height": 900,
+      "bytes": 352118,
+      "sha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73"
+    },
+    {
+      "file": "depth.webp",
+      "phase": 10.45,
+      "width": 1440,
+      "height": 900,
+      "bytes": 347524,
+      "sha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3"
+    }
+  ],
+  "sources": [
+    {
+      "file": "src/renderer.js",
+      "sha256": "4406b28aab8a952e9d46bc3a3ad15e14f8c45762bad93ca559ba595f5094b458"
+    },
+    {
+      "file": "src/geometry.js",
+      "sha256": "c651b6743675ed908d88c15e4787087168f5ae57494cef4cee540903de625faf"
+    },
+    {
+      "file": "src/material-textures.js",
+      "sha256": "7038f0f216cf5d31d89a32cd4ab2bb73f256bb06ca9ea8bb4e90d2c2558e7549"
+    },
+    {
+      "file": "src/story.js",
+      "sha256": "0ce46178104dd815b2b61197191e4d7fa1333e3951f6d8f5ca50e606fda95f03"
+    },
+    {
+      "file": "public/models/vessel-profile.json",
+      "sha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f"
+    },
+    {
+      "file": "src/shaders/background.frag.glsl",
+      "sha256": "b3b55c2ceab61920cf962cb8b3e508806667ade17b3b2534ca7ac34b41e8b294"
+    },
+    {
+      "file": "src/shaders/background.vert.glsl",
+      "sha256": "831e1a1197f930e5def6d609ddc8855e9b030b481067286e77b42035fc8aa301"
+    },
+    {
+      "file": "src/shaders/floor.frag.glsl",
+      "sha256": "f80c41727358ed6029c7bd32390e4f8b2b8db77322a020f56212a0adfb2766e0"
+    },
+    {
+      "file": "src/shaders/floor.vert.glsl",
+      "sha256": "eeefd4141e2b01329d67ed1111e552432fd8e66a7918144dfb3b5351625996fe"
+    },
+    {
+      "file": "src/shaders/gold.frag.glsl",
+      "sha256": "fdb540a6968bfe7a40909f7d63da6bca2c9f3239910b2ad52b5f1b7e57998c1d"
+    },
+    {
+      "file": "src/shaders/gold.vert.glsl",
+      "sha256": "d1c6f7c357d9bad7a9b759026971c0b97b3903bf08e54f6fbc786736b783c144"
+    },
+    {
+      "file": "src/shaders/lacquer.frag.glsl",
+      "sha256": "a0c06102488b2b6eedb92be354d22f907d16f52a40b44f57d56beeec9db4504d"
+    },
+    {
+      "file": "src/shaders/vessel.vert.glsl",
+      "sha256": "bbdf14e40413b85c821a62785dcfc4f13e99f19400a111eb34c423f902325242"
+    }
+  ]
+}

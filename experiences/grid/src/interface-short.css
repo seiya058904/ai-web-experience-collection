@@ -1,0 +1,101 @@
+/* A short, wide screen remains a real responsive specimen. The same nine
+   elements share four rows, with a minimum width measured from actual content. */
+html.js-ready .specimen.native-layout[data-short-frame="true"] {
+  grid-template-rows: 16px auto minmax(0, 1fr) 44px !important;
+  gap: 3px !important;
+  padding: 8px !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-meta {
+  grid-column: 1 / 7 !important;
+  grid-row: 1 !important;
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-place {
+  grid-column: 7 / 12 !important;
+  grid-row: 1 !important;
+  align-self: start !important;
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-mark {
+  grid-column: 12 / 13 !important;
+  grid-row: 1 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-title {
+  grid-column: 1 / 4 !important;
+  grid-row: 2 !important;
+  font-size: clamp(48px, calc(var(--frame-height) * .21), 88px) !important;
+  line-height: .82 !important;
+  align-self: center !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-number {
+  grid-column: 4 / 5 !important;
+  grid-row: 2 !important;
+  align-self: center !important;
+  font-size: clamp(28px, calc(var(--frame-height) * .10), 42px) !important;
+  line-height: 1 !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-subtitle {
+  grid-column: 5 / 9 !important;
+  grid-row: 2 !important;
+  align-self: center !important;
+  font-size: clamp(21px, calc(var(--frame-height) * .085), 31px) !important;
+  line-height: 1.03 !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-body {
+  grid-column: 1 / 9 !important;
+  grid-row: 3 !important;
+  align-self: end !important;
+  font-size: clamp(13px, calc(var(--frame-height) * .038), 16px) !important;
+  line-height: 1.35 !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-action {
+  grid-column: 1 / 9 !important;
+  grid-row: 4 !important;
+  align-self: stretch !important;
+  min-height: 44px !important;
+  font-size: 11px !important;
+  padding: 10px !important;
+}
+
+.js-ready .specimen.native-layout[data-short-frame="true"] .specimen-image {
+  grid-column: 9 / 13 !important;
+  grid-row: 2 / 5 !important;
+  min-height: 50px !important;
+}
+
+/* Below this measured content width, the photo becomes a compact top-right
+   reference and the body takes the full row. This retains genuine reflow
+   while the 13px prose and 44px action stay intact. */
+@container (max-width: 540px) {
+  .js-ready .specimen.native-layout[data-short-frame="true"] .specimen-title {
+    grid-column: 1 / 5 !important;
+  }
+  .js-ready .specimen.native-layout[data-short-frame="true"] .specimen-number {
+    grid-column: 5 / 6 !important;
+  }
+  .js-ready .specimen.native-layout[data-short-frame="true"] .specimen-subtitle {
+    grid-column: 6 / 10 !important;
+  }
+  .js-ready .specimen.native-layout[data-short-frame="true"] .specimen-image {
+    grid-column: 10 / 13 !important;
+    grid-row: 2 / 3 !important;
+    height: 50px !important;
+    align-self: center !important;
+  }
+  .js-ready .specimen.native-layout[data-short-frame="true"] .specimen-body,
+  .js-ready .specimen.native-layout[data-short-frame="true"] .specimen-action {
+    grid-column: 1 / 13 !important;
+  }
+}

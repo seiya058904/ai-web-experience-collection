@@ -43,8 +43,8 @@ Met 的模型来自古代物件本身的扫描。第六幕先出现的生成行�
 |---|---|---|
 | Bodoni Moda | 标题字体；`@fontsource/bodoni-moda` 5.2.7。运行文件为本地常规体与斜体 WOFF2。 | SIL Open Font License 1.1；[bodoni-moda-OFL.txt](licenses/bodoni-moda-OFL.txt)。 |
 | Manrope | 正文与控件；`@fontsource/manrope` 5.2.6。运行文件为本地 400、500 字重 WOFF2。 | SIL Open Font License 1.1；[manrope-OFL.txt](licenses/manrope-OFL.txt)。 |
-| Three.js | Collection 三维渲染；0.186.1。原包为 0.180.0，原始版本记录保留在 provenance。 | MIT；[实际生产依赖清单](../third-party-licenses.md)。 |
-| Vite | Collection 根构建工具 8.3.2。原包为 7.1.9，原始许可保留在 provenance。 | [实际生产依赖清单](../third-party-licenses.md)与根工具包许可；未部署原包构建工具。 |
+| Three.js | Collection 三维渲染；0.186.1。原包为 0.180.0，原始版本记录保留在 provenance。 | MIT；[实际生产依赖清单](./third-party-licenses.md)。 |
+| Vite | Collection 根构建工具 8.3.2。原包为 7.1.9，原始许可保留在 provenance。 | [实际生产依赖清单](./third-party-licenses.md)与根工具包许可；未部署原包构建工具。 |
 | Draco | Met GLB 的本地网格解码器；含 WASM、包装脚本和 JavaScript 解码器。 | Apache License 2.0；[LICENSE.txt](models/draco/LICENSE.txt)与[README.md](models/draco/README.md)。 |
 
 版本来自本项目的 `package.json` 与锁文件；许可文本来自对应随包依赖。自定义 HTML、CSS、JavaScript、SVG、研究文字和生成图像没有因使用这些组件而自动继承同一许可。本文件是逐项来源清单，不是为整个项目增加一份统一开放许可证。

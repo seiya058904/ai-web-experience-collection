@@ -1,0 +1,83 @@
+{
+  "schema": "atlas-optics-derivation/v1",
+  "reconstructedAfterWorkspaceLoss": true,
+  "reconstructionProof": "All three raw outputs match canonical SHA-256 identities recorded before workspace loss. This proves derived resource bytes; it does not restore lost browser evidence or the former generator source.",
+  "source": {
+    "path": "public/atlas/data/vectors/globe-land.geojson",
+    "sha256": "658908cec877ace15313918399ff7172a090aaa1f10ff7b920e418382a6aa007",
+    "license": "Natural Earth public domain",
+    "mapScale": "1:50,000,000",
+    "note": "The legacy 50m dataset label denotes map scale, not 50-metre spatial precision."
+  },
+  "upstream": {
+    "repository": "https://github.com/seiya058904/ai-web-experience-collection",
+    "commit": "186381f8da01aa8cf23771eb1514834d32b4d95c",
+    "path": "experiences/atlas/src/world/globe.ts",
+    "originalGlobeSHA256": "bcfb713f56fddf2fa32fd8f50799ce3e66d9ed3ce94337d82b6d4c5a8d4b9d6e",
+    "license": "MIT — Copyright (c) 2026 ATLAS contributors"
+  },
+  "generator": {
+    "path": "scripts/derive-optics.mjs",
+    "sha256": "f5a3d5ba316a8fb3fdfa36146d6565e84e1844b21611cd9159849906f91e63e1",
+    "node": "v24.19.0",
+    "zlib": "1.3.2.1-motley-3246f1b"
+  },
+  "kernel": {
+    "path": "scripts/optics-kernel.ts",
+    "sha256": "46c0bb5513e09bedb724923288c55fa121424e33c2de05aa73406645b899732b",
+    "note": "Original numeric function bodies retained verbatim; exports and provenance header added."
+  },
+  "encoding": {
+    "rasterRowZero": "south",
+    "rasterType": "uint8",
+    "landSize": [
+      4096,
+      2048
+    ],
+    "japanSize": [
+      2048,
+      2048
+    ],
+    "japanBandTexels": 8,
+    "japanBounds": {
+      "west": 120,
+      "south": 24,
+      "east": 148,
+      "north": 49
+    },
+    "coastlineType": "IEEE754 float32 little-endian XYZ, kilometres, original 1.5 km display altitude",
+    "gzip": "Level 9. Compressed byte encoding can vary across zlib versions; raw bytes are canonical. Verification checks packaged gzip hash and decoded equality, not regenerated gzip encoding."
+  },
+  "outputs": [
+    {
+      "filename": "globe-land-mask-4096x2048.bin",
+      "bytes": 8388608,
+      "sha256": "b7bc4bbce8c68ef66f2b168570ae74fe1c9479667a543683c99ceaefa2250397",
+      "gzip": {
+        "filename": "globe-land-mask-4096x2048.bin.gz",
+        "bytes": 57002,
+        "sha256": "63a4a16c04ecebfe822054d6a80e03078bfe9b99b2edc6c19ee9b28a53c21568"
+      }
+    },
+    {
+      "filename": "japan-coast-distance-2048x2048.bin",
+      "bytes": 4194304,
+      "sha256": "06db90e5a4bfd5c2ac118deecba89463393702ea4a9199d57466196c7cdd041f",
+      "gzip": {
+        "filename": "japan-coast-distance-2048x2048.bin.gz",
+        "bytes": 243191,
+        "sha256": "85dee8f60f3178942cb41f93bee5d07fe3df4df5f9481bbf8ed109e1d0706bf3"
+      }
+    },
+    {
+      "filename": "globe-coastlines-f32le.bin",
+      "bytes": 874464,
+      "sha256": "ee867d4fb499d39e01d88703933ff4c4de9ecf182733dcf3d159bc5f5122eba5",
+      "gzip": {
+        "filename": "globe-coastlines-f32le.bin.gz",
+        "bytes": 396915,
+        "sha256": "6652eaf68e78a903652294a507c299f8a0ecc81c6f43c1e5cd76a927a8f02aca"
+      }
+    }
+  ]
+}

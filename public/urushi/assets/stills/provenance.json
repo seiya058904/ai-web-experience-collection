@@ -1,118 +1,886 @@
 {
-  "description": "Original production still edition rendered from the same authored object, material shaders and scene state as the live artwork. No DOM, typography or UI is baked into these frames.",
-  "license": "MIT; see LICENSE and licenses/ASSET-RIGHTS.md.",
-  "method": "Chromium 153 WebGL2 / ANGLE SwiftShader; 1440 × 900; fixed time 0; centered pointer; reflection control 0.5; lossless WebP.",
+  "description": "Original digital vessel rendered by the included WebGL scene. No DOM text or interface is baked into the images.",
+  "status": "Production renderer plates",
+  "recordedAt": "2026-10-08T23:59:46.799426+00:00",
+  "rights": "See LICENSE, LICENSE-SCOPE.md, docs/upstream/collection-COPYRIGHT.txt and public/licenses/ASSET-RIGHTS.md; original asset notices are preserved.",
+  "method": {
+    "browser": "141.0.7390.37",
+    "renderer": "ANGLE SwiftShader",
+    "encoding": "Pixel-identical lossless WebP; no resampling or image retouching.",
+    "time": "Native live renderer time; ambient time was not fixed. These are actual captures, not a bit-exact simulation at a fixed time.",
+    "quality": "Unmodified application quality and device-pixel-ratio caps; source and output sizes are recorded for each variant.",
+    "ui": "Hidden only in the authoring browser context. All visible DOM text was checked absent.",
+    "limitations": "Linux software rendering; does not certify physical GPU, iOS Safari, real touch or high-refresh displays."
+  },
   "poster": "../surface-black.webp is an identical copy of hero.webp",
+  "productionIdentity": {
+    "indexSHA256": "348b8107c4e37e0ac50cc37425a475939df0e337d0f3d56ddba1173493175356",
+    "entries": [
+      {
+        "ref": "./assets/index-DbTln4yy.js",
+        "sha256": "da0a30608a5d54a0f3361319c28a23cf514505123ad5baa3d258889dfbd1c30e"
+      },
+      {
+        "ref": "./assets/index-D6a2Hj8g.css",
+        "sha256": "06db3ff2c2508f1922f8f7b42f710e2eb0ce951fa5b8c1096d7c9be0302ab774"
+      }
+    ]
+  },
   "frames": [
     {
       "file": "hero.webp",
-      "phase": 0,
-      "width": 1440,
-      "height": 900,
-      "bytes": 331746,
-      "sha256": "417d3bcf36ea696896223c9827bf196f4eaf42dfb649830614c8e715ee5e2657"
+      "variant": "wide",
+      "phase": 0.16,
+      "actualPhase": 0.15996168582375478,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 868256,
+      "sha256": "59e4b83f0074d141ad983bd88ee9430664ac8ffd7002dca821e9717f92e13b7c",
+      "pngSHA256": "c9cc4aa2c5bd4552dbfdbcbdf95b0e6ad1558273dfff441f82df6935452fc61c",
+      "pixelIdentical": true
     },
     {
       "file": "core.webp",
-      "phase": 1.2,
-      "width": 1440,
-      "height": 900,
-      "bytes": 423772,
-      "sha256": "d741194da236640d83e42c804fb3f935ddc61f611c71490ad1f88c6b96f512d0"
+      "variant": "wide",
+      "phase": 1.25,
+      "actualPhase": 1.25,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 1068276,
+      "sha256": "dc97731ab88520e91bf51a12f54f5f4c66ca7e395d0d753f526913c66fcb6b91",
+      "pngSHA256": "7303015383ec09a2c50bc6d531eeae6c21f1ab82c7f7373354078875bfcc8566",
+      "pixelIdentical": true
     },
     {
       "file": "coat.webp",
-      "phase": 2.45,
-      "width": 1440,
-      "height": 900,
-      "bytes": 383378,
-      "sha256": "501e37a8fe1394736cbcdbcef6e9b9c721d1bb3abadcf432934a41ddf73eaafc"
+      "variant": "wide",
+      "phase": 2.55,
+      "actualPhase": 2.550084175084175,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 940468,
+      "sha256": "daeb43d450ad1f5f23443dbf2200e002d025b86e45c5f6a90c3af1140842ac14",
+      "pngSHA256": "58aa3630aa6673e3a305e60c69cd144625d9ff17afa679b05399720634d3b54e",
+      "pixelIdentical": true
     },
     {
       "file": "cure.webp",
+      "variant": "wide",
       "phase": 3.55,
-      "width": 1440,
-      "height": 900,
-      "bytes": 366356,
-      "sha256": "836224cc2a925a8c131955f37774beac21a459b2259e2807d1ea840875431d8c"
+      "actualPhase": 3.550084175084175,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 925666,
+      "sha256": "b7bf573c1e420f3541567c0b3e3b17a12684e91745653459b38e418caf102429",
+      "pngSHA256": "023acbcd3c2721c735e4ce65a3b272b7b66e380f4b96acf7b1a383b22ac9c210",
+      "pixelIdentical": true
     },
     {
       "file": "abrade.webp",
-      "phase": 4.85,
-      "width": 1440,
-      "height": 900,
-      "bytes": 379964,
-      "sha256": "aa7aab598ae308d3d0dfb1dbb58ceabff25abd2c107f9b6a984ec237bd0c009b"
+      "variant": "wide",
+      "phase": 4.65,
+      "actualPhase": 4.650173611111111,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 1006070,
+      "sha256": "b3dc1d80c6b262e815716b44e51ed40d4835c4ed831253b113ac0fb7203af25f",
+      "pngSHA256": "ae8935310ef57fcdf6919c4d7e9e147567a1fc529ec98b01375e031bb83e1db8",
+      "pixelIdentical": true
     },
     {
       "file": "layers.webp",
-      "phase": 5.55,
-      "width": 1440,
-      "height": 900,
-      "bytes": 376904,
-      "sha256": "b5f08300218fb75436ea0e2d6d88652a077cedb9402319971755b020b7742810"
+      "variant": "wide",
+      "phase": 5.5,
+      "actualPhase": 5.5,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 847802,
+      "sha256": "d9513aac6c886d2942d65b5fa4410a12c6ac5647a705d2592a665b169811230d",
+      "pngSHA256": "d19cc13003248d652c7204f0f8b8b9d04dbb59e3c5f77bbe2d08169c7fbf311c",
+      "pixelIdentical": true
     },
     {
       "file": "vermilion.webp",
-      "phase": 6.75,
-      "width": 1440,
-      "height": 900,
-      "bytes": 339894,
-      "sha256": "2d3b44fd717d0436134c09cf9c66ff4eb0fa766e608906940c21ac7943362cbb"
+      "variant": "wide",
+      "phase": 6.72,
+      "actualPhase": 6.720052083333333,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 972466,
+      "sha256": "4e41db129c3cb6ee95b594db1219fe563e09cf5b5cab9bdd1ceccba2ba5fc5b1",
+      "pngSHA256": "233320b2eaef03f98bd493f730c7905a9dc66cf2dafc44a1b3784edad21aba8d",
+      "pixelIdentical": true
     },
     {
       "file": "polish.webp",
-      "phase": 7.9,
-      "width": 1440,
-      "height": 900,
-      "bytes": 336488,
-      "sha256": "13137961f28a54cf49abe0aa802b5ef4bb94767278971b9b79e748b770a760f9"
+      "variant": "wide",
+      "phase": 7.85,
+      "actualPhase": 7.8500631313131315,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 917556,
+      "sha256": "5d9afa49c3fd697683766af545bc4dc8c8d877cd3504e285b5dccc8517daccf3",
+      "pngSHA256": "c3288695520b0a91e93838101f50111a60e953ad0465514b34324e55d7574848",
+      "pixelIdentical": true
     },
     {
       "file": "maki-e.webp",
-      "phase": 8.7,
-      "width": 1440,
-      "height": 900,
-      "bytes": 351236,
-      "sha256": "c1125c7f2e37ec3632cc832ecb89b944bb07678aeef27aeeae3fd4276582b9d9"
+      "variant": "wide",
+      "phase": 8.85,
+      "actualPhase": 8.849867724867725,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 1021314,
+      "sha256": "a154fc616f92f1a20689deda4ac09c0bfbf6f2806737e2bce30a71a431a838df",
+      "pngSHA256": "5a70017374e172a5e4a59ad220bd746d3ce2967aa91c7a4e4d519fca85d85125",
+      "pixelIdentical": true
     },
     {
       "file": "reveal.webp",
-      "phase": 9.85,
-      "width": 1440,
-      "height": 900,
-      "bytes": 352118,
-      "sha256": "c9a6b76790b455f6e91a12c2e8909e91b53ccd6722216e191a2bbee0b0e31b73"
+      "variant": "wide",
+      "phase": 9.75,
+      "actualPhase": 9.75,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 1014454,
+      "sha256": "5b1335eb8c39e920a0b9b312e293fb81a2a4c1278f6c103d083b95cc5bbce0fa",
+      "pngSHA256": "8550d159d59a3aa668970d3144534fafbecca9cb9630d1712bddd5ef88f3c51d",
+      "pixelIdentical": true
     },
     {
       "file": "depth.webp",
-      "phase": 10.45,
-      "width": 1440,
-      "height": 900,
-      "bytes": 347524,
-      "sha256": "6d42ee27932e34d0573df273ad491b086b4d08688b6ac2226707c4726bd07ee3"
+      "variant": "wide",
+      "phase": 10.5,
+      "actualPhase": 10.5,
+      "width": 2560,
+      "height": 1440,
+      "cssViewport": [
+        2560,
+        1440
+      ],
+      "canvasCSS": [
+        2560,
+        1440
+      ],
+      "drawingBuffer": [
+        2560,
+        1440
+      ],
+      "devicePixelRatio": 1,
+      "bytes": 885130,
+      "sha256": "ab48d9e179bb4d1f92bf81103890086d5bb966e209a59000fb4f0d2c59028436",
+      "pngSHA256": "966df4bff6f7ce67d6fb9ebfd348296405d76a01a20c2fa9c689d5438093b1a3",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/hero.webp",
+      "variant": "mobile",
+      "phase": 0.16,
+      "actualPhase": 0.16013071895424835,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 181636,
+      "sha256": "c4bc59aacf82dbe40d60863de8f33bc00d8434c1affec233f99ca6405ef5dc1a",
+      "pngSHA256": "03604268bde943f200ee76acd9d1e74e3c3fca4f1c41b7213d1f93b27577d5a7",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/core.webp",
+      "variant": "mobile",
+      "phase": 1.25,
+      "actualPhase": 1.2503703703703704,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 213350,
+      "sha256": "a5c5ca22a2f056b11e7d5722256484dae7665af0e628d077a8291e3407b08c26",
+      "pngSHA256": "bb19a9b8f2bc85f6847586a870b91ace8a6ea6015a1af8721c8aa16b71fb867f",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/coat.webp",
+      "variant": "mobile",
+      "phase": 2.55,
+      "actualPhase": 2.54989231873654,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 191338,
+      "sha256": "3118090e19f2ebc459b7620087b34aa83b8c822b8de2c257e1795c6ae3007f53",
+      "pngSHA256": "55afdec63988ba540bc4a280799d697eccc7487b86fea4d8b21ede5a94c4f24d",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/cure.webp",
+      "variant": "mobile",
+      "phase": 3.55,
+      "actualPhase": 3.54989231873654,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 166492,
+      "sha256": "588a373e7027225f281979dd08358065c27eb78e4e7a36d08ebdeaeed969a3db",
+      "pngSHA256": "68827a89f71493fe8dc6dc64a998481f88ebb52586a0f6745cd7edfd203c371b",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/abrade.webp",
+      "variant": "mobile",
+      "phase": 4.65,
+      "actualPhase": 4.6503703703703705,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 186524,
+      "sha256": "2f3e53274322acab160ad80fe309e80be5060f8ad1527a1e13ac8bab93c0add8",
+      "pngSHA256": "f7439658b4fd6d415d8530ce785d0d734dc7b074769e270aedd2ee624f29978b",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/layers.webp",
+      "variant": "mobile",
+      "phase": 5.5,
+      "actualPhase": 5.5,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 177494,
+      "sha256": "c17af102033ef04d93aa6e71d5335eff2f8333100eb08f3432d559548245e4c9",
+      "pngSHA256": "e8e929e2c07fd4e0841c9d9097022bd3711ace470432de3bf40cf07a1b9fb16f",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/vermilion.webp",
+      "variant": "mobile",
+      "phase": 6.72,
+      "actualPhase": 6.72,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 196910,
+      "sha256": "f8916aa01a1488743a149b0610a5b1ea0d04d1fcf05742365e0da1eac7937637",
+      "pngSHA256": "071b10eb4c3ff52716350014f0cb37f1995f8656579abf0323b3fd13075f9139",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/polish.webp",
+      "variant": "mobile",
+      "phase": 7.85,
+      "actualPhase": 7.849757673667205,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 183018,
+      "sha256": "c71c113ba4c489237f27c395e7ceba117566e4121d887074c31a79c67a6fe084",
+      "pngSHA256": "d3c9932c793d202caa46be3770898754d53789ee832265d552b6b303b9b23087",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/maki-e.webp",
+      "variant": "mobile",
+      "phase": 8.85,
+      "actualPhase": 8.849887133182845,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 194338,
+      "sha256": "1fa626c9724c4bf4f3017170a00f1f82913766f2eb7cb5109d740f197af1b6e2",
+      "pngSHA256": "da4fdb129b03e42d9748ccd128665e3abed3bbdc53b12de675b358f8ba24ef9f",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/reveal.webp",
+      "variant": "mobile",
+      "phase": 9.75,
+      "actualPhase": 9.749873928391326,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 196632,
+      "sha256": "fb315de25efc9e9c04b907a07f5e182b03f811bd3b58f82913bf1df38a49e8a4",
+      "pngSHA256": "5da62cbbd172439cd2adc1748fa0d82905dc256a96b3ddec38ba8eedcdc6fb4f",
+      "pixelIdentical": true
+    },
+    {
+      "file": "mobile/depth.webp",
+      "variant": "mobile",
+      "phase": 10.5,
+      "actualPhase": 10.50074074074074,
+      "width": 780,
+      "height": 1688,
+      "cssViewport": [
+        390,
+        844
+      ],
+      "canvasCSS": [
+        390,
+        844
+      ],
+      "drawingBuffer": [
+        624,
+        1350
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 178894,
+      "sha256": "afe5e6d6e3d8027089bb50f5238363ffce8d5b9c3b2056c9a658fec6ac240b5f",
+      "pngSHA256": "976d6319e96ef4c9c367645555ca9000f89e7e566ce8691de77955ec67febb9f",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/hero.webp",
+      "variant": "portrait",
+      "phase": 0.16,
+      "actualPhase": 0.16026936026936026,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 357946,
+      "sha256": "d19440248391e5157ff7504dd0032e815029a99931fca99ebf6aaba3a202c436",
+      "pngSHA256": "63edaf635af55bf3109d6a0ca9a831babc9935b7660eb885bd13686506a57a6f",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/core.webp",
+      "variant": "portrait",
+      "phase": 1.25,
+      "actualPhase": 1.2503052503052503,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 451532,
+      "sha256": "4a9f2f4626c2fedf558aaa4389322353e8eac86c7f99497d8edb1f26fc2e6f55",
+      "pngSHA256": "c6a5a298778022eecceabaaffb25aa3408398afd0f2c5282f643327f1604c374",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/coat.webp",
+      "variant": "portrait",
+      "phase": 2.55,
+      "actualPhase": 2.5502958579881656,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 378510,
+      "sha256": "6e07487d085b5bfba100cb24f253d99bdfa298f7ac7d69cc0377368fb2f5b46a",
+      "pngSHA256": "dbdff3e339ecf10c2ba6c740b8b384b36f7fe604d3aabda29b56301a8f9df3c7",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/cure.webp",
+      "variant": "portrait",
+      "phase": 3.55,
+      "actualPhase": 3.5502958579881656,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 333934,
+      "sha256": "bac618b5d16a0afe2dfaa5dd7d465a6451fa53d631b6b488f53348d2091cfe4b",
+      "pngSHA256": "7d002960b9f7dfbe22015cc3f5ed28f12904a8812aa2b801d7c0ea30751babf6",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/abrade.webp",
+      "variant": "portrait",
+      "phase": 4.65,
+      "actualPhase": 4.6501831501831505,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 375334,
+      "sha256": "0732adb0f3ff77d57ba24be1a2a930b78379b843b306dec61b4b28bd64e1d4bf",
+      "pngSHA256": "925aad0204cdb2de2f8782a517d358fb830e50e750c40f13d1092e0b6801d842",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/layers.webp",
+      "variant": "portrait",
+      "phase": 5.5,
+      "actualPhase": 5.5,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 344654,
+      "sha256": "08075eba4506fd56671ba88e10d750680dec7738e023634277a31010ef296e76",
+      "pngSHA256": "29276dc886429c94413b7385cd62c73a1e46e38ccc206034739290d8f47a1198",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/vermilion.webp",
+      "variant": "portrait",
+      "phase": 6.72,
+      "actualPhase": 6.71978021978022,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 363938,
+      "sha256": "2456ebb3df54ab900d586e1432b3f068007ad2db5cd7a230261379de03b60484",
+      "pngSHA256": "c59998439edf52ec45013044f870bb41d460a44fa0142e2d073da6e91ef566ae",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/polish.webp",
+      "variant": "portrait",
+      "phase": 7.85,
+      "actualPhase": 7.849977807367954,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 364274,
+      "sha256": "8d2fcce1746be0dba4a797424e3bf338ea6d5dd93e76f594f33946bc53eab210",
+      "pngSHA256": "0b3497298a4662ab563e6f9f44223125ccefebccf0f842212bfc491cee20121b",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/maki-e.webp",
+      "variant": "portrait",
+      "phase": 8.85,
+      "actualPhase": 8.850232558139535,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 381982,
+      "sha256": "920f4a4cdd27c0516b3905da7afc891d31d55781991aebe29942a0ddbd7345bb",
+      "pngSHA256": "5c2377476df6d35b471a206c3eaceaf7d12bef0bd8058a858f5ba9d3217bf233",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/reveal.webp",
+      "variant": "portrait",
+      "phase": 9.75,
+      "actualPhase": 9.750207813798836,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 385480,
+      "sha256": "bc66c8cbe61b9d172d2c0959e080d0732714d92037b0eb3bfb68dcad0c1bcaab",
+      "pngSHA256": "230f9aa85c8668cf7726248c235dbb222d301c375c258ad7687cb6188cdc694d",
+      "pixelIdentical": true
+    },
+    {
+      "file": "portrait/depth.webp",
+      "variant": "portrait",
+      "phase": 10.5,
+      "actualPhase": 10.5006105006105,
+      "width": 1536,
+      "height": 2048,
+      "cssViewport": [
+        768,
+        1024
+      ],
+      "canvasCSS": [
+        768,
+        1024
+      ],
+      "drawingBuffer": [
+        1036,
+        1382
+      ],
+      "devicePixelRatio": 2,
+      "bytes": 358106,
+      "sha256": "3a03228d7480d237d5f6018f68a2c567937d373abae841743d533d920290fcbd",
+      "pngSHA256": "5ec8f1558097a23604e527c5949b7f8e24eafa55b9cd22c1d102e1cd33233e10",
+      "pixelIdentical": true
     }
   ],
   "sources": [
     {
-      "file": "src/renderer.js",
-      "sha256": "4406b28aab8a952e9d46bc3a3ad15e14f8c45762bad93ca559ba595f5094b458"
+      "file": "src/camera.js",
+      "sha256": "0c665eeea0db0aba810dbecbaeeb82c8aded70796008f76ca8e92131e561ab5a"
+    },
+    {
+      "file": "src/collection-return.css",
+      "sha256": "ae22c15aadb7b6a4d03928b61d79b71b82e527f8e9bbb3044ea138447034083c"
     },
     {
       "file": "src/geometry.js",
       "sha256": "c651b6743675ed908d88c15e4787087168f5ae57494cef4cee540903de625faf"
     },
     {
+      "file": "src/i18n.js",
+      "sha256": "fdca9286826e985325f2c4c91b191998633f3d5d01c9de71ac41fd8dcb9a7146"
+    },
+    {
+      "file": "src/main.js",
+      "sha256": "5d2b1d80bbfba8465adfc4f27599d8f3cbf269f1d06a71806400809d10391479"
+    },
+    {
       "file": "src/material-textures.js",
       "sha256": "7038f0f216cf5d31d89a32cd4ab2bb73f256bb06ca9ea8bb4e90d2c2558e7549"
     },
     {
-      "file": "src/story.js",
-      "sha256": "0ce46178104dd815b2b61197191e4d7fa1333e3951f6d8f5ca50e606fda95f03"
-    },
-    {
-      "file": "public/models/vessel-profile.json",
-      "sha256": "ddb680dec7853e94e09e14db69a50290711730af743e66402cb9d3268126c50f"
+      "file": "src/renderer.js",
+      "sha256": "c3a6abd2f7b50232d0cc1b11abbfa2664b8440f92e2184fb8771dad62e2d423d"
     },
     {
       "file": "src/shaders/background.frag.glsl",
@@ -124,7 +892,7 @@
     },
     {
       "file": "src/shaders/floor.frag.glsl",
-      "sha256": "f80c41727358ed6029c7bd32390e4f8b2b8db77322a020f56212a0adfb2766e0"
+      "sha256": "1e20ecb89036a29d8229c600d741e13ec4f53307afcfd8dd48e7a40967f897f3"
     },
     {
       "file": "src/shaders/floor.vert.glsl",
@@ -132,19 +900,31 @@
     },
     {
       "file": "src/shaders/gold.frag.glsl",
-      "sha256": "fdb540a6968bfe7a40909f7d63da6bca2c9f3239910b2ad52b5f1b7e57998c1d"
+      "sha256": "e6bc10a1076b473c92d6a3cdcb726c2267f3379f5c00323a16a3ca7bb3c211f7"
     },
     {
       "file": "src/shaders/gold.vert.glsl",
-      "sha256": "d1c6f7c357d9bad7a9b759026971c0b97b3903bf08e54f6fbc786736b783c144"
+      "sha256": "9d5ceadc9130dc3af4af8a36c3fbce739b75f42860384fd6b5a48534954b7ac1"
     },
     {
       "file": "src/shaders/lacquer.frag.glsl",
-      "sha256": "a0c06102488b2b6eedb92be354d22f907d16f52a40b44f57d56beeec9db4504d"
+      "sha256": "964b2b337e9880eb3cf248d20c1c321b3855e2fba9e351c4c22b6061d7c74741"
     },
     {
       "file": "src/shaders/vessel.vert.glsl",
       "sha256": "bbdf14e40413b85c821a62785dcfc4f13e99f19400a111eb34c423f902325242"
+    },
+    {
+      "file": "src/still-frames.js",
+      "sha256": "b4b1b07bf4623d5f2ae2a329ec4596f724bf14d12a19ff531575395173b4d44e"
+    },
+    {
+      "file": "src/story.js",
+      "sha256": "45739e271f115eed968dc2f473fc8face5a88eb535f5c3474d701587ee598fcf"
+    },
+    {
+      "file": "src/style.css",
+      "sha256": "cf7c7e667e80c373ce3fa111c9333d8d64f37f62e9b21a9554377a32ff2a4424"
     }
   ]
 }

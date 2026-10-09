@@ -5,6 +5,8 @@ import { createEnvironment, createGlassMaterial, createAtmosphereFloor, createLi
 import { layeredGlass, createOpticalPass } from './optical-pass.js';
 import { createTypePlane } from './type-plane.js';
 import { atmosphereGLSL } from './atmosphere.js';
+import { isPortraitComposition } from './framing.js';
+import { PRISM, prismHullPlanes, prismBeamPorts } from './optical-volume.js';
 const focusedLightUrl = `${import.meta.env.BASE_URL}glasshouse/media/focused-light.png`;
 import { mix, smooth, clamp } from './journey.js';
 
@@ -26,9 +28,9 @@ const POSES = [
     ZERO, ZERO, ZERO, ZERO, ZERO
   ],
   [
-    [2.9, 0.25, -0.9, 0.02, 5.1, 0.16, 0, -0.4, -0.44],
-    [2.9, 0.25, -0.9, 0.02, 5.1, 0.16, 0, -0.4, 0.44],
-    [2.9, -2.15, -0.9, 4.7, 0.05, 0.16, 0, -0.4, 0],
+    [2.9 - 1.21 * Math.cos(.52), .45, .1 - 1.21 * Math.sin(.52), .02, Math.hypot(2.42, 5.3), .16, 0, -.52, -Math.atan2(2.42, 5.3)],
+    [2.9 + 1.21 * Math.cos(.52), .45, .1 + 1.21 * Math.sin(.52), .02, Math.hypot(2.42, 5.3), .16, 0, -.52, Math.atan2(2.42, 5.3)],
+    [2.9, -2.2, .1, 4.84, .02, .16, 0, -.52, 0],
     ZERO, ZERO, ZERO, ZERO, ZERO
   ],
   [
@@ -73,7 +75,7 @@ const CAMERAS = [
 const MOBILE_CAMERAS = [
   { p: [0.45, 2.20, 18.6], t: [1.85, 0.85, 0], f: 43 },
   { p: [0.20, 2.4, 20.5], t: [2.1, -0.6, -0.4], f: 41 },
-  { p: [0.55, 1.2, 18.0], t: [2.85, 0.1, -0.3], f: 40 },
+  { p: [0.55, 1.2, 18.0], t: [2.85, -1.30, -0.3], f: 40 },
   { p: [-0.4, 1.8, 18.5], t: [2.2, -0.1, -2.0], f: 40 },
   { p: [-0.25, 2.1, 18.8], t: [1.8, -0.25, -2.3], f: 40 },
   { p: [12.4, 1.8, 25.0], t: [2.5, -2.25, -0.5], f: 40 }
@@ -97,8 +99,8 @@ const edgeFragment = `
   void main() {
     float moving = pow(max(0., sin(vWorld.y * .85 + vWorld.x * .2 - uTime * .24)), 15.);
     vec3 edge = mix(vec3(.13,.25,.29), vec3(.61,.72,.74), uDark);
-    edge += vec3(moving * .64);
-    gl_FragColor = vec4(edge, (uAlpha + moving * .2) * uLife);
+    edge += vec3(moving * .07);
+    gl_FragColor = vec4(edge, (uAlpha + moving * .025) * uLife);
     #include <tonemapping_fragment>
     #include <colorspace_fragment>
   }
@@ -109,22 +111,36 @@ function makeWord(text, { color = '#182126', weight = 400 } = {}) {
   c.width = 2048;
   c.height = 512;
   const ctx = c.getContext('2d');
-  ctx.clearRect(0, 0, c.width, c.height);
-  ctx.fillStyle = color;
-  ctx.font = `${weight} 390px Manrope, sans-serif`;
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  ctx.fillText(text, 1024, 280, 1990);
   const texture = new THREE.CanvasTexture(c);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 4;
   const material = new THREE.MeshBasicMaterial({ map: texture, alphaTest: .001, transparent: true, depthWrite: false, opacity: 1 });
   const mesh = new THREE.Mesh(new THREE.PlaneGeometry(13.2, 3.3), material);
   mesh.userData.texture = texture;
+  mesh.userData.redraw = () => {
+    ctx.clearRect(0, 0, c.width, c.height);
+    ctx.fillStyle = color;
+    ctx.font = `${weight} 390px Manrope, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    const metric = ctx.measureText(text);
+    const fit = Math.min(1, 1990 / Math.max(1, metric.width));
+    const inkValue = (name, fallback) => Number.isFinite(metric[name]) ? metric[name] : fallback;
+    mesh.userData.ink = {
+      left: ((1024 - inkValue('actualBoundingBoxLeft', metric.width / 2) * fit) / 2048 - .5) * 13.2,
+      right: ((1024 + inkValue('actualBoundingBoxRight', metric.width / 2) * fit) / 2048 - .5) * 13.2,
+      top: (.5 - (280 - inkValue('actualBoundingBoxAscent', 195)) / 512) * 3.3,
+      bottom: (.5 - (280 + inkValue('actualBoundingBoxDescent', 195)) / 512) * 3.3
+    };
+    ctx.fillText(text, 1024, 280, 1990);
+    texture.needsUpdate = true;
+  };
+  mesh.userData.redraw();
   return mesh;
 }
 
 export function createWorld(canvas, initial = {}) {
+  let disposed = false;
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -144,9 +160,10 @@ export function createWorld(canvas, initial = {}) {
   const environment = createEnvironment(renderer);
   scene.environment = environment.texture;
   scene.environmentIntensity = 1;
-  let finishLightTexture;
-  const lightTextureReady = new Promise(resolve => { finishLightTexture = resolve; });
-  const lightTexture = new THREE.TextureLoader().load(focusedLightUrl, finishLightTexture, undefined, finishLightTexture);
+  // This optional projection enriches an already usable analytic light field.
+  // It must not freeze the installation at its first frame while loading.
+  const lightChanged = () => { if (!disposed) initial.onInvalidate?.(); };
+  const lightTexture = new THREE.TextureLoader().load(focusedLightUrl, lightChanged, undefined, lightChanged);
   lightTexture.colorSpace = THREE.SRGBColorSpace;
   lightTexture.anisotropy = 4;
 
@@ -292,13 +309,14 @@ export function createWorld(canvas, initial = {}) {
   scene.add(reflectionRoot);
 
   const triangle = new THREE.Shape();
-  triangle.moveTo(-2.42, FLOOR + 0.10);
-  triangle.lineTo(2.42, FLOOR + 0.10);
-  triangle.lineTo(0, 3.10);
+  triangle.moveTo(-PRISM.halfWidth, PRISM.bottom);
+  triangle.lineTo(PRISM.halfWidth, PRISM.bottom);
+  triangle.lineTo(0, PRISM.top);
   triangle.closePath();
-  const prismGeometry = new THREE.ExtrudeGeometry(triangle, { depth: 1.20, bevelEnabled: true, bevelSegments: 3, steps: 1, bevelSize: 0.052, bevelThickness: 0.045, curveSegments: 1 });
-  prismGeometry.translate(0, 0, -0.6);
-  const prismMaterial = layeredGlass(createGlassMaterial({ thickness: 2.8, roughness: 0.018, ior: 1.52, color: 0xffffff }), { thickness: 1.8, prism: true });
+  const prismGeometry = new THREE.ExtrudeGeometry(triangle, { depth: PRISM.halfDepth * 2, bevelEnabled: true, bevelSegments: 3, steps: 1, bevelSize: 0.052, bevelThickness: 0.045, curveSegments: 1 });
+  prismGeometry.translate(0, 0, -PRISM.halfDepth);
+  const prismPlanes = prismHullPlanes(prismGeometry.attributes.position.array);
+  const prismMaterial = layeredGlass(createGlassMaterial({ thickness: 2.8, roughness: 0.018, ior: 1.52, color: 0xffffff }), { prism: true, planes: prismPlanes });
   prismMaterial.userData.optical.tOpticGobo.value = lightTexture;
   prismMaterial.dispersion = 0.55;
   prismMaterial.envMapIntensity = 1.1;
@@ -374,6 +392,7 @@ export function createWorld(canvas, initial = {}) {
   // A luminous doorway beyond the viewer. It faces the mirror and is culled
   // from the main camera: the mirror reveals a space we otherwise cannot see.
   const reflectedRoom = new THREE.Group();
+  const reflectedFrameMaterials = [];
   const luminous = new THREE.MeshBasicMaterial({ color: '#f3f7f8', side: THREE.FrontSide });
   const wallTone = new THREE.MeshBasicMaterial({ color: '#0a1014', side: THREE.FrontSide });
   const roomWall = new THREE.Mesh(new THREE.PlaneGeometry(18, 10), wallTone);
@@ -386,9 +405,11 @@ export function createWorld(canvas, initial = {}) {
   reflectedRoom.add(doorway);
   for (let i = 0; i < 6; i++) {
     const frame = new THREE.Group();
+    const frameMaterial = luminous.clone();
+    reflectedFrameMaterials.push(frameMaterial);
     const w = 4.3 + i * 0.6, h = 5.2, s = 0.025;
     for (const [x, y, sx, sy] of [[-w/2, 0, s, h], [w/2, 0, s, h], [0, h/2, w, s]]) {
-      const strip = new THREE.Mesh(new THREE.PlaneGeometry(sx, sy), luminous);
+      const strip = new THREE.Mesh(new THREE.PlaneGeometry(sx, sy), frameMaterial);
       strip.position.set(x, y, 0);
       strip.rotation.y = Math.PI;
       frame.add(strip);
@@ -410,8 +431,8 @@ export function createWorld(canvas, initial = {}) {
   const opticalObjects = [...panes, prism];
 
   let mobile = Boolean(initial.mobile);
+  let portrait = isPortraitComposition(innerWidth, innerHeight);
   let width = 1, height = 1;
-  let disposed = false;
   let qualityScale = 1;
   let lastState;
   let lastTime = 0;
@@ -419,6 +440,53 @@ export function createWorld(canvas, initial = {}) {
   const reflectedEye = new THREE.Vector3();
   const planeNormal = new THREE.Vector3();
   const eyeOffset = new THREE.Vector3();
+  const beamEntry = new THREE.Vector3(), beamExit = new THREE.Vector3();
+  const drawingSize = new THREE.Vector2();
+  const framingCamera = new THREE.PerspectiveCamera(37, 1, .15, 150);
+  const framingPoint = new THREE.Vector3();
+  let surfaceWordX = 1.8;
+
+  function frameSurfaceWord() {
+    surfaceWordX = 1.8;
+    if (width <= 760 || height > 450) return;
+    const heading = document.getElementById('title-surface');
+    if (!heading) return;
+    const range = document.createRange();
+    range.selectNodeContents(heading);
+    const rects = [...range.getClientRects()];
+    if (!rects.length) return;
+    const captionOffset = parseFloat(document.getElementById('ui').style.getPropertyValue('--caption-offset')) || 0;
+    const readingEdge = Math.max(...rects.map(rect => rect.right)) - captionOffset + 24;
+    const shot = CAMERAS[1], ink = words[0].userData.ink;
+    framingCamera.aspect = width / height;
+    framingCamera.position.fromArray(shot.p);
+    framingCamera.lookAt(...shot.t);
+    framingCamera.updateProjectionMatrix();
+    framingCamera.updateMatrixWorld();
+    const projectedLeft = x => {
+      let left = Infinity;
+      for (const gx of [ink.left, ink.right]) for (const gy of [ink.top, ink.bottom]) {
+        framingPoint.set(x + gx, -.3 + gy, -3.8).project(framingCamera);
+        left = Math.min(left, (framingPoint.x * .5 + .5) * width);
+      }
+      return left;
+    };
+    // Two bounded secant steps account for the slight perspective yaw. This is
+    // a cached layout calculation, never a per-frame collision correction.
+    for (let i = 0; i < 2; i++) {
+      const left = projectedLeft(surfaceWordX);
+      const pixelsPerUnit = projectedLeft(surfaceWordX + 1) - left;
+      if (left >= readingEdge || pixelsPerUnit <= 0) break;
+      surfaceWordX = Math.min(5.8, surfaceWordX + (readingEdge - left) / pixelsPerUnit);
+    }
+  }
+
+  function refreshTypography() {
+    if (disposed) return;
+    [...words, mirrorWord].forEach(word => word.userData.redraw());
+    openingType.resize();
+    frameSurfaceWord();
+  }
 
   function weight(view, index) {
     return (view.from === index ? 1 - view.blend : 0) + (view.to === index ? view.blend : 0);
@@ -472,7 +540,7 @@ export function createWorld(canvas, initial = {}) {
       edges[i].material.uniforms.uWedge.value = i < 2 ? light : 0;
       const finish = i < 3 ? order[i] : 0;
       const frost = finish === 1 ? surface : 0;
-      const mirrorAmount = i < 3 ? Math.max(finish === 2 ? surface : 0, reflection) : 0;
+      const mirrorAmount = i < 3 ? Math.max(finish === 2 ? surface : 0, reflection * [1, .72, .48][i]) : 0;
       const silver = i < 3 ? 0 : reflection * .07;
       materials[i].roughness = mix(0.036, 0.48, frost) + silver * 0.03;
       materials[i].metalness = silver * 0.97;
@@ -482,16 +550,22 @@ export function createWorld(canvas, initial = {}) {
       materials[i].color.set('#ffffff');
       const optical = materials[i].userData.optical;
       optical.uOpticLife.value = layerLife;
-      optical.uOpticThickness.value = pose[5] * (1 + layers * .55);
+      const wedge = i < 2 ? light : 0;
+      optical.uOpticPlanes.value[2].set(1.3 * wedge, 1, 0, 2.5 - 1.95 * wedge);
       optical.uOpticFrost.value = frost;
       optical.uOpticSilver.value = silver;
       optical.uOpticDark.value = darkness;
       optical.uOpticTime.value = time;
       optical.uOpticAngle.value = angleR * .62;
-      optical.uOpticGlow.value = (light * (i === 1 ? .95 : .35) + layers * .08 + house * (i === 2 ? .4 : .07));
+      // One lit interface is transmitted through its neighbours. Repeating the
+      // same projection on every pane flattens depth and repeats expensive work.
+      optical.uOpticGlow.value = light * (i === 1 ? .80 : .25)
+        + layers * (i === 0 ? .065 : 0) + house * (i === 2 ? .14 : 0);
       edges[i].material.uniforms.uTime.value = time + i * 1.2;
       edges[i].material.uniforms.uDark.value = darkness;
-      edges[i].material.uniforms.uAlpha.value = mix(0.29, 0.52, darkness) * (i > 4 ? 0.7 : 1);
+      // Daylight needs a legible dark edge; the mirror room keeps its restrained
+      // light edge. Receding interfaces remain subordinate to the first panes.
+      edges[i].material.uniforms.uAlpha.value = mix(.29, .24, darkness) * (i > 4 ? .58 : 1);
       edges[i].material.uniforms.uLife.value = layerLife;
       if (i < 3) {
         mirrors[i].visible = mirrorAmount > .005;
@@ -526,17 +600,22 @@ export function createWorld(canvas, initial = {}) {
     prism.scale.setScalar(.96 + prismScale * .04);
     prism.position.z = .10 - (1 - prismScale) * 2.8;
     prismMaterial.userData.optical.uOpticLife.value = prismScale;
-    prismEdges.material.opacity = .30 * prismScale;
+    prismEdges.material.opacity = .16 * prismScale;
     prism.rotation.y = -0.52 + angleR * 0.2 + ambient * 0.012;
     prismMaterial.userData.optical.uOpticTime.value = time;
     prismMaterial.userData.optical.uOpticAngle.value = angleR * .62;
     prismMaterial.userData.optical.uOpticDark.value = darkness;
-    prismMaterial.userData.optical.uOpticGlow.value = refraction * .38;
+    prismMaterial.userData.optical.uOpticGlow.value = refraction * .14;
     prism.position.x = 2.90;
-    beam.update({ time, opacity: Math.max(refraction, weight(view, 0) * 0.15), angle: lightAngle, spectrum: refraction, darkness });
+    const ports = prismBeamPorts(lightAngle, prismPlanes[0][3]);
+    prism.updateMatrixWorld(true);
+    beamEntry.fromArray(ports.entry).applyMatrix4(prism.matrixWorld);
+    beamExit.fromArray(ports.exit).applyMatrix4(prism.matrixWorld);
+    beam.update({ time, opacity: Math.max(refraction, weight(view, 0) * 0.15), angle: lightAngle, spectrum: refraction, darkness, entry: beamEntry, exit: beamExit });
     beam.group.visible = refraction > 0.015 || weight(view, 0) > 0.01;
 
     words[0].visible = surface > 0.035;
+    words[0].position.x = surfaceWordX;
     words[0].material.opacity = surface * 0.88;
     words[0].scale.y = Math.max(.001, surface);
     words[1].visible = layers > 0.035;
@@ -546,6 +625,7 @@ export function createWorld(canvas, initial = {}) {
     reflectedRoom.visible = mirrorWord.visible;
     mirrorWord.material.color.set(darkness > .5 ? '#ffffff' : '#1b272d');
     luminous.color.set(darkness > .5 ? '#f3f7f8' : '#263840');
+    reflectedFrameMaterials.forEach((material, index) => material.color.copy(luminous.color).multiplyScalar(.66 * Math.exp(-index * .27)));
     wallTone.color.set(darkness > .5 ? '#0a1014' : '#c4d0d6');
     portalGroup.visible = reflection > 0.03;
     portalGroup.position.z = -(1 - reflection) * 7;
@@ -556,13 +636,13 @@ export function createWorld(canvas, initial = {}) {
     bench.scale.setScalar(Math.max(0.001, house));
     floor.update({ time, darkness, lightAngle, energy: mix(0.70, 1.1, house) + refraction * 0.25, chapter: from + blend });
 
-    const shots = mobile ? MOBILE_CAMERAS : CAMERAS;
+    const shots = portrait ? MOBILE_CAMERAS : CAMERAS;
     const c1 = shots[from], c2 = shots[to];
     const pointerX = state.reduced ? 0 : (state.pointer?.x || 0);
     const pointerY = state.reduced ? 0 : (state.pointer?.y || 0);
     camera.position.set(
-      mix(c1.p[0], c2.p[0], blend) + pointerX * (mobile ? 0 : 0.14),
-      mix(c1.p[1], c2.p[1], blend) + pointerY * (mobile ? 0 : 0.085),
+      mix(c1.p[0], c2.p[0], blend) + pointerX * (portrait ? 0 : 0.14),
+      mix(c1.p[1], c2.p[1], blend) + pointerY * (portrait ? 0 : 0.085),
       mix(c1.p[2], c2.p[2], blend) + ambient * 0.024
     );
     target.set(mix(c1.t[0], c2.t[0], blend), mix(c1.t[1], c2.t[1], blend), mix(c1.t[2], c2.t[2], blend));
@@ -588,6 +668,7 @@ export function createWorld(canvas, initial = {}) {
     width = Math.max(1, w);
     height = Math.max(1, h);
     mobile = isMobile;
+    portrait = isPortraitComposition(width, height);
     const budget = mobile ? 1_600_000 : 3_400_000;
     const deviceRatio = window.devicePixelRatio || 1;
     const requestedRatio = mobile ? Math.min(deviceRatio, 1.65) : Math.min(Math.max(deviceRatio, 1.25), 1.5);
@@ -598,19 +679,24 @@ export function createWorld(canvas, initial = {}) {
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
     opticalPass.resize();
+    renderer.getDrawingBufferSize(drawingSize);
+    mirrors.forEach((mirror, index) => {
+      const coverage = [.70, .46, .38][index];
+      const bounded = Math.min(coverage, 1536 / Math.max(drawingSize.x, drawingSize.y));
+      mirror.getRenderTarget().setSize(Math.max(640, Math.round(drawingSize.x * bounded)), Math.max(640, Math.round(drawingSize.y * bounded)));
+    });
     openingType.resize();
+    frameSurfaceWord();
     if (lastState) update(lastState.view, lastTime, lastState.state);
   }
 
   async function warmup() {
-    await lightTextureReady;
-    const visibility = [];
-    scene.traverse(object => { visibility.push([object, object.visible]); object.visible = true; });
-    camera.layers.enableAll();
+    if (disposed) return;
+    // Three's compile traverses all drawable objects, including hidden ones.
+    // Only lights use traverseVisible; all installation lights are already
+    // enabled on the base layer. Do not mutate a live scene while awaiting it.
     if (renderer.extensions.has('KHR_parallel_shader_compile')) await renderer.compileAsync(scene, camera);
     else renderer.compile(scene, camera);
-    camera.layers.set(0);
-    visibility.forEach(([object, visible]) => { object.visible = visible; });
   }
 
   function dispose() {
@@ -636,8 +722,8 @@ export function createWorld(canvas, initial = {}) {
   }
 
   return {
-    update, render, resize, warmup, dispose,
+    update, render, resize, warmup, dispose, refreshTypography,
     lowerQuality() { qualityScale = Math.max(0.65, qualityScale * 0.85); resize(width, height, mobile); },
-    get info() { return { calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, pixelRatio: renderer.getPixelRatio(), geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures }; }
+    get info() { return { mode: 'webgl', framing: portrait ? 'portrait' : 'landscape', calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, pixelRatio: renderer.getPixelRatio(), geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures }; }
   };
 }

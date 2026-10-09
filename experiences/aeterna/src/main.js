@@ -1,8 +1,9 @@
 import './styles.css';
 import 'lenis/dist/lenis.css';
 import Lenis from 'lenis';
-import { createScrollTimeline, chapterIds, chapterNames, clamp, smooth } from './scroll.js';
+import { createScrollTimeline, chapterIds, chapterNames, clamp, smooth, settleScrollInput as settleLenis } from './scroll.js';
 import { installNotes } from './notes.js';
+import { roomComposition, roomReadingLight } from './handoff.js';
 
 document.documentElement.classList.add('js');
 const root = document.documentElement;
@@ -51,7 +52,6 @@ let currentIndex = -1;
 let currentFrame = null;
 let frameRequest = 0;
 let saveTimeout = 0;
-let entryTimeout = 0;
 let resizePending = false;
 let pointerX = 0, pointerY = 0, desiredPointerX = 0, desiredPointerY = 0;
 let stage = null, stagePromise = null, canvas = null;
@@ -60,10 +60,70 @@ let geometryError = false;
 let contextLost = false;
 let previousFrameTime = 0;
 let spatialLayoutKey = '';
+const artReadiness = rooms.map(() => ({ ready: false, promise: null }));
+const spatialStills = new Map();
+const navigationSurfaces = [...document.querySelectorAll('.site-header,.exhibition-footer')];
+const artPreparing = document.querySelector('#art-preparing');
+
+function inkBetween(darkSurfaceInk, lightSurfaceInk, mix) {
+  return `rgb(${darkSurfaceInk.map((value, i) => Math.round(value + (lightSurfaceInk[i] - value) * mix)).join(' ')})`;
+}
+
+function composeReadingLight(composition, content) {
+  const compact = innerWidth <= 700 || (innerWidth <= 900 && innerHeight >= innerWidth);
+  const from = roomReadingLight(composition.base, content.base.reliefReveal, compact);
+  const to = composition.next === null ? from : roomReadingLight(composition.next, content.next.reliefReveal, compact);
+  const blend = key => from[key] + (to[key] - from[key]) * composition.mix;
+  root.style.setProperty('--header-scrim', blend('header').toFixed(5));
+  root.style.setProperty('--footer-scrim', blend('footer').toFixed(5));
+  const light = blend('light');
+  // Persistent navigation must remain readable while dark and pale galleries
+  // overlap. Interpolating white ink through grey to black made it disappear
+  // against the intermediate grey wall. Select ink polarity from exposure;
+  // only the tiny functional ink changes polarity, never a background plate.
+  const onLight = light >= .48;
+  const contrast = 4 * light * (1 - light);
+  const foreground = onLight
+    ? inkBetween([36, 37, 33], [8, 9, 7], contrast)
+    : inkBetween([237, 231, 220], [255, 253, 246], contrast);
+  const muted = onLight
+    ? inkBetween([92, 91, 83], [24, 25, 21], contrast)
+    : inkBetween([183, 176, 166], [243, 238, 224], contrast);
+  for (const surface of navigationSurfaces) {
+    surface.style.setProperty('--fg', foreground);
+    surface.style.setProperty('--muted', muted);
+    surface.style.setProperty('--rule', onLight ? 'rgba(36,37,33,.32)' : 'rgba(237,231,220,.30)');
+  }
+}
+
+function markUnavailableImage(img, room, isMask = false) {
+  if (isMask) {
+    room.classList.add('mask-unavailable');
+    return;
+  }
+  img.style.visibility = 'hidden';
+  room.dataset.imageError = 'true';
+  let status = room.querySelector('.image-status');
+  if (!status) {
+    status = document.createElement('p');
+    status.className = 'image-status';
+    status.setAttribute('role', 'status');
+    room.append(status);
+  }
+  status.textContent = 'An image could not be loaded. The exhibition and its notes remain available.';
+}
+
+function settleScrollInput() {
+  // scrollTo(current, { immediate:true }) can return early before cancelling a
+  // not-yet-advanced programmatic jump in Lenis. Its public lifecycle resets
+  // the pending animation, while an already open dialog stays stopped.
+  settleLenis(lenis);
+  previousFrameTime = 0;
+}
 
 function setMotionFlags() {
   lenis.options.smoothWheel = !reducedMotion;
-  lenis.scrollTo(scrollY, { immediate: true, force: true });
+  settleScrollInput();
   root.classList.toggle('reduce-motion', reducedMotion);
   root.classList.toggle('motion-overridden', motionOverride !== null);
   motionButton.setAttribute('aria-pressed', String(reducedMotion));
@@ -97,12 +157,16 @@ function updateGeometryUI() {
   rooms[5].classList.toggle('has-geometry', geometryReady.relief && !contextLost);
   rooms[6].classList.toggle('has-geometry', hasBody);
   rooms[7].classList.toggle('has-geometry', hasBody);
+  for (const index of [3, 5, 6, 7]) {
+    rooms[index].classList.toggle('is-static-fallback', (geometryError || contextLost) && !rooms[index].classList.contains('has-geometry'));
+  }
   assembly.disabled = !hasBody;
   fracture.disabled = !hasBody;
   relief.disabled = !geometryReady.relief || contextLost;
   castButton.disabled = !hasBody && !archiveInspect;
   lightInput.disabled = !hasBody;
   spatialLayoutKey = '';
+  for (const still of spatialStills.values()) still.key = '';
   requestRender();
 }
 function handleGeometryError(error) {
@@ -233,10 +297,11 @@ document.querySelector('#inspect-marble').addEventListener('click', (event) => {
   rooms[1].style.setProperty('--macro-zoom', zoomed ? 1 : 0);
 });
 function selectPortrait(value) {
+  rooms[2].style.setProperty('--portrait-reveal', `${(clamp(value) * 100).toFixed(3)}%`);
+  rooms[2].classList.toggle('portrait-manual', portraitOverride !== null);
   const selected = value >= .5 ? 1 : 0;
   if (portraitSelected === selected) return;
   portraitSelected = selected;
-  rooms[2].style.setProperty('--portrait-reveal', selected ? '100%' : '0%');
   document.querySelectorAll('[data-portrait]').forEach((button) => {
     button.setAttribute('aria-pressed', String(Number(button.dataset.portrait) === selected));
   });
@@ -304,36 +369,42 @@ window.addEventListener('pointerleave', () => {
   requestRender();
 }, { passive: true });
 
-/** Rooms are visibility:hidden until they are current, so the browser is free
- *  to drop their decoded art. Re-decode on demand (and ahead of time for the
- *  neighbouring rooms) so a reveal never shows the room's black background. */
+/** The promise covers loading as well as decode, including the hero mask.
+ * Keep the current exhibit intact until a requested room can actually paint.
+ * Failed assets settle into the existing labelled fallback, never a deadlock.
+ */
 function warmRoomArt(index) {
   const room = rooms[index];
-  if (!room) return;
-  room.querySelectorAll('.room-art img').forEach((img) => {
-    if (img.complete && img.naturalWidth) img.decode?.().catch(() => {});
+  const readiness = artReadiness[index];
+  if (!room || readiness.promise) return readiness?.promise;
+  const images = [...room.querySelectorAll('.room-art img')];
+  let mask = null;
+  if (index === 0) {
+    mask = new Image();
+    mask.src = `${import.meta.env.BASE_URL}aeterna/assets/hero-cutout.webp`;
+    images.push(mask);
+  }
+  readiness.promise = Promise.allSettled(images.map(img => {
+    if (img.decode) return img.decode();
+    if (img.complete) return Promise.resolve();
+    return new Promise(resolve => {
+      img.addEventListener('load', resolve, { once: true });
+      img.addEventListener('error', resolve, { once: true });
+    });
+  })).then(() => {
+    // A cached failure can precede module execution, so an error listener alone
+    // is insufficient. Inspect every settled image, including the CSS mask.
+    for (const img of images) {
+      if (!img.complete || img.naturalWidth === 0) markUnavailableImage(img, room, img === mask);
+    }
+    readiness.ready = true;
+    room.dataset.artReady = 'true';
+    requestRender();
   });
+  return readiness.promise;
 }
 function changeChapter(index) {
-  const former = currentIndex;
-  clearTimeout(entryTimeout);
-  rooms.forEach((room, i) => {
-    const active = i === index;
-    room.classList.toggle('is-active', active);
-    room.classList.remove('is-previous', 'is-entering');
-    room.setAttribute('aria-hidden', String(!active));
-    room.inert = !active;
-  });
-  if (former >= 0 && !reducedMotion) {
-    rooms[former].classList.add('is-previous');
-    rooms[index].classList.add('is-entering');
-    entryTimeout = window.setTimeout(() => {
-      rooms[former].classList.remove('is-previous');
-      rooms[index].classList.remove('is-entering');
-    }, 1000);
-  }
-  // Keep the rooms either side decoded: an undecoded room-art image paints as
-  // the room's black background for a frame or two on reveal.
+  warmRoomArt(index);
   warmRoomArt(index - 1);
   warmRoomArt(index + 1);
   currentIndex = index;
@@ -346,11 +417,36 @@ function changeChapter(index) {
   nextButton.querySelector('span').textContent = index === 0 ? 'Scroll to enter' : index === 8 ? 'Begin again' : 'Next room';
   nextButton.setAttribute('aria-label', index === 8 ? 'Begin the exhibition again' : 'Continue to ' + chapterNames[index + 1]);
   const sceneName = { 3: 'body', 5: 'relief', 6: 'fracture', 7: 'afterlife' }[index];
-  if (sceneName && canvas) {
-    rooms[index].querySelector('.spatial-host').append(canvas);
-    canvas.dataset.scene = sceneName;
-  }
   if (sceneName) startSpatial();
+}
+
+function composeRooms(frame) {
+  const composition = roomComposition(frame.index, frame.progress, rooms.length, reducedMotion);
+  if (composition.next !== null && !artReadiness[composition.next].ready) {
+    warmRoomArt(composition.next);
+    composition.next = null;
+    composition.mix = 0;
+    composition.baseText = 1;
+  }
+  rooms.forEach((room, index) => {
+    const base = index === composition.base;
+    const next = index === composition.next;
+    room.classList.toggle('is-active', base);
+    room.classList.toggle('is-previous', next);
+    room.classList.toggle('is-entering', next);
+    room.style.opacity = base ? '1' : next ? String(composition.mix) : '0';
+    room.style.zIndex = next ? '2' : base ? '1' : '0';
+    room.style.setProperty('--copy-alpha', String(base ? composition.baseText : next ? composition.nextText : 0));
+    room.style.setProperty('--p', String(base ? composition.pose : 0));
+    room.style.setProperty('--local-p', String(base ? frame.progress : 0));
+    const copyAlpha = base ? composition.baseText : next ? composition.nextText : 0;
+    const dominant = composition.mix > .55 ? next : base;
+    const interactive = dominant && copyAlpha > .15;
+    room.style.pointerEvents = interactive ? 'auto' : 'none';
+    room.setAttribute('aria-hidden', String(!interactive));
+    room.inert = !interactive;
+  });
+  return composition;
 }
 
 /** On a phone, the canvas occupies the real gap between copy and controls. */
@@ -378,85 +474,146 @@ function layoutSpatialHost(host, index) {
   host.style.bottom = Math.max(0, Math.round(window.innerHeight - lowerTop + gap)) + 'px';
   return true;
 }
+
+function updateRoomContent(index, p) {
+  const assembled = manual.body ?? (reducedMotion ? 1 : smooth(.04, .73, p));
+  const reliefProgress = manual.relief ?? (reducedMotion ? .65 : p);
+  const broken = manual.fracture ?? (reducedMotion ? .55 : smooth(.08, .85, p));
+  let reliefReveal = 0;
+  if (index === 2) selectPortrait(portraitOverride ?? smooth(.32, .65, p));
+  if (index === 3) {
+    assembly.value = Math.round(assembled * 100);
+    document.querySelector('#assembly-value').textContent = assembly.value + '%';
+  }
+  if (index === 5) {
+    reliefReveal = geometryReady.relief && !contextLost ? smooth(.08, .34, reliefProgress) : 0;
+    rooms[5].style.setProperty('--relief-reveal', reliefReveal.toFixed(4));
+    const paleRelief = reliefReveal >= .48;
+    const contrast = 4 * reliefReveal * (1 - reliefReveal);
+    rooms[5].style.setProperty('--relief-text', paleRelief
+      ? inkBetween([36, 37, 33], [8, 9, 7], contrast)
+      : inkBetween([237, 231, 220], [255, 253, 246], contrast));
+    rooms[5].style.setProperty('--relief-muted', paleRelief
+      ? inkBetween([87, 87, 76], [24, 25, 21], contrast)
+      : inkBetween([206, 197, 182], [243, 238, 224], contrast));
+    relief.value = Math.round(reliefProgress * 100);
+    document.querySelector('#relief-value').textContent = reliefProgress < .3 ? 'Surface' : reliefProgress > .75 ? 'Space' : 'Depth';
+  }
+  if (index === 6) {
+    fracture.value = Math.round(broken * 100);
+    document.querySelector('#fracture-value').textContent = fracture.value + '%';
+    const plate = geometryReady.body && !contextLost ? smooth(.72, .98, broken) : 1;
+    rooms[6].style.setProperty('--fracture-reveal', plate.toFixed(4));
+  }
+  return { assembled, reliefProgress, broken, reliefReveal };
+}
+
+function sculptureState(index, progress, content, pointerWeight) {
+  let scene = { 3: 'body', 5: 'relief', 6: 'fracture', 7: 'afterlife' }[index];
+  if (!scene || (scene === 'afterlife' && !archiveInspect)) return null;
+  const host = rooms[index].querySelector('.spatial-host');
+  const fitToViewport = layoutSpatialHost(host, index);
+  const bounds = host.getBoundingClientRect();
+  const explosion = scene === 'body' ? 1 - content.assembled
+    : scene === 'fracture' ? content.broken : scene === 'afterlife' ? 0 : undefined;
+  return { host, scene, progress: scene === 'relief' ? content.reliefProgress : progress,
+    pointerX: pointerX * pointerWeight, pointerY: pointerY * pointerWeight,
+    reducedMotion, light: scene === 'afterlife' ? light : .16,
+    manualProgress: scene === 'relief' && manual.relief !== null,
+    fitToViewport, explosion, width: bounds.width, height: bounds.height, visible: true };
+}
+
+/** Only one WebGL renderer exists. At the relief → fragment handoff a 2D plate
+ * holds the outgoing, deterministic end pose while that renderer draws the
+ * incoming exhibit. Capture immediately after render, never a cleared buffer.
+ * Re-entering from either direction regenerates the same anchor when needed.
+ */
+function renderSculptures(composition, content) {
+  if (!stage || !canvas) return;
+  const pointerWeight = (1 - smooth(.62, .80, currentFrame.progress)) * smooth(0, .10, currentFrame.progress);
+  const base = sculptureState(composition.base, composition.pose, content.base, pointerWeight);
+  const next = composition.next === null ? null : sculptureState(composition.next, reducedMotion ? .45 : 0, content.next, 0);
+  const live = next || base;
+  for (const [index, still] of spatialStills) still.canvas.hidden = !(base && next && index === composition.base);
+  if (!live) { stage.update({ scene: 'none', visible: false }); return; }
+  if (base && next) {
+    let still = spatialStills.get(composition.base);
+    if (!still) {
+      const plate = document.createElement('canvas');
+      plate.className = 'spatial-still';
+      plate.setAttribute('aria-hidden', 'true');
+      base.host.append(plate);
+      still = { canvas: plate, key: '' };
+      spatialStills.set(composition.base, still);
+    }
+    const { host, ...anchor } = base;
+    const key = JSON.stringify(anchor);
+    if (still.key !== key) {
+      stage.update(anchor);
+      still.canvas.width = canvas.width;
+      still.canvas.height = canvas.height;
+      still.canvas.getContext('2d').drawImage(canvas, 0, 0);
+      still.key = key;
+    }
+    still.canvas.hidden = false;
+  }
+  if (canvas.parentElement !== live.host) live.host.append(canvas);
+  const { host, ...state } = live;
+  stage.update(state);
+  canvas.dataset.scene = state.scene;
+  canvas.dataset.explosion = state.explosion === undefined ? '' : state.explosion.toFixed(4);
+}
+
 function render(time) {
   frameRequest = 0;
   if (document.hidden) return;
   if (resizePending) {
     const observed = timeline.snapshot();
     // A scroll or jump arriving during resize takes precedence over the old frame.
-    const before = currentFrame && Math.abs(observed.y - currentFrame.y) < 2 ? currentFrame : observed;
+    const before = currentFrame && observed.index === currentFrame.index && Math.abs(observed.y - currentFrame.y) < 2 ? currentFrame : observed;
     timeline.measure(reducedMotion);
     timeline.goTo(before.index, before.progress, 'auto');
     spatialLayoutKey = '';
     resizePending = false;
   }
-  const step = Math.min(64, time - (previousFrameTime || time - 16));
+  // This is an on-demand clock: idle/background time does not belong to a new
+  // gesture, but a long active frame must not slow Lenis's input response.
+  const elapsed = Math.max(0, time - (previousFrameTime || time - 16));
+  const step = Math.min(64, elapsed);
   previousFrameTime = time;
-  scrollClock += Math.min(step, 50);
+  scrollClock += elapsed;
   lenis.raf(scrollClock);
-  const frame = timeline.snapshot();
+  const requested = timeline.snapshot();
+  warmRoomArt(requested.index);
+  const waitingForArt = !artReadiness[requested.index].ready;
+  const frame = waitingForArt ? { ...requested, index: currentFrame?.index ?? 0, progress: currentFrame?.progress ?? 0 } : requested;
+  root.dataset.preparingRoom = waitingForArt ? String(requested.index) : '';
+  artPreparing.hidden = !waitingForArt;
+  if (waitingForArt) {
+    const label = !artReadiness[frame.index].ready ? 'Preparing the gallery'
+      : requested.index < frame.index ? 'Preparing the previous room' : 'Preparing the next room';
+    if (artPreparing.textContent !== label) artPreparing.textContent = label;
+  }
   currentFrame = frame;
   if (currentIndex !== frame.index) changeChapter(frame.index);
+  const composition = composeRooms(frame);
   const damping = 1 - Math.exp(-step / 135);
   pointerX += (desiredPointerX - pointerX) * damping;
   pointerY += (desiredPointerY - pointerY) * damping;
   const movingPointer = Math.abs(pointerX - desiredPointerX) + Math.abs(pointerY - desiredPointerY) > .001;
-  const p = reducedMotion ? .45 : frame.progress;
+  const p = composition.pose;
   root.style.setProperty('--p', p.toFixed(5));
   root.style.setProperty('--px', (reducedMotion ? 0 : pointerX).toFixed(4));
   root.style.setProperty('--py', (reducedMotion ? 0 : pointerY).toFixed(4));
   root.style.setProperty('--overall', frame.overall.toFixed(5));
 
-  const assembled = manual.body ?? (reducedMotion ? 1 : smooth(.04, .73, frame.progress));
-  const reliefProgress = manual.relief ?? (reducedMotion ? .65 : frame.progress);
-  const broken = manual.fracture ?? (reducedMotion ? .55 : smooth(.08, .85, frame.progress));
-  if (frame.index === 2) selectPortrait(portraitOverride ?? (frame.progress > .47 ? 1 : 0));
-  if (frame.index === 3) {
-    assembly.value = Math.round(assembled * 100);
-    document.querySelector('#assembly-value').textContent = assembly.value + '%';
-  }
-  let reliefReveal = 0;
-  if (frame.index === 5) {
-    reliefReveal = geometryReady.relief && !contextLost ? smooth(.08, .34, reliefProgress) : 0;
-    rooms[5].style.setProperty('--relief-reveal', reliefReveal.toFixed(4));
-    rooms[5].style.setProperty('--relief-text', reliefReveal > .55 ? '#242521' : '#ede7dc');
-    rooms[5].style.setProperty('--relief-muted', reliefReveal > .55 ? '#57574c' : '#cec5b6');
-    relief.value = Math.round(reliefProgress * 100);
-    document.querySelector('#relief-value').textContent = reliefProgress < .3 ? 'Surface' : reliefProgress > .75 ? 'Space' : 'Depth';
-  }
-  if (frame.index === 6) {
-    fracture.value = Math.round(broken * 100);
-    document.querySelector('#fracture-value').textContent = fracture.value + '%';
-    const plate = geometryReady.body && !contextLost ? smooth(.72, .98, broken) : 1;
-    rooms[6].style.setProperty('--fracture-reveal', plate.toFixed(4));
-  }
-  document.body.dataset.theme = frame.index === 7 || (frame.index === 5 && reliefReveal > .55) ? 'light' : 'dark';
-
-  if (stage && canvas) {
-    let scene = { 3: 'body', 5: 'relief', 6: 'fracture', 7: 'afterlife' }[frame.index] || 'none';
-    if (scene === 'afterlife' && !archiveInspect) scene = 'none';
-    if (scene !== 'none') {
-      const host = rooms[frame.index].querySelector('.spatial-host');
-      if (canvas.parentElement !== host) host.append(canvas);
-      const fitToViewport = layoutSpatialHost(host, frame.index);
-      const bounds = host.getBoundingClientRect();
-      let explosion;
-      if (scene === 'body') explosion = 1 - assembled;
-      if (scene === 'fracture') explosion = broken;
-      if (scene === 'afterlife') explosion = 0;
-      stage.update({
-        scene, progress: scene === 'relief' ? reliefProgress : frame.progress,
-        pointerX, pointerY, reducedMotion, light: scene === 'afterlife' ? light : .16,
-        manualProgress: scene === 'relief' && manual.relief !== null,
-        fitToViewport,
-        explosion, width: bounds.width, height: bounds.height, visible: true,
-      });
-      canvas.dataset.scene = scene;
-      canvas.dataset.explosion = explosion === undefined ? '' : explosion.toFixed(4);
-    } else {
-      stage.update({ scene: 'none', visible: false });
-    }
-  }
+  const content = { base: updateRoomContent(frame.index, p), next: null };
+  if (composition.next !== null) content.next = updateRoomContent(composition.next, reducedMotion ? .45 : 0);
+  composeReadingLight(composition, content);
+  const dominant = composition.mix > .55 ? composition.next : composition.base;
+  const dominantContent = composition.mix > .55 ? content.next : content.base;
+  document.body.dataset.theme = dominant === 7 || (dominant === 5 && dominantContent.reliefReveal > .55) ? 'light' : 'dark';
+  renderSculptures(composition, content);
   if ((movingPointer && !reducedMotion) || lenis.isScrolling === 'smooth') requestRender();
   else previousFrameTime = 0;
 }
@@ -465,9 +622,10 @@ window.addEventListener('resize', () => { resizePending = true; requestRender();
 window.addEventListener('orientationchange', () => { resizePending = true; requestRender(); }, { passive: true });
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
-    lenis.scrollTo(scrollY, { immediate: true, force: true });
+    settleScrollInput();
     cancelAnimationFrame(frameRequest);
     frameRequest = 0;
+    previousFrameTime = 0;
     persistPosition();
   } else {
     previousFrameTime = 0;
@@ -476,12 +634,16 @@ document.addEventListener('visibilitychange', () => {
 });
 window.addEventListener('pagehide', persistPosition);
 window.addEventListener('pagehide', event => {
-  lenis.scrollTo(scrollY, { immediate: true, force: true });
+  settleScrollInput();
   cancelAnimationFrame(frameRequest);
   frameRequest = 0;
+  previousFrameTime = 0;
   if (!event.persisted) lenis.destroy();
 });
-window.addEventListener('pageshow', requestRender);
+window.addEventListener('pageshow', () => {
+  previousFrameTime = 0;
+  requestRender();
+});
 window.addEventListener('popstate', (event) => {
   const state = event.state?.aeterna;
   const id = chapterIds.indexOf(location.hash.slice(1));
@@ -514,17 +676,14 @@ if (initial && initial.index === hashIndex) {
 requestRender();
 if ('requestIdleCallback' in window) window.requestIdleCallback(startSpatial, { timeout: 1800 });
 else window.setTimeout(startSpatial, 1000);
-// Warm every room's art once the page is idle so the first visit to any room
-// (including a jump from the index) reveals an already-decoded image.
+// Start the lightweight image promises immediately; geometry still waits for
+// idle. The first interaction must not race an idle-callback decode queue.
 const warmAllRoomArt = () => rooms.forEach((_, i) => warmRoomArt(i));
-if ('requestIdleCallback' in window) window.requestIdleCallback(warmAllRoomArt, { timeout: 2400 });
-else window.setTimeout(warmAllRoomArt, 1200);
+warmAllRoomArt();
 document.fonts.ready.then(() => { spatialLayoutKey = ''; requestRender(); });
 document.querySelectorAll('.room-art img').forEach((img) => {
   img.addEventListener('load', requestRender, { once: true });
   img.addEventListener('error', () => {
-    img.style.visibility = 'hidden';
-    const caption = img.closest('.room')?.querySelector('.art-caption');
-    if (caption) caption.textContent = 'This image could not be loaded. The exhibition can still be explored.';
+    markUnavailableImage(img, img.closest('.room'));
   }, { once: true });
 });

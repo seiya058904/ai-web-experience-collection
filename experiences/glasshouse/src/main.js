@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'lenis/dist/lenis.css';
 import './style.css';
-import '../../shared/collection-return.css';
 import { createWorld } from './world.js';
 import { createFallback } from './fallback.js';
 import { createUI, MOBILE_BREAKPOINT } from './ui.js';
@@ -17,6 +16,7 @@ const status = document.getElementById('render-status');
 const reducedQuery = matchMedia('(prefers-reduced-motion: reduce)');
 let canvas = document.getElementById('world');
 let world;
+let worldGeneration = 0;
 let lenis;
 let scrollTrigger;
 let ui;
@@ -133,14 +133,22 @@ function enterFallback() {
   if (fallback || disposed) return;
   fallback = true;
   ready = false;
+  worldGeneration++;
   world?.dispose();
+  // Creation can throw after the optical class is published but before world
+  // is assigned, so disposal alone cannot guarantee complete fallback text.
+  document.documentElement.classList.remove('optical-type');
+  document.body.classList.remove('optical-type');
   const replacement = canvas.cloneNode(false);
   canvas.replaceWith(replacement);
   canvas = replacement;
   world = createFallback(canvas);
+  canvas = world.element;
   world.resize(innerWidth, innerHeight);
   document.documentElement.classList.add('quiet-renderer');
-  status.textContent = 'A quieter view is active.';
+  status.dataset.mode = world.info.mode;
+  status.textContent = world.info.mode === 'svg-diagram'
+    ? 'Glass and light · diagram view.' : 'A quieter view is active.';
   ready = true;
   dirty = true;
 }
@@ -233,7 +241,7 @@ function tick(time, deltaMs) {
   state.pointer.x += (pointerTarget.x - state.pointer.x) * pointerEase;
   state.pointer.y += (pointerTarget.y - state.pointer.y) * pointerEase;
   const view = sampleJourney(progress, state.reduced);
-  ui.update({ ...view, paused: state.paused, reduced: state.reduced });
+  ui.update({ ...view, paused: state.paused, reduced: state.reduced, renderMode: world?.info.mode || 'webgl' });
   const live = !state.paused && !state.reduced;
   if (ready && live && performance.now() > qualityAfter && deltaMs < 500) {
     qualityFrames++;
@@ -259,11 +267,15 @@ function tick(time, deltaMs) {
 }
 
 async function initialize() {
-  ui.update({ ...sampleJourney(progress, state.reduced), paused: state.paused, reduced: state.reduced });
+  ui.update({ ...sampleJourney(progress, state.reduced), paused: state.paused, reduced: state.reduced, renderMode: world?.info.mode || 'webgl' });
   try {
     await Promise.race([document.fonts.ready, new Promise(resolve => setTimeout(resolve, 1500))]);
     if (disposed) return;
-    world = createWorld(canvas, state);
+    const generation = ++worldGeneration;
+    world = createWorld(canvas, { ...state, onInvalidate: () => {
+      // Late resources join the existing draw clock, never a second loop.
+      if (!disposed && generation === worldGeneration) dirty = true;
+    } });
     world.resize(innerWidth, innerHeight, state.mobile);
     world.update(sampleJourney(progress, state.reduced), 0, state);
     world.render();
@@ -288,6 +300,7 @@ async function initialize() {
   document.fonts.ready.then(() => {
     if (!disposed) {
       lenis.resize();
+      world.refreshTypography?.();
       world.resize(innerWidth, innerHeight, state.mobile);
       ScrollTrigger.refresh(true);
       dirty = true;
