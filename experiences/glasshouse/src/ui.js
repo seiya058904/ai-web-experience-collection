@@ -61,6 +61,7 @@ export function createUI(root, callbacks = {}) {
     <header class="site-header">
       <a class="brand" href="#light" data-navigate="0" aria-label="Glasshouse — return to the beginning">${logo}<span>Glasshouse</span></a>
       <nav class="header-actions" aria-label="Experience controls">
+        <a class="collection-return" href="${import.meta.env.BASE_URL}" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
         <button class="text-button motion-toggle" type="button" aria-label="Pause motion" aria-pressed="false"><span>Motion</span><span class="motion-icon">${pause}</span></button>
         <button class="text-button index-toggle" type="button" aria-label="Open chapter index" aria-haspopup="dialog" aria-controls="chapter-index" aria-expanded="false"><span>Index</span>${plus}</button>
       </nav>
@@ -151,6 +152,9 @@ export function createUI(root, callbacks = {}) {
     [root, 'caption'],
     [root.querySelector('.site-header .brand'), 'brand'],
     [root.querySelector('.header-actions'), 'actions'],
+    // The collection exit shares the header-actions ink so the animated sky
+    // never washes it out at either viewport.
+    [root.querySelector('.header-actions .collection-return'), 'actions'],
     [motionButton, 'motion'],
     [indexButton, 'index'],
     [root.querySelector('.journey-footer'), 'footer'],

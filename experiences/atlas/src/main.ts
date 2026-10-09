@@ -399,7 +399,9 @@ function requestAssets(s: StoryState) {
   if (p > .70) load("globe", async () => {
     const module = await import("./world/globe");
     const instance = new module.GlobeLayer();
-    await instance.load(base);
+    // The globe appends "data/optics/" itself, so it needs the work directory,
+    // not the deployment base: optics live at atlas/data/optics/.
+    await instance.load(`${base}atlas/`);
     if (disposed) { instance.dispose(); return; }
     globe = instance; scene.add(globe.group);
   });

@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'lenis/dist/lenis.css';
 import './style.css';
+import './collection-return.css';
 import { createWorld } from './world.js';
 import { createFallback } from './fallback.js';
 import { createUI, MOBILE_BREAKPOINT } from './ui.js';

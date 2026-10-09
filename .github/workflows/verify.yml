@@ -21,3 +21,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run verify
+      # Deployment parity: the Pages workflow builds under the project subpath.
+      # verify:build rejects any reference that escapes that base, so subpath
+      # link regressions (e.g. root-absolute /work/ anchors) fail here too.
+      - run: npm run build -- --base=/ai-web-experience-collection/
+      - run: npm run verify:build

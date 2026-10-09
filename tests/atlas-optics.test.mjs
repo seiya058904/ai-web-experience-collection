@@ -179,3 +179,30 @@ test('disposing an actual GlobeLayer during load aborts all requests and perform
   assert.ok(requests.every(url => url.endsWith('.gz')));
   assert.equal(globe.group.children.length, 0);
 });
+
+test('collection deployment mounts globe optics under the atlas namespace, not the site root', async t => {
+  // The Pages deployment serves the collection under /ai-web-experience-collection/
+  // and the globe bytes live at atlas/data/optics/. The transport below answers
+  // only that namespace, so the pre-fix call shape — load(base), which asks the
+  // site root for data/optics/ — must fail this test.
+  const base = '/ai-web-experience-collection/';
+  const requests = transport(t, async url => {
+    if (!url.startsWith(`${base}atlas/data/optics/`)) return new Response(null, { status: 404 });
+    const name = url.split('/').at(-1);
+    const raw = await readFile(join(outputDir, name.endsWith('.gz') ? name.slice(0, -3) : name));
+    return new Response(name.endsWith('.gz') ? gzipSync(raw) : raw);
+  });
+  const globe = new GlobeLayer();
+  t.after(() => globe.dispose());
+  await assert.rejects(globe.load(base), /resource failed to load/);
+  assert.ok(requests.some(url => url === `${base}data/optics/globe-land-mask-4096x2048.bin.gz`));
+  await globe.load(`${base}atlas/`);
+  assert.equal(requests.filter(url => url.startsWith(`${base}atlas/data/optics/`)).length, 3);
+});
+
+test('main.ts mounts the globe layer under the atlas work directory (regression)', async () => {
+  const source = await readFile(resolve(PROJECT_ROOT, 'experiences/atlas/src/main.ts'), 'utf8');
+  const call = source.match(/new module\.GlobeLayer\(\);[\s\S]*?await instance\.load\(([^;]+)\);/);
+  assert.ok(call, 'globe layer load call not found in main.ts');
+  assert.match(call[1], /atlas/, 'globe must load from atlas/data/optics/, not the deployment base');
+});
