@@ -12,6 +12,8 @@ import { OrbitMark, SoundIcon, MenuIcon, ReplayIcon, ScrollIcon, EngineeringOver
 export default function Experience() {
   const root = useRef<HTMLElement>(null);
   const controller = useRef<MissionController | null>(null);
+  const intent = useRef({reduced:undefined as boolean|undefined,indexOpen:false,creditsOpen:false,destination:'mars' as Destination,subsystem:'propulsion' as Subsystem});
+  const soundIntent = useRef(0);
   const [active, setActive] = useState(0);
   const [indexOpen, setIndexOpen] = useState(false);
   const [creditsOpen, setCreditsOpen] = useState(false);
@@ -24,22 +26,31 @@ export default function Experience() {
     let cancelled = false;
     import('../../lib/orbital/controller').then(({ createMission }) => {
       if (cancelled || !root.current) return;
-      controller.current = createMission(root.current, setActive, setReduced);
-    }).catch(() => { root.current?.setAttribute('data-load-error', 'true'); });
-    return () => { cancelled = true; controller.current?.destroy(); controller.current = null; };
+      const current = intent.current;
+      controller.current = createMission(root.current, setActive, value => {intent.current.reduced=value;setReduced(value);},
+        {reduced:current.reduced,locked:current.indexOpen||current.creditsOpen,destination:current.destination,subsystem:current.subsystem});
+    }).catch(() => { if(!cancelled)root.current?.setAttribute('data-load-error', 'true'); });
+    return () => { cancelled = true; soundIntent.current++; controller.current?.destroy(); controller.current = null; };
   }, []);
 
   function goTo(index: number) {
+    intent.current.indexOpen = false;
     setIndexOpen(false);
     controller.current?.setLocked(false);
     controller.current?.goTo(index);
   }
-  function openIndex(open: boolean) { setIndexOpen(open); controller.current?.setLocked(open || creditsOpen); }
-  function openCredits(open: boolean) { setCreditsOpen(open); controller.current?.setLocked(open || indexOpen); }
-  function changeDestination(value: string) { const d = value as Destination; setDestination(d); controller.current?.setDestination(d); }
-  function changeSubsystem(value: string) { const s = value as Subsystem; setSubsystem(s); controller.current?.setSubsystem(s); }
-  async function toggleSound() { const enabled = await controller.current?.toggleSound(); setSound(Boolean(enabled)); }
-  function toggleMotion() { const next = !reduced; setReduced(next); controller.current?.setReduced(next); }
+  function openIndex(open: boolean) { intent.current.indexOpen=open;setIndexOpen(open);controller.current?.setLocked(open || intent.current.creditsOpen); }
+  function openCredits(open: boolean) { intent.current.creditsOpen=open;setCreditsOpen(open);controller.current?.setLocked(open || intent.current.indexOpen); }
+  function changeDestination(value: string) { const d = value as Destination;intent.current.destination=d;setDestination(d);controller.current?.setDestination(d); }
+  function changeSubsystem(value: string) { const s = value as Subsystem;intent.current.subsystem=s;setSubsystem(s);controller.current?.setSubsystem(s); }
+  async function toggleSound() {
+    const current = controller.current;
+    if(!current)return;
+    const request = ++soundIntent.current;
+    const enabled = await current.toggleSound();
+    if(request===soundIntent.current && current===controller.current)setSound(enabled);
+  }
+  function toggleMotion() { const next = !(intent.current.reduced??reduced);intent.current.reduced=next;setReduced(next);controller.current?.setReduced(next); }
 
   return <main ref={root} className="mission-root" data-scene="earth" data-phase="hold" data-renderer="loading">
     <a className="skip-link" href="#mission-reading">Read the mission</a>
@@ -56,7 +67,7 @@ export default function Experience() {
           <SheetContent className="mission-index" data-lenis-prevent>
             <SheetHeader><p className="mono orange">FLIGHT PLAN / 01—08</p><SheetTitle>The mission.</SheetTitle><SheetDescription>From our home planet to the great unknown. Choose a chapter to explore.</SheetDescription></SheetHeader>
             <nav aria-label="Mission chapters" className="index-chapters">{CHAPTERS.map((c,i)=><button key={c.id} onClick={() => goTo(i)} aria-current={active===i?'step':undefined}><span className="mono">0{i+1}</span><span>{c.name}</span><span className="index-marker"/></button>)}</nav>
-            <div className="index-footer"><button onClick={toggleMotion} className="motion-option"><span>Reduced motion</span><span className="mono">{reduced?'ON':'OFF'}</span></button><button onClick={() => {setIndexOpen(false);openCredits(true);}} className="credits-link">Sources & credits</button><p className="mono">ORBITAL / AN ILLUSTRATIVE MISSION</p></div>
+            <div className="index-footer"><button onClick={toggleMotion} className="motion-option"><span>Reduced motion</span><span className="mono">{reduced?'ON':'OFF'}</span></button><button onClick={() => {openIndex(false);openCredits(true);}} className="credits-link">Sources & credits</button><p className="mono">ORBITAL / AN ILLUSTRATIVE MISSION</p></div>
           </SheetContent>
         </Sheet>
       </div>

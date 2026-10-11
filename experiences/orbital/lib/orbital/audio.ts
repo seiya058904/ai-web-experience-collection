@@ -7,16 +7,30 @@ export class MissionAudio {
   private rumble: GainNode | null = null;
   private filter: BiquadFilterNode | null = null;
   private sources: AudioScheduledSourceNode[] = [];
+  private intent = 0;
+  private destroyed = false;
+  private hidden = false;
   enabled = false;
   async toggle() {
-    if (this.enabled) { this.enabled = false; this.master?.gain.setTargetAtTime(0, this.context!.currentTime, .2); return false; }
+    if (this.destroyed) return false;
+    const intent = ++this.intent;
+    this.enabled = !this.enabled;
+    if (!this.enabled) { this.master?.gain.setTargetAtTime(0, this.context!.currentTime, .2); return false; }
     try {
       if (!this.context) this.build();
-      await this.context!.resume();
-      this.enabled = true;
-      this.master!.gain.setTargetAtTime(.16, this.context!.currentTime, .5);
-      return true;
-    } catch { return false; }
+      const context = this.context!;
+      await context.resume();
+      if (intent !== this.intent || context !== this.context || this.destroyed) return this.enabled;
+      this.master!.gain.setTargetAtTime(this.hidden ? 0 : .16, context.currentTime, .5);
+      if (this.hidden) await context.suspend();
+      return this.enabled;
+    } catch {
+      if (intent === this.intent) {
+        this.enabled = false;
+        if (this.context) this.master?.gain.setTargetAtTime(0, this.context.currentTime, .2);
+      }
+      return this.enabled;
+    }
   }
   private build() {
     const context = new AudioContext(); this.context = context;
@@ -39,6 +53,22 @@ export class MissionAudio {
     this.rumble?.gain.setTargetAtTime(.15+burn*.8,this.context.currentTime,.3);
     this.filter?.frequency.setTargetAtTime(140+burn*800,this.context.currentTime,.4);
   }
-  visibility(hidden: boolean) { if (!this.context) return; if(hidden) void this.context.suspend(); else if(this.enabled) void this.context.resume(); }
-  destroy() { this.sources.forEach(s=>{try{s.stop();}catch{}});void this.context?.close();this.context=null;this.sources=[]; }
+  visibility(hidden: boolean) {
+    this.hidden = hidden;
+    const context = this.context;
+    if (!context) return;
+    this.master?.gain.setTargetAtTime(hidden || !this.enabled ? 0 : .16, context.currentTime, .2);
+    if (hidden) void context.suspend().catch(() => {});
+    else if (this.enabled) void context.resume().then(() => {
+      if (context !== this.context || this.destroyed) return;
+      this.master?.gain.setTargetAtTime(this.hidden || !this.enabled ? 0 : .16, context.currentTime, .2);
+      if (this.hidden) void context.suspend().catch(() => {});
+    }).catch(() => {});
+  }
+  destroy() {
+    this.destroyed = true; this.intent++; this.enabled = false;
+    this.sources.forEach(s=>{try{s.stop();}catch{}});
+    void this.context?.close().catch(() => {});
+    this.context = null; this.master = null; this.sources = [];
+  }
 }

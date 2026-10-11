@@ -6,8 +6,9 @@ import { CHAPTERS, chapterVisibility, clamp, smooth, type Destination, type Subs
 import { MissionAudio } from './audio';
 
 export interface MissionController {goTo:(chapter:number)=>void;setLocked:(locked:boolean)=>void;setReduced:(value:boolean)=>void;setDestination:(value:Destination)=>void;setSubsystem:(value:Subsystem)=>void;toggleSound:()=>Promise<boolean>;destroy:()=>void;}
+export interface MissionInitialState {reduced?:boolean;locked?:boolean;destination?:Destination;subsystem?:Subsystem;}
 
-export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,onReduced:(value:boolean)=>void):MissionController {
+export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,onReduced:(value:boolean)=>void,initial:MissionInitialState={}):MissionController {
   gsap.registerPlugin(ScrollTrigger);
   const track=root.querySelector<HTMLElement>('[data-scroll-track]')!;
   const readingSection=root.querySelector<HTMLElement>('.mission-reading')!;
@@ -24,8 +25,8 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   const altitudeNodes=Array.from(root.querySelectorAll<HTMLElement>('[data-flight-altitude]'));
   const crosses=Array.from(root.querySelectorAll<HTMLElement>('.orbital-crosshair'));
   const reducedMedia=window.matchMedia('(prefers-reduced-motion: reduce)');
-  let reduced=reducedMedia.matches;let destroyed=false;let progress=0;let totalTravel=1;let step=1;let active=-1;let ambient=0;let resizeTimer:ReturnType<typeof setTimeout>|undefined;let measured=false;let locked=false;
-  let destination:Destination='mars';let destinationMix=0;let subsystem:Subsystem='propulsion';let lastSpeed='',lastAltitude='';let previousY=-1;let dirty=true;let lastStamp=0;let sceneVisible=true;let navigationGoal:number|null=null;let navigationSerial=0;
+  let reduced=initial.reduced??reducedMedia.matches;let destroyed=false;let progress=0;let totalTravel=1;let step=1;let active=-1;let ambient=0;let resizeTimer:ReturnType<typeof setTimeout>|undefined;let measured=false;let locked=initial.locked??false;
+  let destination:Destination=initial.destination??'mars';let destinationMix=0;let subsystem:Subsystem=initial.subsystem??'propulsion';let lastSpeed='',lastAltitude='';let previousY=-1;let dirty=true;let lastStamp=0;let sceneVisible=true;let navigationGoal:number|null=null;let navigationSerial=0;
   const audio=new MissionAudio();
   let pendingReadyMeasure=false;
   let positionTimer:ReturnType<typeof setTimeout>|undefined;
@@ -34,6 +35,7 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   const savedPosition=history.state?.[positionKey] as {progress:number;hash:string;readingOffset?:number}|undefined;
   const restorePosition=(navigationType==='reload'||navigationType==='back_forward')&&savedPosition?.hash===location.hash&&Number.isFinite(savedPosition?.progress)&&savedPosition!.progress>=0&&savedPosition!.progress<=1?savedPosition:undefined;
   const lenis=new Lenis({autoRaf:false,smoothWheel:!reduced,lerp:.105,syncTouch:false,wheelMultiplier:1,anchors:false,autoResize:true});
+  if(locked)lenis.stop();
   const scene:FlightScene|null=createFlightScene(canvas,status=>{root.dataset.renderer=status;dirty=true;lastStamp=-1;});
   if(!scene)root.dataset.renderer='fallback';
   const viewportObserver=new IntersectionObserver(entries=>{sceneVisible=entries[0]?.isIntersecting??true;audio.visibility(document.hidden||!sceneVisible);if(sceneVisible){dirty=true;lastStamp=-1;}},{threshold:0});viewportObserver.observe(viewport);
