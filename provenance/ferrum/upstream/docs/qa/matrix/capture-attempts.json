@@ -1,0 +1,89 @@
+{
+  "captureAttempts": [
+    {
+      "id": "initial-30s",
+      "startedAt": "2026-10-12T14:30:00.821Z",
+      "completedAt": "2026-10-12T14:42:55.879Z",
+      "status": "incomplete",
+      "successfulFrames": 96,
+      "retainedFrames": 90,
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-30s.json",
+      "archiveIncludedInDelivery": false,
+      "reportSha256": "a8c61a34771110148a1711588a9439242ab6bf45ba9a58c6c95061e6274d15ff",
+      "screenshotTimeout": 30000
+    },
+    {
+      "id": "4k-120s",
+      "startedAt": "2026-10-12T14:44:03.144Z",
+      "completedAt": "2026-10-12T14:50:14.374Z",
+      "status": "complete",
+      "successfulFrames": 18,
+      "retainedFrames": 18,
+      "internalArchiveReference": "final-matrix-internal-attempts/4k-120s.json",
+      "archiveIncludedInDelivery": false,
+      "reportSha256": "00479a0ea84b165c5a8af05df3c7e8aa6cc7d025cb8981f9cb0ba11c317a20df",
+      "screenshotTimeout": 120000
+    }
+  ],
+  "recoveredFailures": [
+    {
+      "viewport": "3840x2160",
+      "requested": {
+        "index": 2,
+        "act": "strike",
+        "phase": "enter",
+        "local": 0.08
+      },
+      "error": "page.screenshot exceeded the 30000 ms timeout.",
+      "captureAttemptId": "initial-30s",
+      "resolution": "The entire 4K viewport was recaptured successfully with a 120000 ms screenshot timeout, unchanged scene quality and identical source hashes."
+    }
+  ],
+  "superseded4KImages": [
+    {
+      "id": "3840x2160/00-before-form-enter.jpg",
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-4k/00-before-form-enter.jpg",
+      "sha256": "09080c0292bf50f5a187ea92317ced8a0b6bb2cc267a5525ca9a7139f0375c0d",
+      "includedInDelivery": false
+    },
+    {
+      "id": "3840x2160/00-before-form-hold.jpg",
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-4k/00-before-form-hold.jpg",
+      "sha256": "067ec154d231a85352d638e145ac4f9b8ed7d58f9573d329156cdb75f29e38b4",
+      "includedInDelivery": false
+    },
+    {
+      "id": "3840x2160/00-before-form-handoff.jpg",
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-4k/00-before-form-handoff.jpg",
+      "sha256": "3b46cb88b5424484335c5bbd8e75e06647c0139a04a7501aecea89ca47f17b04",
+      "includedInDelivery": false
+    },
+    {
+      "id": "3840x2160/01-furnace-enter.jpg",
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-4k/01-furnace-enter.jpg",
+      "sha256": "d424f109432400ee09368725708b9d9fd5a948730d84826a74cd772eec8ed45d",
+      "includedInDelivery": false
+    },
+    {
+      "id": "3840x2160/01-furnace-hold.jpg",
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-4k/01-furnace-hold.jpg",
+      "sha256": "cbe6722a9ea0a17b99b212748d8b869cb97b395c65cec59bb807e6ff3e550aa0",
+      "includedInDelivery": false
+    },
+    {
+      "id": "3840x2160/01-furnace-handoff.jpg",
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-4k/01-furnace-handoff.jpg",
+      "sha256": "1053bb8b46cd7c4f02a13634a5d3b115cbcd4a545587e9de875c635816bf852c",
+      "includedInDelivery": false
+    }
+  ],
+  "sourceSha256": {
+    "index.html": "d555f67c54a330723597a542a3a9bea86d49ad742fd859c7243187212ceb0f88",
+    "src/audio.js": "eb58adb3419062f8c997bc6b50e7872868fbfe28dc0c13e0c0331e462819eb15",
+    "src/main.js": "b36374d32c95a259499387586e7bf85126ae95eeeec50d114ced7c4985be3045",
+    "src/scene.js": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5",
+    "src/story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87",
+    "src/styles.css": "cb2973bd244112de30dd7c0908d952051c5413e3f5bb49d9bbc4ac0d6ece8a1c"
+  },
+  "note": "Only the selected 108 frames in capture-results.json belong to the final review. Raw attempt reports and the six superseded images remain in an internal QA archive and are not part of the delivery. Internal references are identifiers, not links to delivered files; hashes preserve their provenance."
+}

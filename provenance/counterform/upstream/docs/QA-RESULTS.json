@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "project": "COUNTERFORM / THE SHAPE OF READING",
+  "edition": "Refined V2",
+  "version": "1.1.0",
+  "verificationDate": "2026-10-12",
+  "environment": {
+    "browser": "Chromium 138.0.7204.0",
+    "automation": "Playwright; Browser plugin unavailable",
+    "renderer": "ANGLE / SwiftShader",
+    "host": "Linux headless",
+    "mainCaptureDeviceScaleFactor": 1
+  },
+  "viewports": [
+    [
+      360,
+      780
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      3840,
+      2160
+    ]
+  ],
+  "visualConfirmation": {
+    "uniqueStates": 204,
+    "openingPositionsPerSize": 3,
+    "stableScenesPerSize": 7,
+    "forwardHandoffStatesPerSize": 18,
+    "reverseArrivalStatesPerSize": 6,
+    "runtimeErrors": 0,
+    "horizontalOverflowStates": 0,
+    "materialFallbacksInNormalMode": 0,
+    "allStableScenesHaveOneInteractiveChapter": true
+  },
+  "interaction": {
+    "assertions": 14,
+    "passed": 14,
+    "pageErrors": []
+  },
+  "nativeTypeHandoff": {
+    "assertions": 38,
+    "passed": 38,
+    "pageErrors": []
+  },
+  "materialModule": {
+    "assertions": 32,
+    "passed": 32,
+    "pageErrors": []
+  },
+  "materialCompositeEndpoints": [
+    {
+      "scene": "mark",
+      "mae": 0.0,
+      "max": 0,
+      "differentPixels": 0,
+      "pixelsOver8": 0
+    },
+    {
+      "scene": "press",
+      "mae": 0.0,
+      "max": 0,
+      "differentPixels": 0,
+      "pixelsOver8": 0
+    },
+    {
+      "scene": "press-small",
+      "mae": 0.0,
+      "max": 0,
+      "differentPixels": 0,
+      "pixelsOver8": 0
+    }
+  ],
+  "materialSourceCache": {
+    "results": [
+      {
+        "viewport": [
+          1440,
+          900
+        ],
+        "initialCaptures": 2,
+        "finalCaptures": 2,
+        "cacheReusedDuring24MotionFrames": true,
+        "allRendersPassed": true,
+        "forwardReverseByteIdentical": true
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "initialCaptures": 2,
+        "finalCaptures": 2,
+        "cacheReusedDuring24MotionFrames": true,
+        "allRendersPassed": true,
+        "forwardReverseByteIdentical": true
+      }
+    ],
+    "errors": []
+  },
+  "fallbackIntegration": {
+    "assertions": 41,
+    "passed": 41,
+    "pageErrors": []
+  },
+  "wideLayoutClearance": {
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        3840,
+        2160
+      ]
+    ],
+    "stableFrames": 6,
+    "equalSerifSansHeight": true,
+    "minimumComparisonCaptionFooterGapPx": 74.25,
+    "minimumXHeightStudyFooterGapPx": 30.2,
+    "pageErrors": 0
+  },
+  "artReview": {
+    "verdict": "SHIP",
+    "scope": "Independent desktop, phone and tablet compositions; final targeted confirmation of caption clearance and native word spacing. Wide-layout clearance also measured and visually confirmed."
+  },
+  "baseline": {
+    "edition": "V1",
+    "documents": [
+      "QA-BASELINE-V1.md",
+      "QA-RESULTS-V1.json"
+    ],
+    "historicalFunctionalAssertions": 185,
+    "includedInV2Counts": false
+  },
+  "limitations": [
+    "Safari and Firefox not exercised",
+    "No physical iOS/Android device or hardware GPU benchmark",
+    "Soft keyboard checks use viewport-size simulation",
+    "No screen-reader certification or complete accessibility audit",
+    "Font coverage and editorial specimen are Latin-focused"
+  ],
+  "sourceSha256": {
+    "index.html": "4299afb55c5c0c7977a3ade991fd26d7bf70b78bc478b1869b7abf13f4a32b46",
+    "styles.css": "9476395c6ed9570503504056bfb00c9141a0d1d55297159075ebd8c926617acf",
+    "app.js": "772a7f7e70c106628f46205799d00fae1935dc37aa514322daf8adf608b55ae7",
+    "src/type-handoff.js": "817b9e3f4e75c317ea13777418aec2d291e3b76f54dd4e71ed5318788e199be3",
+    "src/materials.js": "609a866158ace1b818e3ff09cdffeab224d6f47c0869d50df2d53e9b0923e078",
+    "assets/materials.js": "1a9a9ca70b7fa06795465fdd2fb53bdd5839a9e684e7bf67c0f4a1e74d52efc7",
+    "scripts/serve.mjs": "c8bdad53598188e991e56b63912e1ceae4cf400fd0797ec1b5f46656247bf60c",
+    "package.json": "ab6c1e3a0cd9447366cccc778489e7c0ced56ce65a332ba7614d3863542ef71d"
+  },
+  "details": "QA.md"
+}

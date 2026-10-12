@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-12T14:44:05.658022+00:00",
+  "pathBase": "Workspace root",
+  "kind": "browser-evidence-contact-sheet",
+  "source": "Six final verified browser hold screenshots; exact layout with proportional resampling.",
+  "inputs": [
+    {
+      "scene": "00",
+      "title": "BEFORE FORM",
+      "path": "qa-work/final-matrix-verified/1920x1080/00-before-form-hold.jpg",
+      "bytes": 145168,
+      "sha256": "b417cee3d1be27454c985e2cad30851c3957066e842676b91b4edf092bfd6273",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "outputBox": [
+        48,
+        190,
+        1008,
+        730
+      ],
+      "caption": "00  BEFORE FORM",
+      "captionBaseline": [
+        48,
+        173
+      ]
+    },
+    {
+      "scene": "01",
+      "title": "THE FURNACE",
+      "path": "qa-work/final-matrix-verified/1920x1080/01-furnace-hold.jpg",
+      "bytes": 119002,
+      "sha256": "6abdd0654cfda4fb38c2f907017e471d90e2ee8f4da079e283a265bca870e075",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "outputBox": [
+        1040,
+        190,
+        2000,
+        730
+      ],
+      "caption": "01  THE FURNACE",
+      "captionBaseline": [
+        1040,
+        173
+      ]
+    },
+    {
+      "scene": "02",
+      "title": "THE STRIKE",
+      "path": "qa-work/final-matrix-verified/1920x1080/02-strike-hold.jpg",
+      "bytes": 115101,
+      "sha256": "dde51cbf200c985ae0dd1f1c96bdd188f78ab6c103eb19537bab0f8c363a8f5b",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "outputBox": [
+        48,
+        806,
+        1008,
+        1346
+      ],
+      "caption": "02  THE STRIKE",
+      "captionBaseline": [
+        48,
+        789
+      ]
+    },
+    {
+      "scene": "03",
+      "title": "THE TEMPERATURE BETWEEN",
+      "path": "qa-work/final-matrix-verified/1920x1080/03-temperature-hold.jpg",
+      "bytes": 109098,
+      "sha256": "baac8e1c2d96855146db6661b0db053066988148213211f73539da40c5412e05",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "outputBox": [
+        1040,
+        806,
+        2000,
+        1346
+      ],
+      "caption": "03  THE TEMPERATURE BETWEEN",
+      "captionBaseline": [
+        1040,
+        789
+      ]
+    },
+    {
+      "scene": "04",
+      "title": "REVEAL THE EDGE",
+      "path": "qa-work/final-matrix-verified/1920x1080/04-edge-hold.jpg",
+      "bytes": 146872,
+      "sha256": "a87e921191e3dbbd8fe116e0479fe5441ea2265cef72ffb4653904cc4a6de1f1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "outputBox": [
+        48,
+        1422,
+        1008,
+        1962
+      ],
+      "caption": "04  REVEAL THE EDGE",
+      "captionBaseline": [
+        48,
+        1405
+      ]
+    },
+    {
+      "scene": "05",
+      "title": "THE RELIC",
+      "path": "qa-work/final-matrix-verified/1920x1080/05-relic-hold.jpg",
+      "bytes": 84757,
+      "sha256": "0083c5815d648cb3ecaabedea33b76286a5f0651af0501ffe74c79d19bfe09d8",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "outputBox": [
+        1040,
+        1422,
+        2000,
+        1962
+      ],
+      "caption": "05  THE RELIC",
+      "captionBaseline": [
+        1040,
+        1405
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "role": "antonio",
+      "package": "@fontsource/antonio",
+      "packageVersion": "5.3.0",
+      "sourcePath": "ferrum/node_modules/@fontsource/antonio/files/antonio-latin-300-normal.woff",
+      "sourceSha256": "82ff8af2bc4d2b7f9ec5d377ba06cadb8fabe6fd93dfb46933c950fae63f850d",
+      "sizePx": 52,
+      "inMemorySfntSha256": "345a30bc3e4dcc1a3f5dab1fe2e9920cced66c220980b9b044b8c9013e149494",
+      "conversion": "WOFF decoded in memory with fontTools; source font file not changed"
+    },
+    {
+      "role": "caption",
+      "package": "@fontsource/manrope",
+      "packageVersion": "5.2.7",
+      "sourcePath": "ferrum/node_modules/@fontsource/manrope/files/manrope-latin-500-normal.woff",
+      "sourceSha256": "c805ac8fd73fb95ddba74e624500c7d7d9a8ec6434d723bb6a9b76173c9e41b4",
+      "sizePx": 18,
+      "inMemorySfntSha256": "ef881466e452e756b13cc511ba3bfb20f13087ebb1140c39ac4dfecbb7cc4c82",
+      "conversion": "WOFF decoded in memory with fontTools; source font file not changed"
+    },
+    {
+      "role": "subtitle",
+      "package": "@fontsource/manrope",
+      "packageVersion": "5.2.7",
+      "sourcePath": "ferrum/node_modules/@fontsource/manrope/files/manrope-latin-400-normal.woff",
+      "sourceSha256": "1bf66c29a29f1b71d507cb97fc138cd130b856ed05b55decd3a2944b413cb636",
+      "sizePx": 15,
+      "inMemorySfntSha256": "2aa707e4e4ca712d4301154f4768922641c0589814831df65e2f7a42a8fc31c2",
+      "conversion": "WOFF decoded in memory with fontTools; source font file not changed"
+    }
+  ],
+  "composition": {
+    "columns": 2,
+    "rows": 3,
+    "background": "#0b0c0d",
+    "text": "#e8e5de",
+    "divider": "#393b3b",
+    "frameDimensions": [
+      960,
+      540
+    ],
+    "resampling": "Pillow LANCZOS, one resize per source",
+    "crop": false,
+    "retouch": false,
+    "redrawScreenshotContent": false,
+    "generativeImageEditing": false,
+    "header": "FERRUM / THE MEMORY OF FIRE",
+    "labelsOutsideScreenshotBounds": true,
+    "framePixelRegionsVerifiedAgainstResizedSources": true
+  },
+  "renderer": {
+    "library": "Pillow 12.3.0",
+    "fontDecoder": "fontTools 4.61.1",
+    "fontDecodingInMemoryOnly": true
+  },
+  "output": {
+    "path": "FERRUM-Preview.png",
+    "format": "PNG",
+    "dimensions": [
+      2048,
+      2016
+    ],
+    "mode": "RGB",
+    "bytes": 832428,
+    "sha256": "e9ed4be436bd4f26bf838ad67ea2421488547b8730b2bd76ec3520fc8a581707",
+    "encoding": {
+      "compressLevel": 9,
+      "optimize": true
+    }
+  },
+  "inspection": {
+    "reviewedAt": "2026-10-12T14:44:55.219221+00:00",
+    "method": "Opened the final PNG at native resolution with view_image.",
+    "checks": [
+      "Two columns and three rows in reading order 00–05.",
+      "Each full screenshot is displayed at 960×540 with its original 16:9 frame.",
+      "Header and six captions sit outside the screenshot regions.",
+      "No caption clipping or layout overlap observed."
+    ],
+    "scope": "Contact-sheet composition and screenshot preservation only."
+  }
+}

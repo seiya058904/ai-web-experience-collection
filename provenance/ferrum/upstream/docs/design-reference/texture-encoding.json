@@ -1,0 +1,44 @@
+[
+  {
+    "file": "forged-steel.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sourceBytes": 4225174,
+    "bytes": 889838,
+    "sha256": "4ddb47ea53ffed98608d8c7a7a83767979b7e04a7ee72fc9d36229c5f2d0029c",
+    "rmsChannelError_0_255": [
+      1.785058640791788,
+      1.5804052602778111,
+      2.7010444037561987
+    ],
+    "encoding": {
+      "format": "WebP",
+      "quality": 96,
+      "method": 6,
+      "semanticEdits": false
+    }
+  },
+  {
+    "file": "polished-steel.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sourceBytes": 2662621,
+    "bytes": 486982,
+    "sha256": "d844dcaf8f6ff2c03efa6702a1bbb57b051b92c825a6d57db94d82435911601d",
+    "rmsChannelError_0_255": [
+      1.36932624727121,
+      1.3329574495159382,
+      1.412374582283175
+    ],
+    "encoding": {
+      "format": "WebP",
+      "quality": 96,
+      "method": 6,
+      "semanticEdits": false
+    }
+  }
+]

@@ -1,0 +1,4367 @@
+{
+  "project": "DOSE — The Architecture of a Tablet",
+  "verificationDateUTC": "2026-10-12",
+  "generatedAtUTC": "2026-10-12T13:51:58.593394+00:00",
+  "environment": {
+    "os": "Linux",
+    "node": "24.19.0",
+    "chromium": "153.0.8010.0",
+    "browserPlugin": "Browser plugin not available",
+    "playwrightVersion": "1.62.1",
+    "chromiumPackageVersion": "153.0.0",
+    "renderer": "SwiftShader software rendering",
+    "physicalDevice": false,
+    "hardwareGpu": false
+  },
+  "interpretation": "Executed checks below passed within their stated scope. This is not a universal browser/device compatibility claim or a hardware frame-budget pass.",
+  "sourceHashes": {
+    "src/app.js": "59b047b905a68b2d7efedf0464d5346ae53f4d151824cf61ed9dff11c4c07d9e",
+    "src/styles.css": "94f039ee596afa8d70312e0195b62878605d3b40da4472e99512bf0d330df31a",
+    "src/scene.js": "6c36a6657d8f908e9eefa948542feb572685d8ea87cc5c87199a9235087a0181",
+    "src/geometry.js": "036d2cda6888e8e63b65f25d06f2e3dda883b42c40d0e15db80e2f045d97a972",
+    "src/fallback.js": "839c4ed7eb1781f37cbe425d3bf02fcb118cef98d031d1904e886799b4f1a922",
+    "src/timeline.js": "045dc6f577da8aef055607f84ce48cc9f4dbaee3488a40973d20316bae1d9027",
+    "index.html": "c0b84ec6e4dcb8d041f1b76813d7e64d145a2a9efb779599e629be6b14550095"
+  },
+  "sourceChecks": {
+    "date": "2026-10-12T13:45:09.897493+00:00",
+    "results": [
+      {
+        "command": "node --version",
+        "exitCode": 0,
+        "stdout": "v24.19.0\n",
+        "stderr": ""
+      },
+      {
+        "command": "node scripts/check.mjs",
+        "exitCode": 0,
+        "stdout": "Source checks passed: 6 source entries, unique IDs, local entry assets, one RAF scheduler.\n",
+        "stderr": ""
+      },
+      {
+        "command": "node --test tests/timeline.test.mjs",
+        "exitCode": 0,
+        "stdout": "✔ the final composition can be reached at the actual document bottom (1.125916ms)\n✔ scroll overshoot is bounded at both document edges (0.69005ms)\n✔ every chapter has a stable composition and a continuous handoff boundary (0.662017ms)\n✔ revisiting an identical position restores the same process state (0.150908ms)\n✔ a resize can preserve phase across all seven chapters (0.242275ms)\n✔ the cutaway uses qualitative labels rather than fake measurement output (0.237498ms)\n✔ only Evidence has a dark stable canvas and every scene has a unique anchor (0.516177ms)\n✔ all three reading colors maintain 4.5:1 contrast throughout every handoff (43.506041ms)\nℹ tests 8\nℹ suites 0\nℹ pass 8\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 133.180836\n",
+        "stderr": ""
+      },
+      {
+        "command": "node scripts/build.mjs",
+        "exitCode": 0,
+        "stdout": "Built dist/ — all runtime assets are local. Preview with npm run preview.\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "functionalSuite": {
+    "renderer": "Canvas2D unless explicitly stated in the check",
+    "passed": 15,
+    "failed": 0,
+    "cases": [
+      {
+        "name": "Local assets and fonts load; no external runtime requests",
+        "pass": true,
+        "durationMs": 11,
+        "fonts": {
+          "space": true,
+          "barlow": true,
+          "mono": true
+        }
+      },
+      {
+        "name": "Seven Canvas2D chapters and matching accessible chapter state",
+        "pass": true,
+        "durationMs": 7762,
+        "frames": [
+          {
+            "scene": 0,
+            "paintedPixels": 155844
+          },
+          {
+            "scene": 1,
+            "paintedPixels": 80983
+          },
+          {
+            "scene": 2,
+            "paintedPixels": 123084
+          },
+          {
+            "scene": 3,
+            "paintedPixels": 105602
+          },
+          {
+            "scene": 4,
+            "paintedPixels": 182118
+          },
+          {
+            "scene": 5,
+            "paintedPixels": 132916
+          },
+          {
+            "scene": 6,
+            "paintedPixels": 155723
+          }
+        ]
+      },
+      {
+        "name": "Index dialog closes on Escape and restores focus",
+        "pass": true,
+        "durationMs": 127
+      },
+      {
+        "name": "Index navigation reaches requested scene and title focus",
+        "pass": true,
+        "durationMs": 1189
+      },
+      {
+        "name": "Depth range supports Home, End and ArrowLeft without scrolling",
+        "pass": true,
+        "durationMs": 653,
+        "depth": "999"
+      },
+      {
+        "name": "Pointer drag changes cutaway independently of chapter position",
+        "pass": true,
+        "durationMs": 262,
+        "depth": 0.763
+      },
+      {
+        "name": "About settings preserve phase; quiet mode stops idle rendering",
+        "pass": true,
+        "durationMs": 1542,
+        "idleRenderDelta": 0,
+        "rafDelta": 42
+      },
+      {
+        "name": "Resize preserves scene phase and cutaway depth",
+        "pass": true,
+        "durationMs": 1272,
+        "before": {
+          "scene": 5,
+          "local": 0.4,
+          "transition": 0,
+          "overall": 0.8010989010989011,
+          "quiet": true,
+          "quality": "low",
+          "observeDepth": 0.763,
+          "renderer": "canvas2d",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "small": {
+          "scene": 5,
+          "local": 0.4003511852502195,
+          "transition": 0,
+          "overall": 0.801171875,
+          "quiet": true,
+          "quality": "low",
+          "observeDepth": 0.763,
+          "renderer": "canvas2d",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "restored": {
+          "scene": 5,
+          "local": 0.4,
+          "transition": 0,
+          "overall": 0.8010989010989011,
+          "quiet": true,
+          "quality": "low",
+          "observeDepth": 0.763,
+          "renderer": "canvas2d",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        }
+      },
+      {
+        "name": "Quiet composition is deterministic after reverse scrolling",
+        "pass": true,
+        "durationMs": 1609,
+        "canvasPixels": "byte-identical"
+      },
+      {
+        "name": "Quiet preferences persist through reload; ending remains readable",
+        "pass": true,
+        "durationMs": 1023
+      },
+      {
+        "name": "Return link and browser history restore chapter routes",
+        "pass": true,
+        "durationMs": 151
+      },
+      {
+        "name": "Reduced-motion media preference is respected on initial load",
+        "pass": true,
+        "durationMs": 1312
+      },
+      {
+        "name": "JavaScript-disabled reading edition exposes all seven chapters",
+        "pass": true,
+        "durationMs": 262,
+        "chapters": 7
+      },
+      {
+        "name": "Native mobile touch swipe and range tap remain usable",
+        "pass": true,
+        "durationMs": 3085,
+        "depth": 0.837
+      },
+      {
+        "name": "Session-storage denial does not block the experience",
+        "pass": true,
+        "durationMs": 755
+      }
+    ],
+    "console": [],
+    "externalRequests": [],
+    "failedRequests": []
+  },
+  "viewportMatrix": {
+    "renderer": "WebGL",
+    "motion": "quiet",
+    "quality": "high",
+    "deviceScaleFactor": 1,
+    "frames": [
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 0,
+        "phase": 0,
+        "image": "final-360-0.png",
+        "state": {
+          "scene": 0,
+          "local": 0,
+          "transition": 0,
+          "overall": 0,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 281.265625,
+              "top": 111,
+              "bottom": 293.265625,
+              "width": 261.265625,
+              "height": 182.265625
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 577.78125,
+              "bottom": 672,
+              "width": 320,
+              "height": 94.21875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 255.296875,
+              "right": 340,
+              "top": 88,
+              "bottom": 102,
+              "width": 84.703125,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 2,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 2,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 1,
+        "phase": 0.4,
+        "image": "final-360-1.png",
+        "state": {
+          "scene": 1,
+          "local": 0.3998100664767331,
+          "transition": 0,
+          "overall": 0.20766413074105383,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 340,
+              "top": 110,
+              "bottom": 202.0625,
+              "width": 320,
+              "height": 92.0625
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 522.75,
+              "bottom": 678,
+              "width": 320,
+              "height": 155.25
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 239.890625,
+              "right": 340,
+              "top": 88,
+              "bottom": 102,
+              "width": 100.109375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 1,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 8,
+          "triangles": 29426,
+          "textures": 7,
+          "geometries": 10,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 2,
+        "phase": 0.45,
+        "image": "final-360-2.png",
+        "state": {
+          "scene": 2,
+          "local": 0.45014245014245013,
+          "transition": 0,
+          "overall": 0.36348267117497884,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 340,
+              "top": 110,
+              "bottom": 202.0625,
+              "width": 320,
+              "height": 92.0625
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 560.75,
+              "bottom": 673,
+              "width": 320,
+              "height": 112.25
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 255.296875,
+              "right": 340,
+              "top": 88,
+              "bottom": 102,
+              "width": 84.703125,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 14,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 3,
+        "phase": 0.58,
+        "image": "final-360-3.png",
+        "state": {
+          "scene": 3,
+          "local": 0.5802469135802469,
+          "transition": 0,
+          "overall": 0.5311355311355311,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 340,
+              "top": 128,
+              "bottom": 220.0625,
+              "width": 320,
+              "height": 92.0625
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 560.75,
+              "bottom": 673,
+              "width": 320,
+              "height": 112.25
+            },
+            ".depth-control": null,
+            ".scene-scale": null,
+            ".press-stages": {
+              "left": 20,
+              "right": 181.421875,
+              "top": 91,
+              "bottom": 113,
+              "width": 161.421875,
+              "height": 22
+            },
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 3,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 9,
+          "triangles": 63938,
+          "textures": 8,
+          "geometries": 22,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 4,
+        "phase": 0.35,
+        "image": "final-360-4.png",
+        "state": {
+          "scene": 4,
+          "local": 0.3504273504273504,
+          "transition": 0,
+          "overall": 0.6453930684699916,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 340,
+              "top": 110,
+              "bottom": 202.0625,
+              "width": 320,
+              "height": 92.0625
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 582.1875,
+              "bottom": 673,
+              "width": 320,
+              "height": 90.8125
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 247.59375,
+              "right": 340,
+              "top": 88,
+              "bottom": 102,
+              "width": 92.40625,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 4,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 1,
+          "triangles": 25088,
+          "textures": 8,
+          "geometries": 22,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 5,
+        "phase": 0.4,
+        "image": "final-360-5.png",
+        "state": {
+          "scene": 5,
+          "local": 0.3998100664767331,
+          "transition": 0,
+          "overall": 0.8010707241476472,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 340,
+              "top": 110,
+              "bottom": 202.0625,
+              "width": 320,
+              "height": 92.0625
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 479.125,
+              "bottom": 578,
+              "width": 320,
+              "height": 98.875
+            },
+            ".depth-control": {
+              "left": 20,
+              "right": 340,
+              "top": 601,
+              "bottom": 664,
+              "width": 320,
+              "height": 63
+            },
+            ".scene-scale": {
+              "left": 239.890625,
+              "right": 340,
+              "top": 88,
+              "bottom": 102,
+              "width": 100.109375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 3,
+          "triangles": 111640,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 360,
+        "height": 780,
+        "scene": 6,
+        "phase": 0.62,
+        "image": "final-360-6.png",
+        "state": {
+          "scene": 6,
+          "local": 0.6205128205128205,
+          "transition": 0,
+          "overall": 0.958298112144266,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 360,
+            "height": 780
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 340,
+              "top": 110,
+              "bottom": 239.328125,
+              "width": 320,
+              "height": 129.328125
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 340,
+              "top": 543.453125,
+              "bottom": 676,
+              "width": 320,
+              "height": 132.546875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 232.1875,
+              "right": 340,
+              "top": 88,
+              "bottom": 102,
+              "width": 107.8125,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 360,
+            "height": 780
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 6,
+          "pixelRatio": 1,
+          "width": 360,
+          "height": 780,
+          "drawCalls": 25,
+          "triangles": 85106,
+          "textures": 8,
+          "geometries": 37,
+          "blendParticles": 1020,
+          "renderWidth": 360,
+          "renderHeight": 780
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 0,
+        "phase": 0,
+        "image": "final-390-0.png",
+        "state": {
+          "scene": 0,
+          "local": 0,
+          "transition": 0,
+          "overall": 0,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 303.0625,
+              "top": 111,
+              "bottom": 306.921875,
+              "width": 283.0625,
+              "height": 195.921875
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 641.78125,
+              "bottom": 736,
+              "width": 350,
+              "height": 94.21875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 285.296875,
+              "right": 370,
+              "top": 88,
+              "bottom": 102,
+              "width": 84.703125,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 2,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 2,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 1,
+        "phase": 0.4,
+        "image": "final-390-1.png",
+        "state": {
+          "scene": 1,
+          "local": 0.4003511852502195,
+          "transition": 0,
+          "overall": 0.20768229166666666,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 370,
+              "top": 110,
+              "bottom": 209.75,
+              "width": 350,
+              "height": 99.75
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 586.75,
+              "bottom": 742,
+              "width": 350,
+              "height": 155.25
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 269.890625,
+              "right": 370,
+              "top": 88,
+              "bottom": 102,
+              "width": 100.109375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 1,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 8,
+          "triangles": 29426,
+          "textures": 7,
+          "geometries": 10,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 2,
+        "phase": 0.45,
+        "image": "final-390-2.png",
+        "state": {
+          "scene": 2,
+          "local": 0.4503950834064969,
+          "transition": 0,
+          "overall": 0.36354166666666665,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 370,
+              "top": 110,
+              "bottom": 209.75,
+              "width": 350,
+              "height": 99.75
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 646.1875,
+              "bottom": 737,
+              "width": 350,
+              "height": 90.8125
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 285.296875,
+              "right": 370,
+              "top": 88,
+              "bottom": 102,
+              "width": 84.703125,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 14,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 3,
+        "phase": 0.58,
+        "image": "final-390-3.png",
+        "state": {
+          "scene": 3,
+          "local": 0.5803336259877085,
+          "transition": 0,
+          "overall": 0.5311197916666667,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 370,
+              "top": 128,
+              "bottom": 227.75,
+              "width": 350,
+              "height": 99.75
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 646.1875,
+              "bottom": 737,
+              "width": 350,
+              "height": 90.8125
+            },
+            ".depth-control": null,
+            ".scene-scale": null,
+            ".press-stages": {
+              "left": 20,
+              "right": 181.421875,
+              "top": 91,
+              "bottom": 113,
+              "width": 161.421875,
+              "height": 22
+            },
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 3,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 9,
+          "triangles": 63938,
+          "textures": 8,
+          "geometries": 22,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 4,
+        "phase": 0.35,
+        "image": "final-390-4.png",
+        "state": {
+          "scene": 4,
+          "local": 0.35030728709394204,
+          "transition": 0,
+          "overall": 0.6454427083333333,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 370,
+              "top": 110,
+              "bottom": 209.75,
+              "width": 350,
+              "height": 99.75
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 646.1875,
+              "bottom": 737,
+              "width": 350,
+              "height": 90.8125
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 277.59375,
+              "right": 370,
+              "top": 88,
+              "bottom": 102,
+              "width": 92.40625,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 4,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 1,
+          "triangles": 25088,
+          "textures": 8,
+          "geometries": 22,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 5,
+        "phase": 0.4,
+        "image": "final-390-5.png",
+        "state": {
+          "scene": 5,
+          "local": 0.4003511852502195,
+          "transition": 0,
+          "overall": 0.801171875,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 370,
+              "top": 110,
+              "bottom": 209.75,
+              "width": 350,
+              "height": 99.75
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 561.96875,
+              "bottom": 642,
+              "width": 350,
+              "height": 80.03125
+            },
+            ".depth-control": {
+              "left": 20,
+              "right": 370,
+              "top": 665,
+              "bottom": 728,
+              "width": 350,
+              "height": 63
+            },
+            ".scene-scale": {
+              "left": 269.890625,
+              "right": 370,
+              "top": 88,
+              "bottom": 102,
+              "width": 100.109375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 3,
+          "triangles": 111640,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "scene": 6,
+        "phase": 0.62,
+        "image": "final-390-6.png",
+        "state": {
+          "scene": 6,
+          "local": 0.6196682464454977,
+          "transition": 0,
+          "overall": 0.958203125,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 20,
+              "right": 370,
+              "top": 110,
+              "bottom": 250.109375,
+              "width": 350,
+              "height": 140.109375
+            },
+            ".copy-foot": {
+              "left": 20,
+              "right": 370,
+              "top": 607.453125,
+              "bottom": 740,
+              "width": 350,
+              "height": 132.546875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 262.1875,
+              "right": 370,
+              "top": 88,
+              "bottom": 102,
+              "width": 107.8125,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 6,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 25,
+          "triangles": 85106,
+          "textures": 8,
+          "geometries": 37,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 0,
+        "phase": 0,
+        "image": "final-768-0.png",
+        "state": {
+          "scene": 0,
+          "local": 0,
+          "transition": 0,
+          "overall": 0,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 133.109375,
+              "bottom": 380.28125,
+              "width": 530.59375,
+              "height": 247.171875
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 418.828125,
+              "top": 755.9375,
+              "bottom": 875.53125,
+              "width": 386.578125,
+              "height": 119.59375
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 637.40625,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 88.34375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 3,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 3,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 1,
+        "phase": 0.4,
+        "image": "final-768-1.png",
+        "state": {
+          "scene": 1,
+          "local": 0.40014471780028943,
+          "transition": 0,
+          "overall": 0.20766258853831293,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 143.359375,
+              "bottom": 272.609375,
+              "width": 530.59375,
+              "height": 129.25
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 418.828125,
+              "top": 675.3125,
+              "bottom": 875.53125,
+              "width": 386.578125,
+              "height": 200.21875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 621.359375,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 104.390625,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 1,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 8,
+          "triangles": 29426,
+          "textures": 7,
+          "geometries": 11,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 2,
+        "phase": 0.45,
+        "image": "final-768-2.png",
+        "state": {
+          "scene": 2,
+          "local": 0.45007235890014474,
+          "transition": 0,
+          "overall": 0.3634900193174501,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 153.59375,
+              "bottom": 282.84375,
+              "width": 530.59375,
+              "height": 129.25
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 418.828125,
+              "top": 759.34375,
+              "bottom": 870.40625,
+              "width": 386.578125,
+              "height": 111.0625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 637.40625,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 88.34375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 15,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 3,
+        "phase": 0.58,
+        "image": "final-768-3.png",
+        "state": {
+          "scene": 3,
+          "local": 0.5803183791606368,
+          "transition": 0,
+          "overall": 0.5311225584889461,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 163.828125,
+              "bottom": 293.078125,
+              "width": 530.59375,
+              "height": 129.25
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 418.828125,
+              "top": 759.34375,
+              "bottom": 870.40625,
+              "width": 386.578125,
+              "height": 111.0625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 661.5,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 64.25,
+              "height": 14
+            },
+            ".press-stages": {
+              "left": 32.25,
+              "right": 229.078125,
+              "top": 115.109375,
+              "bottom": 138.109375,
+              "width": 196.828125,
+              "height": 23
+            },
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 3,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 9,
+          "triangles": 63938,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 4,
+        "phase": 0.35,
+        "image": "final-768-4.png",
+        "state": {
+          "scene": 4,
+          "local": 0.35021707670043417,
+          "transition": 0,
+          "overall": 0.6454174715604207,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 184.3125,
+              "bottom": 313.5625,
+              "width": 530.59375,
+              "height": 129.25
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 418.828125,
+              "top": 764.46875,
+              "bottom": 875.53125,
+              "width": 386.578125,
+              "height": 111.0625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 629.390625,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 96.359375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 4,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 1,
+          "triangles": 25088,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 5,
+        "phase": 0.4,
+        "image": "final-768-5.png",
+        "state": {
+          "scene": 5,
+          "local": 0.40014471780028943,
+          "transition": 0,
+          "overall": 0.8011375831723546,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 143.359375,
+              "bottom": 272.609375,
+              "width": 530.59375,
+              "height": 129.25
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 350.609375,
+              "top": 601.0625,
+              "bottom": 737.28125,
+              "width": 318.359375,
+              "height": 136.21875
+            },
+            ".depth-control": {
+              "left": 32.25,
+              "right": 725.75,
+              "top": 804.484375,
+              "bottom": 873.484375,
+              "width": 693.5,
+              "height": 69
+            },
+            ".scene-scale": {
+              "left": 621.359375,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 104.390625,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 4,
+          "triangles": 111640,
+          "textures": 8,
+          "geometries": 25,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "scene": 6,
+        "phase": 0.62,
+        "image": "final-768-6.png",
+        "state": {
+          "scene": 6,
+          "local": 0.6201171875,
+          "transition": 0,
+          "overall": 0.9582528439579309,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 32.25,
+              "right": 562.84375,
+              "top": 143.359375,
+              "bottom": 337.234375,
+              "width": 530.59375,
+              "height": 193.875
+            },
+            ".copy-foot": {
+              "left": 32.25,
+              "right": 418.828125,
+              "top": 709.578125,
+              "bottom": 880.640625,
+              "width": 386.578125,
+              "height": 171.0625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 613.328125,
+              "right": 725.75,
+              "top": 115.109375,
+              "bottom": 129.109375,
+              "width": 112.421875,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 6,
+          "pixelRatio": 1,
+          "width": 768,
+          "height": 1024,
+          "drawCalls": 25,
+          "triangles": 85106,
+          "textures": 8,
+          "geometries": 39,
+          "blendParticles": 1020,
+          "renderWidth": 768,
+          "renderHeight": 1024
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 0,
+        "phase": 0,
+        "image": "final-1440-0.png",
+        "state": {
+          "scene": 0,
+          "local": 0,
+          "transition": 0,
+          "overall": 0,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 153,
+              "bottom": 526.9375,
+              "width": 614.890625,
+              "height": 373.9375
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 546.65625,
+              "top": 602.671875,
+              "bottom": 736.203125,
+              "width": 486.1875,
+              "height": 133.53125
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1281.1875,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 88.34375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 3,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 3,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 1,
+        "phase": 0.4,
+        "image": "final-1440-1.png",
+        "state": {
+          "scene": 1,
+          "local": 0.4,
+          "transition": 0,
+          "overall": 0.2076923076923077,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 198,
+              "bottom": 386.1875,
+              "width": 614.890625,
+              "height": 188.1875
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 518.0625,
+              "top": 528.34375,
+              "bottom": 733.5,
+              "width": 457.59375,
+              "height": 205.15625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1265.140625,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 104.390625,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 1,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 8,
+          "triangles": 29426,
+          "textures": 7,
+          "geometries": 11,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 2,
+        "phase": 0.45,
+        "image": "final-1440-2.png",
+        "state": {
+          "scene": 2,
+          "local": 0.45020576131687245,
+          "transition": 0,
+          "overall": 0.3634920634920635,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 576.8125,
+              "bottom": 765,
+              "width": 614.890625,
+              "height": 188.1875
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 489.46875,
+              "top": 180,
+              "bottom": 347.65625,
+              "width": 429,
+              "height": 167.65625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1281.1875,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 88.34375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": {
+              "left": 1165.921875,
+              "right": 1369.53125,
+              "top": 742,
+              "bottom": 756,
+              "width": 203.609375,
+              "height": 14
+            }
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 15,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 3,
+        "phase": 0.58,
+        "image": "final-1440-3.png",
+        "state": {
+          "scene": 3,
+          "local": 0.5802469135802469,
+          "transition": 0,
+          "overall": 0.5311355311355311,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 243,
+              "bottom": 431.1875,
+              "width": 614.890625,
+              "height": 188.1875
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 518.0625,
+              "top": 552.34375,
+              "bottom": 720,
+              "width": 457.59375,
+              "height": 167.65625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1305.28125,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 64.25,
+              "height": 14
+            },
+            ".press-stages": {
+              "left": 60.46875,
+              "right": 271.359375,
+              "top": 104.1875,
+              "bottom": 130.1875,
+              "width": 210.890625,
+              "height": 26
+            },
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 3,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 9,
+          "triangles": 63938,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 4,
+        "phase": 0.35,
+        "image": "final-1440-4.png",
+        "state": {
+          "scene": 4,
+          "local": 0.3497942386831276,
+          "transition": 0,
+          "overall": 0.6452991452991453,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 162,
+              "bottom": 350.1875,
+              "width": 614.890625,
+              "height": 188.1875
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 518.0625,
+              "top": 598.859375,
+              "bottom": 733.5,
+              "width": 457.59375,
+              "height": 134.640625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1273.171875,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 96.359375,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 4,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 1,
+          "triangles": 25088,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 5,
+        "phase": 0.4,
+        "image": "final-1440-5.png",
+        "state": {
+          "scene": 5,
+          "local": 0.4,
+          "transition": 0,
+          "overall": 0.8010989010989011,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 171,
+              "bottom": 359.1875,
+              "width": 614.890625,
+              "height": 188.1875
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 503.765625,
+              "top": 471.34375,
+              "bottom": 639,
+              "width": 443.296875,
+              "height": 167.65625
+            },
+            ".depth-control": {
+              "left": 60.46875,
+              "right": 1369.53125,
+              "top": 695.703125,
+              "bottom": 767.703125,
+              "width": 1309.0625,
+              "height": 72
+            },
+            ".scene-scale": {
+              "left": 1265.140625,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 104.390625,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 4,
+          "triangles": 111640,
+          "textures": 8,
+          "geometries": 25,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "scene": 6,
+        "phase": 0.62,
+        "image": "final-1440-6.png",
+        "state": {
+          "scene": 6,
+          "local": 0.62,
+          "transition": 0,
+          "overall": 0.9582417582417583,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 60.46875,
+              "right": 675.359375,
+              "top": 180,
+              "bottom": 462.28125,
+              "width": 614.890625,
+              "height": 282.28125
+            },
+            ".copy-foot": {
+              "left": 60.46875,
+              "right": 518.0625,
+              "top": 514.84375,
+              "bottom": 742.5,
+              "width": 457.59375,
+              "height": 227.65625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1257.109375,
+              "right": 1369.53125,
+              "top": 104.1875,
+              "bottom": 118.1875,
+              "width": 112.421875,
+              "height": 14
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 6,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 25,
+          "triangles": 85106,
+          "textures": 8,
+          "geometries": 39,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 0,
+        "phase": 0,
+        "image": "final-1920-0.png",
+        "state": {
+          "scene": 0,
+          "local": 0,
+          "transition": 0,
+          "overall": 0,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 183.59375,
+              "bottom": 682.1875,
+              "width": 821.296875,
+              "height": 498.59375
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 730.015625,
+              "top": 722.5625,
+              "bottom": 883.453125,
+              "width": 649.390625,
+              "height": 160.890625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1721.453125,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 107.921875,
+              "height": 18
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 3,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 3,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 1,
+        "phase": 0.4,
+        "image": "final-1920-1.png",
+        "state": {
+          "scene": 1,
+          "local": 0.3998628257887517,
+          "transition": 0,
+          "overall": 0.20767195767195767,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 237.59375,
+              "bottom": 488.46875,
+              "width": 821.296875,
+              "height": 250.875
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 691.8125,
+              "top": 620.359375,
+              "bottom": 880.203125,
+              "width": 611.1875,
+              "height": 259.84375
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1701.84375,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 127.53125,
+              "height": 18
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 1,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 8,
+          "triangles": 29426,
+          "textures": 7,
+          "geometries": 11,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 2,
+        "phase": 0.45,
+        "image": "final-1920-2.png",
+        "state": {
+          "scene": 2,
+          "local": 0.4499314128943759,
+          "transition": 0,
+          "overall": 0.3634513634513635,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 667.125,
+              "bottom": 918,
+              "width": 821.296875,
+              "height": 250.875
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 653.625,
+              "top": 216,
+              "bottom": 433.234375,
+              "width": 573,
+              "height": 217.234375
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1721.453125,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 107.921875,
+              "height": 18
+            },
+            ".press-stages": null,
+            ".process-witness": {
+              "left": 1598.75,
+              "right": 1829.375,
+              "top": 889.203125,
+              "bottom": 907.203125,
+              "width": 230.625,
+              "height": 18
+            }
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 15,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 3,
+        "phase": 0.58,
+        "image": "final-1920-3.png",
+        "state": {
+          "scene": 3,
+          "local": 0.5802469135802469,
+          "transition": 0,
+          "overall": 0.5311355311355311,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 291.59375,
+              "bottom": 542.46875,
+              "width": 821.296875,
+              "height": 250.875
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 691.8125,
+              "top": 646.765625,
+              "bottom": 864,
+              "width": 611.1875,
+              "height": 217.234375
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1750.890625,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 78.484375,
+              "height": 18
+            },
+            ".press-stages": {
+              "left": 80.625,
+              "right": 341.953125,
+              "top": 120.03125,
+              "bottom": 151.03125,
+              "width": 261.328125,
+              "height": 31
+            },
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 3,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 9,
+          "triangles": 63938,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 4,
+        "phase": 0.35,
+        "image": "final-1920-4.png",
+        "state": {
+          "scene": 4,
+          "local": 0.3497942386831276,
+          "transition": 0,
+          "overall": 0.6452991452991453,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 194.390625,
+              "bottom": 445.265625,
+              "width": 821.296875,
+              "height": 250.875
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 691.8125,
+              "top": 707.015625,
+              "bottom": 880.203125,
+              "width": 611.1875,
+              "height": 173.1875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1711.65625,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 117.71875,
+              "height": 18
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 4,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 1,
+          "triangles": 25088,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 5,
+        "phase": 0.4,
+        "image": "final-1920-5.png",
+        "state": {
+          "scene": 5,
+          "local": 0.3998628257887517,
+          "transition": 0,
+          "overall": 0.8010785510785511,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 205.1875,
+              "bottom": 456.0625,
+              "width": 821.296875,
+              "height": 250.875
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 672.71875,
+              "top": 549.578125,
+              "bottom": 766.8125,
+              "width": 592.09375,
+              "height": 217.234375
+            },
+            ".depth-control": {
+              "left": 80.625,
+              "right": 1829.375,
+              "top": 840.25,
+              "bottom": 921.25,
+              "width": 1748.75,
+              "height": 81
+            },
+            ".scene-scale": {
+              "left": 1701.84375,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 127.53125,
+              "height": 18
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 4,
+          "triangles": 111640,
+          "textures": 8,
+          "geometries": 25,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "scene": 6,
+        "phase": 0.62,
+        "image": "final-1920-6.png",
+        "state": {
+          "scene": 6,
+          "local": 0.6203703703703703,
+          "transition": 0,
+          "overall": 0.9582824582824583,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 80.625,
+              "right": 901.921875,
+              "top": 216,
+              "bottom": 592.3125,
+              "width": 821.296875,
+              "height": 376.3125
+            },
+            ".copy-foot": {
+              "left": 80.625,
+              "right": 691.8125,
+              "top": 608.90625,
+              "bottom": 891,
+              "width": 611.1875,
+              "height": 282.09375
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 1692.03125,
+              "right": 1829.375,
+              "top": 120.03125,
+              "bottom": 138.03125,
+              "width": 137.34375,
+              "height": 18
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 6,
+          "pixelRatio": 1,
+          "width": 1920,
+          "height": 1080,
+          "drawCalls": 25,
+          "triangles": 85106,
+          "textures": 8,
+          "geometries": 39,
+          "blendParticles": 1020,
+          "renderWidth": 1920,
+          "renderHeight": 1080
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 0,
+        "phase": 0,
+        "image": "final-3840-0.png",
+        "state": {
+          "scene": 0,
+          "local": 0,
+          "transition": 0,
+          "overall": 0,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 367.1875,
+              "bottom": 1185.8125,
+              "width": 1600,
+              "height": 818.625
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 1541.265625,
+              "bottom": 1766.890625,
+              "width": 1100,
+              "height": 225.625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 3508.125,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 160.609375,
+              "height": 27
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 3,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 3,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 1,
+        "phase": 0.4,
+        "image": "final-3840-1.png",
+        "state": {
+          "scene": 1,
+          "local": 0.3998628257887517,
+          "transition": 0,
+          "overall": 0.20767195767195767,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 475.1875,
+              "bottom": 881.0625,
+              "width": 1600,
+              "height": 405.875
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 1405.53125,
+              "bottom": 1760.40625,
+              "width": 1100,
+              "height": 354.875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 3478.921875,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 189.8125,
+              "height": 27
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 1,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 8,
+          "triangles": 29426,
+          "textures": 7,
+          "geometries": 11,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 2,
+        "phase": 0.45,
+        "image": "final-3840-2.png",
+        "state": {
+          "scene": 2,
+          "local": 0.4499314128943759,
+          "transition": 0,
+          "overall": 0.3634513634513635,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 1430.125,
+              "bottom": 1836,
+              "width": 1600,
+              "height": 405.875
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 432,
+              "bottom": 665.15625,
+              "width": 1100,
+              "height": 233.15625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 3508.125,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 160.609375,
+              "height": 27
+            },
+            ".press-stages": null,
+            ".process-witness": {
+              "left": 3397.921875,
+              "right": 3668.734375,
+              "top": 1791.40625,
+              "bottom": 1814.40625,
+              "width": 270.8125,
+              "height": 23
+            }
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 15,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 3,
+        "phase": 0.58,
+        "image": "final-3840-3.png",
+        "state": {
+          "scene": 3,
+          "local": 0.5799039780521262,
+          "transition": 0,
+          "overall": 0.531084656084656,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 583.1875,
+              "bottom": 989.0625,
+              "width": 1600,
+              "height": 405.875
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 1494.84375,
+              "bottom": 1728,
+              "width": 1100,
+              "height": 233.15625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 3551.921875,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 116.8125,
+              "height": 27
+            },
+            ".press-stages": {
+              "left": 161.265625,
+              "right": 523.484375,
+              "top": 195,
+              "bottom": 233,
+              "width": 362.21875,
+              "height": 38
+            },
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 3,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 9,
+          "triangles": 63938,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 4,
+        "phase": 0.35,
+        "image": "final-3840-4.png",
+        "state": {
+          "scene": 4,
+          "local": 0.3501371742112483,
+          "transition": 0,
+          "overall": 0.6453500203500203,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 388.796875,
+              "bottom": 794.671875,
+              "width": 1600,
+              "height": 405.875
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 1527.25,
+              "bottom": 1760.40625,
+              "width": 1100,
+              "height": 233.15625
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 3493.53125,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 175.203125,
+              "height": 27
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 4,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 1,
+          "triangles": 25088,
+          "textures": 8,
+          "geometries": 23,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 5,
+        "phase": 0.4,
+        "image": "final-3840-5.png",
+        "state": {
+          "scene": 5,
+          "local": 0.3998628257887517,
+          "transition": 0,
+          "overall": 0.8010785510785511,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 410.390625,
+              "bottom": 816.265625,
+              "width": 1600,
+              "height": 405.875
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 1242.734375,
+              "bottom": 1533.609375,
+              "width": 1100,
+              "height": 290.875
+            },
+            ".depth-control": {
+              "left": 161.265625,
+              "right": 3668.734375,
+              "top": 1745.609375,
+              "bottom": 1857.609375,
+              "width": 3507.46875,
+              "height": 112
+            },
+            ".scene-scale": {
+              "left": 3478.921875,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 189.8125,
+              "height": 27
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 4,
+          "triangles": 111640,
+          "textures": 8,
+          "geometries": 25,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "scene": 6,
+        "phase": 0.62,
+        "image": "final-3840-6.png",
+        "state": {
+          "scene": 6,
+          "local": 0.6199074074074075,
+          "transition": 0,
+          "overall": 0.9582315832315832,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 0.35,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "dialog": null
+        },
+        "layout": {
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "overflow": false,
+          "boxes": {
+            ".copy-head": {
+              "left": 161.265625,
+              "right": 1761.265625,
+              "top": 432,
+              "bottom": 1040.8125,
+              "width": 1600,
+              "height": 608.8125
+            },
+            ".copy-foot": {
+              "left": 161.265625,
+              "right": 1261.265625,
+              "top": 1463.125,
+              "bottom": 1782,
+              "width": 1100,
+              "height": 318.875
+            },
+            ".depth-control": null,
+            ".scene-scale": {
+              "left": 3464.328125,
+              "right": 3668.734375,
+              "top": 195,
+              "bottom": 222,
+              "width": 204.40625,
+              "height": 27
+            },
+            ".press-stages": null,
+            ".process-witness": null
+          },
+          "outside": [],
+          "headBodyOverlap": false,
+          "renderCanvas": {
+            "width": 2149,
+            "height": 1209
+          }
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 6,
+          "pixelRatio": 0.5598790102985104,
+          "width": 3840,
+          "height": 2160,
+          "drawCalls": 25,
+          "triangles": 85106,
+          "textures": 8,
+          "geometries": 39,
+          "blendParticles": 1020,
+          "renderWidth": 2149,
+          "renderHeight": 1209
+        }
+      }
+    ],
+    "frameCount": 42,
+    "errors": [],
+    "failedRequests": [],
+    "externalRequests": [],
+    "screenshotPackaging": "Screenshots were generated and reviewed during development, but are not bundled. The image names are evidence identifiers, not archive paths.",
+    "manualReview": "All six requested viewport sizes were inspected across visual rounds; affected frames were rechecked after corrections. Seven native 1536×1024 final captures were also inspected."
+  },
+  "reverseTraversal": {
+    "viewport": {
+      "width": 1536,
+      "height": 1024
+    },
+    "motion": "quiet",
+    "quality": "high",
+    "initialExactPngAssertion": {
+      "pass": false,
+      "disposition": "Investigated, not treated as a scene-state defect. The stricter whole-PNG assertion failed on a single DOM progress-rail pixel."
+    },
+    "finalStateAndArtworkCheck": {
+      "pass": true,
+      "comparisons": [
+        {
+          "scene": 0,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "409928662a33d3995a82580e0083a80e2c29c2bb854a21b425ba6b1819723d9c",
+          "afterPngSha256": "409928662a33d3995a82580e0083a80e2c29c2bb854a21b425ba6b1819723d9c",
+          "fullPngByteIdentical": true,
+          "changedPixels": 0,
+          "changedPixelBounds": null,
+          "meanAbsoluteChannelDifference": 0.0,
+          "artworkPixelsIdentical": true,
+          "note": "All image pixels identical."
+        },
+        {
+          "scene": 1,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "b1ad1d65fbe491a6b26db53e33437cd13fbde9cb489dca3a16cb60e842e90530",
+          "afterPngSha256": "b1ad1d65fbe491a6b26db53e33437cd13fbde9cb489dca3a16cb60e842e90530",
+          "fullPngByteIdentical": true,
+          "changedPixels": 0,
+          "changedPixelBounds": null,
+          "meanAbsoluteChannelDifference": 0.0,
+          "artworkPixelsIdentical": true,
+          "note": "All image pixels identical."
+        },
+        {
+          "scene": 2,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "d26449dfd0aa32d1c47464cab5541d3bbb0d0067b0b56463f24e9f3e7404e759",
+          "afterPngSha256": "d26449dfd0aa32d1c47464cab5541d3bbb0d0067b0b56463f24e9f3e7404e759",
+          "fullPngByteIdentical": true,
+          "changedPixels": 0,
+          "changedPixelBounds": null,
+          "meanAbsoluteChannelDifference": 0.0,
+          "artworkPixelsIdentical": true,
+          "note": "All image pixels identical."
+        },
+        {
+          "scene": 3,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "5913ff5f2310d213e3bc032f6130db96e607ce8a99a52395f292366f94b7d791",
+          "afterPngSha256": "6754b442a8edf075974dc8b18974bb39a29b21072a49239385ae0e379176e0b4",
+          "fullPngByteIdentical": false,
+          "changedPixels": 1,
+          "changedPixelBounds": [
+            743,
+            927,
+            743,
+            927
+          ],
+          "meanAbsoluteChannelDifference": 3.899468315972222e-05,
+          "artworkPixelsIdentical": true,
+          "note": "Only one pixel on the DOM progress rail differs; no 3D image difference."
+        },
+        {
+          "scene": 4,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "f1a933d1fe595bb8255e23902656955b421442543d4be36a49fff7dfb6ccbc1f",
+          "afterPngSha256": "f1a933d1fe595bb8255e23902656955b421442543d4be36a49fff7dfb6ccbc1f",
+          "fullPngByteIdentical": true,
+          "changedPixels": 0,
+          "changedPixelBounds": null,
+          "meanAbsoluteChannelDifference": 0.0,
+          "artworkPixelsIdentical": true,
+          "note": "All image pixels identical."
+        },
+        {
+          "scene": 5,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "aa9fd3e2c4afc55f3c29e3e5ca310bdc4f54418dfe8f71b20a31e89baeeae8d2",
+          "afterPngSha256": "aa9fd3e2c4afc55f3c29e3e5ca310bdc4f54418dfe8f71b20a31e89baeeae8d2",
+          "fullPngByteIdentical": true,
+          "changedPixels": 0,
+          "changedPixelBounds": null,
+          "meanAbsoluteChannelDifference": 0.0,
+          "artworkPixelsIdentical": true,
+          "note": "All image pixels identical."
+        },
+        {
+          "scene": 6,
+          "stateExactlyEqual": true,
+          "beforePngSha256": "41b7a4f103311d0ed69ca2f3a87a61a9695f387c38ff1b62b250918fceff6288",
+          "afterPngSha256": "41b7a4f103311d0ed69ca2f3a87a61a9695f387c38ff1b62b250918fceff6288",
+          "fullPngByteIdentical": true,
+          "changedPixels": 0,
+          "changedPixelBounds": null,
+          "meanAbsoluteChannelDifference": 0.0,
+          "artworkPixelsIdentical": true,
+          "note": "All image pixels identical."
+        }
+      ]
+    },
+    "limitation": "Byte identity was evaluated in quiet mode at selected stable phases; living motion is intentionally time-dependent."
+  },
+  "finalInteractionChecks": [
+    {
+      "name": "3D range Home and End change the cutaway; focus outline clears its labels",
+      "pass": true,
+      "details": {
+        "surfaceHash": "e4117630d2ea55855e82f56864bab7b7f88222efe08f42cdbeed1ffa561c7266",
+        "interiorHash": "14e4df1937dd9cb3408399682996da432bbfb8a63e05309579eaf6396e557e19"
+      }
+    },
+    {
+      "name": "Explicit high query overrides saved low preference",
+      "pass": true
+    },
+    {
+      "name": "Native wheel drives the coordinated scroll and reverse wheel returns toward start",
+      "pass": true,
+      "details": {
+        "start": 0,
+        "forward": 1092,
+        "reverse": 183
+      }
+    }
+  ],
+  "lifecycle": {
+    "desktopContextLost": {
+      "scene": 5,
+      "local": 0.4,
+      "transition": 0,
+      "overall": 0.7849315068493151,
+      "quiet": false,
+      "quality": "low",
+      "observeDepth": 1,
+      "renderer": "canvas2d",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dialog": null
+    },
+    "desktopContextRestored": {
+      "scene": 5,
+      "local": 0.4,
+      "transition": 0,
+      "overall": 0.7849315068493151,
+      "quiet": false,
+      "quality": "low",
+      "observeDepth": 1,
+      "renderer": "webgl",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dialog": null
+    },
+    "pageErrors": [],
+    "initializationFailure": {
+      "state": {
+        "scene": 0,
+        "local": 0,
+        "transition": 0,
+        "overall": 0,
+        "quiet": true,
+        "quality": "high",
+        "observeDepth": 0.35,
+        "renderer": "canvas2d",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": null
+      },
+      "issue": {
+        "reason": "initialization",
+        "message": "Error creating WebGL context."
+      },
+      "frames": 3,
+      "fallbackVisible": "visible",
+      "pageErrors": [],
+      "consoleErrors": [
+        "THREE.WebGLRenderer: Error creating WebGL context."
+      ]
+    },
+    "focusSequence": [
+      {
+        "tag": "BODY",
+        "id": "",
+        "href": null,
+        "inDialog": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "href": null,
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#prologue",
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#material",
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#distribution",
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#press",
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#surface",
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#evidence",
+        "inDialog": true
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "href": "#release",
+        "inDialog": true
+      },
+      {
+        "tag": "BODY",
+        "id": "",
+        "href": null,
+        "inDialog": false
+      }
+    ],
+    "escapeRestores": "open-index",
+    "realPagehide": {
+      "before": {
+        "rendererIssue": null,
+        "contextLosses": 0,
+        "contextRestores": 0,
+        "renderedFrames": 3,
+        "lifetimeRafCallbacks": 6,
+        "scheduledAppFrames": 1,
+        "renderTimesMs": [
+          2.300000000745058,
+          0.6000000014901161,
+          123.90000000037253
+        ],
+        "scene": {
+          "webgl": true,
+          "quality": "low",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 390,
+          "height": 844,
+          "drawCalls": 3,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 3,
+          "blendParticles": 1020,
+          "renderWidth": 390,
+          "renderHeight": 844
+        },
+        "scroll": 0,
+        "metrics": [
+          {
+            "top": 0,
+            "height": 1139
+          },
+          {
+            "top": 1139,
+            "height": 1139
+          },
+          {
+            "top": 2279,
+            "height": 1139
+          },
+          {
+            "top": 3418,
+            "height": 1139
+          },
+          {
+            "top": 4558,
+            "height": 1139
+          },
+          {
+            "top": 5697,
+            "height": 1139
+          },
+          {
+            "top": 6836,
+            "height": 1688
+          }
+        ]
+      },
+      "after": {
+        "persisted": false,
+        "stats": {
+          "rendererIssue": null,
+          "contextLosses": 0,
+          "contextRestores": 0,
+          "renderedFrames": 3,
+          "lifetimeRafCallbacks": 6,
+          "scheduledAppFrames": 0,
+          "renderTimesMs": [
+            2.300000000745058,
+            0.6000000014901161,
+            123.90000000037253
+          ],
+          "scene": {
+            "webgl": true,
+            "quality": "low",
+            "activeScene": 0,
+            "pixelRatio": 1,
+            "width": 390,
+            "height": 844,
+            "drawCalls": 3,
+            "triangles": 25090,
+            "textures": 1,
+            "geometries": 0,
+            "blendParticles": 1020,
+            "renderWidth": 390,
+            "renderHeight": 844
+          },
+          "scroll": 0,
+          "metrics": [
+            {
+              "top": 0,
+              "height": 1139
+            },
+            {
+              "top": 1139,
+              "height": 1139
+            },
+            {
+              "top": 2279,
+              "height": 1139
+            },
+            {
+              "top": 3418,
+              "height": 1139
+            },
+            {
+              "top": 4558,
+              "height": 1139
+            },
+            {
+              "top": 5697,
+              "height": 1139
+            },
+            {
+              "top": 6836,
+              "height": 1688
+            }
+          ]
+        }
+      }
+    },
+    "qualification": "One renderer-reported texture remained on departure; this is not a proof that every GPU allocation reached zero. No long memory soak was run."
+  },
+  "performance": {
+    "representativeHardwareBenchmark": false,
+    "method": "Single browser, 1440×900, approximately 5 seconds per stable scene, SwiftShader; submitted frames and synchronous CPU submission samples collected over that window.",
+    "samples": [
+      {
+        "scene": 0,
+        "quality": "high",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "windowMs": 5005.200000001118,
+        "submittedFrames": 62,
+        "submittedFramesPerSecond": 12.387117397903411,
+        "synchronousCpuSubmissionMs": {
+          "samples": 62,
+          "mean": 0.5516129033039173,
+          "p95": 0.8999999985098839
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 0,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 3,
+          "triangles": 25090,
+          "textures": 7,
+          "geometries": 3,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        },
+        "note": "Single test browser, SwiftShader software GPU; CPU submission cost and submitted-frame rate are not hardware presentation FPS."
+      },
+      {
+        "scene": 2,
+        "quality": "high",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "windowMs": 5003.39999999851,
+        "submittedFrames": 42,
+        "submittedFramesPerSecond": 8.394291881523067,
+        "synchronousCpuSubmissionMs": {
+          "samples": 42,
+          "mean": 0.8214285714285714,
+          "p95": 1.1000000014901161
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 5,
+          "triangles": 123602,
+          "textures": 7,
+          "geometries": 8,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        },
+        "note": "Single test browser, SwiftShader software GPU; CPU submission cost and submitted-frame rate are not hardware presentation FPS."
+      },
+      {
+        "scene": 2,
+        "quality": "low",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "windowMs": 5008.299999998882,
+        "submittedFrames": 63,
+        "submittedFramesPerSecond": 12.579118663022197,
+        "synchronousCpuSubmissionMs": {
+          "samples": 63,
+          "mean": 0.9523809523809523,
+          "p95": 1.400000000372529
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "low",
+          "activeScene": 2,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 5,
+          "triangles": 41522,
+          "textures": 7,
+          "geometries": 8,
+          "blendParticles": 340,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        },
+        "note": "Single test browser, SwiftShader software GPU; CPU submission cost and submitted-frame rate are not hardware presentation FPS."
+      },
+      {
+        "scene": 5,
+        "quality": "high",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "windowMs": 5008.200000001118,
+        "submittedFrames": 35,
+        "submittedFramesPerSecond": 6.988538796372387,
+        "synchronousCpuSubmissionMs": {
+          "samples": 35,
+          "mean": 0.5971428570470639,
+          "p95": 1.099999999627471
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "high",
+          "activeScene": 5,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 4,
+          "triangles": 111640,
+          "textures": 7,
+          "geometries": 6,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        },
+        "note": "Single test browser, SwiftShader software GPU; CPU submission cost and submitted-frame rate are not hardware presentation FPS."
+      },
+      {
+        "scene": 6,
+        "quality": "low",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "windowMs": 5004.199999999255,
+        "submittedFrames": 62,
+        "submittedFramesPerSecond": 12.389592742098484,
+        "synchronousCpuSubmissionMs": {
+          "samples": 62,
+          "mean": 1.0596774192827363,
+          "p95": 1.5
+        },
+        "sceneStats": {
+          "webgl": true,
+          "quality": "low",
+          "activeScene": 6,
+          "pixelRatio": 1,
+          "width": 1440,
+          "height": 900,
+          "drawCalls": 25,
+          "triangles": 34706,
+          "textures": 7,
+          "geometries": 18,
+          "blendParticles": 1020,
+          "renderWidth": 1440,
+          "renderHeight": 900
+        },
+        "note": "Single test browser, SwiftShader software GPU; CPU submission cost and submitted-frame rate are not hardware presentation FPS."
+      }
+    ],
+    "assessment": "Light rendering reduced Distribution triangles from 123602 to 41522. Measured software-renderer throughput was about 7–13 submitted frames/s. No 30/60 FPS hardware budget has been verified. CPU submission time is not completed GPU time."
+  },
+  "artReview": "reviews/ART-DIRECTION.md",
+  "engineeringReview": "reviews/ENGINEERING.md",
+  "unverified": [
+    "Native Windows execution of OPEN-DOSE.cmd; only syntax, CRLF and path handling reviewed",
+    "Safari and Firefox",
+    "Physical iOS and Android devices",
+    "Hardware GPU and high-refresh-rate frame pacing",
+    "Extended repeated-navigation heap/GPU memory soak",
+    "Fluid physics, powder contact mechanics, measured porosity, dissolution kinetics and pharmaceutical validation (outside project scope)"
+  ],
+  "archiveValidation": {
+    "date": "2026-10-12T13:50:32.237Z",
+    "runtime": {},
+    "commands": [
+      {
+        "command": "node scripts/check.mjs",
+        "exitCode": 0,
+        "stdout": "Source checks passed: 6 source entries, unique IDs, local entry assets, one RAF scheduler.\n",
+        "stderr": ""
+      },
+      {
+        "command": "node --test tests/timeline.test.mjs",
+        "exitCode": 0,
+        "stdout": "✔ the final composition can be reached at the actual document bottom (1.070528ms)\n✔ scroll overshoot is bounded at both document edges (0.901513ms)\n✔ every chapter has a stable composition and a continuous handoff boundary (0.611685ms)\n✔ revisiting an identical position restores the same process state (0.200443ms)\n✔ a resize can preserve phase across all seven chapters (0.411362ms)\n✔ the cutaway uses qualitative labels rather than fake measurement output (0.121874ms)\n✔ only Evidence has a dark stable canvas and every scene has a unique anchor (0.199101ms)\n✔ all three reading colors maintain 4.5:1 contrast throughout every handoff (39.165972ms)\nℹ tests 8\nℹ suites 0\nℹ pass 8\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 131.475515\n",
+        "stderr": ""
+      }
+    ],
+    "editions": [
+      {
+        "edition": "source",
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "externalRequests": [],
+        "responsesWithErrors": [],
+        "requestCount": 17,
+        "hero": {
+          "state": {
+            "scene": 0,
+            "local": 0,
+            "transition": 0,
+            "overall": 0,
+            "quiet": true,
+            "quality": "high",
+            "observeDepth": 0.35,
+            "renderer": "webgl",
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "dialog": null
+          },
+          "fonts": [
+            {
+              "family": "Space Grotesk",
+              "weight": 400,
+              "loaded": true
+            },
+            {
+              "family": "IBM Plex Mono",
+              "weight": 400,
+              "loaded": true
+            },
+            {
+              "family": "Barlow Condensed",
+              "weight": 700,
+              "loaded": true
+            }
+          ],
+          "frames": 2
+        },
+        "evidence": {
+          "scene": 5,
+          "local": 0.4,
+          "transition": 0,
+          "overall": 0.8010989010989011,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 1,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "licenses": {
+          "LICENSE": 200,
+          "THIRD-PARTY-NOTICES.md": 200,
+          "vendor/three-LICENSE.txt": 200,
+          "vendor/lenis-LICENSE.txt": 200,
+          "assets/fonts/space-grotesk-OFL.txt": 200
+        },
+        "pass": true
+      },
+      {
+        "edition": "dist",
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "externalRequests": [],
+        "responsesWithErrors": [],
+        "requestCount": 17,
+        "hero": {
+          "state": {
+            "scene": 0,
+            "local": 0,
+            "transition": 0,
+            "overall": 0,
+            "quiet": true,
+            "quality": "high",
+            "observeDepth": 0.35,
+            "renderer": "webgl",
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "dialog": null
+          },
+          "fonts": [
+            {
+              "family": "Space Grotesk",
+              "weight": 400,
+              "loaded": true
+            },
+            {
+              "family": "IBM Plex Mono",
+              "weight": 400,
+              "loaded": true
+            },
+            {
+              "family": "Barlow Condensed",
+              "weight": 700,
+              "loaded": true
+            }
+          ],
+          "frames": 3
+        },
+        "evidence": {
+          "scene": 5,
+          "local": 0.4,
+          "transition": 0,
+          "overall": 0.8010989010989011,
+          "quiet": true,
+          "quality": "high",
+          "observeDepth": 1,
+          "renderer": "webgl",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "dialog": null
+        },
+        "licenses": {
+          "LICENSE": 200,
+          "THIRD-PARTY-NOTICES.md": 200,
+          "vendor/three-LICENSE.txt": 200,
+          "vendor/lenis-LICENSE.txt": 200,
+          "assets/fonts/space-grotesk-OFL.txt": 200
+        },
+        "pass": true
+      }
+    ],
+    "pass": true,
+    "browser": "153.0.8010.0",
+    "status": "passed",
+    "candidateCrcCheck": "passed",
+    "candidateManifestFilesVerified": 82,
+    "sourceAndBuiltEditionBothStartedFromExtractedArchive": true,
+    "testServerCwd": "A directory outside the extracted project, confirming file-relative server paths",
+    "physicalWindowsExecution": false,
+    "revisionPolicy": "After candidate extraction testing, only README and final QA documentation were completed; runtime files remained identical. Final ZIP CRC and all manifest entries were then verified again."
+  }
+}

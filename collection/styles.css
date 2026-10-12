@@ -134,7 +134,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-grid{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-grid h2{font-size:17vw}.world-grid .world-title p{font-size:37px}}
 
 /* ===== Collection editorial rhythm — 2026 refinement =====
-   One unifying system above the twenty-nine independent worlds:
+   One unifying system above the thirty independent worlds:
    a recurring ghost index numeral, alternating editorial spreads,
    a three-tier height rhythm, eased image gradients, a scroll
    reveal and a deeper hover response. No work runtime loads. */
@@ -210,7 +210,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
   padding:clamp(18px,3.2cqi,42px);
 }
 
-/* One scale, twenty-nine voices. */
+/* One scale, thirty voices. */
 .world h2{font-size:clamp(26px,calc(var(--t) * 1cqi),400px)}
 .world .world-title p{font-size:clamp(13px,calc(var(--s) * 1cqi),190px)}
 .world-top{font-size:clamp(9px,1.85cqi,16px);opacity:.72}
@@ -277,3 +277,21 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 .worlds>.world{height:clamp(700px,52svh,1300px)}
 .world-cue{display:inline}
 }
+
+.world-dose{--t:42;--s:9;background:#eeede8;color:#252c2a}
+.world-dose h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:-.022em}
+.world-dose .world-image img{object-position:82% 50%}
+.world-dose .world-image:after{background:linear-gradient(90deg,#eeede8ed,transparent 78%),linear-gradient(180deg,transparent 40%,#eeede8f2)}
+.world-dose:focus-visible{outline-color:#39756b}
+
+.world-counterform{--t:26;--s:8;background:#eeeae1;color:#20211e}
+.world-counterform h2{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.055em;font-size:clamp(42px,7.4vw,250px)}
+.world-counterform .world-title p{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(25px,3vw,92px)}
+.world-counterform .world-image:after{background:linear-gradient(90deg,#eeeae1ed,transparent 78%),linear-gradient(180deg,transparent 42%,#eeeae1e8)}
+.world-counterform:focus-visible{outline-color:#b93d2c}
+.world-ferrum{--t:20;--s:7;background:#0b0c0d;color:#e8e5de}
+.world-ferrum h2{font-family:Antonio,'Arial Narrow',sans-serif;font-weight:300;letter-spacing:.025em}
+.world-ferrum .world-title p{font-family:Manrope,Arial,sans-serif;font-weight:400;letter-spacing:-.025em}
+.world-ferrum .world-image:after{background:linear-gradient(90deg,#0b0c0de8,transparent 78%),linear-gradient(180deg,#0b0c0d55,transparent 40%,#0b0c0dda)}
+.world-ferrum:focus-visible{outline-color:#b7b2a7}
+@media(max-width:700px){.world-counterform h2{font-size:clamp(31px,9.5vw,50px)}.world-counterform .world-title p{font-size:38px}.world-ferrum h2{font-size:19vw}.world-ferrum .world-title p{font-size:30px}}

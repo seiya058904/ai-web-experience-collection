@@ -1,0 +1,2186 @@
+{
+  "createdAt": "2026-10-12T14:50:23.089915+00:00",
+  "captureResultsSha256": "0bdd7d3869517cab0b42f485eee7c13d33aa73948ecd6435ab4dea788de4ca5a",
+  "captureStatus": "complete",
+  "captureSummary": {
+    "screenshots": 108,
+    "expectedScreenshots": 108,
+    "horizontalOverflow": [],
+    "boundsToReview": [
+      "1440x900/00-before-form-enter.jpg",
+      "1440x900/00-before-form-hold.jpg",
+      "1440x900/00-before-form-handoff.jpg",
+      "1920x1080/00-before-form-enter.jpg",
+      "1920x1080/00-before-form-hold.jpg",
+      "1920x1080/00-before-form-handoff.jpg"
+    ],
+    "sourceChangedDuringRun": false,
+    "pageErrors": 0,
+    "networkIssues": 0,
+    "selectedCaptureBatches": 2,
+    "recoveredHarnessFailures": 1
+  },
+  "sourceHashes": {
+    "index.html": "d555f67c54a330723597a542a3a9bea86d49ad742fd859c7243187212ceb0f88",
+    "src/audio.js": "eb58adb3419062f8c997bc6b50e7872868fbfe28dc0c13e0c0331e462819eb15",
+    "src/main.js": "b36374d32c95a259499387586e7bf85126ae95eeeec50d114ced7c4985be3045",
+    "src/scene.js": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5",
+    "src/story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87",
+    "src/styles.css": "cb2973bd244112de30dd7c0908d952051c5413e3f5bb49d9bbc4ac0d6ece8a1c"
+  },
+  "sourceResponseChecks": {
+    "360x780": {
+      "allLoadedSourcesMatch": true,
+      "loadedSourceCount": 6,
+      "browser": "131.0.6778.0"
+    },
+    "390x844": {
+      "allLoadedSourcesMatch": true,
+      "loadedSourceCount": 6,
+      "browser": "131.0.6778.0"
+    },
+    "768x1024": {
+      "allLoadedSourcesMatch": true,
+      "loadedSourceCount": 6,
+      "browser": "131.0.6778.0"
+    },
+    "1440x900": {
+      "allLoadedSourcesMatch": true,
+      "loadedSourceCount": 6,
+      "browser": "131.0.6778.0"
+    },
+    "1920x1080": {
+      "allLoadedSourcesMatch": true,
+      "loadedSourceCount": 6,
+      "browser": "131.0.6778.0"
+    },
+    "3840x2160": {
+      "allLoadedSourcesMatch": true,
+      "loadedSourceCount": 6,
+      "browser": "131.0.6778.0"
+    }
+  },
+  "contactSheets": {
+    "360x780": "contact-sheets/360x780.jpg",
+    "390x844": "contact-sheets/390x844.jpg",
+    "768x1024": "contact-sheets/768x1024.jpg",
+    "1440x900": "contact-sheets/1440x900.jpg",
+    "1920x1080": "contact-sheets/1920x1080.jpg",
+    "3840x2160": "contact-sheets/3840x2160.jpg"
+  },
+  "images": [
+    {
+      "id": "360x780/00-before-form-enter.jpg",
+      "relativePath": "360x780/00-before-form-enter.jpg",
+      "sha256": "24d108ee739f571cf01fde88e8df4977cf16f78af2e982bb9e8d7100cba93963",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/00-before-form-hold.jpg",
+      "relativePath": "360x780/00-before-form-hold.jpg",
+      "sha256": "7268bcbcebdc98151190de8d7b50f889320db91e49de52759303592ac3b781c2",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/00-before-form-handoff.jpg",
+      "relativePath": "360x780/00-before-form-handoff.jpg",
+      "sha256": "fa8bfbb0cb2b7229d59464c60b0154f83a7d4f08a7a521f7fc4b17fa4dafc342",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/01-furnace-enter.jpg",
+      "relativePath": "360x780/01-furnace-enter.jpg",
+      "sha256": "93fe69c90ee06190520178ac6a4e9d5d77185f5096d9b12bcc24e5726835dc23",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/01-furnace-hold.jpg",
+      "relativePath": "360x780/01-furnace-hold.jpg",
+      "sha256": "a8320c0b74096757de083797aea762e556398b9e9df46c838767069ecf56b0df",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/01-furnace-handoff.jpg",
+      "relativePath": "360x780/01-furnace-handoff.jpg",
+      "sha256": "0895650d95e95cd726a980f354766d7dec9fc29a25299846066faef9b785745e",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/02-strike-enter.jpg",
+      "relativePath": "360x780/02-strike-enter.jpg",
+      "sha256": "fc8564fb1a2898e5c421444cc09081624a5b13b7a575d76a5c170dbadc1b020e",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/02-strike-hold.jpg",
+      "relativePath": "360x780/02-strike-hold.jpg",
+      "sha256": "40d5cc4ce450883e17c20ec7c31e64b77bb93f19099733099fc0488c5c798db4",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/02-strike-handoff.jpg",
+      "relativePath": "360x780/02-strike-handoff.jpg",
+      "sha256": "016d04cc932b1332e098a24ff8de0b6601a15fbd1665eb254c28d61068dcf77c",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/03-temperature-enter.jpg",
+      "relativePath": "360x780/03-temperature-enter.jpg",
+      "sha256": "bcd8ef382f4c16775661c9ff0b9879e88a9582fc7ba3b05caee1ba57f748b65f",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/03-temperature-hold.jpg",
+      "relativePath": "360x780/03-temperature-hold.jpg",
+      "sha256": "f29b55762062d6a66b3940cc56200917558918e1cefc5dc895158d9d93817207",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/03-temperature-handoff.jpg",
+      "relativePath": "360x780/03-temperature-handoff.jpg",
+      "sha256": "479c129a7787a333813474a8ea73b259aa10bcb9a63c0e5537516f634da38323",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/04-edge-enter.jpg",
+      "relativePath": "360x780/04-edge-enter.jpg",
+      "sha256": "1dc0477d2c2dfdd5165f66545ec1cf06a8feeee436e5485d39cc14664d9f4d73",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/04-edge-hold.jpg",
+      "relativePath": "360x780/04-edge-hold.jpg",
+      "sha256": "eca2c619ff19516a81ccd892780c478db55cfbe8dd3ad00a361f1e897a2c9c80",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/04-edge-handoff.jpg",
+      "relativePath": "360x780/04-edge-handoff.jpg",
+      "sha256": "535e4ce14508a009ea4bb979edbc3d6c24638d2aa270d948aaff5b2910c75cd7",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/05-relic-enter.jpg",
+      "relativePath": "360x780/05-relic-enter.jpg",
+      "sha256": "1d044250a4e9f3853f987be02051be18d6eef5bc9127e7cde395abd9e027da1d",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/05-relic-hold.jpg",
+      "relativePath": "360x780/05-relic-hold.jpg",
+      "sha256": "f090aae2b1fc5f7f6f114a4bca1b22d3d8048718e862fc2d24bd8f2debdefb5b",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "360x780/05-relic-handoff.jpg",
+      "relativePath": "360x780/05-relic-handoff.jpg",
+      "sha256": "30c4cc8ec9f5ce80ef378d0c5e4a5436e5ad25274dde1b96df0cce281e2bd491",
+      "format": "JPEG",
+      "dimensions": [
+        360,
+        780
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/00-before-form-enter.jpg",
+      "relativePath": "390x844/00-before-form-enter.jpg",
+      "sha256": "b40af6d28f9609141d02efd78f529f61155f5a2e4b47beeae3976e68ab74b5d1",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/00-before-form-hold.jpg",
+      "relativePath": "390x844/00-before-form-hold.jpg",
+      "sha256": "d84393021820a22b17321c0e46d8c2fb577b2452b09917df01cafc29bc413ffe",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/00-before-form-handoff.jpg",
+      "relativePath": "390x844/00-before-form-handoff.jpg",
+      "sha256": "39842cd6472f22d60b4fbb25bfbf7ce33af9f9ee1ff28e122bdac33415a3055b",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/01-furnace-enter.jpg",
+      "relativePath": "390x844/01-furnace-enter.jpg",
+      "sha256": "1a4c99ceb40c2e0be7091918282000fdf9ce6a9428259977c62ccb7c3b98348c",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/01-furnace-hold.jpg",
+      "relativePath": "390x844/01-furnace-hold.jpg",
+      "sha256": "06300eba8b54720d9d16ce3d902d8d7b11fb81e83ea3bf00754f468a1b1ba91d",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/01-furnace-handoff.jpg",
+      "relativePath": "390x844/01-furnace-handoff.jpg",
+      "sha256": "4131f29388e0e06faa8759f61193b7d8e32b647fa5c89e3108c1d1cd96af6842",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/02-strike-enter.jpg",
+      "relativePath": "390x844/02-strike-enter.jpg",
+      "sha256": "da03efb242b2113eda4033851247181457147394bb21fcfdb9ce96c773ed87b3",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/02-strike-hold.jpg",
+      "relativePath": "390x844/02-strike-hold.jpg",
+      "sha256": "745b5351ca13b944284585967377d1506ab23958c61e55c679b2148226723029",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/02-strike-handoff.jpg",
+      "relativePath": "390x844/02-strike-handoff.jpg",
+      "sha256": "8bbf48fae8e5f5b19a99e0d7a2cc419837f8e28696cd14ef0411e485791476e2",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/03-temperature-enter.jpg",
+      "relativePath": "390x844/03-temperature-enter.jpg",
+      "sha256": "3cc03eaaeae36504d52ea57a27cccf0a0f1a81ce575fa6178201a218c7ec843f",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/03-temperature-hold.jpg",
+      "relativePath": "390x844/03-temperature-hold.jpg",
+      "sha256": "be42350dd7be37d4fc2f556480f27b509f6260780484edfb7b0df09eef52376f",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/03-temperature-handoff.jpg",
+      "relativePath": "390x844/03-temperature-handoff.jpg",
+      "sha256": "0562305400bda63c33357bbdba5577ab935b5596eb2c4201101a303e7dfea3ac",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/04-edge-enter.jpg",
+      "relativePath": "390x844/04-edge-enter.jpg",
+      "sha256": "09ef873df563a61f6d42c79662d66e481c52ab91d0d03e229ecb7aea77acab9a",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/04-edge-hold.jpg",
+      "relativePath": "390x844/04-edge-hold.jpg",
+      "sha256": "af4a5c0c557e41c78a060401781b46e73ee5111dfdfa619e5bbb3e40a91203b2",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/04-edge-handoff.jpg",
+      "relativePath": "390x844/04-edge-handoff.jpg",
+      "sha256": "8ab48abf8e139367173663682689e7c9864a1a6c15f4d444145ba4231d5bdced",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/05-relic-enter.jpg",
+      "relativePath": "390x844/05-relic-enter.jpg",
+      "sha256": "cedf3a1f1aa230702ec4bd5ffa983833b4de0f0acb7826aa16ecfcb658f525ae",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/05-relic-hold.jpg",
+      "relativePath": "390x844/05-relic-hold.jpg",
+      "sha256": "7db939aa5386a6b59746e97293479c6b3173445fb8054bf21dfeeb2610c9ebe3",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "390x844/05-relic-handoff.jpg",
+      "relativePath": "390x844/05-relic-handoff.jpg",
+      "sha256": "8b59de72b576f64c9a93a40d9708cf070130b20ae2273958299af0645b675347",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/00-before-form-enter.jpg",
+      "relativePath": "768x1024/00-before-form-enter.jpg",
+      "sha256": "d722a3d8a4a3b63ca2b46dab46c6e4f1eab770cf02a183f326725aadc93766fc",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/00-before-form-hold.jpg",
+      "relativePath": "768x1024/00-before-form-hold.jpg",
+      "sha256": "04e7d812ffcc1ebc2a8b3b330c06adbd81600e390a2e377dfc4d648aa58b8f18",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/00-before-form-handoff.jpg",
+      "relativePath": "768x1024/00-before-form-handoff.jpg",
+      "sha256": "127970eef35fdc11491a4c745b8ddc07e0f41a96e9f22c2b485227711b491918",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/01-furnace-enter.jpg",
+      "relativePath": "768x1024/01-furnace-enter.jpg",
+      "sha256": "14b38ca697452afd9c33b5428353ad07304e33795ab8ce45726b78bd915a96ef",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/01-furnace-hold.jpg",
+      "relativePath": "768x1024/01-furnace-hold.jpg",
+      "sha256": "f6a62d5b787b17eab7e0080bef6ca6caeffda82e7d4b4e1c6f9d48dc5ef43b61",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/01-furnace-handoff.jpg",
+      "relativePath": "768x1024/01-furnace-handoff.jpg",
+      "sha256": "3fb6f414c694732af66c7416aa4f0923c600de17dd0bf8f886f1d6a756316e86",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/02-strike-enter.jpg",
+      "relativePath": "768x1024/02-strike-enter.jpg",
+      "sha256": "2dd3063e718a1ced3f22acc2509dfbe6d9e6f1f69de6965c0719d7613908c77a",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/02-strike-hold.jpg",
+      "relativePath": "768x1024/02-strike-hold.jpg",
+      "sha256": "51f46eda44f6ce112ba16daa10bcb966c23719d72fb720711997bc09d12673b4",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/02-strike-handoff.jpg",
+      "relativePath": "768x1024/02-strike-handoff.jpg",
+      "sha256": "89cd134e813c3a3cdca8f6a60d91ce2d873b9ea4f9e3470727cc30a64d550f4c",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/03-temperature-enter.jpg",
+      "relativePath": "768x1024/03-temperature-enter.jpg",
+      "sha256": "95b48eb6bfb4cf215b7fb9db602f310a2489a73be7252bdedbc6185e1e4c1243",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/03-temperature-hold.jpg",
+      "relativePath": "768x1024/03-temperature-hold.jpg",
+      "sha256": "13438311b72d8053012f089b45e6b0732e07e8770020a4905bacabbedcb6f55c",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/03-temperature-handoff.jpg",
+      "relativePath": "768x1024/03-temperature-handoff.jpg",
+      "sha256": "167d220d9fb8838ee402417c36e53f10cc0a6d0e701e0c5fa58f26f2d895cfa5",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/04-edge-enter.jpg",
+      "relativePath": "768x1024/04-edge-enter.jpg",
+      "sha256": "1fa35984515fbf011edee66a527f7c615be239d57de80a4fec73a2d390619e5d",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/04-edge-hold.jpg",
+      "relativePath": "768x1024/04-edge-hold.jpg",
+      "sha256": "985264660b71c44ef78107fc3af4d05f60b4f7e01d440b525d937fe14675c8e1",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/04-edge-handoff.jpg",
+      "relativePath": "768x1024/04-edge-handoff.jpg",
+      "sha256": "aa09369a7a27fad1d1184f9605d9e32c32c25b3e52bfbdf8170bb9a9e7e60b13",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/05-relic-enter.jpg",
+      "relativePath": "768x1024/05-relic-enter.jpg",
+      "sha256": "440a11bdca1796246bfd0372996fb0afa2ca34de200b84bf8d85905b34b9b6dd",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/05-relic-hold.jpg",
+      "relativePath": "768x1024/05-relic-hold.jpg",
+      "sha256": "61defa2e6f4f37c44a8fb4b98153295b041cbb01549fd3a3c116c33563cfa7f9",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "768x1024/05-relic-handoff.jpg",
+      "relativePath": "768x1024/05-relic-handoff.jpg",
+      "sha256": "7da15c997669c0432478fb3049b67cd3b8ddb05478369f0a69b3a530e000da88",
+      "format": "JPEG",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/00-before-form-enter.jpg",
+      "relativePath": "1440x900/00-before-form-enter.jpg",
+      "sha256": "2805e9fc32b1899c4bfcd95e0e4acce44ab6acbff0dc1b0370f08e08bdd31d51",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": [
+        {
+          "first": ".masthead",
+          "second": ".chapter[data-active=\"true\"] .chapter-title",
+          "width": 928.312,
+          "height": 17.719,
+          "area": 16448.76
+        }
+      ]
+    },
+    {
+      "id": "1440x900/00-before-form-hold.jpg",
+      "relativePath": "1440x900/00-before-form-hold.jpg",
+      "sha256": "9f4a2c5ee84f7ed879f0fb6f86380dff19989b473c54fdc69bee1b3b293feccc",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": [
+        {
+          "first": ".masthead",
+          "second": ".chapter[data-active=\"true\"] .chapter-title",
+          "width": 928.312,
+          "height": 17.719,
+          "area": 16448.76
+        }
+      ]
+    },
+    {
+      "id": "1440x900/00-before-form-handoff.jpg",
+      "relativePath": "1440x900/00-before-form-handoff.jpg",
+      "sha256": "0d07bf864c39c70ae3a71b0e32cb92e3d911646b3a2ce8decaa8d6584db00034",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": [
+        {
+          "first": ".masthead",
+          "second": ".chapter[data-active=\"true\"] .chapter-title",
+          "width": 928.312,
+          "height": 12.659,
+          "area": 11751.502
+        }
+      ]
+    },
+    {
+      "id": "1440x900/01-furnace-enter.jpg",
+      "relativePath": "1440x900/01-furnace-enter.jpg",
+      "sha256": "f14e140c06d56a0c639dc9edfb3fc28093a69444964dc1dc319ebf11ffb13754",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/01-furnace-hold.jpg",
+      "relativePath": "1440x900/01-furnace-hold.jpg",
+      "sha256": "870912e9de563eac3026354b5eb456e97b47d63a4ab15823befebaac0c3634e3",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/01-furnace-handoff.jpg",
+      "relativePath": "1440x900/01-furnace-handoff.jpg",
+      "sha256": "b519de762914c0ea33f5602f35fbf8c7796caf4ac411fca71478795cc1d78ceb",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/02-strike-enter.jpg",
+      "relativePath": "1440x900/02-strike-enter.jpg",
+      "sha256": "0c74c8f2cc1e212264c80b8c20cac34c0e08603605bdd6d73afecdd77eadabd4",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/02-strike-hold.jpg",
+      "relativePath": "1440x900/02-strike-hold.jpg",
+      "sha256": "163a9035e668283ac261646f5e837458a2c9b7f42c206ad919c8800ced42e43d",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/02-strike-handoff.jpg",
+      "relativePath": "1440x900/02-strike-handoff.jpg",
+      "sha256": "bc99c6fbeb6683a04e456ab95aad002e83c38c5582dc9a3e84a92fb1892f49c7",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/03-temperature-enter.jpg",
+      "relativePath": "1440x900/03-temperature-enter.jpg",
+      "sha256": "339c2959a4de5ce7523acfda2a8de644abe4a6fcd7e4373a4dd53f1c326a52a6",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/03-temperature-hold.jpg",
+      "relativePath": "1440x900/03-temperature-hold.jpg",
+      "sha256": "1780e50a62b08011703754c3bffa90ca610ee28322e2eaf294f12a7a92c2a2f5",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/03-temperature-handoff.jpg",
+      "relativePath": "1440x900/03-temperature-handoff.jpg",
+      "sha256": "f784ff89f8cdd9fec2f08eae3c1eaea1752bb1c5fc56fcfca54529e3d65f8a9c",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/04-edge-enter.jpg",
+      "relativePath": "1440x900/04-edge-enter.jpg",
+      "sha256": "85de65eae8c2e8fd6893c0b22a1409d0ba50199fc37f6425233a9827a1c59e1c",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/04-edge-hold.jpg",
+      "relativePath": "1440x900/04-edge-hold.jpg",
+      "sha256": "f73ac6e8a01653054a26dc22f6f9ed53b50e34b4e44abd9a33904f6ceb0b7b24",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/04-edge-handoff.jpg",
+      "relativePath": "1440x900/04-edge-handoff.jpg",
+      "sha256": "2606947ba54ababd343cb7224c51f31041a419ee5d5ccefa55e11652b35bb804",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/05-relic-enter.jpg",
+      "relativePath": "1440x900/05-relic-enter.jpg",
+      "sha256": "b2d370e8c227b67284be6d95e6d005e5ee4724fbfdbf350996aa80f346b2cb05",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/05-relic-hold.jpg",
+      "relativePath": "1440x900/05-relic-hold.jpg",
+      "sha256": "6ab2f5d8bf7b0e213953aa7b2b405c555389c92da496540c8afa6521f6897bfb",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1440x900/05-relic-handoff.jpg",
+      "relativePath": "1440x900/05-relic-handoff.jpg",
+      "sha256": "730ad4d78355b447fe630bdc7561b2561b1c6abafe423bc751792e3e6bb70e4f",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/00-before-form-enter.jpg",
+      "relativePath": "1920x1080/00-before-form-enter.jpg",
+      "sha256": "06dd44349a8835644addd10a61659f37238c6db34ea83ab901a95489c871f837",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": [
+        {
+          "first": ".masthead",
+          "second": ".chapter[data-active=\"true\"] .chapter-title",
+          "width": 1237.75,
+          "height": 19.75,
+          "area": 24445.563
+        }
+      ]
+    },
+    {
+      "id": "1920x1080/00-before-form-hold.jpg",
+      "relativePath": "1920x1080/00-before-form-hold.jpg",
+      "sha256": "b417cee3d1be27454c985e2cad30851c3957066e842676b91b4edf092bfd6273",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": [
+        {
+          "first": ".masthead",
+          "second": ".chapter[data-active=\"true\"] .chapter-title",
+          "width": 1237.75,
+          "height": 19.75,
+          "area": 24445.563
+        }
+      ]
+    },
+    {
+      "id": "1920x1080/00-before-form-handoff.jpg",
+      "relativePath": "1920x1080/00-before-form-handoff.jpg",
+      "sha256": "e8212981b43c672954f6f884545e2b0c076cc2ab846b73adc94a15fc7c4d690c",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": [
+        {
+          "first": ".masthead",
+          "second": ".chapter[data-active=\"true\"] .chapter-title",
+          "width": 1237.75,
+          "height": 14.681,
+          "area": 18171.408
+        }
+      ]
+    },
+    {
+      "id": "1920x1080/01-furnace-enter.jpg",
+      "relativePath": "1920x1080/01-furnace-enter.jpg",
+      "sha256": "cd7e46e677aadc764c841be4bedec290c26bcdafedac9a1babe9a38f69c928c5",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/01-furnace-hold.jpg",
+      "relativePath": "1920x1080/01-furnace-hold.jpg",
+      "sha256": "6abdd0654cfda4fb38c2f907017e471d90e2ee8f4da079e283a265bca870e075",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/01-furnace-handoff.jpg",
+      "relativePath": "1920x1080/01-furnace-handoff.jpg",
+      "sha256": "fbedab65df770bcdb53457c815b7ab6fb479cd90dccd47d904c9574e3dda6f37",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/02-strike-enter.jpg",
+      "relativePath": "1920x1080/02-strike-enter.jpg",
+      "sha256": "e5e95fb35ff23b6818172526f93073f188d58809ed91eff1af39fc3ff6f6e201",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/02-strike-hold.jpg",
+      "relativePath": "1920x1080/02-strike-hold.jpg",
+      "sha256": "dde51cbf200c985ae0dd1f1c96bdd188f78ab6c103eb19537bab0f8c363a8f5b",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/02-strike-handoff.jpg",
+      "relativePath": "1920x1080/02-strike-handoff.jpg",
+      "sha256": "35644945cdf0a688093b448ee72a565f79a73a9cd9e5d10722e83096eb5f30aa",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/03-temperature-enter.jpg",
+      "relativePath": "1920x1080/03-temperature-enter.jpg",
+      "sha256": "49908ca31a6aa57c9b44ca4a90e9924b586dd8dd28a8ac9ac0ddf405a8d18198",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/03-temperature-hold.jpg",
+      "relativePath": "1920x1080/03-temperature-hold.jpg",
+      "sha256": "baac8e1c2d96855146db6661b0db053066988148213211f73539da40c5412e05",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/03-temperature-handoff.jpg",
+      "relativePath": "1920x1080/03-temperature-handoff.jpg",
+      "sha256": "8a802701e5d71fc75663a324f69ccb171c59a84a9604c7fbe02db3146c0bba9f",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/04-edge-enter.jpg",
+      "relativePath": "1920x1080/04-edge-enter.jpg",
+      "sha256": "eb0f0ad8f20592e228f14789d4ce197f37ca5f439314296255a02b60ba795fc4",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/04-edge-hold.jpg",
+      "relativePath": "1920x1080/04-edge-hold.jpg",
+      "sha256": "a87e921191e3dbbd8fe116e0479fe5441ea2265cef72ffb4653904cc4a6de1f1",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/04-edge-handoff.jpg",
+      "relativePath": "1920x1080/04-edge-handoff.jpg",
+      "sha256": "246efbb04043884b1f24284cd2a5779fa085545446f74414f60a39ee26f9c040",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/05-relic-enter.jpg",
+      "relativePath": "1920x1080/05-relic-enter.jpg",
+      "sha256": "97c6d0ff39e55c380be87eb40614beb2e4ca04948db8e5daa0ac58af03c9a25d",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/05-relic-hold.jpg",
+      "relativePath": "1920x1080/05-relic-hold.jpg",
+      "sha256": "0083c5815d648cb3ecaabedea33b76286a5f0651af0501ffe74c79d19bfe09d8",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "1920x1080/05-relic-handoff.jpg",
+      "relativePath": "1920x1080/05-relic-handoff.jpg",
+      "sha256": "75cc364d39c859f7b76c9690aca99908b97f7e737e0dbd6ec1d655d02b59ced3",
+      "format": "JPEG",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/00-before-form-enter.jpg",
+      "relativePath": "3840x2160/00-before-form-enter.jpg",
+      "sha256": "09080c0292bf50f5a187ea92317ced8a0b6bb2cc267a5525ca9a7139f0375c0d",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/00-before-form-hold.jpg",
+      "relativePath": "3840x2160/00-before-form-hold.jpg",
+      "sha256": "067ec154d231a85352d638e145ac4f9b8ed7d58f9573d329156cdb75f29e38b4",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/00-before-form-handoff.jpg",
+      "relativePath": "3840x2160/00-before-form-handoff.jpg",
+      "sha256": "3b46cb88b5424484335c5bbd8e75e06647c0139a04a7501aecea89ca47f17b04",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/01-furnace-enter.jpg",
+      "relativePath": "3840x2160/01-furnace-enter.jpg",
+      "sha256": "faa9b6a45ca16896c801294cd571456203234fe77c796825adfcd68705459873",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/01-furnace-hold.jpg",
+      "relativePath": "3840x2160/01-furnace-hold.jpg",
+      "sha256": "cbe6722a9ea0a17b99b212748d8b869cb97b395c65cec59bb807e6ff3e550aa0",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/01-furnace-handoff.jpg",
+      "relativePath": "3840x2160/01-furnace-handoff.jpg",
+      "sha256": "1053bb8b46cd7c4f02a13634a5d3b115cbcd4a545587e9de875c635816bf852c",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/02-strike-enter.jpg",
+      "relativePath": "3840x2160/02-strike-enter.jpg",
+      "sha256": "26b98c399b30b833336d7c962887223acef9a84d0790f673506179a0be92a055",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/02-strike-hold.jpg",
+      "relativePath": "3840x2160/02-strike-hold.jpg",
+      "sha256": "6a33846ecca1b52760eb66b361f483d0d32563a3eaff1d102e2436cb4a7b1c6b",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/02-strike-handoff.jpg",
+      "relativePath": "3840x2160/02-strike-handoff.jpg",
+      "sha256": "735a543e211b4e121a0a318abb90468a67dc9af03b76a99ea8e497ff68b38bb9",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/03-temperature-enter.jpg",
+      "relativePath": "3840x2160/03-temperature-enter.jpg",
+      "sha256": "484d23c0baea044ca3ba3fe7a550ea7e7250f83d6d06951dfd0bdde270fdf740",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/03-temperature-hold.jpg",
+      "relativePath": "3840x2160/03-temperature-hold.jpg",
+      "sha256": "ec248aca483ce3b5c485a2dae160205c35961a5fd63a1de6e22a1d44b6708ce7",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/03-temperature-handoff.jpg",
+      "relativePath": "3840x2160/03-temperature-handoff.jpg",
+      "sha256": "95211a4509391df61cdb6107a9f8b716f2df76bfbdf766d799543119f84f145e",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/04-edge-enter.jpg",
+      "relativePath": "3840x2160/04-edge-enter.jpg",
+      "sha256": "b78d788c93ba8facbd43245b6b219834abda64e48996e5d9f56afdaf247181f3",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/04-edge-hold.jpg",
+      "relativePath": "3840x2160/04-edge-hold.jpg",
+      "sha256": "7809a5c77b7923271ee4e9c9a983a1162c9c57724961d861cac554e17895b21f",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/04-edge-handoff.jpg",
+      "relativePath": "3840x2160/04-edge-handoff.jpg",
+      "sha256": "d598c0893791882b000ed5c348a6420c4fa94265b5df39fc39462cf8c2d06b9d",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/05-relic-enter.jpg",
+      "relativePath": "3840x2160/05-relic-enter.jpg",
+      "sha256": "cf891efeaf488b9e08d334562794c1ed956225d8fe39664a17579ea5f037f199",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/05-relic-hold.jpg",
+      "relativePath": "3840x2160/05-relic-hold.jpg",
+      "sha256": "414629ff978bd09e0da8cc9438cae57291fa8790e6c36d4107e762d5947f66fc",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    },
+    {
+      "id": "3840x2160/05-relic-handoff.jpg",
+      "relativePath": "3840x2160/05-relic-handoff.jpg",
+      "sha256": "f9758cccd15969d61e3c0a4fc4ac16a8738cef0088bbfafdb6d0ebc9b936ba87",
+      "format": "JPEG",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "dimensionsMatchViewport": true,
+      "positionValid": true,
+      "stateStayedStable": true,
+      "rendererReady": true,
+      "rendererFailed": false,
+      "requiredDetailsLoaded": true,
+      "horizontalOverflowPixels": 0,
+      "boundsCandidates": [],
+      "overlapCandidates": []
+    }
+  ],
+  "notes": [
+    "All contact sheets use columns enter / hold / handoff and rows acts 00–05.",
+    "Derived views preserve the entire original frame and aspect ratio, with labels outside it.",
+    "Automatic bounds and health data are evidence for review, not an automatic visual pass.",
+    "The discrete handoff and next enter samples can identify continuity candidates; they do not prove every intermediate frame.",
+    "Absolute authoring paths were normalized for delivery. The 108 original JPEG bytes are unchanged; internal duplicate act strips are omitted."
+  ],
+  "deliveryScope": {
+    "originalScreenshots": "included: 108 selected successful images",
+    "contactSheets": "included: 6 overviews",
+    "actStrips": "internal review only; the 36 strips are not included in delivery",
+    "failedAttemptReportsAndSupersededImages": "internal archive only; compact capture-attempts.json is included"
+  }
+}

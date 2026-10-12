@@ -1,0 +1,16 @@
+{
+  "name": "dose-the-architecture-of-a-tablet",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An immersive, local-first study of one hypothetical tablet.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

@@ -1,0 +1,2312 @@
+{
+  "round": "boundary-fixes-final",
+  "createdAt": "2026-10-12T14:26:14.240Z",
+  "viewports": [
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "label": "768"
+      },
+      "index": 2,
+      "local": 0.295,
+      "shot": "strike-hold-768.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 39,
+        "rafScheduled": true,
+        "progress": 0.3516435425311203,
+        "maxScroll": 12339.2,
+        "width": 768,
+        "height": 1024,
+        "stableHeight": 1024,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 10,
+          "triangles": 2646,
+          "points": 33,
+          "lines": 34,
+          "geometries": 12,
+          "textures": 5,
+          "programs": 8,
+          "width": 768,
+          "height": 1024,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 34,
+          "activeParticles": 34,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.3516435425311203,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.294921875,
+        "reducedMotion": false,
+        "shape": 0.21770279327630498,
+        "heat": 0.8742170989888651,
+        "polish": 0.02890876574051131,
+        "oxide": 0.8712773348141681,
+        "camera": {
+          "position": [
+            1.25,
+            2.447479951961899,
+            11.896039924511555
+          ],
+          "target": [
+            0.4,
+            0.27,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3,
+            -0.055116721683738434,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            0.979793497523268,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.64,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 1,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 0.1129185158014295,
+          "tilt": 0.0010635614533115283,
+          "compression": 0.020206502476731957,
+          "contactX": 0.4,
+          "contactY": 0.44582850737554275
+        },
+        "strikePulses": [
+          {
+            "age": 0.12982031249999976,
+            "seed": 1277,
+            "weight": 0.3108692688727993
+          },
+          {
+            "age": -2.3061796875000002,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.06745421882663594,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "label": "768"
+      },
+      "index": 2,
+      "local": 0.72,
+      "shot": "strike-072-768.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 65,
+        "rafScheduled": true,
+        "progress": 0.43981781639004147,
+        "maxScroll": 12339.2,
+        "width": 768,
+        "height": 1024,
+        "stableHeight": 1024,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 9,
+          "triangles": 2646,
+          "points": 33,
+          "lines": 0,
+          "geometries": 12,
+          "textures": 5,
+          "programs": 8,
+          "width": 768,
+          "height": 1024,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 60,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.43981781639004147,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.7199218750000002,
+        "reducedMotion": false,
+        "shape": 0.869670641119913,
+        "heat": 0.7991795307856545,
+        "polish": 0.038615291619964,
+        "oxide": 0.8526530817889659,
+        "camera": {
+          "position": [
+            -0.7977568670264124,
+            2.0510853869227037,
+            11.40578873025442
+          ],
+          "target": [
+            0.40021707738454076,
+            0.13039073929217335,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3,
+            -0.3457001417095604,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.64,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 1,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 1.323681671102532,
+          "tilt": -0.031137932538986213,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.1414002834191208
+        },
+        "strikePulses": [
+          {
+            "age": 3.8273203125,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 1.3913203124999998,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.00425351850660452,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "label": "768"
+      },
+      "index": 2,
+      "local": 0.86,
+      "shot": "strike-086-768.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 87,
+        "rafScheduled": true,
+        "progress": 0.46891208506224064,
+        "maxScroll": 12339.2,
+        "width": 768,
+        "height": 1024,
+        "stableHeight": 1024,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 14,
+          "triangles": 2654,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 5,
+          "programs": 11,
+          "width": 768,
+          "height": 1024,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 82,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.46891208506224064,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.8601562500000001,
+        "reducedMotion": false,
+        "shape": 0.9336294173159693,
+        "heat": 0.778998664083439,
+        "polish": 0.04141441865903739,
+        "oxide": 0.83748799306526,
+        "camera": {
+          "position": [
+            -0.39496621773419255,
+            2.2459840881931323,
+            12.445248470363374
+          ],
+          "target": [
+            0.43919681763862656,
+            0.20055427174952778,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3844451064208645,
+            -0.266517963585097,
+            0
+          ],
+          "rotation": [
+            0.0868578237471748,
+            -0.0434289118735874,
+            0.19301738610483288
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.1085722796839685,
+            -0.014476303957862466,
+            0.2436844499573515
+          ],
+          "scale": 0.6062219574316543,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.8215672466091919,
+          "cooling": 0.11560480912316279,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.07956332842508951,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.09131934846386297
+        },
+        "strikePulses": [
+          {
+            "age": 5.047359374999999,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 2.611359374999999,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.028122201550487086,
+        "mist": 0,
+        "water": 0.11560480912316279,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0.1410302430627893
+        },
+        "phase": "handoff"
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "label": "768"
+      },
+      "index": 2,
+      "local": 0.97,
+      "shot": "strike-097-768.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 112,
+        "rafScheduled": true,
+        "progress": 0.4916850363070539,
+        "maxScroll": 12339.2,
+        "width": 768,
+        "height": 1024,
+        "stableHeight": 1024,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 14,
+          "triangles": 2654,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 5,
+          "programs": 11,
+          "width": 768,
+          "height": 1024,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 107,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.4916850363070539,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.969921875,
+        "reducedMotion": false,
+        "shape": 0.9406139692190714,
+        "heat": 0.7548808586890197,
+        "polish": 0.043401537514426186,
+        "oxide": 0.8241803152169038,
+        "camera": {
+          "position": [
+            0.15865423058024264,
+            2.5138649502807624,
+            13.8739464014974
+          ],
+          "target": [
+            0.49277299005615255,
+            0.29699138210107456,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.5115496705664568,
+            0.08249695865012513,
+            0
+          ],
+          "rotation": [
+            0.2175939468683557,
+            -0.10879697343417785,
+            0.48354210415190163
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.27199243358544467,
+            -0.03626565781139262,
+            0.6104719064917757
+          ],
+          "scale": 0.5553801317734173,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.4040726737504404,
+          "cooling": 0.5028615413470239,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.11746732910474142,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.25451760265544765
+        },
+        "strikePulses": [
+          {
+            "age": 6.002320312499999,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 3.5663203125,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.045660032405179046,
+        "mist": 0,
+        "water": 0.5028615413470239,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0.9614474599191088
+        },
+        "phase": "exit"
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "label": "768"
+      },
+      "index": 3,
+      "local": 0.08,
+      "shot": "quench-008-768.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 136,
+        "rafScheduled": true,
+        "progress": 0.5125129668049793,
+        "maxScroll": 12339.2,
+        "width": 768,
+        "height": 1024,
+        "stableHeight": 1024,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 14,
+          "triangles": 2654,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 6,
+          "programs": 11,
+          "width": 768,
+          "height": 1024,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 131,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      },
+      "state": {
+        "progress": 0.5125129668049793,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.07990056818181852,
+        "reducedMotion": false,
+        "shape": 0.9434262200162093,
+        "heat": 0.7364958601583843,
+        "polish": 0.0450366402417316,
+        "oxide": 0.8117444265823045,
+        "camera": {
+          "position": [
+            0.594049326666493,
+            2.7245399967741095,
+            14.997546649461917
+          ],
+          "target": [
+            0.5349079993548219,
+            0.3728343988386794,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.613287138723432,
+            0.46874294682616213,
+            0
+          ],
+          "rotation": [
+            0.3222381998298157,
+            -0.16111909991490786,
+            0.7160848885107016
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.4027977497872696,
+            -0.05370636663830262,
+            0.9040571717447607
+          ],
+          "scale": 0.5146851445106272,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.07337544183749178,
+          "cooling": 0.8626574475222627,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.639484016718787
+        },
+        "strikePulses": [
+          {
+            "age": 6.875718750000003,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 4.439718750000003,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.060334109001030145,
+        "mist": 0,
+        "water": 0.8626574475222627,
+        "quench": 0,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "enter"
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "label": "390"
+      },
+      "index": 2,
+      "local": 0.295,
+      "shot": "strike-hold-390.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 40,
+        "rafScheduled": true,
+        "progress": 0.35161550411987963,
+        "maxScroll": 10170.2,
+        "width": 390,
+        "height": 844,
+        "stableHeight": 844,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 10,
+          "triangles": 2646,
+          "points": 33,
+          "lines": 34,
+          "geometries": 12,
+          "textures": 5,
+          "programs": 8,
+          "width": 390,
+          "height": 844,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 33,
+          "activeParticles": 34,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.35161550411987963,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.29478672985782,
+        "reducedMotion": false,
+        "shape": 0.21717791888426186,
+        "heat": 0.8741913940803638,
+        "polish": 0.028905498975645462,
+        "oxide": 0.8712805558933425,
+        "camera": {
+          "position": [
+            1.25,
+            2.4477812930457197,
+            11.896513460500417
+          ],
+          "target": [
+            0.4,
+            0.27,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3,
+            -0.05494239117392419,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            0.9795785397280501,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.64,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 1,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 0.11121483434357743,
+          "tilt": 0.001045238675906812,
+          "compression": 0.02042146027194989,
+          "contactX": 0.4,
+          "contactY": 0.44624165573373664
+        },
+        "strikePulses": [
+          {
+            "age": 0.12864454976303286,
+            "seed": 1277,
+            "weight": 0.31417631187615214
+          },
+          {
+            "age": -2.307355450236967,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.0674747365479966,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "label": "390"
+      },
+      "index": 2,
+      "local": 0.72,
+      "shot": "strike-072-390.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 66,
+        "rafScheduled": true,
+        "progress": 0.4398143595996145,
+        "maxScroll": 10170.2,
+        "width": 390,
+        "height": 844,
+        "stableHeight": 844,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 9,
+          "triangles": 2646,
+          "points": 33,
+          "lines": 0,
+          "geometries": 12,
+          "textures": 5,
+          "programs": 8,
+          "width": 390,
+          "height": 844,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 59,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.4398143595996145,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.7199052132701421,
+        "reducedMotion": false,
+        "shape": 0.8696647326194153,
+        "heat": 0.7991804239734361,
+        "polish": 0.03861494370910487,
+        "oxide": 0.8526546947732586,
+        "camera": {
+          "position": [
+            -0.7977643382434189,
+            2.0510817718177003,
+            11.405769449694404
+          ],
+          "target": [
+            0.40021635436354014,
+            0.1303894378543722,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3,
+            -0.345697453341834,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.64,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 1,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 1.323484222486305,
+          "tilt": -0.03113607391836282,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.14139490668366794
+        },
+        "strikePulses": [
+          {
+            "age": 3.827175355450236,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 1.391175355450236,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.004250623470785475,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "label": "390"
+      },
+      "index": 2,
+      "local": 0.86,
+      "shot": "strike-086-390.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 86,
+        "rafScheduled": true,
+        "progress": 0.4689189986430945,
+        "maxScroll": 10170.2,
+        "width": 390,
+        "height": 844,
+        "stableHeight": 844,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 14,
+          "triangles": 2654,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 5,
+          "programs": 11,
+          "width": 390,
+          "height": 844,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 79,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.4689189986430945,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.8601895734597157,
+        "reducedMotion": false,
+        "shape": 0.9336393744653159,
+        "heat": 0.7789917523618962,
+        "polish": 0.041415050860554976,
+        "oxide": 0.8374840862663772,
+        "camera": {
+          "position": [
+            -0.3948122694297024,
+            2.246058579308208,
+            12.445645756310446
+          ],
+          "target": [
+            0.43921171586164176,
+            0.20058108855095508,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3844798255581352,
+            -0.26645492681332006,
+            0
+          ],
+          "rotation": [
+            0.08689353485979609,
+            -0.043446767429898045,
+            0.19309674413288022
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.10861691857474512,
+            -0.014482255809966016,
+            0.24378463946776127
+          ],
+          "scale": 0.606208069776746,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.8214614880453874,
+          "cooling": 0.11569304042657656,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.07957825501024725,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.09126084219503877
+        },
+        "strikePulses": [
+          {
+            "age": 5.0476492890995255,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 2.611649289099526,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.028127712071065264,
+        "mist": 0,
+        "water": 0.11569304042657656,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0.1412424957466725
+        },
+        "phase": "handoff"
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "label": "390"
+      },
+      "index": 2,
+      "local": 0.97,
+      "shot": "strike-097-390.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 112,
+        "rafScheduled": true,
+        "progress": 0.49173074275825446,
+        "maxScroll": 10170.2,
+        "width": 390,
+        "height": 844,
+        "stableHeight": 844,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 14,
+          "triangles": 2654,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 5,
+          "programs": 11,
+          "width": 390,
+          "height": 844,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 105,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      },
+      "state": {
+        "progress": 0.49173074275825446,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.9701421800947867,
+        "reducedMotion": false,
+        "shape": 0.9406177636722718,
+        "heat": 0.7548333647810105,
+        "polish": 0.04340532479294046,
+        "oxide": 0.8241530259856827,
+        "camera": {
+          "position": [
+            0.15976735714468948,
+            2.5144035599087204,
+            13.876818986179844
+          ],
+          "target": [
+            0.49288071198174416,
+            0.29718528156713947,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.5118082743458365,
+            0.08340689330079162,
+            0
+          ],
+          "rotation": [
+            0.2178599393271461,
+            -0.10892996966357305,
+            0.4841331985047691
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.2723249241589326,
+            -0.03630998988785768,
+            0.611218163112271
+          ],
+          "scale": 0.5552766902616654,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.40319917640321556,
+          "cooling": 0.503734826796641,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.11750298463976366,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.255425810829908
+        },
+        "strikePulses": [
+          {
+            "age": 6.004236966824642,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 3.5682369668246428,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.04569382248193249,
+        "mist": 0,
+        "water": 0.503734826796641,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0.9622534809765563
+        },
+        "phase": "exit"
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "label": "390"
+      },
+      "index": 3,
+      "local": 0.08,
+      "shot": "quench-008-390.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 134,
+        "rafScheduled": true,
+        "progress": 0.5125759572083145,
+        "maxScroll": 10170.2,
+        "width": 390,
+        "height": 844,
+        "stableHeight": 844,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 14,
+          "triangles": 2654,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 6,
+          "programs": 11,
+          "width": 390,
+          "height": 844,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 127,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      },
+      "state": {
+        "progress": 0.5125759572083145,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.08024558380008653,
+        "reducedMotion": false,
+        "shape": 0.9434377898648365,
+        "heat": 0.7364543457292902,
+        "polish": 0.04504129889532005,
+        "oxide": 0.8117071641562026,
+        "camera": {
+          "position": [
+            0.5950420652868853,
+            2.7250203541710736,
+            15.00010855557906
+          ],
+          "target": [
+            0.5350040708342148,
+            0.3730073275015865,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.6135203437796701,
+            0.4695837694580599,
+            0
+          ],
+          "rotation": [
+            0.3224780678876607,
+            -0.16123903394383035,
+            0.7166179286392461
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.4030975848595759,
+            -0.05374634464794345,
+            0.9047301349070481
+          ],
+          "scale": 0.5145918624881319,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.0726993861695252,
+          "cooling": 0.8635162180427649,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.6403195750695594
+        },
+        "strikePulses": [
+          {
+            "age": 6.87836018957346,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 4.44236018957346,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.06037608624203869,
+        "mist": 0,
+        "water": 0.8635162180427649,
+        "quench": 0,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "enter"
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "label": "390"
+      },
+      "index": 3,
+      "local": 0.43,
+      "shot": "quench-hold-390.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 159,
+        "rafScheduled": true,
+        "progress": 0.5763898448408094,
+        "maxScroll": 10170.2,
+        "width": 390,
+        "height": 844,
+        "stableHeight": 844,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 5,
+          "triangles": 1660,
+          "points": 61,
+          "lines": 0,
+          "geometries": 14,
+          "textures": 6,
+          "programs": 11,
+          "width": 390,
+          "height": 844,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 152,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      },
+      "state": {
+        "progress": 0.5763898448408094,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.42977165015079705,
+        "reducedMotion": false,
+        "shape": 0.9617788691161302,
+        "heat": 0.21063225690307386,
+        "polish": 0.048739835097515505,
+        "oxide": 0.7794301409965462,
+        "camera": {
+          "position": [
+            0.75,
+            2.8,
+            15.4
+          ],
+          "target": [
+            0.55,
+            0.4,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.65,
+            0.05000130071306508,
+            0
+          ],
+          "rotation": [
+            0.36,
+            -0.18,
+            0.8
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.45,
+            -0.06,
+            1.01
+          ],
+          "scale": 0.5,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 1,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.21239191526522583
+        },
+        "strikePulses": [
+          {
+            "age": 9.554331753554502,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 7.118331753554502,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.09292194122448691,
+        "mist": 1,
+        "water": 1,
+        "quench": 0.41319572001607735,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "label": "1920"
+      },
+      "index": 3,
+      "local": 0.08,
+      "shot": "quench-008-1920.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 32,
+        "rafScheduled": true,
+        "progress": 0.512524973105886,
+        "maxScroll": 13014,
+        "width": 1920,
+        "height": 1080,
+        "stableHeight": 1080,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 13,
+          "triangles": 2606,
+          "points": 61,
+          "lines": 0,
+          "geometries": 12,
+          "textures": 6,
+          "programs": 9,
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 29,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      },
+      "state": {
+        "progress": 0.512524973105886,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.0799663299663302,
+        "reducedMotion": false,
+        "shape": 0.9434284239705292,
+        "heat": 0.73648793879141,
+        "polish": 0.0450375283436939,
+        "oxide": 0.8117373238445098,
+        "camera": {
+          "position": [
+            0.5942387476999689,
+            2.7246316521128877,
+            14.998035477935403
+          ],
+          "target": [
+            0.5349263304225776,
+            0.3728673947606398,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.613331635343547,
+            0.468903484449185,
+            0
+          ],
+          "rotation": [
+            0.322283967781934,
+            -0.161141983890967,
+            0.7161865950709645
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.4028549597274175,
+            -0.05371399463032234,
+            0.9041855762770927
+          ],
+          "scale": 0.5146673458625812,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0.07324637583406157,
+          "cooling": 0.8628212931084891,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.6396435515425942
+        },
+        "strikePulses": [
+          {
+            "age": 6.876222222222224,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 4.440222222222224,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.06034211129424419,
+        "mist": 0,
+        "water": 0.8628212931084891,
+        "quench": 0,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "enter"
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "label": "1920"
+      },
+      "index": 3,
+      "local": 0.43,
+      "shot": "quench-hold-1920.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 57,
+        "rafScheduled": true,
+        "progress": 0.5764561241739665,
+        "maxScroll": 13014,
+        "width": 1920,
+        "height": 1080,
+        "stableHeight": 1080,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 5,
+          "triangles": 1660,
+          "points": 61,
+          "lines": 0,
+          "geometries": 12,
+          "textures": 6,
+          "programs": 9,
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 54,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      },
+      "state": {
+        "progress": 0.5764561241739665,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.43013468013468065,
+        "reducedMotion": false,
+        "shape": 0.9618025419810794,
+        "heat": 0.20989250800243087,
+        "polish": 0.048742511104450124,
+        "oxide": 0.7794057476651695,
+        "camera": {
+          "position": [
+            0.75,
+            2.8,
+            15.4
+          ],
+          "target": [
+            0.55,
+            0.4,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.65,
+            0.05000028164346891,
+            0
+          ],
+          "rotation": [
+            0.36,
+            -0.18,
+            0.8
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.45,
+            -0.06,
+            1.01
+          ],
+          "scale": 0.5,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 1,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.21238012504207782
+        },
+        "strikePulses": [
+          {
+            "age": 9.557111111111114,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 7.121111111111113,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.09294338662721166,
+        "mist": 1,
+        "water": 1,
+        "quench": 0.4142289361201797,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "label": "1920"
+      },
+      "index": 3,
+      "local": 0.86,
+      "shot": "quench-086-1920.png",
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 77,
+        "rafScheduled": true,
+        "progress": 0.6549100968188105,
+        "maxScroll": 13014,
+        "width": 1920,
+        "height": 1080,
+        "stableHeight": 1080,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 7,
+          "triangles": 1664,
+          "points": 61,
+          "lines": 0,
+          "geometries": 12,
+          "textures": 6,
+          "programs": 9,
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 74,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      },
+      "state": {
+        "progress": 0.6549100968188105,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.8598484848484853,
+        "reducedMotion": false,
+        "shape": 0.9892539076881812,
+        "heat": 0.016963810803568884,
+        "polish": 0.09481162960785527,
+        "oxide": 0.7269513661962973,
+        "camera": {
+          "position": [
+            0.6479498581413936,
+            2.566742532894614,
+            13.213211245887006
+          ],
+          "target": [
+            0.55,
+            0.35917994325655744,
+            0
+          ],
+          "fov": 31.029456565322718
+        },
+        "object": {
+          "position": [
+            1.6985271717338641,
+            0.21802310599800961,
+            0
+          ],
+          "rotation": [
+            0.4820542800007112,
+            -0.14745219199981036,
+            0.7349043839996208
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.5033798889072505,
+            -0.06242635858669321,
+            0.9590464696794427
+          ],
+          "scale": 0.5679380404274098,
+          "worldY": -0.07720924239920383,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0.7769984244013167,
+          "reveal": 0.19123730247196707,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.3679125779998872
+        },
+        "strikePulses": [
+          {
+            "age": 12.847000000000001,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 10.411000000000001,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.08952169202312621,
+        "mist": 0.0029552867437310226,
+        "water": 0.7769984244013167,
+        "quench": 1,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0.13907570376073045
+        },
+        "phase": "handoff"
+      }
+    }
+  ],
+  "errors": [],
+  "browserAvailability": "Browser plugin not available",
+  "identity": {
+    "url": "http://127.0.0.1:4184/?qa=1&quality=high#before-form",
+    "title": "FERRUM — The Memory of Fire",
+    "heading": "FERRUM",
+    "chapterCount": 6
+  },
+  "interaction": {
+    "action": "Click chapter 01 after anvil handoff captures",
+    "url": "http://127.0.0.1:4184/?qa=1&quality=high#the-furnace",
+    "observedAct": "furnace"
+  },
+  "verifiedSourceSha256": {
+    "scene.js": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5",
+    "story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87"
+  },
+  "diffBaselineSha256": "bdb27e7bb309044f6be363d2cc74f0d6357b792569e11b4dc51228a8ed34781e"
+}

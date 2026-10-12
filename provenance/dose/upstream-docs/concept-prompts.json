@@ -1,0 +1,28 @@
+{
+  "generator": "ImageGen",
+  "purpose": "Art-direction references, not production UI assets",
+  "records": [
+    {
+      "section": "00-prologue",
+      "prompt": "Use case: ui-mockup. Create ONE polished 1536x1024 desktop screenshot concept for the opening of DOSE — The architecture of a tablet, a seven-scene immersive scientific material-art website. This image is a design reference, NOT a full website screenshot to be shipped as UI. All text and controls will be native HTML; subject will be a real procedural 3D model.\n\nART DIRECTION: calibrated still life, high-end Swiss industrial typography with museum photographic precision. Airy warm porcelain-gray background #eeede8, graphite #252c2a lettering, minute mineral-teal #39756b details. No glass cards, gradients in text, badges, marketing CTA pills, fake metrics, blue neon or molecule icons.\n\nOPENING COMPOSITION: 64px margin, tiny logo DOSE with simple circular cross-section mark at upper left, plain text buttons “Index +” and “About” upper right. A thin hairline under header. Very large tightly spaced but not overlapping word “DOSE” left, above a smaller three-line headline “The architecture / of a tablet.” in contemporary grotesk. The subject occupies the RIGHT two thirds without obscuring text: a single exquisite round white biconvex unscored tablet floating diagonally, side rim and very fine visible pores, powdery ceramic-like material but clearly a pharmaceutical tablet, highly realistic oblique softbox photographic side-lighting and soft cast shadow on porcelain ground. It must look precise and tactile, not shiny plastic. Circle crosshair from a fine technical observer mark barely behind the object (no HUD clutter). Left lower paragraph exactly “The smallest objects can hold the most deliberate design.” and under it a small plain arrow action “Enter the matter” with thin underline. Bottom footer spans width with thin line, left “00 / PROLOGUE”, center “SCROLL TO EXPLORE”, right “A STUDY IN MATERIAL & SCALE”. Good readable labels, no invented numbers beyond scene number. Product visual can be beautiful and slightly architectural but stays round, white, subtly chamfered.\nFull page continuation defined for matching later concepts: Material particle anatomy, Distribution mixing, Press metal tooling, Surface pores, Evidence cutaway, Release disintegration. This concept is just the opening at readable full screenshot size. No browser chrome, no device frame, no collages. Extremely refined and intentional spatial balance.",
+      "file": "docs/concepts/00-prologue.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f804e4b26e3afc6aba2b75dba10680f4102114f9f3a00fceb1ce5547a05257e9",
+      "status": "selected"
+    },
+    {
+      "section": "03-press",
+      "prompt": "Use case: ui-mockup. ONE landscape 1536x1024 standalone full-section screenshot concept for DOSE scientific material-art website. Section III, THE PRESS. Contemporary Swiss industrial typography and photographic precision. BACKGROUND #e7e8e3 warm laboratory-gray. NAV thin line DOSE circular mark left, Index + and About right. COMPOSITION: Left third contains huge graphite heading “A moment.\\nMade solid.” (two or three lines with whitespace), below text “In a die, a powder blend becomes one coherent form.” Right two thirds: high-end studio CGI close-up of a precisely machined stainless steel tablet press isolated as a sculptural assembly, clear thick circular cylindrical die with a circular bore, lower punch, upper cylindrical punch with realistic tiny concentric machining lines, white powder between punches becoming a single round white chamfered biconvex tablet. Upper punch separated vertically just enough to reveal gap; not enormous industrial machinery. Simple credible axial alignment, cool metal reflections and soft shadows; camera orthographic product side view, 25° elevation shows round die hole. No tangled machinery, no black void, no force numbers, no operating parameters. One very thin vertical witness line to right of machine shows upper punch travel qualitatively, label “COMPRESSION / CONCEPTUAL SEQUENCE”. Bottom thin line with “03 / THE PRESS”, no random metrics. Large scale surgical precision but art gallery, no HUD/graph/dashboard/cards. Local procedural 3D and live HTML text will implement the concept. Keep text and machine separate, incredible tactile materials, airy and disciplined.",
+      "file": "docs/concepts/03-press.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "057a3339725c24743d600063204a28e81cffa297d8f044c364ad9f2c8dff6d19",
+      "status": "selected"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "createdAt": "2026-10-12T14:37:35.977Z",
+  "node": "v24.19.0",
+  "platform": "linux",
+  "checks": [
+    {
+      "name": "Curated source has no installed dependencies",
+      "status": "pass",
+      "milliseconds": 1,
+      "detail": {
+        "nodeModules": false
+      }
+    },
+    {
+      "name": "npm run build succeeds without npm install",
+      "status": "pass",
+      "milliseconds": 400,
+      "detail": {
+        "exitCode": 0,
+        "stdout": "\n> ferrum-memory-of-fire@1.0.0 build\n> node scripts/build.mjs\n\nBuilt dist/ with local modules, fonts, and fallback artwork. No CDN is required.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+      }
+    },
+    {
+      "name": "Built files match the delivered source and all required media exist",
+      "status": "pass",
+      "milliseconds": 47,
+      "detail": {
+        "files": 33,
+        "duplicateTexturePngs": false
+      }
+    },
+    {
+      "name": "Local preview serves HTML, modules, fonts, textures and stills",
+      "status": "pass",
+      "milliseconds": 219,
+      "detail": [
+        {
+          "path": "/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 10491
+        },
+        {
+          "path": "/src/main.js",
+          "status": 200,
+          "contentType": "text/javascript; charset=utf-8",
+          "bytes": 14509
+        },
+        {
+          "path": "/vendor/three.module.js",
+          "status": 200,
+          "contentType": "text/javascript; charset=utf-8",
+          "bytes": 662772
+        },
+        {
+          "path": "/assets/fonts/antonio-latin-300-normal.woff2",
+          "status": 200,
+          "contentType": "font/woff2",
+          "bytes": 11320
+        },
+        {
+          "path": "/assets/textures/forged-steel.webp",
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 889838
+        },
+        {
+          "path": "/assets/stills/05-mobile.webp",
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 13578
+        }
+      ]
+    },
+    {
+      "name": "The built site renders all six live chapters from local files",
+      "status": "pass",
+      "milliseconds": 12806,
+      "detail": [
+        {
+          "index": 0,
+          "act": "before-form",
+          "vertices": 1682,
+          "loadedMaps": [
+            "forged"
+          ]
+        },
+        {
+          "index": 1,
+          "act": "furnace",
+          "vertices": 1682,
+          "loadedMaps": [
+            "forged"
+          ]
+        },
+        {
+          "index": 2,
+          "act": "strike",
+          "vertices": 1682,
+          "loadedMaps": [
+            "forged"
+          ]
+        },
+        {
+          "index": 3,
+          "act": "temperature",
+          "vertices": 1682,
+          "loadedMaps": [
+            "forged",
+            "polished"
+          ]
+        },
+        {
+          "index": 4,
+          "act": "edge",
+          "vertices": 1682,
+          "loadedMaps": [
+            "forged",
+            "polished"
+          ]
+        },
+        {
+          "index": 5,
+          "act": "relic",
+          "vertices": 1682,
+          "loadedMaps": [
+            "forged",
+            "polished"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Built site has no warnings, application errors or external requests",
+      "status": "pass",
+      "milliseconds": 0,
+      "detail": {
+        "warningsAndErrors": 0,
+        "failedOrExternalRequests": 0
+      }
+    }
+  ],
+  "console": [],
+  "network": [],
+  "sourceSha256": {
+    "index.html": "d555f67c54a330723597a542a3a9bea86d49ad742fd859c7243187212ceb0f88",
+    "favicon.svg": "9108201316e36f524ef7f78170a148259585b92ceb5e4a50df0d7e040510b2ba",
+    "src/main.js": "b36374d32c95a259499387586e7bf85126ae95eeeec50d114ced7c4985be3045",
+    "src/story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87",
+    "src/scene.js": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5",
+    "src/audio.js": "eb58adb3419062f8c997bc6b50e7872868fbfe28dc0c13e0c0331e462819eb15",
+    "src/styles.css": "cb2973bd244112de30dd7c0908d952051c5413e3f5bb49d9bbc4ac0d6ece8a1c",
+    "vendor/three.module.js": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+    "vendor/three.core.js": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+    "vendor/lenis.mjs": "c1971e9d7989f6f497544c857f799d3f7c04d13d5e92cd187c4b345e50b253b1",
+    "vendor/lenis.css": "a0510d86f0c81ed6753eccf8ddb06f196ecbb385af6df6356f734bebfeb28e7d",
+    "assets/textures/forged-steel.webp": "4ddb47ea53ffed98608d8c7a7a83767979b7e04a7ee72fc9d36229c5f2d0029c",
+    "assets/textures/polished-steel.webp": "d844dcaf8f6ff2c03efa6702a1bbb57b051b92c825a6d57db94d82435911601d",
+    "assets/stills/00-desktop.webp": "820c9fa816bf000aff507866d0d99fe6b9a27c89a9f3ddc56b137d022797ba86",
+    "assets/stills/00-mobile.webp": "e17c46045cc1c01e4f7ef1f62f038f4c7c817399c008719df901a699b4846904",
+    "assets/stills/01-desktop.webp": "f4e10d4d306ccdbafc2c0e505d8cb24e870be52d14fc674e91bed741dae26c3e",
+    "assets/stills/01-mobile.webp": "3ac746f736504e7d75a46419898a7531ace9f357e1fc13ef5630286118adbadb",
+    "assets/stills/02-desktop.webp": "8e64f0037578da95b4beee3dfbf904d1a68fae54b8f8dec354b77d93518fb918",
+    "assets/stills/02-mobile.webp": "bd94df7963dee3dca070c50c6e5c931fb044d7a059ae59a9d51fee68a88d4623",
+    "assets/stills/03-desktop.webp": "8702170c947be7eef2be26f82c7c88f9de89d76958fdd896bbd5b1214ed138fe",
+    "assets/stills/03-mobile.webp": "7974ca2d0753398afd58835f66db6f751dc303b5289eb10c069a28c23a8b60e6",
+    "assets/stills/04-desktop.webp": "95fed5dadde3761b4bdfb88af38328527df90487967123e58bb3be4bd08e7324",
+    "assets/stills/04-mobile.webp": "82616b78401b97d9a819f92e77be39a00f345d8e93500218353d6743ea8ac18b",
+    "assets/stills/05-desktop.webp": "1aff2ab74b6276c3d0eca5cb041858438c7034502f4d53e89c61a9bd5b45d2e6",
+    "assets/stills/05-mobile.webp": "093b7f3df70494abf61e68326a02ea1b006d5df7d170f40a2c31830e886e52e6",
+    "assets/fonts/antonio-latin-300-normal.woff2": "a79fa41990bd79ba8f97645376999bd8075a7e6008a54500d71c6a3d5b708d7a",
+    "assets/fonts/antonio-latin-400-normal.woff2": "cd88cea537be3e17425baf7afece2de9ff6cd864fdd7bbf226bf06ce769f8546",
+    "assets/fonts/barlow-condensed-latin-500-normal.woff2": "2d2c4912162eaa41299aaf5063ecb92a26d76071fe6d1f77742b32c833daab99",
+    "assets/fonts/barlow-condensed-latin-600-normal.woff2": "0b281bf2f4179c06ba68f0a427f2341287c41eacc2ce9d534c6f5c513ac633fb",
+    "assets/fonts/barlow-condensed-latin-700-normal.woff2": "8320299532b4b81498d5b3714d49c9d5938883b55f4c2a1efe6f105bf4a942bd",
+    "assets/fonts/manrope-latin-400-normal.woff2": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+    "assets/fonts/manrope-latin-500-normal.woff2": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+    "assets/fonts/manrope-latin-600-normal.woff2": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593"
+  },
+  "notes": [
+    "The delivery directory has no node_modules. Runtime build and serving use only Node.js built-ins.",
+    "Playwright is imported from the separate authoring/test environment, not from the delivered website.",
+    "This smoke check complements the full acceptance suite and does not measure hardware GPU performance."
+  ],
+  "browser": "131.0.6778.0",
+  "status": "pass"
+}

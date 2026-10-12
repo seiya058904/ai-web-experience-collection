@@ -1,0 +1,58 @@
+{
+  "createdAt": "2026-10-12T12:59:36.169Z",
+  "browserAvailability": "Browser plugin not available",
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "playwrightVersion": "1.62.1"
+  },
+  "browserVersion": "131.0.6778.0",
+  "probe": {
+    "url": "about:blank",
+    "title": "",
+    "titleExpected": "",
+    "webgl2": {
+      "supported": true,
+      "contextLost": false,
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+      "vendor": "WebKit",
+      "renderer": "WebKit WebGL",
+      "unmaskedVendor": "Google Inc. (Google)",
+      "unmaskedRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "maxTextureSize": 8192,
+      "attributes": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "clearPixelRGBA": [
+        32,
+        64,
+        128,
+        255
+      ],
+      "glError": 0
+    },
+    "errors": [],
+    "consoleMessages": []
+  },
+  "removedPackageDefaultArgs": [
+    "--disable-web-security",
+    "--allow-running-insecure-content"
+  ],
+  "browserDistribution": {
+    "name": "@sparticuz/chromium",
+    "version": "131.0.1",
+    "tarball": "https://registry.npmjs.org/@sparticuz/chromium/-/chromium-131.0.1.tgz"
+  },
+  "note": "The about:blank capability probe identifies the renderer. Site acceptance and screenshot evidence are recorded separately."
+}

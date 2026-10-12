@@ -1663,7 +1663,7 @@
       "sha256": "e5ddb69c7d8335e9fdb496dcd57eb0a387e23ede3a143c5f9ce96d1a020fca81",
       "bytes": 2541455,
       "entryCount": 41,
-      "modifiedAt": "2026-10-06T05:27:28.481170+00:00",
+      "modifiedAt": "2026-10-06T13:27:28.48117+08:00",
       "entries": [
         {
           "path": "GLASSHOUSE/.gitignore",
@@ -1877,7 +1877,7 @@
       "sha256": "290a678e3ca58289d6908726dcbe13d82e6fb7846587d38b43bc4822e943c15d",
       "bytes": 1862876,
       "entryCount": 53,
-      "modifiedAt": "2026-10-06T05:27:42.596433+00:00",
+      "modifiedAt": "2026-10-06T13:27:42.596433+08:00",
       "entries": [
         {
           "path": "VEIL-Fabric-in-Motion/.gitignore",
@@ -2150,7 +2150,7 @@
       "archive": "OPTIC-The-Architecture-of-an-Image.zip",
       "bytes": 1640068,
       "sha256": "a406b091bdb6388608e7c4b3900fdc2e6eb1621557cbb09d0c8eb14b645000f7",
-      "lastWriteTimeUtc": "2026-10-06T09:55:51.515618+00:00",
+      "lastWriteTimeUtc": "2026-10-06T17:55:51.515618+08:00",
       "entries": [
         {
           "path": "OPTIC/.gitignore",
@@ -2368,7 +2368,7 @@
       "archive": "INKSCAPE-Paper-Water-Ink.zip",
       "bytes": 6167353,
       "sha256": "ae82bf5ab7264fed5102b982f027eaa074355e0bff4323a031c56cac11d8158e",
-      "lastWriteTimeUtc": "2026-10-06T09:56:55.598422+00:00",
+      "lastWriteTimeUtc": "2026-10-06T17:56:55.598422+08:00",
       "entries": [
         {
           "path": "INKSCAPE/.gitignore",
@@ -16538,7 +16538,7 @@
       "archive": "CREMA-9-Bars.zip",
       "bytes": 16544879,
       "sha256": "a89f2f565c52eb3623e4441c89929dabcf6c4801ee2d9c9ad6641f5b49ee5cda",
-      "modifiedUtc": "2026-10-07T09:24:15.970398+00:00",
+      "modifiedUtc": "2026-10-07T17:24:15.970398+08:00",
       "entries": [
         {
           "path": "CREMA/ATTRIBUTION.md",
@@ -17994,7 +17994,7 @@
       "archive": "CRAVE-Before-the-First-Bite.zip",
       "bytes": 21395216,
       "sha256": "c20b9e2f66841d13b5d823122ce3c1b89e13a43b629462494009e349c464ea53",
-      "modifiedUtc": "2026-10-07T09:47:51.547578+00:00",
+      "modifiedUtc": "2026-10-07T17:47:51.547578+08:00",
       "entryCount": 64,
       "entries": [
         {
@@ -19461,7 +19461,7 @@
       "archive": "GRID-The-Architecture-of-Visual-Order.zip",
       "bytes": 22328651,
       "sha256": "a482b66fca3ce9f76fbf08766e211005312770b4dad10b8290c75ca12f320fbc",
-      "modifiedUtc": "2026-10-07T10:24:58.146516+00:00",
+      "modifiedUtc": "2026-10-07T18:24:58.146516+08:00",
       "entryCount": 76,
       "entries": [
         {
@@ -21090,6 +21090,1880 @@
           "Live exact-release validation remains pending deployment-ready notification."
         ]
       }
+    },
+    {
+      "archive": "DOSE-The-Architecture-of-a-Tablet-source.zip",
+      "bytes": 14214141,
+      "sha256": "9571b6c88878ed33b02914561d08e41a2f67c14e59eaea5339d5134ecb264dfd",
+      "modified": "2026-10-12T21:55:29.396814",
+      "entryCount": 83,
+      "route": "dose",
+      "imported": "2026-10-12",
+      "entries": [
+        {
+          "path": "DOSE/.impeccable/design.json",
+          "bytes": 608,
+          "sha256": "3e4d0a829f001940942b8ee1742c226ba69a179a10eccb3ec93d3312891fc824"
+        },
+        {
+          "path": "DOSE/DESIGN.md",
+          "bytes": 6013,
+          "sha256": "bb879f8a0c71eb97c9bd20e56304ba28651485efedb3a1b1546e7ff860629e3c"
+        },
+        {
+          "path": "DOSE/FILE-MANIFEST.sha256",
+          "bytes": 7517,
+          "sha256": "c147cf8709927d61824c160deba7ea888e4c2b7ba4a2794b466fd1bec8ca3497"
+        },
+        {
+          "path": "DOSE/LICENSE",
+          "bytes": 1304,
+          "sha256": "724de9b121fbabbc372f19efacb9936459d9bcd0ed962ca141f35fc48f0a1256"
+        },
+        {
+          "path": "DOSE/OPEN-DOSE.cmd",
+          "bytes": 269,
+          "sha256": "f862d30e750f9cef9cf41da1eb2f6b7dce01dcf9357d2064e5c4e3255aa66f43"
+        },
+        {
+          "path": "DOSE/PRODUCT.md",
+          "bytes": 2510,
+          "sha256": "5d6c64f6d9cc8ef9c79ccd281d3c2b0bd084984e637f65b5f99b729b3d4c1423"
+        },
+        {
+          "path": "DOSE/README.md",
+          "bytes": 7295,
+          "sha256": "9364997be487147f90ce12e5fa3b6421a31c244a3cde5da7d45b9c58af5cf2cd"
+        },
+        {
+          "path": "DOSE/THIRD-PARTY-NOTICES.md",
+          "bytes": 2404,
+          "sha256": "8c394c0df19e5d095695415c0d6fece168460d2e75e6edf81939abf0e0b33139"
+        },
+        {
+          "path": "DOSE/assets/fonts/barlow-condensed-OFL.txt",
+          "bytes": 6167,
+          "sha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31"
+        },
+        {
+          "path": "DOSE/assets/fonts/barlow-condensed-latin-600.woff2",
+          "bytes": 22308,
+          "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+        },
+        {
+          "path": "DOSE/assets/fonts/barlow-condensed-latin-700.woff2",
+          "bytes": 22444,
+          "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8"
+        },
+        {
+          "path": "DOSE/assets/fonts/fonts.css",
+          "bytes": 915,
+          "sha256": "a676e8909ac2aa8890eec171a082e9e07ef297d712bae198f2160069347ac93a"
+        },
+        {
+          "path": "DOSE/assets/fonts/ibm-plex-mono-OFL.txt",
+          "bytes": 5299,
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+        },
+        {
+          "path": "DOSE/assets/fonts/ibm-plex-mono-latin-400.woff2",
+          "bytes": 14708,
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+        },
+        {
+          "path": "DOSE/assets/fonts/ibm-plex-mono-latin-500.woff2",
+          "bytes": 14888,
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+        },
+        {
+          "path": "DOSE/assets/fonts/space-grotesk-OFL.txt",
+          "bytes": 4401,
+          "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+        },
+        {
+          "path": "DOSE/assets/fonts/space-grotesk-latin-variable.woff2",
+          "bytes": 22288,
+          "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+        },
+        {
+          "path": "DOSE/assets/icon.svg",
+          "bytes": 233,
+          "sha256": "fceabac504c7bc0d70ac21a96565b5175655d31eb8a3e57856ebaec28d0df5fa"
+        },
+        {
+          "path": "DOSE/dist/LICENSE",
+          "bytes": 1304,
+          "sha256": "724de9b121fbabbc372f19efacb9936459d9bcd0ed962ca141f35fc48f0a1256"
+        },
+        {
+          "path": "DOSE/dist/THIRD-PARTY-NOTICES.md",
+          "bytes": 2404,
+          "sha256": "8c394c0df19e5d095695415c0d6fece168460d2e75e6edf81939abf0e0b33139"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/barlow-condensed-OFL.txt",
+          "bytes": 6167,
+          "sha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/barlow-condensed-latin-600.woff2",
+          "bytes": 22308,
+          "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/barlow-condensed-latin-700.woff2",
+          "bytes": 22444,
+          "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/fonts.css",
+          "bytes": 915,
+          "sha256": "a676e8909ac2aa8890eec171a082e9e07ef297d712bae198f2160069347ac93a"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/ibm-plex-mono-OFL.txt",
+          "bytes": 5299,
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/ibm-plex-mono-latin-400.woff2",
+          "bytes": 14708,
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/ibm-plex-mono-latin-500.woff2",
+          "bytes": 14888,
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/space-grotesk-OFL.txt",
+          "bytes": 4401,
+          "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+        },
+        {
+          "path": "DOSE/dist/assets/fonts/space-grotesk-latin-variable.woff2",
+          "bytes": 22288,
+          "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+        },
+        {
+          "path": "DOSE/dist/assets/icon.svg",
+          "bytes": 233,
+          "sha256": "fceabac504c7bc0d70ac21a96565b5175655d31eb8a3e57856ebaec28d0df5fa"
+        },
+        {
+          "path": "DOSE/dist/index.html",
+          "bytes": 16628,
+          "sha256": "c0b84ec6e4dcb8d041f1b76813d7e64d145a2a9efb779599e629be6b14550095"
+        },
+        {
+          "path": "DOSE/dist/src/app.js",
+          "bytes": 17904,
+          "sha256": "59b047b905a68b2d7efedf0464d5346ae53f4d151824cf61ed9dff11c4c07d9e"
+        },
+        {
+          "path": "DOSE/dist/src/fallback.js",
+          "bytes": 21195,
+          "sha256": "839c4ed7eb1781f37cbe425d3bf02fcb118cef98d031d1904e886799b4f1a922"
+        },
+        {
+          "path": "DOSE/dist/src/geometry.js",
+          "bytes": 24785,
+          "sha256": "036d2cda6888e8e63b65f25d06f2e3dda883b42c40d0e15db80e2f045d97a972"
+        },
+        {
+          "path": "DOSE/dist/src/scene.js",
+          "bytes": 30630,
+          "sha256": "6c36a6657d8f908e9eefa948542feb572685d8ea87cc5c87199a9235087a0181"
+        },
+        {
+          "path": "DOSE/dist/src/styles.css",
+          "bytes": 22557,
+          "sha256": "94f039ee596afa8d70312e0195b62878605d3b40da4472e99512bf0d330df31a"
+        },
+        {
+          "path": "DOSE/dist/src/timeline.js",
+          "bytes": 3289,
+          "sha256": "045dc6f577da8aef055607f84ce48cc9f4dbaee3488a40973d20316bae1d9027"
+        },
+        {
+          "path": "DOSE/dist/vendor/DEPENDENCIES.md",
+          "bytes": 1460,
+          "sha256": "e6e531a162d4c63312d8337480cfaebd22ebc527dc0720c642f2f3ebd3ff2ff1"
+        },
+        {
+          "path": "DOSE/dist/vendor/RoomEnvironment.js",
+          "bytes": 4972,
+          "sha256": "77d4d2bed2b60cb98424764264aedd84b56bbf3211e0f48430e15608aeded9dc"
+        },
+        {
+          "path": "DOSE/dist/vendor/lenis-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "DOSE/dist/vendor/lenis.css",
+          "bytes": 513,
+          "sha256": "2f668ae84a668327f246faf8a770383a2bf69196d214290fbc4d5548910606c5"
+        },
+        {
+          "path": "DOSE/dist/vendor/lenis.mjs",
+          "bytes": 33166,
+          "sha256": "b7a2f6896b9ce086d8192ff17c91aad457447976764971fe5011c42169602e9e"
+        },
+        {
+          "path": "DOSE/dist/vendor/lenis.mjs.map",
+          "bytes": 64873,
+          "sha256": "caec501454f9e914bdf3633517f3f48506acb9970ae01133599ed5d7ed5b6641"
+        },
+        {
+          "path": "DOSE/dist/vendor/three-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "DOSE/dist/vendor/three.core.js",
+          "bytes": 1421746,
+          "sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583"
+        },
+        {
+          "path": "DOSE/dist/vendor/three.module.js",
+          "bytes": 639046,
+          "sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f"
+        },
+        {
+          "path": "DOSE/docs/ARCHITECTURE.md",
+          "bytes": 6054,
+          "sha256": "5231cc3a30bfac0b5df7497d319e311ab5fc2b495ee40c97d8a7fc221d4e8291"
+        },
+        {
+          "path": "DOSE/docs/PROCESS.md",
+          "bytes": 6994,
+          "sha256": "18d9dc2d7ec9c16aefd5dfa1b322d2a44fb232169c8b9e494be2f5b42eda82a0"
+        },
+        {
+          "path": "DOSE/docs/QA-RESULTS.json",
+          "bytes": 119179,
+          "sha256": "5d8532b72b23b149b7cd718c7da167497b82c400951851b528287815884f2ac3"
+        },
+        {
+          "path": "DOSE/docs/QA.md",
+          "bytes": 13201,
+          "sha256": "f5132d89f6f2eda685acd5da3918948d21cc04a31e2f4d3f0f11c7eca574ce08"
+        },
+        {
+          "path": "DOSE/docs/SOURCES.md",
+          "bytes": 9040,
+          "sha256": "a8d4812d0a733b8b725192189c751cecbeae183f56e9166f7edc0fa445d7730e"
+        },
+        {
+          "path": "DOSE/docs/concept-prompts.json",
+          "bytes": 4712,
+          "sha256": "f78678d52898c714ef6d81ed95a83cb9bbcd6e81010be585b848a1388cbee2b8"
+        },
+        {
+          "path": "DOSE/docs/concepts/00-prologue.png",
+          "bytes": 1880106,
+          "sha256": "f804e4b26e3afc6aba2b75dba10680f4102114f9f3a00fceb1ce5547a05257e9"
+        },
+        {
+          "path": "DOSE/docs/concepts/03-press.png",
+          "bytes": 1884209,
+          "sha256": "057a3339725c24743d600063204a28e81cffa297d8f044c364ad9f2c8dff6d19"
+        },
+        {
+          "path": "DOSE/docs/concepts/distribution.png",
+          "bytes": 2304952,
+          "sha256": "e941919aa5184f0fb94393a195a70ba422b862afc1f915be052f04d9ada51a76"
+        },
+        {
+          "path": "DOSE/docs/concepts/evidence.png",
+          "bytes": 1900945,
+          "sha256": "aa45c5efdaefe7b799f9fa09b0305c611686ce9eeed80936f3a0e115b0b2438c"
+        },
+        {
+          "path": "DOSE/docs/concepts/material.png",
+          "bytes": 2016805,
+          "sha256": "2b285fd4f728b0e09baaec3a9156d592c0acc41b776410851a98307101c8a1cd"
+        },
+        {
+          "path": "DOSE/docs/concepts/release.png",
+          "bytes": 2013439,
+          "sha256": "9f297138a53b0a55607b06793172cadd7359f7a94f17cdce0a088583dc1cbb80"
+        },
+        {
+          "path": "DOSE/docs/concepts/section-concept-record.json",
+          "bytes": 17548,
+          "sha256": "d74829f7b5789801a428ee440b1b14030be96dead478e65349bf5887dd66293a"
+        },
+        {
+          "path": "DOSE/docs/concepts/surface.png",
+          "bytes": 2043903,
+          "sha256": "2d21da31bc18c3862cde02ce4e1412e464ed00a46c68805f9f65c2fa50c3d561"
+        },
+        {
+          "path": "DOSE/docs/reviews/ART-DIRECTION.md",
+          "bytes": 13627,
+          "sha256": "c8a8915750efd156a5333bb792b2d2414c06ebb7f4dd4a0ca9986226e55fbe4a"
+        },
+        {
+          "path": "DOSE/docs/reviews/ENGINEERING.md",
+          "bytes": 9708,
+          "sha256": "9dde289e6bbdf834494e3b83006b4df78012a9099ae9a4a00ca5e82c58379785"
+        },
+        {
+          "path": "DOSE/index.html",
+          "bytes": 16628,
+          "sha256": "c0b84ec6e4dcb8d041f1b76813d7e64d145a2a9efb779599e629be6b14550095"
+        },
+        {
+          "path": "DOSE/package.json",
+          "bytes": 489,
+          "sha256": "1ae0102dc977ad758ea3847f73e9f82c58df1b831f7d7ba12afcf744d4f51c1a"
+        },
+        {
+          "path": "DOSE/scripts/build.mjs",
+          "bytes": 751,
+          "sha256": "6aa3184941431e6baa741df39cfc1e3a82a770c13dbf6a9c6cfc7c303e31301a"
+        },
+        {
+          "path": "DOSE/scripts/check.mjs",
+          "bytes": 1551,
+          "sha256": "d3098f9e01d56acc0d9ad499cd028e7853e508f05839c4428689dcba8e631d8b"
+        },
+        {
+          "path": "DOSE/scripts/serve.mjs",
+          "bytes": 3457,
+          "sha256": "79ec66fb745b8e37125545a51728e09bcc603eb272f732e53282a257d929d881"
+        },
+        {
+          "path": "DOSE/src/app.js",
+          "bytes": 17904,
+          "sha256": "59b047b905a68b2d7efedf0464d5346ae53f4d151824cf61ed9dff11c4c07d9e"
+        },
+        {
+          "path": "DOSE/src/fallback.js",
+          "bytes": 21195,
+          "sha256": "839c4ed7eb1781f37cbe425d3bf02fcb118cef98d031d1904e886799b4f1a922"
+        },
+        {
+          "path": "DOSE/src/geometry.js",
+          "bytes": 24785,
+          "sha256": "036d2cda6888e8e63b65f25d06f2e3dda883b42c40d0e15db80e2f045d97a972"
+        },
+        {
+          "path": "DOSE/src/scene.js",
+          "bytes": 30630,
+          "sha256": "6c36a6657d8f908e9eefa948542feb572685d8ea87cc5c87199a9235087a0181"
+        },
+        {
+          "path": "DOSE/src/styles.css",
+          "bytes": 22557,
+          "sha256": "94f039ee596afa8d70312e0195b62878605d3b40da4472e99512bf0d330df31a"
+        },
+        {
+          "path": "DOSE/src/timeline.js",
+          "bytes": 3289,
+          "sha256": "045dc6f577da8aef055607f84ce48cc9f4dbaee3488a40973d20316bae1d9027"
+        },
+        {
+          "path": "DOSE/tests/timeline.test.mjs",
+          "bytes": 3839,
+          "sha256": "2a14a9028547b484f9211f578e6594f94a42ee56294679b792d4233c7cca4bcb"
+        },
+        {
+          "path": "DOSE/vendor/DEPENDENCIES.md",
+          "bytes": 1460,
+          "sha256": "e6e531a162d4c63312d8337480cfaebd22ebc527dc0720c642f2f3ebd3ff2ff1"
+        },
+        {
+          "path": "DOSE/vendor/RoomEnvironment.js",
+          "bytes": 4972,
+          "sha256": "77d4d2bed2b60cb98424764264aedd84b56bbf3211e0f48430e15608aeded9dc"
+        },
+        {
+          "path": "DOSE/vendor/lenis-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "DOSE/vendor/lenis.css",
+          "bytes": 513,
+          "sha256": "2f668ae84a668327f246faf8a770383a2bf69196d214290fbc4d5548910606c5"
+        },
+        {
+          "path": "DOSE/vendor/lenis.mjs",
+          "bytes": 33166,
+          "sha256": "b7a2f6896b9ce086d8192ff17c91aad457447976764971fe5011c42169602e9e"
+        },
+        {
+          "path": "DOSE/vendor/lenis.mjs.map",
+          "bytes": 64873,
+          "sha256": "caec501454f9e914bdf3633517f3f48506acb9970ae01133599ed5d7ed5b6641"
+        },
+        {
+          "path": "DOSE/vendor/three-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "DOSE/vendor/three.core.js",
+          "bytes": 1421746,
+          "sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583"
+        },
+        {
+          "path": "DOSE/vendor/three.module.js",
+          "bytes": 639046,
+          "sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f"
+        }
+      ],
+      "omitted": [
+        "dist/ compiled duplicate",
+        "vendor runtime modules and source map; root packages reused",
+        "standalone package, scripts and OPEN-DOSE.cmd",
+        "local .impeccable tooling"
+      ],
+      "adaptations": [
+        "Three.js 0.183.2 delivery uses installed root 0.186.1; Lenis remains 1.3.26",
+        "Independent Vite document and base-aware local assets",
+        "Shared Collection return control",
+        "Height-aware typography and longer scroll handoffs",
+        "Registered world-frame handoff, early press-machinery exit and continuous chapter lighting"
+      ]
+    },
+    {
+      "archive": "COUNTERFORM-The-Shape-of-Reading-Refined-v2.zip",
+      "bytes": 14522141,
+      "modified": "2026-10-12 22:54:18",
+      "sha256": "a1e8d7dd3cac0c8f70829f8aa9c4e27c7c13c0b45afa21d551a9fc3f91a0262e",
+      "entryCount": 49,
+      "entries": [
+        {
+          "path": "COUNTERFORM-Refined-v2/.impeccable/design.json",
+          "bytes": 14779,
+          "sha256": "30137943b0496b3042f0993d07dc3277e338091262cc1849b72cb68bb7bd0d4d"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/DESIGN.md",
+          "bytes": 5763,
+          "sha256": "36247795144deb80a5eea4d26ad16f24fd36e1474d26b682725fd3d4e07de4be"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/PRODUCT.md",
+          "bytes": 2174,
+          "sha256": "196a9ea3678a42e27c86399401155815d6ed426cf79c7f967d2a8567fb1af3e9"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/README.md",
+          "bytes": 5844,
+          "sha256": "ea07d55b9a9d0ee04d4f68e3866a34c6b856f2f5edb4eec3a589253c527f8c8c"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/SHA256SUMS.txt",
+          "bytes": 4338,
+          "sha256": "fc7fcd050e445b1f2ef0f8179d1ff1c28167d6b9d358b81e9d1b876d801e9a8a"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/app.js",
+          "bytes": 32094,
+          "sha256": "772a7f7e70c106628f46205799d00fae1935dc37aa514322daf8adf608b55ae7"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/favicon.svg",
+          "bytes": 1668,
+          "sha256": "90c8517057f1cf2a4796e5ede2b6c40c9d08161390dda7e127d7669f52e0a9e2"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/fonts/Fraunces-Italic-Variable.woff2",
+          "bytes": 236016,
+          "sha256": "c062311e85f013dce1c4f125884e3d2119e31b272fcd6dc55ff5f535e0d2e2a0"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/fonts/Fraunces-Variable.woff2",
+          "bytes": 195012,
+          "sha256": "7dc0dd18aeeae3204d5cc26679b5f41d8be1e622bd3bd39fef574346c99508e8"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/fonts/RobotoFlex-Variable.woff2",
+          "bytes": 791300,
+          "sha256": "0b75943534dc43c6d41d78e57261aa37f2c2432ccffeb05f613e6b609bbb151a"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/fonts/original/Fraunces-Italic-Variable.ttf",
+          "bytes": 414904,
+          "sha256": "b24448c43702fac4ee856781d461a0dfba8d8e594b6e8e190234b75fed2c0e01"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/fonts/original/Fraunces-Variable.ttf",
+          "bytes": 360440,
+          "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/fonts/original/RobotoFlex-Variable.ttf",
+          "bytes": 1787292,
+          "sha256": "9b523f7d82593df0107173849ebb8c817471a1df4b4fb2c3cbf40cfd810c8281"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/materials.js",
+          "bytes": 552753,
+          "sha256": "1a9a9ca70b7fa06795465fdd2fb53bdd5839a9e684e7bf67c0f4a1e74d52efc7"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/vendor/lenis.min.js",
+          "bytes": 16768,
+          "sha256": "804047c1d9399736983bb38d5a841f96feb743f46a5090a252ede2ca1bfe1f19"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/vendor/three.core.min.js",
+          "bytes": 381124,
+          "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/assets/vendor/three.module.min.js",
+          "bytes": 338908,
+          "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/FIDELITY.md",
+          "bytes": 4604,
+          "sha256": "9f8eb3020e5d6f10de63235495b1f4d699c9582fa5a11e6e1300df807146ecd3"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/FONT-SOURCES.md",
+          "bytes": 10885,
+          "sha256": "5ca076b15e8da1b903c69a3b11053df0cf9e2c9377dd1d6634cbbf9e2c0043a9"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/MATERIALS.md",
+          "bytes": 13346,
+          "sha256": "8a551148a68478744ea3fec8b5aa673dd4dc25e031d36af5bb6fcd0a5341c9f7"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/QA-BASELINE-V1.md",
+          "bytes": 9531,
+          "sha256": "8e371fde75d884ca8211c7fc31f817572d09cb5a1fd3224ceda617872892e291"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/QA-RESULTS-V1.json",
+          "bytes": 2961,
+          "sha256": "6fb8fdcf3466bdafda9578192e064aed5c2dcb970b634d7f689baf0f34f2fb9b"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/QA-RESULTS.json",
+          "bytes": 4220,
+          "sha256": "f59f27319d39c2c2bcc3df0594bed91ccc25a068de209fa651f178f3c9ccde57"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/QA.md",
+          "bytes": 7168,
+          "sha256": "0edb9ead164486968fe32c6786a0aff7006a19c15aa58b09d6f58455a02d6e1f"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/REFERENCES.md",
+          "bytes": 7025,
+          "sha256": "5885ebc3c34a6d4577154ebecbcc036236bb7153e63a70246482a9cbc3dcb795"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/TECHNICAL.md",
+          "bytes": 15101,
+          "sha256": "d79a3568b97b45c488a6e47319988d769dcfd44b06b74672fb96e80466776b06"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/TERMINOLOGY.md",
+          "bytes": 5427,
+          "sha256": "443b7e1f72af5098c3326d64a2a25ac5f04cb7c030f0ffd9fb3e773162fe39f0"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/VISUAL-BIBLE.md",
+          "bytes": 4731,
+          "sha256": "2ad5f6cc61fdf4b23b52d257ee7a1116db7aa7c6d219f302ac88d548a46433cb"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/01-space.png",
+          "bytes": 1284851,
+          "sha256": "df54a72ea1e44a2dc6dc42d2f49f126325cdca99e57d0c939c059aef146df57d"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/02-mark.png",
+          "bytes": 3385903,
+          "sha256": "78009270d0bb180fd326a398955ea7c09e705ecbb8d00270fffba2f1d0307ab3"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/03-press.png",
+          "bytes": 2544715,
+          "sha256": "db379ae3be6f5d273a6362080e6051bed563ee4e7e7ae93947fd734dc402441a"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/04-divide.png",
+          "bytes": 1270176,
+          "sha256": "ae1d41442463f2999b3460c0e4c856beb744a555509d0bbb478ee01ead386b5f"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/05-anatomy.png",
+          "bytes": 1407102,
+          "sha256": "28fbd9cf48590e2ffbc7981b2aee13d9880892dc57ec5dd569d3aa7888483765"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/06-living.png",
+          "bytes": 1360606,
+          "sha256": "8f2483a3d8683dab99fe6df1ae92f3a315ef323e37a96d9781bcfcfc9c3b0d99"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/concepts/07-page.png",
+          "bytes": 1342638,
+          "sha256": "32e03f6d7a75700e2157d42dafd5d3acf3c2fdf3985e7278c7be1849eb8e1473"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/docs/font-spec.json",
+          "bytes": 91910,
+          "sha256": "ddb7d2e485dabab1cd9e29b38521a51c74601ce8a3d008757607fabe2e4405ac"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/index.html",
+          "bytes": 21268,
+          "sha256": "4299afb55c5c0c7977a3ade991fd26d7bf70b78bc478b1869b7abf13f4a32b46"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/Fraunces-METADATA.pb",
+          "bytes": 1197,
+          "sha256": "812aeaea90af8021a306b8fbb5490e0a861c27a5291d2253b403d9fc9f37afd5"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/Fraunces-OFL.txt",
+          "bytes": 4391,
+          "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/Lenis-MIT.txt",
+          "bytes": 1096,
+          "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/RobotoFlex-METADATA.pb",
+          "bytes": 2423,
+          "sha256": "cf7b74d9f3647f94d0047ad0dc926164da1dbcbc49208a38cc6e532961fa3d12"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/RobotoFlex-OFL.txt",
+          "bytes": 4488,
+          "sha256": "9cbaed04b20c853f99840efe5dc96956f6f6120ed83a0ade35f9281a2b63e5d0"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/Three-MIT.txt",
+          "bytes": 1081,
+          "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/licenses/font-download-provenance.json",
+          "bytes": 2391,
+          "sha256": "c63d65e902ade1ea51afe7039addd8249b9e78c296632ca3c0bc7aa850e8a0d2"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/package.json",
+          "bytes": 477,
+          "sha256": "ab6c1e3a0cd9447366cccc778489e7c0ced56ce65a332ba7614d3863542ef71d"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/scripts/serve.mjs",
+          "bytes": 1582,
+          "sha256": "c8bdad53598188e991e56b63912e1ceae4cf400fd0797ec1b5f46656247bf60c"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/src/materials.js",
+          "bytes": 31151,
+          "sha256": "609a866158ace1b818e3ff09cdffeab224d6f47c0869d50df2d53e9b0923e078"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/src/type-handoff.js",
+          "bytes": 9189,
+          "sha256": "817b9e3f4e75c317ea13777418aec2d291e3b76f54dd4e71ed5318788e199be3"
+        },
+        {
+          "path": "COUNTERFORM-Refined-v2/styles.css",
+          "bytes": 37349,
+          "sha256": "9476395c6ed9570503504056bfb00c9141a0d1d55297159075ebd8c926617acf"
+        }
+      ],
+      "omissions": [
+        "ZIP kept outside repository and deployment",
+        "upstream package managers, standalone servers and vendored runtime libraries excluded; root locked dependencies reused",
+        "upstream QA screenshots/evidence images excluded from deployment; source reports retained under provenance"
+      ],
+      "adaptations": [
+        "Independent HTML route and sitemap added",
+        "Runtime URLs made deployment-base aware",
+        "licenses surfaced under public/<work>/licenses/",
+        "No dependency or lockfile update"
+      ]
+    },
+    {
+      "archive": "FERRUM-The-Memory-of-Fire-Source.zip",
+      "bytes": 36346364,
+      "modified": "2026-10-12 22:59:04",
+      "sha256": "d9c9e0601a102d024955704b62e00ddf01e0ac5e39a9f5fbc39f2fd2ca59e652",
+      "entryCount": 230,
+      "entries": [
+        {
+          "path": "ferrum/.impeccable/design.json",
+          "bytes": 12694,
+          "sha256": "acb3b4fc8f50c988bcd2407fced00d12a337bd1ba337375227f5f590798adec7"
+        },
+        {
+          "path": "ferrum/DESIGN.md",
+          "bytes": 8353,
+          "sha256": "7e8d50ec399d1376ac4822b60a6ee5ea3d5237e27c811c7147cd59b07824d4b0"
+        },
+        {
+          "path": "ferrum/PRODUCT.md",
+          "bytes": 4755,
+          "sha256": "239b81611654dfea8bcef67a5d2d88ad3f46b30bd49535f5ced5ffc3674ad478"
+        },
+        {
+          "path": "ferrum/README.md",
+          "bytes": 9162,
+          "sha256": "b1321350829e69e4a4392f49cdd9a8c737303e181e8799226bf0062fce35819c"
+        },
+        {
+          "path": "ferrum/assets/fonts/antonio-latin-300-normal.woff2",
+          "bytes": 11320,
+          "sha256": "a79fa41990bd79ba8f97645376999bd8075a7e6008a54500d71c6a3d5b708d7a"
+        },
+        {
+          "path": "ferrum/assets/fonts/antonio-latin-400-normal.woff2",
+          "bytes": 11016,
+          "sha256": "cd88cea537be3e17425baf7afece2de9ff6cd864fdd7bbf226bf06ce769f8546"
+        },
+        {
+          "path": "ferrum/assets/fonts/barlow-condensed-latin-500-normal.woff2",
+          "bytes": 20432,
+          "sha256": "2d2c4912162eaa41299aaf5063ecb92a26d76071fe6d1f77742b32c833daab99"
+        },
+        {
+          "path": "ferrum/assets/fonts/barlow-condensed-latin-600-normal.woff2",
+          "bytes": 21352,
+          "sha256": "0b281bf2f4179c06ba68f0a427f2341287c41eacc2ce9d534c6f5c513ac633fb"
+        },
+        {
+          "path": "ferrum/assets/fonts/barlow-condensed-latin-700-normal.woff2",
+          "bytes": 21440,
+          "sha256": "8320299532b4b81498d5b3714d49c9d5938883b55f4c2a1efe6f105bf4a942bd"
+        },
+        {
+          "path": "ferrum/assets/fonts/manrope-latin-400-normal.woff2",
+          "bytes": 14108,
+          "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+        },
+        {
+          "path": "ferrum/assets/fonts/manrope-latin-500-normal.woff2",
+          "bytes": 14044,
+          "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+        },
+        {
+          "path": "ferrum/assets/fonts/manrope-latin-600-normal.woff2",
+          "bytes": 14172,
+          "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593"
+        },
+        {
+          "path": "ferrum/assets/stills/00-desktop.webp",
+          "bytes": 74624,
+          "sha256": "820c9fa816bf000aff507866d0d99fe6b9a27c89a9f3ddc56b137d022797ba86"
+        },
+        {
+          "path": "ferrum/assets/stills/00-mobile.webp",
+          "bytes": 33658,
+          "sha256": "e17c46045cc1c01e4f7ef1f62f038f4c7c817399c008719df901a699b4846904"
+        },
+        {
+          "path": "ferrum/assets/stills/01-desktop.webp",
+          "bytes": 59028,
+          "sha256": "f4e10d4d306ccdbafc2c0e505d8cb24e870be52d14fc674e91bed741dae26c3e"
+        },
+        {
+          "path": "ferrum/assets/stills/01-mobile.webp",
+          "bytes": 28570,
+          "sha256": "3ac746f736504e7d75a46419898a7531ace9f357e1fc13ef5630286118adbadb"
+        },
+        {
+          "path": "ferrum/assets/stills/02-desktop.webp",
+          "bytes": 59960,
+          "sha256": "8e64f0037578da95b4beee3dfbf904d1a68fae54b8f8dec354b77d93518fb918"
+        },
+        {
+          "path": "ferrum/assets/stills/02-mobile.webp",
+          "bytes": 23578,
+          "sha256": "bd94df7963dee3dca070c50c6e5c931fb044d7a059ae59a9d51fee68a88d4623"
+        },
+        {
+          "path": "ferrum/assets/stills/03-desktop.webp",
+          "bytes": 34832,
+          "sha256": "8702170c947be7eef2be26f82c7c88f9de89d76958fdd896bbd5b1214ed138fe"
+        },
+        {
+          "path": "ferrum/assets/stills/03-mobile.webp",
+          "bytes": 16668,
+          "sha256": "7974ca2d0753398afd58835f66db6f751dc303b5289eb10c069a28c23a8b60e6"
+        },
+        {
+          "path": "ferrum/assets/stills/04-desktop.webp",
+          "bytes": 74350,
+          "sha256": "95fed5dadde3761b4bdfb88af38328527df90487967123e58bb3be4bd08e7324"
+        },
+        {
+          "path": "ferrum/assets/stills/04-mobile.webp",
+          "bytes": 18838,
+          "sha256": "82616b78401b97d9a819f92e77be39a00f345d8e93500218353d6743ea8ac18b"
+        },
+        {
+          "path": "ferrum/assets/stills/05-desktop.webp",
+          "bytes": 24446,
+          "sha256": "1aff2ab74b6276c3d0eca5cb041858438c7034502f4d53e89c61a9bd5b45d2e6"
+        },
+        {
+          "path": "ferrum/assets/stills/05-mobile.webp",
+          "bytes": 13578,
+          "sha256": "093b7f3df70494abf61e68326a02ea1b006d5df7d170f40a2c31830e886e52e6"
+        },
+        {
+          "path": "ferrum/assets/textures/forged-steel.webp",
+          "bytes": 889838,
+          "sha256": "4ddb47ea53ffed98608d8c7a7a83767979b7e04a7ee72fc9d36229c5f2d0029c"
+        },
+        {
+          "path": "ferrum/assets/textures/polished-steel.webp",
+          "bytes": 486982,
+          "sha256": "d844dcaf8f6ff2c03efa6702a1bbb57b051b92c825a6d57db94d82435911601d"
+        },
+        {
+          "path": "ferrum/docs/ASSET-INVENTORY.md",
+          "bytes": 3957,
+          "sha256": "f933754580984b57f0412c5fcdae28b5a141a6b26b4b052b08c24ab6043f0cbb"
+        },
+        {
+          "path": "ferrum/docs/ASSET-PROVENANCE.md",
+          "bytes": 7303,
+          "sha256": "c333dc2aa3aeb2c8bc8b6e7f73b88739bee28b72dc70d25e4a2eb42edee0311f"
+        },
+        {
+          "path": "ferrum/docs/QA-REPORT.md",
+          "bytes": 13641,
+          "sha256": "0fb4122805a74946cb5c99289b504ad202110fec762bff930bbc7f8b3061f0d0"
+        },
+        {
+          "path": "ferrum/docs/RESEARCH.md",
+          "bytes": 3724,
+          "sha256": "36a309650287a263ed755ad817094e27f3ae4c83bc34d90d20146da2cfc312ca"
+        },
+        {
+          "path": "ferrum/docs/VISUAL-BIBLE.md",
+          "bytes": 4961,
+          "sha256": "64228cee8ec6249485125eb5d93136c95d91ddc99f1d6f07d9d044190dd7acd2"
+        },
+        {
+          "path": "ferrum/docs/asset-manifest.json",
+          "bytes": 38029,
+          "sha256": "2b736cf9561e559830850d0c44d91b78e99a44c6148770a9934af724ceffa8f2"
+        },
+        {
+          "path": "ferrum/docs/design-reference/README.md",
+          "bytes": 2570,
+          "sha256": "44b2f0c919cdaedb7118d228e94bb048939c8e48b3d320853ff2c4323b3699d1"
+        },
+        {
+          "path": "ferrum/docs/design-reference/REFERENCE-NOTES.md",
+          "bytes": 3099,
+          "sha256": "df7a2d5a70eed146b1e07284efa4f971d7acbcf650444da7e50c38cf61318942"
+        },
+        {
+          "path": "ferrum/docs/design-reference/SURFACE-BRIEF.md",
+          "bytes": 1823,
+          "sha256": "040d18e1cbdb3d5eff9e8d382976c87568c14bef69ac5c1ffc801ba7be947362"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concept-metadata.json",
+          "bytes": 5218,
+          "sha256": "2eac8a2588fce5aeab50099e42e8bbd2c4777c7a15fa7b1724b50b0953999490"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concept-prompts.json",
+          "bytes": 20720,
+          "sha256": "0cc8fe050788258d336f8191d955d295e80c4ac16b41b59196e062731c1f683b"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concepts/00-prologue.png",
+          "bytes": 1977504,
+          "sha256": "25772de0ed91fff5b316b4d086b1c82db851a61a14da8d8b32bf7fdda7eb143f"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concepts/01-furnace.png",
+          "bytes": 1904826,
+          "sha256": "f00e0796f6438bbb06fc1b809e99e9f83e000ce360de567f0bb96be9493906d4"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concepts/02-strike.png",
+          "bytes": 2133943,
+          "sha256": "938d1f78116038f044cec2a16737bfde910b2f9acc6f36184690f92517733cf9"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concepts/03-quench.png",
+          "bytes": 1879690,
+          "sha256": "b158e988b896a84b712577c23e947a59f855a1dc44dc9be32b30bf781e974f28"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concepts/04-reveal.png",
+          "bytes": 1879737,
+          "sha256": "dc522f46ded9fef831547a0d12bbe34fcccc4a71510a9e9fe84e397af5204cfc"
+        },
+        {
+          "path": "ferrum/docs/design-reference/concepts/05-relic.png",
+          "bytes": 2007117,
+          "sha256": "bf36eaf44f7128e2e30281a520539f40cf7409ca11154221ff667ba4d748e92b"
+        },
+        {
+          "path": "ferrum/docs/design-reference/still-render-origin.json",
+          "bytes": 48830,
+          "sha256": "695876b2e1906d61543b46a297d7a8ff098c87c66e8170eecf25018ce1650329"
+        },
+        {
+          "path": "ferrum/docs/design-reference/texture-encoding.json",
+          "bytes": 910,
+          "sha256": "c675b1f9d03ebb9cf6b245086e24ac994a482c9a528bf1d3653ac9820d4c8a40"
+        },
+        {
+          "path": "ferrum/docs/design-reference/texture-metadata.json",
+          "bytes": 5451,
+          "sha256": "bc5854092396d280d79803aada95dc4bff6b7a53835d7eac36c8125a40105aca"
+        },
+        {
+          "path": "ferrum/docs/design-reference/texture-prompts.json",
+          "bytes": 4115,
+          "sha256": "293bffa45652a0ec4bd22fbf8e698efdddf6c58ef2df66753044a0537e1a3201"
+        },
+        {
+          "path": "ferrum/docs/design-reference/textures/originals/forged-steel.png",
+          "bytes": 4225174,
+          "sha256": "aa5b1bc1339dd317eda7d3dd12c0b5700c953a0ca7e6b9f05f1a1b877739258f"
+        },
+        {
+          "path": "ferrum/docs/design-reference/textures/originals/polished-steel.png",
+          "bytes": 2662621,
+          "sha256": "f6d16701461a2ab629bb2b6364a001cf2724f93d2e89d1032176edf4e5d552b6"
+        },
+        {
+          "path": "ferrum/docs/licenses/ANTONIO-OFL.txt",
+          "bytes": 4390,
+          "sha256": "caddda91eee93f1d775e3a2d8c4915bbf040988bac65756d66fcf5510bb40773"
+        },
+        {
+          "path": "ferrum/docs/licenses/BARLOW-CONDENSED-OFL.txt",
+          "bytes": 4314,
+          "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+        },
+        {
+          "path": "ferrum/docs/licenses/LENIS-LICENSE.txt",
+          "bytes": 1088,
+          "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+        },
+        {
+          "path": "ferrum/docs/licenses/MANROPE-OFL.txt",
+          "bytes": 4314,
+          "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+        },
+        {
+          "path": "ferrum/docs/licenses/THREE-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        },
+        {
+          "path": "ferrum/docs/qa/anvil-clearance-proof.json",
+          "bytes": 7069,
+          "sha256": "cd95f90efc45b914b67fd52f1c6cc5e743f14967afd6ce6c9504fc64526b7b32"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/evidence.json",
+          "bytes": 55600,
+          "sha256": "c426f1140baf3f49a5416c54dd225af044f713240d539679557660c52719524f"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/quench-008-1920.png",
+          "bytes": 263335,
+          "sha256": "60718b0390147a301bab7e0df6fd091737e91018ecfb358e5b437ac8229c9688"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/quench-008-390.png",
+          "bytes": 61508,
+          "sha256": "2c0df98fa50d94e3f42ba89feaff303d56e31d381c56eb09ad7fa94c38c3fc18"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/quench-008-768.png",
+          "bytes": 93094,
+          "sha256": "63acdd2dad9075c33a0891ca056add214276ddc03f9bfd1d17e4099eb6a7fbf7"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/quench-086-1920.png",
+          "bytes": 360248,
+          "sha256": "8a4e7a34b985a006a06850ab3f9d390d676005e0a53052b4195c3ccc29c6c18b"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/quench-hold-1920.png",
+          "bytes": 230948,
+          "sha256": "ae8b78c326adab37f3b8b9e07fc8c377ac4ad40a72ebcddd94aaf665649e03a4"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/quench-hold-390.png",
+          "bytes": 56320,
+          "sha256": "5150c4a266af7ba34d3ead00e1252f94ca6a99eeca6161af39bceb4c5c3794e4"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-072-390.png",
+          "bytes": 51679,
+          "sha256": "3a8943b9cdccf1369096e0a0ed802a3b0838e9bd5e152fa0533212f138856d85"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-072-768.png",
+          "bytes": 75759,
+          "sha256": "cc1ef967c0ab0471c34716821e671e07986844cd74e52d6d30057606ed249728"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-086-390.png",
+          "bytes": 61088,
+          "sha256": "ff3a830fc71fbc7af387c6afe88bc12ce9425e10938d64e13c5da2d2cd8158a2"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-086-768.png",
+          "bytes": 91941,
+          "sha256": "08fd31e88d530a11a8a97b0b9ce504ab5637f5cb0d0610dfc64fe3311edadf88"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-097-390.png",
+          "bytes": 53943,
+          "sha256": "8adc964015f96af71a6d8f84925c73090a0424fbcca47f4484fcf2788666af56"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-097-768.png",
+          "bytes": 89393,
+          "sha256": "215ae5e88da3b33c820d708d1623807d915e8bc33d38dec018dac315acdf62e5"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-hold-390.png",
+          "bytes": 66912,
+          "sha256": "ee780e9133a3501cb1ee8c0b3530e7915d9220e7612098450bfcf72751f6127f"
+        },
+        {
+          "path": "ferrum/docs/qa/boundary-fixes/strike-hold-768.png",
+          "bytes": 100730,
+          "sha256": "05bfa2a0acd124c0d42cb7af85d5f4551e2acba0c57bc5e138843f00a2ce7a4f"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/browser-results.json",
+          "bytes": 10268,
+          "sha256": "33d44370450290f1c1f739eafb938b703b7198e6ccd5ee934195ed3d1e5c66b8"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/context-loss-still.png",
+          "bytes": 376565,
+          "sha256": "770f581837e09f7b59149c9b5f058f209540ed3f5722e9b6e7be83f1611448d5"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/final-hold.png",
+          "bytes": 159618,
+          "sha256": "641b584a59715320598c00487ae0d626eca4a71d7fdb695ec517d000597197d4"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/landscape-orientation.png",
+          "bytes": 91619,
+          "sha256": "1eac2c694f60e670851a6ea24ad6f33a6f1a32cfcd8baabc607c2a3f7f53d765"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/reduced-motion.png",
+          "bytes": 57977,
+          "sha256": "27cafbd04fecd5225098bf0fd22c73d63f5b8812ea104288625c27f37c2a7f28"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/rendering-failure.png",
+          "bytes": 202576,
+          "sha256": "547de72bca14717e93e75faa7fb21415777964bba6dbe290be01da83cd819d3b"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/touch-strike.png",
+          "bytes": 67743,
+          "sha256": "5bab3738af9d3ee04f5ac506e5128889ed4d68a422b281bd2e260820cb0a4cee"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/webgl-unavailable.png",
+          "bytes": 202576,
+          "sha256": "547de72bca14717e93e75faa7fb21415777964bba6dbe290be01da83cd819d3b"
+        },
+        {
+          "path": "ferrum/docs/qa/browser/without-javascript.png",
+          "bytes": 27492,
+          "sha256": "0ad6106ea613672dedd5bc963c5bdbe8263c13f0b6225f37f1475c2de7640169"
+        },
+        {
+          "path": "ferrum/docs/qa/environment.json",
+          "bytes": 1749,
+          "sha256": "696bc38fbdf577d9b36076d4207c04533b2919f05f594c529baac88113ce09b2"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/00-before-form-enter.jpg",
+          "bytes": 102091,
+          "sha256": "2805e9fc32b1899c4bfcd95e0e4acce44ab6acbff0dc1b0370f08e08bdd31d51"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/00-before-form-handoff.jpg",
+          "bytes": 91317,
+          "sha256": "0d07bf864c39c70ae3a71b0e32cb92e3d911646b3a2ce8decaa8d6584db00034"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/00-before-form-hold.jpg",
+          "bytes": 102206,
+          "sha256": "9f4a2c5ee84f7ed879f0fb6f86380dff19989b473c54fdc69bee1b3b293feccc"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/01-furnace-enter.jpg",
+          "bytes": 78324,
+          "sha256": "f14e140c06d56a0c639dc9edfb3fc28093a69444964dc1dc319ebf11ffb13754"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/01-furnace-handoff.jpg",
+          "bytes": 94524,
+          "sha256": "b519de762914c0ea33f5602f35fbf8c7796caf4ac411fca71478795cc1d78ceb"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/01-furnace-hold.jpg",
+          "bytes": 84190,
+          "sha256": "870912e9de563eac3026354b5eb456e97b47d63a4ab15823befebaac0c3634e3"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/02-strike-enter.jpg",
+          "bytes": 73125,
+          "sha256": "0c74c8f2cc1e212264c80b8c20cac34c0e08603605bdd6d73afecdd77eadabd4"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/02-strike-handoff.jpg",
+          "bytes": 72130,
+          "sha256": "bc99c6fbeb6683a04e456ab95aad002e83c38c5582dc9a3e84a92fb1892f49c7"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/02-strike-hold.jpg",
+          "bytes": 83954,
+          "sha256": "163a9035e668283ac261646f5e837458a2c9b7f42c206ad919c8800ced42e43d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/03-temperature-enter.jpg",
+          "bytes": 82092,
+          "sha256": "339c2959a4de5ce7523acfda2a8de644abe4a6fcd7e4373a4dd53f1c326a52a6"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/03-temperature-handoff.jpg",
+          "bytes": 85905,
+          "sha256": "f784ff89f8cdd9fec2f08eae3c1eaea1752bb1c5fc56fcfca54529e3d65f8a9c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/03-temperature-hold.jpg",
+          "bytes": 77086,
+          "sha256": "1780e50a62b08011703754c3bffa90ca610ee28322e2eaf294f12a7a92c2a2f5"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/04-edge-enter.jpg",
+          "bytes": 104080,
+          "sha256": "85de65eae8c2e8fd6893c0b22a1409d0ba50199fc37f6425233a9827a1c59e1c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/04-edge-handoff.jpg",
+          "bytes": 76604,
+          "sha256": "2606947ba54ababd343cb7224c51f31041a419ee5d5ccefa55e11652b35bb804"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/04-edge-hold.jpg",
+          "bytes": 98427,
+          "sha256": "f73ac6e8a01653054a26dc22f6f9ed53b50e34b4e44abd9a33904f6ceb0b7b24"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/05-relic-enter.jpg",
+          "bytes": 56575,
+          "sha256": "b2d370e8c227b67284be6d95e6d005e5ee4724fbfdbf350996aa80f346b2cb05"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/05-relic-handoff.jpg",
+          "bytes": 60394,
+          "sha256": "730ad4d78355b447fe630bdc7561b2561b1c6abafe423bc751792e3e6bb70e4f"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1440x900/05-relic-hold.jpg",
+          "bytes": 60370,
+          "sha256": "6ab2f5d8bf7b0e213953aa7b2b405c555389c92da496540c8afa6521f6897bfb"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/00-before-form-enter.jpg",
+          "bytes": 144783,
+          "sha256": "06dd44349a8835644addd10a61659f37238c6db34ea83ab901a95489c871f837"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/00-before-form-handoff.jpg",
+          "bytes": 127614,
+          "sha256": "e8212981b43c672954f6f884545e2b0c076cc2ab846b73adc94a15fc7c4d690c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/00-before-form-hold.jpg",
+          "bytes": 145168,
+          "sha256": "b417cee3d1be27454c985e2cad30851c3957066e842676b91b4edf092bfd6273"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/01-furnace-enter.jpg",
+          "bytes": 109354,
+          "sha256": "cd7e46e677aadc764c841be4bedec290c26bcdafedac9a1babe9a38f69c928c5"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/01-furnace-handoff.jpg",
+          "bytes": 132060,
+          "sha256": "fbedab65df770bcdb53457c815b7ab6fb479cd90dccd47d904c9574e3dda6f37"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/01-furnace-hold.jpg",
+          "bytes": 119002,
+          "sha256": "6abdd0654cfda4fb38c2f907017e471d90e2ee8f4da079e283a265bca870e075"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/02-strike-enter.jpg",
+          "bytes": 102580,
+          "sha256": "e5e95fb35ff23b6818172526f93073f188d58809ed91eff1af39fc3ff6f6e201"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/02-strike-handoff.jpg",
+          "bytes": 100826,
+          "sha256": "35644945cdf0a688093b448ee72a565f79a73a9cd9e5d10722e83096eb5f30aa"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/02-strike-hold.jpg",
+          "bytes": 115101,
+          "sha256": "dde51cbf200c985ae0dd1f1c96bdd188f78ab6c103eb19537bab0f8c363a8f5b"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/03-temperature-enter.jpg",
+          "bytes": 111517,
+          "sha256": "49908ca31a6aa57c9b44ca4a90e9924b586dd8dd28a8ac9ac0ddf405a8d18198"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/03-temperature-handoff.jpg",
+          "bytes": 118756,
+          "sha256": "8a802701e5d71fc75663a324f69ccb171c59a84a9604c7fbe02db3146c0bba9f"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/03-temperature-hold.jpg",
+          "bytes": 109098,
+          "sha256": "baac8e1c2d96855146db6661b0db053066988148213211f73539da40c5412e05"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/04-edge-enter.jpg",
+          "bytes": 156848,
+          "sha256": "eb0f0ad8f20592e228f14789d4ce197f37ca5f439314296255a02b60ba795fc4"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/04-edge-handoff.jpg",
+          "bytes": 110395,
+          "sha256": "246efbb04043884b1f24284cd2a5779fa085545446f74414f60a39ee26f9c040"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/04-edge-hold.jpg",
+          "bytes": 146872,
+          "sha256": "a87e921191e3dbbd8fe116e0479fe5441ea2265cef72ffb4653904cc4a6de1f1"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/05-relic-enter.jpg",
+          "bytes": 80847,
+          "sha256": "97c6d0ff39e55c380be87eb40614beb2e4ca04948db8e5daa0ac58af03c9a25d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/05-relic-handoff.jpg",
+          "bytes": 84748,
+          "sha256": "75cc364d39c859f7b76c9690aca99908b97f7e737e0dbd6ec1d655d02b59ced3"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/1920x1080/05-relic-hold.jpg",
+          "bytes": 84757,
+          "sha256": "0083c5815d648cb3ecaabedea33b76286a5f0651af0501ffe74c79d19bfe09d8"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/00-before-form-enter.jpg",
+          "bytes": 30165,
+          "sha256": "24d108ee739f571cf01fde88e8df4977cf16f78af2e982bb9e8d7100cba93963"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/00-before-form-handoff.jpg",
+          "bytes": 28604,
+          "sha256": "fa8bfbb0cb2b7229d59464c60b0154f83a7d4f08a7a521f7fc4b17fa4dafc342"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/00-before-form-hold.jpg",
+          "bytes": 30223,
+          "sha256": "7268bcbcebdc98151190de8d7b50f889320db91e49de52759303592ac3b781c2"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/01-furnace-enter.jpg",
+          "bytes": 28010,
+          "sha256": "93fe69c90ee06190520178ac6a4e9d5d77185f5096d9b12bcc24e5726835dc23"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/01-furnace-handoff.jpg",
+          "bytes": 30223,
+          "sha256": "0895650d95e95cd726a980f354766d7dec9fc29a25299846066faef9b785745e"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/01-furnace-hold.jpg",
+          "bytes": 32083,
+          "sha256": "a8320c0b74096757de083797aea762e556398b9e9df46c838767069ecf56b0df"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/02-strike-enter.jpg",
+          "bytes": 26409,
+          "sha256": "fc8564fb1a2898e5c421444cc09081624a5b13b7a575d76a5c170dbadc1b020e"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/02-strike-handoff.jpg",
+          "bytes": 26067,
+          "sha256": "016d04cc932b1332e098a24ff8de0b6601a15fbd1665eb254c28d61068dcf77c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/02-strike-hold.jpg",
+          "bytes": 28903,
+          "sha256": "40d5cc4ce450883e17c20ec7c31e64b77bb93f19099733099fc0488c5c798db4"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/03-temperature-enter.jpg",
+          "bytes": 29340,
+          "sha256": "bcd8ef382f4c16775661c9ff0b9879e88a9582fc7ba3b05caee1ba57f748b65f"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/03-temperature-handoff.jpg",
+          "bytes": 28531,
+          "sha256": "479c129a7787a333813474a8ea73b259aa10bcb9a63c0e5537516f634da38323"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/03-temperature-hold.jpg",
+          "bytes": 28341,
+          "sha256": "f29b55762062d6a66b3940cc56200917558918e1cefc5dc895158d9d93817207"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/04-edge-enter.jpg",
+          "bytes": 29274,
+          "sha256": "1dc0477d2c2dfdd5165f66545ec1cf06a8feeee436e5485d39cc14664d9f4d73"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/04-edge-handoff.jpg",
+          "bytes": 28991,
+          "sha256": "535e4ce14508a009ea4bb979edbc3d6c24638d2aa270d948aaff5b2910c75cd7"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/04-edge-hold.jpg",
+          "bytes": 31367,
+          "sha256": "eca2c619ff19516a81ccd892780c478db55cfbe8dd3ad00a361f1e897a2c9c80"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/05-relic-enter.jpg",
+          "bytes": 23459,
+          "sha256": "1d044250a4e9f3853f987be02051be18d6eef5bc9127e7cde395abd9e027da1d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/05-relic-handoff.jpg",
+          "bytes": 25510,
+          "sha256": "30c4cc8ec9f5ce80ef378d0c5e4a5436e5ad25274dde1b96df0cce281e2bd491"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/360x780/05-relic-hold.jpg",
+          "bytes": 25522,
+          "sha256": "f090aae2b1fc5f7f6f114a4bca1b22d3d8048718e862fc2d24bd8f2debdefb5b"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/00-before-form-enter.jpg",
+          "bytes": 376640,
+          "sha256": "09080c0292bf50f5a187ea92317ced8a0b6bb2cc267a5525ca9a7139f0375c0d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/00-before-form-handoff.jpg",
+          "bytes": 333874,
+          "sha256": "3b46cb88b5424484335c5bbd8e75e06647c0139a04a7501aecea89ca47f17b04"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/00-before-form-hold.jpg",
+          "bytes": 377302,
+          "sha256": "067ec154d231a85352d638e145ac4f9b8ed7d58f9573d329156cdb75f29e38b4"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/01-furnace-enter.jpg",
+          "bytes": 286417,
+          "sha256": "faa9b6a45ca16896c801294cd571456203234fe77c796825adfcd68705459873"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/01-furnace-handoff.jpg",
+          "bytes": 354749,
+          "sha256": "1053bb8b46cd7c4f02a13634a5d3b115cbcd4a545587e9de875c635816bf852c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/01-furnace-hold.jpg",
+          "bytes": 303040,
+          "sha256": "cbe6722a9ea0a17b99b212748d8b869cb97b395c65cec59bb807e6ff3e550aa0"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/02-strike-enter.jpg",
+          "bytes": 268365,
+          "sha256": "26b98c399b30b833336d7c962887223acef9a84d0790f673506179a0be92a055"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/02-strike-handoff.jpg",
+          "bytes": 252364,
+          "sha256": "735a543e211b4e121a0a318abb90468a67dc9af03b76a99ea8e497ff68b38bb9"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/02-strike-hold.jpg",
+          "bytes": 298794,
+          "sha256": "6a33846ecca1b52760eb66b361f483d0d32563a3eaff1d102e2436cb4a7b1c6b"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/03-temperature-enter.jpg",
+          "bytes": 276362,
+          "sha256": "484d23c0baea044ca3ba3fe7a550ea7e7250f83d6d06951dfd0bdde270fdf740"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/03-temperature-handoff.jpg",
+          "bytes": 306557,
+          "sha256": "95211a4509391df61cdb6107a9f8b716f2df76bfbdf766d799543119f84f145e"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/03-temperature-hold.jpg",
+          "bytes": 261823,
+          "sha256": "ec248aca483ce3b5c485a2dae160205c35961a5fd63a1de6e22a1d44b6708ce7"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/04-edge-enter.jpg",
+          "bytes": 436547,
+          "sha256": "b78d788c93ba8facbd43245b6b219834abda64e48996e5d9f56afdaf247181f3"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/04-edge-handoff.jpg",
+          "bytes": 288947,
+          "sha256": "d598c0893791882b000ed5c348a6420c4fa94265b5df39fc39462cf8c2d06b9d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/04-edge-hold.jpg",
+          "bytes": 391612,
+          "sha256": "7809a5c77b7923271ee4e9c9a983a1162c9c57724961d861cac554e17895b21f"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/05-relic-enter.jpg",
+          "bytes": 200739,
+          "sha256": "cf891efeaf488b9e08d334562794c1ed956225d8fe39664a17579ea5f037f199"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/05-relic-handoff.jpg",
+          "bytes": 204807,
+          "sha256": "f9758cccd15969d61e3c0a4fc4ac16a8738cef0088bbfafdb6d0ebc9b936ba87"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/3840x2160/05-relic-hold.jpg",
+          "bytes": 204778,
+          "sha256": "414629ff978bd09e0da8cc9438cae57291fa8790e6c36d4107e762d5947f66fc"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/00-before-form-enter.jpg",
+          "bytes": 33400,
+          "sha256": "b40af6d28f9609141d02efd78f529f61155f5a2e4b47beeae3976e68ab74b5d1"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/00-before-form-handoff.jpg",
+          "bytes": 31461,
+          "sha256": "39842cd6472f22d60b4fbb25bfbf7ce33af9f9ee1ff28e122bdac33415a3055b"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/00-before-form-hold.jpg",
+          "bytes": 33418,
+          "sha256": "d84393021820a22b17321c0e46d8c2fb577b2452b09917df01cafc29bc413ffe"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/01-furnace-enter.jpg",
+          "bytes": 30468,
+          "sha256": "1a4c99ceb40c2e0be7091918282000fdf9ce6a9428259977c62ccb7c3b98348c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/01-furnace-handoff.jpg",
+          "bytes": 32436,
+          "sha256": "4131f29388e0e06faa8759f61193b7d8e32b647fa5c89e3108c1d1cd96af6842"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/01-furnace-hold.jpg",
+          "bytes": 35440,
+          "sha256": "06300eba8b54720d9d16ce3d902d8d7b11fb81e83ea3bf00754f468a1b1ba91d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/02-strike-enter.jpg",
+          "bytes": 29410,
+          "sha256": "da03efb242b2113eda4033851247181457147394bb21fcfdb9ce96c773ed87b3"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/02-strike-handoff.jpg",
+          "bytes": 28658,
+          "sha256": "8bbf48fae8e5f5b19a99e0d7a2cc419837f8e28696cd14ef0411e485791476e2"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/02-strike-hold.jpg",
+          "bytes": 32371,
+          "sha256": "745b5351ca13b944284585967377d1506ab23958c61e55c679b2148226723029"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/03-temperature-enter.jpg",
+          "bytes": 31129,
+          "sha256": "3cc03eaaeae36504d52ea57a27cccf0a0f1a81ce575fa6178201a218c7ec843f"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/03-temperature-handoff.jpg",
+          "bytes": 30483,
+          "sha256": "0562305400bda63c33357bbdba5577ab935b5596eb2c4201101a303e7dfea3ac"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/03-temperature-hold.jpg",
+          "bytes": 32112,
+          "sha256": "be42350dd7be37d4fc2f556480f27b509f6260780484edfb7b0df09eef52376f"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/04-edge-enter.jpg",
+          "bytes": 32614,
+          "sha256": "09ef873df563a61f6d42c79662d66e481c52ab91d0d03e229ecb7aea77acab9a"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/04-edge-handoff.jpg",
+          "bytes": 31897,
+          "sha256": "8ab48abf8e139367173663682689e7c9864a1a6c15f4d444145ba4231d5bdced"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/04-edge-hold.jpg",
+          "bytes": 34342,
+          "sha256": "af4a5c0c557e41c78a060401781b46e73ee5111dfdfa619e5bbb3e40a91203b2"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/05-relic-enter.jpg",
+          "bytes": 26072,
+          "sha256": "cedf3a1f1aa230702ec4bd5ffa983833b4de0f0acb7826aa16ecfcb658f525ae"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/05-relic-handoff.jpg",
+          "bytes": 28002,
+          "sha256": "8b59de72b576f64c9a93a40d9708cf070130b20ae2273958299af0645b675347"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/390x844/05-relic-hold.jpg",
+          "bytes": 28016,
+          "sha256": "7db939aa5386a6b59746e97293479c6b3173445fb8054bf21dfeeb2610c9ebe3"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/00-before-form-enter.jpg",
+          "bytes": 57103,
+          "sha256": "d722a3d8a4a3b63ca2b46dab46c6e4f1eab770cf02a183f326725aadc93766fc"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/00-before-form-handoff.jpg",
+          "bytes": 52250,
+          "sha256": "127970eef35fdc11491a4c745b8ddc07e0f41a96e9f22c2b485227711b491918"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/00-before-form-hold.jpg",
+          "bytes": 57111,
+          "sha256": "04e7d812ffcc1ebc2a8b3b330c06adbd81600e390a2e377dfc4d648aa58b8f18"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/01-furnace-enter.jpg",
+          "bytes": 42807,
+          "sha256": "14b38ca697452afd9c33b5428353ad07304e33795ab8ce45726b78bd915a96ef"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/01-furnace-handoff.jpg",
+          "bytes": 46976,
+          "sha256": "3fb6f414c694732af66c7416aa4f0923c600de17dd0bf8f886f1d6a756316e86"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/01-furnace-hold.jpg",
+          "bytes": 48012,
+          "sha256": "f6a62d5b787b17eab7e0080bef6ca6caeffda82e7d4b4e1c6f9d48dc5ef43b61"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/02-strike-enter.jpg",
+          "bytes": 41582,
+          "sha256": "2dd3063e718a1ced3f22acc2509dfbe6d9e6f1f69de6965c0719d7613908c77a"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/02-strike-handoff.jpg",
+          "bytes": 41119,
+          "sha256": "89cd134e813c3a3cdca8f6a60d91ce2d873b9ea4f9e3470727cc30a64d550f4c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/02-strike-hold.jpg",
+          "bytes": 44429,
+          "sha256": "51f46eda44f6ce112ba16daa10bcb966c23719d72fb720711997bc09d12673b4"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/03-temperature-enter.jpg",
+          "bytes": 46733,
+          "sha256": "95b48eb6bfb4cf215b7fb9db602f310a2489a73be7252bdedbc6185e1e4c1243"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/03-temperature-handoff.jpg",
+          "bytes": 45696,
+          "sha256": "167d220d9fb8838ee402417c36e53f10cc0a6d0e701e0c5fa58f26f2d895cfa5"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/03-temperature-hold.jpg",
+          "bytes": 45379,
+          "sha256": "13438311b72d8053012f089b45e6b0732e07e8770020a4905bacabbedcb6f55c"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/04-edge-enter.jpg",
+          "bytes": 43810,
+          "sha256": "1fa35984515fbf011edee66a527f7c615be239d57de80a4fec73a2d390619e5d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/04-edge-handoff.jpg",
+          "bytes": 41663,
+          "sha256": "aa09369a7a27fad1d1184f9605d9e32c32c25b3e52bfbdf8170bb9a9e7e60b13"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/04-edge-hold.jpg",
+          "bytes": 44370,
+          "sha256": "985264660b71c44ef78107fc3af4d05f60b4f7e01d440b525d937fe14675c8e1"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/05-relic-enter.jpg",
+          "bytes": 36603,
+          "sha256": "440a11bdca1796246bfd0372996fb0afa2ca34de200b84bf8d85905b34b9b6dd"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/05-relic-handoff.jpg",
+          "bytes": 37345,
+          "sha256": "7da15c997669c0432478fb3049b67cd3b8ddb05478369f0a69b3a530e000da88"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/768x1024/05-relic-hold.jpg",
+          "bytes": 37353,
+          "sha256": "61defa2e6f4f37c44a8fb4b98153295b041cbb01549fd3a3c116c33563cfa7f9"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/EVIDENCE.md",
+          "bytes": 1369,
+          "sha256": "45cc67a18d008cd85adc7fa7e9d5122dc95c3a33157d0606d3e061c9a40d0455"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/capture-attempts.json",
+          "bytes": 4017,
+          "sha256": "bd3f3846af40a3f10013e3a86ff44b33a6526e29e3066db1535e4191c9b973f1"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/capture-results.json",
+          "bytes": 4430383,
+          "sha256": "0bdd7d3869517cab0b42f485eee7c13d33aa73948ecd6435ab4dea788de4ca5a"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/contact-sheets/1440x900.jpg",
+          "bytes": 592473,
+          "sha256": "9bef204366d984741d0cde98c7c2ae5db363051b1799f000c334411296255aaa"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/contact-sheets/1920x1080.jpg",
+          "bytes": 561094,
+          "sha256": "1b173c8cf46f160e8bb01414a3179ef30840d7d80fbd724376f0a9fcde60085d"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/contact-sheets/360x780.jpg",
+          "bytes": 947177,
+          "sha256": "f44796287a401367116432253e12257e335da0b4a8aefcaa7ff78e24f718a406"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/contact-sheets/3840x2160.jpg",
+          "bytes": 531805,
+          "sha256": "dbd2dbb0e9817f600e46481306f5a7d1536611adc3d7cb95e441b97b129f05b2"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/contact-sheets/390x844.jpg",
+          "bytes": 1034900,
+          "sha256": "c610992c4a4d4ff1a94e50885c5f52319f018f9ac0f70a8781161bc48a78f9ab"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/contact-sheets/768x1024.jpg",
+          "bytes": 835346,
+          "sha256": "eaeef4672623f92087b7c5842b2d540f16eb6cff9a0c3228e3dace978e03e9fc"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/evidence-manifest.json",
+          "bytes": 66597,
+          "sha256": "e74d4fc33340ee1a0011602a834e671e6f25bf67975040ee0f97d226e4395b39"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/visual-review.json",
+          "bytes": 94663,
+          "sha256": "6f1172502455ae1f9c006d2d2fdea2f404f0f48b348b9ad7699f845397ec3605"
+        },
+        {
+          "path": "ferrum/docs/qa/matrix/visual-review.md",
+          "bytes": 24962,
+          "sha256": "30f142b332f517702f418bafaa6b9d7cb9050ba4133a6b25312f30b9bbf0824e"
+        },
+        {
+          "path": "ferrum/docs/qa/package/built-site-relic.png",
+          "bytes": 158946,
+          "sha256": "b63c9699680a8b6038dee10ed3a9988a08a93047d6c6a63fc56195836ab694f8"
+        },
+        {
+          "path": "ferrum/docs/qa/package/package-verification.json",
+          "bytes": 7474,
+          "sha256": "ed3a13d14aebd6b6a1be67747bdfe0e61834a05e3fe75f957164a34c41f7c4f7"
+        },
+        {
+          "path": "ferrum/docs/qa/preview-provenance.json",
+          "bytes": 6499,
+          "sha256": "f875ceef2a9b8fbe0935c3864c60b7797cff06a94b0c2fab617252c2e6eabd03"
+        },
+        {
+          "path": "ferrum/docs/qa/preview.png",
+          "bytes": 832428,
+          "sha256": "e9ed4be436bd4f26bf838ad67ea2421488547b8730b2bd76ec3520fc8a581707"
+        },
+        {
+          "path": "ferrum/docs/qa/unit-test-results.json",
+          "bytes": 2256,
+          "sha256": "adab6fb147a7b3bf1c0dd3f19de9cbc3e8884befe65c40726c290fe471ceb42c"
+        },
+        {
+          "path": "ferrum/docs/qa/visual-closure.md",
+          "bytes": 2914,
+          "sha256": "3133430b0b769c1bec2557ba8e241c0b7c05d017d57371ab48b2360ae8b7c6d0"
+        },
+        {
+          "path": "ferrum/favicon.svg",
+          "bytes": 178,
+          "sha256": "9108201316e36f524ef7f78170a148259585b92ceb5e4a50df0d7e040510b2ba"
+        },
+        {
+          "path": "ferrum/index.html",
+          "bytes": 10491,
+          "sha256": "d555f67c54a330723597a542a3a9bea86d49ad742fd859c7243187212ceb0f88"
+        },
+        {
+          "path": "ferrum/package-lock.json",
+          "bytes": 4278,
+          "sha256": "d7ef8da29b37e75906c9e5ae90533aedf242ed07404be48593f31dd0e56ecd9f"
+        },
+        {
+          "path": "ferrum/package.json",
+          "bytes": 731,
+          "sha256": "6a72cbeaf66e0f59a3a8228c95be9ff50f16444730f8ddc1758aea16418e25d7"
+        },
+        {
+          "path": "ferrum/scripts/build.mjs",
+          "bytes": 1230,
+          "sha256": "04eb0f3cf701a57b0bc97148208148fe374482cdf82f556634758714eb08b5bb"
+        },
+        {
+          "path": "ferrum/scripts/encode-stills.py",
+          "bytes": 1878,
+          "sha256": "1822c4cf3fdd58eab9314947ad6430d214cc76ca2aecd47fa62dec923c592e0d"
+        },
+        {
+          "path": "ferrum/scripts/render-stills.mjs",
+          "bytes": 3928,
+          "sha256": "0963353b01f3eeeed6e068fbb7a9edc5ffdcf8d4c0edeeeb96ea055b5fce603a"
+        },
+        {
+          "path": "ferrum/scripts/serve.mjs",
+          "bytes": 2737,
+          "sha256": "6cdde5b2ff1c83bef89d4f522cd4b8b7d0df1c436423be940edb8648aece21a6"
+        },
+        {
+          "path": "ferrum/scripts/vendor.mjs",
+          "bytes": 1776,
+          "sha256": "aabca988a9e57e02a2cb548abc17f4677b8af11944b01b7c94d18663f07e715c"
+        },
+        {
+          "path": "ferrum/src/audio.js",
+          "bytes": 5788,
+          "sha256": "eb58adb3419062f8c997bc6b50e7872868fbfe28dc0c13e0c0331e462819eb15"
+        },
+        {
+          "path": "ferrum/src/main.js",
+          "bytes": 14509,
+          "sha256": "b36374d32c95a259499387586e7bf85126ae95eeeec50d114ced7c4985be3045"
+        },
+        {
+          "path": "ferrum/src/scene.js",
+          "bytes": 48500,
+          "sha256": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5"
+        },
+        {
+          "path": "ferrum/src/story.js",
+          "bytes": 11354,
+          "sha256": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87"
+        },
+        {
+          "path": "ferrum/src/styles.css",
+          "bytes": 20657,
+          "sha256": "cb2973bd244112de30dd7c0908d952051c5413e3f5bb49d9bbc4ac0d6ece8a1c"
+        },
+        {
+          "path": "ferrum/tests/audio.test.mjs",
+          "bytes": 7438,
+          "sha256": "358c5a44d9a2be264059d4e717830df43c0a68cc13c72c2f7500bad8d5f21a4e"
+        },
+        {
+          "path": "ferrum/tests/browser.mjs",
+          "bytes": 23088,
+          "sha256": "8d7dfc9a1e6219510eda069c5e35672c781178fd7cde30c44ea594d35ab2b5ff"
+        },
+        {
+          "path": "ferrum/tests/capture.mjs",
+          "bytes": 19997,
+          "sha256": "a8cb06df6a43eb90d57873bdd75543c2602a7fbf0dc63119edef04318fb71dba"
+        },
+        {
+          "path": "ferrum/tests/story.test.mjs",
+          "bytes": 7688,
+          "sha256": "d94ac8f0d23bffe655403b5e54b97ddaf7752b28a4ac3da79351289fa602af53"
+        },
+        {
+          "path": "ferrum/vendor/lenis.css",
+          "bytes": 381,
+          "sha256": "a0510d86f0c81ed6753eccf8ddb06f196ecbb385af6df6356f734bebfeb28e7d"
+        },
+        {
+          "path": "ferrum/vendor/lenis.mjs",
+          "bytes": 32614,
+          "sha256": "c1971e9d7989f6f497544c857f799d3f7c04d13d5e92cd187c4b345e50b253b1"
+        },
+        {
+          "path": "ferrum/vendor/three.core.js",
+          "bytes": 1458113,
+          "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+        },
+        {
+          "path": "ferrum/vendor/three.module.js",
+          "bytes": 662772,
+          "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+        },
+        {
+          "path": "ferrum/vendor/versions.json",
+          "bytes": 183,
+          "sha256": "44fb7cafe8c0f10bd1b16c53419bfac80152dbb38350984b704feea8ecaeec6e"
+        },
+        {
+          "path": "ferrum/docs/DELIVERY-MANIFEST.json",
+          "bytes": 40007,
+          "sha256": "e51a0c382e3dd8d218ce68a56391b27d0c7afab6671b351a8d5b0acfaddc7160"
+        }
+      ],
+      "omissions": [
+        "ZIP kept outside repository and deployment",
+        "upstream package managers, standalone servers and vendored runtime libraries excluded; root locked dependencies reused",
+        "upstream QA screenshots/evidence images excluded from deployment; source reports retained under provenance"
+      ],
+      "adaptations": [
+        "Independent HTML route and sitemap added",
+        "Runtime URLs made deployment-base aware",
+        "licenses surfaced under public/<work>/licenses/",
+        "No dependency or lockfile update"
+      ]
     }
   ]
 }

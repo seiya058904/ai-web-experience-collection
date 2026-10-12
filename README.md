@@ -1,6 +1,6 @@
 <h1 align="center">✦ AI Web Experience Collection</h1>
 
-<p align="center"><strong>Twenty-nine worlds. Twenty-nine ways to experience the web.</strong></p>
+<p align="center"><strong>Thirty-two worlds. Thirty-two ways to experience the web.</strong></p>
 
 <p align="center">
   A curated exhibition of cinematic, browser-native experiments in motion, matter,<br>
@@ -12,7 +12,7 @@
   &nbsp;·&nbsp;
   <a href="#find-your-world">✦ Where to Begin</a>
   &nbsp;·&nbsp;
-  <a href="#the-complete-exhibition">🗂️ All 29 Works</a>
+  <a href="#the-complete-exhibition">🗂️ All 32 Works</a>
   &nbsp;·&nbsp;
   <a href="#built-as-independent-worlds">⚙️ Architecture</a>
   &nbsp;·&nbsp;
@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <sub>29 INDEPENDENT EXPERIENCES &nbsp;·&nbsp; ONE CURATED ENTRANCE &nbsp;·&nbsp; FULL-DOCUMENT NAVIGATION</sub><br>
+  <sub>32 INDEPENDENT EXPERIENCES &nbsp;·&nbsp; ONE CURATED ENTRANCE &nbsp;·&nbsp; FULL-DOCUMENT NAVIGATION</sub><br>
   <sub>SCROLL-DRIVEN NARRATIVES &nbsp;·&nbsp; WEBGL / CANVAS / SVG &nbsp;·&nbsp; DESKTOP + MOBILE</sub>
 </p>
 
@@ -69,9 +69,9 @@
 **A material, a mechanism, or a question becomes an experience.** Each work has a distinct entrance, complete story, interaction model, and rendering lifecycle. The Collection itself stays a restrained gallery: visit a world, explore it, and return when you are ready.
 
 <a id="the-complete-exhibition"></a>
-## 🗂️ The Complete Exhibition — 29 Works
+## 🗂️ The Complete Exhibition — 32 Works
 
-Each name below opens its published standalone page. The routes belong to this single collection, not to twenty-nine separate repositories.
+Each name below opens its published standalone page. The routes belong to this single collection, not to thirty-two separate repositories.
 
 ### ⚙️ I. Machines, Energy & Motion
 
@@ -108,6 +108,9 @@ Each name below opens its published standalone page. The routes belong to this s
 | **CODEX** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/codex/) | Paper, signatures, sewing, and bookbinding |
 | **URUSHI** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/urushi/) | Lacquer, curing, abrasion, and surface depth |
 | **NIB** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/nib/) | Ink, feed, capillary balance, and the written line |
+| **DOSE** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/dose/) | A hypothetical tablet, material and conceptual cutaway |
+| **COUNTERFORM** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/counterform/) | Variable typography, letterform anatomy and the shape of reading |
+| **FERRUM** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/ferrum/) | An original digital steel sculpture through six acts |
 | **CREMA** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/crema/) | Espresso pressure, porous flow, and crema |
 | **CRAVE** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/crave/) | Heat, browning, crust, steam, and appetite |
 
@@ -130,7 +133,7 @@ Each name below opens its published standalone page. The routes belong to this s
 <a id="built-as-independent-worlds"></a>
 ## 🧭 Built as Independent Worlds
 
-This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping twenty-nine 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
+This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping thirty-two 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
 
 <table>
   <tr>
@@ -183,7 +186,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 | Path | Responsibility |
 | --- | --- |
-| [`pages/`](pages/) | Collection entry, credits, and twenty-nine HTML page documents |
+| [`pages/`](pages/) | Collection entry, credits, and thirty-two HTML page documents |
 | [`collection/`](collection/) | Curated gallery layout and navigation |
 | [`experiences/`](experiences/) | Independent implementations and work-specific runtime code |
 | [`public/`](public/) | Namespaced media, fonts, models, and licenses |
@@ -193,7 +196,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 The repository's [`vite.config.ts`](vite.config.ts) registers each independent HTML input and sitemap route. When adding an experience, keep its page, gallery entrance, build verification, docs, credits, and provenance records synchronized. Preserve `import.meta.env.BASE_URL` / `%BASE_URL%` handling for project-subpath deployments.
 
-Verification is **per work and per integration surface**: one successful scene does not establish quality across all twenty-nine. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
+Verification is **per work and per integration surface**: one successful scene does not establish quality across all thirty-two. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
 
 Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, original assets, or deployment. Historical source ZIPs and nondeployed references are tracked through provenance rather than mixed into browser output.
 
@@ -213,9 +216,21 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
 ---
 
 <p align="center">
-  <sub>TWENTY-NINE WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
+  <sub>THIRTY-TWO WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>
 - **Audio:** opt-in sounds must not be misrepresented as autoplaying or as unrestricted audio assets.
 
 The original supplied work identities, render fallbacks, reduced-motion behavior and source records are part of the collection's preservation contract.
+
+## DOSE — The architecture of a tablet
+
+The DOSE independent work lives at `/dose/`: seven material perspectives of a hypothetical uncoated tablet, with a native depth control, Index/About, quiet motion and illustrated/no-JavaScript editions. [Design](docs/dose/DESIGN.md), [architecture](docs/dose/ARCHITECTURE.md), [sources](docs/dose/SOURCES.md) and [acceptance](docs/dose/ACCEPTANCE.md). Original source retains MIT; no clinical or measured-product claim is made.
+
+## COUNTERFORM — The Shape of Reading
+
+The thirty-first independent work lives at `/counterform/`: seven typographic spaces with real variable-font controls, letterform anatomy, native Index and a quiet reading fallback. [Design](docs/counterform/DESIGN.md), [architecture](docs/counterform/ARCHITECTURE.md), [sources](docs/counterform/SOURCES.md) and [acceptance](docs/counterform/ACCEPTANCE.md).
+
+## FERRUM — The Memory of Fire
+
+The thirty-second independent work lives at `/ferrum/`: six acts through one original digital steel sculpture, optional local sound, supplied still fallback and reduced-motion controls. [Design](docs/ferrum/DESIGN.md), [architecture](docs/ferrum/ARCHITECTURE.md), [research](docs/ferrum/RESEARCH.md) and [acceptance](docs/ferrum/ACCEPTANCE.md).

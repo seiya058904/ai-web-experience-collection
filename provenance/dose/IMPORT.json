@@ -1,0 +1,439 @@
+{
+  "archive": "DOSE-The-Architecture-of-a-Tablet-source.zip",
+  "bytes": 14214141,
+  "sha256": "9571b6c88878ed33b02914561d08e41a2f67c14e59eaea5339d5134ecb264dfd",
+  "modified": "2026-10-12T21:55:29.396814",
+  "entryCount": 83,
+  "route": "dose",
+  "imported": "2026-10-12",
+  "entries": [
+    {
+      "path": "DOSE/.impeccable/design.json",
+      "bytes": 608,
+      "sha256": "3e4d0a829f001940942b8ee1742c226ba69a179a10eccb3ec93d3312891fc824"
+    },
+    {
+      "path": "DOSE/DESIGN.md",
+      "bytes": 6013,
+      "sha256": "bb879f8a0c71eb97c9bd20e56304ba28651485efedb3a1b1546e7ff860629e3c"
+    },
+    {
+      "path": "DOSE/FILE-MANIFEST.sha256",
+      "bytes": 7517,
+      "sha256": "c147cf8709927d61824c160deba7ea888e4c2b7ba4a2794b466fd1bec8ca3497"
+    },
+    {
+      "path": "DOSE/LICENSE",
+      "bytes": 1304,
+      "sha256": "724de9b121fbabbc372f19efacb9936459d9bcd0ed962ca141f35fc48f0a1256"
+    },
+    {
+      "path": "DOSE/OPEN-DOSE.cmd",
+      "bytes": 269,
+      "sha256": "f862d30e750f9cef9cf41da1eb2f6b7dce01dcf9357d2064e5c4e3255aa66f43"
+    },
+    {
+      "path": "DOSE/PRODUCT.md",
+      "bytes": 2510,
+      "sha256": "5d6c64f6d9cc8ef9c79ccd281d3c2b0bd084984e637f65b5f99b729b3d4c1423"
+    },
+    {
+      "path": "DOSE/README.md",
+      "bytes": 7295,
+      "sha256": "9364997be487147f90ce12e5fa3b6421a31c244a3cde5da7d45b9c58af5cf2cd"
+    },
+    {
+      "path": "DOSE/THIRD-PARTY-NOTICES.md",
+      "bytes": 2404,
+      "sha256": "8c394c0df19e5d095695415c0d6fece168460d2e75e6edf81939abf0e0b33139"
+    },
+    {
+      "path": "DOSE/assets/fonts/barlow-condensed-OFL.txt",
+      "bytes": 6167,
+      "sha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31"
+    },
+    {
+      "path": "DOSE/assets/fonts/barlow-condensed-latin-600.woff2",
+      "bytes": 22308,
+      "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+    },
+    {
+      "path": "DOSE/assets/fonts/barlow-condensed-latin-700.woff2",
+      "bytes": 22444,
+      "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8"
+    },
+    {
+      "path": "DOSE/assets/fonts/fonts.css",
+      "bytes": 915,
+      "sha256": "a676e8909ac2aa8890eec171a082e9e07ef297d712bae198f2160069347ac93a"
+    },
+    {
+      "path": "DOSE/assets/fonts/ibm-plex-mono-OFL.txt",
+      "bytes": 5299,
+      "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+    },
+    {
+      "path": "DOSE/assets/fonts/ibm-plex-mono-latin-400.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "DOSE/assets/fonts/ibm-plex-mono-latin-500.woff2",
+      "bytes": 14888,
+      "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+    },
+    {
+      "path": "DOSE/assets/fonts/space-grotesk-OFL.txt",
+      "bytes": 4401,
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+    },
+    {
+      "path": "DOSE/assets/fonts/space-grotesk-latin-variable.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "DOSE/assets/icon.svg",
+      "bytes": 233,
+      "sha256": "fceabac504c7bc0d70ac21a96565b5175655d31eb8a3e57856ebaec28d0df5fa"
+    },
+    {
+      "path": "DOSE/dist/LICENSE",
+      "bytes": 1304,
+      "sha256": "724de9b121fbabbc372f19efacb9936459d9bcd0ed962ca141f35fc48f0a1256"
+    },
+    {
+      "path": "DOSE/dist/THIRD-PARTY-NOTICES.md",
+      "bytes": 2404,
+      "sha256": "8c394c0df19e5d095695415c0d6fece168460d2e75e6edf81939abf0e0b33139"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/barlow-condensed-OFL.txt",
+      "bytes": 6167,
+      "sha256": "046ee27d8bddc6b6ee08eee53c96dbf3ec1f6df561644e018507dd8ffcb11d31"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/barlow-condensed-latin-600.woff2",
+      "bytes": 22308,
+      "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/barlow-condensed-latin-700.woff2",
+      "bytes": 22444,
+      "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/fonts.css",
+      "bytes": 915,
+      "sha256": "a676e8909ac2aa8890eec171a082e9e07ef297d712bae198f2160069347ac93a"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/ibm-plex-mono-OFL.txt",
+      "bytes": 5299,
+      "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/ibm-plex-mono-latin-400.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/ibm-plex-mono-latin-500.woff2",
+      "bytes": 14888,
+      "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/space-grotesk-OFL.txt",
+      "bytes": 4401,
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+    },
+    {
+      "path": "DOSE/dist/assets/fonts/space-grotesk-latin-variable.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "DOSE/dist/assets/icon.svg",
+      "bytes": 233,
+      "sha256": "fceabac504c7bc0d70ac21a96565b5175655d31eb8a3e57856ebaec28d0df5fa"
+    },
+    {
+      "path": "DOSE/dist/index.html",
+      "bytes": 16628,
+      "sha256": "c0b84ec6e4dcb8d041f1b76813d7e64d145a2a9efb779599e629be6b14550095"
+    },
+    {
+      "path": "DOSE/dist/src/app.js",
+      "bytes": 17904,
+      "sha256": "59b047b905a68b2d7efedf0464d5346ae53f4d151824cf61ed9dff11c4c07d9e"
+    },
+    {
+      "path": "DOSE/dist/src/fallback.js",
+      "bytes": 21195,
+      "sha256": "839c4ed7eb1781f37cbe425d3bf02fcb118cef98d031d1904e886799b4f1a922"
+    },
+    {
+      "path": "DOSE/dist/src/geometry.js",
+      "bytes": 24785,
+      "sha256": "036d2cda6888e8e63b65f25d06f2e3dda883b42c40d0e15db80e2f045d97a972"
+    },
+    {
+      "path": "DOSE/dist/src/scene.js",
+      "bytes": 30630,
+      "sha256": "6c36a6657d8f908e9eefa948542feb572685d8ea87cc5c87199a9235087a0181"
+    },
+    {
+      "path": "DOSE/dist/src/styles.css",
+      "bytes": 22557,
+      "sha256": "94f039ee596afa8d70312e0195b62878605d3b40da4472e99512bf0d330df31a"
+    },
+    {
+      "path": "DOSE/dist/src/timeline.js",
+      "bytes": 3289,
+      "sha256": "045dc6f577da8aef055607f84ce48cc9f4dbaee3488a40973d20316bae1d9027"
+    },
+    {
+      "path": "DOSE/dist/vendor/DEPENDENCIES.md",
+      "bytes": 1460,
+      "sha256": "e6e531a162d4c63312d8337480cfaebd22ebc527dc0720c642f2f3ebd3ff2ff1"
+    },
+    {
+      "path": "DOSE/dist/vendor/RoomEnvironment.js",
+      "bytes": 4972,
+      "sha256": "77d4d2bed2b60cb98424764264aedd84b56bbf3211e0f48430e15608aeded9dc"
+    },
+    {
+      "path": "DOSE/dist/vendor/lenis-LICENSE.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+    },
+    {
+      "path": "DOSE/dist/vendor/lenis.css",
+      "bytes": 513,
+      "sha256": "2f668ae84a668327f246faf8a770383a2bf69196d214290fbc4d5548910606c5"
+    },
+    {
+      "path": "DOSE/dist/vendor/lenis.mjs",
+      "bytes": 33166,
+      "sha256": "b7a2f6896b9ce086d8192ff17c91aad457447976764971fe5011c42169602e9e"
+    },
+    {
+      "path": "DOSE/dist/vendor/lenis.mjs.map",
+      "bytes": 64873,
+      "sha256": "caec501454f9e914bdf3633517f3f48506acb9970ae01133599ed5d7ed5b6641"
+    },
+    {
+      "path": "DOSE/dist/vendor/three-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "DOSE/dist/vendor/three.core.js",
+      "bytes": 1421746,
+      "sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583"
+    },
+    {
+      "path": "DOSE/dist/vendor/three.module.js",
+      "bytes": 639046,
+      "sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f"
+    },
+    {
+      "path": "DOSE/docs/ARCHITECTURE.md",
+      "bytes": 6054,
+      "sha256": "5231cc3a30bfac0b5df7497d319e311ab5fc2b495ee40c97d8a7fc221d4e8291"
+    },
+    {
+      "path": "DOSE/docs/PROCESS.md",
+      "bytes": 6994,
+      "sha256": "18d9dc2d7ec9c16aefd5dfa1b322d2a44fb232169c8b9e494be2f5b42eda82a0"
+    },
+    {
+      "path": "DOSE/docs/QA-RESULTS.json",
+      "bytes": 119179,
+      "sha256": "5d8532b72b23b149b7cd718c7da167497b82c400951851b528287815884f2ac3"
+    },
+    {
+      "path": "DOSE/docs/QA.md",
+      "bytes": 13201,
+      "sha256": "f5132d89f6f2eda685acd5da3918948d21cc04a31e2f4d3f0f11c7eca574ce08"
+    },
+    {
+      "path": "DOSE/docs/SOURCES.md",
+      "bytes": 9040,
+      "sha256": "a8d4812d0a733b8b725192189c751cecbeae183f56e9166f7edc0fa445d7730e"
+    },
+    {
+      "path": "DOSE/docs/concept-prompts.json",
+      "bytes": 4712,
+      "sha256": "f78678d52898c714ef6d81ed95a83cb9bbcd6e81010be585b848a1388cbee2b8"
+    },
+    {
+      "path": "DOSE/docs/concepts/00-prologue.png",
+      "bytes": 1880106,
+      "sha256": "f804e4b26e3afc6aba2b75dba10680f4102114f9f3a00fceb1ce5547a05257e9"
+    },
+    {
+      "path": "DOSE/docs/concepts/03-press.png",
+      "bytes": 1884209,
+      "sha256": "057a3339725c24743d600063204a28e81cffa297d8f044c364ad9f2c8dff6d19"
+    },
+    {
+      "path": "DOSE/docs/concepts/distribution.png",
+      "bytes": 2304952,
+      "sha256": "e941919aa5184f0fb94393a195a70ba422b862afc1f915be052f04d9ada51a76"
+    },
+    {
+      "path": "DOSE/docs/concepts/evidence.png",
+      "bytes": 1900945,
+      "sha256": "aa45c5efdaefe7b799f9fa09b0305c611686ce9eeed80936f3a0e115b0b2438c"
+    },
+    {
+      "path": "DOSE/docs/concepts/material.png",
+      "bytes": 2016805,
+      "sha256": "2b285fd4f728b0e09baaec3a9156d592c0acc41b776410851a98307101c8a1cd"
+    },
+    {
+      "path": "DOSE/docs/concepts/release.png",
+      "bytes": 2013439,
+      "sha256": "9f297138a53b0a55607b06793172cadd7359f7a94f17cdce0a088583dc1cbb80"
+    },
+    {
+      "path": "DOSE/docs/concepts/section-concept-record.json",
+      "bytes": 17548,
+      "sha256": "d74829f7b5789801a428ee440b1b14030be96dead478e65349bf5887dd66293a"
+    },
+    {
+      "path": "DOSE/docs/concepts/surface.png",
+      "bytes": 2043903,
+      "sha256": "2d21da31bc18c3862cde02ce4e1412e464ed00a46c68805f9f65c2fa50c3d561"
+    },
+    {
+      "path": "DOSE/docs/reviews/ART-DIRECTION.md",
+      "bytes": 13627,
+      "sha256": "c8a8915750efd156a5333bb792b2d2414c06ebb7f4dd4a0ca9986226e55fbe4a"
+    },
+    {
+      "path": "DOSE/docs/reviews/ENGINEERING.md",
+      "bytes": 9708,
+      "sha256": "9dde289e6bbdf834494e3b83006b4df78012a9099ae9a4a00ca5e82c58379785"
+    },
+    {
+      "path": "DOSE/index.html",
+      "bytes": 16628,
+      "sha256": "c0b84ec6e4dcb8d041f1b76813d7e64d145a2a9efb779599e629be6b14550095"
+    },
+    {
+      "path": "DOSE/package.json",
+      "bytes": 489,
+      "sha256": "1ae0102dc977ad758ea3847f73e9f82c58df1b831f7d7ba12afcf744d4f51c1a"
+    },
+    {
+      "path": "DOSE/scripts/build.mjs",
+      "bytes": 751,
+      "sha256": "6aa3184941431e6baa741df39cfc1e3a82a770c13dbf6a9c6cfc7c303e31301a"
+    },
+    {
+      "path": "DOSE/scripts/check.mjs",
+      "bytes": 1551,
+      "sha256": "d3098f9e01d56acc0d9ad499cd028e7853e508f05839c4428689dcba8e631d8b"
+    },
+    {
+      "path": "DOSE/scripts/serve.mjs",
+      "bytes": 3457,
+      "sha256": "79ec66fb745b8e37125545a51728e09bcc603eb272f732e53282a257d929d881"
+    },
+    {
+      "path": "DOSE/src/app.js",
+      "bytes": 17904,
+      "sha256": "59b047b905a68b2d7efedf0464d5346ae53f4d151824cf61ed9dff11c4c07d9e"
+    },
+    {
+      "path": "DOSE/src/fallback.js",
+      "bytes": 21195,
+      "sha256": "839c4ed7eb1781f37cbe425d3bf02fcb118cef98d031d1904e886799b4f1a922"
+    },
+    {
+      "path": "DOSE/src/geometry.js",
+      "bytes": 24785,
+      "sha256": "036d2cda6888e8e63b65f25d06f2e3dda883b42c40d0e15db80e2f045d97a972"
+    },
+    {
+      "path": "DOSE/src/scene.js",
+      "bytes": 30630,
+      "sha256": "6c36a6657d8f908e9eefa948542feb572685d8ea87cc5c87199a9235087a0181"
+    },
+    {
+      "path": "DOSE/src/styles.css",
+      "bytes": 22557,
+      "sha256": "94f039ee596afa8d70312e0195b62878605d3b40da4472e99512bf0d330df31a"
+    },
+    {
+      "path": "DOSE/src/timeline.js",
+      "bytes": 3289,
+      "sha256": "045dc6f577da8aef055607f84ce48cc9f4dbaee3488a40973d20316bae1d9027"
+    },
+    {
+      "path": "DOSE/tests/timeline.test.mjs",
+      "bytes": 3839,
+      "sha256": "2a14a9028547b484f9211f578e6594f94a42ee56294679b792d4233c7cca4bcb"
+    },
+    {
+      "path": "DOSE/vendor/DEPENDENCIES.md",
+      "bytes": 1460,
+      "sha256": "e6e531a162d4c63312d8337480cfaebd22ebc527dc0720c642f2f3ebd3ff2ff1"
+    },
+    {
+      "path": "DOSE/vendor/RoomEnvironment.js",
+      "bytes": 4972,
+      "sha256": "77d4d2bed2b60cb98424764264aedd84b56bbf3211e0f48430e15608aeded9dc"
+    },
+    {
+      "path": "DOSE/vendor/lenis-LICENSE.txt",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+    },
+    {
+      "path": "DOSE/vendor/lenis.css",
+      "bytes": 513,
+      "sha256": "2f668ae84a668327f246faf8a770383a2bf69196d214290fbc4d5548910606c5"
+    },
+    {
+      "path": "DOSE/vendor/lenis.mjs",
+      "bytes": 33166,
+      "sha256": "b7a2f6896b9ce086d8192ff17c91aad457447976764971fe5011c42169602e9e"
+    },
+    {
+      "path": "DOSE/vendor/lenis.mjs.map",
+      "bytes": 64873,
+      "sha256": "caec501454f9e914bdf3633517f3f48506acb9970ae01133599ed5d7ed5b6641"
+    },
+    {
+      "path": "DOSE/vendor/three-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "DOSE/vendor/three.core.js",
+      "bytes": 1421746,
+      "sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583"
+    },
+    {
+      "path": "DOSE/vendor/three.module.js",
+      "bytes": 639046,
+      "sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f"
+    }
+  ],
+  "omitted": [
+    "dist/ compiled duplicate",
+    "vendor runtime modules and source map; root packages reused",
+    "standalone package, scripts and OPEN-DOSE.cmd",
+    "local .impeccable tooling"
+  ],
+  "adaptations": [
+    "Three.js 0.183.2 delivery uses installed root 0.186.1; Lenis remains 1.3.26",
+    "Independent Vite document and base-aware local assets",
+    "Shared Collection return control",
+    "Height-aware typography and longer scroll handoffs",
+    "Registered world-frame handoff, early press-machinery exit and continuous chapter lighting"
+  ]
+}

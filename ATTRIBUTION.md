@@ -172,3 +172,21 @@ Original ZIP stays outside Git and deployment at `D:/下载/CRAVE-Before-the-Fir
 The supplied twelve-system typography experiment keeps its one semantic specimen, nine content nodes, live type/frame controls and authored pure handoffs. “Bw Stairs” by Dmitrijs Milajevs, CC BY 3.0, via Wikimedia Commons is the single actual runtime photograph; live cropping, contrast and raster processing are disclosed presentation changes. Original generated visual-bible plates stay in provenance as design references and are not deployed. Roboto Flex, Instrument Serif and IBM Plex Mono retain OFL, with original font/photo/software records. No application-wide open-source grant is inferred. [Photograph attribution](public/grid/licenses/PHOTO-ATTRIBUTION.md), [notices](public/grid/NOTICE.md) and [acceptance](docs/grid/ACCEPTANCE.md) preserve these distinctions.
 
 Original ZIP stays outside Git and deployment at `D:/下载/GRID-The-Architecture-of-Visual-Order.zip`, 22,328,651 bytes, SHA-256 `a482b66fca3ce9f76fbf08766e211005312770b4dad10b8290c75ca12f320fbc`. All 76 entry hashes and scoped omissions/adaptations are recorded in the delivery manifest. Root runtime and compiler dependencies are reused without updates.
+
+## DOSE — The architecture of a tablet
+
+Original source is MIT; see LICENSE. The hypothetical tablet, material roles, compression, cutaway and release are original qualitative CGI. No medicine, dosage instruction, scan data, formulation or clinical prediction is represented.
+
+Self-hosted Space Grotesk, Barlow Condensed and IBM Plex Mono retain their included SIL Open Font Licenses in assets/fonts/. Supplied notices are preserved in THIRD-PARTY-NOTICES.md; their vendor/docs paths describe the original standalone delivery. This edition reuses root Three.js 0.186.1 (including RoomEnvironment) and Lenis 1.3.26; local MIT notices are in licenses/ and built dependency inventory is in the Collection third-party-licenses.md. No dependency was updated.
+
+Generated concept references and original prompts remain in provenance/dose/upstream-docs/ and are not runtime assets. The Collection poster/social image is a capture of the actual procedural runtime. The original ZIP remains outside the repository. Import SHA-256 and all entry hashes are recorded in provenance/dose/IMPORT.json and the Collection delivery manifest.
+
+Original archive: `DOSE-The-Architecture-of-a-Tablet-source.zip`, 14,214,141 bytes, SHA-256 `9571b6c88878ed33b02914561d08e41a2f67c14e59eaea5339d5134ecb264dfd`, 83 entries.
+
+## COUNTERFORM — The Shape of Reading
+
+The integrated English typographic installation retains supplied source, real Fraunces and Roboto Flex files, and authored chapter artwork. The archive does not declare an overall application license; no project-wide grant is inferred. Lenis and Three.js use Collection-root dependency versions with MIT notices. Original ZIP: `COUNTERFORM-The-Shape-of-Reading-Refined-v2.zip`, 14,522,141 bytes, SHA-256 `a1e8d7dd3cac0c8f70829f8aa9c4e27c7c13c0b45afa21d551a9fc3f91a0262e`, 49 entries. Per-entry checksums and integration omissions/adaptations are recorded in `provenance/counterform/IMPORT.json` and the delivery manifest. Source history and concept references remain in provenance; the ZIP stays outside Git/deployment.
+
+## FERRUM — The Memory of Fire
+
+The integrated six-act digital steel sculpture retains supplied stills, licensed fonts, source research and authored interactive geometry. The archive does not declare an overall application license; no project-wide grant is inferred. Three.js 0.186.1 is reused; root Lenis 1.3.26 replaces supplied 1.3.17 without a dependency update. Original ZIP: `FERRUM-The-Memory-of-Fire-Source.zip`, 36,346,364 bytes, SHA-256 `d9c9e0601a102d024955704b62e00ddf01e0ac5e39a9f5fbc39f2fd2ca59e652`, 230 entries. Per-entry checksums and integration omissions/adaptations are recorded in `provenance/ferrum/IMPORT.json` and the delivery manifest. QA screenshots and upstream vendor/build tooling are not deployed; source reports remain in provenance. The ZIP stays outside Git/deployment.

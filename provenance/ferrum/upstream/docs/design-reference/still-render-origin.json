@@ -1,0 +1,2108 @@
+{
+  "createdAt": "2026-10-12T14:29:10.905Z",
+  "sourceSha256": {
+    "src/scene.js": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5",
+    "src/story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87",
+    "assets/textures/forged-steel.webp": "4ddb47ea53ffed98608d8c7a7a83767979b7e04a7ee72fc9d36229c5f2d0029c",
+    "assets/textures/polished-steel.webp": "d844dcaf8f6ff2c03efa6702a1bbb57b051b92c825a6d57db94d82435911601d"
+  },
+  "browser": "131.0.6778.0",
+  "format": "PNG, exact browser screenshot before WebP encoding",
+  "captures": [
+    {
+      "filename": "00-desktop.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1280,
+        "label": "desktop"
+      },
+      "index": 0,
+      "local": 0,
+      "state": {
+        "progress": 0,
+        "index": 0,
+        "act": {
+          "id": "before-form",
+          "name": "Before form",
+          "roman": "00",
+          "index": 0,
+          "travel": 1.55,
+          "start": 0,
+          "end": 0.12863070539419086,
+          "hold": 0.05531120331950207,
+          "holdRange": [
+            0.023153526970954352,
+            0.08232365145228215
+          ],
+          "stable": 0.18,
+          "handoff": 0.64
+        },
+        "local": 0,
+        "reducedMotion": false,
+        "shape": 0,
+        "heat": 0.015,
+        "polish": 0,
+        "oxide": 1,
+        "camera": {
+          "position": [
+            0.4,
+            1.3,
+            11.8
+          ],
+          "target": [
+            0.4,
+            0.45,
+            0
+          ],
+          "fov": 30
+        },
+        "object": {
+          "position": [
+            0.95,
+            -0.52,
+            0
+          ],
+          "rotation": [
+            0.035,
+            -1.02,
+            -0.11
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.08,
+            -0.63,
+            -0.9
+          ],
+          "scale": 0.58,
+          "worldY": 0.2,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 3.9,
+          "tilt": -0.1,
+          "compression": 0,
+          "contactX": 0.4,
+          "contactY": 0.07999999999999996
+        },
+        "strikePulses": [
+          {
+            "age": -14.615999999999998,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": -17.052,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.38,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 0,
+          "next": 1,
+          "nextWeight": 0
+        },
+        "phase": "enter"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 36,
+        "rafScheduled": true,
+        "progress": 0,
+        "maxScroll": 15424,
+        "width": 1920,
+        "height": 1280,
+        "stableHeight": 1280,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 4,
+          "triangles": 1660,
+          "points": 33,
+          "lines": 0,
+          "geometries": 4,
+          "textures": 5,
+          "programs": 4,
+          "width": 1920,
+          "height": 1280,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 31,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "before-form"
+        }
+      }
+    },
+    {
+      "filename": "01-desktop.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1280,
+        "label": "desktop"
+      },
+      "index": 1,
+      "local": 0.43,
+      "state": {
+        "progress": 0.1981976141078838,
+        "index": 1,
+        "act": {
+          "id": "furnace",
+          "name": "The furnace",
+          "roman": "I",
+          "index": 1,
+          "travel": 1.95,
+          "start": 0.12863070539419086,
+          "end": 0.2904564315352697,
+          "hold": 0.19821576763485477,
+          "holdRange": [
+            0.16099585062240662,
+            0.22734439834024894
+          ],
+          "stable": 0.2,
+          "handoff": 0.61
+        },
+        "local": 0.4298878205128206,
+        "reducedMotion": false,
+        "shape": 0.03168025136643513,
+        "heat": 0.8990605660547182,
+        "polish": 0.011519313575057154,
+        "oxide": 0.9290153569172047,
+        "camera": {
+          "position": [
+            0.25,
+            2.05,
+            10.8
+          ],
+          "target": [
+            0.35,
+            -0.2,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.15,
+            -0.1,
+            0
+          ],
+          "rotation": [
+            0.04,
+            -0.51,
+            0.16
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.18,
+            -0.45,
+            0.84
+          ],
+          "scale": 0.69,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 1,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 3.9,
+          "tilt": -0.1,
+          "compression": 0,
+          "contactX": 0.4,
+          "contactY": 0.485585485628272
+        },
+        "strikePulses": [
+          {
+            "age": -6.30478125,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": -8.740781250000001,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.13993972961942994,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 1,
+          "next": 2,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 62,
+        "rafScheduled": true,
+        "progress": 0.1981976141078838,
+        "maxScroll": 15424,
+        "width": 1920,
+        "height": 1280,
+        "stableHeight": 1280,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 5,
+          "triangles": 19002,
+          "points": 33,
+          "lines": 0,
+          "geometries": 7,
+          "textures": 5,
+          "programs": 7,
+          "width": 1920,
+          "height": 1280,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 57,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "furnace"
+        }
+      }
+    },
+    {
+      "filename": "02-desktop.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1280,
+        "label": "desktop"
+      },
+      "index": 2,
+      "local": 0.295,
+      "state": {
+        "progress": 0.3516597510373444,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.2950000000000003,
+        "reducedMotion": false,
+        "shape": 0.21800637232590053,
+        "heat": 0.8742319388509905,
+        "polish": 0.028910654171345074,
+        "oxide": 0.871275474537037,
+        "camera": {
+          "position": [
+            1.25,
+            2.4473098129112607,
+            11.895772563146267
+          ],
+          "target": [
+            0.4,
+            0.27,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3,
+            -0.055217881250124834,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            0.9799167271938668,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.64,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 1,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 0.11390625000000307,
+          "tilt": 0.0010742187500000324,
+          "compression": 0.02008327280613324,
+          "contactX": 0.4,
+          "contactY": 0.44558921934159035
+        },
+        "strikePulses": [
+          {
+            "age": 0.13050000000000203,
+            "seed": 1277,
+            "weight": 0.3089734277866652
+          },
+          {
+            "age": -2.305499999999998,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.06744235676969734,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 89,
+        "rafScheduled": true,
+        "progress": 0.3516597510373444,
+        "maxScroll": 15424,
+        "width": 1920,
+        "height": 1280,
+        "stableHeight": 1280,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 10,
+          "triangles": 2646,
+          "points": 33,
+          "lines": 34,
+          "geometries": 14,
+          "textures": 5,
+          "programs": 10,
+          "width": 1920,
+          "height": 1280,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 84,
+          "activeParticles": 34,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      }
+    },
+    {
+      "filename": "03-desktop.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1280,
+        "label": "desktop"
+      },
+      "index": 3,
+      "local": 0.43,
+      "state": {
+        "progress": 0.5763744813278008,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.42968750000000006,
+        "reducedMotion": false,
+        "shape": 0.961773382462753,
+        "heat": 0.21080405553128878,
+        "polish": 0.048739214424310624,
+        "oxide": 0.7794357990810832,
+        "camera": {
+          "position": [
+            0.75,
+            2.8,
+            15.4
+          ],
+          "target": [
+            0.55,
+            0.4,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.65,
+            0.05000243546875005,
+            0
+          ],
+          "rotation": [
+            0.36,
+            -0.18,
+            0.8
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.45,
+            -0.06,
+            1.01
+          ],
+          "scale": 0.5,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 1,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.21239554644819747
+        },
+        "strikePulses": [
+          {
+            "age": 9.553687499999999,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 7.1176875,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.09291696594217133,
+        "mist": 1,
+        "water": 1,
+        "quench": 0.4129562694808271,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 119,
+        "rafScheduled": true,
+        "progress": 0.5763744813278008,
+        "maxScroll": 15424,
+        "width": 1920,
+        "height": 1280,
+        "stableHeight": 1280,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 5,
+          "triangles": 1660,
+          "points": 61,
+          "lines": 0,
+          "geometries": 16,
+          "textures": 6,
+          "programs": 13,
+          "width": 1920,
+          "height": 1280,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 114,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      }
+    },
+    {
+      "filename": "04-desktop.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1280,
+        "label": "desktop"
+      },
+      "index": 4,
+      "local": 0.43,
+      "state": {
+        "progress": 0.7625129668049793,
+        "index": 4,
+        "act": {
+          "id": "edge",
+          "name": "Reveal the edge",
+          "roman": "IV",
+          "index": 4,
+          "travel": 2.3,
+          "start": 0.6804979253112032,
+          "end": 0.871369294605809,
+          "hold": 0.7625726141078837,
+          "holdRange": [
+            0.7205809128630705,
+            0.8255601659751036
+          ],
+          "stable": 0.21,
+          "handoff": 0.76
+        },
+        "local": 0.42968750000000056,
+        "reducedMotion": false,
+        "shape": 1,
+        "heat": 0,
+        "polish": 0.5955910061235101,
+        "oxide": 0.29552115321655664,
+        "camera": {
+          "position": [
+            0.4,
+            2,
+            7.9
+          ],
+          "target": [
+            0.55,
+            0.26,
+            0
+          ],
+          "fov": 28
+        },
+        "object": {
+          "position": [
+            1.85,
+            -0.35,
+            0
+          ],
+          "rotation": [
+            0.66,
+            -0.1,
+            0.64
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.67,
+            -0.07,
+            0.8
+          ],
+          "scale": 0.78,
+          "worldY": 0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 1,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.20499999999999996
+        },
+        "strikePulses": [
+          {
+            "age": 17.359218750000004,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 14.923218750000002,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.16369978652827777,
+        "mist": 0,
+        "water": 0,
+        "quench": 1,
+        "captions": {
+          "current": 4,
+          "next": 5,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 146,
+        "rafScheduled": true,
+        "progress": 0.7625129668049793,
+        "maxScroll": 15424,
+        "width": 1920,
+        "height": 1280,
+        "stableHeight": 1280,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 2,
+          "triangles": 1656,
+          "points": 33,
+          "lines": 0,
+          "geometries": 16,
+          "textures": 6,
+          "programs": 13,
+          "width": 1920,
+          "height": 1280,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 141,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "edge"
+        }
+      }
+    },
+    {
+      "filename": "05-desktop.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1280,
+        "label": "desktop"
+      },
+      "index": 5,
+      "local": 0.43,
+      "state": {
+        "progress": 0.9266727178423236,
+        "index": 5,
+        "act": {
+          "id": "relic",
+          "name": "The relic",
+          "roman": "V",
+          "index": 5,
+          "travel": 1.55,
+          "start": 0.871369294605809,
+          "end": 1,
+          "hold": 0.9266804979253112,
+          "holdRange": [
+            0.900954356846473,
+            1
+          ],
+          "stable": 0.23,
+          "handoff": 1
+        },
+        "local": 0.4299395161290326,
+        "reducedMotion": false,
+        "shape": 1,
+        "heat": 0,
+        "polish": 1,
+        "oxide": 0.12,
+        "camera": {
+          "position": [
+            0.4,
+            2.8,
+            17.1
+          ],
+          "target": [
+            0.3,
+            0.5,
+            0
+          ],
+          "fov": 31
+        },
+        "object": {
+          "position": [
+            0.7,
+            -0.55,
+            0
+          ],
+          "rotation": [
+            0.58,
+            -0.35,
+            0.17
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.68,
+            -0.13,
+            0.95
+          ],
+          "scale": 0.53,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 1
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.405
+        },
+        "strikePulses": [
+          {
+            "age": 24.243093749999996,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 21.807093749999996,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.35,
+        "mist": 0,
+        "water": 0,
+        "quench": 1,
+        "captions": {
+          "current": 5,
+          "next": 5,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 172,
+        "rafScheduled": true,
+        "progress": 0.9266727178423236,
+        "maxScroll": 15424,
+        "width": 1920,
+        "height": 1280,
+        "stableHeight": 1280,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 4,
+          "triangles": 1660,
+          "points": 33,
+          "lines": 0,
+          "geometries": 16,
+          "textures": 6,
+          "programs": 13,
+          "width": 1920,
+          "height": 1280,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 167,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "relic"
+        }
+      }
+    },
+    {
+      "filename": "00-mobile.png",
+      "viewport": {
+        "width": 780,
+        "height": 1688,
+        "label": "mobile"
+      },
+      "index": 0,
+      "local": 0,
+      "state": {
+        "progress": 0,
+        "index": 0,
+        "act": {
+          "id": "before-form",
+          "name": "Before form",
+          "roman": "00",
+          "index": 0,
+          "travel": 1.55,
+          "start": 0,
+          "end": 0.12863070539419086,
+          "hold": 0.05531120331950207,
+          "holdRange": [
+            0.023153526970954352,
+            0.08232365145228215
+          ],
+          "stable": 0.18,
+          "handoff": 0.64
+        },
+        "local": 0,
+        "reducedMotion": false,
+        "shape": 0,
+        "heat": 0.015,
+        "polish": 0,
+        "oxide": 1,
+        "camera": {
+          "position": [
+            0.4,
+            1.3,
+            11.8
+          ],
+          "target": [
+            0.4,
+            0.45,
+            0
+          ],
+          "fov": 30
+        },
+        "object": {
+          "position": [
+            0.95,
+            -0.52,
+            0
+          ],
+          "rotation": [
+            0.035,
+            -1.02,
+            -0.11
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.08,
+            -0.63,
+            -0.9
+          ],
+          "scale": 0.58,
+          "worldY": 0.2,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 3.9,
+          "tilt": -0.1,
+          "compression": 0,
+          "contactX": 0.4,
+          "contactY": 0.07999999999999996
+        },
+        "strikePulses": [
+          {
+            "age": -14.615999999999998,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": -17.052,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.38,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 0,
+          "next": 1,
+          "nextWeight": 0
+        },
+        "phase": "enter"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 37,
+        "rafScheduled": true,
+        "progress": 0,
+        "maxScroll": 20340.4,
+        "width": 780,
+        "height": 1688,
+        "stableHeight": 1688,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 4,
+          "triangles": 1660,
+          "points": 33,
+          "lines": 0,
+          "geometries": 4,
+          "textures": 5,
+          "programs": 4,
+          "width": 780,
+          "height": 1688,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 31,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "before-form"
+        }
+      }
+    },
+    {
+      "filename": "01-mobile.png",
+      "viewport": {
+        "width": 780,
+        "height": 1688,
+        "label": "mobile"
+      },
+      "index": 1,
+      "local": 0.43,
+      "state": {
+        "progress": 0.19817702700045228,
+        "index": 1,
+        "act": {
+          "id": "furnace",
+          "name": "The furnace",
+          "roman": "I",
+          "index": 1,
+          "travel": 1.95,
+          "start": 0.12863070539419086,
+          "end": 0.2904564315352697,
+          "hold": 0.19821576763485477,
+          "holdRange": [
+            0.16099585062240662,
+            0.22734439834024894
+          ],
+          "stable": 0.2,
+          "handoff": 0.61
+        },
+        "local": 0.4297606027463847,
+        "reducedMotion": false,
+        "shape": 0.031673452791482995,
+        "heat": 0.8990147054642059,
+        "polish": 0.0115172339231426,
+        "oxide": 0.929026066287528,
+        "camera": {
+          "position": [
+            0.25,
+            2.05,
+            10.8
+          ],
+          "target": [
+            0.35,
+            -0.2,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.15,
+            -0.1,
+            0
+          ],
+          "rotation": [
+            0.04,
+            -0.51,
+            0.16
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.18,
+            -0.45,
+            0.84
+          ],
+          "scale": 0.69,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 1,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 3.9,
+          "tilt": -0.1,
+          "compression": 0,
+          "contactX": 0.4,
+          "contactY": 0.4855885789798753
+        },
+        "strikePulses": [
+          {
+            "age": -6.3056445497630325,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": -8.741644549763032,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.13996572529079093,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 1,
+          "next": 2,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 65,
+        "rafScheduled": true,
+        "progress": 0.19817702700045228,
+        "maxScroll": 20340.4,
+        "width": 780,
+        "height": 1688,
+        "stableHeight": 1688,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 5,
+          "triangles": 19002,
+          "points": 33,
+          "lines": 0,
+          "geometries": 7,
+          "textures": 5,
+          "programs": 7,
+          "width": 780,
+          "height": 1688,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 59,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "furnace"
+        }
+      }
+    },
+    {
+      "filename": "02-mobile.png",
+      "viewport": {
+        "width": 780,
+        "height": 1688,
+        "label": "mobile"
+      },
+      "index": 2,
+      "local": 0.295,
+      "state": {
+        "progress": 0.35161550411987963,
+        "index": 2,
+        "act": {
+          "id": "strike",
+          "name": "The strike",
+          "roman": "II",
+          "index": 2,
+          "travel": 2.5,
+          "start": 0.2904564315352697,
+          "end": 0.49792531120331945,
+          "hold": 0.3402489626556016,
+          "holdRange": [
+            0.32157676348547715,
+            0.43983402489626555
+          ],
+          "stable": 0.15,
+          "handoff": 0.72
+        },
+        "local": 0.29478672985782,
+        "reducedMotion": false,
+        "shape": 0.21717791888426186,
+        "heat": 0.8741913940803638,
+        "polish": 0.028905498975645462,
+        "oxide": 0.8712805558933425,
+        "camera": {
+          "position": [
+            1.25,
+            2.4477812930457197,
+            11.896513460500417
+          ],
+          "target": [
+            0.4,
+            0.27,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.3,
+            -0.05494239117392419,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            0.9795785397280501,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.64,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 1,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 0.11121483434357743,
+          "tilt": 0.001045238675906812,
+          "compression": 0.02042146027194989,
+          "contactX": 0.4,
+          "contactY": 0.44624165573373664
+        },
+        "strikePulses": [
+          {
+            "age": 0.12864454976303286,
+            "seed": 1277,
+            "weight": 0.31417631187615214
+          },
+          {
+            "age": -2.307355450236967,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.0674747365479966,
+        "mist": 0,
+        "water": 0,
+        "quench": 0,
+        "captions": {
+          "current": 2,
+          "next": 3,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 94,
+        "rafScheduled": true,
+        "progress": 0.35161550411987963,
+        "maxScroll": 20340.4,
+        "width": 780,
+        "height": 1688,
+        "stableHeight": 1688,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 10,
+          "triangles": 2646,
+          "points": 33,
+          "lines": 34,
+          "geometries": 14,
+          "textures": 5,
+          "programs": 10,
+          "width": 780,
+          "height": 1688,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 88,
+          "activeParticles": 34,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged"
+          ],
+          "detailFailures": [],
+          "act": "strike"
+        }
+      }
+    },
+    {
+      "filename": "03-mobile.png",
+      "viewport": {
+        "width": 780,
+        "height": 1688,
+        "label": "mobile"
+      },
+      "index": 3,
+      "local": 0.43,
+      "state": {
+        "progress": 0.5763898448408094,
+        "index": 3,
+        "act": {
+          "id": "temperature",
+          "name": "Between temperatures",
+          "roman": "III",
+          "index": 3,
+          "travel": 2.2,
+          "start": 0.49792531120331945,
+          "end": 0.6804979253112032,
+          "hold": 0.5764315352697095,
+          "holdRange": [
+            0.5307883817427386,
+            0.6239004149377593
+          ],
+          "stable": 0.18,
+          "handoff": 0.69
+        },
+        "local": 0.42977165015079705,
+        "reducedMotion": false,
+        "shape": 0.9617788691161302,
+        "heat": 0.21063225690307386,
+        "polish": 0.048739835097515505,
+        "oxide": 0.7794301409965462,
+        "camera": {
+          "position": [
+            0.75,
+            2.8,
+            15.4
+          ],
+          "target": [
+            0.55,
+            0.4,
+            0
+          ],
+          "fov": 32
+        },
+        "object": {
+          "position": [
+            1.65,
+            0.05000130071306508,
+            0
+          ],
+          "rotation": [
+            0.36,
+            -0.18,
+            0.8
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.45,
+            -0.06,
+            1.01
+          ],
+          "scale": 0.5,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 1,
+          "reveal": 0,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": 0.21239191526522583
+        },
+        "strikePulses": [
+          {
+            "age": 9.554331753554502,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 7.118331753554502,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.09292194122448691,
+        "mist": 1,
+        "water": 1,
+        "quench": 0.41319572001607735,
+        "captions": {
+          "current": 3,
+          "next": 4,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 124,
+        "rafScheduled": true,
+        "progress": 0.5763898448408094,
+        "maxScroll": 20340.4,
+        "width": 780,
+        "height": 1688,
+        "stableHeight": 1688,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 5,
+          "triangles": 1660,
+          "points": 61,
+          "lines": 0,
+          "geometries": 16,
+          "textures": 6,
+          "programs": 13,
+          "width": 780,
+          "height": 1688,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 118,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "temperature"
+        }
+      }
+    },
+    {
+      "filename": "04-mobile.png",
+      "viewport": {
+        "width": 780,
+        "height": 1688,
+        "label": "mobile"
+      },
+      "index": 4,
+      "local": 0.43,
+      "state": {
+        "progress": 0.7625710408841517,
+        "index": 4,
+        "act": {
+          "id": "edge",
+          "name": "Reveal the edge",
+          "roman": "IV",
+          "index": 4,
+          "travel": 2.3,
+          "start": 0.6804979253112032,
+          "end": 0.871369294605809,
+          "hold": 0.7625726141078837,
+          "holdRange": [
+            0.7205809128630705,
+            0.8255601659751036
+          ],
+          "stable": 0.21,
+          "handoff": 0.76
+        },
+        "local": 0.429991757675665,
+        "reducedMotion": false,
+        "shape": 1,
+        "heat": 0,
+        "polish": 0.5959892101155215,
+        "oxide": 0.2953318074630054,
+        "camera": {
+          "position": [
+            0.4,
+            2,
+            7.9
+          ],
+          "target": [
+            0.55,
+            0.26,
+            0
+          ],
+          "fov": 28
+        },
+        "object": {
+          "position": [
+            1.85,
+            -0.35,
+            0
+          ],
+          "rotation": [
+            0.66,
+            -0.1,
+            0.64
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.67,
+            -0.07,
+            0.8
+          ],
+          "scale": 0.78,
+          "worldY": 0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 1,
+          "relic": 0
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.20499999999999996
+        },
+        "strikePulses": [
+          {
+            "age": 17.36165402843602,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 14.925654028436023,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": -0.16282373774585251,
+        "mist": 0,
+        "water": 0,
+        "quench": 1,
+        "captions": {
+          "current": 4,
+          "next": 5,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 151,
+        "rafScheduled": true,
+        "progress": 0.7625710408841517,
+        "maxScroll": 20340.4,
+        "width": 780,
+        "height": 1688,
+        "stableHeight": 1688,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 2,
+          "triangles": 1656,
+          "points": 33,
+          "lines": 0,
+          "geometries": 16,
+          "textures": 6,
+          "programs": 13,
+          "width": 780,
+          "height": 1688,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 145,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "edge"
+        }
+      }
+    },
+    {
+      "filename": "05-mobile.png",
+      "viewport": {
+        "width": 780,
+        "height": 1688,
+        "label": "mobile"
+      },
+      "index": 5,
+      "local": 0.43,
+      "state": {
+        "progress": 0.9266779414367465,
+        "index": 5,
+        "act": {
+          "id": "relic",
+          "name": "The relic",
+          "roman": "V",
+          "index": 5,
+          "travel": 1.55,
+          "start": 0.871369294605809,
+          "end": 1,
+          "hold": 0.9266804979253112,
+          "holdRange": [
+            0.900954356846473,
+            1
+          ],
+          "stable": 0.23,
+          "handoff": 1
+        },
+        "local": 0.42998012536309443,
+        "reducedMotion": false,
+        "shape": 1,
+        "heat": 0,
+        "polish": 1,
+        "oxide": 0.12,
+        "camera": {
+          "position": [
+            0.4,
+            2.8,
+            17.1
+          ],
+          "target": [
+            0.3,
+            0.5,
+            0
+          ],
+          "fov": 31
+        },
+        "object": {
+          "position": [
+            0.7,
+            -0.55,
+            0
+          ],
+          "rotation": [
+            0.58,
+            -0.35,
+            0.17
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "portrait": {
+          "rotation": [
+            0.68,
+            -0.13,
+            0.95
+          ],
+          "scale": 0.53,
+          "worldY": -0.15,
+          "camera": [
+            0,
+            2.4,
+            15.4
+          ],
+          "target": [
+            0,
+            0.55,
+            0
+          ],
+          "fov": 36
+        },
+        "lights": {
+          "furnace": 0,
+          "strike": 0,
+          "cooling": 0,
+          "reveal": 0,
+          "relic": 1
+        },
+        "hammer": {
+          "height": 4.1,
+          "tilt": -0.12,
+          "compression": 0,
+          "contactX": 1.4499999999999997,
+          "contactY": -0.405
+        },
+        "strikePulses": [
+          {
+            "age": 24.24331279620853,
+            "seed": 1277,
+            "weight": 0
+          },
+          {
+            "age": 21.807312796208528,
+            "seed": 6179,
+            "weight": 0
+          }
+        ],
+        "reflection": 0.35,
+        "mist": 0,
+        "water": 0,
+        "quench": 1,
+        "captions": {
+          "current": 5,
+          "next": 5,
+          "nextWeight": 0
+        },
+        "phase": "hold"
+      },
+      "diagnostics": {
+        "ready": true,
+        "contextLost": false,
+        "importFailed": false,
+        "sceneFailed": false,
+        "frames": 178,
+        "rafScheduled": true,
+        "progress": 0.9266779414367465,
+        "maxScroll": 20340.4,
+        "width": 780,
+        "height": 1688,
+        "stableHeight": 1688,
+        "quality": "high",
+        "preferenceQuality": "high",
+        "reducedMotion": false,
+        "soundEnabled": false,
+        "audioState": "uninitialized",
+        "scene": {
+          "calls": 4,
+          "triangles": 1660,
+          "points": 33,
+          "lines": 0,
+          "geometries": 16,
+          "textures": 6,
+          "programs": 13,
+          "width": 780,
+          "height": 1688,
+          "dpr": 1,
+          "quality": "high",
+          "ready": true,
+          "contextLost": false,
+          "frameCount": 172,
+          "activeParticles": 0,
+          "metalVertices": 1682,
+          "detailMaps": [
+            "forged",
+            "polished"
+          ],
+          "detailFailures": [],
+          "act": "relic"
+        }
+      }
+    }
+  ],
+  "complete": true,
+  "encoding": {
+    "library": "Pillow 12.3.0",
+    "format": "WebP",
+    "quality": 94,
+    "method": 6,
+    "colorMode": "RGB",
+    "resize": false,
+    "crop": false,
+    "retouch": false
+  },
+  "outputs": [
+    {
+      "path": "assets/stills/00-desktop.webp",
+      "dimensions": [
+        1920,
+        1280
+      ],
+      "bytes": 74624,
+      "sha256": "820c9fa816bf000aff507866d0d99fe6b9a27c89a9f3ddc56b137d022797ba86",
+      "sourcePngSha256": "6319fae7dae0d440b83a4ed4e439717f44f7a8f96a35e2cb3348e115dbbbedaa"
+    },
+    {
+      "path": "assets/stills/00-mobile.webp",
+      "dimensions": [
+        780,
+        1688
+      ],
+      "bytes": 33658,
+      "sha256": "e17c46045cc1c01e4f7ef1f62f038f4c7c817399c008719df901a699b4846904",
+      "sourcePngSha256": "9f1cd0d91ce9b86445621671e1418a4997986b9f400d4a31af93ae4cbbc18755"
+    },
+    {
+      "path": "assets/stills/01-desktop.webp",
+      "dimensions": [
+        1920,
+        1280
+      ],
+      "bytes": 59028,
+      "sha256": "f4e10d4d306ccdbafc2c0e505d8cb24e870be52d14fc674e91bed741dae26c3e",
+      "sourcePngSha256": "41ac9c28dc0cd29f0ada20c29d8165954ba974df4851bb77b9a815f3360d606e"
+    },
+    {
+      "path": "assets/stills/01-mobile.webp",
+      "dimensions": [
+        780,
+        1688
+      ],
+      "bytes": 28570,
+      "sha256": "3ac746f736504e7d75a46419898a7531ace9f357e1fc13ef5630286118adbadb",
+      "sourcePngSha256": "2b7f14a6d88d7f57988dcd8150cbf68f53750f5af87d29fa396954b09fb934df"
+    },
+    {
+      "path": "assets/stills/02-desktop.webp",
+      "dimensions": [
+        1920,
+        1280
+      ],
+      "bytes": 59960,
+      "sha256": "8e64f0037578da95b4beee3dfbf904d1a68fae54b8f8dec354b77d93518fb918",
+      "sourcePngSha256": "108ed1a6abcdb2cd5c5a07e481f288bb80f6f06c537101fc99235341b958d973"
+    },
+    {
+      "path": "assets/stills/02-mobile.webp",
+      "dimensions": [
+        780,
+        1688
+      ],
+      "bytes": 23578,
+      "sha256": "bd94df7963dee3dca070c50c6e5c931fb044d7a059ae59a9d51fee68a88d4623",
+      "sourcePngSha256": "7d5308f2e8b352840d191437580c1ba4589a75adc1adbe06bde37f3f3fe80bb3"
+    },
+    {
+      "path": "assets/stills/03-desktop.webp",
+      "dimensions": [
+        1920,
+        1280
+      ],
+      "bytes": 34832,
+      "sha256": "8702170c947be7eef2be26f82c7c88f9de89d76958fdd896bbd5b1214ed138fe",
+      "sourcePngSha256": "0257e869d15e5b0261e72023ec65fdcea1a56817ee0fd94db95e1c9ea768d293"
+    },
+    {
+      "path": "assets/stills/03-mobile.webp",
+      "dimensions": [
+        780,
+        1688
+      ],
+      "bytes": 16668,
+      "sha256": "7974ca2d0753398afd58835f66db6f751dc303b5289eb10c069a28c23a8b60e6",
+      "sourcePngSha256": "dee2336abec9882e683bd571e9d081b3cdef84462f357c9c3b6904c9b242d215"
+    },
+    {
+      "path": "assets/stills/04-desktop.webp",
+      "dimensions": [
+        1920,
+        1280
+      ],
+      "bytes": 74350,
+      "sha256": "95fed5dadde3761b4bdfb88af38328527df90487967123e58bb3be4bd08e7324",
+      "sourcePngSha256": "822c43515ca6145ba4ea5ab3f0da99f79a98267d2dc840ec1365783a4c14963d"
+    },
+    {
+      "path": "assets/stills/04-mobile.webp",
+      "dimensions": [
+        780,
+        1688
+      ],
+      "bytes": 18838,
+      "sha256": "82616b78401b97d9a819f92e77be39a00f345d8e93500218353d6743ea8ac18b",
+      "sourcePngSha256": "c0bcc5851b8853b79aa07426ee72715eb585957f531e244c5a5a84895db8516b"
+    },
+    {
+      "path": "assets/stills/05-desktop.webp",
+      "dimensions": [
+        1920,
+        1280
+      ],
+      "bytes": 24446,
+      "sha256": "1aff2ab74b6276c3d0eca5cb041858438c7034502f4d53e89c61a9bd5b45d2e6",
+      "sourcePngSha256": "3c121d1e9b19587b701efb8a43fc8cf585a8c80f2510a2bf3b5d7ab57993937b"
+    },
+    {
+      "path": "assets/stills/05-mobile.webp",
+      "dimensions": [
+        780,
+        1688
+      ],
+      "bytes": 13578,
+      "sha256": "093b7f3df70494abf61e68326a02ea1b006d5df7d170f40a2c31830e886e52e6",
+      "sourcePngSha256": "94271aa260b5cf8729b5a0b255ef36a0eeda99178e64a4f65d720dc731908a50"
+    }
+  ]
+}

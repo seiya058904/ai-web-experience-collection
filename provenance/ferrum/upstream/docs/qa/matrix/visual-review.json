@@ -1,0 +1,2605 @@
+{
+  "createdAt": "2026-10-12T14:52:33.329142+00:00",
+  "status": "pass",
+  "reviewedCount": 108,
+  "candidateCount": 0,
+  "mustFixCount": 0,
+  "scope": "All 108 fresh captures were opened through 36 whole-frame act strips; specific boundary cases were checked at original size. No passes were inherited from the aborted matrix.",
+  "sourceSha256": {
+    "index.html": "d555f67c54a330723597a542a3a9bea86d49ad742fd859c7243187212ceb0f88",
+    "src/audio.js": "eb58adb3419062f8c997bc6b50e7872868fbfe28dc0c13e0c0331e462819eb15",
+    "src/main.js": "b36374d32c95a259499387586e7bf85126ae95eeeec50d114ced7c4985be3045",
+    "src/scene.js": "5d3cee02106b808f40bbabf01cfb4b61e5db4bdfb051e58a72bde65505e5ebb5",
+    "src/story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87",
+    "src/styles.css": "cb2973bd244112de30dd7c0908d952051c5413e3f5bb49d9bbc4ac0d6ece8a1c"
+  },
+  "captureResultsSha256": "0bdd7d3869517cab0b42f485eee7c13d33aa73948ecd6435ab4dea788de4ca5a",
+  "portableCaptureResults": "capture-results.portable.json",
+  "captureAttempts": [
+    {
+      "id": "initial-30s",
+      "startedAt": "2026-10-12T14:30:00.821Z",
+      "completedAt": "2026-10-12T14:42:55.879Z",
+      "status": "incomplete",
+      "successfulFrames": 96,
+      "retainedFrames": 90,
+      "internalArchiveReference": "final-matrix-internal-attempts/initial-30s.json",
+      "archiveIncludedInDelivery": false,
+      "reportSha256": "a8c61a34771110148a1711588a9439242ab6bf45ba9a58c6c95061e6274d15ff",
+      "screenshotTimeout": 30000
+    },
+    {
+      "id": "4k-120s",
+      "startedAt": "2026-10-12T14:44:03.144Z",
+      "completedAt": "2026-10-12T14:50:14.374Z",
+      "status": "complete",
+      "successfulFrames": 18,
+      "retainedFrames": 18,
+      "internalArchiveReference": "final-matrix-internal-attempts/4k-120s.json",
+      "archiveIncludedInDelivery": false,
+      "reportSha256": "00479a0ea84b165c5a8af05df3c7e8aa6cc7d025cb8981f9cb0ba11c317a20df",
+      "screenshotTimeout": 120000
+    }
+  ],
+  "recoveredHarnessFailures": [
+    {
+      "viewport": "3840x2160",
+      "requested": {
+        "index": 2,
+        "act": "strike",
+        "phase": "enter",
+        "local": 0.08
+      },
+      "error": "page.screenshot exceeded the 30000 ms timeout.",
+      "captureAttemptId": "initial-30s",
+      "resolution": "The entire 4K viewport was recaptured successfully with a 120000 ms screenshot timeout, unchanged scene quality and identical source hashes."
+    }
+  ],
+  "contactSheets": {
+    "360x780": "contact-sheets/360x780.jpg",
+    "390x844": "contact-sheets/390x844.jpg",
+    "768x1024": "contact-sheets/768x1024.jpg",
+    "1440x900": "contact-sheets/1440x900.jpg",
+    "1920x1080": "contact-sheets/1920x1080.jpg",
+    "3840x2160": "contact-sheets/3840x2160.jpg"
+  },
+  "resolvedRegressions": [
+    {
+      "id": "anvil-intersection",
+      "result": "closed",
+      "keyFrame": "768x1024/02-strike-handoff.jpg",
+      "observation": "The previously isolated dark tail now joins the heated body visibly above the anvil; adjacent hold and cooling-enter frames retain their layouts."
+    },
+    {
+      "id": "water-plane-boundary",
+      "result": "closed",
+      "keyFrame": "1920x1080/03-temperature-hold.jpg",
+      "observation": "The finite plane's hard side edges no longer appear; local surface reflections and contact mist remain visible."
+    }
+  ],
+  "excludedBoundsCandidates": [
+    "1440x900/00-before-form-enter.jpg",
+    "1440x900/00-before-form-hold.jpg",
+    "1440x900/00-before-form-handoff.jpg",
+    "1920x1080/00-before-form-enter.jpg",
+    "1920x1080/00-before-form-hold.jpg",
+    "1920x1080/00-before-form-handoff.jpg"
+  ],
+  "limitations": [
+    "These are deterministic discrete states. They identify layout and transition candidates but do not establish every intervening animation frame.",
+    "The Chromium runtime uses software rendering; this evidence is not a hardware frame-rate benchmark.",
+    "JPEG dimensions match each viewport. Canvas drawing-buffer dimensions and DPR caps are recorded separately in the capture diagnostics."
+  ],
+  "captures": [
+    {
+      "id": "360x780/00-before-form-enter.jpg",
+      "path": "360x780/00-before-form-enter.jpg",
+      "screenshotSha256": "24d108ee739f571cf01fde88e8df4977cf16f78af2e982bb9e8d7100cba93963",
+      "viewport": "360x780",
+      "act": 0,
+      "phase": "enter",
+      "local": 0,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/00-before-form-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "首屏铭文与冷坯完整，正文、向下邀请及固定导航没有互相遮挡。"
+      ]
+    },
+    {
+      "id": "360x780/00-before-form-hold.jpg",
+      "path": "360x780/00-before-form-hold.jpg",
+      "screenshotSha256": "7268bcbcebdc98151190de8d7b50f889320db91e49de52759303592ac3b781c2",
+      "viewport": "360x780",
+      "act": 0,
+      "phase": "hold",
+      "local": 0.42928039702233256,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/00-before-form-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷坯稳定停留，标题与页脚留白完整；没有空白或占位画面。"
+      ]
+    },
+    {
+      "id": "360x780/00-before-form-handoff.jpg",
+      "path": "360x780/00-before-form-handoff.jpg",
+      "screenshotSha256": "fa8bfbb0cb2b7229d59464c60b0154f83a7d4f08a7a521f7fc4b17fa4dafc342",
+      "viewport": "360x780",
+      "act": 0,
+      "phase": "handoff",
+      "local": 0.8593879239040529,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/00-before-form-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "标题渐淡，坯体旋转并开始转热，器物持续可见；与炉火进入样本相容。"
+      ]
+    },
+    {
+      "id": "360x780/01-furnace-enter.jpg",
+      "path": "360x780/01-furnace-enter.jpg",
+      "screenshotSha256": "93fe69c90ee06190520178ac6a4e9d5d77185f5096d9b12bcc24e5726835dc23",
+      "viewport": "360x780",
+      "act": 1,
+      "phase": "enter",
+      "local": 0.07955292570677193,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/01-furnace-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "炉炭与局部热区建立，器物持续可见，标题及说明文字完整。"
+      ]
+    },
+    {
+      "id": "360x780/01-furnace-hold.jpg",
+      "path": "360x780/01-furnace-hold.jpg",
+      "screenshotSha256": "a8320c0b74096757de083797aea762e556398b9e9df46c838767069ecf56b0df",
+      "viewport": "360x780",
+      "act": 1,
+      "phase": "hold",
+      "local": 0.4299802761341224,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/01-furnace-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热核心与氧化斑可辨，炉区没有遮挡标题、正文或底部控制。"
+      ]
+    },
+    {
+      "id": "360x780/01-furnace-handoff.jpg",
+      "path": "360x780/01-furnace-handoff.jpg",
+      "screenshotSha256": "0895650d95e95cd726a980f354766d7dec9fc29a25299846066faef9b785745e",
+      "viewport": "360x780",
+      "act": 1,
+      "phase": "handoff",
+      "local": 0.8599605522682447,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/01-furnace-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "器物转向力量场景，热轮廓可辨，锤影进入背景时没有空白或额外断片。"
+      ]
+    },
+    {
+      "id": "360x780/02-strike-enter.jpg",
+      "path": "360x780/02-strike-enter.jpg",
+      "screenshotSha256": "fc8564fb1a2898e5c421444cc09081624a5b13b7a575d76a5c170dbadc1b020e",
+      "viewport": "360x780",
+      "act": 2,
+      "phase": "enter",
+      "local": 0.08000000000000025,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/02-strike-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热坯与砧面可辨，锤击进入取景未遮挡文字和固定控制。"
+      ]
+    },
+    {
+      "id": "360x780/02-strike-hold.jpg",
+      "path": "360x780/02-strike-hold.jpg",
+      "screenshotSha256": "40d5cc4ce450883e17c20ec7c31e64b77bb93f19099733099fc0488c5c798db4",
+      "viewport": "360x780",
+      "act": 2,
+      "phase": "hold",
+      "local": 0.29487179487179516,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/02-strike-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "锤坯接触及少量火星可读，说明文字与控制保持清楚，修复没有改变接触观感。"
+      ]
+    },
+    {
+      "id": "360x780/02-strike-handoff.jpg",
+      "path": "360x780/02-strike-handoff.jpg",
+      "screenshotSha256": "016d04cc932b1332e098a24ff8de0b6601a15fbd1665eb254c28d61068dcf77c",
+      "viewport": "360x780",
+      "act": 2,
+      "phase": "handoff",
+      "local": 0.8600000000000002,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/02-strike-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "暗尾端与热主体连续，砧面保持在其下方；原穿砧造成的分离片不再出现。",
+        "右端暂延出手机视口属于过渡取景，未形成分离段。"
+      ]
+    },
+    {
+      "id": "360x780/03-temperature-enter.jpg",
+      "path": "360x780/03-temperature-enter.jpg",
+      "screenshotSha256": "bcd8ef382f4c16775661c9ff0b9879e88a9582fc7ba3b05caee1ba57f748b65f",
+      "viewport": "360x780",
+      "act": 3,
+      "phase": "enter",
+      "local": 0.07983682983682987,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/03-temperature-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "余热器物连续进入局部水线，退出砧体没有切断主体；两行标题完整。"
+      ]
+    },
+    {
+      "id": "360x780/03-temperature-hold.jpg",
+      "path": "360x780/03-temperature-hold.jpg",
+      "screenshotSha256": "f29b55762062d6a66b3940cc56200917558918e1cefc5dc895158d9d93817207",
+      "viewport": "360x780",
+      "act": 3,
+      "phase": "hold",
+      "local": 0.42948717948717957,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/03-temperature-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "局部水光和薄雾保留，水域边缘融入暗场；浸入部分为连续器物的变暗段。"
+      ]
+    },
+    {
+      "id": "360x780/03-temperature-handoff.jpg",
+      "path": "360x780/03-temperature-handoff.jpg",
+      "screenshotSha256": "479c129a7787a333813474a8ea73b259aa10bcb9a63c0e5537516f634da38323",
+      "viewport": "360x780",
+      "act": 3,
+      "phase": "handoff",
+      "local": 0.8595571095571101,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/03-temperature-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷态轮廓进入近景，水域没有硬斜边，标题、说明及控制保持完整。"
+      ]
+    },
+    {
+      "id": "360x780/04-edge-enter.jpg",
+      "path": "360x780/04-edge-enter.jpg",
+      "screenshotSha256": "1dc0477d2c2dfdd5165f66545ec1cf06a8feeee436e5485d39cc14664d9f4d73",
+      "viewport": "360x780",
+      "act": 4,
+      "phase": "enter",
+      "local": 0.07971014492753653,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/04-edge-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "微表面近景中的长轴与主棱线连续，文字位于暗区，没有被高光遮住。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "360x780/04-edge-hold.jpg",
+      "path": "360x780/04-edge-hold.jpg",
+      "screenshotSha256": "eca2c619ff19516a81ccd892780c478db55cfbe8dd3ad00a361f1e897a2c9c80",
+      "viewport": "360x780",
+      "act": 4,
+      "phase": "hold",
+      "local": 0.4297658862876257,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/04-edge-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "材料分区和反射可读；说明文字与固定导航没有碰撞。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "360x780/04-edge-handoff.jpg",
+      "path": "360x780/04-edge-handoff.jpg",
+      "screenshotSha256": "535e4ce14508a009ea4bb979edbc3d6c24638d2aa270d948aaff5b2910c75cd7",
+      "viewport": "360x780",
+      "act": 4,
+      "phase": "handoff",
+      "local": 0.8595317725752514,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/04-edge-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "反射收束时器物仍连续可见，没有灰白占位或空白；与终章全览样本相容。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "360x780/05-relic-enter.jpg",
+      "path": "360x780/05-relic-enter.jpg",
+      "screenshotSha256": "1d044250a4e9f3853f987be02051be18d6eef5bc9127e7cde395abd9e027da1d",
+      "viewport": "360x780",
+      "act": 5,
+      "phase": "enter",
+      "local": 0.07940446650124122,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/05-relic-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终章拉回完整器物，标题、结语和重看入口保有空间。"
+      ]
+    },
+    {
+      "id": "360x780/05-relic-hold.jpg",
+      "path": "360x780/05-relic-hold.jpg",
+      "screenshotSha256": "f090aae2b1fc5f7f6f114a4bca1b22d3d8048718e862fc2d24bd8f2debdefb5b",
+      "viewport": "360x780",
+      "act": 5,
+      "phase": "hold",
+      "local": 0.4292803970223332,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/05-relic-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "完整冷态轮廓稳定可见，结语与 Experience again 入口清楚。"
+      ]
+    },
+    {
+      "id": "360x780/05-relic-handoff.jpg",
+      "path": "360x780/05-relic-handoff.jpg",
+      "screenshotSha256": "30c4cc8ec9f5ce80ef378d0c5e4a5436e5ad25274dde1b96df0cce281e2bd491",
+      "viewport": "360x780",
+      "act": 5,
+      "phase": "handoff",
+      "local": 1,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:06.753368+00:00",
+      "reviewEvidence": "360x780/05-relic-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/360x780-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终点保持完整冷态画面和重看入口，固定导航仍可辨，没有空帧。"
+      ]
+    },
+    {
+      "id": "390x844/00-before-form-enter.jpg",
+      "path": "390x844/00-before-form-enter.jpg",
+      "screenshotSha256": "b40af6d28f9609141d02efd78f529f61155f5a2e4b47beeae3976e68ab74b5d1",
+      "viewport": "390x844",
+      "act": 0,
+      "phase": "enter",
+      "local": 0,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/00-before-form-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "首屏铭文与冷坯完整，正文、向下邀请及固定导航没有互相遮挡。"
+      ]
+    },
+    {
+      "id": "390x844/00-before-form-hold.jpg",
+      "path": "390x844/00-before-form-hold.jpg",
+      "screenshotSha256": "d84393021820a22b17321c0e46d8c2fb577b2452b09917df01cafc29bc413ffe",
+      "viewport": "390x844",
+      "act": 0,
+      "phase": "hold",
+      "local": 0.42959792080721604,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/00-before-form-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷坯稳定停留，标题与页脚留白完整；没有空白或占位画面。"
+      ]
+    },
+    {
+      "id": "390x844/00-before-form-handoff.jpg",
+      "path": "390x844/00-before-form-handoff.jpg",
+      "screenshotSha256": "39842cd6472f22d60b4fbb25bfbf7ce33af9f9ee1ff28e122bdac33415a3055b",
+      "viewport": "390x844",
+      "act": 0,
+      "phase": "handoff",
+      "local": 0.8599602507261886,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/00-before-form-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "标题渐淡，坯体旋转并开始转热，器物持续可见；与炉火进入样本相容。"
+      ]
+    },
+    {
+      "id": "390x844/01-furnace-enter.jpg",
+      "path": "390x844/01-furnace-enter.jpg",
+      "screenshotSha256": "1a4c99ceb40c2e0be7091918282000fdf9ce6a9428259977c62ccb7c3b98348c",
+      "viewport": "390x844",
+      "act": 1,
+      "phase": "enter",
+      "local": 0.07947502734232594,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/01-furnace-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "炉炭与局部热区建立，器物持续可见，标题及说明文字完整。"
+      ]
+    },
+    {
+      "id": "390x844/01-furnace-hold.jpg",
+      "path": "390x844/01-furnace-hold.jpg",
+      "screenshotSha256": "06300eba8b54720d9d16ce3d902d8d7b11fb81e83ea3bf00754f468a1b1ba91d",
+      "viewport": "390x844",
+      "act": 1,
+      "phase": "hold",
+      "local": 0.42945679912504564,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/01-furnace-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热核心与氧化斑可辨，炉区没有遮挡标题、正文或底部控制。"
+      ]
+    },
+    {
+      "id": "390x844/01-furnace-handoff.jpg",
+      "path": "390x844/01-furnace-handoff.jpg",
+      "screenshotSha256": "4131f29388e0e06faa8759f61193b7d8e32b647fa5c89e3108c1d1cd96af6842",
+      "viewport": "390x844",
+      "act": 1,
+      "phase": "handoff",
+      "local": 0.8596427269413051,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/01-furnace-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "器物转向力量场景，热轮廓可辨，锤影进入背景时没有空白或额外断片。"
+      ]
+    },
+    {
+      "id": "390x844/02-strike-enter.jpg",
+      "path": "390x844/02-strike-enter.jpg",
+      "screenshotSha256": "da03efb242b2113eda4033851247181457147394bb21fcfdb9ce96c773ed87b3",
+      "viewport": "390x844",
+      "act": 2,
+      "phase": "enter",
+      "local": 0.07962085308056875,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/02-strike-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热坯与砧面可辨，锤击进入取景未遮挡文字和固定控制。"
+      ]
+    },
+    {
+      "id": "390x844/02-strike-hold.jpg",
+      "path": "390x844/02-strike-hold.jpg",
+      "screenshotSha256": "745b5351ca13b944284585967377d1506ab23958c61e55c679b2148226723029",
+      "viewport": "390x844",
+      "act": 2,
+      "phase": "hold",
+      "local": 0.29478672985782,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/02-strike-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "锤坯接触及少量火星可读，说明文字与控制保持清楚，修复没有改变接触观感。"
+      ]
+    },
+    {
+      "id": "390x844/02-strike-handoff.jpg",
+      "path": "390x844/02-strike-handoff.jpg",
+      "screenshotSha256": "8bbf48fae8e5f5b19a99e0d7a2cc419837f8e28696cd14ef0411e485791476e2",
+      "viewport": "390x844",
+      "act": 2,
+      "phase": "handoff",
+      "local": 0.8597156398104268,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/02-strike-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "暗尾端与热主体连续，砧面保持在其下方；原穿砧造成的分离片不再出现。",
+        "右端暂延出手机视口属于过渡取景，未形成分离段。"
+      ]
+    },
+    {
+      "id": "390x844/03-temperature-enter.jpg",
+      "path": "390x844/03-temperature-enter.jpg",
+      "screenshotSha256": "3cc03eaaeae36504d52ea57a27cccf0a0f1a81ce575fa6178201a218c7ec843f",
+      "viewport": "390x844",
+      "act": 3,
+      "phase": "enter",
+      "local": 0.07970702283498513,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/03-temperature-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "余热器物连续进入局部水线，退出砧体没有切断主体；两行标题完整。"
+      ]
+    },
+    {
+      "id": "390x844/03-temperature-hold.jpg",
+      "path": "390x844/03-temperature-hold.jpg",
+      "screenshotSha256": "be42350dd7be37d4fc2f556480f27b509f6260780484edfb7b0df09eef52376f",
+      "viewport": "390x844",
+      "act": 3,
+      "phase": "hold",
+      "local": 0.42977165015079705,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/03-temperature-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "局部水光和薄雾保留，水域边缘融入暗场；浸入部分为连续器物的变暗段。"
+      ]
+    },
+    {
+      "id": "390x844/03-temperature-handoff.jpg",
+      "path": "390x844/03-temperature-handoff.jpg",
+      "screenshotSha256": "0562305400bda63c33357bbdba5577ab935b5596eb2c4201101a303e7dfea3ac",
+      "viewport": "390x844",
+      "act": 3,
+      "phase": "handoff",
+      "local": 0.8595433003015943,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/03-temperature-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷态轮廓进入近景，水域没有硬斜边，标题、说明及控制保持完整。"
+      ]
+    },
+    {
+      "id": "390x844/04-edge-enter.jpg",
+      "path": "390x844/04-edge-enter.jpg",
+      "screenshotSha256": "09ef873df563a61f6d42c79662d66e481c52ab91d0d03e229ecb7aea77acab9a",
+      "viewport": "390x844",
+      "act": 4,
+      "phase": "enter",
+      "local": 0.07995054605398752,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/04-edge-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "微表面近景中的长轴与主棱线连续，文字位于暗区，没有被高光遮住。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "390x844/04-edge-hold.jpg",
+      "path": "390x844/04-edge-hold.jpg",
+      "screenshotSha256": "af4a5c0c557e41c78a060401781b46e73ee5111dfdfa619e5bbb3e40a91203b2",
+      "viewport": "390x844",
+      "act": 4,
+      "phase": "hold",
+      "local": 0.4297341850401817,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/04-edge-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "材料分区和反射可读；说明文字与固定导航没有碰撞。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "390x844/04-edge-handoff.jpg",
+      "path": "390x844/04-edge-handoff.jpg",
+      "screenshotSha256": "8ab48abf8e139367173663682689e7c9864a1a6c15f4d444145ba4231d5bdced",
+      "viewport": "390x844",
+      "act": 4,
+      "phase": "handoff",
+      "local": 0.8598804862971362,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/04-edge-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "反射收束时器物仍连续可见，没有灰白占位或空白；与终章全览样本相容。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "390x844/05-relic-enter.jpg",
+      "path": "390x844/05-relic-enter.jpg",
+      "screenshotSha256": "cedf3a1f1aa230702ec4bd5ffa983833b4de0f0acb7826aa16ecfcb658f525ae",
+      "viewport": "390x844",
+      "act": 5,
+      "phase": "enter",
+      "local": 0.07949854762268783,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/05-relic-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终章拉回完整器物，标题、结语和重看入口保有空间。"
+      ]
+    },
+    {
+      "id": "390x844/05-relic-hold.jpg",
+      "path": "390x844/05-relic-hold.jpg",
+      "screenshotSha256": "7db939aa5386a6b59746e97293479c6b3173445fb8054bf21dfeeb2610c9ebe3",
+      "viewport": "390x844",
+      "act": 5,
+      "phase": "hold",
+      "local": 0.42959792080721604,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/05-relic-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "完整冷态轮廓稳定可见，结语与 Experience again 入口清楚。"
+      ]
+    },
+    {
+      "id": "390x844/05-relic-handoff.jpg",
+      "path": "390x844/05-relic-handoff.jpg",
+      "screenshotSha256": "8b59de72b576f64c9a93a40d9708cf070130b20ae2273958299af0645b675347",
+      "viewport": "390x844",
+      "act": 5,
+      "phase": "handoff",
+      "local": 0.9998471181776479,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:32:43.157733+00:00",
+      "reviewEvidence": "390x844/05-relic-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/390x844-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终点保持完整冷态画面和重看入口，固定导航仍可辨，没有空帧。"
+      ]
+    },
+    {
+      "id": "768x1024/00-before-form-enter.jpg",
+      "path": "768x1024/00-before-form-enter.jpg",
+      "screenshotSha256": "d722a3d8a4a3b63ca2b46dab46c6e4f1eab770cf02a183f326725aadc93766fc",
+      "viewport": "768x1024",
+      "act": 0,
+      "phase": "enter",
+      "local": 0,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/00-before-form-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "首屏铭文与冷坯完整，正文、向下邀请及固定导航没有互相遮挡。"
+      ]
+    },
+    {
+      "id": "768x1024/00-before-form-hold.jpg",
+      "path": "768x1024/00-before-form-hold.jpg",
+      "screenshotSha256": "04e7d812ffcc1ebc2a8b3b330c06adbd81600e390a2e377dfc4d648aa58b8f18",
+      "viewport": "768x1024",
+      "act": 0,
+      "phase": "hold",
+      "local": 0.4296875,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/00-before-form-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷坯稳定停留，标题与页脚留白完整；没有空白或占位画面。"
+      ]
+    },
+    {
+      "id": "768x1024/00-before-form-handoff.jpg",
+      "path": "768x1024/00-before-form-handoff.jpg",
+      "screenshotSha256": "127970eef35fdc11491a4c745b8ddc07e0f41a96e9f22c2b485227711b491918",
+      "viewport": "768x1024",
+      "act": 0,
+      "phase": "handoff",
+      "local": 0.859375,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/00-before-form-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "标题渐淡，坯体旋转并开始转热，器物持续可见；与炉火进入样本相容。"
+      ]
+    },
+    {
+      "id": "768x1024/01-furnace-enter.jpg",
+      "path": "768x1024/01-furnace-enter.jpg",
+      "screenshotSha256": "14b38ca697452afd9c33b5428353ad07304e33795ab8ce45726b78bd915a96ef",
+      "viewport": "768x1024",
+      "act": 1,
+      "phase": "enter",
+      "local": 0.07952724358974365,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/01-furnace-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "炉炭与局部热区建立，器物持续可见，标题及说明文字完整。"
+      ]
+    },
+    {
+      "id": "768x1024/01-furnace-hold.jpg",
+      "path": "768x1024/01-furnace-hold.jpg",
+      "screenshotSha256": "f6a62d5b787b17eab7e0080bef6ca6caeffda82e7d4b4e1c6f9d48dc5ef43b61",
+      "viewport": "768x1024",
+      "act": 1,
+      "phase": "hold",
+      "local": 0.4295873397435897,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/01-furnace-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热核心与氧化斑可辨，炉区没有遮挡标题、正文或底部控制。"
+      ]
+    },
+    {
+      "id": "768x1024/01-furnace-handoff.jpg",
+      "path": "768x1024/01-furnace-handoff.jpg",
+      "screenshotSha256": "3fb6f414c694732af66c7416aa4f0923c600de17dd0bf8f886f1d6a756316e86",
+      "viewport": "768x1024",
+      "act": 1,
+      "phase": "handoff",
+      "local": 0.8597756410256412,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/01-furnace-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "器物转向力量场景，热轮廓可辨，锤影进入背景时没有空白或额外断片。"
+      ]
+    },
+    {
+      "id": "768x1024/02-strike-enter.jpg",
+      "path": "768x1024/02-strike-enter.jpg",
+      "screenshotSha256": "2dd3063e718a1ced3f22acc2509dfbe6d9e6f1f69de6965c0719d7613908c77a",
+      "viewport": "768x1024",
+      "act": 2,
+      "phase": "enter",
+      "local": 0.0796875,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/02-strike-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热坯与砧面可辨，锤击进入取景未遮挡文字和固定控制。"
+      ]
+    },
+    {
+      "id": "768x1024/02-strike-hold.jpg",
+      "path": "768x1024/02-strike-hold.jpg",
+      "screenshotSha256": "51f46eda44f6ce112ba16daa10bcb966c23719d72fb720711997bc09d12673b4",
+      "viewport": "768x1024",
+      "act": 2,
+      "phase": "hold",
+      "local": 0.294921875,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/02-strike-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "锤坯接触及少量火星可读，说明文字与控制保持清楚，修复没有改变接触观感。"
+      ]
+    },
+    {
+      "id": "768x1024/02-strike-handoff.jpg",
+      "path": "768x1024/02-strike-handoff.jpg",
+      "screenshotSha256": "89cd134e813c3a3cdca8f6a60d91ce2d873b9ea4f9e3470727cc30a64d550f4c",
+      "viewport": "768x1024",
+      "act": 2,
+      "phase": "handoff",
+      "local": 0.859765625,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/02-strike-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "暗尾端与热主体连续，砧面保持在其下方；原穿砧造成的分离片不再出现。"
+      ]
+    },
+    {
+      "id": "768x1024/03-temperature-enter.jpg",
+      "path": "768x1024/03-temperature-enter.jpg",
+      "screenshotSha256": "95b48eb6bfb4cf215b7fb9db602f310a2489a73be7252bdedbc6185e1e4c1243",
+      "viewport": "768x1024",
+      "act": 3,
+      "phase": "enter",
+      "local": 0.07990056818181852,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/03-temperature-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "余热器物连续进入局部水线，退出砧体没有切断主体；两行标题完整。"
+      ]
+    },
+    {
+      "id": "768x1024/03-temperature-hold.jpg",
+      "path": "768x1024/03-temperature-hold.jpg",
+      "screenshotSha256": "13438311b72d8053012f089b45e6b0732e07e8770020a4905bacabbedcb6f55c",
+      "viewport": "768x1024",
+      "act": 3,
+      "phase": "hold",
+      "local": 0.42968750000000006,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/03-temperature-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "局部水光和薄雾保留，水域边缘融入暗场；浸入部分为连续器物的变暗段。"
+      ]
+    },
+    {
+      "id": "768x1024/03-temperature-handoff.jpg",
+      "path": "768x1024/03-temperature-handoff.jpg",
+      "screenshotSha256": "167d220d9fb8838ee402417c36e53f10cc0a6d0e701e0c5fa58f26f2d895cfa5",
+      "viewport": "768x1024",
+      "act": 3,
+      "phase": "handoff",
+      "local": 0.8598188920454548,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/03-temperature-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷态轮廓进入近景，水域没有硬斜边，标题、说明及控制保持完整。"
+      ]
+    },
+    {
+      "id": "768x1024/04-edge-enter.jpg",
+      "path": "768x1024/04-edge-enter.jpg",
+      "screenshotSha256": "1fa35984515fbf011edee66a527f7c615be239d57de80a4fec73a2d390619e5d",
+      "viewport": "768x1024",
+      "act": 4,
+      "phase": "enter",
+      "local": 0.07990828804347834,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/04-edge-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "微表面近景中的长轴与主棱线连续，文字位于暗区，没有被高光遮住。",
+        "平板构图中尖端与下端均保留在视口内。"
+      ]
+    },
+    {
+      "id": "768x1024/04-edge-hold.jpg",
+      "path": "768x1024/04-edge-hold.jpg",
+      "screenshotSha256": "985264660b71c44ef78107fc3af4d05f60b4f7e01d440b525d937fe14675c8e1",
+      "viewport": "768x1024",
+      "act": 4,
+      "phase": "hold",
+      "local": 0.4297724184782609,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/04-edge-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "材料分区和反射可读；说明文字与固定导航没有碰撞。",
+        "平板构图中尖端与下端均保留在视口内。"
+      ]
+    },
+    {
+      "id": "768x1024/04-edge-handoff.jpg",
+      "path": "768x1024/04-edge-handoff.jpg",
+      "screenshotSha256": "aa09369a7a27fad1d1184f9605d9e32c32c25b3e52bfbdf8170bb9a9e7e60b13",
+      "viewport": "768x1024",
+      "act": 4,
+      "phase": "handoff",
+      "local": 0.8598845108695655,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/04-edge-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "反射收束时器物仍连续可见，没有灰白占位或空白；与终章全览样本相容。",
+        "平板构图中尖端与下端均保留在视口内。"
+      ]
+    },
+    {
+      "id": "768x1024/05-relic-enter.jpg",
+      "path": "768x1024/05-relic-enter.jpg",
+      "screenshotSha256": "440a11bdca1796246bfd0372996fb0afa2ca34de200b84bf8d85905b34b9b6dd",
+      "viewport": "768x1024",
+      "act": 5,
+      "phase": "enter",
+      "local": 0.0793850806451616,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/05-relic-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终章拉回完整器物，标题、结语和重看入口保有空间。"
+      ]
+    },
+    {
+      "id": "768x1024/05-relic-hold.jpg",
+      "path": "768x1024/05-relic-hold.jpg",
+      "screenshotSha256": "61defa2e6f4f37c44a8fb4b98153295b041cbb01549fd3a3c116c33563cfa7f9",
+      "viewport": "768x1024",
+      "act": 5,
+      "phase": "hold",
+      "local": 0.4296875000000001,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/05-relic-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "完整冷态轮廓稳定可见，结语与 Experience again 入口清楚。"
+      ]
+    },
+    {
+      "id": "768x1024/05-relic-handoff.jpg",
+      "path": "768x1024/05-relic-handoff.jpg",
+      "screenshotSha256": "7da15c997669c0432478fb3049b67cd3b8ddb05478369f0a69b3a530e000da88",
+      "viewport": "768x1024",
+      "act": 5,
+      "phase": "handoff",
+      "local": 0.9998739919354838,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:33:33.712177+00:00",
+      "reviewEvidence": "768x1024/05-relic-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/768x1024-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终点保持完整冷态画面和重看入口，固定导航仍可辨，没有空帧。"
+      ]
+    },
+    {
+      "id": "1440x900/00-before-form-enter.jpg",
+      "path": "1440x900/00-before-form-enter.jpg",
+      "screenshotSha256": "2805e9fc32b1899c4bfcd95e0e4acce44ab6acbff0dc1b0370f08e08bdd31d51",
+      "viewport": "1440x900",
+      "act": 0,
+      "phase": "enter",
+      "local": 0,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/00-before-form-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "首屏铭文与冷坯完整，正文、向下邀请及固定导航没有互相遮挡。",
+        "已目视排除自动容器重叠候选：masthead 内边距与标题框相交，但实际字形和按钮之间有空隙。"
+      ]
+    },
+    {
+      "id": "1440x900/00-before-form-hold.jpg",
+      "path": "1440x900/00-before-form-hold.jpg",
+      "screenshotSha256": "9f4a2c5ee84f7ed879f0fb6f86380dff19989b473c54fdc69bee1b3b293feccc",
+      "viewport": "1440x900",
+      "act": 0,
+      "phase": "hold",
+      "local": 0.42939068100358424,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/00-before-form-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷坯稳定停留，标题与页脚留白完整；没有空白或占位画面。",
+        "已目视排除自动容器重叠候选：masthead 内边距与标题框相交，但实际字形和按钮之间有空隙。"
+      ]
+    },
+    {
+      "id": "1440x900/00-before-form-handoff.jpg",
+      "path": "1440x900/00-before-form-handoff.jpg",
+      "screenshotSha256": "0d07bf864c39c70ae3a71b0e32cb92e3d911646b3a2ce8decaa8d6584db00034",
+      "viewport": "1440x900",
+      "act": 0,
+      "phase": "handoff",
+      "local": 0.8594982078853047,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/00-before-form-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "标题渐淡，坯体旋转并开始转热，器物持续可见；与炉火进入样本相容。",
+        "已目视排除自动容器重叠候选：masthead 内边距与标题框相交，但实际字形和按钮之间有空隙。"
+      ]
+    },
+    {
+      "id": "1440x900/01-furnace-enter.jpg",
+      "path": "1440x900/01-furnace-enter.jpg",
+      "screenshotSha256": "f14e140c06d56a0c639dc9edfb3fc28093a69444964dc1dc319ebf11ffb13754",
+      "viewport": "1440x900",
+      "act": 1,
+      "phase": "enter",
+      "local": 0.07977207977207984,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/01-furnace-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "炉炭与局部热区建立，器物持续可见，标题及说明文字完整。"
+      ]
+    },
+    {
+      "id": "1440x900/01-furnace-hold.jpg",
+      "path": "1440x900/01-furnace-hold.jpg",
+      "screenshotSha256": "870912e9de563eac3026354b5eb456e97b47d63a4ab15823befebaac0c3634e3",
+      "viewport": "1440x900",
+      "act": 1,
+      "phase": "hold",
+      "local": 0.4296296296296297,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/01-furnace-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热核心与氧化斑可辨，炉区没有遮挡标题、正文或底部控制。"
+      ]
+    },
+    {
+      "id": "1440x900/01-furnace-handoff.jpg",
+      "path": "1440x900/01-furnace-handoff.jpg",
+      "screenshotSha256": "b519de762914c0ea33f5602f35fbf8c7796caf4ac411fca71478795cc1d78ceb",
+      "viewport": "1440x900",
+      "act": 1,
+      "phase": "handoff",
+      "local": 0.85982905982906,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/01-furnace-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "器物转向力量场景，热轮廓可辨，锤影进入背景时没有空白或额外断片。"
+      ]
+    },
+    {
+      "id": "1440x900/02-strike-enter.jpg",
+      "path": "1440x900/02-strike-enter.jpg",
+      "screenshotSha256": "0c74c8f2cc1e212264c80b8c20cac34c0e08603605bdd6d73afecdd77eadabd4",
+      "viewport": "1440x900",
+      "act": 2,
+      "phase": "enter",
+      "local": 0.08000000000000025,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/02-strike-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热坯与砧面可辨，锤击进入取景未遮挡文字和固定控制。"
+      ]
+    },
+    {
+      "id": "1440x900/02-strike-hold.jpg",
+      "path": "1440x900/02-strike-hold.jpg",
+      "screenshotSha256": "163a9035e668283ac261646f5e837458a2c9b7f42c206ad919c8800ced42e43d",
+      "viewport": "1440x900",
+      "act": 2,
+      "phase": "hold",
+      "local": 0.29466666666666697,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/02-strike-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "锤坯接触及少量火星可读，说明文字与控制保持清楚，修复没有改变接触观感。"
+      ]
+    },
+    {
+      "id": "1440x900/02-strike-handoff.jpg",
+      "path": "1440x900/02-strike-handoff.jpg",
+      "screenshotSha256": "bc99c6fbeb6683a04e456ab95aad002e83c38c5582dc9a3e84a92fb1892f49c7",
+      "viewport": "1440x900",
+      "act": 2,
+      "phase": "handoff",
+      "local": 0.8600000000000002,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/02-strike-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "暗尾端与热主体连续，砧面保持在其下方；原穿砧造成的分离片不再出现。"
+      ]
+    },
+    {
+      "id": "1440x900/03-temperature-enter.jpg",
+      "path": "1440x900/03-temperature-enter.jpg",
+      "screenshotSha256": "339c2959a4de5ce7523acfda2a8de644abe4a6fcd7e4373a4dd53f1c326a52a6",
+      "viewport": "1440x900",
+      "act": 3,
+      "phase": "enter",
+      "local": 0.07979797979797984,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/03-temperature-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "余热器物连续进入局部水线，退出砧体没有切断主体；两行标题完整。"
+      ]
+    },
+    {
+      "id": "1440x900/03-temperature-hold.jpg",
+      "path": "1440x900/03-temperature-hold.jpg",
+      "screenshotSha256": "1780e50a62b08011703754c3bffa90ca610ee28322e2eaf294f12a7a92c2a2f5",
+      "viewport": "1440x900",
+      "act": 3,
+      "phase": "hold",
+      "local": 0.4297979797979799,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/03-temperature-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "局部水光和薄雾保留，水域边缘融入暗场；浸入部分为连续器物的变暗段。"
+      ]
+    },
+    {
+      "id": "1440x900/03-temperature-handoff.jpg",
+      "path": "1440x900/03-temperature-handoff.jpg",
+      "screenshotSha256": "f784ff89f8cdd9fec2f08eae3c1eaea1752bb1c5fc56fcfca54529e3d65f8a9c",
+      "viewport": "1440x900",
+      "act": 3,
+      "phase": "handoff",
+      "local": 0.85959595959596,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/03-temperature-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷态轮廓进入近景，水域没有硬斜边，标题、说明及控制保持完整。"
+      ]
+    },
+    {
+      "id": "1440x900/04-edge-enter.jpg",
+      "path": "1440x900/04-edge-enter.jpg",
+      "screenshotSha256": "85de65eae8c2e8fd6893c0b22a1409d0ba50199fc37f6425233a9827a1c59e1c",
+      "viewport": "1440x900",
+      "act": 4,
+      "phase": "enter",
+      "local": 0.07971014492753653,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/04-edge-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "微表面近景中的长轴与主棱线连续，文字位于暗区，没有被高光遮住。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "1440x900/04-edge-hold.jpg",
+      "path": "1440x900/04-edge-hold.jpg",
+      "screenshotSha256": "f73ac6e8a01653054a26dc22f6f9ed53b50e34b4e44abd9a33904f6ceb0b7b24",
+      "viewport": "1440x900",
+      "act": 4,
+      "phase": "hold",
+      "local": 0.4299516908212563,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/04-edge-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "材料分区和反射可读；说明文字与固定导航没有碰撞。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "1440x900/04-edge-handoff.jpg",
+      "path": "1440x900/04-edge-handoff.jpg",
+      "screenshotSha256": "2606947ba54ababd343cb7224c51f31041a419ee5d5ccefa55e11652b35bb804",
+      "viewport": "1440x900",
+      "act": 4,
+      "phase": "handoff",
+      "local": 0.8599033816425126,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/04-edge-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "反射收束时器物仍连续可见，没有灰白占位或空白；与终章全览样本相容。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "1440x900/05-relic-enter.jpg",
+      "path": "1440x900/05-relic-enter.jpg",
+      "screenshotSha256": "b2d370e8c227b67284be6d95e6d005e5ee4724fbfdbf350996aa80f346b2cb05",
+      "viewport": "1440x900",
+      "act": 5,
+      "phase": "enter",
+      "local": 0.0795698924731188,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/05-relic-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终章拉回完整器物，标题、结语和重看入口保有空间。"
+      ]
+    },
+    {
+      "id": "1440x900/05-relic-hold.jpg",
+      "path": "1440x900/05-relic-hold.jpg",
+      "screenshotSha256": "6ab2f5d8bf7b0e213953aa7b2b405c555389c92da496540c8afa6521f6897bfb",
+      "viewport": "1440x900",
+      "act": 5,
+      "phase": "hold",
+      "local": 0.42939068100358496,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/05-relic-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "完整冷态轮廓稳定可见，结语与 Experience again 入口清楚。"
+      ]
+    },
+    {
+      "id": "1440x900/05-relic-handoff.jpg",
+      "path": "1440x900/05-relic-handoff.jpg",
+      "screenshotSha256": "730ad4d78355b447fe630bdc7561b2561b1c6abafe423bc751792e3e6bb70e4f",
+      "viewport": "1440x900",
+      "act": 5,
+      "phase": "handoff",
+      "local": 1,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:36:19.521307+00:00",
+      "reviewEvidence": "1440x900/05-relic-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1440x900-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终点保持完整冷态画面和重看入口，固定导航仍可辨，没有空帧。"
+      ]
+    },
+    {
+      "id": "1920x1080/00-before-form-enter.jpg",
+      "path": "1920x1080/00-before-form-enter.jpg",
+      "screenshotSha256": "06dd44349a8835644addd10a61659f37238c6db34ea83ab901a95489c871f837",
+      "viewport": "1920x1080",
+      "act": 0,
+      "phase": "enter",
+      "local": 0,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/00-before-form-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "首屏铭文与冷坯完整，正文、向下邀请及固定导航没有互相遮挡。",
+        "已目视排除自动容器重叠候选：masthead 内边距与标题框相交，但实际字形和按钮之间有空隙。"
+      ]
+    },
+    {
+      "id": "1920x1080/00-before-form-hold.jpg",
+      "path": "1920x1080/00-before-form-hold.jpg",
+      "screenshotSha256": "b417cee3d1be27454c985e2cad30851c3957066e842676b91b4edf092bfd6273",
+      "viewport": "1920x1080",
+      "act": 0,
+      "phase": "hold",
+      "local": 0.42951015531660697,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/00-before-form-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷坯稳定停留，标题与页脚留白完整；没有空白或占位画面。",
+        "已目视排除自动容器重叠候选：masthead 内边距与标题框相交，但实际字形和按钮之间有空隙。"
+      ]
+    },
+    {
+      "id": "1920x1080/00-before-form-handoff.jpg",
+      "path": "1920x1080/00-before-form-handoff.jpg",
+      "screenshotSha256": "e8212981b43c672954f6f884545e2b0c076cc2ab846b73adc94a15fc7c4d690c",
+      "viewport": "1920x1080",
+      "act": 0,
+      "phase": "handoff",
+      "local": 0.8596176821983275,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/00-before-form-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "标题渐淡，坯体旋转并开始转热，器物持续可见；与炉火进入样本相容。",
+        "已目视排除自动容器重叠候选：masthead 内边距与标题框相交，但实际字形和按钮之间有空隙。"
+      ]
+    },
+    {
+      "id": "1920x1080/01-furnace-enter.jpg",
+      "path": "1920x1080/01-furnace-enter.jpg",
+      "screenshotSha256": "cd7e46e677aadc764c841be4bedec290c26bcdafedac9a1babe9a38f69c928c5",
+      "viewport": "1920x1080",
+      "act": 1,
+      "phase": "enter",
+      "local": 0.07977207977207984,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/01-furnace-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "炉炭与局部热区建立，器物持续可见，标题及说明文字完整。"
+      ]
+    },
+    {
+      "id": "1920x1080/01-furnace-hold.jpg",
+      "path": "1920x1080/01-furnace-hold.jpg",
+      "screenshotSha256": "6abdd0654cfda4fb38c2f907017e471d90e2ee8f4da079e283a265bca870e075",
+      "viewport": "1920x1080",
+      "act": 1,
+      "phase": "hold",
+      "local": 0.42972459639126326,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/01-furnace-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热核心与氧化斑可辨，炉区没有遮挡标题、正文或底部控制。"
+      ]
+    },
+    {
+      "id": "1920x1080/01-furnace-handoff.jpg",
+      "path": "1920x1080/01-furnace-handoff.jpg",
+      "screenshotSha256": "fbedab65df770bcdb53457c815b7ab6fb479cd90dccd47d904c9574e3dda6f37",
+      "viewport": "1920x1080",
+      "act": 1,
+      "phase": "handoff",
+      "local": 0.8599240265906936,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/01-furnace-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "器物转向力量场景，热轮廓可辨，锤影进入背景时没有空白或额外断片。"
+      ]
+    },
+    {
+      "id": "1920x1080/02-strike-enter.jpg",
+      "path": "1920x1080/02-strike-enter.jpg",
+      "screenshotSha256": "e5e95fb35ff23b6818172526f93073f188d58809ed91eff1af39fc3ff6f6e201",
+      "viewport": "1920x1080",
+      "act": 2,
+      "phase": "enter",
+      "local": 0.08000000000000025,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/02-strike-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热坯与砧面可辨，锤击进入取景未遮挡文字和固定控制。"
+      ]
+    },
+    {
+      "id": "1920x1080/02-strike-hold.jpg",
+      "path": "1920x1080/02-strike-hold.jpg",
+      "screenshotSha256": "dde51cbf200c985ae0dd1f1c96bdd188f78ab6c103eb19537bab0f8c363a8f5b",
+      "viewport": "1920x1080",
+      "act": 2,
+      "phase": "hold",
+      "local": 0.29481481481481503,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/02-strike-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "锤坯接触及少量火星可读，说明文字与控制保持清楚，修复没有改变接触观感。"
+      ]
+    },
+    {
+      "id": "1920x1080/02-strike-handoff.jpg",
+      "path": "1920x1080/02-strike-handoff.jpg",
+      "screenshotSha256": "35644945cdf0a688093b448ee72a565f79a73a9cd9e5d10722e83096eb5f30aa",
+      "viewport": "1920x1080",
+      "act": 2,
+      "phase": "handoff",
+      "local": 0.8600000000000002,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/02-strike-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "暗尾端与热主体连续，砧面保持在其下方；原穿砧造成的分离片不再出现。"
+      ]
+    },
+    {
+      "id": "1920x1080/03-temperature-enter.jpg",
+      "path": "1920x1080/03-temperature-enter.jpg",
+      "screenshotSha256": "49908ca31a6aa57c9b44ca4a90e9924b586dd8dd28a8ac9ac0ddf405a8d18198",
+      "viewport": "1920x1080",
+      "act": 3,
+      "phase": "enter",
+      "local": 0.0799663299663302,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/03-temperature-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "余热器物连续进入局部水线，退出砧体没有切断主体；两行标题完整。"
+      ]
+    },
+    {
+      "id": "1920x1080/03-temperature-hold.jpg",
+      "path": "1920x1080/03-temperature-hold.jpg",
+      "screenshotSha256": "baac8e1c2d96855146db6661b0db053066988148213211f73539da40c5412e05",
+      "viewport": "1920x1080",
+      "act": 3,
+      "phase": "hold",
+      "local": 0.429713804713805,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/03-temperature-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "局部水光和薄雾保留，水域边缘融入暗场；浸入部分为连续器物的变暗段。"
+      ]
+    },
+    {
+      "id": "1920x1080/03-temperature-handoff.jpg",
+      "path": "1920x1080/03-temperature-handoff.jpg",
+      "screenshotSha256": "8a802701e5d71fc75663a324f69ccb171c59a84a9604c7fbe02db3146c0bba9f",
+      "viewport": "1920x1080",
+      "act": 3,
+      "phase": "handoff",
+      "local": 0.8598484848484853,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/03-temperature-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷态轮廓进入近景，水域没有硬斜边，标题、说明及控制保持完整。"
+      ]
+    },
+    {
+      "id": "1920x1080/04-edge-enter.jpg",
+      "path": "1920x1080/04-edge-enter.jpg",
+      "screenshotSha256": "eb0f0ad8f20592e228f14789d4ce197f37ca5f439314296255a02b60ba795fc4",
+      "viewport": "1920x1080",
+      "act": 4,
+      "phase": "enter",
+      "local": 0.07971014492753653,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/04-edge-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "微表面近景中的长轴与主棱线连续，文字位于暗区，没有被高光遮住。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "1920x1080/04-edge-hold.jpg",
+      "path": "1920x1080/04-edge-hold.jpg",
+      "screenshotSha256": "a87e921191e3dbbd8fe116e0479fe5441ea2265cef72ffb4653904cc4a6de1f1",
+      "viewport": "1920x1080",
+      "act": 4,
+      "phase": "hold",
+      "local": 0.4299516908212563,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/04-edge-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "材料分区和反射可读；说明文字与固定导航没有碰撞。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "1920x1080/04-edge-handoff.jpg",
+      "path": "1920x1080/04-edge-handoff.jpg",
+      "screenshotSha256": "246efbb04043884b1f24284cd2a5779fa085545446f74414f60a39ee26f9c040",
+      "viewport": "1920x1080",
+      "act": 4,
+      "phase": "handoff",
+      "local": 0.8599033816425126,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/04-edge-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "反射收束时器物仍连续可见，没有灰白占位或空白；与终章全览样本相容。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "1920x1080/05-relic-enter.jpg",
+      "path": "1920x1080/05-relic-enter.jpg",
+      "screenshotSha256": "97c6d0ff39e55c380be87eb40614beb2e4ca04948db8e5daa0ac58af03c9a25d",
+      "viewport": "1920x1080",
+      "act": 5,
+      "phase": "enter",
+      "local": 0.07945041816009639,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/05-relic-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终章拉回完整器物，标题、结语和重看入口保有空间。"
+      ]
+    },
+    {
+      "id": "1920x1080/05-relic-hold.jpg",
+      "path": "1920x1080/05-relic-hold.jpg",
+      "screenshotSha256": "0083c5815d648cb3ecaabedea33b76286a5f0651af0501ffe74c79d19bfe09d8",
+      "viewport": "1920x1080",
+      "act": 5,
+      "phase": "hold",
+      "local": 0.42951015531660736,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/05-relic-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "完整冷态轮廓稳定可见，结语与 Experience again 入口清楚。"
+      ]
+    },
+    {
+      "id": "1920x1080/05-relic-handoff.jpg",
+      "path": "1920x1080/05-relic-handoff.jpg",
+      "screenshotSha256": "75cc364d39c859f7b76c9690aca99908b97f7e737e0dbd6ec1d655d02b59ced3",
+      "viewport": "1920x1080",
+      "act": 5,
+      "phase": "handoff",
+      "local": 1,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:41:16.439721+00:00",
+      "reviewEvidence": "1920x1080/05-relic-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/1920x1080-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终点保持完整冷态画面和重看入口，固定导航仍可辨，没有空帧。"
+      ]
+    },
+    {
+      "id": "3840x2160/00-before-form-enter.jpg",
+      "path": "3840x2160/00-before-form-enter.jpg",
+      "screenshotSha256": "09080c0292bf50f5a187ea92317ced8a0b6bb2cc267a5525ca9a7139f0375c0d",
+      "viewport": "3840x2160",
+      "act": 0,
+      "phase": "enter",
+      "local": 0,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/00-before-form-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "首屏铭文与冷坯完整，正文、向下邀请及固定导航没有互相遮挡。"
+      ]
+    },
+    {
+      "id": "3840x2160/00-before-form-hold.jpg",
+      "path": "3840x2160/00-before-form-hold.jpg",
+      "screenshotSha256": "067ec154d231a85352d638e145ac4f9b8ed7d58f9573d329156cdb75f29e38b4",
+      "viewport": "3840x2160",
+      "act": 0,
+      "phase": "hold",
+      "local": 0.42980884109916373,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/00-before-form-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷坯稳定停留，标题与页脚留白完整；没有空白或占位画面。"
+      ]
+    },
+    {
+      "id": "3840x2160/00-before-form-handoff.jpg",
+      "path": "3840x2160/00-before-form-handoff.jpg",
+      "screenshotSha256": "3b46cb88b5424484335c5bbd8e75e06647c0139a04a7501aecea89ca47f17b04",
+      "viewport": "3840x2160",
+      "act": 0,
+      "phase": "handoff",
+      "local": 0.8599163679808842,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/00-before-form-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-00.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "标题渐淡，坯体旋转并开始转热，器物持续可见；与炉火进入样本相容。"
+      ]
+    },
+    {
+      "id": "3840x2160/01-furnace-enter.jpg",
+      "path": "3840x2160/01-furnace-enter.jpg",
+      "screenshotSha256": "faa9b6a45ca16896c801294cd571456203234fe77c796825adfcd68705459873",
+      "viewport": "3840x2160",
+      "act": 1,
+      "phase": "enter",
+      "local": 0.07977207977207984,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/01-furnace-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "炉炭与局部热区建立，器物持续可见，标题及说明文字完整。"
+      ]
+    },
+    {
+      "id": "3840x2160/01-furnace-hold.jpg",
+      "path": "3840x2160/01-furnace-hold.jpg",
+      "screenshotSha256": "cbe6722a9ea0a17b99b212748d8b869cb97b395c65cec59bb807e6ff3e550aa0",
+      "viewport": "3840x2160",
+      "act": 1,
+      "phase": "hold",
+      "local": 0.4299620132953468,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/01-furnace-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热核心与氧化斑可辨，炉区没有遮挡标题、正文或底部控制。"
+      ]
+    },
+    {
+      "id": "3840x2160/01-furnace-handoff.jpg",
+      "path": "3840x2160/01-furnace-handoff.jpg",
+      "screenshotSha256": "1053bb8b46cd7c4f02a13634a5d3b115cbcd4a545587e9de875c635816bf852c",
+      "viewport": "3840x2160",
+      "act": 1,
+      "phase": "handoff",
+      "local": 0.8599240265906936,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/01-furnace-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-01.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "器物转向力量场景，热轮廓可辨，锤影进入背景时没有空白或额外断片。"
+      ]
+    },
+    {
+      "id": "3840x2160/02-strike-enter.jpg",
+      "path": "3840x2160/02-strike-enter.jpg",
+      "screenshotSha256": "26b98c399b30b833336d7c962887223acef9a84d0790f673506179a0be92a055",
+      "viewport": "3840x2160",
+      "act": 2,
+      "phase": "enter",
+      "local": 0.08000000000000025,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/02-strike-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "热坯与砧面可辨，锤击进入取景未遮挡文字和固定控制。"
+      ]
+    },
+    {
+      "id": "3840x2160/02-strike-hold.jpg",
+      "path": "3840x2160/02-strike-hold.jpg",
+      "screenshotSha256": "6a33846ecca1b52760eb66b361f483d0d32563a3eaff1d102e2436cb4a7b1c6b",
+      "viewport": "3840x2160",
+      "act": 2,
+      "phase": "hold",
+      "local": 0.2950000000000003,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/02-strike-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "锤坯接触及少量火星可读，说明文字与控制保持清楚，修复没有改变接触观感。"
+      ]
+    },
+    {
+      "id": "3840x2160/02-strike-handoff.jpg",
+      "path": "3840x2160/02-strike-handoff.jpg",
+      "screenshotSha256": "735a543e211b4e121a0a318abb90468a67dc9af03b76a99ea8e497ff68b38bb9",
+      "viewport": "3840x2160",
+      "act": 2,
+      "phase": "handoff",
+      "local": 0.8600000000000002,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/02-strike-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-02.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "暗尾端与热主体连续，砧面保持在其下方；原穿砧造成的分离片不再出现。"
+      ]
+    },
+    {
+      "id": "3840x2160/03-temperature-enter.jpg",
+      "path": "3840x2160/03-temperature-enter.jpg",
+      "screenshotSha256": "484d23c0baea044ca3ba3fe7a550ea7e7250f83d6d06951dfd0bdde270fdf740",
+      "viewport": "3840x2160",
+      "act": 3,
+      "phase": "enter",
+      "local": 0.0799663299663302,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/03-temperature-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "余热器物连续进入局部水线，退出砧体没有切断主体；两行标题完整。"
+      ]
+    },
+    {
+      "id": "3840x2160/03-temperature-hold.jpg",
+      "path": "3840x2160/03-temperature-hold.jpg",
+      "screenshotSha256": "ec248aca483ce3b5c485a2dae160205c35961a5fd63a1de6e22a1d44b6708ce7",
+      "viewport": "3840x2160",
+      "act": 3,
+      "phase": "hold",
+      "local": 0.4299242424242425,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/03-temperature-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "局部水光和薄雾保留，水域边缘融入暗场；浸入部分为连续器物的变暗段。"
+      ]
+    },
+    {
+      "id": "3840x2160/03-temperature-handoff.jpg",
+      "path": "3840x2160/03-temperature-handoff.jpg",
+      "screenshotSha256": "95211a4509391df61cdb6107a9f8b716f2df76bfbdf766d799543119f84f145e",
+      "viewport": "3840x2160",
+      "act": 3,
+      "phase": "handoff",
+      "local": 0.8598484848484853,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/03-temperature-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-03.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "冷态轮廓进入近景，水域没有硬斜边，标题、说明及控制保持完整。"
+      ]
+    },
+    {
+      "id": "3840x2160/04-edge-enter.jpg",
+      "path": "3840x2160/04-edge-enter.jpg",
+      "screenshotSha256": "b78d788c93ba8facbd43245b6b219834abda64e48996e5d9f56afdaf247181f3",
+      "viewport": "3840x2160",
+      "act": 4,
+      "phase": "enter",
+      "local": 0.07991143317230343,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/04-edge-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "微表面近景中的长轴与主棱线连续，文字位于暗区，没有被高光遮住。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "3840x2160/04-edge-hold.jpg",
+      "path": "3840x2160/04-edge-hold.jpg",
+      "screenshotSha256": "7809a5c77b7923271ee4e9c9a983a1162c9c57724961d861cac554e17895b21f",
+      "viewport": "3840x2160",
+      "act": 4,
+      "phase": "hold",
+      "local": 0.4299516908212563,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/04-edge-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "材料分区和反射可读；说明文字与固定导航没有碰撞。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "3840x2160/04-edge-handoff.jpg",
+      "path": "3840x2160/04-edge-handoff.jpg",
+      "screenshotSha256": "d598c0893791882b000ed5c348a6420c4fa94265b5df39fc39462cf8c2d06b9d",
+      "viewport": "3840x2160",
+      "act": 4,
+      "phase": "handoff",
+      "local": 0.8599033816425126,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/04-edge-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-04.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "反射收束时器物仍连续可见，没有灰白占位或空白；与终章全览样本相容。",
+        "取景裁切部分右端属于材料特写；可见金属仍连续，终章恢复全览。"
+      ]
+    },
+    {
+      "id": "3840x2160/05-relic-enter.jpg",
+      "path": "3840x2160/05-relic-enter.jpg",
+      "screenshotSha256": "cf891efeaf488b9e08d334562794c1ed956225d8fe39664a17579ea5f037f199",
+      "viewport": "3840x2160",
+      "act": 5,
+      "phase": "enter",
+      "local": 0.07974910394265285,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/05-relic-enter.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终章拉回完整器物，标题、结语和重看入口保有空间。"
+      ]
+    },
+    {
+      "id": "3840x2160/05-relic-hold.jpg",
+      "path": "3840x2160/05-relic-hold.jpg",
+      "screenshotSha256": "414629ff978bd09e0da8cc9438cae57291fa8790e6c36d4107e762d5947f66fc",
+      "viewport": "3840x2160",
+      "act": 5,
+      "phase": "hold",
+      "local": 0.42980884109916384,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "not-applicable",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/05-relic-hold.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "完整冷态轮廓稳定可见，结语与 Experience again 入口清楚。"
+      ]
+    },
+    {
+      "id": "3840x2160/05-relic-handoff.jpg",
+      "path": "3840x2160/05-relic-handoff.jpg",
+      "screenshotSha256": "f9758cccd15969d61e3c0a4fc4ac16a8738cef0088bbfafdb6d0ebc9b936ba87",
+      "viewport": "3840x2160",
+      "act": 5,
+      "phase": "handoff",
+      "local": 1,
+      "status": "reviewed",
+      "verdict": "pass",
+      "layout": "pass",
+      "sceneVisibility": "pass",
+      "continuity": "sample-consistent",
+      "reviewedAt": "2026-10-12T14:51:29.819901+00:00",
+      "reviewEvidence": "3840x2160/05-relic-handoff.jpg",
+      "internalReviewStrip": {
+        "path": "act-strips/3840x2160-05.jpg",
+        "includedInDelivery": false
+      },
+      "notes": [
+        "终点保持完整冷态画面和重看入口，固定导航仍可辨，没有空帧。"
+      ]
+    }
+  ]
+}

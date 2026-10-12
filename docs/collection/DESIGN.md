@@ -1,6 +1,6 @@
 ---
 name: AI Web Experience Collection
-description: Three photographic triptychs, four paired rows and twelve alternating editorial spreads opening twenty-nine independent worlds.
+description: Three photographic triptychs, four paired rows and twelve alternating editorial spreads opening thirty-two independent worlds.
 colors:
   ground: "#eeefeb"
   ink: "#20231f"
@@ -26,11 +26,11 @@ rounded:
 
 ## Overview
 
-Experience mode. Twenty-nine complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
+Experience mode. Thirty-two complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
 
 ## Colors
 
-Gallery tokens are above. The images and each work's established typography carry the twenty-nine distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
+Gallery tokens are above. The images and each work's established typography carry the thirty-two distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
 
 ## Typography
 
@@ -38,7 +38,7 @@ Barlow for the quiet gallery voice; Barlow Condensed for the racing and space ti
 
 ## Layout
 
-One restrained header and invitation (with a TWENTY-NINE WORLDS · ONE COLLECTION kicker) sit above three edge-to-edge image triptychs, four paired rows and twelve full-width editorial spreads, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
+One restrained header and invitation (with a THIRTY WORLDS · ONE COLLECTION kicker) sit above three edge-to-edge image triptychs, four paired rows and twelve full-width editorial spreads, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
 
 The twelve full-width spreads follow one collection-level rhythm so the sequence reads as an edited magazine, not a stack of identical banners: a three-tier height cadence (58 / 64 / 72svh), alternating left/right compositions (AETERNA, LUTHIER, MAGMA, URUSHI and CREMA mirror their gradients, imagery and text to the right; GRID stays left-set because its poster already carries large type), and a recurring ghost index numeral (Barlow Condensed, stamped from main.ts as `data-index` because style containment scopes CSS counters) at six percent ink. Every spread keeps its own work's typography, palette and captured media; the shared system only sets cadence, alignment and the numeral.
 
@@ -62,9 +62,9 @@ Preserve the independent work styles. Reuse their actual assets, not recreated t
 
 ## Direction contract
 
-THESIS: a single twenty-nine-world visual entrance, with the works themselves as the first viewport's substance.
+THESIS: a single thirty-two-world visual entrance, with the works themselves as the first viewport's substance.
 OWN-WORLD: pale gallery, sharp photographic edges, racing condensed type, botanical serif and the planetary horizon.
-STORY: recognize twenty-nine distinct experiences, choose one, explore, return.
+STORY: recognize thirty-two distinct experiences, choose one, explore, return.
 FIRST VIEWPORT: quiet header and invitation above a dominant three-panel photographic composition; Explore remains visible at each lower corner.
 FORM: three code-led triptychs, four paired rows and twelve alternating editorial spreads using media from the actual works; existing production assets are the reference.
 FINISH: desktop/mobile full-frame review, verified native entry/return links, documented tokens and retained source provenance. Review stays in this chat as required by repository instructions; no additional agents.
@@ -75,26 +75,30 @@ CHRONOS retains its supplied watch image, Cormorant Garamond typography and dark
 
 INTERVAL retains its original threshold imagery and supplied Bodoni Moda voice in the second triptych. Its mobile panel keeps the established vertical sequence. FORM and FUSION complete a third triptych with captured media from their actual runtimes; the homepage still loads no work runtime.
 
-GLASSHOUSE and VEIL add the first paired row, with a real GLASSHOUSE pavilion capture and VEIL's supplied cloth study. Their Manrope and Cormorant voices, warm/cool grounds and native links retain the same restrained gallery frame. On mobile all twenty-nine panels form the existing vertical sequence; neither runtime is imported by the homepage.
+GLASSHOUSE and VEIL add the first paired row, with a real GLASSHOUSE pavilion capture and VEIL's supplied cloth study. Their Manrope and Cormorant voices, warm/cool grounds and native links retain the same restrained gallery frame. On mobile all thirty panels form the existing vertical sequence; neither runtime is imported by the homepage.
 
-OPTIC and INKSCAPE add the second paired row, using captures from their supplied runtimes. OPTIC retains its Manrope/Cormorant optical film on black; INKSCAPE retains its light Cormorant voice, ivory paper and carbon ink. The existing eleven entrances keep their compositions. All twenty-nine panels remain native document links and no new work runtime loads on the homepage.
+OPTIC and INKSCAPE add the second paired row, using captures from their supplied runtimes. OPTIC retains its Manrope/Cormorant optical film on black; INKSCAPE retains its light Cormorant voice, ivory paper and carbon ink. The existing eleven entrances keep their compositions. All thirty panels remain native document links and no new work runtime loads on the homepage.
 
-FACET and SILICON add a third paired row, retaining Instrument Serif gemstone typography and Manrope semiconductor typography. ATLAS and THRUST add a fourth paired row, retaining real geographic relief and an original engine capture. Previews are captured from the actual work runtimes. All twenty-nine entrances remain native document links; the Collection imports no work runtime.
+FACET and SILICON add a third paired row, retaining Instrument Serif gemstone typography and Manrope semiconductor typography. ATLAS and THRUST add a fourth paired row, retaining real geographic relief and an original engine capture. Previews are captured from the actual work runtimes. All thirty entrances remain native document links; the Collection imports no work runtime.
 
-RESONANCE adds the first full-width entrance with its actual resonant-plate runtime capture, original Manrope and Cormorant italic fonts, graphite ground and restrained amber. Existing entrances retain their grid positions. All twenty-nine panels are native document links and the homepage imports no work runtime.
+RESONANCE adds the first full-width entrance with its actual resonant-plate runtime capture, original Manrope and Cormorant italic fonts, graphite ground and restrained amber. Existing entrances retain their grid positions. All thirty panels are native document links and the homepage imports no work runtime.
 
 AETERNA adds the second independent full-width row using its unchanged generated colossal-face plate and supplied Bodoni Moda voice. Museum models stay inside its runtime; previews do not imply archaeological photographs. Existing row positions and document links are retained.
 
-PARALLAX adds the third full-width native entrance using a capture of its actual reassembled sculpture. Its supplied Bodoni Moda voice, ivory gallery, black stone and chrome remain independent. The twenty-nine entrances retain their existing row order and document navigation; no new work runtime loads on the homepage.
+PARALLAX adds the third full-width native entrance using a capture of its actual reassembled sculpture. Its supplied Bodoni Moda voice, ivory gallery, black stone and chrome remain independent. The thirty entrances retain their existing row order and document navigation; no new work runtime loads on the homepage.
 
-LUTHIER adds the fourth full-width native entrance using an actual capture of its opening composition and supplied generated violin plate. The supplied Cormorant voice, black material theatre and amber remain independent. All twenty-nine entrances retain document navigation; no work runtime is imported by the Collection.
+LUTHIER adds the fourth full-width native entrance using an actual capture of its opening composition and supplied generated violin plate. The supplied Cormorant voice, black material theatre and amber remain independent. All thirty entrances retain document navigation; no work runtime is imported by the Collection.
 
-CODEX, MAGMA and FOSSIL add the fifth, sixth and seventh full-width native entrances. Their actual runtime captures retain respectively Cormorant binding typography on black cloth, Archivo cooling material on black, and Bodoni fossil exhibition typography on museum graphite. FOSSIL’s generated fossil plate remains distinct from its authored synthetic volume. All twenty-nine works keep independent documents and no work runtime loads on the homepage.
+CODEX, MAGMA and FOSSIL add the fifth, sixth and seventh full-width native entrances. Their actual runtime captures retain respectively Cormorant binding typography on black cloth, Archivo cooling material on black, and Bodoni fossil exhibition typography on museum graphite. FOSSIL’s generated fossil plate remains distinct from its authored synthetic volume. All thirty works keep independent documents and no work runtime loads on the homepage.
 
-URUSHI and NIB add the eighth and ninth full-width native entrances. Actual runtime captures retain respectively the supplied Bodoni Moda lacquer vessel on warm black and Cormorant Garamond ink theatre on graphite. URUSHI’s capture is procedural; NIB’s opening material plate is generated imagery. The first twenty-four works retain their row positions and compositions. All twenty-nine entrances use full document navigation; neither new runtime loads on the homepage.
+URUSHI and NIB add the eighth and ninth full-width native entrances. Actual runtime captures retain respectively the supplied Bodoni Moda lacquer vessel on warm black and Cormorant Garamond ink theatre on graphite. URUSHI’s capture is procedural; NIB’s opening material plate is generated imagery. The first twenty-four works retain their row positions and compositions. All thirty entrances use full document navigation; neither new runtime loads on the homepage.
 
-CREMA adds the tenth full-width native entrance with a capture of its actual radial machine and suspended-drop opening. Its supplied Archivo voice, near-black chamber, cool steel and amber liquid stay independent. Generated machine/material imagery remains distinguished from authored real-time geometry. The first twenty-six works retain their compositions and row positions; all twenty-nine entries navigate to independent documents.
+CREMA adds the tenth full-width native entrance with a capture of its actual radial machine and suspended-drop opening. Its supplied Archivo voice, near-black chamber, cool steel and amber liquid stay independent. Generated machine/material imagery remains distinguished from authored real-time geometry. The first twenty-six works retain their compositions and row positions; all thirty entries navigate to independent documents.
 
-CRAVE adds the eleventh full-width native entrance with a capture of its actual pastry/material opening. Its supplied Cormorant voice, warm dark ground and generated culinary imagery stay independent. The first twenty-seven works retain their compositions and row positions; all twenty-nine entries navigate to independent documents.
+CRAVE adds the eleventh full-width native entrance with a capture of its actual pastry/material opening. Its supplied Cormorant voice, warm dark ground and generated culinary imagery stay independent. The first twenty-seven works retain their compositions and row positions; all thirty entries navigate to independent documents.
 
-GRID adds the twelfth full-width native entrance with a capture of its actual typographic specimen and licensed photograph. Its supplied variable grotesk, paper and geometric composition remain independent. The first twenty-eight works retain their compositions and row positions; all twenty-nine entries navigate to independent documents.
+GRID adds the twelfth full-width native entrance with a capture of its actual typographic specimen and licensed photograph. Its supplied variable grotesk, paper and geometric composition remain independent. The first twenty-eight works retain their compositions and row positions; all thirty entries navigate to independent documents.
+
+DOSE adds a thirtieth native entrance using a capture of its actual procedural tablet scene, porcelain ground and original Barlow Condensed lettering. Its research concepts stay outside deployment; the homepage imports no DOSE runtime. The current uniform three-column gallery remains authoritative, with two columns at intermediate widths and one on phones.
+
+COUNTERFORM and FERRUM add the thirty-first and thirty-second native entrances. COUNTERFORM uses a capture of its live specimen and retains its paper, rust, Fraunces and Roboto Flex identity; FERRUM uses its supplied steel-sculpture still and retains Antonio, Manrope and the graphite/ember stage. Both remain independent document links with base-aware resources; the Collection imports neither runtime.

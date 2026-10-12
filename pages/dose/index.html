@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eeede8">
+  <meta name="description" content="Enter the architecture of a tablet. An interactive study of materials, compaction and structure, following one hypothetical uncoated tablet.">
+  <title>DOSE — The architecture of a tablet</title>
+  <link rel="icon" href="/dose/assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="/dose/assets/fonts/barlow-condensed-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/dose/assets/fonts/space-grotesk-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/dose/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/experiences/dose/src/styles.css">
+  <link rel="stylesheet" href="/experiences/shared/collection-return.css">
+  <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%dose/">
+  <meta property="og:site_name" content="AI Web Experience Collection">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DOSE — The architecture of a tablet">
+  <meta property="og:description" content="Seven perspectives through one hypothetical uncoated tablet: material, blending, compression, surface, conceptual cutaway and liquid contact.">
+  <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%dose/">
+  <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%dose/social.jpg">
+  <meta property="og:image:alt" content="Original procedural DOSE tablet in a porcelain studio; conceptual CGI, not a drug-product photograph">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DOSE — The architecture of a tablet">
+  <meta name="twitter:description" content="Seven perspectives through one hypothetical uncoated tablet: material, blending, compression, surface, conceptual cutaway and liquid contact.">
+  <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%dose/social.jpg">
+</head>
+<body>
+  <a class="skip-link" href="#prologue-title">Skip to the story</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h17M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v17M5 13l7 7 7-7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="17.5"/><path d="M20 2.5v35M2.5 20h35"/></symbol>
+  </defs></svg>
+
+  <div class="art-stage" aria-hidden="true">
+    <canvas id="scene-canvas"></canvas>
+    <canvas id="fallback-canvas"></canvas>
+  </div>
+  <div class="art-status" id="art-status" role="status" aria-live="polite"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#prologue" aria-label="DOSE — return to the beginning">
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg><span>DOSE</span>
+    </a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="text-button" id="open-index" type="button" aria-haspopup="dialog" aria-controls="index-dialog">Index <svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+      <button class="text-button" id="open-about" type="button" aria-haspopup="dialog" aria-controls="about-dialog">About</button>
+    </nav>
+  </header>
+
+  <main id="journey" aria-label="The architecture of a tablet">
+    <section class="chapter chapter--prologue" id="prologue" data-scene="0" style="--span:2.5" aria-labelledby="prologue-title">
+      <div class="chapter-content">
+        <div class="copy-head hero-head">
+          <div class="hero-word" aria-hidden="true">DOSE</div>
+          <h1 id="prologue-title" tabindex="-1">The architecture<br>of a tablet.</h1>
+        </div>
+        <div class="copy-foot hero-foot">
+          <p class="opening-line">The smallest objects can hold<br class="desktop-break"> the most deliberate design.</p>
+          <a class="arrow-link" href="#material"><svg aria-hidden="true"><use href="#i-arrow"/></svg><span>Enter the matter</span></a>
+        </div>
+        <span class="scene-scale">Object view</span>
+      </div>
+    </section>
+
+    <section class="chapter chapter--material" id="material" data-scene="1" style="--span:2.8" aria-labelledby="material-title">
+      <div class="chapter-content">
+        <div class="copy-head"><h2 id="material-title" tabindex="-1">Matter,<br>with purpose.</h2></div>
+        <div class="copy-foot">
+          <p>The active ingredient and excipients play different roles. Their forms and physical properties help shape the dosage form and its manufacture.</p>
+          <ul class="material-key" aria-label="Illustrative material roles"><li><i class="swatch swatch--api"></i>Active ingredient</li><li><i class="swatch swatch--matrix"></i>Excipient matrix</li><li><i class="swatch swatch--aid"></i>Processing aids</li></ul>
+          <p class="scientific-note">Forms and colors are illustrative.</p>
+        </div>
+        <span class="scene-scale">Particle view</span>
+      </div>
+    </section>
+
+    <section class="chapter chapter--distribution" id="distribution" data-scene="2" style="--span:3.05" aria-labelledby="distribution-title">
+      <div class="chapter-content">
+        <div class="copy-head"><h2 id="distribution-title" tabindex="-1">Uniformity<br>is designed.</h2></div>
+        <div class="copy-foot">
+          <p>A mixture, before a form. Blending redistributes materials; differences in particle size, shape and density can also lead to segregation.</p>
+          <p class="scientific-note">A visual distribution, not a measured result.</p>
+        </div>
+        <span class="scene-scale">Powder view</span>
+        <div class="process-witness" aria-hidden="true"><span>Gather</span><i></i><span>Distribute</span></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--press" id="press" data-scene="3" style="--span:3.6" aria-labelledby="press-title">
+      <div class="chapter-content">
+        <div class="copy-head"><h2 id="press-title" tabindex="-1">A moment.<br>Made solid.</h2></div>
+        <div class="copy-foot">
+          <p>In a die, a powder blend becomes one coherent form. Opposing punches bring particles closer, rearranging and consolidating the bed.</p>
+          <p class="scientific-note">Direct compression · Simplified geometry.</p>
+        </div>
+        <span class="scene-scale">Die view</span>
+        <div class="press-stages" aria-label="Compression sequence"><span data-press-step="0">Fill</span><span data-press-step="1">Compress</span><span data-press-step="2">Release</span></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--surface" id="surface" data-scene="4" style="--span:2.65" aria-labelledby="surface-title">
+      <div class="chapter-content">
+        <div class="copy-head"><h2 id="surface-title" tabindex="-1">The surface<br>holds a story.</h2></div>
+        <div class="copy-foot">
+          <p>A closer look at compressed matter. This tablet is uncoated: the surface belongs to a porous compact, with no separate shell.</p>
+          <p class="scientific-note">Conceptual porosity · No measured dimensions.</p>
+        </div>
+        <span class="scene-scale">Surface view</span>
+      </div>
+    </section>
+
+    <section class="chapter chapter--evidence" id="evidence" data-scene="5" style="--span:3.35" aria-labelledby="evidence-title">
+      <div class="chapter-content">
+        <div class="copy-head"><h2 id="evidence-title" tabindex="-1">Beauty,<br>examined.</h2></div>
+        <div class="copy-foot">
+          <p>Appearance is one observation. Content uniformity examines active ingredient across individual units. Disintegration and dissolution ask different questions.</p>
+          <p class="scientific-note">Conceptual reconstruction · Not scan data.</p>
+        </div>
+        <div class="depth-control" data-lenis-prevent>
+          <div class="depth-heading"><label for="observe-depth">Observe depth</label><output for="observe-depth" id="depth-description">Within the form</output></div>
+          <input type="range" id="observe-depth" min="0" max="1000" step="1" value="350" aria-describedby="depth-help" aria-valuetext="Within the form">
+          <div class="depth-endpoints" aria-hidden="true"><span>Surface</span><span>Interior</span></div>
+          <p class="sr-only" id="depth-help">Move the control to change the conceptual cutaway. Arrow keys make small changes; Home and End select the surface and interior. This is not a measurement.</p>
+        </div>
+        <span class="scene-scale">Internal view</span>
+      </div>
+    </section>
+
+    <section class="chapter chapter--release" id="release" data-scene="6" style="--span:2.7" aria-labelledby="release-title">
+      <div class="chapter-content">
+        <div class="copy-head"><h2 id="release-title" tabindex="-1">A form.<br>And what<br>comes after.</h2></div>
+        <div class="copy-foot">
+          <p>Structure meets liquid. Breakup exposes smaller particles; dissolution moves soluble material into solution. These are related, distinct processes.</p>
+          <p class="scientific-note">Artistic timing · No clinical prediction.</p>
+          <a class="arrow-link return-link" href="#prologue"><svg aria-hidden="true"><use href="#i-arrow"/></svg><span>Return to the beginning</span></a>
+        </div>
+        <span class="scene-scale">Liquid contact</span>
+        <span class="closing-thought">Material. Scale. Deliberate design.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="journey-footer" aria-label="Journey position">
+    <nav class="progress-rail" aria-label="Jump to a chapter">
+      <a href="#prologue" aria-label="Prologue" aria-current="step"><span></span></a>
+      <a href="#material" aria-label="Material"><span></span></a>
+      <a href="#distribution" aria-label="Distribution"><span></span></a>
+      <a href="#press" aria-label="The press"><span></span></a>
+      <a href="#surface" aria-label="Surface"><span></span></a>
+      <a href="#evidence" aria-label="Evidence"><span></span></a>
+      <a href="#release" aria-label="Release"><span></span></a>
+    </nav>
+    <button class="chapter-current" id="footer-index" type="button" aria-label="Open chapter index"><span id="chapter-number">00</span><span class="slash">/</span><span id="chapter-name">Prologue</span></button>
+    <span class="scroll-cue" id="scroll-cue"><svg aria-hidden="true"><use href="#i-down"/></svg><span>Scroll to explore</span></span>
+    <span class="global-note">Conceptual CGI <span>· Not to scale</span></span>
+  </footer>
+
+  <dialog id="index-dialog" class="editorial-dialog index-dialog" aria-labelledby="index-title" data-lenis-prevent>
+    <div class="dialog-header"><span class="dialog-wordmark">DOSE</span><button class="close-dialog text-button" type="button" aria-label="Close chapter index">Close<svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <div class="index-intro"><h2 id="index-title">One object.<br>Seven perspectives.</h2><p>Enter anywhere.<br>Follow the material.</p></div>
+    <nav class="chapter-list" aria-label="Chapter index">
+      <a href="#prologue"><span class="index-number">00</span><span class="index-name">Prologue</span><span class="index-detail">The invisible, within.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#material"><span class="index-number">01</span><span class="index-name">Material</span><span class="index-detail">Different forms. Deliberate roles.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#distribution"><span class="index-number">02</span><span class="index-name">Distribution</span><span class="index-detail">A mixture, before a form.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#press"><span class="index-number">03</span><span class="index-name">The press</span><span class="index-detail">The moment a shape is made.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#surface"><span class="index-number">04</span><span class="index-name">Surface</span><span class="index-detail">A closer look at compressed matter.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#evidence"><span class="index-number">05</span><span class="index-name">Evidence</span><span class="index-detail">Beyond what we can see.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#release"><span class="index-number">06</span><span class="index-name">Release</span><span class="index-detail">Structure meets liquid.</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </nav>
+  </dialog>
+
+  <dialog id="about-dialog" class="editorial-dialog about-dialog" aria-labelledby="about-title" data-lenis-prevent>
+    <div class="dialog-header"><span class="dialog-wordmark">DOSE</span><button class="close-dialog text-button" type="button" aria-label="Close about">Close<svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <div class="about-grid">
+      <div><h2 id="about-title">Small object.<br>Considered world.</h2><p class="about-lede">A visual study of the architecture within a tablet.</p><div class="edition-controls"><h3>Your viewing experience</h3><label class="toggle-row" for="quiet-motion"><span>Quiet motion<small>Still compositions and native scrolling.</small></span><input type="checkbox" id="quiet-motion" role="switch"></label><label class="toggle-row" for="light-rendering"><span>Light rendering<small>Fewer particles, gentler on your device.</small></span><input type="checkbox" id="light-rendering" role="switch"></label><p class="render-mode" id="render-mode">Preparing the material study.</p></div></div>
+      <div class="about-body">
+        <h3>One illustrative route</h3>
+        <p>We follow a hypothetical, uncoated, immediate-release tablet through <strong>direct compression</strong>: prepared ingredients, blending, die filling, compaction, structure and contact with liquid. Granulation and film coating are not part of this chosen branch.</p>
+        <p>The particle forms, proportions, colors, motion and timing are conceptual. No real formulation, measured dimension, analytical result or clinical outcome is represented.</p>
+        <h3>What the images can tell us</h3>
+        <p>Excipients have functional roles. A visually even mixture is not proof of uniformity. The cutaway is original CGI, not a CT scan; the depth control explores its geometry and does not perform a test.</p>
+        <p><strong>Disintegration is not dissolution.</strong> A tablet can break into particles that have not dissolved. Actual behavior depends on its materials and test conditions. This artwork gives no medication or manufacturing instructions.</p>
+        <h3>Reading &amp; references</h3>
+        <ol class="source-list">
+          <li><a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q8r2-pharmaceutical-development" target="_blank" rel="noopener noreferrer">FDA / ICH Q8(R2) — Pharmaceutical development <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span>Functions and characteristics of formulation materials.</span></li>
+          <li><a href="https://www.jstage.jst.go.jp/article/cpb/69/5/69_c20-00970/_html/-char/en" target="_blank" rel="noopener noreferrer">Ishikawa et al., 2021 — Direct compression and granulation <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span>Different manufacturing routes; only direct compression is illustrated here.</span></li>
+          <li><a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-guides/oral-solid-dosage-forms-prepost-approval-issues-194" target="_blank" rel="noopener noreferrer">FDA — Oral solid dosage forms, 1994 <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span>Historical qualitative background on mixing and segregation.</span></li>
+          <li><a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q6a-specifications-test-procedures-and-acceptance-criteria-new-drug-substances-and-new-drug-products" target="_blank" rel="noopener noreferrer">FDA / ICH Q6A — Specifications <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span>Quality attributes and dosage-unit testing.</span></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/37918497/" target="_blank" rel="noopener noreferrer">Ferdoush et al., 2023 — Water uptake and micro-CT <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span>Visual research context; original scan data is not used.</span></li>
+          <li><a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/dissolution-testing-immediate-release-solid-oral-dosage-forms" target="_blank" rel="noopener noreferrer">FDA — Dissolution testing <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><span>The distinct question of material entering solution.</span></li>
+        </ol>
+        <p class="credits">Original procedural geometry and materials. Space Grotesk, Barlow Condensed and IBM Plex Mono, self-hosted under the SIL Open Font License. Built with Three.js and Lenis. Source and license details accompany this edition.</p>
+      </div>
+    </div>
+  </dialog>
+  <noscript><div class="no-script-note">This is the reading edition. Enable JavaScript for the moving material study and interactive cutaway. The complete narrative remains below.</div></noscript>
+  <script type="module" src="/experiences/dose/src/app.js"></script>
+</body>
+</html>

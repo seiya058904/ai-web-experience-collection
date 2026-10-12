@@ -1,0 +1,13 @@
+{
+  "name": "counterform-the-shape-of-reading",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An independent immersive exhibition of real letterforms and their negative space.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check app.js && node --check scripts/serve.mjs && node --check src/materials.js && node --check src/type-handoff.js"
+  },
+  "engines": {"node": ">=20"}
+}

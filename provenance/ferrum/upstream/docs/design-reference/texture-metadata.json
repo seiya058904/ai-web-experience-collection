@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "pathBase": "Project root",
+  "records": [
+    {
+      "id": "forged-steel",
+      "path": "docs/design-reference/textures/originals/forged-steel.png",
+      "kind": "material-detail-source",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 4225174,
+      "sha256": "aa5b1bc1339dd317eda7d3dd12c0b5700c953a0ca7e6b9f05f1a1b877739258f",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-42618caa-5c80-4ba7-88b4-6bdc17d1886e",
+        "sourceFilename": "exec-42618caa-5c80-4ba7-88b4-6bdc17d1886e.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/texture-prompts.json",
+      "promptId": "forged-steel",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "requestedResolution": [
+        2048,
+        2048
+      ],
+      "luminance": {
+        "mean": 0.2861449122428894,
+        "std": 0.1007021889090538,
+        "p05": 0.13856209814548492,
+        "p50": 0.27843138575553894,
+        "p95": 0.46405228972435
+      },
+      "neutralityMeanChannelSpread": 0.015634406358003616,
+      "repeatSeamMeanAbsoluteDifference": {
+        "leftRight": 0.07199549674987793,
+        "topBottom": 0.07402403652667999,
+        "internalAdjacentX": 0.05376581847667694,
+        "internalAdjacentY": 0.0650448128581047
+      },
+      "limits": [
+        "Requested 2048 square; generator returned 1254 square.",
+        "Synthetic surface-detail source, not calibrated measured PBR channels.",
+        "Exact seamless pixel periodicity is not guaranteed; renderer uses mirrored repetition."
+      ],
+      "derivatives": [
+        {
+          "path": "assets/textures/forged-steel.webp",
+          "kind": "production-material-detail",
+          "usedAtRuntime": true,
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "bytes": 889838,
+          "sha256": "4ddb47ea53ffed98608d8c7a7a83767979b7e04a7ee72fc9d36229c5f2d0029c",
+          "sourcePath": "docs/design-reference/textures/originals/forged-steel.png",
+          "sourceSha256": "aa5b1bc1339dd317eda7d3dd12c0b5700c953a0ca7e6b9f05f1a1b877739258f",
+          "encodingRecord": "docs/design-reference/texture-encoding.json",
+          "encoding": {
+            "format": "WebP",
+            "quality": 96,
+            "method": 6,
+            "semanticEdits": false
+          },
+          "encoder": "Pillow WebP",
+          "rmsChannelError_0_255": [
+            1.785058640791788,
+            1.5804052602778111,
+            2.7010444037561987
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polished-steel",
+      "path": "docs/design-reference/textures/originals/polished-steel.png",
+      "kind": "material-detail-source",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 2662621,
+      "sha256": "f6d16701461a2ab629bb2b6364a001cf2724f93d2e89d1032176edf4e5d552b6",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-35417d5b-69f9-41fe-a01b-c88e8aa8c640",
+        "sourceFilename": "exec-35417d5b-69f9-41fe-a01b-c88e8aa8c640.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/texture-prompts.json",
+      "promptId": "polished-steel",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "requestedResolution": [
+        2048,
+        2048
+      ],
+      "luminance": {
+        "mean": 0.6044764518737793,
+        "std": 0.06584461778402328,
+        "p05": 0.49803921580314636,
+        "p50": 0.6039215922355652,
+        "p95": 0.7137255072593689
+      },
+      "neutralityMeanChannelSpread": 0.0034795543178915977,
+      "repeatSeamMeanAbsoluteDifference": {
+        "leftRight": 0.055946458131074905,
+        "topBottom": 0.0486161932349205,
+        "internalAdjacentX": 0.0734817162156105,
+        "internalAdjacentY": 0.01199363637715578
+      },
+      "limits": [
+        "Requested 2048 square; generator returned 1254 square.",
+        "Synthetic surface-detail source, not calibrated measured PBR channels.",
+        "Exact seamless pixel periodicity is not guaranteed; renderer uses mirrored repetition."
+      ],
+      "derivatives": [
+        {
+          "path": "assets/textures/polished-steel.webp",
+          "kind": "production-material-detail",
+          "usedAtRuntime": true,
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "bytes": 486982,
+          "sha256": "d844dcaf8f6ff2c03efa6702a1bbb57b051b92c825a6d57db94d82435911601d",
+          "sourcePath": "docs/design-reference/textures/originals/polished-steel.png",
+          "sourceSha256": "f6d16701461a2ab629bb2b6364a001cf2724f93d2e89d1032176edf4e5d552b6",
+          "encodingRecord": "docs/design-reference/texture-encoding.json",
+          "encoding": {
+            "format": "WebP",
+            "quality": 96,
+            "method": 6,
+            "semanticEdits": false
+          },
+          "encoder": "Pillow WebP",
+          "rmsChannelError_0_255": [
+            1.36932624727121,
+            1.3329574495159382,
+            1.412374582283175
+          ]
+        }
+      ]
+    }
+  ]
+}

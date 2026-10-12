@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'crema/index.html', 'crave/index.html', 'grid/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'crema/index.html', 'crave/index.html', 'grid/index.html', 'dose/index.html', 'counterform/index.html', 'ferrum/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib', 'crema', 'crave', 'grid'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib', 'crema', 'crave', 'grid', 'dose', 'counterform', 'ferrum'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -55,6 +55,9 @@ for (const [file, route, title] of [
   ['crema/index.html', 'crema/', 'CREMA — 9 Bars'],
   ['crave/index.html', 'crave/', 'CRAVE — Before the First Bite'],
   ['grid/index.html', 'grid/', 'GRID — The Architecture of Visual Order'],
+  ['dose/index.html', 'dose/', 'DOSE — The architecture of a tablet'],
+  ['counterform/index.html', 'counterform/', 'COUNTERFORM — The Shape of Reading'],
+  ['ferrum/index.html', 'ferrum/', 'FERRUM — The Memory of Fire'],
   ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
   ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
   ['facet/index.html', 'facet/', 'FACET — The Light Within'],
@@ -107,6 +110,12 @@ for (const file of ['crave/NOTICE.md', 'crave/ATTRIBUTION.md', 'crave/licenses/R
 }
 for (const file of ['grid/NOTICE.md', 'grid/licenses/README.md', 'grid/licenses/PHOTO-ATTRIBUTION.md', 'grid/licenses/ASSET-PROVENANCE.json', 'grid/licenses/RobotoFlex-OFL.txt', 'grid/licenses/InstrumentSerif-OFL.txt', 'grid/licenses/IBMPlexMono-OFL.txt', 'grid/licenses/GSAP-NOTICES.txt', 'grid/licenses/Lenis-MIT.txt', 'grid/fonts/RobotoFlex-Latin.woff2', 'grid/fonts/InstrumentSerif-Regular.woff2', 'grid/fonts/IBMPlexMono-Regular.woff2', 'grid/images/bw-stairs-original.jpg', 'grid/poster.webp', 'grid/social.jpg']) {
   assert((await stat(join(root, file))).size > 0, 'Missing GRID resource: ' + file);
+}
+for (const file of ['dose/LICENSE', 'dose/NOTICE.md', 'dose/THIRD-PARTY-NOTICES.md', 'dose/licenses/three-LICENSE.txt', 'dose/licenses/lenis-LICENSE.txt', 'dose/assets/fonts/barlow-condensed-OFL.txt', 'dose/assets/fonts/space-grotesk-OFL.txt', 'dose/assets/fonts/ibm-plex-mono-OFL.txt', 'dose/assets/fonts/space-grotesk-latin-variable.woff2', 'dose/assets/fonts/barlow-condensed-latin-700.woff2', 'dose/assets/fonts/ibm-plex-mono-latin-400.woff2', 'dose/poster.webp', 'dose/social.jpg']) {
+  assert((await stat(join(root, file))).size > 0, `Missing DOSE resource: ${file}`);
+}
+for (const file of ['counterform/NOTICE.md', 'counterform/licenses/Fraunces-OFL.txt', 'counterform/licenses/RobotoFlex-OFL.txt', 'counterform/licenses/Lenis-MIT.txt', 'counterform/licenses/Three-MIT.txt', 'counterform/assets/favicon.svg', 'counterform/assets/fonts/Fraunces-Variable.woff2', 'counterform/assets/fonts/Fraunces-Italic-Variable.woff2', 'counterform/assets/fonts/RobotoFlex-Variable.woff2', 'counterform/poster.webp', 'counterform/social.jpg', 'ferrum/NOTICE.md', 'ferrum/licenses/ANTONIO-OFL.txt', 'ferrum/licenses/BARLOW-CONDENSED-OFL.txt', 'ferrum/licenses/MANROPE-OFL.txt', 'ferrum/licenses/THREE-LICENSE.txt', 'ferrum/licenses/LENIS-LICENSE.txt', 'ferrum/assets/favicon.svg', 'ferrum/assets/fonts/antonio-latin-300-normal.woff2', 'ferrum/assets/fonts/barlow-condensed-latin-700-normal.woff2', 'ferrum/assets/fonts/manrope-latin-400-normal.woff2', 'ferrum/assets/stills/05-desktop.webp', 'ferrum/assets/textures/forged-steel.webp', 'ferrum/assets/textures/polished-steel.webp']) {
+  assert((await stat(join(root, file))).size > 0, `Missing COUNTERFORM/FERRUM resource: ${file}`);
 }
 let checked = 0;
 for (const relative of await readdir(root, { recursive: true })) {

@@ -1,0 +1,41 @@
+{
+  "recordedAt": "2026-10-12T14:30:48.978562+00:00",
+  "command": "node --test --test-reporter=tap tests/*.test.mjs",
+  "node": "v24.19.0",
+  "platform": "linux",
+  "tests": 19,
+  "passed": 19,
+  "failed": 0,
+  "skipped": 0,
+  "cancelled": 0,
+  "durationMilliseconds": 539.888737,
+  "result": "pass",
+  "testNames": [
+    "visibility, updates and strikes do not create audio before a click",
+    "a second click cancels a pending first resume without ever unmuting",
+    "hiding during a pending resume keeps gain zero and pauses the context",
+    "normal on/off publishes state, fades out and then suspends",
+    "a failed current resume clears the intent and leaves a later click retryable",
+    "a stale failed resume cannot erase a newer on intent",
+    "a new on request waits for an already pending suspend before resuming",
+    "six acts cover the complete scroll journey without gaps or overlap",
+    "overscroll and malformed positions have safe, finite endpoint states",
+    "all reachable states stay finite and within material and light bounds",
+    "material development is monotonic and ends as cold refined metal",
+    "direct, reverse and arbitrary-history samples yield identical narrative state",
+    "returned mutable transforms cannot corrupt future samples",
+    "every chapter handoff preserves continuous camera, geometry and illumination",
+    "ordinary living holds retain a stable photographic composition",
+    "both hammer contacts reach the material and then rebound",
+    "spark trails are deterministic, bounded, directional and never accumulate",
+    "reduced motion keeps six chapters while removing shake, particles and steam",
+    "chapter links target stable compositions including final deep links"
+  ],
+  "sourceSha256": {
+    "src/story.js": "21c706f54e1eb06e0ba4bb3b5c98904737bfb95a4a52e27f604896ef2b65dd87",
+    "src/audio.js": "eb58adb3419062f8c997bc6b50e7872868fbfe28dc0c13e0c0331e462819eb15",
+    "tests/story.test.mjs": "d94ac8f0d23bffe655403b5e54b97ddaf7752b28a4ac3da79351289fa602af53",
+    "tests/audio.test.mjs": "358c5a44d9a2be264059d4e717830df43c0a68cc13c72c2f7500bad8d5f21a4e"
+  },
+  "note": "Summary of the observed final TAP execution. The complete test implementation is included for reproduction."
+}

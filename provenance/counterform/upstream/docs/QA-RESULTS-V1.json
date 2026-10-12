@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "project": "COUNTERFORM / THE SHAPE OF READING",
+  "verificationDate": "2026-10-12",
+  "environment": {
+    "browser": "Chromium 138.0.7204.0",
+    "automation": "Playwright",
+    "renderer": "ANGLE / SwiftShader",
+    "host": "Linux headless",
+    "mainCaptureDeviceScaleFactor": 1
+  },
+  "viewports": [
+    [
+      360,
+      780
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      3840,
+      2160
+    ]
+  ],
+  "nativeConceptComparison": [
+    1536,
+    1024
+  ],
+  "normalMode": {
+    "functionalAssertions": 185,
+    "functionalPassed": 185,
+    "runtimeErrors": 0,
+    "sevenStableScenesPerSize": true,
+    "allSixHandoffsPerSize": true,
+    "pressPhysicalPhasesPerSize": 4
+  },
+  "reverseVisualComparisons": {
+    "count": 36,
+    "byteIdentical": 32,
+    "remainingFour": {
+      "changedPixels": [
+        1,
+        16,
+        1,
+        50
+      ],
+      "maximumChannelDifference": 1,
+      "assessment": "Subpixel raster rounding only; no residual scene-state mismatch."
+    }
+  },
+  "nativeFontAxisMetricProbe": {
+    "text": "Rag & reading",
+    "fontSizePx": 100,
+    "fontFamily": "Roboto Flex",
+    "weightMin": 490,
+    "weightMax": 735,
+    "widthMin": 387,
+    "widthMax": 784,
+    "opticalMin": 688,
+    "opticalMax": 591
+  },
+  "targetedChecks": {
+    "idleClock": "pass",
+    "syntheticVisibilityHandler": "pass",
+    "keyboardDialogFocus": "pass",
+    "rejectedFont": "pass",
+    "delayedFontAndRecovery": "pass",
+    "touchEmulation360And390": "pass",
+    "reducedMotion390And1440": "pass",
+    "noJavaScript390And1440": "pass",
+    "noWebGL390And1440": "pass",
+    "actualContextLossAndRecovery": "pass; both material scenes byte-identical before/after",
+    "directLocalFile": "pass; all three faces loaded; no errors or failed requests",
+    "shortLandscape844x390": "pass"
+  },
+  "artReview": {
+    "rounds": 2,
+    "independentFinalNormalModeVerdict": "SHIP",
+    "remainingMaterialFindings": 0,
+    "staticFallback": "Corrected and visually rechecked separately"
+  },
+  "limitations": [
+    "Safari and Firefox not exercised",
+    "No physical iOS/Android devices or hardware GPU benchmark",
+    "Native OS background suspension and real soft keyboard not tested",
+    "No screen-reader certification or complete accessibility audit",
+    "Primary type coverage and specimen testing are Latin-focused"
+  ],
+  "sourceSha256": {
+    "index.html": "35aef3e2fc48332e9ed82ffb0902bd6ac87d2fa3fe298b28e5941ba90bcdfcee",
+    "styles.css": "fea86a675be3766b839a4be95e194d40a49cc4443cfd86a0ffd26a081cc8689b",
+    "app.js": "61260f5b3d7dcd4f1820a6374e9795bf94c3c0a922a04e74b747f97bc7fa8245",
+    "src/materials.js": "414cb55d41538eb9b12283042b3a1eb95074850ace8fe5a47dc96c9a9b816e62",
+    "assets/materials.js": "e0f538603c4ae858937efe137d4407eea331a5ccd289b34eb3c95d463698a6d3"
+  },
+  "details": "QA.md"
+}

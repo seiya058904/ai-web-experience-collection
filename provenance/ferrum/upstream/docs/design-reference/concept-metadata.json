@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "pathBase": "Project root",
+  "records": [
+    {
+      "id": "00-prologue",
+      "path": "docs/design-reference/concepts/00-prologue.png",
+      "kind": "concept-reference",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1977504,
+      "sha256": "25772de0ed91fff5b316b4d086b1c82db851a61a14da8d8b32bf7fdda7eb143f",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-9769ce2d-0e6a-4919-bef2-ac4c3d1a9aa3",
+        "sourceFilename": "exec-9769ce2d-0e6a-4919-bef2-ac4c3d1a9aa3.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/concept-prompts.json",
+      "promptId": "00-prologue",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "name": "Prologue"
+    },
+    {
+      "id": "01-furnace",
+      "path": "docs/design-reference/concepts/01-furnace.png",
+      "kind": "concept-reference",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1904826,
+      "sha256": "f00e0796f6438bbb06fc1b809e99e9f83e000ce360de567f0bb96be9493906d4",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-a291d905-f452-42c9-b877-360ab45dbd58",
+        "sourceFilename": "exec-a291d905-f452-42c9-b877-360ab45dbd58.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/concept-prompts.json",
+      "promptId": "01-furnace",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "name": "Furnace"
+    },
+    {
+      "id": "02-strike",
+      "path": "docs/design-reference/concepts/02-strike.png",
+      "kind": "concept-reference",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 2133943,
+      "sha256": "938d1f78116038f044cec2a16737bfde910b2f9acc6f36184690f92517733cf9",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-0c9c86fc-ef99-41cd-ab93-58ec88416de6",
+        "sourceFilename": "exec-0c9c86fc-ef99-41cd-ab93-58ec88416de6.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/concept-prompts.json",
+      "promptId": "02-strike",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "name": "Strike"
+    },
+    {
+      "id": "03-quench",
+      "path": "docs/design-reference/concepts/03-quench.png",
+      "kind": "concept-reference",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1879690,
+      "sha256": "b158e988b896a84b712577c23e947a59f855a1dc44dc9be32b30bf781e974f28",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-94cdf529-9df9-4d90-9cde-dc79e54e2d85",
+        "sourceFilename": "exec-94cdf529-9df9-4d90-9cde-dc79e54e2d85.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/concept-prompts.json",
+      "promptId": "03-quench",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "name": "Quench"
+    },
+    {
+      "id": "04-reveal",
+      "path": "docs/design-reference/concepts/04-reveal.png",
+      "kind": "concept-reference",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1879737,
+      "sha256": "dc522f46ded9fef831547a0d12bbe34fcccc4a71510a9e9fe84e397af5204cfc",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-0fb40bea-80ca-4582-ba0d-621aa461eb11",
+        "sourceFilename": "exec-0fb40bea-80ca-4582-ba0d-621aa461eb11.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/concept-prompts.json",
+      "promptId": "04-reveal",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "name": "Reveal"
+    },
+    {
+      "id": "05-relic",
+      "path": "docs/design-reference/concepts/05-relic.png",
+      "kind": "concept-reference",
+      "usedAtRuntime": false,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 2007117,
+      "sha256": "bf36eaf44f7128e2e30281a520539f40cf7409ca11154221ff667ba4d748e92b",
+      "generator": {
+        "tool": "image_gen",
+        "mode": "built-in",
+        "sourceId": "exec-ceff4652-fe2f-4f50-ab25-7fd4f7008fa6",
+        "sourceFilename": "exec-ceff4652-fe2f-4f50-ab25-7fd4f7008fa6.png",
+        "sourceIdBasis": "Original image filename returned in generator output_hint"
+      },
+      "promptFile": "docs/design-reference/concept-prompts.json",
+      "promptId": "05-relic",
+      "postprocessing": "None; byte-for-byte copy of generator output",
+      "name": "Relic"
+    }
+  ]
+}
