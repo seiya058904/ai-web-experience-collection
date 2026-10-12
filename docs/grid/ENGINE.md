@@ -10,6 +10,8 @@ The state is a function of **scroll coordinate, viewport dimensions, and explici
 
 The coordinate runs from 0 (ZERO) to 11 (NO GRID). Each interval has a stable composition, a small progress-driven refinement, and a handoff. These refinements follow scroll rather than a free-running random animation, so a stopped frame is designed and reverse playback is exact.
 
+Each interval uses 3.9 viewport heights of document travel. This doubles the former 1.95-height travel, halving scene-coordinate change for the same wheel or touch distance while preserving the existing composition and handoff curves. Chapter navigation uses 1.4 seconds plus 0.24 seconds per interval, capped at 3.6 seconds; reduced-motion navigation remains immediate. Wheel interpolation and the one owned clock are unchanged.
+
 Scene rules produce target boxes, font parameters, crop parameters, grid geometry and palettes. DOM text reflows in its real box. CSS Grid supplies the physical column relationship and the native interface layout; the engine uses transforms for spatial movement and writes typography and crop parameters in a single batch. Geometry is reconstructed after font preparation and viewport changes. There are no per-frame DOM geometry reads in the normal scene renderer.
 
 During a handoff, reading text is checked against the composited paper, exposed RAW panel and interface surface. A foreground must remain legible on the surfaces it crosses; a reading region that spans incompatible light and dark surfaces retains its own solid paper. The calculation uses the same state as the composition and requires no pixel sampling or DOM measurement.

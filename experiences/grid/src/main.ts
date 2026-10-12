@@ -16,7 +16,7 @@ const readStore = (key: string, session = false) => {try {return (session ? sess
 const writeStore = (key: string, value: string, session = false) => {try {(session ? sessionStorage : localStorage).setItem(key, value);} catch {/* Private browsing still works. */}};
 const storedPosition = (value: unknown) => typeof value === 'number' ? value
   : typeof value === 'string' && value.trim() !== '' ? Number(value) : NaN;
-const extentForViewport = () => Math.round(innerHeight * 1.95 * 11);
+const extentForViewport = () => Math.round(innerHeight * 3.9 * 11);
 let reduced = media.matches || readStore('grid:reduce-motion') === '1';
 const lifecycle = new AbortController();
 const cleanups: (() => void)[] = [];
@@ -303,8 +303,8 @@ async function start() {
     const bounds = stage.getBoundingClientRect();
     view = {w: bounds.width, h: bounds.height, mobile: innerWidth <= 600};
     renderer.resize(view);
-    // 1.95 viewports of travel per system: the handoff owns roughly a third of
-    // that, so each change of system takes appreciably longer to read through.
+    // 3.9 viewports per system gives the existing refinement and handoff twice
+    // the reading distance, without changing poses or adding scroll latency.
     extent = extentForViewport();
     track.style.height = `${extent + innerHeight}px`;
     measureFrameLimits();
@@ -377,7 +377,7 @@ async function start() {
     // Navigation uses the same scroll authority and therefore the same state function.
     lenis.scrollTo(target / 11 * extent, {
       immediate: reduced || immediate, force: true,
-      duration: reduced ? 0 : Math.min(1.8, .7 + Math.abs(target - coordinate) * .12),
+      duration: reduced ? 0 : Math.min(3.6, 1.4 + Math.abs(target - coordinate) * .24),
       onComplete: () => {if (!destroyed) {coordinate = documentCoordinate(); dirty = true; draw();}}
     });
     history.replaceState(history.state, '', `#${SCENES[target].slug}`);
