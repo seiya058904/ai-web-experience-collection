@@ -24,6 +24,12 @@
   <sub>SCROLL-DRIVEN NARRATIVES &nbsp;·&nbsp; WEBGL / CANVAS / SVG &nbsp;·&nbsp; DESKTOP + MOBILE</sub>
 </p>
 
+<p align="center">
+  <img src="public/collection-social.jpg" width="880" alt="Visual identity and cover artwork for the AI Web Experience Collection" />
+  <br />
+  <sub>The collection's own cover artwork, included in the published site.</sub>
+</p>
+
 ---
 
 > **The subject is different every time. The medium is always the browser.**
@@ -67,6 +73,33 @@
 ### What Connects Them?
 
 **A material, a mechanism, or a question becomes an experience.** Each work has a distinct entrance, complete story, interaction model, and rendering lifecycle. The Collection itself stays a restrained gallery: visit a world, explore it, and return when you are ready.
+
+## 🖼️ A Glimpse of the Collection
+
+A small selection of the visuals already shipped with individual experiences. Each world has its own visual language, rather than sharing one generic gallery template.
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://seiya058904.github.io/ai-web-experience-collection/f1/">
+        <img src="public/f1/media/hero-1600.webp" width="100%" alt="Beyond the Limit: motorsport-inspired hero artwork from the F1 experience" />
+      </a>
+      <br />
+      <strong><a href="https://seiya058904.github.io/ai-web-experience-collection/f1/">F1 · Beyond the Limit →</a></strong>
+      <br />
+      <sub>Speed, precision, and racing engineering</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://seiya058904.github.io/ai-web-experience-collection/urushi/">
+        <img src="public/urushi/assets/stills/hero.webp" width="100%" alt="URUSHI: lacquer craftsmanship artwork used in its individual web experience" />
+      </a>
+      <br />
+      <strong><a href="https://seiya058904.github.io/ai-web-experience-collection/urushi/">URUSHI · Layers of Time →</a></strong>
+      <br />
+      <sub>Craft, material, and the depth of lacquer</sub>
+    </td>
+  </tr>
+</table>
 
 <a id="the-complete-exhibition"></a>
 ## 🗂️ The Complete Exhibition — 32 Works
