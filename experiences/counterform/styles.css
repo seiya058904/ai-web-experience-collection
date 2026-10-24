@@ -138,3 +138,6 @@
   .reading .live-poster{top:150px;height:600px}
   .reading .type-controls{top:150px;bottom:130px}
 }
+
+/* Keep the Collection exit independent of the collapsible chapter navigation. */
+.masthead > .collection-return{font-family:'Roboto Flex',sans-serif!important;min-width:44px;min-height:44px;flex-shrink:0}

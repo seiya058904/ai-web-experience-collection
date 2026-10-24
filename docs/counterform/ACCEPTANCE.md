@@ -8,3 +8,11 @@
 - Index opened with focus inside, Escape closed it, and the motion control toggled. Changing the weight axis from 650 to 900 updated the live value after the owned animation frame. At 390×844 the body width remained 390px and all three local fonts loaded.
 
 Upstream QA records are provenance only and do not certify this integration.
+
+## Collection return regression — 2026-10-24
+
+- Reproduced audit A09 before the change: the Collection exit was hidden at 390×844, 850×900 and 1440×600; 851×900 and 1440×900 exposed it.
+- Moved the existing base-aware exit outside the collapsible chapter navigation and retained the authored font with a minimum 44×44px target; no chapter, font-control or motion logic changed.
+- Chromium production previews passed at both `/` and `/ai-web-experience-collection/` for 320×844, 390×844, 768×1024, 850×900, 851×900, 1440×600, 1440×900, 1920×1080, 2560×1440 and 3840×2160: one visible exit, no header overlap, actual click and Tab/Enter returning to the Collection, Index/Escape, meaningful page content and no page errors or HTTP failures.
+- A 390×844 reduced-motion context also passed chapter navigation, live text and weight controls, refresh and return. The probe waits for the authored animation-frame update before checking the weight output; an initial immediate assertion ran too early.
+- `npm test` passed all 345 tests; root and project-path production builds and `verify:build` passed. Desktop/mobile screenshots were reviewed. Browser plugin was unavailable; the checks reused installed Playwright 1.64.1 with Chromium build 1248. Simulated viewports do not certify physical phones or Safari/Firefox.
