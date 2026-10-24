@@ -54,13 +54,13 @@ typography:
     letterSpacing: ".055em"
   label:
     fontFamily: "'DM Sans', sans-serif"
-    fontSize: "clamp(10px, .70vw, 25px)"
+    fontSize: "clamp(12px, .70vw, 25px)"
     fontWeight: 400
     lineHeight: 1
     letterSpacing: ".20em"
   action:
     fontFamily: "'DM Sans', sans-serif"
-    fontSize: "clamp(10px, .76vw, 26px)"
+    fontSize: "clamp(12px, .76vw, 26px)"
     fontWeight: 400
     lineHeight: 1.7
     letterSpacing: ".23em"
@@ -185,7 +185,7 @@ The 3D materials use their own metal, ruby and blued-steel surface values. They 
 - **Compact headline** replaces the broad-screen scale in the compact media rule. Portrait tablets use `headline-portrait-tablet`; narrow phones and shallow landscape views have their own final overrides. Preserve this cascade.
 - **Dialog headline** supplies the large index introduction. The credits and reading title uses its own observed smaller clamp; index rows use `index-title`.
 - **Body** supports a short reading measure, capped at 40 characters on the main stage. Compact chapter copy is capped at 35 characters and uses a tighter line height; portrait tablets use 16px copy with a 36-character measure.
-- **Label** and **action** are uppercase and tracked. Buttons do not use the display serif merely to appear prominent.
+- **Label** and **action** are uppercase and tracked. Navigation, text actions, sound labels, credits links and dialog close controls have a 12px minimum, including compact and short layouts; decorative measurements and chapter captions retain their independent scale. Buttons do not use the display serif merely to appear prominent.
 - **Frequency** pairs a large serif number with a small sans-serif explanatory label. **Measurement** is a separate monospaced role; it is not another display heading.
 - **Reading body** supports longer explanations inside the dialogs and is reduced to 14px in the compact layout.
 

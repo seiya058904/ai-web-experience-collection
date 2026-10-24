@@ -1,6 +1,6 @@
 ---
 name: AI Web Experience Collection
-description: Three photographic triptychs, four paired rows and twelve alternating editorial spreads opening thirty-two independent worlds.
+description: A responsive three-column gallery opening thirty-two independent worlds, followed by About & credits.
 colors:
   ground: "#eeefeb"
   ink: "#20231f"
@@ -36,7 +36,17 @@ Gallery tokens are above. The images and each work's established typography carr
 
 Barlow for the quiet gallery voice; Barlow Condensed for the racing and space titles; VERDANT's supplied Instrument Serif for its secondary entrance typography. All are local. The opening invitation is plain, short and readable.
 
-## Layout
+## Layout — current contract
+
+The header and invitation sit above one uniform gallery: three equal columns above 1000px, two columns at 701–1000px, and one column at 700px and below. Thirty-two native work links and a final About & credits link share this grid. Desktop seams are 3px; phone seams are 10px. Panel height follows the existing viewport clamps (56svh desktop, 52svh intermediate and large-screen, 76svh phone). In the two-column layout, the height clamp is a minimum: a row grows with its tallest content and both panels stretch together, keeping large display words and readable footers inside the frame. Other layouts retain their existing height bounds. No route or artwork is reordered.
+
+Every work keeps its own image, palette and typeface. The shared `--t` and `--s` scales size display text from each panel's content width; COUNTERFORM uses a smaller title coefficient to keep its full name readable without changing Fraunces or the one-line lockup. Reading summaries have a 12px minimum and panel footer actions a 13px minimum. Decorative labels and ghost indices retain their quieter scale.
+
+The ghost index remains a low-opacity background device, generated from `data-index`. The current grid supersedes the mixed full-width spreads and their height/alignment cadence described below; those older descriptions are historical, not rules for new entrances.
+
+### Superseded layout record
+
+The following three paragraphs describe the earlier editorial layout. They are retained for design history only.
 
 One restrained header and invitation (with a THIRTY WORLDS · ONE COLLECTION kicker) sit above three edge-to-edge image triptychs, four paired rows and twelve full-width editorial spreads, separated by a 3px seam. Each entire panel is a native link. At 700px and below, the panels form a vertical sequence with independent, substantial visual compositions. Footer holds credits. No horizontal scrolling or hidden navigation.
 
@@ -46,7 +56,7 @@ INTERVAL’s display title scales from its panel’s content width, so the full 
 
 ## Elevation & Depth
 
-Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels reveal once on scroll (IntersectionObserver, gated on a `.js` class so the entrance is complete without JavaScript; the reveal never gates content under reduced motion). Reduced motion removes all of it.
+Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels reveal once on scroll (IntersectionObserver, gated on a `.js` class so the entrance is complete without JavaScript; the reveal never gates content under reduced motion). Reduced motion removes reveal, image, title and arrow movement, including when the preference changes while hovered. Focus outlines and the instant numeral-opacity response remain available.
 
 ## Shapes
 
@@ -65,9 +75,13 @@ Preserve the independent work styles. Reuse their actual assets, not recreated t
 THESIS: a single thirty-two-world visual entrance, with the works themselves as the first viewport's substance.
 OWN-WORLD: pale gallery, sharp photographic edges, racing condensed type, botanical serif and the planetary horizon.
 STORY: recognize thirty-two distinct experiences, choose one, explore, return.
-FIRST VIEWPORT: quiet header and invitation above a dominant three-panel photographic composition; Explore remains visible at each lower corner.
-FORM: three code-led triptychs, four paired rows and twelve alternating editorial spreads using media from the actual works; existing production assets are the reference.
+FIRST VIEWPORT: quiet header and invitation above the first gallery row; each panel carries Explore at its lower corner. Phone composition scrolls naturally rather than forcing a complete panel above the fold.
+FORM: one responsive three/two/one-column gallery using media from the actual works; existing production assets are the reference.
 FINISH: desktop/mobile full-frame review, verified native entry/return links, documented tokens and retained source provenance. Review stays in this chat as required by repository instructions; no additional agents.
+
+## Historical integration notes
+
+The records below preserve how the collection grew. References to paired rows, full-width spreads and earlier work counts describe prior revisions; the current 32-work gallery contract above takes precedence. Asset identities and provenance distinctions remain applicable.
 
 GLAZE adds its supplied Archivo voice, celadon jar and pale green ground. KAGE adds its supplied condensed voice and a real FRAME rendering on white. The homepage imports neither work runtime; previews are static local media. The original three-panel composition and native-link behavior remain intact.
 
