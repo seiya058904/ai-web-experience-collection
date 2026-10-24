@@ -233,6 +233,20 @@ Verification is **per work and per integration surface**: one successful scene d
 
 Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, original assets, or deployment. Historical source ZIPs and nondeployed references are tracked through provenance rather than mixed into browser output.
 
+The original supplied work identities, render fallbacks, reduced-motion behavior and source records are part of the collection's preservation contract.
+
+### DOSE — The architecture of a tablet
+
+The DOSE independent work lives at `/dose/`: seven material perspectives of a hypothetical uncoated tablet, with a native depth control, Index/About, quiet motion and illustrated/no-JavaScript editions. [Design](docs/dose/DESIGN.md), [architecture](docs/dose/ARCHITECTURE.md), [sources](docs/dose/SOURCES.md) and [acceptance](docs/dose/ACCEPTANCE.md). Original source retains MIT; no clinical or measured-product claim is made.
+
+### COUNTERFORM — The Shape of Reading
+
+The thirty-first independent work lives at `/counterform/`: seven typographic spaces with real variable-font controls, letterform anatomy, native Index and a quiet reading fallback. [Design](docs/counterform/DESIGN.md), [architecture](docs/counterform/ARCHITECTURE.md), [sources](docs/counterform/SOURCES.md) and [acceptance](docs/counterform/ACCEPTANCE.md).
+
+### FERRUM — The Memory of Fire
+
+The thirty-second independent work lives at `/ferrum/`: six acts through one original digital steel sculpture, optional local sound, supplied still fallback and reduced-motion controls. [Design](docs/ferrum/DESIGN.md), [architecture](docs/ferrum/ARCHITECTURE.md), [research](docs/ferrum/RESEARCH.md) and [acceptance](docs/ferrum/ACCEPTANCE.md).
+
 </details>
 
 <a id="rights--provenance"></a>
@@ -242,6 +256,7 @@ Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, ori
 
 - **Attribution and materials:** [`ATTRIBUTION.md`](ATTRIBUTION.md), [`public/licenses.txt`](public/licenses.txt), and [About & Credits](https://seiya058904.github.io/ai-web-experience-collection/credits.html).
 - **Import and source records:** [`provenance/README.md`](provenance/README.md) and per-work directories under [`docs/`](docs/).
+- **Audio:** opt-in sounds must not be misrepresented as autoplaying or as unrestricted audio assets.
 - **Scientific and factual boundaries:** F1 is an independent educational interpretation; museum-derived artifacts, generated images, real geographic data, and synthetic reconstructions carry distinct source statements.
 
 Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights holders. This collection is **independent and unofficial**; inclusion of a subject does not imply affiliation or endorsement.
@@ -252,18 +267,3 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
   <sub>THIRTY-TWO WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>
-- **Audio:** opt-in sounds must not be misrepresented as autoplaying or as unrestricted audio assets.
-
-The original supplied work identities, render fallbacks, reduced-motion behavior and source records are part of the collection's preservation contract.
-
-## DOSE — The architecture of a tablet
-
-The DOSE independent work lives at `/dose/`: seven material perspectives of a hypothetical uncoated tablet, with a native depth control, Index/About, quiet motion and illustrated/no-JavaScript editions. [Design](docs/dose/DESIGN.md), [architecture](docs/dose/ARCHITECTURE.md), [sources](docs/dose/SOURCES.md) and [acceptance](docs/dose/ACCEPTANCE.md). Original source retains MIT; no clinical or measured-product claim is made.
-
-## COUNTERFORM — The Shape of Reading
-
-The thirty-first independent work lives at `/counterform/`: seven typographic spaces with real variable-font controls, letterform anatomy, native Index and a quiet reading fallback. [Design](docs/counterform/DESIGN.md), [architecture](docs/counterform/ARCHITECTURE.md), [sources](docs/counterform/SOURCES.md) and [acceptance](docs/counterform/ACCEPTANCE.md).
-
-## FERRUM — The Memory of Fire
-
-The thirty-second independent work lives at `/ferrum/`: six acts through one original digital steel sculpture, optional local sound, supplied still fallback and reduced-motion controls. [Design](docs/ferrum/DESIGN.md), [architecture](docs/ferrum/ARCHITECTURE.md), [research](docs/ferrum/RESEARCH.md) and [acceptance](docs/ferrum/ACCEPTANCE.md).
