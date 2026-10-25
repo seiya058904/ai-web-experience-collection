@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "date": "2026-10-24",
+  "testedArchive": {
+    "extractedAt": "2026-10-24T17:18:01.797904+00:00",
+    "candidateArchiveSHA256": "88ff943be69138319b2af26c82120b3b1972be856fce6231d9fb9b97174ed227",
+    "archiveBytes": 44540280,
+    "entryCount": 141,
+    "destination": "/workspace/scratch/864692c54a7f/qa/clean-archive-20261024",
+    "freshDirectory": true,
+    "hadNodeModules": false,
+    "hadDist": false,
+    "sourceAndFormalAssetManifestMatches": true,
+    "manifestEntries": 27
+  },
+  "cleanInstallTestsAndBuild": {
+    "project": "/workspace/scratch/864692c54a7f/qa/clean-archive-20261024/BACKSTAGE",
+    "started": "2026-10-24T17:18:15.660105+00:00",
+    "commands": [
+      {
+        "command": [
+          "npm",
+          "ci"
+        ],
+        "exitCode": 0,
+        "elapsedSeconds": 2.513,
+        "stdout": "\nadded 25 packages in 2s\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+      },
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exitCode": 0,
+        "elapsedSeconds": 0.458,
+        "stdout": "\n> backstage-the-art-of-making-believe@1.0.0 test\n> node --test tests/*.test.mjs\n\n\u2714 deck and floor use nondegenerate polygons, with four real deck segments (1.851214ms)\n\u2714 full board width, thickness and sway clear the actual rotating deck slots (7.184356ms)\n\u2714 the static plank openings clear every sampled yaw, not just the endpoint (43.206598ms)\n\u2714 guide sliders clear both decks and remain captured throughout lift and sway (7.874961ms)\n\u2714 the openings preserve ordinary floor away from the mechanisms (0.227786ms)\n\u2714 scenic flats and attached jacks clear other flats, the door landing and raised waves over 1,001 mechanism samples (186.936059ms)\n\u2139 1001 poses; 38792 pair comparisons; no sampled envelope overlap.\n\u2139 Smallest sampled separating-axis gap: 0.119955 model units (flat 3 / door landing, world=0.273).\n\u2714 helpers clamp invalid progress and implement bounded smoothstep (1.100515ms)\n\u2714 mechanical endpoints retain exactly one continuous authored path (1.034268ms)\n\u2714 authored scroll is reconstructible at every sample and reversible (1.548207ms)\n\u2714 neutral III to IV entry is identical at every quarter before and after visiting IV (0.444777ms)\n\u2714 III to IV bridge retains a remembered production and its first/reverse path (1.388991ms)\n\u2714 finite cue reaches sea from room without leaving its safe scalar interval (0.875863ms)\n\u2714 finite cue reaches night from room without leaving its safe scalar interval (0.476023ms)\n\u2714 finite cue reaches room from sea without leaving its safe scalar interval (0.329416ms)\n\u2714 finite cue reaches night from sea without leaving its safe scalar interval (0.457666ms)\n\u2714 finite cue reaches room from night without leaving its safe scalar interval (0.703248ms)\n\u2714 finite cue reaches sea from night without leaving its safe scalar interval (0.370207ms)\n\u2714 rapid retargeting takes over the present pose and only the last target survives (0.442103ms)\n\u2714 exit captures the current cue and pauses it while q alone controls the handoff (1.269505ms)\n\u2714 reverse handoff reuses its snapshot at 0/25/50/75/100 percent (0.887671ms)\n\u2714 direct end access is canonical NIGHT and never depends on unseen scroll history (0.193546ms)\n\u2714 skipping IV uses saved choices and resolves an unfinished saved path (0.159946ms)\n\u2714 author replay does not overwrite a production and the IV entry meets its stored pose (0.500979ms)\n\u2714 a serialized in-progress ending reconstructs the same pose after reload (0.26427ms)\n\u2714 invalid saves are harmless and supported saved numbers are bounded (0.314524ms)\n\u2714 reduced motion retains scene, view, light, reset and the final choice (0.179254ms)\n\u2714 hidden tabs freeze local cues and long resume deltas cannot catch up (0.21691ms)\n\u2714 reset restores only production parameters and never changes scroll progress (0.700594ms)\n\u2139 tests 28\n\u2139 suites 0\n\u2139 pass 28\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 309.113789\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+      },
+      {
+        "command": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "elapsedSeconds": 0.941,
+        "stdout": "\n> backstage-the-art-of-making-believe@1.0.0 build\n> vite build\n\nvite v8.3.5 building client environment for production...\ntransforming...\n\u2713 20 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   10.10 kB \u2502 gzip:   3.35 kB\ndist/assets/index-DMTP8RtU.css    18.11 kB \u2502 gzip:   4.55 kB\ndist/assets/index-DVpNrRCI.js    147.28 kB \u2502 gzip:  55.79 kB\ndist/assets/theatre-CrSp5op7.js  598.81 kB \u2502 gzip: 154.90 kB\n\n\u2713 built in 569ms\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+      }
+    ],
+    "finished": "2026-10-24T17:18:19.572729+00:00",
+    "status": "PASS"
+  },
+  "buildIntegrity": {
+    "matchesFinalBuild": true,
+    "files": [
+      {
+        "path": "assets/index-DMTP8RtU.css",
+        "sha256": "f123c391e935af769f571df17131a58a97fd1a0f86c7fd42598c812ef71f5c11",
+        "bytes": 18118
+      },
+      {
+        "path": "assets/index-DVpNrRCI.js",
+        "sha256": "71200d9aa475f77a59aecfeb7527968066bae5d9c43493c664bdce66ca920bf1",
+        "bytes": 147281
+      },
+      {
+        "path": "assets/theatre-CrSp5op7.js",
+        "sha256": "63043039b57c7fae91685f20f3c1ee24dc40532565d7b45b5a2efba282d09bfb",
+        "bytes": 598811
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "ad228ff96e1f6caea5acbd68e50cf8a04fdd54e2c724d2507fd6e0ad6e84b5f4",
+        "bytes": 289
+      },
+      {
+        "path": "fonts/Fraunces-OFL.txt",
+        "sha256": "cd3384cafac6f2bddc3955273958a2e029f97027c8037ac539ef5744a77b579e",
+        "bytes": 4504
+      },
+      {
+        "path": "fonts/SourceSans3-OFL.txt",
+        "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+        "bytes": 4314
+      },
+      {
+        "path": "fonts/fraunces-latin.woff2",
+        "sha256": "7e744849028e2219e2aa1bc467dc4032980dc4487c9c3da3010081cd72d3b103",
+        "bytes": 121016
+      },
+      {
+        "path": "fonts/source-sans-3-medium.woff2",
+        "sha256": "3b3a8b8e4a422ff71c9ffb0836a4d48ff337a4419b878214f65d6ebe0f59fa51",
+        "bytes": 15652
+      },
+      {
+        "path": "fonts/source-sans-3-regular.woff2",
+        "sha256": "0f73f35e08cde0a2f10c109c6e01d71459d97e4099ecd9a50f1b6c0209e4de2b",
+        "bytes": 15696
+      },
+      {
+        "path": "fonts/source-sans-3-semibold.woff2",
+        "sha256": "14527d193b0e30bc32ef931549a246cdfd286573bb12869b7e052b8101a39d38",
+        "bytes": 15668
+      },
+      {
+        "path": "index.html",
+        "sha256": "6e8105135c49d3271a683c1d9bfd61aad4cc97f7aa435679379c7fe5409552d4",
+        "bytes": 10106
+      },
+      {
+        "path": "posters/night.png",
+        "sha256": "fdadf79fc7f8ed4bb3ce8d2e6ce0cd75c88203d2c46fa811163443909cc05831",
+        "bytes": 310327
+      },
+      {
+        "path": "posters/room.png",
+        "sha256": "f5aef185ba033934a0cc0edb680d3eb8fb2d0917af6c862c27a0000c6f4f4912",
+        "bytes": 300973
+      },
+      {
+        "path": "posters/sea.png",
+        "sha256": "ee944341c0beaa069d3677907382277e72052886971683c045513474c8433adc",
+        "bytes": 321859
+      },
+      {
+        "path": "posters/wings.png",
+        "sha256": "629a69962c0cb75d3401b5be0d3966e7435a6905beb206c1733dfbe16f86fb9d",
+        "bytes": 211367
+      }
+    ]
+  },
+  "sourceAndFormalAssetManifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "sha256": "d7ce317bfa596b989d58e5e10345f6075c8142ffc7713a00de93ef8171ec61f5",
+    "entries": 27,
+    "currentSourceMatchesExtractedTestedSource": true
+  },
+  "browserVerification": {
+    "record": "evidence/clean-archive/results.json",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "status": "PASS",
+    "checks": 58,
+    "passed": 58,
+    "capturedActs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "allOriginalPNGsIncluded": true,
+    "buildIndexSHA256": "6e8105135c49d3271a683c1d9bfd61aad4cc97f7aa435679379c7fe5409552d4"
+  },
+  "warnings": [
+    "Vite reports the separate 598.81kB renderer chunk above its default 500kB warning threshold. Build succeeds; exact build output is retained.",
+    "The execution environment supplies an http-proxy npm environment setting that this npm version warns about. The project contains no such npm configuration."
+  ],
+  "finalization": "After the successful extracted-archive verification, only this verification record, its selected evidence, and explanatory documentation are added or updated. All 27 source, test, helper, configuration, lockfile and formal-asset files match the extracted tested archive byte for byte. The finalized ZIP is checked again for archive integrity and exact file content; no dependency or application code is changed during finalization."
+}

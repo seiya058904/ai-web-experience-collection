@@ -293,6 +293,55 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 .world-ferrum .world-image:after{background:linear-gradient(90deg,#0b0c0de8,transparent 78%),linear-gradient(180deg,#0b0c0d55,transparent 40%,#0b0c0dda)}
 .world-ferrum:focus-visible{outline-color:#b7b2a7}
 
+/* The five 2026 additions keep their own voices inside the same gallery frame. */
+@font-face{font-family:'Collection Pelagic Cormorant';src:url('/chronos/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Collection Backstage Sans';src:url('/backstage/fonts/source-sans-3-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Collection Murmuration Anton';src:url('/murmuration/fonts/anton.woff2') format('woff2');font-weight:400;font-display:swap}
+
+.world-relay{--t:22;--s:8;background:#f1ebdd;color:#292b29}
+.world-relay h2{font-family:Archivo,Arial,sans-serif;font-weight:700;letter-spacing:-.045em;line-height:.9}
+.world-relay .world-title p{font-family:Archivo,Arial,sans-serif;font-weight:400;letter-spacing:-.015em;line-height:1.12}
+.world-relay .world-image img{object-position:52% 68%}
+.world-relay .world-image:after{background:linear-gradient(180deg,#f1ebdd66,#f1ebddb4 36%,#f1ebddd2 58%,#f1ebdd66 78%,#f1ebddf7)}
+.world-relay:focus-visible{outline-color:#c7402a}
+
+.world-supercell{--t:15.5;--s:8.5;background:#1b2a34;color:#f4f1ea}
+.world-supercell h2{font-family:'Manrope Variable',Arial,sans-serif;font-weight:300;letter-spacing:.005em;line-height:.95}
+.world-supercell .world-title p{font-family:'Manrope Variable',Arial,sans-serif;font-weight:400;letter-spacing:-.025em;line-height:1.1}
+.world-supercell .world-image img{object-position:54% 46%}
+.world-supercell .world-image:after{background:linear-gradient(90deg,#16232cb3,transparent 66%),linear-gradient(180deg,#16232c22,transparent 38%,#16232cf2)}
+.world-supercell:focus-visible{outline-color:#f4f1ea}
+
+.world-pelagic{--t:14;--s:9.5;background:#071923;color:#f2ead9}
+.world-pelagic h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:1}
+.world-pelagic .world-title p{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;line-height:1;letter-spacing:-.02em}
+.world-pelagic .world-title em{font-family:'Collection Optic Cormorant',Georgia,serif;font-weight:400}
+.world-pelagic .world-image img{object-position:74% 52%}
+.world-pelagic .world-image:after{background:linear-gradient(90deg,#071923f2,transparent 78%),linear-gradient(180deg,transparent 44%,#071923e6)}
+.world-pelagic:focus-visible{outline-color:#f2ead9}
+
+.world-backstage{--t:12;--s:7.5;background:#f3eee5;color:#203631}
+.world-backstage h2{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.035em;line-height:.92}
+.world-backstage .world-title p{font-family:'Collection Backstage Sans','Segoe UI',Arial,sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.12}
+.world-backstage .world-image img{object-position:66% 46%}
+.world-backstage .world-image:after{background:linear-gradient(90deg,#f3eee5fa,#f3eee5dd 40%,#f3eee544 74%),linear-gradient(180deg,transparent 46%,#f3eee5e0)}
+.world-backstage:focus-visible{outline-color:#bc422d}
+
+.world-murmuration{--t:16;--s:8.5;background:#eae8e1;color:#242523}
+.world-murmuration h2{font-family:'Collection Murmuration Anton',Impact,sans-serif;font-weight:400;letter-spacing:-.005em;line-height:.92}
+.world-murmuration .world-title p{font-family:'DM Sans',Arial,sans-serif;font-weight:400;letter-spacing:-.025em;line-height:1.1}
+.world-murmuration .world-image img{object-position:56% 44%}
+.world-murmuration .world-image:after{background:linear-gradient(180deg,#eae8e12e,transparent 40%,#eae8e1ee)}
+.world-murmuration:focus-visible{outline-color:#242523}
+@media(max-width:700px){
+.world-relay h2{font-size:72px}
+.world-supercell h2{font-size:44px}
+.world-pelagic h2{font-size:58px}
+.world-backstage h2{font-size:38px}
+.world-murmuration h2{font-size:44px}
+}
+
+
 /* A native, optional finding aid; the gallery remains the opening surface. */
 .collection-intro p>span{display:block;font-size:max(12px,.85em);margin-top:3px}
 .collection-index{margin:0 var(--gutter) 16px;border-top:1px solid #c7ccc2}

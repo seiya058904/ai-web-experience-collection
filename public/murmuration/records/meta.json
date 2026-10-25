@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "count": 2400,
+  "seed": 8419,
+  "warmup": 420,
+  "steps": 480,
+  "every": 4,
+  "frames": 121,
+  "selected": 1092,
+  "peers": [
+    1533,
+    1613,
+    1124,
+    799,
+    1833,
+    2003,
+    1251
+  ],
+  "perturbation": {
+    "x": -17.15625,
+    "y": -10.09375,
+    "radius": 5.5,
+    "turn": 1.85
+  },
+  "positionScale": 64,
+  "velocityScale": 512
+}

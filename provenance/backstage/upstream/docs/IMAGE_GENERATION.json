@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-24",
+  "tool": "image_gen.imagegen (built-in)",
+  "purpose": "Concept references only; production uses persistent real Three.js geometry.",
+  "briefs": [
+    {
+      "key": "A",
+      "prompt": "Use case: stylized-concept. Create ONE polished landscape website design concept for BACKSTAGE — The Art of Making Believe, a playable original miniature theatre. A / THE AUDIENCE BELIEVES. The full desktop hero composition: warm ivory paper studio background #F3EEE5, generous top typographic band with a beautifully set weighty serif BACKSTAGE, small quiet English navigation 'The story' and 'Call the cue'. Below, on the right 70% of composition is a finely crafted miniature proscenium theatre at nearly audience eye level, slightly from the left, restrained 55mm lens. Cream carved simple stepped proscenium #E9D9B7, matte wood plank stage #AE875B with visible seams, rich teal #2C5B5D dimensional scenic flats form a tiny forced-perspective ROOM. A vivid vermilion red door #D84A35 slightly right of centre, a little translucent ivory paper lantern with handle outside it on a visible thin curving metal track on the wooden floor; a square window left casts beautiful slanted warm windowlight. Restrained dark teal velvet curtain sides, visible board thickness only at a few edges. Artisanal handpainted wood detail, soft studio contact shadows, actual solid geometrical miniature, no plastic gloss, no bloom fog. Lower left independent text area outside theatre reads 'The art of making believe.' and small 'A door. A light. An ocean waiting in the wings.' plus an unobtrusive 'Step inside' arrow. Editorial theatre programme quality. Full unobstructed stage, beautiful illumination, the door and lantern readable at phone scale. No people, no stock images, no giant UI cards, no black/gold style, no ornamental charts. This is a REFERENCE concept: all actual website text and stage geometry will be built in real code. Landscape 1536x1024.",
+      "classification": "reference only",
+      "returned_file": "exec-8392bb0f-db64-43e4-976b-67c67396bed8.png",
+      "included_file": "references/concept-A.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "sha256": "545c15390a5081c8d578d64b48dbc952f2efa510502beb6f44426020f9e62e4e",
+      "decision": "Selected near-audience hero composition and ivory/teal/vermilion palette."
+    },
+    {
+      "key": "B",
+      "prompt": "Use case: stylized-concept. Create ONE full landscape website design concept for BACKSTAGE miniature interactive theatre, B / THE THEATRE AS A JEWEL BOX. Distinct high three-quarter angle from audience right, showing a little 3:2 timber stage on a thick craft plinth, cream #E9D9B7 stepped proscenium, teal #2C5B5D room scenery, one vermilion #D84A35 door, a softly glowing ivory paper lantern with handle on a thin visible curved stage-floor track. Partly open right side wall reveals several painted flats with wood batten frames and diagonal braces, tiny matte metal fly rail above, parked sculpted paper ocean wave panels in blue. Warm expressive theatrical sidelight inside room, neutral work light illuminates miniature backstage, beautifully readable painted front / plywood edge / timber back. Background is warm ivory studio #F3EEE5 with soft contact shadows. The audience still wants to see the story before understanding all the machinery. Independent typographic header 'BACKSTAGE' in a substantial theatre-poster serif; lower left outside object text 'Every illusion has a working side.' plus 'Turn toward the wings'. Sophisticated editorial website, plenty of whitespace and a narrow five-act navigation, no cards or UI clutter. Material: handpainted matte scenery, precise real thickness, wooden plank seams, fabric side curtain edging only. No floating disassembled parts, no impossible machinery, no actors, no black background, no diagrams. This is a different hero/Act II framing study from an eye-level front view, not the same camera slightly changed. Full 1536x1024 landscape.",
+      "classification": "reference only",
+      "returned_file": "exec-47d50ae1-4eb8-4d6d-beb3-db0ff7d44d19.png",
+      "included_file": "references/concept-B.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "sha256": "3884345c08fabfb472a2de93b220e834b48cf7f0797cfba68e7c104ac9e0801c",
+      "decision": "Distinct elevated jewel-box hero route; adopted as the wing reveal, not the entrance."
+    },
+    {
+      "key": "C",
+      "prompt": "Use case: stylized-concept. Create ONE full landscape concept of BACKSTAGE miniature theatre at the REAL halfway moment of a scene transformation: C / BETWEEN ROOM AND SEA. Warm ivory #F3EEE5 studio, finely crafted cream stepped proscenium with a matte wood plank floor and visible turntable seam, original vermilion red door on right and small glowing ivory paper lantern on visible thin curving track. Camera medium three-quarter audience-right view, just enough backstage reveal. Leftmost teal room wall with a window is still visible and angled 35 degrees; one rear double-sided painted flat rotating shows its wood thickness and batten back; right flat has already turned to show an abstract handpainted blue-grey coastal cliff reverse. Three sculpted blue wooden wave boards are entering separate parallel tracks from the side with clear spacing, first wave board partly at centre, the others still parked. Half the scene is a coherent room, half is becoming a poetic paper sea, continuous pale sky backdrop. The same red door is a clear anchor, never duplicated, all machinery connected and supported. This is NOT two images transparently blended, NOT a ghost overlap, NOT exploded geometry. A gorgeous real intermediate spatial composition, one side hands the story to the other. Soft warm theatrical shadows, neutral light on braces. Design includes upper separate serif 'BACKSTAGE', independent left lower copy 'Move the scenery. Keep the story.' with minimal quiet navigation. Precise tactile artisan model photography quality, no people, no black/gold, no excessive text. 1536x1024.",
+      "classification": "reference only",
+      "returned_file": "exec-ad060bf3-ff44-4a7a-a609-882f2bc59431.png",
+      "included_file": "references/concept-C.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "sha256": "74ea7c6e4b7071c17e804e829fa97b57f0ff406008c487442961c2c00ab6d204",
+      "decision": "Adopted room-left/coast-right intermediate composition; rejected auditorium scale, hanging lantern and lateral wave-truck route."
+    },
+    {
+      "key": "D",
+      "prompt": "Use case: ui-mockup. ONE landscape website concept, act IV of BACKSTAGE, a real code-driven original miniature theatre. Warm ivory paper #F3EEE5 background. Quiet serif title BACKSTAGE in separate slim header, five act navigation I II III IV V, IV active. Main visual occupies right 70%: a precise handcrafted miniature theatre with elegant rectangular stepped cream proscenium, subtle teal folded curtain edges, wood plank stage, three low rows of curved cutout teal-blue wave boards. A single vivid vermilion red door slightly right of centre on a little wooden jetty, single glowing ivory paper lantern outside the door on a visible floor rail, pale painted disc moon just above the door on two thin visible fly wires. Layered blue night sky panel with sparse tiny warm punched stars, deep indigo #142C46 inside theatre but ivory daylight studio outside. Restrained beautiful real shadows and matte surfaces, no bloom. Slightly elevated front camera. At left a narrow independent editorial control column, heading 'Call the cue.' with text 'A world changes when its cues change.' Then three simple real-looking accessible controls: Scene segmented text buttons 'Room' 'Sea' 'Night' (Night active red underline), View horizontal range with 'Audience' and 'Wings', Light horizontal range with 'Low' and 'High'. Small action 'Reset this production'. Bottom small cue status 'Night is ready.' and a quiet 'Watch your ending' arrow. No cards, no dark dashboard, no extra sliders, no stats, no fake metrics. Hero-scale artistic theatre object, subtle material texture, clearly implementable geometric parts, much more crafted than a basic 3D block model. 1536x1024.",
+      "classification": "reference only",
+      "returned_file": "exec-9cb17a01-e1fc-4d82-a6ea-66b7153e01ec.png",
+      "included_file": "references/concept-D.png",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "sha256": "9dfbfb388d8b925963b26929bc85ed62eabe277eedf59da1636939727ceb361d",
+      "decision": "Adopted director composition, three controls and night triangle."
+    },
+    {
+      "key": "E",
+      "prompt": "Use case: ui-mockup. ONE portrait 1024x1536 mobile website concept, final act of BACKSTAGE. Warm ivory #F3EEE5 editorial programme background, top separate centered refined bold serif BACKSTAGE, small quiet 'The art of making believe.' Under header, a clearly readable crafted miniature theatre in the upper 55% of screen: cream rectangular stepped proscenium, dark teal narrow folded curtain edges, warm wood plank stage, three low sculpted blue paper wave boards, single red vermilion door right of centre on a visible jetty and one glowing small ivory paper lantern docked immediately outside it, moon disc exactly above door and tiny stars on deep blue sky backdrop. Front camera elevated slightly for phone sightlines; all stage columns, door, lantern and at least two layers visible. Soft warm theatrical sidelight and cream studio light. The same real connected model throughout, not a floating building. Below in normal vertical document flow is subtle small text 'YOUR SCENE · NIGHT', heading 'Now you know. It still works.' in beautiful substantial Fraunces-like serif, short paragraph 'The door was always here. You changed the world around it.' Two tasteful accessible text actions 'Return to the wings' and 'Begin again'. Five small chapter numerals at bottom, V active. Generous whitespace, legible body type, genuine mobile redesign with no horizontal overflow, no text overlaying stage or sky, no cards, no marketing. Mature poetic website. Entire screen composition.",
+      "classification": "reference only",
+      "returned_file": "exec-9c51cf92-fa2c-4e4b-85df-e61f52910ebb.png",
+      "included_file": "references/concept-E.png",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "sha256": "f50336b380302e7a21d2b371b51fac7e7ac1ce95bb50e8d5adeb3f6e8b44e4b5",
+      "decision": "Adopted stage-above-copy mobile ending; rejected hanging lantern and extra pier props."
+    }
+  ],
+  "sequence": "A/B/C were generated before production stage and layout code; D/E refined director and mobile compositions before implementation. A and B are substantively different hero routes.",
+  "production_assets": "No generated concept bitmap is used as an interactive scene. public/posters contains actual browser-rendered stills of the original live geometry."
+}

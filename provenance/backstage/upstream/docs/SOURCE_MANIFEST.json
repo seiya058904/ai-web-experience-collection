@@ -1,0 +1,140 @@
+{
+  "purpose": "Portable application/source and formal-asset inventory; documentation and evidence are indexed separately.",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 10096,
+      "sha256": "838144c28ca5141e29de12abd5747ddba86b14a247739244805c884db00cad2f"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 29582,
+      "sha256": "7cafd21d3644ee3c54e38c5852acf032bfaa92d9e74f4d695b27225b64aba89b"
+    },
+    {
+      "path": "package.json",
+      "bytes": 790,
+      "sha256": "3c0552673a07d9ebbcac99ed68c7a038ba28d8df03fe1e06b864be71a8635d2a"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 289,
+      "sha256": "ad228ff96e1f6caea5acbd68e50cf8a04fdd54e2c724d2507fd6e0ad6e84b5f4"
+    },
+    {
+      "path": "public/fonts/Fraunces-OFL.txt",
+      "bytes": 4504,
+      "sha256": "cd3384cafac6f2bddc3955273958a2e029f97027c8037ac539ef5744a77b579e"
+    },
+    {
+      "path": "public/fonts/SourceSans3-OFL.txt",
+      "bytes": 4314,
+      "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+    },
+    {
+      "path": "public/fonts/fraunces-latin.woff2",
+      "bytes": 121016,
+      "sha256": "7e744849028e2219e2aa1bc467dc4032980dc4487c9c3da3010081cd72d3b103"
+    },
+    {
+      "path": "public/fonts/source-sans-3-medium.woff2",
+      "bytes": 15652,
+      "sha256": "3b3a8b8e4a422ff71c9ffb0836a4d48ff337a4419b878214f65d6ebe0f59fa51"
+    },
+    {
+      "path": "public/fonts/source-sans-3-regular.woff2",
+      "bytes": 15696,
+      "sha256": "0f73f35e08cde0a2f10c109c6e01d71459d97e4099ecd9a50f1b6c0209e4de2b"
+    },
+    {
+      "path": "public/fonts/source-sans-3-semibold.woff2",
+      "bytes": 15668,
+      "sha256": "14527d193b0e30bc32ef931549a246cdfd286573bb12869b7e052b8101a39d38"
+    },
+    {
+      "path": "public/posters/night.png",
+      "bytes": 310327,
+      "sha256": "fdadf79fc7f8ed4bb3ce8d2e6ce0cd75c88203d2c46fa811163443909cc05831"
+    },
+    {
+      "path": "public/posters/room.png",
+      "bytes": 300973,
+      "sha256": "f5aef185ba033934a0cc0edb680d3eb8fb2d0917af6c862c27a0000c6f4f4912"
+    },
+    {
+      "path": "public/posters/sea.png",
+      "bytes": 321859,
+      "sha256": "ee944341c0beaa069d3677907382277e72052886971683c045513474c8433adc"
+    },
+    {
+      "path": "public/posters/wings.png",
+      "bytes": 211367,
+      "sha256": "629a69962c0cb75d3401b5be0d3966e7435a6905beb206c1733dfbe16f86fb9d"
+    },
+    {
+      "path": "scripts/acceptance.mjs",
+      "bytes": 63663,
+      "sha256": "79f248d469e6e6ce7a0a39bb8814025ccc69d200f9d8e69bd1203d95f409f958"
+    },
+    {
+      "path": "scripts/capture-posters.mjs",
+      "bytes": 12583,
+      "sha256": "34e41e7ab66411be920527c71b499106be1a7e0989e8954bc178df7f6a049c1e"
+    },
+    {
+      "path": "scripts/dense-handoff.mjs",
+      "bytes": 22380,
+      "sha256": "d10524fc3a551058afa7ae7321d6c11a05065e449fe3f024fa2b99fa53be90eb"
+    },
+    {
+      "path": "scripts/http-lifecycle.mjs",
+      "bytes": 28012,
+      "sha256": "df2c40263ae2332c4c940c836546f5eb7079da172c97ba6125744ceb8687d882"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 13006,
+      "sha256": "a1fd3c8f2536322ae3eb368b738b7060a0cc00233d0ff283cb6dc07b98dda750"
+    },
+    {
+      "path": "src/materials.js",
+      "bytes": 12315,
+      "sha256": "ef7126cac0256f23def89b87f01aca6c46c941f5b29b989e3e901df127526dc7"
+    },
+    {
+      "path": "src/state.js",
+      "bytes": 12913,
+      "sha256": "47d25dee0c1cdb3cc30acf90171d46ff04321c7c6cd8212b18e551db358d9f53"
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 18010,
+      "sha256": "5d39d389eab8901062367cd16371ed69a1c4868a4453dcafc9b7dee49409f06b"
+    },
+    {
+      "path": "src/theatre.js",
+      "bytes": 35117,
+      "sha256": "6a567fbc883cfa7ab1c09946127d4e373f3309a3a0fb50818b09045dc92c8d50"
+    },
+    {
+      "path": "tests/geometry.test.mjs",
+      "bytes": 4450,
+      "sha256": "cd7d8a378f22d58fb7b960f550e3065af44d6879a93e594baf234fbbcff584c3"
+    },
+    {
+      "path": "tests/scenic-clearance.test.mjs",
+      "bytes": 6266,
+      "sha256": "0caa1a50f910110bcc4dee8bbae23474adb71015ead3e7faee1b6a5ace7d6542"
+    },
+    {
+      "path": "tests/state.test.mjs",
+      "bytes": 13320,
+      "sha256": "b46c019a3c93374e190f8cafaf71989a83ee8c3588a9e31288f1f0d83968e961"
+    },
+    {
+      "path": "vite.config.js",
+      "bytes": 167,
+      "sha256": "3455df4057fda62f1947684a54c1f19cc9f33a410e5c5b29b645dfd1daafe6f9"
+    }
+  ]
+}

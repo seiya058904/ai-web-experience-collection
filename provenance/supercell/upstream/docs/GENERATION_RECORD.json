@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hero-low-horizon",
+    "file": "exec-1cece603-eb5e-42e9-9137-2ff02a02f90b.png",
+    "role": "final asset",
+    "dest": "public/assets/storm-desktop.webp",
+    "prompt": "Create a production art asset for SUPERCELL, an immersive weather exhibition website. HERO A — THE LOW HORIZON. Ultra-wide 16:9 composition, cinematic exceptionally realistic fine-art daylight storm photography, no typography or graphic elements anywhere. One enormous majestic supercell cumulonimbus dominates upper 80% and right two-thirds of frame. Very low flat prairie horizon at 91% of frame height; muted wheat grass. Warm ivory anvil broadly spreads left across top; sharply sculpted creamy cauliflower cloud turrets, tilted central tower at x=67%, massive cool slate grey underside, a fine rain curtain at right. Upper left sky is pale grey blue. Lower left quarter, x0-40% y60-88%, quieter shaded grey negative space where real HTML title will later go. Strong credible afternoon sidelight from upper left creates photographic luminous folds and dark weight. A clearly separate veil of rain hangs right of the updraft, disappearing into hazy ground. A tiny tree line at far horizon gives epic scale. No tornado, no lightning, no purple, no sunset orange, no city, no text, no logos, no artificial UI. Cloud outer silhouette detailed, plausible meteorology, gentle grain, tonal restraint. Full image must work as an atmospheric hero with independent high contrast DOM text placed later. High quality full bleed landscape.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "originalSHA256": "c3232defd646ca4a1f8e6dcdb5e6bea82bd44be6fe509ae1d06ce991147e5a81",
+    "outputSHA256": "858ae5d8dba264f3a62dcb629decbfdf17e32a4e09b974b34a1d3fb4b5af431d"
+  },
+  {
+    "id": "hero-oblique-monument",
+    "file": "exec-8d17ae46-982d-4829-b242-64ee920f8b27.png",
+    "role": "rejected",
+    "dest": "docs/concepts/hero-b.webp",
+    "prompt": "Create a visual exploration for the immersive science exhibition SUPERCELL: HERO B — THE OBLIQUE MONUMENT. Photorealistic daylight image, 16:9 landscape, no text. View from a distant elevated aerial perspective, NOT ground level: an entire isolated massive towering storm with a complete three-dimensional side silhouette floating above a huge flat muted prairie. The warm white cloud anvil stretches toward upper left, its layered bright rim against cool dusty blue sky; vertical and tilted dark cloud tower rises on right from a separate rain shaft. Camera far enough away to see the whole storm footprint and landscape scale. Sculptural, grand, credible volumetric weather, sunlight from upper left. Lots of soft pale blue negative space on left, upper cloud occupies middle and right; distant ground visible in bottom fifth, subtle aerial haze. No dome, no mushroom explosion, no spinning toy cloud, no tornado, no rainbow, no lightning, no lab or machine. Calm sophisticated gallery photograph. This is a second substantially different elevated composition to compare against a low-horizon hero.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "originalSHA256": "794b9d226d8f6fe85815af2cf7f3df33b85af91caa1b96c420ed20282c540c28",
+    "outputSHA256": "9562fc3ed2d6a742525179899abd82c467a82e84f475730127cca932c7cfe7fe"
+  },
+  {
+    "id": "visible-interior",
+    "file": "exec-a88982aa-1696-4c99-a8f7-340b5dacdee4.png",
+    "role": "reference only",
+    "dest": "docs/concepts/section.webp",
+    "prompt": "Create a full-browser design concept screenshot for chapter III of SUPERCELL, a premium immersive atmospheric science website: A SECTION THROUGH THE SKY. Landscape 16:9 1920x1080 feel. Background is a single photoreal daytime supercell above a very low flat prairie horizon, warm ivory anvil across top, sculpted cloud tower centered at x64%, cool charcoal cloud base, pale grey blue sky, subtle side light. Same visual identity as a majestic low-horizon storm photograph. Minimal elegant real-world museum visual design, sober modern sans serif typography, fine hairlines, editorial layout, no cards or rounded boxes. Top left a small delicate circular line logo plus 'SUPERCELL', top right 'Index +'. Bottom left margin 64px an ivory-white large two-line heading 'A section through the sky.' with one short sentence underneath 'One cloud. A different way of seeing.' All typography here is a reference for future code-native UI. On left 55% of composition the storm stays complete and recognizable; a very thin horizontal warm wheat observation plane crosses the lower-middle cloud. On right an elegant flat horizontal-plane cutaway diagram in a small roughly 360x250 panel with NO border or filled card, pale semitransparent contours, one warm amber updraft core, one smaller cool-grey rain region. A fine leader connects matching cloud height to the diagram. Under diagram a minimal thin rule slider labeled 'Slice height' '42%'. This must feel like a subtle exhibition annotation over real weather, not a glowing jelly, medical scan, wireframe, dashboard, laser or machine. The plane is interpretative and physically aligned. Retain cloud shape, sky, horizon, subdued materials; restrained and truly premium.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "originalSHA256": "67d80c48f4508525ddcb7c0874fa69336bf2c673ef636c43f11d35524e10574b",
+    "outputSHA256": "70db72240dfa9ed6fc5d11e2ad7cdbe8f9952209c1b2d434a71f91968903d5a6"
+  },
+  {
+    "id": "portrait",
+    "file": "exec-466c13a4-d851-4721-a513-911c39d6cb92.png",
+    "role": "final asset",
+    "dest": "public/assets/storm-mobile.webp",
+    "prompt": "Create a standalone PORTRAIT 9:16 art asset for the mobile version of SUPERCELL, an immersive atmospheric exhibition. Realistic fine art daytime storm photography. A gigantic ivory cumulonimbus cloud tower rises vertically up the upper two thirds from cool dark slate grey cloud base, anvil spreads off the top left of portrait, rain descends at far right. Camera ground level on flat wheat prairie, thin horizon very low at y89%. Warm creamy white side-lit folds on top, slate blue-grey shadows below, soft blue daylight sky. NOT sunset, not orange. Subject centered at x58%, main tower visible within narrow phone portrait, highly dimensional and dramatic but calm. Deliberate quiet dark cloud-shadow area across the lower third y67-87% where real DOM typography will later be placed. No text, no UI, no lightning or tornado, no buildings. Not a crop of landscape: carefully vertical perspective looking up, enough breathing room for a small top navigation and large title at lower left.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      941,
+      1672
+    ],
+    "originalSHA256": "5a0a7f28c54284ad97b4b7a401bffe070130f10eb3dbdb3bd95277e3e3402b1a",
+    "outputSHA256": "71b22a1c4187bb3278997c3c21accbcede72676b10ecc70db49023c55973a354"
+  },
+  {
+    "id": "airflow",
+    "file": "exec-8a313022-9c09-498e-8be0-f2ec9740d014.png",
+    "role": "reference only",
+    "dest": "docs/concepts/airflow.webp",
+    "prompt": "Create a beautiful production design reference screenshot for chapter II of SUPERCELL. Single widescreen 16:9 full browser frame. Atmospheric editorial museum website, no panels, no cards. Daylight storm photograph full bleed: the same huge warm-white anvil cloud above a very low prairie, slanted towering mass on right, grey rain curtain far right, lower left calm shaded air. Subtle top navigation with 'SUPERCELL' left and 'Index +' right, thin white modern sans serif. Bottom left enormous light-weight refined white heading 'What keeps it alive.' in two lines, body 'A storm sustained by moving air.' A single finely drawn warm wheat-coloured airflow trajectory enters near the ground at the left of the cloud, curves smoothly into the cloud base then rises along the tilted tower and bends left under anvil. A tiny white parcel on the line, no glowing neon. Three delicate diagram labels at discrete well-separated places: '01 Inflow', '02 Updraft', '03 Outflow'. A bottom right discreet note 'Airflow is an explanatory illustration.' Bottom edge fine chapter progress line and '02 / 05'. Realistic photography, immensely clean composition, intentional empty space, all annotation real HTML/SVG in final so no magical decorative typography. Show this secondary section in detail; coherent with an ivory/slate SUPERCELL hero.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "originalSHA256": "45623e9e1f19b78a7c9109793ea04b1b205d91fcc1d57fe12c7187d4c5880089",
+    "outputSHA256": "2464f23275831dbfffda40965c7c7fa870e906557e22900fa76ee29fd2b64f3a"
+  },
+  {
+    "id": "shear",
+    "file": "exec-40281b43-9de4-41ea-9189-d77eae1d8ae5.png",
+    "role": "reference only",
+    "dest": "docs/concepts/shear.webp",
+    "prompt": "Design reference for chapter IV of SUPERCELL immersive weather experience, desktop landscape 16:9 full browser screenshot. Full bleed beautiful enormous sculpted white/grey daytime storm over low wheat prairie, luminous left facing anvil, a tilted central cloud tower slightly left of center, rain curtain behind right. Same cloudy daylight visual system, no new background palette. Tiny top left 'SUPERCELL', top right 'Index +'. Large elegant ivory-white editorial typography bottom left 'A change in the wind.' exactly, two lines, below 'Same storm. Different conditions.' In right third a discreet transparent scientific annotation: smooth horizontal slice contours and tiny warm amber updraft core, small grey rain core; below a thin horizontal range slider labeled 'Wind shear' and 'Reference'. Three plain text choices in a row 'Reference' 'Change' 'Return'; a second small retained readout 'Slice height 42%'. Fine wheat-colored path through cloud bends with its tilt. Tiny note 'Illustrative conditions, not a forecast.' No colored blocks, no dashboard, no bento, no measuring speed, no vertical bar chart. Museum exhibition quality. The main cloud always dominates; comparison control is calm and materially functional, keeping camera and light constant.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "originalSHA256": "fea21ecbb0b4119143e3dd6ae57736ba518c008aeb6e148a29785f69a27986da",
+    "outputSHA256": "634be0dbde408440a5b47b0db8ce337260db701890c16ba76720dd5feb398b34"
+  },
+  {
+    "id": "ending",
+    "file": "exec-6b7ca8e1-af1e-4143-8ee2-d530f942a7b9.png",
+    "role": "reference only",
+    "dest": "docs/concepts/ending.webp",
+    "prompt": "Create a desktop widescreen 16:9 design reference screenshot for final chapter V of SUPERCELL. Quiet breathtaking full-bleed photographic daylight storm over very low flat prairie. Same warm ivory layered anvil, slate blue-grey shadow and tilted tower; storm now viewed slightly wider, whole silhouette in upper right, gentle light from upper left, thin rain veil right. Left lower third features an airy clean white sans-serif final statement in three lines 'The shape remains.' 'The air moves on.' with a strong typographic hierarchy and plenty of breathing room, not italic or serif. Tiny top left navigation 'SUPERCELL' with small line circle logo, top right 'Index +'. Beneath statement three understated thin underline links 'Revisit the section' 'Reset storm' 'Sources'. Thin footer progress rule, small '05 / 05' at lower left and 'STILL MOVING' at lower right. No cards, no gradients painted on cloud, no dark overlay, no CTA pill. Beautiful editorial scientific exhibition, light is daylight and not sunset orange. Weather remains powerful and alive without any lightning or tornado.",
+    "tool": "image_gen.imagegen",
+    "generatedOn": "2026-10-24",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "originalSHA256": "f8aa0d38f96501b245d7d288d16f43e51a1eeaf855eed8e725136e44176f7022",
+    "outputSHA256": "0f6e93a66b89da9894fb33fe64a12e32aafbdeb0be6e3b1f68838337fcac5a57"
+  }
+]

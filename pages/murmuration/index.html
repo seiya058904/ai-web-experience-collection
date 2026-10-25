@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eae8e1" />
+  <meta name="description" content="No one is leading. An interactive field study in the quiet complexity of a flock: observe a local world, follow a turn, and change the relationships yourself." />
+  <title>MURMURATION — No one is leading.</title>
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%murmuration/">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MURMURATION — No one is leading.">
+<meta property="og:description" content="An interactive field study in the quiet complexity of a flock: observe a local world, follow a turn, and change the relationships yourself.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%murmuration/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%murmuration/social.jpg">
+<meta property="og:image:alt" content="MURMURATION’s simulated flock in a generated warm sky">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MURMURATION — No one is leading.">
+<meta name="twitter:description" content="An interactive field study in the quiet complexity of a flock: observe a local world, follow a turn, and change the relationships yourself.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%murmuration/social.jpg">
+<link rel="stylesheet" href="/experiences/shared/collection-return.css">
+<script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+  <link rel="icon" type="image/svg+xml" href="%BASE_URL%murmuration/bird.svg" />
+  <link rel="preload" href="%BASE_URL%murmuration/fonts/anton.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="%BASE_URL%murmuration/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
+</head>
+<body>
+  <a class="skip-link" href="#observation">Skip to the observation</a>
+  <div class="sky-layer" aria-hidden="true"></div>
+  <picture class="opening-poster" aria-hidden="true">
+    <source media="(max-aspect-ratio: 83/100)" srcset="%BASE_URL%murmuration/poster-portrait.webp" />
+    <source media="(min-aspect-ratio: 17/10)" srcset="%BASE_URL%murmuration/poster-landscape.webp" />
+    <img src="%BASE_URL%murmuration/poster-wide.webp" alt="" fetchpriority="high" />
+  </picture>
+  <canvas id="scene" aria-label="A flock of individually moving birds in a warm, open sky" role="img"></canvas>
+  <header class="site-header">
+    <button class="wordmark" data-go="0" aria-label="Murmuration, return to the opening">
+      <svg viewBox="0 0 32 24" aria-hidden="true"><path d="M2 4 13 11 16 9 19 11 30 4 22 15 18 14 16 20 14 14 10 15Z" fill="currentColor"/></svg>
+      <span>MURMURATION</span>
+    </button>
+    <nav class="top-nav" aria-label="Main navigation">
+      <button data-go="0.705">The field <span aria-hidden="true">↗</span></button>
+      <button id="about-open">About</button>
+      <a class="collection-return" href="%BASE_URL%#world-murmuration" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+    </nav>
+  </header>
+  <main id="observation" tabindex="-1">
+    <section class="chapter hero active" id="many" aria-labelledby="hero-title">
+      <div class="hero-copy reading">
+        <h1 id="hero-title">MURMURATION</h1>
+        <p class="hero-subtitle">No one is leading.</p>
+      </div>
+      <button class="scroll-cue" data-go="0.285"><span>Scroll to observe</span><svg viewBox="0 0 16 34" aria-hidden="true"><path d="M8 1v29M2 24l6 7 6-7"/></svg></button>
+    </section>
+    <section class="chapter local" id="local" aria-labelledby="local-title" aria-hidden="true" inert>
+      <div class="local-copy reading">
+        <p class="chapter-kicker">II <span>/</span> A LOCAL WORLD</p>
+        <h2 id="local-title">A local world.</h2>
+        <div class="rule-list" role="group" aria-label="Observe a local rule">
+          <button data-rule="0" class="selected" aria-pressed="true"><span class="rule-num">01</span>Keep Space</button>
+          <button data-rule="1" aria-pressed="false"><span class="rule-num">02</span>Match Heading</button>
+          <button data-rule="2" aria-pressed="false"><span class="rule-num">03</span>Stay Together</button>
+        </div>
+        <p id="rule-description" class="body-copy">A little room.<br/>Enough space for the next wingbeat.</p>
+      </div>
+      <p class="scene-note">One bird. A nearby world.</p>
+    </section>
+    <section class="chapter turn" id="turn" aria-labelledby="turn-title" aria-hidden="true" inert>
+      <div class="turn-copy reading">
+        <p class="chapter-kicker">III <span>/</span> A TURN TRAVELS</p>
+        <h2 id="turn-title">A turn travels.</h2>
+        <p class="body-copy">One change. Many consequences.<br/>Scroll to follow the response.</p>
+        <div class="record-progress" aria-label="Progress through the recorded response"><span></span></div>
+      </div>
+    </section>
+    <section class="chapter live" id="field" aria-labelledby="field-title" aria-hidden="true" inert>
+      <div class="field-hit-area" tabindex="0" role="button" aria-label="Stir the flock here. Press Enter or Space to create a ripple."></div>
+      <div class="live-copy reading" data-lenis-prevent>
+        <div class="field-heading">
+          <p class="chapter-kicker">IV <span>/</span> THE LIVE FIELD</p>
+          <h2 id="field-title">Change a rule.<br/>Watch the <em>whole.</em></h2>
+        </div>
+        <div class="presets" role="group" aria-label="Flock presets">
+          <button data-preset="Drift" aria-pressed="true">Drift</button>
+          <button data-preset="Cohere" aria-pressed="false">Cohere</button>
+          <button data-preset="Scatter" aria-pressed="false">Scatter</button>
+        </div>
+        <div class="sliders">
+          <label for="space"><span>Keep Space</span><input id="space" name="space" type="range" min="0" max="2.5" step="0.1" value="1.3" aria-describedby="field-status"/><output for="space">1.3</output></label>
+          <label for="heading"><span>Match Heading</span><input id="heading" name="heading" type="range" min="0" max="2.5" step="0.1" value="1.1" aria-describedby="field-status"/><output for="heading">1.1</output></label>
+          <label for="together"><span>Stay Together</span><input id="together" name="together" type="range" min="0" max="2.5" step="0.1" value="0.7" aria-describedby="field-status"/><output for="together">0.7</output></label>
+        </div>
+        <div class="field-actions">
+          <button class="button" id="ripple-button">Create a ripple <span aria-hidden="true">↗</span></button>
+          <button class="button" id="hold-button">Hold</button>
+          <button class="button step-button" id="step-button" hidden>Step</button>
+        </div>
+        <div class="field-reset"><button id="reset-button">Reset this flock</button><span id="flight-label">In flight</span></div>
+        <p id="field-status" class="field-status" aria-live="polite">Click the open sky to stir the flock.</p>
+      </div>
+      <p class="field-invitation">A small gesture. A different whole.</p>
+    </section>
+    <section class="chapter ending" id="shape" aria-labelledby="shape-title" aria-hidden="true" inert>
+      <div class="ending-copy reading">
+        <p class="chapter-kicker">V <span>/</span> THE SHAPE YOU LEFT</p>
+        <h2 id="shape-title">A shape made<br/>of relationships.</h2>
+        <p id="ending-state" class="ending-state">Your field, held in place.</p>
+        <div class="ending-actions"><button id="export-button" class="button">Save a fieldprint <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11m-4-4 4 4 4-4M3 14v4h14v-4"/></svg></button><button class="text-button" data-go="0.72">Return to the field <span aria-hidden="true">↗</span></button></div>
+        <p class="source-line">A local-rules model inspired by flocking research. <button id="sources-open">Sources</button></p>
+        <p id="export-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <div id="scroll-track" aria-hidden="true"></div>
+  <nav class="chapter-nav" aria-label="Chapters">
+    <button data-go="0" aria-label="I — The Many" aria-current="step">I</button>
+    <button data-go="0.29" aria-label="II — A Local World">II</button>
+    <button data-go="0.535" aria-label="III — A Turn Travels">III</button>
+    <button data-go="0.72" aria-label="IV — The Live Field">IV</button>
+    <button data-go="1" aria-label="V — The Shape You Left">V</button>
+  </nav>
+  <p class="saved-window-label" hidden>Saved field <span>held while you revisit</span></p>
+  <div class="mode-tools"><button id="motion-toggle" aria-pressed="false">Still wings</button></div>
+  <p class="load-note" role="status" aria-live="polite"></p>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-header"><span>FIELD NOTES</span><button id="about-close" aria-label="Close field notes">Close <span aria-hidden="true">×</span></button></div>
+    <h2 id="about-title">A few rules.<br/>An unexpected whole.</h2>
+    <p>A local-rules model inspired by flocking research. Each bird makes its next move from a small nearby world: keep space, match heading, stay together.</p>
+    <p>There is no designated leader in this model. A soft environmental boundary keeps the flock within view. There are no target outlines or scripted formations.</p>
+    <p>The observation is a reversible recording of an actual simulation. The live field runs forward in its own time. Bird scale, color and camera movement are artistic choices.</p>
+    <h3>Research &amp; resonance</h3>
+    <ol class="sources">
+      <li><a href="https://www.red3d.com/cwr/boids/" target="_blank" rel="noreferrer">Craig Reynolds · Boids <span>1987 ↗</span></a><p>Separation, alignment and cohesion as local steering behaviors.</p></li>
+      <li><a href="https://arxiv.org/abs/0709.1916" target="_blank" rel="noreferrer">Ballerini et al. · A nearby world <span>2008 ↗</span></a><p>The studied starling flocks interacted with roughly six or seven neighbors. Our bounded spatial search approximates up to seven nearby agents; it is not an exact biological model.</p></li>
+      <li><a href="https://arxiv.org/abs/1303.7097" target="_blank" rel="noreferrer">Attanasi et al. · A traveling turn <span>2014 ↗</span></a><p>Observed turning information spread through starling flocks. This artwork does not reproduce the paper's specific dynamics.</p></li>
+      <li><a href="https://www.random-international.com/swarm-study-/-i" target="_blank" rel="noreferrer">RANDOM INTERNATIONAL · Swarm Study / I <span>↗</span></a><p>The visitor's presence as part of a responsive collective.</p></li>
+      <li><a href="https://studiodrift.com/work/flylight/" target="_blank" rel="noreferrer">DRIFT · Flylight <span>↗</span></a><p>An artwork exploring the individual and the group.</p></li>
+    </ol>
+    <p class="colophon">Original interactive artwork · 2026<br/>A generated sky. A simulated flock. Your observation.</p>
+  </dialog>
+  <noscript><p class="noscript-note">This is a still from the actual flock. Enable JavaScript to observe its relationships and enter the live field.</p></noscript>
+  <script type="module" src="../../experiences/murmuration/src/main.js"></script>
+</body>
+</html>

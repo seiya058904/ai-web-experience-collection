@@ -894,5 +894,171 @@
         }
       ]
     }
-  ]
+  ],
+  "batchD": {
+    "date": "2026-10-25",
+    "method": "Sharp WebP q90 from an interface-cleaned 1600x900 capture of each running work (header navigation hidden, no artwork removed, no upscaling, no crop); the full capture is the deployed social.jpg and the largest candidate.",
+    "images": [
+      {
+        "work": "relay",
+        "source": "/relay/social.jpg",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 69120,
+        "sourceSHA256": "e39acaedcc50a4057cec582e3a2f5134439565d2d56c52af1f36280cf2917508",
+        "width": 1600,
+        "height": 900,
+        "variants": [
+          {
+            "url": "/collection/previews/relay-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 10188,
+            "sha256": "d7e0f1c83830ee85208b7e2e0615a463c4bb7f640754782d553cab57c288e5e8"
+          },
+          {
+            "url": "/collection/previews/relay-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 17046,
+            "sha256": "0624b5f5c9cb55d99c81468517592e3fb7545b4028b419444836df4466de6dd3"
+          },
+          {
+            "url": "/collection/previews/relay-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 25978,
+            "sha256": "f38d474e5030a156f5c36674dea76c5d67e5afcf8c5a3881e93663bf9cd36599"
+          }
+        ]
+      },
+      {
+        "work": "supercell",
+        "source": "/supercell/social.jpg",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 183391,
+        "sourceSHA256": "6aa78b2b50627e393d5eed2e0101011fa9b73bcbdff1bb2744c25cf9e62fe289",
+        "width": 1600,
+        "height": 900,
+        "variants": [
+          {
+            "url": "/collection/previews/supercell-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 36398,
+            "sha256": "183c60a14a8fb50bc7fb0890b26caa2b76905be839bdd659972f6e3cc7794bde"
+          },
+          {
+            "url": "/collection/previews/supercell-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 64652,
+            "sha256": "d7879abc884b9e583afa7d375ee9c6928b065fd57032c3e48a1c39eca9303036"
+          },
+          {
+            "url": "/collection/previews/supercell-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 92006,
+            "sha256": "062d89765d44f92ebada3a3459a84765b1bc4ab19b632662546ac980f08f9fbf"
+          }
+        ]
+      },
+      {
+        "work": "pelagic",
+        "source": "/pelagic/social.jpg",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 62099,
+        "sourceSHA256": "5d6203292453b856dc5d89ca7e9c208997b4574b31428e8452876ca4b8f9ce5f",
+        "width": 1600,
+        "height": 900,
+        "variants": [
+          {
+            "url": "/collection/previews/pelagic-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 9338,
+            "sha256": "54332d74323dc3377e7e1bb9444cc110625aeebeffb409332497a02fb141edfb"
+          },
+          {
+            "url": "/collection/previews/pelagic-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 16920,
+            "sha256": "0847699080a595f680fc814ce2284a26a73363e393a43d7015de5f8c65342cf4"
+          },
+          {
+            "url": "/collection/previews/pelagic-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 25104,
+            "sha256": "27a11f75fa7f3359b975c040ca44cc7f98b0df5d9e5f5df8c77523b82e1a71e8"
+          }
+        ]
+      },
+      {
+        "work": "backstage",
+        "source": "/backstage/social.jpg",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 101038,
+        "sourceSHA256": "b54648fbf5babb790cd30a8aa4f9b33da06f171cdf13c3355130fddd5ed2038b",
+        "width": 1600,
+        "height": 900,
+        "variants": [
+          {
+            "url": "/collection/previews/backstage-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 14726,
+            "sha256": "88613870e2e1f0960eb6a7e9ac322f7c6e86a8b5c7ae6111be3264c572846b77"
+          },
+          {
+            "url": "/collection/previews/backstage-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 25696,
+            "sha256": "60b48ae93e8328a547eb859dae79beae79561834ff3a014b3ecaf5bb849c484e"
+          },
+          {
+            "url": "/collection/previews/backstage-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 37712,
+            "sha256": "f2d7005d0902c8e2b351e22c1b96bfb5f0cc42840da81bf13659df8c94d9a1cb"
+          }
+        ]
+      },
+      {
+        "work": "murmuration",
+        "source": "/murmuration/social.jpg",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 144728,
+        "sourceSHA256": "843c87e9d8917f96c78e7946d521bc2b8e529194abf4c2b76039b989086c5af2",
+        "width": 1600,
+        "height": 900,
+        "variants": [
+          {
+            "url": "/collection/previews/murmuration-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 24918,
+            "sha256": "d4224cebc721427941fe1626a3635040833372fb08759a6d0803b051f05ede72"
+          },
+          {
+            "url": "/collection/previews/murmuration-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 45038,
+            "sha256": "e7b1c7c59f796f4d97b1a2226e990bca6096f29f47c1fb295bdd68fc016101ce"
+          },
+          {
+            "url": "/collection/previews/murmuration-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 68568,
+            "sha256": "e6c074d16f6c0fa68ceda3080703a720b5c61ea280c976211520e9eec533f906"
+          }
+        ]
+      }
+    ]
+  }
 }

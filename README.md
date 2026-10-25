@@ -1,6 +1,6 @@
 <h1 align="center">✦ AI Web Experience Collection</h1>
 
-<p align="center"><strong>Thirty-two worlds. Thirty-two ways to experience the web.</strong></p>
+<p align="center"><strong>Thirty-seven worlds. Thirty-seven ways to experience the web.</strong></p>
 
 <p align="center">
   A curated exhibition of cinematic, browser-native experiments in motion, matter,<br>
@@ -104,7 +104,7 @@ A small selection of the visuals already shipped with individual experiences. Ea
 <a id="the-complete-exhibition"></a>
 ## 🗂️ The Complete Exhibition — 32 Works
 
-Each name below opens its published standalone page. The routes belong to this single collection, not to thirty-two separate repositories.
+Each name below opens its published standalone page. The routes belong to this single collection, not to thirty-seven separate repositories.
 
 ### ⚙️ I. Machines, Energy & Motion
 
@@ -163,10 +163,20 @@ Each name below opens its published standalone page. The routes belong to this s
 | **FOSSIL** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/fossil/) | Burial, preservation, synthetic tomography, and archives |
 | **GRID** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/grid/) | One content set under twelve design systems |
 
+### 📡 VI. Messages, Weather & Collectives
+
+| Experience | Explore | Subject |
+| --- | --- | --- |
+| **RELAY** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/relay/) | A sentence, an uncertain route, and an original toy protocol |
+| **SUPERCELL** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/supercell/) | Airflow, section planes, and one illustrated storm |
+| **PELAGIC** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/pelagic/) | Living light, pattern, and encounter in the deep ocean |
+| **BACKSTAGE** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/backstage/) | A miniature theatre and the cues that keep it believable |
+| **MURMURATION** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/murmuration/) | Local rules, a traveling turn, and a flock you can change |
+
 <a id="built-as-independent-worlds"></a>
 ## 🧭 Built as Independent Worlds
 
-This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping thirty-two 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
+This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping thirty-seven 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
 
 <table>
   <tr>
@@ -219,7 +229,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 | Path | Responsibility |
 | --- | --- |
-| [`pages/`](pages/) | Collection entry, credits, and thirty-two HTML page documents |
+| [`pages/`](pages/) | Collection entry, credits, and thirty-seven HTML page documents |
 | [`collection/`](collection/) | Curated gallery layout and navigation |
 | [`experiences/`](experiences/) | Independent implementations and work-specific runtime code |
 | [`public/`](public/) | Namespaced media, fonts, models, and licenses |
@@ -229,7 +239,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 The repository's [`vite.config.ts`](vite.config.ts) registers each independent HTML input and sitemap route. When adding an experience, keep its page, gallery entrance, build verification, docs, credits, and provenance records synchronized. Preserve `import.meta.env.BASE_URL` / `%BASE_URL%` handling for project-subpath deployments.
 
-Verification is **per work and per integration surface**: one successful scene does not establish quality across all thirty-two. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
+Verification is **per work and per integration surface**: one successful scene does not establish quality across all thirty-seven. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
 
 Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, original assets, or deployment. Historical source ZIPs and nondeployed references are tracked through provenance rather than mixed into browser output.
 
@@ -246,6 +256,26 @@ The thirty-first independent work lives at `/counterform/`: seven typographic sp
 ### FERRUM — The Memory of Fire
 
 The thirty-second independent work lives at `/ferrum/`: six acts through one original digital steel sculpture, optional local sound, supplied still fallback and reduced-motion controls. [Design](docs/ferrum/DESIGN.md), [architecture](docs/ferrum/ARCHITECTURE.md), [research](docs/ferrum/RESEARCH.md) and [acceptance](docs/ferrum/ACCEPTANCE.md).
+
+### RELAY — A Message Finds Its Way
+
+The thirty-third independent work lives at `/relay/`: six chapters read one deterministic, browser-local delivery, with real routes, retransmission, lost acknowledgements and honest incomplete endings. [Design](docs/relay/DESIGN.md), [architecture](docs/relay/ARCHITECTURE.md), [research](docs/relay/RESEARCH.md), [acceptance](docs/relay/ACCEPTANCE.md).
+
+### SUPERCELL — The Shape of Moving Air
+
+The thirty-fourth work lives at `/supercell/`: five observations of one illustrated storm with a movable section plane, a wind-shear comparison and optional local sound. [Design](docs/supercell/DESIGN.md), [architecture](docs/supercell/ARCHITECTURE.md), [research](docs/supercell/RESEARCH.md), [acceptance](docs/supercell/ACCEPTANCE.md).
+
+### PELAGIC — A Language of Living Light
+
+The thirty-fifth work lives at `/pelagic/`: five research-inspired observations of deep-sea light, with a survey-light control, a scrubbable encounter and a complete SVG edition. [Design](docs/pelagic/DESIGN.md), [architecture](docs/pelagic/ARCHITECTURE.md), [research](docs/pelagic/RESEARCH.md), [acceptance](docs/pelagic/ACCEPTANCE.md).
+
+### BACKSTAGE — The Art of Making Believe
+
+The thirty-sixth work lives at `/backstage/`: five acts around one original Three.js miniature theatre, with scene, view and light cues, a still mode and a static reading edition. [Design](docs/backstage/DESIGN.md), [architecture](docs/backstage/ARCHITECTURE.md), [research](docs/backstage/RESEARCH.md), [acceptance](docs/backstage/ACCEPTANCE.md).
+
+### MURMURATION — No one is leading.
+
+The thirty-seventh work lives at `/murmuration/`: five chapters over a recorded flock and a live local-rules field, with Hold/Step, presets and a fieldprint export. [Design](docs/murmuration/DESIGN.md), [architecture](docs/murmuration/ARCHITECTURE.md), [research](docs/murmuration/RESEARCH.md), [acceptance](docs/murmuration/ACCEPTANCE.md).
 
 </details>
 
@@ -264,6 +294,6 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
 ---
 
 <p align="center">
-  <sub>THIRTY-TWO WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
+  <sub>THIRTY-SEVEN WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>

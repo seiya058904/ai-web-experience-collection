@@ -1,0 +1,382 @@
+{
+  "work": "PELAGIC — A Language of Living Light",
+  "archive": "PELAGIC_Source.zip",
+  "bytes": 5454275,
+  "modified": "2026-10-25 11:55:31",
+  "sha256": "1a9240043d17bfd597f0086d1601126dad903591c8d60baedd64569812c26114",
+  "entryCount": 72,
+  "entries": [
+    {
+      "path": "PELAGIC/.gitignore",
+      "bytes": 53,
+      "sha256": "b949289ff2733839d2add7f792dd0f7eb4c87923e0cb39bc2a503cc82f53f41d"
+    },
+    {
+      "path": "PELAGIC/DESIGN.md",
+      "bytes": 6569,
+      "sha256": "9d4cc01b179b2219769a8da23167d3b1b55d5dad0dc57a20c5569582139218c9"
+    },
+    {
+      "path": "PELAGIC/PRODUCT.md",
+      "bytes": 1372,
+      "sha256": "06d61454ccf908d0c469dec263067c6b68802cb1941e27c735707aa1a7fbd0e5"
+    },
+    {
+      "path": "PELAGIC/README.md",
+      "bytes": 6662,
+      "sha256": "5779cc27ffdf49e4afcdbdf0d93a4da6bf0a8abc3a15b64141679ba7c6551733"
+    },
+    {
+      "path": "PELAGIC/docs/ASSET_MANIFEST.json",
+      "bytes": 1306,
+      "sha256": "d6d162989f1d42f90b0ed5fa6a31eb819df91af5d7bc05ebb34f7db051233d4d"
+    },
+    {
+      "path": "PELAGIC/docs/IMAGE_GENERATION.json",
+      "bytes": 15226,
+      "sha256": "d42599cfa4f2836fa2ee10b270d890f492295fbc279f0eaf07a2687477db2b5a"
+    },
+    {
+      "path": "PELAGIC/docs/LICENSES.md",
+      "bytes": 3122,
+      "sha256": "483387391701460182911ca84abc6227f2fb69a113dce56d659becf3d3d48d88"
+    },
+    {
+      "path": "PELAGIC/docs/QA.md",
+      "bytes": 14626,
+      "sha256": "1d9518637ecfc3052c494eeee43153cc84663d37c09015b03f169891dbbee6ca"
+    },
+    {
+      "path": "PELAGIC/docs/RESEARCH.md",
+      "bytes": 3961,
+      "sha256": "d69ef3cd5a5021e856cdf45179a68781e213db4157cf9d8d190b27a83652aba0"
+    },
+    {
+      "path": "PELAGIC/docs/concepts/hero-a.webp",
+      "bytes": 39428,
+      "sha256": "903187650ad25c01f1d5942f98fed6c1f01cbaa0c02daefc6fbd95435dfee7b7"
+    },
+    {
+      "path": "PELAGIC/docs/concepts/hero-b.webp",
+      "bytes": 48064,
+      "sha256": "bc7808656b21e9b5d5125cc1d242a9854c07e1d01f50594deb097b5e5f1a417d"
+    },
+    {
+      "path": "PELAGIC/docs/concepts/squid-study.webp",
+      "bytes": 53594,
+      "sha256": "1d84af87e07c3c6273c451c53255e3fc6bc933c5b3b025ce40981394e3f5a1ca"
+    },
+    {
+      "path": "PELAGIC/docs/concepts/transition.webp",
+      "bytes": 32034,
+      "sha256": "a012cb8bf71d8255f5828cd05863d0a54112389d5096fbe66eff15cb5162da0e"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/cormorant-garamond-OFL.txt",
+      "bytes": 4504,
+      "sha256": "732f37009943e7f4378cf37113c9bcc4716af002a8583511aa91ed5d37683e73"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/gsap-NOTICE.txt",
+      "bytes": 365,
+      "sha256": "af27372162cd0d4d1088f1538267e147ba7140fedb88202077a1f3a00ba3ec80"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/lenis-MIT.txt",
+      "bytes": 1088,
+      "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/manrope-OFL.txt",
+      "bytes": 4383,
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/playwright-Apache-2.0.txt",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/typescript-Apache-2.0.txt",
+      "bytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+    },
+    {
+      "path": "PELAGIC/docs/licenses/vite-MIT-and-bundled-notices.txt",
+      "bytes": 101176,
+      "sha256": "a77a1c089806b39ad339535bdf3677f636c91d96693e8ad7b11fe733f650ea64"
+    },
+    {
+      "path": "PELAGIC/docs/qa/4k-all-acts.jpg",
+      "bytes": 57576,
+      "sha256": "3757e640b886f705ccdf967593f8f7f6e20029f7f7134b84f55df5d860cdafd4"
+    },
+    {
+      "path": "PELAGIC/docs/qa/art-failure-comparison.jpg",
+      "bytes": 31492,
+      "sha256": "3453b4c5875aa39a2489228d0b765148e13271cffe542f314f0b2c8525a14e48"
+    },
+    {
+      "path": "PELAGIC/docs/qa/background-results.json",
+      "bytes": 563,
+      "sha256": "433cd475c8e336261a31ac30000207e303a916a53f037e20f09ee2d6f578d86b"
+    },
+    {
+      "path": "PELAGIC/docs/qa/clean-build.json",
+      "bytes": 1053,
+      "sha256": "b60cdcd51b52d3f870cf6d360ed66b18cfff3d3c26c3127812427c6e7d0da5fa"
+    },
+    {
+      "path": "PELAGIC/docs/qa/delayed-first-frame.jpg",
+      "bytes": 87819,
+      "sha256": "f2107d64e06ac800899c7cdd27128d081d0ab22b548733691f7e349f0606fb8d"
+    },
+    {
+      "path": "PELAGIC/docs/qa/desktop-all-acts.jpg",
+      "bytes": 81938,
+      "sha256": "1dc4aa955f37552da7f832e4f2e6bd4500b6cd2bcc68b6e18a29b72dfc003a8a"
+    },
+    {
+      "path": "PELAGIC/docs/qa/handoffs-1440-forward.jpg",
+      "bytes": 209594,
+      "sha256": "738defc0fa924219eacf1feeaa23895adf30e9e7a280d1d99a6ea027a3a1a754"
+    },
+    {
+      "path": "PELAGIC/docs/qa/handoffs-1440-reverse.jpg",
+      "bytes": 209324,
+      "sha256": "49e31c11ff42d159c311c4fa5fcf681c5dfe74df5f958981d8add65e2e1bd150"
+    },
+    {
+      "path": "PELAGIC/docs/qa/handoffs-390-forward.jpg",
+      "bytes": 268647,
+      "sha256": "cc74595b58578fe490134ae2504578d8fd5dad20c4e562abcb0225a2bb7a2a47"
+    },
+    {
+      "path": "PELAGIC/docs/qa/handoffs-390-reverse.jpg",
+      "bytes": 268492,
+      "sha256": "ccd747313faa2488c64f7e87c775867526719c2954186e9e671756e9a805571d"
+    },
+    {
+      "path": "PELAGIC/docs/qa/headed-results.json",
+      "bytes": 10111,
+      "sha256": "6348db276282546ea07c27f3f098518556f589df46ab26acff3c317c9ed3c675"
+    },
+    {
+      "path": "PELAGIC/docs/qa/interaction-results.json",
+      "bytes": 3869,
+      "sha256": "4fe53b1b2494965ddc11b94953be26fe0142881ccb7f476ce21025e22433bc90"
+    },
+    {
+      "path": "PELAGIC/docs/qa/light-maximum.jpg",
+      "bytes": 105696,
+      "sha256": "c3b28d7a541f4ece86d140649318f3a91c82c2309524605c6b0db5d38072cfdf"
+    },
+    {
+      "path": "PELAGIC/docs/qa/light-minimum.jpg",
+      "bytes": 75776,
+      "sha256": "77d2ee0f0d654f7b40f602d1291b113b6621bf3250048f4fd0fa25207319bca4"
+    },
+    {
+      "path": "PELAGIC/docs/qa/matrix-results.json",
+      "bytes": 601592,
+      "sha256": "d6c953f162ae6240791582f376c89b053addaeb74551d47970983aa0c0838485"
+    },
+    {
+      "path": "PELAGIC/docs/qa/mobile-320-all-acts.jpg",
+      "bytes": 156994,
+      "sha256": "3d4236526adfaf37091548e6de6d18c3d209a4aeef5b7bf137c14b06ecf1017e"
+    },
+    {
+      "path": "PELAGIC/docs/qa/mobile-360-all-acts.jpg",
+      "bytes": 118776,
+      "sha256": "7aa9c82cee450a54c84002baa7465d7f05681848dca22b906aafd61b6c0d1b85"
+    },
+    {
+      "path": "PELAGIC/docs/qa/native-zoom-200.jpg",
+      "bytes": 79395,
+      "sha256": "e263b52be19debc95e7d48d0de6110e7e8a6afeeb24f7771210b913250fe8a0d"
+    },
+    {
+      "path": "PELAGIC/docs/qa/performance-results.json",
+      "bytes": 5412,
+      "sha256": "2fbbb3559bf5ef1dc53b3f63f694b752ad8313fb15f481a87cd210b8cef3a621"
+    },
+    {
+      "path": "PELAGIC/docs/qa/resilience-results.json",
+      "bytes": 4167,
+      "sha256": "d873196c9754eaa79302aa40907a6045f139b81480cea543d167bdadc02e2bc4"
+    },
+    {
+      "path": "PELAGIC/docs/qa/species-forward-contact.jpg",
+      "bytes": 249919,
+      "sha256": "11344603f098bda42daebb62599e68c3f5f141036fbfd9daa8ce13fddaf579f7"
+    },
+    {
+      "path": "PELAGIC/docs/qa/species-handoff.webm",
+      "bytes": 2527334,
+      "sha256": "447c7e3df417294d6334090c3c9753dd0b8aa6ec1f6377b0c1801a240a8297e1"
+    },
+    {
+      "path": "PELAGIC/docs/qa/species-reverse-contact.jpg",
+      "bytes": 269005,
+      "sha256": "e75581db24cc60cd9dd5da9b23e339ed16d5e17db42d106da3aba68e2c228344"
+    },
+    {
+      "path": "PELAGIC/docs/qa/zoom-results.json",
+      "bytes": 18227,
+      "sha256": "38b08cc8be35581761bed5b878e50cbef337b68e909f935cb8f67a2ea631860c"
+    },
+    {
+      "path": "PELAGIC/index.html",
+      "bytes": 55440,
+      "sha256": "2381cc67f06f512711abd701022b243a242509e4d8500d0b810a14f0511b7b1d"
+    },
+    {
+      "path": "PELAGIC/package-lock.json",
+      "bytes": 39025,
+      "sha256": "8158ea1143b31b8633d085be265fc6753772456213f76ae96ff95d036112fcbb"
+    },
+    {
+      "path": "PELAGIC/package.json",
+      "bytes": 982,
+      "sha256": "1f26f7568ffde31c598c9e49ea26e46e5ba34b05390be5f1eeb5fe2353978ec4"
+    },
+    {
+      "path": "PELAGIC/public/art/colony-asset.webp",
+      "bytes": 371210,
+      "sha256": "1a7f9d4c082ddf5f000eb58bb60dd7f61ef7442fe163a0d66e168910d6c1337a"
+    },
+    {
+      "path": "PELAGIC/public/art/first-frame.webp",
+      "bytes": 25778,
+      "sha256": "fb0b728e8a958340a80636722da0d4c14f825fedf5bb60ec976c6ca2c189f346"
+    },
+    {
+      "path": "PELAGIC/public/art/mark.svg",
+      "bytes": 247,
+      "sha256": "7bc173fab99f1dad28c0a7321ac0162a9ddc62e559a5764a0c3f036129158ccb"
+    },
+    {
+      "path": "PELAGIC/public/art/squid-asset.webp",
+      "bytes": 248792,
+      "sha256": "9aa9f9ef11f8d15d75ee957d48ec4e545dcb70362ae2a411da9ed8af166b5103"
+    },
+    {
+      "path": "PELAGIC/public/fonts/cormorant-garamond-latin-400-italic.woff2",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2"
+    },
+    {
+      "path": "PELAGIC/public/fonts/cormorant-garamond-latin-400-normal.woff2",
+      "bytes": 22876,
+      "sha256": "8048ac209bec741e1c29cd0cfac5aac1c0c2ba8c3ddbd4a58fa9bd92ef5c63c2"
+    },
+    {
+      "path": "PELAGIC/public/fonts/manrope-latin-400-normal.woff2",
+      "bytes": 14108,
+      "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+    },
+    {
+      "path": "PELAGIC/public/fonts/manrope-latin-500-normal.woff2",
+      "bytes": 14044,
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/background-native.cjs",
+      "bytes": 3701,
+      "sha256": "459553767bdc0e7144c9bbfd36da7bb3d3182f0040d2599ab0cef7515ecfc3ac"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/headed.cjs",
+      "bytes": 3416,
+      "sha256": "93022f8f8afc609776a541455ef0e3dc3d9548b70cd572f2b7cdad81f90fc2b1"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/interactions.cjs",
+      "bytes": 11961,
+      "sha256": "78108f8285464f149895754699be2335dd10bb7eb66400c0cc4bac215dd96366"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/matrix.cjs",
+      "bytes": 5487,
+      "sha256": "d3ddc7f9bfe04e4bc02e671c8c6f61fd5b39ac0f9fee67a62c7e8792a79a376e"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/performance.cjs",
+      "bytes": 2261,
+      "sha256": "321ed76543c793b6885b58de10cef65c04732ec2966d4bdd0262e644ef0cb1c5"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/resilience.cjs",
+      "bytes": 8135,
+      "sha256": "7195341abb9a7c31620767be1cd9ad29f80290958b194c0062b84c7ffe28b042"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/zoom-extension/manifest.json",
+      "bytes": 147,
+      "sha256": "cc29e881a51e3365a680fbeec5e41740720edddcaafbbebd0e9c78a64e1d9eeb"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/zoom-extension/worker.js",
+      "bytes": 50,
+      "sha256": "7e9c368e21496d7a9c897bbb6887c70fd328348b82fd1365af538b0ec014da0f"
+    },
+    {
+      "path": "PELAGIC/scripts/qa/zoom.cjs",
+      "bytes": 4104,
+      "sha256": "7b315ee2d425f3f8911b068e2205d4ca5f7c92b0f090dda78ad8d50d4a512f1d"
+    },
+    {
+      "path": "PELAGIC/src/main.ts",
+      "bytes": 18632,
+      "sha256": "7838ada155f53c8f65ea045e7bbf22259ae0086dad0e4bc1dcf3d5dd9931cef4"
+    },
+    {
+      "path": "PELAGIC/src/renderer.ts",
+      "bytes": 22612,
+      "sha256": "f6f1864e2df12b0e0880b214d5823c8a03b12d96063c4fa54acd99ccb442cb61"
+    },
+    {
+      "path": "PELAGIC/src/state.ts",
+      "bytes": 4346,
+      "sha256": "266c1a43d2ccf81c501fcbbb62e2bf63c702ccacf48a779ab5e89976995715f7"
+    },
+    {
+      "path": "PELAGIC/src/style.css",
+      "bytes": 24888,
+      "sha256": "d685b1bb032625c4f61ef057a40d44603a3bf00d32a7fc2decdd2f40f6af573f"
+    },
+    {
+      "path": "PELAGIC/src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "PELAGIC/tests/state.test.ts",
+      "bytes": 3297,
+      "sha256": "aa06089fc70402d6558a15b75d9900c5271809ed76504d5cc8f48186e301535e"
+    },
+    {
+      "path": "PELAGIC/tsconfig.json",
+      "bytes": 360,
+      "sha256": "efc8ebc37b905de05292336a94aa1ca6e98a0ab4f5ffe789aa2e41176c7c82d4"
+    },
+    {
+      "path": "PELAGIC/vite.config.ts",
+      "bytes": 192,
+      "sha256": "ca4569fef35335766130af7d8a2eac80ecd946c24052e430d59adc58627f0128"
+    }
+  ],
+  "omissions": [
+    "ZIP kept outside the repository and deployment",
+    "upstream dist/, node_modules/, package lockfiles, browser QA screenshot/video evidence and design-reference raster studies excluded; source reports and generation records retained under provenance/<work>/upstream/",
+    "upstream tests re-homed as Collection suites; standalone package manifests, lockfiles and independent build/server configuration not added",
+    "upstream npm dependencies resolved from the root lockfile; no new dependency or lockfile change"
+  ],
+  "adaptations": [
+    "Independent HTML route, sitemap and document identity added",
+    "Runtime asset URLs rewritten to the deployment base and public/<work>/ namespace",
+    "Shared Collection return control and native journey handoff added to the existing header",
+    "Licenses surfaced under public/<work>/licenses/"
+  ]
+}

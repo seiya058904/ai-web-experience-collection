@@ -1,0 +1,8 @@
+RELAY — A Message Finds Its Way
+
+Complete source project. Start with README.md and docs/ACCEPTANCE.md.
+Build output is generated locally with npm run build.
+node_modules, build caches, browser profiles/executables, temporary previews,
+previous implementation screenshots and deployment metadata are excluded.
+The included PNG files are selected genuine concept and verification evidence.
+FILE-CHECKSUMS.json covers every source/evidence file except itself and this note.

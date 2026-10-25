@@ -1,0 +1,154 @@
+[
+  {
+    "key": "hero-a",
+    "prompt": "Use case: ui-mockup. Asset type: large 16:10 desktop website concept for an original interactive artwork RELAY, first of a coherent six-act scroll experience about a sentence transported in real byte chunks. Make a complete high-taste art-directed first viewport, not a poster alone.\nBackground exact warm ivory #F1EBDD, graphite #292B29, vermilion orange #D94D2F packets, tiny muted pine green #55766A ACKs only. Editorial Swiss-inspired museum typography.\nLeft upper independent safe zone: enormous wide sans-serif RELAY; below it small exact line \"A message finds its way.\" Below left lower area short text \"Some things arrive out of order. Help this one find its way.\" One graphite primary button \"Continue delivery\" and subtle underlined \"Explore the route\". Top right small \"The experience\" and \"The model\" text navigation.\nMain 65% screen sculpture horizontal bridge: huge broad matte graphite curved bands sweep from lower left toward upper right across the central lower stage, gentle orthographic 2.5D thickness, two alternate paths cross at distinct depth, perfectly crisp front edges, soft side light, precise contact shadows. Orange numbered enamel thin plates travel along these rails. Large recipient at right with real-looking separately typeset \"Meet me\" and following ghost slot gap with orange outline; numbering 01 02 03. A small label \"RECEIVER\" with \"A paused delivery\". Sender at left along sculpture base. The missing slot is visually primary, then orange near branch, then discreet gate. Keep headline and message readable and separate; scene uses broad tangible arcs, not thin network diagram. No metal chrome, neon, bloom, map, cards, stats dashboard, particles, giant gradients, watermarks. The sculpture must be feasible as precise SVG path layers and DOM text, all real website lettering later recreated natively. This image only reference for proportions, materials, shadow, type. Full uninterrupted composition with generous negative space.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-c12841a7-fe4c-4316-84d6-227905d8ca29.png",
+    "file": "01-hero-a-bridge.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1714049,
+    "sha256": "d6e3e4d72d191ddc761d5e0e93f9d857fa8a9cb919093e6435720707f1aa35a1",
+    "copied_at_utc": "2026-10-24T15:26:51.405393+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "hero-b",
+    "prompt": "Use case: ui-mockup. Asset type: 16:10 desktop design exploration for RELAY: a sentence finds its way through uncertainty. Create a distinct alternate first viewport: suspended letterpress installation, nearly frontal orthographic composition, NOT a curved bridge.\nWarm ivory #F1EBDD page. Top-left huge bold wide sans-serif \"RELAY\" in graphite #292B29, separate small line \"A message finds its way.\" Main stage across the whole lower two-thirds: oversize physical message fragments stand as precise enamel typographic plates on a handful of graphite sculptural bookend channels, depth just slightly offset, elevated above warm paper. The phrases \"Meet me\", one conspicuous empty slab-shaped slot, and \"the other end.\" sit along one broken typographic line. Orange #D94D2F plate with index 02 is suspended just before its missing slot; thin outlined retained copy sits at far left. Two thick squared U-bend tracks thread beneath the plates. The blank space is the focus; physical bookend channels support rather than overpower words. Only a tiny muted pine #55766A ACK marker returns in lower plane. Sparse labels \"SENDER\", \"RECEIVER\", \"A paused delivery\". Lower left short copy \"Some things arrive out of order. Help this one find its way.\", dark button \"Continue delivery\", underlined \"Explore the route\". No bubbles, rounded dashboard cards, circuitry, neon, metal mirrors, bloom, maps, dark background or nonsense texts. Refined gallery kinetic typography, soft lateral studio light and tactile micrograin, clear semantic thickness. Complete website composition; these words will become actual HTML, not image text.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-e33fcd58-0510-4795-896c-7d68f6ea4831.png",
+    "file": "02-hero-b-letterpress.png",
+    "selection": "rejected",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1777516,
+    "sha256": "cf5435b5cab056f6959b444cfebc56f67e4f95c5cdd902431fe1894b3e6344de",
+    "copied_at_utc": "2026-10-24T15:26:51.407346+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "ack-middle",
+    "prompt": "Use case: ui-mockup. Asset type: large 16:10 exact standalone middle scene for RELAY, chapter 05. Build a beautifully legible interactive art installation composition on warm ivory #F1EBDD. Top-left quiet two-line heading in graphite #292B29: \"Knowing it\" / \"arrived.\" Small 05 label beside, no marketing eyebrow. Top-right short paragraph \"Getting there and knowing it got there are different things.\" Lower-left single outline control \"Lose one acknowledgement\".\nMain full-width sculpture takes 60% screen. Two broad graphite horizontal curved transport bands arranged on different depth planes. On the upper/front rail, an orange #D94D2F data plate marked 02 is already seated at the right receiving dock, with small \"RECEIVED\" label. Left upstream a thin outline plate marked 02 remains in an open retained-copy shelf, small label \"COPY KEPT\". Another solid orange plate marked \"02 · 2\" has just departed this shelf along forward graphite rail, clearly a different physical instance. On the lower/back rail, a small muted pine green #55766A open arrow ticket marked \"ACK 02\" travels from right to left with directional arrow, labeled \"CONFIRMATION PENDING\". Preserve room between roles. Use soft shadows, small graphite edge thickness, sharp enamel plates, elegant curve junctions, orthographic product sculpture, restrained sense of weight. Direction distinguished by shape and tiny arrow, not color alone. Strong visual comparison: at receiver, still retained at sender, and new retransmit on path visible simultaneously. No dashboard cards, graph nodes, grid, glow, neon, server racks, technical dense tables. Everything feasible in SVG/DOM. All important lettering recreated later in native website text.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-1e649c0f-4aef-42c0-aea1-79f2e3004d7a.png",
+    "file": "03-ack-middle.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1639814,
+    "sha256": "c332e550b61f89626d92628451d159613e91693e9c953d91830e1c47007b9c1f",
+    "copied_at_utc": "2026-10-24T15:26:51.408937+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "keep-copy",
+    "file": "04-keep-copy.png",
+    "prompt": "Large 16:10 standalone desktop concept screenshot for a chapter of RELAY, a six-act interactive art website about local packet delivery. Same design world as an editorial museum artwork: background exact warm ivory #F1EBDD; graphite #292B29 broad thick orthographic transport bands with 8px-like visible depth and soft contact shadow; vermilion #D94D2F precise orange enamel numbered plates; pine #55766A used only for returning ACK. ONLY bold wide sans-serif headings and clean normal-width sans-serif body; small monospaced indices. No serif typography. No glass, neon, bloom, metallic mirrors, grid cards, dashboard, fine circuit graph, network bubbles. Code-implementable with accurate SVG layers and DOM lettering. Keep heading upper-left distinct safe zone and caption upper-right; sculpture central lower sixty percent. Native interactive controls only as specified. This is a design reference; all actual website text will be natively rendered. Chapter 02 heading exact \"Keep a copy.\" Near source an original message typeset cleanly: \"Meet me at the other end. ✦\". Main sculpture: left a wide thick graphite retention shelf, six separate upright ivory outline plates indexed 01 02 03 04 05 06 arranged along its lip. One selected retained plate 02 pulled forward slightly, beautiful precise outline. The same ID is visible on a SOLID orange travelling plate on a broad sweeping right-bound band, labeled \"02 · attempt 1\". Keep the same block, two different physical instances unmistakable. Rightmost small recipient outline is distant but traceable. Short caption \"A copy stays here until its confirmation comes back.\" Small control \"Inspect a fragment\" as an unobtrusive underlined text. Warm directional light and intentional open space. Give the retention shelf real scale; not a table.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-b159986f-4be0-4fd0-9bea-5769eb10746a.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1701716,
+    "sha256": "cdc65b2f6dd4d8f95f6279e09dee89210be4b6780e86661e51b1ec9d39e9b925",
+    "copied_at_utc": "2026-10-24T15:31:31.793798+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "routes",
+    "file": "05-another-way.png",
+    "prompt": "Large 16:10 standalone desktop concept screenshot for a chapter of RELAY, a six-act interactive art website about local packet delivery. Same design world as an editorial museum artwork: background exact warm ivory #F1EBDD; graphite #292B29 broad thick orthographic transport bands with 8px-like visible depth and soft contact shadow; vermilion #D94D2F precise orange enamel numbered plates; pine #55766A used only for returning ACK. ONLY bold wide sans-serif headings and clean normal-width sans-serif body; small monospaced indices. No serif typography. No glass, neon, bloom, metallic mirrors, grid cards, dashboard, fine circuit graph, network bubbles. Code-implementable with accurate SVG layers and DOM lettering. Keep heading upper-left distinct safe zone and caption upper-right; sculpture central lower sixty percent. Native interactive controls only as specified. This is a design reference; all actual website text will be natively rendered. Chapter 03 heading exact \"Another way through.\" Large tactile graphite Y fork in middle lower stage, two broad alternate bands, upper takes high arc, lower sweeps in a wider arc, merge on right and reach a small receiving dock. Both directions clearly source left to receiver right. One orange plate indexed 02 waits immediately before a visible mechanical white-and-graphite gate at upper branch; orange 03 is following the lower route. Gates are simple native controls: small outline rectangular \"Upper route · Open\" beside upper branch and \"Lower route · Open\" beside lower branch. Small horizontal speed control beside lower branch labeled \"Slow this route\". Only handful of plates, no nodes/circuits. Caption at upper right \"Close a way through. The message can take another.\" Preserve wide transport sculpture and right empty slot; muted pine returning ticket sits on separate narrow offset rail. Rich depth but SVG practical.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-c549bdc2-e5c9-4e80-ba59-8a614a0b214d.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1477905,
+    "sha256": "8dc828299c519c11405cda8f441a913c0f4f1cd0a509f143e5d2a03843775c8f",
+    "copied_at_utc": "2026-10-24T15:31:31.795941+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "buffer",
+    "file": "06-out-of-order.png",
+    "prompt": "Large 16:10 standalone desktop concept screenshot for a chapter of RELAY, a six-act interactive art website about local packet delivery. Same design world as an editorial museum artwork: background exact warm ivory #F1EBDD; graphite #292B29 broad thick orthographic transport bands with 8px-like visible depth and soft contact shadow; vermilion #D94D2F precise orange enamel numbered plates; pine #55766A used only for returning ACK. ONLY bold wide sans-serif headings and clean normal-width sans-serif body; small monospaced indices. No serif typography. No glass, neon, bloom, metallic mirrors, grid cards, dashboard, fine circuit graph, network bubbles. Code-implementable with accurate SVG layers and DOM lettering. Keep heading upper-left distinct safe zone and caption upper-right; sculpture central lower sixty percent. Native interactive controls only as specified. This is a design reference; all actual website text will be natively rendered. Chapter 04 heading exact \"Arrival is not order.\" Giant receiver assembly now main sculpture: a horizontal broad dark graphite shelf with six indexed slots, near-frontal slight orthographic depth. First two ivory plates already seated with readable prefix \"Meet me\"; next index 03 is an OPEN ivory empty slot bounded by a precise vermilion dashed outline, then later plates 04 05 already seated but lower emphasis, marked \"arrived early\". Make slot gap beautiful and salient, no invented filled missing text. Incoming two thick curved rails converge at left end into the shelf; one thin orange plate approaches still on rail, can never appear in receiver before actual model arrival. Short caption upper right \"Being here is not the same as being next.\" Lower-left quiet selectable labels \"Still missing · 03\" and \"Arrived early · 05\". Receiver readable prefix huge above shelf, stops exactly at gap. Clear distinction between known prefix and buffered bytes. No complete-success text, tiny glyph noise, decorative cards.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-cac1fae5-ca9a-4018-98d6-85248c17f61e.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1402585,
+    "sha256": "b1b4c6cbc92b57a31601b1d149d0e9679e3efa3875cc44d8c4c1dee296ae42c0",
+    "copied_at_utc": "2026-10-24T15:31:31.798790+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "whole-sentence",
+    "file": "07-whole-sentence.png",
+    "prompt": "Large 16:10 standalone desktop concept screenshot for a chapter of RELAY, a six-act interactive art website about local packet delivery. Same design world as an editorial museum artwork: background exact warm ivory #F1EBDD; graphite #292B29 broad thick orthographic transport bands with 8px-like visible depth and soft contact shadow; vermilion #D94D2F precise orange enamel numbered plates; pine #55766A used only for returning ACK. ONLY bold wide sans-serif headings and clean normal-width sans-serif body; small monospaced indices. No serif typography. No glass, neon, bloom, metallic mirrors, grid cards, dashboard, fine circuit graph, network bubbles. Code-implementable with accurate SVG layers and DOM lettering. Keep heading upper-left distinct safe zone and caption upper-right; sculpture central lower sixty percent. Native interactive controls only as specified. This is a design reference; all actual website text will be natively rendered. Chapter 06 heading exact \"A whole sentence.\" Editorial finale, clean typography hero comes forward: giant high-impact normal-width sans-serif exact message in two lines \"Meet me at\" / \"the other end. ✦\", occupying central 65% page, native-like sharp type. Use vermilion only for subtle small exact reunited fragment plates at the baseline, not full orange background. Previous graphite broad rails withdraw into a thin long sculptural underline below phrase, its shallow shadow keeps continuity with earlier bridge. One pine green small ACK arrow can remain on lower return rail with small label \"Confirmation pending\", to show arrival separate from acknowledgement. Sparse one-line facts near bottom \"Received\" and \"Confirmation pending\" — no fake numbers. Quiet outlined button \"Try a different route\" and small \"View the journey\". Warm ivory void and rich restrained typography. Success composition coherent with bridge, no confetti, no celebration particles, no UI cards.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-2a93f5f3-46c7-4406-8d7d-065ff78f09b1.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      1586,
+      992
+    ],
+    "size_bytes": 1296417,
+    "sha256": "f2f8035198652fe61411d4bfed86ba8c4b5cd3e7cb8ac5730534382f18158438",
+    "copied_at_utc": "2026-10-24T15:31:31.800393+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  },
+  {
+    "key": "mobile",
+    "file": "08-mobile-vertical.png",
+    "prompt": "Use case: ui-mockup. Single tall 390×844-style mobile website screen design reference for RELAY. Exact warm ivory #F1EBDD background, graphite #292B29, orange #D94D2F enamel fragments, muted pine #55766A acknowledgement. Clean wide bold sans-serif \"RELAY\" top safe zone, below it \"A message finds its way.\" No fake phone shell. Vertically reconstruct broad 2.5D graphite transport sculpture, never shrink a desktop network. Sender at top center below title, receiving slots near bottom, exactly two thick curved rails descend left and right and merge just above receiver. An orange plate 02 stands at a branch midway, one narrow green ACK ticket points upward along distinct back plane. Receiver at bottom has large readable prefix \"Meet me\" followed by an empty outline slot; small \"A paused delivery\". Small outline control next to gate \"Upper route\". Main dark native button \"Continue delivery\" below receiver; small \"Explore the route\" below. Soft directional light, crisp layered SVG-feasible edges, geometric enamel plates. Strong gap, distinct title, readable body, generous hit areas. No microscopic labels, no dashboard cards, no decorative menus, no invented content, no copper circuits, neon, glows, metal mirror or gradient orange. Intended mobile independent layout for same six-act artwork.",
+    "tool": "image_gen.imagegen",
+    "status": "generated",
+    "original": "generated_images/exec-a6f92ee6-94ef-46ec-8ee1-a27843493dc6.png",
+    "selection": "reference only",
+    "mime_type": "image/png",
+    "dimensions_px": [
+      853,
+      1844
+    ],
+    "size_bytes": 1438181,
+    "sha256": "92b85c23fb57f0aa4ed09a421628daad9fc5217152c69fc96f66dfca87778d9b",
+    "copied_at_utc": "2026-10-24T15:31:31.801609+00:00",
+    "transparent_background": false,
+    "production_asset": false
+  }
+]

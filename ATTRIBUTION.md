@@ -197,8 +197,32 @@ The integrated English typographic installation retains supplied source, real Fr
 
 The integrated six-act digital steel sculpture retains supplied stills, licensed fonts, source research and authored interactive geometry. The archive does not declare an overall application license; no project-wide grant is inferred. Three.js 0.186.1 is reused; root Lenis 1.3.26 replaces supplied 1.3.17 without a dependency update. Original ZIP: `FERRUM-The-Memory-of-Fire-Source.zip`, 36,346,364 bytes, SHA-256 `d9c9e0601a102d024955704b62e00ddf01e0ac5e39a9f5fbc39f2fd2ca59e652`, 230 entries. Per-entry checksums and integration omissions/adaptations are recorded in `provenance/ferrum/IMPORT.json` and the delivery manifest. QA screenshots and upstream vendor/build tooling are not deployed; source reports remain in provenance. The ZIP stays outside Git/deployment.
 
+## RELAY — A Message Finds Its Way
+
+The integrated six-chapter transport sculpture retains supplied source, the native SVG sculpture, licensed Archivo and IBM Plex Mono files, and the authored demonstration protocol. The archive does not declare an overall application license; no project-wide grant is inferred. GSAP 3.15.0 matches the supplied pin; root Lenis 1.3.26 replaces supplied 1.3.27 without a dependency update. Original ZIP: `RELAY_Source.zip`, 29,219,145 bytes, SHA-256 `eb8e8a39444573e602081742cbe698795b68621dc6f83a44c49e4441884dd1ff`, 182 entries. The archive remains outside the repository; entry hashes are recorded in `provenance/relay/IMPORT.json`.
+
+## SUPERCELL — The Shape of Moving Air
+
+The integrated five-observation storm retains supplied source, the illustrated storm artwork, the Manrope variable file and the Canvas rendering path. The archive declares no overall application license. GSAP 3.15.0 matches; root Lenis 1.3.26 replaces supplied 1.3.27. Original ZIP: `SUPERCELL_Complete_Source.zip`, 13,267,623 bytes, SHA-256 `8c697e488713bd1cd43cdd9406890ce8049ab208c4977712e3f623ca1ba65d82`, 100 entries. The supplied `dist/` is a compiled duplicate and is not imported.
+
+## PELAGIC — A Language of Living Light
+
+The integrated five-observation exhibition retains supplied source, authored colony and squid artwork, Cormorant Garamond and Manrope files, and the complete SVG edition. The archive declares no overall application license. Root locked GSAP and Lenis satisfy the supplied ranges. Original ZIP: `PELAGIC_Source.zip`, 5,454,275 bytes, SHA-256 `1a9240043d17bfd595f0086d1601126dad903591c8d60baedd64569812c26114`, 72 entries.
+
+## BACKSTAGE — The Art of Making Believe
+
+The integrated five-act theatre retains supplied source, the original Three.js stage and materials, the four supplied posters, Fraunces and Source Sans 3 files, the still mode and the static reading edition. The archive declares no overall application license. Root Three.js 0.186.1 matches the supplied pin; root Lenis 1.3.26 replaces supplied 1.3.27. One supplied layout defect was repaired for 390–424px phones. Original ZIP: `BACKSTAGE_Source.zip`, 46,312,722 bytes, SHA-256 `3dc61e189f6e8ad4ea52cbcdb37cef240ad2e374d7a138a9c33814200e9aade`, 148 entries.
+
+## MURMURATION — No one is leading.
+
+The integrated field study retains supplied source, the recorded flight (`flight.bin.gz`), generated sky and posters, Anton, Cormorant Garamond and DM Sans files, and the fieldprint export. The supplied project declares MIT for its own source; third-party notices are deployed alongside it. Root Lenis 1.3.26 replaces supplied 1.3.27. Original ZIP: `MURMURATION_Source.zip`, 30,724,123 bytes, SHA-256 `51c5e00b4f6d04cbe0f662167a22507828672ed767205cf7de39b3b1de3b5d71`, 241 entries.
+
 ## Batch C delivery derivatives (25 October 2026)
 
 The Collection's 83 responsive WebP previews are resized derivatives of the existing 32 entrance images, with no newly generated imagery. Original files remain unchanged. `provenance/collection/responsive-previews.json` records source/derivative hashes and byte-identical font URL reuse; the original per-work font notices continue to apply.
 
 PARALLAX's four lossless WebP derivatives retain all original PNGs. Alpha and nontransparent RGB are identical; the hero's fully transparent RGB is normalized by encoding. `provenance/parallax/lossless-webp.json` records this boundary and exact hashes. These files do not introduce new artwork or alter the original source claims.
+
+## Batch E delivery derivatives (25 October 2026)
+
+Five new entrance previews (640/960/1280 WebP, q90) are resized derivatives of interface-cleaned captures of the five new runtimes; no upscaled or retouched artwork is introduced and the full-size captures are the deployed `social.jpg` files. Their source and derivative hashes are recorded in `provenance/collection/responsive-previews.json`. The five new works reuse existing font URLs where the font binaries are byte-identical (Archivo from GLAZE, Manrope Variable from FUSION, DM Sans from FORM, Cormorant 400 from CHRONOS, the Cormorant italic from OPTIC, Fraunces from COUNTERFORM); only Anton and Source Sans 3 add new homepage font requests.

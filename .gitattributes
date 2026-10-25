@@ -15,5 +15,10 @@ public/nib/** -text
 public/crema/** -text
 public/crave/** -text
 public/grid/** -text
+public/relay/** -text
+public/supercell/** -text
+public/pelagic/** -text
+public/backstage/** -text
+public/murmuration/** -text
 # Preserve the supplied self-contained historical edition as an opaque artifact.
 provenance/kage/KAGE-VOID.html -text -diff

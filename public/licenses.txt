@@ -266,3 +266,8 @@ GRID — The Architecture of Visual Order
 DOSE: original source MIT (dose/LICENSE); fonts OFL (dose/assets/fonts/*-OFL.txt); Three.js and Lenis MIT (dose/licenses/). See dose/NOTICE.md and dose/THIRD-PARTY-NOTICES.md.
 COUNTERFORM: no overall source license declared; Fraunces and Roboto Flex OFL, Lenis and Three.js MIT (counterform/licenses/); see counterform/NOTICE.md.
 FERRUM: no overall source license declared; Antonio, Barlow Condensed and Manrope OFL, Lenis and Three.js MIT (ferrum/licenses/); see ferrum/NOTICE.md.
+RELAY: no overall source license declared; Archivo and IBM Plex Mono OFL, Lenis MIT, GSAP standard no-charge notice (relay/licenses/); see relay/NOTICE.md.
+SUPERCELL: no overall source license declared; Manrope OFL, Lenis MIT, GSAP standard no-charge notice (supercell/licenses/); see supercell/NOTICE.md.
+PELAGIC: no overall source license declared; Cormorant Garamond and Manrope OFL, Lenis MIT, GSAP standard no-charge notice (pelagic/licenses/); see pelagic/NOTICE.md.
+BACKSTAGE: no overall source license declared; Fraunces and Source Sans 3 OFL, Three.js and Lenis MIT, GSAP standard no-charge notice (backstage/licenses/); see backstage/NOTICE.md.
+MURMURATION: original source MIT (murmuration/LICENSE.txt); Anton, Cormorant Garamond and DM Sans OFL (murmuration/licenses/); Lenis MIT, GSAP standard no-charge notice; see murmuration/THIRD_PARTY_NOTICES.md and murmuration/NOTICE.md.

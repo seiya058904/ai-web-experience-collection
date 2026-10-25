@@ -1,0 +1,7 @@
+GSAP 3.15.0
+Copyright 2008-2026, GreenSock. All rights reserved.
+Subject to the terms at https://gsap.com/standard-license
+
+The installed package identifies its license as Standard 'no charge'.
+This is a notice and source pointer, not an MIT license or a replacement for GreenSock's license terms.
+Package notices were checked on 2026-10-24.

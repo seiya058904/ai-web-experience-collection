@@ -1,0 +1,102 @@
+{
+  "project": "PELAGIC",
+  "records": [
+    {
+      "key": "hero-a",
+      "prompt": "Use case: scientific-educational, cinematic natural history art direction. Asset type: first visual concept for an original immersive browser exhibition PELAGIC \u2014 A Language of Living Light. Create a refined 16:9 wide composition, NO text, NO UI, no watermark. A single Erenna sirena angler siphonophore colony hangs like a delicate translucent living branch, occupying the right 58 percent. The left 38 percent is quiet deep petroleum blue #071923 negative space for real HTML typography. Its central curved stolon descends from upper right to lower middle, not a normal umbrella jellyfish. At the top a compact cluster of translucent swimming bells around a central axis; along the rest of the axis differentiated thin crinkled protective bracts and soft pale warm internal feeding zooids; connected fine branching tentacles hang below. At the end of one fine tentillum in lower middle right a tiny organic orange-red glowing lure, connected visibly to the body, is the only warm point of light. Other tentacles have tiny non-glowing swellings. Believable irregular anatomy, no foliage leaves, no glass balls, no coral, no DNA helix, no fantasy organs. Narrow soft cool sidelight reveals delicate thickness, inner folds, translucency, slight milky tissue, amber internal details, shadows within membranes. Generous photographic scale: complete animal is close and readable, not tiny. Water is dark green gray #17343B with subtle volumetric depth, no space stars, no neon, no bubbles, no scary creature. Elegant scientific editorial photography meets restrained high quality 3D specimen render. Entire organism and fine filaments inside frame with margins, hero-safe composition. This is a concept, not a claimed species photograph. It belongs to a five-act coherent exhibition with light reduction, reconstructed lure encounter, squid pattern comparison, return to observation.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false,
+      "input": null,
+      "output_hint": "Generated images are saved to /workspace/scratch/9b97fe047a2b/generated_images as /workspace/scratch/9b97fe047a2b/generated_images/exec-bcc63c08-84ab-47ea-b661-da29151f6d4f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "reference only",
+      "original_sha256": "ca46a7aaa7aa320fe505cae75c1c4ee86a7366700d18b600bf886ecfdfb3f7c6",
+      "packaged_file": "docs/concepts/hero-a.webp",
+      "packaged_sha256": "903187650ad25c01f1d5942f98fed6c1f01cbaa0c02daefc6fbd95435dfee7b7",
+      "original_dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "key": "hero-b",
+      "prompt": "Use case: scientific-educational, cinematic natural history visual concept B for PELAGIC, A Language of Living Light. Output wide 16:9 image, no text, no UI, no watermark. This is an equally polished alternate hero composition to a whole colony side view: unusual macro perspective with a delicate branching tentillum and its tiny lobed orange-red luminous lure enlarged in the right foreground (not an oversized sphere), a clear visible thin stalk connecting it back to an intact recognizable Erenna sirena siphonophore colony in the middle right background. Shallow but not extreme depth of field, the complete body with compact swimming bell cluster on upper end, translucent crinkled bracts along a curving stolon and several fine branching fishing tentacles must still be readable. No umbrella jellyfish silhouette. Foreground translucent tissue has minute folds, slight cloudiness, damp organic density and a subtle stinging-cell band adjacent to the terminal lure. Foreground lure about 4% frame width, colony about 50% frame height, quiet left 40% for real HTML heading. Dark petroleum blue #071923 and green gray #17343B water, bone white #E8E2CF edges, gray cyan #9DBEBB lighting; restrained red orange #BE5142 only at mature lure. Very narrow soft survey sidelight, faithful soft body texture rather than solid glass, no all-over glow, no galaxy stars, no fantasy animal, no labels. The tension between one tiny light and a fragile whole organism should feel intimate and fascinating, refined museum editorial imagery. This is an original artistic morphology study, not a specimen photograph.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false,
+      "input": null,
+      "output_hint": "Generated images are saved to /workspace/scratch/9b97fe047a2b/generated_images as /workspace/scratch/9b97fe047a2b/generated_images/exec-a1b29536-50fe-46c5-80c4-5d6249f48337.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "reference only",
+      "original_sha256": "88de9f6b5cedf4b7ebed026db15c37ad994f2cde7e3fa42827b5a8493c10d952",
+      "packaged_file": "docs/concepts/hero-b.webp",
+      "packaged_sha256": "bc7808656b21e9b5d5125cc1d242a9854c07e1d01f50594deb097b5e5f1a417d",
+      "original_dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "key": "transition",
+      "prompt": "Edit this exact PELAGIC siphonophore composition for the 50 percent midpoint between external survey lighting and darkness. Lighting-weather edit only. Preserve exactly the same entire colony, position, camera, background, body structure and tiny terminal orange-red lure at lower-middle. The left-facing tissue and upper right crown retain narrow soft light while the right-facing and lower tissue fall into petroleum blue green shade; retain enough very weak nonphysical exhibition fill to understand the continuous main stem and connected branches. Reduce survey illumination by about half, especially in the upper right, let the SAME small lure become the visual focal point, with localized gentle warm falloff. Do not make the entire animal glow, do not add new lights or organs, no rainbow, no exaggerated bloom. Same wide view, dark teal #071923 palette, quiet left text safety area. No text, UI or watermark. This is an exact transition reference, not a new shot.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false,
+      "input": "exec-bcc63c08-84ab-47ea-b661-da29151f6d4f.png",
+      "output_hint": "Generated images are saved to /workspace/scratch/9b97fe047a2b/generated_images as /workspace/scratch/9b97fe047a2b/generated_images/exec-88ba372f-a831-4516-be12-2e39de755346.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "reference only",
+      "original_sha256": "b5c6a0c6eed58bc95e85318e50bbd1423b16c6ce6be8c94c1761be0fec72f8b2",
+      "packaged_file": "docs/concepts/transition.webp",
+      "packaged_sha256": "a012cb8bf71d8255f5828cd05863d0a54112389d5096fbe66eff15cb5162da0e",
+      "original_dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "key": "squid-study",
+      "prompt": "Use case: scientific-educational. Wide 16:9 cinematic editorial study for PELAGIC, an original natural history browser exhibition. Complete recognizable Humboldt squid (Dosidicus gigas) seen in calm three quarter dorsal side view, not confronting the viewer. Long tapered torpedo mantle, two broad triangular posterior fins together forming a diamond, two believable lateral eyes, an arm crown of eight short arms and two distinct longer feeding tentacles, no face, no scary mouth. Specimen fills right 60 percent with all arms inside frame and is diagonally oriented from high right tail to middle low left arm tips. Cream gray translucent soft tissue with very subtle gold green inner backlight, rust-brown pigment chromatophores are tiny dense organic speckles. A clear bilaterally pale and dark pigmentation division along the longitudinal mantle axis, not zebra stripes, tiger stripes, rainbow or alien emissive veins. Soft narrow gray cyan external sidelight, dim internal glow conceptual only; matte fleshy thin muscular tissue, no plastic, no glass toy. Deep petroleum blue #071923 water with subtle green gray depth, quiet left 36 percent for large elegant real HTML type. Respect the entire silhouette and leave margins. NO TEXT, no watermark, no UI. The study's purpose is to compare visibility of body pigmentation under external light and a backlighting hypothesis, not claim meanings for signals. Visually coordinated with a translucent siphonophore exhibition.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false,
+      "input": null,
+      "output_hint": "Generated images are saved to /workspace/scratch/9b97fe047a2b/generated_images as /workspace/scratch/9b97fe047a2b/generated_images/exec-9edc7d91-e39a-41a8-992c-69307a9ad0f6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "reference only",
+      "original_sha256": "219da377796f4cfa889de1a8352e184ceb95e8c61b3e238f58c53c0232d787e5",
+      "packaged_file": "docs/concepts/squid-study.webp",
+      "packaged_sha256": "1d84af87e07c3c6273c451c53255e3fc6bc933c5b3b025ce40981394e3f5a1ca",
+      "original_dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "key": "colony-asset",
+      "prompt": "Create the final isolated organism asset for the same PELAGIC exhibition, derived from the supplied image's delicate tissue, colors and full-colony curve, but improve anatomical plausibility. Transparent background with true alpha; no environment, no text, no shadows outside organism. Portrait 2:3 canvas. Entire Erenna-like angler siphonophore colony centered, curve from upper right at 65% x/12% y toward 50% x/55% y, with slender fishing tentacles hanging toward lower left and bottom. Keep ALL appendages inside generous margins. Important anatomical correction: the upper swimming region is an elongated cluster of 6-8 small vertically staggered delicate angular swimming bells along a central stalk, NOT four symmetric round bubbles or a flower. Below it the connected feeding region has irregular thin folded transparent protective bracts, softly opaque buff feeding zooids, distinct central stolon. Do NOT make bracts into serrated foliage or leaves, use irregular gelatinous pouches and folded tissue. Use only a small number of fine branching tentacles with minute terminal bulbs. Leave the terminal bulbs pale and unlit: their luminescence will be a separate code-controlled layer. Soft gray cyan and bone-white sidelight, faint warm internal structures, restrained translucent soft tissue, museum-quality detailed natural history specimen render. No all-over blue glow, no opaque glass-plastic, no skeleton, no rainbows. Limited-view artistic reconstruction, photorealistic organic material with carefully connected structure. Preserve true cutout transparency even through very thin tissue.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "input": "exec-bcc63c08-84ab-47ea-b661-da29151f6d4f.png",
+      "output_hint": "Generated images are saved to /workspace/scratch/9b97fe047a2b/generated_images as /workspace/scratch/9b97fe047a2b/generated_images/exec-49b094bb-7875-4cd6-991f-35da994a969b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "final asset",
+      "original_sha256": "550c4c8dcdb705109cbc0633db9cd1791a4d01c7a3c8e5a37d3f7b98de96faf8",
+      "packaged_file": "public/art/colony-asset.webp",
+      "packaged_sha256": "1a7f9d4c082ddf5f000eb58bb60dd7f61ef7442fe163a0d66e168910d6c1337a",
+      "original_dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "key": "squid-asset",
+      "prompt": "Create an isolated final Humboldt squid (Dosidicus gigas) asset derived from this beautiful reference, on TRUE TRANSPARENT BACKGROUND, no water or shadow. Change pose to vertical portrait 2:3 composition: tail point at upper 8% near center, broad pair of diamond-shaped posterior fins, tapered elongated mantle down to head at 58%, eight short arms and TWO longer feeding tentacles arranged naturally below with tips finishing at 92%. Entire animal within generous margins. Calm three-quarter dorsal view with two lateral eyes visible, no face or open mouth. Preserve the believable soft muscular matte tissue and high-quality fine organic texture. Main change to skin: pale bone-cream neutral pigmentation with sparse fine warm brown chromatophore speckles, NO big dark bands or patches; we will calculate the dark pattern masks in the website. Keep some natural volume, folds, pearlescent moist highlights, realistic triangular fins and distinct head/neck. Natural history museum render, neither toy nor horror. Pale unlit specimen; external shading and conceptual bioluminescent backlight will be separate runtime controls. No glowing outlines, no rainbow, no fake organs, no text, no watermark, no UI. Absolutely no dark photographic background: actual transparent alpha.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "input": "exec-9edc7d91-e39a-41a8-992c-69307a9ad0f6.png",
+      "output_hint": "Generated images are saved to /workspace/scratch/9b97fe047a2b/generated_images as /workspace/scratch/9b97fe047a2b/generated_images/exec-a1a33ab5-8735-42d3-871a-fdb4050a876d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "final asset",
+      "original_sha256": "a29d819d554fb35d880c5641dea17301145c36a4812e91ee109b8ab626763bb9",
+      "packaged_file": "public/art/squid-asset.webp",
+      "packaged_sha256": "9aa9f9ef11f8d15d75ee957d48ec4e545dcb70362ae2a411da9ed8af166b5103",
+      "original_dimensions": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "notes": "Generated via the built-in tool. Four exploration images preceded production UI implementation. Raw outputs remain in the execution workspace; selected local assets and small evidence copies are packaged. AI images are artistic interpretations, not zoological evidence."
+}

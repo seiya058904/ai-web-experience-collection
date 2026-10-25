@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F1EBDD" />
+  <meta name="description" content="A sentence, an uncertain world, and another way through. An interactive, browser-local transport sculpture." />
+  <link rel="icon" type="image/svg+xml" href="%BASE_URL%relay/favicon.svg" />
+  <link rel="preload" href="%BASE_URL%relay/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../../experiences/relay/src/style.css" />
+  <title>RELAY — A Message Finds Its Way</title>
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%relay/">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RELAY — A Message Finds Its Way">
+<meta property="og:description" content="A sentence, an uncertain world, and another way through. An interactive, browser-local transport sculpture.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%relay/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%relay/social.jpg">
+<meta property="og:image:alt" content="RELAY’s original transport sculpture: a sentence travelling between sender and receiver">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RELAY — A Message Finds Its Way">
+<meta name="twitter:description" content="A sentence, an uncertain world, and another way through. An interactive, browser-local transport sculpture.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%relay/social.jpg">
+<link rel="stylesheet" href="/experiences/shared/collection-return.css">
+<script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+</head>
+<body>
+  <a class="skip-link" href="#delivery-controls">Skip to delivery controls</a>
+  <header class="site-header">
+    <a class="chapter-location" href="#gap" aria-label="Go to The Gap">
+      <span id="chapter-number">01</span><span class="slash">/</span><span>06</span>
+      <span id="chapter-name">The Gap</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a class="collection-return" href="%BASE_URL%#world-relay" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <button class="text-button" id="chapter-menu-button" popovertarget="chapter-menu">Chapters <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button>
+      <a href="#model">The model</a>
+    </nav>
+    <div id="chapter-menu" popover>
+      <nav aria-label="Chapters">
+        <a href="#gap"><span>01</span>The Gap</a>
+        <a href="#copy"><span>02</span>Keep a Copy</a>
+        <a href="#routes"><span>03</span>Another Way Through</a>
+        <a href="#order"><span>04</span>Arrival Is Not Order</a>
+        <a href="#knowing"><span>05</span>Knowing It Arrived</a>
+        <a href="#sentence"><span>06</span>A Whole Sentence</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="story" class="story">
+      <div class="chapter-anchor" id="gap" data-chapter="0"></div>
+      <div class="chapter-anchor" id="copy" data-chapter="1"></div>
+      <div class="chapter-anchor" id="routes" data-chapter="2"></div>
+      <div class="chapter-anchor" id="order" data-chapter="3"></div>
+      <div class="chapter-anchor" id="knowing" data-chapter="4"></div>
+      <div class="chapter-anchor" id="sentence" data-chapter="5"></div>
+
+      <section class="scene" id="scene" aria-labelledby="scene-title" data-chapter="0" data-progress="0" data-ready="false">
+        <div class="scene-heading" id="scene-heading" data-safe-text>
+          <h1 id="scene-title">RELAY</h1>
+          <p id="scene-deck">A message finds its way.</p>
+        </div>
+
+        <div class="sculpture-wrap" id="sculpture-wrap">
+          <svg id="sculpture" viewBox="0 0 1440 900" aria-label="A sculptural route from sender to receiver" role="group">
+            <g fill="none" stroke="#292B29" stroke-width="60">
+              <path d="M 110 480 C 350 610 600 570 805 400 S 1030 330 1290 410"/>
+              <path d="M 325 545 C 600 610 770 710 990 540 S 1190 460 1290 410"/>
+            </g>
+            <g fill="#DAD3C5"><rect x="18" y="370" width="175" height="190"/><rect x="1165" y="235" width="275" height="290"/></g>
+            <g fill="#292B29" font-family="sans-serif" font-size="16"><text x="44" y="420">SENDER</text><text x="1192" y="285">RECEIVER</text><text x="1192" y="332">The route is waiting.</text></g>
+          </svg>
+          <svg class="fallback-mobile" viewBox="0 0 390 844" role="img" aria-label="Static vertical route. Sender above, receiver below. Waiting for the local simulation.">
+            <g fill="none" stroke="#292b29" stroke-width="24"><path d="M195 245V325C195 375 82 375 82 440S195 507 195 570V604"/><path d="M195 325C195 385 310 390 310 443S195 508 195 570"/></g>
+            <g fill="#d9d1c0"><rect x="125" y="218" width="140" height="44" rx="2"/><rect x="90" y="585" width="210" height="65" rx="2"/></g>
+            <g font-family="sans-serif" fill="#292b29"><text x="151" y="246" font-size="13">SENDER</text><text x="112" y="612" font-size="11">RECEIVER</text><text x="112" y="633" font-size="15">The route is waiting.</text></g>
+          </svg>
+
+          <div id="receiver-display" class="receiver-display" aria-label="Receiver">
+            <div class="endpoint-label">Receiver <span id="receiver-status">Waiting</span></div>
+            <div class="received-message" id="received-message">A message<br>is waiting.</div>
+            <button id="gap-focus" class="gap-focus" aria-label="Inspect the first missing block"><span class="gap-mark"></span><span id="gap-label">Inspect the gap</span></button>
+          </div>
+          <div class="sender-message" id="sender-message" hidden>
+            <div class="endpoint-label">Original message · sender</div>
+            <p id="original-message"></p>
+          </div>
+          <div id="retained-label" class="world-label" hidden>Copy kept</div>
+          <div id="buffer-label" class="world-label" hidden>Received slots · original byte order</div>
+          <div id="ack-caption" class="world-label" hidden>Confirmation takes its own way back.</div>
+        </div>
+
+        <div class="route-controls" id="route-controls" hidden aria-label="Change the route" data-safe-text>
+          <div class="channel-switches">
+            <button id="upper-toggle" class="channel-button" aria-pressed="false"><span class="channel-symbol"></span><span>Open upper channel</span></button>
+            <button id="lower-toggle" class="channel-button" aria-pressed="true"><span class="channel-symbol"></span><span>Close lower channel</span></button>
+          </div>
+          <label class="speed-control" for="channel-speed"><span>Lower passage speed <output id="speed-value">1.00×</output></span><input id="channel-speed" type="range" min="0.25" max="2" step="0.25" value="1" /><span class="range-labels"><span>Slower queue</span><span>Faster queue</span></span></label>
+        </div>
+
+        <div class="ack-control" id="ack-control" hidden data-safe-text>
+          <button id="lose-ack" class="outline-button">Lose one acknowledgement <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          <p id="ack-help">The next acknowledgement is discarded. Its data can still arrive.</p>
+        </div>
+
+        <aside class="selection" id="selection" hidden aria-labelledby="selection-title">
+          <div class="selection-top"><h2 id="selection-title">Block 02</h2><button id="close-selection" class="icon-button" aria-label="Close block details"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+          <label for="selection-block-select" class="sr-only">Inspect a block</label><select id="selection-block-select" aria-label="Inspect a block"></select>
+          <p id="selection-summary"></p><dl id="selection-facts"></dl>
+        </aside>
+
+        <div class="scene-caption" id="scene-caption" data-safe-text>
+          <p id="scene-description">Some things arrive out of order.<br>Help this one find its way.</p>
+          <p class="live-explanation" id="live-explanation"></p>
+          <p class="end-facts" id="end-facts" hidden></p>
+        </div>
+
+        <div class="delivery-controls" id="delivery-controls" aria-label="Delivery controls" data-safe-text>
+          <div class="playback">
+            <button id="play-pause" class="primary-button"><span id="play-label">Continue delivery</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+            <button id="step" class="icon-button" aria-label="Advance one event" title="Advance one event"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 6 8 6-8 6V6ZM18 6v12"/></svg></button>
+            <button id="restart" class="icon-button" aria-label="Restart this route as a new round" title="Restart this route as a new round"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9a8 8 0 1 1-1 5M5 3v6h6"/></svg></button>
+          </div>
+          <a id="explore" href="#copy" class="explore-link">Explore the route <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14m-5-5 5 5 5-5"/></svg></a>
+          <button id="new-round" class="text-button" hidden>Try a different route <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          <div class="transport-meta"><span class="state-dot"></span><span id="run-state">A paused delivery</span><span class="clock" id="sim-clock">0.00 s</span><button id="inspect-blocks" class="text-button">Blocks</button><button id="history-toggle" class="text-button">Event strip</button></div>
+        </div>
+
+        <section class="history-panel" id="history-panel" hidden aria-label="Recorded delivery history">
+          <div class="history-heading"><strong>Recorded moment</strong><span id="recorded-time"></span><button id="history-return" class="text-button">Return to current round <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+          <label class="sr-only" for="history-range">Recorded event</label><input id="history-range" type="range" min="0" max="0" value="0" />
+          <div class="events-wrap" data-lenis-prevent><ol id="event-strip"></ol></div>
+        </section>
+        <div class="chapter-progress" aria-hidden="true"><span id="chapter-progress-bar"></span></div>
+      </section>
+    </div>
+
+    <section class="model-section" id="model" aria-labelledby="model-title">
+      <div class="model-intro"><span class="section-number">Behind the work</span><h2 id="model-title">A small world.<br>Real consequences.</h2><p>RELAY is an original toy protocol. A sentence becomes UTF-8 bytes, takes a route, and finds its order again. It all happens here, in your browser.</p><button id="footer-new-round" class="primary-button">Try a different route <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button></div>
+      <div class="model-notes">
+        <article><h3>Arrival is a fact. Confirmation is knowledge.</h3><p>An orange block travels outward; a green acknowledgement travels back. Losing the second does not erase the first. The sender keeps its copy until the acknowledgement returns.</p></article>
+        <article><h3>Looking never changes the outcome.</h3><p>Scroll to change your point of view. Play, pause or step to move simulation time. The event strip reads recorded moments without changing the current round. Changing a message starts a new round.</p></article>
+        <details><summary>The rules of this world</summary><div class="rules-body"><p>Five bytes per block. Four unconfirmed blocks in the sending window. Eleven demonstration seconds before retry. At most four sends per block, with a 64-second round deadline.</p><p>Six junctions form two alternative paths. A closed channel refuses new traffic in either direction; a block already travelling finishes that hop. Queued blocks choose another open path or wait. The speed control changes the queue's admission interval, not the propagation delay or a real TCP congestion window.</p><p>The receiver checks each block's round, range and byte payload, ignores duplicate content and acknowledges it again. Only complete characters before the first byte gap are displayed. Exhausted blocks remain retained but release a window place so later blocks can still travel.</p><p>Every event has a simulation timestamp and stable sequence. A seed and the same timed operations produce the same result, independent of scrolling and refresh rate. A hidden tab pauses; returning never catches up.</p></div></details>
+        <details><summary>Sources &amp; credits</summary><div class="rules-body"><p><a href="https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2" target="_blank" rel="noreferrer">RFC 9293 §2.2</a> informs the ideas of ordering, detection and retransmission. The routes, chunks, acknowledgement strategy and timing here are original demonstration rules, not an implementation of TCP, QUIC or BGP.</p><p><a href="https://www.ryojiikeda.com/project/datamatics/" target="_blank" rel="noreferrer">Ryoji Ikeda · datamatics</a> is a methodological reference for making data perceptible. No image, sound or code from the artwork is used.</p><p>Code-native SVG and live typography. <a href="https://github.com/darkroomengineering/lenis" target="_blank" rel="noreferrer">Lenis</a> and <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/" target="_blank" rel="noreferrer">GSAP / ScrollTrigger</a> share one animation ticker. Archivo and IBM Plex Mono are bundled locally under the SIL Open Font License. AI-generated studies informed the original sculpture; their records are included with the source.</p></div></details>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a href="#gap" class="footer-wordmark">RELAY</a><span>A message finds its way.</span><span>Made to be understood.</span></footer>
+
+  <dialog id="round-dialog" aria-labelledby="round-title" data-lenis-prevent>
+    <form id="round-form">
+      <div class="dialog-top"><h2 id="round-title">Send something<br>through.</h2><button type="button" id="close-round" class="icon-button" aria-label="Close new round"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <p>A new sentence. A new set of possibilities.</p>
+      <label for="message-input">Your message <span id="byte-count">29 / 120 bytes</span></label>
+      <textarea id="message-input" rows="2" maxlength="120" required>Meet me at the other end. ✦</textarea>
+      <label for="scenario-input">Starting conditions</label>
+      <select id="scenario-input"><option value="detour">A way around — one path closed, one block lost</option><option value="out-of-order">Out of order — a late second block</option><option value="all-cut">No way through — both paths closed</option><option value="ack-loss">Uncertain sender — every acknowledgement lost</option><option value="clear">An open route — no deliberate loss</option></select>
+      <label for="seed-input">Scene seed</label><input id="seed-input" type="number" min="0" max="4294967295" step="1" value="9293" required />
+      <p id="form-error" class="form-error" role="alert"></p>
+      <button type="submit" class="primary-button">Start a new round <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+      <p class="dialog-note">Resets the clock, routes and event history. Your message stays in this browser and is never sent anywhere.</p>
+    </form>
+  </dialog>
+  <div class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></div>
+  <noscript><div class="noscript">The sculpture is visible, but delivery needs JavaScript. Enable it to run the local simulation.</div></noscript>
+  <script type="module" src="../../experiences/relay/src/main.js"></script>
+</body>
+</html>

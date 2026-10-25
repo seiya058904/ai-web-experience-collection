@@ -1,0 +1,33 @@
+{
+  "name": "murmuration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive field study in collective motion.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "record": "node scripts/record.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "npm run build && node scripts/qa-browser.cjs",
+    "test:recovery": "npm run build && node scripts/qa-recovery.cjs",
+    "test:motion": "npm run build && node scripts/qa-motion.cjs",
+    "posters": "npm run build && node scripts/posters.cjs",
+    "test:native": "npm run build && node scripts/qa-native.cjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "gsap": "3.15.0",
+    "lenis": "1.3.27"
+  },
+  "devDependencies": {
+    "@fontsource-variable/cormorant-garamond": "5.3.0",
+    "@fontsource-variable/dm-sans": "5.3.0",
+    "@fontsource/anton": "5.3.0",
+    "@playwright/test": "1.56.1",
+    "vite": "8.3.5"
+  }
+}

@@ -1,0 +1,932 @@
+{
+  "work": "RELAY — A Message Finds Its Way",
+  "archive": "RELAY_Source.zip",
+  "bytes": 29219145,
+  "modified": "2026-10-25 11:51:57",
+  "sha256": "eb8e8a39444573e602081742cbe698795b68621dc6f83a44c49e4441884dd1ff",
+  "entryCount": 182,
+  "entries": [
+    {
+      "path": "RELAY_Source/.gitignore",
+      "bytes": 78,
+      "sha256": "8a784527065942a27fd4707cf32bc54b800b4760bca45af0ff00ff0f74ee47ec"
+    },
+    {
+      "path": "RELAY_Source/PRODUCT.md",
+      "bytes": 1679,
+      "sha256": "4ae9e7df07e0aefc0f694a8dcc61649c5ee71686c555f992c43927d3f0f688fe"
+    },
+    {
+      "path": "RELAY_Source/README.md",
+      "bytes": 13950,
+      "sha256": "483ea911c19471bfffd18cdb0d8b57a9f42dde667526c94977ce1b745ee4ec73"
+    },
+    {
+      "path": "RELAY_Source/docs/ACCEPTANCE.md",
+      "bytes": 8751,
+      "sha256": "63f6183f8cc8ee0fe5f73d9fbeed7ca3ac41c55c28f0189c62e8b19c0bdcbfd4"
+    },
+    {
+      "path": "RELAY_Source/docs/CLEAN-BUILD.md",
+      "bytes": 2650,
+      "sha256": "0ea6c4f49dc8dc0ca3eb832e21943357520152a3731985ce3c33fb19be165e74"
+    },
+    {
+      "path": "RELAY_Source/docs/DESIGN.md",
+      "bytes": 6250,
+      "sha256": "2d0dc714aa1a3719f3ee44ab02e30bbf37170b46040e7b80893a97d142ecc99e"
+    },
+    {
+      "path": "RELAY_Source/docs/ENGINE-REVIEW.md",
+      "bytes": 9892,
+      "sha256": "f4528371b3a1c0222194aed3c655e0b260ccda3764ae45d7a68df7d403511cda"
+    },
+    {
+      "path": "RELAY_Source/docs/KNOWN-LIMITATIONS.md",
+      "bytes": 4242,
+      "sha256": "a3032ad9276c48803139e2e44eb801fd5bdf7e1c89ebdb57cc7b725c5cd9bf24"
+    },
+    {
+      "path": "RELAY_Source/docs/MODEL-TESTS.md",
+      "bytes": 5674,
+      "sha256": "c49dc292cf331a0eb82d5c9981061946f1318d947ba2caa3fde0f0f216fd7638"
+    },
+    {
+      "path": "RELAY_Source/docs/MODEL.md",
+      "bytes": 12783,
+      "sha256": "4769cc5f36e0225d5ad1722d9fdba496544f7500f5a572759d5f408978aa2a07"
+    },
+    {
+      "path": "RELAY_Source/docs/NATIVE-BROWSER-REVIEW.md",
+      "bytes": 6798,
+      "sha256": "f6c405ea7175ae8a3bcbdaee7101f66c74cb150a51721f584f4ff9cc8378a6ae"
+    },
+    {
+      "path": "RELAY_Source/docs/QA-FIRST-PASS.md",
+      "bytes": 4537,
+      "sha256": "6942620fb1fbddf9695d5f069602b698974d747ee2c18b2d9e93ba1a3e60de8a"
+    },
+    {
+      "path": "RELAY_Source/docs/QA-PLAN.md",
+      "bytes": 9535,
+      "sha256": "6ac6c7e8006feba40c639c90004b4221147f5cd6b2365593a7f446ecbb6b848e"
+    },
+    {
+      "path": "RELAY_Source/docs/RESEARCH.md",
+      "bytes": 6649,
+      "sha256": "99fbb97c5893e75729f1b2ff80605b4ee8aa3dd13e78e380fe03dcd4097c594b"
+    },
+    {
+      "path": "RELAY_Source/docs/THIRD-PARTY-NOTICES.md",
+      "bytes": 6082,
+      "sha256": "567d35dbe50da93e65a78e475165f3893dcbf24ca9bea2ca5fe6f2bfa9e89a40"
+    },
+    {
+      "path": "RELAY_Source/docs/VISUAL-BIBLE.md",
+      "bytes": 17646,
+      "sha256": "4aec84337280d7368cdf71beb10fbdf5ab2d010270f0d9f895c4ac1ce1aa7305"
+    },
+    {
+      "path": "RELAY_Source/docs/VISUAL-REVIEW.md",
+      "bytes": 24778,
+      "sha256": "195556f83170fd0f814e5e1b8c30002f399329557eb203274ffcd46bf6c218ae"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/01-hero-a-bridge.png",
+      "bytes": 1714049,
+      "sha256": "d6e3e4d72d191ddc761d5e0e93f9d857fa8a9cb919093e6435720707f1aa35a1"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/02-hero-b-letterpress.png",
+      "bytes": 1777516,
+      "sha256": "cf5435b5cab056f6959b444cfebc56f67e4f95c5cdd902431fe1894b3e6344de"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/03-ack-middle.png",
+      "bytes": 1639814,
+      "sha256": "c332e550b61f89626d92628451d159613e91693e9c953d91830e1c47007b9c1f"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/04-keep-copy.png",
+      "bytes": 1701716,
+      "sha256": "cdc65b2f6dd4d8f95f6279e09dee89210be4b6780e86661e51b1ec9d39e9b925"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/05-another-way.png",
+      "bytes": 1477905,
+      "sha256": "8dc828299c519c11405cda8f441a913c0f4f1cd0a509f143e5d2a03843775c8f"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/06-out-of-order.png",
+      "bytes": 1402585,
+      "sha256": "b1b4c6cbc92b57a31601b1d149d0e9679e3efa3875cc44d8c4c1dee296ae42c0"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/07-whole-sentence.png",
+      "bytes": 1296417,
+      "sha256": "f2f8035198652fe61411d4bfed86ba8c4b5cd3e7cb8ac5730534382f18158438"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/08-mobile-vertical.png",
+      "bytes": 1438181,
+      "sha256": "92b85c23fb57f0aa4ed09a421628daad9fc5217152c69fc96f66dfca87778d9b"
+    },
+    {
+      "path": "RELAY_Source/docs/concepts/generation-record.json",
+      "bytes": 18952,
+      "sha256": "fe8b352acfa208f08ac52dd8fa22c9cff9d2ba9a65a36818c8c13b6608ff85ad"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/actual-ack-inflight-1440.png",
+      "bytes": 184570,
+      "sha256": "90807a67a8f87ef47cd7873a28e356ea64124a53cc5b9bf2d8894232bdb771f8"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-1-1440x900.png",
+      "bytes": 189794,
+      "sha256": "2479da826e27f8f8564e7547cbb66bd5158450b05909f747989f5c96cadd3502"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-1-320x700.png",
+      "bytes": 57738,
+      "sha256": "591f364647bcf57835b81fdcf6e56dd8a65ae9c244d675ec47113fc895e39caa"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-1-3840x2160.png",
+      "bytes": 577139,
+      "sha256": "a5f268a7000b94297d3e1577c3efdeaa0e02bc6c8d3e5360cea56219e817ab5b"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-1-390x844.png",
+      "bytes": 75294,
+      "sha256": "b135cb0df0ed717bd5566895f11cf104c742580e1bd25ddfb1040e620efc00d1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-2-1440x900.png",
+      "bytes": 187108,
+      "sha256": "a54651621fc7803b369e986ed051f294b81fe72d40d58eddfc34a2306f53b275"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-2-320x700.png",
+      "bytes": 62672,
+      "sha256": "d90b80c4bc4f410cb25ce9825fab6fcf19765a6a305fbec3652fc4b34d32eca6"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-2-390x844.png",
+      "bytes": 82290,
+      "sha256": "0fd1a95d17e6594d5196026e7fb88ac9036177e827f69966b6a5601ab8d3d7e3"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-3-1440x900.png",
+      "bytes": 196192,
+      "sha256": "789b44fa9a9530066784535cd7b48dac17549f66f4742be7a1751819a996778c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-3-320x700.png",
+      "bytes": 55654,
+      "sha256": "635aeab082fb8fecce8c7a9a45955aedf79c7e910df645ddc91ff9048978295a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-3-390x844.png",
+      "bytes": 76299,
+      "sha256": "35912e8ccde58f978f394beb54137a89a4973735dfb29cdc376738ca93a9bdea"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-4-1440x900.png",
+      "bytes": 145196,
+      "sha256": "2500f8fae0b970ae8eb5ea3766e38c544072ad9e1fd536ef2a27ea44e2f6075f"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-4-320x700.png",
+      "bytes": 55405,
+      "sha256": "05a565884ea0c9433f539774b517945723b4945c2cbadd34d66e54ee0c5ea0bc"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-4-390x844.png",
+      "bytes": 66964,
+      "sha256": "d6e3ee814087d5946f349cafc8828438d9e9208b594c3146e1a3294457a767b5"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-5-1440x900.png",
+      "bytes": 190931,
+      "sha256": "f8082006a5f70dac655292e8d63734686d9c9812eecb920a0e57b42e7aa96413"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-5-320x700.png",
+      "bytes": 59333,
+      "sha256": "574a1661918d963dced5bd68a2b2098c180def4a1b7b42794129f52b915b1f0a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-5-390x844.png",
+      "bytes": 77596,
+      "sha256": "ca27008b4ca9fc99ae0fd9b031d17fe8b87c353ec8dd639233d38aaca7781657"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-6-1440x900.png",
+      "bytes": 92243,
+      "sha256": "7404c39f48d71bc64bebc17a609f186294754f54b5e759639fe808d5e8920fc0"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-6-320x700.png",
+      "bytes": 44376,
+      "sha256": "b021e15178a3f54c0aa030a76bf7847eb2f696379895d7e554521728508e23a3"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-6-3840x2160.png",
+      "bytes": 244627,
+      "sha256": "040319274012d61bb595ff7e0aad834e345f4846a77a37e35f43c6ff8097e1e4"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/chapter-6-390x844.png",
+      "bytes": 51684,
+      "sha256": "94e168de02debf457210630fe4c16fe07cb326125cbe0b33ca89fbe23826dd32"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/desktop-hero-1440.png",
+      "bytes": 189776,
+      "sha256": "dc55e0fb22e2a951fc3ef3a38f99e4d4cf7523bc1a734b2be9cde03e2c4e607f"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/ending-ack-loss-1440.png",
+      "bytes": 93414,
+      "sha256": "9b8f94536309c6c3ac2542b3e43daf6c254fd47c78169aa6fe3c179b5dd865b3"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/ending-confirmed-default-1440.png",
+      "bytes": 86461,
+      "sha256": "cb550d85a47da45bb56afcd878aa93a29e668fab50901d7e7bb184835a0887c6"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/ending-incomplete-1440.png",
+      "bytes": 93638,
+      "sha256": "764c900b459824ffb29e91e204dc2fed841732a6de7fb11126aba5f45990521c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/ending-utf8-safe-text.png",
+      "bytes": 100841,
+      "sha256": "2f842848b143d1d9585746348b54bce198d80f4867dd220c6a30afa9d1210bd2"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/failure-1.png",
+      "bytes": 188319,
+      "sha256": "902b6758f443fc38d614ead85dbb07d680c4077e980130e010632763739d69b1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/failure-2.png",
+      "bytes": 188249,
+      "sha256": "9e9a31c03cff1a52109dd658fae81fb56d22b5b7e4087e9344e6000df1213cf5"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/failure-3.png",
+      "bytes": 188341,
+      "sha256": "4e2d29e28bcbdcacfe91b05146835f9ff029a3aa22b39c26d59750cd4965ce09"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/font-delay-after.png",
+      "bytes": 189885,
+      "sha256": "be68ebbf6455714d4b9a28297849af0becd6e96dd036c98247a432e7f50f8d7a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/font-delay-before.png",
+      "bytes": 189885,
+      "sha256": "be68ebbf6455714d4b9a28297849af0becd6e96dd036c98247a432e7f50f8d7a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-0-forward.png",
+      "bytes": 189799,
+      "sha256": "3a1d3c9524203ef8bdbff6a963e51b6733a31d11282dfb8030496f7f9007ca53"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-0-reverse.png",
+      "bytes": 189155,
+      "sha256": "40689babebd6d3554a652dc8e3a2bf4ea9ddcc02f9592b1b78376f3621a16f76"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-100-forward.png",
+      "bytes": 186727,
+      "sha256": "182964ec94bf372ccf1d71f61ce3193bad5cc9dc0a352f4c9f2abe94a0e06e96"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-100-reverse.png",
+      "bytes": 186719,
+      "sha256": "d495a406473e737021306bdf84f3f3a281df172887175b2a843cbb3b77ba655e"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-25-forward.png",
+      "bytes": 186120,
+      "sha256": "5044bf8c63411d319398fff86be5bc5cf8e732878053c0606c3f4f33ea9c1595"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-25-reverse.png",
+      "bytes": 186128,
+      "sha256": "f208c50c5f2e5d470b969889d9688c45240fc5bb1699cf67892fb2e6ce169533"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-50-forward.png",
+      "bytes": 164763,
+      "sha256": "93fb7f4f87fffcbcebc30ce606eef0a9b87ce98f45de98770a368ada4ab26e0a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-50-reverse.png",
+      "bytes": 164770,
+      "sha256": "ddb2c5e1ad986521c93a40a768ec31bc0b949470d334be8af7973f972d490c0b"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-75-forward.png",
+      "bytes": 184902,
+      "sha256": "939d9c0ec4385ec92f16ec64d1487f521ec2335082f3cb54d172dea83147aa68"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-1-75-reverse.png",
+      "bytes": 184902,
+      "sha256": "939d9c0ec4385ec92f16ec64d1487f521ec2335082f3cb54d172dea83147aa68"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-0-forward.png",
+      "bytes": 186727,
+      "sha256": "182964ec94bf372ccf1d71f61ce3193bad5cc9dc0a352f4c9f2abe94a0e06e96"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-0-reverse.png",
+      "bytes": 186719,
+      "sha256": "d495a406473e737021306bdf84f3f3a281df172887175b2a843cbb3b77ba655e"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-100-forward.png",
+      "bytes": 196077,
+      "sha256": "f1468a684727ad2128a1e927225da8b4465fddf0229fd9574600461ee2dbc090"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-100-reverse.png",
+      "bytes": 196078,
+      "sha256": "f5a059f6164a34e7f325e8548e5faf009af6bddadda0fc1bda9783ce160c88d1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-25-forward.png",
+      "bytes": 187495,
+      "sha256": "331b2cc4a97a10b272998f7ba463737260470caee97e3d3e4980d3be01c837f3"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-25-reverse.png",
+      "bytes": 187495,
+      "sha256": "331b2cc4a97a10b272998f7ba463737260470caee97e3d3e4980d3be01c837f3"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-50-forward.png",
+      "bytes": 165683,
+      "sha256": "74363bcce83f373ed2f540f3139d967c05de5e72674d70dd517e3a8ef704a85c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-50-reverse.png",
+      "bytes": 165674,
+      "sha256": "d796fc7659f8ba564752f88d39b24f5a0fe0ea984e5429384dccbec35f6df537"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-75-forward.png",
+      "bytes": 189056,
+      "sha256": "cd9716189a7936a1208c858bf88683e20a5f06d007b92f1529490190088210aa"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-2-75-reverse.png",
+      "bytes": 189056,
+      "sha256": "cd9716189a7936a1208c858bf88683e20a5f06d007b92f1529490190088210aa"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-0-forward.png",
+      "bytes": 196077,
+      "sha256": "f1468a684727ad2128a1e927225da8b4465fddf0229fd9574600461ee2dbc090"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-0-reverse.png",
+      "bytes": 196078,
+      "sha256": "f5a059f6164a34e7f325e8548e5faf009af6bddadda0fc1bda9783ce160c88d1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-100-forward.png",
+      "bytes": 144738,
+      "sha256": "286ac5056e0ce6616df8f5f17d1e888cfaad6553f81097c99323d55ab8eb5ce2"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-100-reverse.png",
+      "bytes": 144745,
+      "sha256": "7029586449b2d2cf3a7b88e35e970b0071100ea71bdd69831fee0c0117209fbc"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-25-forward.png",
+      "bytes": 178405,
+      "sha256": "9eafd412ec30bcb962e7097485842ecd31d3a615dcf91098b21e8f734c5263fd"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-25-reverse.png",
+      "bytes": 178405,
+      "sha256": "9eafd412ec30bcb962e7097485842ecd31d3a615dcf91098b21e8f734c5263fd"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-50-forward.png",
+      "bytes": 147790,
+      "sha256": "79c35aa54e3b7f8b6cbdd738aa71863d3f2d55397337a2c8d0bb09dc3eb0d07f"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-50-reverse.png",
+      "bytes": 147795,
+      "sha256": "3092f0b93ad900c4ab003fe8fa7b9835c2ce75cf69d9a1b7768cc2c5b0e5aca1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-75-forward.png",
+      "bytes": 161704,
+      "sha256": "b55d1ae5eec77698e5bd8dd1c0499b69e62a956168c0e1f6a710b63e55522bcf"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-3-75-reverse.png",
+      "bytes": 161713,
+      "sha256": "63ae1cd3dd4bd9e1fdbc3a358c828f5a1a778a9f34a6bb3859aac9e284a2be13"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-0-forward.png",
+      "bytes": 144738,
+      "sha256": "286ac5056e0ce6616df8f5f17d1e888cfaad6553f81097c99323d55ab8eb5ce2"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-0-reverse.png",
+      "bytes": 144745,
+      "sha256": "7029586449b2d2cf3a7b88e35e970b0071100ea71bdd69831fee0c0117209fbc"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-100-forward.png",
+      "bytes": 190405,
+      "sha256": "a279ea0e1b31cc10fc940049fbf90ec0ba4acdc63f54e124407a51629d7ba3e7"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-100-reverse.png",
+      "bytes": 190413,
+      "sha256": "453808b0d91da46a7e4edb1507df52b4150478afce7912694ab814b07e4b1949"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-25-forward.png",
+      "bytes": 159489,
+      "sha256": "a4c826cddec19b2150d8c7d491e38d19b677297dfde86f7d3e5bbbd3255f0c02"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-25-reverse.png",
+      "bytes": 159499,
+      "sha256": "27cc9ec3b301d85c6849ee18183acac5fdd738b4ef3b9880c1a8d34bc2a9c6b1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-50-forward.png",
+      "bytes": 149282,
+      "sha256": "34321f657966d9aca647372ee2b364247f9f2c2aa38d052b2d868c388c74393a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-50-reverse.png",
+      "bytes": 149289,
+      "sha256": "c6313d5cca70f8f2ea47f1686aa4571e2889b05468a788ab0e9fa9caf131d19c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-75-forward.png",
+      "bytes": 173380,
+      "sha256": "0498820f89df9dc7b0a86d469ad8acb0f39d6c3257c0dc4b977bd110b0822dfa"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-4-75-reverse.png",
+      "bytes": 173389,
+      "sha256": "98cf5ebed9d899b35db77607353c6d4aa1a11ee8a14839afd94678040d9307e1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-0-forward.png",
+      "bytes": 190405,
+      "sha256": "a279ea0e1b31cc10fc940049fbf90ec0ba4acdc63f54e124407a51629d7ba3e7"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-0-reverse.png",
+      "bytes": 190413,
+      "sha256": "453808b0d91da46a7e4edb1507df52b4150478afce7912694ab814b07e4b1949"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-100-forward.png",
+      "bytes": 91779,
+      "sha256": "357066b5567b59a94222ca15f9bb88b714e3c77e886edf7b33105b5f29f73e02"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-100-reverse.png",
+      "bytes": 91779,
+      "sha256": "357066b5567b59a94222ca15f9bb88b714e3c77e886edf7b33105b5f29f73e02"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-25-forward.png",
+      "bytes": 164125,
+      "sha256": "95ce7a7de13e06b5c8ddb7629d3c5aa66aeee48216ed39d1f109a77766811868"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-25-reverse.png",
+      "bytes": 164135,
+      "sha256": "420785dd78cf53d784ab3305e6b0d8899fd94deb45564291e3dd66dde80a8f4c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-50-forward.png",
+      "bytes": 117522,
+      "sha256": "f093ae6cddf0580b5138e5798598239be5fc5b879ddc9990b6a6e368d89fbf1b"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-50-reverse.png",
+      "bytes": 117531,
+      "sha256": "8fe49eb70c7ebd59ee646f203ee708bb49a89d18f808cdecbcf5b54f845ba297"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-75-forward.png",
+      "bytes": 116959,
+      "sha256": "33162b27bb7a7641b41dc51503031e910a17bb3b4fa9494b68113329c59b07ad"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/handoff-5-75-reverse.png",
+      "bytes": 116959,
+      "sha256": "33162b27bb7a7641b41dc51503031e910a17bb3b4fa9494b68113329c59b07ad"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/maximum-input-copy-320.png",
+      "bytes": 63425,
+      "sha256": "6f6bd75abdb4c632aaf76aaf02a5af5a91591bf377565d6458710bc71351576d"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/maximum-input-ending-320.png",
+      "bytes": 44579,
+      "sha256": "db1e012ad2e34a05c14acfc342e07775aeb7b469d2b10a3b6b00e4037db6b743"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/mobile-recorded-results.json",
+      "bytes": 30142,
+      "sha256": "9cbe12fad78f1a41c0930fceca8827b5f0737c46ebff45223b713cf5bc73f90b"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/recorded-320.png",
+      "bytes": 48756,
+      "sha256": "eaae3fba8799c9be625763dc4115955969672d7b1aadb61cb7ab8816f5de871e"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/recorded-390.png",
+      "bytes": 55994,
+      "sha256": "dcb6bda0b9c2883616c1fa27cf530339e739694cf2f64335b3dcdc54a5aaad3b"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/recorded-received-ack-loss.png",
+      "bytes": 101599,
+      "sha256": "0b47651288fb089444858fcbe0b3c0e387b0dc58da0d62881bcf2015db486297"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/reduced-motion-route.png",
+      "bytes": 194982,
+      "sha256": "797fb271dabfa370f58e21080c868d9a2d6c6ce6ce9de4c073a707638778e20a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/resource-failure-static-fallback.png",
+      "bytes": 70355,
+      "sha256": "fefa2dfeee7c942ec8e9be018a3f51795f3f63c8defe7cb508edee1700b224d4"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/results.json",
+      "bytes": 1313661,
+      "sha256": "8772b50ce4a259e0f15c7e7640701b1e1fdae171792f9e4e6c495895b24c26a7"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/text-enlargement-125.png",
+      "bytes": 198979,
+      "sha256": "36b63339fad416141b3210042af758ada7a3f23c4ef597aa4fefabecc8f86ae2"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/text-enlargement-150.png",
+      "bytes": 200150,
+      "sha256": "90e57aac37a1c13ae3b16cf86c02906a10d3550ef8c2dd3dd984a0f9e2845360"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final/text-enlargement-200.png",
+      "bytes": 181975,
+      "sha256": "274dad022a665d94c8af475338ad8838b3f823e5306aca989bf0b90b2f33e7ff"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/actual-ack-inflight-1440.png",
+      "bytes": 184872,
+      "sha256": "99feb08955cee7a4f64efdb19f77efe948a3108dd64c4b7b79e5fe1327eedb05"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/chapter-5-1440x900.png",
+      "bytes": 190639,
+      "sha256": "e2cd6bcb750d3042a74fadcddb61280f1242ef006df9b422bd19ad5e59fbe347"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/chapter-5-320x700.png",
+      "bytes": 59329,
+      "sha256": "b26c3aca1994b28f60905af9d1b9e23ebcc146ce965efcbe33ffe3a0759389e8"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/chapter-5-390x844.png",
+      "bytes": 77591,
+      "sha256": "5b0b913cdb0d408287909be69ffdc5ea6a5d34637ce2c9c2ec4d42d631d5bac9"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-0-forward.png",
+      "bytes": 145191,
+      "sha256": "c1d68e27b10bdd7e98b0802c44edfbe1f757925d89cfa914dff83b13b751a116"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-0-reverse.png",
+      "bytes": 144745,
+      "sha256": "7029586449b2d2cf3a7b88e35e970b0071100ea71bdd69831fee0c0117209fbc"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-100-forward.png",
+      "bytes": 190118,
+      "sha256": "ed75dfede2dc52682aeacf1b64c7ec50e1ddaf17f933b377651bd604e928d951"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-100-reverse.png",
+      "bytes": 190126,
+      "sha256": "bd996e8205f6ae16f6069dbc74ab05f38e97ec2afcf03a9ae9e3ab2ea2a80a73"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-25-forward.png",
+      "bytes": 159569,
+      "sha256": "f8b207de0060a4c999b14c053041c0f4c589a07a171e4ad8314f436a3fa55fb4"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-25-reverse.png",
+      "bytes": 159569,
+      "sha256": "f8b207de0060a4c999b14c053041c0f4c589a07a171e4ad8314f436a3fa55fb4"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-50-forward.png",
+      "bytes": 149170,
+      "sha256": "95fa144871533812bcb5681bf4eb36fffa16160445e8940bd81a93fc1c4bf12c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-50-reverse.png",
+      "bytes": 149179,
+      "sha256": "a1100bf67902ceb338387bb5c55a2c5e1d03154f33d7c8aa0b5fd45eaabef744"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-75-forward.png",
+      "bytes": 173334,
+      "sha256": "e148265a3fff5810b64ae1b412831e94162a9a5de4e03b6138cee78c04548de1"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-4-75-reverse.png",
+      "bytes": 173344,
+      "sha256": "160b235ed5aed46e2b7cc2a530ffc6a671e5e120c3c9e78cdf9981088d451516"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-0-forward.png",
+      "bytes": 190118,
+      "sha256": "ed75dfede2dc52682aeacf1b64c7ec50e1ddaf17f933b377651bd604e928d951"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-0-reverse.png",
+      "bytes": 190126,
+      "sha256": "bd996e8205f6ae16f6069dbc74ab05f38e97ec2afcf03a9ae9e3ab2ea2a80a73"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-100-forward.png",
+      "bytes": 91779,
+      "sha256": "357066b5567b59a94222ca15f9bb88b714e3c77e886edf7b33105b5f29f73e02"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-100-reverse.png",
+      "bytes": 91779,
+      "sha256": "357066b5567b59a94222ca15f9bb88b714e3c77e886edf7b33105b5f29f73e02"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-25-forward.png",
+      "bytes": 164108,
+      "sha256": "ce7d3cad1f3c4e477e14994711528e4dbedd27353eae330fb1f81ba82cb7f46f"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-25-reverse.png",
+      "bytes": 164117,
+      "sha256": "c37947c20acb629ff22d0ca3dfe3a4f1160609a1f0afd3cf2e5098a911d8600c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-50-forward.png",
+      "bytes": 117452,
+      "sha256": "d2307ae1cd1b34fd88ac29c1792a6cc53526f39bb851fc3f23ba1fd3a7b13b4b"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-50-reverse.png",
+      "bytes": 117462,
+      "sha256": "c08190aff74435e11a7161b17653fcf7add4758cb9b48700313bce8b96565633"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-75-forward.png",
+      "bytes": 117025,
+      "sha256": "85605caa0913070506c12aa83f3764abd3b9ed097dc87a9d2412ecf96bef7a53"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/handoff-5-75-reverse.png",
+      "bytes": 117016,
+      "sha256": "9a71e0b721e01e745a2f26d1654501351ad5d0ada6c92286a32b299c7492c0c0"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/final-label-regression/results.json",
+      "bytes": 321528,
+      "sha256": "9e0d8aa254aaafc40baa611aa848dafb56024930d01b4414938e53b7864b7f76"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/first-review-findings.json",
+      "bytes": 12852,
+      "sha256": "3e5cbcf09720d8d10a6ba322e2abcd23328c2d545875ed778f0a845e8c69a152"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/headed/actual-browser-zoom-125.png",
+      "bytes": 209274,
+      "sha256": "7dd28cae02a8f23bdd19b7303d27fe20533c995e5ee92b4ecb5dca8380b2533a"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/headed/actual-browser-zoom-150.png",
+      "bytes": 202847,
+      "sha256": "a338c62a4a9c836b86ed992ab8304ede259d12e5fdc2dd7f0bba5e06b19a3310"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/headed/actual-browser-zoom-200.png",
+      "bytes": 234340,
+      "sha256": "8b1f11d2fae71d9a7678934875f566ea2042370765983b01f28e1bce8fed256c"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/headed/headed-baseline-100.png",
+      "bytes": 201521,
+      "sha256": "b7d408b2ca46d1ca96b66f46dfbe998e6b8ed4015807318fae991727d74a29a4"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/headed/headed-results.json",
+      "bytes": 30140,
+      "sha256": "e507761cc901eb3bd1d3212fc80e342493d7e4e2a9a1385bc7b7f4217de24612"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/native-visibility/native-background-return-paused.png",
+      "bytes": 197396,
+      "sha256": "aeec9a8695f66f29a902f5c87eab90cc50bcf760cb4852fa4140c708034c04c6"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/native-visibility/native-visibility-results.json",
+      "bytes": 2821,
+      "sha256": "49e0145e6f6fe65070d8c3dc01121e903e108016af49221a34421000e78e9188"
+    },
+    {
+      "path": "RELAY_Source/docs/evidence/production-source-sha256.json",
+      "bytes": 1142,
+      "sha256": "d66b4e0ba2414339afe353a12de2d72eca005553655187dafac84a9a5d08ce18"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Archivo-OFL.txt",
+      "bytes": 4503,
+      "sha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/GSAP-3.15.0-NOTICE.txt",
+      "bytes": 1636,
+      "sha256": "22a2dad97bdd0b42969c9a24666c656a16030c2e4956fc408caf1372e1d8ebd3"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/IBM-Plex-Mono-OFL.txt",
+      "bytes": 5299,
+      "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Lenis-MIT.txt",
+      "bytes": 1088,
+      "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Playwright-Apache-2.0.txt",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Playwright-Core-ThirdPartyNotices.txt",
+      "bytes": 198280,
+      "sha256": "36aa7e5d56f9a7d4cdb85e570500e0dcdd36799c0e937199dd6cb9813a8fdce9"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Playwright-NOTICE.txt",
+      "bytes": 254,
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Playwright-ThirdPartyNotices.txt",
+      "bytes": 262774,
+      "sha256": "18941cd3a3ec2b1a1620de589f4cafeff4135a74cab18c79a0008eadfcb3ddcd"
+    },
+    {
+      "path": "RELAY_Source/docs/licenses/Vite-LICENSE.md",
+      "bytes": 98196,
+      "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13"
+    },
+    {
+      "path": "RELAY_Source/index.html",
+      "bytes": 14683,
+      "sha256": "fe1c8d448ce8bbb8b54ca216a142bc454e5d99063be472ebb4bcf032e8cade8e"
+    },
+    {
+      "path": "RELAY_Source/package-lock.json",
+      "bytes": 28799,
+      "sha256": "013d1081488be05b4a4967b227431262b1624d7b9b1654026e70ccfd92908f99"
+    },
+    {
+      "path": "RELAY_Source/package.json",
+      "bytes": 730,
+      "sha256": "b4d3b8e0fe5e71fb8e2f4f3329092b9c777cbbc3d867637bdeaeece6f414ccb7"
+    },
+    {
+      "path": "RELAY_Source/public/favicon.svg",
+      "bytes": 292,
+      "sha256": "f276334c1507b16b0400e2886fbf79398847b0cf23ebce08c5b07377bc34bb4a"
+    },
+    {
+      "path": "RELAY_Source/public/fonts/archivo-latin-ext.woff2",
+      "bytes": 86240,
+      "sha256": "5717f37059660ca5c899bad6c48ee22c3ac55cb3c484055241689d0f905a1a86"
+    },
+    {
+      "path": "RELAY_Source/public/fonts/archivo-latin.woff2",
+      "bytes": 90104,
+      "sha256": "e3a28eade21a900c7155a247757f4b2834c07bb7ef07ad7efa55cebaac1e8f5e"
+    },
+    {
+      "path": "RELAY_Source/public/fonts/ibm-plex-mono-latin.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "RELAY_Source/src/main.js",
+      "bytes": 35123,
+      "sha256": "0e486e3945b9486d635bfb5abb8e419b7978a250aa7200315ad7d8fffff663b2"
+    },
+    {
+      "path": "RELAY_Source/src/model/relay-simulation.js",
+      "bytes": 33272,
+      "sha256": "d0a15758acc720bfe03a9fd9d6a64f7bd115616d762d22b98a8891e4094863bd"
+    },
+    {
+      "path": "RELAY_Source/src/style.css",
+      "bytes": 24655,
+      "sha256": "095dda5aafa4e244caebfbb9590c877504b9273785e8ac0dc83b068e840a5876"
+    },
+    {
+      "path": "RELAY_Source/src/view/sculpture.js",
+      "bytes": 27329,
+      "sha256": "a08126714b18f57e69b0d3b6849b83cb22e0135e32190986e4e3c6a23be6306e"
+    },
+    {
+      "path": "RELAY_Source/tests/browser/README.md",
+      "bytes": 3349,
+      "sha256": "fc7af56920166e8b9f4c3a95bde25e880813ef1339a815d3f8714aaf5c16119d"
+    },
+    {
+      "path": "RELAY_Source/tests/browser/headed-verify.mjs",
+      "bytes": 15491,
+      "sha256": "5938026ebfbce72221d8bd818e3c98b5f9339cc108dbc36c32e00a5916c61897"
+    },
+    {
+      "path": "RELAY_Source/tests/browser/native-visibility.mjs",
+      "bytes": 13101,
+      "sha256": "b7614875ad5d3f7fa8696cc68ce9bbcf565d4ada7e52cf55a9a17f43b61808a2"
+    },
+    {
+      "path": "RELAY_Source/tests/browser/verify.mjs",
+      "bytes": 46828,
+      "sha256": "6b530a516237f8b9483ff3bbe1a7b0b68149bdd15c6a9c9c77a52be521e3cff7"
+    },
+    {
+      "path": "RELAY_Source/tests/model/model-results.json",
+      "bytes": 45683,
+      "sha256": "7005257aadc8186b815fc461a696e456c32ffc1c42fb8279b554e447a5da1123"
+    },
+    {
+      "path": "RELAY_Source/tests/model/relay-simulation.test.mjs",
+      "bytes": 23168,
+      "sha256": "b32a5e98de6c85ad6ba154156f16569178a978fb131d1d9bb878c9de48c704fe"
+    },
+    {
+      "path": "RELAY_Source/vite.config.js",
+      "bytes": 207,
+      "sha256": "65755e2625db98f428df2a56897e91d67a8fad016dba3d1e47156ef486da6053"
+    },
+    {
+      "path": "RELAY_Source/FILE-CHECKSUMS.json",
+      "bytes": 20658,
+      "sha256": "15db19a54136917b3298f78598bdf21ff551ce377149c7062b90de634f436d31"
+    },
+    {
+      "path": "RELAY_Source/ZIP-INFO.txt",
+      "bytes": 473,
+      "sha256": "50dfa5da46491002dfe7e33a46b51cca9dbe209af4e575f3b9779cb95d0e328d"
+    }
+  ],
+  "omissions": [
+    "ZIP kept outside the repository and deployment",
+    "upstream dist/, node_modules/, package lockfiles, browser QA screenshot/video evidence and design-reference raster studies excluded; source reports and generation records retained under provenance/<work>/upstream/",
+    "upstream tests re-homed as Collection suites; standalone package manifests, lockfiles and independent build/server configuration not added",
+    "upstream npm dependencies resolved from the root lockfile; no new dependency or lockfile change"
+  ],
+  "adaptations": [
+    "Independent HTML route, sitemap and document identity added",
+    "Runtime asset URLs rewritten to the deployment base and public/<work>/ namespace",
+    "Shared Collection return control and native journey handoff added to the existing header",
+    "Licenses surfaced under public/<work>/licenses/"
+  ]
+}

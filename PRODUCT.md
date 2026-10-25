@@ -56,13 +56,18 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 - **DOSE** (`/dose/`): seven perspectives through one hypothetical tablet, original procedural material and an interactive conceptual cutaway.
 - **COUNTERFORM** (`/counterform/`): seven connected spaces for variable type, letterform anatomy and transitions between specimens.
 - **FERRUM** (`/ferrum/`): six acts through one original digital steel sculpture, with procedural rendering and opt-in sound.
+- **RELAY** (`/relay/`): six chapters of one deterministic, browser-local delivery with real routes, retransmission and lost acknowledgements.
+- **SUPERCELL** (`/supercell/`): five observations of one illustrated storm, a movable section plane and a wind-shear comparison.
+- **PELAGIC** (`/pelagic/`): five research-inspired observations of deep-sea light, pattern and encounter.
+- **BACKSTAGE** (`/backstage/`): five acts around one original Three.js miniature theatre whose cues you call yourself.
+- **MURMURATION** (`/murmuration/`): five chapters over a recorded flock and a live local-rules field you can change.
 
 ## Capabilities and Constraints
 
 - A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
 - Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
-- Preserve the accepted imagery, typography, controls, timing and content of all thirty-two works. Do not impose a common visual theme or expand the entrance into another story.
-- One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET, SILICON, LUTHIER, NIB, CREMA, CRAVE and GRID; the existing RAF for KAGE, OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, CODEX, MAGMA, FOSSIL, URUSHI, DOSE, COUNTERFORM and FERRUM. OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, LUTHIER, CODEX, MAGMA, FOSSIL, URUSHI, NIB, CREMA, CRAVE, GRID and DOSE use wheel interpolation of 0.105, native touch, immediate reduced-motion/restoration positioning and no second scene-progress easing. COUNTERFORM and FERRUM keep their supplied interpolation and timing. Retain rendering caps, visibility suspension, teardown and read-position retention.
+- Preserve the accepted imagery, typography, controls, timing and content of all thirty-seven works. Do not impose a common visual theme or expand the entrance into another story.
+- One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET, SILICON, LUTHIER, NIB, CREMA, CRAVE, GRID, RELAY, SUPERCELL, PELAGIC, BACKSTAGE and MURMURATION; the existing RAF for KAGE, OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, CODEX, MAGMA, FOSSIL, URUSHI, DOSE, COUNTERFORM and FERRUM. OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, LUTHIER, CODEX, MAGMA, FOSSIL, URUSHI, NIB, CREMA, CRAVE, GRID and DOSE use wheel interpolation of 0.105, native touch, immediate reduced-motion/restoration positioning and no second scene-progress easing. COUNTERFORM and FERRUM keep their supplied interpolation and timing. Retain rendering caps, visibility suspension, teardown and read-position retention.
 - Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
 - Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
 - F1 educational sources and distinctions between current 2026 systems and historical DRS remain specific to Beyond the Limit.
@@ -70,11 +75,11 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 
 ## Brand Commitments
 
-The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects thirty-two distinct identities, including COUNTERFORM's real variable typography and letterform studies and FERRUM's original steel sculpture and firelit material theatre. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects thirty-seven distinct identities, including COUNTERFORM's real variable typography and letterform studies, FERRUM's original steel sculpture and firelit material theatre, and BACKSTAGE's working miniature stage. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
 
 ## Evidence on Hand
 
-Thirty-two complete experiences are integrated. The preceding 326 model/continuity/rendering tests are supplemented by the new work-specific checks; current results are recorded in each acceptance file. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
+Thirty-seven complete experiences are integrated. The preceding 326 model/continuity/rendering tests are supplemented by the new work-specific checks; current results are recorded in each acceptance file. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 

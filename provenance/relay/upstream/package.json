@@ -1,0 +1,27 @@
+{
+  "name": "relay-a-message-finds-its-way",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive transport sculpture. A deterministic, browser-local message finds its way.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node tests/model/relay-simulation.test.mjs",
+    "test:browser": "node tests/browser/verify.mjs"
+  },
+  "dependencies": {
+    "gsap": "3.15.0",
+    "lenis": "1.3.27"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "5.2.8",
+    "@fontsource/ibm-plex-mono": "5.2.7",
+    "playwright": "1.58.2",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

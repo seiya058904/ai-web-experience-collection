@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-24",
+  "note": "Six actual built-in image-generation calls. Reference previews are encoded as compact JPEGs with their original framing. The empty sky is encoded as WebP. Full prompts, tool-returned basenames and original image hashes are retained.",
+  "images": [
+    {
+      "key": "A-wide-fold",
+      "prompt": "Use case: ui-mockup. Create a polished large landscape 1600x1000 concept for an immersive art website MURMURATION, route A 'The Wide Fold'. A warm grey-white sky (#efeee8) with a little grey peach light near a very low distant wetland horizon. Thousands of distinct charcoal starlings form a vast long asymmetric diagonal folded ribbon across the upper and middle sky, irregular density, delicate torn edges and open gaps. Each bird tiny wing shape, several nearer ones recognizable, no solid black texture, no geometric target. Cinematic long lens, quiet museum editorial art direction, no glows or grain overlay. At lower left in its own generous clear sky region, enormous ultra condensed black editorial sans type exactly 'MURMURATION', on one line, with sentence below 'No one is leading.' Small top left thin hand drawn bird emblem and tiny wordmark 'MURMURATION', top right links 'The field' and 'About'. Bottom left 'Scroll to observe' with thin arrow. Use quiet black sans UI type and one ochre detail. Full viewport with intentionally readable DOM style typography and no cards. This is a reference for a code-driven flock artwork, not the final website. The complete site will continue into local-neighbor observation, a propagating turn, live controls and final fieldprint, all using this same natural sky. Avoid spherical flocks, closed geometry, logos made from birds, purple neon, sci-fi panels, staged choreography. Design beautiful negative space, ambitious scale, detailed silhouette wings. No invented stats, no hero eyebrow.",
+      "tool": "image_gen.imagegen",
+      "status": "generated",
+      "output": "exec-4c4de248-a63f-407a-a234-cd3648e3dd6d.png",
+      "role": "reference only",
+      "original_sha256": "4ebbd5a2902f8016b20e91985a9d1ea68e06f789c5348cad080bb6d31b1995f2",
+      "original_dimensions": [
+        1586,
+        992
+      ],
+      "delivered_file": "docs/concepts/A-wide-fold.jpg"
+    },
+    {
+      "key": "B-flock-edge",
+      "prompt": "Use case: ui-mockup. A second materially different full landscape 1600x1000 hero concept for the immersive natural art website MURMURATION, 'The Edge of the Flock'. Stand at the flock edge: a handful of nearby individual charcoal birds show clear angled wings in the right and lower middle, while an enormous loose uneven distant flock ribbon bends away across left middle into the horizon. Far more open warm grey-white sky across the upper third than route A. Long-lens compression, subtle side light, grey-peach horizon, an almost invisible wetland ground line. Strong near/far scale tension, organic open edges, not a solid black patch or geometric swarm. Lower left has safe sky for the exact large condensed black heading 'MURMURATION' and smaller 'No one is leading.' Top left tiny wordmark, top right 'The field' and 'About'. Bottom 'Scroll to observe'. Elegant sparse art museum web typography, no fake dashboard, no cards, no neon, no decorative statistics. This alternate is to judge edge proximity versus distant overall fold for a real local-rule simulation. Continue the design language into later local study and live experiment. No staged bird logo or sphere. Natural credible starling wing silhouettes. Full viewport, polished art direction.",
+      "tool": "image_gen.imagegen",
+      "status": "generated",
+      "output": "exec-d41d7aec-417c-4c78-a3e2-155b6c89168d.png",
+      "role": "reference only",
+      "original_sha256": "a2a040a1d6b8946c651b83396f825e78cb95b34956913f8c74472bba20da7a92",
+      "original_dimensions": [
+        1586,
+        992
+      ],
+      "delivered_file": "docs/concepts/B-flock-edge.jpg"
+    },
+    {
+      "key": "C-local-world",
+      "prompt": "Use case: ui-mockup. A complete landscape 1600x1000 middle chapter design concept for MURMURATION, a restrained interactive art exhibition on flocking. Warm grey-white sky with light grey peach at bottom, charcoal birds and an ochre (#a05b36) observation accent. The subject is a single clearly identifiable ochre bird at 62% width and 45% height, surrounded by only six or seven charcoal bird neighbors of varying wings and orientations, with a faint restrained dashed observation ellipse and ONE small directional cue (no web of connecting lines). In the far distance, the same immense irregular flock fold remains visible as fine feathered dark density through right middle background. Left 32% is a quiet clear reading region with small 'II / A LOCAL WORLD', large refined serif/sans editorial heading exactly 'A local world.', then three vertically spaced concept labels 'Keep Space', 'Match Heading', 'Stay Together'. Keep Space selected with ochre underline; compact paragraph 'A little room. A shared direction. A reason to stay.' Top minimal navigation same title 'MURMURATION', 'The field', 'About'. Main text is legible mock DOM text, not embedded in scene. Full viewport, strong individual identity, large scale change without first person rush, no cards, glowing nodes, sci-fi dashboard, all-to-all spiderweb, fake metrics or black fade. This is a compositional study for actual code-generated agents, not a scientific diagram or stock image.",
+      "tool": "image_gen.imagegen",
+      "status": "generated",
+      "output": "exec-7bc8f74c-0fca-4e29-98e3-a6b0a909b33b.png",
+      "role": "reference only",
+      "original_sha256": "d44e8e2485aee43bb61210fcf9048c292b694e18d821f9dfdbd25a32085ecc9a",
+      "original_dimensions": [
+        1586,
+        992
+      ],
+      "delivered_file": "docs/concepts/C-local-world.jpg"
+    },
+    {
+      "key": "D-live-field",
+      "prompt": "Use case: ui-mockup. Full 1600x1000 landscape web design concept for Act IV of immersive art exhibition MURMURATION. Consistent with a warm grey white (#efeee8) sky, almost invisible distant wetland line, grey peach low horizon, charcoal starling flock, ochre accent. A huge live irregular folded flock with individual wings and open gaps inhabits the right 72% of the sky, no closed geometry. Left 24% is a deliberate clean reading band merging into sky, with small 'IV / THE LIVE FIELD', handsome editorial serif headline 'Change a rule.\\nWatch the whole.' Three understated horizontal sliders labeled 'Keep Space', 'Match Heading', 'Stay Together', small numbers 1.3, 1.1, 0.7. Three unobtrusive text preset buttons 'Drift', 'Cohere', 'Scatter'. Two outlined rectangular small action buttons 'Create a ripple' and 'Hold'. Thin text action 'Reset this flock'. Fine lower caption 'Click the sky to stir the flock.' Top left tiny MURMURATION wordmark, top right 'The field' 'About'. Not a dashboard, not glossy cards, no containers around each control, no large random circles, no night sky. Quiet museum interface, precision typography, actual achievable UI, broad winged flock scale.",
+      "tool": "image_gen.imagegen",
+      "status": "generated",
+      "output": "exec-2029c1b1-5053-4eab-9aef-a42c3fee946c.png",
+      "role": "reference only",
+      "original_sha256": "728728fc5fed36db36c5f185c8deccb94af7a31a7857b8068b0ea0e0009beb9e",
+      "original_dimensions": [
+        1586,
+        992
+      ],
+      "delivered_file": "docs/concepts/D-live-field.jpg"
+    },
+    {
+      "key": "E-shape-left",
+      "prompt": "Use case: ui-mockup. Full 1600x1000 landscape finale web design concept for MURMURATION art experience, 'The Shape You Left'. Warm grey-white sky, subtle pale peach bottom light, very low dark wetland horizon. A unique charcoal flock frozen in an open asymmetric loose curling S-like band, many real wing silhouettes at differing depths, no filled silhouette or perfect geometry. This flock recedes into middle right distant sky leaving bottom left a clean graceful reading region: small 'V / THE SHAPE YOU LEFT', elegant oversized editorial serif headline 'A shape made\\nof relationships.' Under it two fine outlined or text controls 'Save a fieldprint' and 'Return to the field'. Small quiet footer 'A local-rules model inspired by flocking research.' and 'Sources'. Top minimal wordmark 'MURMURATION', navigation 'The field' 'About'. Elegant art gallery website with no cards, no fake data, no all-over grain, no glow, no neon. Complete self-contained final act with clear deliberate finish. Same natural sky design system as the opening.",
+      "tool": "image_gen.imagegen",
+      "status": "generated",
+      "output": "exec-b83508f8-986b-42a4-acbc-876749dadd98.png",
+      "role": "reference only",
+      "original_sha256": "be4bce385567bc07be070a553fb6621ccfd6398126cf6517b6074fca20075d88",
+      "original_dimensions": [
+        1586,
+        992
+      ],
+      "delivered_file": "docs/concepts/E-shape-left.jpg"
+    },
+    {
+      "key": "sky-asset",
+      "prompt": "Use case: photorealistic-natural. Final website background asset, empty natural sky over distant wetlands at late afternoon. Landscape 2400x1500. 94 percent expansive quiet warm grey white overcast sky, slightly cooler pale grey top, very subtle soft grey peach light toward bottom; almost imperceptible layered far clouds only in lowest 16 percent. Extremely low faraway horizon at 96 percent image height: tiny hazy flat marsh tree line, no buildings. Restrained fine art long lens landscape, airy, smooth natural luminance, gentle matte photographic treatment. Nearly uniform clear sky in upper and middle areas suitable for charcoal typography and a code-generated bird flock. NO birds, no people, NO text, no logos, no watermark, no dominant sun disk, no fake film grain, no noisy textures. No dramatic red/orange sunset, no purple. Output only the final background photograph.",
+      "tool": "image_gen.imagegen",
+      "status": "generated",
+      "output": "exec-976044c1-983a-4773-a878-047caf7ad485.png",
+      "role": "final asset",
+      "original_sha256": "9b75c1bf34d89f591feb18a934d5dbc4b17664302a07062d75a636ae6852cf4c",
+      "original_dimensions": [
+        1586,
+        992
+      ],
+      "delivered_file": "public/sky.webp"
+    }
+  ]
+}

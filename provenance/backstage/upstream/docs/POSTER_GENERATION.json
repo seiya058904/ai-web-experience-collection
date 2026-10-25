@@ -1,0 +1,655 @@
+{
+  "status": "CAPTURED",
+  "started": "2026-10-24T16:43:53.018Z",
+  "finished": "2026-10-24T16:44:33.725Z",
+  "source": {
+    "project": "/workspace/scratch/864692c54a7f/backstage",
+    "dist": "/workspace/scratch/864692c54a7f/qa/release-dist",
+    "indexSHA256": "469dfeba792769c6f063886177144b49d2ea7512f06e56784ec9ea1da453dbc6",
+    "servedIndexSHA256": "469dfeba792769c6f063886177144b49d2ea7512f06e56784ec9ea1da453dbc6"
+  },
+  "environment": {
+    "browser": "141.0.7390.37",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "deviceScaleFactor": 1,
+    "reducedMotion": false,
+    "rendering": "Actual Three.js WebGL 2 via Chromium / ANGLE SwiftShader",
+    "serving": "Exact built files fulfilled locally; no server deployment or image substitution"
+  },
+  "capture": {
+    "method": "CDP Page.captureScreenshot with the actual canvas document rectangle",
+    "scope": "Only #theatre canvas pixels; page copy, controls and stage caption are excluded",
+    "timeoutMs": 45000,
+    "postProcessing": "None"
+  },
+  "images": [
+    {
+      "name": "room",
+      "filename": "room.png",
+      "capturedAt": "2026-10-24T16:44:16.049Z",
+      "width": 951,
+      "height": 657,
+      "bytes": 300973,
+      "sha256": "f5aef185ba033934a0cc0edb680d3eb8fb2d0917af6c862c27a0000c6f4f4912",
+      "target": {
+        "name": "room",
+        "p": 0,
+        "world": 0,
+        "view": 0,
+        "lamp": 0
+      },
+      "identity": {
+        "door": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lantern": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waves": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ]
+      },
+      "title": "BACKSTAGE — The Art of Making Believe",
+      "progress": 0,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "canvas": {
+        "x": 429.171875,
+        "y": 142.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "right": 1380.953125,
+        "bottom": 800,
+        "bufferWidth": 951,
+        "bufferHeight": 657,
+        "opacity": 1
+      },
+      "clip": {
+        "x": 429.171875,
+        "y": 142.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "scale": 1
+      },
+      "stageState": {
+        "world": 0,
+        "view": 0,
+        "light": 0.55,
+        "lamp": 0,
+        "scene": "room",
+        "selectedTarget": "night",
+        "mode": "author"
+      },
+      "renderInfo": {
+        "renderer": "Three.js WebGL 2",
+        "contextLost": false,
+        "drawCalls": 240,
+        "triangles": 91452,
+        "textures": 11,
+        "geometries": 76,
+        "pixelRatio": 1,
+        "width": 951.78125,
+        "height": 657.484375,
+        "doorId": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lanternId": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waveIds": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ],
+        "waveParents": [
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5"
+        ],
+        "door": [
+          1.24,
+          0.35,
+          -1.52
+        ],
+        "lantern": [
+          1.25,
+          0.42,
+          -0.76
+        ],
+        "doorScreen": {
+          "x": 530.3631094574627,
+          "y": 413.73286607254687
+        },
+        "lanternScreen": {
+          "x": 536.4206443441005,
+          "y": 399.2562762945238
+        },
+        "camera": [
+          -1.5658948815389206,
+          5.81667424218737,
+          18.377904317512968
+        ],
+        "key": [
+          -3.6049999999999995,
+          5.610000000000001,
+          2.29
+        ],
+        "lastPose": {
+          "world": 0,
+          "view": 0,
+          "light": 0.55,
+          "lamp": 0,
+          "doorGlow": 0,
+          "act": 1,
+          "mode": "author",
+          "scene": "room",
+          "target": "night",
+          "busy": false,
+          "exitQ": 0
+        }
+      },
+      "fonts": {
+        "status": "loaded",
+        "fraunces": true,
+        "sourceSans": true
+      },
+      "visualReview": "Inspected the actual saved PNG: canvas only, no page text or controls, complete model framing, correct scenery and camera, door and lantern visible."
+    },
+    {
+      "name": "wings",
+      "filename": "wings.png",
+      "capturedAt": "2026-10-24T16:44:21.593Z",
+      "width": 951,
+      "height": 657,
+      "bytes": 211367,
+      "sha256": "629a69962c0cb75d3401b5be0d3966e7435a6905beb206c1733dfbe16f86fb9d",
+      "target": {
+        "name": "wings",
+        "p": 0.29,
+        "world": 0,
+        "view": 1,
+        "lamp": 0
+      },
+      "identity": {
+        "door": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lantern": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waves": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ]
+      },
+      "title": "BACKSTAGE — The Art of Making Believe",
+      "progress": 0.29002,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "scroll": {
+        "x": 0,
+        "y": 1801
+      },
+      "canvas": {
+        "x": 429.171875,
+        "y": 142.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "right": 1380.953125,
+        "bottom": 800,
+        "bufferWidth": 951,
+        "bufferHeight": 657,
+        "opacity": 1
+      },
+      "clip": {
+        "x": 429.171875,
+        "y": 1943.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "scale": 1
+      },
+      "stageState": {
+        "world": 0,
+        "view": 1,
+        "light": 0.55,
+        "lamp": 0,
+        "scene": "room",
+        "selectedTarget": "night",
+        "mode": "author"
+      },
+      "renderInfo": {
+        "renderer": "Three.js WebGL 2",
+        "contextLost": false,
+        "drawCalls": 240,
+        "triangles": 91452,
+        "textures": 11,
+        "geometries": 76,
+        "pixelRatio": 1,
+        "width": 951.78125,
+        "height": 657.484375,
+        "doorId": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lanternId": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waveIds": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ],
+        "waveParents": [
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5"
+        ],
+        "door": [
+          1.24,
+          0.35,
+          -1.52
+        ],
+        "lantern": [
+          1.25,
+          0.42,
+          -0.76
+        ],
+        "doorScreen": {
+          "x": 545.451676321952,
+          "y": 402.976158725398
+        },
+        "lanternScreen": {
+          "x": 515.0971215219716,
+          "y": 387.3222422622116
+        },
+        "camera": [
+          21.99719031108656,
+          11.166018181249687,
+          4.937395150728851
+        ],
+        "key": [
+          -3.6049999999999995,
+          5.610000000000001,
+          2.29
+        ],
+        "lastPose": {
+          "world": 0,
+          "view": 1,
+          "light": 0.55,
+          "lamp": 0,
+          "doorGlow": 0,
+          "act": 2,
+          "mode": "author",
+          "scene": "room",
+          "target": "night",
+          "busy": false,
+          "exitQ": 0
+        }
+      },
+      "fonts": {
+        "status": "loaded",
+        "fraunces": true,
+        "sourceSans": true
+      },
+      "visualReview": "Inspected the actual saved PNG: canvas only, no page text or controls, complete model framing, correct scenery and camera, door and lantern visible."
+    },
+    {
+      "name": "sea",
+      "filename": "sea.png",
+      "capturedAt": "2026-10-24T16:44:25.391Z",
+      "width": 951,
+      "height": 657,
+      "bytes": 321859,
+      "sha256": "ee944341c0beaa069d3677907382277e72052886971683c045513474c8433adc",
+      "target": {
+        "name": "sea",
+        "p": 0.55,
+        "world": 1,
+        "view": 0.12,
+        "lamp": 0.7
+      },
+      "identity": {
+        "door": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lantern": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waves": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ]
+      },
+      "title": "BACKSTAGE — The Art of Making Believe",
+      "progress": 0.55008,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "scroll": {
+        "x": 0,
+        "y": 3416
+      },
+      "canvas": {
+        "x": 429.171875,
+        "y": 142.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "right": 1380.953125,
+        "bottom": 800,
+        "bufferWidth": 951,
+        "bufferHeight": 657,
+        "opacity": 1
+      },
+      "clip": {
+        "x": 429.171875,
+        "y": 3558.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "scale": 1
+      },
+      "stageState": {
+        "world": 1,
+        "view": 0.12,
+        "light": 0.55,
+        "lamp": 0.7,
+        "scene": "sea",
+        "selectedTarget": "night",
+        "mode": "author"
+      },
+      "renderInfo": {
+        "renderer": "Three.js WebGL 2",
+        "contextLost": false,
+        "drawCalls": 234,
+        "triangles": 91440,
+        "textures": 11,
+        "geometries": 76,
+        "pixelRatio": 1,
+        "width": 951.78125,
+        "height": 657.484375,
+        "doorId": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lanternId": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waveIds": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ],
+        "waveParents": [
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5"
+        ],
+        "door": [
+          1.162481985598327,
+          0.35,
+          -1.5800745656959898
+        ],
+        "lantern": [
+          0.624613181257448,
+          0.42,
+          1.26214559327809
+        ],
+        "doorScreen": {
+          "x": 537.2415565651468,
+          "y": 408.0352339921935
+        },
+        "lanternScreen": {
+          "x": 503.6403291154255,
+          "y": 425.0369369401408
+        },
+        "camera": [
+          1.649170499128668,
+          6.367673914874849,
+          18.864545517378478
+        ],
+        "key": [
+          -3.6049999999999995,
+          5.610000000000001,
+          2.29
+        ],
+        "lastPose": {
+          "world": 1,
+          "view": 0.12,
+          "light": 0.55,
+          "lamp": 0.7,
+          "doorGlow": 0,
+          "act": 3,
+          "mode": "author",
+          "scene": "sea",
+          "target": "night",
+          "busy": false,
+          "exitQ": 0
+        }
+      },
+      "fonts": {
+        "status": "loaded",
+        "fraunces": true,
+        "sourceSans": true
+      },
+      "visualReview": "Inspected the actual saved PNG: canvas only, no page text or controls, complete model framing, correct scenery and camera, door and lantern visible."
+    },
+    {
+      "name": "night",
+      "filename": "night.png",
+      "capturedAt": "2026-10-24T16:44:30.396Z",
+      "width": 951,
+      "height": 657,
+      "bytes": 310327,
+      "sha256": "fdadf79fc7f8ed4bb3ce8d2e6ce0cd75c88203d2c46fa811163443909cc05831",
+      "target": {
+        "name": "night",
+        "p": 0.735,
+        "world": 2,
+        "view": 0,
+        "lamp": 1
+      },
+      "identity": {
+        "door": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lantern": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waves": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ]
+      },
+      "title": "BACKSTAGE — The Art of Making Believe",
+      "progress": 0.7351,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "scroll": {
+        "x": 0,
+        "y": 4565
+      },
+      "canvas": {
+        "x": 429.171875,
+        "y": 142.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "right": 1380.953125,
+        "bottom": 800,
+        "bufferWidth": 951,
+        "bufferHeight": 657,
+        "opacity": 1
+      },
+      "clip": {
+        "x": 429.171875,
+        "y": 4707.515625,
+        "width": 951.78125,
+        "height": 657.484375,
+        "scale": 1
+      },
+      "stageState": {
+        "world": 2,
+        "view": 0,
+        "light": 0.55,
+        "lamp": 1,
+        "scene": "night",
+        "selectedTarget": "night",
+        "mode": "director"
+      },
+      "renderInfo": {
+        "renderer": "Three.js WebGL 2",
+        "contextLost": false,
+        "drawCalls": 258,
+        "triangles": 92184,
+        "textures": 12,
+        "geometries": 80,
+        "pixelRatio": 1,
+        "width": 951.78125,
+        "height": 657.484375,
+        "doorId": "19abac66-b8de-4f79-8fe7-6bf7edcab0f9",
+        "lanternId": "dfd34f10-325b-4277-abb3-e2923a77c578",
+        "doorParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "lanternParent": "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+        "waveIds": [
+          "57f93672-7add-47ba-b377-3831f082a0f3",
+          "faa740e4-6fe3-4611-92c2-4bdce481ac3f",
+          "99df7832-6716-4a0c-8865-09dab52a8d8d"
+        ],
+        "waveParents": [
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5",
+          "9f532e76-0c95-455c-ad07-2fdccabe69e5"
+        ],
+        "door": [
+          1.162481985598327,
+          0.35,
+          -1.5800745656959898
+        ],
+        "lantern": [
+          -0.18617236387405026,
+          0.42,
+          2.2821568418777773
+        ],
+        "doorScreen": {
+          "x": 526.2167820590003,
+          "y": 413.04788740391587
+        },
+        "lanternScreen": {
+          "x": 476.8335730449498,
+          "y": 446.70714362839186
+        },
+        "camera": [
+          -1.5658948815389206,
+          5.81667424218737,
+          18.377904317512968
+        ],
+        "key": [
+          -3.6049999999999995,
+          5.610000000000001,
+          2.29
+        ],
+        "lastPose": {
+          "world": 2,
+          "view": 0,
+          "light": 0.55,
+          "lamp": 1,
+          "doorGlow": 0,
+          "act": 4,
+          "mode": "director",
+          "scene": "night",
+          "target": "night",
+          "busy": false,
+          "exitQ": 0
+        }
+      },
+      "fonts": {
+        "status": "loaded",
+        "fraunces": true,
+        "sourceSans": true
+      },
+      "visualReview": "Inspected the actual saved PNG: canvas only, no page text or controls, complete model framing, correct scenery and camera, door and lantern visible."
+    }
+  ],
+  "requests": [
+    {
+      "path": "/",
+      "type": "document",
+      "status": 200,
+      "bytes": 10049,
+      "sha256": "469dfeba792769c6f063886177144b49d2ea7512f06e56784ec9ea1da453dbc6"
+    },
+    {
+      "path": "/fonts/fraunces-latin.woff2",
+      "type": "font",
+      "status": 200,
+      "bytes": 121016,
+      "sha256": "7e744849028e2219e2aa1bc467dc4032980dc4487c9c3da3010081cd72d3b103"
+    },
+    {
+      "path": "/fonts/source-sans-3-regular.woff2",
+      "type": "font",
+      "status": 200,
+      "bytes": 15696,
+      "sha256": "0f73f35e08cde0a2f10c109c6e01d71459d97e4099ecd9a50f1b6c0209e4de2b"
+    },
+    {
+      "path": "/assets/index-Wh492A-g.js",
+      "type": "script",
+      "status": 200,
+      "bytes": 146880,
+      "sha256": "530920da3beeb17834e59db5b2707442c8ef7233dd2ab7d3ca2eedd7bd3a0048"
+    },
+    {
+      "path": "/assets/index-Bsh5yEj1.css",
+      "type": "stylesheet",
+      "status": 200,
+      "bytes": 17968,
+      "sha256": "54f5a6281e6254684cefe05337fe800d2b9351f1008d3e96befcec916a1d04ba"
+    },
+    {
+      "path": "/posters/room.png",
+      "type": "image",
+      "status": 200,
+      "bytes": 300847,
+      "sha256": "1de8785389c895124368e0edd91a6f26f3442c793a8bbc81de308901f8d5de2f"
+    },
+    {
+      "path": "/fonts/source-sans-3-medium.woff2",
+      "type": "font",
+      "status": 200,
+      "bytes": 15652,
+      "sha256": "3b3a8b8e4a422ff71c9ffb0836a4d48ff337a4419b878214f65d6ebe0f59fa51"
+    },
+    {
+      "path": "/fonts/source-sans-3-semibold.woff2",
+      "type": "font",
+      "status": 200,
+      "bytes": 15668,
+      "sha256": "14527d193b0e30bc32ef931549a246cdfd286573bb12869b7e052b8101a39d38"
+    },
+    {
+      "path": "/assets/theatre-Bu87hHLH.js",
+      "type": "script",
+      "status": 200,
+      "bytes": 598693,
+      "sha256": "85aab349ac85b7d6828f255cd084ad2e0e3f6bcc677b6fd58ce145271efe232d"
+    }
+  ],
+  "console": [],
+  "errors": [],
+  "limitations": [
+    "These four canonical static states do not test animation timing, every camera pose or cross-browser rendering."
+  ],
+  "identityPreserved": true,
+  "visualReview": {
+    "status": "COMPLETE",
+    "reviewedAt": "2026-10-24T16:47:21.509Z",
+    "images": 4,
+    "notes": "All four native canvas captures were inspected. No UI, text caption, resizing, compositing, or image-generation substitution is present. ROOM/WINGS/SEA/NIGHT show their expected real structural poses. The later .64–.68 default-entry state fix does not change these four stable sample positions."
+  }
+}

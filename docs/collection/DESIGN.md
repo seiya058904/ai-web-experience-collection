@@ -1,6 +1,6 @@
 ---
 name: AI Web Experience Collection
-description: A responsive three-column gallery opening thirty-two independent worlds, followed by About & credits.
+description: A responsive three-column gallery opening thirty-seven independent worlds, followed by About & credits.
 colors:
   ground: "#eeefeb"
   ink: "#20231f"
@@ -26,11 +26,11 @@ rounded:
 
 ## Overview
 
-Experience mode. Thirty-two complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
+Experience mode. Thirty-seven complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
 
 ## Colors
 
-Gallery tokens are above. The images and each work's established typography carry the thirty-two distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
+Gallery tokens are above. The images and each work's established typography carry the thirty-seven distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
 
 ## Typography
 
@@ -38,7 +38,7 @@ Barlow for the quiet gallery voice; Barlow Condensed for the racing and space ti
 
 ## Layout — current contract
 
-The header and invitation sit above one uniform gallery: three equal columns above 1000px, two columns at 701–1000px, and one column at 700px and below. Thirty-two native work links and a final About & credits link share this grid. Desktop seams are 3px; phone seams are 10px. Panel height follows the existing viewport clamps (56svh desktop, 52svh intermediate and large-screen, 76svh phone). In the two-column layout, the height clamp is a minimum: a row grows with its tallest content and both panels stretch together, keeping large display words and readable footers inside the frame. Other layouts retain their existing height bounds. No route or artwork is reordered.
+The header and invitation sit above one uniform gallery: three equal columns above 1000px, two columns at 701–1000px, and one column at 700px and below. Thirty-seven native work links and a final About & credits link share this grid. Desktop seams are 3px; phone seams are 10px. Panel height follows the existing viewport clamps (56svh desktop, 52svh intermediate and large-screen, 76svh phone). In the two-column layout, the height clamp is a minimum: a row grows with its tallest content and both panels stretch together, keeping large display words and readable footers inside the frame. Other layouts retain their existing height bounds. No route or artwork is reordered.
 
 Every work keeps its own image, palette and typeface. The shared `--t` and `--s` scales size display text from each panel's content width; COUNTERFORM uses a smaller title coefficient to keep its full name readable without changing Fraunces or the one-line lockup. Reading summaries have a 12px minimum and panel footer actions a 13px minimum. Decorative labels and ghost indices retain their quieter scale.
 
@@ -72,9 +72,9 @@ Preserve the independent work styles. Reuse their actual assets, not recreated t
 
 ## Direction contract
 
-THESIS: a single thirty-two-world visual entrance, with the works themselves as the first viewport's substance.
+THESIS: a single thirty-seven-world visual entrance, with the works themselves as the first viewport's substance.
 OWN-WORLD: pale gallery, sharp photographic edges, racing condensed type, botanical serif and the planetary horizon.
-STORY: recognize thirty-two distinct experiences, choose one, explore, return.
+STORY: recognize thirty-seven distinct experiences, choose one, explore, return.
 FIRST VIEWPORT: quiet header and invitation above the first gallery row; each panel carries Explore at its lower corner. Phone composition scrolls naturally rather than forcing a complete panel above the fold.
 FORM: one responsive three/two/one-column gallery using media from the actual works; existing production assets are the reference.
 FINISH: desktop/mobile full-frame review, verified native entry/return links, documented tokens and retained source provenance. Review stays in this chat as required by repository instructions; no additional agents.
@@ -125,7 +125,11 @@ FORM, FUSION, GRID and COUNTERFORM now use interface-cleaned captures from their
 
 ## Batch B discovery
 
-A closed native Index follows the concise invitation and precedes the gallery in normal flow. Its optional list gives all thirty-two works the same treatment and links to their existing stable entrance anchors. Short bilingual subjects identify material, ink, typography and other worlds; language is stated only where verified (F1 Chinese engineering text, URUSHI English/Chinese). There are no estimated durations, complex filters or new work runtime imports. Summary, links, targets and native navigation remain usable without JavaScript. Opening the Index deliberately expands the document; closing it restores the gallery-led entrance. Batch A origin offset/focus behavior remains in force.
+A closed native Index follows the concise invitation and precedes the gallery in normal flow. Its optional list gives all thirty-seven works the same treatment and links to their existing stable entrance anchors. Short bilingual subjects identify material, ink, typography and other worlds; language is stated only where verified (F1 Chinese engineering text, URUSHI English/Chinese). There are no estimated durations, complex filters or new work runtime imports. Summary, links, targets and native navigation remain usable without JavaScript. Opening the Index deliberately expands the document; closing it restores the gallery-led entrance. Batch A origin offset/focus behavior remains in force.
+
+## Batch E entrances — 25 October 2026
+
+RELAY, SUPERCELL, PELAGIC, BACKSTAGE and MURMURATION add the thirty-third to thirty-seventh native entrances in the same uniform three-column frame. Each uses an interface-cleaned capture of its own running opening — the transport sculpture, the illustrated storm, the living-light specimen, the working miniature theatre and the recorded flock — so the gallery supplies the work name and no second title competes inside the image. RELAY keeps its Archivo/paper/vermilion voice, SUPERCELL its light Manrope on storm blue, PELAGIC its Cormorant italic on near-black teal, BACKSTAGE its Fraunces and Source Sans 3 on paper, and MURMURATION its Anton over the warm grey sky. New font requests are limited to Anton and Source Sans 3; every other face reuses an existing Collection URL with a byte-identical binary. The Collection imports no work runtime and the gallery remains readable without JavaScript.
 
 ## Batch C resource contract
 

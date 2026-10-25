@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F3EEE5" />
+  <meta name="description" content="A door. A light. An ocean waiting in the wings. Step inside an original miniature theatre, see how its world is made, then call the cues yourself." />
+  <title>BACKSTAGE — The Art of Making Believe</title>
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%backstage/">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BACKSTAGE — The Art of Making Believe">
+<meta property="og:description" content="A door. A light. An ocean waiting in the wings. An original miniature theatre whose cues you call yourself.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%backstage/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%backstage/social.jpg">
+<meta property="og:image:alt" content="BACKSTAGE’s original miniature theatre, staged in warm paper light">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BACKSTAGE — The Art of Making Believe">
+<meta name="twitter:description" content="A door. A light. An ocean waiting in the wings. An original miniature theatre whose cues you call yourself.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%backstage/social.jpg">
+<link rel="stylesheet" href="/experiences/shared/collection-return.css">
+<script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+  <link rel="icon" href="%BASE_URL%backstage/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="%BASE_URL%backstage/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="%BASE_URL%backstage/fonts/source-sans-3-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../../experiences/backstage/src/style.css" />
+<style>
+/* The supplied single-column stage grid let its widest row (wordmark + cue) widen past
+   the phone gutter, clipping "Call the cue" at 390–424px. The track now shrinks and the
+   narrow masthead keeps the Collection return inside the same gutter. */
+@media(max-width:849px){.production{grid-template-columns:minmax(0,1fr)}.chapter-nav{min-width:0}}
+@media(max-width:520px){
+  .masthead{gap:10px}
+  .masthead .wordmark{font-size:clamp(30px,8.2vw,42px)}
+  .masthead .collection-return{min-width:32px}
+  .header-cue{font-size:11px!important;gap:5px}
+  .header-cue svg{width:18px}
+}
+</style>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow" viewBox="0 0 32 16"><path d="M1 8h28M22 1l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.25"/></symbol><symbol id="reset" viewBox="0 0 20 20"><path d="M16.9 8a7 7 0 1 0-1.1 6M17 3v5h-5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol></svg>
+  <a class="skip-link" href="#cue">Skip to the director’s controls</a>
+  <main id="story" class="story" aria-label="A Door for the Moon, a miniature play in five acts">
+    <div class="production" id="production">
+      <header class="masthead">
+        <a class="wordmark" href="#believe" aria-label="BACKSTAGE, begin the story">BACKSTAGE</a>
+        <div class="masthead-note"><span>A miniature play in five acts</span><span>A Door for the Moon</span></div>
+        <a class="collection-return" href="%BASE_URL%#world-backstage" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+        <a class="header-cue text-link" href="#cue">Call the cue <svg><use href="#arrow"/></svg></a>
+      </header>
+      <div class="composition">
+        <figure class="stage" id="stage" aria-label="An interactive miniature theatre with a red door and a paper lantern">
+          <img class="stage-poster" id="stage-poster" src="%BASE_URL%backstage/posters/room.png" alt="A cream-framed miniature theatre, a teal room, one red door and a glowing paper lantern." fetchpriority="high" />
+          <canvas id="theatre" aria-label="Live three-dimensional stage. Scene, viewpoint and light controls are in Act IV." role="img"></canvas>
+          <figcaption class="stage-caption"><span id="stage-caption">ROOM · Audience view</span><span class="caption-detail">An original working model</span></figcaption>
+          <div class="recovery" id="recovery" hidden role="status"><p>The live stage paused.</p><button id="retry" type="button">Try the live stage again</button><a href="?static=1">Read the static edition</a></div>
+        </figure>
+        <div class="reading" id="reading">
+          <section class="act act-one" id="believe" data-act="1" aria-labelledby="title-one">
+            <div class="act-content">
+              <h1 id="title-one">The art of <br />making believe.</h1>
+              <p class="lead">A door. A light.<br />An ocean waiting in the wings.</p>
+              <a class="text-link primary-link" href="#wings">Step inside <svg><use href="#arrow"/></svg></a>
+              <p class="scroll-note">Scroll to see what holds a world together.</p>
+            </div>
+          </section>
+          <section class="act" id="wings" data-act="2" aria-labelledby="title-two">
+            <div class="act-content">
+              <h2 id="title-two">Every illusion<br />has a working side.</h2>
+              <p>From your seat, a room.<br />From here, painted boards,<br />timber braces, and a little faith.</p>
+              <div class="craft-note"><span class="note-line"></span><p>Same door. Same light.<br />A different way of seeing.</p></div>
+            </div>
+          </section>
+          <section class="act" id="change" data-act="3" aria-labelledby="title-three">
+            <div class="act-content">
+              <h2 id="title-three">A room can<br />hold an ocean.</h2>
+              <p>Turn the walls. Raise the waves.<br />Let a small light cross the sea.</p>
+              <p class="aside">Move the scenery.<br />Keep the story.</p>
+              <a class="text-link" href="#cue">Your turn to direct <svg><use href="#arrow"/></svg></a>
+            </div>
+          </section>
+          <section class="act director" id="cue" data-act="4" aria-labelledby="title-four">
+            <div class="act-content">
+              <h2 id="title-four">Call the cue.</h2>
+              <p class="director-intro">A world changes when its cues change.</p>
+              <div class="controls" id="controls">
+                <fieldset class="scene-control"><legend>Scene</legend><div class="scene-options" role="group" aria-label="Choose the scene"><button type="button" data-scene="room" aria-pressed="false">Room</button><button type="button" data-scene="sea" aria-pressed="false">Sea</button><button type="button" data-scene="night" aria-pressed="true">Night</button></div></fieldset>
+                <div class="range-control"><label for="view">View</label><input type="range" id="view" min="0" max="100" value="0" aria-label="View from Audience to Wings" aria-valuetext="Audience" /><div class="range-ends" aria-hidden="true"><span>Audience</span><span>Wings</span></div></div>
+                <div class="range-control"><label for="light">Light</label><input type="range" id="light" min="0" max="100" value="55" aria-label="Sidelight from Low to High" aria-valuetext="55 percent, middle sidelight" /><div class="range-ends" aria-hidden="true"><span>Low sidelight</span><span>High sidelight</span></div></div>
+                <button type="button" class="reset-button" id="reset-production"><svg><use href="#reset"/></svg>Reset this production</button>
+              </div>
+              <p id="cue-status" class="cue-status" role="status" aria-live="polite">Night is ready.</p>
+              <p id="static-controls-note" hidden>The static edition shows the scenery from four viewpoints. Live scene, view and light controls need WebGL 2.</p>
+              <a class="text-link" href="#again">Watch your ending <svg><use href="#arrow"/></svg></a>
+            </div>
+          </section>
+          <section class="act ending" id="again" data-act="5" aria-labelledby="title-five">
+            <div class="act-content">
+              <p class="scene-signature" id="scene-signature">Your scene · Night</p>
+              <h2 id="title-five">Now you know.<br />It still works.</h2>
+              <p>The door was always here.<br />You changed the world around it.</p>
+              <div class="ending-actions"><a class="text-link" href="#cue">Return to the wings <svg><use href="#arrow"/></svg></a><button class="text-link" type="button" id="begin-again">Begin again <svg><use href="#arrow"/></svg></button></div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="production-footer">
+        <span class="act-label" id="act-label">I · Believe</span>
+        <nav class="chapter-nav" aria-label="The five acts"><a href="#believe" aria-label="Act I: Believe" aria-current="step"><span>I</span></a><a href="#wings" aria-label="Act II: The Other Side"><span>II</span></a><a href="#change" aria-label="Act III: Change the World"><span>III</span></a><a href="#cue" aria-label="Act IV: Call the Cue"><span>IV</span></a><a href="#again" aria-label="Act V: Believe Again"><span>V</span></a></nav>
+        <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Still mode</button>
+      </footer>
+    </div>
+  </main>
+  <section class="static-gallery" id="static-gallery" hidden aria-label="The static theatre edition">
+    <h2>A world, from every side.</h2><p>This reading edition keeps the story visible when a live stage is unavailable.</p>
+    <div><figure><img src="%BASE_URL%backstage/posters/room.png" alt="The room seen from the audience." loading="lazy"/><figcaption>I · Believe</figcaption></figure><figure><img src="%BASE_URL%backstage/posters/wings.png" alt="The same stage viewed from the wings, with the timber backs visible." loading="lazy"/><figcaption>II · The Other Side</figcaption></figure><figure><img src="%BASE_URL%backstage/posters/sea.png" alt="The room has transformed into a layered paper sea." loading="lazy"/><figcaption>III · Change the World</figcaption></figure><figure><img src="%BASE_URL%backstage/posters/night.png" alt="The painted moon hangs over the red door, with the paper lantern below." loading="lazy"/><figcaption>IV · Call the Cue</figcaption></figure></div>
+    <a class="text-link" href="?">Try the live edition <svg><use href="#arrow"/></svg></a>
+  </section>
+  <noscript><style>.story{height:auto!important}.production{position:relative!important;top:0!important;min-height:0!important;height:auto!important}.reading{display:block!important}.act{position:relative!important;opacity:1!important;visibility:visible!important;transform:none!important;margin:3rem 0}.controls,.cue-status,.header-cue,.motion-toggle,.chapter-nav,.production-footer{display:none!important}.composition{display:block!important}.stage{height:50vh!important}.stage-poster{opacity:1!important}.reading{padding:1.5rem!important}.static-gallery[hidden]{display:block!important}</style><p class="noscript-note">This is the reading edition. Enable JavaScript for the live stage and director’s controls.</p></noscript>
+  <script>
+    // Independent of the module graph: a failed main bundle still leaves a story.
+    window.backstageFallback = function () {
+      if (document.body.dataset.controllerReady === 'true') return;
+      document.documentElement.dataset.boot = 'failed';
+      document.body.classList.add('static-mode', 'boot-fallback');
+      document.querySelectorAll('.act').forEach(function (el) { el.inert = false; el.removeAttribute('aria-hidden'); });
+      document.getElementById('controls').hidden = true;
+      document.getElementById('cue-status').hidden = true;
+      document.getElementById('static-controls-note').hidden = false;
+      document.getElementById('static-gallery').hidden = false;
+    };
+    setTimeout(window.backstageFallback, 6000);
+  </script>
+  <script type="module" src="../../experiences/backstage/src/main.js" onerror="window.backstageFallback()"></script>
+</body>
+</html>
