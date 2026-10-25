@@ -1,6 +1,6 @@
 <h1 align="center">✦ AI Web Experience Collection</h1>
 
-<p align="center"><strong>Thirty-seven worlds. Thirty-seven ways to experience the web.</strong></p>
+<p align="center"><strong>Thirty-eight worlds. Thirty-eight ways to experience the web.</strong></p>
 
 <p align="center">
   A curated exhibition of cinematic, browser-native experiments in motion, matter,<br>
@@ -104,7 +104,7 @@ A small selection of the visuals already shipped with individual experiences. Ea
 <a id="the-complete-exhibition"></a>
 ## 🗂️ The Complete Exhibition — 32 Works
 
-Each name below opens its published standalone page. The routes belong to this single collection, not to thirty-seven separate repositories.
+Each name below opens its published standalone page. The routes belong to this single collection, not to thirty-eight separate repositories.
 
 ### ⚙️ I. Machines, Energy & Motion
 
@@ -172,11 +172,12 @@ Each name below opens its published standalone page. The routes belong to this s
 | **PELAGIC** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/pelagic/) | Living light, pattern, and encounter in the deep ocean |
 | **BACKSTAGE** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/backstage/) | A miniature theatre and the cues that keep it believable |
 | **MURMURATION** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/murmuration/) | Local rules, a traveling turn, and a flock you can change |
+| **VAREN** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/varen/) | Contemporary tailoring, garment details and a personal selection |
 
 <a id="built-as-independent-worlds"></a>
 ## 🧭 Built as Independent Worlds
 
-This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping thirty-seven 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
+This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping thirty-eight 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
 
 <table>
   <tr>
@@ -229,7 +230,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 | Path | Responsibility |
 | --- | --- |
-| [`pages/`](pages/) | Collection entry, credits, and thirty-seven HTML page documents |
+| [`pages/`](pages/) | Collection entry, credits, and thirty-eight HTML page documents |
 | [`collection/`](collection/) | Curated gallery layout and navigation |
 | [`experiences/`](experiences/) | Independent implementations and work-specific runtime code |
 | [`public/`](public/) | Namespaced media, fonts, models, and licenses |
@@ -239,7 +240,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 The repository's [`vite.config.ts`](vite.config.ts) registers each independent HTML input and sitemap route. When adding an experience, keep its page, gallery entrance, build verification, docs, credits, and provenance records synchronized. Preserve `import.meta.env.BASE_URL` / `%BASE_URL%` handling for project-subpath deployments.
 
-Verification is **per work and per integration surface**: one successful scene does not establish quality across all thirty-seven. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
+Verification is **per work and per integration surface**: one successful scene does not establish quality across all thirty-eight. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
 
 Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, original assets, or deployment. Historical source ZIPs and nondeployed references are tracked through provenance rather than mixed into browser output.
 
@@ -294,6 +295,10 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
 ---
 
 <p align="center">
-  <sub>THIRTY-SEVEN WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
+  <sub>THIRTY-EIGHT WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>
+
+### VAREN — Presence, precisely cut.
+
+The thirty-eighth work lives at `/varen/`: the supplied contemporary tailoring catalogue, with six looks, category filters, native garment details, saved selections and occasion tabs. [Design](docs/varen/DESIGN.md) · [Acceptance](docs/varen/ACCEPTANCE.md). All garment imagery is AI-generated; no products are offered for sale.

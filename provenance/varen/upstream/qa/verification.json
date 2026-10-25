@@ -1,0 +1,285 @@
+{
+  "target": "http://127.0.0.1:4173/",
+  "browser": "Chromium 1248, headless Playwright",
+  "browserPlugin": "Browser plugin not available; used installed Playwright without adding a project dependency",
+  "checks": [
+    {
+      "name": "Production title and app render",
+      "pass": true
+    },
+    {
+      "name": "Collection anchor offset",
+      "pass": true
+    },
+    {
+      "name": "Filter Tailoring yields 2 looks",
+      "pass": true
+    },
+    {
+      "name": "Filter Jackets yields 1 looks",
+      "pass": true
+    },
+    {
+      "name": "Filter Shirting yields 1 looks",
+      "pass": true
+    },
+    {
+      "name": "Filter Outerwear yields 2 looks",
+      "pass": true
+    },
+    {
+      "name": "Filter All yields 6 looks",
+      "pass": true
+    },
+    {
+      "name": "Look detail is reflected in URL",
+      "pass": true
+    },
+    {
+      "name": "Detail image zoom works",
+      "pass": true
+    },
+    {
+      "name": "Forward Tab focus stays in dialog",
+      "pass": true
+    },
+    {
+      "name": "Reverse Tab focus stays in dialog",
+      "pass": true
+    },
+    {
+      "name": "Background wheel is locked",
+      "pass": true
+    },
+    {
+      "name": "Escape restores underlying scroll",
+      "pass": true
+    },
+    {
+      "name": "Focus returns to look trigger",
+      "pass": true
+    },
+    {
+      "name": "Browser Forward reopens detail",
+      "pass": true
+    },
+    {
+      "name": "Saved looks persist through production reload",
+      "pass": true
+    },
+    {
+      "name": "Empty saved selection is actionable",
+      "pass": true
+    },
+    {
+      "name": "Menu closes and scrolls to wardrobe",
+      "pass": true
+    },
+    {
+      "name": "Occasion selector updates look",
+      "pass": true
+    },
+    {
+      "name": "Occasion keyboard navigation",
+      "pass": true
+    },
+    {
+      "name": "Direct linked look closes locally",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 320px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 390px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 768px",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 1280px",
+      "pass": true
+    },
+    {
+      "name": "Headline and CTA fit 1280x800",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 1440px",
+      "pass": true
+    },
+    {
+      "name": "Headline and CTA fit 1440x900",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow at 1920px",
+      "pass": true
+    },
+    {
+      "name": "Headline and CTA fit 1920x1080",
+      "pass": true
+    },
+    {
+      "name": "Mobile heading preserves word spacing",
+      "pass": true
+    },
+    {
+      "name": "Touch-sized mobile detail save works",
+      "pass": true
+    },
+    {
+      "name": "Mobile detail chapter remains unpinned",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion disables pinning",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion disables Lenis smoothing",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion content visible",
+      "pass": true
+    },
+    {
+      "name": "No-JavaScript hero is visible",
+      "pass": true
+    },
+    {
+      "name": "No-JavaScript six-look collection exists",
+      "pass": true
+    },
+    {
+      "name": "Unavailable storage produces honest visit-only state",
+      "pass": true
+    },
+    {
+      "name": "Desktop pinned chapter advances to Texture",
+      "pass": true
+    },
+    {
+      "name": "Desktop pinned chapter advances to Line",
+      "pass": true
+    },
+    {
+      "name": "Wheel continues with Lenis inertia",
+      "pass": true
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "height": 844,
+      "overflow": false,
+      "headlineVisible": true,
+      "ctaVisible": true,
+      "heroText": "Presence, precisely cut.",
+      "containerWidth": 305,
+      "heroImageLoaded": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "headlineVisible": true,
+      "ctaVisible": true,
+      "heroText": "Presence, precisely cut.",
+      "containerWidth": 375,
+      "heroImageLoaded": true
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "overflow": false,
+      "headlineVisible": true,
+      "ctaVisible": true,
+      "heroText": "Presence, precisely cut.",
+      "containerWidth": 753,
+      "heroImageLoaded": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "headlineVisible": true,
+      "ctaVisible": true,
+      "heroText": "Presence, precisely cut.",
+      "containerWidth": 1265,
+      "heroImageLoaded": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "headlineVisible": true,
+      "ctaVisible": true,
+      "heroText": "Presence, precisely cut.",
+      "containerWidth": 1425,
+      "heroImageLoaded": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "headlineVisible": true,
+      "ctaVisible": true,
+      "heroText": "Presence, precisely cut.",
+      "containerWidth": 1440,
+      "heroImageLoaded": true
+    }
+  ],
+  "runtimeErrors": [],
+  "requestFailures": [],
+  "motion": {
+    "before": {
+      "tickerListeners": 2,
+      "lenisTickers": 1,
+      "triggers": 1
+    },
+    "after": {
+      "tickerListeners": 2,
+      "lenisTickers": 1,
+      "triggers": 1
+    }
+  },
+  "contrast": [
+    {
+      "name": "body",
+      "ratio": 13.1853302254158
+    },
+    {
+      "name": "secondary",
+      "ratio": 5.6513890311856585
+    },
+    {
+      "name": "dark secondary",
+      "ratio": 7.4738600545356775
+    },
+    {
+      "name": "focus",
+      "ratio": 6.0414708881111965
+    }
+  ],
+  "scrollPerformance": {
+    "sampleFrames": 786,
+    "durationMs": 2468.8,
+    "medianFrameMs": 3.099999999999909,
+    "p95FrameMs": 3.200000000000273,
+    "maxFrameMs": 6.299999999999727,
+    "longTasks": [],
+    "framesOver34ms": 0
+  },
+  "limits": [
+    "Synthetic wheel and touch-sized browser interactions, not a physical touchpad or real phone.",
+    "Headless requestAnimationFrame intervals are diagnostic; they are not physical display FPS.",
+    "Hallmark render tier unavailable because puppeteer-core is not installed; separate Playwright screenshots and checks completed."
+  ],
+  "generatedAssets": 9,
+  "responsiveWebpVariants": 27
+}

@@ -1,0 +1,30 @@
+{
+  "motionBefore": {
+    "tickerListeners": 2,
+    "lenisTickers": 1,
+    "triggers": 1
+  },
+  "motionAfter": {
+    "tickerListeners": 2,
+    "lenisTickers": 1,
+    "triggers": 1
+  },
+  "contrasts": [
+    {
+      "name": "body",
+      "ratio": 13.1853302254158
+    },
+    {
+      "name": "secondary",
+      "ratio": 5.6513890311856585
+    },
+    {
+      "name": "dark secondary",
+      "ratio": 7.4738600545356775
+    },
+    {
+      "name": "focus",
+      "ratio": 6.0414708881111965
+    }
+  ]
+}

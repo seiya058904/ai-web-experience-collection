@@ -360,3 +360,12 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:1000px){.collection-index ol{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}}
 @media(max-width:600px){.collection-index ol{grid-template-columns:1fr}.collection-index li a{min-height:60px}.collection-intro p{font-size:13px}}
 @media(min-width:2200px){.collection-index summary{min-height:72px;font-size:22px}.collection-index summary>span,.collection-index small{font-size:18px}.collection-index li a{min-height:88px}.collection-index li a>span{font-size:22px}.collection-index summary svg{width:24px;height:24px}}
+
+/* VAREN retains its supplied menswear imagery and Hanken/Sentient voice. */
+@font-face{font-family:'Collection Varen Hanken';src:url('/varen/fonts/hanken-0.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Collection Varen Sentient';src:url('/varen/fonts/sentient-0.woff2') format('woff2');font-weight:300;font-display:swap}
+.world-varen{--t:22;--s:9;background:#eee9df;color:#f8f3e9}
+.world-varen h2{font-family:'Collection Varen Hanken',Arial,sans-serif;font-weight:400;letter-spacing:.08em}
+.world-varen .world-title p{font-family:'Collection Varen Sentient',Georgia,serif;font-weight:300;line-height:1.08}
+.world-varen .world-image img{object-position:55% 42%}
+.world-varen .world-image:after{background:linear-gradient(180deg,#211c1766,transparent 38%,#211c17d9)}

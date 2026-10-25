@@ -20,5 +20,8 @@ public/supercell/** -text
 public/pelagic/** -text
 public/backstage/** -text
 public/murmuration/** -text
+public/varen/** -text
+# Preserve the supplied font license verbatim, including its original line-end space.
+public/varen/fonts/Hanken-Grotesk-OFL.txt whitespace=-blank-at-eol
 # Preserve the supplied self-contained historical edition as an opaque artifact.
 provenance/kage/KAGE-VOID.html -text -diff

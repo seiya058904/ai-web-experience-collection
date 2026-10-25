@@ -1,0 +1,278 @@
+[
+  {
+    "name": "hero",
+    "source": "assets/originals/hero.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: actual campaign photography for modern luxury men's tailoring website VAREN. Standalone PHOTOGRAPH only, no website, no text, no logo, no watermark. Contemporary architectural menswear editorial, NOT historical or classical. Warm limestone and brushed concrete minimalist architecture with glass, clean strong rectangular shadows, no arches/columns/statues. Natural real-life fabric texture and draping, realistic hands and face, effortlessly confident adult male model around 30 with brown hair, natural skin and understated styling. Muted warm ivory, chocolate and charcoal palette. Soft directional sunlight, editorial filmic natural color, expensive restrained campaign photography. Portrait 4:5 composition, clean full-to-three-quarter-length framing with margin around head and garment, garment fully legible. Hero campaign image, handsome adult male in a chocolate-brown two-piece tailored suit, clean single-breasted jacket, wide but modern notch lapel, open ivory shirt, one hand in trouser pocket, gaze just off camera. Knee-up portrait, relaxed statuesque posture outside a contemporary glass and warm limestone building. Suit is the focus. Sharp subtle woven texture. Large clean image with subject just right of center; minimal architecture.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/hero-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 29336
+      },
+      {
+        "file": "public/images/hero-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 93472
+      },
+      {
+        "file": "public/images/hero-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 119534
+      }
+    ]
+  },
+  {
+    "name": "slate",
+    "source": "assets/originals/slate.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: actual campaign photography for modern luxury men's tailoring website VAREN. Standalone PHOTOGRAPH only, no website, no text, no logo, no watermark. Contemporary architectural menswear editorial, NOT historical or classical. Warm limestone and brushed concrete minimalist architecture with glass, clean strong rectangular shadows, no arches/columns/statues. Natural real-life fabric texture and draping, realistic hands and face, effortlessly confident adult male model around 30 with brown hair, natural skin and understated styling. Muted warm ivory, chocolate and charcoal palette. Soft directional sunlight, editorial filmic natural color, expensive restrained campaign photography. Portrait 4:5 composition, clean full-to-three-quarter-length framing with margin around head and garment, garment fully legible. Collection photograph of an adult male wearing a sophisticated charcoal grey two-piece single-breasted suit, ivory shirt and dark grey tie, clean modern notch lapels, modern straight trousers, standing naturally in an understated contemporary stone studio. Full-length front three-quarter view showing entire silhouette and dark leather shoes. Head not cropped. Elegant precise proportions, believable anatomy.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/slate-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 26696
+      },
+      {
+        "file": "public/images/slate-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 74104
+      },
+      {
+        "file": "public/images/slate-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 92452
+      }
+    ]
+  },
+  {
+    "name": "sand",
+    "source": "assets/originals/sand.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: actual campaign photography for modern luxury men's tailoring website VAREN. Standalone PHOTOGRAPH only, no website, no text, no logo, no watermark. Contemporary architectural menswear editorial, NOT historical or classical. Warm limestone and brushed concrete minimalist architecture with glass, clean strong rectangular shadows, no arches/columns/statues. Natural real-life fabric texture and draping, realistic hands and face, effortlessly confident adult male model around 30 with brown hair, natural skin and understated styling. Muted warm ivory, chocolate and charcoal palette. Soft directional sunlight, editorial filmic natural color, expensive restrained campaign photography. Portrait 4:5 composition, clean full-to-three-quarter-length framing with margin around head and garment, garment fully legible. Collection photograph of an adult male wearing a relaxed taupe-sand single-breasted blazer with modern notch lapel over a dark chocolate fine crewneck, chocolate straight tailored trousers, black leather shoes. Full-length front three-quarter portrait in a contemporary concrete and limestone studio; quiet, refined but decidedly modern business styling. No tie, no vintage suit, no ornate backdrop.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/sand-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 30220
+      },
+      {
+        "file": "public/images/sand-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 81902
+      },
+      {
+        "file": "public/images/sand-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 101292
+      }
+    ]
+  },
+  {
+    "name": "ivory",
+    "source": "assets/originals/ivory.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone contemporary premium men's fashion campaign photograph, portrait 4:5. No website, no text, no watermark. An adult male model around thirty, realistic face and anatomy, composed natural pose, full-length front three-quarter portrait with entire head and footwear visible. Minimalist contemporary limestone and glass interior, strong clean architectural lines, softly directional warm daylight, refined neutral colors, exceptionally detailed real fabric and drape. No vintage or classical columns/statues/arches, no ornaments. Grounded expensive modern editorial menswear photography. An elegant Black adult male with short natural hair, wearing an ivory open-collar long-sleeve business shirt tucked into charcoal tailored straight trousers with simple black leather belt and black loafers. Sleeves down, tasteful relaxed office styling, shirt the focal point, clean white-ivory textured weave.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/ivory-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 31052
+      },
+      {
+        "file": "public/images/ivory-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 81558
+      },
+      {
+        "file": "public/images/ivory-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 100376
+      }
+    ]
+  },
+  {
+    "name": "evening",
+    "source": "assets/originals/evening.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone contemporary premium men's fashion campaign photograph, portrait 4:5. No website, no text, no watermark. An adult male model around thirty, realistic face and anatomy, composed natural pose, full-length front three-quarter portrait with entire head and footwear visible. Minimalist contemporary limestone and glass interior, strong clean architectural lines, softly directional warm daylight, refined neutral colors, exceptionally detailed real fabric and drape. No vintage or classical columns/statues/arches, no ornaments. Grounded expensive modern editorial menswear photography. An East Asian adult male with neat dark hair, wearing a modern deep espresso single-breasted two-piece suit with a tonal dark chocolate fine knit top instead of a shirt, no tie, no tuxedo, understated contemporary evening dress. Hands relaxed, looking to the side. Warm gray limestone wall and evening daylight. Full suit and trousers visible.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/evening-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 31454
+      },
+      {
+        "file": "public/images/evening-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 92872
+      },
+      {
+        "file": "public/images/evening-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 114612
+      }
+    ]
+  },
+  {
+    "name": "coat",
+    "source": "assets/originals/coat.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone contemporary premium men's fashion campaign photograph, portrait 4:5. No website, no text, no watermark. An adult male model around thirty, realistic face and anatomy, composed natural pose, full-length front three-quarter portrait with entire head and footwear visible. Minimalist contemporary limestone and glass interior, strong clean architectural lines, softly directional warm daylight, refined neutral colors, exceptionally detailed real fabric and drape. No vintage or classical columns/statues/arches, no ornaments. Grounded expensive modern editorial menswear photography. An adult male with brown hair wearing a long deep tobacco-brown single-breasted tailored overcoat, open over a stone fine-knit top and charcoal straight tailored trousers, simple dark leather shoes. Full-length stance walking slightly toward camera. Clean modern concrete architecture and soft warm daylight. Coat silhouette the focus, modern refined proportions.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/coat-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 30958
+      },
+      {
+        "file": "public/images/coat-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 94346
+      },
+      {
+        "file": "public/images/coat-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 116674
+      }
+    ]
+  },
+  {
+    "name": "graphite",
+    "source": "assets/originals/graphite.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone luxury modern menswear collection photograph. Portrait 4:5 full length editorial campaign of handsome adult male with short brown hair, wearing a graphite charcoal clean-lined tailored overcoat over black fine-gauge knit and black tailored straight trousers, minimalist dark shoes. No text, no logo, no website, no watermark. Ultra contemporary pale limestone concrete architecture and subtle glass, no ornate setting, no classical columns or statues, no arches. Quiet confident pose, entire head and shoes visible with breathing room. Warm directional natural daylight, refined real fabric texture, exceptionally photorealistic. Same contemporary campaign as chocolate suit and taupe blazer, muted warm architectural palette.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/graphite-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 29792
+      },
+      {
+        "file": "public/images/graphite-960.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 80798
+      },
+      {
+        "file": "public/images/graphite-1120.webp",
+        "width": 1120,
+        "height": 1400,
+        "bytes": 100264
+      }
+    ]
+  },
+  {
+    "name": "lapel",
+    "source": "assets/originals/lapel.png",
+    "prompt": "Use case: product-mockup. Asset type: standalone editorial macro garment photography for luxury modern men's tailoring. Close detail photograph of a chocolate brown suit jacket notch lapel resting over an open ivory shirt on an adult male, image frames only from neck below chin through upper chest, NO full face. Modern precise lapel angle, subtle brown textured fabric weave, clean ivory shirt collar, barely visible pocket edge, natural material, no logos or labels. Contemporary warm daylight with soft directional shadows and neutral out-of-focus limestone backdrop. Tactile expensive menswear campaign, realistic construction. Landscape 4:3. No website, no UI, no text, no watermark, no ornaments.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/lapel-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 30152
+      },
+      {
+        "file": "public/images/lapel-960.webp",
+        "width": 960,
+        "height": 720,
+        "bytes": 161298
+      },
+      {
+        "file": "public/images/lapel-1120.webp",
+        "width": 1120,
+        "height": 840,
+        "bytes": 212366
+      }
+    ]
+  },
+  {
+    "name": "texture",
+    "source": "assets/originals/texture.png",
+    "prompt": "Use case: product-mockup. Asset type: standalone ultra close textile detail photograph. Luxury contemporary chocolate-brown tailored suit sleeve and jacket body resting naturally on pale warm limestone, subtle fine herringbone-like woven texture visible, clean tailoring seam, three understated dark brown sleeve buttons aligned naturally. Photorealistic material study under soft directional daylight, modern muted warm neutral palette, refined editorial macro photography, shallow depth of field with important weave sharp. Landscape 4:3. Garment construction visual concept only, no label, no text, no brand, no watermark, no UI, no website, no measuring tape or sewing props.",
+    "mode": "built-in image_gen",
+    "variants": [
+      {
+        "file": "public/images/texture-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 48164
+      },
+      {
+        "file": "public/images/texture-960.webp",
+        "width": 960,
+        "height": 720,
+        "bytes": 193080
+      },
+      {
+        "file": "public/images/texture-1120.webp",
+        "width": 1120,
+        "height": 840,
+        "bytes": 252426
+      }
+    ]
+  },
+  {
+    "name": "collection",
+    "kind": "concept",
+    "file": "design/previews/collection.png",
+    "prompt": "Use case: ui-mockup. An exceptionally sophisticated actual website screenshot for VAREN, a luxury men's tailoring concept brand. Same coherent design system: warm limewash ivory #eee9df, umber #2c2823, restrained slate blue details; light Sentient roman serif headlines, Hanken Grotesk readable body. Flat unboxed editorial layout, square images, fine rules, large 64px gutters, no eyebrow labels, no tracked uppercase labels, no gradients, no icons in tiles, no statistics, no fake claims, no browser chrome. Photorealistic menswear images under warm architectural daylight. All UI text is clean and readable. Design a standalone desktop collection section at 1440x1000. Headline \"The considered collection\" at left in 64px serif, a short line \"Six perspectives on getting dressed.\" at right. Below a hairline, understated unboxed filter buttons All, Tailoring, Jackets, Shirting, Outerwear with All active and an underline. Display exactly six menswear looks in a beautifully aligned three-column open product grid, with the first three full-height portraits and a portion of the next three visible. Images feature adult male models in a charcoal suit, a taupe blazer, and an ivory shirt, photographed in clean warm stone interiors. Beneath each image a serif name \"The Slate Suit\", \"The Sand Jacket\", \"The Ivory Shirt\", a small category label and an unobtrusive bookmark button on the right. No prices, no ratings, no shopping cart, no photo overlays. Strong elegant fashion art direction, generous but not vacant spacing.",
+    "mode": "built-in image_gen"
+  },
+  {
+    "name": "cut_detail",
+    "kind": "concept",
+    "file": "design/previews/cut_detail.png",
+    "prompt": "Use case: ui-mockup. An exceptionally sophisticated actual website screenshot for VAREN, a luxury men's tailoring concept brand. Same coherent design system: warm limewash ivory #eee9df, umber #2c2823, restrained slate blue details; light Sentient roman serif headlines, Hanken Grotesk readable body. Flat unboxed editorial layout, square images, fine rules, large 64px gutters, no eyebrow labels, no tracked uppercase labels, no gradients, no icons in tiles, no statistics, no fake claims, no browser chrome. Photorealistic menswear images under warm architectural daylight. All UI text is clean and readable. Design a standalone desktop section at 1440x1000 showing the transition from an editorial typographic tailoring study to an exquisite garment detail chapter. Upper 40% is warm ivory with huge serif heading \"The art of less.\" at left, three hairline-separated rows at right labelled \"The shoulder\", \"The line\", \"The proportion\", each with one brief sentence about silhouette, no fabricated material claims. Lower 60% changes to deep warm umber background with warm ivory text. Left half: large editorial macro photo of a chocolate-brown suit lapel and ivory shirt with tactile woven texture in soft light. Right half headline \"A closer consideration.\" and short copy \"The details make the difference. Take a closer look.\" A fine rule and three simple controls Lapel, Texture, Line. No cards, no decorative arrows. A striking, spacious editorial composition.",
+    "mode": "built-in image_gen"
+  },
+  {
+    "name": "wardrobe_footer",
+    "kind": "concept",
+    "file": "design/previews/wardrobe_footer.png",
+    "prompt": "Use case: ui-mockup. An exceptionally sophisticated actual website screenshot for VAREN, a luxury men's tailoring concept brand. Same coherent design system: warm limewash ivory #eee9df, umber #2c2823, restrained slate blue details; light Sentient roman serif headlines, Hanken Grotesk readable body. Flat unboxed editorial layout, square images, fine rules, large 64px gutters, no eyebrow labels, no tracked uppercase labels, no gradients, no icons in tiles, no statistics, no fake claims, no browser chrome. Photorealistic menswear images under warm architectural daylight. All UI text is clean and readable. Design a standalone desktop website closing section at 1440x1000. Top 70% is ivory paper with a large serif title \"A wardrobe, resolved.\" and a real visible selector with three understated text tabs \"Everyday\", \"The meeting\", \"After hours\". Everyday selected with thin underline. Below, left half a beautiful portrait of an adult male in a taupe blazer and dark tailored trousers under natural warm studio daylight. Right half large serif \"Room to move.\" with short sentence \"Relaxed proportions. An assured point of view.\" and underlined link \"View the look\". No claims about fabric. Bottom 30% an expansive dark umber footer: oversized refined light serif VAREN wordmark, thin rule, links Collection, The cut, Saved looks, Back to top; small readable honest text \"An independent menswear concept. All garment imagery is AI-generated.\" No fake address, no newsletter, no social icons, no large blank holes.",
+    "mode": "built-in image_gen"
+  },
+  {
+    "name": "mobile",
+    "kind": "concept",
+    "file": "design/previews/mobile.png",
+    "prompt": "Use case: ui-mockup. Create the mobile responsive design screenshot for the supplied VAREN desktop website, exact same modern warm tailoring identity, contemporary concrete campaign photography, modern sans wordmark, light contemporary Sentient serif heading. One long narrow mobile page at 390px width with readable text. Header VAREN at left, Saved icon and two-line menu right. Hero heading exactly \"Presence, precisely cut.\" on two or three lines, one sentence \"A considered wardrobe. A distinct point of view.\", outlined button \"Explore the collection\", then a large portrait photo of man in chocolate suit in contemporary limestone and glass architecture, no statues. Generous 24px gutters; title 52px; body 16px; comfortable touch controls. Then section title \"The considered collection\", wrapping text filters All, Tailoring, Jackets, Shirting, Outerwear; two-column product photos with title and bookmark below. Show enough downstream content to demonstrate continuation. Flat ivory paper, dark umber text, square images, no cards, no gradients, no small tracked caps, no eyebrow. Actual mobile webpage, no device frame.",
+    "mode": "built-in image_gen"
+  },
+  {
+    "name": "detail",
+    "kind": "concept",
+    "file": "design/previews/detail.png",
+    "prompt": "Use case: ui-mockup. Design the desktop garment detail panel state for this exact VAREN modern warm editorial website. At 1440x1000, the left 28% shows a subtly dimmed original collection behind an overlay, right 72% an ivory full-height side panel. Panel header small \"The collection\" left and clear close X button right. A large portrait of handsome man in slate charcoal suit occupies left 55% of panel; two small thumbnail buttons below labelled Full look and Detail. Right 45%: readable category \"Tailoring\", large light contemporary serif title \"The Slate Suit\", one sentence \"A composed silhouette for the moments that matter.\" then understated thin-rule rows Colour / Charcoal, Silhouette / Structured, Styling / The meeting. Outlined full-width button \"Save this look\" with small bookmark icon. Below honest small line \"A visual concept, not a product offered for sale.\" Bottom of panel supports native vertical scrolling. Warm ivory, dark umber, minimal sans labels, modern sans VAREN wordmark where visible, no shopping cart, no price, no claims about fiber, origin, certifications. No card UI, no rounded corners, no vintage look. Real website screenshot with coherent desktop source image.",
+    "mode": "built-in image_gen"
+  },
+  {
+    "name": "hero-modern",
+    "kind": "concept",
+    "file": "design/previews/hero-modern.png",
+    "prompt": "Use case: ui-mockup. Create the definitive desktop first viewport design for VAREN luxury menswear at 1440x1000. The user explicitly wants MORE MODERN, LESS CLASSICAL than traditional luxury websites. Warm quiet contemporary editorial art direction: flat limestone ivory #eee9df, rich ink #2c2823, slate blue subtle focus accent. Sans-serif VAREN wordmark, medium 30px clean Hanken Grotesk, tasteful moderate tracking only in the wordmark. All small text sentence case untracked modern sans. Hero heading a contemporary low-contrast light roman serif similar to Sentient, NOT Bodoni, not didone or calligraphy. Large 98px heading on left in 3 lines exactly \"Presence, precisely cut.\". One sentence \"A considered wardrobe. A distinct point of view.\" and outlined minimal 52px button \"Explore the collection\". 70px header with two links Collection, The cut on left; VAREN centered; Saved (0) and a two-line menu icon right. Wide capped layout 64px gutters. Hero right 56%: editorial photo of handsome 30-year-old male wearing a precisely cut dark chocolate two-piece suit and open ivory shirt, relaxed with one hand in pocket, in a VERY CONTEMPORARY minimalist limestone and glass building, simple concrete wall and strong rectangular sunlight shadow, no columns, NO STATUES, no arches, no palace, no classical decorations, no vintage accessories. Cinematic natural warm daytime lighting, exquisite fabric detail, credible menswear campaign. Huge square-corner portrait framing with confident asymmetric page balance. A small separate square lapel detail inset at bottom-left of photo, clean unframed rectangle. A clean thin rule below photo and small caption \"A study in presence\". The hero text fully visible including CTA. Below hero show only opening \"The considered collection\" with tabs All, Tailoring, Jackets, Shirting, Outerwear; next section image tops. No gradients or background texture, no eyebrows, no tracked capital labels, no icons in tiles, no rounded cards, no cards, no prices or unsupported claims. Full browser-native website screenshot without browser frame. Expensive modern menswear, architectural restraint, editorial presence.",
+    "mode": "built-in image_gen"
+  }
+]

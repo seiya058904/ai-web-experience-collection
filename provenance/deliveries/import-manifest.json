@@ -26789,6 +26789,517 @@
         "Shared Collection return control and native journey handoff added to the existing header",
         "Licenses surfaced under public/<work>/licenses/"
       ]
+    },
+    {
+      "archive": "VAREN-source.zip",
+      "bytes": 51265033,
+      "sha256": "cf82a43eef3782b093736056c50995dca3857f9e097c095accb8f576e64a7ee4",
+      "modified": "2026-10-25T17:38:11.804988",
+      "imported": "2026-10-25",
+      "entryCount": 98,
+      "entries": [
+        {
+          "path": "varen/package.json",
+          "bytes": 599,
+          "sha256": "7f67c13136b045778f1de907af56779c90562dcd69bad623be0a68da88830883"
+        },
+        {
+          "path": "varen/package-lock.json",
+          "bytes": 42588,
+          "sha256": "c3abdaaf6e5e49367fd45c6f3855bae48f44b0407a5c533e7b55046a8ae1872c"
+        },
+        {
+          "path": "varen/tsconfig.json",
+          "bytes": 399,
+          "sha256": "16487af6d582daddb57ed1a5859332719f3b7c705944c89f21c5018492f7035c"
+        },
+        {
+          "path": "varen/vite.config.ts",
+          "bytes": 145,
+          "sha256": "9034126df9c4c492079b9bbfe8005ee127522f88e7052d2c83d0d94e1d3ae687"
+        },
+        {
+          "path": "varen/index.html",
+          "bytes": 4543,
+          "sha256": "eef53671ed83418d612f7699ace44774e8c170ea368e8f089d8450a43d591ec6"
+        },
+        {
+          "path": "varen/README.md",
+          "bytes": 3079,
+          "sha256": "5376bc94467af779139a7a8775e129f96e38f002357370b5f5a56242ca227922"
+        },
+        {
+          "path": "varen/PRODUCT.md",
+          "bytes": 1160,
+          "sha256": "e637322974994d37cece2cb91cb0c8cf99fe3992b826fbac14cbdb17015d2818"
+        },
+        {
+          "path": "varen/DESIGN.md",
+          "bytes": 2886,
+          "sha256": "7756dc71426bc4d394eeb727d0e161386d228708aaf95801f3edb82a7be1d7f3"
+        },
+        {
+          "path": "varen/.gitignore",
+          "bytes": 44,
+          "sha256": "2c0bb3dc20ff30b51d8f58e362d38f03d8b2172dbbc4c1c4698888f412cb81b0"
+        },
+        {
+          "path": "varen/Start VAREN.cmd",
+          "bytes": 292,
+          "sha256": "3e1d9787fea725b08b8e9b820f3f026fa4d5b43e2050a206166639f2aaa1005b"
+        },
+        {
+          "path": "varen/src/App.tsx",
+          "bytes": 3417,
+          "sha256": "f61e7aca50df98a64a0e1428085ff9618a7854a999d26508c987be2ac37bdbf8"
+        },
+        {
+          "path": "varen/src/data.ts",
+          "bytes": 3400,
+          "sha256": "94ef3a78647ce1823122f9cc2816e42bdb27a9cfcd2ea74163332f7a932d564a"
+        },
+        {
+          "path": "varen/src/hooks.ts",
+          "bytes": 2943,
+          "sha256": "3acba7e3da51d0ff1cc55ad6608a2cb30567c3da14dbbf441efc77ddc9e170a7"
+        },
+        {
+          "path": "varen/src/main.tsx",
+          "bytes": 255,
+          "sha256": "6ee6be85e2f6152091b600343d6aa0f6085d4ba74343c787648bd1ae78b6d0a6"
+        },
+        {
+          "path": "varen/src/motion.tsx",
+          "bytes": 3482,
+          "sha256": "bb8ccdc2a3669b2219bb88bcc23ced898931087ee6f590c71768125e1e79cb7b"
+        },
+        {
+          "path": "varen/src/vite-env.d.ts",
+          "bytes": 38,
+          "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+        },
+        {
+          "path": "varen/src/components/Collection.tsx",
+          "bytes": 2586,
+          "sha256": "5836f7fb12a0ffae530225a929a2cefd1af3416836bb46af055a31a41d3cb09f"
+        },
+        {
+          "path": "varen/src/components/Editorial.tsx",
+          "bytes": 5406,
+          "sha256": "4ace71fefb1e02ed288670a681927d020b9e8af720720524a06b6ef5698e1f51"
+        },
+        {
+          "path": "varen/src/components/Header.tsx",
+          "bytes": 806,
+          "sha256": "9ef40da0dfa3befc797d5507907b68a1f1479fbfe07c9bc636f82712cea6951c"
+        },
+        {
+          "path": "varen/src/components/Hero.tsx",
+          "bytes": 1391,
+          "sha256": "8466ec96a7d624c3dc749c2037efe7687fa8d4b8213f59110183447a835e280f"
+        },
+        {
+          "path": "varen/src/components/Overlay.tsx",
+          "bytes": 5520,
+          "sha256": "93654bab0ae692c1ccc34bdc72321065d75af2f2d08d0406454297f58825538f"
+        },
+        {
+          "path": "varen/src/components/Primitives.tsx",
+          "bytes": 2297,
+          "sha256": "b607ccabeb71ae04c55ea62de1cd3238de5ef72661658fee78f9040870aeda45"
+        },
+        {
+          "path": "varen/src/styles/base.css",
+          "bytes": 2316,
+          "sha256": "604395dec0ff53679df188589a3a89483d0652165f981e6818504369f8654915"
+        },
+        {
+          "path": "varen/src/styles/main.css",
+          "bytes": 25089,
+          "sha256": "6eec58c5a4fe5b1b9924bc91614f1ccbc054684af8e2c2bda0271ed906618599"
+        },
+        {
+          "path": "varen/src/styles/tokens.css",
+          "bytes": 2084,
+          "sha256": "73bf022b92bb03e34f4f27d88e74b4895d962be12b075a9d168fd78dca8a3bfa"
+        },
+        {
+          "path": "varen/public/favicon.svg",
+          "bytes": 188,
+          "sha256": "89558ce5b001c9e5512198c827be1af6a5b08d328dc8f4e7828629c9fa9e13c4"
+        },
+        {
+          "path": "varen/public/fonts/fonts.css",
+          "bytes": 1420,
+          "sha256": "a2de0638cd08a2d8a8ffca953af476029748fc7a83bea527a968309749ff21bd"
+        },
+        {
+          "path": "varen/public/fonts/hanken-0.woff2",
+          "bytes": 34704,
+          "sha256": "e9201eddf1d41d0b62253295d869ce3cf65768f7102b797f02c7f8c876b4a9d5"
+        },
+        {
+          "path": "varen/public/fonts/hanken-1.woff2",
+          "bytes": 34704,
+          "sha256": "e9201eddf1d41d0b62253295d869ce3cf65768f7102b797f02c7f8c876b4a9d5"
+        },
+        {
+          "path": "varen/public/fonts/hanken-2.woff2",
+          "bytes": 34704,
+          "sha256": "e9201eddf1d41d0b62253295d869ce3cf65768f7102b797f02c7f8c876b4a9d5"
+        },
+        {
+          "path": "varen/public/fonts/Hanken-Grotesk-OFL.txt",
+          "bytes": 4402,
+          "sha256": "e02ccb89a86839b22feff7872ff5cc355cc0f58318d29eee20e2cf83a612f16d"
+        },
+        {
+          "path": "varen/public/fonts/sentient-0.woff2",
+          "bytes": 24232,
+          "sha256": "4704f72d0b3884706b94f12e5a108aa147d15f9f6457341c8a5d05049f40ebb7"
+        },
+        {
+          "path": "varen/public/fonts/sentient-1.woff2",
+          "bytes": 24348,
+          "sha256": "f08e7da6181ee421ea564df6c727bc84bfe6fe656b9e613efbd8a2161fd26b14"
+        },
+        {
+          "path": "varen/public/fonts/Sentient-license-0.txt",
+          "bytes": 12734,
+          "sha256": "145e7fe2429a3336ba215c070ef722000e01348a3e1baaa127e871bb5012f554"
+        },
+        {
+          "path": "varen/public/images/coat-1120.webp",
+          "bytes": 116674,
+          "sha256": "719968a7c661ba2b1f9406fbccf6168808da55f6afa557b81f8d577866270c1e"
+        },
+        {
+          "path": "varen/public/images/coat-480.webp",
+          "bytes": 30958,
+          "sha256": "1eb68dd7554290b63b142f8b4823383205efd90b60feb1cdb97f81310ff5d2af"
+        },
+        {
+          "path": "varen/public/images/coat-960.webp",
+          "bytes": 94346,
+          "sha256": "8f631631bae9fbb6db0a6ea21784a1deeb08f77ffd1f3a0894f44639d40cec7a"
+        },
+        {
+          "path": "varen/public/images/evening-1120.webp",
+          "bytes": 114612,
+          "sha256": "c097a67e89d6449180473a520f33e934135811c9ed0d288a5f0d86fca5e73915"
+        },
+        {
+          "path": "varen/public/images/evening-480.webp",
+          "bytes": 31454,
+          "sha256": "d0ed4eb39bdd40cf0cc07e858e915ec9398efd3fcf6f99341908a1ab45b0b72e"
+        },
+        {
+          "path": "varen/public/images/evening-960.webp",
+          "bytes": 92872,
+          "sha256": "8656e0929543b37aba2ea322b4b38d10ffb7e0d4f7bf943891824f5a4569a2c1"
+        },
+        {
+          "path": "varen/public/images/graphite-1120.webp",
+          "bytes": 100264,
+          "sha256": "305b35b27332140b7c4bb33ff855fa90236127aa74ffbb9a69942fda50f69e5a"
+        },
+        {
+          "path": "varen/public/images/graphite-480.webp",
+          "bytes": 29792,
+          "sha256": "2c5e0d0f9b94d73102c9f077b566f5fa876ce50733f7bd5649889a31eb9ae585"
+        },
+        {
+          "path": "varen/public/images/graphite-960.webp",
+          "bytes": 80798,
+          "sha256": "b66295a066a72e79255b361f472583988e11428577b567ef32ffef71117fb0d4"
+        },
+        {
+          "path": "varen/public/images/hero-1120.webp",
+          "bytes": 119534,
+          "sha256": "38af13215093a78506b6ef4efceee29505f63dafc77ad74a64d79bca42b86e9f"
+        },
+        {
+          "path": "varen/public/images/hero-480.webp",
+          "bytes": 29336,
+          "sha256": "62ac89edfd03d4dbe58b03920cc42783b13a88b9e4647c29913589cd89078d83"
+        },
+        {
+          "path": "varen/public/images/hero-960.webp",
+          "bytes": 93472,
+          "sha256": "bf33eae723bcdd03600603607d7c42ff20f732624ca59ab2de1fbaf3fe3fbd52"
+        },
+        {
+          "path": "varen/public/images/ivory-1120.webp",
+          "bytes": 100376,
+          "sha256": "6ed2fe045d95c839713541f3ec74c0d046eb1b4bf5db70daf196bfb9a94c9c1a"
+        },
+        {
+          "path": "varen/public/images/ivory-480.webp",
+          "bytes": 31052,
+          "sha256": "395ff01dc4ea9f2942b60a4ba5a653f3077f2c209b6b9067e330c7ad20b0ba6f"
+        },
+        {
+          "path": "varen/public/images/ivory-960.webp",
+          "bytes": 81558,
+          "sha256": "ef62ce8ab5bb06d9ad1e31bf109d992e7a03f24a89a96235ef4ddab36288aae8"
+        },
+        {
+          "path": "varen/public/images/lapel-1120.webp",
+          "bytes": 212366,
+          "sha256": "850ba289790c89f8e0278b65f5d7ecf08fe503ef0d4e57e5f8635a663db77537"
+        },
+        {
+          "path": "varen/public/images/lapel-480.webp",
+          "bytes": 30152,
+          "sha256": "ce063f4b1eaf5b57c24d2f868e98e65cc092dbfea0ca8d524d4f06c730bd785a"
+        },
+        {
+          "path": "varen/public/images/lapel-960.webp",
+          "bytes": 161298,
+          "sha256": "ee656f6cbfced2e90f1ceeb4e7b1d893fd60b66e2114dc726e6f70c5a5dc141d"
+        },
+        {
+          "path": "varen/public/images/sand-1120.webp",
+          "bytes": 101292,
+          "sha256": "ae5e8439aadfbb26e9759f6d9ccaeab2e54fbdc304f2eb43d6d9b2f0025b5dad"
+        },
+        {
+          "path": "varen/public/images/sand-480.webp",
+          "bytes": 30220,
+          "sha256": "370071e111c9b21b71099c3a0796de7e639e5f8a8784f2ec235aea4bc331e6e7"
+        },
+        {
+          "path": "varen/public/images/sand-960.webp",
+          "bytes": 81902,
+          "sha256": "899478c9c6c79ed9fed1a4427eca46268e8d69aa2077ce46659adbb0e1c76c74"
+        },
+        {
+          "path": "varen/public/images/slate-1120.webp",
+          "bytes": 92452,
+          "sha256": "2795e30049b8d8c01e13895428dd056f14a17d44287b9da5cb4889627745fc77"
+        },
+        {
+          "path": "varen/public/images/slate-480.webp",
+          "bytes": 26696,
+          "sha256": "ac64c0817c493b8425580f6f2419c5bd3ede9b9c770e8231bf9850200e7f6284"
+        },
+        {
+          "path": "varen/public/images/slate-960.webp",
+          "bytes": 74104,
+          "sha256": "6a6200ad6ecb971114c437a778b1513ccb8de660c604da755fd7fa8a9b404de7"
+        },
+        {
+          "path": "varen/public/images/texture-1120.webp",
+          "bytes": 252426,
+          "sha256": "303d21a8f15709c4e06d08eb4fb08dda4bc73a8a1914dc9e45d580699e262e55"
+        },
+        {
+          "path": "varen/public/images/texture-480.webp",
+          "bytes": 48164,
+          "sha256": "7673784c8f2973da80049b5a59b856a2ccc3d2210200106deea2c880051c2bf7"
+        },
+        {
+          "path": "varen/public/images/texture-960.webp",
+          "bytes": 193080,
+          "sha256": "538673ebf783817c63fc9097a53a5432067960133ccacb845ba0ca074189b72c"
+        },
+        {
+          "path": "varen/assets/originals/coat.png",
+          "bytes": 2132065,
+          "sha256": "b1792c36e56c7842f7aa2e7b59edb7394187269ae21eee8603af4a41210b6f5b"
+        },
+        {
+          "path": "varen/assets/originals/evening.png",
+          "bytes": 2129315,
+          "sha256": "777aebc33a58bcd156856f771050d8143845cfd429527fe9ec3b5985b414d05d"
+        },
+        {
+          "path": "varen/assets/originals/graphite.png",
+          "bytes": 1985128,
+          "sha256": "c483a84355a47d1b1721246710d3ccf1b7cf71c4fccd683426b1b447c43cf42c"
+        },
+        {
+          "path": "varen/assets/originals/hero.png",
+          "bytes": 2105266,
+          "sha256": "447779f8379a8261ece04e3a0127233281753aaebb7b8757ca32e5540bcc9a9c"
+        },
+        {
+          "path": "varen/assets/originals/ivory.png",
+          "bytes": 1957605,
+          "sha256": "b20ad9003ab38c92e8dabf3f4c22252b5b2b121ca7366862745e4c4853889043"
+        },
+        {
+          "path": "varen/assets/originals/lapel.png",
+          "bytes": 3187816,
+          "sha256": "3097736b612ec7282e6b4bf32cb011ca1d6a2de1ccbf1c853fe6cde0a89fa782"
+        },
+        {
+          "path": "varen/assets/originals/sand.png",
+          "bytes": 1980186,
+          "sha256": "dac59ed9f8be75989bce561d0cd1930c461577901501326001c0ad519b2e7243"
+        },
+        {
+          "path": "varen/assets/originals/slate.png",
+          "bytes": 1960916,
+          "sha256": "f073b4ae0bbd98b807b11f1fac3c5c37ead2105e29f4b107c5841564b74309e7"
+        },
+        {
+          "path": "varen/assets/originals/texture.png",
+          "bytes": 3265711,
+          "sha256": "72e3ce86407e14633fc452c37d706b1a72b43075eb009ebfb93c726310b21b4e"
+        },
+        {
+          "path": "varen/design/asset-prompts.json",
+          "bytes": 24193,
+          "sha256": "79cb9ca3048d78672b9e270c1c3fb86af04ac66d59634826df446053dd4d9503"
+        },
+        {
+          "path": "varen/design/previews/collection.png",
+          "bytes": 1846580,
+          "sha256": "f6d0698723e32a46f1b20fa2a56151a84ef2c2526a8052a3b4008daf151fc132"
+        },
+        {
+          "path": "varen/design/previews/cut_detail.png",
+          "bytes": 1894826,
+          "sha256": "3ae9fe559c66581839deb935f0d647b8c675a8825793f31c9a61c996412e8fb7"
+        },
+        {
+          "path": "varen/design/previews/detail.png",
+          "bytes": 1608663,
+          "sha256": "3bd0f8069fe83596f62f9184a6bb8a99d34c500b3fdae58283f18f27f6e22c32"
+        },
+        {
+          "path": "varen/design/previews/hero-modern.png",
+          "bytes": 1724975,
+          "sha256": "ecc3ebe3962bb16f40227269641acee1f8e1c36ccbd726b579c076ddfdda3dd9"
+        },
+        {
+          "path": "varen/design/previews/mobile.png",
+          "bytes": 1748069,
+          "sha256": "834cd9cffc41b7870ac9836a68238a6b0bebb3724de9bbeaea13531a1ec2e1ce"
+        },
+        {
+          "path": "varen/design/previews/wardrobe_footer.png",
+          "bytes": 1509535,
+          "sha256": "e548f292be95a2909be2174871b2af5707278c9fec6e154fc10f8ba3f690d4cc"
+        },
+        {
+          "path": "varen/qa/final-collection.png",
+          "bytes": 760555,
+          "sha256": "6f187d19b7e771d0dc05a10cc92f31b78ed15ba3de666700eff2872fd985ec0a"
+        },
+        {
+          "path": "varen/qa/final-detail.png",
+          "bytes": 659357,
+          "sha256": "ea64237f694e679098296d5117f940b72e839d5f5922321e1612db15776cd7bd"
+        },
+        {
+          "path": "varen/qa/final-details-section.png",
+          "bytes": 828849,
+          "sha256": "8b35afffc691224311d81476725236d2f96a66e7c47f9113d2bbf07e5ea0078e"
+        },
+        {
+          "path": "varen/qa/final-mobile-detail.png",
+          "bytes": 180881,
+          "sha256": "7eae2727306b55cbb08b730acd7ca30895631d7ffad85ec775c80f6fc4af89b2"
+        },
+        {
+          "path": "varen/qa/final-mobile-full.png",
+          "bytes": 1029385,
+          "sha256": "f277a54aeffa28299ba6cd45bb92e1029d093968beae1c7fc7494ceea6221c64"
+        },
+        {
+          "path": "varen/qa/final-wardrobe.png",
+          "bytes": 440116,
+          "sha256": "83738f68b2676c875750d4088804e05bce0502f3b5759852b99682519e91e05b"
+        },
+        {
+          "path": "varen/qa/final-width-1280.png",
+          "bytes": 478948,
+          "sha256": "12f416c26d728ef1b344c73eba32f7225eacf30185a041e3b5af2a62535c09bb"
+        },
+        {
+          "path": "varen/qa/final-width-1440.png",
+          "bytes": 576355,
+          "sha256": "3b30dfbd2c7f87d1eff1ff98d5d947a3c0b4e6bb8de240bb8420ef58225a534e"
+        },
+        {
+          "path": "varen/qa/final-width-1920.png",
+          "bytes": 701581,
+          "sha256": "f1f591c2523c3741a0f945d9b9ed56f839f29d47ec2bd33cb9b3789a7603e179"
+        },
+        {
+          "path": "varen/qa/final-width-320.png",
+          "bytes": 160759,
+          "sha256": "d3ec3f6905487f6d3f2a651335f6618f519f6c93a9a170211290898a73c13805"
+        },
+        {
+          "path": "varen/qa/final-width-390.png",
+          "bytes": 212960,
+          "sha256": "818e7685f5313420b87b8400854c7ba35bf40668ab1e335dd3ae08d7e1292136"
+        },
+        {
+          "path": "varen/qa/final-width-768.png",
+          "bytes": 322506,
+          "sha256": "41d130185b842b2a675e0cd01bfd78f651279c9c2f6a7ca116f438d9de544d02"
+        },
+        {
+          "path": "varen/qa/motion-and-contrast.json",
+          "bytes": 496,
+          "sha256": "6c929e9e934ce77fe8ed73c30c34d1e6f9afd16657c3828e69bde7da9acb7233"
+        },
+        {
+          "path": "varen/qa/scroll-demo.webm",
+          "bytes": 1074014,
+          "sha256": "40e728b1f16de5275ec4f875c8c09eb546de26eda8c02a877fd45b826cf7c1b9"
+        },
+        {
+          "path": "varen/qa/scroll-performance.json",
+          "bytes": 17170,
+          "sha256": "4ef4d68051bc3a8f98e46cfd2163857e670b68c9f41e08216d4ac09106e1fc51"
+        },
+        {
+          "path": "varen/qa/scroll-trace.zip",
+          "bytes": 12004471,
+          "sha256": "d6e8064774849cb885344df07b373ae015f23c28ec2ac9eb1f178ae024a23cd3"
+        },
+        {
+          "path": "varen/qa/verification.json",
+          "bytes": 6378,
+          "sha256": "ab92f2cae632aff7929386d64aa3cd8d84be99a83178b76f4fa8f7caf6572aab"
+        },
+        {
+          "path": "varen/qa/VERIFICATION.md",
+          "bytes": 4158,
+          "sha256": "1a09384750239201185d695026e11096064d8cb958c9f53f00feb9766c864e16"
+        },
+        {
+          "path": "varen/.hallmark/log.json",
+          "bytes": 1122,
+          "sha256": "74661b41eab48dd5b5dcf0a6766b1d1eb1976a22c04ebf4f87ab749e61216044"
+        },
+        {
+          "path": "varen/.hallmark/preflight.json",
+          "bytes": 485,
+          "sha256": "b24e87733446c04e70cddcd2be6cb1ec9a3f89fefe2b43591e0315bce21d7d4b"
+        },
+        {
+          "path": "varen/DELIVERY-MANIFEST.json",
+          "bytes": 15053,
+          "sha256": "f290b96cc7658c81d3aa6862e7a4511cf29fb84f568d4f32a19d1d5e077fe223"
+        }
+      ],
+      "omissions": [
+        "Original ZIP remains outside repository/deployment.",
+        "Standalone lockfile, Vite/TypeScript config and startup cmd not executed or imported. Package claims retained only in provenance.",
+        "Upstream QA screenshots/video/scroll-trace.zip and .hallmark metadata omitted; JSON/Markdown reports retained as historical evidence.",
+        "Design references and original PNGs preserved only in provenance."
+      ],
+      "adaptations": [
+        "Independent HTML, base-aware assets, shared Collection return, gallery/index/credits and sitemap.",
+        "Root dependency versions retained; @gsap/react replaced by local gsap.context cleanup adapter.",
+        "Skip Lenis updates while document is hidden."
+      ]
     }
   ]
 }

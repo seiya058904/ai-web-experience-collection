@@ -226,3 +226,7 @@ PARALLAX's four lossless WebP derivatives retain all original PNGs. Alpha and no
 ## Batch E delivery derivatives (25 October 2026)
 
 Five new entrance previews (640/960/1280 WebP, q90) are resized derivatives of interface-cleaned captures of the five new runtimes; no upscaled or retouched artwork is introduced and the full-size captures are the deployed `social.jpg` files. Their source and derivative hashes are recorded in `provenance/collection/responsive-previews.json`. The five new works reuse existing font URLs where the font binaries are byte-identical (Archivo from GLAZE, Manrope Variable from FUSION, DM Sans from FORM, Cormorant 400 from CHRONOS, the Cormorant italic from OPTIC, Fraunces from COUNTERFORM); only Anton and Source Sans 3 add new homepage font requests.
+
+## VAREN — Presence, precisely cut.
+
+Supplied contemporary tailoring catalogue, with AI-generated garment concepts, original image prompts/PNGs, Sentient (supplied ITF Free Font License) and Hanken Grotesk (SIL OFL). No overall application license is declared. All runtime media and font binaries are preserved byte-for-byte. Original ZIP: `VAREN-source.zip`, 51,265,033 bytes, 98 entries, SHA-256 `cf82a43eef3782b093736056c50995dca3857f9e097c095accb8f576e64a7ee4`. Root React 19.2.6, Lenis 1.3.26 and GSAP 3.15.0 are reused; @gsap/react is replaced by a scoped local cleanup adapter. Source records stay in `provenance/varen/upstream/`; deployed notice is `public/varen/NOTICE.md`.
