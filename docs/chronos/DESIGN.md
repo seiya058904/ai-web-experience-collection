@@ -261,7 +261,7 @@ Sound begins off and requires explicit activation. Its active state is champagne
 
 **Character:** an observation beside the mechanism. The 4 Hz serif value, short divider and small sans-serif label explain the nominal balance frequency. The separate IBM Plex Mono clock shows mechanical seconds. Its fine pulse line uses champagne.
 
-The closer-study action switches ambient mechanical advance between ⅛ and ¹⁄₃₂ speed. The camera and scroll-induced phase remain responsive to the visitor. Compact views give the clock a local dark reading gradient; short phones also remove its pulse line and rate sublabel. Small supplementary callouts are hidden in the final shallow landscape rule.
+While the live mechanism is running, the closer-study action switches ambient mechanical advance between ⅛ and ¹⁄₃₂ speed. When ambient motion is paused, reduced motion is active, or image fallback is in use, the same position offers **Read the escapement**, opening and focusing the Oscillation transcript. The selected live speed is retained for recovery. Mechanical seconds are hidden in reduced motion and image fallback; a fixed image does not promise a live clock. The camera and scroll-induced phase remain responsive to the visitor. Compact views give the live clock a local dark reading gradient; short phones also remove its pulse line and rate sublabel. Small supplementary callouts are hidden in the final shallow landscape rule.
 
 ### Dialogs and reading view
 
@@ -271,7 +271,7 @@ The closer-study action switches ambient mechanical advance between ⅛ and ¹�
 
 **Character:** one mechanism carried between views. One page-level Lenis instance, one ScrollTrigger and one GSAP ticker coordinate the persistent canvas and HTML copy. The `WatchScene` receives progress and time rather than creating its own scrolling or frame loop.
 
-Each interval holds its composition for the first 28%, then transitions and settles by 85%. Pausing freezes ambient time while preserving scroll access; reduced motion selects static chapter and mechanism poses. Changing that preference explicitly stops any old Lenis animation before layout measurements change. A still edition keeps the story and controls available when live rendering cannot be established. The exact kinematic model and its visual simplifications are recorded in [MOTION.md](MOTION.md).
+Each interval holds its composition for the first 28%, then transitions and settles by 85%. Pausing freezes ambient time while preserving scroll access; reduced motion selects static chapter and mechanism poses. Changing that preference explicitly stops any old Lenis animation before layout measurements change. The image edition uses actual model captures for Energy, Transmission and Oscillation, the existing watch artwork for Time/Chronos and craft artwork for Craft. Its images and clock remain still, chapter scrolling and reading remain available, and speed/pause controls describe their available behavior. A solid graphite status surface above transport distinguishes image fallback, reduced motion and ambient pause. The exact kinematic model and its visual simplifications are recorded in [MOTION.md](MOTION.md); current evidence is in [MODE-AUDIT.md](MODE-AUDIT.md).
 
 ## Do's and Don'ts
 
@@ -294,3 +294,7 @@ Each interval holds its composition for the first 28%, then transitions and sett
 - Don't move essential copy into textures, photographs or canvas-only labels.
 - Don't describe generated photographic detail or illustrative geometry as a verified manufactured calibre.
 - Don't claim a fixed frame rate, a native 4K drawing buffer or unperformed device verification.
+
+## Observational copy — 2026-10-25
+
+Craft now reads “Light traces the bevel. Brush marks follow the surface.” It names the highlights and brushed grain already present in the authored plate. The finale and transcript use “A wound spring. Measured beats.”, recalling the earlier barrel and escapement chapters rather than repeating ORBITAL's old generic slogan. No timing, model or image changed in this edit. See the Batch D audit for six-size browser evidence.

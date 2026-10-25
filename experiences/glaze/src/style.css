@@ -93,6 +93,14 @@ html[data-study="5"] .exhibit-controls { color: #fff8ee; }
 .cobalt-word { position: absolute; top: 29.8%; left: 1.9%; font-size: 22.3vw; font-weight: 750; letter-spacing: -.047em; line-height: .9; }
 .cobalt-foreground { position: absolute; inset: 0; mask-image: url('/glaze/media/cobalt-mask.webp'); mask-size: cover; mask-position: 50% 50%; mask-repeat: no-repeat; }
 .title--cobalt { top: 19%; left: var(--gutter); font-size: 2.1vw; line-height: 1.08; font-weight: 350; letter-spacing: -.035em; }
+.scene--cobalt .scene-aside { left: var(--gutter); right: auto; bottom: calc(var(--edge-bottom) + 76px); max-width: 25ch; text-align: left; }
+/* Only the reading/control footprint is protected; the glaze stays unshaded. */
+.scene--cobalt .scene-aside::before,
+html[data-study="2"] .continue::before {
+  content: ''; position: absolute; inset: -14px -18px; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse, #122b3bf2 24%, #122b3bd9 48%, transparent 73%);
+}
+.scene--cobalt .scene-aside, html[data-study="2"] .continue { isolation: isolate; }
 .scene--oxblood { --scene-bg: #290a05; --scene-ink: #f5eedb; }
 .title--oxblood { top: 27%; left: 2.6%; font-size: 13.8vw; line-height: .88; }
 .scene--ivory { --scene-bg: #ddd5c7; --scene-ink: #42392c; }
@@ -115,7 +123,7 @@ html[data-study="5"] .exhibit-controls { color: #fff8ee; }
 .study-progress span { display: block; width: 29px; height: 2px; background: currentColor; transform: scale(.62, .5); opacity: .38; transition: transform .25s, opacity .25s; }
 .study-progress button[aria-current] span { transform: scale(1); opacity: 1; }
 .study-progress button:hover span { opacity: 1; }
-.continue { position: absolute; display: flex; flex-direction: row; align-items: flex-end; gap: 23px; right: var(--gutter); bottom: var(--edge-bottom); font-size: var(--ui-size); font-weight: 350; letter-spacing: .015em; min-height: 44px; }
+.continue { position: absolute; display: flex; flex-direction: row; align-items: flex-end; justify-content: flex-end; gap: 23px; right: var(--gutter); bottom: var(--edge-bottom); font-size: var(--ui-size); font-weight: 350; letter-spacing: .015em; min-height: 44px; min-width: 44px; }
 .continue svg { width: 20px; height: 55px; transition: transform .35s ease; }
 .continue:hover svg { transform: translateY(5px); }
 .continue.is-last { visibility: hidden; pointer-events: none; }
@@ -198,7 +206,8 @@ html[data-study="5"] .exhibit-controls { color: #fff8ee; }
   .cobalt-foreground { display: none; }
   .cobalt-base { object-position: 72% center; }
   .title--cobalt { top: 28%; left: var(--gutter); font-size: 6vw; }
-  .scene--cobalt .scene-aside, .scene--oxblood .scene-aside { bottom: 7%; }
+  .scene--cobalt .scene-aside { bottom: calc(var(--edge-bottom) + 76px); }
+  .scene--oxblood .scene-aside { bottom: 7%; }
   .title--oxblood { top: 12.5%; left: var(--gutter); font-size: 19vw; }
   .scene--oxblood .scene-image { object-position: center center; }
   .title--ivory { top: 12.8%; left: var(--gutter); font-size: 19vw; }

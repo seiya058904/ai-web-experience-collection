@@ -101,5 +101,5 @@ test('the no-JavaScript fallback keeps a base-relative Collection exit too', asy
   const page = await read('pages/glasshouse/index.html');
   const fallback = page.match(/<noscript>[\s\S]*?<\/noscript>/);
   assert.ok(fallback, 'the page must keep its no-JavaScript fallback');
-  assert.match(fallback[0], /class="collection-return"[^>]*href="%BASE_URL%"/, 'the fallback exit must stay base-relative');
+  assert.match(fallback[0], /class="collection-return"[^>]*href="%BASE_URL%#world-glasshouse"/, 'the fallback exit must retain the project base and readable source-work anchor');
 });

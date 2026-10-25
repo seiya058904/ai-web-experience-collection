@@ -12,7 +12,7 @@ import { OrbitMark, SoundIcon, MenuIcon, ReplayIcon, ScrollIcon, EngineeringOver
 export default function Experience() {
   const root = useRef<HTMLElement>(null);
   const controller = useRef<MissionController | null>(null);
-  const intent = useRef({reduced:undefined as boolean|undefined,indexOpen:false,creditsOpen:false,destination:'mars' as Destination,subsystem:'propulsion' as Subsystem});
+  const intent = useRef({reduced:undefined as boolean|undefined,indexOpen:false,creditsOpen:false,destination:'mars' as Destination,subsystem:'overview' as Subsystem});
   const soundIntent = useRef(0);
   const [active, setActive] = useState(0);
   const [indexOpen, setIndexOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Experience() {
   const [sound, setSound] = useState(false);
   const [reduced, setReduced] = useState(false);
   const [destination, setDestination] = useState<Destination>('mars');
-  const [subsystem, setSubsystem] = useState<Subsystem>('propulsion');
+  const [subsystem, setSubsystem] = useState<Subsystem>('overview');
 
   useEffect(() => {
     let cancelled = false;
@@ -52,13 +52,10 @@ export default function Experience() {
   }
   function toggleMotion() { const next = !(intent.current.reduced??reduced);intent.current.reduced=next;setReduced(next);controller.current?.setReduced(next); }
 
-  return <main ref={root} className="mission-root" data-scene="earth" data-phase="hold" data-renderer="loading">
+  return <main ref={root} className="mission-root" data-scene="earth" data-phase="hold" data-renderer="loading" data-subsystem={subsystem}>
     <a className="skip-link" href="#mission-reading">Read the mission</a>
     <header className="site-header">
       <button className="wordmark" onClick={() => goTo(0)} aria-label="ORBITAL — return to Earth"><OrbitMark/><span>ORBITAL</span></button>
-      <nav className="primary-nav" aria-label="Main navigation">
-        <button onClick={() => goTo(0)}>Mission</button><button onClick={() => goTo(4)}>The vehicle</button><button onClick={() => goTo(6)}>Destinations</button>
-      </nav>
       <div className="header-actions">
         <CollectionReturn />
         <button className="sound-button" onClick={toggleSound} aria-pressed={sound} aria-label={sound ? 'Mute ambient sound' : 'Enable ambient sound'} title={sound ? 'Sound on' : 'Sound off'}><SoundIcon enabled={sound}/></button>
@@ -91,26 +88,26 @@ export default function Experience() {
             <div className="chapter-copy">
               {i>0 && i<7 && <p className="chapter-kicker mono"><span>0{i+1}</span><i/>{chapter.label}</p>}
               {i===0 ? <h1>{chapter.title.map(line=><span key={line}>{line}</span>)}</h1> : <h2>{chapter.title.map(line=><span key={line}>{line}</span>)}</h2>}
-              <p className="chapter-description">{chapter.description}</p>
+              {i!==4 && <p className="chapter-description">{chapter.description}</p>}
               {i===0 && <button className="begin-button" onClick={() => goTo(1)}><span>Begin the mission</span><span className="button-orbit" aria-hidden="true"/></button>}
               {i===1 && <div className="flight-metrics"><div><span>THRUST</span><strong className="ice">NOMINAL</strong></div><div><span>VELOCITY</span><strong><b data-flight-speed>0000</b> <small>M/S</small></strong></div><div><span>ALTITUDE</span><strong><b data-flight-altitude>000</b> <small>KM</small></strong></div></div>}
               {i===2 && <div className="science-note"><p className="mono orange">MAX-Q / DYNAMIC PRESSURE</p><p>Where speed meets dense air, the structural load peaks. After Max-Q, the pressure begins to fall.</p><div className="pressure-graph" aria-hidden="true"><svg viewBox="0 0 320 55" fill="none"><path d="M0 48h320M0 0v50" stroke="#78838b" strokeOpacity=".3"/><path d="M0 48C35 48 50 45 72 30S99 0 118 9s24 30 65 34 80 4 137 5" stroke="currentColor" strokeWidth="1.5"/><circle cx="108" cy="8" r="3" fill="currentColor"/><path d="M108 8v40" stroke="currentColor" strokeDasharray="2 4" opacity=".4"/></svg></div></div>}
               {i===3 && <div className="separation-state mono"><span className="separation-dot"/>STAGE SEPARATION<div>LESS MASS. MORE POSSIBILITY.</div></div>}
-              {i===4 && <Tabs value={subsystem} onValueChange={changeSubsystem} className="machine-tabs" orientation="vertical"><TabsList variant="line" aria-label="Vehicle systems">{SUBSYSTEMS.map((s,j)=><TabsTrigger key={s.id} value={s.id}><span className="mono">0{j+1}</span>{s.name}</TabsTrigger>)}</TabsList>{SUBSYSTEMS.map(s=><TabsContent key={s.id} value={s.id}><p>{s.description}</p><span className="mono ice">{s.value}</span></TabsContent>)}</Tabs>}
+              {i===4 && <div className="machine-tabs"><div className="system-choices" role="group" aria-label="Vehicle systems">{SUBSYSTEMS.map(s=><button key={s.id} aria-pressed={subsystem===s.id} onClick={()=>changeSubsystem(s.id)}>{s.name}</button>)}</div><div className="system-explanation" aria-live="polite">{SUBSYSTEMS.map(s=><div key={s.id} className="system-copy" data-active={s.id===subsystem} aria-hidden={s.id!==subsystem}><p>{s.description}</p><span className="mono ice">{s.value}</span></div>)}<small>Diagrammatic paths · not a simulation.</small></div></div>}
               {i===5 && <><div className="orbital-speed"><strong>7.7</strong><span className="mono">KM / S</span></div><p className="reference-caption">Approximate orbital speed at 400 km altitude.</p><p className="orbit-explanation">Gravity is still here. You and your spacecraft are falling together.</p></>}
               {i===6 && <Tabs value={destination} onValueChange={changeDestination} className="destination-tabs"><TabsList variant="line" aria-label="Choose a destination"><TabsTrigger value="moon">MOON</TabsTrigger><TabsTrigger value="mars">MARS</TabsTrigger></TabsList><TabsContent value="mars"><p className="destination-value">55–400 <small>MILLION KM</small></p><p>The Earth–Mars distance is always changing.<br/>Even light takes about 3–22 minutes, one way.</p></TabsContent><TabsContent value="moon"><p className="destination-value">384,400 <small>KM</small></p><p>Our nearest world. A quarter of a million miles away.<br/>Average distance from Earth.</p></TabsContent></Tabs>}
               {i===7 && <button className="replay-button" onClick={() => goTo(0)}>Replay the mission<ReplayIcon/></button>}
             </div>
             {i===0 && <div className="earth-annotation mono"><span>OUR POINT OF DEPARTURE</span><strong>EARTH</strong><span>One planet. Everything we know.</span></div>}
-            {i===4 && <div className="machine-callouts mono"><span className="callout-payload">PAYLOAD<i/></span><span className="callout-stage">UPPER STAGE<i/></span><span className="callout-booster">BOOSTER<i/></span></div>}
+            {i===4 && subsystem==='overview' && <div className="machine-callouts mono" aria-hidden="true"><span className="callout-payload">PAYLOAD<i/></span><span className="callout-stage">UPPER STAGE<i/></span><span className="callout-booster">BOOSTER<i/></span></div>}
             {i===5 && <div className="orbit-annotation mono">LOW EARTH ORBIT<span>ALT / ~400 KM</span><span>PERIOD / ~93 MIN</span></div>}
             {i===7 && <div className="ending-footer"><span className="mono">ORBITAL / BEYOND THE FAMILIAR</span><button onClick={() => openCredits(true)}>Sources & credits</button></div>}
           </section>)}
         </div>
 
-        <aside className="chapter-rail" aria-label="Chapter navigation">{CHAPTERS.map((c,i)=><button key={c.id} onClick={() => goTo(i)} aria-label={'Chapter '+(i+1)+': '+c.name} aria-current={i===active?'step':undefined}><span>0{i+1}</span><i/></button>)}</aside>
         <div className="mission-caption"><span className="current-chapter mono"><span className="orange">0{active+1}</span><i>/</i>{CHAPTERS[active].name.toUpperCase()}</span><span className="scroll-hint mono"><ScrollIcon/>SCROLL TO EXPLORE</span><button className="simulation-note mono" onClick={() => openCredits(true)}>ILLUSTRATIVE MISSION</button></div>
         <nav className="mission-timeline" aria-label="Mission timeline"><div className="timeline-base"/><div className="timeline-progress" data-timeline-progress/>{CHAPTERS.map((c,i)=><button key={c.id} onClick={() => goTo(i)} aria-current={active===i?'step':undefined}><i/><span className="mono">{c.name.toUpperCase()}</span></button>)}</nav>
+        <nav className="compact-progress" aria-label="Mission progress"><button onClick={()=>goTo(active-1)} disabled={active===0} aria-label="Previous chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><button className="progress-index" onClick={()=>openIndex(true)} aria-haspopup="dialog" aria-expanded={indexOpen}><span className="mono orange">0{active+1} / 08</span><span>{CHAPTERS[active].name}</span><span className="progress-open">Index</span></button><button onClick={()=>goTo(active+1)} disabled={active===7} aria-label="Next chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></nav>
       </div>
     </div>
 

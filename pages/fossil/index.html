@@ -24,15 +24,15 @@
   <link rel="icon" href="/fossil/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fossil/assets/images/hero-slab.webp" as="image">
   <link id="fossil-styles" rel="stylesheet" href="../../experiences/fossil/src/style.css">
-  <script src="%BASE_URL%fossil/data/fossil-volume.js" defer></script>
   <script type="module" src="../../experiences/fossil/src/app.js"></script>
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
 <body>
   <a class="skip-link" href="#chapter-01">Enter the experience</a>
   <header class="masthead">
     <a href="#chapter-01" class="wordmark" aria-label="FOSSIL, return to the specimen">FOSSIL</a>
     <span class="masthead-title">Deep time in stone</span>
-    <nav class="masthead-controls" aria-label="Experience controls"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><button class="index-toggle text-control" id="open-index" aria-haspopup="dialog" aria-controls="index-dialog">Index <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></nav>
+    <nav class="masthead-controls" aria-label="Experience controls"><a class="collection-return" href="%BASE_URL%#world-fossil" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><button class="index-toggle text-control" id="open-index" aria-haspopup="dialog" aria-controls="index-dialog">Index <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></button></nav>
   </header>
 
   <div id="world" aria-hidden="true">
@@ -48,7 +48,7 @@
       <canvas id="scan-canvas"></canvas>
       <div id="scan-plane"><span>Section</span></div>
     </div>
-    <div class="visual" data-visual="7"><canvas id="volume-canvas"></canvas></div>
+    <div class="visual" data-visual="7"><img class="imaging-placeholder" src="/fossil/assets/images/specimen.webp" alt="The specimen plate remains visible while its virtual sections prepare."><canvas id="volume-canvas"></canvas></div>
     <div class="visual visual-archive" data-visual="8">
       <img id="archive-drawer" src="/fossil/assets/images/archive-drawer.webp" alt="" draggable="false">
       <div class="physical-record"><span>FSL—001</span><span>Ammonite study</span><span>Interpretive specimen</span><span>Collection: Deep Time</span></div>
@@ -145,6 +145,7 @@
           <button data-slice="62" aria-label="View section 63"><canvas width="160" height="160"></canvas></button>
         </div>
         <p class="scan-note">Interpretive sections · synthetic volume<span id="scan-status" role="status"></span></p>
+        <p class="imaging-status" role="status">Preparing virtual sections. The specimen plate remains visible.</p>
         <div class="scan-range-block">
           <input id="section-range" class="fine-range" type="range" min="1" max="72" value="36" step="1" aria-label="Select a virtual section through the ammonite">
           <div class="range-heading"><label for="section-range">Section <output id="section-output">036</output> / 072</label><button class="quiet-link" id="resume-scan" hidden>Follow scroll</button></div>
@@ -157,6 +158,7 @@
       <div class="composition reconstruction-copy">
         <h2 id="title-08">A shape returns.<br><em>Not a life.</em></h2>
         <p class="visually-hidden">Contours and section planes assemble around an incomplete shell volume. Missing patches remain absent. Switch between outline and volume.</p>
+        <p class="imaging-status" role="status">Preparing virtual sections. The specimen plate remains visible.</p>
         <div class="reconstruction-modes" role="group" aria-label="Reconstruction display">
           <button class="underlined" data-volume-mode="outline" aria-pressed="false">Outline</button><button class="underlined" data-volume-mode="volume" aria-pressed="true">Volume</button>
         </div>
@@ -212,6 +214,6 @@
     <p class="record-notices"><a href="%BASE_URL%fossil/NOTICE.md">Sources &amp; notices</a> · <a href="%BASE_URL%fossil/LICENSE.txt">Original source license</a></p>
     <p class="record-colophon">FOSSIL — Deep Time in Stone<br>A digital work in geology, preservation and interpretation.</p>
   </dialog>
-  <noscript><div class="noscript-note"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><p>The full scroll and imaging experience uses JavaScript. The ten-chapter text and production imagery remain available below.</p><p><a href="%BASE_URL%fossil/NOTICE.md">Sources and interpretation notes</a></p></div></noscript>
+  <noscript><div class="noscript-note"><a class="collection-return" href="%BASE_URL%#world-fossil" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a><p>The full scroll and imaging experience uses JavaScript. The ten-chapter text and production imagery remain available below.</p><p><a href="%BASE_URL%fossil/NOTICE.md">Sources and interpretation notes</a></p></div></noscript>
 </body>
 </html>

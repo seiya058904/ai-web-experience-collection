@@ -30,6 +30,20 @@ function initializeFossil() {
   let renderedSection = 35, renderedReveal = .5, renderedMode = 0, renderedMix = 0;
   const pointer = { x: .5, y: .5, sx: .5, sy: .5, px: 0, py: 0, down: false, inside: false };
   const images = {};
+  const imagingControls = Array.from(document.querySelectorAll('.scan-contact-sheet button, #section-range, #resume-scan, [data-volume-mode]'));
+  imagingControls.forEach(control => { control.disabled = true; });
+  document.body.dataset.imaging = 'loading';
+  // Start the original complete data immediately, without holding the module's
+  // interaction handlers behind a parser-deferred multi-megabyte script.
+  const volumeReady = new Promise(resolve => {
+    if (window.FOSSIL_VOLUME) { resolve(true); return; }
+    const script = document.createElement('script');
+    script.src = import.meta.env.BASE_URL + 'fossil/data/fossil-volume.js';
+    script.async = true;
+    script.onload = () => resolve(Boolean(window.FOSSIL_VOLUME));
+    script.onerror = () => resolve(false);
+    document.head.append(script);
+  });
   const assetPaths = { specimen:'specimen',strata:'strata',preservation:'preservation',exposure:'exposure' };
   const geoCanvasIds = ['strata-canvas','burial-canvas','preservation-canvas','exposure-canvas'];
   const preserveDescriptions = [
@@ -108,16 +122,29 @@ function initializeFossil() {
         preservationImage:images.preservation, exposureImage:images.exposure
       }));
     }
-    if (typeof FossilImaging === 'function') {
+    imageReady = true;
+    // New surfaces need their existing dimensions, not a scroll remeasurement.
+    geologies.forEach(g => g.resize(w,h,dpr));
+    geologyKeys.fill('');
+    document.body.dataset.ready = 'true';
+    force = true;
+    const volumeLoaded = await volumeReady;
+    if (disposed) return;
+    if (volumeLoaded && typeof FossilImaging === 'function') {
       imaging = new FossilImaging({
         scanCanvas:$('scan-canvas'), volumeCanvas:$('volume-canvas'),
         thumbs:Array.from(document.querySelectorAll('.scan-contact-sheet canvas')),
         onReady:() => { force = true; }
       });
     }
-    imageReady = true;
-    layout();
-    document.body.dataset.ready = 'true';
+    const ready = Boolean(imaging?.ready);
+    document.body.dataset.imaging = ready ? 'prepared' : 'unavailable';
+    imagingControls.forEach(control => { control.disabled = !ready; });
+    document.querySelectorAll('.imaging-status').forEach(status => {
+      status.hidden = ready;
+      if (!ready) status.textContent = 'Virtual sections unavailable. Specimen plate shown; reload to try again.';
+    });
+    if (ready) imaging.resize(w,h,dpr);
     force = true;
   }
   function setActive(index) {
@@ -316,6 +343,8 @@ function initializeFossil() {
         drawEnding(p,time);
       }
     }
+    // Publish readiness only after this clock has painted the current scene.
+    if (imaging?.ready) document.body.dataset.imaging = 'ready';
     lastPosition=pos;force=false;dirtyPointer=false;
   }
   function frame(time) {

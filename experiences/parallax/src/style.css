@@ -111,7 +111,11 @@ body[data-scene="4"] .masthead,body[data-scene="4"] .exhibition-footer,body[data
 body.index-open{overflow:hidden}
 body.focus-artwork .scene-copy,body.focus-artwork .hero-lettering,body.focus-artwork .exhibition-footer,body.focus-artwork .journey-line{opacity:0!important;pointer-events:none!important}
 body.focus-artwork .scene-copy a,body.focus-artwork .scene-copy button,body.focus-artwork .scene-copy input{pointer-events:none}
-body.still-view .hero-sculpture{opacity:1}
+body.still-view:not(.has-still-plate) .hero-sculpture{opacity:1}
+.still-plate{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;z-index:3;pointer-events:none}
+.index-dialog .render-notice{position:relative;inset:auto;transform:none;width:auto;max-width:none;margin:20px 0;padding:12px 0;border-top:1px solid currentColor;background:transparent;gap:20px}
+.index-dialog .render-notice button{min-height:44px}
+body.still-view[data-scene="0"] .scene-name{display:block}
 .no-script{position:relative;margin:0;padding:100vh var(--gutter) 40px;z-index:10}
 html:not(.enhanced) .chapter:not(:first-of-type){background:rgba(233,226,214,.95)}
 html:not(.enhanced) .chapter:not(:first-of-type) .scene-copy h2,html:not(.enhanced) .chapter:not(:first-of-type) .scene-note{position:relative;inset:auto;max-width:90%;margin:30px 0}

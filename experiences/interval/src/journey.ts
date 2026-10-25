@@ -58,6 +58,8 @@ export class SpatialJourney {
   private paused = false;
   private destroyed = false;
   private pendingLabel: string | null = null;
+  private refreshPending = false;
+  private lastScrollAt = 0;
   private resizeTimer: ReturnType<typeof setTimeout> | undefined;
   private announced = -1;
   private currentPair = "";
@@ -166,7 +168,10 @@ export class SpatialJourney {
     });
   }
 
-  private updateScroll = () => ScrollTrigger.update();
+  private updateScroll = () => {
+    this.lastScrollAt = performance.now();
+    ScrollTrigger.update();
+  };
 
   private tick = (seconds: number) => {
     if (this.destroyed || document.hidden) {
@@ -176,6 +181,9 @@ export class SpatialJourney {
     if (this.paused) {
       this.previousTime = seconds;
       return;
+    }
+    if (this.refreshPending && !this.lenis.isScrolling && Math.abs(this.lenis.targetScroll - this.lenis.actualScroll) < .5 && performance.now() - this.lastScrollAt > 120) {
+      this.performRefresh();
     }
     this.lenis.raf(seconds * 1000);
     if (this.previousTime)
@@ -479,7 +487,14 @@ export class SpatialJourney {
   }
 
   refresh() {
+    // Fonts and images can finish while wheel input still has travel to consume.
+    // Keep the request on this journey's clock instead of replacing its motion.
+    this.refreshPending = true;
+  }
+
+  private performRefresh() {
     if (this.destroyed) return;
+    this.refreshPending = false;
     const pendingLabel = this.pendingLabel;
     const position = this.playhead.position / scenes.length;
     const target = clamp(

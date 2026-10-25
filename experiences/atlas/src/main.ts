@@ -81,6 +81,7 @@ let raf = 0,
   lastChapter = -1,
   lastStore = 0,
   ready = false,
+  readingOnly = false,
   disposed = false;
 let renderDirty = true,
   lastRenderedProgress = -1;
@@ -130,8 +131,23 @@ function safeError(error: unknown) {
     : "The local data file could not be read.";
 }
 function showFailure(message: string) {
+  readingOnly = true;
+  ready = false;
+  cancelAnimationFrame(raf);
+  root.classList.add('reading-edition');
   $("failure").hidden = false;
-  $("failure-message").textContent = message;
+  $("failure-message").textContent = 'The interactive map is unavailable. This edition contains the geographic story and source notes; it does not display maps or selected layers.';
+  $("failure").dataset.reason = message;
+  $("open-index").setAttribute('aria-label', 'Open field notes');
+  $("open-index").querySelector('span')!.textContent = 'NOTES';
+  $("motion-toggle").hidden = true;
+  $("back-index").hidden = true;
+  $("journey").style.height = '0px';
+  const narrative = $("accessible-story");
+  narrative.classList.remove('sr-only');
+  narrative.classList.add('reading-story');
+  narrative.querySelector('[data-map-instructions]')?.remove();
+  $("failure").append(narrative);
   root.style.setProperty("--ink", "#29312d");
   root.style.setProperty("--muted", "#5d6861");
   status.textContent = "";
@@ -144,6 +160,7 @@ $("chapter-list").innerHTML = CHAPTERS.map(
     `<a href="#${c.id}" data-chapter="${i}"><span>${String(i + 1).padStart(2, "0")}</span><span>${c.name}</span>${icon}</a>`,
 ).join("");
 function setDialogView(view: "index" | "credits") {
+  if (readingOnly) view = 'credits';
   $("index-view").hidden = view !== "index";
   $("credits-view").hidden = view !== "credits";
   dialog.dataset.view = view;
@@ -733,7 +750,7 @@ function tick(now: number) {
   lastTime = now;
   scrollClock += elapsed;
   lenis.raf(scrollClock);
-  if (!ready) { raf = requestAnimationFrame(tick); return; }
+  if (!ready) { if (!readingOnly) raf = requestAnimationFrame(tick); return; }
   if (!quiet && !dialog.open) time += dt;
   const p = getProgress();
   lastP = p;
@@ -761,7 +778,7 @@ function tick(now: number) {
   raf = requestAnimationFrame(tick);
 }
 function resume() {
-  if (disposed) return;
+  if (disposed || readingOnly) return;
   cancelAnimationFrame(raf);
   lastTime = 0;
   raf = requestAnimationFrame(tick);
@@ -769,7 +786,7 @@ function resume() {
 addEventListener(
   "resize",
   () => {
-    if (!renderer) return;
+    if (!renderer || readingOnly) return;
     const oldWidth = width,
       oldHeight = height,
       previousP = lastP;
@@ -822,7 +839,7 @@ async function init() {
       readGrid(dataBase + `elevation-${size}.bin`, size),
     ]);
     geo = new Geography(meta, heights, size);
-    if (disposed) return;
+    if (disposed || readingOnly) return;
     terrain = new TerrainLayer(geo);
     map = new MapLayer(geo);
     scene.add(terrain.group, map.group);
@@ -838,7 +855,7 @@ async function init() {
       }),
       prepareContourLabels(),
     ]);
-    if (disposed) return;
+    if (disposed || readingOnly) return;
     map.resize(width, height);
     loaded.add("terrain");
     ready = true;

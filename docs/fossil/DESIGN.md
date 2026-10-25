@@ -297,3 +297,7 @@ Motion is calculated from one main clock and reversible chapter progress. The ex
 ## Collection integration
 
 The supplied design, imagery and ten-movement composition remain independent. Runtime ownership and base-aware resource/navigation adaptations are recorded in [ARCHITECTURE.md](ARCHITECTURE.md). [ACCEPTANCE.md](ACCEPTANCE.md) separates fresh integration checks from historical delivery QA; [IMPORT.json](../../provenance/fossil/IMPORT.json) contains source and final hashes. The first-scene gallery/social capture hides interface text only in the capture browser; it retains the actual generated specimen composition.
+
+## Batch C preparation
+
+The complete original volume data starts downloading immediately in an asynchronous classic script. It no longer blocks the interaction module. Photographic/geology readiness and scan readiness are separate: Scan/Reconstruct retain a labelled specimen plate and disable unavailable scan controls until all 72 sections are prepared. The existing render clock paints the current scene before removing the plate. A failed request keeps the plate and honest reload guidance. Creating the late surfaces does not remeasure Lenis or consume pending wheel travel. This is an interaction scheduling change, not a reduction in the original data or its interpretation.

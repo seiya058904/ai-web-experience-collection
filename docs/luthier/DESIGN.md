@@ -53,6 +53,12 @@ STRING uses consistently ordered samples, not disconnected replacements. CURVE i
 
 One Lenis with autoRaf disabled. GSAP ticker calls Lenis, then the one render routine; no other animation frame owner. ScrollTrigger writes the master score. Forward, reverse and arbitrary jumps reconstruct all state. Native resize, font/media readiness, pageshow, visibility restore and media-query changes synchronize geometry. Dynamic images use edge blending or native alpha; no broad tinted wash over varnish.
 
+Craft → Inside uses the carved treble f-hole, projected from the actual arched top through the current front/model/camera matrices. Its clip belongs to a full-stage `inside-reveal` wrapper; the photograph may retain its separate mobile crop and slow transform. The mobile reading shade belongs to that same clipped wrapper. Craft stays opaque outside incoming coverage until the aperture has covered the stage at story 3.14. The old sentence exits at 2.84–2.90, the aperture owns a short visual pause, and the new sentence enters at 2.98–3.10. These are scroll coordinates, with no additional time or progress smoothing. The photographic fallback uses a dissolve without claiming a registered model aperture. A model whose textures arrive during 2.5–3.14 waits to take over outside that interval.
+
+### Batch B explicit navigation
+
+The production baseline Replay crossed eight material/light chapters in roughly 0.66 seconds. Explicit choices more than one chapter away now land directly at the selected composition; adjacent choices retain their 1.5-second authored travel, including Craft → Inside. This changes only navigation through the existing Lenis coordinate. Manual scroll, registered apertures, copy timing, controls and the single GSAP clock retain their full score.
+
 ## Medium decisions
 
 True 3D is limited to the structural reveal where depth and separate parts are meaningful. Hero/wood/interior use production AI plates with native typography, compositing, masked light and live paths. Bow contact and acoustic curves are procedural. This deliberately avoids requiring a whole photoreal instrument renderer to match photographic surface quality.
@@ -64,3 +70,7 @@ docs/concepts contains the nine selected section reference screens. Generated co
 ## Collection integration
 
 The authored nine-scene composition and identity remain intact. The Collection retains one Lenis at interpolation 0.105 with its existing GSAP clock, disables wheel smoothing in reduced motion, uses namespaced local media and native Collection return, and retains the source/generated-image distinctions. The original prompt and PNG records live under provenance/luthier/assets-originals/; historical validation is preserved separately in UPSTREAM-VALIDATION.md.
+
+## Batch C late geometry refresh
+
+Font/image readiness marks measurement dirty. The existing GSAP ticker drains it only after Lenis has no active scroll, less than 0.5px remaining target travel and 120ms of settled scroll. It must not cancel unconsumed wheel input. Explicit chapter navigation retains its own necessary destination measurement. See the Batch C audit for release-during-input controls.

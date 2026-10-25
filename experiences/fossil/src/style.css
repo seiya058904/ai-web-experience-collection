@@ -30,3 +30,15 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 
 .js .chapter{transition:none!important}.masthead-controls{display:flex;align-items:center;gap:24px;pointer-events:auto}.record-notices{margin-top:32px;font:12px/1.8 var(--sans);color:var(--muted)}.record-notices a,.noscript-note a{text-decoration:underline;text-underline-offset:4px}.noscript-note p{margin-top:14px}@media(max-width:700px){.masthead-controls{gap:16px}.noscript-note .collection-return{font-size:11px!important;gap:7px}}
 @media(min-width:701px) and (max-width:900px) and (orientation:portrait){.visual-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(20,21,18,.96),rgba(20,21,18,.78) 37%,rgba(20,21,18,.3) 58%,transparent 77%)}}
+
+/* The complete specimen stays visible until the original scan data is ready. */
+.imaging-placeholder{left:35%;top:6.5%;width:64%;height:84%;object-fit:contain}
+body[data-imaging="ready"] .imaging-placeholder{display:none}
+body:not([data-imaging="ready"]) .visual-scan #scan-surface{left:35.5%;top:5.5%;width:62%;height:82%}
+body:not([data-imaging="ready"]) #scan-plane{display:none}
+.imaging-status{max-width:31ch;margin-top:14px;font-size:12px;line-height:1.6;color:var(--muted)}
+.js .imaging-status{position:absolute;left:var(--gutter);width:min(31ch,30vw);margin:0}
+.js .scan-copy .imaging-status{top:52vh}
+.js .reconstruction-copy .imaging-status{top:44vh}
+html:not(.js) .imaging-status{display:none}
+@media(max-width:700px){.imaging-placeholder{left:3.5%;top:36%;width:94%;height:46%}body:not([data-imaging="ready"]) .visual-scan #scan-surface{left:5.5%;top:32%;width:93%;height:47%}.imaging-status{font-size:11px}.js .imaging-status{width:calc(100% - 48px)}.js .scan-copy .imaging-status{top:29vh}.js .reconstruction-copy .imaging-status{top:37vh}}

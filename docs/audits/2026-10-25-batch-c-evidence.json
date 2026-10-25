@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-25",
+  "head": "eab9bc865a4092b16abbaf0ed4da651bcb8f7631",
+  "sourceState": "Uncommitted Batch A/B changes retained; scoped Batch C added. No commit or deployment.",
+  "evidenceRoot": "C:\\Users\\admin\\.codex\\tmp\\flagship-c-20261025",
+  "source": [
+    {
+      "path": "collection/styles.css",
+      "sha256": "d8febc0efc91eb00262c309186a3e17ddc9a547016c96a61de9f3ed4fd2053c2",
+      "baselineSHA256": "e2bbe8734b26aa4e145c6dd4adad5edbd73cebfcda19aaa40a5c5d096966cdce"
+    },
+    {
+      "path": "experiences/aeterna/src/main.js",
+      "sha256": "9eff17134f55253f1b2a239c066328aa25bf7852ab727f96ad523e0a951be45d",
+      "baselineSHA256": "144e61f3564ab0527eb2b24cdcbce68ffcbd00cec38db31ee2437c988495e8ba"
+    },
+    {
+      "path": "experiences/aeterna/src/spatial/index.js",
+      "sha256": "161f5f460d3fa69b87e5078294f884f4a5f330ac42440fba1e9987eed80f4779",
+      "baselineSHA256": "f55d9e186ce99da29f0eaa63889611a1c4d91d3d0bde67fd12cd4b3dff49065a"
+    },
+    {
+      "path": "experiences/aeterna/src/styles.css",
+      "sha256": "f4258dbc9e6709ee7436c48e6f295dd907f99ad4837f529922b4d066739da4cd",
+      "baselineSHA256": "a60da4e7803bd111106b76dce6fd498cafd2bba5b3e68268c14495f94d5c7f6b"
+    },
+    {
+      "path": "experiences/fossil/src/app.js",
+      "sha256": "9e3cc2cb2d58290300bf553841bffcbf038fa6e37e39465f1a04663d5624f98e",
+      "baselineSHA256": "1f3c6610c2372ac19618f28a2d8d510eab8623af6df5fe9c1a071bca82081fd8"
+    },
+    {
+      "path": "experiences/fossil/src/style.css",
+      "sha256": "b51031f16d8f44f744c6ec75719b043b5f328be76801f5ee3629eac9d64c0b22",
+      "baselineSHA256": "c99a6647108f04613fdca0e6c6db737248abf71c68d1c9d474e71413188748b1"
+    },
+    {
+      "path": "experiences/interval/src/journey.ts",
+      "sha256": "51cda3caa08fd0bfe984e294e175fec9ea441c0838e6e3495a56a6bc6b7666dc",
+      "baselineSHA256": "d3fd3cbcb5ab3c5b524c742b913436798ac443dd47687b724a2c60c0c15a3dc1"
+    },
+    {
+      "path": "experiences/luthier/src/main.ts",
+      "sha256": "3aa4c4d7b971569eda7b8b2719f617c24cc82ae8dabb1896d3575f4abed38e8b",
+      "baselineSHA256": "2cfebd871b86326926e1a59bec192ab28c4525491770034d37be184d59c895be"
+    },
+    {
+      "path": "experiences/parallax/src/app.js",
+      "sha256": "63397ae48cff2772d7602858f89fe50d56904b13dee8cebdea935d05d83ee141",
+      "baselineSHA256": "67b30d9be10a729be6f6bdd265c662f2ea075f6b5b507d881d5bab1193d9de12"
+    },
+    {
+      "path": "experiences/parallax/src/spatial.js",
+      "sha256": "4b14545da2c0686d1b888d645e9c17339e94350ab35f57d8f8d5a250d9309688",
+      "baselineSHA256": "f94c080238b0fd9f9f760943712fdd73537d31289b265c65725ce08ee4f9702a"
+    },
+    {
+      "path": "pages/fossil/index.html",
+      "sha256": "79c4962e1e8ebb2d13b3b51bcd0f4d4a63c5013c11ebdb9b7b6ee87652bb0c34",
+      "baselineSHA256": "e230c9c4477e7c36687ff507314889974ee605224d586bb65e3ecebdc4ddb2b7"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "a92d806d9ddbfae7622e50f2ee1a0c5bfb81312cbea6bab2de9388109f370899",
+      "baselineSHA256": "e21abde265cd444cd61173ff3118b89bf13977065c47a2886692de38326ef8d0"
+    },
+    {
+      "path": "pages/parallax/index.html",
+      "sha256": "677f350bcb70be9e5b7591c6572edb602ed43d052f9bf23272ad5ab6788dc488",
+      "baselineSHA256": "0f5a03d3dd71bfd5ad10bb3541a2bfd88be0dcb0dbc5644c235205baaac2bb90"
+    },
+    {
+      "path": "public/parallax/ATTRIBUTION.md",
+      "sha256": "ac501957a1bd7e362742c4df2caba193da12cb97947a74341e24941d3466ff6a",
+      "baselineSHA256": "1d70945c791f26be116fc876a12dcda832ccc28c337ea146bda3806973fbaedf"
+    },
+    {
+      "path": "experiences/parallax/src/environment.js",
+      "sha256": "2a887d6a12bfeefe8b373deaaf30e743370c5f7bc1b40a4d4ae9dbe2d6d4207a",
+      "baselineSHA256": null
+    },
+    {
+      "path": "experiences/parallax/src/environment-worker.js",
+      "sha256": "179087d221d17ff267c54997b2b42bf920c16d7185c8b218af2e4b13ed442831",
+      "baselineSHA256": null
+    },
+    {
+      "path": "experiences/parallax/src/environment-data.js",
+      "sha256": "2829d73764a394a7fcd41a9ad0f2e3c22214218bd8bb875989566e2736a6c459",
+      "baselineSHA256": null
+    },
+    {
+      "path": "tests/parallax-environment.test.mjs",
+      "sha256": "12f91d34cfab2839bbec5410efb87e34e0e8e425f5e734d1d27c9cebada63cec",
+      "baselineSHA256": null
+    }
+  ],
+  "originalAssetsVerified": 761,
+  "responsiveVariantsVerified": 83,
+  "fontAliasesVerified": 12,
+  "proof": [
+    {
+      "path": "baseline-manifest.json",
+      "bytes": 152191,
+      "sha256": "73b2aa6e13ea9ea3f84e4fb0da34c963fb914ba9320fe59347677ca003f64b65"
+    },
+    {
+      "path": "baseline-assets.json",
+      "bytes": 130585,
+      "sha256": "572111d133d7631f3af4d74ddbd821c616e8df151646b3a5df716d161b178cd1"
+    },
+    {
+      "path": "initial-git-status.txt",
+      "bytes": 3792,
+      "sha256": "d47565efa576ec43352edc2b84e6ada45d27459041af60e9e14d949f07875b9d"
+    },
+    {
+      "path": "collection-resources/final-layout.json",
+      "bytes": 632941,
+      "sha256": "89a86abbdb726536a20fdacae108058fa014b4b57bc0c054eaea613b85c3830b"
+    },
+    {
+      "path": "final-qa/fossil-recheck.json",
+      "bytes": 8659,
+      "sha256": "f5d322e9177acb409f76a9ee730e24ae596fd009b2f7417423519cc1ecffac51"
+    },
+    {
+      "path": "final-qa/aeterna-recheck.json",
+      "bytes": 523,
+      "sha256": "2791eb917ee52457adf9d2003623819aeaea36bb0f4e8bd1f6dff7ff69e586ae"
+    },
+    {
+      "path": "final-qa/aeterna-controls-recheck.json",
+      "bytes": 662,
+      "sha256": "98f37a36211d1db5d7190ac23db5332ff556632ea193d958130dc372ae8d79f3"
+    },
+    {
+      "path": "final-qa/results.json",
+      "bytes": 9999,
+      "sha256": "f2cbc8c316d7a8bfbda096a96bc0d01c448606679a402d67cc97bc3540dc8ffb"
+    },
+    {
+      "path": "final-qa/addon.json",
+      "bytes": 1582,
+      "sha256": "2879b3d4095ff97dc8cc8b065890e6715594cccd4ab16ce6229ba76d17687394"
+    },
+    {
+      "path": "loading-handoffs/parallax-after.json",
+      "bytes": 99231,
+      "sha256": "f654380a50fe941a23bc34fd711cfc96053187e365c10bf842a88a756329f4c8"
+    },
+    {
+      "path": "parallax-parity/results.json",
+      "bytes": 4528,
+      "sha256": "0bdce22fa6d22082877238f053989ee090d0eb14924270f45fe224e6cc5432ad"
+    },
+    {
+      "path": "environment-parity.json",
+      "bytes": 328,
+      "sha256": "cfbfe28bd0e22f7fa789a7b4917ebb9bc4f99e32df46273faf7620b9b5417a35"
+    },
+    {
+      "path": "hardware/native-acceptance.json",
+      "bytes": 145900,
+      "sha256": "313fce723cec400ff21d4717fdc6c729169b6db1a4c0554d29719bf85c1f5aa1"
+    },
+    {
+      "path": "transition-trial/results.json",
+      "bytes": 9257,
+      "sha256": "c81ce9a747cfbb4fe4108fb9fb8159001c5abeb81e372430104910b8a02488da"
+    },
+    {
+      "path": "npm-test-final.log",
+      "bytes": 40169,
+      "sha256": "61bb35e8969d430f1053cdb80d64d116aea95184ad58820a1b6d7de9190b8849"
+    },
+    {
+      "path": "build-root-final.log",
+      "bytes": 15001,
+      "sha256": "679ec50d2965a8a55c4b1618820dfad8ba8897642b74ef379c5d94751299bea2"
+    },
+    {
+      "path": "build-project-final.log",
+      "bytes": 19908,
+      "sha256": "d9f7cc9d174247d4f210b7fd1d3ef8a0d8e3657db5e19cec4ed04c6ce30a4198"
+    },
+    {
+      "path": "resource-summary.json",
+      "bytes": 3058,
+      "sha256": "d578d2329f2965c31e48ddb87a368c19d7641620ae5961c8773d82a93e3984c3"
+    },
+    {
+      "path": "resource-traces/fossil-entry-before-final.json",
+      "bytes": 31470,
+      "sha256": "63864c54108361a76e0f9592eef6bcc872fff0515acf131bd42be29c53f4287f"
+    },
+    {
+      "path": "resource-traces/fossil-entry-after-final.json",
+      "bytes": 32337,
+      "sha256": "0c35e4a07bfb3fa30d376b37e16345c051c5c74c3b3aad13167fc878018199a4"
+    },
+    {
+      "path": "resource-traces/fossil-deep-before-final.json",
+      "bytes": 31607,
+      "sha256": "bca4602f1dbb5d70196751a23adecd99e5c87111f3b1a43eb153676d8f003a87"
+    },
+    {
+      "path": "resource-traces/fossil-deep-after-final.json",
+      "bytes": 32515,
+      "sha256": "52bf7fdb8f5c3b3bdfea6d44f89f8346bd0818ec9ce81bad3924f3bbc042e05e"
+    },
+    {
+      "path": "resource-traces/fossil-warm-before-final.json",
+      "bytes": 30886,
+      "sha256": "0101ee8f933badeeddc27d968aedbbe0df1c778cec1a4c31e13fc648b9e8124a"
+    },
+    {
+      "path": "resource-traces/fossil-warm-after-final.json",
+      "bytes": 31750,
+      "sha256": "e73bf811036babe62334f49a8a3a8b802ce1dbe8958b59a4a8d8addd07cfd2d6"
+    },
+    {
+      "path": "resource-traces/aeterna-entry-before-final.json",
+      "bytes": 49068,
+      "sha256": "32b0d5a926c29f52cc7ba30bdf87f6406ac6e229d706170cb90e984c86540d9d"
+    },
+    {
+      "path": "resource-traces/aeterna-entry-after-final.json",
+      "bytes": 37151,
+      "sha256": "5b01f3d474d982e943f9aa4418d954f339b522e972c9a38e8ab9bcc416c32858"
+    },
+    {
+      "path": "resource-traces/aeterna-deep-before-final.json",
+      "bytes": 49531,
+      "sha256": "0cad8d314bbbf4576b6c4981ecdade97e9b38b08b7689db889d0b316ad7efc66"
+    },
+    {
+      "path": "resource-traces/aeterna-deep-after-final.json",
+      "bytes": 45225,
+      "sha256": "27c0324a52755480b269b4465e37d6f0d98a295f3127d61e8860175bfdd8c3a9"
+    },
+    {
+      "path": "resource-traces/aeterna-warm-before-final.json",
+      "bytes": 48249,
+      "sha256": "655c62173067936be1e69dc85fb64c509ac06e105c402b3b3be2a00c213439b3"
+    },
+    {
+      "path": "resource-traces/aeterna-warm-after-final.json",
+      "bytes": 36472,
+      "sha256": "89c164e57079a1bf0fb7699d7f01ea075d5f38150e9d817700cef5630a740861"
+    },
+    {
+      "path": "resource-traces/parallax-entry-before-final.json",
+      "bytes": 28551,
+      "sha256": "d8e257fe5c1a295c494803c25d135cd1e746eb00ffd63cd993199dc8c7146e04"
+    },
+    {
+      "path": "resource-traces/parallax-entry-after-final.json",
+      "bytes": 29707,
+      "sha256": "ebc1a4815d7984e44abc210ce2b977c067bbeccf976765bd0e7ea1c5bd681e4a"
+    },
+    {
+      "path": "resource-traces/parallax-deep-before-final.json",
+      "bytes": 29089,
+      "sha256": "9cbe8c8ba6e68b7ed6b23c1be7866354caf5c80ade5417d6b3d5778e65e884d0"
+    },
+    {
+      "path": "resource-traces/parallax-deep-after-final.json",
+      "bytes": 30810,
+      "sha256": "94367e09466251612ddcdb98786285c15697edd3f89c2befbad1315f9ebe8b6f"
+    },
+    {
+      "path": "resource-traces/parallax-warm-before-final.json",
+      "bytes": 29126,
+      "sha256": "a5fde5889a0fa426df966665f38c833dd3fe2a3c0f83b295c0078e94f22c3a17"
+    },
+    {
+      "path": "resource-traces/parallax-warm-after-final.json",
+      "bytes": 29484,
+      "sha256": "e9610f4bd998b681d006deb768665e99ce728ae5505719810e20354cc736bc92"
+    }
+  ],
+  "limitations": [
+    "Physical touch and iOS/Safari NOT_RUN",
+    "GPU completion FPS, sustained GPU budget and strict process/GPU memory peaks NOT RELIABLY MEASURED",
+    "Headed native hidden-state probe NOT_OBSERVED",
+    "ViewTransition trial NOT_ADOPTED",
+    "No independent third-party or multi-agent review after user cancellation"
+  ]
+}

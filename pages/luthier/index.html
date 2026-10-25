@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#080808" />
@@ -32,7 +33,7 @@
     <header class="masthead">
       <a class="wordmark" href="#presence" aria-label="Luthier, return to the beginning">LUTHIER</a>
       <nav class="top-nav" aria-label="Experience controls">
-        <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a>
+        <a class="collection-return" href="%BASE_URL%#world-luthier" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a>
         <button class="text-control" id="anatomy-toggle" aria-haspopup="dialog">The anatomy<span class="menu-mark" aria-hidden="true"><i></i><i></i></span></button>
         <button class="text-control sound-control" id="sound-toggle" aria-pressed="false" aria-label="Enable sound">
           <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 9h3l4-4v12l-4-4H3z"/><path class="sound-waves" d="M14 7c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/><path class="sound-slash" d="m14 8 5 6m0-6-5 6"/></svg>
@@ -93,7 +94,7 @@
         </section>
 
         <section class="scene scene-inside" data-scene="3" aria-labelledby="inside-heading" inert>
-          <div class="inside-art" aria-hidden="true"><img src="/luthier/assets/inside.webp" width="1672" height="941" alt="" loading="lazy" /><div class="interior-light"></div></div>
+          <div class="inside-reveal" aria-hidden="true"><div class="inside-art"><img src="/luthier/assets/inside.webp" width="1672" height="941" alt="" loading="lazy" /><div class="interior-light"></div></div></div>
           <div class="inside-copy scene-copy">
             <h2 id="inside-heading">A small space.<br /><em>An enormous voice.</em></h2>
             <p>The sound post connects. The bass bar distributes.<br class="desktop-break" /> The body answers.</p>
@@ -196,7 +197,7 @@
       </div>
     </dialog>
     <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
-    <noscript><div class="noscript-note">This experience uses JavaScript for its moving instrument. Enable JavaScript to enter the nine chapters. <p><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a></p><p><a href="%BASE_URL%luthier/NOTICE.md">Sources and interpretation notes</a></p></div></noscript>
+    <noscript><div class="noscript-note">This experience uses JavaScript for its moving instrument. Enable JavaScript to enter the nine chapters. <p><a class="collection-return" href="%BASE_URL%#world-luthier" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg><span>Collection</span></a></p><p><a href="%BASE_URL%luthier/NOTICE.md">Sources and interpretation notes</a></p></div></noscript>
     <script type="module" src="../../experiences/luthier/src/main.ts"></script>
   </body>
 </html>

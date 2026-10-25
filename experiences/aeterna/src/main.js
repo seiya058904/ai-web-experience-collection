@@ -158,7 +158,8 @@ function updateGeometryUI() {
   rooms[6].classList.toggle('has-geometry', hasBody);
   rooms[7].classList.toggle('has-geometry', hasBody);
   for (const index of [3, 5, 6, 7]) {
-    rooms[index].classList.toggle('is-static-fallback', (geometryError || contextLost) && !rooms[index].classList.contains('has-geometry'));
+    // The composed photographic edition also owns the pending-model state.
+    rooms[index].classList.toggle('is-static-fallback', !rooms[index].classList.contains('has-geometry'));
   }
   assembly.disabled = !hasBody;
   fracture.disabled = !hasBody;
@@ -184,8 +185,12 @@ function handleGeometryError(error) {
   }
   updateGeometryUI();
 }
-async function startSpatial() {
-  if (stagePromise) return stagePromise;
+async function startSpatial(scene = 'body') {
+  if (stagePromise) {
+    const existing = await stagePromise;
+    existing?.ensureScene(scene);
+    return existing;
+  }
   stagePromise = (async () => {
     try {
       canvas = document.createElement('canvas');
@@ -208,6 +213,7 @@ async function startSpatial() {
           updateGeometryUI();
         },
       });
+      stage.ensureScene(scene);
       canvas.addEventListener('webglcontextrestored', () => {
         contextLost = false;
         updateGeometryUI();
@@ -237,7 +243,7 @@ function goTo(index, progress = .08, { push = true, smoothScroll = true } = {}) 
     } catch { /* Native scrolling remains available. */ }
   }
   timeline.goTo(target, target === 0 ? 0 : progress, smoothScroll && !reducedMotion ? 'smooth' : 'auto');
-  if ([3, 5, 6, 7].includes(target)) startSpatial();
+  if ([3, 5, 6, 7].includes(target)) startSpatial(target === 5 ? 'relief' : 'body');
   requestRender();
 }
 function openIndex() {
@@ -417,7 +423,7 @@ function changeChapter(index) {
   nextButton.querySelector('span').textContent = index === 0 ? 'Scroll to enter' : index === 8 ? 'Begin again' : 'Next room';
   nextButton.setAttribute('aria-label', index === 8 ? 'Begin the exhibition again' : 'Continue to ' + chapterNames[index + 1]);
   const sceneName = { 3: 'body', 5: 'relief', 6: 'fracture', 7: 'afterlife' }[index];
-  if (sceneName) startSpatial();
+  if (sceneName) startSpatial(sceneName);
 }
 
 function composeRooms(frame) {
@@ -584,6 +590,9 @@ function render(time) {
   scrollClock += elapsed;
   lenis.raf(scrollClock);
   const requested = timeline.snapshot();
+  // Prewarm the next model room without downloading both scans on entry.
+  if (requested.index === 2) void startSpatial('body');
+  if (requested.index === 4) void startSpatial('relief');
   warmRoomArt(requested.index);
   const waitingForArt = !artReadiness[requested.index].ready;
   const frame = waitingForArt ? { ...requested, index: currentFrame?.index ?? 0, progress: currentFrame?.progress ?? 0 } : requested;
@@ -673,11 +682,9 @@ if (initial && initial.index === hashIndex) {
 } else if (hashIndex >= 0) {
   timeline.goTo(hashIndex, hashIndex === 0 ? 0 : .08, 'auto');
 }
-requestRender();
-if ('requestIdleCallback' in window) window.requestIdleCallback(startSpatial, { timeout: 1800 });
-else window.setTimeout(startSpatial, 1000);
-// Start the lightweight image promises immediately; geometry still waits for
-// idle. The first interaction must not race an idle-callback decode queue.
+updateGeometryUI();
+// Start the photographic rooms immediately; model requests follow the current
+// or approaching room. The first interaction must not race an image decode queue.
 const warmAllRoomArt = () => rooms.forEach((_, i) => warmRoomArt(i));
 warmAllRoomArt();
 document.fonts.ready.then(() => { spatialLayoutKey = ''; requestRender(); });

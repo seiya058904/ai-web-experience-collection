@@ -28,6 +28,7 @@
   <meta name="twitter:title" content="COUNTERFORM — The Shape of Reading">
   <meta name="twitter:description" content="An interactive exhibition about the spaces that give letters their form. Real type. Seven connected scenes. One living page.">
   <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%counterform/social.jpg">
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
 <body>
   <a class="skip-link" href="#living">Skip to the live specimen</a>
@@ -44,7 +45,7 @@
       <svg viewBox="0 0 1420 1400" aria-hidden="true"><use href="#serif-r"/></svg>
       <span>COUNTERFORM</span>
     </a>
-    <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+    <a class="collection-return" href="%BASE_URL%#world-counterform" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
     <nav class="desktop-nav" aria-label="Chapters">
       <a href="#mark">The mark</a><a href="#press">The press</a><a href="#divide">The divide</a><a href="#anatomy">Anatomy</a><a href="#living">Living type</a>
     </nav>
@@ -135,7 +136,7 @@
       </section>
 
       <section class="scene scene-page" id="page" data-chapter="page" aria-labelledby="page-title">
-        <div class="final-frame"><div class="final-sample-wrap"><h2 id="page-title" class="variable-sample final-sample">Give type room to breathe.</h2></div><p class="final-thought">And let the silence speak.</p><svg class="final-signature" viewBox="430 0 600 950" aria-label="The original counter, now an open outline"><use href="#serif-counter"/></svg><div class="final-details"><p>Your type.<br> Your final impression.</p><div><a class="text-link" href="#space">Return to the beginning <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a><p class="final-values" id="final-values">Weight 650 / Width 100 / Optical size 72</p></div></div></div>
+        <div class="final-frame"><div class="final-sample-wrap"><h2 id="page-title" class="variable-sample final-sample">Give type room to breathe.</h2></div><p class="final-thought">And let the silence speak.</p><svg class="final-signature" viewBox="430 0 600 950" aria-label="The original counter, now an open outline"><use href="#serif-counter"/></svg><div class="final-details"><p>Your type.<br> Your final impression.</p><div><button class="text-link print-page" id="print-page" type="button" hidden disabled title="Print a clean specimen or save it as a PDF. Your text stays on this device.">Print / save PDF</button><a class="text-link" href="#space">Return to the beginning <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a><p class="final-values" id="final-values">Weight 650 / Width 100 / Optical size 72</p></div></div></div>
         <div class="scene-foot"><p class="folio">06 <span>—</span> THE PAGE IS ALIVE</p><button class="text-link" id="credits-open">Notes &amp; sources</button></div>
       </section>
 
@@ -148,6 +149,12 @@
   </main>
 
   <nav class="chapter-rail" aria-label="Exhibition progress"><a href="#space" aria-label="00 The space" aria-current="step"><span></span></a><a href="#mark" aria-label="01 The mark"><span></span></a><a href="#press" aria-label="02 The press"><span></span></a><a href="#divide" aria-label="03 The divide"><span></span></a><a href="#anatomy" aria-label="04 Anatomy"><span></span></a><a href="#living" aria-label="05 Living type"><span></span></a><a href="#page" aria-label="06 The page"><span></span></a></nav>
+
+  <section class="print-sheet" aria-label="Your printable type specimen">
+    <p class="print-credit">COUNTERFORM · Your final impression</p>
+    <h1 class="print-words" id="print-words">Give type room to breathe.</h1>
+    <div class="print-caption"><p id="print-values">Weight 650 / Width 100 / Optical size 72</p><p>Set in Roboto Flex · COUNTERFORM</p></div>
+  </section>
 
   <dialog id="chapter-index" class="index-dialog" aria-labelledby="index-title">
     <div class="index-head"><span>COUNTERFORM</span><button class="index-toggle" id="index-close" aria-label="Close index">Close <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M5 15 15 5"/></svg></button></div>

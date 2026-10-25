@@ -3,15 +3,24 @@ export const CHAPTERS = [
   { id: 'ignition', name: 'Ignition', label: 'The first impossible second', title: ['DEFY', 'GRAVITY.'], description: 'Controlled fire. Uncompromising power. The journey begins at zero.' },
   { id: 'ascent', name: 'Ascent', label: 'Through the atmosphere', title: ['THROUGH', 'THE BLUE.'], description: 'The air gets thinner. The horizon gets wider. There is only one way forward.' },
   { id: 'stage', name: 'Stage', label: 'A moment of separation', title: ['LET GO.', 'GO FURTHER.'], description: 'An empty stage has done its job. Letting it go gives the next stage the freedom to climb.' },
-  { id: 'machine', name: 'Machine', label: 'Anatomy of a launch vehicle', title: ['EVERY PART.', 'ONE PURPOSE.'], description: 'Thousands of decisions. One extraordinary machine.' },
+  { id: 'machine', name: 'Machine', label: 'Anatomy of a launch vehicle', title: ['FROM ENGINE', 'TO PAYLOAD.'], description: 'Engines below. Payload above. Follow the systems between.' },
   { id: 'orbit', name: 'Orbit', label: 'A new perspective', title: ['FALLING.', 'FOREVER.'], description: 'Orbit is a continuous fall that never meets the ground.' },
-  { id: 'mars', name: 'Mars', label: 'The next horizon', title: ['A LITTLE', 'FURTHER.'], description: 'Beyond the familiar. Toward another world.' },
+  { id: 'mars', name: 'Destinations', label: 'The next horizon', title: ['A LITTLE', 'FURTHER.'], description: 'Beyond the familiar. Toward another world.' },
   { id: 'beyond', name: 'Beyond', label: 'The journey continues', title: ['THIS IS', 'ONLY THE', 'BEGINNING.'], description: 'Our home is Earth. Our future is out there.' },
 ] as const;
 
+/** A fresh fragment may precede React's chapter elements. Existing document
+ * movement and saved/native history restoration take precedence over it. */
+export function initialChapterFromFragment(hash: string, documentY: number, hasSavedPosition: boolean, navigationType?: string) {
+  if (hasSavedPosition || navigationType === 'back_forward' || documentY !== 0) return null;
+  const index = CHAPTERS.findIndex(chapter => hash === `#chapter-${chapter.id}`);
+  return index < 0 ? null : index;
+}
+
 export type Destination = 'moon' | 'mars';
-export type Subsystem = 'propulsion' | 'structure' | 'guidance' | 'payload';
+export type Subsystem = 'overview' | 'propulsion' | 'structure' | 'guidance' | 'payload';
 export const SUBSYSTEMS: { id: Subsystem; name: string; description: string; value: string; label: string }[] = [
+  { id: 'overview', name: 'Whole vehicle', description: 'Engines below. Payload above. Choose a system to trace the connections between them.', value: 'AN ILLUSTRATIVE ENGINEERING STUDY', label: 'The complete vehicle' },
   { id: 'propulsion', name: 'Propulsion', description: 'Propellant becomes momentum. A cluster of engines turns controlled combustion into the force that lifts the vehicle.', value: 'ACTION / REACTION', label: 'The principle of thrust' },
   { id: 'structure', name: 'Structure', description: 'Strong enough to carry the load. Light enough to leave it behind. Tanks and airframe work as one load-bearing system.', value: 'STRENGTH / MASS', label: 'A careful balance' },
   { id: 'guidance', name: 'Guidance', description: 'Sensors measure the journey. Flight computers adjust the engine direction to keep the vehicle on its planned trajectory.', value: 'SENSE / CORRECT', label: 'Precision in motion' },

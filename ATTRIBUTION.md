@@ -65,11 +65,15 @@ ORBITAL synthesizes optional audio in code after the sound control is activated;
 GLAZE、KAGE、CHRONOS 与 INTERVAL 交付 ZIP 的逐项字节和 SHA-256 保存在 [导入清单](provenance/deliveries/import-manifest.json)。独立包的旧配置、启动脚本和 README 已淘汰，保留原始逐项哈希与实际素材来源依据。旧 VERDANT/ORBITAL ZIP 移至本地忽略的 `provenance/deliveries/`，它们含有超出当前运行工程的历史内容，未经逐项证明为重复不删除。
 
 
+Collection 2026-10-25 的四张更新预览来自 FORM、FUSION、GRID、COUNTERFORM 的实际运行画面；只隐藏重复界面，保留作品本体和原资源。逐图取舍见 [预览验收](docs/collection/BATCH-A-ACCEPTANCE.md)，尺寸和 SHA-256 见 [预览来源记录](provenance/collection/runtime-previews-20261025.json)。
+
 ## CHRONOS — The Architecture of Time
 
 用户提供的完整原创数字腕表成品。原代码、程序几何与文档继续适用 [MIT](public/chronos/LICENSE)；两幅生成摄影艺术保持其原始说明，不声称是真实品牌产品或精确工程图。完整 [素材来源与机械参考](provenance/chronos/ATTRIBUTION.md)、[第三方声明](public/chronos/THIRD_PARTY_NOTICES.md) 与所有许可证已保留。Cormorant Garamond 与 DM Sans 从交付构建中的同版本 WOFF2 无损导入本地；其中与 VERDANT 字节完全相同的两个 DM Sans 文件安全合并到 `public/shared/fonts/`，两站许可均保留；IBM Plex Mono 使用 Collection 已锁定的相同 5.3.0 软件包。运行库仍为同版本 Three.js、GSAP、Lenis，无依赖升级。
 
 六章的 3D 机芯、机械关系、慢动作与本地合成声音均沿用成品实现；模型是解释性运动研究，不是可制造机芯或精度模拟。原交付的逐项文件 SHA-256 追加在 `provenance/deliveries/import-manifest.json`。
+
+Energy、Transmission、Oscillation 图像备用版使用原有程序模型 WatchScene 的本地运行截图，不是新增生成摄影。捕获进度、裁切和资源哈希见 [运行时静帧记录](provenance/chronos/runtime-stills.json)。
 
 ## INTERVAL — Architecture Between Light & Space
 
@@ -120,6 +124,8 @@ ATLAS, THRUST, RESONANCE and AETERNA now use the Collection's already locked Len
 The supplied original sculpture retains 18 named fragments and a fine attached incision across ten perspectives. Four generated production images, thirteen selected design references, three local font binaries and the portable assembled GLB retain their source hashes. Reference frames are art direction, not runtime screenshots. The live exhibition creates its geometry from source; the GLB is its static portable counterpart. Bodoni Moda/Manrope retain complete OFL notices; Three.js/Lenis retain MIT. No application-wide open-source grant is inferred. See [the deployed record](public/parallax/ATTRIBUTION.md), [original prompts and hashes](provenance/parallax/assets/provenance.json) and [intake acceptance](docs/parallax/ACCEPTANCE.md).
 
 The original ZIP stays outside Git and deployment at `D:/下载/PARALLAX-The-Museum-of-Impossible-Forms.zip`. All 73 entries are inventoried. Its 19-file prepared runtime is byte-identical to source/public/vendor and omitted. Three.js core/module/Reflector match the existing locked root dependency byte-for-byte. Standalone package/build/server/startup files are omitted; the historical model exporter is preserved as provenance. Lenis runs on the existing on-demand RAF with immediate restoration/reduced motion and native touch/dialog scrolling. Gallery/social imagery is captured from the actual runtime.
+
+PARALLAX's 22 transparent still-view WebP files are captures of its actual live renderer, made 2026-10-25: nine chapter relationships plus left/right Alignment views in landscape and portrait. They are not newly generated artwork or measured optical data. Capture/source hashes and poses are recorded in [the capture manifest](docs/parallax/STILL-CAPTURES.json); fallback UI labels captured views and reserves live optics/camera travel for WebGL.
 
 ## LUTHIER — 2026-10-07
 
@@ -190,3 +196,9 @@ The integrated English typographic installation retains supplied source, real Fr
 ## FERRUM — The Memory of Fire
 
 The integrated six-act digital steel sculpture retains supplied stills, licensed fonts, source research and authored interactive geometry. The archive does not declare an overall application license; no project-wide grant is inferred. Three.js 0.186.1 is reused; root Lenis 1.3.26 replaces supplied 1.3.17 without a dependency update. Original ZIP: `FERRUM-The-Memory-of-Fire-Source.zip`, 36,346,364 bytes, SHA-256 `d9c9e0601a102d024955704b62e00ddf01e0ac5e39a9f5fbc39f2fd2ca59e652`, 230 entries. Per-entry checksums and integration omissions/adaptations are recorded in `provenance/ferrum/IMPORT.json` and the delivery manifest. QA screenshots and upstream vendor/build tooling are not deployed; source reports remain in provenance. The ZIP stays outside Git/deployment.
+
+## Batch C delivery derivatives (25 October 2026)
+
+The Collection's 83 responsive WebP previews are resized derivatives of the existing 32 entrance images, with no newly generated imagery. Original files remain unchanged. `provenance/collection/responsive-previews.json` records source/derivative hashes and byte-identical font URL reuse; the original per-work font notices continue to apply.
+
+PARALLAX's four lossless WebP derivatives retain all original PNGs. Alpha and nontransparent RGB are identical; the hero's fully transparent RGB is normalized by encoding. `provenance/parallax/lossless-webp.json` records this boundary and exact hashes. These files do not introduce new artwork or alter the original source claims.

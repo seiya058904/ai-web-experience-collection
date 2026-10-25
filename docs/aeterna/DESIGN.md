@@ -314,3 +314,7 @@ The shared easing is the stylesheet's `--ease`. Timed reveals belong to a specif
 - **Don't** derive mobile sculpture framing from the desktop crop or from the floor shadow.
 - **Don't** identify an imagined plate as a scanned collection object or display an interactive control as ready before its required geometry is available.
 - **Don't** shrink the final hall's stillness and negative space to make room for unrelated interface decoration.
+
+## Batch C model preparation
+
+The photographic rooms still warm immediately. The body model starts at the approaching portrait room or direct entry to Body/Fracture/Afterlife; the relief starts at Monument or direct Relief entry. Each model has one cached request per stage. Unready geometry uses the existing composed static-gallery layout, retaining the original plate, complete prose and source identity; unavailable model controls remain disabled and hidden. The shared Canvas is hidden until that room has geometry, avoiding an empty plinth over the plate. Do not restore eager loading of both GLBs at the entrance or change model fidelity without a new comparison.

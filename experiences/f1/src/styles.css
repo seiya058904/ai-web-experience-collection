@@ -818,6 +818,16 @@ main {
 .speed-control {
   padding-top: 5px;
 }
+.aero-feedback { margin: 0 0 10px; }
+.aero-feedback-view { position: relative; aspect-ratio: 2.9; max-width: clamp(340px, 25vw, 800px); margin-inline: auto; }
+.aero-feedback-view img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.aero-feedback-flow { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--accent); pointer-events: none; }
+.aero-feedback-flow path { vector-effect: non-scaling-stroke; }
+.aero-feedback figcaption { margin-top: 6px; font-size: 10px; color: var(--muted); }
+.speed-control > .segmented { margin-top: 0; margin-bottom: 10px; }
+.speed-control > .aero-mode-copy { min-height: 0; margin-bottom: 12px; }
+.speed-control .speed-reading { padding: 12px 0 10px; }
+.speed-control .speed-reading output { font-size: clamp(64px, 5vw, 110px); }
 .speed-control-head {
   display: flex;
   justify-content: space-between;

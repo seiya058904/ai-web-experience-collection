@@ -7,6 +7,8 @@ import { CONTENT_KEYS, SCENES, layout, resolve } from './scenes.ts';
 import type { Axes, Design, Frame, View } from './scenes.ts';
 import { Renderer } from './renderer.ts';
 import { isWideShort } from './layout-short.ts';
+import { TOTAL_TRAVEL, coordinateToTravel, travelToCoordinate } from './rhythm.ts';
+import { toolbarPresentation } from './toolbar.ts';
 import './interface-short.css';
 
 const $ = <T extends Element = HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
@@ -16,7 +18,7 @@ const readStore = (key: string, session = false) => {try {return (session ? sess
 const writeStore = (key: string, value: string, session = false) => {try {(session ? sessionStorage : localStorage).setItem(key, value);} catch {/* Private browsing still works. */}};
 const storedPosition = (value: unknown) => typeof value === 'number' ? value
   : typeof value === 'string' && value.trim() !== '' ? Number(value) : NaN;
-const extentForViewport = () => Math.round(innerHeight * 3.9 * 11);
+const extentForViewport = () => Math.round(innerHeight * TOTAL_TRAVEL);
 let reduced = media.matches || readStore('grid:reduce-motion') === '1';
 const lifecycle = new AbortController();
 const cleanups: (() => void)[] = [];
@@ -96,6 +98,8 @@ async function start() {
   let shortFrameHeight = 0;
   let lastViewport = '';
   let lastDesign: Design;
+  let pointerTool: HTMLElement | null = null;
+  const heldTools = new Set<HTMLElement>();
 
   const lenis = new Lenis({
     autoRaf: false, autoResize: false, smoothWheel: !reduced,
@@ -293,7 +297,7 @@ async function start() {
   }
 
   const documentCoordinate = () => {
-    const p = clamp(window.scrollY / extent * 11, 0, 11);
+    const p = travelToCoordinate(window.scrollY / extent * TOTAL_TRAVEL);
     // Preserve the supplied endpoint tolerance for integer-pixel scrollY.
     return Math.abs(p - Math.round(p)) < .001 ? Math.round(p) : p;
   };
@@ -303,8 +307,7 @@ async function start() {
     const bounds = stage.getBoundingClientRect();
     view = {w: bounds.width, h: bounds.height, mobile: innerWidth <= 600};
     renderer.resize(view);
-    // 3.9 viewports per system gives the existing refinement and handoff twice
-    // the reading distance, without changing poses or adding scroll latency.
+    // Reading and experiment travel vary; the existing handoff travel is retained.
     extent = extentForViewport();
     track.style.height = `${extent + innerHeight}px`;
     measureFrameLimits();
@@ -317,7 +320,7 @@ async function start() {
     lenis.resize();
     ScrollTrigger.refresh();
     coordinate = clamp(preserve, 0, 11);
-    lenis.scrollTo(coordinate / 11 * extent, {immediate: true, force: true});
+    lenis.scrollTo(coordinateToTravel(coordinate) / TOTAL_TRAVEL * extent, {immediate: true, force: true});
     rebuilding = false;
     dirty = true;
     draw();
@@ -345,7 +348,6 @@ async function start() {
     const p = reduced ? Math.round(coordinate) : coordinate;
     const current = Math.floor(p), local = p - current;
     const inInterface = current === 8 && local <= .36;
-    const inVariable = current === 9 && local <= .36;
     let native: Frame | undefined;
     if (inInterface) {
       const percent = nativeWidth ?? 100 * (1 - smooth(range(0, .36, local)));
@@ -356,9 +358,9 @@ async function start() {
     const d = resolve(p, states, axisOverrides, interfaceExit, reduced);
     renderer.render(d, p, native);
     lastDesign = d;
-    frameTools.hidden = !inInterface;
-    axisTools.hidden = !inVariable;
-    if (inVariable) axisInputs.forEach(input => {
+    presentToolbar(frameTools, toolbarPresentation(p, 8, heldTools.has(frameTools), reduced));
+    presentToolbar(axisTools, toolbarPresentation(p, 9, heldTools.has(axisTools), reduced));
+    if (current === 9 && !axisTools.hidden) axisInputs.forEach(input => {
       const axis = input.dataset.axis as keyof Axes;
       const value = axis === 'slnt' ? d.axes[axis].toFixed(1) : String(Math.round(d.axes[axis]));
       input.value = value;
@@ -370,12 +372,48 @@ async function start() {
     if ($<HTMLDialogElement>('#rules-dialog').open) updateMeasurements();
   }
 
+  function presentToolbar(toolbar: HTMLElement, state: ReturnType<typeof toolbarPresentation>) {
+    // Move focus while the departing toolbar can still be seen. The grace
+    // remains latched through its exit, so focus transfer cannot snap it away.
+    if (!state.interactive && toolbar.contains(document.activeElement)) {
+      $<HTMLButtonElement>('[data-open="index-dialog"]').focus({preventScroll: true});
+    }
+    toolbar.style.opacity = String(state.opacity);
+    toolbar.style.transform = `translateY(${(1 - state.opacity) * 8}px)`;
+    toolbar.inert = !state.interactive;
+    toolbar.hidden = state.hidden;
+    if (state.hidden) heldTools.delete(toolbar);
+  }
+
+  for (const toolbar of [frameTools, axisTools]) {
+    listen(toolbar, 'focusin', () => {heldTools.add(toolbar); dirty = true;});
+    listen(toolbar, 'pointerdown', (event: PointerEvent) => {
+      if (event.button !== 0) return;
+      pointerTool = toolbar;
+      heldTools.add(toolbar);
+      lenis.stop();
+      dirty = true;
+    });
+  }
+  function releaseTool() {
+    if (!pointerTool) return;
+    pointerTool = null;
+    if (!destroyed && !suspended && !document.hidden && !dialogs.some(dialog => dialog.open)) lenis.start();
+    dirty = true;
+  }
+  listen(window, 'pointerup', releaseTool);
+  listen(window, 'pointercancel', releaseTool);
+  listen(window, 'blur', releaseTool);
+  listen(window, 'wheel', (event: WheelEvent) => {
+    if (pointerTool) event.preventDefault();
+  }, {capture: true, passive: false});
+
   function go(index: number, immediate = false) {
     if (destroyed || suspended || document.hidden) return;
     const target = Math.round(clamp(index, 0, 11));
     closeDialogs();
     // Navigation uses the same scroll authority and therefore the same state function.
-    lenis.scrollTo(target / 11 * extent, {
+    lenis.scrollTo(coordinateToTravel(target) / TOTAL_TRAVEL * extent, {
       immediate: reduced || immediate, force: true,
       duration: reduced ? 0 : Math.min(3.6, 1.4 + Math.abs(target - coordinate) * .24),
       onComplete: () => {if (!destroyed) {coordinate = documentCoordinate(); dirty = true; draw();}}
@@ -463,7 +501,7 @@ async function start() {
   const trigger = ScrollTrigger.create({
     trigger: track, start: 0, end: () => extent,
     onUpdate: self => {if (!rebuilding) {
-      const p = clamp(self.progress * 11, 0, 11);
+      const p = travelToCoordinate(self.progress * TOTAL_TRAVEL);
       coordinate = Math.abs(p - Math.round(p)) < .001 ? Math.round(p) : p;
       dirty = true;
     }},
@@ -478,7 +516,7 @@ async function start() {
   const retained = Number.isFinite(historyPosition) ? historyPosition : saved;
   const initial = restoring && Number.isFinite(retained) ? clamp(retained, 0, 11)
     : hashIndex >= 0 ? hashIndex : Number.isFinite(saved) ? clamp(saved, 0, 11)
-      : nativeStartY > 0 ? clamp(nativeStartY / extentForViewport() * 11, 0, 11) : 0;
+      : nativeStartY > 0 ? travelToCoordinate(nativeStartY / extentForViewport() * TOTAL_TRAVEL) : 0;
   reconstruct(initial);
   syncMotion();
 
@@ -504,6 +542,7 @@ async function start() {
   listen(window, 'hashchange', () => {const i = SCENES.findIndex(scene => `#${scene.slug}` === location.hash); if (i >= 0) go(i);});
   suspendRuntime = () => {
     coordinate = documentCoordinate();
+    pointerTool = null;
     writeStore('grid:position', String(coordinate), true);
     history.replaceState({...history.state, gridPosition: coordinate}, '', location.href);
     clearTimeout(resizeTimer);

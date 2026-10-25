@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import type { HoleProjection } from './handoff';
 import {
   violinOutline, soundHole, archedSurface, plateEdge, archHeight,
   ribSurface, rimCurve, fingerboardGeometry, bridgeGeometry, taperedBarGeometry,
@@ -30,6 +31,8 @@ export class ViolinStudy {
   private height = 1;
   private materialReady: Promise<void>[] = [];
   private materialsLoaded = false;
+  private portalOutline = soundHole(1).getPoints(12).map(p => new THREE.Vector3(p.x, p.y, archHeight(p.x, p.y)));
+  private portalAnchor = new THREE.Vector3(.69, -.13, archHeight(.69, -.13));
   private interiorMaterials: {material: THREE.MeshStandardMaterial; color: THREE.Color}[] = [];
   private lost = (event: Event) => { event.preventDefault(); this.contextLost = true; };
   private restored = () => { this.contextLost = false; };
@@ -346,6 +349,16 @@ export class ViolinStudy {
     this.model.position.set(aspect < .82 ? .02 : -.03, -.22, 0);
     if (this.movingLight) this.movingLight.position.set(-2.7 + (reduced ? 0 : Math.sin(time * .21) * .25), 1.0 + opening * 1.1, 4.5);
     this.renderer.render(this.scene, this.camera);
+  }
+
+  /** Same carved treble aperture, arch and current front/camera matrices as the rendered top. */
+  projectPortal(left: number, top: number): HoleProjection | undefined {
+    if (!this.materialsLoaded || this.contextLost || this.disposed) return;
+    const project = (point: THREE.Vector3) => {
+      const p = point.clone().applyMatrix4(this.front.matrixWorld).project(this.camera);
+      return {x: left + (p.x + 1) * this.width * .5, y: top + (1 - p.y) * this.height * .5};
+    };
+    return {outline: this.portalOutline.map(project), anchor: project(this.portalAnchor)};
   }
 
   /** Export the authored geometry/materials, excluding the camera, studio and animated staging. */

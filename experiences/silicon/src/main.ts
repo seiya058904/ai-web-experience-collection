@@ -31,7 +31,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <a class="skip-link" href="#chapter-navigation">Skip to chapter navigation</a>
   <header class="site-header">
     <button class="wordmark" data-go="0" aria-label="SILICON, return to material">${mark}<span>SILICON</span></button>
-    <nav class="header-nav" aria-label="Exhibit"><a class="collection-return" href="${import.meta.env.BASE_URL}" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button data-dialog="process">The process <svg class="nav-cross" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1"/></svg></button><button data-dialog="about">About</button></nav>
+    <nav class="header-nav" aria-label="Exhibit"><a class="collection-return" href="${import.meta.env.BASE_URL}#world-silicon" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button data-dialog="process">The process <svg class="nav-cross" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1"/></svg></button><button data-dialog="about">About</button></nav>
   </header>
   <main id="journey" class="journey" aria-label="From sand to signal, an eight-scene exhibition">
     <div class="exhibit-stage">

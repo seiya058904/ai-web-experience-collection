@@ -15,8 +15,8 @@ const progressTrack=document.querySelector('.progress-track');
 const progressFill=document.querySelector('#progress-fill');
 const soundButton=document.querySelector('#sound-toggle');
 const soundLabel=document.querySelector('#sound-label');
-const fallbackImage=document.querySelector('#fallback-image');
-const fallbackMobile=document.querySelector('#fallback-mobile');
+const fallbackPicture=document.querySelector('#fallback-picture');
+const stillStatus=document.querySelector('#still-status');
 const motionSelect=document.querySelector('#motion-select');
 const qualitySelect=document.querySelector('#quality-select');
 const media=matchMedia('(prefers-reduced-motion: reduce)');
@@ -35,6 +35,7 @@ let averageFrame=16,slowFrames=0,frameCount=0,statusTimer,skipAudioUntil=0,impor
 let progress=0,state=sampleStory(0),dialogSource=null;
 const pointer={x:0,y:0},pointerTarget={x:0,y:0};
 const stillCache=new Map();
+let stillRequest=0,shownStill=0;
 
 function announce(message){const element=document.querySelector('#status-message');element.textContent=message;element.classList.add('is-visible');clearTimeout(statusTimer);statusTimer=setTimeout(()=>element.classList.remove('is-visible'),4200);}
 function savePreferences(){try{localStorage.setItem('ferrum:preferences:v1',JSON.stringify(prefs));}catch{}}
@@ -71,16 +72,25 @@ function preloadStill(index,mobile=height>width){
   const img=new Image();img.decoding='async';img.src=assetUrl(`stills/${id}.webp`);
   const item={img,ready:img.decode().then(()=>true).catch(()=>false)};stillCache.set(id,item);return item;
 }
-function setFallback(index){
-  const id=String(index).padStart(2,'0');
-  fallbackMobile.srcset=assetUrl(`stills/${id}-mobile.webp`);
-  fallbackImage.src=assetUrl(`stills/${id}-desktop.webp`);
-  fallbackImage.dataset.chapter=String(index);
-  preloadStill(index);
+async function setFallback(index){
+  const request=++stillRequest;
+  const item=preloadStill(index);
+  const updateStatus=message=>{stillStatus.textContent=message;stillStatus.hidden=!message;};
+  if(index!==shownStill)updateStatus(`Loading ${ACTS[index].name}. Showing ${ACTS[shownStill].name}.`);
   if(index<5)preloadStill(index+1);
   if(index>0)preloadStill(index-1);
+  const ready=await item.ready;
+  if(request!==stillRequest)return;
+  if(!ready){updateStatus(`${ACTS[index].name} image unavailable. Showing ${ACTS[shownStill].name}.`);return;}
+  // Commit the already-decoded element atomically. Changing a visible picture's
+  // src/srcset can empty it while loading, including during reverse navigation.
+  item.img.id='fallback-image';
+  item.img.alt=chapters[index].querySelector('.reading-still').alt;
+  item.img.dataset.chapter=String(index);
+  fallbackPicture.replaceChildren(item.img);
+  shownStill=index;updateStatus('');
 }
-function updateFallback(){stage.classList.toggle('is-fallback',!sceneReady||contextLost||prefs.quality==='still');}
+function updateFallback(){const still=!sceneReady||contextLost||prefs.quality==='still';stage.classList.toggle('is-fallback',still);root.classList.toggle('is-still',still);}
 function updateUI(current){
   if(lastIndex!==current.index){
     lastIndex=current.index;
@@ -113,7 +123,10 @@ function goToAct(index,{instant=false,historyEntry=true}={}){
   const hash=`#${chapters[actIndex].id}`;
   if(historyEntry&&hash!==location.hash)history.pushState(null,'',hash);
   skipAudioUntil=performance.now()+1800;
-  if(lenis)lenis.scrollTo(target*maxScroll,{immediate:instant,duration:1.15,easing:t=>1-Math.pow(1-t,3),force:true});
+  // Distant Index choices and Replay select a complete act without flashing
+  // the intervening furnace/strike/cooling states through a 1.15 second sweep.
+  const distant=Math.abs(actIndex-state.index)>1;
+  if(lenis)lenis.scrollTo(target*maxScroll,{immediate:instant||distant,duration:1.15,easing:t=>1-Math.pow(1-t,3),force:true});
   else window.scrollTo({top:target*maxScroll,behavior:'instant'});
 }
 function navigateHash(instant=true){const index=chapters.findIndex(section=>`#${section.id}`===location.hash);if(index>=0)goToAct(index,{instant,historyEntry:false});}

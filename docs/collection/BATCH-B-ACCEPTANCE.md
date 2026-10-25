@@ -1,0 +1,17 @@
+# Collection discovery — Batch B acceptance (2026-10-25)
+
+T07 adds one native `details` Index between the concise invitation and the unchanged gallery. Its 32 links preserve gallery order and point to the Batch A stable entrance anchors. Each work has one short factual bilingual subject; F1's Chinese engineering text and URUSHI's language choices are the only language claims. No viewing duration, recommendations, filter state, new media or work runtime was added.
+
+Before: the 390×844 home document measured 21,904px, its first work began at 356px, and no Index anchor existed. After: all 32 Index targets exist, links have no horizontal text overflow, and minimum link heights are 60px on the phone, 66px at intermediate/desktop sizes and 88px on larger screens. The closed Index leaves the first work at approximately 356px on the phone; the shortened invitation offsets the new finding aid. Opening the Index expands normal document flow instead of creating another scrolling surface or modal.
+
+The actual browser matrix covers 390×844, 768×1024, 1440×900, 1920×1080, 2560×1440 and 3840×2160. Closed/open frames were captured; full phone and desktop compositions were inspected. The 32 equally treated subjects include explicit paths for steel/钢铁, ink/墨水 and typography/字体 without traversing the gallery.
+
+A real keyboard sequence opens the summary, selects NIB, focuses its gallery entrance and enters its independent document. Explicit Return preserves the departure offset **0.390625px** and restores the same entrance focus. In a separate JavaScript-disabled context, keyboard summary activation and the native FERRUM Index link reach `#world-ferrum` with its panel visible. The native Index remains functional independently of the homepage enhancement module.
+
+Evidence, outside the repository: `C:\Users\admin\.codex\tmp\flagship-b-20261025\collection-grid\`. Files: `before-home-390.png`, `before-results.json`, `after-home-*.png`, `after-home-confirm-390.png`, `after-index-*.png`, `after-results.json`, `full-and-native-results.json`, `after-nojs-index-ferrum.png`.
+
+The source contract test verifies 32 unique native links, exact stable-target coverage/order and the three requested subject paths. Together with the four new GRID rhythm/ownership cases and the existing 24 GRID model cases, focused tests pass **29/29**. Root TypeScript `tsc --noEmit` and scoped `git diff --check` pass. GRID's separate [rhythm and toolbar acceptance](../grid/RHYTHM-AUDIT.md) records its physical mapping, twelve-chapter table, complete wheel traversal and controls.
+
+Chromium 156.0.8078.4 (Playwright build 1248) viewport simulation at DPR 1 is the tested environment. Physical touch, iOS/Safari/Firefox, high-refresh hardware and physical 4K-panel certification remain NOT_RUN. Integrated tests/build/project-path verification belong to the parent Batch B gate. No commit, push or deployment was performed by this scope owner.
+
+A bounded project-path production check at `http://127.0.0.1:4175/ai-web-experience-collection/` passes six representative desktop/phone cases with zero page errors or HTTP failures: native Index entry/Return, exact source focus and offset, GRID focus grace/inert/hidden/reverse state, exact pixel reload, nine persistent nodes and reduced-motion Variable keyboard input. Raw results are `production-results.json`; this local production preview is not a deployed-site claim. The integrating owner separately reports the full 366-test and both production-build/971-reference gates.

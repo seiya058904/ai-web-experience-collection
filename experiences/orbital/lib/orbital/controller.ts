@@ -2,13 +2,15 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 import { createFlightScene, type FlightScene } from './flight-scene';
-import { CHAPTERS, chapterVisibility, clamp, smooth, type Destination, type Subsystem } from './mission';
+import { CHAPTERS, chapterVisibility, clamp, initialChapterFromFragment, smooth, type Destination, type Subsystem } from './mission';
 import { MissionAudio } from './audio';
+import type { SceneLayout } from './study';
 
 export interface MissionController {goTo:(chapter:number)=>void;setLocked:(locked:boolean)=>void;setReduced:(value:boolean)=>void;setDestination:(value:Destination)=>void;setSubsystem:(value:Subsystem)=>void;toggleSound:()=>Promise<boolean>;destroy:()=>void;}
 export interface MissionInitialState {reduced?:boolean;locked?:boolean;destination?:Destination;subsystem?:Subsystem;}
 
 export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,onReduced:(value:boolean)=>void,initial:MissionInitialState={}):MissionController {
+  const initialDocumentY=window.scrollY;
   gsap.registerPlugin(ScrollTrigger);
   const track=root.querySelector<HTMLElement>('[data-scroll-track]')!;
   const readingSection=root.querySelector<HTMLElement>('.mission-reading')!;
@@ -26,7 +28,15 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   const crosses=Array.from(root.querySelectorAll<HTMLElement>('.orbital-crosshair'));
   const reducedMedia=window.matchMedia('(prefers-reduced-motion: reduce)');
   let reduced=initial.reduced??reducedMedia.matches;let destroyed=false;let progress=0;let totalTravel=1;let step=1;let active=-1;let ambient=0;let resizeTimer:ReturnType<typeof setTimeout>|undefined;let measured=false;let locked=initial.locked??false;
-  let destination:Destination=initial.destination??'mars';let destinationMix=0;let subsystem:Subsystem=initial.subsystem??'propulsion';let lastSpeed='',lastAltitude='';let previousY=-1;let dirty=true;let lastStamp=0;let sceneVisible=true;let navigationGoal:number|null=null;let navigationSerial=0;
+  let destination:Destination=initial.destination??'mars';let destinationMix=0;let subsystem:Subsystem=initial.subsystem??'overview';let lastSpeed='',lastAltitude='';let previousY=-1;let dirty=true;let lastStamp=0;let sceneVisible=true;let navigationGoal:number|null=null;let navigationSerial=0;
+  let layoutDirty=true;let sceneLayout:SceneLayout|undefined;
+  const destinationCopy=chapters[6].querySelector<HTMLElement>('.chapter-copy')!;
+  const machineCopy=chapters[4].querySelector<HTMLElement>('.chapter-copy')!;
+  const compactProgress=root.querySelector<HTMLElement>('.compact-progress')!;
+  function measureSceneLayout(){
+    sceneLayout={copyBottom:destinationCopy.offsetTop+destinationCopy.offsetHeight,machineBottom:machineCopy.offsetTop+machineCopy.offsetHeight,footerTop:compactProgress.offsetTop};
+    layoutDirty=false;
+  }
   const audio=new MissionAudio();
   let pendingReadyMeasure=false;
   let positionTimer:ReturnType<typeof setTimeout>|undefined;
@@ -54,7 +64,7 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
     if(measured&&preserve&&!location.hash.includes('mission-reading'))lenis.scrollTo(previousProgress/8*totalTravel,{immediate:true,force:true});
     measured=true;ScrollTrigger.refresh();
     if(readingOffset!==null)lenis.scrollTo(readingSection.getBoundingClientRect().top+window.scrollY+readingOffset,{immediate:true,force:true});
-    dirty=true;lastStamp=-1;if(resumeNavigation!==null)goTo(resumeNavigation);
+    layoutDirty=true;dirty=true;lastStamp=-1;if(resumeNavigation!==null)goTo(resumeNavigation);
   }
   measure(false);
   const trigger=ScrollTrigger.create({trigger:track,start:'top top',end:()=>'+='+totalTravel,invalidateOnRefresh:true,onUpdate:self=>{progress=clamp(self.progress)*8;dirty=true;}});
@@ -91,6 +101,7 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
     ascentScale.style.opacity=String(smooth((progress-1.89)/.32)*(1-smooth((progress-2.72)/.35))*.78);
     const orbitAmount=smooth((progress-4.84)/.43)*(1-smooth((progress-5.72)/.45));crosses.forEach(c=>c.style.opacity=String(orbitAmount*.8));
     timeline.style.transform='scaleX('+clamp(progress/7.45)+')';
+    root.style.setProperty('--mission-progress',String(clamp(progress/7.45)));
     const velocity=progress<1?0:progress<2?Math.round(smooth(progress-1)*400):progress<3?Math.round(400+smooth(progress-2)*2000):Math.round(2400+smooth((progress-3)/2)*5300);
     const altitude=progress<1?0:progress<2?Math.round(smooth(progress-1)*12):progress<3?Math.round(12+smooth(progress-2)*70):Math.round(82+smooth((progress-3)/2)*318);
     const speed=String(velocity).padStart(4,'0');const alt=String(altitude).padStart(3,'0');
@@ -111,10 +122,10 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
     const shouldPaint=dirty||lastStamp!==progress||Math.abs(destinationMix-(destination==='moon'?1:0))>.001;
     if(shouldPaint){updateDom(delta);dirty=false;}
     // Static mode renders only on a changed state, and all motion shares this one clock.
-    if(!reduced||shouldPaint){scene?.render(reduced?Math.min(7,Math.floor(progress))+.36:progress,ambient,reduced,destination,subsystem);lastStamp=progress;}
+    if(!reduced||shouldPaint){if(layoutDirty)measureSceneLayout();scene?.render(reduced?Math.min(7,Math.floor(progress))+.36:progress,ambient,reduced,destination,subsystem,sceneLayout);lastStamp=progress;}
   }
   gsap.ticker.add(tick);
-  updateDom(1/60);scene?.render(reduced?Math.min(7,Math.floor(progress))+.36:progress,0,reduced,destination,subsystem);
+  updateDom(1/60);measureSceneLayout();scene?.render(reduced?Math.min(7,Math.floor(progress))+.36:progress,0,reduced,destination,subsystem,sceneLayout);
 
   function cancelNavigation(){const wasNavigating=navigationGoal!==null;navigationGoal=null;navigationSerial++;if(wasNavigating)lenis.scrollTo(window.scrollY,{immediate:true,force:true});}
   function navigationKey(event:KeyboardEvent){if(['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key))cancelNavigation();}
@@ -123,11 +134,19 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   function visibility(){audio.visibility(document.hidden||!sceneVisible);if(!document.hidden){lenis.scrollTo(window.scrollY,{immediate:true,force:true});ScrollTrigger.update();dirty=true;lastStamp=-1;}}
   function readingChange(){
     if(destroyed)return;
+    const saved=history.state?.[positionKey] as {hash:string;progress:number;readingOffset?:number}|undefined;
     // React inserts this section after initial fragment resolution. Its visible
     // state must not depend on the browser having assigned :target beforehand.
     root.dataset.reading=String(location.hash==='#mission-reading');
     lenis.resize();ScrollTrigger.refresh();
-    if(location.hash==='#mission-reading'){const reading=root.querySelector<HTMLElement>('.mission-reading')!;const target=reading.getBoundingClientRect().top+window.scrollY;lenis.scrollTo(target,{immediate:true,force:true});reading.querySelector<HTMLElement>('h2')?.focus({preventScroll:true});}
+    if(location.hash==='#mission-reading'){const reading=root.querySelector<HTMLElement>('.mission-reading')!;const offset=saved?.hash===location.hash&&Number.isFinite(saved.readingOffset)&&saved.readingOffset!>=0?saved.readingOffset!:0;const target=reading.getBoundingClientRect().top+window.scrollY+offset;lenis.scrollTo(target,{immediate:true,force:true});reading.querySelector<HTMLElement>('h2')?.focus({preventScroll:true});}
+    else {
+      const index=CHAPTERS.findIndex(chapter=>location.hash==='#chapter-'+chapter.id);
+      if(index>=0){
+        const savedProgress=saved?.hash===location.hash&&Number.isFinite(saved.progress)&&saved.progress>=0&&saved.progress<=1?saved.progress:null;
+        cancelNavigation();lenis.scrollTo(savedProgress!==null?savedProgress*totalTravel:(index===0?0:index+.36)*step,{immediate:true,force:true});ScrollTrigger.update();dirty=true;
+      }
+    }
   }
   function savePosition(){
     if(destroyed)return;
@@ -142,6 +161,7 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
   window.addEventListener('scroll',queuePositionSave,{passive:true});
   function motionChange(){setReduced(reducedMedia.matches);}
   const sizeObserver=new ResizeObserver(resize);sizeObserver.observe(viewport);
+  const copyObserver=new ResizeObserver(()=>{layoutDirty=true;dirty=true;lastStamp=-1;});copyObserver.observe(destinationCopy);copyObserver.observe(machineCopy);
   window.addEventListener('resize',resize);document.addEventListener('visibilitychange',visibility);reducedMedia.addEventListener('change',motionChange);
   void document.fonts.ready.then(()=>{if(!destroyed)pendingReadyMeasure=true;});
   void Promise.allSettled(Array.from(root.querySelectorAll<HTMLImageElement>('.scene-background')).map(img=>img.decode())).then(()=>{if(!destroyed)pendingReadyMeasure=true;});
@@ -152,6 +172,9 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
       ?reading.getBoundingClientRect().top+window.scrollY+restorePosition.readingOffset!
       :restorePosition.progress*totalTravel;
     lenis.scrollTo(target,{immediate:true,force:true});ScrollTrigger.update();dirty=true;
+  } else {
+    const index=initialChapterFromFragment(location.hash,initialDocumentY,false,navigationType);
+    if(index!==null){lenis.scrollTo((index===0?0:index+.36)*step,{immediate:true,force:true});ScrollTrigger.update();dirty=true;}
   }
   function setReduced(value:boolean){reduced=value;root.dataset.reduced=String(value);onReduced(value);lenis.options.smoothWheel=!value;measure(true);dirty=true;lastStamp=-1;}
   function goTo(index:number){
@@ -159,5 +182,5 @@ export function createMission(root:HTMLElement,onChapter:(chapter:number)=>void,
     lenis.start();locked=false;navigationGoal=i;const serial=++navigationSerial;const target=(i===0?0:i+.36)*step;
     lenis.scrollTo(target,{duration:reduced?0:Math.min(2.2,.85+Math.abs(progress-i)*.16),immediate:reduced,force:true,easing:t=>1-Math.pow(1-t,3),onComplete:()=>{if(serial===navigationSerial)navigationGoal=null;}});
   }
-  return{goTo,setLocked(value){locked=value;if(value){cancelNavigation();lenis.stop();}else lenis.start();},setReduced,setDestination(value){destination=value;dirty=true;lastStamp=-1;},setSubsystem(value){subsystem=value;dirty=true;lastStamp=-1;},toggleSound:()=>audio.toggle(),destroy(){destroyed=true;viewportObserver.disconnect();sizeObserver.disconnect();window.removeEventListener('wheel',cancelNavigation,true);window.removeEventListener('touchstart',cancelNavigation,true);window.removeEventListener('pointerdown',cancelNavigation,true);window.removeEventListener('keydown',navigationKey,true);clearTimeout(resizeTimer);window.removeEventListener('hashchange',readingChange);window.removeEventListener('pagehide',savePosition);window.removeEventListener('scroll',queuePositionSave);clearTimeout(positionTimer);root.removeEventListener('focusin',readingFocus);window.removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);reducedMedia.removeEventListener('change',motionChange);gsap.ticker.remove(tick);trigger.kill();lenis.destroy();audio.destroy();scene?.destroy();chapters.forEach(c=>{c.inert=false;});}};
+  return{goTo,setLocked(value){locked=value;if(value){cancelNavigation();lenis.stop();}else lenis.start();},setReduced,setDestination(value){destination=value;layoutDirty=true;dirty=true;lastStamp=-1;},setSubsystem(value){subsystem=value;layoutDirty=true;dirty=true;lastStamp=-1;},toggleSound:()=>audio.toggle(),destroy(){destroyed=true;viewportObserver.disconnect();sizeObserver.disconnect();copyObserver.disconnect();window.removeEventListener('wheel',cancelNavigation,true);window.removeEventListener('touchstart',cancelNavigation,true);window.removeEventListener('pointerdown',cancelNavigation,true);window.removeEventListener('keydown',navigationKey,true);clearTimeout(resizeTimer);window.removeEventListener('hashchange',readingChange);window.removeEventListener('pagehide',savePosition);window.removeEventListener('scroll',queuePositionSave);clearTimeout(positionTimer);root.removeEventListener('focusin',readingFocus);window.removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);reducedMedia.removeEventListener('change',motionChange);gsap.ticker.remove(tick);trigger.kill();lenis.destroy();audio.destroy();scene?.destroy();chapters.forEach(c=>{c.inert=false;});}};
 }

@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-25",
+  "head": "eab9bc865a4092b16abbaf0ed4da651bcb8f7631",
+  "scope": "Batch D; single agent; no publishing",
+  "externalEvidenceRoot": "C:\\Users\\admin\\.codex\\tmp\\flagship-d-20261025",
+  "source": {
+    "pages/counterform/index.html": {
+      "bytes": 24392,
+      "sha256": "b249e66be0820f3057adebdf0860349c1c17a692d5f706e1ffed4baa7d4b7402"
+    },
+    "experiences/counterform/app.js": {
+      "bytes": 33945,
+      "sha256": "9fe3878cf8b1f030fef51c25bf1f2977efd4c594ed602c7bba2020bec4e6673c"
+    },
+    "experiences/counterform/styles.css": {
+      "bytes": 38673,
+      "sha256": "d9b757334d5f4fc4b2cfd05527f90e8d0821ec3065217acf08a572727877a206"
+    },
+    "pages/chronos/index.html": {
+      "bytes": 15312,
+      "sha256": "79682f2bc7132d664070fd36104ee4b845053ad7187490a28d42ae6e05d270c2"
+    },
+    "experiences/orbital/lib/orbital/mission.ts": {
+      "bytes": 5493,
+      "sha256": "96789beb7cbb62beca47078e15dedc3e91fd08ccf221a742334d4544eb85d5b8"
+    },
+    "docs/counterform/DESIGN.md": {
+      "bytes": 1530,
+      "sha256": "48a0679bb63289925d4189f98fbf31224982c0e476c5be840fa861af0683e3f1"
+    },
+    "docs/counterform/ACCEPTANCE.md": {
+      "bytes": 3859,
+      "sha256": "0ccca6d37edb09e5eced3a73eda1bf8818027ed9989285b394ba012425c2a27f"
+    },
+    "docs/chronos/DESIGN.md": {
+      "bytes": 21544,
+      "sha256": "98952bef87ba542a18db862dae6c84227cd7d36e6df1f4243ee2c3277ee3055a"
+    },
+    "docs/orbital/DESIGN.md": {
+      "bytes": 4154,
+      "sha256": "ba1f9d534d848cc9b7feb6fcdf78d7c995ce8805abf940c41ab4e30564b20479"
+    },
+    "docs/audits/2026-10-25-batch-d.md": {
+      "bytes": 7377,
+      "sha256": "cabccf5eb68b7e5e171a359dd09d9476091b9adfcd4c52d3ae778f6ab05763a6"
+    }
+  },
+  "externalEvidence": {
+    "qa-final.json": {
+      "bytes": 9429,
+      "sha256": "974ff22875008e624a6f35a754763d2dd00d79c13e8a3cb8e271829d80c403d2"
+    },
+    "qa-final.mjs": {
+      "bytes": 5073,
+      "sha256": "ad6791495b635b8e44084cad1db4e1d00e8843eda1bdc7065e4d6cbb28bd161f"
+    },
+    "qa-final.log": {
+      "bytes": 7469,
+      "sha256": "d9c4822173d7181dd31eeeb6ab2741c1a0944db49bab996c3e0d521fd251ae28"
+    },
+    "extremes.json": {
+      "bytes": 392,
+      "sha256": "6e90c5571f3e4fc2c818765fa28f958f2aa7a148a53854483625a65dd602356e"
+    },
+    "extremes.mjs": {
+      "bytes": 1320,
+      "sha256": "710127861817ff78f1079654756178effaaa651d1e5ed5a76d236c0824002a19"
+    },
+    "access.json": {
+      "bytes": 268,
+      "sha256": "05c14433893f282291bd10db91006179dd9337f439276d71d962549343e38a6f"
+    },
+    "access.mjs": {
+      "bytes": 1537,
+      "sha256": "0e13ba2a5a66545a289dd2725c31aacd1346630c1c09f7832db2c228e25a4377"
+    },
+    "root-browser.json": {
+      "bytes": 75,
+      "sha256": "fc4dded966cc1270f289d98e8174db7a667c25191da2ea62a74e8926809268d3"
+    },
+    "pdf-validation.json": {
+      "bytes": 3414,
+      "sha256": "de343d7600f6f3b9a8a1daaea4f0f75b2441c01396ecd027ce2722fe8d3a84c2"
+    },
+    "tests.log": {
+      "bytes": 40191,
+      "sha256": "de315597da3f8994301e0e48142c1e6b1a1a3c9c794e3ecdc7f00209e914f8fc"
+    },
+    "build-final-root.log": {
+      "bytes": 15001,
+      "sha256": "035603fd5d61be37d5622bda4b2c7d339a46338e452f95a7fa862b795de4f1dd"
+    },
+    "build-final-project.log": {
+      "bytes": 19908,
+      "sha256": "0ed8d08237f1af94786d425222bc2f2f4427e506a17db8ed407763d7f4f7e221"
+    },
+    "before.json": {
+      "bytes": 2569,
+      "sha256": "e8fa2d71776366041c8d2660af3ef74ae72a6f2dcf3b6250b62335f5b4e2ee85"
+    },
+    "before.mjs": {
+      "bytes": 1028,
+      "sha256": "11506ded43f5c53f383574b73c8d26cda96436d6903357edea45f2f08476d13a"
+    },
+    "REJECTED-two-page-extreme.pdf": {
+      "bytes": 24635,
+      "sha256": "bb075d0490c74198a3713ec724042af1d404f1afe8ec01f2e3fca0e6797b7d96"
+    }
+  },
+  "checks": {
+    "browserCases": 30,
+    "unitTests": 368,
+    "failures": 0,
+    "finalSinglePagePDFs": 18,
+    "rootAndProjectBuildReferencesEach": 1086
+  },
+  "limits": [
+    "physical phones and iOS NOT_RUN",
+    "native print dialog and physical printer NOT_RUN",
+    "strict GPU budget PARTIAL",
+    "strict memory peak NOT RELIABLY MEASURED",
+    "true background hidden NOT_OBSERVED",
+    "T27 and T29 NOT_SELECTED",
+    "no commit push deploy or production acceptance"
+  ]
+}

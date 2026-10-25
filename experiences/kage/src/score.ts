@@ -13,6 +13,16 @@ export const CHAPTERS = [
 export const clamp = (value: number, min = 0, max = 1) => Math.min(max, Math.max(min, value));
 export const mix = (a: number, b: number, t: number) => a + (b - a) * t;
 export const smooth = (t: number) => t * t * (3 - 2 * t);
+/** Change caption text/side only inside a quiet interval around each boundary. */
+export function captionOpacity(progress: number, reduced = false): number {
+  if (reduced) return 1;
+  let opacity = 1;
+  for (let i = 1; i < CHAPTERS.length; i++) {
+    const boundary = (CHAPTERS[i - 1].at + CHAPTERS[i].at) / 2;
+    opacity = Math.min(opacity, smooth(clamp((Math.abs(progress - boundary) - .004) / .014)));
+  }
+  return opacity;
+}
 export type Vec3 = [number, number, number];
 
 export interface FramePose {

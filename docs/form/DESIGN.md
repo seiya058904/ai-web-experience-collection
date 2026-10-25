@@ -70,3 +70,7 @@ Prefer geometry, transforms, modest lighting changes, and small reused textures 
 Run `npm run check` and `npm run build`. Inspect normal and slow scroll, sharp reversals, the middle of every handoff, direct hash links, browser history, Index, material/light/section/assembly controls, resize, portrait framing, and reduced motion. Stop at arbitrary points: the object should retain a clear silhouette, headings should have intentional space, and dimension or detail labels should still point to their geometry.
 
 Keep only the final source, required assets, reproducible package files, notices, and current production build in the deliverable. Research images, QA captures, traces, dependency directories, logs, and intermediate builds are working materials rather than website assets.
+
+## Batch C native desktop observation
+
+`../audits/2026-10-25-batch-c.md` records the native Windows 4K-output / 175% scale / RX 7900 XT check, actual backing sizes and existing quality limits. Default caps are unchanged. RAF cadence and CPU submission samples are not GPU FPS or sustained GPU-budget certification. Physical mobile/iOS and unobserved background suspension remain explicitly unverified.

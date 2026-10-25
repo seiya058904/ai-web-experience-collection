@@ -207,3 +207,7 @@ Reduced motion 首次遵循系统偏好，也可在 Index 手动设置。切换�
 - Don't 用黑屏、无依据的遮罩或下一节直接覆盖来替代建筑交接。
 - Don't 把大段正文、超大标题或装饰动画压在建筑主体上。
 - Don't 把生成影像描述成真实建筑摄影、原生 4K 素材或实测高帧率证明。
+
+## Batch C late geometry refresh
+
+`Journey.refresh()` queues measurement. The existing GSAP tick performs it after Lenis settles (no active scroll, less than 0.5px remaining target travel and 120ms without scroll). This prevents a font/image completion from replacing remaining wheel travel. Existing chapter poses, camera/breath layers and navigation remain owned by this same journey. See the Batch C audit for measured delayed-font controls.

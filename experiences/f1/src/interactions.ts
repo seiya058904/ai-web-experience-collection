@@ -33,6 +33,12 @@ function windTunnel(motion: MotionService) {
   const context = canvas.getContext("2d");
   const scene = $(".wind-tunnel");
   const slider = $<HTMLInputElement>("#air-speed");
+  const feedback = $<SVGSVGElement>(".aero-feedback-flow");
+  const feedbackLines = Array.from({ length: 10 }, () => {
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    feedback.append(line);
+    return line;
+  });
   let mode: "corner" | "straight" = "corner";
   let speed = 240;
   let width = 1000;
@@ -63,6 +69,11 @@ function windTunnel(motion: MotionService) {
       );
       return stroke;
     });
+    // Same airflow sample beside the controls, using the compact side view
+    // instead of the tall phone crop. No second canvas or animation clock.
+    feedback.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    paths.forEach((points, index) => feedbackLines[index].setAttribute("d",
+      points.map((point, i) => `${i ? "L" : "M"}${point.x.toFixed(2)},${(mobile ? (point.y / height - .15) / .78 * height : point.y).toFixed(2)}`).join(" ")));
   }
 
   function draw() {
@@ -122,6 +133,8 @@ function windTunnel(motion: MotionService) {
     $("#drag-value").textContent = `${force.drag.toFixed(2)} ×`;
     $("#downforce-bar").style.transform = `scaleX(${force.downforce / 2.01})`;
     $("#drag-bar").style.transform = `scaleX(${force.drag / 2.01})`;
+    feedback.style.opacity = String(.35 + .65 * (speed - 100) / 240);
+    feedback.style.strokeWidth = String(1 + force.downforce * .35);
     draw();
   }
   slider.addEventListener("input", update, { signal });

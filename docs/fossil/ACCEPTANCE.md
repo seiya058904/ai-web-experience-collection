@@ -29,3 +29,7 @@ The shared production add-on passed 26 groups: desktop/phone homepage entry, dir
 Both works passed six-size entry/middle checks at 390 × 844, 768 × 1024, 1440 × 900, 1920 × 1080, 2560 × 1440 and 3840 × 2160 (12 work/size groups; 24 complete frames inspected), without horizontal overflow, broken media or page/resource errors. Forced fallback captures were inspected. Physical touch, iOS/Safari, high-refresh hardware, FPS and speaker-quality certification remain unverified.
 
 The Collection's central production lifecycle run recorded a real native tab switch with `document.hidden=true`: FOSSIL's frame count stayed at 444 and scrollY stayed at 600 throughout the hidden interval, with no pending application RAF. Restoration resumed frames and subsequent input reached scrollY 1200. Native Back restored through BFCache (`pageshow.persisted=true`) at scrollY 1200, with zero position difference. All five lifecycle assertions passed. This is recorded in the external release evidence `collection-repair-intake-142bd97f/lifecycle-results.json`; it does not claim live Pages verification.
+
+## Batch C verification (25 October 2026)
+
+The scoped preparation/late-resource changes and current acceptance evidence are recorded in `../audits/2026-10-25-batch-c.md`. Earlier acceptance above remains historical; it does not certify the new code. Batch C distinguishes controlled browser failures, simulated viewports/networks, native desktop hardware observations and unavailable physical mobile devices.

@@ -22,7 +22,7 @@ function emptyStage(error, options) {
   const diagnostics = { supported: false, ready: false, contextLost: false, errors: [error], frames: 0 };
   report(options.onError, error);
   return {
-    update() {}, resize() {}, dispose() {},
+    update() {}, resize() {}, dispose() {}, ensureScene() {},
     ready: Promise.resolve(diagnostics),
     getDiagnostics: () => ({ ...diagnostics }),
   };
@@ -549,16 +549,23 @@ export async function createSpatialStage(canvas, options = {}) {
   }
 
   resize(canvas.clientWidth || 1, canvas.clientHeight || 1);
-  const ready = Promise.allSettled([loadBody(), loadRelief()]).then((results) => {
-    results.forEach((result, index) => {
-      if (result.status === 'rejected' && !disposed) fail('asset-load', result.reason, index === 0 ? 'body' : 'relief');
-    });
-    const diagnostics = getDiagnostics();
-    if (!disposed) report(options.onReady, diagnostics);
-    return diagnostics;
-  });
+  const requests = new Map();
+  function ensureScene(name) {
+    const key = name === 'relief' ? 'relief' : 'body';
+    if (disposed) return Promise.resolve(getDiagnostics());
+    if (!requests.has(key)) {
+      requests.set(key, (key === 'body' ? loadBody() : loadRelief())
+        .catch(error => { if (!disposed) fail('asset-load', error, key); })
+        .then(() => {
+          const diagnostics = getDiagnostics();
+          if (!disposed) report(options.onReady, diagnostics);
+          return diagnostics;
+        }));
+    }
+    return requests.get(key);
+  }
 
-  return { update, resize, dispose, getDiagnostics, ready };
+  return { update, resize, dispose, getDiagnostics, ensureScene, ready: Promise.resolve(getDiagnostics()) };
 }
 
 export default createSpatialStage;

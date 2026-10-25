@@ -1,0 +1,49 @@
+{
+  "method": "Sharp lossless WebP. Alpha and every nonzero-alpha pixel compared byte equal. Encoder may normalize RGB under fully transparent pixels, counted below; original PNG retained. No crop, scale or generated artwork.",
+  "records": [
+    {
+      "name": "hero-form",
+      "adopted": true,
+      "original": 2510955,
+      "derived": 1277510,
+      "sourceSHA256": "6d8cbeed4ada2ed93a05ff28f83e0d7df3a2622d7acb4c5bb29613c10a98665a",
+      "derivedSHA256": "9f9a801360f97c8dd7c1aeaa77abd5e3fd02d74f24c14e19ac14114eea953f41",
+      "sourceRGBA256": "86c3e76c744500582350cabe74aaa03ccebc4ee54e95671811a38188e5082d79",
+      "derivedRGBA256": "d7d979a344115d51cdb60f1bd6b80a5c6a73293fac9cc35ebdd6f78c3dd44cab",
+      "transparentRGBChanges": 628681
+    },
+    {
+      "name": "gallery-ivory",
+      "adopted": true,
+      "original": 1275537,
+      "derived": 1028054,
+      "sourceSHA256": "4e83879ced48396e5cd3a041f146294800187a3f40e3150271acb7b5b3558420",
+      "derivedSHA256": "2b5a069b1e358809975680eea3c5f7316f402bc40c83b66681c967c2d6fba422",
+      "sourceRGBA256": "cccd01751e1b40b09b7c46cdad04e4905744a728179e8d19308b8d82291500b4",
+      "derivedRGBA256": "cccd01751e1b40b09b7c46cdad04e4905744a728179e8d19308b8d82291500b4",
+      "transparentRGBChanges": 0
+    },
+    {
+      "name": "gallery-museum",
+      "adopted": true,
+      "original": 1664590,
+      "derived": 1216298,
+      "sourceSHA256": "de59695dd9d485336a14bdb4b92ce0f277173632ab1274b575ee74b83fa8272c",
+      "derivedSHA256": "bd99ffb34b8d01b34cd210e8c365d39451a0babc13252d4f735ab753d22676b7",
+      "sourceRGBA256": "d5a096cfcbd91da161282262ad991b83ef42652a74c0366a4817f2f21f2b028f",
+      "derivedRGBA256": "d5a096cfcbd91da161282262ad991b83ef42652a74c0366a4817f2f21f2b028f",
+      "transparentRGBChanges": 0
+    },
+    {
+      "name": "basalt",
+      "adopted": true,
+      "original": 3348617,
+      "derived": 2353658,
+      "sourceSHA256": "9ac56525bc1d1caf0ccf4380bd13535e09d9ec79fb0dfd1c6587cd7d804adb91",
+      "derivedSHA256": "6f8ebc59119efef919590e5bdc6c466d62d9177beee0618c359546510168c119",
+      "sourceRGBA256": "e14935c11ccdfad880a29b19f9c2419f4b3dfe5892c1232f66fd6ecb2608ae87",
+      "derivedRGBA256": "e14935c11ccdfad880a29b19f9c2419f4b3dfe5892c1232f66fd6ecb2608ae87",
+      "transparentRGBChanges": 0
+    }
+  ]
+}

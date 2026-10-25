@@ -28,6 +28,7 @@
   <link rel="preload" href="/magma/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../../experiences/magma/src/styles.css">
   <script type="module" src="../../experiences/magma/src/main.js"></script>
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
 <body>
   <a class="skip-link" href="#study-index" data-open-index>Open chapter index</a>
@@ -42,7 +43,7 @@
   <header class="masthead">
     <a class="wordmark" href="#pressure" data-go="0" aria-label="MAGMA, return to the beginning">MAGMA</a>
     <div class="header-actions">
-      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <a class="collection-return" href="%BASE_URL%#world-magma" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
       <button class="text-button" id="index-toggle" type="button" aria-haspopup="dialog" aria-controls="study-index">Index</button>
       <button class="text-button sound-toggle" id="sound-toggle" type="button" aria-pressed="false">
         <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="sound-label">Sound off</span>

@@ -7,6 +7,7 @@ import type { FieldFrame, Material, ResonanceMode } from './field';
 import { ViolinAudio } from './audio';
 import { CHAPTERS, clamp, smooth, distances, storyToUnits, unitsToStory, sceneWeight } from './story';
 import type { ViolinStudy } from './violin-model';
+import { portalContour, craftInsideCopy } from './handoff';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -29,6 +30,8 @@ const artHero = $('.hero-art');
 const artReturn = $('.return-art');
 const artWood = $('.wood-art');
 const artInside = $('.inside-art');
+const insideReveal = $('.inside-reveal');
+const studyContainer = $('#violin-study');
 const bridgePlate = $('.bridge-plate');
 const bowImage = $<HTMLImageElement>('#bow-image');
 const bowInput = $<HTMLInputElement>('#bow-progress');
@@ -54,11 +57,14 @@ let capturePaused = false;
 let refreshPending = false;
 let preserveOnRefresh = false;
 let refreshTimer = 0;
+let lastScrollAt = 0;
 let statusTimer = 0;
 let bowOverrideScrollY = 0;
 let model: ViolinStudy | undefined;
 let modelLoading = false;
 let modelFailed = false;
+let modelReady = false;
+let studyBounds = {left: 0, top: 0};
 let scoreTween: gsap.core.Tween | undefined;
 let readingTrigger: ScrollTrigger | undefined;
 const master = { units: 0 };
@@ -78,6 +84,7 @@ const lenis = new Lenis({
   },
 });
 const updateTrigger = () => {
+  lastScrollAt = performance.now();
   if (frame.bowOverride !== null && Math.abs(window.scrollY - bowOverrideScrollY) > 3) frame.bowOverride = null;
   ScrollTrigger.update();
 };
@@ -87,7 +94,7 @@ const portalSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 portalSvg.setAttribute('width', '0'); portalSvg.setAttribute('height', '0');
 portalSvg.setAttribute('aria-hidden', 'true');
 portalSvg.style.cssText = 'position:absolute;pointer-events:none;';
-portalSvg.innerHTML = '<defs><clipPath id="f-portal" clipPathUnits="userSpaceOnUse"><path d="M .96 1.39 C 1.14 1.48 1.34 1.33 1.26 1.14 C 1.20 1 1.03 1 .99 1.12 C .89 1.03 .85 .73 .96 .35 L 1.06 .04 L .99 -.04 L 1.10 -.04 C 1.19 -.31 1.24 -.61 1.18 -.87 C 1.35 -.77 1.55 -.93 1.49 -1.12 C 1.43 -1.34 1.15 -1.39 1.03 -1.20 C .95 -1.08 1.03 -.96 1.12 -.98 C 1.13 -.78 1.03 -.51 .90 -.19 L .87 -.08 L .78 -.08 L .86 0 C .71 .48 .79 .95 .88 1.22 C .86 1.29 .90 1.36 .96 1.39 Z"/></clipPath></defs>';
+portalSvg.innerHTML = '<defs><clipPath id="f-portal" clipPathUnits="userSpaceOnUse"><path/></clipPath></defs>';
 stage.prepend(portalSvg);
 const portalPath = portalSvg.querySelector('path')!;
 
@@ -138,7 +145,8 @@ function setupScroll() {
   lenis.options.smoothWheel = !reduced;
   updateMotionButton();
   if (reduced) {
-    artInside.style.clipPath = 'none';
+    insideReveal.style.clipPath = 'none';
+    insideReveal.style.opacity = '1';
     bridgePlate.style.opacity = '1';
     scenes.forEach((scene, i) => {
       scene.id = CHAPTERS[i][0];
@@ -164,7 +172,8 @@ function setupScroll() {
   lenis.resize();
   ScrollTrigger.refresh();
   if (!reduced && model?.available) {
-    const bounds = $('#violin-study').getBoundingClientRect();
+    const bounds = studyContainer.getBoundingClientRect();
+    studyBounds = {left: studyContainer.offsetLeft, top: studyContainer.offsetTop};
     model.resize(bounds.width, bounds.height);
   }
 }
@@ -240,7 +249,8 @@ function performRefresh() {
     if (reduced) renderReducedFields();
   }
   if (!reduced && model?.available) {
-    const r = $('#violin-study').getBoundingClientRect();
+    const r = studyContainer.getBoundingClientRect();
+    studyBounds = {left: studyContainer.offsetLeft, top: studyContainer.offsetTop};
     model.resize(r.width, r.height);
   }
   if (preserve && dimensionsChanged) applyStoryScroll(oldStory, true);
@@ -254,17 +264,21 @@ async function ensureModel() {
   try {
     const { ViolinStudy: Study } = await import('./violin-model');
     if (disposed) return;
-    model = new Study($('#violin-study'));
+    model = new Study(studyContainer);
     if (model.available) {
       await model.ready;
       if (disposed) return;
       if (!reduced) {
-        const bounds = $('#violin-study').getBoundingClientRect();
+        const bounds = studyContainer.getBoundingClientRect();
+        studyBounds = {left: studyContainer.offsetLeft, top: studyContainer.offsetTop};
         model.resize(bounds.width, bounds.height);
         model.render(clamp(story - 2), ambientTime, false);
       }
-      scenes[2].classList.add('has-model');
-      body.dataset.model = 'ready';
+      modelReady = true;
+      // A late renderer must not replace the photograph halfway through its handoff.
+      // Adoption waits for a composition outside that interval; there is still only one clock.
+      if (story < 2.5 || story >= 3.14) scenes[2].classList.add('has-model');
+      body.dataset.model = scenes[2].classList.contains('has-model') ? 'ready' : 'pending';
     } else {
       modelFailed = true;
       body.dataset.model = 'fallback';
@@ -355,8 +369,17 @@ function paint() {
     updateAudio();
     return;
   }
+  if (modelReady && !scenes[2].classList.contains('has-model') && (story < 2.5 || story >= 3.14)) {
+    scenes[2].classList.add('has-model');
+    body.dataset.model = 'ready';
+  }
+  const handoff = story >= 2.5 && story < 3.14;
+  const livePortal = handoff && scenes[2].classList.contains('has-model');
+  const copyHandoff = craftInsideCopy(story);
   for (let i = 0; i < scenes.length; i++) {
-    const weight = sceneWeight(i, story);
+    // Inside replaces opaque Craft pixels through its aperture. Neither parent fades
+    // before that coverage exists; only the photograph fallback uses a dissolve.
+    const weight = handoff && (i === 2 || i === 3) ? 1 : sceneWeight(i, story);
     activeWeights[i] = weight;
     const scene = scenes[i];
     scene.style.opacity = weight.toFixed(4);
@@ -367,7 +390,8 @@ function paint() {
     const out = smooth(.73, 1, p);
     // Copy exchanges ahead of the imagery, so two voices never share the
     // middle of the longer scene crossfade at reading strength.
-    const copyAlpha = (i === 0 ? 1 : smooth(.72, .98, clamp(story - (i - 1)))) * (i === 8 ? 1 : 1 - smooth(.66, .9, p));
+    const copyAlpha = handoff && i === 2 ? copyHandoff.craft : handoff && i === 3 ? copyHandoff.inside
+      : (i === 0 ? 1 : smooth(.72, .98, clamp(story - (i - 1)))) * (i === 8 ? 1 : 1 - smooth(.66, .9, p));
     // Each composition keeps an individual direction; no repeated fade-up choreography.
     const dx = i === 1 ? -out * width * .017 : i === 7 ? out * width * .024 : 0;
     const dy = i === 3 ? out * height * .025 : i === 0 || i === 8 ? -p * height * .012 : 0;
@@ -394,12 +418,16 @@ function paint() {
     $('.interior-light').style.backgroundPosition = `${45 + Math.sin(ambientTime * .13) * 4 + p * 20}% 50%`;
     const energy = $('.energy-path');
     energy.style.strokeDashoffset = String(-(ambientTime * .08 + p * .5) % 1);
-    if (story < 3.14) {
-      const portal = smooth(2.81, 3.14, story);
-      const scale = height * (.025 + Math.pow(portal, 2.2) * 20);
-      portalPath.setAttribute('transform', `translate(${width * .7} ${height * .45}) scale(${scale}) translate(-.90 -.25)`);
-      artInside.style.clipPath = 'url(#f-portal)';
-    } else artInside.style.clipPath = 'none';
+    const hole = livePortal ? model?.projectPortal(studyBounds.left, studyBounds.top) : undefined;
+    if (hole) {
+      const points = portalContour(hole, width, height, story);
+      portalPath.setAttribute('d', points.map((point, i) => `${i ? 'L' : 'M'}${point.x.toFixed(3)} ${point.y.toFixed(3)}`).join(' ') + ' Z');
+      insideReveal.style.clipPath = 'url(#f-portal)';
+      insideReveal.style.opacity = String(smooth(2.5, 2.62, story));
+    } else {
+      insideReveal.style.clipPath = 'none';
+      insideReveal.style.opacity = handoff ? String(smooth(2.72, 3.14, story)) : '1';
+    }
   }
   if (activeWeights[4] > 0) bridgePlate.style.opacity = String(1 - smooth(.64, .87, clamp(story - 4)));
   if (activeWeights[5] > 0) positionBow(clamp(story - 5), false);
@@ -425,7 +453,9 @@ function tick(seconds: number) {
   if (disposed) return;
   if (import.meta.env.DEV && capturePaused) { lastTick = 0; return; }
   if (document.hidden) { lastTick = 0; return; }
-  if (refreshPending) performRefresh();
+  // Late fonts/images must not cancel unconsumed wheel travel or a destination.
+  // The existing ticker drains the dirty geometry only after input has settled.
+  if (refreshPending && !lenis.isScrolling && Math.abs(lenis.targetScroll - lenis.actualScroll) < .5 && performance.now() - lastScrollAt > 120) performRefresh();
   lenis.raf(seconds * 1000);
   const dt = lastTick === 0 ? 0 : clamp(seconds - lastTick, 0, .05);
   lastTick = seconds;
@@ -467,7 +497,9 @@ document.addEventListener('click', event => {
   closeDialog(creditsDialog);
   frame.bowOverride = null;
   history.pushState({ chapter: id }, '', `#${id}`);
-  scrollToStory(index + (index === 0 ? 0 : .16));
+  // Keep the authored adjacent handoff, including Craft → Inside. An explicit
+  // distant selection cuts to its composition instead of flashing every act.
+  scrollToStory(index + (index === 0 ? 0 : .16), Math.abs(index - Math.floor(story)) > 1);
 });
 
 $('#sound-toggle').addEventListener('click', async () => {
@@ -600,6 +632,9 @@ if (import.meta.hot) import.meta.hot.dispose(dispose);
 if (import.meta.env.DEV) {
   Object.defineProperty(window, '__luthier', {
     configurable: true,
-    get: () => ({ story, lastStory, reduced, debug: { master: master.units, units: unitLengths, height, capturePaused, refreshPending, lenisTarget: lenis.targetScroll, lenisAnimated: lenis.animatedScroll, lenisActual: lenis.actualScroll, isScrolling: lenis.isScrolling, trigger: scoreTween?.scrollTrigger?.progress }, activeChapter: lastChapter, field: { ...frame }, lenisCount: 1, tickerOwners: 1, model: model?.available ? 'ready' : modelFailed ? 'fallback' : 'idle', holdFrame: (hold: boolean) => { capturePaused = hold; }, seek: (target: number) => scrollToStory(target, true) }),
+    get: () => ({ story, lastStory, reduced, debug: { master: master.units, units: unitLengths, height, capturePaused, refreshPending, lenisTarget: lenis.targetScroll, lenisAnimated: lenis.animatedScroll, lenisActual: lenis.actualScroll, isScrolling: lenis.isScrolling, trigger: scoreTween?.scrollTrigger?.progress }, activeChapter: lastChapter, field: { ...frame }, lenisCount: 1, tickerOwners: 1, model: model?.available ? 'ready' : modelFailed ? 'fallback' : 'idle',
+      portal: model?.projectPortal(studyBounds.left, studyBounds.top),
+      capture: (target: number, time = 0) => { scrollToStory(target, true); ambientTime = time; paint(); capturePaused = true; },
+      holdFrame: (hold: boolean) => { capturePaused = hold; }, seek: (target: number) => scrollToStory(target, true) }),
   });
 }

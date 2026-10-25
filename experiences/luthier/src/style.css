@@ -75,7 +75,8 @@ p{font-family:var(--display);font-size:clamp(19px,1.6vw,36px);font-weight:400;li
 #material-description{font-family:var(--ui);font-size:clamp(10px,.68vw,16px);line-height:1.5;max-width:29ch;margin-top:1.7vh;min-height:3em;opacity:.82}
 .craft-fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1;transition:opacity .35s}
 .has-model .craft-fallback{opacity:0}
-#violin-study{position:absolute;left:36%;top:0;width:64%;height:95%;z-index:1;pointer-events:none}
+#violin-study{position:absolute;left:36%;top:0;width:64%;height:95%;z-index:1;pointer-events:none;opacity:0}
+.has-model #violin-study{opacity:1}
 #violin-study canvas{display:block;width:100%;height:100%}
 .craft-copy{left:var(--gutter);top:29%;width:44%;z-index:5}
 .craft-copy h2{font-size:5.95vw;line-height:.92}
@@ -84,6 +85,7 @@ p{font-family:var(--display);font-size:clamp(19px,1.6vw,36px);font-weight:400;li
 .parts-legend li{display:flex;align-items:center;gap:14px}
 .part-tick{display:block;height:1px;width:3.4vw;background:currentColor;opacity:.5}
 .craft-hint{left:var(--gutter);bottom:17%;font-size:clamp(10px,.72vw,16px);letter-spacing:.04em;color:var(--muted)}
+.inside-reveal{position:absolute;inset:0;overflow:hidden}
 .inside-art{position:absolute;inset:0;transform-origin:69% 39%;will-change:transform}
 .inside-art>img{width:100%;height:100%;object-fit:cover}
 .interior-light{position:absolute;inset:0;background:linear-gradient(118deg,transparent 43%,rgba(244,208,150,.055) 47%,rgba(244,211,167,.13) 51%,transparent 62%);background-size:170% 100%;mix-blend-mode:screen;pointer-events:none}
@@ -331,7 +333,7 @@ p{font-family:var(--display);font-size:clamp(19px,1.6vw,36px);font-weight:400;li
  .hero-art,.return-art{mask-image:linear-gradient(to bottom,transparent 0%,#000 16%,#000 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 16%,#000 100%)}
  .hero-art:after,.return-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.65) 26%,transparent 60%);pointer-events:none}
  .wood-art{mask-image:linear-gradient(to bottom,#000 0%,#000 64%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 64%,transparent 100%)}
- .scene-inside:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent 28%,rgba(8,8,8,.36) 53%,rgba(8,8,8,.77) 100%)}
+ .inside-reveal:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent 28%,rgba(8,8,8,.36) 53%,rgba(8,8,8,.77) 100%)}
  .space-note{text-shadow:0 0 12px #080808,0 1px 3px #080808}
  .string-notes{text-shadow:0 1px 3px #080808,0 0 7px #080808}
  body[data-chapter="inside"] .masthead{background:linear-gradient(rgba(8,8,8,.72) 0%,rgba(8,8,8,.5) 70%,transparent 100%)}

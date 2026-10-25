@@ -23,24 +23,25 @@
   <meta name="twitter:image:alt" content="PARALLAX's original black-stone sculpture captured from its actual live exhibition">
   <link rel="icon" type="image/svg+xml" href="/parallax/assets/mark.svg">
   <link rel="preload" href="/parallax/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/parallax/assets/hero-form.png" as="image" fetchpriority="high">
-  <link rel="preload" href="/parallax/assets/gallery-ivory.png" as="image">
+  <link rel="preload" href="/parallax/assets/hero-form.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="/parallax/assets/gallery-ivory.webp" as="image">
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
 <body>
   <a class="skip-link" href="#exhibition">Skip to the exhibition</a>
   <div class="world" aria-hidden="true">
-    <img class="world-plate world-plate--ivory" src="/parallax/assets/gallery-ivory.png" alt="" fetchpriority="high" decoding="async">
-    <img class="world-plate world-plate--museum" src="/parallax/assets/gallery-museum.png" alt="" decoding="async">
+    <img class="world-plate world-plate--ivory" src="/parallax/assets/gallery-ivory.webp" alt="" fetchpriority="high" decoding="async">
+    <img class="world-plate world-plate--museum" src="/parallax/assets/gallery-museum.webp" alt="" decoding="async">
   </div>
   <div class="hero-lettering"><h1 id="title">PARALLAX</h1></div>
   <div class="hero-sculpture" aria-hidden="true">
-    <img class="hero-reflection" src="/parallax/assets/hero-form.png" alt="" decoding="async">
-    <img class="hero-object" src="/parallax/assets/hero-form.png" alt="" fetchpriority="high" decoding="async">
+    <img class="hero-reflection" src="/parallax/assets/hero-form.webp" alt="" decoding="async">
+    <img class="hero-object" src="/parallax/assets/hero-form.webp" alt="" fetchpriority="high" decoding="async">
   </div>
   <canvas id="spatial-stage" aria-hidden="true"></canvas>
 
   <header class="masthead">
-    <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+    <a class="collection-return" href="%BASE_URL%#world-parallax" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
     <a class="identity" href="#object" aria-label="Parallax, return to the opening">
       <svg viewBox="0 0 28 44" class="identity-mark" aria-hidden="true"><path d="M4 7 22 2v37L4 33V7Zm3 1 13-4M7 8v24l13 5M4 42l18-5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="miter"/></svg>
       <span>PARALLAX</span>
@@ -135,7 +136,7 @@
       <button id="close-index" class="text-control" type="button"><svg class="close-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 16 16M20 4 4 20"/></svg><span>Close</span></button>
     </div>
     <div class="index-body">
-      <div class="index-introduction"><h2 id="index-heading">Ten perspectives. <br>One form.</h2><p>There is no single view<br>that contains the whole.</p><img src="/parallax/assets/hero-form.png" alt="" class="index-object" decoding="async"></div>
+      <div class="index-introduction"><h2 id="index-heading">Ten perspectives. <br>One form.</h2><p>There is no single view<br>that contains the whole.</p><img src="/parallax/assets/hero-form.webp" alt="" class="index-object" decoding="async"></div>
       <nav class="chapter-list" aria-label="Exhibition perspectives">
         <a href="#object" data-index="0" aria-current="location"><span>01</span><span>Object</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>
         <a href="#fragment" data-index="1"><span>02</span><span>Fragment</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a>

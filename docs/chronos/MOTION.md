@@ -34,7 +34,9 @@ mechanism time = t + 90 × p
 
 暂停按钮只停止累积环境时间，保留当前机械相位，滚动仍可改变摄像机和 `90p` 部分。减少动态效果时使用固定机械姿态，摄像机改用对应章节的静态构图。标签页隐藏时停止累积环境时间与传给 Lenis 的帧时基；恢复后不追赶隐藏期间的时长。音效通过 Web Audio 本地生成，只在用户主动开启且体验运行时，按同一合成机械时间 `t + 90p` 的节拍发声。
 
-减少动态效果下，数字仍保留 `t + 90p` 的滚动时间标示，而固定机械姿态使用模型内的 `0.0375` 秒相位。`?render=still` 选择摄影静帧版本，并不自动开启系统的减少动态效果模式；它保留滚动及摄影图像运动逻辑。
+减少动态效果下，固定机械姿态使用模型内的 `0.0375` 秒相位；隐藏机械秒读数，以免静态姿态与滚动时间形成错误对应。`?render=still` 选择图像版本，并不自动开启系统的减少动态效果模式。Energy、Transmission、Oscillation 使用当前原创实时模型的静态关键帧；Time/Chronos 保留整表图像，Craft 保留工艺图像。图像模式停止环境时钟、图像漂移及可选机械音效节拍，仍保留滚动构图和六章主动导航。
+
+实时且运行中的 Oscillation 才提供速度切换。暂停、减少动态效果及图像版本将该操作替换为 `Read the escapement`，打开阅读对话框并聚焦对应章节；关闭后焦点回到操作按钮。原先选择的速度及暂停意图在实时恢复后继续生效。图像模式的暂停按钮明确标示静态图像并禁用，减少动态效果仍遵从系统偏好；两者都不冻结章节导航。状态提示在 transport 上方使用不透明深色底，避免落在金属亮部。
 
 主控只创建一个 Lenis、一个 ScrollTrigger 和一个持续保留的 WatchScene。GSAP ticker 是统一的帧调度入口，驱动 `lenis.raf()`、页面状态和 Three.js 渲染；场景类不另开动画循环。模式切换、窗口调整和资源就绪时更新布局测量，不为每个章节重建滚动控制器或机芯。有关集成依据，见 [Lenis 官方文档](https://github.com/darkroomengineering/lenis) 与 [ScrollTrigger 文档](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)。
 
@@ -99,3 +101,7 @@ One original 3D assembly and a **30° PerspectiveCamera** carry through the live
 The chosen train is **72 / 12 → 80 / 10 → 75 / 10 → 96 / 6**, ending at a 15-tooth escape wheel. Wheel-to-next-pinion pitch distances use module **0.022** in model units. Signed shaft speeds relative to the escape wheel are **+1/5760, −1/960, +1/120, −1/16, +1**. The nominal balance frequency is **4 Hz**, with eight beats per mechanical second; a **12°** escape step gives **16 rpm** on the escape shaft. The 12% release window and chosen swing amplitudes are cinematic model parameters.
 
 This is a kinematic study, with deliberately enlarged escapement geometry and illustrative spring deformation. Exploded separation is an explanatory presentation, not a functioning physical assembly. The artwork does not simulate contact dynamics, manufacture, power reserve or timing accuracy. Primary mechanical sources and generated-image provenance are recorded in [ATTRIBUTION.md](../../provenance/chronos/ATTRIBUTION.md).
+
+## Batch B — explicit chapter navigation (2026-10-25)
+
+The production baseline showed all five intermediate chapter changes compressed into roughly 0.56 seconds of a full Index jump, with rapid mechanical camera turns. Adjacent chapter selections retain the original 1.2/1.65-second movement. A selection more than one chapter away lands immediately at its authored composition through the same Lenis coordinate. The continuous scroll narrative, iris registration and mechanical time mapping are unchanged; reduced motion and initial fragments remain immediate. No new overlay, camera interpolation or clock is introduced.

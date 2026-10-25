@@ -2,7 +2,7 @@
 
 import Lenis from 'lenis';
 import { Sculpture } from './sculpture.ts';
-import { CHAPTERS, getChapterIndex } from './score.ts';
+import { CHAPTERS, getChapterIndex, captionOpacity } from './score.ts';
 import './style.css';
 
 function required<T extends Element>(selector: string): T {
@@ -18,6 +18,7 @@ const wordElements = Array.from(document.querySelectorAll<HTMLElement>('[data-wo
 const wordSpans = wordElements.map((element) => required<HTMLSpanElement>(`[data-word="${element.dataset.word}"] > span`));
 const caption = required<HTMLElement>('#caption-text');
 const captionJapanese = required<HTMLElement>('#caption-jp');
+const captionGroup = required<HTMLElement>('.scene-caption');
 const chapterNumber = required<HTMLElement>('#chapter-number');
 const chapterName = required<HTMLElement>('#chapter-name');
 const chapterReadout = required<HTMLButtonElement>('#chapter-readout');
@@ -186,6 +187,7 @@ function updateTypography(value: number): void {
 }
 
 function updateInterface(value: number): void {
+  captionGroup.style.opacity = String(captionOpacity(value, reducedMotion));
   root.dataset.progress = value.toFixed(5);
   progressFill.style.transform = `scaleX(${value})`;
   const percent = Math.round(value * 100);
@@ -311,7 +313,9 @@ function navigateToChapter(index: number, updateHash = true): void {
   }
   if (resizePending) measure();
   lenis.scrollTo(chapter.at * scrollRange, {
-    immediate: reducedMotion,
+    // Distant Index/Replay selections are a cut to the chosen composition;
+    // only adjacent chapters traverse the alternating light/dark spaces.
+    immediate: reducedMotion || Math.abs(index - getChapterIndex(clamp(window.scrollY / scrollRange))) > 1,
     duration: 1.05,
     easing: (t) => 1 - Math.pow(1 - t, 4),
     force: true,

@@ -28,6 +28,7 @@
 <link rel="preload" href="/atlas/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/atlas/fonts/cormorant-garamond-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/atlas/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
   <body>
     <a class="skip-link" href="#index" id="skip-link">Choose an observation</a>
@@ -55,7 +56,7 @@
           </svg>
           <span>ATLAS</span>
         </a>
-        <div class="collection-header-actions"><a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button class="index-trigger" id="open-index" aria-haspopup="dialog">
+        <div class="collection-header-actions"><a class="collection-return" href="%BASE_URL%#world-atlas" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button class="index-trigger" id="open-index" aria-haspopup="dialog">
           <span>INDEX</span
           ><svg viewBox="0 0 30 20" fill="none" aria-hidden="true">
             <path d="M1 5h28M1 15h28" />
@@ -137,8 +138,8 @@
       >
         Preparing the first layer…
       </div>
-      <div class="failure" id="failure" hidden>
-        <h2>This layer could not open.</h2>
+      <div class="failure" id="failure" data-lenis-prevent hidden>
+        <h2>Field notes edition.</h2>
         <p id="failure-message"></p>
         <button id="retry-load">Try again</button
         ><a href="#index" id="fallback-index">Read the field notes</a>
@@ -167,7 +168,7 @@
         camera pulls away continuously, leaving the original coordinate as one
         point on a cartographic Earth.
       </p>
-      <p>
+      <p data-map-instructions>
         Scroll, use arrow keys or Page Down, or choose a chapter from the Index.
         Reduced-motion preferences are respected. Geographic data is provided by
         the Geospatial Information Authority of Japan and Natural Earth.

@@ -3,9 +3,10 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { POSES, MOBILE, COMPACT, type Pose } from './poses';
 import { createRasterFlightScene } from './raster-scene';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import { sceneBlend, clamp, smooth, type Destination, type Subsystem } from './mission';
+import { chapterVisibility, sceneBlend, clamp, smooth, type Destination, type Subsystem } from './mission';
+import { engineeringStudy, mobileMachine, mobileMoon, studyAmount, type SceneLayout } from './study';
 
-export interface FlightScene {render:(progress:number,time:number,reduced:boolean,destination:Destination,subsystem:Subsystem)=>void;resize:(width:number,height:number)=>void;destroy:()=>void;stats:()=>{drawCalls:number;triangles:number;dpr:number};}
+export interface FlightScene {render:(progress:number,time:number,reduced:boolean,destination:Destination,subsystem:Subsystem,layout?:SceneLayout)=>void;resize:(width:number,height:number)=>void;destroy:()=>void;stats:()=>{drawCalls:number;triangles:number;dpr:number};}
 
 export function createFlightScene(canvas: HTMLCanvasElement, onStatus:(status:string)=>void): FlightScene | null {
   let renderer: THREE.WebGLRenderer;
@@ -14,7 +15,7 @@ export function createFlightScene(canvas: HTMLCanvasElement, onStatus:(status:st
   renderer.setClearColor(0x000000,0);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(36,1,.1,220);camera.position.set(0,0,26);camera.lookAt(0,0,0);
-  let width=1,height=1,mobile=false,disposed=false,contextLost=false,pixelRatio=1;
+  let width=1,height=1,mobile=false,disposed=false,contextLost=false,pixelRatio=1,modelReady=false;
   let compatibilityScene:FlightScene|null=null;let compatibilityCanvas:HTMLCanvasElement|null=null;
   function activateCompatibility(){if(compatibilityScene||disposed)return;compatibilityCanvas=document.createElement('canvas');compatibilityCanvas.className=canvas.className;canvas.parentNode?.insertBefore(compatibilityCanvas,canvas.nextSibling);compatibilityScene=createRasterFlightScene(compatibilityCanvas,onStatus);compatibilityScene?.resize(width,height);canvas.style.visibility='hidden';}
   const worldHeight=2*Math.tan(THREE.MathUtils.degToRad(18))*26;
@@ -28,14 +29,14 @@ export function createFlightScene(canvas: HTMLCanvasElement, onStatus:(status:st
   const vehicle=new THREE.Group();scene.add(vehicle);
   const body=new THREE.Group();vehicle.add(body);
   const groups:Record<string,THREE.Object3D>={};
-  const materials: {material:THREE.MeshStandardMaterial;group:string}[]=[];
+  const materials: {material:THREE.MeshStandardMaterial;group:string;color:THREE.Color}[]=[];
   const loader=new GLTFLoader();
   loader.load((import.meta.env.BASE_URL + 'orbital/media/launch-vehicle.glb'),gltf=>{
     if(disposed){disposeObject(gltf.scene);return;}
     body.add(gltf.scene);
     for(const key of ['booster','interstage','upperstage','fairing','engines']){const part=gltf.scene.getObjectByName(key);if(part)groups[key]=part;}
-    gltf.scene.traverse(obj=>{if(obj instanceof THREE.Mesh){const m=obj.material;if(m instanceof THREE.MeshStandardMaterial){obj.material=m.clone();const own=obj.material as THREE.MeshStandardMaterial;own.envMapIntensity=1.4;let g=obj.parent;while(g&&!(g.name in groups))g=g.parent;materials.push({material:own,group:g?.name||''});}}});
-    lastSubsystem='';onStatus('webgl');
+    gltf.scene.traverse(obj=>{if(obj instanceof THREE.Mesh){const m=obj.material;if(m instanceof THREE.MeshStandardMaterial){obj.material=m.clone();const own=obj.material as THREE.MeshStandardMaterial;own.envMapIntensity=1.4;let g=obj.parent;while(g&&!(g.name in groups))g=g.parent;materials.push({material:own,group:g?.name||'',color:own.color.clone()});}}});
+    modelReady=true;onStatus('webgl');
   },undefined,()=>onStatus('partial'));
 
   // Refractive-looking, bounded exhaust. No full-screen blur or post-processing.
@@ -82,12 +83,19 @@ export function createFlightScene(canvas: HTMLCanvasElement, onStatus:(status:st
   const trailPoints=[];for(let i=0;i<=150;i++){const t=i/150;trailPoints.push(new THREE.Vector3(-8+t*15,2.6-Math.pow(t,2)*4.1,-1));}
   const trailMaterial=new THREE.LineBasicMaterial({color:0x8ba4b6,transparent:true,opacity:0});const trail=new THREE.Line(new THREE.BufferGeometry().setFromPoints(trailPoints),trailMaterial);scene.add(trail);
 
-  let lastSubsystem='';let destinationMix=0;let lastTime=0;
+  const studyRoot=new THREE.Group();vehicle.add(studyRoot);
+  const studyLines=(['action','reference'] as const).map(role=>{
+    const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(new Float32Array(1536),3));geometry.setDrawRange(0,0);
+    const material=new THREE.LineBasicMaterial({color:role==='action'?0xff6838:0xa6dbea,transparent:true,opacity:0,depthTest:false,depthWrite:false,toneMapped:false});
+    const line=new THREE.LineSegments(geometry,material);line.frustumCulled=false;line.renderOrder=5;studyRoot.add(line);return{role,line,geometry,material};
+  });
+  let lastStudy='';let destinationMix=0;let lastTime=0;
   function resize(w:number,h:number){width=Math.max(1,w);height=Math.max(1,h);mobile=width<=760;pixelRatio=Math.min(window.devicePixelRatio||1,mobile?1.5:1.5,Math.sqrt(4200000/(width*height)));renderer.setPixelRatio(pixelRatio);renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();starMaterial.uniforms.uDpr.value=pixelRatio;starGeometry.setDrawRange(0,mobile?600:starCount);compatibilityScene?.resize(width,height);}
-  function render(progress:number,time:number,reduced:boolean,destination:Destination,subsystem:Subsystem){
-    if(disposed)return;if(compatibilityScene){compatibilityScene.render(progress,time,reduced,destination,subsystem);return;}if(contextLost)return;
+  function render(progress:number,time:number,reduced:boolean,destination:Destination,subsystem:Subsystem,layout?:SceneLayout){
+    if(disposed)return;if(compatibilityScene){compatibilityScene.render(progress,time,reduced,destination,subsystem,layout);return;}if(contextLost)return;
     const b=sceneBlend(progress);const from={...POSES[b.from],...(mobile?MOBILE[b.from]:height<500?COMPACT[b.from]:{})};const to={...POSES[b.to],...(mobile?MOBILE[b.to]:height<500?COMPACT[b.to]:{})};
     const pose={} as Pose;for(const key of Object.keys(from) as (keyof Pose)[])pose[key]=THREE.MathUtils.lerp(from[key],to[key],b.mix);
+    if(mobile){const fit=mobileMachine(width,height,worldHeight,layout),amount=chapterVisibility(progress,4);pose.y=THREE.MathUtils.lerp(pose.y,fit.y,amount);pose.scale=THREE.MathUtils.lerp(pose.scale,fit.scale,amount);}
     const dt=Math.min(.05,Math.max(0,time-lastTime));lastTime=time;
     const ambient=reduced?0:time;
     const wFactor=mobile?1:Math.min(1.3,camera.aspect/1.776);
@@ -101,15 +109,22 @@ export function createFlightScene(canvas: HTMLCanvasElement, onStatus:(status:st
     if(groups.upperstage)groups.upperstage.position.y=pose.split*.8;
     if(groups.fairing)groups.fairing.position.y=pose.split*1.55;
     body.position.y=upperOnly*-2.6;
-    for(const item of materials){if(['booster','engines','interstage'].includes(item.group)){item.material.opacity=1-upperOnly;item.material.transparent=upperOnly>.001;item.material.depthWrite=upperOnly<.1;}}
+    const study=modelReady?studyAmount(progress,subsystem):0;
+    for(const item of materials){if(['booster','engines','interstage'].includes(item.group)){item.material.opacity=1-upperOnly;item.material.transparent=upperOnly>.001;item.material.depthWrite=upperOnly<.1;}
+      const chosen=subsystem==='propulsion'?item.group==='engines':subsystem==='structure'?item.group==='booster'||item.group==='upperstage':subsystem==='guidance'?item.group==='interstage':subsystem==='payload'&&item.group==='fairing';
+      item.material.color.copy(item.color).multiplyScalar(chosen?1:1-study*.23);item.material.emissive.set(chosen?0x092a38:0);item.material.emissiveIntensity=chosen?study*.75:0;
+    }
     flame.position.y=upperOnly>0.5?-3.2:-7.6-pose.split*1.6;flame.scale.y=1+Math.sin(ambient*13)*.04;flameUniforms.uTime.value=ambient;flameUniforms.uIntensity.value=pose.flame;flame.visible=pose.flame>.005;
     coreMaterial.opacity=pose.flame*.5;core.position.y=upperOnly>0.5?-2.4:-6.48-pose.split*1.6;core.visible=pose.flame>.005;engineLight.intensity=pose.flame*6;
-    if(subsystem!==lastSubsystem){lastSubsystem=subsystem;for(const item of materials){const chosen=subsystem==='propulsion'?item.group==='engines':subsystem==='structure'?item.group==='booster':subsystem==='guidance'?item.group==='interstage':item.group==='fairing';item.material.emissive.set(chosen?0x092a38:0x000000);item.material.emissiveIntensity=chosen?.35:0;}}
+    studyRoot.visible=study>.001;
+    if(studyRoot.visible){const key=subsystem+':'+pose.split.toFixed(4);if(key!==lastStudy){lastStudy=key;const paths=engineeringStudy(subsystem,pose.split);for(const entry of studyLines){const positions=entry.geometry.getAttribute('position') as THREE.BufferAttribute;let count=0;for(const path of paths){if(path.role!==entry.role)continue;for(let i=1;i<path.points.length;i++)for(const point of [path.points[i-1],path.points[i]])positions.setXYZ(count++,point[0],point[1],point[2]);}entry.geometry.setDrawRange(0,count);positions.needsUpdate=true;}}for(const entry of studyLines)entry.material.opacity=study*(entry.role==='action'?1:.75);}
     earthRoot.visible=pose.earth>.002;earthRoot.position.set(pose.ex*wFactor,pose.ey,-2.3);earthRoot.scale.setScalar(pose.er);earth.rotation.y=.2+progress*.045+ambient*.0007;earth.rotation.z=.10;earthMaterial.opacity=pose.earth;cloudMaterial.opacity=pose.earth*.87;clouds.rotation.copy(earth.rotation);atmosphereMaterial.uniforms.uOpacity.value=pose.earth;
     orbitRoot.position.copy(earthRoot.position);orbitRoot.scale.setScalar(pose.er/5.3);orbitRoot.visible=pose.orbit>.005;for(let i=0;i<orbitMaterials.length;i++)orbitMaterials[i].opacity=pose.orbit*(i===0?.8:.37);beacon.position.set(Math.cos(progress*1.1)*6.5,0,Math.sin(progress*1.1)*6.5);beacon.visible=pose.orbit>.25;
     const target=destination==='moon'?1:0;destinationMix=reduced?target:THREE.MathUtils.lerp(destinationMix,target,1-Math.exp(-dt*7));
     const destinationWindow=smooth((progress-5.74)/.45)*(1-smooth((progress-6.72)/.46));
-    moon.visible=destinationWindow*destinationMix>.001;moonMaterial.opacity=destinationWindow*destinationMix;moon.position.set(mobile?1.7:6.1*wFactor,mobile?-3.0:0,-2);moon.scale.setScalar(mobile?3.8:5.25);moon.rotation.y=2.5+ambient*.003;
+    moon.visible=destinationWindow*destinationMix>.001;moonMaterial.opacity=destinationWindow*destinationMix;
+    if(mobile){const fit=mobileMoon(width,height,layout),unit=2*Math.tan(THREE.MathUtils.degToRad(18))*28/height;moon.position.set((fit.x-width/2)*unit,(height/2-fit.y)*unit,-2);moon.scale.setScalar(fit.radius*unit);}
+    else{moon.position.set(6.1*wFactor,0,-2);moon.scale.setScalar(5.25);}moon.rotation.y=2.5+ambient*.003;
     starMaterial.uniforms.uOpacity.value=pose.star;stars.rotation.y=(progress*.006)+(reduced?0:ambient*.00025);stars.rotation.z=progress*-.006;
     trailMaterial.opacity=smooth((progress-6.75)/.5)*.26;trail.visible=trailMaterial.opacity>.001;
     rim.intensity=2.0+pose.flame*3.2;

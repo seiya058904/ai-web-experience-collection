@@ -141,3 +141,18 @@
 
 /* Keep the Collection exit independent of the collapsible chapter navigation. */
 .masthead > .collection-return{font-family:'Roboto Flex',sans-serif!important;min-width:44px;min-height:44px;flex-shrink:0}
+
+/* A local print projection of the current specimen; it owns no state or clock. */
+.print-sheet{display:none}
+.scene-page .print-page{display:flex;margin-left:auto;min-height:44px}
+.scene-page .print-page[hidden]{display:none}
+.print-page:disabled{opacity:.55;cursor:wait}
+@media(max-width:600px){.scene-page .print-page{margin-left:0}}
+@media print{
+  @page{size:A4 portrait;margin:20mm}
+  html,body{height:auto!important;min-height:0!important;overflow:visible!important;background:#eeeadf!important;color:#20211e!important}
+  body>*{display:none!important}
+  body>.print-sheet{display:grid!important;grid-template-rows:auto 1fr auto;gap:12mm;box-sizing:border-box;width:170mm;height:256mm;padding:12mm;border:.3mm solid #20211e;background:#eeeadf;color:#20211e;break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .print-credit,.print-caption{font-family:'Roboto Flex',sans-serif;font-size:10pt;font-weight:400;font-stretch:100%;font-variation-settings:normal;line-height:1.5;letter-spacing:0;margin:0}
+  .print-words{align-self:center;font-family:'Roboto Flex',sans-serif;font-size:40pt;font-weight:var(--weight,650);font-stretch:var(--width,100%);font-optical-sizing:none;font-variation-settings:'opsz' var(--optical,72);line-height:1.05;letter-spacing:-.025em;overflow-wrap:anywhere;white-space:pre-wrap;margin:0;max-width:100%;min-width:0}
+}

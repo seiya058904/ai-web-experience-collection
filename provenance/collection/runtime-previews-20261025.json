@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-25",
+  "baseline": "eab9bc865a4092b16abbaf0ed4da651bcb8f7631",
+  "source": "Actual integrated FORM, FUSION, GRID and COUNTERFORM runtimes; original work assets retained",
+  "capture": {
+    "viewport": [
+      1600,
+      1000
+    ],
+    "dpr": 1,
+    "browser": "Chromium 1248, SwiftShader"
+  },
+  "review": "docs/collection/BATCH-A-ACCEPTANCE.md records every retained and hidden element; original artwork typography retained",
+  "files": [
+    {
+      "path": "public/collection/form.webp",
+      "bytes": 25280,
+      "sha256": "7884d9c1c660b4b58f3b66477aaa090bfcaa7948bce8cd65e9105b8a8bd62cbf"
+    },
+    {
+      "path": "public/collection/fusion.webp",
+      "bytes": 126212,
+      "sha256": "e6ed4bc50c1d188c77c99273295f6cd6f586e534cd26b11f9a13a73c41098bdc"
+    },
+    {
+      "path": "public/collection/grid.webp",
+      "bytes": 66216,
+      "sha256": "6e06128010c47e6a68c5f11f2befec5ee741e394794599bea28085a6a6974dca"
+    },
+    {
+      "path": "public/collection/counterform.webp",
+      "bytes": 11846,
+      "sha256": "476fa4bf92db249ca137e195b32f52b3dc3c8857ea2f22d5da9fa952c2fc179c"
+    }
+  ]
+}

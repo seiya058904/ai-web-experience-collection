@@ -16,6 +16,7 @@
   const palette = [[238,234,225],[203,195,180],[238,234,225],[238,234,225],[238,234,225],[122,141,149],[32,33,30]];
   const inputs = {weight:document.getElementById('axis-weight'),width:document.getElementById('axis-width'),optical:document.getElementById('axis-optical'),words:document.getElementById('specimen-words')};
   const outputs = {weight:document.getElementById('value-weight'),width:document.getElementById('value-width'),optical:document.getElementById('value-optical')};
+  const printButton = document.getElementById('print-page');
   const samples = [...document.querySelectorAll('.variable-sample')];
   const space = {glyph:document.querySelector('.space-r'),trace:document.querySelector('.space-trace'),caption:document.querySelector('.counter-caption')};
   const serifSample=document.querySelector('.sample-serif > svg');
@@ -31,6 +32,7 @@
   let resizeTimer = 0, suspended = document.hidden, dialogOpener = null, materialKey = '';
   let animationTime = 1, lastFrameTime = null, pendingFocus = null, navigation = null;
   let editingHeight = 0, keyboardOpen = false;
+  let printing = false, printPosition = null;
   let materialRects={},materialTransform=null;
   const clamp = (value, low=0, high=1) => Math.max(low, Math.min(high, value));
   const smooth = (a,b,value) => {const x=clamp((value-a)/(b-a));return x*x*(3-2*x);};
@@ -54,6 +56,9 @@
   function setFontStatus(status, message='') {
     state.fontStatus=status;
     const available=status==='ready';
+    printButton.hidden=false;
+    printButton.disabled=!available;
+    printButton.title=available?'Print a clean specimen or save it as a PDF. Your text stays on this device.':'Available when Roboto Flex has loaded.';
     for(const key of ['weight','width','optical'])inputs[key].disabled=!available;
     const notice=document.getElementById('font-status');
     if(notice){notice.hidden=available;notice.textContent=message;}
@@ -80,6 +85,7 @@
   }
 
   function measure(preserve=false) {
+    if(printing)return;
     const previous = locate(window.scrollY);
     viewW=innerWidth; viewH=innerHeight;
     root.style.setProperty('--view-h',`${viewH}px`);
@@ -185,7 +191,17 @@
     document.getElementById('final-values').textContent=state.fontStatus==='ready'
       ?`Weight ${type.weight} / Width ${type.width} / Optical size ${type.optical}`
       :state.fontStatus==='loading'?'Variable font loading; axis settings are waiting.':'Variable axes unavailable; your words are preserved.';
+    syncPrintSpecimen();
     fitType();typeHandoff?.invalidate();typeDirty=false;
+  }
+  function syncPrintSpecimen() {
+    const {weight,width,optical,words}=state.type;
+    const specimen=document.getElementById('print-words');
+    specimen.textContent=words.trim() || defaultType.words;
+    specimen.style.setProperty('--weight',weight);
+    specimen.style.setProperty('--width',`${width}%`);
+    specimen.style.setProperty('--optical',optical);
+    document.getElementById('print-values').textContent=`Weight ${weight} / Width ${width} / Optical size ${optical}`;
   }
   function fitType() {
     // Font size is fitted to real line boxes only when the layout would overflow.
@@ -404,7 +420,16 @@
     stage.dataset.source=slugs[index];stage.dataset.destination=slugs[next];
   }
   function frame(time) {
-    raf=0;if(suspended){lastFrameTime=null;return;}
+    raf=0;if(suspended||printing){lastFrameTime=null;return;}
+    if(printPosition!==null){
+      // Print media removes the journey from layout. Restore only once screen
+      // layout is back, using this same owned clock and the original position.
+      if(matchMedia('print').matches){wake();return;}
+      const target=printPosition;printPosition=null;
+      measure(false);
+      if(lenis){if(!dialog.open)lenis.start();lenis.scrollTo(target,{immediate:true,force:true});}
+      else window.scrollTo({top:target,behavior:'instant'});
+    }
     // Advance the one scroll clock only while this RAF loop is active.
     // The first frame after idle/resume establishes an anchor, never an idle-sized step.
     if(lastFrameTime!==null)animationTime+=Math.max(0,time-lastFrameTime);
@@ -422,6 +447,7 @@
   }
 
   function syncEditingViewport() {
+    if(printing||printPosition!==null)return false;
     const viewport=window.visualViewport;
     const height=viewport?.height||innerHeight;
     const editing=document.activeElement===inputs.words;
@@ -480,6 +506,17 @@
   }
   document.getElementById('index-open').addEventListener('click',()=>openIndex());
   document.getElementById('credits-open').addEventListener('click',()=>openIndex(true));
+  printButton.addEventListener('click',()=>{
+    if(state.fontStatus!=='ready')return;
+    updateType();
+    window.print();
+  });
+  addEventListener('beforeprint',()=>{
+    if(!printing)printPosition=window.scrollY;
+    printing=true;navigation=null;pendingFocus=null;
+    lenis?.stop();syncPrintSpecimen();
+  });
+  addEventListener('afterprint',()=>{printing=false;lastFrameTime=null;wake();});
   document.getElementById('index-close').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('close',()=>{lenis?.start();if(dialogOpener?.isConnected)dialogOpener.focus({preventScroll:true});wake();});
   document.getElementById('motion-toggle').addEventListener('click',()=>{state.manualMotion=state.reading;setMode(!state.reading);});
@@ -500,6 +537,7 @@
   addEventListener('keydown',wake,{passive:true});
   addEventListener('resize',()=>{
     clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{
+      if(printing||printPosition!==null)return;
       // Keep the chapter still and place the editing panel inside the visible
       // viewport while a mobile keyboard occupies the rest of the screen.
       if(innerWidth===viewW&&syncEditingViewport())return;

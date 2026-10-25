@@ -10,7 +10,7 @@ The state is a function of **scroll coordinate, viewport dimensions, and explici
 
 The coordinate runs from 0 (ZERO) to 11 (NO GRID). Each interval has a stable composition, a small progress-driven refinement, and a handoff. These refinements follow scroll rather than a free-running random animation, so a stopped frame is designed and reverse playback is exact.
 
-Each interval uses 3.9 viewport heights of document travel. This doubles the former 1.95-height travel, halving scene-coordinate change for the same wheel or touch distance while preserving the existing composition and handoff curves. Chapter navigation uses 1.4 seconds plus 0.24 seconds per interval, capped at 3.6 seconds; reduced-motion navigation remains immediate. Wheel interpolation and the one owned clock are unchanged.
+Reading/refinement travel is assigned per chapter by `rhythm.ts`, with 38.214 viewport heights across the journey. All eleven geometric handoffs retain the original 2.496-height travel; Interface and Variable retain their full 1.404-height inspection holds. The piecewise physical mapping and inverse drive the same scene coordinate for document scrolling, navigation, restoration and resize. See [the twelve-chapter rhythm table](RHYTHM-AUDIT.md). Chapter navigation uses 1.4 seconds plus 0.24 seconds per interval, capped at 3.6 seconds; reduced-motion navigation remains immediate. Wheel interpolation and the one owned clock are unchanged.
 
 Scene rules produce target boxes, font parameters, crop parameters, grid geometry and palettes. DOM text reflows in its real box. CSS Grid supplies the physical column relationship and the native interface layout; the engine uses transforms for spatial movement and writes typography and crop parameters in a single batch. Geometry is reconstructed after font preparation and viewport changes. There are no per-frame DOM geometry reads in the normal scene renderer.
 
@@ -48,3 +48,5 @@ Without JavaScript, the same article becomes a readable static composition with 
 - [Variable-font axes](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Fonts/Variable_fonts)
 
 This document records architectural intent. The final verification record states which behaviors were exercised in the delivered build.
+
+Toolbar presentation uses that same coordinate, with reversible visual exit before inert/hidden and bounded focus/drag ownership. The exact ranges, focus transfer and actual browser evidence are recorded in [RHYTHM-AUDIT.md](RHYTHM-AUDIT.md).

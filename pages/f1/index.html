@@ -35,6 +35,7 @@
     <meta name="twitter:description" content="速度，只是你看到的。走进赛车、空气与人的极限，一场关于 Formula 1 的沉浸式视觉探索。">
     <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%f1/media/hero-1600.webp">
     <meta name="twitter:image:alt" content="无车队品牌的 Formula 概念赛车">
+    <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
   </head>
   <body>
     <a class="skip-link" href="#intro">跳到主要内容</a>
@@ -49,7 +50,7 @@
         ><a href="#race">胜负之间</a>
       </nav>
       <div class="header-actions">
-      <a class="collection-return" href="%BASE_URL%" aria-label="返回 Collection" title="返回 Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <a class="collection-return" href="%BASE_URL%#world-f1" aria-label="返回 Collection" title="返回 Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
 
         <button
           class="motion-toggle"
@@ -248,20 +249,6 @@
                 前翼先与气流相遇：一边产生下压力，一边引导空气绕过前轮，交给车身后方。
               </p>
             </div>
-            <div class="segmented" role="group" aria-label="主动空气动力学模式">
-              <button type="button" data-aero-mode="corner" aria-pressed="true">
-                弯道模式</button
-              ><button
-                type="button"
-                data-aero-mode="straight"
-                aria-pressed="false"
-              >
-                直道模式
-              </button>
-            </div>
-            <p class="aero-mode-copy">
-              弯道模式：较大的翼面角度，优先获得下压力与过弯抓地力。
-            </p>
             <details class="quiet-details">
               <summary>这和 DRS 有什么不同？ <span>+</span></summary>
               <p>
@@ -277,6 +264,18 @@
             </details>
           </div>
           <div class="speed-control">
+            <figure class="aero-feedback" aria-label="与下方速度和模式同步的风洞示意">
+              <div class="aero-feedback-view" aria-hidden="true">
+                <img src="/f1/media/car-side-1600.webp" srcset="/f1/media/car-side-960.webp 960w, /f1/media/car-side-1600.webp 1600w, /f1/media/car-side-2200.webp 2200w" sizes="100vw" width="2200" height="900" alt="" loading="lazy" decoding="async" />
+                <svg class="aero-feedback-flow" preserveAspectRatio="none"></svg>
+              </div>
+              <figcaption>同一风洞 · 前翼—底板—尾翼 · 气流为原理示意</figcaption>
+            </figure>
+            <div class="segmented" role="group" aria-label="主动空气动力学模式">
+              <button type="button" data-aero-mode="corner" aria-pressed="true">弯道模式</button>
+              <button type="button" data-aero-mode="straight" aria-pressed="false">直道模式</button>
+            </div>
+            <p class="aero-mode-copy">弯道模式：较大的翼面角度，优先获得下压力与过弯抓地力。</p>
             <div class="speed-control-head">
               <label for="air-speed">拖动，感受空气的力量</label
               ><span class="micro">WIND TUNNEL</span>

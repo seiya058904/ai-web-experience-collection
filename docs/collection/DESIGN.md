@@ -56,7 +56,7 @@ INTERVAL’s display title scales from its panel’s content width, so the full 
 
 ## Elevation & Depth
 
-Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels reveal once on scroll (IntersectionObserver, gated on a `.js` class so the entrance is complete without JavaScript; the reveal never gates content under reduced motion). Reduced motion removes reveal, image, title and arrow movement, including when the preference changes while hovered. Focus outlines and the instant numeral-opacity response remain available.
+Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels are fully visible before JavaScript. The stylesheet loads independently of the enhancement module; no observer or opacity gate delays End, fast scrolling, module failure or history restoration. Reduced motion removes image, title and arrow movement, including when the preference changes while hovered. Focus outlines and the instant numeral-opacity response remain available.
 
 ## Shapes
 
@@ -64,7 +64,7 @@ Square media, thin gallery rules, a simple three-stroke collection mark and dire
 
 ## Components
 
-The entrance is functional without JavaScript. Focus remains visible. Work headers expose a shared arrow-and-Collection return link, reduced to a labeled arrow on narrow screens; each header's existing colors remain authoritative. Menus and work controls are unchanged.
+The entrance is functional without JavaScript. Focus remains visible. Work headers expose a shared arrow-and-Collection return link with a minimum 44 by 44 CSS-pixel target, reduced to a labeled arrow on narrow screens; each header's existing colors remain authoritative. Menus and work controls are unchanged.
 
 ## Do's and Don'ts
 
@@ -116,3 +116,17 @@ GRID adds the twelfth full-width native entrance with a capture of its actual ty
 DOSE adds a thirtieth native entrance using a capture of its actual procedural tablet scene, porcelain ground and original Barlow Condensed lettering. Its research concepts stay outside deployment; the homepage imports no DOSE runtime. The current uniform three-column gallery remains authoritative, with two columns at intermediate widths and one on phones.
 
 COUNTERFORM and FERRUM add the thirty-first and thirty-second native entrances. COUNTERFORM uses a capture of its live specimen and retains its paper, rust, Fraunces and Roboto Flex identity; FERRUM uses its supplied steel-sculpture still and retains Antonio, Manrope and the graphite/ember stage. Both remain independent document links with base-aware resources; the Collection imports neither runtime.
+
+## Batch A navigation and preview refinement
+
+Stable `world-<route>` anchors identify each source entrance. A same-tab entry records only that journey's source and viewport offset. Explicit return uses a native base-aware fragment and a per-journey scroll margin present before layout; focus returns without scrolling again after fonts. External deep links and new-tab visits use a readable work fragment, while Back/Forward remains native. No global last-visit position is restored.
+
+FORM, FUSION, GRID and COUNTERFORM now use interface-cleaned captures from their existing integrated runtimes, stored in `public/collection/`; original work assets remain unchanged. GRID's full captured specimen typography is retained in the resource and its gallery crop favors the photograph at every panel aspect ratio. COUNTERFORM's real R/counter stays visible below a protected title register. Other 28 media remain unchanged; CODEX cover typography is part of its artwork. See `BATCH-A-ACCEPTANCE.md` for capture exclusions, all-32 review and measured evidence.
+
+## Batch B discovery
+
+A closed native Index follows the concise invitation and precedes the gallery in normal flow. Its optional list gives all thirty-two works the same treatment and links to their existing stable entrance anchors. Short bilingual subjects identify material, ink, typography and other worlds; language is stated only where verified (F1 Chinese engineering text, URUSHI English/Chinese). There are no estimated durations, complex filters or new work runtime imports. Summary, links, targets and native navigation remain usable without JavaScript. Opening the Index deliberately expands the document; closing it restores the gallery-led entrance. Batch A origin offset/focus behavior remains in force.
+
+## Batch C resource contract
+
+Identical font binaries share an existing URL while keeping every authored family alias, weight and style. All original fonts and their notices remain. The gallery uses size variants of its existing images, with the original image as the largest candidate. `sizes` accounts for the height-driven width needed by `object-fit: cover`, the two-column content floor and GRID's enlarged image; `object-position` and the original focal crop are unchanged. Only the first entrance has high fetch priority. `provenance/collection/responsive-previews.json` records every source and derivative hash. See `../audits/2026-10-25-batch-c.md` for measured HTTP transfers and visual checks.

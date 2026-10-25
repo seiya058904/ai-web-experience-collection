@@ -63,14 +63,20 @@
 .stage[data-proportion="wide-short"] .axis-grid label > span { font-size:11px; line-height:14px; }
 .stage[data-proportion="wide-short"] .axis-grid input { height:28px; }
 
+/* Small instrument marks retain separate, comfortably sized hit regions. */
+.icon-button { min-width:44px; min-height:44px; }
+.text-button, .rules-button { min-height:44px; }
+
 @media (max-width:600px) {
+  :root { --bottom-space:180px; }
   .no-js .specimen-title { font-size:34vw; }
-  .scene-footer { height:92px; }
+  .scene-footer { height:140px; }
+  .scene-caption { max-width:calc(100% - 150px); }
   .scene-caption #scene-verb { font-size:9px; }
-  .footer-actions > .icon-button { width:40px; height:44px; }
+  .footer-actions > .icon-button { width:44px; height:44px; }
   .rules-button { min-height:44px; font-size:10px; }
-  .chapter-rail { height:40px; }
-  .chapter-rail button { height:40px; min-height:40px; font-size:9px; }
+  .chapter-rail { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); height:88px; margin-top:7px; }
+  .chapter-rail button { width:100%; height:44px; min-height:44px; min-width:44px; font-size:9px; }
   .axis-grid label > span { font-size:11px; line-height:14px; }
   .axis-heading { font-size:11px; }
   .axis-heading .text-button, .frame-input-row .text-button { font-size:11px; }

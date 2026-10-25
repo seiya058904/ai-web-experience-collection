@@ -654,6 +654,11 @@ button {
 .failure a {
   font-size: 14px;
 }
+.reading-edition .failure{overflow:auto;padding:clamp(100px,16vh,180px) max(var(--gutter,22px),6vw) 60px}
+.reading-edition .instrument-bar,.reading-edition .progress-track,.reading-edition #back-index{display:none}
+.reading-story{max-width:64ch;margin-top:34px;border-top:1px solid #a8afa7;padding-top:24px}
+.reading-story h2{font-size:clamp(25px,2.4vw,42px);margin-bottom:16px}
+.reading-story p{max-width:64ch;font-size:clamp(14px,1vw,18px);line-height:1.8}
 .no-script {
   position: fixed;
   inset: 0;

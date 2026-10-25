@@ -10,6 +10,8 @@ The [assembled GLB](models/impossible-form.glb) and [model record](models/imposs
 
 ## Fonts and dependencies
 
+The 22 transparent WebP files in `stills/` are captures of this exhibition's actual live renderer, made on 2026-10-25. They show nine chapter relationships plus the left/right Alignment views, each in landscape and portrait. They are not newly generated artwork or measured optical data. Repository `docs/parallax/STILL-CAPTURES.json` records source hashes, capture poses, dimensions, byte counts and image SHA-256 values. The fallback labels them as captured views; reflection, refraction and camera travel remain live-renderer capabilities.
+
 - Bodoni Moda Latin 400 normal: [complete SIL OFL 1.1 notice](licenses/BODONI-MODA-LICENSE.txt). Supplied Fontsource acquisition record: 5.2.7.
 - Manrope Latin 400/500 normal: [complete SIL OFL 1.1 notice](licenses/MANROPE-LICENSE.txt). Supplied Fontsource acquisition record: 5.2.6.
 - Three.js: [complete MIT notice](licenses/THREE-LICENSE.txt). The delivered r186 core, module and Reflector match the existing Collection `three` 0.186.1 byte-for-byte and are built from that root dependency.
@@ -18,3 +20,7 @@ The [assembled GLB](models/impossible-form.glb) and [model record](models/imposs
 Font binaries retain their source SHA-256 values. No application-wide open-source license is declared in the delivery; no MIT grant for the custom application or generated artwork is inferred from a dependency's license.
 
 The original ZIP remains outside Git and deployment. Archive SHA-256: `72768646c6de27b10f99e7ef7de2233e3c6c7a157661aae491084147051937f0`; 46,316,092 bytes; 73 entries. Repository delivery/import records preserve source hashes, mappings and omitted standalone tooling. Original source links and prompt history remain in scoped provenance.
+
+## Runtime image encoding (25 October 2026)
+
+The runtime uses WebP derivatives of the four original PNGs linked above. All alpha and nontransparent RGB values are preserved exactly; only the transparent hero's hidden RGB values are normalized by encoding. Original PNG bytes remain intact. The repository's `provenance/parallax/lossless-webp.json` records source and derivative hashes and the comparison. These are encoding derivatives of the same generated artwork, not new images.

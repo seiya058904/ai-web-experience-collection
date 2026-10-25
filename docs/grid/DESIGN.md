@@ -136,6 +136,8 @@ components:
 
 **Creative North Star: "Content stays. System changes."**
 
+2026-10-25 touch refinement: below 600px, the twelve chapter marks occupy two rows of six, each with a non-overlapping minimum 44×44 CSS px hit region. Footer space grows with those rows; the specimen uses the remaining measured frame. Icon actions and primary text actions retain their small visible marks with 44px minimum targets. The single clock, twelve systems, content nodes, chapter travel and experiment controls are unchanged. See [Batch A verification](../audits/2026-10-25-batch-a.md) for simulated viewport coverage and physical-device limits.
+
 GRID — The Architecture of Visual Order makes a visual system observable. One persistent semantic composition changes its hierarchy, rhythm, type, crop and material across twelve systems. The same word, subtitle, number, paragraph, photograph, metadata, time/place, action and registration mark remain recognizable as their relationships change. The named Swiss, Basel, editorial, raw, electronic, interface and variable directions are binding parts of this work. [Product commitments](UPSTREAM-PRODUCT.md) and the [direction contract](DIRECTION.md) establish this visual authority.
 
 Quiet, instrument-like chrome surrounds an expansive typographic field. The work ranges from a near-empty opening to dense, cropped letterforms, while navigation and reading text retain their practical roles. Precision is visible in baselines, hard image edges, narrow rules, deliberate spacing and the route each element takes through a change. The photograph supplies one constant architectural subject; live typography, layout and processing supply the variation.
@@ -388,3 +390,7 @@ Fresh explicit hashes select their named system; reload/back-forward retain the 
 The shared native Collection exit is also visible in the supplied no-JavaScript static composition. Live CSS is owned by the HTML document. Public fonts/photo and upstream legal records retain exact bytes. Visual Bible studies/prompts are source history under provenance/grid and are not runtime screenshots or interface assets. No whole-work MIT grant is asserted.
 
 Two confirmed phone handoff reading defects receive local pure waypoint changes: Zero→System lifts the original photograph beside the reading column before expanding it; International→Basel temporarily compacts the same heading while its subtitle reaches the lower reading lane. All twelve original endpoint poses, nine nodes, easing characters and interval durations remain. Both directions sample the same pure paths; no copy is hidden, masked or globally restyled. The supplied <.001 endpoint tolerance is retained when mapping integer-pixel document positions.
+
+## Batch B rhythm and controls
+
+The established twelve visual systems and all endpoint compositions remain authoritative. Chapter-specific reading distance replaces the uniform reading hold, while every original geometric handoff keeps its physical input distance. Interface/Variable retain their original experiment hold. Their toolbars now depart continuously with scene progress, preserve bounded active-control ownership, and hand focus to Index before becoming inert/hidden. See the [twelve-chapter rhythm and evidence record](RHYTHM-AUDIT.md).

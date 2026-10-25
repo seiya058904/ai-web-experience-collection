@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-25",
+  "sourceCommit": "eab9bc865a4092b16abbaf0ed4da651bcb8f7631",
+  "source": "Original procedural experiences/chronos/src/scene/WatchScene.ts rendered in the actual /chronos/ browser runtime with ambient time paused",
+  "browser": "Chromium 156.0.8078.4 with SwiftShader",
+  "capture": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "removed": "HTML interface and reading shade hidden for capture; no model geometry changed",
+    "crop": {
+      "left": 420,
+      "top": 0,
+      "width": 1020,
+      "height": 900
+    },
+    "encoding": "Existing root sharp 0.35.5; WebP quality 90"
+  },
+  "files": [
+    {
+      "path": "public/chronos/images/chronos-energy.webp",
+      "bytes": 101606,
+      "sha256": "c83316efbf7e2006dad05a6b4fec459335a2282d5d0483b4ba848c6730d59343",
+      "chapter": "energy",
+      "sourceProgress": 0.2
+    },
+    {
+      "path": "public/chronos/images/chronos-transmission.webp",
+      "bytes": 74836,
+      "sha256": "826deff6d8e5f8d75181a2488a81343b435ad1f51ff6e1bf015dd3cc46d941be",
+      "chapter": "transmission",
+      "sourceProgress": 0.4
+    },
+    {
+      "path": "public/chronos/images/chronos-oscillation.webp",
+      "bytes": 114578,
+      "sha256": "366edb08aca2b1f445096f26b64733adc54945fbb6a032b6474ba11719493124",
+      "chapter": "oscillation",
+      "sourceProgress": 0.6
+    }
+  ]
+}

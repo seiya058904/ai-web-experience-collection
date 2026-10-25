@@ -107,3 +107,9 @@ Generated labels are not a factual source. Remove invented nav items, numbers, s
 - Loading and missing-media states preserve useful content. Images self hosted, responsive WebP; no remote runtime dependency.
 - Real browser interaction checks, keyboard checks, reduced-motion checks, network/console health and bounded scrolling performance sampling.
 - No blanket claim of 60 FPS on untested hardware; distinguish measured browser frames from physical high-refresh/touch acceptance.
+
+## Batch B — wind-tunnel inspection (2026-10-25)
+
+The original large car and native Canvas airflow remain in the chapter. A compact side view beside the speed range reuses the same car asset and sampled airflow equation. Its SVG changes immediately with mode and speed, including reduced motion; it has no independent animation clock. Mode selection, explanation, speed and force readings form one normal-flow inspection group. The original part explanation and DRS disclosure remain available alongside or above it. The smaller view is an explicit teaching illustration, not additional telemetry.
+
+At 1366×768 and 390×844, bringing the range into view now also exposes the complete inspection image, both mode controls and resulting force values below the header. The compact view scales within the existing console; no extra pinned travel or spacer is added.

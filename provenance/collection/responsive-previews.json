@@ -1,0 +1,898 @@
+{
+  "date": "2026-10-25",
+  "method": "Existing artwork only. Sharp WebP q90, no upscaling, no crop; original bytes retained as largest candidate. CSS cover-aware source sizes preserve authored object-position.",
+  "fonts": [
+    {
+      "from": "/facet/fonts/instrument-serif-regular.woff2",
+      "to": "/verdant/fonts/instrument-serif-regular.woff2",
+      "bytes": 21032,
+      "sha256": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31"
+    },
+    {
+      "from": "/atlas/fonts/cormorant-garamond-latin-400-italic.woff2",
+      "to": "/optic/fonts/cormorant-garamond-latin-400-italic.woff2",
+      "bytes": 23668,
+      "sha256": "26b41dd185ff48a71f16f50255b6f77011b1c79e8b18811458323313858f2cfa"
+    },
+    {
+      "from": "/resonance/fonts/manrope-latin.woff2",
+      "to": "/fusion/fonts/manrope-latin-wght-normal.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "from": "/parallax/fonts/bodoni-moda-latin-400-normal.woff2",
+      "to": "/aeterna/fonts/bodoni-moda-latin-400-normal.woff2",
+      "bytes": 14528,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f"
+    },
+    {
+      "from": "/luthier/fonts/cormorant-300.woff2",
+      "to": "/chronos/fonts/cormorant-garamond-latin-300-normal.woff2",
+      "bytes": 21908,
+      "sha256": "8973d65ce70fb03cee5788acbcc36bc9e74bda2227bbef99f26c826514cc79f7"
+    },
+    {
+      "from": "/luthier/fonts/cormorant-300-italic.woff2",
+      "to": "/chronos/fonts/cormorant-garamond-latin-300-italic.woff2",
+      "bytes": 22484,
+      "sha256": "b931f0a45f9d8a362e45e950c004ff00c8ab7932c2c401b4db9c2b7b9247f01a"
+    },
+    {
+      "from": "/fossil/assets/fonts/bodoni-moda.woff2",
+      "to": "/aeterna/fonts/bodoni-moda-latin-400-normal.woff2",
+      "bytes": 14528,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f"
+    },
+    {
+      "from": "/urushi/fonts/bodoni-moda-latin-400-normal.woff2",
+      "to": "/aeterna/fonts/bodoni-moda-latin-400-normal.woff2",
+      "bytes": 14528,
+      "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f"
+    },
+    {
+      "from": "/nib/fonts/cormorant-garamond-latin-variable.woff2",
+      "to": "/codex/fonts/cormorant-garamond-latin-variable.woff2",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235"
+    },
+    {
+      "from": "/nib/fonts/cormorant-garamond-latin-variable-italic.woff2",
+      "to": "/codex/fonts/cormorant-garamond-italic-latin-variable.woff2",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55"
+    },
+    {
+      "from": "/crema/fonts/archivo-latin-variable.woff2",
+      "to": "/magma/fonts/archivo-latin-variable.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    {
+      "from": "/crave/fonts/cormorant-garamond-italic.woff2",
+      "to": "/resonance/fonts/cormorant-garamond-latin-italic.woff2",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2"
+    }
+  ],
+  "images": [
+    {
+      "work": "f1",
+      "source": "/f1/media/hero-1600.webp",
+      "sourceBytes": 167796,
+      "sourceSHA256": "689715491c3fd63ac889d4ab359a4f5df4ce39d571fdb8710946b01d8c3d2d3d",
+      "width": 1600,
+      "height": 1001,
+      "variants": [
+        {
+          "url": "/collection/previews/f1-640.webp",
+          "width": 640,
+          "bytes": 36218,
+          "sha256": "3e304c77ec7b3097322d5e74dd97e8df5e3cabd795d97d91654f23e3e407b4f6"
+        },
+        {
+          "url": "/collection/previews/f1-960.webp",
+          "width": 960,
+          "bytes": 70082,
+          "sha256": "44dc9dec8266a01880422ba6245f44891661b496c7749d62964b7f64ca7037b0"
+        },
+        {
+          "url": "/collection/previews/f1-1280.webp",
+          "width": 1280,
+          "bytes": 104656,
+          "sha256": "6dc3df7b91800fd35ca49d74972fbf1fa182660e3ea49b76eecf074236de1a94"
+        }
+      ]
+    },
+    {
+      "work": "verdant",
+      "source": "/verdant/images/pavilion-1672.webp",
+      "sourceBytes": 324412,
+      "sourceSHA256": "6de8a46274b983719f2529f24a3080eff1e362e0a4b1e0761b7b16c96742783a",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "url": "/collection/previews/verdant-640.webp",
+          "width": 640,
+          "bytes": 66876,
+          "sha256": "6ac6dfc025b9fed1d83d93ff5f272a7e7402746a666128b57fc921c564fd9652"
+        },
+        {
+          "url": "/collection/previews/verdant-960.webp",
+          "width": 960,
+          "bytes": 133478,
+          "sha256": "b8dc425399ffa45c614425509a9f3574af7ac454fe9bfe2478c286580170e863"
+        },
+        {
+          "url": "/collection/previews/verdant-1280.webp",
+          "width": 1280,
+          "bytes": 203984,
+          "sha256": "9349430b84c52103ffe93a2e5cb933cb402df6615f11b0305cb2b4e8023fb38f"
+        }
+      ]
+    },
+    {
+      "work": "orbital",
+      "source": "/orbital/media/hero-earth.webp",
+      "sourceBytes": 105078,
+      "sourceSHA256": "739f428493eec24f0d7b7a5eba2d733c33561f84db7e55a1d834dfefe83ec3fe",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "url": "/collection/previews/orbital-640.webp",
+          "width": 640,
+          "bytes": 42970,
+          "sha256": "7944d55dbc26ad0642f9604905c9b80e9da85becfeee470ec6abf4aa74a5f5ec"
+        },
+        {
+          "url": "/collection/previews/orbital-960.webp",
+          "width": 960,
+          "bytes": 79024,
+          "sha256": "cb8cf27b707124f82a260a0b93ad6cf871a931f01feec9e4bc11f31b3adfe5e7"
+        },
+        {
+          "url": "/collection/previews/orbital-1280.webp",
+          "width": 1280,
+          "bytes": 112592,
+          "sha256": "55af9d09b8a1657c8a0285e663cfb4f4f324fe450245c6a357025ec462863ffe"
+        }
+      ]
+    },
+    {
+      "work": "glaze",
+      "source": "/glaze/media/celadon.webp",
+      "sourceBytes": 305870,
+      "sourceSHA256": "007c43003812a322f7ae5a5512f9ae06bfa340039395f612302418383e046a1b",
+      "width": 1024,
+      "height": 1536,
+      "variants": [
+        {
+          "url": "/collection/previews/glaze-640.webp",
+          "width": 640,
+          "bytes": 111068,
+          "sha256": "5cc2b3e4752953ba92be3c6e3fa2cd57721eb8f60bbb4f1f953a3fe60aa714ba"
+        },
+        {
+          "url": "/collection/previews/glaze-960.webp",
+          "width": 960,
+          "bytes": 193242,
+          "sha256": "027813a87bcdb2b15783293325667f747ee0fa4514f0e565573b8576c45e04c5"
+        }
+      ]
+    },
+    {
+      "work": "kage",
+      "source": "/kage/social.jpg",
+      "sourceBytes": 110467,
+      "sourceSHA256": "d2e7d664a6f8d3bbd5b58dc305262303792edf1e6ec72601cdc4f549a3ef758c",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/collection/previews/kage-640.webp",
+          "width": 640,
+          "bytes": 12302,
+          "sha256": "73562ee502fbdaaaf98a642e04c400511a1646dc11dac8dff5b662b56d172831"
+        },
+        {
+          "url": "/collection/previews/kage-960.webp",
+          "width": 960,
+          "bytes": 18926,
+          "sha256": "b7cd8b7551a217aa3a17cd36c6ea9ca6a57536ed1a1ebd1eb1d82496ec3c617d"
+        },
+        {
+          "url": "/collection/previews/kage-1280.webp",
+          "width": 1280,
+          "bytes": 27156,
+          "sha256": "ab442eed9b9fd6436ba6ef01dc285fcf4b2b91ade84f12a98d3e4ff61012d6e0"
+        }
+      ]
+    },
+    {
+      "work": "chronos",
+      "source": "/chronos/images/chronos-watch.webp",
+      "sourceBytes": 502662,
+      "sourceSHA256": "0fa7de91116ab3c2644e5c6822a8b8aac5568554dd2b2fa52793a0cab197df55",
+      "width": 1122,
+      "height": 1402,
+      "variants": [
+        {
+          "url": "/collection/previews/chronos-640.webp",
+          "width": 640,
+          "bytes": 151014,
+          "sha256": "e51f35a62e5383c0decacd8e988740a50ba2215592e2a7ff246a039b791ae9b4"
+        },
+        {
+          "url": "/collection/previews/chronos-960.webp",
+          "width": 960,
+          "bytes": 285888,
+          "sha256": "dba9bb823392b7d9ca1133d0bbe102de8701756106071bcc37fa5561e30827f4"
+        }
+      ]
+    },
+    {
+      "work": "interval",
+      "source": "/interval/images/threshold.webp",
+      "sourceBytes": 413444,
+      "sourceSHA256": "9866af099db70f86c4760c38f2c4cea4d621e753ff5de73a1b713d99ccc6dc26",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "url": "/collection/previews/interval-640.webp",
+          "width": 640,
+          "bytes": 57016,
+          "sha256": "e403c50221f181bd1c76f5e5a82fee77ddea786e224377db39334ef647ea8252"
+        },
+        {
+          "url": "/collection/previews/interval-960.webp",
+          "width": 960,
+          "bytes": 115292,
+          "sha256": "c8a9aa21faa2f46981af4a06600af130f3a8288e3d1ca034ff33c7e4876f0ccd"
+        },
+        {
+          "url": "/collection/previews/interval-1280.webp",
+          "width": 1280,
+          "bytes": 183506,
+          "sha256": "aba1e4d2742b7d9175bd821ea81490211033a2608117203ba2c59bfc887fd597"
+        }
+      ]
+    },
+    {
+      "work": "form",
+      "source": "/collection/form.webp",
+      "sourceBytes": 25280,
+      "sourceSHA256": "7884d9c1c660b4b58f3b66477aaa090bfcaa7948bce8cd65e9105b8a8bd62cbf",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        {
+          "url": "/collection/previews/form-640.webp",
+          "width": 640,
+          "bytes": 7650,
+          "sha256": "95b005623455bf10e19f53751132956ee036ef30ee728846473d75fe830c6d87"
+        },
+        {
+          "url": "/collection/previews/form-960.webp",
+          "width": 960,
+          "bytes": 12952,
+          "sha256": "0aaf3535f075067e6506908a0bea1cbf89227094adcb651486a39c9fa132311a"
+        },
+        {
+          "url": "/collection/previews/form-1280.webp",
+          "width": 1280,
+          "bytes": 18048,
+          "sha256": "b0bac7b523d40cf4d650532730d7ab78e3f0ccbf98eab6738babc21a438628a8"
+        }
+      ]
+    },
+    {
+      "work": "fusion",
+      "source": "/collection/fusion.webp",
+      "sourceBytes": 126212,
+      "sourceSHA256": "e6ed4bc50c1d188c77c99273295f6cd6f586e534cd26b11f9a13a73c41098bdc",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        {
+          "url": "/collection/previews/fusion-640.webp",
+          "width": 640,
+          "bytes": 28130,
+          "sha256": "1bc856f938a7789c0d650b91fd641506bbdf3ae0981688d302c8c156d8054521"
+        },
+        {
+          "url": "/collection/previews/fusion-960.webp",
+          "width": 960,
+          "bytes": 53118,
+          "sha256": "66828e81f06eed9cb51867c0844fbb1f989829f9cb599d83e7dde6337d870fc4"
+        },
+        {
+          "url": "/collection/previews/fusion-1280.webp",
+          "width": 1280,
+          "bytes": 79752,
+          "sha256": "920d88ef0f17e11bca71a8878cbf9a04fc61ca2ac0124fae46b17b99fc5d8ea7"
+        }
+      ]
+    },
+    {
+      "work": "glasshouse",
+      "source": "/glasshouse/social.jpg",
+      "sourceBytes": 50963,
+      "sourceSHA256": "4b2380aaa42d3d5976611f0d7ff174e8dc83eecffb77e6255f043674f00c68e2",
+      "width": 1200,
+      "height": 630,
+      "variants": [
+        {
+          "url": "/collection/previews/glasshouse-640.webp",
+          "width": 640,
+          "bytes": 8192,
+          "sha256": "fe4fe3ab2805b1d703d95cd9b3b99e8870e1c6393fea9c54566d33c51f548033"
+        },
+        {
+          "url": "/collection/previews/glasshouse-960.webp",
+          "width": 960,
+          "bytes": 13636,
+          "sha256": "740b42a54c299ef9851810acf9399c3f7134602c916daf31aca0e36b1db023ba"
+        }
+      ]
+    },
+    {
+      "work": "veil",
+      "source": "/veil/social.jpg",
+      "sourceBytes": 101737,
+      "sourceSHA256": "e801466159def34c3854652b86bbc55075e8f79da1ced1e4e1c9a34834e6818f",
+      "width": 1200,
+      "height": 630,
+      "variants": [
+        {
+          "url": "/collection/previews/veil-640.webp",
+          "width": 640,
+          "bytes": 15860,
+          "sha256": "e19817cb0c090f936fe3f472b7d852a69120672dd94e6797854fa63cc14ab08c"
+        },
+        {
+          "url": "/collection/previews/veil-960.webp",
+          "width": 960,
+          "bytes": 35204,
+          "sha256": "2c3c8a25ea0581b8d3e7827b29b708db99a7e595ff42e9a4a5ed871d5b86d287"
+        }
+      ]
+    },
+    {
+      "work": "optic",
+      "source": "/optic/social.jpg",
+      "sourceBytes": 46809,
+      "sourceSHA256": "d4a0c700d0f8bb262b55856d9720280a1dabbee4419056381cb2a52bd97bd7d6",
+      "width": 1200,
+      "height": 630,
+      "variants": [
+        {
+          "url": "/collection/previews/optic-640.webp",
+          "width": 640,
+          "bytes": 9068,
+          "sha256": "674f67129c339fe8a89da6272b81efae7236645281e0ecc1dc1ba5bed52229f2"
+        },
+        {
+          "url": "/collection/previews/optic-960.webp",
+          "width": 960,
+          "bytes": 16518,
+          "sha256": "8ea0e286292feaf19a5beffaac6460eb2d95c6fc579be4fcdaf013542d4e3f48"
+        }
+      ]
+    },
+    {
+      "work": "inkscape",
+      "source": "/inkscape/social.jpg",
+      "sourceBytes": 162417,
+      "sourceSHA256": "131bbf37af7d5cedd9b80db818d5a95312c3957cf46cd855ab98d63adfc1a01d",
+      "width": 1200,
+      "height": 630,
+      "variants": [
+        {
+          "url": "/collection/previews/inkscape-640.webp",
+          "width": 640,
+          "bytes": 37114,
+          "sha256": "013d5d00ae301b8e30efdfc17dd4ec50683f3e5b4f8aeb0dd504e0f479f48f9a"
+        },
+        {
+          "url": "/collection/previews/inkscape-960.webp",
+          "width": 960,
+          "bytes": 75932,
+          "sha256": "19f2e697b92961370bd6a756892a180a5c4d20854c841cddcf8ae9113a441353"
+        }
+      ]
+    },
+    {
+      "work": "facet",
+      "source": "/facet/social.jpg",
+      "sourceBytes": 91615,
+      "sourceSHA256": "f443ef246a2a512f294e7dbc08146020ed42b1b7acd7846e3a51d27001e6736b",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/facet-640.webp",
+          "width": 640,
+          "bytes": 12492,
+          "sha256": "310c8124ab1beddf3cb2d16cfb7cb21a78ad2ddcac70fe81a8976753a2849397"
+        },
+        {
+          "url": "/collection/previews/facet-960.webp",
+          "width": 960,
+          "bytes": 21438,
+          "sha256": "d7a0ce43c899a77847318e832248c0462cb0becb8adf0828d57549ab328dbc08"
+        },
+        {
+          "url": "/collection/previews/facet-1280.webp",
+          "width": 1280,
+          "bytes": 31852,
+          "sha256": "58a3baac209afbb69a05676e6721736ea106f860905ad23957936c3b1c866a57"
+        }
+      ]
+    },
+    {
+      "work": "silicon",
+      "source": "/silicon/social.jpg",
+      "sourceBytes": 105708,
+      "sourceSHA256": "0f11f7926f8bfc6401ddc13c7b7600bb185acdd9937de0e679e0eafcf13877c1",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/silicon-640.webp",
+          "width": 640,
+          "bytes": 12718,
+          "sha256": "d351d6c56b1d33a65a0482ed5d880a3827b39575214bc8b1660b67b71a06aba2"
+        },
+        {
+          "url": "/collection/previews/silicon-960.webp",
+          "width": 960,
+          "bytes": 29130,
+          "sha256": "946238d0e28778befdfbf52ffa7240a130418004b8de854af212351520baf650"
+        },
+        {
+          "url": "/collection/previews/silicon-1280.webp",
+          "width": 1280,
+          "bytes": 50734,
+          "sha256": "5be81780c952553551d6b1a8026197ae3cd8b3a1d46bfd8f23ddab54847a67de"
+        }
+      ]
+    },
+    {
+      "work": "atlas",
+      "source": "/atlas/social.jpg",
+      "sourceBytes": 157140,
+      "sourceSHA256": "725aba2325806250826bb6f9910094310b04b21a1dc6e3156df947e6327eebd5",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/atlas-640.webp",
+          "width": 640,
+          "bytes": 22284,
+          "sha256": "7aa4b7a92de18e839c41776d6c5e37dd4423eb597923e70273e6f637f2ad6b37"
+        },
+        {
+          "url": "/collection/previews/atlas-960.webp",
+          "width": 960,
+          "bytes": 45624,
+          "sha256": "e366198936958eb2f252c7349527006793858131f25028bd4212e17827429996"
+        },
+        {
+          "url": "/collection/previews/atlas-1280.webp",
+          "width": 1280,
+          "bytes": 73142,
+          "sha256": "7864c8672e06e1630c23f37445fad0d5445fbc7187d5707ed81807f3a468096c"
+        }
+      ]
+    },
+    {
+      "work": "thrust",
+      "source": "/thrust/social.jpg",
+      "sourceBytes": 122898,
+      "sourceSHA256": "b3a90c4061f50f8ec69ebc3a78e2d17c6ae98f3523480941ef5585c2c64c921a",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/thrust-640.webp",
+          "width": 640,
+          "bytes": 21116,
+          "sha256": "a7f07f365abf413c77ffe8494aea805999a6fe7a605529698bb814fa8d347520"
+        },
+        {
+          "url": "/collection/previews/thrust-960.webp",
+          "width": 960,
+          "bytes": 36200,
+          "sha256": "a1662a905564cf5a83f543c701d369f97c90cea4abbc719e72469ac672f72204"
+        },
+        {
+          "url": "/collection/previews/thrust-1280.webp",
+          "width": 1280,
+          "bytes": 51864,
+          "sha256": "0f6ce13b198957cf943f7511b3cb72b5e7c98d7890903cdbbddd0004f64995c1"
+        }
+      ]
+    },
+    {
+      "work": "resonance",
+      "source": "/resonance/social.jpg",
+      "sourceBytes": 94738,
+      "sourceSHA256": "3c1bfa0a399a6ef20b7752004c001049afe6a8499a599063646c1a44198e5604",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/resonance-640.webp",
+          "width": 640,
+          "bytes": 10596,
+          "sha256": "1ec6d70305e086c460d9ac097fb854ec7614d7e5e12a35128b1d19e66d397596"
+        },
+        {
+          "url": "/collection/previews/resonance-960.webp",
+          "width": 960,
+          "bytes": 23314,
+          "sha256": "14ed6069f14db7da8dd78777efe14bfe98f33bb2adb3d590a3a4ec8099382540"
+        },
+        {
+          "url": "/collection/previews/resonance-1280.webp",
+          "width": 1280,
+          "bytes": 38416,
+          "sha256": "e9dec4841f2d9904368fd88aa5a9eede76f1cd61f2cf0176c9aac400a0a732c9"
+        }
+      ]
+    },
+    {
+      "work": "aeterna",
+      "source": "/aeterna/assets/hero.webp",
+      "sourceBytes": 216212,
+      "sourceSHA256": "e81925e3e586128f9e8958b632bab72eae08e8ade7209bedc2dfbc8c9335c0b1",
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "url": "/collection/previews/aeterna-640.webp",
+          "width": 640,
+          "bytes": 30398,
+          "sha256": "942c9a47e12573ab95d51616cee9e45bdbef5254c38934c0ff1daede29fceb33"
+        },
+        {
+          "url": "/collection/previews/aeterna-960.webp",
+          "width": 960,
+          "bytes": 58680,
+          "sha256": "2aee895653b25e8b9d2857d98f6f8f7e3fd9c7f73fcb6d19200ff2daaa341b44"
+        },
+        {
+          "url": "/collection/previews/aeterna-1280.webp",
+          "width": 1280,
+          "bytes": 90938,
+          "sha256": "749017787f7236cebc28bbf3e13516605b423e1d3ee150a7f284fc40390a4809"
+        }
+      ]
+    },
+    {
+      "work": "parallax",
+      "source": "/parallax/social.jpg",
+      "sourceBytes": 82649,
+      "sourceSHA256": "8a6db21ed287c64d1840afab2640fa60c3161e31bb19ce105982d8181d35c030",
+      "width": 1200,
+      "height": 630,
+      "variants": [
+        {
+          "url": "/collection/previews/parallax-640.webp",
+          "width": 640,
+          "bytes": 14776,
+          "sha256": "80f059951cbeaf9ada54fd1fbd55dabda372f03f3227f63e3d5708db9682dfd1"
+        },
+        {
+          "url": "/collection/previews/parallax-960.webp",
+          "width": 960,
+          "bytes": 26026,
+          "sha256": "2f5d382b1ef9324d773d82916321d25e82bddb6ab97db67f559f3ffce88ba9b2"
+        }
+      ]
+    },
+    {
+      "work": "luthier",
+      "source": "/luthier/poster.webp",
+      "sourceBytes": 139812,
+      "sourceSHA256": "9f4503e9be7cd9077154446ef2439c97f8bae1cda55560ead22992e9eb2ffe7c",
+      "width": 1200,
+      "height": 750,
+      "variants": [
+        {
+          "url": "/collection/previews/luthier-640.webp",
+          "width": 640,
+          "bytes": 45540,
+          "sha256": "695cfe10868248202ed79acf2c06f5534b0d1718d84c2dbca5a639309ce67a28"
+        },
+        {
+          "url": "/collection/previews/luthier-960.webp",
+          "width": 960,
+          "bytes": 81872,
+          "sha256": "a338eb213c8a35a9ffa5d0e188cda2ce5b3a047d2664d898f1637a09dec757df"
+        }
+      ]
+    },
+    {
+      "work": "codex",
+      "source": "/codex/poster.webp",
+      "sourceBytes": 22234,
+      "sourceSHA256": "e685f351aef6c4adbc2422ada5ddfafdcb63d69a6f11dd13ac1d339f513a6a04",
+      "width": 1000,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/codex-640.webp",
+          "width": 640,
+          "bytes": 7572,
+          "sha256": "976e4c2fc84a885b1e67f7472b5b050de40c5513a0cb8ff36f694c20d5123686"
+        },
+        {
+          "url": "/collection/previews/codex-960.webp",
+          "width": 960,
+          "bytes": 13578,
+          "sha256": "dfed0efe14e5f78a4c91b717f9534d3bf00656aa9b4c3a151efc2a755e684411"
+        }
+      ]
+    },
+    {
+      "work": "magma",
+      "source": "/magma/poster.webp",
+      "sourceBytes": 201450,
+      "sourceSHA256": "432a3748f87ff92e85275d13ab446f4906ed8bdb2f33f26d2320d5bf06f13fa9",
+      "width": 1440,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/magma-640.webp",
+          "width": 640,
+          "bytes": 50316,
+          "sha256": "7da474138d88fb0b8fb864ac242983bb76d8d6e65eb5ed9434be9b0ba58f6d51"
+        },
+        {
+          "url": "/collection/previews/magma-960.webp",
+          "width": 960,
+          "bytes": 99004,
+          "sha256": "fcf28bd77af0efec3eaf0f67a943e2118862b7e1553b8d13c834896a2718620b"
+        },
+        {
+          "url": "/collection/previews/magma-1280.webp",
+          "width": 1280,
+          "bytes": 141282,
+          "sha256": "5f7381d685ef83147549b7aecb5e91399534953c3d14a1e34fe19b53b710bcea"
+        }
+      ]
+    },
+    {
+      "work": "fossil",
+      "source": "/fossil/poster.webp",
+      "sourceBytes": 224246,
+      "sourceSHA256": "ab1cae28c2b8c3b072ebbf2a30ff570c6b390242545a1b59d9a071069b2f50f4",
+      "width": 1200,
+      "height": 750,
+      "variants": [
+        {
+          "url": "/collection/previews/fossil-640.webp",
+          "width": 640,
+          "bytes": 71738,
+          "sha256": "0a738b19d22d6473bfd57e961b6664488368b9300ea7b057695b56cf37c2d9f6"
+        },
+        {
+          "url": "/collection/previews/fossil-960.webp",
+          "width": 960,
+          "bytes": 137378,
+          "sha256": "c14d712f87f38839e4d4b07c6312a9483f9da664a101bd75ce9fd26face667ed"
+        }
+      ]
+    },
+    {
+      "work": "urushi",
+      "source": "/urushi/poster.webp",
+      "sourceBytes": 12204,
+      "sourceSHA256": "b40f1cced476fc052a28c9e326c5d634b252a8c22f408a83edde4edaa3fd1671",
+      "width": 1200,
+      "height": 750,
+      "variants": [
+        {
+          "url": "/collection/previews/urushi-640.webp",
+          "width": 640,
+          "bytes": 3614,
+          "sha256": "f0ce694547e163f335ace29ccecc0c13d88a78e3e4d7c28706f00eb347751295"
+        },
+        {
+          "url": "/collection/previews/urushi-960.webp",
+          "width": 960,
+          "bytes": 6498,
+          "sha256": "f553af5243bf0c8d08207eabf5e26f3700e7f61506108393291554c0ccefe7ea"
+        }
+      ]
+    },
+    {
+      "work": "nib",
+      "source": "/nib/poster.webp",
+      "sourceBytes": 67060,
+      "sourceSHA256": "2a64734be44f703c474b4e3602ff83882a09ee22e7a819fd9cb08363700862b0",
+      "width": 1440,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/nib-640.webp",
+          "width": 640,
+          "bytes": 15674,
+          "sha256": "06214289c48ab8ed801bdb18021144681de4aadfb172bb0c6f758bb4534b1b3b"
+        },
+        {
+          "url": "/collection/previews/nib-960.webp",
+          "width": 960,
+          "bytes": 27008,
+          "sha256": "74ec1d99cb630f8d584eaf59f185bbe968250008876957d9e5336487acf21f58"
+        },
+        {
+          "url": "/collection/previews/nib-1280.webp",
+          "width": 1280,
+          "bytes": 38368,
+          "sha256": "519b5968af0ac839af29b71396aa468688020e51dfc4cc8f06d4fbcbe3052a0b"
+        }
+      ]
+    },
+    {
+      "work": "crema",
+      "source": "/crema/poster.webp",
+      "sourceBytes": 57768,
+      "sourceSHA256": "8e4902ef3c79ebfbb68d2da248a660068f8e1b9bd293cecbe08f501f36cc5dec",
+      "width": 1200,
+      "height": 750,
+      "variants": [
+        {
+          "url": "/collection/previews/crema-640.webp",
+          "width": 640,
+          "bytes": 22426,
+          "sha256": "c0f2509fe76f5e31691b97466ef2a30d473dbf4d33a382d595a0960db81d465f"
+        },
+        {
+          "url": "/collection/previews/crema-960.webp",
+          "width": 960,
+          "bytes": 37938,
+          "sha256": "c06451f7840bcca5bc8c964c4bccbb2dcc3354a4137d7637c6552819522f8ef7"
+        }
+      ]
+    },
+    {
+      "work": "crave",
+      "source": "/crave/poster.webp",
+      "sourceBytes": 174598,
+      "sourceSHA256": "20a1f1ecf99cc2dfbb9260ea8ed27d7306edd6ff208a93165105621da12faa2f",
+      "width": 1200,
+      "height": 750,
+      "variants": [
+        {
+          "url": "/collection/previews/crave-640.webp",
+          "width": 640,
+          "bytes": 59696,
+          "sha256": "3257ebcdacbe0c349172a3e54065116ec9cc839c003e9cc5b81594e949393b9a"
+        },
+        {
+          "url": "/collection/previews/crave-960.webp",
+          "width": 960,
+          "bytes": 106410,
+          "sha256": "cf7b1658bac350aeb592828bac072ddffe293a52207d0d79f180717e9d08f473"
+        }
+      ]
+    },
+    {
+      "work": "grid",
+      "source": "/collection/grid.webp",
+      "sourceBytes": 66216,
+      "sourceSHA256": "6e06128010c47e6a68c5f11f2befec5ee741e394794599bea28085a6a6974dca",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        {
+          "url": "/collection/previews/grid-640.webp",
+          "width": 640,
+          "bytes": 20482,
+          "sha256": "250800129ea28d8388df61c6f7ec2fcdd8165442d0e93f2d0850ba44ad452637"
+        },
+        {
+          "url": "/collection/previews/grid-960.webp",
+          "width": 960,
+          "bytes": 33862,
+          "sha256": "33fdf01d1ff76a599e2876cc3974459296069dbac9b47ee2c535211ee25ec67f"
+        },
+        {
+          "url": "/collection/previews/grid-1280.webp",
+          "width": 1280,
+          "bytes": 45532,
+          "sha256": "914b331ae9c3078a5758454ff404a7599fb9db7de12574a56f5749f60219d5fd"
+        }
+      ]
+    },
+    {
+      "work": "dose",
+      "source": "/dose/poster.webp",
+      "sourceBytes": 25740,
+      "sourceSHA256": "5be6e2ab09027b94534f0ab2d6f9f7747727e33eccd4c6ec294b2e9115475bb2",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "url": "/collection/previews/dose-640.webp",
+          "width": 640,
+          "bytes": 5408,
+          "sha256": "856946d19f7b2335b0bb78825aa82c5490fd7620cb15a36c9ac56fed90e8de63"
+        },
+        {
+          "url": "/collection/previews/dose-960.webp",
+          "width": 960,
+          "bytes": 11238,
+          "sha256": "8412539cfb053a6d8b8f2ab79cab40bcf8981a0eb779d3c4eb84b2d43ceae656"
+        },
+        {
+          "url": "/collection/previews/dose-1280.webp",
+          "width": 1280,
+          "bytes": 17066,
+          "sha256": "7093340def678af07f1c7876aa883863f4842923ab0681c9e7e521b16db34b12"
+        }
+      ]
+    },
+    {
+      "work": "counterform",
+      "source": "/collection/counterform.webp",
+      "sourceBytes": 11846,
+      "sourceSHA256": "476fa4bf92db249ca137e195b32f52b3dc3c8857ea2f22d5da9fa952c2fc179c",
+      "width": 1600,
+      "height": 1000,
+      "variants": [
+        {
+          "url": "/collection/previews/counterform-640.webp",
+          "width": 640,
+          "bytes": 3836,
+          "sha256": "30306c08adae4ad0d4eb1a6e09f947acc37535a1465950404c3fcbdd2bd836ef"
+        },
+        {
+          "url": "/collection/previews/counterform-960.webp",
+          "width": 960,
+          "bytes": 6324,
+          "sha256": "18a160f56b1e55236894e8c771a97b35248cffe316ef6dc570f5f3508b3b0f2c"
+        },
+        {
+          "url": "/collection/previews/counterform-1280.webp",
+          "width": 1280,
+          "bytes": 8512,
+          "sha256": "7ce50513f1546e1acd0265c449efbc69a3cb6ea2a6cfff96bf0bdc504116386b"
+        }
+      ]
+    },
+    {
+      "work": "ferrum",
+      "source": "/ferrum/assets/stills/05-desktop.webp",
+      "sourceBytes": 24446,
+      "sourceSHA256": "1aff2ab74b6276c3d0eca5cb041858438c7034502f4d53e89c61a9bd5b45d2e6",
+      "width": 1920,
+      "height": 1280,
+      "variants": [
+        {
+          "url": "/collection/previews/ferrum-640.webp",
+          "width": 640,
+          "bytes": 3084,
+          "sha256": "5a291d93ef9f08381818cbe249ba1f06e9ed29daf0093093889ce53bd7061fe8"
+        },
+        {
+          "url": "/collection/previews/ferrum-960.webp",
+          "width": 960,
+          "bytes": 5920,
+          "sha256": "ad1549d4786bedccd18a6e60287d63d2dfa8ac79a56aa47123b7280ab79c2531"
+        },
+        {
+          "url": "/collection/previews/ferrum-1280.webp",
+          "width": 1280,
+          "bytes": 8700,
+          "sha256": "b0ed60f4fd91a9b8a923661a3b58a95649f42d5011302e402b274bc49d6ffcfb"
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import '../../shared/collection-return.css';
 import 'lenis/dist/lenis.css';
 import Lenis from 'lenis';
 import { SCENES, clamp, mix, smoothstep, presentationAt, progressFromScroll, scrollFromProgress } from './timeline.js';
+import { pointerResponse } from './pointer.js';
 
 const root = document.documentElement;
 const body = document.body;
@@ -17,6 +18,25 @@ const focusReturn = document.querySelector('#return-labels');
 const alignButton = document.querySelector('#align-view');
 const viewAngle = document.querySelector('#view-angle');
 const notice = document.querySelector('#render-notice');
+dialog.insertBefore(notice, dialog.querySelector('.index-foot'));
+let stillPlate = document.createElement('img');
+stillPlate.className = 'still-plate';
+stillPlate.alt = '';
+stillPlate.hidden = true;
+canvas.after(stillPlate);
+const sceneNotes = copies.map(copy => copy.querySelector('.scene-note'));
+const liveNotes = sceneNotes.map(note => note?.textContent);
+const stillNotes = [null,
+  'Captured view: the same 18 fragments separate along their existing cuts.',
+  'Compare the aligned reference with two captured off-axis viewpoints.',
+  'Captured view: the sculpture and its reflected counterpart.',
+  'Captured view: the opening at the passage entrance. Camera travel needs live rendering.',
+  'Captured view: the sculpture seen through its optical membrane.',
+  'Captured view: coloured reflections cross the same cut surfaces.',
+  'Captured view: the boundary and incision remain as the mass recedes.',
+  'Captured view: the same fragments assembled again.', null];
+const stillCache = new Map();
+let stillRequested = '', stillGeneration = 0, stillShown = null, stillLoading = false, stillError = false;
 const plateIvory = document.querySelector('.world-plate--ivory');
 const plateMuseum = document.querySelector('.world-plate--museum');
 const heroLayer = document.querySelector('.hero-sculpture');
@@ -54,6 +74,7 @@ let previousFrameTime = 0;
 let scrollClock = 0;
 let stage = null;
 let stageReady = false;
+let stageReveal = 0;
 let stageFailed = false;
 let initializing = false;
 let initGeneration = 0;
@@ -160,8 +181,10 @@ function navigateTo(index, { historyEntry = true, replaceHistory = false, immedi
 }
 
 function updateAccessibleControls() {
-  alignButton.disabled = activeScene !== 2 || !stageReady;
-  viewAngle.disabled = activeScene !== 2 || !stageReady || reducedMotion;
+  const inspectionReady = stageReady || (stageFailed && stillShown?.index === 2);
+  alignButton.disabled = activeScene !== 2 || !inspectionReady;
+  viewAngle.disabled = activeScene !== 2 || !inspectionReady;
+  viewAngle.step = stageReady ? '.01' : '1';
   alignButton.tabIndex = activeScene === 2 && !focusArtwork ? 0 : -1;
   viewAngle.tabIndex = activeScene === 2 && !focusArtwork ? 0 : -1;
   document.querySelector('.scroll-invitation').tabIndex = activeScene === 0 && !focusArtwork ? 0 : -1;
@@ -172,10 +195,40 @@ function updateAccessibleControls() {
   }
 }
 
+function requestStill(index) {
+  if (!index) return;
+  const side = index === 2 ? targetPointer.x < -.2 ? '-left' : targetPointer.x > .2 ? '-right' : '' : '';
+  const orientation = height >= width ? 'portrait' : 'landscape';
+  const key = `${String(index).padStart(2, '0')}${side}-${orientation}`;
+  if (key === stillRequested) return;
+  stillRequested = key;
+  const generation = ++stillGeneration;
+  stillLoading = true; stillError = false;
+  let pending = stillCache.get(key);
+  if (!pending) {
+    const image = new Image(); image.decoding = 'async';
+    image.src = `${import.meta.env.BASE_URL}parallax/stills/${key}.webp`;
+    pending = image.decode().then(() => image).catch(() => null);
+    stillCache.set(key, pending);
+  }
+  pending.then(image => {
+    if (disposed || stageReady || generation !== stillGeneration) return;
+    stillLoading = false; stillError = !image;
+    if (image) {
+      image.className = 'still-plate'; image.alt = '';
+      image.dataset.scene = String(index); image.dataset.view = side || 'reference';
+      stillPlate.replaceWith(image); stillPlate = image;
+      stillShown = {index, key};
+    }
+    updateAccessibleControls(); invalidate();
+  });
+}
+
 function draw(time) {
   frame = 0;
   if (disposed || document.hidden) { previousFrameTime = 0; return; }
-  scrollClock += previousFrameTime ? Math.min(50, Math.max(0, time - previousFrameTime)) : 1000 / 60;
+  const delta = previousFrameTime ? Math.min(50, Math.max(0, time - previousFrameTime)) : 1000 / 60;
+  scrollClock += delta;
   previousFrameTime = time;
   lenis.raf(scrollClock);
   const raw = progressFromScroll(scrollY, span);
@@ -184,8 +237,29 @@ function draw(time) {
   if (Math.abs(raw - 2) > .04) alignLocked = false;
   const prev = activeScene;
   activeScene = state.active;
+  if (!stageReady && activeScene > 0) requestStill(activeScene);
+  // A late renderer starts at the current coordinate. Only representation
+  // opacity crosses over on this existing clock; scene progress never trails.
+  if (stageReady) stageReveal = reducedMotion ? 1 : Math.min(1, stageReveal + delta / 220);
+  const captured = !stageReady || stageReveal < 1;
+  const showStill = captured && activeScene > 0 && stillShown !== null;
+  stillPlate.hidden = !showStill;
+  stillPlate.style.opacity = String(stageReady ? 1 - stageReveal : 1);
+  body.classList.toggle('has-still-plate', showStill);
+  sceneNotes.forEach((note, i) => {
+    const text = captured && activeScene > 0 ? stillNotes[i] : liveNotes[i];
+    if (note && note.textContent !== text) note.textContent = text;
+  });
+  if (stageFailed) {
+    const loading = activeScene > 0 && (stillLoading || stillError);
+    const retained = stillShown ? SCENES[stillShown.index].name : 'the opening';
+    notice.querySelector('span').textContent = loading
+      ? `${SCENES[activeScene].name} view ${stillError ? 'unavailable' : 'loading'}. Showing ${retained}.`
+      : 'Captured views — live rendering unavailable.';
+    if (loading && sceneNotes[activeScene]) sceneNotes[activeScene].textContent = `${SCENES[activeScene].name} capture ${stillError ? 'unavailable' : 'loading'}. Showing ${retained}.`;
+  }
   body.dataset.scene = String(activeScene);
-  const damping = reducedMotion ? 1 : .135;
+  const damping = reducedMotion ? 1 : pointerResponse(delta);
   pointer.x = mix(pointer.x, targetPointer.x, damping);
   pointer.y = mix(pointer.y, targetPointer.y, damping);
   if (Math.abs(pointer.x - targetPointer.x) < .0002) pointer.x = targetPointer.x;
@@ -203,10 +277,10 @@ function draw(time) {
   root.style.setProperty('--base', `rgb(${ground.join(' ')})`);
   plateIvory.style.opacity = state.ivory.toFixed(4);
   plateMuseum.style.opacity = state.museum.toFixed(4);
-  const hero = stageReady ? state.hero : 1;
+  const hero = stageReady ? state.hero * stageReveal + (showStill ? 0 : 1 - stageReveal) : showStill ? 0 : 1;
   root.style.setProperty('--hero-opacity', hero.toFixed(4));
   heroTitle.style.opacity = (reducedMotion ? Number(activeScene === 0) : 1 - smoothstep(.08, .30, raw)).toFixed(4);
-  canvas.style.opacity = stageReady ? (1 - state.hero).toFixed(4) : '0';
+  canvas.style.opacity = stageReady ? ((1 - state.hero) * stageReveal).toFixed(4) : '0';
   if (!stageReady && raw > .7) {
     // A clearly labelled still exhibition stays composed if live rendering cannot start.
     const far = activeScene === 9;
@@ -228,9 +302,9 @@ function draw(time) {
     copy.style.pointerEvents = i === activeScene && opacity > .2 && !focusArtwork ? 'auto' : 'none';
   });
   counter.textContent = String(activeScene + 1).padStart(2, '0');
-  sceneName.textContent = SCENES[activeScene].name;
+  sceneName.textContent = captured && activeScene > 0 ? `Captured · ${SCENES[stillShown?.index ?? 0].name}` : SCENES[activeScene].name;
   journey.style.transform = `scaleX(${(raw / 9).toFixed(5)})`;
-  hint.textContent = !reducedMotion && finePointerQuery.matches && [1, 2, 3, 5, 6].includes(activeScene)
+  hint.textContent = stageReady && !reducedMotion && finePointerQuery.matches && [1, 2, 3, 5, 6].includes(activeScene)
     ? activeScene === 2 ? 'Move gently to shift the view' : 'Move to observe'
     : '';
   if (prev !== activeScene) {
@@ -242,20 +316,22 @@ function draw(time) {
   }
   if (stageReady) {
     try {
-      stage.render({ progress: state.progress, reducedMotion, pointer: reducedMotion ? { x: 0, y: 0 } : pointer, alignLocked, width, height });
+      stage.render({ progress: state.progress, reducedMotion, pointer: reducedMotion && activeScene !== 2 ? { x: 0, y: 0 } : pointer, alignLocked, width, height });
     } catch (error) { rendererFailed(error); }
   }
-  if (lenis.isScrolling === 'smooth' || Math.abs(pointer.x - targetPointer.x) > .0002 || Math.abs(pointer.y - targetPointer.y) > .0002) invalidate();
+  if ((stageReady && stageReveal < 1) || lenis.isScrolling === 'smooth' || Math.abs(pointer.x - targetPointer.x) > .0002 || Math.abs(pointer.y - targetPointer.y) > .0002) invalidate();
   else previousFrameTime = 0;
 }
 
 function rendererFailed(error) {
   if (disposed) return;
   stageReady = false;
+  stageReveal = 0;
   stageFailed = true;
   canvas.dataset.ready = 'false';
   canvas.dataset.state = 'still';
   body.classList.add('still-view');
+  stillRequested = '';
   notice.hidden = false;
   notice.dataset.reason = error?.name || 'WebGLUnavailable';
   updateAccessibleControls();
@@ -276,6 +352,7 @@ async function initializeStage() {
     stage.resize(width, height, pixelRatio);
     const state = presentationAt(progressFromScroll(scrollY, span), reducedMotion);
     stage.render({ progress: state.progress, reducedMotion, pointer: { x: 0, y: 0 }, alignLocked, width, height });
+    stageReveal = reducedMotion ? 1 : 0;
     stageReady = true;
     stageFailed = false;
     canvas.dataset.ready = 'true';
@@ -337,10 +414,12 @@ on(alignButton, 'click', () => {
   invalidate();
 });
 on(viewAngle, 'input', () => {
+  stopPendingNavigation();
   alignLocked = false;
   targetPointer.x = Number(viewAngle.value);
   targetPointer.y = 0;
   viewAngle.setAttribute('aria-valuetext', Math.abs(targetPointer.x) < .02 ? 'Aligned viewpoint' : `${Math.round(Math.abs(targetPointer.x) * 100)} percent ${targetPointer.x < 0 ? 'left' : 'right'}`);
+  if (stageFailed) viewAngle.setAttribute('aria-valuetext', Math.abs(targetPointer.x) < .2 ? 'Captured aligned viewpoint' : `Captured ${targetPointer.x < 0 ? 'left' : 'right'} viewpoint`);
   invalidate();
 });
 on(document, 'click', event => {
@@ -363,7 +442,7 @@ on(window, 'keydown', event => {
   if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(event.key)) stopPendingNavigation();
 });
 on(window, 'pointermove', event => {
-  if (reducedMotion || !finePointerQuery.matches || dialog.open || event.pointerType === 'touch') return;
+  if (!stageReady || reducedMotion || !finePointerQuery.matches || dialog.open || event.pointerType === 'touch') return;
   if (event.target.closest('button,a,input,dialog')) return;
   alignLocked = false;
   targetPointer.x = clamp(event.clientX / width * 2 - 1, -1, 1);
@@ -377,7 +456,7 @@ on(window, 'pointermove', event => {
 on(document.documentElement, 'pointerleave', event => {
   // Touch pointers leave the document after every lift. Keep the explicit
   // range selection; only a departing mouse should reset hover parallax.
-  if (event.pointerType === 'touch' || !finePointerQuery.matches) return;
+  if (!stageReady || reducedMotion || event.pointerType === 'touch' || !finePointerQuery.matches) return;
   targetPointer.x = targetPointer.y = 0;
   if (activeScene === 2) {
     viewAngle.value = '0';

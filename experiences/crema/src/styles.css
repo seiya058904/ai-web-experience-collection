@@ -775,6 +775,7 @@ html {
 .motion-toggle {
   margin-top:24px;
   min-width:190px;
+  min-height:44px;
   font-size:13px
 }
 

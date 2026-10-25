@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MechanicalSound } from './audio';
 import { CHAPTERS, cameraProgress, chapterAt, clamp, copyState, mix, plateState, portraitLayout, smooth } from './narrative';
 import type { WatchScene } from './scene/WatchScene';
+import { MECHANISM_STILLS, presentation } from './presentation';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,6 +18,7 @@ const watch = get('watch-plate');
 const watchFrame = get('watch-frame');
 const craft = get('craft-plate');
 const craftImage = craft.querySelector('img')!;
+const mechanismStill = get<HTMLImageElement>('mechanism-still');
 const aperture = get('aperture-line');
 const copies = Array.from(document.querySelectorAll<HTMLElement>('[data-scene]'));
 const ticks = Array.from(document.querySelectorAll<HTMLElement>('.chapter-ticks i'));
@@ -62,6 +64,9 @@ let fallback = false;
 let contextLost = false;
 let watchAvailable = true;
 let craftAvailable = true;
+let stillUnavailable = false;
+let stillPending = false;
+let stillRequest = 0;
 let scene: WatchScene | null = null;
 let lastNumberUpdate = 0;
 let lastPaintProgress = -1;
@@ -124,7 +129,7 @@ function updateChapter(index: number) {
 function paint() {
   const index = chapterAt(progress);
   updateChapter(index);
-  const isMoving = !reduced && !paused && !modalOpen;
+  const isMoving = !fallback && !contextLost && !reduced && !paused && !modalOpen;
   const changed = progress !== lastPaintProgress || (isMoving && activeTime !== lastPaintTime);
   if (!changed) return;
   lastPaintProgress = progress;
@@ -141,16 +146,51 @@ function paint() {
 
   const plates = plateState(progress, reduced);
   const finalMix = smooth(.90, 1, progress);
-  const driftX = reduced ? 0 : Math.sin(activeTime * .17) * (mobile ? 1.5 : 3);
-  const driftY = reduced ? 0 : Math.sin(activeTime * .13) * (mobile ? 1.5 : 4);
-  const staticEdition = fallback || contextLost || reduced;
-  const watchOpacity = !watchAvailable ? 0 : fallback || contextLost ? (index === 4 && craftAvailable ? 0 : 1) : reduced ? plates.watch : (plates.watch > 0 ? 1 : 0);
+  const driftX = reduced || fallback || contextLost ? 0 : Math.sin(activeTime * .17) * (mobile ? 1.5 : 3);
+  const driftY = reduced || fallback || contextLost ? 0 : Math.sin(activeTime * .13) * (mobile ? 1.5 : 4);
+  const imageOnly = fallback || contextLost;
+  const staticEdition = imageOnly || reduced;
+  const still = MECHANISM_STILLS[index];
+  if (imageOnly && still && mechanismStill.dataset.chapter !== still.file) {
+    const request = ++stillRequest;
+    stillUnavailable = false;
+    stillPending = true;
+    // Browsers retain the previous decoded image while a new src loads. Hide
+    // that surface until this exact chapter is decoded, including rapid reversal.
+    mechanismStill.hidden = true;
+    mechanismStill.dataset.chapter = still.file;
+    mechanismStill.src = `${import.meta.env.BASE_URL}chronos/images/chronos-${still.file}.webp`;
+    mechanismStill.alt = still.description;
+    motionState();
+    void mechanismStill.decode().then(() => {
+      if (disposed || request !== stillRequest) return;
+      stillPending = false;
+      motionState();
+      paint();
+    }).catch(() => {
+      if (disposed || request !== stillRequest) return;
+      stillPending = false;
+      stillUnavailable = true;
+      motionState();
+      paint();
+    });
+  } else if (!still && stillPending) {
+    ++stillRequest;
+    stillPending = false;
+    mechanismStill.dataset.chapter = '';
+    motionState();
+  }
+  const watchOpacity = !watchAvailable ? 0 : imageOnly ? (index === 0 || index === 5 ? 1 : 0) : reduced ? plates.watch : (plates.watch > 0 ? 1 : 0);
+  mechanismStill.hidden = !imageOnly || !MECHANISM_STILLS[index] || stillUnavailable || stillPending;
+  canvas.setAttribute('aria-hidden', String(imageOnly));
   let watchScale = plates.scale;
   if (fallback || contextLost) watchScale = index === 5 ? .59 : (index === 0 ? 1 : 1.14);
   if (width > 700 && height <= 550) watchScale *= mix(1, .75, finalMix);
   if (mobile && height <= 680) watchScale *= mix(1, .63, finalMix);
   watch.style.opacity = String(watchOpacity);
   watch.style.visibility = watchOpacity < .001 ? 'hidden' : 'visible';
+  watchFrame.setAttribute('aria-hidden', String(!imageOnly || watchOpacity < .001));
+  get<HTMLImageElement>('watch-image').alt = imageOnly ? 'Original AI-generated photographic artwork of a complete skeleton watch.' : '';
   watch.style.left = `${mix(mobile ? 55 : (width <= 1100 ? 81 : 74), mobile ? 50 : 70, finalMix)}%`;
   watch.style.top = `${mix(mobile ? 76 : 53, mobile ? (height <= 680 ? 70.5 : 65) : 53, finalMix)}%`;
   watch.style.transform = `translate(-50%,-50%) translate3d(${driftX}px,${driftY}px,0) rotate(${mix(-9, -4, finalMix)}deg) scale(${watchScale})`;
@@ -170,10 +210,12 @@ function paint() {
   } else { watchFrame.style.maskImage = 'none'; canvas.style.clipPath = 'none'; }
 
   const craftIris = Math.min(smooth(.717, .776, progress), 1 - smooth(.837, .904, progress));
-  const craftOpacity = !craftAvailable ? 0 : (fallback || contextLost) && (index === 4 || !watchAvailable) ? 1 : reduced ? plates.craft : (craftIris > 0 ? 1 : 0);
+  const craftOpacity = !craftAvailable ? 0 : imageOnly ? (index === 4 ? 1 : 0) : reduced ? plates.craft : (craftIris > 0 ? 1 : 0);
   craft.style.opacity = String(craftOpacity);
   craft.style.visibility = craftOpacity < .001 ? 'hidden' : 'visible';
-  const craftDrift = reduced ? 0 : Math.sin(activeTime * .09) * .5;
+  craft.setAttribute('aria-hidden', String(!imageOnly || craftOpacity < .001));
+  craftImage.alt = imageOnly ? 'Original AI-generated macro artwork of brushed metal, a polished bevel, blued screw and ruby bearing.' : '';
+  const craftDrift = staticEdition ? 0 : Math.sin(activeTime * .09) * .5;
   const craftTop = mobile ? height * .27 : 0;
   const craftHeight = height - craftTop;
   const cover = Math.max(width / 1536, craftHeight / 1024);
@@ -199,8 +241,8 @@ function paint() {
   aperture.style.left = `${irisX}px`; aperture.style.top = `${irisY}px`;
   aperture.style.width = `${irisRadius * 2}px`;
   aperture.style.transform = 'translate(-50%,-50%)';
-  mechanicalCaption.style.opacity = String(Math.max(copyState(progress, 1, reduced).opacity, copyState(progress, 2, reduced).opacity) * .9);
-  readout.style.opacity = String(copyState(progress, 3, reduced).opacity * .9);
+  mechanicalCaption.style.opacity = String(imageOnly ? 0 : Math.max(copyState(progress, 1, reduced).opacity, copyState(progress, 2, reduced).opacity) * .9);
+  readout.style.opacity = String(imageOnly || reduced ? 0 : copyState(progress, 3, reduced).opacity * .9);
   craftLabel.style.opacity = String(craftAvailable ? copyState(progress, 4, reduced).opacity * .9 : 0);
   windProgress.style.left = `${progress * 100}%`;
 
@@ -220,7 +262,7 @@ function tick(_time: number, delta: number) {
   scrollTime += resetScrollClock ? Math.min(dt, 1 / 60) : Math.max(0, delta * .001);
   resetScrollClock = false;
   lenis.raf(scrollTime * 1000);
-  const running = !paused && !reduced && !modalOpen && visible;
+  const running = !fallback && !contextLost && !paused && !reduced && !modalOpen && visible;
   if (running) {
     activeTime += dt;
     // Integrate changes in speed; never multiply accumulated time on toggle.
@@ -288,7 +330,9 @@ function navigate(index: number, immediate = false, focusAfter = false) {
   const chapter = CHAPTERS[index];
   try { history.replaceState(null, '', `#${chapter.id}`); } catch { /* still usable in restricted embeds */ }
   lenis.scrollTo(chapter.at * range, {
-    immediate: immediate || reduced,
+    // Keep neighbouring mechanical moves; a remote Index/Replay selection
+    // should not compress several camera turns into the first half-second.
+    immediate: immediate || reduced || Math.abs(index - chapterAt(clamp(window.scrollY / range))) > 1,
     force: true,
     duration: mobile ? 1.2 : 1.65,
     onComplete: () => {
@@ -334,19 +378,42 @@ for (const dialog of dialogs) {
 }
 
 function motionState() {
-  const stopped = paused || reduced;
+  const mode = presentation({ fallback, contextLost, reduced, paused, slow });
+  const stopped = paused || reduced || mode.imageOnly;
   motionButton.setAttribute('aria-pressed', String(stopped));
-  motionButton.setAttribute('aria-label', reduced ? 'Ambient motion follows your reduced motion preference' : stopped ? 'Resume ambient motion' : 'Pause ambient motion');
-  motionButton.disabled = reduced;
+  motionButton.setAttribute('aria-label', mode.motionLabel);
+  motionButton.disabled = reduced || mode.imageOnly;
+  const soundEnabled = soundButton.getAttribute('aria-pressed') === 'true';
+  soundButton.disabled = reduced || mode.imageOnly;
+  soundButton.setAttribute('aria-label', reduced || mode.imageOnly ? 'Mechanical sound requires live ambient motion'
+    : soundEnabled ? 'Turn mechanical sound off' : 'Turn mechanical sound on');
+  get('sound-label').textContent = soundEnabled ? stopped ? 'Sound paused' : 'Sound on' : 'Sound off';
+  canvas.setAttribute('aria-label', reduced ? 'A fixed chapter pose of an original mechanical watch. Scroll or use Index to inspect each chapter.'
+    : paused ? 'An original mechanical watch with ambient motion paused. Scrolling still changes the view.'
+    : 'An animated original mechanical watch, its gear train, mainspring and balance wheel. Detailed descriptions are available in Read the experience.');
+  if (mode.speedAction === 'speed') slowButton.setAttribute('aria-pressed', String(slow));
+  else slowButton.removeAttribute('aria-pressed');
+  slowButton.firstChild!.textContent = mode.speedText;
+  slowButton.querySelector('.speed-label')!.textContent = mode.speedDetail;
+  slowButton.setAttribute('aria-haspopup', mode.speedAction === 'read' ? 'dialog' : 'false');
+  if (mode.speedAction === 'read') slowButton.setAttribute('aria-controls', 'transcript-dialog');
+  else slowButton.removeAttribute('aria-controls');
+  status.textContent = mode.status;
+  if (mode.imageOnly && stillPending) status.textContent += ` Loading the ${CHAPTERS[current].name} still view.`;
+  if (!watchAvailable || !craftAvailable || stillUnavailable) status.textContent += ' Some artwork could not load. Read the experience contains all six chapters.';
   lastPaintProgress = -1;
   lastRenderProgress = -1;
 }
 motionButton.addEventListener('click', () => { paused = !paused; motionState(); }, listener);
 slowButton.addEventListener('click', () => {
+  if (presentation({ fallback, contextLost, reduced, paused, slow }).speedAction === 'read') {
+    openDialog('transcript-dialog', slowButton);
+    get('transcript-oscillation').scrollIntoView({ block: 'start' });
+    get('transcript-oscillation').focus({ preventScroll: true });
+    return;
+  }
   slow = !slow;
-  slowButton.setAttribute('aria-pressed', String(slow));
-  slowButton.firstChild!.textContent = slow ? 'Return to rhythm ' : 'Look closer ';
-  slowButton.querySelector('.speed-label')!.textContent = slow ? '¹⁄₃₂ → ⅛ speed' : '⅛ → ¹⁄₃₂ speed';
+  motionState();
   get('presentation-rate').textContent = slow ? 'STUDY AT ¹⁄₃₂ SPEED' : 'STUDY AT ⅛ SPEED';
 }, listener);
 soundButton.addEventListener('click', async () => {
@@ -354,11 +421,12 @@ soundButton.addEventListener('click', async () => {
   try {
     const enabled = await sound.toggle();
     soundButton.setAttribute('aria-pressed', String(enabled));
-    get('sound-label').textContent = enabled ? 'Sound on' : 'Sound off';
+    motionState();
   } catch {
     get('sound-label').textContent = 'Sound unavailable';
+    soundButton.setAttribute('aria-label', 'Mechanical sound is unavailable in this browser');
     get('chapter-announcement').textContent = 'Audio is unavailable in this browser. You can continue the visual experience.';
-  } finally { soundButton.disabled = false; }
+  } finally { soundButton.disabled = reduced || fallback || contextLost; }
 }, listener);
 
 media.addEventListener('change', event => {
@@ -418,10 +486,10 @@ window.addEventListener('pageshow', event => { if (event.persisted) { lifecycleS
 const intersection = new IntersectionObserver(entries => { visible = entries[0]?.isIntersecting ?? true; }, { threshold: 0 });
 intersection.observe(stage);
 
-function showFallback(message: string) {
+function showFallback() {
   fallback = true;
   root.classList.add('no-webgl');
-  status.textContent = message;
+  motionState();
   lastPaintProgress = -1;
   paint();
 }
@@ -429,13 +497,13 @@ function showFallback(message: string) {
 function contextWasLost(event: Event) {
   event.preventDefault();
   contextLost = true;
-  status.textContent = 'The still view is active while the movement recovers.';
+  motionState();
   lastPaintProgress = -1;
   paint();
 }
 function contextWasRestored() {
   contextLost = false;
-  status.textContent = '';
+  motionState();
   lastPaintProgress = -1;
   lastRenderProgress = -1;
 }
@@ -451,7 +519,7 @@ if (initialChapter >= 0) navigate(initialChapter, true);
 paint();
 
 async function loadMovement() {
-  if (new URLSearchParams(location.search).get('render') === 'still') { showFallback('Still edition. Explore the six chapters at your own pace.'); return; }
+  if (new URLSearchParams(location.search).get('render') === 'still') { showFallback(); return; }
   try {
     const { WatchScene: Renderer } = await import('./scene/WatchScene');
     if (disposed) return;
@@ -462,7 +530,7 @@ async function loadMovement() {
     lastRenderProgress = -1;
   } catch (error) {
     console.info('CHRONOS: still edition selected because the live renderer is unavailable.', error instanceof Error ? error.message : '');
-    showFallback('Live rendering is unavailable here. The still edition remains open.');
+    showFallback();
   }
 }
 
@@ -471,9 +539,7 @@ const imageReady = Array.from(document.images).map(img => img.decode().catch(() 
   if (img.id === 'watch-image') watchAvailable = false;
   else if (img === craftImage) craftAvailable = false;
   else return;
-  status.textContent = fallback || contextLost
-    ? 'Some artwork could not load. All six chapters remain available in Read the experience.'
-    : 'Some artwork could not load. The live movement remains available.';
+  motionState();
   lastPaintProgress = -1;
   lastRenderProgress = -1;
   paint();

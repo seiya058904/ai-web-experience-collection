@@ -32,6 +32,7 @@
   <meta name="twitter:description" content="A six-act study of fire, force and the memory of steel.">
   <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%ferrum/assets/stills/05-desktop.webp">
   <link rel="stylesheet" href="/experiences/shared/collection-return.css">
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
 <body>
   <a class="skip-link" href="#before-form">Skip to the artwork</a>
@@ -43,7 +44,7 @@
   <header class="masthead">
     <a class="wordmark" href="#before-form" aria-label="FERRUM — return to the beginning">FERRUM</a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <a class="collection-return" href="%BASE_URL%#world-ferrum" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
       <button type="button" class="text-button" data-open="journey-dialog" aria-haspopup="dialog">Journey<span class="menu-mark" aria-hidden="true"><i></i><i></i></span></button>
       <button type="button" class="text-button" data-open="about-dialog" aria-haspopup="dialog">About</button>
     </nav>
@@ -75,7 +76,7 @@
     </section>
     <section class="chapter chapter--reveal" id="reveal-the-edge" aria-labelledby="title-reveal" data-index="4">
       <div class="chapter-title"><p class="act-label">04 / Light</p><h2 id="title-reveal">Reveal<br>the edge</h2><p class="title-note">Light reveals what fire remembers.</p></div>
-      <div class="chapter-caption"><p class="supporting-copy">A ridge. A scar. A fine reflection.<br><span class="pointer-instruction">Move your pointer to follow the light.</span><span class="touch-instruction">Scroll slowly to follow the light.</span></p></div>
+      <div class="chapter-caption"><p class="supporting-copy">A ridge. A scar. A fine reflection.<br><span class="pointer-instruction">Move your pointer to follow the light.</span><span class="touch-instruction">Scroll slowly to follow the light.</span><span class="still-instruction">A still view of the ridge and surface marks.</span></p></div>
       <img class="reading-still" src="%BASE_URL%ferrum/assets/stills/04-desktop.webp" alt="A close view of a polished bevel, central ridge, and fine metal scratches." loading="lazy">
     </section>
     <section class="chapter chapter--relic" id="the-relic" aria-labelledby="title-relic" data-index="5">
@@ -115,6 +116,7 @@
       <a class="reference-link" href="https://www.metmuseum.org/essays/the-japanese-blade-technology-and-manufacture" target="_blank" rel="noreferrer">A craft reference — The Metropolitan Museum of Art<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
     </div></div><p class="overlay-foot">FERRUM / The memory of fire</p>
   </dialog>
+  <p id="still-status" class="still-status" role="status" hidden></p>
   <noscript><div class="noscript-note">You are viewing the still edition. Enable JavaScript for the interactive journey.</div></noscript>
   <script type="module" src="/experiences/ferrum/src/main.js"></script>
 </body>

@@ -79,3 +79,7 @@ Passed flows:
 - Normal interactive acceptance produced zero page errors and zero failed resource requests.
 
 Physical touch, iOS/Safari, native GPU behavior, high-refresh hardware, hardware performance budgets and full assistive-technology traversal are **NEEDS-VERIFICATION**. No external release was requested or performed. This local acceptance does not certify the deployed Pages version or later changes.
+
+## Batch C verification (25 October 2026)
+
+The scoped preparation/late-resource changes and current acceptance evidence are recorded in `../audits/2026-10-25-batch-c.md`. Earlier acceptance above remains historical; it does not certify the new code. Batch C distinguishes controlled browser failures, simulated viewports/networks, native desktop hardware observations and unavailable physical mobile devices.

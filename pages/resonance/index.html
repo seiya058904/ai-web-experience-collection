@@ -26,6 +26,7 @@
   <link rel="preload" href="/resonance/fonts/cormorant-garamond-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../../experiences/resonance/src/style.css">
   <script>document.documentElement.classList.add('js');window.__resonanceBoot=setTimeout(()=>{if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},8000);</script>
+  <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
 </head>
 <body>
   <a class="skip-link" href="#silence-title">Skip to the experience</a>
@@ -46,7 +47,7 @@
       <span>RESONANCE</span>
     </a>
     <div class="header-actions">
-      <a class="collection-return" href="%BASE_URL%" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+      <a class="collection-return" href="%BASE_URL%#world-resonance" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
       <button class="sound-toggle text-button" id="sound-toggle" aria-pressed="false" aria-label="Enable sound"><svg class="icon" aria-hidden="true"><use href="#i-mute"/></svg><span>Sound off</span></button>
       <span class="header-divider" aria-hidden="true"></span>
       <button class="text-button index-toggle" id="index-toggle" aria-haspopup="dialog" aria-controls="index-dialog">Index<span class="index-lines" aria-hidden="true"></span></button>

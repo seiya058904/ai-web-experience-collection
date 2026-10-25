@@ -57,16 +57,17 @@ function owner(systemReduced = false) {
     openIndex: value => sheet().props.onOpenChange(value),
     soundPressed: () => button('sound-button').props['aria-pressed'],
     motionOn: () => button('motion-option').props.children[1].props.children === 'ON',
+    system: label => find(item => item.type === 'button' && item.props.children === label, tree).props.onClick(),
     unmount() { cleanup(); tree.props.ref.current = null; },
     async load() {
       resolveModule({ createMission(_root, _chapter, onReduced, initial = {}) {
-        mission.created++; mission.initial = initial;
+        mission.created++; mission.initial = initial; mission.subsystem = initial.subsystem;
         mission.reduced = initial.reduced ?? systemReduced;
         mission.locked = initial.locked ?? false;
         onReduced(mission.reduced);
         return { setLocked(value) { mission.locked = value; },
           setReduced(value) { mission.reduced = value; onReduced(value); },
-          setDestination() {}, setSubsystem() {}, goTo() {}, destroy() { mission.destroyed++; },
+          setDestination() {}, setSubsystem(value) { mission.subsystem = value; }, goTo() {}, destroy() { mission.destroyed++; },
           toggleSound() { return new Promise(resolve => mission.soundRequests.push(resolve)); } };
       } });
       await new Promise(resolve => setImmediate(resolve));
@@ -118,4 +119,12 @@ test('ORBITAL owner does not write React state after pending sound completes on 
   const pending = ui.sound(); ui.unmount(); const stateWrites = ui.states.length;
   ui.mission.soundRequests[0](true); await pending;
   assert.equal(ui.states.length, stateWrites);
+});
+
+test('ORBITAL retains a system chosen before lazy controller readiness and restores Whole vehicle', async () => {
+  const ui = owner(); ui.system('Guidance'); ui.render(); await ui.load();
+  assert.equal(ui.mission.initial.subsystem, 'guidance');
+  assert.equal(ui.mission.subsystem, 'guidance');
+  ui.system('Whole vehicle'); ui.render();
+  assert.equal(ui.mission.subsystem, 'overview'); ui.unmount();
 });

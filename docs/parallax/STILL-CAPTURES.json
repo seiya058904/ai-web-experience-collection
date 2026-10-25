@@ -1,0 +1,808 @@
+{
+  "created": "2026-10-25",
+  "sourceHead": "eab9bc865a4092b16abbaf0ed4da651bcb8f7631",
+  "sourceState": "Uncommitted Batch B source; exact source hashes below identify the capture implementation.",
+  "method": "Actual live Three.js canvas at exact chapter offsets, OS reduced motion, DPR 1. Existing non-canvas interface/background layers hidden only for capture. Transparent WebP quality 91, alpha quality 100. Existing Vite document script URL imported exactly for diagnostics, preserving its timestamp query. No image-generation or decorative redraw.",
+  "dimensions": "Landscape 1440x900; portrait 390x844. Larger viewports scale these raster captures.",
+  "alignment": "Reference view plus explicit -0.65 and +0.65 user range input; no automatic pointer motion.",
+  "source": [
+    {
+      "path": "experiences/parallax/src/app.js",
+      "sha256": "67b30d9be10a729be6f6bdd265c662f2ea075f6b5b507d881d5bab1193d9de12"
+    },
+    {
+      "path": "experiences/parallax/src/model.js",
+      "sha256": "a76795e16ee96cac70627b4d016f2cc452ed9462d6e9cec394d7adb2f7038215"
+    },
+    {
+      "path": "experiences/parallax/src/optics.js",
+      "sha256": "194b75fe616b5c0c5eb8db57a61c4c1a63148f5e73171f55bda5f6c38b0a3986"
+    },
+    {
+      "path": "experiences/parallax/src/pointer.js",
+      "sha256": "b162402799e6c4393b9fd552fca92cee758ba31a439fde60dea8d5427c3b0030"
+    },
+    {
+      "path": "experiences/parallax/src/spatial-math.js",
+      "sha256": "410ff10947563fb98be099536dba7e4e75d0a44ebecd289c543e0d77de6fa4b4"
+    },
+    {
+      "path": "experiences/parallax/src/spatial.js",
+      "sha256": "f94c080238b0fd9f9f760943712fdd73537d31289b265c65725ce08ee4f9702a"
+    },
+    {
+      "path": "experiences/parallax/src/style.css",
+      "sha256": "7345ab6384ee0fa5b6281edec4f462dd5637d0c82340454d9c219e43f215a178"
+    },
+    {
+      "path": "experiences/parallax/src/timeline.js",
+      "sha256": "cddc09e965c3a1301f7c1a20b946c2fe78918124c3414db56ce325ca4c68e504"
+    }
+  ],
+  "assets": [
+    {
+      "name": "01-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 57240,
+      "sha256": "aaf644960d5b901a089aa1f55068490d796ec55d705af498d29a8afa59c9a22c",
+      "progress": 1,
+      "camera": {
+        "position": [
+          3.7,
+          1.45,
+          14.7
+        ],
+        "target": [
+          -2.15,
+          -0.30000000000000004,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 46982616,
+        "squaresSum": 11463215640,
+        "mean": 36.25201851851852,
+        "stdev": 86.78058976802564,
+        "minX": 0,
+        "minY": 16,
+        "maxX": 916,
+        "maxY": 128
+      },
+      "path": "public/parallax/stills/01-landscape.webp"
+    },
+    {
+      "name": "02-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 49074,
+      "sha256": "9220d42541b0275408e775016662a609fc3be82de3b17426831650659e652559",
+      "progress": 2,
+      "camera": {
+        "position": [
+          2.2,
+          1,
+          11.8
+        ],
+        "target": [
+          -2,
+          0.1,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 66343267,
+        "squaresSum": 16848035277,
+        "mean": 51.19079243827161,
+        "stdev": 101.88001765975494,
+        "minX": 0,
+        "minY": 48,
+        "maxX": 1041,
+        "maxY": 63
+      },
+      "path": "public/parallax/stills/02-landscape.webp"
+    },
+    {
+      "name": "02-left-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 62258,
+      "sha256": "04715644897a868e96e72eb60681b3906ea97480694f369e74e9604104a68c58",
+      "progress": 2,
+      "pointer": -0.65,
+      "projection": {
+        "active": true,
+        "method": "Exact uniform ray scaling about a real perspective camera",
+        "anchorMaxErrorPx": 2.411057056408936e-13,
+        "viewMaxErrorPx": 58.240057201508826,
+        "referenceCamera": [
+          2.2,
+          1,
+          11.8
+        ],
+        "depthScales": [
+          0.81,
+          1.12,
+          0.95,
+          1.29,
+          1.21,
+          0.74,
+          1.13,
+          0.91,
+          1.34,
+          0.72,
+          1.16,
+          0.88,
+          1.28,
+          1.05,
+          0.78,
+          1.23,
+          0.91,
+          1.11
+        ]
+      },
+      "path": "public/parallax/stills/02-left-landscape.webp"
+    },
+    {
+      "name": "02-right-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 56854,
+      "sha256": "f67eb6de512e3257e96879046f96d6dd10d77cb9e5fee3ff4daaf04461166aa6",
+      "progress": 2,
+      "pointer": 0.65,
+      "projection": {
+        "active": true,
+        "method": "Exact uniform ray scaling about a real perspective camera",
+        "anchorMaxErrorPx": 2.411057056408936e-13,
+        "viewMaxErrorPx": 53.68331422227846,
+        "referenceCamera": [
+          2.2,
+          1,
+          11.8
+        ],
+        "depthScales": [
+          0.81,
+          1.12,
+          0.95,
+          1.29,
+          1.21,
+          0.74,
+          1.13,
+          0.91,
+          1.34,
+          0.72,
+          1.16,
+          0.88,
+          1.28,
+          1.05,
+          0.78,
+          1.23,
+          0.91,
+          1.11
+        ]
+      },
+      "path": "public/parallax/stills/02-right-landscape.webp"
+    },
+    {
+      "name": "03-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 60258,
+      "sha256": "587c88d86e7420194f89b566d271d342071a33bfe9c569702b80c326535f08f7",
+      "progress": 3,
+      "camera": {
+        "position": [
+          5,
+          3.1,
+          14
+        ],
+        "target": [
+          -1.65,
+          -0.45000000000000007,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 148212796,
+        "squaresSum": 37707449968,
+        "mean": 114.36172530864198,
+        "stdev": 126.55695456159278,
+        "minX": 0,
+        "minY": 64,
+        "maxX": 112,
+        "maxY": 64
+      },
+      "path": "public/parallax/stills/03-landscape.webp"
+    },
+    {
+      "name": "04-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 57460,
+      "sha256": "67d3ee6e302a9a4eadab785e1671f96802339b8f13c71bbcd96149797ffedd07",
+      "progress": 4,
+      "camera": {
+        "position": [
+          -0.24,
+          0.04,
+          5.25
+        ],
+        "target": [
+          0.09999999999999998,
+          0.02,
+          -9
+        ],
+        "fov": 38.01145833333333
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 328185000,
+        "squaresSum": 83687175000,
+        "mean": 253.22916666666666,
+        "stdev": 21.176094902366668,
+        "minX": 1430,
+        "minY": 32,
+        "maxX": 0,
+        "maxY": 32
+      },
+      "path": "public/parallax/stills/04-landscape.webp"
+    },
+    {
+      "name": "05-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 63236,
+      "sha256": "edbd9f256d8861eda3be160bc286c1edad602c19213e312f46d03c49f73d7d00",
+      "progress": 5,
+      "camera": {
+        "position": [
+          2.7,
+          1,
+          12.6
+        ],
+        "target": [
+          -2,
+          0.10000000000000009,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 139637839,
+        "squaresSum": 34343540143,
+        "mean": 107.74524614197531,
+        "stdev": 122.02712237674007,
+        "minX": 0,
+        "minY": 64,
+        "maxX": 939,
+        "maxY": 128
+      },
+      "path": "public/parallax/stills/05-landscape.webp"
+    },
+    {
+      "name": "06-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 32888,
+      "sha256": "e6caebeae40e4cf5ee2906f422237fa0a37117edbf373fa0c57f6412e170671d",
+      "progress": 6,
+      "camera": {
+        "position": [
+          3.4,
+          0.7,
+          11.8
+        ],
+        "target": [
+          -1.95,
+          0.05,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 64460725,
+        "squaresSum": 16370807303,
+        "mean": 49.7382137345679,
+        "stdev": 100.78647573399152,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 982,
+        "maxY": 80
+      },
+      "path": "public/parallax/stills/06-landscape.webp"
+    },
+    {
+      "name": "07-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 21464,
+      "sha256": "3b973337e2cd03d2966e1ac2ac5345d56e527f94af549bc691e5b27e1aa73d34",
+      "progress": 7,
+      "camera": {
+        "position": [
+          2.7,
+          1.2,
+          12.5
+        ],
+        "target": [
+          -1.85,
+          0.05,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 58556529,
+        "squaresSum": 14882986121,
+        "mean": 45.18250694444444,
+        "stdev": 97.17167251394865,
+        "minX": 0,
+        "minY": 112,
+        "maxX": 940,
+        "maxY": 112
+      },
+      "path": "public/parallax/stills/07-landscape.webp"
+    },
+    {
+      "name": "08-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 46674,
+      "sha256": "9588509a042b920c25108abbb0f5cede6eda66148fc3e790345bfd58d76c41a4",
+      "progress": 8,
+      "camera": {
+        "position": [
+          2.6,
+          1.2,
+          12.8
+        ],
+        "target": [
+          -1.65,
+          -0.4,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 57328986,
+        "squaresSum": 13997540148,
+        "mean": 44.2353287037037,
+        "stdev": 94.04155262572712,
+        "minX": 0,
+        "minY": 0,
+        "maxX": 949,
+        "maxY": 64
+      },
+      "path": "public/parallax/stills/08-landscape.webp"
+    },
+    {
+      "name": "09-landscape.webp",
+      "width": 1440,
+      "height": 900,
+      "bytes": 22088,
+      "sha256": "124feb3f68dcf32c60184c4ed6cbae6cfcf355a87511b82bfb30d66e95ef266c",
+      "progress": 9,
+      "camera": {
+        "position": [
+          2.4,
+          3,
+          30
+        ],
+        "target": [
+          0,
+          1.15,
+          0
+        ],
+        "fov": 38.1546875
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 11465553,
+        "squaresSum": 2520981929,
+        "mean": 8.846877314814815,
+        "stdev": 43.20805836905618,
+        "minX": 0,
+        "minY": 64,
+        "maxX": 686,
+        "maxY": 384
+      },
+      "path": "public/parallax/stills/09-landscape.webp"
+    },
+    {
+      "name": "01-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 33136,
+      "sha256": "52d1665d28ca4f1ba8bc88434e308a220187fa15ca29c4eb20ed2c40a63ec47b",
+      "progress": 1,
+      "camera": {
+        "position": [
+          3.6,
+          1.1,
+          24.2
+        ],
+        "target": [
+          0,
+          0.2,
+          0
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 15498462,
+        "squaresSum": 3663807460,
+        "mean": 47.08488880787459,
+        "stdev": 94.4130291264547,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 241,
+        "maxY": 240
+      },
+      "path": "public/parallax/stills/01-portrait.webp"
+    },
+    {
+      "name": "02-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 16294,
+      "sha256": "00a623d28c8096ccfa44d5373c5dea9b41e5e6db1002e0e9f6a5ed4fbb62fde4",
+      "progress": 2,
+      "camera": {
+        "position": [
+          1.35,
+          0.65,
+          22.2
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 15868273,
+        "squaresSum": 4027657751,
+        "mean": 48.20838801798517,
+        "stdev": 99.55978877472742,
+        "minX": 0,
+        "minY": 0,
+        "maxX": 253,
+        "maxY": 243
+      },
+      "path": "public/parallax/stills/02-portrait.webp"
+    },
+    {
+      "name": "02-left-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 19928,
+      "sha256": "586ae4bc4739ceb966a2b450d0cb1634361aa7c88b0da439a4c22fae69e5dc93",
+      "progress": 2,
+      "pointer": -0.65,
+      "projection": {
+        "active": true,
+        "method": "Exact uniform ray scaling about a real perspective camera",
+        "anchorMaxErrorPx": 9.370282327836321e-14,
+        "viewMaxErrorPx": 18.7080076278888,
+        "referenceCamera": [
+          1.35,
+          0.65,
+          22.2
+        ],
+        "depthScales": [
+          0.81,
+          1.12,
+          0.95,
+          1.29,
+          1.21,
+          0.74,
+          1.13,
+          0.91,
+          1.34,
+          0.72,
+          1.16,
+          0.88,
+          1.28,
+          1.05,
+          0.78,
+          1.23,
+          0.91,
+          1.11
+        ]
+      },
+      "path": "public/parallax/stills/02-left-portrait.webp"
+    },
+    {
+      "name": "02-right-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 19486,
+      "sha256": "36f8fde19944b58de27d1581a49b6c8b9efe34bcc22faabd94ae20c2c4421a7a",
+      "progress": 2,
+      "pointer": 0.65,
+      "projection": {
+        "active": true,
+        "method": "Exact uniform ray scaling about a real perspective camera",
+        "anchorMaxErrorPx": 9.370282327836321e-14,
+        "viewMaxErrorPx": 18.636183433704023,
+        "referenceCamera": [
+          1.35,
+          0.65,
+          22.2
+        ],
+        "depthScales": [
+          0.81,
+          1.12,
+          0.95,
+          1.29,
+          1.21,
+          0.74,
+          1.13,
+          0.91,
+          1.34,
+          0.72,
+          1.16,
+          0.88,
+          1.28,
+          1.05,
+          0.78,
+          1.23,
+          0.91,
+          1.11
+        ]
+      },
+      "path": "public/parallax/stills/02-right-portrait.webp"
+    },
+    {
+      "name": "03-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 14904,
+      "sha256": "4059370e892c260499fe19e9ae9048636d4387b94e37c65e93d047a4ce26b6c9",
+      "progress": 3,
+      "camera": {
+        "position": [
+          2.2,
+          3.3,
+          34
+        ],
+        "target": [
+          -3,
+          -0.09999999999999998,
+          0
+        ],
+        "fov": 44
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 22773792,
+        "squaresSum": 5787289808,
+        "mean": 69.18760481224936,
+        "stdev": 113.11547297540119,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 9,
+        "maxY": 221
+      },
+      "path": "public/parallax/stills/03-portrait.webp"
+    },
+    {
+      "name": "04-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 19598,
+      "sha256": "da83b31a43017fdf489e0160416894947c82923749b349a42ec698292be5af0e",
+      "progress": 4,
+      "camera": {
+        "position": [
+          -0.24,
+          0.04,
+          5.25
+        ],
+        "target": [
+          0.09999999999999998,
+          0.02,
+          -9
+        ],
+        "fov": 48
+      },
+      "path": "public/parallax/stills/04-portrait.webp"
+    },
+    {
+      "name": "05-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 30210,
+      "sha256": "ab7ecca84efd3c1a626fe7a5b8c0b5223430080cd7fafaf9919199a16e8d8afc",
+      "progress": 5.0002719055555644,
+      "camera": {
+        "position": [
+          1.5,
+          0.7,
+          23
+        ],
+        "target": [
+          -4.440892098500626e-16,
+          0.2499999999999999,
+          -3.552713678800501e-15
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 28262852,
+        "squaresSum": 6768491018,
+        "mean": 85.86356786972901,
+        "stdev": 114.84950417097876,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 124,
+        "maxY": 304
+      },
+      "path": "public/parallax/stills/05-portrait.webp"
+    },
+    {
+      "name": "06-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 11936,
+      "sha256": "53fdc102abc47d7de204902cf87e73e44b573b199ba606e2a6f0bdc54500e31d",
+      "progress": 5.999785429426993,
+      "camera": {
+        "position": [
+          2.5,
+          0.5,
+          22
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 16165887,
+        "squaresSum": 4104184395,
+        "mean": 49.11255012759752,
+        "stdev": 100.28284395086924,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 179,
+        "maxY": 272
+      },
+      "path": "public/parallax/stills/06-portrait.webp"
+    },
+    {
+      "name": "07-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 8422,
+      "sha256": "a51f47e5f1cbecd77b35f5fc7808334177848ee7c0b8e2be0106239341a26894",
+      "progress": 6.999785407725323,
+      "camera": {
+        "position": [
+          1.6,
+          0.9,
+          23
+        ],
+        "target": [
+          0,
+          0.25,
+          0
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 14922560,
+        "squaresSum": 3788529088,
+        "mean": 45.335277676509904,
+        "stdev": 97.2338926801031,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 197,
+        "maxY": 272
+      },
+      "path": "public/parallax/stills/07-portrait.webp"
+    },
+    {
+      "name": "08-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 22464,
+      "sha256": "dcb589203fcc36f189414ca54182f9f1163ae38d5c976bf662b82956ad125131",
+      "progress": 7.999785407725325,
+      "camera": {
+        "position": [
+          1.7,
+          0.8,
+          22.6
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 16661469,
+        "squaresSum": 3918218029,
+        "mean": 50.61814619030259,
+        "stdev": 96.65153863337649,
+        "minX": 0,
+        "minY": 16,
+        "maxX": 251,
+        "maxY": 245
+      },
+      "path": "public/parallax/stills/08-portrait.webp"
+    },
+    {
+      "name": "09-portrait.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 17590,
+      "sha256": "300b9238c21a0dcc76a78dc88baf211ad96679af1918dfbcead6ff3200e3a3f4",
+      "progress": 8.999785407725325,
+      "camera": {
+        "position": [
+          1.5,
+          3.0999999999999996,
+          34
+        ],
+        "target": [
+          0,
+          1.65,
+          0
+        ],
+        "fov": 38
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "sum": 7921743,
+        "squaresSum": 1743380555,
+        "mean": 24.066542107181917,
+        "stdev": 68.68237868660766,
+        "minX": 0,
+        "minY": 32,
+        "maxX": 173,
+        "maxY": 384
+      },
+      "path": "public/parallax/stills/09-portrait.webp"
+    }
+  ]
+}

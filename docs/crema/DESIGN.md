@@ -15,6 +15,7 @@ The supplied brief fixes the visual world and grants creative autonomy. Nine acc
 - Main type: generous 60–120px desktop depending on viewport; small phone 40–60px.
 - Hero wordmark is architectural typography and intentionally exceeds normal display scale.
 - Focus ring 2px amber, links 1px underline, accurate 44px control targets.
+- The Index motion toggle has an explicit 44px minimum height; its original small type, underline and native dialog scrolling remain unchanged (2026-10-25 audit T18).
 
 ## Composition and handoff
 | Movement | Stable composition | Living hold | Handoff |

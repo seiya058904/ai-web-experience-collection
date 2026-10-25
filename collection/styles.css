@@ -67,8 +67,8 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-optic,.world-inkscape{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-optic h2{font-size:28px}.world-optic .world-title p{font-size:40px}.world-inkscape h2{font-size:clamp(37px,13vw,70px)}.world-inkscape .world-title p{font-size:52px}}
 
 /* Each new entrance retains the supplied work's typography and world. */
-@font-face{font-family:'Collection Facet Serif';src:url('/facet/fonts/instrument-serif-regular.woff2') format('woff2');font-weight:400;font-display:swap}
-@font-face{font-family:'Collection Atlas Serif';src:url('/atlas/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:'Collection Facet Serif';src:url('/verdant/fonts/instrument-serif-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Collection Atlas Serif';src:url('/optic/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
 .world-facet,.world-silicon,.world-atlas,.world-thrust{grid-column:span 3;height:65svh;max-height:1400px}
 .world-facet{background:#080b0e;color:#edf0ed}.world-facet .world-image img{object-position:75% 50%}.world-facet .world-image:after{background:linear-gradient(90deg,#080b0ef2,transparent 85%),linear-gradient(180deg,transparent 45%,#080b0ef2)}.world-facet h2,.world-facet .world-title p{font-family:'Collection Facet Serif',Georgia,serif;font-weight:400}.world-facet h2{font-size:clamp(50px,5.5vw,198px);letter-spacing:.02em;line-height:.95}.world-facet .world-title p{font-size:clamp(35px,3.8vw,136px);line-height:.95;margin-top:24px}
 .world-silicon{background:#080a0b;color:#edf0ec}.world-silicon .world-image:after{background:linear-gradient(90deg,#080a0bed,transparent 82%),linear-gradient(180deg,transparent 45%,#080a0bf2)}.world-silicon h2,.world-silicon .world-title p{font-family:'Manrope Variable',sans-serif;font-weight:300}.world-silicon h2{font-size:clamp(35px,3.6vw,129px);letter-spacing:.08em;line-height:1}.world-silicon .world-title p{font-size:clamp(34px,3.6vw,130px);line-height:1.08;letter-spacing:-.04em;margin-top:26px}
@@ -77,7 +77,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-facet,.world-silicon,.world-atlas,.world-thrust{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-facet h2{font-size:72px}.world-facet .world-title p{font-size:50px}.world-silicon h2{font-size:39px}.world-silicon .world-title p{font-size:45px}.world-atlas h2{font-size:62px}.world-atlas .world-title p{font-size:55px}.world-thrust h2{font-size:88px}.world-thrust .world-title p{font-size:43px}}
 
 /* RESONANCE retains its acoustic field in a final full-width native entrance. */
-@font-face{font-family:'Collection Resonance Manrope';src:url('/resonance/fonts/manrope-latin.woff2') format('woff2');font-weight:200 800;font-display:swap}
+@font-face{font-family:'Collection Resonance Manrope';src:url('/fusion/fonts/manrope-latin-wght-normal.woff2') format('woff2');font-weight:200 800;font-display:swap}
 @font-face{font-family:'Collection Resonance Cormorant';src:url('/resonance/fonts/cormorant-garamond-latin-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
 .world-resonance{grid-column:span 6;height:65svh;max-height:1400px;background:#0b0d0d;color:#eeeae1}.world-resonance .world-image img{object-position:62% 48%}.world-resonance .world-image:after{background:linear-gradient(90deg,#0b0d0df2,transparent 76%),linear-gradient(180deg,transparent 45%,#0b0d0df2)}.world-resonance h2{font-family:'Collection Resonance Manrope',sans-serif;font-weight:400;font-size:clamp(20px,2vw,72px);letter-spacing:.2em}.world-resonance .world-title p{font-family:'Collection Resonance Manrope',sans-serif;font-weight:300;font-size:clamp(48px,5.4vw,194px);line-height:1.02;letter-spacing:-.04em;margin-top:26px}.world-resonance em{font-family:'Collection Resonance Cormorant',Georgia,serif;font-weight:400}
 @media(max-width:700px){.world-resonance{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-resonance h2{font-size:24px}.world-resonance .world-title p{font-size:56px}.world-resonance .world-image img{object-position:62% 48%}}
@@ -88,13 +88,13 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-aeterna{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-aeterna h2{font-size:15.5vw}.world-aeterna .world-title p{font-size:27px}.world-aeterna .world-image img{object-position:63% 50%}}
 
 /* PARALLAX's own ivory gallery, Bodoni voice and actual sculptural geometry. */
-@font-face{font-family:'Collection Parallax Bodoni';src:url('/parallax/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Collection Parallax Bodoni';src:url('/aeterna/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
 .world-parallax{grid-column:span 6;height:65svh;max-height:1400px;background:#e9e2d6;color:#171611}.world-parallax .world-image img{object-position:70% 50%}.world-parallax .world-image:after{background:linear-gradient(90deg,#e9e2d6e6,transparent 75%),linear-gradient(180deg,#e9e2d644,transparent 45%,#e9e2d6f2)}.world-parallax h2,.world-parallax .world-title p{font-family:'Collection Parallax Bodoni',Georgia,serif;font-weight:400}.world-parallax h2{font-size:clamp(65px,10.5vw,380px);letter-spacing:-.035em;line-height:.9}.world-parallax .world-title p{font-size:clamp(26px,3vw,108px);line-height:1.1;margin-top:24px}.world-parallax:focus-visible{outline-color:#171611}
 @media(max-width:700px){.world-parallax{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-parallax h2{font-size:14.3vw}.world-parallax .world-title p{font-size:31px}.world-parallax .world-image img{object-position:70% 50%}}
 
 /* LUTHIER retains its original violin, Cormorant voice and amber on black. */
-@font-face{font-family:'Collection Luthier Cormorant';src:url('/luthier/fonts/cormorant-300.woff2') format('woff2');font-weight:300;font-display:swap}
-@font-face{font-family:'Collection Luthier Cormorant';src:url('/luthier/fonts/cormorant-300-italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:'Collection Luthier Cormorant';src:url('/chronos/fonts/cormorant-garamond-latin-300-normal.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Collection Luthier Cormorant';src:url('/chronos/fonts/cormorant-garamond-latin-300-italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
 .world-luthier{grid-column:span 6;height:65svh;max-height:1400px;background:#080808;color:#f2ebdd}.world-luthier .world-image img{object-position:65% 50%}.world-luthier .world-image:after{background:linear-gradient(90deg,#080808ee,transparent 75%),linear-gradient(180deg,transparent 40%,#080808ed)}.world-luthier h2,.world-luthier .world-title p{font-family:'Collection Luthier Cormorant',Georgia,serif;font-weight:300}.world-luthier h2{font-size:clamp(70px,10.5vw,380px);letter-spacing:-.035em;line-height:.9}.world-luthier .world-title p{font-size:clamp(27px,3vw,108px);line-height:1.1;margin-top:24px}.world-luthier em{font-weight:300;color:#c8894d}
 @media(max-width:700px){.world-luthier{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-luthier h2{font-size:16vw}.world-luthier .world-title p{font-size:37px}.world-luthier .world-image img{object-position:65% 50%}}
 
@@ -102,7 +102,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @font-face{font-family:'Collection Codex Cormorant';src:url('/codex/fonts/cormorant-garamond-latin-variable.woff2') format('woff2');font-weight:300 700;font-display:swap}
 @font-face{font-family:'Collection Codex Cormorant';src:url('/codex/fonts/cormorant-garamond-italic-latin-variable.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
 @font-face{font-family:'Collection Magma Archivo';src:url('/magma/fonts/archivo-latin-variable.woff2') format('woff2');font-weight:100 900;font-display:swap}
-@font-face{font-family:'Collection Fossil Bodoni';src:url('/fossil/assets/fonts/bodoni-moda.woff2') format('woff2');font-weight:400 900;font-display:swap}
+@font-face{font-family:'Collection Fossil Bodoni';src:url('/aeterna/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2');font-weight:400 900;font-display:swap}
 .world-codex,.world-magma,.world-fossil{grid-column:span 6;height:65svh;max-height:1400px}
 .world-codex{background:#151513;color:#eee9dd}.world-codex .world-image img{object-position:67% 50%}.world-codex .world-image:after{background:linear-gradient(90deg,#151513f2,transparent 75%),linear-gradient(180deg,transparent 40%,#151513ed)}.world-codex h2,.world-codex .world-title p{font-family:'Collection Codex Cormorant',Georgia,serif;font-weight:400}.world-codex h2{font-size:clamp(70px,12vw,430px);line-height:.9;letter-spacing:-.037em}.world-codex .world-title p{font-size:clamp(27px,3vw,108px);line-height:1.1;margin-top:24px}.world-codex em{color:#b79650}
 .world-magma{background:#080909;color:#e9e7e2}.world-magma .world-image img{object-position:65% 50%}.world-magma .world-image:after{background:linear-gradient(90deg,#080909eb,transparent 75%),linear-gradient(180deg,transparent 40%,#080909ed)}.world-magma h2,.world-magma .world-title p{font-family:'Collection Magma Archivo',Arial,sans-serif}.world-magma h2{font-size:clamp(70px,12vw,430px);font-weight:850;letter-spacing:-.06em;line-height:.85}.world-magma .world-title p{font-size:clamp(27px,3vw,108px);font-weight:350;letter-spacing:-.035em;line-height:1.1;margin-top:24px}
@@ -110,22 +110,22 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-codex,.world-magma,.world-fossil{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-codex h2,.world-magma h2,.world-fossil h2{font-size:17vw}.world-codex .world-title p,.world-magma .world-title p,.world-fossil .world-title p{font-size:37px}}
 
 /* The supplied lacquer and ink journeys keep their own fonts and surfaces. */
-@font-face{font-family:'Collection Urushi Bodoni';src:url('/urushi/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
-@font-face{font-family:'Collection Nib Cormorant';src:url('/nib/fonts/cormorant-garamond-latin-variable.woff2') format('woff2');font-weight:300 700;font-display:swap}
-@font-face{font-family:'Collection Nib Cormorant';src:url('/nib/fonts/cormorant-garamond-latin-variable-italic.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
+@font-face{font-family:'Collection Urushi Bodoni';src:url('/aeterna/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Collection Nib Cormorant';src:url('/codex/fonts/cormorant-garamond-latin-variable.woff2') format('woff2');font-weight:300 700;font-display:swap}
+@font-face{font-family:'Collection Nib Cormorant';src:url('/codex/fonts/cormorant-garamond-italic-latin-variable.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
 .world-urushi,.world-nib{grid-column:span 6;height:65svh;max-height:1400px}
 .world-urushi{background:#0b0a09;color:#eee4d6}.world-urushi .world-image img{object-position:65% 50%}.world-urushi .world-image:after{background:linear-gradient(90deg,#0b0a09eb,transparent 75%),linear-gradient(180deg,transparent 40%,#0b0a09ed)}.world-urushi h2,.world-urushi .world-title p{font-family:'Collection Urushi Bodoni',Georgia,serif;font-weight:400}.world-urushi h2{font-size:clamp(70px,12vw,430px);letter-spacing:-.04em;line-height:.9}.world-urushi .world-title p{font-size:clamp(27px,3vw,108px);line-height:1.1;margin-top:24px}
 .world-nib{background:#080a0d;color:#eee9dd}.world-nib .world-image img{object-position:65% 50%}.world-nib .world-image:after{background:linear-gradient(90deg,#080a0deb,transparent 75%),linear-gradient(180deg,transparent 40%,#080a0ded)}.world-nib h2,.world-nib .world-title p{font-family:'Collection Nib Cormorant',Georgia,serif;font-weight:400}.world-nib h2{font-size:clamp(90px,15vw,500px);letter-spacing:-.035em;line-height:.85}.world-nib .world-title p{font-size:clamp(27px,3vw,108px);line-height:1.1;margin-top:24px}
 @media(max-width:700px){.world-urushi,.world-nib{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-urushi h2{font-size:17vw}.world-nib h2{font-size:25vw}.world-urushi .world-title p,.world-nib .world-title p{font-size:37px}}
 
 /* The espresso study retains its supplied Archivo voice and dark inspection chamber. */
-@font-face{font-family:"Collection Crema Archivo";src:url("/crema/fonts/archivo-latin-variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Collection Crema Archivo";src:url("/magma/fonts/archivo-latin-variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
 .world-crema{grid-column:span 6;height:65svh;max-height:1400px;background:#090b0a;color:#eeede6}.world-crema .world-image img{object-position:65% 50%}.world-crema .world-image:after{background:linear-gradient(90deg,#090b0ac9,transparent 75%),linear-gradient(180deg,transparent 40%,#090b0aeb)}.world-crema h2,.world-crema .world-title p{font-family:"Collection Crema Archivo",Arial,sans-serif}.world-crema h2{font-size:clamp(70px,12vw,430px);font-weight:725;letter-spacing:-.055em;line-height:.88}.world-crema .world-title p{font-size:clamp(27px,3vw,108px);font-weight:350;letter-spacing:-.03em;line-height:1.1;margin-top:24px}
 @media(max-width:700px){.world-crema{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-crema h2{font-size:17vw}.world-crema .world-title p{font-size:37px}}
 
 /* CRAVE keeps its supplied pastry, warm light and Cormorant voice. */
 @font-face{font-family:"Collection Crave Cormorant";src:url("/crave/fonts/cormorant-garamond-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Collection Crave Cormorant";src:url("/crave/fonts/cormorant-garamond-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Collection Crave Cormorant";src:url("/resonance/fonts/cormorant-garamond-latin-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
 .world-crave{grid-column:span 6;height:65svh;max-height:1400px;background:#17120f;color:#f0e6d2}.world-crave .world-image img{object-position:65% 50%}.world-crave .world-image:after{background:linear-gradient(90deg,#17120fbd,transparent 75%),linear-gradient(180deg,transparent 40%,#17120fe6)}.world-crave h2,.world-crave .world-title p{font-family:"Collection Crave Cormorant",Georgia,serif;font-weight:400}.world-crave h2{font-size:clamp(70px,12vw,430px);letter-spacing:-.045em;line-height:.9}.world-crave .world-title p{font-size:clamp(27px,3vw,108px);letter-spacing:-.03em;line-height:1.05;margin-top:24px}
 @media(max-width:700px){.world-crave{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-crave h2{font-size:17vw}.world-crave .world-title p{font-size:37px}}
 
@@ -137,12 +137,9 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 /* ===== Collection editorial rhythm — 2026 refinement =====
    One unifying system above the thirty independent worlds:
    a recurring ghost index numeral, alternating editorial spreads,
-   a three-tier height rhythm, eased image gradients, a scroll
-   reveal and a deeper hover response. No work runtime loads. */
+   a three-tier height rhythm, eased image gradients, a deeper hover response. No work runtime loads. */
 
-/* Scroll reveal, gated on JS so the entrance stays functional without it. */
-.js .world{opacity:0;transform:translateY(30px)}
-.js .world.is-visible{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.22,.61,.21,1),transform .9s cubic-bezier(.22,.61,.21,1)}
+/* Every entrance is visible before enhancement; navigation never waits for reveal. */
 
 /* Intro kicker above the invitation. */
 .intro-kicker{display:flex;align-items:center;gap:14px;font-size:clamp(10px,.72vw,19px);letter-spacing:.22em;color:#596052;margin-bottom:clamp(16px,2.4vh,34px)}
@@ -190,13 +187,10 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 .world-magma .world-image img{object-position:65% 50%}
 .world-urushi .world-image img{object-position:65% 50%}
 .world-crema .world-image img{object-position:65% 50%}
-.world-grid .world-image img{object-position:90% 50%}
+.world-grid .world-image img{width:210%;left:auto;right:0;object-position:100% 50%}
 }
 
-/* Reduced motion: the reveal never gates content. */
-@media(prefers-reduced-motion:reduce){
-.js .world{opacity:1;transform:none}
-}
+
 
 /* ===== Uniform three-across gallery — 2026 refinement =====
    Every world takes the same one-third column, so the collection reads as one
@@ -257,7 +251,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 
 /* GRID's poster carries its own display word; the panel frames the photographic
    half of the sheet so the two titles never sit on top of one another. */
-.world-grid .world-image img{object-position:90% 50%}
+.world-grid .world-image img{width:210%;left:auto;right:0;object-position:100% 50%}
 .world-grid .world-image:after{background:linear-gradient(90deg,#f8f8f3e0,transparent 58%),linear-gradient(180deg,transparent 40%,#f8f8f3ef)}
 
 /* The closing colophon completes the tenth row of the index. */
@@ -289,12 +283,31 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 
 .world-counterform{--t:12.5;--s:8;background:#eeeae1;color:#20211e}
 .world-counterform h2{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.055em}
-.world-counterform .world-title p{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(25px,3vw,92px)}
-.world-counterform .world-image:after{background:linear-gradient(90deg,#eeeae1ed,transparent 78%),linear-gradient(180deg,transparent 42%,#eeeae1e8)}
+.world-counterform .world-title p{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(13px,calc(var(--s) * 1cqi),190px)}
+.world-counterform .world-image img{object-position:76% 50%}
+.world-counterform .world-image:after{background:linear-gradient(180deg,#eeeae1 0%,#eeeae1 43%,transparent 72%,#eeeae1e8),linear-gradient(90deg,#eeeae1bb,transparent 80%)}
 .world-counterform:focus-visible{outline-color:#b93d2c}
 .world-ferrum{--t:20;--s:7;background:#0b0c0d;color:#e8e5de}
 .world-ferrum h2{font-family:Antonio,'Arial Narrow',sans-serif;font-weight:300;letter-spacing:.025em}
 .world-ferrum .world-title p{font-family:Manrope,Arial,sans-serif;font-weight:400;letter-spacing:-.025em}
 .world-ferrum .world-image:after{background:linear-gradient(90deg,#0b0c0de8,transparent 78%),linear-gradient(180deg,#0b0c0d55,transparent 40%,#0b0c0dda)}
 .world-ferrum:focus-visible{outline-color:#b7b2a7}
-@media(max-width:700px){.world-counterform .world-title p{font-size:38px}.world-ferrum h2{font-size:19vw}.world-ferrum .world-title p{font-size:30px}}
+
+/* A native, optional finding aid; the gallery remains the opening surface. */
+.collection-intro p>span{display:block;font-size:max(12px,.85em);margin-top:3px}
+.collection-index{margin:0 var(--gutter) 16px;border-top:1px solid #c7ccc2}
+.collection-index summary{display:flex;align-items:center;gap:16px;min-height:52px;cursor:pointer;list-style:none;font-size:14px;font-weight:500;letter-spacing:.025em}
+.collection-index summary::-webkit-details-marker{display:none}
+.collection-index summary>span{font-size:12px;font-weight:400;color:#596052}
+.collection-index summary svg{width:18px;height:18px;margin-left:auto;fill:none;stroke:currentColor;stroke-width:1.2}
+.collection-index[open] summary svg{transform:rotate(45deg)}
+.collection-index summary:focus-visible{outline:2px solid #20372a;outline-offset:3px}
+.collection-index ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px;margin:0 0 20px;padding:0;list-style:none}
+.collection-index li{min-width:0;border-bottom:1px solid #c7ccc2}
+.collection-index li a{display:flex;min-height:66px;flex-direction:column;justify-content:center;gap:5px;padding:9px 0}
+.collection-index li a>span{font-size:14px;font-weight:500;letter-spacing:.025em}
+.collection-index small{font-size:12px;line-height:1.45;color:#596052}
+.collection-index li a:hover>span{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1000px){.collection-index ol{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}}
+@media(max-width:600px){.collection-index ol{grid-template-columns:1fr}.collection-index li a{min-height:60px}.collection-intro p{font-size:13px}}
+@media(min-width:2200px){.collection-index summary{min-height:72px;font-size:22px}.collection-index summary>span,.collection-index small{font-size:18px}.collection-index li a{min-height:88px}.collection-index li a>span{font-size:22px}.collection-index summary svg{width:24px;height:24px}}

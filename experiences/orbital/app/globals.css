@@ -58,3 +58,77 @@
 }
 
 .orbit-annotation,.machine-callouts {text-shadow:0 1px 5px #000,0 1px 12px #000;}
+
+/* One persistent progress surface; the full flight plan stays in Mission Index. */
+.compact-progress {display:none;}
+.machine-tabs {display:grid;grid-template-columns:124px 1fr;gap:22px!important;max-width:440px;margin-top:28px;}
+.system-choices {display:flex;flex-direction:column;}
+.system-choices button {min-height:44px;padding:8px 12px 8px 0;text-align:left;font-size:14px;line-height:1.35;color:#bac5cf;border-right:1px solid #4a5863;transition:color .2s,border-color .2s;}
+.system-choices button[aria-pressed=true] {color:var(--orange);border-color:var(--orange);}
+.system-explanation {display:grid;padding:10px 12px;font-size:14px;line-height:1.65;color:#c1cbd3;background:linear-gradient(90deg,rgba(5,7,10,.94),rgba(5,7,10,.78));}
+.system-copy {grid-area:1/1;visibility:hidden;}.system-copy[data-active=true] {visibility:visible;}
+.system-explanation>small {grid-row:2;}
+.system-explanation .mono {display:block;font-size:10px;line-height:1.6;margin-top:15px;}
+.system-explanation small {display:block;color:#9eacb7;font-size:11px;line-height:1.5;margin-top:16px;}
+.mission-root:not([data-subsystem=overview]) .technical-layer {visibility:hidden;}
+@media (min-width:2200px) {
+ .machine-tabs {max-width:700px;grid-template-columns:190px 1fr;gap:34px!important;}
+ .system-choices button {min-height:60px;font-size:21px;}
+ .system-explanation {font-size:21px;}.system-explanation .mono {font-size:15px;}.system-explanation small {font-size:16px;}
+}
+@media (min-width:761px) and (max-height:720px) {
+ .chapter-machine .chapter-copy {top:calc(var(--header-height) + 18px);}
+ .machine-tabs {margin-top:15px;grid-template-columns:118px 1fr;}
+ .system-choices button {min-height:36px;padding-block:5px;font-size:13px;}
+ .system-explanation {font-size:13px;}
+ .chapter-mars .chapter-copy {top:calc(var(--header-height) + 18px);transform:none;}
+ .chapter-mars h2 {font-size:min(10vw,15vh);}
+ .chapter-mars .destination-tabs {margin-top:14px;gap:10px!important;}
+}
+@media (min-width:761px) and (max-height:500px) {
+ .chapter-machine .chapter-copy,.chapter-mars .chapter-copy {top:68px;}
+ .machine-tabs {margin-top:10px;grid-template-columns:110px 1fr;gap:15px!important;}
+ .system-choices button {min-height:30px;font-size:12px;padding-block:4px;}
+ .system-explanation {font-size:11px;padding-top:3px;line-height:1.5;}
+ .system-explanation .mono,.system-explanation small {font-size:9px;margin-top:8px;}
+ .chapter-mars h2 {font-size:11.4vh;}
+ .chapter-mars .destination-tabs {margin-top:8px;gap:6px!important;}
+}
+@media (max-width:760px) {
+ .mission-timeline,.mission-caption {display:none;}
+ .compact-progress {position:absolute;z-index:9;left:var(--gutter);right:var(--gutter);bottom:10px;height:56px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #52616b;background:linear-gradient(180deg,transparent,#05070a);}
+ .compact-progress:before {content:'';position:absolute;top:-1px;left:0;width:100%;height:1px;background:var(--orange);transform-origin:left;transform:scaleX(var(--mission-progress,0));}
+ .compact-progress>button {min-height:44px;min-width:44px;display:flex;align-items:center;justify-content:center;}
+ .compact-progress>button:disabled {opacity:.25;}
+ .compact-progress svg {width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;}
+ .compact-progress .progress-index {gap:10px;font-size:13px;}
+ .progress-index>.mono {font-size:10px;letter-spacing:0;}
+ .progress-open {font-size:10px;color:#a5b3bd;margin-left:3px;}
+ .chapter-machine .chapter-copy {top:calc(var(--header-height) + 18px);}
+ .chapter-machine h2 {font-size:15vw;}
+ .machine-tabs {display:block;max-width:88vw;margin-top:20px;}
+ .system-choices {display:grid;grid-template-columns:repeat(3,1fr);gap:0 8px;}
+ .system-choices button {min-height:44px;border-right:0;border-bottom:1px solid #4a5863;padding:7px 2px;text-align:left;font-size:12px;}
+ .system-explanation {font-size:12px;padding-top:12px;line-height:1.6;min-height:112px;}
+ .system-explanation .mono {margin-top:8px;font-size:9px;}.system-explanation small {margin-top:8px;font-size:10px;}
+ .machine-callouts {display:none;}
+ .chapter-mars .chapter-copy {top:calc(var(--header-height) + 18px);}
+ .chapter-mars h2 {font-size:20vw;}
+ .destination-tabs {gap:12px!important;}
+ .destination-tabs [data-slot=tabs-content] {max-width:280px;}
+ .destination-tabs [data-slot=tabs-trigger] {min-height:44px;}
+}
+@media (max-width:760px) and (max-height:700px) {
+ .chapter-mars h2 {font-size:min(20vw,9vh);}
+ .chapter-mars .chapter-kicker {margin-bottom:10px;}
+ .chapter-mars .chapter-description {font-size:14px;margin-top:12px;}
+ .destination-tabs {margin-top:12px;gap:8px!important;}
+ .destination-tabs [data-slot=tabs-content] {line-height:1.5;}
+ .destination-value {margin-bottom:6px;}
+ .chapter-machine .chapter-copy {top:calc(var(--header-height) + 12px);}
+ .chapter-machine h2 {font-size:min(14vw,8.5vh);}
+ .chapter-machine .chapter-kicker {margin-bottom:10px;}
+ .machine-tabs {margin-top:12px;}
+ .system-explanation {font-size:11px;padding-top:9px;line-height:1.5;min-height:96px;}
+ .system-explanation small {margin-top:5px;}
+}

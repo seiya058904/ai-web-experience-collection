@@ -192,6 +192,11 @@ a.text-button,.text-button {
   height:100%;
   object-fit:cover
 }
+.still-instruction{display:none}
+.is-still .still-instruction{display:inline}
+.is-still .pointer-instruction,.is-still .touch-instruction{display:none}
+.still-status{display:none;position:fixed;right:var(--gutter);bottom:100px;z-index:20;max-width:30ch;margin:0;padding:10px 12px;background:#111315;color:#e5e2d9;font:12px/1.5 Manrope,Arial,sans-serif;pointer-events:none}
+.is-still .still-status:not([hidden]){display:block}
 .stage-shade {
   position:absolute;
   inset:0;
