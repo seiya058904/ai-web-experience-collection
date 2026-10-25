@@ -1,6 +1,36 @@
+import 'lenis/dist/lenis.css';
+import Lenis from 'lenis';
+
 const media = matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const controller = new AbortController();
 const worlds = document.querySelectorAll<HTMLAnchorElement>('.world');
+
+// The gallery stays a native document: one Lenis instance only smooths wheel and
+// trackpad input, on its own clock. Reduced motion starts no instance at all.
+let lenis: Lenis | null = null;
+const syncSmoothing = () => {
+  if (reduced.matches) {
+    lenis?.destroy();
+    lenis = null;
+    return;
+  }
+  lenis ??= new Lenis({ lerp: .105, smoothWheel: true, syncTouch: false, anchors: false, autoRaf: true });
+};
+syncSmoothing();
+reduced.addEventListener('change', syncSmoothing, { signal: controller.signal });
+// Native input outside the wheel (fragment link, scroll key) wins immediately.
+// End the wheel's momentum first so its old destination cannot drag the page back.
+// The version is pinned; Lenis keeps this runtime method off its type surface.
+const settle = () => (lenis as unknown as { reset(): void } | null)?.reset();
+const scrollKeys = new Set([' ', 'Spacebar', 'PageDown', 'PageUp', 'Home', 'End', 'ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight']);
+document.addEventListener('click', (event) => {
+  if (event.target instanceof Element && event.target.closest('a[href^="#"]')) settle();
+}, { capture: true, signal: controller.signal });
+document.addEventListener('keydown', (event) => {
+  if (scrollKeys.has(event.key)) settle();
+}, { signal: controller.signal });
+
 for (const [index, world] of [...worlds].entries()) {
   world.dataset.index = String(index + 1).padStart(2, '0');
   world.addEventListener('pointermove', (event) => {
@@ -39,4 +69,7 @@ if (returning || typeof restoredSource === 'string') {
   const source = document.getElementById(typeof restoredSource === 'string' ? restoredSource : location.hash.slice(1));
   if (source instanceof HTMLAnchorElement && source.classList.contains('world')) source.focus({ preventScroll: true });
 }
-import.meta.hot?.dispose(() => controller.abort());
+import.meta.hot?.dispose(() => {
+  controller.abort();
+  lenis?.destroy();
+});

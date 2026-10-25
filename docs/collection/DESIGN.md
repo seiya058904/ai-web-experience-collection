@@ -58,6 +58,10 @@ INTERVAL’s display title scales from its panel’s content width, so the full 
 
 Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels are fully visible before JavaScript. The stylesheet loads independently of the enhancement module; no observer or opacity gate delays End, fast scrolling, module failure or history restoration. Reduced motion removes image, title and arrow movement, including when the preference changes while hovered. Focus outlines and the instant numeral-opacity response remain available.
 
+## Motion
+
+Wheel and trackpad input is smoothed by one Lenis instance owned by `collection/main.ts` (`lerp: 0.105`, `syncTouch: false`, `anchors: false`) on its own RAF. It is the entrance's only clock and it imports no work runtime. Native touch, native fragment navigation, keyboard scrolling, focus and history stay authoritative: the Index, return journeys and Back/Forward never wait for an easing layer, and wheel momentum ends before a fragment jump or scroll key acts. `prefers-reduced-motion: reduce` starts no instance, and changing that preference destroys or recreates it at the current position. Every panel, the Index and the credits remain complete when the module fails or JavaScript is unavailable.
+
 ## Shapes
 
 Square media, thin gallery rules, a simple three-stroke collection mark and directional line icons. No decorative card shells.
