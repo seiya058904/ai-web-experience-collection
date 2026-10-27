@@ -12,7 +12,7 @@
   &nbsp;·&nbsp;
   <a href="#find-your-world">✦ Where to Begin</a>
   &nbsp;·&nbsp;
-  <a href="#the-complete-exhibition">🗂️ All 32 Works</a>
+  <a href="#the-complete-exhibition">🗂️ All 38 Works</a>
   &nbsp;·&nbsp;
   <a href="#built-as-independent-worlds">⚙️ Architecture</a>
   &nbsp;·&nbsp;
@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <sub>32 INDEPENDENT EXPERIENCES &nbsp;·&nbsp; ONE CURATED ENTRANCE &nbsp;·&nbsp; FULL-DOCUMENT NAVIGATION</sub><br>
+  <sub>38 INDEPENDENT EXPERIENCES &nbsp;·&nbsp; ONE CURATED ENTRANCE &nbsp;·&nbsp; FULL-DOCUMENT NAVIGATION</sub><br>
   <sub>SCROLL-DRIVEN NARRATIVES &nbsp;·&nbsp; WEBGL / CANVAS / SVG &nbsp;·&nbsp; DESKTOP + MOBILE</sub>
 </p>
 
@@ -102,7 +102,7 @@ A small selection of the visuals already shipped with individual experiences. Ea
 </table>
 
 <a id="the-complete-exhibition"></a>
-## 🗂️ The Complete Exhibition — 32 Works
+## 🗂️ The Complete Exhibition — 38 Works
 
 Each name below opens its published standalone page. The routes belong to this single collection, not to thirty-eight separate repositories.
 
@@ -246,37 +246,9 @@ Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, ori
 
 The original supplied work identities, render fallbacks, reduced-motion behavior and source records are part of the collection's preservation contract.
 
-### DOSE — The architecture of a tablet
+### Individual work records
 
-The DOSE independent work lives at `/dose/`: seven material perspectives of a hypothetical uncoated tablet, with a native depth control, Index/About, quiet motion and illustrated/no-JavaScript editions. [Design](docs/dose/DESIGN.md), [architecture](docs/dose/ARCHITECTURE.md), [sources](docs/dose/SOURCES.md) and [acceptance](docs/dose/ACCEPTANCE.md). Original source retains MIT; no clinical or measured-product claim is made.
-
-### COUNTERFORM — The Shape of Reading
-
-The thirty-first independent work lives at `/counterform/`: seven typographic spaces with real variable-font controls, letterform anatomy, native Index and a quiet reading fallback. [Design](docs/counterform/DESIGN.md), [architecture](docs/counterform/ARCHITECTURE.md), [sources](docs/counterform/SOURCES.md) and [acceptance](docs/counterform/ACCEPTANCE.md).
-
-### FERRUM — The Memory of Fire
-
-The thirty-second independent work lives at `/ferrum/`: six acts through one original digital steel sculpture, optional local sound, supplied still fallback and reduced-motion controls. [Design](docs/ferrum/DESIGN.md), [architecture](docs/ferrum/ARCHITECTURE.md), [research](docs/ferrum/RESEARCH.md) and [acceptance](docs/ferrum/ACCEPTANCE.md).
-
-### RELAY — A Message Finds Its Way
-
-The thirty-third independent work lives at `/relay/`: six chapters read one deterministic, browser-local delivery, with real routes, retransmission, lost acknowledgements and honest incomplete endings. [Design](docs/relay/DESIGN.md), [architecture](docs/relay/ARCHITECTURE.md), [research](docs/relay/RESEARCH.md), [acceptance](docs/relay/ACCEPTANCE.md).
-
-### SUPERCELL — The Shape of Moving Air
-
-The thirty-fourth work lives at `/supercell/`: five observations of one illustrated storm with a movable section plane, a wind-shear comparison and optional local sound. [Design](docs/supercell/DESIGN.md), [architecture](docs/supercell/ARCHITECTURE.md), [research](docs/supercell/RESEARCH.md), [acceptance](docs/supercell/ACCEPTANCE.md).
-
-### PELAGIC — A Language of Living Light
-
-The thirty-fifth work lives at `/pelagic/`: five research-inspired observations of deep-sea light, with a survey-light control, a scrubbable encounter and a complete SVG edition. [Design](docs/pelagic/DESIGN.md), [architecture](docs/pelagic/ARCHITECTURE.md), [research](docs/pelagic/RESEARCH.md), [acceptance](docs/pelagic/ACCEPTANCE.md).
-
-### BACKSTAGE — The Art of Making Believe
-
-The thirty-sixth work lives at `/backstage/`: five acts around one original Three.js miniature theatre, with scene, view and light cues, a still mode and a static reading edition. [Design](docs/backstage/DESIGN.md), [architecture](docs/backstage/ARCHITECTURE.md), [research](docs/backstage/RESEARCH.md), [acceptance](docs/backstage/ACCEPTANCE.md).
-
-### MURMURATION — No one is leading.
-
-The thirty-seventh work lives at `/murmuration/`: five chapters over a recorded flock and a live local-rules field, with Hold/Step, presets and a fieldprint export. [Design](docs/murmuration/DESIGN.md), [architecture](docs/murmuration/ARCHITECTURE.md), [research](docs/murmuration/RESEARCH.md), [acceptance](docs/murmuration/ACCEPTANCE.md).
+Design, architecture, source or research, and acceptance records are organized by work under [`docs/`](docs/), including [DOSE](docs/dose/), [COUNTERFORM](docs/counterform/), [FERRUM](docs/ferrum/), [RELAY](docs/relay/), [SUPERCELL](docs/supercell/), [PELAGIC](docs/pelagic/), [BACKSTAGE](docs/backstage/), [MURMURATION](docs/murmuration/), and [VAREN](docs/varen/). DOSE depicts a hypothetical tablet, not a clinical or measured product; its supplied source retains MIT permissions. VAREN's garment imagery is AI-generated and no products are offered for sale.
 
 </details>
 
@@ -298,7 +270,3 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
   <sub>THIRTY-EIGHT WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>
-
-### VAREN — Presence, precisely cut.
-
-The thirty-eighth work lives at `/varen/`: the supplied contemporary tailoring catalogue, with six looks, category filters, native garment details, saved selections and occasion tabs. [Design](docs/varen/DESIGN.md) · [Acceptance](docs/varen/ACCEPTANCE.md). All garment imagery is AI-generated; no products are offered for sale.
