@@ -43,13 +43,21 @@ function parseSaved(value: string | null): string[] {
   } catch { return []; }
 }
 
+function readSaved(): string[] {
+  const legacy = parseSaved(localStorage.getItem(storageKey));
+  return looks.filter(look => {
+    const value = localStorage.getItem(`${storageKey}:${look.id}`);
+    return value === null ? legacy.includes(look.id) : value === '1';
+  }).map(look => look.id);
+}
+
 export function useSavedLooks() {
   const [saved, setSaved] = useState<string[]>(() => {
-    try { return parseSaved(localStorage.getItem(storageKey)); } catch { return []; }
+    try { return readSaved(); } catch { return []; }
   });
   const [notice, setNotice] = useState('');
   useEffect(() => {
-    const sync = (event: StorageEvent) => { if (event.key === storageKey) setSaved(parseSaved(event.newValue)); };
+    const sync = (event: StorageEvent) => { if (event.key === null || event.key === storageKey || event.key.startsWith(storageKey + ':')) { try { setSaved(readSaved()); } catch { /* Keep this visit's selection. */ } } };
     window.addEventListener('storage', sync);
     return () => window.removeEventListener('storage', sync);
   }, []);
@@ -62,7 +70,8 @@ export function useSavedLooks() {
     const next = saved.includes(id) ? saved.filter(item => item !== id) : [...saved, id];
     setSaved(next);
     try {
-      localStorage.setItem(storageKey, JSON.stringify(next));
+      localStorage.setItem(`${storageKey}:${id}`, next.includes(id) ? '1' : '0');
+      setSaved(readSaved());
       setNotice(next.includes(id) ? 'Look added to your selection.' : 'Look removed from your selection.');
     } catch { setNotice('Saved for this visit. Browser storage is unavailable.'); }
   };

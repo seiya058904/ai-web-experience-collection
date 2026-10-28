@@ -6,8 +6,8 @@ import { Image, SaveButton } from './Primitives';
 
 export function LookCard({ look, saved, onOpen, onSave }: { look: Look; saved: boolean; onOpen: (look: Look) => void; onSave: (id: string) => void }) {
   return <article className="look-card">
-    <a className="look-image" href={`?look=${look.id}`} onClick={event => { event.preventDefault(); onOpen(look); }} aria-label={`View ${look.title}`}><Image name={look.image} alt={look.alt} /></a>
-    <div className="look-caption"><div><h3><a href={`?look=${look.id}`} onClick={event => { event.preventDefault(); onOpen(look); }}>{look.title}</a></h3><p>{look.category}</p></div><SaveButton title={look.title} active={saved} onClick={() => onSave(look.id)} /></div>
+    <a className="look-image" href={`?look=${look.id}`} onClick={event => { if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return; event.preventDefault(); onOpen(look); }} aria-label={`View ${look.title}`}><Image name={look.image} alt={look.alt} /></a>
+    <div className="look-caption"><div><h3><a href={`?look=${look.id}`} onClick={event => { if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return; event.preventDefault(); onOpen(look); }}>{look.title}</a></h3><p>{look.category}</p></div><SaveButton title={look.title} active={saved} onClick={() => onSave(look.id)} /></div>
   </article>;
 }
 
