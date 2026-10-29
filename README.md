@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/readme-cover.svg" width="100%" alt="WEB EXPERIENCE COLLECTION — illustrated project cover" />
+</p>
+
 <h1 align="center">✦ AI Web Experience Collection</h1>
 
 <p align="center"><strong>Thirty-eight worlds. Thirty-eight ways to experience the web.</strong></p>
@@ -213,6 +217,11 @@ The collection uses **Vite, TypeScript, GSAP, Lenis, and selected React/Three.js
 ```bash
 npm ci
 npm run dev
+```
+
+Open the local address printed by Vite. To check and preview a production build, stop the development server with `Ctrl+C` or use a second terminal:
+
+```bash
 npm run verify
 npm run preview -- --port 4174 --strictPort
 ```

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="cover-title cover-desc">
+  <title id="cover-title">ai-web-experience-collection — illustrated project cover</title>
+  <desc id="cover-desc">Independent worlds. A shared sense of wonder. A decorative vector illustration accompanies the project title.</desc>
+  <rect width="1200" height="360" rx="24" fill="#171D2B"/>
+  <path d="M56 70h38" stroke="#C4BAD9" stroke-width="4" stroke-linecap="round"/>
+  <text x="110" y="76" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#C4BAD9" letter-spacing="2">MOTION / MATTER / THE BROWSER</text>
+  <text x="56" y="156" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#EFECE7" letter-spacing="0">WEB EXPERIENCE</text>
+  <text x="56" y="216" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#EFECE7" letter-spacing="0">COLLECTION</text>
+  <text x="58" y="258" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#EFECE7" letter-spacing="0">Independent worlds. A shared sense of wonder.</text>
+  <text x="58" y="315" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#C4BAD9" letter-spacing="2">ENTER · EXPLORE · RETURN</text>
+  <g transform="translate(736 41)">
+  <rect x="38" y="29" width="300" height="235" rx="4" fill="#232739" stroke="#55576D"/>
+  <rect x="70" y="55" width="236" height="190" rx="3" fill="#303446" stroke="#8E92AB"/>
+  <rect x="103" y="82" width="170" height="143" rx="3" fill="#161C2C" stroke="#C8C7DD"/>
+  <path d="M38 264l65-39M338 264l-65-39M38 29l65 53M338 29l-65 53" stroke="#61657C"/>
+  <path d="M190 105l52 69-52 34-53-34Z" fill="#9BA7CE"/>
+  <path d="M190 105v103l52-34Z" fill="#65769E"/>
+  <path d="M190 105l-53 69 53-18Z" fill="#DBD8EA"/>
+  <path d="M137 174l53-18 52 18-52 34Z" fill="#A6B3BD"/>
+  <circle cx="309" cy="47" r="4" fill="#CEBD98"/>
+  <path d="M11 105v107M365 91v107" stroke="#636B83"/>
+  </g>
+</svg>
