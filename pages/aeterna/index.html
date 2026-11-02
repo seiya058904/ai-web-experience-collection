@@ -27,6 +27,17 @@
   <link rel="preload" href="/aeterna/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <script type="module" src="../../experiences/aeterna/src/main.js"></script>
   <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
 </head>
 <body data-theme="dark">
   <a class="skip-link" href="#exhibition">Skip to the exhibition</a>

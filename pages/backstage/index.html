@@ -37,6 +37,17 @@
   .header-cue svg{width:18px}
 }
 </style>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
 </head>
 <body>
   <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow" viewBox="0 0 32 16"><path d="M1 8h28M22 1l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.25"/></symbol><symbol id="reset" viewBox="0 0 20 20"><path d="M16.9 8a7 7 0 1 0-1.1 6M17 3v5h-5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol></svg>

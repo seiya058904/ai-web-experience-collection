@@ -26,6 +26,17 @@
   <link id="fossil-styles" rel="stylesheet" href="../../experiences/fossil/src/style.css">
   <script type="module" src="../../experiences/fossil/src/app.js"></script>
   <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
 </head>
 <body>
   <a class="skip-link" href="#chapter-01">Enter the experience</a>

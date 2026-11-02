@@ -279,3 +279,7 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
   <sub>THIRTY-EIGHT WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>
+
+## Website analytics
+
+The public website uses Cloudflare Web Analytics for aggregate page visits and performance. The beacon loads only on `seiya058904.github.io`; local previews and offline copies do not load it. No game saves, journal entries, map contents, or form values are passed to the analytics integration. Statistics start after deployment and do not recover earlier traffic. See [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
