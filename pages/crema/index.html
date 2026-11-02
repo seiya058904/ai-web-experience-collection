@@ -25,7 +25,18 @@
     <noscript><style>.reading-shade{opacity:1!important;background:rgba(9,11,10,.6)!important}.header-controls,.journey{display:none!important}.noscript-note .collection-return{font:inherit!important}</style></noscript>
     <link rel="preload" as="image" href="/crema/assets/machine.webp" />
     <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
-  </head>
+  <!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+</head>
   <body>
     <a class="skip-link" href="#particle">Enter the story</a>
     <div class="visual-stage" aria-hidden="true">
