@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e8ecf3">
+<title>CREASE — The Geometry of a Fold</title>
+<meta name="description" content="One sheet of paper, folded by exact geometry: a single line, four creases that only close at the right angles, a pattern that moves as one, and a crease pattern you can print and fold yourself.">
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%crease/">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CREASE — The Geometry of a Fold">
+<meta property="og:description" content="One sheet of paper, folded by exact geometry. Break the rule that lets it close, pull one corner, then print the pattern and fold it yourself.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%crease/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%crease/social.jpg">
+<meta property="og:image:alt" content="A rendered cobalt sheet of paper folded into a Miura pattern on a pale ground">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CREASE — The Geometry of a Fold">
+<meta name="twitter:description" content="One sheet of paper, folded by exact geometry. Break the rule that lets it close, pull one corner, then print the pattern and fold it yourself.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%crease/social.jpg">
+<link rel="icon" type="image/svg+xml" href="%BASE_URL%crease/favicon.svg">
+<link rel="stylesheet" href="/experiences/shared/collection-return.css">
+<script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#vertex">Skip to the first control</a>
+<h1 class="title" aria-label="CREASE">
+  <span class="half top" aria-hidden="true">CREASE</span>
+  <span class="half bottom" aria-hidden="true">CREASE</span>
+</h1>
+<canvas id="scene" role="img" aria-label="A sheet of cobalt paper, white on its reverse, folded by exact geometry as you scroll."></canvas>
+
+<header class="bar">
+  <button class="mark" data-go="0" aria-label="CREASE, return to the opening">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zM3 4l18 16"/></svg>
+    <span>CREASE</span>
+  </button>
+  <nav aria-label="Main navigation">
+    <button id="notes-open">Notes</button>
+    <a class="collection-return" href="%BASE_URL%#world-crease" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+  </nav>
+</header>
+
+<main>
+  <section class="chapter hero is-visible" id="opening">
+    <p class="lead">The geometry of a fold.</p>
+    <button class="cue" data-go="0.12">Scroll to fold <svg viewBox="0 0 16 30" aria-hidden="true"><path d="M8 1v27M2 22l6 6 6-6"/></svg></button>
+  </section>
+
+  <section class="chapter panel" id="line" aria-labelledby="line-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="line-title">One line.</h2>
+    <p>A fold is a rotation about a straight line. Nothing stretches and nothing tears. Whatever was on the reverse of the paper now faces you.</p>
+  </section>
+
+  <section class="chapter panel" id="vertex" aria-labelledby="vertex-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="vertex-title">Four lines meet.</h2>
+    <p>Where creases meet at a point, they move together. This one closes completely only if alternating angles add up to 180°. That rule is Kawasaki's theorem. Move one crease and try it.</p>
+    <div class="sliders">
+      <label for="shift"><span>Move one crease</span><input id="shift" type="range" min="-24" max="24" step="1" value="0"><output for="shift" data-out="shift"></output></label>
+    </div>
+    <dl class="readings">
+      <div><dt>Alternating angles</dt><dd data-read="sum"></dd></div>
+      <div><dt>When folding stops</dt><dd data-read="open"></dd></div>
+      <div><dt>Fold directions</dt><dd data-read="types"></dd></div>
+    </dl>
+    <p class="answer" data-read="verdict" aria-live="polite"></p>
+  </section>
+
+  <section class="chapter panel" id="miura" aria-labelledby="miura-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="miura-title">One motion.</h2>
+    <p>Repeat that vertex across the sheet and every crease shares one motion. A single number sets all of them, and the sheet shrinks in both directions at once.</p>
+    <div class="sliders">
+      <label for="fold"><span>Fold</span><input id="fold" type="range" min="0" max="100" step="1" value="62"><output for="fold" data-out="fold"></output></label>
+    </div>
+    <dl class="readings">
+      <div><dt>Width</dt><dd data-read="width"></dd></div>
+      <div><dt>Length</dt><dd data-read="length"></dd></div>
+      <div><dt>Footprint</dt><dd data-read="area"></dd></div>
+    </dl>
+  </section>
+
+  <section class="chapter panel" id="pull" aria-labelledby="pull-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="pull-title">Pull one corner.</h2>
+    <p>Koryo Miura designed this pattern so one pull could open a whole sheet. A solar array folded this way flew on Japan's Space Flyer Unit, launched in 1995. Drag the corner, or use the slider.</p>
+    <div class="sliders">
+      <label for="pull-amount"><span>Pull</span><input id="pull-amount" type="range" min="0" max="100" step="1" value="0"><output for="pull-amount" data-out="pull"></output></label>
+    </div>
+    <dl class="readings">
+      <div><dt>Footprint</dt><dd data-read="pull-area"></dd></div>
+    </dl>
+  </section>
+
+  <section class="chapter panel" id="yours" aria-labelledby="yours-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="yours-title">Your sheet.</h2>
+    <p>Set the pattern, then print it. The file is a real crease pattern at A4 size. Score the lines, fold along them and pull one corner.</p>
+    <div class="sliders">
+      <label for="columns"><span>Columns</span><input id="columns" type="range" min="4" max="16" step="2" value="10"><output for="columns" data-out="columns"></output></label>
+      <label for="rows"><span>Rows</span><input id="rows" type="range" min="4" max="12" step="1" value="8"><output for="rows" data-out="rows"></output></label>
+      <label for="gamma"><span>Sector angle</span><input id="gamma" type="range" min="55" max="84" step="1" value="68"><output for="gamma" data-out="gamma"></output></label>
+      <label for="fold-yours"><span>Fold</span><input id="fold-yours" type="range" min="0" max="100" step="1" value="55"><output for="fold-yours" data-out="foldYours"></output></label>
+    </div>
+    <div class="actions">
+      <button class="action" id="download">Download the pattern</button>
+      <button class="link" id="notes-end">Notes and sources</button>
+    </div>
+    <p class="status" id="download-status" role="status"></p>
+  </section>
+</main>
+
+<button class="handle" aria-hidden="true" tabindex="-1"><span>Pull</span></button>
+<div id="scroll-track" aria-hidden="true"></div>
+
+<nav class="chapters" aria-label="Chapters">
+  <button data-go="0.12" aria-label="I, one line">I</button>
+  <button data-go="0.36" aria-label="II, four lines meet">II</button>
+  <button data-go="0.61" aria-label="III, one motion">III</button>
+  <button data-go="0.74" aria-label="IV, pull one corner">IV</button>
+  <button data-go="0.96" aria-label="V, your sheet">V</button>
+</nav>
+
+<dialog id="notes" aria-labelledby="notes-title">
+  <div class="dialog-head"><h2 id="notes-title">Notes and sources</h2><button id="notes-close">Close</button></div>
+  <p>The folding here is exact, not animated by hand. Each facet stays a rigid plane in every frame, and the tests check that for every pattern. The paper has zero thickness and collisions between layers are not modelled, so real paper stops a little sooner.</p>
+  <h3>The geometry</h3>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Kawasaki%27s_theorem" target="_blank" rel="noreferrer">Kawasaki's theorem.</a> A vertex can fold flat only if alternating angles sum to 180°.</li>
+    <li><a href="https://en.wikipedia.org/wiki/Maekawa%27s_theorem" target="_blank" rel="noreferrer">Maekawa's theorem.</a> At a flat-folded vertex, mountains and valleys differ by two.</li>
+    <li><a href="https://doi.org/10.1073/pnas.1217998110" target="_blank" rel="noreferrer">Schenk and Guest, 2013, PNAS.</a> The Miura cell described by facet sides, a sector angle and one fold angle.</li>
+  </ul>
+  <h3>The history</h3>
+  <ul>
+    <li><a href="https://www.newsroom.hlf-foundation.org/blog/article/origami-mathematics-the-shape-of-things-to-come/" target="_blank" rel="noreferrer">Heidelberg Laureate Forum, Origami mathematics.</a> The Miura fold on the Space Flyer Unit, launched in March 1995. Accounts of the flight and of when Miura first proposed the pattern vary, and we did not find a primary record from JAXA.</li>
+  </ul>
+  <h3>Reading the printed pattern</h3>
+  <p>Blue dash-dot lines are mountains and fold away from you. Red dashed lines are valleys and fold toward you. Thin paper and a ruler help. Pre-crease every line before you try to collapse the sheet.</p>
+</dialog>
+
+<noscript><img class="still" src="%BASE_URL%crease/poster-wide.webp" alt="A rendered cobalt sheet of paper folded into a Miura pattern"><p class="noscript">This page folds a sheet of paper with JavaScript. Enable it to scroll through the folds and download a printable crease pattern.</p></noscript>
+<script type="module" src="../../experiences/crease/src/main.js"></script>
+</body>
+</html>

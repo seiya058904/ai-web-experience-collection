@@ -373,6 +373,15 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .world-aurora .world-image:after{background:linear-gradient(180deg,#050a1477,transparent 36%,#050a14e0)}
 .world-aurora:focus-visible{outline-color:#e9f1ee}
 
+/* CREASE keeps its Space Grotesk voice and pale ground under its own cobalt sheet. */
+@font-face{font-family:'Collection Crease Grotesk';src:url('/dose/assets/fonts/space-grotesk-latin-variable.woff2') format('woff2');font-weight:300 700;font-display:swap}
+.world-crease{--t:24;--s:9;background:#e8ecf3;color:#0d1433}
+.world-crease h2{font-family:'Collection Crease Grotesk',Arial,sans-serif;font-weight:600;letter-spacing:-.05em;line-height:.9}
+.world-crease .world-title p{font-family:'Collection Crease Grotesk',Arial,sans-serif;font-weight:400;letter-spacing:-.02em;line-height:1.1}
+.world-crease .world-image img{object-position:74% 50%}
+.world-crease .world-image:after{background:linear-gradient(180deg,transparent 62%,#e8ecf3f0)}
+.world-crease:focus-visible{outline-color:#1c39c9}
+
 /* The catalogue: one numbered list, in collection order. */
 .collection-index{margin:clamp(18px,2.8vh,44px) var(--gutter) clamp(18px,2.6vh,40px);border-top:1px solid #c7ccc2;border-bottom:1px solid #c7ccc2}
 .collection-index summary{display:flex;align-items:center;gap:16px;min-height:clamp(54px,6.4vh,84px);cursor:pointer;list-style:none;font-size:clamp(15px,1.1vw,40px);font-weight:500}
@@ -410,9 +419,11 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 /* The closing panel fills whatever remains of its row, as works are added. */
 @media(min-width:1001px){
 .worlds>.world.worlds-end:nth-child(10n+9){grid-column:span 2;--scale:.42}
-.worlds>.world.worlds-end:nth-child(10n+1){grid-column:1 / -1;height:clamp(300px,38svh,640px);--scale:.26}
+.worlds>.world.worlds-end:nth-child(10n+1){grid-column:1 / -1;height:auto;min-height:clamp(260px,32svh,560px);--scale:.26}
+.worlds>.world.worlds-end:nth-child(10n+1) br{display:none}
 }
 @media(min-width:701px) and (max-width:1000px){.worlds>.world.worlds-end:nth-child(odd){grid-column:1 / -1;--scale:.42}}
+@media(max-width:1000px){.worlds>.world.worlds-end{height:auto;min-height:clamp(320px,44svh,520px)}}
 
 /* Pointing at one world lets the others step back. */
 .world:after{content:'';position:absolute;inset:0;z-index:3;background:#0b0d0a;opacity:0;pointer-events:none;transition:opacity .55s ease}

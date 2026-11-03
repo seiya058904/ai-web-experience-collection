@@ -1090,6 +1090,38 @@
             "sha256": "a0c3170fa15445f1438b6931cabe4ad872ad03cade15f23b796c9a238fac994e"
           }
         ]
+      },
+      {
+        "work": "crease",
+        "source": "/collection/crease.webp",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 38532,
+        "sourceSHA256": "d357117b68b216de366582e0a19a80b4ebcc2daf2bb01fab019a10039706af4c",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "url": "/collection/previews/crease-640.webp",
+            "width": 640,
+            "height": 443,
+            "bytes": 9536,
+            "sha256": "74b2c544f8f302e429af32a324c9527ff3414dcadf98c2eba08c27bd4b6dea4d"
+          },
+          {
+            "url": "/collection/previews/crease-960.webp",
+            "width": 960,
+            "height": 665,
+            "bytes": 16798,
+            "sha256": "8ff900240950bf9db868a077892f0f50164b2a2e9c86ddbf4e5c0a05a8596e73"
+          },
+          {
+            "url": "/collection/previews/crease-1280.webp",
+            "width": 1280,
+            "height": 887,
+            "bytes": 24620,
+            "sha256": "124dc125ae959e9e95e554b7393477eb65068d0dfc5cbb27da337712d7bc4fe1"
+          }
+        ]
       }
     ]
   }
