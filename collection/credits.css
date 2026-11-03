@@ -1,2 +1,21 @@
+@import '@fontsource/barlow/latin-300.css';
 @import '@fontsource/barlow/latin-400.css';
-body{margin:0;background:#eeefeb;color:#20231f;font:18px/1.7 Barlow,Arial,sans-serif}main{max-width:760px;margin:auto;padding:60px 28px 100px}h1{font-size:clamp(42px,7vw,76px);line-height:1.02;font-weight:400;letter-spacing:-.035em;margin:65px 0 28px}h2{font-weight:400;font-size:32px;margin:0}section{border-top:1px solid #c7ccc2;margin-top:50px;padding-top:30px}a{color:inherit;text-underline-offset:5px}a:focus-visible{outline:2px solid #20372a;outline-offset:4px}p{max-width:68ch}::selection{background:#20372a;color:#fff}
+:root{--gutter:clamp(22px,3.3vw,128px)}
+body{margin:0;background:#eeefeb;color:#20231f;font:clamp(16px,1.12vw,27px)/1.65 Barlow,'Microsoft YaHei',Arial,sans-serif;font-synthesis:none}
+main{padding:clamp(24px,3.4vh,60px) var(--gutter) clamp(70px,12vh,180px)}
+main>a:first-child{font-size:.92em;color:#596052;text-underline-offset:5px}
+main>a:first-child:hover{color:#20231f}
+h1{margin:clamp(34px,7vh,110px) 0 clamp(24px,4.4vh,64px) -.05em;font-size:clamp(52px,10.4vw,340px);font-weight:300;line-height:.98;letter-spacing:-.045em}
+main>p{max-width:62ch;margin:0 0 clamp(50px,9vh,130px) 33.33%;font-size:1.14em;line-height:1.55}
+section{display:flow-root;padding:clamp(24px,3.4vh,52px) 0 clamp(30px,4.4vh,68px) 33.33%;border-top:1px solid #c7ccc2}
+h2{float:left;width:calc(50% - clamp(20px,3vw,72px));margin:0 0 0 -50%;font-size:clamp(21px,1.7vw,44px);font-weight:400;line-height:1.16;letter-spacing:-.015em}
+section p{max-width:68ch;margin:0 0 .9em}
+section p+a,section>a{color:#20231f}
+a{color:inherit;text-underline-offset:4px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid #20372a;outline-offset:4px}
+::selection{background:#20372a;color:#fff}
+@media(max-width:800px){
+main>p{margin-left:0}
+section{padding-left:0}
+h2{float:none;width:auto;margin:0 0 12px}
+}
