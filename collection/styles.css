@@ -356,7 +356,8 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .slit small{display:block;font-size:.84em;font-weight:400;letter-spacing:.01em;opacity:.82}
 @media(hover:hover){
 .slit:hover{flex-grow:13}
-.slit:hover+.slit,.slit:has(+.slit:hover){flex-grow:2.6}
+/* Neighbours stay narrow enough that a resting pointer always remains inside the open strip. */
+.slit:hover+.slit,.slit:has(+.slit:hover){flex-grow:1.8}
 .spectrum:hover .slit:not(:hover) img{opacity:.58}
 .slit:hover:after{opacity:1}
 .slit:hover span{opacity:1;transform:none;transition-delay:.12s}
