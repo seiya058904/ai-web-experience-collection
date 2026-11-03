@@ -154,3 +154,7 @@ The thirty-eighth native entrance uses the supplied AI-generated chocolate-suit 
 ## AURORA entrance — 4 November 2026
 
 The thirty-ninth native entrance uses a capture of the work's own rendered curtain with its tall Roboto Flex voice. It adds no work runtime and no new font request to the Collection: Roboto Flex is already declared for GRID.
+
+## CREASE entrance — 4 November 2026
+
+The fortieth native entrance uses a capture of the work's own folded sheet with its Space Grotesk voice. With forty works the closing panel falls on a new row and becomes a full-width band. The only new request is Space Grotesk, reused from DOSE's existing binary, and no work runtime is added.

@@ -234,3 +234,7 @@ Supplied contemporary tailoring catalogue, with AI-generated garment concepts, o
 ## AURORA — A Storm You Can See
 
 Original to this repository, not a supplied delivery. Source, text and rendered captures are the project author's. It reuses Roboto Flex (SIL OFL) from `public/grid/fonts/` and NASA Goddard's Blue Marble texture from `public/orbital/media/` by URL. GSAP and Lenis come from the root dependencies. Scientific sources and limits are recorded in `docs/aurora/RESEARCH.md`; the deployed notice is `public/aurora/NOTICE.md`.
+
+## CREASE — The Geometry of a Fold
+
+Original to this repository, not a supplied delivery. Source, text and rendered captures are the project author's. It reuses Space Grotesk (SIL OFL) from `public/dose/assets/fonts/` by URL. three.js, GSAP and Lenis come from the root dependencies. Sources and limits are recorded in `docs/crease/RESEARCH.md`; the deployed notice is `public/crease/NOTICE.md`.
