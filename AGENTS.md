@@ -75,8 +75,6 @@ Follow this sequence for each new independent work. Keep each work's established
 
 ## Validation and deployment
 
-After moving the workspace to a new machine, run the self-check in `docs/ENVIRONMENT-CHECK.md` before continuing work.
-
 Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (model/continuity/rendering tests using Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
 
 There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
