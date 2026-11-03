@@ -2,6 +2,24 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
+test('a resting pointer stays inside the strip it opens, at every position', async () => {
+  const css = await readFile(new URL('../collection/styles.css', import.meta.url), 'utf8');
+  const open = Number(css.match(/\.slit:hover\{flex-grow:([\d.]+)\}/)?.[1]);
+  const near = Number(css.match(/\.slit:has\(\+\.slit:hover\)\{flex-grow:([\d.]+)\}/)?.[1]);
+  assert.ok(open > near && near > 1, 'The stylesheet must state both growth values');
+  // 40 strips on wide screens, every second one between 701 and 1000px, and room to add more works.
+  for (const count of [20, 21, 40, 41, 50, 60]) {
+    for (let i = 0; i < count; i += 1) {
+      const grow = Array.from({ length: count }, (_, j) => (j === i ? open : Math.abs(j - i) === 1 ? near : 1));
+      const unit = count / grow.reduce((sum, value) => sum + value, 0);
+      const start = grow.slice(0, i).reduce((sum, value) => sum + value, 0) * unit;
+      const end = start + open * unit;
+      const pointer = i + 0.5;
+      assert.ok(start <= pointer && pointer <= end, `Strip ${i} of ${count} would lose the pointer: ${start.toFixed(2)} to ${end.toFixed(2)}, pointer at ${pointer}`);
+    }
+  }
+});
+
 test('the native Collection Index reaches all 40 stable gallery anchors without script', async () => {
   const html = await readFile(new URL('../pages/index.html', import.meta.url), 'utf8');
   const index = html.match(/<details class="collection-index"[\s\S]*?<\/details>/)?.[0];

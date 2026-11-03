@@ -398,7 +398,7 @@ export function filmAt(p, aspect = 16 / 9) {
     titleFold: smooth(0.004, 0.05, p),
     elevation: lerp(e0, e1, t),
     azimuth: lerp(a0, a1, t) + (tall ? 90 : 0),
-    distance: lerp(d0, d1, t) * (tall ? 1.72 : 1),
+    distance: lerp(d0, d1, t) * (tall ? 1.86 : 1),
     shiftX: tall ? 0 : lerp(0.11, 0.2, smooth(0.03, 0.1, p)),
     // The name stands above the sheet at first; on tall screens the sheet then rides above the text.
     shiftY: lerp(tall ? 0.03 : 0.2, tall ? -0.2 : 0, smooth(0.03, 0.1, p)),
