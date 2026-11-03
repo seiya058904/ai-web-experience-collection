@@ -366,6 +366,13 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .slit{animation:slit-open 1.05s var(--ease) calc(var(--i) * 13ms) backwards}
 }
 
+/* AURORA keeps its tall, thin Roboto Flex voice over its own rendered sky. */
+.world-aurora{--t:44;--s:8.5;background:#050a14;color:#e9f1ee}
+.world-aurora h2{font-family:'Collection Grid Roboto',Arial,sans-serif;font-weight:200;font-stretch:25%;letter-spacing:.012em;line-height:.9}
+.world-aurora .world-title p{font-family:'Collection Grid Roboto',Arial,sans-serif;font-weight:300;letter-spacing:-.01em;line-height:1.1}
+.world-aurora .world-image:after{background:linear-gradient(180deg,#050a1477,transparent 36%,#050a14e0)}
+.world-aurora:focus-visible{outline-color:#e9f1ee}
+
 /* The catalogue: one numbered list, in collection order. */
 .collection-index{margin:clamp(18px,2.8vh,44px) var(--gutter) clamp(18px,2.6vh,40px);border-top:1px solid #c7ccc2;border-bottom:1px solid #c7ccc2}
 .collection-index summary{display:flex;align-items:center;gap:16px;min-height:clamp(54px,6.4vh,84px);cursor:pointer;list-style:none;font-size:clamp(15px,1.1vw,40px);font-weight:500}
@@ -400,7 +407,11 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .worlds>.world:nth-child(10n+1),.worlds>.world:nth-child(10n+2),.worlds>.world:nth-child(10n+6),.worlds>.world:nth-child(10n+7){height:clamp(880px,66svh,1500px)}
 }
 .worlds>.world.worlds-end{background:#e3e4dd;--scale:.62}
-@media(min-width:1001px){.worlds>.world.worlds-end{grid-column:span 2;--scale:.42}}
+/* The closing panel fills whatever remains of its row, as works are added. */
+@media(min-width:1001px){
+.worlds>.world.worlds-end:nth-child(10n+9){grid-column:span 2;--scale:.42}
+.worlds>.world.worlds-end:nth-child(10n+1){grid-column:1 / -1;height:clamp(300px,38svh,640px);--scale:.26}
+}
 @media(min-width:701px) and (max-width:1000px){.worlds>.world.worlds-end:nth-child(odd){grid-column:1 / -1;--scale:.42}}
 
 /* Pointing at one world lets the others step back. */

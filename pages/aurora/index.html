@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050a14">
+<title>AURORA — A Storm You Can See</title>
+<meta name="description" content="Follow the northern lights back to the Sun, then set a storm and a place and see what your own sky would show. Built from published space-physics relationships. An illustration, not a forecast.">
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%aurora/">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AURORA — A Storm You Can See">
+<meta property="og:description" content="Follow the northern lights back to the Sun, then set a storm and a place and see what your own sky would show.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%aurora/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%aurora/social.jpg">
+<meta property="og:image:alt" content="A rendered green and red aurora curtain above a dark lake and a line of conifers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AURORA — A Storm You Can See">
+<meta name="twitter:description" content="Follow the northern lights back to the Sun, then set a storm and a place and see what your own sky would show.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%aurora/social.jpg">
+<link rel="icon" type="image/svg+xml" href="%BASE_URL%aurora/favicon.svg">
+<link rel="stylesheet" href="/experiences/shared/collection-return.css">
+<script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#wind">Skip to the first control</a>
+<picture class="poster" aria-hidden="true">
+  <source media="(max-aspect-ratio: 1/1)" srcset="%BASE_URL%aurora/poster-portrait.webp">
+  <img src="%BASE_URL%aurora/poster-wide.webp" alt="" fetchpriority="high">
+</picture>
+<canvas id="scene" role="img" aria-label="An aurora curtain above a dark lake. The view moves from the sky to space and back as you scroll."></canvas>
+
+<header class="bar">
+  <button class="mark" data-go="0" aria-label="AURORA, return to the opening">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M8 20V5M12 20V8M16 20V3M20 20V11"/></svg>
+    <span>AURORA</span>
+  </button>
+  <nav aria-label="Main navigation">
+    <button id="sources-open">Sources</button>
+    <a class="collection-return" href="%BASE_URL%#world-aurora" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+  </nav>
+</header>
+
+<main>
+  <section class="chapter hero is-visible" id="sky" aria-labelledby="hero-title">
+    <h1 id="hero-title">AURORA</h1>
+    <p class="hero-line">A storm you can see.</p>
+    <button class="cue" data-go="0.3">Scroll to follow it back to the Sun <svg viewBox="0 0 16 30" aria-hidden="true"><path d="M8 1v27M2 22l6 6 6-6"/></svg></button>
+  </section>
+
+  <section class="chapter panel right" id="wind" aria-labelledby="wind-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="wind-title">It starts as wind.</h2>
+    <p>The Sun sheds a thin stream of charged particles. Earth's magnetic field holds it off, tens of thousands of kilometres out. Turn the wind's own field south and the two join. Energy gets in.</p>
+    <div class="presets" role="group" aria-label="Solar wind presets">
+      <button data-preset="calm" aria-pressed="false">Calm</button>
+      <button data-preset="active" aria-pressed="true">Active</button>
+      <button data-preset="storm" aria-pressed="false">Storm</button>
+    </div>
+    <div class="sliders">
+      <label for="speed"><span>Speed</span><input id="speed" name="speed" type="range" min="280" max="900" step="10" value="520"><output for="speed" data-out="speed"></output></label>
+      <label for="density"><span>Density</span><input id="density" name="density" type="range" min="1" max="30" step="1" value="7"><output for="density" data-out="density"></output></label>
+      <label for="bz"><span>Field direction</span><input id="bz" name="bz" type="range" min="-20" max="10" step="1" value="-4"><output for="bz" data-out="bz"></output></label>
+    </div>
+    <dl class="readings">
+      <div><dt>Pressure</dt><dd data-read="pressure"></dd></div>
+      <div><dt>Boundary, sunward</dt><dd data-read="standoff"></dd></div>
+      <div><dt>The two fields</dt><dd data-read="door"></dd></div>
+    </dl>
+  </section>
+
+  <section class="chapter panel left" id="oval" aria-labelledby="oval-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="oval-title">It lands in a ring.</h2>
+    <p>Stored energy falls along field lines toward both poles and arrives in two ovals. They stay fixed toward the Sun while Earth turns beneath them. The dashed line is you.</p>
+    <div class="presets" role="group" aria-label="Storm presets">
+      <button data-preset="calm" aria-pressed="false">Calm</button>
+      <button data-preset="active" aria-pressed="true">Active</button>
+      <button data-preset="storm" aria-pressed="false">Storm</button>
+    </div>
+    <div class="sliders">
+      <label for="latitude-a"><span>Your magnetic latitude</span><input id="latitude-a" data-latitude type="range" min="30" max="80" step="1" value="54"><output for="latitude-a" data-out="latitude"></output></label>
+    </div>
+    <dl class="readings">
+      <div><dt>Activity, Kp scale</dt><dd data-read="kp"></dd></div>
+      <div><dt>Oval edge at midnight</dt><dd data-read="edge"></dd></div>
+    </dl>
+    <p class="answer" data-read="answer"></p>
+  </section>
+
+  <section class="chapter panel left" id="curtain" aria-labelledby="curtain-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="curtain-title">Colour is altitude.</h2>
+    <p>Each colour is one gas at one height. Oxygen near 100 km glows green within a second. Far higher, thin oxygen glows red, slowly. Ionised nitrogen adds violet at the edges of strong storms.</p>
+    <div class="presets lines" role="group" aria-label="Show one emission">
+      <button data-iso="all" aria-pressed="true">All light</button>
+      <button data-iso="green" aria-pressed="false"><i style="--line:#57ff8f"></i>Green, 557.7 nm</button>
+      <button data-iso="red" aria-pressed="false"><i style="--line:#ff4a57"></i>Red, 630.0 nm</button>
+      <button data-iso="violet" aria-pressed="false"><i style="--line:#8d6bff"></i>Violet, 427.8 nm</button>
+    </div>
+  </section>
+
+  <section class="chapter panel left" id="yours" aria-labelledby="yours-title" aria-hidden="true" inert data-lenis-prevent>
+    <h2 id="yours-title">Your sky.</h2>
+    <p class="answer" data-read="answer" aria-live="polite"></p>
+    <div class="presets" role="group" aria-label="Storm presets">
+      <button data-preset="calm" aria-pressed="false">Calm</button>
+      <button data-preset="active" aria-pressed="true">Active</button>
+      <button data-preset="storm" aria-pressed="false">Storm</button>
+    </div>
+    <div class="sliders">
+      <label for="latitude-b"><span>Your magnetic latitude</span><input id="latitude-b" data-latitude type="range" min="30" max="80" step="1" value="54"><output for="latitude-b" data-out="latitude"></output></label>
+    </div>
+    <div class="actions">
+      <button class="action" id="save">Save this sky</button>
+      <button class="link" id="sources-end">How this was made</button>
+    </div>
+    <p class="caveat">An illustration built from published relationships. Not a forecast, and not a photograph.</p>
+    <p class="status" id="save-status" role="status"></p>
+  </section>
+</main>
+
+<div class="ruler" aria-hidden="true"></div>
+<div class="labels" aria-hidden="true"></div>
+<div id="scroll-track" aria-hidden="true"></div>
+
+<nav class="chapters" aria-label="Chapters">
+  <button data-go="0" aria-label="I, the sky" aria-current="step">I</button>
+  <button data-go="0.3" aria-label="II, the wind">II</button>
+  <button data-go="0.545" aria-label="III, the oval">III</button>
+  <button data-go="0.735" aria-label="IV, the curtain">IV</button>
+  <button data-go="0.96" aria-label="V, your sky">V</button>
+</nav>
+<button class="still" id="still" aria-pressed="false">Hold still</button>
+
+<dialog id="sources" aria-labelledby="sources-title">
+  <div class="dialog-head"><h2 id="sources-title">How this was made</h2><button id="sources-close">Close</button></div>
+  <p>Nothing here is a photograph or live data. The curtain, the lake and the magnetosphere are computed in your browser. Earth's surface is the NASA Blue Marble.</p>
+  <h3>Published relationships used</h3>
+  <ul>
+    <li><a href="https://doi.org/10.1029/98JA01103" target="_blank" rel="noreferrer">Shue et al., 1998, J. Geophys. Res.</a> The boundary's distance and flare, from wind pressure and field direction. Coefficients as reproduced in <a href="https://angeo.copernicus.org/articles/43/835/2025/" target="_blank" rel="noreferrer">Annales Geophysicae, 2025</a>.</li>
+    <li><a href="https://doi.org/10.1029/2006JA012015" target="_blank" rel="noreferrer">Newell et al., 2007, J. Geophys. Res.</a> The rate that magnetic flux opens, from wind speed, field strength and direction.</li>
+    <li><a href="https://www.spaceweatherlive.com/en/help/the-kp-index" target="_blank" rel="noreferrer">SpaceWeatherLive, the Kp index.</a> Kp against the geomagnetic latitude of the oval's edge.</li>
+    <li><a href="https://www.spaceweather.gov/phenomena/aurora" target="_blank" rel="noreferrer">NOAA Space Weather Prediction Center, Aurora.</a> Where the light forms and how storms move it.</li>
+    <li><a href="https://angeo.copernicus.org/articles/41/1/2023/" target="_blank" rel="noreferrer">Whiter et al., 2023, Annales Geophysicae.</a> Measured heights of green 557.7 nm and blue 427.8 nm aurora.</li>
+    <li><a href="https://wp.lancs.ac.uk/aurorawatchuk/2017/05/10/the-vivid-lights-what-causes-the-colour-of-the-aurora/" target="_blank" rel="noreferrer">AuroraWatch UK, Lancaster University.</a> Green and red emission lines and their lifetimes.</li>
+  </ul>
+  <h3>Where this is illustration</h3>
+  <ul>
+    <li>Turning wind coupling into a Kp value is our own compression, not a forecast model.</li>
+    <li>The oval's width and day-side shape, the curtain's folds and rays, and the flow around Earth are drawn to explain, not measured.</li>
+    <li>Latitude here means geomagnetic latitude, which differs from the latitude on a map. Clouds, moonlight and city light are not modelled.</li>
+    <li>For a real night out, check a live service such as NOAA's aurora forecast.</li>
+  </ul>
+</dialog>
+
+<noscript><p class="noscript">This is a rendered still. Enable JavaScript to move through the film and set your own storm.</p></noscript>
+<script type="module" src="../../experiences/aurora/src/main.js"></script>
+</body>
+</html>

@@ -1058,6 +1058,38 @@
             "sha256": "e6c074d16f6c0fa68ceda3080703a720b5c61ea280c976211520e9eec533f906"
           }
         ]
+      },
+      {
+        "work": "aurora",
+        "source": "/collection/aurora.webp",
+        "sourceKind": "interface-cleaned capture of the running work",
+        "sourceBytes": 102622,
+        "sourceSHA256": "5429043b34ad2767d38b69fd594d8b42c4c8474af2151873ac2e23b5a980646c",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "url": "/collection/previews/aurora-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 29196,
+            "sha256": "b1039900d34aa586215825271cf9014318c0145a5eb7fba29409f92433908d72"
+          },
+          {
+            "url": "/collection/previews/aurora-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 49710,
+            "sha256": "b6dd2bde8a9f4624041a453037aab3b9dae15f2279cd632a83cef2957cb56f74"
+          },
+          {
+            "url": "/collection/previews/aurora-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 72382,
+            "sha256": "a0c3170fa15445f1438b6931cabe4ad872ad03cade15f23b796c9a238fac994e"
+          }
+        ]
       }
     ]
   }

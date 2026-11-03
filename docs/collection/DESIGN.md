@@ -150,3 +150,7 @@ Identical font binaries share an existing URL while keeping every authored famil
 ## VAREN entrance — 25 October 2026
 
 The thirty-eighth native entrance uses the supplied AI-generated chocolate-suit hero, Hanken Grotesk wordmark and Sentient display voice in the existing uniform gallery. It adds no work runtime to the Collection. Filters, saved looks and the independent catalogue stay inside `/varen/`.
+
+## AURORA entrance — 4 November 2026
+
+The thirty-ninth native entrance uses a capture of the work's own rendered curtain with its tall Roboto Flex voice. It adds no work runtime and no new font request to the Collection: Roboto Flex is already declared for GRID.

@@ -230,3 +230,7 @@ Five new entrance previews (640/960/1280 WebP, q90) are resized derivatives of i
 ## VAREN — Presence, precisely cut.
 
 Supplied contemporary tailoring catalogue, with AI-generated garment concepts, original image prompts/PNGs, Sentient (supplied ITF Free Font License) and Hanken Grotesk (SIL OFL). No overall application license is declared. All runtime media and font binaries are preserved byte-for-byte. Original ZIP: `VAREN-source.zip`, 51,265,033 bytes, 98 entries, SHA-256 `cf82a43eef3782b093736056c50995dca3857f9e097c095accb8f576e64a7ee4`. Root React 19.2.6, Lenis 1.3.26 and GSAP 3.15.0 are reused; @gsap/react is replaced by a scoped local cleanup adapter. Source records stay in `provenance/varen/upstream/`; deployed notice is `public/varen/NOTICE.md`.
+
+## AURORA — A Storm You Can See
+
+Original to this repository, not a supplied delivery. Source, text and rendered captures are the project author's. It reuses Roboto Flex (SIL OFL) from `public/grid/fonts/` and NASA Goddard's Blue Marble texture from `public/orbital/media/` by URL. GSAP and Lenis come from the root dependencies. Scientific sources and limits are recorded in `docs/aurora/RESEARCH.md`; the deployed notice is `public/aurora/NOTICE.md`.
