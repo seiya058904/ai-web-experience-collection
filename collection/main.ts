@@ -31,8 +31,64 @@ document.addEventListener('keydown', (event) => {
   if (scrollKeys.has(event.key)) settle();
 }, { signal: controller.signal });
 
-for (const [index, world] of [...worlds].entries()) {
-  world.dataset.index = String(index + 1).padStart(2, '0');
+// Strips start from a light candidate. Pointing at one asks for the size it opens to.
+const hoverable = matchMedia('(hover: hover)');
+document.querySelector('.spectrum')?.addEventListener('pointerover', (event) => {
+  const image = event.target instanceof Element ? event.target.closest('.slit')?.querySelector('img') : null;
+  if (image && hoverable.matches) image.sizes = '60svh';
+}, { signal: controller.signal });
+
+// The catalogue previews each work from its gallery image; without this it stays a plain list.
+const catalogue = document.querySelector<HTMLDetailsElement>('.collection-index');
+const catalogueNav = catalogue?.querySelector('nav');
+if (catalogue && catalogueNav) {
+  const wide = matchMedia('(hover: hover) and (min-width: 1001px)');
+  const pane = document.createElement('div');
+  pane.className = 'index-preview';
+  pane.setAttribute('aria-hidden', 'true');
+  const layers = [new Image(), new Image()];
+  for (const layer of layers) {
+    layer.alt = '';
+    layer.decoding = 'async';
+    pane.append(layer);
+  }
+  let front = 0;
+  let current: HTMLAnchorElement | null = null;
+  const preview = (link: HTMLAnchorElement | null) => {
+    if (!link || link === current) return;
+    current?.classList.remove('is-current');
+    current = link;
+    link.classList.add('is-current');
+    const source = document.querySelector<HTMLImageElement>(`${link.hash} .world-image img`);
+    if (!source) return;
+    const next = layers[1 - front];
+    next.sizes = '34vw';
+    next.srcset = source.srcset;
+    next.src = source.src;
+    next.style.objectPosition = getComputedStyle(source).objectPosition;
+    const shown = () => {
+      if (current !== link) return;
+      next.classList.add('is-on');
+      layers[front].classList.remove('is-on');
+      front = 1 - front;
+    };
+    next.decode().then(shown, shown);
+  };
+  const syncPreview = () => {
+    const active = catalogue.open && wide.matches;
+    catalogueNav.classList.toggle('has-preview', active);
+    if (active && !pane.isConnected) catalogueNav.append(pane);
+    if (!active) pane.remove();
+    if (active && !current) preview(catalogueNav.querySelector('a'));
+  };
+  const linkFrom = (event: Event) => event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a') : null;
+  catalogue.addEventListener('toggle', syncPreview, { signal: controller.signal });
+  wide.addEventListener('change', syncPreview, { signal: controller.signal });
+  catalogueNav.addEventListener('pointerover', (event) => preview(linkFrom(event)), { signal: controller.signal });
+  catalogueNav.addEventListener('focusin', (event) => preview(linkFrom(event)), { signal: controller.signal });
+}
+
+for (const world of worlds) {
   world.addEventListener('pointermove', (event) => {
     if (!media.matches) return;
     const rect = world.getBoundingClientRect();

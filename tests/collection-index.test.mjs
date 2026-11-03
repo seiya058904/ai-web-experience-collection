@@ -21,4 +21,12 @@ test('the native Collection Index reaches all 38 stable gallery anchors without 
   assert.match(index, /href="#world-backstage"[\s\S]*?剧场与幻觉/);
   assert.match(index, /href="#world-varen"[\s\S]*?剪裁与风格/);
   assert.match(index, /href="#world-murmuration"[\s\S]*?群飞与邻域/);
+
+  // The spectrum mirrors the gallery in order, as a pointer shortcut outside the tab sequence.
+  const spectrum = html.match(/<div class="spectrum" aria-hidden="true">[\s\S]*?<\/div>/)?.[0];
+  assert.ok(spectrum, 'The spectrum must stay hidden from assistive technology');
+  const strips = [...spectrum.matchAll(/<a class="slit"[^>]*href="%BASE_URL%([a-z0-9-]+)\/" tabindex="-1">/g)].map(match => `world-${match[1]}`);
+  assert.deepEqual(strips, gallery, 'Every work needs one strip, in gallery order, with tabindex -1');
+  assert.equal((spectrum.match(/ alt=""/g) ?? []).length, gallery.length, 'Strip images are decorative');
+  assert.equal((spectrum.match(/ loading="lazy"/g) ?? []).length, gallery.length, 'Hidden strips must not download');
 });

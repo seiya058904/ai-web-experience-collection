@@ -1,6 +1,6 @@
 ---
 name: AI Web Experience Collection
-description: A responsive three-column gallery opening thirty-eight independent worlds, followed by About & credits.
+description: A measure-wide headline and image spectrum above a responsive gallery of independent worlds, followed by About & credits.
 colors:
   ground: "#eeefeb"
   ink: "#20231f"
@@ -12,10 +12,10 @@ colors:
 typography:
   display:
     fontFamily: "Barlow, sans-serif"
-    fontSize: "clamp(40px, 4.5vw, 150px)"
-    fontWeight: 400
+    fontSize: "min(calc((100vw - 2 * gutter) / 7.25), 31svh)"
+    fontWeight: 300
     lineHeight: 1
-    letterSpacing: "-0.04em"
+    letterSpacing: "-0.045em"
 spacing:
   gutter: "clamp(22px, 3.3vw, 128px)"
 rounded:
@@ -26,11 +26,11 @@ rounded:
 
 ## Overview
 
-Experience mode. Thirty-eight complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
+Experience mode. The complete works are the content. A cool, pale gallery frame creates room for each work's own visual world. No ordinary detached project cards, badge stacks, ornamental new scene or loading gate.
 
 ## Colors
 
-Gallery tokens are above. The images and each work's established typography carry the thirty-eight distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
+Gallery tokens are above. The images and each work's established typography carry the distinct identities. Dark or light overlays protect each work's entrance text; they do not recolor the works themselves.
 
 ## Typography
 
@@ -38,11 +38,17 @@ Barlow for the quiet gallery voice; Barlow Condensed for the racing and space ti
 
 ## Layout — current contract
 
-The header and invitation sit above one uniform gallery: three equal columns above 1000px, two columns at 701–1000px, and one column at 700px and below. Thirty-eight native work links and a final About & credits link share this grid. Desktop seams are 3px; phone seams are 10px. Panel height follows the existing viewport clamps (56svh desktop, 52svh intermediate and large-screen, 76svh phone). In the two-column layout, the height clamp is a minimum: a row grows with its tallest content and both panels stretch together, keeping large display words and readable footers inside the frame. Other layouts retain their existing height bounds. No route or artwork is reordered.
+The first viewport is one composition. A Barlow Light headline is set to the gallery measure, so "Choose your world." runs from gutter to gutter (`--ratio` converts the measure into a font size; phones break it onto two lines). Directly below sits the spectrum: one narrow strip per work, showing that work's own gallery image.
 
-Every work keeps its own image, palette and typeface. The shared `--t` and `--s` scales size display text from each panel's content width; COUNTERFORM uses a smaller title coefficient to keep its full name readable without changing Fraunces or the one-line lockup. Reading summaries have a 12px minimum and panel footer actions a 13px minimum. Decorative labels and ghost indices retain their quieter scale.
+The spectrum is a pointer shortcut, not a second navigation system. It is `aria-hidden`, each strip link has `tabindex="-1"`, and the Index and gallery remain the keyboard and assistive routes to the same documents. Pointing opens a strip like an aperture: the image keeps its scale while the window widens, the two neighbours open slightly and the others step back. Strips start from the smallest preview candidate and `main.ts` requests a larger one for a strip the pointer has reached. Below 1001px every second strip is hidden; on phones every third strip remains as a non-interactive image band, and hidden strips load nothing because they are lazy.
 
-The ghost index remains a low-opacity background device, generated from `data-index`. The current grid supersedes the mixed full-width spreads and their height/alignment cadence described below; those older descriptions are historical, not rules for new entrances.
+The gallery follows the lede and the Index: three columns above 1000px, two columns at 701–1000px, and one column at 700px and below. Native work links and a final About & credits link share this grid. Desktop seams are 3px; phone seams are 10px. No route or artwork is reordered.
+
+Above 1000px the gallery repeats a cycle of ten panels over four rows: feature + single, three singles, single + feature, three singles. `nth-child(10n+1)` and `nth-child(10n+7)` span two columns, and the rows that hold them are taller (70svh instead of 56svh; 66svh instead of 52svh at 2200px and above). New works extend the cycle in order, so a new work never needs its own layout rule. Images in those rows carry adjusted `sizes` values. Between 701 and 1000px the grid stays even, and a row grows with its tallest content so large display words and footers stay inside the frame.
+
+Every work keeps its own image, palette and typeface. The shared `--t` and `--s` scales size display text from each panel's content width, and `--scale` re-voices the same coefficient on wider panels. COUNTERFORM uses a smaller title coefficient to keep its full name readable without changing Fraunces or the one-line lockup. Reading summaries have a 12px minimum and panel footer actions a 13px minimum.
+
+The ghost index numeral has been removed: it repeated each panel's visible number and read as a cropping flaw. The current grid supersedes the mixed full-width spreads described below; those older descriptions are historical, not rules for new entrances.
 
 ### Superseded layout record
 
@@ -56,7 +62,9 @@ INTERVAL’s display title scales from its panel’s content width, so the full 
 
 ## Elevation & Depth
 
-Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the ghost numeral wakes to twelve percent. Panels are fully visible before JavaScript. The stylesheet loads independently of the enhancement module; no observer or opacity gate delays End, fast scrolling, module failure or history restoration. Reduced motion removes image, title and arrow movement, including when the preference changes while hovered. Focus outlines and the instant numeral-opacity response remain available.
+Photographs supply depth. Optional pointer movement shifts the existing image by a few pixels; it neither runs a perpetual clock nor loads any work's rendering engine. On hover the image breathes to 1.06, the title lifts a few pixels and the other panels step back behind a light veil. Panels are fully visible before JavaScript. The stylesheet loads independently of the enhancement module; no observer or opacity gate delays End, fast scrolling, module failure or history restoration. Reduced motion removes image, title, arrow and strip movement, including when the preference changes while hovered. Focus outlines remain available.
+
+Two motions run without a pointer, both in CSS only. The spectrum opens once on load from the centre of each strip; it blocks no input and ends on complete content. Where `animation-timeline: view()` is supported, each gallery image develops from a slight scale as its panel enters, reversibly and tied to scroll position. Browsers without that feature and reduced-motion visitors see the final image immediately.
 
 ## Motion
 
@@ -68,7 +76,7 @@ Square media, thin gallery rules, a simple three-stroke collection mark and dire
 
 ## Components
 
-The entrance is functional without JavaScript. Focus remains visible. Work headers expose a shared arrow-and-Collection return link with a minimum 44 by 44 CSS-pixel target, reduced to a labeled arrow on narrow screens; each header's existing colors remain authoritative. Menus and work controls are unchanged.
+The entrance is functional without JavaScript. Focus remains visible. The Index is a numbered native `details` catalogue; on wide hover-capable screens `main.ts` adds a sticky preview built from the matching gallery image, and without it the catalogue stays a plain three-column list. About & credits uses the same Light headline and a two-column reading layout. Work headers expose a shared arrow-and-Collection return link with a minimum 44 by 44 CSS-pixel target, reduced to a labeled arrow on narrow screens; each header's existing colors remain authoritative. Menus and work controls are unchanged.
 
 ## Do's and Don'ts
 
@@ -76,16 +84,16 @@ Preserve the independent work styles. Reuse their actual assets, not recreated t
 
 ## Direction contract
 
-THESIS: a single thirty-eight-world visual entrance, with the works themselves as the first viewport's substance.
+THESIS: a single visual entrance, with the works themselves as the first viewport's substance.
 OWN-WORLD: pale gallery, sharp photographic edges, racing condensed type, botanical serif and the planetary horizon.
-STORY: recognize thirty-eight distinct experiences, choose one, explore, return.
-FIRST VIEWPORT: quiet header and invitation above the first gallery row; each panel carries Explore at its lower corner. Phone composition scrolls naturally rather than forcing a complete panel above the fold.
-FORM: one responsive three/two/one-column gallery using media from the actual works; existing production assets are the reference.
+STORY: recognize the distinct experiences, choose one, explore, return.
+FIRST VIEWPORT: quiet header, the measure-wide headline and the spectrum, with the Index and the top of the first gallery row following. Each panel carries Explore at its lower corner. Phone composition scrolls naturally rather than forcing a complete panel above the fold.
+FORM: one responsive gallery with a repeating feature cadence on wide screens, using media from the actual works; existing production assets are the reference.
 FINISH: desktop/mobile full-frame review, verified native entry/return links, documented tokens and retained source provenance. Review stays in this chat as required by repository instructions; no additional agents.
 
 ## Historical integration notes
 
-The records below preserve how the collection grew. References to paired rows, full-width spreads and earlier work counts describe prior revisions; the current 32-work gallery contract above takes precedence. Asset identities and provenance distinctions remain applicable.
+The records below preserve how the collection grew. References to paired rows, full-width spreads and earlier work counts describe prior revisions; the current gallery contract above takes precedence. Asset identities and provenance distinctions remain applicable.
 
 GLAZE adds its supplied Archivo voice, celadon jar and pale green ground. KAGE adds its supplied condensed voice and a real FRAME rendering on white. The homepage imports neither work runtime; previews are static local media. The original three-panel composition and native-link behavior remain intact.
 
