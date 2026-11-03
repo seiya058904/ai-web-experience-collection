@@ -85,6 +85,10 @@ After UI/motion changes, inspect complete frames at 390×844, 768×1024, 1440×9
 
 The production entrance is `https://seiya058904.github.io/ai-web-experience-collection/`. Pages workflow builds with its returned base path, tests output references, then deploys only `dist/` on `main`. Canonical/social URLs use the Pages origin and `%BASE_URL%`; preserve each subsite's independent name. Before authorized release, run the README project-path build/preview and verify direct loads, refresh, home/work/back navigation, fonts/images/GLB, WebGL/Canvas and both production license files. After deployment, compare live asset bytes with the verified build and repeat core desktop/mobile flows. Close with exact commit, Git parity and clean state.
 
+## Delivery workflow
+
+The owner's preferred path for an iteration: agree a plan, then work on a branch, push, open a PR, self-review, merge to `main` once checks pass, confirm the Pages deployment, and sync local `main` to ahead/behind `0/0` with a clean working tree. Delete merged task branches and send task-generated junk to the Recycle Bin. This describes how to deliver, not whether: pushes, merges and deployments still need the task's authorization.
+
 ## Browser tool selection
 
 - Prefer Ego Browser for exploratory navigation, visual review and interactive checks when available. Use Playwright for repeatable regression, CI, isolation, request interception or other automation requiring its APIs; combine tools when useful. If Ego is unavailable, use a suitable existing browser tool.
