@@ -41,7 +41,7 @@ All must pass. If one fails, diagnose before rerunning; check Node version and `
 Check, do not modify without the user's approval:
 
 - **Global instructions** `~/.claude/CLAUDE.md` loaded (Simplified Chinese replies, deletion/push boundaries). If absent, tell the user; this repo's `AGENTS.md` still applies.
-- **`~/.claude/settings.json`**: on the previous machine it set an HTTP proxy `127.0.0.1:7890` and a status line using an absolute `C:/Users/admin/...` path. If network calls fail or the status line errors, report these as likely causes.
+- **`~/.claude/settings.json`**: it may set a local HTTP proxy and a status line with a machine-specific absolute path. If network calls fail or the status line errors, report these as likely causes.
 - **Skills / browsers**: `ego-browser` and `playwright` skills plus their executables are required for the browser verification in `AGENTS.md`. If unavailable, say so and fall back to another available browser tool; do not claim browser checks that were not run.
 - **Credentials**: Claude Code and GitHub logins are per-machine. Ask the user to sign in (e.g. `! gh auth login`); never copy or print credential files.
 
