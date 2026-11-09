@@ -7,6 +7,7 @@ import { branches, mainTrajectory, comparisonTrajectories, sampleReplay } from '
 import type { ReturnChoice, SpinPreset } from './physics.ts';
 import { createState, chooseReturn, setComparison, seekReplay, advanceReplay, persistedState } from './state.ts';
 import { RallyAudio } from './audio.ts';
+import { softText } from '../../shared/soft-swap.ts';
 
 const $ = <T extends Element = HTMLElement>(selector: string): T => {
   const element = document.querySelector<T>(selector); if (!element) throw new Error(`Missing interface element: ${selector}`); return element;
@@ -23,6 +24,8 @@ const audio = new RallyAudio();
 const mediaMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let reduced = state.motion === 'reduced' || mediaMotion.matches;
 let lenis: Lenis | null = null;
+/** Preparation caption state; a dead band around the half-way point keeps it steady. */
+let preparing = true;
 let frame = 0, lastFrame = 0, previousScroll = -1, dirty = true, currentChapter = 1;
 let heroVisited = false, heroDeparted = false, previousEvent = -1, lastSave = 0;
 let contactState: 'before'|'contact'|'after' = 'before', bounceState: 'before'|'contact'|'after' = 'before';
@@ -102,9 +105,9 @@ function updateReplayUI() {
   playButton.innerHTML=reduced?`Next moment ${arrow}`:state.playing?'Pause rally <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zm7 0h3v14h-3z" fill="currentColor"/></svg>':'Play rally <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z" fill="currentColor"/></svg>';
   playButton.setAttribute('aria-pressed',String(state.playing));
   if (previousEvent!==at.eventIndex || dirty) {
-    $('#event-actor').textContent=at.event.id==='a-bounce'?'The clay on A’s side':`${at.event.actor}’s ${at.event.id==='b-stop'?'receive':'racket'}`;
-    $('#event-title').textContent=at.event.label;
-    $('#event-description').textContent=at.event.description;
+    softText($('#event-actor'),at.event.id==='a-bounce'?'The clay on A’s side':`${at.event.actor}’s ${at.event.id==='b-stop'?'receive':'racket'}`,{instant:reduced});
+    softText($('#event-title'),at.event.label,{instant:reduced});
+    softText($('#event-description'),at.event.description,{instant:reduced});
     all<HTMLButtonElement>('[data-event]').forEach((b,i)=>{if(i===at.eventIndex)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
     previousEvent=at.eventIndex;
   }
@@ -151,7 +154,7 @@ function renderStory(scrollY:number) {
     if(b.top>scrollY+viewport*1.5 || b.top+b.height<scrollY-viewport*.5)return;
     const local=clamp((scrollY+viewport*.55-b.top)/(b.height*.65));
     chapters[i]!.dataset.progress=local.toFixed(3);
-    if(i===1){courts.prepare.render({...common,progress:reduced?1:local,showSpace});$('#preparation-state').innerHTML=!reduced&&local<.5?'A is preparing.<br>B remains across the net.':'A has found the contact position.<br>The next touch belongs to A.';}
+    if(i===1){courts.prepare.render({...common,progress:reduced?1:local,showSpace});preparing=!reduced&&local<(preparing?.54:.46);softText($('#preparation-state'),preparing?'A is preparing.<br>B remains across the net.':'A has found the contact position.<br>The next touch belongs to A.',{html:true,instant:reduced});}
     if(i===6)courts.space.render({...common,progress:reduced?1:local,showSpace:true});
     if(i===7)courts.choice.render({...common,progress:1,showSpace:true});
     if(i===8)courts.replay.render({...common,time:state.replayTime,showSpace:true});

@@ -1,6 +1,7 @@
 import Lenis from 'lenis';
 import { resolveStoryState } from './state.ts';
 import type { UserState } from './state.ts';
+import { softText } from '../../shared/soft-swap.ts';
 
 type Box = { element: HTMLElement; top: number; height: number; stickyHeight: number };
 const clamp = (v: number, min=0, max=1) => Math.min(max,Math.max(min,v));
@@ -46,7 +47,7 @@ export function setupScroll(initialState: UserState) {
    for(let i=0;i<chapters.length;i++) if(chapters[i].top <= y+height*.32) index=i;
    if(index!==active || dirty) {
      active=index;
-     if(counter) counter.textContent=`${String(index+1).padStart(2,'0')} / 10`;
+     softText(counter,`${String(index+1).padStart(2,'0')} / 10`,{instant:!effectiveMotion});
      nav.forEach((n,i)=>i===index?n.setAttribute('aria-current','location'):n.removeAttribute('aria-current'));
      root.dataset.currentChapter=String(index+1);
    }
@@ -106,7 +107,9 @@ export function setupScroll(initialState: UserState) {
          // The stable caption provides the animated sequence's accessible text.
          // In the static layout each complete figure and caption is readable.
          frame.setAttribute('aria-hidden',effectiveMotion?'true':'false');
-         if(i>0 && raw>=.5) visible=i;
+         // A dead band around the half-way point keeps one caption while the reader rests there.
+         const shown=Number(box.element.dataset.visibleAction);
+         if(i>0 && raw>=(Number.isFinite(shown) && i<=shown?.42:.58)) visible=i;
          if(i>0 && raw>0 && raw<1){
            edgeReveal=ease(raw);
            edgeOpacity=Math.sin(Math.PI*raw)*.96;
@@ -124,7 +127,7 @@ export function setupScroll(initialState: UserState) {
        box.element.style.setProperty('--edge-opacity',effectiveMotion?String(edgeOpacity):'0');
        const caption=box.element.querySelector<HTMLElement>('[data-transition-caption]');
        const text=effectiveMotion?frames[visible]?.dataset.frameCaption:box.element.dataset.label;
-       if(caption && text && caption.textContent!==text) caption.textContent=text;
+       if(text) softText(caption,text,{instant:!effectiveMotion});
      }
      if(kind==='cards'){
        const paper=box.element.querySelector<HTMLElement>('.transition-paper-frame');
@@ -161,11 +164,16 @@ export function setupScroll(initialState: UserState) {
          paper.setAttribute('aria-hidden',String(!readable));
          paper.toggleAttribute('inert',!readable);
          for(const text of paper.querySelectorAll<HTMLElement>('[data-binding-readable]')){
-           text.tabIndex=readable && text.scrollHeight>text.clientHeight+1?0:-1;
+           // Only a card that really overflows may keep the wheel; otherwise a
+           // resting pointer over its words would stop the page from scrolling.
+           const scrollable=text.scrollHeight>text.clientHeight+1;
+           text.tabIndex=readable && scrollable?0:-1;
+           text.toggleAttribute('data-lenis-prevent',scrollable);
+           text.style.overscrollBehavior=scrollable?'':'auto';
          }
          const caption=paper.querySelector<HTMLElement>('[data-binding-caption]');
          const message=join<.08?'The clip still belongs to the handout.':join<.88?'She lifts it off the pages.':'Two cards, held by the same clip.';
-         if(caption && caption.textContent!==message)caption.textContent=message;
+         softText(caption,message,{instant:!effectiveMotion});
        }
      }
      if(box.element.dataset.transition==='3'){

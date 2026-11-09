@@ -7,6 +7,7 @@ import type { PipScene, SceneFrame } from './scene';
 import { fallbackArt } from './fallbacks';
 import { evaluateStory } from './story';
 import { mountDiagrams } from './diagrams';
+import { softText } from '../../shared/soft-swap.ts';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const clamp = (n: number, min = 0, max = 1) => Math.min(max, Math.max(min, n));
@@ -200,10 +201,9 @@ function sampleStory(y: number) {
   document.body.dataset.chapter = String(currentChapter + 1);
   document.body.dataset.story = story.toFixed(4);
   document.body.dataset.plan = state.repairPlan;
-  $('chapter-count').textContent = String(currentChapter + 1).padStart(2, '0');
-  $('chapter-name').textContent = chapterNames[currentChapter];
+  softText($('chapter-count'), String(currentChapter + 1).padStart(2, '0'), { instant: reduced });
+  softText($('chapter-name'), chapterNames[currentChapter], { instant: reduced });
   $('story-progress').style.width = (story / 9 * 100) + '%';
-  $('scene-label').textContent = chapterCaptions[currentChapter];
   const showBefore = currentChapter < 5 || (currentChapter === 6 && state.trialMode === 'before') || (currentChapter === 7 && state.compareState === 'before');
   $('scene-description').textContent = chapterCaptions[currentChapter] + ' ' + (showBefore ? 'Pip still has the original tilted right rear wheel.' : state.repairPlan === 'A' ? 'The original wheel is retained with a new sleeve. No wheel was removed.' : 'A new wheel is fitted. The original is kept in its return bag.');
   document.querySelectorAll<HTMLAnchorElement>('.chapter-rail a').forEach((link, i) => {
@@ -254,8 +254,8 @@ function render(time: number) {
     const medium = useStills ? (currentChapter === 0 ? 'photo' : 'still') : 'live';
     if (stage.dataset.medium !== medium) stage.dataset.medium = medium;
     document.body.dataset.medium = medium;
+    softText($('scene-label'), useStills && currentChapter === 7 ? 'Repaired details. Compare the axle below.' : chapterCaptions[currentChapter], { instant: reduced });
     if (useStills && currentChapter === 7) {
-      $('scene-label').textContent = 'Repaired details. Compare the axle below.';
       $('scene-description').textContent += ' The photograph holds the repaired details; the drawing compares the selected state in one fixed pose.';
     }
     if (useStills) {
@@ -273,8 +273,11 @@ function render(time: number) {
       };
       scene?.render(frame);
     }
-    hotspotLayer.hidden = currentChapter !== 1 || useStills || mobile || Math.abs(story - 1) > .22;
-    if (!hotspotLayer.hidden && scene) {
+    // The numbered points fade with the chapter instead of appearing in one frame.
+    const hotspotsOff = currentChapter !== 1 || useStills || mobile || Math.abs(story - 1) > .22;
+    hotspotLayer.classList.toggle('is-off', hotspotsOff);
+    hotspotLayer.inert = hotspotsOff;
+    if (!hotspotsOff && scene) {
       document.querySelectorAll<HTMLElement>('.hotspot').forEach(button => {
         const point = scene!.projectPoint(button.dataset.focus as InspectionFocus);
         button.style.left = point.x + 'px'; button.style.top = point.y + 'px';

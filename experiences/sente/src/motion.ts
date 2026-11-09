@@ -1,6 +1,7 @@
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import { TRANSITIONS } from './story.ts';
+import { softText, steppedIndex } from '../../shared/soft-swap.ts';
 
 const clamp = (n: number) => Math.min(1, Math.max(0, n));
 
@@ -93,10 +94,12 @@ export class StoryMotion {
       const p = boundaryProgress(rect.top, rect.height, height);
       element.style.setProperty('--p', String(p));
       element.dataset.progress = p.toFixed(4);
-      const step = Math.round(p * 4);
-      if (step !== this.previousSteps[i]) {
+      const previous = this.previousSteps[i];
+      const step = Math.min(4, Math.max(0, steppedIndex(p * 4, previous < 0 ? undefined : previous)));
+      if (step !== previous) {
         this.previousSteps[i] = step;
-        document.getElementById(`tr-${i + 1}-step`)!.textContent = TRANSITIONS[i].steps[step];
+        // The step words fade out and in; a dead band keeps a resting reader on one step.
+        softText(document.getElementById(`tr-${i + 1}-step`), TRANSITIONS[i].steps[step], { instant: previous < 0 || document.documentElement.dataset.motion === 'reduced' });
         element.querySelectorAll('.step-marks i').forEach((mark, j) => mark.classList.toggle('is-active', j === step));
       }
     }

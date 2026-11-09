@@ -4,6 +4,7 @@ import { createNarrativeEngine } from './engine';
 import { initObservationTools } from './widgets';
 import { initMediaRecovery } from './media';
 import { updateObservationState } from './state';
+import { layerOpacity, softText, steppedIndex } from '../../shared/soft-swap.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = pageMarkup();
 const engine = createNarrativeEngine();
@@ -35,17 +36,34 @@ listen(motion,'click',()=>engine.setMotion(motionModes[(motionModes.indexOf(engi
 listen(window,'imago:motion',updateMotionLabel);
 const boundaries = new Map(Array.from(document.querySelectorAll<HTMLElement>('.handoff')).map(el=>[el.dataset.boundary,el]));
 const currentNumber=document.querySelector('[data-current-number]')!;
+// One caption element per handoff shows the words of the current step; the
+// registered stills cross-fade above one another with scroll, so a body is
+// always opaque and no photograph is replaced in a single frame.
+const captionTexts=new Map(Array.from(boundaries.values()).map(el=>{
+  const spans=Array.from(el.querySelectorAll<HTMLElement>('[data-handoff-caption]'));
+  spans.forEach((span,i)=>{span.hidden=i>0;});
+  return [el,spans.map(span=>span.textContent??'')] as const;
+}));
 listen(window,'imago:progress',((event: WindowEventMap['imago:progress'])=> {
-  currentNumber.textContent=event.detail.chapterId.slice(-2);
+  const still=document.documentElement.dataset.motion==='reduced';
+  softText(currentNumber,event.detail.chapterId.slice(-2),{instant:still});
   for(const el of boundaries.values()) {
     const p=Number(el.style.getPropertyValue('--progress'));
     const stage=el.querySelector<HTMLElement>('.handoff__stage')!;
-    const next=String(Math.min(4,Math.max(0,Math.round(p*4))));
-    if(stage.dataset.step!==next) {
-      stage.dataset.step=next;
-      stage.querySelectorAll<HTMLElement>('[data-handoff-frame]').forEach(frame=>{frame.hidden=frame.dataset.handoffFrame!==next;});
-      stage.querySelectorAll<HTMLElement>('[data-handoff-caption]').forEach(caption=>{caption.hidden=caption.dataset.handoffCaption!==next;});
-    }
+    const position=Math.min(4,Math.max(0,p*4));
+    const step=Math.min(4,Math.max(0,steppedIndex(position,stage.dataset.step===undefined?undefined:Number(stage.dataset.step))));
+    const next=String(step);
+    stage.querySelectorAll<HTMLElement>('[data-handoff-frame]').forEach(frame=>{
+      const index=Number(frame.dataset.handoffFrame);
+      if(still){frame.hidden=index!==step;frame.style.opacity='';return;}
+      // Transparent rather than hidden, so lazy stills load before they are needed.
+      const opacity=layerOpacity(position,index);
+      frame.hidden=false;
+      frame.style.opacity=opacity>=1?'':opacity.toFixed(3);
+    });
+    if(stage.dataset.step!==next) stage.dataset.step=next;
+    const caption=el.querySelector<HTMLElement>('[data-handoff-caption="0"]');
+    softText(caption,captionTexts.get(el)?.[step]??'',{instant:still});
   }
 }) as EventListener);
 

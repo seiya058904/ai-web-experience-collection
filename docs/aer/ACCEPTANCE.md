@@ -17,6 +17,12 @@ Upstream `docs/KNOWN-GAPS.md`: the hero is a static photograph, most chapter han
 
 The lazy Three.js flight study was not inspected frame by frame here; scrolling through its chapters produced no console errors.
 
+## Smoothing, 9 November 2026 (owner request)
+
+The header chapter number and name fade out and in. Edited: `src/main.ts`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.
