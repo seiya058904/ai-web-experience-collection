@@ -164,6 +164,7 @@ function selectedReceipt(state:AppState,y=100):string{
   return `<g>${text(500,y,`Ball ${state.selectedBall+1} · endpoint ${p.k}`,17,'#244AB8')}${text(500,y+30,p.directions.join('   '),18,'#4F5C4F')}</g>`;
 }
 
+const writtenScene=new WeakMap<SVGSVGElement,string>();
 export function renderScene(svg:SVGSVGElement,canvas:HTMLCanvasElement,state:AppState,frame:NarrativeFrame,opts:SceneOptions):SceneResult{
   let inner='',label='',foot='',dots:Dot[]=[],canvasActive=false;
   const current=frame.chapter,t=frame.transition===null?0:frame.progress,s=smoothstep(t),personal=currentPersonal(state),hero=state.hero??heroDemo;
@@ -203,7 +204,8 @@ export function renderScene(svg:SVGSVGElement,canvas:HTMLCanvasElement,state:App
       default:inner=returnToBoard(personal,t,opts.mobile);break;
     }
   }
-  svg.innerHTML=defs+inner;
+  // Rebuild the scene only when its markup changes; a resting chapter costs nothing.
+  const markup=defs+inner;if(writtenScene.get(svg)!==markup){writtenScene.set(svg,markup);svg.innerHTML=markup;}
   svg.dataset.chapter=String(current+1);svg.dataset.transition=frame.transition===null?'none':transitionSnapshot(current,t).id;svg.dataset.progress=f(t).toString();
   return {label,foot,dots,canvasActive};
 }

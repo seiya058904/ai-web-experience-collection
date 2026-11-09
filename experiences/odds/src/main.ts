@@ -5,6 +5,7 @@ import { enumeratePaths, binomialCoefficients, expectedCounts, experimentSVG, pr
 import { restoreState, serializeState, reduceState, currentPersonal, teachingRounds, heroDemo, type AppAction, type LayerCount, type RightProbability, type SampleCount } from './state.ts';
 import { evaluateNarrative, type NarrativeFrame } from './narrative.ts';
 import { renderScene, type PlaybackView, type SceneResult } from './scene.ts';
+import { softText } from '../../shared/soft-swap.ts';
 
 const STORAGE_KEY='odds.playground.v1';
 const $=<T extends Element=HTMLElement>(selector:string):T=>{const el=document.querySelector<T>(selector);if(!el)throw new Error(`Missing interface element: ${selector}`);return el;};
@@ -218,13 +219,16 @@ document.addEventListener('click',event=>{
 window.addEventListener('popstate',()=>{if(location.hash)gotoHash(location.hash,true);else{lenis?.scrollTo(0,{immediate:true});window.scrollTo(0,0);dirty=true;}});
 window.addEventListener('pageshow',()=>{scheduleMeasure();dirty=true;});
 
+let visibleChapter=-1;
 function draw():void{
   if(anchors.length!==10)return;
   activeFrame=evaluateNarrative(window.scrollY,anchors,reduced);
   sceneResult=renderScene(svg,canvas,state,activeFrame,{mobile:mobileMedia.matches,endpoint,prefix,route:selectedRoute,playback,canvasAvailable,branchIndex});
-  $('#scene-label').textContent=sceneResult.label;$('#scene-foot').textContent=sceneResult.foot;art.classList.toggle('portrait-active',sceneResult.canvasActive);
-  const visible=activeFrame.progress>.5?activeFrame.next:activeFrame.chapter;
-  $('#chapter-count').textContent=`${String(visible+1).padStart(2,'0')} / 10`;$('#current-chapter-title').textContent=chapters[visible].short;
+  softText($('#scene-label'),sceneResult.label,{instant:reduced});softText($('#scene-foot'),sceneResult.foot,{instant:reduced});art.classList.toggle('portrait-active',sceneResult.canvasActive);
+  // A dead band around the half-way point keeps the header on one chapter while the reader rests there.
+  const crossing=activeFrame.next!==activeFrame.chapter&&visibleChapter===activeFrame.next?.42:.58;
+  const visible=activeFrame.progress>crossing?activeFrame.next:activeFrame.chapter;visibleChapter=visible;
+  softText($('#chapter-count'),`${String(visible+1).padStart(2,'0')} / 10`,{instant:reduced});softText($('#current-chapter-title'),chapters[visible].short,{instant:reduced});
   document.querySelectorAll<HTMLAnchorElement>('.chapter-dots a').forEach((a,i)=>{if(i===visible)a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});
   dirty=false;
 }
