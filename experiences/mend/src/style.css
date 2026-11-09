@@ -177,7 +177,7 @@ body[data-medium="live"] .still-reference-note{display:none}
 .chapter-body .end-credit{font-size:10px;color:#7c6c59;margin-top:42px}
 .scene-caption{position:fixed;z-index:3;left:59%;bottom:12.7vh;display:flex;gap:13px;align-items:center;font-size:11px;letter-spacing:.025em;pointer-events:none;color:#635441}
 .caption-line{display:block;width:25px;height:1px;background:#9e8c77}
-.hotspots{position:fixed;inset:0;pointer-events:none;z-index:5}
+.hotspots{position:fixed;inset:0;pointer-events:none;z-index:5;transition:opacity .6s cubic-bezier(.22,1,.36,1),visibility .6s}.hotspots.is-off{opacity:0;visibility:hidden}
 .hotspot{position:absolute;width:44px;height:44px;border-radius:50%;transform:translate(-50%,-50%);padding:0;display:flex;align-items:center;justify-content:center;pointer-events:auto}
 .hotspot span{display:flex;align-items:center;justify-content:center;background:#f4ebdd;width:27px;height:27px;border-radius:50%;border:1px solid #97634c;box-shadow:0 3px 10px rgba(61,42,28,.16);font-size:11px}
 .hotspot[aria-pressed="true"] span{background:#a6533e;color:#fff7ea}

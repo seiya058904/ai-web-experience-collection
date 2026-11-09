@@ -1,4 +1,5 @@
 import './diagrams.css';
+import { softText } from '../../shared/soft-swap.ts';
 
 export interface DiagramFrame {
   faultSmooth: boolean;
@@ -188,7 +189,7 @@ export function mountDiagrams(): { update(frame: DiagramFrame): void } {
         faultWheel?.setAttribute('transform', `rotate(${frame.faultSmooth ? 0 : 28} 190 88)`);
         visible(faultContact, !frame.faultSmooth);
         visible(faultGap, frame.faultSmooth);
-        if (faultCaption) faultCaption.textContent = frame.faultSmooth ? 'Aligned, with room to turn.' : 'The wheel edge leans into the body.';
+        softText(faultCaption, frame.faultSmooth ? 'Aligned, with room to turn.' : 'The wheel edge leans into the body.', { instant: frame.reducedMotion });
         faultSvg?.setAttribute('aria-label', frame.faultSmooth
           ? 'Axle view: the upright rear wheel has a visible gap beside the body.'
           : 'Axle view: the tilted right rear wheel touches the body.');
@@ -206,8 +207,8 @@ export function mountDiagrams(): { update(frame: DiagramFrame): void } {
         fittingSleeve?.setAttribute('transform', `translate(${(112 + 112 * assembly).toFixed(3)} 88)`);
         visible(fittingSleeve, keep);
         visible(fittingBag, !keep);
-        if (fittingLabel) fittingLabel.textContent = keep ? 'New sleeve. Original wheel.' : 'New wheel. Original safely kept.';
-        if (fittingCaption) fittingCaption.textContent = assembly >= .999 ? 'In place.' : 'Moving along the axle.';
+        softText(fittingLabel, keep ? 'New sleeve. Original wheel.' : 'New wheel. Original safely kept.', { instant: frame.reducedMotion });
+        softText(fittingCaption, assembly >= .999 ? 'In place.' : 'Moving along the axle.', { instant: frame.reducedMotion });
         fittingSvg?.setAttribute('aria-label', keep
           ? `The original rear wheel stays mounted. A pale new sleeve is ${assembly >= .999 ? 'seated around' : 'approaching'} the axle. No wheel is removed.`
           : `A new rear wheel is ${assembly >= .999 ? 'seated on' : 'approaching'} the axle. The original wheel is visible in its return bag.`);
@@ -230,7 +231,7 @@ export function mountDiagrams(): { update(frame: DiagramFrame): void } {
         visible(trialRub, before && progress >= .219);
         const noseX = x - 51;
         trialCord?.setAttribute('d', `M${noseX.toFixed(3)} 67C${(noseX - 13).toFixed(3)} 87 ${(noseX - 56).toFixed(3)} 96 35 96`);
-        if (trialLabel) trialLabel.textContent = before ? 'Before: the same short path' : frame.repairPlan === 'A' ? 'The original wheel, turning again' : 'A new rear wheel, the same path';
+        softText(trialLabel, before ? 'Before: the same short path' : frame.repairPlan === 'A' ? 'The original wheel, turning again' : 'A new rear wheel, the same path', { instant: frame.reducedMotion });
         const position = progress === 0 ? 'at the start' : before && progress >= .219 ? 'stopped at the catch' : progress >= .999 ? 'at the end' : 'partway along the path';
         trialSvg?.setAttribute('aria-label', `Side projection of Pip with four wheels, ${position}. ${before ? 'The original right rear wheel is tilted.' : frame.repairPlan === 'A' ? 'The original wheel has a new sleeve.' : 'The right rear wheel is new.'} The ground and path markers stay fixed.`);
       }
@@ -243,9 +244,9 @@ export function mountDiagrams(): { update(frame: DiagramFrame): void } {
         comparisonRearFace?.setAttribute('class', !comparisonBefore && frame.repairPlan === 'B' ? 'diagram-new-wheel' : 'diagram-old-wheel');
         visible(comparisonSleeve, !comparisonBefore && frame.repairPlan === 'A');
         visible(comparisonRub, comparisonBefore);
-        if (comparisonLabel) comparisonLabel.textContent = comparisonBefore
+        softText(comparisonLabel, comparisonBefore
           ? 'Before: the original rear wheel'
-          : frame.repairPlan === 'A' ? 'After: the old wheel, with a new sleeve' : 'After: a new rear wheel';
+          : frame.repairPlan === 'A' ? 'After: the old wheel, with a new sleeve' : 'After: a new rear wheel', { instant: frame.reducedMotion });
         comparisonSvg?.setAttribute('aria-label', `Pip in exactly the same side pose. ${comparisonBefore ? 'Before repair: the original right rear wheel is tilted.' : frame.repairPlan === 'A' ? 'After repair: the original wheel is aligned and has a pale new sleeve.' : 'After repair: a pale new right rear wheel is aligned.'} The chipped ear, worn paint, and orange sun on the visible underside remain in their fixed positions.`);
       }
     },
