@@ -130,6 +130,14 @@ function setBall(svg: SVGSVGElement, position: Vec3, view: CourtView, rotation =
 }
 
 /** DOM controls live outside the scene; render is a pure evaluation of explicit state. */
+/** Rewrite SVG only when its markup changes, so unchanged labels are not rebuilt every frame. */
+const written = new WeakMap<Element, string>();
+function setMarkup(element: Element, markup: string): void {
+  if (written.get(element) === markup) return;
+  written.set(element, markup);
+  element.innerHTML = markup;
+}
+
 export class CourtScene {
   readonly svg: SVGSVGElement;
   private readonly mode: CourtMode;
@@ -209,8 +217,8 @@ export class CourtScene {
     const show = options.showSpace ?? (this.mode === 'space');
     if (show) {
       const p = project(branch.openSpace, view);
-      this.spaces.innerHTML = `<ellipse cx="${f(p.x)}" cy="${f(p.y)}" rx="37" ry="53" fill="#f4f0e4" fill-opacity=".055" stroke="#f4f0e4" stroke-opacity=".6" stroke-width="1.1" stroke-dasharray="4 6"/><text x="${f(p.x)}" y="${f(p.y + 4)}" text-anchor="middle" fill="#f4f0e4" font-size="17">Open space</text>`;
-    } else this.spaces.replaceChildren();
+      setMarkup(this.spaces, `<ellipse cx="${f(p.x)}" cy="${f(p.y)}" rx="37" ry="53" fill="#f4f0e4" fill-opacity=".055" stroke="#f4f0e4" stroke-opacity=".6" stroke-width="1.1" stroke-dasharray="4 6"/><text x="${f(p.x)}" y="${f(p.y + 4)}" text-anchor="middle" fill="#f4f0e4" font-size="17">Open space</text>`);
+    } else setMarkup(this.spaces, '');
     const title = this.mode === 'choice' ? `B’s two possible returns; ${branch.label.toLowerCase()} selected` : this.mode === 'replay' ? `${branch.label} replay: ${sampleReplay(choice, now).event.label}` : this.mode === 'final' ? (progress < 1 ? 'B gently returns the ball to A' : `Your ${branch.label.toLowerCase()} rally; the ball is back with A`) : this.mode === 'space' ? 'B moves towards the ball; A recovers' : 'A prepares to strike; B waits at the other end';
     this.svg.querySelector('title')!.textContent = title;
     this.svg.querySelector('desc')!.textContent = `Viewed from ${view}’s end. A and B keep their original identities. The ball marker is enlarged for visibility; its center follows the exact model trajectory. ${this.mode === 'choice' || this.mode === 'replay' || this.mode === 'final' ? branch.spaceDescription : 'The yellow ball, its ground shadow and the clay contact mark use the same court coordinates.'}`;
@@ -290,18 +298,18 @@ export class FlightScene {
     this.svg.dataset.spin = spin; this.svg.dataset.progress = f(progress);
     const primary = this.mode === 'comparison' ? '#ddea54' : '#58714a';
     if (this.mode === 'comparison') {
-      this.paths.innerHTML = route(sidePath(comparisonTrajectories.none.samples), '#c6e2e7', spin === 'none' ? 3.3 : 2, '7 7', spin === 'none' ? 1 : .56)
+      setMarkup(this.paths, route(sidePath(comparisonTrajectories.none.samples), '#c6e2e7', spin === 'none' ? 3.3 : 2, '7 7', spin === 'none' ? 1 : .56)
         + route(sidePath(mainTrajectory.samples), primary, spin === 'topspin' ? 3.3 : 2, '', spin === 'topspin' ? 1 : .56)
         + `<text x="76" y="52" fill="#f4f0e4" font-size="21">Same start. Same launch. Different spin.</text>`
         + `<path d="M76 82h32" stroke="#ddea54" stroke-width="3"/><text x="120" y="89" fill="#f4f0e4" font-size="21">Topspin · inside</text>`
-        + `<path d="M376 82h32" stroke="#c6e2e7" stroke-width="3" stroke-dasharray="6 5"/><text x="420" y="89" fill="#f4f0e4" font-size="21">No spin · long</text>`;
+        + `<path d="M376 82h32" stroke="#c6e2e7" stroke-width="3" stroke-dasharray="6 5"/><text x="420" y="89" fill="#f4f0e4" font-size="21">No spin · long</text>`);
     } else {
-      this.paths.innerHTML = route(sidePath(mainTrajectory.samples), primary, 3)
-        + `<text x="76" y="52" fill="#243840" font-size="22">Back to this rally: A’s topspin ball</text>`;
+      setMarkup(this.paths, route(sidePath(mainTrajectory.samples), primary, 3)
+        + `<text x="76" y="52" fill="#243840" font-size="22">Back to this rally: A’s topspin ball</text>`);
       const crossing = mainTrajectory.netCrossing!, c = side(crossing);
       const n = side({ x: crossing.x, y: 0, z: netHeightAt(crossing.x) });
       const labelX = c.x + 24, labelY = (c.y + n.y) / 2;
-      this.svg.querySelector('[data-clearance]')!.innerHTML = `<path d="M${f(c.x + 10)} ${f(c.y + COURT.ballRadius * 67)}V${f(n.y)}m-4 0h8M${f(c.x + 6)} ${f(c.y + COURT.ballRadius * 67)}h8" fill="none" stroke="#243840" stroke-opacity=".6" stroke-width="1.3"/><text x="${f(labelX)}" y="${f(labelY + 6)}" fill="#243840" font-size="20">Clearance</text>`;
+      setMarkup(this.svg.querySelector('[data-clearance]')!, `<path d="M${f(c.x + 10)} ${f(c.y + COURT.ballRadius * 67)}V${f(n.y)}m-4 0h8M${f(c.x + 6)} ${f(c.y + COURT.ballRadius * 67)}h8" fill="none" stroke="#243840" stroke-opacity=".6" stroke-width="1.3"/><text x="${f(labelX)}" y="${f(labelY + 6)}" fill="#243840" font-size="20">Clearance</text>`);
     }
   }
 }
