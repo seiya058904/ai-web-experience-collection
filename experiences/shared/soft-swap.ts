@@ -8,9 +8,11 @@
  * itself is reused, so layout, focus and accessible names stay where they are.
  */
 
-const OUT_MS = 300;
-const IN_MS = 560;
-const EASE = 'cubic-bezier(.22,1,.36,1)';
+const OUT_MS = 380;
+const IN_MS = 620;
+// Leaving words ease in and out evenly (no sudden first drop); arriving words settle.
+const EASE_OUT = 'cubic-bezier(.45,0,.55,1)';
+const EASE_IN = 'cubic-bezier(.22,1,.36,1)';
 
 interface SwapState { target: string; html: boolean; animation: Animation | null; phase: 'out' | 'in' | 'idle' }
 const states = new WeakMap<Element, SwapState>();
@@ -27,11 +29,11 @@ function current(element: Element, html: boolean): string {
   return html ? element.innerHTML : element.textContent ?? '';
 }
 
-function fade(element: Element, from: number, to: number, duration: number): Animation | null {
+function fade(element: Element, from: number, to: number, duration: number, easing: string): Animation | null {
   if (typeof (element as HTMLElement).animate !== 'function') return null;
   return (element as HTMLElement).animate(
     [{ filter: `opacity(${from})` }, { filter: `opacity(${to})` }],
-    { duration, easing: EASE, fill: 'both' },
+    { duration, easing, fill: 'both' },
   );
 }
 
@@ -67,14 +69,14 @@ export function softText(element: Element | null | undefined, value: string, opt
   // Fading in or resting: fade out from wherever the words are now.
   const start = state.phase === 'in' ? Number(getComputedStyle(element).filter.match(/opacity\(([\d.]+)\)/)?.[1] ?? 1) : 1;
   state.animation?.cancel();
-  const out = fade(element, start, 0, OUT_MS * start);
+  const out = fade(element, start, 0, OUT_MS * start, EASE_OUT);
   if (!out) { settle(element, state); return; }
   state.phase = 'out';
   state.animation = out;
   out.onfinish = () => {
     if (state!.animation !== out) return;
     write(element, state!.target, state!.html);
-    const into = fade(element, 0, 1, IN_MS);
+    const into = fade(element, 0, 1, IN_MS, EASE_IN);
     out.cancel();
     state!.phase = 'in';
     state!.animation = into;
