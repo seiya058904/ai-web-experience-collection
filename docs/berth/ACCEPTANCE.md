@@ -13,6 +13,10 @@
 
 Upstream records partial browser verification: full-resolution mobile art, the five-position transition matrix, continuous slow forward/reverse review and several accessibility and failure cases remain open (`provenance/berth/upstream/docs/verification.md`).
 
+## Notes
+
+Two chapter decks hide their `<br>` at phone width, which joined words (“day.Another”, “room,seen”). Fixed on 9 November 2026 by a space before each `<br>` in `render.ts`; the wording is unchanged.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

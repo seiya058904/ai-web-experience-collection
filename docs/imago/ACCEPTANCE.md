@@ -15,7 +15,7 @@ Upstream records 55/55 desktop and phone checkpoints and lists as unverified: ph
 
 ## Notes
 
-At 390×844 the hero line reads “begins<br>in” with the line break hidden, so the words run together (“beginsin”). This is in the supplied copy and was not changed. A reload starts at the top because the work sets manual scroll restoration.
+At phone width three supplied lines hide their `<br>`, which joined words (“beginsin”, “moments,aligned”, “flight.First”). Fixed on 9 November 2026 by a space before each `<br>` in `content.ts`; the wording is unchanged. A reload starts at the top because the work sets manual scroll restoration.
 
 ## Not tested
 

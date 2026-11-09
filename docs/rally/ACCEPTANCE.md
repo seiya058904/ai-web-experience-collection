@@ -13,6 +13,10 @@
 
 Upstream `docs/acceptance.md`: full entrance/hold/exit acceptance for every chapter is partial, the mobile chapter-2 clipping fix is not visually retested, and physical devices are unverified.
 
+## Notes
+
+One note hides its `<br>` at phone width, which joined two sentences (“moment.The”). Fixed on 9 November 2026 by a space before the `<br>` in `content.ts`; the wording is unchanged.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

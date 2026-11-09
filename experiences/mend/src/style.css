@@ -224,7 +224,7 @@ dialog>.fine-note,dialog>nav+p{font-size:12px;line-height:1.7;color:#766450;marg
   .stage{top:61px;height:42svh;bottom:auto;z-index:8}
   .stage-photo{width:100%;left:0;padding:0;object-fit:contain;object-position:center}
   .stage-fade{background:linear-gradient(0deg,var(--oat),rgba(244,235,221,0) 14%)}
-  body[data-chapter="1"] .stage{top:0;height:100svh;z-index:0}
+  body[data-chapter="1"] .stage{top:auto;bottom:0;height:max(230px,calc(100svh - 530px));z-index:0;-webkit-mask-image:linear-gradient(transparent,#000 12%);mask-image:linear-gradient(transparent,#000 12%)}
   body[data-chapter="1"] .stage-fade{background:linear-gradient(0deg,rgba(244,235,221,.25),transparent 20%)}
   .chapter{padding:calc(43svh + 94px) var(--gutter) 110px;min-height:120svh}
   .chapter-body{margin:0;width:100%;max-width:560px}

@@ -15,7 +15,7 @@ Upstream lists final desktop/mobile screenshots, complete real-input paths, othe
 
 ## Notes
 
-At 390×844 the live 3D toy overlaps the hero introduction text in this Chromium check. Upstream never verified the phone layout; the composition was not changed.
+At 390×844 the live 3D toy overlapped the hero introduction, which upstream never verified on phones. Fixed on 9 November 2026: up to 760 px the opening stage sits below the copy (`height: max(230px, 100svh − 530px)`, soft top edge), following the supplied portrait hero in which the toy fills the lower half. Checked at 390×844, 430×932, 760×900 and 360×640 (on the shortest screen the buttons still touch the stage's faded top edge); desktop and later chapters are unchanged.
 
 ## Not tested
 
