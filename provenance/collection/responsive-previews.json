@@ -1416,38 +1416,6 @@
             "sha256": "22b1b5f4dac7ae178754e3b859f48e7bd60f41cbc1dcf502971a5d80a9d33859"
           }
         ]
-      },
-      {
-        "work": "pas",
-        "source": "/pas/art/img-04.webp",
-        "sourceKind": "supplied AI-generated hero artwork",
-        "sourceBytes": 103720,
-        "sourceSHA256": "85904ead79b091a59e85994ee2308e88a5d716ea9e4a3b135db6ffc1138e510b",
-        "width": 1536,
-        "height": 1024,
-        "variants": [
-          {
-            "url": "/collection/previews/pas-640.webp",
-            "width": 640,
-            "height": 427,
-            "bytes": 19724,
-            "sha256": "692d08a64c1aa865af27de7a33bdf307f664450f23ee9dab159bef92006fe16d"
-          },
-          {
-            "url": "/collection/previews/pas-960.webp",
-            "width": 960,
-            "height": 640,
-            "bytes": 38148,
-            "sha256": "3e6f083d713c621baecb7a0570ed47a7c6416ec940a17953af0ddcfba0c5acfe"
-          },
-          {
-            "url": "/collection/previews/pas-1280.webp",
-            "width": 1280,
-            "height": 853,
-            "bytes": 54940,
-            "sha256": "647d55623394acdae41023c9bb9d515a1b844bdbdad8b87f88e8cded5e503a38"
-          }
-        ]
       }
     ]
   }

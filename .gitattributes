@@ -44,6 +44,3 @@ public/rally/** -text whitespace=-blank-at-eol,-blank-at-eof
 provenance/rally/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
 public/sente/** -text whitespace=-blank-at-eol,-blank-at-eof
 provenance/sente/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
-public/pas/** -text whitespace=-blank-at-eol,-blank-at-eof
-provenance/pas/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
-provenance/pas/upstream/scripts/model-source/LICENSE.md conflict-marker-size=32
