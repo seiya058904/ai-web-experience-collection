@@ -1,5 +1,5 @@
 import { imprintSVG } from './artwork.ts';
-import { softText, steppedIndex } from '../../shared/soft-swap';
+import { softText, steppedIndex } from '../../shared/soft-swap.ts';
 import { DEFAULT_SHARES, DEFAULT_TITLE, clamp01, lerp, smoothstep } from './state.ts';
 import type { ComponentIndex, DemoState, PersonalState, Phase, Shares } from './state.ts';
 

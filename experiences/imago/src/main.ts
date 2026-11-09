@@ -4,7 +4,7 @@ import { createNarrativeEngine } from './engine';
 import { initObservationTools } from './widgets';
 import { initMediaRecovery } from './media';
 import { updateObservationState } from './state';
-import { layerOpacity, softText, steppedIndex } from '../../shared/soft-swap';
+import { layerOpacity, softText, steppedIndex } from '../../shared/soft-swap.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = pageMarkup();
 const engine = createNarrativeEngine();
