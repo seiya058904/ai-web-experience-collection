@@ -20,7 +20,7 @@ async function loadBrowserClass(name, dependencies) {
 
 const sceneModule = await loadBrowserClass('scene', { FrameAssets, assetPath, resolveLocalAsset, getPose, normalizeFrame });
 const { Scene, shotAssetURL, cameraForWidth, fitImage } = sceneModule;
-const { Handoff } = await loadBrowserClass('transitions', {
+const { Handoff, switchWeights } = await loadBrowserClass('transitions', {
   FrameAssets, assetURL, getPose, pushPositions, cameraForWidth, fitImage, shotAssetURL,
 });
 
@@ -193,4 +193,21 @@ test('shot mapping composes raw paths before resolving embedded images', () => {
   assert.equal(shotAssetURL('hero',6,'even','portrait'),hero);
   assert.equal(shotAssetURL('preparation',6,'even','landscape'),still);
   assert.equal(shotAssetURL('contact',6,'even','portrait'),still);
+});
+
+test('frames that change inside a handoff cross-fade around each edge instead of cutting', () => {
+  const twelveSixteenEighteen = { frames: [12, 16, 18], edges: [.35, .65] };
+  assert.deepEqual(switchWeights(twelveSixteenEighteen, .1), [[12, 1], [16, 0], [18, 0]]);
+  assert.deepEqual(switchWeights(twelveSixteenEighteen, .5), [[12, 0], [16, 1], [18, 0]]);
+  assert.deepEqual(switchWeights(twelveSixteenEighteen, .9), [[12, 0], [16, 0], [18, 1]]);
+  const middle = switchWeights(twelveSixteenEighteen, .35);
+  assert.equal(middle[0][1], 1, 'the earlier frame stays opaque underneath');
+  assert.ok(Math.abs(middle[1][1] - .5) < 1e-9, 'the arriving frame is half way at the edge');
+  // Every step through the handoff changes a frame's opacity by a small amount.
+  let previous = switchWeights(twelveSixteenEighteen, 0);
+  for (let p = .005; p <= 1; p += .005) {
+    const next = switchWeights(twelveSixteenEighteen, p);
+    next.forEach(([, weight], i) => assert.ok(Math.abs(weight - previous[i][1]) < .06 || weight === 0 || previous[i][1] === 0));
+    previous = next;
+  }
 });
