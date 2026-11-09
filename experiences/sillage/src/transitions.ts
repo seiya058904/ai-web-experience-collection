@@ -1,4 +1,5 @@
 import { imprintSVG } from './artwork.ts';
+import { softText, steppedIndex } from '../../shared/soft-swap';
 import { DEFAULT_SHARES, DEFAULT_TITLE, clamp01, lerp, smoothstep } from './state.ts';
 import type { ComponentIndex, DemoState, PersonalState, Phase, Shares } from './state.ts';
 
@@ -280,6 +281,7 @@ interface MountedBridge {
   top: number;
   bottom: number;
   travel: number;
+  captionStep?: number;
   stickyTop: number;
   width: number;
   height: number;
@@ -412,7 +414,7 @@ export function mountTransitions(options: {
         part.rect.setAttribute('width', String(1400 * pose.parts[partIndex]));
       });
       const label = bridge.labels[slot];
-      if (label.textContent !== pose.label) label.textContent = pose.label;
+      softText(label, pose.label, { instant: reduced });
       label.style.position = 'absolute';
       label.style.whiteSpace = 'nowrap';
       label.style.left = `calc(50% + ${x.toFixed(2)}px)`;
@@ -428,7 +430,10 @@ export function mountTransitions(options: {
       memory.style.zIndex = '5';
       memory.style.visibility = reveal > 0 ? 'visible' : 'hidden';
     });
-    if (bridge.caption.textContent !== frame.caption) bridge.caption.textContent = frame.caption;
+    // A dead band keeps a resting reader on one caption; captions fade out and in.
+    const step = Math.min(4, Math.max(0, steppedIndex(frame.progress * 4 - .5 + 1e-8, bridge.captionStep)));
+    bridge.captionStep = step;
+    softText(bridge.caption, TRANSITION_COPY[bridge.index][step], { instant: reduced });
   }
 
   function update(): void {
