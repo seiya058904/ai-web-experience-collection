@@ -1,0 +1,14 @@
+{
+  "role": "H-D",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Asset H-D — final desktop photograph for RALLY. Refine the supplied H-A low-angle clay tennis court photograph, retain its quiet premium early morning sports-photography character and believable anonymous cream-clad player B beyond the net. Keep exactly one yellow felt tennis ball. Improve the final composition: the net tape sits at 27 percent frame height with clean consistent dark mesh; B is visible near x82 percent with body and racket anatomically credible; the near player A is a narrow navy-clad partial body at the extreme right edge. Enlarge the foreground ball to about 30 percent of full frame width centered x73 percent/y62 percent, with fine directional felt and elegant continuous cream seam. Keep its soft attached ground shadow below and slightly right. Left45 percent remains dark naturally shaded clay, fully quiet for code-native English title and text. Ball stays in front of net; single proper singles sideline comes from lower right toward far baseline; no extra arbitrary lines. Vertical warm light on right, cooler shadows on left. Preserve sharp clay texture, warm terracotta #C96D4C, ivory #F4F0E4, blue morning atmosphere #C6E2E7, navy #243840 and restrained ball yellow #DDEA54. No text/logos, no extra ball, no luminous plastic, no spectators, no artificial bloom. Landscape16:9. Final production-quality image with photo realism and crisp material detail.",
+  "parameters": {
+    "transparent_background": false,
+    "referenced_image_paths": [
+      "art-assets/H-A.png"
+    ]
+  },
+  "seed": "Not supplied by tool",
+  "file": "art-assets/H-D.png",
+  "use": "Production desktop still. Baked single ball; no simultaneous moving duplicate."
+}

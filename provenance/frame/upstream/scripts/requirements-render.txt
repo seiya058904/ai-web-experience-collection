@@ -1,0 +1,2 @@
+# Optional offline art-production dependency only; not needed to run the site.
+Pillow==13.0.0

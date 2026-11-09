@@ -158,3 +158,7 @@ The thirty-ninth native entrance uses a capture of the work's own rendered curta
 ## CREASE entrance — 4 November 2026
 
 The fortieth native entrance uses a capture of the work's own folded sheet with its Space Grotesk voice. With forty works the closing panel falls on a new row and becomes a full-width band. The only new request is Space Grotesk, reused from DOSE's existing binary, and no work runtime is added.
+
+## Ten supplied works — 9 November 2026
+
+IMAGO, SILLAGE, AER, BERTH, MEND, FRAME, ODDS, RALLY, SENTE and PAS add the forty-first to fiftieth native entrances, in that order, after CREASE. The cadence places IMAGO and ODDS on feature panels; the closing About & credits panel again falls on a new row as a full-width band. Eight entrances use each work's own supplied hero artwork; FRAME and ODDS use interface-cleaned captures of their running opening (header and hero copy hidden) because their supplied heroes are code-rendered or centred under the title area. RALLY, SENTE and PAS share a "space between" theme, so their gallery lines and Index subjects name different things: a clay court and a choice, a Go board and a decision, a duet and its distance. Every typeface reuses an existing Collection URL except MEND's Newsreader, the one new request. No work runtime is imported by the homepage.

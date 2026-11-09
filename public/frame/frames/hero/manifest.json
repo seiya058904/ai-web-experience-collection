@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "camera": "hero",
+  "purpose": "Compact desktop Hero preview, complete even take",
+  "frames": 24,
+  "width": 1000,
+  "height": 900,
+  "approachTravelScale": 0.35,
+  "overshootTravelScale": 1,
+  "sourcePoseSha256": "68c06d61b8e35335296af3e85c37bc3f77f2f068fcdf5facdaea0854b266f557",
+  "assets": {
+    "even-01.webp": {
+      "bytes": 20286,
+      "sha256": "dffa3a8c6aecb43480e83670179fc010fb5b7132ac421cab3431f708721d82ee",
+      "width": 1000,
+      "height": 900
+    },
+    "even-02.webp": {
+      "bytes": 20262,
+      "sha256": "05865c0f3699dfc6194305637b49800ec5b36f1dc9bd3e43d1fab7f744127375",
+      "width": 1000,
+      "height": 900
+    },
+    "even-03.webp": {
+      "bytes": 20272,
+      "sha256": "c870e954137671278683ee7f689416a6cf1dd5198373f20124ed1dac66f82ecd",
+      "width": 1000,
+      "height": 900
+    },
+    "even-04.webp": {
+      "bytes": 20026,
+      "sha256": "e1c208b254b10b56ec835c584870e91393def0a484bb05e022465030234426ee",
+      "width": 1000,
+      "height": 900
+    },
+    "even-05.webp": {
+      "bytes": 20124,
+      "sha256": "e0d6873c0815db7e43557363ab249b9b330f6550905e913167b13ff79a08e2f9",
+      "width": 1000,
+      "height": 900
+    },
+    "even-06.webp": {
+      "bytes": 20398,
+      "sha256": "8d69d6102e5ecb57f6a05cae43c7dbc57edc17bc204871d285fbc1c5b70d396f",
+      "width": 1000,
+      "height": 900
+    },
+    "even-07.webp": {
+      "bytes": 20334,
+      "sha256": "3089b79f68ee2b30b516b9b346ed8a7cd3c5071e2fe81d92edebc40d24bbb26a",
+      "width": 1000,
+      "height": 900
+    },
+    "even-08.webp": {
+      "bytes": 19950,
+      "sha256": "42452c2bf2cb31b2711daefe5f59e1f1bfa086ab6eff78c56ffef739d2ddfa53",
+      "width": 1000,
+      "height": 900
+    },
+    "even-09.webp": {
+      "bytes": 20114,
+      "sha256": "96aaa9aa6930a364531064b421d2c059c6e2edc14b9fed0ec396c79f2a0e9700",
+      "width": 1000,
+      "height": 900
+    },
+    "even-10.webp": {
+      "bytes": 19490,
+      "sha256": "f54b59b3f7781825a7291f343ab6d19f83ebdd9114f0a02e6407a28e5ec5ef6d",
+      "width": 1000,
+      "height": 900
+    },
+    "even-11.webp": {
+      "bytes": 20042,
+      "sha256": "f716b413ad45e8afa405af0ca54a3edb660a93e7215655f999b2638ef47d86a8",
+      "width": 1000,
+      "height": 900
+    },
+    "even-12.webp": {
+      "bytes": 19328,
+      "sha256": "a498b5772020278c3c340e8f5c6ae6b780bb9c96c08074c0be70ac85119a53b9",
+      "width": 1000,
+      "height": 900
+    },
+    "even-13.webp": {
+      "bytes": 19456,
+      "sha256": "e2556fecadf6cf8dea9838d391fbb1f82ed58c222489f5d630a2ed6e15edb314",
+      "width": 1000,
+      "height": 900
+    },
+    "even-14.webp": {
+      "bytes": 19510,
+      "sha256": "b46d661d14c7be0af6ad5990ec7f018806420c9994b27325913283e26e0843b0",
+      "width": 1000,
+      "height": 900
+    },
+    "even-15.webp": {
+      "bytes": 19430,
+      "sha256": "4973e1994fa7f8c8a0bfb37711f737832c0ca91f102a460c469bb32cb2fe1543",
+      "width": 1000,
+      "height": 900
+    },
+    "even-16.webp": {
+      "bytes": 19212,
+      "sha256": "36e30a85373677eee1b9586b93527047e35f62077544fa8492b380e6f1db49e9",
+      "width": 1000,
+      "height": 900
+    },
+    "even-17.webp": {
+      "bytes": 19732,
+      "sha256": "3c15798d2a4a831daae720c0f021633ef596d15760f15340cdca437f9b909657",
+      "width": 1000,
+      "height": 900
+    },
+    "even-18.webp": {
+      "bytes": 19452,
+      "sha256": "bcc59dc16b5c332758fad972893f5615145b42cf259799d8a49fa4ca2becda4f",
+      "width": 1000,
+      "height": 900
+    },
+    "even-19.webp": {
+      "bytes": 19370,
+      "sha256": "3962b6dd50cf4cc49f0e0f923721719a92a0a2371dfa093cf0550322a940ce69",
+      "width": 1000,
+      "height": 900
+    },
+    "even-20.webp": {
+      "bytes": 18924,
+      "sha256": "d81b5a7a0107fd620e76b12000526dd83d57de362bc8e49b337077e1275e3748",
+      "width": 1000,
+      "height": 900
+    },
+    "even-21.webp": {
+      "bytes": 19554,
+      "sha256": "609b33b257819af28ace1c27245375230a7b3cf51a27236e645666d8d12ddd90",
+      "width": 1000,
+      "height": 900
+    },
+    "even-22.webp": {
+      "bytes": 19672,
+      "sha256": "078abcc8a7ece8a9861a5f51273625051adebc81fb2774b8d62952dcf21a6d00",
+      "width": 1000,
+      "height": 900
+    },
+    "even-23.webp": {
+      "bytes": 19326,
+      "sha256": "27a3083e2fb8269a3bdf5d8a27ff4f1a246e3d2759ee063dfdd85d174d884ebb",
+      "width": 1000,
+      "height": 900
+    },
+    "even-24.webp": {
+      "bytes": 19290,
+      "sha256": "6bb3cfcab8fd4ba290484423b530beaa14d5c547c2d1f9f2ee526e4d94549276",
+      "width": 1000,
+      "height": 900
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "checked": "2026-11-09",
+  "source": "Actual installed node_modules package manifests and notice files; no binaries copied.",
+  "packages": [
+    {
+      "name": "@fontsource-variable/manrope",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "role": "browser runtime / shipped font",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fontsource/font-files.git",
+        "directory": "fonts/variable/manrope"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/fontsource-variable__manrope/LICENSE",
+          "bytes": 4383,
+          "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.156.0",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oxc-project/oxc.git",
+        "directory": "npm/oxc-types"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/oxc-project__types/LICENSE",
+          "bytes": 1119,
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.16",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "notices": [],
+      "note": "Installed platform-specific build adapter declares its license in package.json but provides no separate root notice file; its binary is not included in the source ZIP."
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.16",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "notices": [],
+      "note": "Installed platform-specific build adapter declares its license in package.json but provides no separate root notice file; its binary is not included in the source ZIP."
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/plugins.git",
+        "directory": "packages/pluginutils"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/rolldown__pluginutils/LICENSE",
+          "bytes": 1106,
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/lovell/detect-libc.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/detect-libc/LICENSE",
+          "bytes": 11357,
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thecodrr/fdir.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/fdir/LICENSE",
+          "bytes": 1053,
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "lenis",
+      "version": "1.3.27",
+      "license": "MIT",
+      "role": "browser runtime / shipped font",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/darkroomengineering/lenis.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/lenis/LICENSE",
+          "bytes": 1088,
+          "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/lightningcss/LICENSE",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/lightningcss-linux-x64-gnu/LICENSE",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/lightningcss-linux-x64-musl/LICENSE",
+          "bytes": 15648,
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": "ai/nanoid",
+      "notices": [
+        {
+          "path": "docs/third-party/nanoid/LICENSE",
+          "bytes": 1095,
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "role": "build-time tool or dependency",
+      "repository": "alexeyraspopov/picocolors",
+      "notices": [
+        {
+          "path": "docs/third-party/picocolors/LICENSE",
+          "bytes": 787,
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": "micromatch/picomatch",
+      "notices": [
+        {
+          "path": "docs/third-party/picomatch/LICENSE",
+          "bytes": 1091,
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.32",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": "postcss/postcss",
+      "notices": [
+        {
+          "path": "docs/third-party/postcss/LICENSE",
+          "bytes": 1095,
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.16",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/rolldown/LICENSE",
+          "bytes": 1302,
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        },
+        {
+          "path": "docs/third-party/rolldown/THIRD-PARTY-LICENSE",
+          "bytes": 2209,
+          "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "license": "BSD-3-Clause",
+      "role": "build-time tool or dependency",
+      "repository": "7rulnik/source-map-js",
+      "notices": [
+        {
+          "path": "docs/third-party/source-map-js/LICENSE",
+          "bytes": 1526,
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuperchupuDev/tinyglobby.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/tinyglobby/LICENSE",
+          "bytes": 1076,
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/typescript/LICENSE.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "docs/third-party/typescript/ThirdPartyNoticeText.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    },
+    {
+      "name": "vite",
+      "version": "8.3.6",
+      "license": "MIT",
+      "role": "build-time tool or dependency",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite.git",
+        "directory": "packages/vite"
+      },
+      "notices": [
+        {
+          "path": "docs/third-party/vite/LICENSE.md",
+          "bytes": 98196,
+          "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13"
+        }
+      ],
+      "note": "Copied verbatim from installed package."
+    }
+  ]
+}

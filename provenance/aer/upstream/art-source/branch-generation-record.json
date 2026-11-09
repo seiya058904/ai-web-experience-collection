@@ -1,0 +1,44 @@
+[
+  {
+    "role": "K-08-low",
+    "tool": "image_gen__imagegen (built-in)",
+    "prompt": "Create a new separate 3:2 cinematic photographic panorama for AER, a fictional quiet hot-air-balloon journey. Image 1 is the framing, basket material, light and palette reference; image 2 is balloon identity reference. Preserve softly lavender-blue morning sky, gray-sage field tones, distant gray-indigo ridge and gentle low sunlight from left. Foreground: same tangible honey-brown wicker basket rim along bottom 8-10 percent, just ONE taut suspension cable on extreme right and a SMALL apricot/cream lower-envelope corner at top-right. No other balloons or giant foreground objects. Stable perfectly level horizon. Clear upper-left sky reserved for real HTML prose, never any baked text. Restrained cinematic realism, fine analog grain, quietly beautiful atmosphere, coherent near/far scale. No UI, labels, letters, numbers, logos, watermarks, orange saturation, sun disk, dramatic mountains, fisheye, tilted horizon, multiple balloons, huge basket or people. This is the distinct LOW WIND branch panorama, approaching Hedgerow Meadow. Camera is lower than the reference but genuinely above ground, with readable close hedgerows, softly textured rolling sage fields, a narrow ivory farm path following nearby field edges. NO VILLAGE or buildings at center or left; replace the reference village entirely with a welcoming small irregular green meadow nestled between hedgerows. Make its visual identity TWO parallel short rows of graceful mature trees, leading the eye from lower left toward the meadow in the middle distance; paired rows should feel natural, not military symmetry. The destination meadow is prominent near center-right; retain a stable low distant ridge, not an overhead map. Warm morning light brushes the edges of the trees and casts subtle elongated shadows. This must be a clearly different landscape from Village Bend, with intimacy of near-field drift rather than a high sweeping vista.",
+    "reference_images": [
+      "art-source/K-08.png",
+      "generated_images/exec-9e8ce646-4560-4078-9cfa-41b8341790ed.png"
+    ],
+    "generated_source": "/workspace/scratch/3833561a8f3c/generated_images/exec-fd7b19f6-633d-4491-bfbc-cd6550062e8e.png",
+    "source_copy": "art-source/K-08-low.png",
+    "web_asset": "aer/public/art/k-08-low.webp",
+    "seed": null,
+    "seed_note": "The tool did not expose a seed or generation parameters.",
+    "selected": true,
+    "observations": "Distinct low-route scene: nearby paired rows of trees bracket Hedgerow Meadow, with a winding ivory path and no village; foreground basket, single side rope and envelope corner match K-08 framing.",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "web_bytes": 164210
+  },
+  {
+    "role": "K-08-high",
+    "tool": "image_gen__imagegen (built-in)",
+    "prompt": "Create a new separate 3:2 cinematic photographic panorama for AER, a fictional quiet hot-air-balloon journey. Image 1 is the framing, basket material, light and palette reference; image 2 is balloon identity reference. Preserve softly lavender-blue morning sky, gray-sage field tones, distant gray-indigo ridge and gentle low sunlight from left. Foreground: same tangible honey-brown wicker basket rim along bottom 8-10 percent, just ONE taut suspension cable on extreme right and a SMALL apricot/cream lower-envelope corner at top-right. No other balloons or giant foreground objects. Stable perfectly level horizon. Clear upper-left sky reserved for real HTML prose, never any baked text. Restrained cinematic realism, fine analog grain, quietly beautiful atmosphere, coherent near/far scale. No UI, labels, letters, numbers, logos, watermarks, orange saturation, sun disk, dramatic mountains, fisheye, tilted horizon, multiple balloons, huge basket or people. This is the distinct HIGH WIND branch panorama, looking toward Far Meadow. Camera is higher than the reference, revealing an expansive sequence of broad pale gray-sage grass fields stretching far into distance, separated by only gentle ridges and sparse subtle boundaries. NO NEAR VILLAGE, no center village, no close cluster of buildings, no paired tree rows. A solitary quiet OVAL GROVE of small trees sits along the far edge of a broad luminous pale meadow at middle-right distance, providing the destination's unmistakable landmark. One very fine ivory path crosses diagonally from the lower-left fields toward the far meadow. Distant blue-indigo ridge is very far and small; lots of clear pale morning air and horizon. The panorama should feel spacious and tranquil, not dramatic or dangerous; clearly different from both Village Bend and the close hedgerow route. Keep detailed basket rim limited to the bottom edge and tiny envelope corner to top-right, with fields and spacious sky doing the work.",
+    "reference_images": [
+      "art-source/K-08.png",
+      "generated_images/exec-9e8ce646-4560-4078-9cfa-41b8341790ed.png"
+    ],
+    "generated_source": "/workspace/scratch/3833561a8f3c/generated_images/exec-507be7d4-7125-4de1-8534-1c3464aad657.png",
+    "source_copy": "art-source/K-08-high.png",
+    "web_asset": "aer/public/art/k-08-high.webp",
+    "seed": null,
+    "seed_note": "The tool did not expose a seed or generation parameters.",
+    "selected": true,
+    "observations": "Distinct high-route scene: broad pale fields, very distant indigo ridge, fine ivory path and a quiet oval grove identify Far Meadow; no near village or paired rows. Foreground framing matches K-08.",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "web_bytes": 104876
+  }
+]

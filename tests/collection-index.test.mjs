@@ -7,7 +7,7 @@ test('a resting pointer stays inside the strip it opens, at every position', asy
   const open = Number(css.match(/\.slit:hover\{flex-grow:([\d.]+)\}/)?.[1]);
   const near = Number(css.match(/\.slit:has\(\+\.slit:hover\)\{flex-grow:([\d.]+)\}/)?.[1]);
   assert.ok(open > near && near > 1, 'The stylesheet must state both growth values');
-  // 40 strips on wide screens, every second one between 701 and 1000px, and room to add more works.
+  // 50 strips on wide screens, every second one between 701 and 1000px, and room to add more works.
   for (const count of [20, 21, 40, 41, 50, 60]) {
     for (let i = 0; i < count; i += 1) {
       const grow = Array.from({ length: count }, (_, j) => (j === i ? open : Math.abs(j - i) === 1 ? near : 1));
@@ -20,15 +20,15 @@ test('a resting pointer stays inside the strip it opens, at every position', asy
   }
 });
 
-test('the native Collection Index reaches all 40 stable gallery anchors without script', async () => {
+test('the native Collection Index reaches all 50 stable gallery anchors without script', async () => {
   const html = await readFile(new URL('../pages/index.html', import.meta.url), 'utf8');
   const index = html.match(/<details class="collection-index"[\s\S]*?<\/details>/)?.[0];
   assert.ok(index?.includes('<summary>Index '));
   assert.ok(index.includes('<nav aria-label="Work index">'));
   const destinations = [...index.matchAll(/href="#(world-[a-z0-9-]+)"/g)].map(match => match[1]);
   const gallery = [...html.matchAll(/<a id="(world-[a-z0-9-]+)" class="world /g)].map(match => match[1]);
-  assert.equal(destinations.length, 40);
-  assert.equal(new Set(destinations).size, 40);
+  assert.equal(destinations.length, 50);
+  assert.equal(new Set(destinations).size, 50);
   assert.deepEqual(destinations, gallery);
   assert.match(index, /href="#world-ferrum"[\s\S]*?钢铁/);
   assert.match(index, /href="#world-nib"[\s\S]*?墨水/);
@@ -43,6 +43,10 @@ test('the native Collection Index reaches all 40 stable gallery anchors without 
   assert.match(index, /href="#world-aurora"[\s\S]*?太阳风与极光/);
 
   assert.match(index, /href="#world-crease"[\s\S]*?折纸与几何/);
+
+  for (const [route, subject] of [['imago', '蜕变与生命'], ['sillage', '气味与印象'], ['aer', '热气球与浮力'], ['berth', '夜车与陪伴'], ['mend', '修补与珍惜'], ['frame', '定格与动画'], ['odds', '概率与随机'], ['rally', '网球与选择'], ['sente', '围棋与落子'], ['pas', '双人舞与距离']]) {
+    assert.match(index, new RegExp(`href="#world-${route}"[\\s\\S]*?${subject}`));
+  }
 
   // The spectrum mirrors the gallery in order, as a pointer shortcut outside the tab sequence.
   const spectrum = html.match(/<div class="spectrum" aria-hidden="true">[\s\S]*?<\/div>/)?.[0];

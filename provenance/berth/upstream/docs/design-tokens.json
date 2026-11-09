@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T02:35:34Z",
+  "title": "Design System: BERTH",
+  "extensions": {
+    "colorMeta": {
+      "page-bg": {
+        "role": "neutral",
+        "displayName": "Page night ground",
+        "tonalRamp": [
+          "oklch(15.000% 0.02753 234.072)",
+          "oklch(26.429% 0.02753 234.072)",
+          "oklch(37.857% 0.02753 234.072)",
+          "oklch(49.286% 0.02753 234.072)",
+          "oklch(60.714% 0.02753 234.072)",
+          "oklch(72.143% 0.02753 234.072)",
+          "oklch(83.571% 0.02753 234.072)",
+          "oklch(95.000% 0.02753 234.072)"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Midnight blue",
+        "tonalRamp": [
+          "oklch(15.000% 0.03368 232.526)",
+          "oklch(26.429% 0.03368 232.526)",
+          "oklch(37.857% 0.03368 232.526)",
+          "oklch(49.286% 0.03368 232.526)",
+          "oklch(60.714% 0.03368 232.526)",
+          "oklch(72.143% 0.03368 232.526)",
+          "oklch(83.571% 0.03368 232.526)",
+          "oklch(95.000% 0.03368 232.526)"
+        ]
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Deep night ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.02369 230.886)",
+          "oklch(26.429% 0.02369 230.886)",
+          "oklch(37.857% 0.02369 230.886)",
+          "oklch(49.286% 0.02369 230.886)",
+          "oklch(60.714% 0.02369 230.886)",
+          "oklch(72.143% 0.02369 230.886)",
+          "oklch(83.571% 0.02369 230.886)",
+          "oklch(95.000% 0.02369 230.886)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm paper",
+        "tonalRamp": [
+          "oklch(15.000% 0.03129 86.463)",
+          "oklch(26.429% 0.03129 86.463)",
+          "oklch(37.857% 0.03129 86.463)",
+          "oklch(49.286% 0.03129 86.463)",
+          "oklch(60.714% 0.03129 86.463)",
+          "oklch(72.143% 0.03129 86.463)",
+          "oklch(83.571% 0.03129 86.463)",
+          "oklch(95.000% 0.03129 86.463)"
+        ]
+      },
+      "honey": {
+        "role": "primary",
+        "displayName": "Honey light",
+        "tonalRamp": [
+          "oklch(15.000% 0.11152 73.465)",
+          "oklch(26.429% 0.11152 73.465)",
+          "oklch(37.857% 0.11152 73.465)",
+          "oklch(49.286% 0.11152 73.465)",
+          "oklch(60.714% 0.11152 73.465)",
+          "oklch(72.143% 0.11152 73.465)",
+          "oklch(83.571% 0.11152 73.465)",
+          "oklch(95.000% 0.11152 73.465)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage accent",
+        "tonalRamp": [
+          "oklch(15.000% 0.02304 151.939)",
+          "oklch(26.429% 0.02304 151.939)",
+          "oklch(37.857% 0.02304 151.939)",
+          "oklch(49.286% 0.02304 151.939)",
+          "oklch(60.714% 0.02304 151.939)",
+          "oklch(72.143% 0.02304 151.939)",
+          "oklch(83.571% 0.02304 151.939)",
+          "oklch(95.000% 0.02304 151.939)"
+        ]
+      },
+      "clip": {
+        "role": "tertiary",
+        "displayName": "Orange-red wire clip",
+        "tonalRamp": [
+          "oklch(15.000% 0.12955 41.199)",
+          "oklch(26.429% 0.12955 41.199)",
+          "oklch(37.857% 0.12955 41.199)",
+          "oklch(49.286% 0.12955 41.199)",
+          "oklch(60.714% 0.12955 41.199)",
+          "oklch(72.143% 0.12955 41.199)",
+          "oklch(83.571% 0.12955 41.199)",
+          "oklch(95.000% 0.12955 41.199)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted night text",
+        "tonalRamp": [
+          "oklch(15.000% 0.01240 145.458)",
+          "oklch(26.429% 0.01240 145.458)",
+          "oklch(37.857% 0.01240 145.458)",
+          "oklch(49.286% 0.01240 145.458)",
+          "oklch(60.714% 0.01240 145.458)",
+          "oklch(72.143% 0.01240 145.458)",
+          "oklch(83.571% 0.01240 145.458)",
+          "oklch(95.000% 0.01240 145.458)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine paper rule",
+        "tonalRamp": [
+          "oklch(15.000% 0.03129 86.463 / 0.21)",
+          "oklch(26.429% 0.03129 86.463 / 0.21)",
+          "oklch(37.857% 0.03129 86.463 / 0.21)",
+          "oklch(49.286% 0.03129 86.463 / 0.21)",
+          "oklch(60.714% 0.03129 86.463 / 0.21)",
+          "oklch(72.143% 0.03129 86.463 / 0.21)",
+          "oklch(83.571% 0.03129 86.463 / 0.21)",
+          "oklch(95.000% 0.03129 86.463 / 0.21)"
+        ]
+      },
+      "prose": {
+        "role": "neutral",
+        "displayName": "Night reading text",
+        "tonalRamp": [
+          "oklch(15.000% 0.01374 115.871)",
+          "oklch(26.429% 0.01374 115.871)",
+          "oklch(37.857% 0.01374 115.871)",
+          "oklch(49.286% 0.01374 115.871)",
+          "oklch(60.714% 0.01374 115.871)",
+          "oklch(72.143% 0.01374 115.871)",
+          "oklch(83.571% 0.01374 115.871)",
+          "oklch(95.000% 0.01374 115.871)"
+        ]
+      },
+      "menu-bg": {
+        "role": "neutral",
+        "displayName": "Chapter panel",
+        "tonalRamp": [
+          "oklch(15.000% 0.02975 229.503)",
+          "oklch(26.429% 0.02975 229.503)",
+          "oklch(37.857% 0.02975 229.503)",
+          "oklch(49.286% 0.02975 229.503)",
+          "oklch(60.714% 0.02975 229.503)",
+          "oklch(72.143% 0.02975 229.503)",
+          "oklch(83.571% 0.02975 229.503)",
+          "oklch(95.000% 0.02975 229.503)"
+        ]
+      },
+      "writing-paper": {
+        "role": "neutral",
+        "displayName": "Writing card paper",
+        "tonalRamp": [
+          "oklch(15.000% 0.02684 87.859)",
+          "oklch(26.429% 0.02684 87.859)",
+          "oklch(37.857% 0.02684 87.859)",
+          "oklch(49.286% 0.02684 87.859)",
+          "oklch(60.714% 0.02684 87.859)",
+          "oklch(72.143% 0.02684 87.859)",
+          "oklch(83.571% 0.02684 87.859)",
+          "oklch(95.000% 0.02684 87.859)"
+        ]
+      },
+      "writing-ink": {
+        "role": "neutral",
+        "displayName": "Writing card ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.02439 226.723)",
+          "oklch(26.429% 0.02439 226.723)",
+          "oklch(37.857% 0.02439 226.723)",
+          "oklch(49.286% 0.02439 226.723)",
+          "oklch(60.714% 0.02439 226.723)",
+          "oklch(72.143% 0.02439 226.723)",
+          "oklch(83.571% 0.02439 226.723)",
+          "oklch(95.000% 0.02439 226.723)"
+        ]
+      },
+      "field-ink": {
+        "role": "neutral",
+        "displayName": "First-line ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.02361 223.074)",
+          "oklch(26.429% 0.02361 223.074)",
+          "oklch(37.857% 0.02361 223.074)",
+          "oklch(49.286% 0.02361 223.074)",
+          "oklch(60.714% 0.02361 223.074)",
+          "oklch(72.143% 0.02361 223.074)",
+          "oklch(83.571% 0.02361 223.074)",
+          "oklch(95.000% 0.02361 223.074)"
+        ]
+      },
+      "button-bg": {
+        "role": "neutral",
+        "displayName": "Keep action fill",
+        "tonalRamp": [
+          "oklch(15.000% 0.03463 226.301)",
+          "oklch(26.429% 0.03463 226.301)",
+          "oklch(37.857% 0.03463 226.301)",
+          "oklch(49.286% 0.03463 226.301)",
+          "oklch(60.714% 0.03463 226.301)",
+          "oklch(72.143% 0.03463 226.301)",
+          "oklch(83.571% 0.03463 226.301)",
+          "oklch(95.000% 0.03463 226.301)"
+        ]
+      },
+      "button-ink": {
+        "role": "neutral",
+        "displayName": "Keep action text",
+        "tonalRamp": [
+          "oklch(15.000% 0.02825 86.647)",
+          "oklch(26.429% 0.02825 86.647)",
+          "oklch(37.857% 0.02825 86.647)",
+          "oklch(49.286% 0.02825 86.647)",
+          "oklch(60.714% 0.02825 86.647)",
+          "oklch(72.143% 0.02825 86.647)",
+          "oklch(83.571% 0.02825 86.647)",
+          "oklch(95.000% 0.02825 86.647)"
+        ]
+      },
+      "button-hover": {
+        "role": "neutral",
+        "displayName": "Keep action hover",
+        "tonalRamp": [
+          "oklch(15.000% 0.03742 222.338)",
+          "oklch(26.429% 0.03742 222.338)",
+          "oklch(37.857% 0.03742 222.338)",
+          "oklch(49.286% 0.03742 222.338)",
+          "oklch(60.714% 0.03742 222.338)",
+          "oklch(72.143% 0.03742 222.338)",
+          "oklch(83.571% 0.03742 222.338)",
+          "oklch(95.000% 0.03742 222.338)"
+        ]
+      },
+      "note-ink": {
+        "role": "neutral",
+        "displayName": "Keepsake ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.02353 217.781)",
+          "oklch(26.429% 0.02353 217.781)",
+          "oklch(37.857% 0.02353 217.781)",
+          "oklch(49.286% 0.02353 217.781)",
+          "oklch(60.714% 0.02353 217.781)",
+          "oklch(72.143% 0.02353 217.781)",
+          "oklch(83.571% 0.02353 217.781)",
+          "oklch(95.000% 0.02353 217.781)"
+        ]
+      },
+      "lin-note": {
+        "role": "neutral",
+        "displayName": "Ms. Lin’s pale note",
+        "tonalRamp": [
+          "oklch(15.000% 0.01672 121.797)",
+          "oklch(26.429% 0.01672 121.797)",
+          "oklch(37.857% 0.01672 121.797)",
+          "oklch(49.286% 0.01672 121.797)",
+          "oklch(60.714% 0.01672 121.797)",
+          "oklch(72.143% 0.01672 121.797)",
+          "oklch(83.571% 0.01672 121.797)",
+          "oklch(95.000% 0.01672 121.797)"
+        ]
+      },
+      "dawn-bg": {
+        "role": "neutral",
+        "displayName": "Cool daylight ground",
+        "tonalRamp": [
+          "oklch(15.000% 0.01223 116.822)",
+          "oklch(26.429% 0.01223 116.822)",
+          "oklch(37.857% 0.01223 116.822)",
+          "oklch(49.286% 0.01223 116.822)",
+          "oklch(60.714% 0.01223 116.822)",
+          "oklch(72.143% 0.01223 116.822)",
+          "oklch(83.571% 0.01223 116.822)",
+          "oklch(95.000% 0.01223 116.822)"
+        ]
+      },
+      "dawn-ink": {
+        "role": "neutral",
+        "displayName": "Daylight heading ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.02928 229.104)",
+          "oklch(26.429% 0.02928 229.104)",
+          "oklch(37.857% 0.02928 229.104)",
+          "oklch(49.286% 0.02928 229.104)",
+          "oklch(60.714% 0.02928 229.104)",
+          "oklch(72.143% 0.02928 229.104)",
+          "oklch(83.571% 0.02928 229.104)",
+          "oklch(95.000% 0.02928 229.104)"
+        ]
+      },
+      "dawn-muted": {
+        "role": "neutral",
+        "displayName": "Daylight secondary ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.02642 213.820)",
+          "oklch(26.429% 0.02642 213.820)",
+          "oklch(37.857% 0.02642 213.820)",
+          "oklch(49.286% 0.02642 213.820)",
+          "oklch(60.714% 0.02642 213.820)",
+          "oklch(72.143% 0.02642 213.820)",
+          "oklch(83.571% 0.02642 213.820)",
+          "oklch(95.000% 0.02642 213.820)"
+        ]
+      },
+      "dawn-prose": {
+        "role": "neutral",
+        "displayName": "Daylight reading ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.03070 224.986)",
+          "oklch(26.429% 0.03070 224.986)",
+          "oklch(37.857% 0.03070 224.986)",
+          "oklch(49.286% 0.03070 224.986)",
+          "oklch(60.714% 0.03070 224.986)",
+          "oklch(72.143% 0.03070 224.986)",
+          "oklch(83.571% 0.03070 224.986)",
+          "oklch(95.000% 0.03070 224.986)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "hero-display": {
+        "displayName": "Opening display",
+        "purpose": "The BERTH title over the doorway artwork; default desktop size."
+      },
+      "hero-subtitle": {
+        "displayName": "Opening subtitle",
+        "purpose": "The opening promise, with the second phrase italic."
+      },
+      "chapter-heading": {
+        "displayName": "Chapter heading",
+        "purpose": "Balanced serif headings, normally capped at 12ch."
+      },
+      "deck": {
+        "displayName": "Literary deck",
+        "purpose": "Short introductions and secondary literary statements."
+      },
+      "body": {
+        "displayName": "Narration",
+        "purpose": "Sustained prose, normally capped at 59ch with 1.85 line height."
+      },
+      "chapter-label": {
+        "displayName": "Chapter label",
+        "purpose": "Tracked uppercase chapter identifiers; 500 weight."
+      },
+      "time": {
+        "displayName": "Story time",
+        "purpose": "Tabular chapter metadata; monospaced system fallback."
+      },
+      "control": {
+        "displayName": "Writing action",
+        "purpose": "The Keep this line action on pale paper."
+      },
+      "utility-control": {
+        "displayName": "Header utility",
+        "purpose": "Sound and motion controls in the fixed header."
+      },
+      "writing-field": {
+        "displayName": "Editable first line",
+        "purpose": "Real, vertically resizable text on the writing card."
+      },
+      "note": {
+        "displayName": "Keepsake sentence",
+        "purpose": "Selectable live text on Ning’s and Ms. Lin’s cards."
+      }
+    },
+    "shadows": [
+      {
+        "name": "chapter-menu",
+        "value": "0 16px 60px #0007",
+        "purpose": "Expanded chapter navigation above the page."
+      },
+      {
+        "name": "handout",
+        "value": "0 10px 28px #0002",
+        "purpose": "Chapter-three handout paper detail."
+      },
+      {
+        "name": "writing-card",
+        "value": "0 14px 38px #0003",
+        "purpose": "The editable first-line paper."
+      },
+      {
+        "name": "keepsake-notes",
+        "value": "0 10px 26px #0002",
+        "purpose": "The two overlapping keepsake cards."
+      },
+      {
+        "name": "binding-cards",
+        "value": "0 7px 16px #34352518",
+        "purpose": "Shallow card separation on the daylight binding surface."
+      },
+      {
+        "name": "wire-clip",
+        "value": "drop-shadow(1px 2px 1px #0003)",
+        "purpose": "The small wire clip on the keepsake note."
+      }
+    ],
+    "motion": [
+      {
+        "name": "keep-fill",
+        "value": "background .2s",
+        "purpose": "Keep this line hover fill."
+      },
+      {
+        "name": "opening-arrow",
+        "value": "background .2s,color .2s",
+        "purpose": "Opening circle fill and arrow color."
+      },
+      {
+        "name": "header-surface",
+        "value": "background-color .25s,border-color .25s",
+        "purpose": "Header surface and lower rule when scrolled."
+      },
+      {
+        "name": "lamp-image",
+        "value": "filter .5s",
+        "purpose": "Local chapter-three image brightness change."
+      },
+      {
+        "name": "lamp-layers",
+        "value": "opacity .5s",
+        "purpose": "Local lamp glow, reflection and sleeve layers."
+      },
+      {
+        "name": "spatial-reveal",
+        "value": "inset(0 calc(100% - var(--reveal)) 0 0)",
+        "purpose": "Scroll-driven rectangular reveal; not a timed crossfade."
+      },
+      {
+        "name": "reduced-transition-duration",
+        "value": "0s",
+        "purpose": "All transition durations under prefers-reduced-motion: reduce."
+      },
+      {
+        "name": "paused-lamp-transition",
+        "value": "none",
+        "purpose": "Local lamp and handout transitions when motion is off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-phone-max",
+        "value": "370px"
+      },
+      {
+        "name": "phone-max",
+        "value": "720px"
+      },
+      {
+        "name": "stacking-tablet-max",
+        "value": "800px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1100px"
+      },
+      {
+        "name": "wide-desktop-min",
+        "value": "1900px"
+      },
+      {
+        "name": "ultrawide-min",
+        "value": "3000px"
+      },
+      {
+        "name": "short-landscape",
+        "value": "(max-height:600px) and (min-width:721px)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Keep this line",
+      "kind": "button",
+      "refersTo": "keep-button",
+      "description": "The primary writing action; visual reference only, without a save handler.",
+      "html": "<button type=\"button\" class=\"ds-keep\"><span>Keep this line</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-keep{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:52px;padding:17px 20px;background:#233b45;color:#f1e8d4;border:0;border-radius:2px;font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:13px;cursor:pointer;transition:background .2s}.ds-keep svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}.ds-keep:hover{background:#35515b}.ds-keep:focus-visible{outline:2px solid var(--honey,#dda75d);outline-offset:6px;border-radius:2px}.ds-keep:disabled{opacity:.45;cursor:default}@media(prefers-reduced-motion:reduce){.ds-keep{transition-duration:0s}}"
+    },
+    {
+      "name": "Header utility",
+      "kind": "button",
+      "refersTo": "utility-button",
+      "description": "The source sound-toggle appearance; the specimen does not play audio. The wrapper supplies the existing night ground for this isolated specimen.",
+      "html": "<div class=\"ds-night-surface\"><button type=\"button\" class=\"ds-utility\" aria-pressed=\"false\">Sound off</button></div>",
+      "css": ".ds-night-surface{background:#14242d;padding:24px}.ds-utility{border:0;padding:12px 0;background:none;color:var(--paper,#e9dfc9);font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:11px;letter-spacing:.02em;min-height:44px;white-space:nowrap;cursor:pointer}.ds-utility:hover{color:var(--honey,#dda75d)}.ds-utility:focus-visible{outline:2px solid var(--honey,#dda75d);outline-offset:6px;border-radius:2px}.ds-utility:disabled{opacity:.45;cursor:default}@media(max-width:720px){.ds-utility{font-size:10px}}"
+    },
+    {
+      "name": "Begin this night",
+      "kind": "button",
+      "refersTo": "begin-link",
+      "description": "A real anchor paired with the outlined opening arrow. The wrapper supplies the existing night ground for this isolated specimen.",
+      "html": "<div class=\"ds-night-surface\"><a class=\"ds-begin\" href=\"#begin-story\"><span class=\"ds-begin-circle\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v15M6 13l6 6 6-6\"/></svg></span><span>Begin this night</span></a></div>",
+      "css": ".ds-night-surface{background:#14242d;padding:24px}.ds-begin{display:inline-flex;align-items:center;gap:18px;color:var(--paper,#e9dfc9);font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:12px;letter-spacing:.04em;text-decoration:none}.ds-begin-circle{display:grid;place-items:center;width:48px;height:48px;border:1px solid #e9dfc977;border-radius:50%;transition:background .2s,color .2s}.ds-begin svg{width:18px;height:20px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}.ds-begin:hover .ds-begin-circle{background:var(--paper,#e9dfc9);color:var(--night,#182d38)}.ds-begin:focus-visible{outline:2px solid var(--honey,#dda75d);outline-offset:6px;border-radius:2px}@media(max-width:720px){.ds-begin{gap:11px;font-size:10px}.ds-begin-circle{width:34px;height:34px}.ds-begin svg{width:16px}}@media(prefers-reduced-motion:reduce){.ds-begin-circle{transition-duration:0s}}"
+    },
+    {
+      "name": "Local lamp choices",
+      "kind": "custom",
+      "refersTo": "lamp-segmented",
+      "description": "The real fieldset and pressed-state styling. This sample shows Soft selected and does not alter artwork. The wrapper supplies the existing night ground for this isolated specimen.",
+      "html": "<div class=\"ds-night-surface\"><fieldset class=\"ds-lamp\"><legend>Observe different lighting</legend><div class=\"ds-segmented\"><button type=\"button\" aria-pressed=\"false\">Reading</button><button type=\"button\" aria-pressed=\"true\">Soft</button><button type=\"button\" aria-pressed=\"false\">Off</button></div><p>The light on this table is yours to compare. Beyond it, the night keeps its own light.</p></fieldset></div>",
+      "css": ".ds-night-surface{background:#14242d;padding:24px}.ds-lamp{border:0;padding:0;margin:0;color:var(--paper,#e9dfc9);font-family:var(--sans,'DM Sans',Arial,sans-serif)}.ds-lamp legend{font-size:13px;padding:0;margin-bottom:18px}.ds-segmented{display:flex;border:1px solid #d6d9cd55;width:max-content;max-width:100%;padding:4px;gap:4px;border-radius:4px}.ds-segmented button{border:0;background:none;color:var(--paper,#e9dfc9);font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:12px;padding:11px 18px;min-height:42px;border-radius:2px;cursor:pointer}.ds-segmented button[aria-pressed=true]{background:var(--paper,#e9dfc9);color:var(--deep,#101e25)}.ds-segmented button:hover:not([aria-pressed=true]){background:#e9dfc912}.ds-segmented button:focus-visible{outline:2px solid var(--honey,#dda75d);outline-offset:6px;border-radius:2px}.ds-segmented button:disabled{opacity:.45;cursor:default}.ds-lamp p{font-size:12px;color:#bbc3bc;line-height:1.7;margin:17px 0 0;max-width:35ch}@media(max-width:720px){.ds-segmented{width:100%}.ds-segmented button{flex:1;padding:11px 20px}}"
+    },
+    {
+      "name": "First-line field",
+      "kind": "input",
+      "refersTo": "opening-field",
+      "description": "A labelled live textarea on the implemented writing-paper surface; no persistence or live count is attached in this specimen.",
+      "html": "<div class=\"ds-writing\"><label for=\"ds-opening-sample\">What could Shen Ning say?</label><textarea id=\"ds-opening-sample\" class=\"ds-opening\" rows=\"3\" maxlength=\"240\" spellcheck=\"true\" aria-describedby=\"ds-opening-help\">Good morning. I’m Shen Ning.</textarea><p id=\"ds-opening-help\" class=\"ds-opening-help\">A short beginning is enough.</p></div>",
+      "css": ".ds-writing{background:#e7dfcc;color:#26363d;padding:clamp(28px,3.7vw,56px);box-shadow:0 14px 38px #0003;border-radius:1px;font-family:var(--sans,'DM Sans',Arial,sans-serif)}.ds-writing label{display:block;font-size:12px;margin-bottom:14px}.ds-opening{display:block;resize:vertical;min-height:108px;max-height:340px;width:100%;background:transparent;border:0;border-bottom:1px solid #1e344344;border-radius:0;color:#24343a;font-family:var(--serif,'Cormorant Garamond',Georgia,serif);font-size:27px;line-height:1.4;padding:4px 0 13px;caret-color:#a24d32;overflow-wrap:anywhere}.ds-opening:focus-visible{outline:2px solid #885b30;outline-offset:4px;border-radius:2px}.ds-opening-help{font-size:10px;line-height:1.6;color:#4b5b60;margin:13px 0 0}@media(max-width:720px){.ds-writing{padding:34px 28px}.ds-opening{font-size:28px;min-height:120px}}"
+    },
+    {
+      "name": "Expanded chapter navigation",
+      "kind": "nav",
+      "refersTo": "chapter-menu-panel",
+      "description": "The expanded native-disclosure panel shown in document flow for a shadow-DOM specimen; application positioning remains documented in DESIGN.md.",
+      "html": "<nav class=\"ds-chapters\" aria-label=\"Chapters\"><p class=\"ds-menu-title\">This one night</p><a href=\"#ch-01\" aria-current=\"location\"><span class=\"ds-menu-number\">01</span><span>All aboard</span><time>20:48</time></a><a href=\"#ch-02\"><span class=\"ds-menu-number\">02</span><span>The light</span><time>21:05</time></a><a href=\"#ch-03\"><span class=\"ds-menu-number\">03</span><span>The small table</span><time>21:32</time></a><a href=\"#ch-04\"><span class=\"ds-menu-number\">04</span><span>Passing through</span><time>22:17</time></a><a href=\"#ch-05\"><span class=\"ds-menu-number\">05</span><span>Two firsts</span><time>23:06</time></a><a href=\"#ch-06\"><span class=\"ds-menu-number\">06</span><span>Lights down</span><time>00:14</time></a><a href=\"#ch-07\"><span class=\"ds-menu-number\">07</span><span>The first line</span><time>02:10</time></a><a href=\"#ch-08\"><span class=\"ds-menu-number\">08</span><span>First light</span><time>05:38</time></a><a href=\"#ch-09\"><span class=\"ds-menu-number\">09</span><span>Before we arrive</span><time>06:12</time></a><a href=\"#ch-10\"><span class=\"ds-menu-number\">10</span><span>A first line</span><time>06:37</time></a><p class=\"ds-menu-note\">Move at your own pace.</p></nav>",
+      "css": ".ds-chapters{width:340px;max-width:100%;padding:28px;background:#1a2d36;color:var(--paper,#e9dfc9);font-family:var(--sans,'DM Sans',Arial,sans-serif);box-shadow:0 16px 60px #0007;max-height:calc(100svh - 120px);overflow:auto;border-top:1px solid var(--honey,#dda75d)}.ds-menu-title{font-family:var(--serif,'Cormorant Garamond',Georgia,serif);font-size:28px;margin:0 0 20px;line-height:1.2}.ds-chapters a{display:grid;grid-template-columns:24px 1fr 40px;gap:12px;align-items:center;min-height:43px;padding:7px 0;font-size:12px;border-bottom:1px solid #e9dfc914;color:inherit;text-decoration:none}.ds-chapters a:hover,.ds-chapters a[aria-current]{color:var(--honey,#dda75d)}.ds-chapters a:focus-visible{outline:2px solid var(--honey,#dda75d);outline-offset:6px;border-radius:2px}.ds-menu-number{color:#acb4b0;font-size:10px}.ds-chapters time{font-family:ui-monospace,monospace;font-size:10px;color:#b6bdb5;font-variant-numeric:tabular-nums}.ds-menu-note{font-size:11px;color:var(--muted,#b9c0b9);margin:24px 0 0}"
+    },
+    {
+      "name": "Two keepsake notes",
+      "kind": "card",
+      "refersTo": "keepsake-note",
+      "description": "The two real note identities, their paper surfaces and one thin wire clip; content remains selectable text.",
+      "html": "<div class=\"ds-two-notes\" aria-label=\"The two cards Ning took with her\"><article class=\"ds-note ds-note-ning\"><svg class=\"ds-paperclip\" viewBox=\"0 0 38 90\" aria-hidden=\"true\"><path d=\"M26 26v44c0 15-24 15-24 0V18C2-2 36-2 36 18v46c0 9-17 9-17 0V23\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg><span class=\"ds-note-owner\">Ning’s first line <time>02:10</time></span><p><bdi dir=\"auto\">Good morning. I’m Shen Ning.</bdi></p><span class=\"ds-note-foot\">For the morning</span></article><article class=\"ds-note ds-note-lin\"><span class=\"ds-note-owner\">Ms. Lin’s note <time>23:06</time></span><p>The first good morning doesn’t need notes.</p><span class=\"ds-note-foot\">A small thing to remember</span></article></div>",
+      "css": ".ds-two-notes{position:relative;padding:25px 18px 35px 7px;display:grid;grid-template-columns:1fr;gap:16px;width:100%;max-width:620px;font-family:var(--sans,'DM Sans',Arial,sans-serif)}.ds-note{background:var(--paper,#e9dfc9);color:#2d3e43;padding:31px 35px;position:relative;box-shadow:0 10px 26px #0002;min-width:0}.ds-note-ning{transform:rotate(-2deg);margin-right:32px;z-index:2}.ds-note-lin{transform:rotate(1.5deg);margin-left:30px;margin-top:-17px;background:#d8dcd0}.ds-paperclip{position:absolute;color:var(--clip,#c96b47);width:22px;height:59px;left:26px;top:-22px;transform:rotate(-13deg);filter:drop-shadow(1px 2px 1px #0003)}.ds-note-owner{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:10px;color:#536365;line-height:1.6}.ds-note-owner time{font-family:ui-monospace,monospace;font-size:10px;font-variant-numeric:tabular-nums}.ds-note p{font-family:var(--serif,'Cormorant Garamond',Georgia,serif);font-size:clamp(25px,3vw,36px);line-height:1.25;margin:25px 0 23px;overflow-wrap:anywhere}.ds-note bdi{white-space:pre-wrap}.ds-note-foot{font-size:9px;letter-spacing:.04em;color:#62706a}@media(max-width:720px){.ds-note{padding:28px}.ds-note-ning{margin-right:20px}.ds-note-lin{margin-left:17px}.ds-note p{font-size:31px}}"
+    },
+    {
+      "name": "Still binding state choices",
+      "kind": "custom",
+      "refersTo": "binding-state-control",
+      "description": "Native radio styling shown in the motion-off presentation. The specimen changes checked appearance only; the application controls the clip and explanatory copy. The wrapper supplies the authored tabletop surface.",
+      "html": "<div class=\"ds-binding-surface\"><fieldset class=\"ds-binding-controls\"><legend>Look at the two moments</legend><input type=\"radio\" name=\"ds-binding-moment\" id=\"ds-binding-before\" value=\"before\"><label for=\"ds-binding-before\">Before</label><input type=\"radio\" name=\"ds-binding-moment\" id=\"ds-binding-after\" value=\"after\" checked><label for=\"ds-binding-after\">After</label></fieldset></div>",
+      "css": ".ds-binding-surface{background:#c8bca3;padding:32px 38px}.ds-binding-controls{display:flex;border:0;padding:0;margin:0 0 24px;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--sans,'DM Sans',Arial,sans-serif)}.ds-binding-controls legend{font-size:11px;color:#4b5d5e;margin-bottom:10px;padding:0}.ds-binding-controls input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%)}.ds-binding-controls label{padding:10px 20px;min-height:40px;cursor:pointer;border:1px solid #596c6559;font-size:12px;line-height:1.5;color:#344a4a;border-radius:2px}.ds-binding-controls input:checked+label{background:#2d454a;color:#eee5d3;border-color:#2d454a}.ds-binding-controls input:focus-visible+label{outline:2px solid #7b5634;outline-offset:4px}"
+    },
+    {
+      "name": "Editing actions",
+      "kind": "button",
+      "refersTo": "editing-action",
+      "description": "The actual understated undo/reset row, including the initial disabled Undo state. No edit handlers are attached to this specimen. The wrapper supplies the existing night ground for this isolated specimen.",
+      "html": "<div class=\"ds-night-surface\"><div class=\"ds-edit-actions\"><button type=\"button\" disabled>Undo</button><button type=\"button\">Restore the simple greeting</button></div></div>",
+      "css": ".ds-night-surface{background:#14242d;padding:24px}.ds-edit-actions{display:flex;flex-wrap:wrap;gap:20px;margin-top:19px;font-family:var(--sans,'DM Sans',Arial,sans-serif)}.ds-edit-actions button{font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:11px;background:none;border:0;border-bottom:1px solid #e9dfc933;padding:8px 0;color:var(--muted,#b9c0b9);line-height:1.6;min-height:36px;cursor:pointer}.ds-edit-actions button:focus-visible{outline:2px solid var(--honey,#dda75d);outline-offset:6px;border-radius:2px}.ds-edit-actions button:disabled{opacity:.45;cursor:default}@media(max-width:720px){.ds-edit-actions{gap:25px;margin-top:20px}.ds-edit-actions button{min-height:44px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "One night. Ten quiet moments.",
+    "overview": "BERTH is an intimate cinematic reading experience. The artwork leads and the interface recedes: a fixed night-train compartment, cream cotton, old walnut, midnight blue, warm brass light and one orange-red wire paper clip. The existing doorway composition places the opening title in the dark door zone and keeps the compartment legible beside it. Portrait artwork preserves that story on a narrow screen.\n\nLong-form reading stays in ordinary document flow. Generous space, narrow prose measures, serif literary statements and small sans-serif controls give the journey its quiet pace. Paper surfaces are literal objects in the story: the handout, the writing card and the two keepsakes. There is no generic promotional card grid.\n\nThe room and its objects remain continuous across the night, while local light and framing change. Motion uses spatial reveals, small displacement and material edges; pausing motion or requesting reduced motion exposes readable still sequences. The direction is humane and understated, without melodrama, marketing slogans or decorative spectacle.",
+    "keyCharacteristics": [
+      "Cinematic artwork with live, selectable typography.",
+      "Midnight surfaces, warm paper and restrained honey accents.",
+      "Cormorant Garamond for literary scale; DM Sans for narration and controls.",
+      "One continuous compartment and two distinct cards.",
+      "Document-flow reading with native controls and explicit focus states.",
+      "Portrait compositions and readable static alternatives."
+    ],
+    "rules": [
+      {
+        "name": "The Local Light Rule",
+        "body": "Lamp comparison belongs to the chapter-three table, its paper and nearby surfaces. It must not recolor later scenes or dim the surrounding reading text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Live Text Rule",
+        "body": "Narration, note ownership, the editable first line and feedback remain DOM text. Preserve the reader’s entered language, line breaks and direction instead of baking words into artwork.",
+        "section": "typography"
+      },
+      {
+        "name": "The Physical Depth Rule",
+        "body": "Depth comes from the room, paper layers and material edges. Keep shadows attached to those objects or the open navigation panel; do not add decorative glows to reading sections.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the fixed compartment, travellers, objects and two separate note identities across every scene.",
+      "Do use the supplied landscape and portrait artwork for their intended viewports and keep opening typography in its reserved dark space.",
+      "Do keep narration in normal flow, with the body measure and line height defined here.",
+      "Do retain real labels, keyboard focus, selected states and truthful local-save feedback on interactive controls.",
+      "Do keep the chapter-three lamp comparison local and offer the same story content when motion is paused or reduced.",
+      "Do keep note text selectable and editable text in its original language, including line breaks and bidirectional text.",
+      "Do pair this document with the schema-v2 sidecar when consuming tokens: primitives live in the frontmatter, while component samples and extensions live in JSON."
+    ],
+    "donts": [
+      "Don’t replace the fixed cinematic direction with a generic dashboard, promotional card grid or invented visual theme.",
+      "Don’t substitute an automatic crop for an available independently composed portrait scene.",
+      "Don’t use the orange-red clip color as a general call-to-action fill or let honey accents overwhelm the paper and night surfaces.",
+      "Don’t crossfade displaced human poses or introduce camera shake; keep the authored spatial handovers and action frames.",
+      "Don’t make reading text depend on an image, a hover interaction, sound or continuous animation.",
+      "Don’t infer rendered fidelity, accessibility conformance or performance passes from this source-extracted reference."
+    ]
+  }
+}

@@ -1,0 +1,751 @@
+{
+  "project": "SILLAGE",
+  "generatedAt": "2026-11-09",
+  "selectedHero": "IMG-01",
+  "selectionRationale": "A makes a singular recognizable hollow/notch visible and distinguishes all three material grammars. B hides overall identity, so is not used as Hero. C is editorial and elegant but does not establish the singular imprint as strongly as A.",
+  "assets": [
+    {
+      "id": "IMG-01",
+      "name": "hero-a",
+      "prompt": "Use case: stylized-concept. Asset type: text-free wide hero art for SILLAGE, an original sensory visual essay. Create a breathtaking editorial fine-art bas-relief image, landscape 3:2. Warm ivory background #F3EDE1, subtle dry paper texture, soft broad daylight from upper left and shallow delicate contact shadows. On the right two thirds, ONE asymmetrical sensory imprint: an extremely thin sharp apricot-yellow ridge #E7B353 curves around a tightly gathered aubergine folded plane #594051, supported at the bottom by a low warm-brown porous compressed surface #8A6750. The three distinct surfaces leave a clear irregular breathing hollow; preserve a recognizable small notch on the inner upper-left hollow edge. Matte chalky dry textures, delicate edge thickness, sophisticated restrained modern printmaker aesthetic, no shiny materials. The left third is calm almost blank ivory for real page typography added later. The imprint occupies about 60% width, generous breathing space, near-top-down slightly oblique framing. Abstract visual translation of sharp pomelo peel, mild pepper tension and dry wood warmth; not a physical product, not architecture. NO text, letters, numbers, logos, bottles, glass, metal, petals, smoke, particles, concentric rings, room or building.",
+      "tool": "image_gen.imagegen",
+      "file": "docs/concepts/hero-a.png",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-14c35112-c4b4-45d6-8476-446d93fe91fd.png",
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2667342,
+      "sha256": "b985f84fe0024c7b7d4c6bd5bb076d9e384e619163b4a19a857c4775cde670be",
+      "review": "Visually inspected",
+      "selectionReason": "Chosen concept: singular recognizable asymmetrical hollow with distinct thin, folded, and porous edges.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": []
+    },
+    {
+      "id": "IMG-02",
+      "name": "hero-b",
+      "prompt": "Use case: stylized-concept. Asset type: text-free alternative landscape 3:2 Hero for SILLAGE sensory art website. Make an extraordinary extreme macro of the junction of THREE abstract dry sensory surfaces, occupying lower two thirds with a wide calm warm-ivory upper third reserved for page title later. One wafer-thin sharp apricot-ochre ridge #E7B353, a taut folded eggplant plane #594051, and a subdued low porous warm-brown pressed plane #8A6750. Edges meet diagonally with minute gaps of warm-ivory negative space; asymmetrical close crop so the overall shape is not revealed. One sharply defined irregular notch between the surfaces becomes a point of curiosity. Tactile matte powder pigment, dry fine pores and micro-relief, soft broad light from upper left, tiny shadows, expensive contemporary abstract printmaking, elegant rather than rough. Background #F3EDE1; accurately warm not grey. No extra colors. The image conveys sensory relationships, never material samples in three cards. NO text, letters, numbers, logos, bottles, glass, metal, petals, smoke, clouds, particles, architecture or room. No glossy jelly, no blob gradient.",
+      "tool": "image_gen.imagegen",
+      "file": "docs/concepts/hero-b.png",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-89a7af73-b754-4575-b4e8-36787f87e3d5.png",
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2335916,
+      "sha256": "99fd7956a7f1ead06007068375a1c63b3106f148ee02b2156a7ef0acc944dfa1",
+      "review": "Visually inspected",
+      "selectionReason": "Retained alternative only: excellent junction detail, but insufficient whole-imprint identity for opening Hero.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/macro.webp"
+      ]
+    },
+    {
+      "id": "IMG-03",
+      "name": "hero-c",
+      "prompt": "Use case: stylized-concept. Asset type: text-free alternative wide 3:2 hero art for SILLAGE, an original visual essay about scent. Create an incredibly refined flatter editorial abstract print, on warm ivory #F3EDE1 subtly textured paper. Three continuous distinct undulating irregular contours weave asymmetrically around an open blank winding path: a fine sharp apricot-yellow #E7B353 ridge, a compressed angular aubergine #594051 folded band, and a low dry porous warm-brown #8A6750 plane. The path and its little inner notch are the focal point. Entire long horizontal composition across lower right, left upper third calm for later DOM typography. Sophisticated cut-paper relief and monoprint with subtle tiny shadows and detailed matte dry pigment, seen top-down under a large soft upper-left light. Graphic tension and unforgettable balanced negative space; no repeating concentric rings, no symmetrical flower, no ordinary ribbons or swatches. NO text, letters, numbers, logo, bottle, glass, metal, smoke, particles, petals, architecture, interior or map.",
+      "tool": "image_gen.imagegen",
+      "file": "docs/concepts/hero-c.png",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-287d3603-981f-44ba-a5a5-161007f75951.png",
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2907606,
+      "sha256": "80d8260f0dadf8e6c1026b503aa9452303d5add08343647b83ace3fd961de741",
+      "review": "Visually inspected",
+      "selectionReason": "Retained alternative only: sophisticated editorial path, but less clearly establishes one recurring imprint.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": []
+    },
+    {
+      "id": "IMG-04",
+      "file": "docs/art-originals/hero-desktop.png",
+      "usage": "CH-01 refined desktop Hero and art identity",
+      "prompt": "Edit the provided SILLAGE concept into the definitive desktop artwork. Preserve exactly the visual identity: one asymmetrical open C-shaped sensory imprint, a crisp thin apricot-yellow ridge, folded eggplant interior plane and low warm-brown porous base, enclosing an irregular ivory hollow with the tiny upper-left inner notch. Preserve the soft upper-left light and dry matte tactile surfaces. Landscape 3:2. Refine composition: make the complete imprint a little smaller and place it in the RIGHT 60 percent, fully contained with breathing room above, below, and at right; reserve the LEFT 37 percent as nearly blank uniform warm ivory #F3EDE1, extremely subtle paper tooth only. Reduce rough background texture and harsh cast shadow. Sharpen the delicate yellow edge and finer porous base without becoming grainy. The shape should read as a contemporary abstract graphic relief rather than a real sculpture or specimen. No text, logo, typography, letters, numbers, additional objects, glass, metal, smoke, particles, flowers, petals, bottles, architecture. Single high-quality finished scene, not a collage, not a website screenshot.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-f9796e98-1151-40f0-af7a-948684c616d0.png",
+      "referenceFiles": [
+        "/workspace/scratch/f7b798a49e55/sillage/docs/concepts/hero-a.png"
+      ],
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 1984105,
+      "sha256": "190729cfb31818b729ccda9820649105f2cf5b3299aec29aa8f56ef5a9ecadfc",
+      "review": "Visually inspected",
+      "selectionReason": "Selected desktop artwork: calm left text field, complete right-side imprint and stable inner notch.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/hero-desktop.webp",
+        "public/art/hero-desktop-960.webp"
+      ]
+    },
+    {
+      "id": "IMG-05",
+      "file": "docs/art-originals/hero-mobile.png",
+      "usage": "CH-01 independently recomposed portrait Hero",
+      "prompt": "Create a completely recomposed PORTRAIT 2:3 mobile SILLAGE hero artwork using the provided image as the identity and material reference, not a narrow crop. Preserve the characteristic inner notch and the three sensory surface grammars: razor-thin warm apricot-yellow ridge, tightly folded aubergine-purple plane, porous low warm-brown base. Arrange these as an elegant vertical relationship occupying the UPPER TWO THIRDS, the breathing hollow and its upper-left inner notch in the upper half. The yellow arc sweeps from upper left toward right, plum folds curve down along the right interior, brown settles below and left without merging into a block. Lower third stays warm ivory #F3EDE1 and mostly blank for real text added later. Full subject contained, generous side margins, softly lit from upper left. Extremely refined matte dry pigment/pressed paper micro-relief, subtle shadow, sophisticated abstract fine art. NO text, letters, numbers, logo, bottles, glass, metal, flowers, petals, smoke, particles, buildings, room, or repetitive concentric rings. Not a website screenshot.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-48fc93a2-2bca-4682-b1d2-1b67b2f52a76.png",
+      "referenceFiles": [
+        "/workspace/scratch/f7b798a49e55/sillage/docs/concepts/hero-a.png"
+      ],
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "format": "PNG",
+      "bytes": 2412785,
+      "sha256": "fa051408b5bdae19de2625d2cf99439c9f8fa36edbe9cac03c20cbfded69c2f0",
+      "review": "Visually inspected",
+      "selectionReason": "Selected mobile artwork: generated portrait recomposition with upper imprint and lower text field; not a crop.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/hero-mobile.webp",
+        "public/art/hero-mobile-640.webp"
+      ]
+    },
+    {
+      "id": "IMG-06",
+      "file": "docs/art-originals/chord.png",
+      "usage": "CH-04 chord: complete integrated composition",
+      "prompt": "Using the provided SILLAGE imprint as precise identity/material reference, create a fresh landscape 3:2 fine-art composition for a chapter called A chord, not a crop. One fully mature asymmetrical imprint centered with generous 15% margins: an apricot-yellow sharp thin ridge arcs from upper-left across top and right, tightly gathered plum-purple inner plane turns inward with taut folded edges, low warm-brown fine-porous plane settles across bottom. All three yield to each other at their shared irregular open hollow, preserving the little upper-left inward notch. Make the interlocking relationships and quiet negative space particularly beautiful, with visible tiny separations and controlled depth. The mature object must be complete and readable, not three transparent overlays. Soft broad upper-left daylight, very subtle shallow shadows, uniform warm ivory #F3EDE1 ground. Extremely polished matte pigment, pressed-paper micro-relief, finely detailed dry porous textures without noisy grit. Keep yellow #E7B353, plum #594051, brown #8A6750. No text, numbers, letters, logo, bottle, glass, metallic surfaces, smoke, particles, flowers, petals, architecture, rooms, repetitive rings. No collage panels.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-434be6ea-0b03-487e-9929-443a512044ca.png",
+      "referenceFiles": [
+        "/workspace/scratch/f7b798a49e55/sillage/docs/concepts/hero-a.png"
+      ],
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2248357,
+      "sha256": "2364ad5d05a8ae13b0f6965dcd3f8735a46b579709b2d409cdddbb3e92f88bec",
+      "review": "Visually inspected",
+      "selectionReason": "Selected chord artwork: deliberate mature integrated relationship and clear inner negative space.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/chord.webp"
+      ]
+    },
+    {
+      "id": "IMG-07",
+      "file": "docs/art-originals/panorama.png",
+      "usage": "CH-08 panoramic climax with three related stages and continuous white path",
+      "prompt": "Create the climactic landscape 3:2 fine-art panorama for SILLAGE. Use the supplied imprint as identity/material reference; build a NEW top-down composition, not a crop or duplicated thumbnails. A broad continuous curving IVORY EMPTY PATH passes diagonally from lower-left through the center and toward upper-right, weaving through THREE related sensory imprints in distinct stages. Each has the same recognizable small inward notch and the same asymmetrical open hollow: a sharp thin apricot-yellow ridge, a tense folded aubergine plane, and a warm-brown porous low base. The nearest lower-left impression is detailed and full; middle impression opens its hollow widest; far upper-right impression becomes quiet and sparse but all three vocabulary colors remain recognizable. Rich controlled layered edges, coherent dry matte surfaces, a single left-upper soft light, delicate shadows. Negative space is the protagonist: make the path 25% of frame width, uninterrupted, beautifully flowing, with one clear focal area at the middle notch. Palette #F3EDE1 #E7B353 #594051 #8A6750. Keep overall image elegant, light and airy, not cluttered. No text, letters, labels, numbers, logos, bottle, glass, metallic surfaces, particles, smoke, flowers, petals, building, architecture, room, or dashboard. Do not just place three identical isolated objects side by side.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-4b4e2b41-865b-4b41-af1f-5d4699d6ba08.png",
+      "referenceFiles": [
+        "/workspace/scratch/f7b798a49e55/sillage/docs/concepts/hero-a.png"
+      ],
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2354587,
+      "sha256": "53f8c1c6cd67e828d849e2beab46b5bc8c98f1336508777bc435d06e5cf7fcf1",
+      "review": "Visually inspected",
+      "selectionReason": "Selected climax artwork: three related imprints linked by continuous ivory paths and shared edge language.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/panorama.webp",
+        "public/art/panorama-960.webp"
+      ]
+    },
+    {
+      "id": "IMG-08",
+      "file": "docs/art-originals/transition.png",
+      "usage": "TR-07-08 dedicated midpoint between memory fragments and integrated path",
+      "prompt": "Create a fresh standalone landscape 3:2 transition artwork for SILLAGE, halfway between personal memory and abstract sensory relationships. Use supplied image for precise imprint identity and matte material language. The single recognizable irregular hollow and its tiny upper-left notch remain visually stable near the CENTER. Behind it, a complete ivory empty path already winds through three layered warm apricot, aubergine and porous warm-brown imprints, receding gently toward upper-right. Foreground boundaries of two memory fragments are retreating: at far lower-left a very close cropped curl of real fresh pomelo peel lies on warm ivory paper; at far lower-right the edge of an unmarked folded ivory note on a sliver of dry wood. Only small hand-sized fragments, no room or full furniture. These tangible fragments occupy less than 20% total and frame, never obscure, the central notch and path. Solid editorial depth/occlusion, NO translucent photo overlay, no double exposure. Broad soft upper-left light and exquisite restrained dry tactile surface. Mostly light ivory #F3EDE1 with #E7B353 #594051 #8A6750. NO text on note, letters, dates, numbers, logo, bottles, glass, metal, flowers, petals, smoke, particles, rooms or buildings. One unique visual focal point.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-8163ef48-570d-48dd-94f5-78826109b9b1.png",
+      "referenceFiles": [
+        "/workspace/scratch/f7b798a49e55/sillage/docs/concepts/hero-a.png"
+      ],
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2409521,
+      "sha256": "283f39778432fe0dbdf0c1b1b09db8ed451d2fd63172f25cc22e3d1df86f734d",
+      "review": "Visually inspected",
+      "selectionReason": "Selected transition art: actual pomelo and note foreground fragments framing a stable central imprint. Rear path is subtle; exact relationship path is to be carried by programmatic SVG.",
+      "role": "required",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/transition.webp"
+      ]
+    },
+    {
+      "id": "IMG-09",
+      "file": "docs/art-originals/material-atlas.png",
+      "usage": "Code-masked SVG texture atlas: three horizontal materials",
+      "prompt": "Use case: stylized-concept. Production texture atlas for SILLAGE sensory artwork, landscape 3:2 at high resolution. Fill the entire image edge to edge with EXACTLY THREE equally tall uninterrupted horizontal material bands, each occupying one third height. The top band is warm apricot-yellow #E7B353: very fine dry matte powder pigment texture with tiny sharp irregular grain, low contrast; the middle band is muted aubergine #594051: rich dry pressed-paper velvet surface with very subtle taut low folds and gentle tonal variation, low contrast; the bottom band is warm brown #8A6750: dry matte compressed fine-porous clay/paper texture, minute readable pores with low contrast. Uniform diffuse overhead light, subtle material detail only, no directional cast shadows. Each row is a continuous flat field across full width, no gaps or borders between bands. Intended to be sampled as image fills inside precise SVG contours, not displayed as a UI. Keep each row color very consistent without large shapes or gradients. No text, numbers, letters, logos, objects, glass, metal, diagonal boundaries, circles, extra colors, lights, frames, noise dots.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-06587979-4ab5-43f8-a936-5390969bf5b7.png",
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2989308,
+      "sha256": "2c1c093e231c88c0c709ab454886ca06068c4b198b66a7f592d71ac6f7ce0ec6",
+      "review": "Visually inspected",
+      "selectionReason": "Supplementary generated texture atlas for code-controlled surfaces; its bands are sampled into exact contours.",
+      "role": "supplementary",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/material-atlas.webp"
+      ]
+    },
+    {
+      "id": "IMG-10",
+      "file": "docs/art-originals/memory-window.png",
+      "usage": "CH-07 memory: fresh pomelo peel at a window after moving",
+      "prompt": "Use case: photorealistic-natural. A quiet editorial still-life for SILLAGE memory chapter, landscape 3:2. Very close hand-sized detail of a freshly peeled curled strip of pale yellow pomelo rind, with real fine pores and fluffy white pith, resting on a warm ivory painted wooden windowsill. Only a short sill surface and a soft slice of the lower window frame, never a complete room, building, person or furniture scene. Fresh morning daylight enters from upper left, gentle diffuse shadows, the peel curves around a calm small empty area like a memory. Restrained ivory #F3EDE1, apricot yellow, warm beige palette. Rich tactile realism with a clean airy fine-art photography composition, the main peel low center, generous quiet surrounding surface. No flowers, petals, bottles, perfumes, glass objects, extra fruit pile, text, letters, logo, numbers, writing, clutter, or smoky effect. Frame tightly, still and intimate, no view outside.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-346e47dc-cb3a-459d-9914-cd8c10bedf70.png",
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 1954180,
+      "sha256": "168c052c591e7f0e334c19ba33385b57df21deac1036864ec90d8890d050a078",
+      "review": "Visually inspected",
+      "selectionReason": "Supplementary original generated memory illustration: intimate pomelo-peel still life, no room or text.",
+      "role": "supplementary",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/memory-window.webp"
+      ]
+    },
+    {
+      "id": "IMG-11",
+      "file": "docs/art-originals/memory-note.png",
+      "usage": "CH-07 memory: an unsent unlettered note inside dry wooden drawer",
+      "prompt": "Use case: photorealistic-natural. A quiet fine-art editorial still-life for the SILLAGE sensory essay, landscape 3:2. Close hand-sized crop of an almost empty dry wooden drawer: a small unmarked folded ivory paper note lies in a shallow corner on warm subdued brown wood grain. The note's fold lightly rises and its soft shadow adds delicate tension, nothing written on it; any date will be live DOM text outside the image. Only wood base and a narrow drawer edge are visible, absolutely no entire furniture or room. Soft broad late-afternoon daylight from upper left, restrained warm ivory #F3EDE1 and warm-brown #8A6750 palette, matte natural paper and dry wood with crisp fine texture, sober elegant intimate visual memory. Slight diagonal composition and breathing space. No pens, envelopes with stamps, text, letters, numbers, logo, bottles, glass, metal, flowers, petals, people, smoke or particles. No dark dramatic luxury lighting.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-7bd4bdc1-879d-40a3-a9d4-cedf61ee1c7e.png",
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "format": "PNG",
+      "bytes": 2590794,
+      "sha256": "a44fe26c79bae31280fbfe5af97b7e890c37396728113901f947185bc1e08f89",
+      "review": "Visually inspected",
+      "selectionReason": "Supplementary original generated memory illustration: empty folded note in cropped dry wood, no writing.",
+      "role": "supplementary",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/memory-note.webp"
+      ]
+    },
+    {
+      "id": "IMG-12",
+      "file": "docs/art-originals/panorama-mobile.png",
+      "usage": "CH-08 true portrait climax, three vertically arranged related imprints for mobile",
+      "prompt": "Edit this SILLAGE panoramic artwork into a TRUE PORTRAIT 2:3 composition, 1024x1536, explicitly RECOMPOSING all three imprints VERTICALLY, never cropping the wide original. Preserve the precise identity and material of each imprint: asymmetrical open C-like hollow, small upper-left inner notch, thin sharp apricot-yellow ridge, folded muted eggplant-purple plane, low finely porous warm-brown base. Arrange exactly THREE complete imprints down the portrait: TOP a small Arrival imprint centered around x55% y18%, MIDDLE a larger Unfolding imprint around x53% y49%, BOTTOM a small Trace imprint around x47% y81%. ALL THREE must be FULLY VISIBLE within image, at least 6% margin on each side and top/bottom. A generous continuous warm-ivory EMPTY PATH winds vertically through their open hollows and between the three levels, connecting the three stages. Middle imprint is the largest focal point, upper and lower stages distinctly separated but related. The wide original's same dry matte pressed-paper fine-art relief language, soft broad upper-left light and delicate shadows, warm ivory #F3EDE1, apricot #E7B353, eggplant #594051, brown #8A6750. Keep enough quiet ivory space around each imprint for small labels to be added in HTML separately. No extra imprint, no text, letters, numbers, typography, logos, bottles, glass, metal, flowers, petals, smoke, particles, rooms, buildings. This must fit a mobile viewport without losing any stage. Flat top-down editorial composition, restrained and beautiful.",
+      "tool": "image_gen.imagegen",
+      "returnedFile": "/workspace/scratch/f7b798a49e55/generated_images/exec-660834c0-d12c-47a6-9504-2084f94a6951.png",
+      "referenceFiles": [
+        "docs/art-originals/panorama.png"
+      ],
+      "actualParameters": {
+        "transparent_background": false
+      },
+      "seed": "not returned",
+      "status": "generated",
+      "actualDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "format": "PNG",
+      "bytes": 2193793,
+      "sha256": "b2936efaeb9a87f944a65aee842bebd884c20a7d930ed58e4e916a8be190664a",
+      "review": "Visually inspected: all three imprints fully visible, continuous vertical ivory path, no text",
+      "selectionReason": "Mobile browser review found wide cover cropping two stages. This independently generated portrait recomposition preserves all three stages and their notch identity.",
+      "role": "supplementary responsive repair",
+      "licenseNote": "Original image generated in this task; no third-party photograph or trademark supplied.",
+      "runtimeAssets": [
+        "public/art/panorama-mobile.webp",
+        "public/art/panorama-mobile-640.webp"
+      ]
+    }
+  ],
+  "assetCount": 12,
+  "requiredUniqueOutputCount": 8,
+  "notes": [
+    "Imagegen returned no seed, model version, sampling settings, or elapsed-generation metadata; none are invented.",
+    "Image outputs are art direction and visual material, not measurement or an olfactory simulation. Exact controls, percentages, labels and semantics belong in code.",
+    "The filenames here denote original PNGs. Runtime optimized derivatives may be produced separately by the implementation owner without changing these provenance records.",
+    "Original final PNGs are retained in docs/art-originals. Public runtime images are optimized WebP derivatives; candidates remain in docs/concepts. Compression command records use the retained source path and reproduce each derivative."
+  ],
+  "runtimeDerivatives": {
+    "tool": "ffmpeg 6.1.1-3ubuntu5",
+    "outputs": [
+      {
+        "source": "docs/art-originals/hero-desktop.png",
+        "file": "public/art/hero-desktop.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/hero-desktop.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/hero-desktop.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 64748,
+        "sha256": "082477fc4e46a6f069a53385f9204bb310aa9688648ae6cdb916ccddec657c68",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/hero-mobile.png",
+        "file": "public/art/hero-mobile.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/hero-mobile.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/hero-mobile.webp"
+        ],
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        },
+        "bytes": 106406,
+        "sha256": "ed1d6ea8e25d2d6d816c953111756ac4a7309c3463de2f23f5ad631018bb4bd7",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/chord.png",
+        "file": "public/art/chord.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/chord.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/chord.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 102686,
+        "sha256": "d880ef360d4338beebe9458d789dc378a19261a0f6c5c012e64f979cf0cd982f",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/panorama.png",
+        "file": "public/art/panorama.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/panorama.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/panorama.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 104264,
+        "sha256": "f85632c5a9ea9e83377cd1582b9b57ed3b08f6383861c8b636b14643b2c58db7",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/transition.png",
+        "file": "public/art/transition.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/transition.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/transition.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 129496,
+        "sha256": "ec2c600718cec5b858647a65c46fb060e3f478817e673c47f3634d2fdc717243",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/material-atlas.png",
+        "file": "public/art/material-atlas.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/material-atlas.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/material-atlas.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 241188,
+        "sha256": "ef76d010d2b9e951345f6538b54b53cc9445bf12cb8414d523ccbb48debdb841",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/memory-window.png",
+        "file": "public/art/memory-window.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/memory-window.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/memory-window.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 94412,
+        "sha256": "f73ac15cfbc62828552e8b29850aa036c2ed8f4d67d026eae6178ac0aee44271",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/memory-note.png",
+        "file": "public/art/memory-note.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/memory-note.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/memory-note.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 206706,
+        "sha256": "3994eb50c788d59d0b1bb9a6a4d2ea25c7146f8a0b04e1296bb13bd4728fd1a2",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/hero-desktop.png",
+        "file": "public/art/hero-desktop-960.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/hero-desktop.png",
+          "-vf",
+          "scale=960:-1:flags=lanczos",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/hero-desktop-960.webp"
+        ],
+        "dimensions": {
+          "width": 960,
+          "height": 640
+        },
+        "bytes": 25124,
+        "sha256": "82c6a859db1c23d75e9f66f52a1e157e51b5885a69610c77580bad96a77508fd",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/hero-mobile.png",
+        "file": "public/art/hero-mobile-640.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/hero-mobile.png",
+          "-vf",
+          "scale=640:-1:flags=lanczos",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/hero-mobile-640.webp"
+        ],
+        "dimensions": {
+          "width": 640,
+          "height": 960
+        },
+        "bytes": 37742,
+        "sha256": "6867e1835205a9d52206e802214992a976530b6d703c1e8455a9f7654584e297",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/panorama.png",
+        "file": "public/art/panorama-960.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/panorama.png",
+          "-vf",
+          "scale=960:-1:flags=lanczos",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/panorama-960.webp"
+        ],
+        "dimensions": {
+          "width": 960,
+          "height": 640
+        },
+        "bytes": 40236,
+        "sha256": "035ab1b5695032b8dfb75614385d35a3d37f1ef283281a69e279109ab1972e81",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/concepts/hero-b.png",
+        "file": "public/art/macro.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/concepts/hero-b.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/macro.webp"
+        ],
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "bytes": 152276,
+        "sha256": "3e2add87f62bc98cf08e08e7775f525f948a59a478237590e8ce30777edd3ab2",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/panorama-mobile.png",
+        "file": "public/art/panorama-mobile.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/panorama-mobile.png",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/panorama-mobile.webp"
+        ],
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        },
+        "bytes": 78488,
+        "sha256": "441412409bd29b46b8fbcded0665674dd85e47967a988cefa2413d2fcc35c537",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      },
+      {
+        "source": "docs/art-originals/panorama-mobile.png",
+        "file": "public/art/panorama-mobile-640.webp",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-y",
+          "-i",
+          "/workspace/scratch/f7b798a49e55/sillage/docs/art-originals/panorama-mobile.png",
+          "-vf",
+          "scale=640:-1:flags=lanczos",
+          "-c:v",
+          "libwebp",
+          "-quality",
+          "86",
+          "-compression_level",
+          "6",
+          "/workspace/scratch/f7b798a49e55/sillage/public/art/panorama-mobile-640.webp"
+        ],
+        "dimensions": {
+          "width": 640,
+          "height": 960
+        },
+        "bytes": 31464,
+        "sha256": "401a12e3abf0d409890ca7f54c24dd26fa53c915f5b28cb845fd66ae7e425796",
+        "operation": "Lossy WebP encoding, plus proportional Lanczos resize only when size suffix is present. No crop or composition change."
+      }
+    ],
+    "totalBytes": 1415236,
+    "fileCount": 14
+  }
+}

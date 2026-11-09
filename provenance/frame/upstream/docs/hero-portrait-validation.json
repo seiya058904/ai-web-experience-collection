@@ -1,0 +1,408 @@
+{
+  "camera": "hero-portrait",
+  "images": 24,
+  "resolution": [
+    720,
+    800
+  ],
+  "approachTravelScale": 0.18,
+  "overshootTravelScale": 1,
+  "sourcePoseHashMatches": true,
+  "decodedImages": 24,
+  "verifiedImageHashes": 24,
+  "previous102ImagesByteIdentical": true,
+  "bytes": 317902,
+  "actorHeightPixelsRange": [
+    331,
+    356
+  ],
+  "measurement": "Color segmentation of lavender body and nearby ivory feet; framing aid, not a physical geometry proof. Shadows are excluded.",
+  "minimumHorizontalForegroundMarginPixels": 18,
+  "perFrame": [
+    {
+      "frame": 1,
+      "actorColorBounds": [
+        28,
+        233,
+        332,
+        581
+      ],
+      "actorHeightPixels": 349,
+      "foregroundColorBounds": [
+        28,
+        233,
+        651,
+        581
+      ]
+    },
+    {
+      "frame": 2,
+      "actorColorBounds": [
+        27,
+        232,
+        332,
+        580
+      ],
+      "actorHeightPixels": 349,
+      "foregroundColorBounds": [
+        27,
+        232,
+        651,
+        580
+      ]
+    },
+    {
+      "frame": 3,
+      "actorColorBounds": [
+        32,
+        235,
+        336,
+        580
+      ],
+      "actorHeightPixels": 346,
+      "foregroundColorBounds": [
+        32,
+        235,
+        650,
+        580
+      ]
+    },
+    {
+      "frame": 4,
+      "actorColorBounds": [
+        22,
+        243,
+        332,
+        580
+      ],
+      "actorHeightPixels": 338,
+      "foregroundColorBounds": [
+        22,
+        243,
+        651,
+        580
+      ]
+    },
+    {
+      "frame": 5,
+      "actorColorBounds": [
+        18,
+        251,
+        333,
+        581
+      ],
+      "actorHeightPixels": 331,
+      "foregroundColorBounds": [
+        18,
+        251,
+        651,
+        581
+      ]
+    },
+    {
+      "frame": 6,
+      "actorColorBounds": [
+        26,
+        248,
+        379,
+        580
+      ],
+      "actorHeightPixels": 333,
+      "foregroundColorBounds": [
+        26,
+        248,
+        650,
+        580
+      ]
+    },
+    {
+      "frame": 7,
+      "actorColorBounds": [
+        28,
+        240,
+        379,
+        580
+      ],
+      "actorHeightPixels": 341,
+      "foregroundColorBounds": [
+        28,
+        240,
+        651,
+        580
+      ]
+    },
+    {
+      "frame": 8,
+      "actorColorBounds": [
+        48,
+        235,
+        399,
+        569
+      ],
+      "actorHeightPixels": 335,
+      "foregroundColorBounds": [
+        48,
+        235,
+        651,
+        573
+      ]
+    },
+    {
+      "frame": 9,
+      "actorColorBounds": [
+        68,
+        240,
+        419,
+        578
+      ],
+      "actorHeightPixels": 339,
+      "foregroundColorBounds": [
+        68,
+        240,
+        651,
+        578
+      ]
+    },
+    {
+      "frame": 10,
+      "actorColorBounds": [
+        90,
+        233,
+        439,
+        572
+      ],
+      "actorHeightPixels": 340,
+      "foregroundColorBounds": [
+        90,
+        233,
+        651,
+        573
+      ]
+    },
+    {
+      "frame": 11,
+      "actorColorBounds": [
+        108,
+        239,
+        459,
+        577
+      ],
+      "actorHeightPixels": 339,
+      "foregroundColorBounds": [
+        108,
+        239,
+        651,
+        577
+      ]
+    },
+    {
+      "frame": 12,
+      "actorColorBounds": [
+        132,
+        231,
+        479,
+        573
+      ],
+      "actorHeightPixels": 343,
+      "foregroundColorBounds": [
+        132,
+        231,
+        651,
+        573
+      ]
+    },
+    {
+      "frame": 13,
+      "actorColorBounds": [
+        158,
+        227,
+        504,
+        576
+      ],
+      "actorHeightPixels": 350,
+      "foregroundColorBounds": [
+        158,
+        227,
+        650,
+        576
+      ]
+    },
+    {
+      "frame": 14,
+      "actorColorBounds": [
+        191,
+        224,
+        534,
+        573
+      ],
+      "actorHeightPixels": 350,
+      "foregroundColorBounds": [
+        191,
+        224,
+        665,
+        573
+      ]
+    },
+    {
+      "frame": 15,
+      "actorColorBounds": [
+        209,
+        220,
+        509,
+        573
+      ],
+      "actorHeightPixels": 354,
+      "foregroundColorBounds": [
+        209,
+        220,
+        686,
+        573
+      ]
+    },
+    {
+      "frame": 16,
+      "actorColorBounds": [
+        214,
+        220,
+        513,
+        575
+      ],
+      "actorHeightPixels": 356,
+      "foregroundColorBounds": [
+        214,
+        220,
+        695,
+        575
+      ]
+    },
+    {
+      "frame": 17,
+      "actorColorBounds": [
+        211,
+        226,
+        513,
+        575
+      ],
+      "actorHeightPixels": 350,
+      "foregroundColorBounds": [
+        211,
+        226,
+        695,
+        575
+      ]
+    },
+    {
+      "frame": 18,
+      "actorColorBounds": [
+        210,
+        228,
+        513,
+        575
+      ],
+      "actorHeightPixels": 348,
+      "foregroundColorBounds": [
+        210,
+        228,
+        696,
+        575
+      ]
+    },
+    {
+      "frame": 19,
+      "actorColorBounds": [
+        198,
+        232,
+        568,
+        575
+      ],
+      "actorHeightPixels": 344,
+      "foregroundColorBounds": [
+        198,
+        232,
+        669,
+        575
+      ]
+    },
+    {
+      "frame": 20,
+      "actorColorBounds": [
+        163,
+        232,
+        534,
+        573
+      ],
+      "actorHeightPixels": 342,
+      "foregroundColorBounds": [
+        163,
+        232,
+        651,
+        573
+      ]
+    },
+    {
+      "frame": 21,
+      "actorColorBounds": [
+        140,
+        230,
+        514,
+        576
+      ],
+      "actorHeightPixels": 347,
+      "foregroundColorBounds": [
+        140,
+        230,
+        651,
+        576
+      ]
+    },
+    {
+      "frame": 22,
+      "actorColorBounds": [
+        135,
+        228,
+        510,
+        577
+      ],
+      "actorHeightPixels": 350,
+      "foregroundColorBounds": [
+        135,
+        228,
+        651,
+        577
+      ]
+    },
+    {
+      "frame": 23,
+      "actorColorBounds": [
+        126,
+        232,
+        431,
+        576
+      ],
+      "actorHeightPixels": 345,
+      "foregroundColorBounds": [
+        126,
+        232,
+        651,
+        576
+      ]
+    },
+    {
+      "frame": 24,
+      "actorColorBounds": [
+        121,
+        235,
+        428,
+        576
+      ],
+      "actorHeightPixels": 342,
+      "foregroundColorBounds": [
+        121,
+        235,
+        651,
+        576
+      ]
+    }
+  ],
+  "notEstablished": "Actual mobile CSS display size and interaction must be checked in the browser after integration."
+}

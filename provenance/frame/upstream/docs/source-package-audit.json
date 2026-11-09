@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-11-09T05:10:22.046181+00:00",
+  "scope": "Point-in-time source and local asset audit, including final portrait Hero assets. Browser acceptance and final archive inspection are separate; clean reproduction is recorded in docs/reproduction.json.",
+  "assetFamilies": {
+    "public/frames/landscape": {
+      "decodedImages": 32,
+      "imageBytes": 470348,
+      "dimensions": {
+        "1280x800": 32
+      }
+    },
+    "public/frames/portrait": {
+      "decodedImages": 32,
+      "imageBytes": 300574,
+      "dimensions": {
+        "720x800": 32
+      }
+    },
+    "public/frames/hero": {
+      "decodedImages": 24,
+      "imageBytes": 473554,
+      "dimensions": {
+        "1000x900": 24
+      }
+    },
+    "public/frames/hero-portrait": {
+      "decodedImages": 24,
+      "imageBytes": 317902,
+      "dimensions": {
+        "720x800": 24
+      }
+    },
+    "public/stills": {
+      "decodedImages": 14,
+      "imageBytes": 298896,
+      "dimensions": {
+        "1280x800": 7,
+        "720x800": 7
+      }
+    },
+    "concepts": {
+      "decodedImages": 10,
+      "imageBytes": 18237352,
+      "dimensions": {
+        "1536x1024": 9,
+        "1024x1536": 1
+      }
+    }
+  },
+  "canonicalManifest": {
+    "path": "public/frames/manifest.json",
+    "entries": 64,
+    "missing": [],
+    "sha256Mismatches": [],
+    "byteCountMismatches": [],
+    "dimensionMismatches": [],
+    "poseSourceHashMatches": true
+  },
+  "heroManifest": {
+    "path": "public/frames/hero/manifest.json",
+    "entries": 24,
+    "missing": [],
+    "sha256Mismatches": [],
+    "byteCountMismatches": [],
+    "dimensionMismatches": [],
+    "poseSourceHashMatches": true
+  },
+  "licenses": {
+    "installedPackages": 20,
+    "retainedNotices": 20,
+    "allRecordedHashesMatch": true,
+    "allInstalledOriginalNoticeBytesMatch": true,
+    "mismatches": []
+  },
+  "authoredRuntimeTextScan": {
+    "filesScanned": 19,
+    "CJKMatches": [],
+    "privateOrExpiringPathMatches": [],
+    "httpUrlMatches": [
+      {
+        "path": "public/favicon.svg",
+        "line": 1,
+        "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#AED0C4\"/><g fill=\"none\" stroke=\"#403D49\" stroke-width=\"5\"><rect x=\"11\" y=\"10\" width=\"28\" height="
+      }
+    ],
+    "boundary": "Source-text scan; not image OCR, dynamic browser inspection, or an accessibility audit. Embedded license URLs in the standalone build are notice text, not resource requests."
+  },
+  "reproduction": {
+    "website": "Node.js24, npm ci, npm run build; existing dist served by Node built-ins.",
+    "art": "Optional C++17/OpenMP + Python/Pillow 13.0.0; canonical/stills, desktop Hero, and portrait Hero use separate commands.",
+    "crossPlatformByteIdentityVerified": false,
+    "windowsLauncherExecuted": false
+  },
+  "package": {
+    "finalZipInspected": false,
+    "cleanExtractionVerifiedByThisAudit": false,
+    "requiredExclusions": [
+      "node_modules",
+      ".git",
+      ".env and credentials",
+      "browser profiles",
+      "renderer executables",
+      "intermediate PPM files",
+      "caches",
+      "unrelated debug artifacts"
+    ],
+    "requiredInclusions": [
+      "source",
+      "package manifest and lockfile",
+      "final dist",
+      "complete production images",
+      "10 concept PNGs and provenance",
+      "third-party notices",
+      "README and Windows launch instructions",
+      "selected actual verification evidence"
+    ],
+    "cleanExtractionEvidence": "docs/reproduction.json; use the artifact SHA in that report to identify the exact verified revision."
+  },
+  "browserVerificationPerformedByThisAudit": false,
+  "productionRasterTotals": {
+    "images": 126,
+    "bytes": 1861274
+  },
+  "heroPortraitManifest": {
+    "path": "public/frames/hero-portrait/manifest.json",
+    "entries": 24,
+    "missing": [],
+    "sha256Mismatches": [],
+    "byteCountMismatches": [],
+    "dimensionMismatches": [],
+    "poseSourceHashMatches": true
+  },
+  "productionManifest": {
+    "path": "public/production-art-manifest.json",
+    "entries": 126,
+    "missing": [],
+    "sha256Mismatches": [],
+    "byteCountMismatches": [],
+    "dimensionMismatches": [],
+    "sourceHashMismatches": []
+  }
+}

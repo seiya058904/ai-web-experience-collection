@@ -1,0 +1,11 @@
+{
+  "role": "H-A",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: photorealistic-natural. Asset H-A, first candidate for RALLY — The Space Between, an original interactive editorial tennis story. Generate one landscape 16:9 premium cinematic sports photograph, no text. Low camera on a quiet terracotta clay singles tennis court in early morning, looking across the net toward anonymous adult player B in cream sportswear in the distant upper right-center, racket held credibly in ready position. Player A is near camera in dark navy, only an understated lower leg or racket edge at far right if needed. ONE hero yellow-green tennis ball floats in an explanatory frozen instant on the right at roughly 70 percent image width, occupies 28 percent frame width, visible tactile felt nap and a clean curved cream-white seam; it casts a grounded soft shadow. A taut realistic tennis net runs horizontally behind the ball at believable height, cream tape and fine dark mesh with coherent perspective. White court markings remain coherent and physically plausible; distant background low bleachers and cool misty blue air. Left 48 percent has quiet dark terracotta / navy-toned shadow for large cream HTML title, with no important object there. Palette clay #C96D4C, ivory #F4F0E4, cool pale blue #C6E2E7, ball #DDEA54, deep navy #243840. Carefully art directed, beautiful natural directional warm light from upper left, cool air, strong material scale, subtle analog film texture, calm magazine cover composition. No logos, no lettering, no extra balls, no spectators, no lens flare, no light trails, no sci-fi, no real athletes. This is one independent candidate image, not a collage.",
+  "parameters": {
+    "transparent_background": false
+  },
+  "seed": "Not supplied by tool",
+  "file": "art-assets/H-A.png",
+  "use": "Low-angle hero candidate and direction"
+}

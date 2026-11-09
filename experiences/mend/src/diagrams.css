@@ -1,0 +1,42 @@
+.mend-diagram{width:100%;max-width:420px;margin:24px 0 8px;color:#4b423b;contain:layout style}
+.mend-diagram svg{display:block;width:100%;height:auto;overflow:visible}
+.mend-diagram text{font-family:"DM Sans",Arial,sans-serif;fill:#655744;font-size:13px;font-weight:400}
+.mend-diagram .diagram-kicker{font-size:11px;letter-spacing:.025em;fill:#766450}
+.mend-diagram .diagram-caption{font-size:12px;fill:#766450}
+.mend-diagram .diagram-small-label{font-size:12px;fill:#8d7158}
+.mend-diagram .diagram-body{fill:#ded9c5;fill-opacity:.48;stroke:#a99b81;stroke-width:1}
+.mend-diagram .diagram-axle{fill:none;stroke:#a38a68;stroke-width:5;stroke-linecap:round}
+.mend-diagram .diagram-axle-inset{fill:none;stroke:#a38a68;stroke-width:2;stroke-dasharray:4 4;opacity:.7}
+.mend-diagram .diagram-axle-end,.mend-diagram .diagram-wheel-center{fill:#94764f;stroke:#765e43;stroke-width:.7}
+.mend-diagram .diagram-old-wheel{fill:#c1a075;stroke:#876d4e;stroke-width:1.2}
+.mend-diagram .diagram-new-wheel{fill:#e9d3ac;stroke:#ac936b;stroke-width:1.2}
+.mend-diagram .diagram-grain{fill:none;stroke:#987b55;stroke-width:.75;stroke-linecap:round;opacity:.67}
+.mend-diagram .diagram-contact-ring{fill:#bd6551;fill-opacity:.12;stroke:#a34e3b;stroke-width:1.2}
+.mend-diagram .diagram-contact-text{fill:#a34e3b;font-size:11px}
+.mend-diagram .diagram-leader{fill:none;stroke:#a96a55;stroke-width:.8}
+.mend-diagram .diagram-gap{fill:none;stroke:#687b5c;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+.mend-diagram .diagram-clear-text{fill:#687b5c;font-size:11px}
+.mend-diagram .diagram-new-part{fill:#eee0bd;stroke:#b39b72;stroke-width:1}
+.mend-diagram .diagram-sleeve-hole{fill:#b39b72;stroke:#917a58;stroke-width:.6}
+.mend-diagram .diagram-bag-back{fill:#ecdfc7;fill-opacity:.58;stroke:#ac9878;stroke-width:.8}
+.mend-diagram .diagram-bag-front{fill:#f3ead8;fill-opacity:.36;stroke:#ac9878;stroke-width:.6}
+.mend-diagram .diagram-bag-seam{fill:none;stroke:#b3a185;stroke-width:.7}
+.mend-diagram .diagram-far-ground{fill:none;stroke:#c8baa5;stroke-opacity:.45;stroke-width:.7}
+.mend-diagram .diagram-ground{fill:none;stroke:#a99b85;stroke-width:1}
+.mend-diagram .diagram-path{fill:none;stroke:#c0ae96;stroke-width:.7;stroke-dasharray:3 4}
+.mend-diagram .diagram-path-end{fill:none;stroke:#a38d70;stroke-width:.9}
+.mend-diagram .diagram-catch-mark{fill:none;stroke:#b17660;stroke-width:.9}
+.mend-diagram .diagram-cord{fill:none;stroke:#bd6551;stroke-width:1.8;stroke-linecap:round}
+.mend-diagram .diagram-far-wheel{opacity:.75}
+.mend-diagram .diagram-blue-wheel{fill:#456a91;stroke:#345471;stroke-width:1.1}
+.mend-diagram .diagram-blue-grain{fill:none;stroke:#b3c0c7;stroke-width:.8;stroke-linecap:round;opacity:.7}
+.mend-diagram .diagram-toy-body{fill:#ecdbac;stroke:#a28d68;stroke-width:1.1;stroke-linejoin:round}
+.mend-diagram .diagram-wear{fill:#c8aa7a;opacity:.68}
+.mend-diagram .diagram-belly{fill:#c6a779;stroke:#9a7d57;stroke-width:.45;stroke-linejoin:round}
+.mend-diagram .diagram-sun-mark{fill:#c47635;stroke:#c47635;stroke-width:.55;stroke-linecap:round}
+.mend-diagram .diagram-ear{fill:#bd6551;stroke:#9c5945;stroke-width:.8;stroke-linejoin:round}
+.mend-diagram .diagram-eye,.mend-diagram .diagram-nose{fill:#4b423b}
+.mend-diagram .diagram-trial-sleeve{fill:#f2e3bd;stroke:#a78e62;stroke-width:.65}
+.mend-diagram .diagram-rub-mark{fill:none;stroke:#b24f38;stroke-width:1.5;stroke-linecap:round}
+@media(max-width:760px){.mend-diagram{max-width:390px;margin-top:23px}}
+@media(prefers-reduced-motion:reduce){.mend-diagram *{transition:none!important;animation:none!important}}

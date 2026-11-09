@@ -1,0 +1,74 @@
+[
+  {
+    "id": "IMG-01",
+    "prompt": "Use case: stylized-concept. Create one high-end, finely art-directed product-render concept for ODDS, an original interactive probability playground website. Cream paper-plaster environment #F2EDDF, matte ultramarine blue board #244AB8, small matte terracotta-orange ball #E87942, broad warm light from upper left, deep but soft contact shadows, visible machined bevels and fine mineral texture. Adult museum design, playful intelligence, no casino associations, no glass, no glow, no words, no letters, no logo, no UI. This is a material and composition study only; exact data and interactive geometry will be rebuilt in code. The full website has ten scenes: entrance, a fork, sixteen routes, path weights, two small samples, bias, three rounds, 256-ball portrait, workbench, ending. This image is an entrance concept in a coordinated set. Hero A: landscape 3:2 product photograph of a beautiful thick freestanding rounded rectangular blue branching board on the right 60 percent of the frame, leaning very slightly back against a seamless cream wall. Camera three-quarter slightly overhead, gentle perspective, full board edges visible, entry funnel near top with one orange lead ball, eight orderly branching levels of small blue pegs and nine open collection compartments along the bottom. A few orange demonstration balls only. Left third entirely calm cream space for a real DOM heading. Authentic desktop scale, subtle plinth, beautiful long shadow cast right and down. Strong board silhouette, not a triangle cutout.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-86c97f9a-6d03-4617-869b-dccbe399d5fd.png",
+    "file": "artwork/img-01.webp",
+    "purpose": "Hero route comparison",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-02",
+    "prompt": "Use case: stylized-concept. Create one high-end, finely art-directed product-render concept for ODDS, an original interactive probability playground website. Cream paper-plaster environment #F2EDDF, matte ultramarine blue board #244AB8, small matte terracotta-orange ball #E87942, broad warm light from upper left, deep but soft contact shadows, visible machined bevels and fine mineral texture. Adult museum design, playful intelligence, no casino associations, no glass, no glow, no words, no letters, no logo, no UI. This is a material and composition study only; exact data and interactive geometry will be rebuilt in code. The full website has ten scenes: entrance, a fork, sixteen routes, path weights, two small samples, bias, three rounds, 256-ball portrait, workbench, ending. This image is an entrance concept in a coordinated set. Hero B: landscape 3:2. A monumental gallery installation, near frontal camera at human eye level. A tall matte blue branching board occupies right 60 percent, thick side walls, bottom nine collection tray openings have physical depth and can all be seen. Orange lead ball is small at top, eight aligned peg rows suggested. Left third blank cream negative space. Board looks one metre tall, stronger upright monumental presence than a tabletop toy, gentle low camera perspective, not the same angle as an overhead view.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-38f855d8-8328-43d3-8926-5da592fb5c0a.png",
+    "file": "artwork/img-02.webp",
+    "purpose": "Hero route comparison",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-03",
+    "prompt": "Use case: stylized-concept. Create one high-end, finely art-directed product-render concept for ODDS, an original interactive probability playground website. Cream paper-plaster environment #F2EDDF, matte ultramarine blue board #244AB8, small matte terracotta-orange ball #E87942, broad warm light from upper left, deep but soft contact shadows, visible machined bevels and fine mineral texture. Adult museum design, playful intelligence, no casino associations, no glass, no glow, no words, no letters, no logo, no UI. This is a material and composition study only; exact data and interactive geometry will be rebuilt in code. The full website has ten scenes: entrance, a fork, sixteen routes, path weights, two small samples, bias, three rounds, 256-ball portrait, workbench, ending. This image is an entrance concept in a coordinated set. Hero C: landscape 3:2 macro product study. Extreme close-up of the blue entry funnel, orange lead ball, and first branching connector in bottom-right foreground. The whole blue branching board recedes far behind as low-contrast physical context. Shallow but purposeful depth of field, exquisite matte bevel and contact-shadow details. Large quiet cream space over upper third and at left for DOM typography. Small object's great stage, a distinct macro route, no balls in midair.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-c42472c4-5c5a-4aea-9ac1-90dda5207c2d.png",
+    "file": "artwork/img-03.webp",
+    "purpose": "Hero route comparison",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-04",
+    "prompt": "Use case: stylized-concept. One standalone production-quality visual development image for ODDS interactive probability playground. Same design identity as the reference: matte ultramarine #244AB8, terracotta orange #E87942, creamy plaster #F2EDDF, subtle tactile mineral surface, finely machined bevels, generous negative space, warm broad area light upper left, grounded shadows lower right. Intelligent adult museum art direction, never a casino, not glossy plastic or glass. No typography, letters, logos, numbers or UI; exact mathematical figures and controls will be rendered in code. Desktop refined hero scene. Refine the reference into a carefully composed landscape 3:2 shot: left 34 percent quiet cream space, rounded rectangular blue board occupies right 60 percent with full silhouette and nine continuous deep receiving slots visible. Slightly overhead three-quarter camera, convincing thickness, flatter even board face, eight deliberate levels implied, small orange lead ball at top, restrained demonstration balls at bottom. Improve the entry funnel, bevel continuity, contact shadows and fine matte surface; aesthetically resolved, architectural quality. Keep the reference's restrained tabletop scale and elegant balanced framing.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-c01bc338-7945-47d5-8dc3-e131671a1fdc.png",
+    "file": "artwork/img-04.webp",
+    "purpose": "Selected desktop material and shape reference; exact interactive geometry rebuilt in SVG",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-05",
+    "prompt": "Use case: stylized-concept. One standalone production-quality visual development image for ODDS interactive probability playground. Same design identity as the reference: matte ultramarine #244AB8, terracotta orange #E87942, creamy plaster #F2EDDF, subtle tactile mineral surface, finely machined bevels, generous negative space, warm broad area light upper left, grounded shadows lower right. Intelligent adult museum art direction, never a casino, not glossy plastic or glass. No typography, letters, logos, numbers or UI; exact mathematical figures and controls will be rendered in code. Independent PORTRAIT mobile hero composition, vertical 2:3. Top 23 percent quiet cream wall negative space for real title, below it a COMPLETE front-facing rounded rectangular blue branching board, centered, no dramatic perspective, top entry and every one of the nine collection slots visible above bottom edge, orange ball at entry and sparse orange demonstration balls in lower slots. Rest on a modest cream ledge. Fine textured surface, realistic soft light, no cropping off side slots. Designed specifically for a phone, not a crop of a landscape.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-534d97c3-dfd3-4691-956f-ab2d7e9b77b4.png",
+    "file": "artwork/img-05.webp",
+    "purpose": "Independent mobile art direction reference",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-06",
+    "prompt": "Use case: stylized-concept. One standalone production-quality visual development image for ODDS interactive probability playground. Same design identity as the reference: matte ultramarine #244AB8, terracotta orange #E87942, creamy plaster #F2EDDF, subtle tactile mineral surface, finely machined bevels, generous negative space, warm broad area light upper left, grounded shadows lower right. Intelligent adult museum art direction, never a casino, not glossy plastic or glass. No typography, letters, logos, numbers or UI; exact mathematical figures and controls will be rendered in code. Chapter 4 standalone art reference, landscape 3:2. A refined shallow blue relief sculpture on a cream museum table. Fan-like bundles of ultramarine branching ribbons from one small top origin lead downward to exactly nine clean terminal tray regions on a common horizontal baseline. The middle bundle is richly dense and raised, edges very fine and sparse. Restrained sculptural depth, orderly mathematical elegance, one coherent fan, plenty of clear upper space. Pure composition reference not a scientific chart. No balls, no labels.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-28550470-e2b1-4841-bd8c-ad2cf80d0e6d.png",
+    "file": "artwork/img-06.webp",
+    "purpose": "Theoretical path relief composition reference",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-07",
+    "prompt": "Use case: stylized-concept. One standalone production-quality visual development image for ODDS interactive probability playground. Same design identity as the reference: matte ultramarine #244AB8, terracotta orange #E87942, creamy plaster #F2EDDF, subtle tactile mineral surface, finely machined bevels, generous negative space, warm broad area light upper left, grounded shadows lower right. Intelligent adult museum art direction, never a casino, not glossy plastic or glass. No typography, letters, logos, numbers or UI; exact mathematical figures and controls will be rendered in code. Chapter 8 climax standalone art reference, landscape 3:2. Several hundred SMALL MATTE orange spheres arranged as a quiet still-life installation in nine separate blue collector lanes, forming nine columns of irregular heights with a broad dense central grouping and sparse outer groups, all grounded on a common thick blue plinth. Array not falling rain: every sphere rests at a legible grid-like position with tiny contact shadow and no overlaps. One lead sphere is slightly forward but not duplicated. Low three-quarter view, tactile material, orange against cream with cobalt accents, gentle celebratory rhythm, upper third open. This is an art reference, exact 256 balls will be generated in code.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-57320b14-7a2f-45f2-9b4b-35cb9ad39262.png",
+    "file": "artwork/img-07.webp",
+    "purpose": "Late climax composition reference; counts rebuilt from saved samples",
+    "seed": "Not provided by the tool"
+  },
+  {
+    "id": "IMG-08",
+    "prompt": "Use case: stylized-concept. One standalone production-quality visual development image for ODDS interactive probability playground. Same design identity as the reference: matte ultramarine #244AB8, terracotta orange #E87942, creamy plaster #F2EDDF, subtle tactile mineral surface, finely machined bevels, generous negative space, warm broad area light upper left, grounded shadows lower right. Intelligent adult museum art direction, never a casino, not glossy plastic or glass. No typography, letters, logos, numbers or UI; exact mathematical figures and controls will be rendered in code. Standalone transition midpoint study between chapter 7 three-round comparison and chapter 8 large portrait. Landscape 3:2. Exactly THREE DISTINCT blue trays on one horizontal baseline, middle tray larger and in foreground, two side trays smaller and retiring toward edges. Each tray has nine lanes with small stationary orange spheres resting in regular columns. Central tray is gaining physical thickness and architectural presence, central sphere shadows continuous on its own blue surface. All three sample groups visibly separate, no spheres shared between trays, no motion blur or transparent duplicated ghosts, no merging, calm cream space above. Middle tray is protagonist at 50 percent of a layout transition.",
+    "tool": "image_gen.imagegen",
+    "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-4f16314f-bd89-4eef-b46b-b0fafe316a95.png",
+    "file": "artwork/img-08.webp",
+    "purpose": "Midpoint composition study; generated repeated balls are not statistical evidence",
+    "seed": "Not provided by the tool"
+  }
+]

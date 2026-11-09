@@ -1,0 +1,22 @@
+{
+  "artifact": "FRAME.html",
+  "builtFrom": "dist/index.html",
+  "embeddedRasterFiles": 126,
+  "embeddedThirdPartyNotices": [
+    {
+      "name": "lenis",
+      "version": "1.3.27",
+      "license": "MIT",
+      "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+    },
+    {
+      "name": "@fontsource-variable/manrope",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    }
+  ],
+  "bytes": 2681027,
+  "sha256": "13f99e61c4b2d2db1a817b391177c15c75380480708b46d9c2043f5f42a428df",
+  "note": "Same production application bundle, with local image/font bytes embedded. No runtime CDN or server required."
+}

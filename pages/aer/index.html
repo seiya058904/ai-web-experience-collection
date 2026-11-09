@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F6F1E8" />
+    <meta name="description" content="AER — an unhurried hot-air-balloon journey. Discover what holds you up, choose a layer of wind, and keep a little of the sky." />
+    <title>AER — Carried by Air</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%aer/">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AER — Carried by Air">
+    <meta property="og:description" content="AER — an unhurried hot-air-balloon journey. Discover what holds you up, choose a layer of wind, and keep a little of the sky.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%aer/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%aer/art/h-d.webp">
+    <meta property="og:image:alt" content="An AI-generated cream and apricot hot-air balloon above a small basket in a morning meadow">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AER — Carried by Air">
+    <meta name="twitter:description" content="AER — an unhurried hot-air-balloon journey. Discover what holds you up, choose a layer of wind, and keep a little of the sky.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%aer/art/h-d.webp">
+    <link rel="stylesheet" href="/experiences/shared/collection-return.css">
+    <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%aer/favicon.svg" />
+    <link rel="preload" as="image" href="%BASE_URL%aer/art/h-d.webp" media="(min-width: 681px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%aer/art/h-m.webp" media="(max-width: 680px)" fetchpriority="high" />
+    <link rel="stylesheet" href="../../experiences/aer/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#ch-01">Skip to the journey</a>
+    <div class="world" aria-hidden="true"><canvas id="world-canvas"></canvas><div id="world-fallback"></div></div>
+    <header class="site-header">
+      <a class="wordmark" href="#ch-01" aria-label="AER — back to the beginning">AER<span class="wordmark-dot"></span></a>
+      <div class="header-actions">
+        <a class="collection-return" href="%BASE_URL%#world-aer" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button id="sound-toggle" class="utility sound-toggle" type="button" aria-pressed="false" aria-label="Turn ambient sound on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path class="sound-wave" d="M17 8a6 6 0 0 1 0 8M20 5a10 10 0 0 1 0 14"/></svg><span>Sound off</span></button>
+        <button id="menu-open" class="utility menu-button" type="button" aria-haspopup="dialog" aria-controls="chapter-menu"><span>Chapters</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+      </div>
+    </header>
+    <main id="journey">
+      <section id="ch-01" class="chapter hero" aria-labelledby="title-01" data-chapter="1">
+        <picture class="hero-art"><source media="(max-width:680px)" srcset="%BASE_URL%aer/art/h-m.webp"/><img id="hero-image" src="%BASE_URL%aer/art/h-d.webp" alt="A vast cream and apricot balloon with a navy crown above a small honey-colored basket and two people in a morning meadow." width="1672" height="941" fetchpriority="high" decoding="async" /></picture>
+        <div class="hero-fallback" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1 id="title-01" tabindex="-1">Carried<br/> by <em>air.</em></h1>
+          <p class="hero-intro">A small journey.<br/> An entirely different way to move.</p>
+          <a class="journey-link" href="#ch-02"><span class="round-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></span><span>Begin the ascent</span></a>
+        </div>
+        <div class="hero-bottom"><p>First, look at what holds it up.</p><p class="hero-scale">One balloon. Two small figures.<br/>A whole morning waiting.</p></div>
+      </section>
+
+      <section id="ch-02" class="chapter shape-chapter paper" aria-labelledby="title-02" data-chapter="2">
+        <div class="section-heading"><span class="chapter-label">02 / A shape for air</span><h2 id="title-02" tabindex="-1">So much sky.<br/><em>So little holding it.</em></h2></div>
+        <div class="shape-layout">
+          <div class="shape-copy"><p class="lead">Before it can rise, the air needs a place to stay.</p><p>A light envelope gives a great volume a shape. The same sixteen long panels gather at the mouth, where the suspension lines meet the little basket below.</p><div class="segmented" role="group" aria-label="Compare the envelope's two shapes"><button type="button" data-shape="rest" aria-pressed="true">At rest</button><button type="button" data-shape="held" aria-pressed="false">Held open</button></div><p id="shape-caption" class="detail" aria-live="polite">At rest, the fabric lies low. Its colors and connections still belong to the same balloon.</p></div>
+          <figure class="shape-figure"><div class="shape-images"><figure class="shape-state"><img id="shape-rest" src="%BASE_URL%aer/art/h-b.webp" alt="The same apricot and cream envelope resting half-open on the grass beside its basket." width="1536" height="1024" loading="lazy"/><figcaption><strong>At rest</strong><span>Fabric supported by the ground.</span></figcaption></figure><figure class="shape-state"><img id="shape-held" src="%BASE_URL%aer/art/h-d.webp" alt="The same balloon held open to its full pear-shaped volume, with its basket still on the ground." width="1672" height="941" loading="lazy" hidden/><figcaption><strong>Held open</strong><span>Air gives the envelope its volume.</span></figcaption></figure></div><figcaption><span>From fabric to volume</span><span>The shape changes. The identity stays.</span></figcaption></figure>
+        </div>
+        <p class="chapter-footnote">The two views are held separately, so you can compare the structure at your own pace.</p>
+      </section>
+
+      <section id="ch-03" class="chapter lab-chapter paper" aria-labelledby="title-03" data-chapter="3">
+        <div class="lab-intro"><span class="chapter-label">03 / Between light and heavy</span><h2 id="title-03" tabindex="-1">What lifts it<br/><em>is a difference.</em></h2><p class="lead">The surrounding air supports the volume. Everything inside still has weight.</p><p>Warmer air inside weighs less. The envelope, basket, equipment and passengers remain part of the total. A flame is not pushing the balloon off the ground.</p><div class="lab-note"><span class="note-rule"></span><p>A small ground experiment.<br/>Relative values, a fixed volume, and an imagined load. No flight settings.</p></div></div>
+        <div class="lab-panel" aria-labelledby="lab-heading"><h3 id="lab-heading">Find the balance</h3><div class="force-display"><div class="force-column"><span class="force-name">Surrounding air<br/>supports</span><div class="force-track"><div class="force-bar support-bar" id="support-bar"></div></div><span class="force-caption">Fixed volume</span></div><div class="force-center" id="lab-balloon" aria-hidden="true"></div><div class="force-column"><span class="force-name">Everything<br/>weighs</span><div class="force-track"><div class="force-bar weight-bar" id="weight-bar"></div></div><span class="force-caption">Air + structure + load</span></div></div>
+          <div class="lab-result" aria-live="polite"><span id="balance-marker"></span><strong id="balance-result">Near balance</strong><p id="balance-description">The support and the total weight nearly meet.</p></div>
+          <label class="range-label" for="warmth"><span>Relative warmth</span><output id="warmth-value" for="warmth">64 / 100</output></label><input id="warmth" type="range" min="0" max="100" step="1" value="64" aria-describedby="warmth-help"/><div id="warmth-help" class="range-ends"><span>Less warm</span><span>More warm</span></div>
+          <fieldset class="load-controls"><legend>Ground load</legend><div class="radio-row"><label><input type="radio" name="ground-load" value="light"/><span>Light</span></label><label><input type="radio" name="ground-load" value="standard" checked/><span>Standard</span></label><label><input type="radio" name="ground-load" value="heavy"/><span>Heavy</span></label></div></fieldset>
+          <div class="lab-presets" role="group" aria-label="Compare three balance states"><button type="button" data-lab-preset="30">Still heavy</button><button type="button" data-lab-preset="64">Near balance</button><button type="button" data-lab-preset="92">Rising tendency</button></div><button class="text-button" id="lab-reset" type="button">Reset the experiment <span aria-hidden="true">↺</span></button>
+          <details class="assumptions"><summary>The simple idea behind it</summary><p>Support is the weight of the outside air displaced by the fixed envelope volume. Total weight includes the inside air, envelope, basket, equipment and load. Increasing relative warmth reduces only the inside-air weight. Adding load increases only total weight.</p><p>This experiment stays on the ground. It does not change the journey, and nothing is dropped from the basket.</p></details>
+        </div>
+      </section>
+
+      <section id="ch-04" class="chapter live-chapter lift-chapter" aria-labelledby="title-04" data-chapter="4">
+        <div class="scene-copy"><span class="chapter-label">04 / The ground lets go</span><h2 id="title-04" tabindex="-1">Nothing rushes.<br/><em>Something releases.</em></h2><p class="lead">First, a little daylight appears beneath the basket.</p><p>The people stay with the meadow. The shadow stays with the ground. Slowly, the space between them grows.</p></div>
+        <div class="scene-note"><span class="small-rule"></span><p>Watch the basket and its contact shadow<br/>part company, one quiet moment at a time.</p></div>
+        <div class="still-sequence" id="lift-stills" aria-label="Two still views of leaving the ground"></div>
+      </section>
+
+      <section id="ch-05" class="chapter shadow-chapter paper" aria-labelledby="title-05" data-chapter="5">
+        <div class="wide-heading"><div><span class="chapter-label">05 / The shadow goes first</span><h2 id="title-05" tabindex="-1">A softer way<br/><em>to measure height.</em></h2></div><p>Our shadow crosses the pale path before we do. A field edge folds it; the next slope stretches it. Even from above, the earth has a shape.</p></div>
+        <figure class="landscape-plate shadow-plate"><img src="%BASE_URL%aer/art/k-05.webp" alt="The balloon's shadow bends across two differently colored sloping fields, beside a pale curved path; a little basket rim remains in the foreground." width="1536" height="1024" loading="lazy"/><figcaption><span>Across the same two fields</span><span>The pale path is our common beginning.</span></figcaption></figure>
+        <div class="still-sequence shadow-stills" id="shadow-stills" aria-label="Two still comparisons of the shadow on changing terrain"></div>
+        <div class="shadow-after"><p class="pull-quote">“Before we choose a direction,<br/>we share the same sky.”</p><p class="detail">Every route has passed this same place. Changing the wind later never changes the fields, balloon or shadow you see here.</p></div>
+        <div class="transition-study"><img src="%BASE_URL%aer/art/t-04-05.webp" alt="A shallow oblique view keeps the lower envelope, connected basket, field shadow and white path together." width="1536" height="1024" loading="lazy"/><p>One connected view:<br/>balloon, basket, shadow, path.</p></div>
+      </section>
+
+      <section id="ch-06" class="chapter wind-chapter paper" aria-labelledby="title-06" data-chapter="6">
+        <div class="wind-copy"><span class="chapter-label">06 / The floors of the wind</span><h2 id="title-06" tabindex="-1">Choose the air.<br/><em>Follow its answer.</em></h2><p class="lead">We can change our height.<br/>The wind carries us across the world.</p><p>Three imagined layers move in three different directions. Choose one to stay with. All three journeys begin right here.</p>
+          <div class="wind-options" role="group" aria-label="Choose your wind layer"><button type="button" data-wind="low" aria-pressed="false"><span class="wind-button-no">01</span><span><strong>Low layer</strong><small>East · along the field edge</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button><button type="button" data-wind="middle" aria-pressed="true"><span class="wind-button-no">02</span><span><strong>Middle layer</strong><small>North · past the village bend</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m-6 6 6-6 6 6"/></svg></button><button type="button" data-wind="high" aria-pressed="false"><span class="wind-button-no">03</span><span><strong>High layer</strong><small>Northwest · toward open country</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m19 19-13-13m0 9V6h9"/></svg></button></div>
+          <p class="wind-choice" id="wind-choice" aria-live="polite">Middle layer chosen. Your journey will reach Willow Bend.</p><p class="detail" id="wind-default-note">No choice needed to continue: the middle layer is already waiting for you.</p>
+        </div>
+        <div class="wind-visual"><div id="wind-profile" class="wind-profile" role="img" aria-label="Three fictional wind layers: east below, north in the middle, northwest above."></div><div id="decision-route" class="route-diagram"></div><p class="detail">An authored wind field, not live weather.<br/>Height and horizontal drift share one continuous path.</p></div>
+      </section>
+
+      <section id="ch-07" class="chapter live-chapter route-chapter" aria-labelledby="title-07" data-chapter="7">
+        <div class="scene-copy"><span class="chapter-label">07 / A choice takes shape</span><h2 id="title-07" tabindex="-1">The wind draws<br/><em>your way.</em></h2><p class="lead" id="route-lead">Beyond the village bend, a softer green opens.</p><p id="route-story">The middle air carries us north. The roofs stay to one side as Willow Bend becomes a place we could touch.</p><p class="route-name"><span data-current-layer>Middle layer</span><span class="route-name-line"></span><span data-current-destination>Willow Bend</span></p></div>
+        <div class="compare-panel"><button class="text-button" id="compare-toggle" type="button" aria-expanded="false" aria-controls="compare-content">What if we chose another layer? <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="compare-content" hidden><div class="segmented preview-options" role="group" aria-label="Preview another route without changing your journey"><button type="button" data-preview="low" aria-pressed="false">Low</button><button type="button" data-preview="middle" aria-pressed="false">Middle</button><button type="button" data-preview="high" aria-pressed="false">High</button></div><div id="preview-route"></div><p id="preview-caption" class="detail" aria-live="polite">Choose a preview. Your current journey will stay the same.</p><button id="clear-preview" type="button" class="text-button">Return to my route</button></div></div>
+      </section>
+
+      <section id="ch-08" class="chapter panorama-chapter paper" aria-labelledby="title-08" data-chapter="8">
+        <div class="wide-heading"><div><span class="chapter-label">08 / In the same light</span><h2 id="title-08" tabindex="-1">A different way here.<br/><em>The same morning.</em></h2></div><p>Honey-colored wicker close enough to touch.<br/>A whole quiet world beyond it.</p></div>
+        <figure class="landscape-plate panorama-plate" id="panorama-plate"><div id="panorama-fallback"></div><img id="panorama-image" data-src="%BASE_URL%aer/art/k-08.webp" alt="Basket-height morning view toward Willow Bend, with village roofs, gray-green fields and distant indigo hills." width="1536" height="1024" loading="lazy"/><figcaption><span data-current-destination>Willow Bend</span><span id="panorama-caption">Past the village, by the willows.</span></figcaption></figure>
+        <div class="panorama-bottom"><p class="pull-quote">There is nowhere else<br/><em>you need to be.</em></p><div><button type="button" id="look-back" class="text-button" aria-expanded="false" aria-controls="look-back-route">Look back along your route <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m6-6-6 6 6 6"/></svg></button><div id="look-back-route" hidden></div><p class="detail">The line remembers your way here.<br/>It never redraws where you began.</p></div></div>
+      </section>
+
+      <section id="ch-09" class="chapter live-chapter landing-chapter" aria-labelledby="title-09" data-chapter="9">
+        <div class="scene-copy"><span class="chapter-label">09 / Back to the earth</span><h2 id="title-09" tabindex="-1">Give the height<br/><em>back to the ground.</em></h2><p class="lead" id="landing-lead">The grass at Willow Bend rises to meet us.</p><p>The waiting figures become people again. A small shadow finds the basket. The journey becomes a place to stand.</p><p class="detail">A calm, imagined arrival.<br/>Scroll at your own pace; there is nothing to time.</p></div>
+        <div class="scene-note"><span class="small-rule"></span><p id="landing-caption">Willow Bend.<br/>The route you chose has brought you here.</p></div><div class="still-sequence" id="landing-stills" aria-label="Approach, contact and settled landing views"></div>
+      </section>
+
+      <section id="ch-10" class="chapter keepsake-chapter paper" aria-labelledby="title-10" data-chapter="10">
+        <div class="keepsake-copy"><span class="chapter-label">10 / Keep the sky</span><h2 id="title-10" tabindex="-1">Some journeys<br/><em>stay with you.</em></h2><p class="lead">The wind found the way.<br/>We remember where it went.</p><figure class="ending-tableau"><div id="ending-scene"></div><figcaption><span>Back on the grass at <span data-current-destination>Willow Bend</span>.</span><span>A quiet illustrated ending.</span></figcaption></figure><dl class="journey-receipt"><div><dt>Your air</dt><dd data-current-layer>Middle layer</dd></div><div><dt>Your landing</dt><dd data-current-destination>Willow Bend</dd></div></dl><div class="download-actions"><button type="button" id="save-svg" class="solid-button">Save this journey <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg></button><button type="button" id="save-png" class="outline-button">Save as PNG</button></div><p class="detail" id="export-status" aria-live="polite">A small original SVG keepsake, with your actual chosen route.</p><a href="#ch-06" class="journey-link retry-link"><span class="round-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 0 5M4 4v6h6"/></svg></span><span>Try another layer of wind</span></a></div>
+        <div id="keepsake-preview" class="keepsake-preview" aria-label="Your journey keepsake preview"></div>
+        <footer class="site-footer"><a class="wordmark" href="#ch-01" aria-label="AER — return to the beginning">AER<span class="wordmark-dot"></span></a><p>For a slower kind of attention.</p><button class="text-button" type="button" id="about-open">About this journey</button></footer>
+      </section>
+    </main>
+    <aside class="journey-status" aria-label="Journey progress"><span id="current-number">01</span><div class="progress-track"><span id="journey-progress"></span></div><span id="current-label">Look up</span><button id="pause-motion" type="button" aria-pressed="false" aria-label="Pause ambient motion"><svg viewBox="0 0 24 24" aria-hidden="true"><path id="pause-icon" d="M8 5v14M16 5v14"/></svg></button></aside>
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+    <dialog id="chapter-menu" class="chapter-menu" aria-labelledby="menu-title" data-lenis-prevent><div class="menu-top"><span class="wordmark">AER<span class="wordmark-dot"></span></span><button type="button" class="icon-button" id="menu-close" aria-label="Close chapters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button></div><h2 id="menu-title">Take the long way.</h2><nav aria-label="Chapters"><ol id="chapter-links"><li><a href="#ch-01"><span>01</span>Look up</a></li><li><a href="#ch-02"><span>02</span>A shape for air</a></li><li><a href="#ch-03"><span>03</span>Between light and heavy</a></li><li><a href="#ch-04"><span>04</span>The ground lets go</a></li><li><a href="#ch-05"><span>05</span>The shadow goes first</a></li><li><a href="#ch-06"><span>06</span>The floors of the wind</a></li><li><a href="#ch-07"><span>07</span>A choice takes shape</a></li><li><a href="#ch-08"><span>08</span>In the same light</a></li><li><a href="#ch-09"><span>09</span>Back to the earth</a></li><li><a href="#ch-10"><span>10</span>Keep the sky</a></li></ol></nav><div class="menu-preferences"><label for="motion-mode">Motion</label><select id="motion-mode"><option value="system">Use device preference</option><option value="full">Full journey motion</option><option value="reduced">Reduced motion</option></select><p>Every chapter and every route is here in either mode.</p></div></dialog>
+    <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title" data-lenis-prevent><button type="button" class="icon-button" id="about-close" aria-label="Close about this journey"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button><span class="chapter-label">A note from the ground</span><h2 id="about-title">An imagined morning.<br/><em>A real idea.</em></h2><p>AER explores buoyancy and the freedom of moving with different layers of air. The landscape, people, wind, routes and timing are authored fiction. It is not weather, navigation, a flight record or flying instruction.</p><p>The ground experiment uses a fixed volume and normalized relative quantities. Outside-air support is compared with the combined weight of inside air, envelope, basket, equipment and load. The routes integrate a simple continuous wind field as height changes.</p><p>The cinematic images were made with AI. The live flight study, diagrams, controls and keepsake are rendered in code. Photography and the illustrated study are deliberately framed as different views.</p><ul><li><a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/Balloon_Flying_Handbook_FAA-H-8083-11B/bfh_chapter_2.pdf" target="_blank" rel="noreferrer">FAA · Balloon design, systems and theory</a></li><li><a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/Balloon_Flying_Handbook_FAA-H-8083-11B/bfh_chapter_7.pdf" target="_blank" rel="noreferrer">FAA · In-flight maneuvers</a></li></ul><p class="detail">No account, telemetry, remote runtime API or microphone is used. Your wind and motion preferences stay in this browser. Sound starts only when you turn it on.</p></dialog>
+    <noscript><p class="noscript-message">The ten chapters and artwork are available here. Enable JavaScript to use the balance experiment, choose a wind layer and save your journey.</p></noscript>
+    <script type="module" src="../../experiences/aer/src/main.ts"></script>
+  </body>
+</html>

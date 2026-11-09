@@ -1,0 +1,11 @@
+{
+  "role": "Player B production cutout",
+  "file": "art-assets/player-b.png",
+  "tool": "image_gen.imagegen (built-in)",
+  "generated": "2026-11-09",
+  "transparent_background": true,
+  "prompt": "Use case: photorealistic-natural. Asset: transparent production cutout for an editorial interactive tennis website. One single full-body anonymous adult tennis player B in a premium cream athletic T-shirt and cream athletic shorts, white socks and navy/cream tennis shoes, no logos or branding. Camera almost directly overhead at 75 degrees downward angle, looking down on head, shoulders, arms, legs and both shoes. The person faces toward IMAGE BOTTOM, poised to receive a ball from the bottom edge. Credible ready / forehand preparation posture, knees gently bent, feet naturally spaced, torso modestly turned, an elegant dark navy tennis racket naturally held by its grip in the RIGHT HAND out to the right side; hand clearly attached to handle, racket strings visible and geometrically believable. Entire person and entire racket visible with generous transparent padding, no cropping. Realistic human anatomy and sports photography quality, sophisticated subtle fabric texture, believable fingers, consistent soft morning directional light. The person is not a famous athlete and has no recognizable face. Isolated on a genuinely TRANSPARENT background. NO TENNIS BALL, NO court, NO floor, NO environment, NO cast shadow, NO text, NO labels, NO logo, NO watermark. Exactly ONE player, no duplicate limbs, no contact sheet. The production program supplies court, ball, feet positions and cast shadow separately.",
+  "sourceGeneratedFile": "/workspace/scratch/f59134096ffe/generated_images/exec-3fee2dfd-2d1b-4f65-8521-c0add1c447d8.png",
+  "seed": "not provided by tool",
+  "inspection": "One adult with cream sportswear, both feet and full racket; right-hand grip attached, no visible brand, no ball, true transparent alpha. Oblique overhead rather than orthographic; face down/screen-bottom. No cast ground shadow. Body is ready-pose still; use precise translated placement, do not pretend this is a full running animation."
+}

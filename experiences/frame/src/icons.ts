@@ -1,0 +1,20 @@
+const paths: Record<string, string> = {
+  play: '<path d="m9 5 11 7-11 7z" fill="currentColor" stroke="none"/>',
+  pause: '<path d="M8 5v14M16 5v14" stroke-width="4"/>',
+  arrow: '<path d="M5 12h14m-6-6 6 6-6 6"/>',
+  down: '<path d="M12 5v14m-6-6 6 6 6-6"/>',
+  back: '<path d="m14 5-7 7 7 7"/>',
+  next: '<path d="m10 5 7 7-7 7"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  minus: '<path d="M5 12h14"/>',
+  replay: '<path d="M4 11a8 8 0 1 1 1.6 6.2M4 4v7h7"/>',
+  download: '<path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/>',
+  menu: '<path d="M5 7h14M5 12h14M5 17h14"/>',
+  close: '<path d="m6 6 12 12M18 6 6 12"/>',
+  volume: '<path d="M4 9v6h4l5 4V5L8 9H4m13-1a6 6 0 0 1 0 8"/>',
+  mute: '<path d="M4 9v6h4l5 4V5L8 9H4m13 0 5 6m0-6-5 6"/>',
+  frames: '<rect x="3" y="3" width="12" height="12" rx="1.5"/><rect x="9" y="9" width="12" height="12" rx="1.5"/>',
+  check: '<path d="m5 12 4 4L19 6"/>',
+  undo: '<path d="m8 4-5 5 5 5M3 9h10a7 7 0 0 1 0 14"/>',
+};
+export const icon = (name: string, cls = '') => `<svg class="icon ${cls}" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.frames}</svg>`;

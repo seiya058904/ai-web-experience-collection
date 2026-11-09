@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#c6a476" />
+    <meta name="description" content="SENTE is a playable short story about the space between Go stones. Ten chapters, three small decisions, and a different way to see the next move." />
+    <title>SENTE — Between moves</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%sente/">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SENTE — Between moves">
+    <meta property="og:description" content="SENTE is a playable short story about the space between Go stones. Ten chapters, three small decisions, and a different way to see the next move.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%sente/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%sente/assets/sente-hero-table.webp">
+    <meta property="og:image:alt" content="An AI-generated Go board with black and white stones on a warm wooden table">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SENTE — Between moves">
+    <meta name="twitter:description" content="SENTE is a playable short story about the space between Go stones. Ten chapters, three small decisions, and a different way to see the next move.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%sente/assets/sente-hero-table.webp">
+    <link rel="stylesheet" href="/experiences/shared/collection-return.css">
+    <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+    <link rel="icon" href="%BASE_URL%sente/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="%BASE_URL%sente/assets/sente-hero-table.webp" as="image" fetchpriority="high" />
+    <link rel="preload" href="%BASE_URL%interval/fonts/bodoni-moda-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%BASE_URL%atlas/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript><main style="max-width:42rem;margin:4rem auto;padding:2rem;font-family:Georgia,serif"><h1>SENTE — Between moves</h1><p>This interactive story needs JavaScript to operate its practice boards. Enable JavaScript to explore the ten chapters and three exercises. Nothing is sent to a server.</p></main></noscript>
+    <script type="module" src="../../experiences/sente/src/main.ts"></script>
+  </body>
+</html>

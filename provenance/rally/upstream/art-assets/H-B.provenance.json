@@ -1,0 +1,12 @@
+{
+  "role": "H-B",
+  "tool": "image_gen.imagegen",
+  "source": "/workspace/scratch/f59134096ffe/generated_images/exec-a79fea59-c50d-4707-ad99-c77137a03257.png",
+  "file": "H-B.png",
+  "prompt": "Use case: photorealistic-natural.\nAsset type: H-B hero candidate for RALLY — The Space Between, an original editorial tennis experience. A single finished image, landscape 16:9 composition, high resolution.\nPrimary request: an elevated oblique photograph of a complete ORIGINAL RED CLAY SINGLES TENNIS COURT early in the morning. Court geometry is credible and exact in proportion: narrow singles rectangle 23.77 m long by 8.23 m wide, center net divides it, service lines each 6.40 m from net, center service divider only between service lines. No doubles alleys. Cream thin straight boundary lines and a real taut dark mesh net with cream top band, slightly lower at its center.\nComposition: photograph from high above the near-left corner, full playing rectangle visible, generous clay run-off. The near anonymous adult practice player A wears dark navy sportswear and stands in the near court; the far anonymous adult practice player B wears light cream sportswear and stands in the far court. Their racquets and anatomically plausible bodies belong together. There is exactly ONE yellow tennis ball between them, suspended just above court height, with a plausible small separated shadow. Two players only. Long soft shadows from upper left morning sun create sophisticated asymmetry; empty clay on the left and pale quiet sky/haze at the top leave room for later real HTML typography.\nStyle: extraordinary sports editorial photography, quiet architectural precision, poetic air, realistic clay texture, no advertising. Colors terracotta #C96D4C, cream #F4F0E4, pale icy air #C6E2E7, ball yellow #DDEA54 and deep navy #243840. Low simple bleachers and a subtle fence, minimal distant background. Restrained contrast, natural felt ball, no glossy plastic.\nText: none. No logos, no readable writing, no labels, no arrows, no diagrams, no brands, no famous faces, no stadium crowd, no light trails, no smoke, no watermark. One photograph, not a collage.",
+  "parameters": {
+    "transparent_background": false
+  },
+  "review": "Generated candidate: two anonymous players, one ball, credible single court markings and net; accurate measurement must come from the shared code-native court, never this illustrative photograph.",
+  "seed": "Not supplied by the tool"
+}

@@ -1,0 +1,1070 @@
+{
+  "method": "Independent Python coordinate/set implementation",
+  "puzzles": {
+    "P1": {
+      "empty_first_points": 45,
+      "legal_first_moves": 45,
+      "goal_moves": [
+        "D5"
+      ],
+      "first_moves": [
+        {
+          "black": "A1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D5",
+          "legal": true,
+          "captured_by_black": [
+            "D4"
+          ],
+          "goal": true
+        },
+        {
+          "black": "E5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        }
+      ]
+    },
+    "P2": {
+      "empty_first_points": 41,
+      "legal_first_moves": 41,
+      "goal_moves": [
+        "D3"
+      ],
+      "first_moves": [
+        {
+          "black": "A1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G1",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G2",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": true,
+          "liberties": [
+            "A3",
+            "B2",
+            "B4",
+            "D2",
+            "D4",
+            "F2",
+            "F4",
+            "G3"
+          ],
+          "connected_stones": [
+            "B3",
+            "C3",
+            "D3",
+            "E3",
+            "F3"
+          ]
+        },
+        {
+          "black": "G3",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G4",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G5",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G6",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "A7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "B7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "C7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "D7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "E7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "F7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        },
+        {
+          "black": "G7",
+          "legal": true,
+          "captured_by_black": [],
+          "goal": false
+        }
+      ]
+    },
+    "P3": {
+      "empty_first_points": 38,
+      "legal_first_moves": 38,
+      "goal_moves": [
+        "C5"
+      ],
+      "first_moves": [
+        {
+          "black": "A1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "B1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "C1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "D1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "E1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "F1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "G1",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "A2",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "B2",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "D2",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "E2",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "F2",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "G2",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "A3",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "E3",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "F3",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "G3",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "A4",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "E4",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "G4",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "A5",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "B5",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "C5",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "F6",
+          "reply_legal": true,
+          "captured_by_white": [],
+          "goal": true
+        },
+        {
+          "black": "D5",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "A6",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "B6",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "C6",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "D6",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "E6",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "F6",
+          "legal": true,
+          "captured_by_black": [
+            "F5"
+          ],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "G6",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "A7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "B7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "C7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "D7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "E7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "F7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        },
+        {
+          "black": "G7",
+          "legal": true,
+          "captured_by_black": [],
+          "white_reply": "C5",
+          "reply_legal": true,
+          "captured_by_white": [
+            "C3",
+            "C4"
+          ],
+          "goal": false
+        }
+      ]
+    }
+  },
+  "L_shape": {
+    "stones": [
+      "D3",
+      "D4",
+      "E4"
+    ],
+    "shared_liberties": [
+      "C3",
+      "C4",
+      "D2",
+      "D5",
+      "E3",
+      "E5",
+      "F4"
+    ],
+    "F5_is_separate": true
+  },
+  "single_stones": {
+    "D4": [
+      "C4",
+      "D3",
+      "D5",
+      "E4"
+    ],
+    "A4": [
+      "A3",
+      "A5",
+      "B4"
+    ],
+    "A1": [
+      "A2",
+      "B1"
+    ]
+  },
+  "eyes": {
+    "C3": "suicide; original board unchanged",
+    "E3": "suicide; original board unchanged"
+  },
+  "ko": {
+    "black_D5_captures": [
+      "D4"
+    ],
+    "hypothetical_white_D4_captures": [
+      "D5"
+    ],
+    "hypothetical_equals_initial": true,
+    "with_history": "rejected"
+  }
+}

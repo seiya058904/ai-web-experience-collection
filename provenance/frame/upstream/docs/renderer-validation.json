@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-09",
+  "sequence_images": 64,
+  "matched_stills": 14,
+  "decoded_images": 126,
+  "sha256_verified_sequence_images": 64,
+  "pose_source_hash_matches": true,
+  "landscape_resolution": [
+    1280,
+    800
+  ],
+  "portrait_resolution": [
+    720,
+    800
+  ],
+  "sequence_bytes": 770922,
+  "still_bytes": 298896,
+  "combined_art_bytes": 1861274,
+  "base_pose_unique_hashes": {
+    "landscape": 24,
+    "portrait": 24
+  },
+  "visual_review": [
+    "24-frame landscape contact sheet",
+    "preparation close: body identity, fold, pores, fingerprint, both feet and hands",
+    "ease-in 11 and ease-out 08 maximum stride",
+    "push left-face and top-palm contact",
+    "frame19 front-face pull grip",
+    "frame18 overshoot and glance",
+    "frame24 exact target alignment and quiet smile",
+    "portrait complete opening and ending stage",
+    "overhead observation",
+    "matched contact/pushing composition",
+    "seated portrait epilogue including full outline",
+    "Compact Hero frames01/18/24: full opening task, visible uncompressed overshoot, final alignment"
+  ],
+  "not_established_by_this_record": [
+    "browser playback and controls",
+    "responsive UI layout",
+    "physical mobile device performance",
+    "export decoding",
+    "cross-compiler byte-identical rebuild"
+  ],
+  "hero_sequence_images": 24,
+  "hero_resolution": [
+    1000,
+    900
+  ],
+  "hero_sha256_verified": 24,
+  "hero_bytes": 473554,
+  "all_source_art_manifest": "public/production-art-manifest.json",
+  "hero_portrait_sequence_images": 24,
+  "hero_portrait_resolution": [
+    720,
+    800
+  ],
+  "hero_portrait_sha256_verified": 24,
+  "hero_portrait_bytes": 317902,
+  "hero_portrait_validation": "docs/hero-portrait-validation.json",
+  "previous_102_image_bytes_unchanged": true
+}

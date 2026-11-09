@@ -1,0 +1,12 @@
+{
+  "role": "K-04",
+  "tool": "image_gen.imagegen",
+  "source": "/workspace/scratch/f59134096ffe/generated_images/exec-78ce1819-a8bf-454f-9e31-56e384189b7a.png",
+  "file": "K-04.png",
+  "prompt": "Use case: photorealistic-natural.\nAsset type: K-04, a standalone key art image for the spin-comparison chapter of RALLY — The Space Between, matching a dawn terracotta tennis editorial.\nPrimary request: a spectacular close macro view of exactly ONE original yellow tennis ball. It fills the right 40 percent of a landscape 16:9 image and is clearly an explanatory enlarged object, no real court around it. Ball is a believable tennis ball with fine short yellow-green felt fibers with natural direction, a continuous softly raised curved cream-white figure-eight seam, restrained warm highlight upper-left and cool dark lower-right. Photorealistic tactile detail, not plastic, no glow, no branding. Leave the ENTIRE LEFT 52 percent as clean uninterrupted very dark deep navy #243840 for programmatic side-view trajectories and real HTML captions to be added later; absolutely no diagrams or text burnt into image. The background is matte navy with only extremely subtle air and tonal falloff. Ball is suspended on right, gentle rim light separating it, tiny floating fiber details near its edge only. The image has calm precision and great editorial scale. Primary ball chartreuse #DDEA54, seam #F4F0E4, cool ice blue #C6E2E7 bounce light, a subtle terracotta #C96D4C warm reflection on the underside. The ball seam must be continuous and realistic. Fine fuzz should be real photographed felt with uneven fiber length, not a glowing fur halo.\nComposition: single full ball, no crop, centered at x=77%, y=51%, diameter around 69% image height. Left half nearly flat navy. No floor, no cast shadow object, no court, no players, no racquet, no duplicate ball, no arrows, no indicators, no markings besides the seam. No words, logos, labels, watermark. One finished high resolution photo-like image, not collage.",
+  "parameters": {
+    "transparent_background": false
+  },
+  "review": "Generated explanatory macro: one detailed tennis ball at right with plausible continuous curving cream seam, coherent felt and warm/cool light, uninterrupted navy left for programmatic side trajectories. Large explanatory object is deliberately separate from physically scaled main-rally court. No burned-in text or arrows.",
+  "seed": "Not supplied by the tool"
+}

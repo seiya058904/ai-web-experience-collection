@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F2EDDF" />
+    <meta name="description" content="A little playground for chance. Follow one ball, discover the paths it could take, and make an experiment of your own." />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%odds/favicon.svg" />
+    <title>ODDS — A playground for chance</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%odds/">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ODDS — A playground for chance">
+    <meta property="og:description" content="A little playground for chance. Follow one ball, discover the paths it could take, and make an experiment of your own.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%odds/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%collection/odds.webp">
+    <meta property="og:image:alt" content="The ODDS board: one ball and the paths it could take">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ODDS — A playground for chance">
+    <meta name="twitter:description" content="A little playground for chance. Follow one ball, discover the paths it could take, and make an experiment of your own.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%collection/odds.webp">
+    <link rel="stylesheet" href="/experiences/shared/collection-return.css">
+    <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#chapter-01">Skip to the playground</a>
+    <div id="app"></div>
+    <noscript>
+      <main class="no-script"><a class="collection-return" href="%BASE_URL%#world-odds" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+        <h1>ODDS — Every chance leaves a trace.</h1>
+        <p>This playground needs JavaScript to run experiments. The story is still here.</p>
+        <ol>
+          <li><h2>A ball, not yet fallen</h2><p>Eight independent choices lead to nine possible endpoints. A path records what happened once.</p></li>
+          <li><h2>Left. Or right.</h2><p>At a fair fork, each direction has a one-half chance. Earlier left turns do not make a right turn due.</p></li>
+          <li><h2>More paths than places</h2><p>Four choices make sixteen direction sequences. Six lead to the central endpoint.</p></li>
+          <li><h2>The middle has more ways in</h2><p>Eight choices make 256 sequences. Their endpoint multiplicities are 1, 8, 28, 56, 70, 56, 28, 8, 1.</p></li>
+          <li><h2>Small samples have character</h2><p>Two sets of sixteen balls can look different. The expected central count is 4.375, not a promised result.</p></li>
+          <li><h2>A different leaning</h2><p>Changing p changes the chance of turning right at every level. It starts a separate experiment.</p></li>
+          <li><h2>Same rules. Different evenings.</h2><p>Independent rounds differ. Larger samples are usually more stable, but each added ball need not move the shape closer to theory.</p></li>
+          <li><h2>A portrait of 256</h2><p>Every ball in the portrait belongs to the same saved teaching round. Each retains its own path.</p></li>
+          <li><h2>Give chance a set of rules</h2><p>The interactive workbench can use 4, 8 or 12 choices, right-turn probabilities of 0.25, 0.50 or 0.75, and 16, 64 or 256 samples.</p></li>
+          <li><h2>Still worth watching</h2><p>Many journeys reveal a shape. The next one has not been promised.</p></li>
+        </ol>
+        <p>This is an ideal independent probability model using replayable pseudorandom samples. The animation is not measured collision physics.</p>
+        <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm">Read the mathematical reference at NIST</a>
+      </main>
+    </noscript>
+    <script type="module" src="../../experiences/odds/src/main.ts"></script>
+  </body>
+</html>
