@@ -13,6 +13,12 @@
 
 Upstream `docs/delivery-limitations.md`: 24 story frames, the bridges are not one continuous object, and no physical device, Windows or Safari verification. The offline `FRAME.html` is not imported.
 
+## Smoothing, 9 November 2026 (owner request)
+
+Handoffs that cut between stills (12→6, 6→9, 12→16→18) cross-fade over a band around each edge; their stills preload when the handoff is drawn; while scrolling within one take and camera a cache miss keeps the drawn canvas, and the canvas fades in over its still. Edited: `src/transitions.ts`, `src/style.css`; test added to `tests/frame-scene-transition.test.mjs`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

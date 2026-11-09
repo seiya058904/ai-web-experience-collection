@@ -17,6 +17,12 @@ Upstream `docs/acceptance.md` marks most chapter browser inputs and the responsi
 
 The delivery ships no font or Lenis notice files; standard Manrope OFL and Lenis MIT texts are copied from existing Collection notices. `public/collection/odds.webp` is an interface-cleaned capture of the running opening.
 
+## Smoothing, 9 November 2026 (owner request)
+
+The scene SVG is written only when its markup changes (a resting chapter no longer rebuilds); header count and title, scene label and foot fade, with a dead band for the header chapter. Edited: `src/main.ts`, `src/scene.ts`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

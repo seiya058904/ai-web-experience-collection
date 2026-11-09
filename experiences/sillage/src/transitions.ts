@@ -221,7 +221,7 @@ export function evaluateTransition(
     memoryRetreat: index === 6 ? ramp(p, .15, .95) : 0,
     labels: index === 0 ? ramp(p, .65, 1) : index === 2 ? 1 - ramp(p, .1, .65)
       : index === 5 ? 1 - ramp(p, .1, .6) : ramp(p, .5, 1),
-    controlsReveal: index >= 7 ? ramp(p, .62, .72) : 0,
+    controlsReveal: index >= 7 ? ramp(p, .42, .72) : 0,
     controlsInteractive: index >= 7 && p >= .72,
     caption: TRANSITION_COPY[index][Math.min(4, Math.floor(p * 4 + 1e-8))],
   };
@@ -351,8 +351,16 @@ export function mountTransitions(options: {
       const rect = bridge.element.getBoundingClientRect();
       bridge.top = rect.top + window.scrollY;
       bridge.bottom = bridge.top + rect.height;
-      bridge.stickyTop = Number.parseFloat(getComputedStyle(bridge.stage).top) || 0;
-      bridge.travel = Math.max(1, rect.height - bridge.stage.getBoundingClientRect().height);
+      const stageStyle = getComputedStyle(bridge.stage);
+      if (stageStyle.position === 'sticky') {
+        bridge.stickyTop = Number.parseFloat(stageStyle.top) || 0;
+        bridge.travel = Math.max(1, rect.height - bridge.stage.getBoundingClientRect().height);
+      } else {
+        // A stage in normal flow (the keep bridge on phones) plays while it rises
+        // from the lower edge to the upper third, instead of over a few pixels.
+        bridge.stickyTop = window.innerHeight * .85;
+        bridge.travel = window.innerHeight * .55;
+      }
       bridge.width = bridge.gallery.clientWidth;
       bridge.height = bridge.gallery.clientHeight;
       bridge.printWidth = bridge.prints[0].element.getBoundingClientRect().width;

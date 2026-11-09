@@ -17,6 +17,12 @@ Upstream G5 acceptance is partial: download to disk, effective browser zoom, OS 
 
 The Fragonard link stays as a labelled context citation (“the product and its ingredients are not reproduced”); it already carries `rel="noreferrer"`.
 
+## Smoothing, 9 November 2026 (owner request)
+
+Bridge captions and print labels fade out and in; the caption step has a dead band. Bridges are longer (220vh, 190vh on phones); the closing panels of bridges 8 and 9 reveal over .42–.72 of the bridge instead of .62–.72, and the keep bridge, which is in normal flow on phones, plays while it rises through the viewport instead of over about 120 px. Edited: `src/transitions.ts`, `src/style.css`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

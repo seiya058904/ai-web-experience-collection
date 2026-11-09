@@ -17,6 +17,12 @@ Upstream `docs/acceptance.md`: full entrance/hold/exit acceptance for every chap
 
 One note hides its `<br>` at phone width, which joined two sentences (“moment.The”). Fixed on 9 November 2026 by a space before the `<br>` in `content.ts`; the wording is unchanged.
 
+## Smoothing, 9 November 2026 (owner request)
+
+The preparation caption fades with a dead band; replay event labels fade; court and flight SVG labels are written only when they change. Edited: `src/main.ts`, `src/scenes.ts`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

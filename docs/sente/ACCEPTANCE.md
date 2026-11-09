@@ -17,6 +17,12 @@ Upstream `docs/QA-REPORT.md`: not a full pass; native zoom, physical devices, sc
 
 Up to 768 px two hero lines hide their `<br>`, which joined words (“stone,see”, “storyin”). Fixed on 9 November 2026 by a space before each `<br>` in `story.ts`; the wording is unchanged.
 
+## Smoothing, 9 November 2026 (owner request)
+
+Transition step words fade out and in with a dead band; step marks ease their colour. Edited: `src/motion.ts`, `src/style.css`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

@@ -17,6 +17,12 @@ Upstream records 55/55 desktop and phone checkpoints and lists as unverified: ph
 
 At phone width three supplied lines hide their `<br>`, which joined words (“beginsin”, “moments,aligned”, “flight.First”). Fixed on 9 November 2026 by a space before each `<br>` in `content.ts`; the wording is unchanged. A reload starts at the top because the work sets manual scroll restoration.
 
+## Smoothing, 9 November 2026 (owner request)
+
+Handoff stills cross-fade above one another from continuous progress instead of `hidden` switches at `round(p*4)`; captions and the chapter counter fade; steps have a dead band; band, bridge and flight overlays fade. Each handoff is longer (240svh, 220svh on phones, 1500px on short windows) so every still and caption rests. Edited: `src/main.ts`, `src/style.css`.
+
+Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.
