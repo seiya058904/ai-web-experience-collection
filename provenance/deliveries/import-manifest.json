@@ -40119,6 +40119,7 @@
       "modified": "2026-11-09T06:36:18Z",
       "imported": "2026-11-09",
       "entryCount": 4962,
+      "removed": "2026-11-09: removed from the Collection at the owner's request (blurred, stuttering frame playback). Every file this delivery added to the repository was deleted; this record and Git history keep its provenance.",
       "entries": [
         {
           "path": "pas/.gitignore",
