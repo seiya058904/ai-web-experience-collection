@@ -15,7 +15,7 @@ Upstream `docs/QA-REPORT.md`: not a full pass; native zoom, physical devices, sc
 
 ## Notes
 
-At 390×844 two hero lines run together where a line break is hidden (“stone,see”, “storyin”). This is in the supplied copy and was not changed.
+Up to 768 px two hero lines hide their `<br>`, which joined words (“stone,see”, “storyin”). Fixed on 9 November 2026 by a space before each `<br>` in `story.ts`; the wording is unchanged.
 
 ## Not tested
 
