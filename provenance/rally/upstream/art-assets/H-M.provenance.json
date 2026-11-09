@@ -1,0 +1,11 @@
+{
+  "role": "H-M",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: photorealistic-natural. Asset H-M — a NEW independently composed vertical mobile hero photograph for RALLY — The Space Between. Portrait9:16 composition for a phone, not a crop of landscape. A quiet original red clay singles tennis court in early morning, viewed along the court long axis from low near baseline camera. ONE enlarged yellow-green tennis ball in lower-middle/right around x64%/y68%, diameter about40% of picture width, fine real felt nap and continuous clean cream seam, lightly hovering with close shadow explaining height. Anonymous player B, cream sports clothing, small and credible at the far/top portion around x70%/y39%, racket held in ready posture. A navy-clad partial shoe/leg at lower-right edge establishes player A near camera. Net spans behind ball around y48%, regular dark mesh with taut cream tape. Correct believable clay sidelines converge into the distance; no arbitrary lines. Upper third and upper left are quiet dark-cool trees and shaded air, deliberately low visual detail and naturally dark for a large cream English HTML title to be laid over later. Soft warm sun from upper left, cool blue distant air, warm terracotta foreground, beautiful editorial film texture. Palette clay #C96D4C, cream #F4F0E4, cool blue #C6E2E7, tennis yellow #DDEA54, navy #243840. Very high photographic quality. No in-image text, no logos, no other balls, no grandstands, no motion trails, no plastic glow, no real athletes. The two-person relationship and foreground ball must survive a narrow phone screen.",
+  "parameters": {
+    "transparent_background": false
+  },
+  "seed": "Not supplied by tool",
+  "file": "art-assets/H-M.png",
+  "use": "Production mobile still. Baked single ball; no simultaneous moving duplicate."
+}

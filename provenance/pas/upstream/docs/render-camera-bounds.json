@@ -1,0 +1,58 @@
+{
+  "scope": "Dense bone heads/tails camera bounds; not a full mesh silhouette, cloth, contact or visual approval.",
+  "packet": "final-authored-score",
+  "results": {
+    "unison-wide": {
+      "samples": 2001,
+      "bonePointMinNDC": [
+        -0.465674878146107,
+        -0.8033884724136018
+      ],
+      "bonePointMaxNDC": [
+        0.5190574516132587,
+        0.816232071868497
+      ],
+      "clippedBoneGroups": 0,
+      "firstClipped": []
+    },
+    "unison-narrow": {
+      "samples": 2001,
+      "bonePointMinNDC": [
+        -0.9219695511187569,
+        -0.6807237232893402
+      ],
+      "bonePointMaxNDC": [
+        0.630607003045131,
+        0.7009006001848855
+      ],
+      "clippedBoneGroups": 0,
+      "firstClipped": []
+    },
+    "echo-wide": {
+      "samples": 153,
+      "bonePointMinNDC": [
+        -0.3665812555094693,
+        -0.7194318975627485
+      ],
+      "bonePointMaxNDC": [
+        0.4169415072760137,
+        0.816232071868497
+      ],
+      "clippedBoneGroups": 0,
+      "firstClipped": []
+    },
+    "echo-narrow": {
+      "samples": 153,
+      "bonePointMinNDC": [
+        -0.5756164683924931,
+        -0.6374316353175786
+      ],
+      "bonePointMaxNDC": [
+        0.5289876617628448,
+        0.7009006001848855
+      ],
+      "clippedBoneGroups": 0,
+      "firstClipped": []
+    }
+  }
+}

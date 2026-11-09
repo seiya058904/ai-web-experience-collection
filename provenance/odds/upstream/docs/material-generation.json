@@ -1,0 +1,10 @@
+{
+  "id": "IMG-09",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Standalone production surface texture for ODDS interactive museum apparatus. A flat seamless square tile of finely mineral-textured matte ultramarine powder-coated blue, base color precisely close to #244AB8. Extremely subtle tiny natural pigment variation, tactile but nearly uniform. Even orthographic light without directional shading or highlights. Edge-to-edge material only, no objects, no borders, no text, no marks, no shadows, no pegs, no balls. This tile will be used at very low opacity over accurately constructed SVG geometry. Do not create a scene, illustration, paper sheet or color swatch UI.",
+  "file": "public/art/material.webp",
+  "role": "Supplementary production material texture over exact code-native geometry",
+  "source_path": "/workspace/scratch/3f6ef1377600/generated_images/exec-03ff650a-ea56-4239-acd2-0f6c2c6527b7.png",
+  "transformation": "Resized to 512x512 WebP for runtime use; no object or data editing.",
+  "seed": "Not provided by tool"
+}

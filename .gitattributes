@@ -25,3 +25,25 @@ public/varen/** -text
 public/varen/fonts/Hanken-Grotesk-OFL.txt whitespace=-blank-at-eol
 # Preserve the supplied self-contained historical edition as an opaque artifact.
 provenance/kage/KAGE-VOID.html -text -diff
+# Ten works imported 9 November 2026: supplied runtime files, notices and upstream records keep their ZIP bytes.
+public/imago/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/imago/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/sillage/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/sillage/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/aer/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/aer/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/berth/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/berth/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/mend/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/mend/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/frame/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/frame/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/odds/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/odds/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/rally/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/rally/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/sente/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/sente/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+public/pas/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/pas/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof
+provenance/pas/upstream/scripts/model-source/LICENSE.md conflict-marker-size=32

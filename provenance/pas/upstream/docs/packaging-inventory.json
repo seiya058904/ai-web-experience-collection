@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "snapshotUtc": "2026-11-09T02:47:00+00:00",
+  "scope": "Dated source-directory snapshot with planned ZIP exclusions. This JSON excludes itself from aggregate totals. Later verification evidence may change the final package. It is not the archive byte count, a browser approval, or a clean-extraction test.",
+  "exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".render-venv",
+    ".render-work",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "dist",
+    "node_modules",
+    "offline",
+    "render-cache",
+    "standalone-dist",
+    "*.pyc",
+    "*.pyo",
+    "*.part.*"
+  ],
+  "snapshotTotals": {
+    "files": 4955,
+    "bytes": 148075841,
+    "byTopLevel": {
+      "(root files)": {
+        "files": 14,
+        "bytes": 60978
+      },
+      "docs": {
+        "files": 33,
+        "bytes": 2761080
+      },
+      "licenses": {
+        "files": 8,
+        "bytes": 126574
+      },
+      "public": {
+        "files": 4819,
+        "bytes": 105084871
+      },
+      "reference-fonts": {
+        "files": 15,
+        "bytes": 146968
+      },
+      "reference-images": {
+        "files": 8,
+        "bytes": 16077541
+      },
+      "scripts": {
+        "files": 44,
+        "bytes": 23630412
+      },
+      "src": {
+        "files": 13,
+        "bytes": 172519
+      },
+      "tests": {
+        "files": 1,
+        "bytes": 14898
+      }
+    }
+  },
+  "categories": {
+    "src": {
+      "files": 13,
+      "bytes": 172519
+    },
+    "tests": {
+      "files": 1,
+      "bytes": 14898
+    },
+    "docs": {
+      "files": 33,
+      "bytes": 2761080
+    },
+    "licenses": {
+      "files": 8,
+      "bytes": 126574
+    },
+    "reference-images": {
+      "files": 8,
+      "bytes": 16077541
+    },
+    "reference-fonts": {
+      "files": 15,
+      "bytes": 146968
+    },
+    "scripts/model-source": {
+      "files": 36,
+      "bytes": 23564247
+    },
+    "public/art": {
+      "files": 8,
+      "bytes": 921632
+    },
+    "public/assets": {
+      "files": 10,
+      "bytes": 12864404
+    },
+    "public/frames": {
+      "files": 4700,
+      "bytes": 89361613
+    },
+    "public/stills": {
+      "files": 100,
+      "bytes": 1936984
+    }
+  },
+  "requiredFileAudit": {
+    "checked": 63,
+    "allPresentAndNonempty": true,
+    "missingLocalMarkdownLinks": []
+  },
+  "dependencyAudit": {
+    "lockfileVersion": 3,
+    "rootManifestMatches": true,
+    "allDirectVersionsMatchAndHaveIntegrity": true,
+    "directVersions": {
+      "@fontsource/bodoni-moda": "5.3.0",
+      "@fontsource/manrope": "5.3.0",
+      "@types/three": "0.187.0",
+      "lenis": "1.3.27",
+      "three": "0.187.0",
+      "typescript": "5.9.3",
+      "vite": "8.3.6"
+    },
+    "resolvedHosts": [
+      "registry.npmjs.org"
+    ]
+  },
+  "renderAssets": {
+    "manifestStatus": "complete",
+    "density": 200,
+    "frameCount": 4679,
+    "frameBytes": 89270614,
+    "stillAliases": 100,
+    "chapterPosters": 20,
+    "all4679FrameSizesAndSha256Rechecked": true,
+    "integrityRecord": "docs/render-assets.json"
+  },
+  "archivedFonts": {
+    "packages": {
+      "@fontsource/bodoni-moda": "5.3.0",
+      "@fontsource/manrope": "5.3.0"
+    },
+    "cssFiles": 4,
+    "fontBinaries": 8,
+    "originalOflNotices": 2,
+    "allByteIdenticalToInstalledLockedPackages": true,
+    "files": [
+      {
+        "path": "reference-fonts/bodoni-moda/LICENSE",
+        "bytes": 4526,
+        "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2"
+      },
+      {
+        "path": "reference-fonts/bodoni-moda/files/bodoni-moda-latin-400-italic.woff",
+        "bytes": 21160,
+        "sha256": "af5632f8ebdccaab99601183265d9c11ce6307017783c1bac14972c7b8af4f12"
+      },
+      {
+        "path": "reference-fonts/bodoni-moda/files/bodoni-moda-latin-400-italic.woff2",
+        "bytes": 16552,
+        "sha256": "783fd966b8ebb26034e892767b877c475d375d9227f5f5476d05ad5529d18232"
+      },
+      {
+        "path": "reference-fonts/bodoni-moda/files/bodoni-moda-latin-400-normal.woff",
+        "bytes": 18880,
+        "sha256": "1bb97874b6f8362a6ec5158a099aa56702deb25604528a095c0dab2990fb08ff"
+      },
+      {
+        "path": "reference-fonts/bodoni-moda/files/bodoni-moda-latin-400-normal.woff2",
+        "bytes": 14528,
+        "sha256": "e2863d3bbe2e094f1ce98053ee3c6200cfa35f82b9f4cc6fd95fbaead4125d4f"
+      },
+      {
+        "path": "reference-fonts/bodoni-moda/latin-400-italic.css",
+        "bytes": 278,
+        "sha256": "e80fd6dc83b77284a18ff8ce9da17dee70ce2c09638a8cac9bc768a1eaa4e1ac"
+      },
+      {
+        "path": "reference-fonts/bodoni-moda/latin-400.css",
+        "bytes": 278,
+        "sha256": "f90b1572934ef0a23644c0968022f603c6ba30ed7a50fc30ab85b3b9215bb97c"
+      },
+      {
+        "path": "reference-fonts/manrope/LICENSE",
+        "bytes": 4383,
+        "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+      },
+      {
+        "path": "reference-fonts/manrope/files/manrope-latin-400-normal.woff",
+        "bytes": 18292,
+        "sha256": "1bf66c29a29f1b71d507cb97fc138cd130b856ed05b55decd3a2944b413cb636"
+      },
+      {
+        "path": "reference-fonts/manrope/files/manrope-latin-400-normal.woff2",
+        "bytes": 14108,
+        "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+      },
+      {
+        "path": "reference-fonts/manrope/files/manrope-latin-500-normal.woff",
+        "bytes": 18240,
+        "sha256": "c805ac8fd73fb95ddba74e624500c7d7d9a8ec6434d723bb6a9b76173c9e41b4"
+      },
+      {
+        "path": "reference-fonts/manrope/files/manrope-latin-500-normal.woff2",
+        "bytes": 14044,
+        "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+      },
+      {
+        "path": "reference-fonts/manrope/latin-400.css",
+        "bytes": 262,
+        "sha256": "d5c53a6366731cbbc34eedb261a942da49256016c16fc5c2b381c25bb3c7b5bf"
+      },
+      {
+        "path": "reference-fonts/manrope/latin-500.css",
+        "bytes": 262,
+        "sha256": "7b4eb16c3857724bb47f5017a21c0ca3e11c36877b20da68297e1e290a7d85d8"
+      }
+    ],
+    "runtimeNote": "Normal imports resolve through npm ci; reference-fonts contains archival copies only."
+  },
+  "commands": {
+    "node": ">=22.12.0",
+    "install": "npm ci",
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "preview": "npm run preview",
+    "test": "npm test",
+    "optionalPackedReview": "npm run standalone",
+    "productionBase": "./",
+    "starterAsciiCrLf": true,
+    "starterHostOverrideVerifiedInPinnedCli": true,
+    "windowsRuntimeVerified": false,
+    "packedOutputRequiresHttp": true,
+    "packedOutputIncludesOptionalWebglModels": false
+  },
+  "licenseScope": [
+    {
+      "material": "Original application, motion, preprocessing/export/render scripts and documentation",
+      "license": "MIT",
+      "notice": "LICENSE.md"
+    },
+    {
+      "material": "Incorporated MakeHuman graphical data, clothing, hair and skin",
+      "license": "CC0-1.0",
+      "notice": "licenses/makehuman-CC0-1.0.txt",
+      "provenance": "docs/MODEL-SOURCES.md",
+      "upstreamProgramLogicImported": false,
+      "upstreamCodeLicenseTextRetainedForLinkedProvenance": true
+    },
+    {
+      "material": "Bodoni Moda and Manrope fonts",
+      "license": "OFL-1.1",
+      "notice": "reference-fonts/*/LICENSE; licenses/*-OFL-1.1.txt"
+    },
+    {
+      "material": "Software dependencies",
+      "license": "Respective upstream software licenses and notices",
+      "notice": "THIRD-PARTY-NOTICES.md; licenses/; package-lock.json"
+    },
+    {
+      "material": "Eight AI-generated studies and optimized derivatives",
+      "license": "No claim of exclusive copyright or MIT coverage",
+      "provenance": "docs/image-generation.json"
+    },
+    {
+      "material": "Authored rendered sequence",
+      "description": "Original pose functions rendered with credited CC0 graphical assets; no imported dance recording",
+      "notice": "LICENSE.md; THIRD-PARTY-NOTICES.md"
+    }
+  ],
+  "excludedTemporaryFilesObserved": [],
+  "notEstablishedByThisAudit": [
+    "Windows runtime execution",
+    "Browser interaction or visual approval",
+    "Clean ZIP install/build/production preview",
+    "Optional WebGL visual verification",
+    "Final ZIP checksum"
+  ]
+}

@@ -1,0 +1,517 @@
+[
+  {
+    "id": "IMG-01",
+    "name": "hero-a",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: photorealistic-natural. Create a landscape 1536x1024 editorial macro photograph as the first artwork candidate for IMAGO, a quiet premium natural-history web documentary. No text, no labels, no logo, no UI. ONE anatomically credible monarch butterfly chrysalis (Danaus plexippus), opaque jade green with subtly ribbed waxy living cuticle, tiny authentic metallic gold spots only, a tapered lower end. It hangs by its black cremaster securely anchored in a small white silk pad underneath a slender brown twig. The twig traverses the upper quarter. The complete chrysalis lies on the RIGHT side at x approximately 72%, occupying 62% of the image height, complete connection and lower end visible. Left half is clean warm bone-white (#EFEDE1) naturally out-of-focus air for later DOM typography. A softly blurred dark leaf edge in the far lower right adds depth. Beautiful large diffuse daylight from upper left, natural microdetail and coherent shadows, restrained botanical colors. Gravitas through delicate scale and attentive macro photography. No cocoon, silk wrapping, glass, gem, pendant, product display, internal butterfly silhouette, duplicate chrysalis, fantasy glow, over-sharpening or excessive metallic trim.",
+    "file": "public/art/hero-a.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-f3a5e7c2-c0a7-4e52-aaac-f2cd0b6b83d6.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Hero candidate A — selected direction",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-02",
+    "name": "hero-b",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: photorealistic-natural. Landscape 1536x1024 editorial natural-history macro photograph, second distinct hero artwork candidate for IMAGO. No words, labels, logo or UI. ONE jade green opaque monarch chrysalis suspended securely from a silk pad beneath the petiole of a broad milkweed leaf. Camera looks obliquely upward from below the leaf: a large luminous leaf vein travels diagonally across the upper field, leaf canopy and dark deep green negative space create intimate shelter, one bright leaf edge. Whole chrysalis seen at right-center, connection intact, front and distant foliage at contrasting depths. Warm ivory light enters from upper left; soft dark green #173E34 background with generous negative space on left. Real restrained natural cuticle with small gold flecks, short black cremaster, accurate monarch outline. Must feel like a living animal under a leaf, never a jewelry pendant. No glass, luminous veins, fantasy jungle, display case, text, extra chrysalises, wings visible inside or geometric capsule.",
+    "file": "public/art/hero-b.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-bf31ae4a-b5c7-4dcb-9fcf-95e384200cc8.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Hero candidate B — leaf canopy direction, not selected",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-03",
+    "name": "hero-c",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: photorealistic-natural. Very wide 1536x1024 fine natural-history photograph for IMAGO hero candidate C. No text or logo. An exquisitely small SINGLE monarch butterfly chrysalis hangs from the underside of a slender gently curving twig traversing the upper third of the landscape. Chrysalis is LEFT of center at x=31%, down below twig, occupying only 28% image height: great space around a vulnerable small life. Twig and silk attachment/black cremaster physically credible; opaque soft jade cuticle, discreet metallic flecks. Pale bone-white morning air and distant out-of-focus muted milkweed foliage fill the entire RIGHT two thirds as vast quiet negative space. Natural upper-left diffuse sunlight, macro telephoto naturalist photography, beautifully subtle film grain. No fantasy forest, lamps, particles, glow, gemstone, cocoon, butterflies or duplicated animal.",
+    "file": "public/art/hero-c.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-b3e8fb17-a66d-4804-9436-2d7b9a2fa83e.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Hero candidate C — wider environment direction, not selected",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-04",
+    "name": "hero-desktop",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use the provided photograph as the identity, twig, lighting and natural texture reference for IMAGO, a premium natural-history web documentary. Photorealistic-natural artwork. Keep warm bone-white #EFEDE1 background and diffuse upper-left light, slender gently arched brown twig, a single organism. No text, labels, watermark, UI, fairy particles, jewelry, glass or artificial glow. Refine this into the final desktop hero artwork, landscape 1536x1024. Preserve the chrysalis's outline and its real attachment to the branch via short black cremaster and tiny silk pad. Move the twig down slightly to leave a clean top navigation safe zone of 10% height. Chrysalis at x 74%, top at 25%, bottom at 85%, with generous left-side negative space, occupying 60% total image height. The specimen's lower tip is rounded taper, not a long sharp blade. Small natural gold flecks only. Render cuticle soft jade #8FB790, more softly and naturally lit. Complete intact contour, no second chrysalis. Preserve delicate blurred leaf in lower right. Museum-quality quiet macro image.",
+    "file": "public/art/hero-desktop.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-dc3ebff9-0b3a-4a8f-acc5-b9c0de5807fe.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter 01 desktop; fixed reference for pupal chapters",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-05",
+    "name": "hero-mobile",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use the provided photograph as the identity, twig, lighting and natural texture reference for IMAGO, a premium natural-history web documentary. Photorealistic-natural artwork. Keep warm bone-white #EFEDE1 background and diffuse upper-left light, slender gently arched brown twig, a single organism. No text, labels, watermark, UI, fairy particles, jewelry, glass or artificial glow. Create a NEW PORTRAIT 1024x1536 mobile composition, not a crop. Twig across upper 15%, one entire jade monarch chrysalis centered x=52%, upper attachment at y=20%, rounded tapered bottom at y=55%. Keep complete silk pad and short black cremaster. Lower 38% is clean light ivory air reserved for DOM title and body; no foreground leaf intrudes there. A softly blurred leaf at top left, remote faint milkweed greens. Natural macro photograph, same individual appearance and tiny gold spots.",
+    "file": "public/art/hero-mobile.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-db9c2ea7-9ff8-4f42-b84b-bd4072602f74.png",
+    "outputDimensions": {
+      "width": 1024,
+      "height": 1536
+    },
+    "role": "Chapter 01 independently generated portrait",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-06",
+    "name": "hanging-j",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use the provided photograph as the identity, twig, lighting and natural texture reference for IMAGO, a premium natural-history web documentary. Photorealistic-natural artwork. Keep warm bone-white #EFEDE1 background and diffuse upper-left light, slender gently arched brown twig, a single organism. No text, labels, watermark, UI, fairy particles, jewelry, glass or artificial glow. Earlier stage on the exact same slender twig, macro landscape 1536x1024: ONE mature monarch caterpillar in its biologically credible hanging J pose, rear end attached by hind prolegs to a tiny white silk pad on the underside of the twig. Lower head curves gently upwards in a J, head lower and left of the attachment; no knot or loop. Body has transverse black, white and yellow bands, anatomically coherent segments, paired slender black sensory filaments with longer front pair and shorter rear pair. Show whole J-shaped body at right-center, connection at 30% height, head at 72%. Left half calm cream background. No chrysalis yet, no silk cocoon, no detached body. Restrained intricate macro skin texture, no grotesque extra legs.",
+    "file": "public/art/hanging-j-first.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Initial version superseded by registered revision.",
+    "returnedFile": "exec-c612e4b1-cd6d-4dcf-a5fb-0860c8bc9424.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter 05; handoff04-05",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-07",
+    "name": "emerged",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use the provided photograph as the identity, twig, lighting and natural texture reference for IMAGO, a premium natural-history web documentary. Photorealistic-natural artwork. Keep warm bone-white #EFEDE1 background and diffuse upper-left light, slender gently arched brown twig, a single organism. No text, labels, watermark, UI, fairy particles, jewelry, glass or artificial glow. Later stage: ONE newly emerged monarch butterfly clinging securely to its empty chrysalis shell, which stays attached at exactly the same point beneath the twig. Landscape 1536x1024; whole shell and animal on right half, left half clean cream. Empty shell upper-right is pale, thin crumpled cuticle with an opened lower seam, not green full opaque cocoon. Butterfly below: heavy soft segmented abdomen, black thorax with natural white dots, antennae, ONE pair of wings visible overlapping from side view, still SHORT crumpled damp orange-black wings hanging down beside the plump abdomen. They are NOT fully extended or spread and much smaller than final wings. Natural long middle and hind legs genuinely grasp shell rim, reduced forelegs near thorax, no six extra long legs. Show the sole adult fully clear of shell but resting beneath it. No flight, no detached feet, no second butterfly, no giant membrane or liquid.",
+    "file": "public/art/emerged-first.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Superseded after attachment registration review; retained as the distinct initial image role.",
+    "returnedFile": "exec-d5f0d3d3-9aeb-4e59-a8c4-fa377f6e77d7.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter08 resting frame; chapter09 folded wings",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-08",
+    "name": "emerging",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use the provided photograph as the identity, twig, lighting and natural texture reference for IMAGO, a premium natural-history web documentary. Photorealistic-natural artwork. Keep warm bone-white #EFEDE1 background and diffuse upper-left light, slender gently arched brown twig, a single organism. No text, labels, watermark, UI, fairy particles, jewelry, glass or artificial glow. Create a difficult accurate emergence midpoint keyframe (50% transition), landscape 1536x1024. The same monarch chrysalis remains fixed at top right under its silk pad and short cremaster. Upper shell is stable, pale translucent CUTICLE texture (not glass), split lower shell edges separate naturally. ONE monarch adult is partway out: its black white-dotted head and thorax have emerged below the shell and two visible long supporting legs grip the lower shell edge, the short damp folded orange-black wings are just emerging; abdomen is partly still inside. Anatomical continuity, no duplicate bodies, no independent insect behind. Body weight hangs downward with feet visibly contacting shell; keep complete branch attachment. Left side quiet warm ivory space. No explosive transformation, torn-off head, extra wings, ghost overlay or superimposed two stages.",
+    "file": "public/art/emerging-first.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Superseded after attachment registration review; retained as the distinct initial image role.",
+    "returnedFile": "exec-d3edafc7-ece2-45fc-9c7e-296651bbed6b.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter08 intermediate; handoff07-08 at50%",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-09",
+    "name": "egg",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural. Create a landscape 1536x1024 premium editorial macro photograph for IMAGO chapter 2. Match the supplied reference's restrained natural soft upper-left daylight and color world but do NOT include its twig or chrysalis. One milkweed leaf seen from underneath stretches diagonally from bottom-left to upper-right, pale sage green underside with fine soft trichome hairs and a prominent branching vein network. ONE tiny opaque ivory monarch egg attached to the underside near a main vein at x=64%, y=48%. It is a small tall oval dome, finely ribbed longitudinally, not a water drop. Realistic relative scale: egg 7% of frame height, leaf veins much larger. Background softly out-of-focus deep leaf-green #173E34, natural chiaroscuro and light through leaf edge. Leaf gently curves; egg shape and support visible; fine museum-quality macrodetail. No text, labels, logo, butterfly, extra eggs, dew droplets, glass, rulers or fantasy.",
+    "file": "public/art/egg.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-16f38c78-b6e1-46c4-8c48-ffe95a427107.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter02 and chronology transitions",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-10",
+    "name": "caterpillar",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural. Landscape 1536x1024 premium natural-history macro photograph for IMAGO chapter 3. Same soft upper-left diffuse daylight as supplied reference. ONE monarch caterpillar at third instar, side-on whole-body view on the lower edge of a milkweed leaf; its body across center and slightly diagonal, head at right, rear at left. Black white yellow transverse striping, distinct segments, longer front pair and short rear pair of slender black fleshy filaments, very small true head antennae. Natural prolegs visibly grip the leaf, three pairs of small thoracic legs near head; no floating or detached legs. A visible semicircular eaten notch trails behind to the left, leaf main vein survives. Precise believable feeding, not violent. Background soft sage green and bone-white natural bokeh, more botanical than the pupa. Whole body clear, ample quiet surrounding space. No text, labels, ruler, duplicate caterpillars, chrysalis or over-sharpening.",
+    "file": "public/art/caterpillar.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-03839e0c-d42a-44af-9379-1bd70409a4f5.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter03 later third instar",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-11",
+    "name": "molt",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural. Landscape 1536x1024 macro natural-history photograph for IMAGO chapter 4. Same soft diffuse upper-left light, warm bone-white background with muted milkweed green. ONE freshly molted monarch caterpillar in side profile, head facing right, lying naturally on a milkweed leaf. Black white yellow bands with soft new cuticle and plausible small prolegs attached to leaf. Just behind its rear end on left lies a SMALL collapsed crumpled shed striped larval skin, clearly dry and empty, with dark discarded head capsule near it. Shed skin must be only one quarter size of current body and never resemble a second living caterpillar or a second head still attached. Quiet observed scene, recognizable continuous anatomy, beautiful segment texture. No gore, no liquid, no fused old and new bodies, no impossible neck. Full leaf support with a few distant veins. Image contains no text, labels, watermark, diagram or measuring scale.",
+    "file": "public/art/molt.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-90d04235-dd51-4de7-bbf9-066ab1dc1957.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter04 molt",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-12",
+    "name": "pupa-early",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case identity-preserve precise-object-edit. Edit the supplied IMAGO final hero photograph into the EARLY CHRYSALIS stage. Preserve EXACT canvas dimensions landscape1536x1024, branch pixels and silk pad position x~74% y~25%, upper-left lighting, background, blurred foreground leaf, full silhouette of chrysalis and 60% frame-height size. Change ONLY pupa appearance: newly formed lighter pastel pale green, slightly softer surface and subtly less defined texture, no adult wing pattern yet, tiny subdued golden dots. The shell must still be opaque living cuticle. Maintain identical projected outline and suspension for a registered stage comparison. No extra chrysalis, no skin lump, no text or labels, no dramatically new scene.",
+    "file": "public/art/pupa-early.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-18cdbe7f-02cf-4db5-b99d-c572b304ea2d.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter07 Early",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-13",
+    "name": "pupa-late",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case identity-preserve precise-object-edit. Edit supplied IMAGO final hero photograph into the LATE CHRYSALIS stage with orange and black adult wing pattern recognizable beneath the covering. Preserve EXACT landscape1536x1024 framing, branch and silk pad position, chrysalis outer silhouette/size and attachment, same foreground leaf/background and upper-left light. Change ONLY appearance of pupa: dark patterned adult wing area muted beneath thin textured pupal cuticle, orange/rust and black venation, subtle pearly membrane with tiny remaining spots; surface still MATTE textured animal cuticle, not optical glass. Wing-scale pigmentation is becoming visible, not a spread butterfly in a transparent ornament. Whole lower taper and top fully visible. No split or hole yet, no adult outside, no extra silhouette, no mirrored tiny butterfly visible head-on, no labels/text.",
+    "file": "public/art/pupa-late.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-317aba40-b5fb-4717-8d87-f94bd71ed128.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter07 Late; handoffs06-07 and07-08",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-14",
+    "name": "opening",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural precise-object-edit. Edit supplied IMAGO hero photo to a late stage JUST AS THE COVERING OPENS, earliest emergence keyframe. Preserve exact landscape1536x1024 composition, branch, silk pad, whole suspension, one pupa at right x74%, light and background. Dark orange-black pattern visible beneath thin dull pupal cuticle. A small split has opened at the LOWER VENTRAL seam; the black head and tucked antennae of the SINGLE adult barely show at lower opening. Most body is still inside, folded wings unexpanded, feet are just at opening, not an adult already hanging free. No second butterfly, no ghost transparency, no separated pieces, no glowing cracks or explosive splitting. Plausible restrained natural-history reconstruction. Left side quiet bone-white air. No text, annotations or logo.",
+    "file": "public/art/opening.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-f2d9d5bb-ea34-44e7-95cf-24690b38a260.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter08 first opening",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-15",
+    "name": "gripping",
+    "tool": "image_gen.imagegen",
+    "prompt": "Natural-history photographic artwork, no text or UI. Use image1 as EXACT landscape1536x1024 spatial reference: keep twig at y25% and silk pad at x74% y26%, upper-left soft daylight, warm ivory background, same blurred lower-right leaf. Use image2 only as adult monarch identity and shell-texture reference; image2 framing is NOT to be copied. One organism, four wings total but hidden far pair may overlap. Small front leg pair held near thorax. Natural credible legs and joints, no duplicate body. Create emergence view3: monarch has just pulled its abdomen clear of the lower opening and turns upward to establish its grip beneath the EMPTY thin crumpled pale shell fixed to silk pad. Head points upward-left, two visibly load-bearing long feet grip shell edge, one further rear foot reaches the other rim, realistic weight below attachment. Orange-black wings remain TINY very crumpled and soft, thick abdomen hangs to right of folded wings. Whole shell+animal ends by y92%, nothing cut off. Pupa shell upper segment retains faint original outline but is empty. No hanging adult with large expanded wings, no liquid, no ropes.",
+    "file": "public/art/gripping.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-65b3cebb-c8fa-4b3b-aab3-ec95c0aea852.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter08 support transition",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-16",
+    "name": "expanding",
+    "tool": "image_gen.imagegen",
+    "prompt": "Natural-history photographic artwork, no text or UI. Use image1 as EXACT landscape1536x1024 spatial reference: keep twig at y25% and silk pad at x74% y26%, upper-left soft daylight, warm ivory background, same blurred lower-right leaf. Use image2 only as adult monarch identity and shell-texture reference; image2 framing is NOT to be copied. One organism, four wings total but hidden far pair may overlap. Small front leg pair held near thorax. Natural credible legs and joints, no duplicate body. Create wing-expansion intermediate view: monarch now stationary underneath empty shell, head angled up left, long supporting feet genuinely contacting shell bottom, abdomen hangs. Wings have unfolded PARTWAY and hang vertically as one overlapping near-side forewing/hindwing pair, moderately wrinkled orange with black veins and white-dotted margin. Wings reach just below abdomen, visibly longer than image2 but still smaller than final. Entire animal + attachment in frame. No open flight posture, no symmetrical butterfly pasted inside shell, no extra feet. Beautiful restrained macrodetail and warm returning light.",
+    "file": "public/art/expanding.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-3159ae6a-6b41-4e74-8ca2-c4fb328f2215.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter09 partial wing expansion",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-17",
+    "name": "adult",
+    "tool": "image_gen.imagegen",
+    "prompt": "Natural-history photographic artwork, no text or UI. Use image1 as EXACT landscape1536x1024 spatial reference: keep twig at y25% and silk pad at x74% y26%, upper-left soft daylight, warm ivory background, same blurred lower-right leaf. Use image2 only as adult monarch identity and shell-texture reference; image2 framing is NOT to be copied. One organism, four wings total but hidden far pair may overlap. Small front leg pair held near thorax. Natural credible legs and joints, no duplicate body. Create the final adult wing-study artwork: a SINGLE fully formed monarch butterfly supported beneath the empty shell on the twig, head points up to shell, body vertically below attachment. Wings are open in a calm shallow V toward the camera, showing clearly DIFFERENT forewing and hindwing shapes: upper forewings long angular triangular; lower hindwings rounder smaller lobes; four wings in total. Mature burnt-orange matte wing scales #C96B2C with natural black venation, black margins with small white spots, neither glossy nor translucent glass. Four long middle/hind supporting feet maintain shell/twig contact; reduced front feet near thorax. Two slender antennae. The broad adult occupies right half, whole contour entirely inside margins, left half remains ivory for copy. This is resting and drying, NOT flight. No extra wings, mirrored duplicate bodies, flowers or fake scientific labels.",
+    "file": "public/art/adult-first.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Initial version superseded by registered revision.",
+    "returnedFile": "exec-6472ceaf-683d-413b-a645-a02aef782818.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter09 open wings and same-image detail; handoff09-10",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-18",
+    "name": "empty-shell",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural. Final IMAGO chapter10 environment photograph in landscape1536x1024. Same slender twig crossing upper quarter with ONE empty pale monarch chrysalis shell at the former attachment on the right x74%, intact silk pad and cremaster. No butterfly or caterpillar remains anywhere. Empty shell is delicate crumpled translucent CUTICLE with natural split and open lower edge, not intact green pupa or glass; same proportions as previous attachment. Pull camera gently wider so empty shell occupies approximately30% image height and the world becomes spacious: milkweed meadow out of focus in lower half, soft bone-white early daylight open air in upper half, large clean negative space left. Soft upper-left natural lighting, quiet after a departure, premium editorial natural history, no fake glow or fog texture. No text, labels, quote, logo or UI.",
+    "file": "public/art/empty-shell.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-c056819e-d8c8-43a1-bb42-f2e7f8e35333.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter10 environment and handoff09-10",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-19",
+    "name": "forming",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural. IMAGO chapter5 pupation intermediate keyframe, landscape1536x1024. Same twig at top quarter and silk pad at x74% y26%, same left ivory negative space and upper-left daylight as reference. ONE newly forming monarch pupa hangs from cremaster at silk pad, soft pale-green slightly elongated segmented pupal body beneath; the last striped black/white/yellow larval skin has been pushed upward, a small tightly wrinkled bundle near the TOP attachment. No larval head at bottom; it is being shed, not a second animal. The pupal outline is beginning to shorten but still differs subtly from settled smooth jade chrysalis. Support point and weight physically credible. Delicate real cuticle, no cocoon, no dangling empty caterpillar, no liquid or ghost-morph. Small natural flecks, no decorative jewelry. No text, labels or UI.",
+    "file": "public/art/forming.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-0bb0bd59-f826-4f93-8acd-19d5fd2a4c38.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter05 forming pupa",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-20",
+    "name": "hatchling",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case photorealistic-natural. IMAGO newborn monarch macro natural-history reconstruction, landscape1536x1024. ONE very small JUST-HATCHED monarch caterpillar, pale grayish green body WITHOUT bold yellow black stripes, minute fine hairs, tiny dark head facing right. It rests close to a single opened ivory ribbed eggshell on the underside of a milkweed leaf with visible soft hairs and branching veins. Whole body side view, attached to leaf with subtle tiny feet, body only modestly longer than the eggshell, do not make it a giant worm. Muted green and pale ivory, diffuse upper-left daylight. Gentle macro natural texture matches reference palette; no twig or chrysalis. No second larva, no blood, no large black sensory horns yet, no text, label, ruler or watermark.",
+    "file": "public/art/hatchling.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-23b88a77-97df-4e29-9daf-af9bb333d151.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter03 newborn locator",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-21",
+    "name": "hero-background",
+    "tool": "image_gen.imagegen",
+    "prompt": "Precise-object-edit background plate extraction for a layered IMAGO website. Edit this reference: REMOVE the entire chrysalis, silk pad, cremaster, twig, and blurry lower-right foreground leaf. Fill with coherent clean naturally out-of-focus warm bone-white #EFEDE1 air matching existing left half. Keep subtle natural distant color variation and diffuse upper-left illumination. Exact same landscape1536x1024 framing. This is the EMPTY BACKGROUND layer only. Absolutely no ghost outline, duplicate chrysalis, twig remnant, insect, leaf edge, texture seam, text or label.",
+    "file": "public/art/hero-background.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-95f0caea-e1fc-452b-8f64-796b4c4b6e55.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter01 clean background layer",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-22",
+    "name": "hero-subject",
+    "tool": "image_gen.imagegen",
+    "prompt": "Background extraction for IMAGO hero. Exact same landscape1536x1024 canvas and subject positions. Keep ONLY the complete horizontal slender twig, tiny silk pad, black cremaster and opaque green monarch chrysalis from reference, preserving silhouette, very fine attachment threads, natural color and illumination. Remove every background pixel and remove lower-right blurry leaf. Everything except twig+single chrysalis must be truly transparent alpha, not a white rectangle or checkerboard. Do not recompose, resize or center. No extra insect or new props. This is an exact subject layer for compositing over its original background. No labels or text.",
+    "file": "public/art/hero-subject.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-65e1a7f0-bb84-4a16-a8f7-dbee27fec05c.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter01 alpha subject layer",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-23",
+    "name": "flight",
+    "tool": "image_gen.imagegen",
+    "prompt": "Background extraction. Isolate ONLY the single open-winged adult monarch butterfly in this reference on a genuinely transparent alpha background. Preserve its natural orange/black/white wing pattern, all four correct wings, body, two antennae and feet; same dorsal frontal camera. Remove branch, silk, empty shell and all background, do not leave residues. The legs can rest naturally near thorax for a brief illustrative departure, not long straight upward stalks. Keep complete contour with generous transparent margins. One adult only, no shadow backdrop, no text, no checkerboard pixels.",
+    "file": "public/art/flight.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-6cfd7192-590d-42f8-89a3-c02dc1e2a95d.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter10 finite departure sprite; handoff09-10",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-24",
+    "name": "foreground",
+    "tool": "image_gen.imagegen",
+    "prompt": "Background extraction. Keep ONLY the softly out-of-focus green leaf corner entering from the lower RIGHT of this reference; preserve its original position and soft optical edge in a landscape1536x1024 transparent canvas. Remove twig, chrysalis, silk, all other background completely. Real alpha transparency in the rest of image. The leaf is a subtle near-field foreground layer, occupying rightmost25% and lowest30% of canvas. No other leaf, stem, insect, text, opaque backdrop or checkerboard.",
+    "file": "public/art/foreground.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-86946068-0ad5-4549-b85a-b1dca71d0b80.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter01 alpha leaf foreground",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-07-R1",
+    "name": "emerged",
+    "tool": "image_gen.imagegen",
+    "prompt": "Precise image edit for matching a natural-history keyframe sequence. Image1 is the adult rest frame to edit; image2 is the exact branch/camera/background spatial template. Replace image1 branch with image2 branch at exactly its position, silk attachment at x=1110 y=270 on a 1536x1024 canvas. Keep ONE same adult and empty shell, adjust their group to hang from this attachment: shell top around y=330, shell bottom around y=550, adult below fully within y=960. Butterfly's wings remain short wrinkled and folded, body plump. Preserve anatomy and true foot contacts. Do NOT use image1's high branch y=100. Keep image2 ivory background and lower-right blurred leaf. No text, labels, extra butterfly or new objects. Spatial registration to image2 is essential; crisp natural texture.",
+    "file": "public/art/emerged.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Adopted revision to match the fixed branch and silk attachment.",
+    "returnedFile": "exec-fc85aba6-5282-426f-a663-e0188b09db6d.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter08 resting frame; chapter09 folded wings",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-08-R1",
+    "name": "emerging",
+    "tool": "image_gen.imagegen",
+    "prompt": "Precise image edit for a matched emergence keyframe. Image1 contains the halfway-emerging adult and split shell; image2 is the required exact camera/branch/background template. Landscape1536x1024. Use image2 branch pixels and fixed silk point at x=1110 y=270, shell top around y=330. Scale the emerging shell+single adult group as needed so bottommost antenna stays above y=970. Preserve one continuous adult emerging head downward, forebody out, abdomen partly inside, folded wings, supporting feet touching shell. Keep split cuticle, no extra wings or separate body. The source's higher branch position must be corrected to image2's LOWER branch. Warm bone-white negative space left, no text/labels/logos. It must match preceding pupa and following grip frames.",
+    "file": "public/art/emerging.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Adopted revision to match the fixed branch and silk attachment.",
+    "returnedFile": "exec-3e8f9aef-caea-49c0-8fca-c7d733c27203.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter08 intermediate; handoff07-08 at50%",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-25",
+    "name": "instars",
+    "tool": "image_gen.imagegen",
+    "prompt": "Create a beautifully restrained natural-history comparison plate for IMAGO. Landscape1536x1024, warm uniform bone-white background #EFEDE1. NO text, labels, dividing lines, numbers, ruler or UI. FIVE different monarch caterpillar instars in FIVE horizontal rows, centered at y=102,307,512,717,922. All side profiles with head to right, on five very subtle thin sage leaf edges. Row1: newly hatched pale gray-green caterpillar, faint hairs, tiny dark head, no bold banding, modest tiny filaments. Row2: clear black white yellow narrow bands and small filaments. Row3: stronger stripes, longer front filaments and distinct gripping prolegs. Row4: robust striped segments with black-tipped front filaments. Row5: mature stout monarch larva with crisp stripes and strong front/rear filament pairs. Each separate animal occupies about65% row width (intentional schematic equalized display scale, not literal measured relative size); all five bodies remain entirely within their separate200px high row. Use reference only for older larva texture and illumination. Each has ONE head, coherent segments, real feet, no extra horns. Macro artwork with soft upper-left light, exquisite readable natural detail, no drop shadows, no frame. This plate shows separate developmental moments, never five simultaneous protagonists.",
+    "file": "public/art/instars.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Five visible instar comparison rows in Chapter 04; relative display sizes are schematic.",
+    "returnedFile": "exec-fb54bf94-d30e-4e47-be69-631f487b9508.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter04 five visible instar rows",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-06-R1",
+    "name": "hanging-j",
+    "tool": "image_gen.imagegen",
+    "prompt": "Edit image1 to register its branch and silk attachment EXACTLY to image2. Landscape1536x1024. Use image2 branch at the lower y250 position, silk pad x1120 y250; NOT the high branch of image1. A single same monarch caterpillar hangs by its rear from that pad in a credible J, head curled upward at bottom. Fit full J body into y300 through940 by modestly scaling it down; no clipped antenna/filaments. Keep soft ivory background and lower-right blurred leaf as in image2. Preserve crisp natural black white yellow bands and plausible feet. No text, no extra subjects, no cocoon. This is one frame in a registered pupation sequence; match camera, branch, lighting to image2.",
+    "file": "public/art/hanging-j.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Adopted; branch and silk anchor registered to hero reference.",
+    "returnedFile": "exec-7b0b3d38-6b4b-4905-a39a-78d030acee9a.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter 05; handoff04-05",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-17-R1",
+    "name": "adult",
+    "tool": "image_gen.imagegen",
+    "prompt": "Edit image1 to register its twig and white silk attachment EXACTLY to image2. Landscape1536x1024. Image2 has the branch at lower y250 and fixed pad x1120 y250; use this branch position. Keep ONE same monarch adult with FOUR naturally distinct wings in an open display below its empty shell. Shell top at y320, bottom near y520; feet clearly grip the shell, adult below ending above y970. Modestly reduce total adult+shell group if needed so every wing tip fits canvas, no clipping. Preserve same wing pattern, soft upper-left light, warm ivory air left, soft green lower-right leaf. No doubled body, missing wings, additional adult, text or UI. Match image2 exact camera framing and silk support position for a continuous registered sequence.",
+    "file": "public/art/adult.webp",
+    "createdOn": "2026-11-09",
+    "adoption": "Adopted; branch and silk anchor registered to hero reference.",
+    "returnedFile": "exec-cd072ecc-4cdd-443b-82dc-2e08aeb3015f.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter09 open wings and same-image detail; handoff09-10",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Original artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-30",
+    "name": "departure-resting",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: compositing. Production photographic artwork for IMAGO, landscape1536x1024. Image1 is the EDIT TARGET: the empty chrysalis beneath its branch above a milkweed meadow. Image2 is a subject and anatomy reference for the same monarch adult. Keep Image1's exact branch, silk pad, hanging shell position, camera, meadow, pale air, soft upper-left light, and natural texture. Add ONE realistically sized adult monarch hanging below the shell, as in Image2. The adult's four long working legs must visibly reach upward and grip the shell's lower rim; the reduced front pair stays close to the thorax. Head at the top, abdomen down, two antennae, exactly two forewings and two hindwings. Mature open orange-and-black wings, matte scales, no glow. The butterfly's wingspan should be approximately1.8times the shell's height (around620px), not a tiny pasted icon. Keep the complete butterfly inside the lower-right frame, with feet clearly contacting the shell at aroundy650 and wing tips/body above the bottom edge. Preserve one shell only and the same support aroundx1150,y250. No floating adult, no second butterfly, no extra wings or limbs, no text, logo, UI, labels or watermark. This is a calm supported resting still immediately before a voluntary departure.",
+    "file": "public/art/departure-resting.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-6ee03a3d-33ac-4a28-856f-ee28b5cbcc02.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Chapter10 supported resting/reset scene before finite departure",
+    "referenceImages": [
+      "public/art/empty-shell.webp",
+      "public/art/adult.webp"
+    ],
+    "adoption": "Adopted for the bounded independent finish-review correction batch.",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  },
+  {
+    "id": "IMG-31",
+    "name": "branch-to-leaf",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: photorealistic-natural. Production transition keyframe for IMAGO, landscape1536x1024, macro natural-history photography with soft light from upper left. Input1 gives the exact warm twig material, pale bone-colored air, and calm camera language; Input2 gives the milkweed underside, fine hairs and venation, and single ivory ribbed monarch egg. Create the intermediate view as the gaze follows the twig toward a nearby milkweed leaf. A recognizable slender twig crosses the upper-right, while a green petiole follows a connected visual diagonal down-left into a broad milkweed leaf underside. Make the twig/petiole relationship clearly traceable and natural, not an impossible graft. The leaf underside fills lower-left to middle with one small pale egg on its same broad diagonal vein, clearly visible but not giant. Pale softly defocused air remains upper-left and beyond the leaf; green depth appears toward the lower-right. This frame is an explicit narrated look back to an earlier life stage: do not show any chrysalis, caterpillar, adult, or ghost butterfly. No dissolving shapes, duplicate eggs, transparent animals, generated labels, text, UI, logo or watermark. The aim is a specific spatial bridge between a twig macro and the existing egg/leaf macro, not a generic leaf close-up.",
+    "file": "public/art/branch-to-leaf.webp",
+    "createdOn": "2026-11-09",
+    "returnedFile": "exec-edae06de-5127-4dd0-9c1f-833446c99712.png",
+    "outputDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "role": "Transition01-02 shared twig/petiole/egg-bearing-leaf midpoint",
+    "referenceImages": [
+      "public/art/hero-desktop.webp",
+      "public/art/egg.webp"
+    ],
+    "adoption": "Adopted for the bounded independent finish-review correction batch.",
+    "processing": "Local WebP conversion at quality87; 768px derivative quality82; stage-specific256px embedded fallback quality62. Artwork is not algorithmically repainted.",
+    "seed": "Tool did not expose a seed."
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "prompt": "Precise image edit for a matched emergence keyframe. Image1 contains the halfway-emerging adult and split shell; image2 is the required exact camera/branch/background template. Landscape1536x1024. Use image2 branch pixels and fixed silk point at x=1110 y=270, shell top around y=330. Scale the emerging shell+single adult group as needed so bottommost antenna stays above y=970. Preserve one continuous adult emerging head downward, forebody out, abdomen partly inside, folded wings, supporting feet touching shell. Keep split cuticle, no extra wings or separate body. The source's higher branch position must be corrected to image2's LOWER branch. Warm bone-white negative space left, no text/labels/logos. It must match preceding pupa and following grip frames.",
+  "createdAt": "2026-11-09T02:58:27.983Z"
+}

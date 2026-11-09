@@ -1,0 +1,338 @@
+[
+  {
+    "id": "IMG-01",
+    "name": "hero-a",
+    "prompt": "Use case: photorealistic-natural. Create one separate, exquisitely composed cinematic production photograph for BERTH, an intimate original night-train story. Fine natural film color, tactile old walnut edges, cotton folds, brushed slightly worn brass, midnight blue #182D38, honey amber #DDA75D, sage #7D8B80, cream #E9DFC9, a tiny burnt-orange paperclip #C96B47. No heavy film grain, no yellow nostalgic wash, not a hotel advertisement. LOCKED ROOM: a genuinely small 2-person sleeper compartment, viewed toward the far end, fixed upper and lower berths ONLY on the RIGHT wall; a narrow fixed ladder at their NEAR-DOOR right end; one rounded-rectangle window centered on the FAR end wall; a small wooden table under that window with one fixed brass shaded reading lamp. LEFT side is a narrow aisle and plain wall with hooks, no bed. One modest ceramic water cup. CHARACTERS: Shen Ning, 29-year-old East Asian woman, short dark brown hair, cream knit cardigan, dark trousers, sage canvas bag, belongs to upper berth. Ms. Lin, 61-year-old East Asian woman, silver-grey short hair, navy blouse, fine metal glasses, unshowy tan travel bag, belongs to lower berth. Natural anatomy and ordinary expressions, no extra people. Twelve-page unmarked white lesson manuscript with orange-red clip is on the table; there are no index cards yet. All paper is BLANK, no letters, no symbols, no watermark or railway logos. Realistic proportions and plausible lens. Maintain dark details, not black crush. This is one scene in a complete ten-chapter responsive narrative; image is a separate text-free production asset; all website words/buttons will be real HTML. Generate landscape 16:9. CANDIDATE A: standing just inside the OPEN DOOR at natural eye height, observing the compartment down its true long axis. A dark door jamb and a generous unoccupied dim wall on the LEFT 40% give calm negative space for later live typography. The small compartment itself occupies the right 60%. Blue evening station light through the far window. Table, warm lamp and clipped blank manuscript visible. Ms. Lin is already sitting naturally on the LOWER right berth, only a subtle partial silhouette and lap visible, not centered; Ning is the viewer. Avoid making the room look long, broad or luxurious. Quiet lived-in elegance, exact architectural credibility.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-91c97f4e-e43f-4841-88bb-096dee44f5c4.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-02",
+    "name": "hero-b",
+    "prompt": "Use case: photorealistic-natural. Create one separate, exquisitely composed cinematic production photograph for BERTH, an intimate original night-train story. Fine natural film color, tactile old walnut edges, cotton folds, brushed slightly worn brass, midnight blue #182D38, honey amber #DDA75D, sage #7D8B80, cream #E9DFC9, a tiny burnt-orange paperclip #C96B47. No heavy film grain, no yellow nostalgic wash, not a hotel advertisement. LOCKED ROOM: a genuinely small 2-person sleeper compartment, viewed toward the far end, fixed upper and lower berths ONLY on the RIGHT wall; a narrow fixed ladder at their NEAR-DOOR right end; one rounded-rectangle window centered on the FAR end wall; a small wooden table under that window with one fixed brass shaded reading lamp. LEFT side is a narrow aisle and plain wall with hooks, no bed. One modest ceramic water cup. CHARACTERS: Shen Ning, 29-year-old East Asian woman, short dark brown hair, cream knit cardigan, dark trousers, sage canvas bag, belongs to upper berth. Ms. Lin, 61-year-old East Asian woman, silver-grey short hair, navy blouse, fine metal glasses, unshowy tan travel bag, belongs to lower berth. Natural anatomy and ordinary expressions, no extra people. Twelve-page unmarked white lesson manuscript with orange-red clip is on the table; there are no index cards yet. All paper is BLANK, no letters, no symbols, no watermark or railway logos. Realistic proportions and plausible lens. Maintain dark details, not black crush. This is one scene in a complete ten-chapter responsive narrative; image is a separate text-free production asset; all website words/buttons will be real HTML. Generate landscape 16:9. CANDIDATE B, DIFFERENT CAMERA: seated at the near edge of the LOWER right berth, eye height 1.15m, looking diagonally along its inner edge toward the far window and small table. Foreground left the blank clipped manuscript and Ning's single anatomically natural relaxed hand, a cream cuff. Ms. Lin sits at the farther end of this same lower berth in soft focus, a distinct 61-year-old silver-haired woman with glasses, blue window behind. Upper berth edge overhead and near-door ladder glimpse still reveal small room arrangement. Delicate depth and sense of being a stranger in a shared room. Do not put a berth on the left. No typography.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-c203dc4f-b866-4e35-8f78-714c561db2a7.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-03",
+    "name": "hero-c",
+    "prompt": "Use case: photorealistic-natural. Create one separate, exquisitely composed cinematic production photograph for BERTH, an intimate original night-train story. Fine natural film color, tactile old walnut edges, cotton folds, brushed slightly worn brass, midnight blue #182D38, honey amber #DDA75D, sage #7D8B80, cream #E9DFC9, a tiny burnt-orange paperclip #C96B47. No heavy film grain, no yellow nostalgic wash, not a hotel advertisement. LOCKED ROOM: a genuinely small 2-person sleeper compartment, viewed toward the far end, fixed upper and lower berths ONLY on the RIGHT wall; a narrow fixed ladder at their NEAR-DOOR right end; one rounded-rectangle window centered on the FAR end wall; a small wooden table under that window with one fixed brass shaded reading lamp. LEFT side is a narrow aisle and plain wall with hooks, no bed. One modest ceramic water cup. CHARACTERS: Shen Ning, 29-year-old East Asian woman, short dark brown hair, cream knit cardigan, dark trousers, sage canvas bag, belongs to upper berth. Ms. Lin, 61-year-old East Asian woman, silver-grey short hair, navy blouse, fine metal glasses, unshowy tan travel bag, belongs to lower berth. Natural anatomy and ordinary expressions, no extra people. Twelve-page unmarked white lesson manuscript with orange-red clip is on the table; there are no index cards yet. All paper is BLANK, no letters, no symbols, no watermark or railway logos. Realistic proportions and plausible lens. Maintain dark details, not black crush. This is one scene in a complete ten-chapter responsive narrative; image is a separate text-free production asset; all website words/buttons will be real HTML. Generate landscape 16:9. CANDIDATE C, DIFFERENT CAMERA: intimate view from the UPPER right berth edge, natural lying/seated height, looking gently down toward warm table and far rounded window. Cotton duvet and walnut berth lip form the foreground at bottom/right. Near-door ladder is visible on right, lower berth and a small part of Ms. Lin beneath; no other person. Far window twilight blue, single lamp warm below, clipped manuscript tiny but visible on table. Tight real compartment, no fisheye, no impossible panoramic view. Asymmetrical quiet deep blue negative space on left. This candidate should feel significantly more intimate and elevated than an entrance view. No typography.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-bd825f70-ebe2-4fab-ba81-a4cb2cf307d7.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-04",
+    "name": "hero",
+    "prompt": "Make one precise tiny-object correction to this exact 16:9 BERTH hero photograph. Preserve ALL pixels' composition, people, face, night station/window, lamp, bags, room, colors, lighting and dark-blue left title area. Change ONLY the orange object at the top-left corner of the manuscript on the table: currently it stands upright like binder handles. Replace it with one small FLAT orange-red WIRE PAPERCLIP, the classic elongated open oblong double-loop Gem shape, lying parallel and flush along the paper's top-left edge. No upright loops or triangular binder body, no handles, no metal clamp. It should be subtle, thin wire and visibly orange-red. Absolutely no other changes, no text.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-e927647c-e04f-4b12-877a-b47a2e0e2952.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-04",
+        "name": "hero",
+        "prompt": "Use the supplied image as the LOCKED architecture, materials, palette and Ms. Lin character reference for BERTH. Keep exactly the same modest compact sleeper: upper and lower fixed berths on RIGHT only, near door brass ladder on extreme RIGHT, ONE rounded rectangular window on FAR wall, small walnut table immediately below it, fixed brass lamp on table left, plain left wall with 2 hooks and near door foreground. Same cotton cream bedding, walnut wood and sage fabrics. Ms. Lin is East Asian 61, silver-grey short hair, navy blouse, thin glasses. Shen Ning is East Asian 29, dark brown bob, cream knitted cardigan and dark trousers. No extra person, no second window, no bed on left. Fine cinematic realistic photograph, tactile clean material, subtle warm/cool separation, no heavy grain or wash. No text, no logo, no watermark anywhere. Papers completely blank. Orange-red PAPERCLIP must be a simple bent double-loop thin wire oblong paperclip, NOT a binder bulldog clip; only one. Natural anatomy and fingers. This is a standalone asset for a complete ten chapter narrative webpage; typography and controls will be live HTML. EDIT TARGET: refine this exact entrance composition, landscape 16:9, preserve room/perspective and Ms. Lin's face and position. Make the unoccupied LEFT 43% dark midnight blue rather than brown, softly textured painted door foreground, elegantly quiet space for typography. Warm reading lamp and table at right center. Replace incorrect orange binder clip on manuscript with correct small burnt-orange thin-wire oblong PAPERCLIP lying flat at top left edge. Keep all papers blank. Remove sage bag from upper bed: Ning has set it on floor next to the near-door ladder. Keep Ms. Lin's tan travel bag with her. Preserve low contrast blue station scene through window and clear depth, never crushed black. No index cards yet. Need an exquisite polished main film still, restrained and lived in.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-7adda178-7b22-42e6-bc4e-9edf24730960.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-04",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-7adda178-7b22-42e6-bc4e-9edf24730960.png",
+    "latestRevisionId": "REV-04"
+  },
+  {
+    "id": "IMG-05",
+    "name": "hero-mobile",
+    "prompt": "Precise tiny-object continuity correction to this exact BERTH hero-mobile photograph. Preserve ALL composition, aspect ratio, room geometry, furniture positions, the two women's faces/poses, cards and glasses placement, bags, window, light and colors; do not redesign the scene. Change ONLY the orange clip on the manuscript (on table): replace the upright binder-like handles with ONE ordinary small FLAT thin orange-red bent-wire paperclip, the classic elongated open oblong double-loop Gem shape, lying flush parallel to the paper edge. No standing handles, no triangular metal clamp, no prongs, no new orange objects. Keep the manuscript in EXACT existing position and the same stack of pages. Nothing else changes. No text anywhere, no watermark. Portrait 9:16.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-00370ba6-f6b9-4a9f-ade6-8795fe3f9c63.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-05",
+        "name": "hero-mobile",
+        "prompt": "Use the supplied image as the LOCKED architecture, materials, palette and Ms. Lin character reference for BERTH. Keep exactly the same modest compact sleeper: upper and lower fixed berths on RIGHT only, near door brass ladder on extreme RIGHT, ONE rounded rectangular window on FAR wall, small walnut table immediately below it, fixed brass lamp on table left, plain left wall with 2 hooks and near door foreground. Same cotton cream bedding, walnut wood and sage fabrics. Ms. Lin is East Asian 61, silver-grey short hair, navy blouse, thin glasses. Shen Ning is East Asian 29, dark brown bob, cream knitted cardigan and dark trousers. No extra person, no second window, no bed on left. Fine cinematic realistic photograph, tactile clean material, subtle warm/cool separation, no heavy grain or wash. No text, no logo, no watermark anywhere. Papers completely blank. Orange-red PAPERCLIP must be a simple bent double-loop thin wire oblong paperclip, NOT a binder bulldog clip; only one. Natural anatomy and fingers. This is a standalone asset for a complete ten chapter narrative webpage; typography and controls will be live HTML. RECOMPOSE, independently composed vertical portrait 9:16. Observe from the door slightly LEFT of the aisle, use real lens and preserve tiny room proportions. Top 24% is dim smooth midnight-blue inside door/wall with no distracting objects, reserved for later real heading. Single window occupies upper middle; warm table, clipped blank manuscript and lamp at middle/lower left; Ms. Lin sits on right lower berth near table, lower berth edge foreground, ladder at near right. Upper berth partly visible high right. Ms. Lin's modest bag next to her. Ning's sage bag on floor at near right. Existing face unchanged. The window, table, person and fixed facilities should all be readable in this portrait; do NOT crop a landscape image. No new furniture. No words.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-4a8fc9e9-b1db-4ec9-b198-f03d0c18eb2d.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-05",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-4a8fc9e9-b1db-4ec9-b198-f03d0c18eb2d.png",
+    "latestRevisionId": "REV-05"
+  },
+  {
+    "id": "IMG-06",
+    "name": "night-talk",
+    "prompt": "Precise continuity correction to this exact BERTH night-talk photograph. Preserve both women, their faces, poses, natural hands, offered blank card, table card, lamp, window, curtains, viewpoint, all color/lighting and other furniture. CHANGE ONLY TWO OBJECT DETAILS: (1) remove the sage canvas bag visible on upper-right bed and place that same bag down on the FLOOR at near-right by the ladder; upper bed now has bedding only. (2) replace the upright orange binder-like clip on the manuscript with one ordinary FLAT thin orange-red wire oblong DOUBLE-LOOP PAPERCLIP lying along top-left corner of the manuscript, open elongated loop, no prongs, no handles. Everything else identical. Two small cards remain distinct: one offered by Ning, one on table; Lin's bag still contains flipflops. No text, no logos. Maintain landscape16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-2a9e3af1-5fb4-4db3-82ec-bf3d98b45bdd.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-06",
+        "name": "night-talk",
+        "prompt": "Use the supplied image as the LOCKED architecture, materials, palette and Ms. Lin character reference for BERTH. Keep exactly the same modest compact sleeper: upper and lower fixed berths on RIGHT only, near door brass ladder on extreme RIGHT, ONE rounded rectangular window on FAR wall, small walnut table immediately below it, fixed brass lamp on table left, plain left wall with 2 hooks and near door foreground. Same cotton cream bedding, walnut wood and sage fabrics. Ms. Lin is East Asian 61, silver-grey short hair, navy blouse, thin glasses. Shen Ning is East Asian 29, dark brown bob, cream knitted cardigan and dark trousers. No extra person, no second window, no bed on left. Fine cinematic realistic photograph, tactile clean material, subtle warm/cool separation, no heavy grain or wash. No text, no logo, no watermark anywhere. Papers completely blank. Orange-red PAPERCLIP must be a simple bent double-loop thin wire oblong paperclip, NOT a binder bulldog clip; only one. Natural anatomy and fingers. This is a standalone asset for a complete ten chapter narrative webpage; typography and controls will be live HTML. CHAPTER FIVE, a new landscape cinematic still, camera at seated height just inside doorway, closer to table but looking down same axis. At 23:06, outside window very dark indigo with only tiny ordinary lights. Ms. Lin stays on the RIGHT lower berth, her open tan travel bag on her lap containing a visible pair of clean simple sea-green beach flip flops; she looks toward Ning with ordinary gentle attention, not a big smile. Shen Ning stands naturally in the LEFT aisle, leans a little toward shared table, only two women in whole scene. Ning holds out ONE blank cream index card to Ms. Lin; a SECOND distinct blank cream index card stays on Ning's side of table next to her clipped twelve-page blank manuscript. Exactly two index cards. Cup still on table. Same fixed brass lamp lights both faces and the offered card, lamp near table left. Keep far window position and curtains reference. Small domestic action, neither posed nor sentimental, natural hands, full calm night-talk composition.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-de4a4ff9-4d06-4258-b903-150f88c04d2c.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-06",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-de4a4ff9-4d06-4258-b903-150f88c04d2c.png",
+    "latestRevisionId": "REV-06"
+  },
+  {
+    "id": "IMG-07",
+    "name": "dawn",
+    "prompt": "Precise tiny-object continuity correction to this exact BERTH dawn photograph. Preserve ALL composition, aspect ratio, room geometry, furniture positions, the two women's faces/poses, cards and glasses placement, bags, window, light and colors; do not redesign the scene. Change ONLY the orange clip on the manuscript (at the right upper berth): replace the upright binder-like handles with ONE ordinary small FLAT thin orange-red bent-wire paperclip, the classic elongated open oblong double-loop Gem shape, lying flush parallel to the paper edge. No standing handles, no triangular metal clamp, no prongs, no new orange objects. Keep the manuscript in EXACT existing position and the same stack of pages. Nothing else changes. No text anywhere, no watermark. Landscape 16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-798edc16-a942-421d-88d2-c0eeab43299e.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-07",
+        "name": "dawn",
+        "prompt": "Use the supplied image as the LOCKED architecture, materials, palette and Ms. Lin character reference for BERTH. Keep exactly the same modest compact sleeper: upper and lower fixed berths on RIGHT only, near door brass ladder on extreme RIGHT, ONE rounded rectangular window on FAR wall, small walnut table immediately below it, fixed brass lamp on table left, plain left wall with 2 hooks and near door foreground. Same cotton cream bedding, walnut wood and sage fabrics. Ms. Lin is East Asian 61, silver-grey short hair, navy blouse, thin glasses. Shen Ning is East Asian 29, dark brown bob, cream knitted cardigan and dark trousers. No extra person, no second window, no bed on left. Fine cinematic realistic photograph, tactile clean material, subtle warm/cool separation, no heavy grain or wash. No text, no logo, no watermark anywhere. Papers completely blank. Orange-red PAPERCLIP must be a simple bent double-loop thin wire oblong paperclip, NOT a binder bulldog clip; only one. Natural anatomy and fingers. This is a standalone asset for a complete ten chapter narrative webpage; typography and controls will be live HTML. CHAPTER EIGHT ENTRY. New exquisite landscape 16:9 still from the SAME exact doorway camera as the reference, including dim left 40% wall/door foreground, no lens/architecture change. It is 05:38 morning: soft COOL grey-blue dawn enters the far window, revealing low ordinary tiled rooftops and muted sky. Fixed table lamp is OFF. Ms. Lin lies just waking on LOWER right berth in navy clothing under cream cotton duvet; fine wire glasses have been taken off and rest at table right beside ONE small face-down cream index card. Table has ONLY lamp, empty ceramic cup, those glasses and Lin's face-down card. Manuscript and Ning's second card are NOT on table: they lie on UPPER right berth near pillow, manuscript still clipped with one orange wire paperclip; Ning's cream cuff/dark bob subtly visible behind upper rail as she wakes. Both remain in correct beds. Sage canvas bag on floor by ladder, tan bag near lower bed. Keep human figures partial and quiet, no large faces. Dawn light is real directional window illumination with dark room detail, no white overlay. Preserve all geometry of reference so night/morning match.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-2e22df7f-c2b4-40fb-bb77-e119db62a0eb.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-07",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-2e22df7f-c2b4-40fb-bb77-e119db62a0eb.png",
+    "latestRevisionId": "REV-07"
+  },
+  {
+    "id": "IMG-08",
+    "name": "blue-hour",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-2ec4c3b1-889e-4aed-8f1a-bda0d2744a24.png",
+    "prompt": "Precise tiny-object continuity correction to this exact BERTH blue-hour photograph. Preserve ALL composition, aspect ratio, room geometry, furniture positions, the two women's faces/poses, cards and glasses placement, bags, window, light and colors; do not redesign the scene. Change ONLY the orange clip on the manuscript (at the right upper berth): replace the upright binder-like handles with ONE ordinary small FLAT thin orange-red bent-wire paperclip, the classic elongated open oblong double-loop Gem shape, lying flush parallel to the paper edge. No standing handles, no triangular metal clamp, no prongs, no new orange objects. Keep the manuscript in EXACT existing position and the same stack of pages. Nothing else changes. No text anywhere, no watermark. Landscape 16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-8d841b71-b419-4d23-97bc-3648681aa244.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-08",
+        "name": "blue-hour",
+        "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-2e22df7f-c2b4-40fb-bb77-e119db62a0eb.png",
+        "prompt": "Use case lighting-weather. EDIT ONLY THE LIGHT AND WAKEFULNESS of the provided exact sleeper image for BERTH's night-to-dawn transition midpoint. Preserve PIXEL-ALIGNED architecture, window edges, camera, table, off brass lamp, curtains, ladder, beds, both characters, manuscript/card on upper berth and glasses/face-down card on table. It is 04:50 before sunrise, halfway between deep night and dawn: window exterior dim grey-blue, ordinary low rooftops barely discernible, cool diffuse ambient light provides legible low interior levels. Both women remain lying in their own berths, quietly asleep; do not change their sizes/identities. No duplicated faces or superposition. Table has lamp OFF, cup, one small face-down card and glasses only; other card and clipped manuscript still UPSTAIRS. Keep simple orange wire paperclip. No new objects; no text, no logos. A single coherent physically lit moment, not a crossfade or collage. Landscape 16:9 exact camera match.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-2ec4c3b1-889e-4aed-8f1a-bda0d2744a24.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-08",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "latestRevisionId": "REV-08"
+  },
+  {
+    "id": "IMG-09",
+    "name": "shared-light",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-7adda178-7b22-42e6-bc4e-9edf24730960.png",
+    "prompt": "Use case identity-preserve cinematic new scene. BERTH chapter 02, same exact compact sleeper architecture and 61-year-old East Asian Ms. Lin in navy top with silver bob and fine glasses. Keep upper/lower beds on RIGHT, near ladder RIGHT, far rounded window and small table below, lamp table left, curtains. Camera moves forward ONLY about 25 cm from reference doorway, closer to seated eye height, no new window. Ms. Lin on lower right berth has turned her head naturally toward the viewer Shen Ning, and one natural hand gently tilts the shade of the fixed brass lamp toward the left side of the table; another cream-cardigan cuff/hand of Ning brings the unmarked manuscript a little closer to light. Warm lamp's pool visibly lands on blank pages at front left. Blue passing station visible outside far window. Sage bag on floor by near ladder, tan bag alongside Lin. One orange flat double-loop oblong wire PAPERCLIP on paper, no binder clip or wire handles, no cards yet. Left 25% retains dim plain wall area. Quiet candid restrained film photograph, realistic worn walnut, cotton folds, no huge expressions, no text or logos, landscape 16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-58e0ab2c-f6f9-4b6e-9bdc-55423b34a1eb.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-10",
+    "name": "table",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-7adda178-7b22-42e6-bc4e-9edf24730960.png",
+    "prompt": "Use case photorealistic-natural. BERTH chapter 03, separate exquisite close photograph of the SAME small walnut tabletop below the far window in the reference sleeper. Camera looks downward 35 degrees from natural seated eye height. The fixed brass shaded lamp is at top LEFT, cream ceramic empty cup at back center, dark rounded window bottom edge and its night reflection across top. Large stack of twelve BLANK cream-white lesson pages occupies foreground center/right, a single simple thin orange-red wire oblong double-loop PAPERCLIP lies FLAT over their top-left corner, precisely NOT a binder clip, no upright wire handles. Pages have clean generous surface for separate HTML text later; no index cards yet, no pen letters. Shen Ning's cream knitted sleeve and one natural relaxed hand just at lower edge; a partial navy sleeve of Ms. Lin at right edge with no face. Warm amber local lamp pool and cool indigo ambient reflections, tactile fine wood scratches and paper fiber, soft high quality photographic depth, no grain filter, no luxury styling. No writing, no markings, no logos. Landscape 16:9, enough room around paper. Keep exact lamp/cup/wood identity.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-933f9c31-4b02-4379-a6c4-589d10b49e0f.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-11",
+    "name": "corridor",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-4e9f9c31-feb9-4d39-89a9-13a7c3bdd18b.png",
+    "prompt": "Precise ONE-object continuity correction to this exact BERTH corridor photograph. Preserve all camera/geometry, people/faces/poses/hands, all objects, colors, lighting, window, bags, furniture, room size and original aspect ratio. Change ONLY the orange object at the top-left corner of manuscript on the small table visible through doorway at far right. Replace the standing binder-like clip with one ordinary small flat thin orange-red WIRE PAPERCLIP, classic elongated oblong open double-loop Gem shape lying flush along the paper edge. No upright handles or triangular clamp body. Do not move paper or any other object. No new cards, no new people, no text or watermarks. Landscape16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-846f11ad-59c1-48c7-a30d-f33ded932fb5.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-11",
+        "name": "corridor",
+        "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-7adda178-7b22-42e6-bc4e-9edf24730960.png",
+        "prompt": "A standalone text-free production photograph for BERTH, fine realistic cinematic detail, no grain overlay, no logo/no writing/no watermarks. Same compact walnut sleeper from reference: fixed upper/lower berths RIGHT, ladder at NEAR right doorway, far rounded rectangle window with cream side curtains, small wood table below, fixed brass lamp at table left, cream ceramic cup. Narrow left aisle. Character identities and proportions fixed. Use physically believable view. CH04, a distinct narrow train corridor at 22:17 immediately outside this compartment, camera at standing eye level looking diagonally toward a large rounded side window on LEFT. Through glass a small ordinary dark-blue station passes, two tiny waiting human silhouettes under low warm lamps, no readable signs or station names. The doorway to our room is on RIGHT edge with a narrow glimpse of the same right-side walnut bunk and warm lamp beyond, sensible connected floor. Near bottom right a single natural hand in cream knitted cuff carries the same ceramic cup just filled with water, caught at waist height. Corridor cool midnight blue, room beyond honey amber; worn handrail and glass reflections in believable layers. No broad lobby, no luxurious panorama, no map. Composition quiet, normal real lens, landscape16:9.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-4e9f9c31-feb9-4d39-89a9-13a7c3bdd18b.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-11",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "latestRevisionId": "REV-11"
+  },
+  {
+    "id": "IMG-12",
+    "name": "sleep",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-87700f61-76be-479b-a4ec-afbde327dde7.png",
+    "prompt": "Precise continuity correction to exact BERTH upper-berth midnight photograph. Preserve the camera, both sleeping women, cot positions on RIGHT, table, far window, two separate blank cards (one on upper bed, one face-down on table), glasses, cup, lampOFF, bedding and cool night light. REMOVE entirely the erroneous freestanding ladder on LEFT foreground; that area is the clear left aisle wall and empty narrow floor. The real ladder is near-right by upper bunk outside this close framing, so DO NOT add any new ladder or change rails. Replace orange upright binder clip on foreground manuscript with an ordinary FLAT orange-red bent-wire oblong PAPERCLIP, two thin open elongated loops, lying flush on top-left paper edge, no upright handles. No text anywhere. Nothing else changes. Landscape16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-80199b82-885f-44d9-a4bf-1ff31f963322.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-12",
+        "name": "sleep",
+        "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-2ec4c3b1-889e-4aed-8f1a-bda0d2744a24.png",
+        "prompt": "A standalone text-free production photograph for BERTH, fine realistic cinematic detail, no grain overlay, no logo/no writing/no watermarks. Same compact walnut sleeper from reference: fixed upper/lower berths RIGHT, ladder at NEAR right doorway, far rounded rectangle window with cream side curtains, small wood table below, fixed brass lamp at table left, cream ceramic cup. Narrow left aisle. Character identities and proportions fixed. Use physically believable view. CH06, midnight 00:14. Start with exact provided doorway reference but shift viewpoint to the near edge of the UPPER right berth, looking gently downward into the tiny room, not a huge high wide shot. A foreground cream cotton pillow and blanket at right/bottom with clipped blank manuscript and a DIFFERENT small blank card beside pillow; orange clip correctly flat oblong bent wire. Far rounded window is deep almost-black BLUE with rare distant light points, no visible dawn. Lower right Ms. Lin silver hair/navy sleeve barely visible lying asleep. Table below has only off lamp, cup, thin glasses, and ONE distinct blank face-down card near glasses. Upper foreground card is Ning's, lower table card is Lin's. Subtle dim ambient blue lets bedding and wood be read; no glowing paper, no pitch black scene. Near right ladder still reaches same lower-floor position. Landscape16:9. Show a new true upper-berth perspective.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-87700f61-76be-479b-a4ec-afbde327dde7.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-12",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "latestRevisionId": "REV-12"
+  },
+  {
+    "id": "IMG-13",
+    "name": "pillow",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-c7cf001b-6f3b-4fec-9f71-078abd3af5d2.png",
+    "prompt": "Precise small continuity edit to this exact BERTH upper-berth pillow photograph. Preserve the camera, room window, pillow, hand, face identity, cardigan, night lighting, color, the separate blank card and the clipped manuscript at identical positions. The young woman Shen Ning has briefly woken at 02:10: make her visible eye gently OPEN, looking quietly down towards the blank card beside her pillow, pensive but not distressed. Change only the eyelid/gaze and a very subtle awake face; no pose change, no additional hands, no new object, no text. Keep exactly one flat orange-red wire paperclip on the manuscript, existing rendering is correct. The card stays blank. Preserve original16:9 landscape composition.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-6acc8bf0-115e-4e20-9ef3-14ccb6bd8dcf.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-13",
+        "name": "pillow",
+        "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-2ec4c3b1-889e-4aed-8f1a-bda0d2744a24.png",
+        "prompt": "A standalone text-free production photograph for BERTH, fine realistic cinematic detail, no grain overlay, no logo/no writing/no watermarks. Same compact walnut sleeper from reference: fixed upper/lower berths RIGHT, ladder at NEAR right doorway, far rounded rectangle window with cream side curtains, small wood table below, fixed brass lamp at table left, cream ceramic cup. Narrow left aisle. Character identities and proportions fixed. Use physically believable view. CH07 a distinctly intimate CLOSE photograph at 02:10 beside Shen Ning's upper-berth pillow. Folded ivory cotton duvet and pillow fill foreground right, the wood rail/bed edge runs lower foreground; a single small blank index card lies naturally on duvet center, and twelve-page blank handout clipped with ONE FLAT thin burnt-orange oblong bent wire paperclip lies separate at left. A cream cardigan cuff and one natural relaxed hand nearby. Far rounded window only a soft distant dark blue corner visible at top-left; no daylight, no station details, no other faces or wakeful people. Moonless night diffuse light, paper does NOT glow; restrained blue-cool shadows with tiny fading amber from corridor seam, material detail legible. Leave lower center broad quiet dark cloth area. No text in image. Landscape16:9; not another compartment panorama.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-c7cf001b-6f3b-4fec-9f71-078abd3af5d2.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-13",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "latestRevisionId": "REV-13"
+  },
+  {
+    "id": "IMG-14",
+    "name": "empty",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-7adda178-7b22-42e6-bc4e-9edf24730960.png",
+    "prompt": "A standalone text-free production photograph for BERTH, fine realistic cinematic detail, no grain overlay, no logo/no writing/no watermarks. Same compact walnut sleeper from reference: fixed upper/lower berths RIGHT, ladder at NEAR right doorway, far rounded rectangle window with cream side curtains, small wood table below, fixed brass lamp at table left, cream ceramic cup. Narrow left aisle. Character identities and proportions fixed. Use physically believable view. CH10 FINAL EMPTY ROOM. Edit the exact reference doorway camera and geometry, same lens, no crop. Both travellers have LEFT through the door; remove every person, both bags, all manuscripts/index cards/paperclip/glasses, ceramic cup from tabletop. The fixed brass lamp remains attached to table left, OFF, as permanent furniture. Apart from fixed lamp the table is clear. Right upper/lower beds show gently used cream cotton bedding and same sage blanket. Far window now has ordinary low rooftops and quiet light-blue morning sky, directional neutral morning daylight falls across walnut table and gently into dark midnight-blue near door panel on LEFT 40%. Keep that left calm region for real ending typography later. Exactly same rounded window/curtains/bunk/ladder/door position as original. Quiet room after people, no message or sentimental staged props, no notes resurrected on table. Landscape16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-6d71383c-47a3-4839-ab35-7eb34ed82bf2.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-15",
+    "name": "morning-note",
+    "prompt": "BERTH exact identity/architecture reference. Same 29-year-old East Asian Shen Ning with dark bob and cream knit cardigan, 61-year-old East Asian Ms. Lin with short grey hair/navy top. Same tiny walnut sleeper, fixed upper/lower berths RIGHT, near brass ladder RIGHT, one rounded far window with tied cream curtains, small table beneath, fixed brass lamp table LEFT, ceramic cream cup. Aisle LEFT is narrow. Fine realistic cinematic photograph, believable small space, tactile walnut/cotton, no heavy grain. No writing of any sort on papers, no logo, no watermark. Orange clip is a simple flat thin wire oblong bent loop, NOT a binder clip. Keep all persons consistent with reference. CH08 SECOND BEAT, 05:45 morning AFTER Ning has descended with her belongings. Camera same seated-height axis as reference. Soft cool morning light and simple tiled roofs through far window; brass lamp OFF. Ning stands in left aisle leaning a little over table, hand just setting her clipped blank manuscript and her OWN blank small card on near left table. Ms. Lin remains seated on right lower berth, now WITHOUT glasses; those thin glasses rest on table back-right. Ms. Lin hands her separate small blank index card toward Ning. Exactly two distinct index cards: one flat by Ning's papers, one in Lin's hand. Ms. Lin's tan bag beside her on lower berth, Ning's sage bag on FLOOR by near ladder, NO bag or pages on upper bed now. Natural small gestures, no giant smile. No duplicated card or paperclip. Landscape16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-893515c9-195e-4ce8-961e-c2a54b0db91e.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-16",
+    "name": "packing",
+    "prompt": "BERTH exact identity/architecture reference. Same 29-year-old East Asian Shen Ning with dark bob and cream knit cardigan, 61-year-old East Asian Ms. Lin with short grey hair/navy top. Same tiny walnut sleeper, fixed upper/lower berths RIGHT, near brass ladder RIGHT, one rounded far window with tied cream curtains, small table beneath, fixed brass lamp table LEFT, ceramic cream cup. Aisle LEFT is narrow. Fine realistic cinematic photograph, believable small space, tactile walnut/cotton, no heavy grain. No writing of any sort on papers, no logo, no watermark. Orange clip is a simple flat thin wire oblong bent loop, NOT a binder clip. Keep all persons consistent with reference. CH09 SECOND BEAT, 06:12, morning neutral daylight. Camera moved BACK to doorway, calm near dark door foreground LEFT 30%. Both women are preparing to leave. Ms. Lin stands closest to the doorway on the left side of narrow aisle, glasses back ON, tan travel bag held at her side; Ning is farther back next to the RIGHT ladder, cream cardigan, sage canvas bag at her side. Only two natural people. Manuscript and both cards have been packed INSIDE Ning's bag, so no paper/card/clip on table or beds. Table clear apart from fixed OFF lamp and cup. A small shared look; not posed, no dramatic goodbyes. Same fixed window and bed geometry, no added doors or beds. Landscape16:9.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-6158aa5e-02aa-440a-a37a-ef8e35dcaf25.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-17",
+    "name": "night-talk-mobile",
+    "prompt": "Precise ONE-object continuity correction to this exact BERTH night-talk-mobile photograph. Preserve all camera/geometry, people/faces/poses/hands, all objects, colors, lighting, window, bags, furniture, room size and original aspect ratio. Change ONLY the orange object at the top-left corner of manuscript on the small table. Replace the standing binder-like clip with one ordinary small flat thin orange-red WIRE PAPERCLIP, classic elongated oblong open double-loop Gem shape lying flush along the paper edge. No upright handles or triangular clamp body. Do not move paper or any other object. No new cards, no new people, no text or watermarks. Portrait 9:16.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-6b0ad367-5e46-4b28-8680-678461d47596.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-17",
+        "name": "night-talk-mobile",
+        "prompt": "BERTH exact identity/architecture reference. Same 29-year-old East Asian Shen Ning with dark bob and cream knit cardigan, 61-year-old East Asian Ms. Lin with short grey hair/navy top. Same tiny walnut sleeper, fixed upper/lower berths RIGHT, near brass ladder RIGHT, one rounded far window with tied cream curtains, small table beneath, fixed brass lamp table LEFT, ceramic cream cup. Aisle LEFT is narrow. Fine realistic cinematic photograph, believable small space, tactile walnut/cotton, no heavy grain. No writing of any sort on papers, no logo, no watermark. Orange clip is a simple flat thin wire oblong bent loop, NOT a binder clip. Keep all persons consistent with reference. CH05 NIGHT TALK independent PORTRAIT9:16 reconstruction, not cropping landscape. Same two women gathered at table: Ning left aisle leaning forward with cream cardigan, Lin seated right lower berth. Both natural faces visible in upper middle, rounded far dark-night window behind them. Ning passes ONE blank card to Lin; SECOND separate blank card remains on her side of table beside clipped blank manuscript. Lin's tan travel bag on her lap reveals a pair of clean sage beach flip flops. Single lamp warm table LEFT, cup on table. Sage canvas bag ON FLOOR at near ladder, absolutely no bag on upper bed. Preserve near ladder on right, upper bed a short strip at top right, both faces, handoff and table form complete vertical composition. Leave slim dark low interference margin at top. No text.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-edd21169-548a-4ca4-8b70-f3b16bfef187.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-17",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-edd21169-548a-4ca4-8b70-f3b16bfef187.png",
+    "latestRevisionId": "REV-17"
+  },
+  {
+    "id": "IMG-18",
+    "name": "dawn-mobile",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-78a99ecd-5407-48e1-8c30-8ac6a94ecfe6.png",
+    "prompt": "Precise tiny-object continuity correction to this exact BERTH dawn-mobile photograph. Preserve ALL composition, aspect ratio, room geometry, furniture positions, the two women's faces/poses, cards and glasses placement, bags, window, light and colors; do not redesign the scene. Change ONLY the orange clip on the manuscript (at the right upper berth): replace the upright binder-like handles with ONE ordinary small FLAT thin orange-red bent-wire paperclip, the classic elongated open oblong double-loop Gem shape, lying flush parallel to the paper edge. No standing handles, no triangular metal clamp, no prongs, no new orange objects. Keep the manuscript in EXACT existing position and the same stack of pages. Nothing else changes. No text anywhere, no watermark. Portrait 9:16.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-a486ef15-2ea0-47e5-8c16-adff6c368072.png",
+    "tool": "image_gen.imagegen",
+    "generated": true,
+    "revisions": [
+      {
+        "id": "IMG-18",
+        "name": "dawn-mobile",
+        "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-2e22df7f-c2b4-40fb-bb77-e119db62a0eb.png",
+        "prompt": "Create a new independently composed vertical9:16 cinematic photograph of this EXACT BERTH sleeper at dawn. Same character identities, fabrics, furniture. Camera at doorway slightly left, not a crop: the SINGLE rounded far window in upper-middle and small table below visible; upper and lower FIXED berths only RIGHT with their near ladder also RIGHT. Ms. Lin61 short silver-grey hair navy blouse just wakes on lower berth; Shen Ning29 dark bob cream knit cardigan on upper berth. Faint cool ordinary rooftop daybreak through window; lampOFF. On table ONLY off brass lamp LEFT, ceramic cup, Lin's thin glasses and ONE face-down card RIGHT. Clipped manuscript and Ning's OTHER card remain clearly UPSTAIRS beside pillow. One orange flat oblong wire paperclip on manuscript, NO binder clips. Her sage canvas bag stays on FLOOR by ladder, tan travel bag lower berth. Preserve plausible small proportions, natural cotton folds, no hotel luxury. A complete beautiful portrait composition in cool dawn, not whitewashed. No words, logo or symbols.",
+        "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-78a99ecd-5407-48e1-8c30-8ac6a94ecfe6.png",
+        "tool": "image_gen.imagegen",
+        "generated": true,
+        "revisionId": "REV-18",
+        "note": "Original retained in provenance; targeted correction supersedes the formal asset."
+      }
+    ],
+    "latestRevisionId": "REV-18"
+  },
+  {
+    "id": "IMG-19",
+    "name": "empty-mobile",
+    "ref": "/workspace/scratch/70aae6b663f6/generated_images/exec-4a8fc9e9-b1db-4ec9-b198-f03d0c18eb2d.png",
+    "prompt": "Edit exact vertical9:16 reference image with LOCKED camera, window, bunks, ladder, curtains and composition. BERTH final empty compartment morning. REMOVE all people, all bags, manuscript, clips, cards, glasses and ceramic cup. The fixed brass lamp remains on table LEFT, OFF. Table otherwise totally clear. Both berths RIGHT still have gently used cream cotton bedding, sage blanket; NO baggage. Through far window soft neutral morning daylight and ordinary low rooftops. Keep TOP30% dim midnight-blue near wall blank, calm and low contrast for subsequent real HTML ending type. Directional morning light on table/bedding, no full whitewash. Same window/bed/table arrangement as entry portrait. Quiet empty real space, no text or logos.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-a1854851-4e12-478b-a12b-e9cd7c00f6a8.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-20",
+    "name": "climb",
+    "refs": [
+      "/workspace/scratch/70aae6b663f6/generated_images/exec-2a9e3af1-5fb4-4db3-82ec-bf3d98b45bdd.png"
+    ],
+    "prompt": "Create the next continuous shot in BERTH using the reference for exact same people, tiny compartment and furnishing. Photorealistic quiet cinematic literary photograph, landscape16:9. Midnight, same door viewpoint looking into room: two stacked beds fixed on RIGHT, far rounded window, small table BELOW window with fixed brass lamp at table LEFT, near-right brass ladder, left narrow aisle. Shen Ning age29, short dark brown bob, cream cable knit cardigan and dark trousers, is visibly climbing the real near-right ladder toward the UPPER berth: her right hand holds a rung at shoulder level, one foot on a low rung, her LEFT forearm holds the small twelve-page manuscript and ONE separate blank cream card securely against her chest. Manuscript has one small FLAT thin orange-red bent-wire oblong double-loop paperclip at top-left edge; no binder handles. Lin age61 silver-gray bob navy blouse is already settling on the LOWER berth, no glasses on her face. On far table: Lin's thin glasses and exactly ONE other small card face-down; cup plus fixed lamp OFF, no manuscript on table. Sage canvas bag on FLOOR near right ladder, tan travel bag by lower bed. Both people naturally anatomically correct, no duplicate objects/limbs. Lights lowered, soft blue night through window, ample visibility. This is one frozen movement upward, not sleeping yet. Keep ladder permanently attached near door RIGHT, absolutely no ladder on left. No words, no letters, no captions, no watermark.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-a668feab-c45b-42c8-85b5-9ee3229d11a1.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-21",
+    "name": "lin-departure",
+    "refs": [
+      "/workspace/scratch/70aae6b663f6/generated_images/exec-6d71383c-47a3-4839-ab35-7eb34ed82bf2.png",
+      "/workspace/scratch/70aae6b663f6/generated_images/exec-6158aa5e-02aa-440a-a37a-ef8e35dcaf25.png"
+    ],
+    "prompt": "Create one exact continuity frame in BERTH's departure sequence, quiet realistic landscape16:9 photograph. FIRST reference locks EXACT camera and room layout: dark blue wall/door on LEFT42%, doorway at center, far rounded window above small wood table, fixed brass lamp at tableLEFT, two stacked berths RIGHT with near-right brass ladder. SECOND reference locks exact people/clothes/faces. Morning. Show Ms. Lin age61 silver-gray bob wearing thin round glasses, navy blouse dark trousers, stepping OUT through the open doorway FIRST, moving toward viewer/left foreground into corridor, holding her tan travel bag. She is physically crossing the foreground threshold, natural walking posture; not sitting. Behind her, still clearly INSIDE the room near the right bed, Shen Ning age29 short dark brown bob cream knit cardigan dark trousers waits calmly, sage canvas bag on her shoulder, her manuscript and two small cream cards safely INSIDE that bag (not magically on table). Keep Ning fully behind Lin to make exit order unambiguous. Table has ONLY fixed lampOFF now: no cup, paper, glasses, cards. Bedding stays slightly rumpled but neat, dawn rooftops outside window. Do not redesign/mirror room. No grand landscape, no text, no captions, no watermark, no hands or faces glitches. Focus on this small human movement, restrained warm daylight.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-6bce1aef-1fde-443d-a8fd-a55539f485d7.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  },
+  {
+    "id": "IMG-22",
+    "name": "ning-departure",
+    "refs": [
+      "/workspace/scratch/70aae6b663f6/generated_images/exec-6d71383c-47a3-4839-ab35-7eb34ed82bf2.png",
+      "/workspace/scratch/70aae6b663f6/generated_images/exec-6158aa5e-02aa-440a-a37a-ef8e35dcaf25.png"
+    ],
+    "prompt": "Create one exact continuity frame in BERTH's departure sequence, quiet realistic landscape16:9 photograph. FIRST reference locks EXACT camera and room layout: dark blue wall/door on LEFT42%, doorway at center, far rounded window above small wood table, fixed brass lamp at tableLEFT, two stacked berths RIGHT with near-right brass ladder. SECOND reference locks Shen Ning's exact face/clothes. Morning. Ms. Lin has already left and is ABSENT; no older woman in frame. Shen Ning age29 short dark brown bob cream knit cardigan dark trousers now steps OUT through the same foreground open doorway, moving toward viewer/left corridor. Her sage canvas bag is worn on her shoulder; her manuscript and two small cards are safely inside, with just the cream paper edges naturally visible from top of bag. One hand lightly holds bag strap, other rests naturally at her side; plausible gait/limbs. The room behind her is now empty of people and bags, with slightly rumpled white/green bedding, table completely clear except fixed lampOFF. Morning rooftops through far window, modest sunlight. She has a quiet ready expression, not broad model smile. Preserve furnishings/position/camera exactly, do not mirror. No cup, no loose paper/cards or glasses on table, no extra people, no text/captions/watermarks.",
+    "file": "/workspace/scratch/70aae6b663f6/generated_images/exec-b6fe7085-b95e-4c00-b107-9b8612841a5e.png",
+    "tool": "image_gen.imagegen",
+    "generated": true
+  }
+]

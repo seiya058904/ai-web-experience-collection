@@ -1,0 +1,29 @@
+[
+  {
+    "role": "H-A",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: photorealistic-natural / cinematic narrative website art.\nCreate H-A, a standalone wide 3:2 landscape opening concept for AER — Carried by Air. It is one scene in a 10-chapter original slow hot-air-balloon journey, not a travel advertisement. The full site will move through volume, buoyancy, liftoff, a shadow crossing fields, three fictional wind layers, diverging routes, a basket-level panorama, landing and a keepsake. This first image needs no baked typography or controls; all site text is real HTML.\nCamera very low at human height in an original gently rolling gray-sage meadow at early morning. One enormous pear-shaped hot-air balloon dominates the RIGHT 55% of the frame; a softly rounded broad upper body narrowing noticeably into a small open lower mouth. 16 alternating cream-white #F6F1E8 and pale apricot-pink #EAB7A1 longitudinal gores, a small single dark-indigo crown cap as identity, fine restrained seams and softly dimensional taut cloth. Honey-brown wicker basket exactly 1/10 of balloon body width, four believable suspension connections; basket near the ground, two tiny standing ground crew next to it showing enormous scale. Entire balloon, cap, lower mouth, all ropes and basket visible with comfortable small margins. No competing balloons. Soft side light from upper left, contact shadow and a long shadow away to right. Quiet lavender-blue #A7B8D5 morning sky, delicate distant indigo ridge #707D9A, green-gray meadow #A6B5A0, a narrow winding ivory path. LEFT 40% is clear softly graduated sky and subtle distant meadow reserved for a large refined editorial serif title and very short body copy. Minimal, airy, elegant, tactile cinema still, fine analog grain, soft natural shadows, sophisticated muted color; avoid excessive bloom, clouds covering the balloon, cartoon rendering, baskets out of proportion, random panels, logos, letters, UI, watermarks, sun disks, orange sunrise saturation, jet flames, rockets, mountains immediately close to the balloon.",
+    "original": "/workspace/scratch/3833561a8f3c/generated_images/exec-9e8ce646-4560-4078-9cfa-41b8341790ed.png",
+    "seed": null,
+    "selected": false,
+    "usage": "Opening candidate / scale reference"
+  },
+  {
+    "role": "H-D",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: identity-preserve. Input image is the H-A opening concept reference. Make H-D, a refined WIDE LANDSCAPE 16:9 final production background for the opening of AER, a quiet cinematic 10-chapter original hot-air-balloon journey. Preserve the subject, pear contour, 16 alternating pearl cream/pale apricot gores, small single dark-indigo crown cap, honey basket and four suspension connections, exactly the calm palette of the reference. Preserve a completely visible huge balloon at RIGHT: center x73%, top11%, envelope bottom76%, basket bottom88%; balloon maximum width approximately43% of image, a basket exactly1/10 of that width and two small human crew. Make top margin11% clear sky for a thin real HTML navigation. LEFT43% must remain open pale lavender-blue sky, horizon at79%, simple muted gray-green meadow bottom; title area on left at25%-58%height stays clean. Fine dimensional tensioned fabric, discreet seams, believable low-angle morning sunlight from LEFT, honey basket natural thickness, crew human scale, long rightward shadow. Narrow white path winds in from bottom left across the meadow; faint indigo hills at distant horizon. Critically, no hard cloud through title or balloon; no text, no typography, no UI, no logo, no watermark, no extra balloons, no neon, no fiery glow. Slightly more polished and spacious than the reference. It will be framed full viewport behind actual DOM typography; optical composition should be exceptional and spare. No camera tilt.",
+    "original": "/workspace/scratch/3833561a8f3c/generated_images/exec-a68c54e6-aaae-4a38-887b-7de43e4ef18a.png",
+    "seed": null,
+    "selected": true,
+    "usage": "Desktop hero background"
+  },
+  {
+    "role": "H-M",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: identity-preserve. Reference image is same AER balloon identity. Generate H-M, a genuinely recomposed PORTRAIT 9:16 final mobile hero artwork for an English cinematic slow balloon journey. No text or UI. Preserve one taut original pear-shaped balloon with 16 alternate pearl-cream and pale-apricot vertical gores, small dark-indigo crown cap, deep honey basket, believable four ropes, same lavender morning sky and sage fields, soft sunlight from left. MOBILE COMPOSITION: top 27% of portrait is completely clean lavender-blue sky for real HTML heading; entire giant balloon below it occupies x17%-91%, from y29% crown to y78% mouth, basket bottom at86%, two tiny human crew at ground near basket. The balloon-to-basket width ratio stays10:1, preserve enough rope length and basket thickness. Horizon at84%, long low hills in muted indigo, ivory path enters bottom left and curves toward balloon's meadow. Keep complete balloon identity and complete basket visible. Huge but graceful volumetric cloth, no cartoon or glossy plastic. Fine film grain, quietly luxurious editorial cinema still, daylight not orange sunset. Avoid extra balloon, text, watermark, logo, excess clouds, jets, giant wicker basket, cut-off crown or basket. This must be a new portrait composition not a crop of the source.",
+    "original": "/workspace/scratch/3833561a8f3c/generated_images/exec-6c7df7d7-d249-42cd-960d-fe78592abbcb.png",
+    "seed": null,
+    "selected": true,
+    "usage": "Mobile hero independent portrait"
+  }
+]

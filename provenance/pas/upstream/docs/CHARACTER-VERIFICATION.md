@@ -1,0 +1,26 @@
+# Character geometry verification
+
+These checks use the bundled final body/garment geometry, the actual `createCharacter()` bone matrices and `evaluateDance()` poses. They are geometric checks of the rendered assets, not a claim of medical accuracy or a general collision simulation.
+
+## Checks performed
+
+- Both model binaries decoded with their manifest offsets and skin attributes. Skin weights are normalized and limited to four influences per vertex; all queried deformed coordinates were finite.
+- The runtime TypeScript renderer passed `tsc --noEmit` after the model, forearm twist and cleanup changes.
+- All six committed WebP textures were opened and fully decoded. Hair retains its alpha channel. The source bump map is explicitly converted to RGB before encoding, and the writer validates a nonempty temporary file before replacing a finished asset.
+- Real skinned mesh bounds were queried at `t=0`, `2.4`, `3.45`, `5.5`, `6.55`, `7.65`, `8.4` and `10`. The minimum skin sole heights were about **0.000639 m** for Cen and **0.000168 m** for Cheng. The final floor plane is exactly **y = 0** in both renderers, so these are approximately **0.639 mm** and **0.168 mm** of mesh-to-floor clearance. The previous floor at y = −0.008 was corrected; it would have introduced an additional 8 mm visual gap. These sole values remain stable under the sampled planted poses.
+- At `t=6.55`, after the back-contact correction, the central opposing shirt-surface extents are separated by approximately **0.00613 m**. Nearest sampled back-surface vertices are about **0.00864 m** apart. The figures read as a shared back-support shape in the rendered frame; the sampled opposing shirt surfaces do not deeply overlap.
+- At `t=7.98`, final middle-finger contact was checked from the actual subdivided skin, not an estimated palm length. After the model-derived pad correction, the nearest fingertip skin vertices are **0.001020 m** apart. Their world coordinates are approximately Cen `[-0.039569, 1.184853, 0.169970]` and Cheng `[-0.040355, 1.184741, 0.170610]`.
+- At `t=2.35`, the final light palm contact uses horizontal finger directions with opposed palm normals. A triangle-surface check sampled 51,490 overlapping points on a 0.3 mm grid. The minimum facing-surface clearance was **0.7655 mm**, with **zero penetrating samples**. The kinematic wrist bend angles were approximately **16.94°** for Cen and **14.18°** for Cheng, compared with the rejected strongly folded wrist pose.
+- The corrected crossing was checked at every rendered sample from `t=5.25` through `5.45` (41 samples at 0.005 intervals). The minimum nearest-mesh vertex clearance was **16.829 mm** at `5.315`; the minimum separation of overlapping upper-body depth projections was **19.110 mm** at `5.32`. The correction changes Cheng's temporary rear lane and passing foot anchors, then returns to the same `t=6.00` endpoint. It does not change the actor identities or substitute a camera cut.
+- Every matrix for both actors' **163 bones** was checked across the final **2,001 Unison + 153 Echo** samples. All values were finite. The maximum rotation change was **34.35° per 0.005 narrative units** during a brief Echo forearm turn; a 10× denser check of that interval reduced the largest step to **3.81°**, confirming continuous motion rather than a finite orientation jump. Exact frame counts and maxima are in `rig-continuity.json`.
+- The forearm rig keeps the proximal forearm in the elbow bend plane and distributes pronation through the source split forearm bones. This resolves the visible elbow collapse caused by assigning the entire hand twist to the proximal forearm. The half-twist uses a fixed branch appropriate to the authored score; shortest-path quaternion half-interpolation had introduced an approximately 180° jump and was rejected. Direct evaluation remains independent of previous frames.
+
+## Visual review and corrective work
+
+The actual character rig was rendered with an offscreen OpenGL renderer using the exported static geometry and per-frame matrices. This review found and corrected skin appearing through the T-shirt, an insufficient waist overlap, an oversized source ponytail, overly dark source fabric albedo, a raised counterweight elbow, a folded light-contact wrist, a visible fingertip gap, a forearm twist discontinuity, an 8 mm floor offset and insufficient passing clearance. The torso/proximal-arm coverage mask, garment hem, cropped scalp, smaller low bun, remapped cloth albedo, connecting-arm pole, palm orientation, fingertip pad positions, forearm twist branch, floor plane and temporary passing lane were adjusted accordingly.
+
+The image sequence uses the same rig, textures, props and deterministic pose function as the WebGL implementation. It is an alternative rasterization path for the same scene. The eight AI direction images are separate development references.
+
+## Limits
+
+The source mesh uses linear blend skinning and a lightweight deterministic kinematic rig. Garments use fitted skinned geometry rather than simulated fabric. The duet is an original authored visual study, with explicit stance and contact constraints; it is not a physics-based balance solver. Numerical sample checks complement the final browser and rendered-frame inspection, rather than replacing them.

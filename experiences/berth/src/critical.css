@@ -1,0 +1,3 @@
+/* A decoded, same-composition poster is visible while the primary photograph loads. */
+.hero-art>.art{background-image:var(--hero-preview);background-size:cover;background-position:center}
+@media(max-width:720px){.hero-art>.art{background-image:var(--hero-preview-mobile)}}

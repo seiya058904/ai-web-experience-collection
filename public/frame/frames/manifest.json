@@ -1,0 +1,484 @@
+{
+  "version": 1,
+  "fps": 12,
+  "frames": 24,
+  "generatedBy": "FRAME original deterministic digital-clay renderer",
+  "sourcePoseSha256": "68c06d61b8e35335296af3e85c37bc3f77f2f068fcdf5facdaea0854b266f557",
+  "cameras": {
+    "landscape": {
+      "width": 1280,
+      "height": 800
+    },
+    "portrait": {
+      "width": 720,
+      "height": 800
+    }
+  },
+  "portraitTravelScale": 0.58,
+  "takes": {
+    "even": {
+      "1": "even-01",
+      "2": "even-02",
+      "3": "even-03",
+      "4": "even-04",
+      "5": "even-05",
+      "6": "even-06",
+      "7": "even-07",
+      "8": "even-08",
+      "9": "even-09",
+      "10": "even-10",
+      "11": "even-11",
+      "12": "even-12",
+      "13": "even-13",
+      "14": "even-14",
+      "15": "even-15",
+      "16": "even-16",
+      "17": "even-17",
+      "18": "even-18",
+      "19": "even-19",
+      "20": "even-20",
+      "21": "even-21",
+      "22": "even-22",
+      "23": "even-23",
+      "24": "even-24"
+    },
+    "ease-in": {
+      "1": "even-01",
+      "2": "even-02",
+      "3": "even-03",
+      "4": "even-04",
+      "5": "even-05",
+      "6": "even-06",
+      "7": "even-07",
+      "8": "ease-in-08",
+      "9": "ease-in-09",
+      "10": "ease-in-10",
+      "11": "ease-in-11",
+      "12": "even-12",
+      "13": "even-13",
+      "14": "even-14",
+      "15": "even-15",
+      "16": "even-16",
+      "17": "even-17",
+      "18": "even-18",
+      "19": "even-19",
+      "20": "even-20",
+      "21": "even-21",
+      "22": "even-22",
+      "23": "even-23",
+      "24": "even-24"
+    },
+    "ease-out": {
+      "1": "even-01",
+      "2": "even-02",
+      "3": "even-03",
+      "4": "even-04",
+      "5": "even-05",
+      "6": "even-06",
+      "7": "even-07",
+      "8": "ease-out-08",
+      "9": "ease-out-09",
+      "10": "ease-out-10",
+      "11": "ease-out-11",
+      "12": "even-12",
+      "13": "even-13",
+      "14": "even-14",
+      "15": "even-15",
+      "16": "even-16",
+      "17": "even-17",
+      "18": "even-18",
+      "19": "even-19",
+      "20": "even-20",
+      "21": "even-21",
+      "22": "even-22",
+      "23": "even-23",
+      "24": "even-24"
+    }
+  },
+  "assets": {
+    "landscape/even-01.webp": {
+      "bytes": 15324,
+      "sha256": "90df22880e5e49fc5c8a3b2bc4a69f817c2b6690966d394bda2059d66b16f7a0",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-02.webp": {
+      "bytes": 15386,
+      "sha256": "09f20daad06fd6d21f75e1fbf2843b66ed70ff51cd1b08bafd558bf97ce6ab20",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-03.webp": {
+      "bytes": 15176,
+      "sha256": "5428706b381fdc19900ff0000e74cd85ea04ef8272a40f1b9cec4ce364f48ce1",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-04.webp": {
+      "bytes": 15230,
+      "sha256": "c9c7b8f2dd50fb3aebd61fe866be12023f16c4591102b46fac727adef36e937b",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-05.webp": {
+      "bytes": 15010,
+      "sha256": "0f0995a43a4dbb282f8ae393856a4cfa604d080de2802001d80a131992afe2e6",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-06.webp": {
+      "bytes": 15290,
+      "sha256": "602406b1b287bafce6f0fa409e75612449f8bfc731a8aad86522b926b938a2b6",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-07.webp": {
+      "bytes": 15316,
+      "sha256": "a7983ec57d47e7f2c969c3eb88ee1b72acaa2d5a667b52d85a0bf4845f1afdba",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-08.webp": {
+      "bytes": 15284,
+      "sha256": "c0ade3057545dd67ff514f4878b11b257be6029894e7834f4ef8787d7fa3a3bd",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-09.webp": {
+      "bytes": 15240,
+      "sha256": "66329ca815f1c0d1df8ca2ab741250c43763c4534252e0c85cfb12d1f2b25098",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-10.webp": {
+      "bytes": 15186,
+      "sha256": "e407c8b917b41923f940969afcc343fb9dfa31fbfc2a5377d403549469ab0cc0",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-11.webp": {
+      "bytes": 14634,
+      "sha256": "1343545f435db4b69f8ad82a39273b129c182773afd7812254672f66ea306ebc",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-12.webp": {
+      "bytes": 14294,
+      "sha256": "9103a5113f229e068927b0a943c8b594b6ff9e1ec896bd631ce64bab72ce4f63",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-13.webp": {
+      "bytes": 14014,
+      "sha256": "496ff84c44eeebcdea7c4128746f7a307ff9feb0e61b998c5bfbd1fb54065d5a",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-14.webp": {
+      "bytes": 14016,
+      "sha256": "d62e4c70033aa02172805b473d6119de27d885805d7367e721066e7e2d38e8ba",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-15.webp": {
+      "bytes": 14024,
+      "sha256": "3893c0b8e9b99b36812e381ce4d2c0ce3bfa4aa3bf6c1661726e96f903b48d7a",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-16.webp": {
+      "bytes": 14204,
+      "sha256": "3a92033dacfa3fa9eb32f0d97b179d3568721da41895a6042bb4086622e86f2f",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-17.webp": {
+      "bytes": 14024,
+      "sha256": "1a75af2534024a2647715c79942457c2a1d07d0be6e60ebc51fc73c0d8ff448d",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-18.webp": {
+      "bytes": 13962,
+      "sha256": "b154570cf4344e8d11fcf9bd58161b49bbe969fe65850f8ccdd728aae421f8a2",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-19.webp": {
+      "bytes": 13978,
+      "sha256": "0415cd01b538cb2cd6207a1f67b12da88123e493ae8df9b88c5b9bdcdf873028",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-20.webp": {
+      "bytes": 14068,
+      "sha256": "1b72d69af6ce6ca860148987091b1507801cbe2cc55b5ca91effa70f8b0eee0f",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-21.webp": {
+      "bytes": 14298,
+      "sha256": "e1f5e365c9f2683c6fd2e6493f6b81080c67ca3b6363cc3c7ea99a7bf7f5a675",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-22.webp": {
+      "bytes": 14394,
+      "sha256": "bf44eae3067f272f8dba5b34c977cb0fc1239c137d89519756ddc7b7a5a641cb",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-23.webp": {
+      "bytes": 14224,
+      "sha256": "e545eca564d5310dab5926dddc45e88cf0dd48874de4cfb23d646251dd67f266",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/even-24.webp": {
+      "bytes": 14272,
+      "sha256": "9725651462e0b70848c00a10d695498b9517cba66c3fd5cb84cb6bb0c5a64790",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-in-08.webp": {
+      "bytes": 14978,
+      "sha256": "dca0a77205b1afe01de7fc548531dcdd97ab18c7869b3dd4834663dc0f6ad924",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-in-09.webp": {
+      "bytes": 15224,
+      "sha256": "4d9aad243ec04ce6cab1f86ce1105eb3684058ab4ad0b0c98fc76f9c0a4d167f",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-in-10.webp": {
+      "bytes": 15350,
+      "sha256": "7a9787699d33b3dbf03513c12def0cd11daa1c4034a5ccdf7a39c97ea89a24d1",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-in-11.webp": {
+      "bytes": 14928,
+      "sha256": "28c6d448d905a6e212b4f9cf436b96cebc20508a649d5528249a65e5e84e1496",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-out-08.webp": {
+      "bytes": 15324,
+      "sha256": "23c7836862a36c6e0a79e336614b344666dc932a18cf2a428cb00dd33f67fa91",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-out-09.webp": {
+      "bytes": 15128,
+      "sha256": "4886d2bcf693bf3051abcf8b6a02aa3aa8da741774646e005a351ef08934d917",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-out-10.webp": {
+      "bytes": 14446,
+      "sha256": "96597251a65134f3f5fcafe8bb2346a9a9370f05fa6a75f42831095098759a58",
+      "width": 1280,
+      "height": 800
+    },
+    "landscape/ease-out-11.webp": {
+      "bytes": 14122,
+      "sha256": "cfb89360c666abb760a2107279f2035669e6e2914d7e4515ed7030a86d1035c5",
+      "width": 1280,
+      "height": 800
+    },
+    "portrait/even-01.webp": {
+      "bytes": 10004,
+      "sha256": "6fdae010386acc3199ba57dbec11fc9508ba79a1d27c50bf821e2ee63cb3678b",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-02.webp": {
+      "bytes": 9934,
+      "sha256": "3ec54d1fec25d697a585876c75ea4177c9b1cf08c543b95a55e5f9bd20821416",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-03.webp": {
+      "bytes": 9968,
+      "sha256": "825cfcb345503cd96e65f194b5c7ef9bcb3b5c683d4c5c252c937a7426d3e57d",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-04.webp": {
+      "bytes": 9988,
+      "sha256": "3e5d83ecaf20e3c5241eb14958cc069817757f074c4f62e4dc8a70c116373659",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-05.webp": {
+      "bytes": 9930,
+      "sha256": "f63d714235312cd9f86a9de212b3eebee0e8607295df4da2132f7e671bee564e",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-06.webp": {
+      "bytes": 9920,
+      "sha256": "98aaa9aa8c01704f1c2c596a2eacc81bd97041d0450f861d08709b4de345035b",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-07.webp": {
+      "bytes": 9842,
+      "sha256": "e15c1d11c440154866dffb40b1c09fbcd75263ef35b332b160c551f8a0dd32fe",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-08.webp": {
+      "bytes": 9594,
+      "sha256": "ea3a05514c6097ddf556bded50528da3b0f111687369645cef690e5783e45b62",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-09.webp": {
+      "bytes": 9502,
+      "sha256": "5735ba556bbf4f6cc61a3ab963e34da52be015ab93cf9cea50a543a14289e1b7",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-10.webp": {
+      "bytes": 9262,
+      "sha256": "fa86502bf8b1c1d0a061865941140fd0de486be87ed6924bf2d5761bdf2bb671",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-11.webp": {
+      "bytes": 9064,
+      "sha256": "f1482d3cea5970cba0b88dfb15ead1e90249272dc9ab84fedd25167ea0217aff",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-12.webp": {
+      "bytes": 9072,
+      "sha256": "afde29a8a0df65c9634b0f111c1a737cef99797b3bef40b843247cba5fcf8b4e",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-13.webp": {
+      "bytes": 9046,
+      "sha256": "82a709ae19fb3bd375aebcadf8804be1ab3b9a093c7f452b755e35489624b753",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-14.webp": {
+      "bytes": 8884,
+      "sha256": "7d80a7e4ee7abbb2a0049964452cdaab778fa239e5de2b97f12c820b012b437c",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-15.webp": {
+      "bytes": 8918,
+      "sha256": "281cfb96a958a214492ee44e03d0700fc6654c5636c20dc7aa96a788fd904101",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-16.webp": {
+      "bytes": 8978,
+      "sha256": "c4cd63ef1a2115eaa481ed4d9e1f1ca9df065f715c14b6c2e60d93eb336c0fc2",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-17.webp": {
+      "bytes": 8996,
+      "sha256": "13ddd7b1388a58068433800de68927db8bc7093625a884c2ee41bd6f061bcdfa",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-18.webp": {
+      "bytes": 8954,
+      "sha256": "c115e5d596c2fbdb5f85556756825db364b1e3dacd6be526a266f56a57d47f3d",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-19.webp": {
+      "bytes": 9056,
+      "sha256": "04d72482c46a7512c41fc2d112867a2b0bca4044664c91d175556c242e3d2041",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-20.webp": {
+      "bytes": 9160,
+      "sha256": "ebfba345daf4b5a0e7c5add4514a26bf61f4b5cea075cd38f3daee86b4ef672e",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-21.webp": {
+      "bytes": 9182,
+      "sha256": "a7206afa1d9d17faad9e06fa1ce007deb920b2545c53d6b3b7a62b406270bdeb",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-22.webp": {
+      "bytes": 9262,
+      "sha256": "9c757520479d0d91982a240dafe5f4f242048beff2cce7c302e7fc3f7e8a1398",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-23.webp": {
+      "bytes": 9160,
+      "sha256": "fe6c722524c73854da3b22a4dcb6ba264f3901cef8c4aac294fa78b4d4cd335b",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/even-24.webp": {
+      "bytes": 9208,
+      "sha256": "e193662795315ee5ac4154a9200bc45700327a0c7482c884eb6fe192041327c6",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-in-08.webp": {
+      "bytes": 9858,
+      "sha256": "5995909ef32cf01a60224c25ec8b7ed8ce1109afa2be43dd7e00df5763778be3",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-in-09.webp": {
+      "bytes": 9790,
+      "sha256": "88f3106ae51821687eb810d58ca43900950cc97f2e97cb6de409575da3b3ab3f",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-in-10.webp": {
+      "bytes": 9714,
+      "sha256": "acd6c52e3ad2860c242dc32b5486460252cfb0c2f0b6032dd115218a23c72a79",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-in-11.webp": {
+      "bytes": 9278,
+      "sha256": "9e0b4bdecb513e8b210f4e4b89dba70ac17e5e89b0dd449eac234937c5f6f856",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-out-08.webp": {
+      "bytes": 9724,
+      "sha256": "166e631914fc6dabea0e6c16008ee5d94eb27e1a8f118393a9b020ea0e66da26",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-out-09.webp": {
+      "bytes": 9258,
+      "sha256": "bb63f4d02544f94bf6bf73d9ce7347b616191a2b5eda232fcd4a8d3dc08e1416",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-out-10.webp": {
+      "bytes": 9006,
+      "sha256": "0296f96f941697f8b1f57c686f0977f138c6915316438def1f716eface3d4fa0",
+      "width": 720,
+      "height": 800
+    },
+    "portrait/ease-out-11.webp": {
+      "bytes": 9062,
+      "sha256": "35704db4b84167ec763cd95ec433e7d9ba4566fde1371e4853bef2f96aa1f3b3",
+      "width": 720,
+      "height": 800
+    }
+  }
+}

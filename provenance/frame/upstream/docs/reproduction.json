@@ -1,0 +1,1666 @@
+{
+  "startedAtUtc": "2026-11-09T05:25:53.780521+00:00",
+  "status": "pass",
+  "scope": "Linux source-package extraction, dependency installation, functional tests, deterministic rebuild, and programmatic local HTTP checks.",
+  "notPerformed": [
+    "Browser interaction",
+    "Windows execution",
+    "Safari execution",
+    "Physical-device checks",
+    "Direct file:// browser opening",
+    "Public deployment"
+  ],
+  "commands": [
+    {
+      "phase": "source-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "workingDirectory": "source-project",
+      "exitCode": 0,
+      "durationSeconds": 1.234,
+      "outputSha256": "3184a7eecaee64457e7f97d1170fa01ebf899b2d1acc979cb7f5e0771f23392e"
+    },
+    {
+      "phase": "source-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "workingDirectory": "source-project",
+      "exitCode": 0,
+      "durationSeconds": 0.671,
+      "outputSha256": "a8fe70d3781cab0c4786d34a9042740b1495b51fbc5afc92d43e7751e2e4bc7b",
+      "tests": 47,
+      "pass": 47,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "phase": "candidate-package",
+      "command": [
+        "python",
+        "scripts/package-source.py"
+      ],
+      "workingDirectory": "source-project",
+      "exitCode": 0,
+      "durationSeconds": 1.263,
+      "outputSha256": "9ea850fbde85c276fd383f942b6a5311b61f41ab662c845b7cffbb722e418f63"
+    },
+    {
+      "phase": "extracted-install",
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "workingDirectory": "fresh-extraction",
+      "exitCode": 0,
+      "durationSeconds": 0.741,
+      "outputSha256": "6dda6d3e92a79b8ea83b8fe02592a6e8a8185f337829afb19a545315c4245d38"
+    },
+    {
+      "phase": "extracted-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "workingDirectory": "fresh-extraction",
+      "exitCode": 0,
+      "durationSeconds": 0.671,
+      "outputSha256": "4c792a60caca2bcbd9d705c6da7b9183addf85f1d473142e84c1dc832a686660",
+      "tests": 47,
+      "pass": 47,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "phase": "extracted-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "workingDirectory": "fresh-extraction",
+      "exitCode": 0,
+      "durationSeconds": 1.578,
+      "outputSha256": "6f7a59c7d52d7a0a499b43ca7a7c07e19379aa94693ff106759a6718cc5f7ccc"
+    }
+  ],
+  "environment": {
+    "os": "Linux",
+    "architecture": "x86_64",
+    "python": "3.12.14",
+    "node": "v24.22.1",
+    "npm": "11.9.0",
+    "dependencyInstall": "Fresh node_modules from npm ci; npm's download cache may be reused. Not an offline-install claim."
+  },
+  "sourceArtifacts": {
+    "FRAME.html": {
+      "bytes": 2681027,
+      "sha256": "13f99e61c4b2d2db1a817b391177c15c75380480708b46d9c2043f5f42a428df"
+    },
+    "QA-PREVIEW.html": {
+      "bytes": 23756,
+      "sha256": "36e4ecbfc340b830c37c0cf2d19d621453452d8c0efd12c20f14cb14ca816855"
+    },
+    "docs/offline-build.json": {
+      "bytes": 720,
+      "sha256": "f3f0d089ab69b5df577c6de39d9f9085318decf9e3ac6da0a93db4cfd16670dc"
+    },
+    "dist": {
+      "files": [
+        {
+          "path": "assets/index-CZ9DgoPw.css",
+          "bytes": 33993,
+          "sha256": "1b7de14a8e32dc72d887896ec742f789f4dd7ea2cf30a2118b371bcb3abf33b7"
+        },
+        {
+          "path": "assets/index-D8qDGgKe.js",
+          "bytes": 97306,
+          "sha256": "c200d7f33aa31e95e4cda8e24f3ac8e73e65bc3b327791f789991488bcf3065b"
+        },
+        {
+          "path": "assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 275,
+          "sha256": "c3096e3bb9d2bfc74bb586a25674dec82349075c6c20c1915a3f882431847f46"
+        },
+        {
+          "path": "frames/hero/even-01.webp",
+          "bytes": 20286,
+          "sha256": "dffa3a8c6aecb43480e83670179fc010fb5b7132ac421cab3431f708721d82ee"
+        },
+        {
+          "path": "frames/hero/even-02.webp",
+          "bytes": 20262,
+          "sha256": "05865c0f3699dfc6194305637b49800ec5b36f1dc9bd3e43d1fab7f744127375"
+        },
+        {
+          "path": "frames/hero/even-03.webp",
+          "bytes": 20272,
+          "sha256": "c870e954137671278683ee7f689416a6cf1dd5198373f20124ed1dac66f82ecd"
+        },
+        {
+          "path": "frames/hero/even-04.webp",
+          "bytes": 20026,
+          "sha256": "e1c208b254b10b56ec835c584870e91393def0a484bb05e022465030234426ee"
+        },
+        {
+          "path": "frames/hero/even-05.webp",
+          "bytes": 20124,
+          "sha256": "e0d6873c0815db7e43557363ab249b9b330f6550905e913167b13ff79a08e2f9"
+        },
+        {
+          "path": "frames/hero/even-06.webp",
+          "bytes": 20398,
+          "sha256": "8d69d6102e5ecb57f6a05cae43c7dbc57edc17bc204871d285fbc1c5b70d396f"
+        },
+        {
+          "path": "frames/hero/even-07.webp",
+          "bytes": 20334,
+          "sha256": "3089b79f68ee2b30b516b9b346ed8a7cd3c5071e2fe81d92edebc40d24bbb26a"
+        },
+        {
+          "path": "frames/hero/even-08.webp",
+          "bytes": 19950,
+          "sha256": "42452c2bf2cb31b2711daefe5f59e1f1bfa086ab6eff78c56ffef739d2ddfa53"
+        },
+        {
+          "path": "frames/hero/even-09.webp",
+          "bytes": 20114,
+          "sha256": "96aaa9aa6930a364531064b421d2c059c6e2edc14b9fed0ec396c79f2a0e9700"
+        },
+        {
+          "path": "frames/hero/even-10.webp",
+          "bytes": 19490,
+          "sha256": "f54b59b3f7781825a7291f343ab6d19f83ebdd9114f0a02e6407a28e5ec5ef6d"
+        },
+        {
+          "path": "frames/hero/even-11.webp",
+          "bytes": 20042,
+          "sha256": "f716b413ad45e8afa405af0ca54a3edb660a93e7215655f999b2638ef47d86a8"
+        },
+        {
+          "path": "frames/hero/even-12.webp",
+          "bytes": 19328,
+          "sha256": "a498b5772020278c3c340e8f5c6ae6b780bb9c96c08074c0be70ac85119a53b9"
+        },
+        {
+          "path": "frames/hero/even-13.webp",
+          "bytes": 19456,
+          "sha256": "e2556fecadf6cf8dea9838d391fbb1f82ed58c222489f5d630a2ed6e15edb314"
+        },
+        {
+          "path": "frames/hero/even-14.webp",
+          "bytes": 19510,
+          "sha256": "b46d661d14c7be0af6ad5990ec7f018806420c9994b27325913283e26e0843b0"
+        },
+        {
+          "path": "frames/hero/even-15.webp",
+          "bytes": 19430,
+          "sha256": "4973e1994fa7f8c8a0bfb37711f737832c0ca91f102a460c469bb32cb2fe1543"
+        },
+        {
+          "path": "frames/hero/even-16.webp",
+          "bytes": 19212,
+          "sha256": "36e30a85373677eee1b9586b93527047e35f62077544fa8492b380e6f1db49e9"
+        },
+        {
+          "path": "frames/hero/even-17.webp",
+          "bytes": 19732,
+          "sha256": "3c15798d2a4a831daae720c0f021633ef596d15760f15340cdca437f9b909657"
+        },
+        {
+          "path": "frames/hero/even-18.webp",
+          "bytes": 19452,
+          "sha256": "bcc59dc16b5c332758fad972893f5615145b42cf259799d8a49fa4ca2becda4f"
+        },
+        {
+          "path": "frames/hero/even-19.webp",
+          "bytes": 19370,
+          "sha256": "3962b6dd50cf4cc49f0e0f923721719a92a0a2371dfa093cf0550322a940ce69"
+        },
+        {
+          "path": "frames/hero/even-20.webp",
+          "bytes": 18924,
+          "sha256": "d81b5a7a0107fd620e76b12000526dd83d57de362bc8e49b337077e1275e3748"
+        },
+        {
+          "path": "frames/hero/even-21.webp",
+          "bytes": 19554,
+          "sha256": "609b33b257819af28ace1c27245375230a7b3cf51a27236e645666d8d12ddd90"
+        },
+        {
+          "path": "frames/hero/even-22.webp",
+          "bytes": 19672,
+          "sha256": "078abcc8a7ece8a9861a5f51273625051adebc81fb2774b8d62952dcf21a6d00"
+        },
+        {
+          "path": "frames/hero/even-23.webp",
+          "bytes": 19326,
+          "sha256": "27a3083e2fb8269a3bdf5d8a27ff4f1a246e3d2759ee063dfdd85d174d884ebb"
+        },
+        {
+          "path": "frames/hero/even-24.webp",
+          "bytes": 19290,
+          "sha256": "6bb3cfcab8fd4ba290484423b530beaa14d5c547c2d1f9f2ee526e4d94549276"
+        },
+        {
+          "path": "frames/hero/manifest.json",
+          "bytes": 4546,
+          "sha256": "08e6f39762d8e18ac1fbb42944bddcf13ddb73437229d39c1cadbf2f50523933"
+        },
+        {
+          "path": "frames/hero-portrait/even-01.webp",
+          "bytes": 13486,
+          "sha256": "4f088c639752c7a00aeb4343286ad940c20a42f3d41f32f62fcdd3f878baf8f4"
+        },
+        {
+          "path": "frames/hero-portrait/even-02.webp",
+          "bytes": 13520,
+          "sha256": "ba2e3e8bd8f1730561e9e2b44ae89475f8eca4125b08b15052320b3b644cf0c6"
+        },
+        {
+          "path": "frames/hero-portrait/even-03.webp",
+          "bytes": 13274,
+          "sha256": "21ec0cd58d2996f1b8bd32c27a85d6956d5f4ae912f6ea9c1049cee896cfb7e0"
+        },
+        {
+          "path": "frames/hero-portrait/even-04.webp",
+          "bytes": 13310,
+          "sha256": "519d8f85f9377859e681c50bf7b11fefc4915e2f128b13f776b2c1af7b7e5af7"
+        },
+        {
+          "path": "frames/hero-portrait/even-05.webp",
+          "bytes": 13234,
+          "sha256": "fe67c490071edb95b302bae35f69b417860ce7cd192bf76591f311a0c7f21865"
+        },
+        {
+          "path": "frames/hero-portrait/even-06.webp",
+          "bytes": 13372,
+          "sha256": "cb88c7b63bcc9afb342eb9f83e3c6ab19c96f79e888a5890f468e037564bdf3a"
+        },
+        {
+          "path": "frames/hero-portrait/even-07.webp",
+          "bytes": 13602,
+          "sha256": "6e357be0f773d366e8587ff52ca343fd603d486160b521d9d9d62523199a8742"
+        },
+        {
+          "path": "frames/hero-portrait/even-08.webp",
+          "bytes": 13414,
+          "sha256": "42587adb5d0fb8183182b42d536bee2aa4e4dc99df369bbeec16d338ff6fc3d1"
+        },
+        {
+          "path": "frames/hero-portrait/even-09.webp",
+          "bytes": 13844,
+          "sha256": "89f346a7a1470f050cba22428f0853b5e242b6ccd4eef00c13c1c8891c48b872"
+        },
+        {
+          "path": "frames/hero-portrait/even-10.webp",
+          "bytes": 13040,
+          "sha256": "bc831f2ba0eb303ff9b4396cc24bf19d69b7947a608a15c2bd552f2776d2c082"
+        },
+        {
+          "path": "frames/hero-portrait/even-11.webp",
+          "bytes": 13114,
+          "sha256": "19ebbdbe4481206be466edfffd5a25e1fcef31c9f0c515da205d4b7c98f9dfcf"
+        },
+        {
+          "path": "frames/hero-portrait/even-12.webp",
+          "bytes": 13308,
+          "sha256": "62804478332820505bec0fe214e15c731af1fea034e8dece06cd17821821c4be"
+        },
+        {
+          "path": "frames/hero-portrait/even-13.webp",
+          "bytes": 13328,
+          "sha256": "5a828036026e1f280b8b6205aa0e81e968adff254f4828ee7cdd21740a8126a4"
+        },
+        {
+          "path": "frames/hero-portrait/even-14.webp",
+          "bytes": 13220,
+          "sha256": "777adb13969b39fae33a2d5721c8adabf45a1c70da9c019f7a0d8479349120f4"
+        },
+        {
+          "path": "frames/hero-portrait/even-15.webp",
+          "bytes": 12914,
+          "sha256": "685123da6f2ddd9f4181d66930c8424cdda40e86d0e83d8afd794a0ac4f9c797"
+        },
+        {
+          "path": "frames/hero-portrait/even-16.webp",
+          "bytes": 13096,
+          "sha256": "877b4ae17da204e65f5d6d9c74ff3c445ff1c56a672e16b70dcc73f4b7bd4be8"
+        },
+        {
+          "path": "frames/hero-portrait/even-17.webp",
+          "bytes": 12998,
+          "sha256": "274fde91abf9508ad9a0bc0f5dde70e5224dad9ace41ba981927aaa5ad145f60"
+        },
+        {
+          "path": "frames/hero-portrait/even-18.webp",
+          "bytes": 12968,
+          "sha256": "9e9eff794026484bcfcc0b4827f662d76867e12a6d3dc896d983fff80bb45a4e"
+        },
+        {
+          "path": "frames/hero-portrait/even-19.webp",
+          "bytes": 12982,
+          "sha256": "cd578368b66f2323bd72851d48f0b4e516f3e143441bf779bd315b12f1fd9049"
+        },
+        {
+          "path": "frames/hero-portrait/even-20.webp",
+          "bytes": 12978,
+          "sha256": "231875498c897cba133d44ebced2407f66eafcf5f3eb3d3ab9e938fb8f346ed4"
+        },
+        {
+          "path": "frames/hero-portrait/even-21.webp",
+          "bytes": 13114,
+          "sha256": "11c00e78b96fe1402fdddd5da5cfef51e536331db4e02749a5f428caebfdce2f"
+        },
+        {
+          "path": "frames/hero-portrait/even-22.webp",
+          "bytes": 13442,
+          "sha256": "9252bdaa8f66f0a3f15dbc303fe460bf8ca6944bcd2a05d890a65a536b11141a"
+        },
+        {
+          "path": "frames/hero-portrait/even-23.webp",
+          "bytes": 13198,
+          "sha256": "6d22654cfff23847efab7e9bca85abd8228c61dc1d9deb566dc32512d507e152"
+        },
+        {
+          "path": "frames/hero-portrait/even-24.webp",
+          "bytes": 13146,
+          "sha256": "461c6d3a75e003ee4c9a220e1a00c87ca5d5d7256f7acb5b1602d5018b029562"
+        },
+        {
+          "path": "frames/hero-portrait/manifest.json",
+          "bytes": 4531,
+          "sha256": "b854d578023647a976c9df75e1d4dd160684213c23e1fdae98a60fb3b15842ba"
+        },
+        {
+          "path": "frames/landscape/ease-in-08.webp",
+          "bytes": 14978,
+          "sha256": "dca0a77205b1afe01de7fc548531dcdd97ab18c7869b3dd4834663dc0f6ad924"
+        },
+        {
+          "path": "frames/landscape/ease-in-09.webp",
+          "bytes": 15224,
+          "sha256": "4d9aad243ec04ce6cab1f86ce1105eb3684058ab4ad0b0c98fc76f9c0a4d167f"
+        },
+        {
+          "path": "frames/landscape/ease-in-10.webp",
+          "bytes": 15350,
+          "sha256": "7a9787699d33b3dbf03513c12def0cd11daa1c4034a5ccdf7a39c97ea89a24d1"
+        },
+        {
+          "path": "frames/landscape/ease-in-11.webp",
+          "bytes": 14928,
+          "sha256": "28c6d448d905a6e212b4f9cf436b96cebc20508a649d5528249a65e5e84e1496"
+        },
+        {
+          "path": "frames/landscape/ease-out-08.webp",
+          "bytes": 15324,
+          "sha256": "23c7836862a36c6e0a79e336614b344666dc932a18cf2a428cb00dd33f67fa91"
+        },
+        {
+          "path": "frames/landscape/ease-out-09.webp",
+          "bytes": 15128,
+          "sha256": "4886d2bcf693bf3051abcf8b6a02aa3aa8da741774646e005a351ef08934d917"
+        },
+        {
+          "path": "frames/landscape/ease-out-10.webp",
+          "bytes": 14446,
+          "sha256": "96597251a65134f3f5fcafe8bb2346a9a9370f05fa6a75f42831095098759a58"
+        },
+        {
+          "path": "frames/landscape/ease-out-11.webp",
+          "bytes": 14122,
+          "sha256": "cfb89360c666abb760a2107279f2035669e6e2914d7e4515ed7030a86d1035c5"
+        },
+        {
+          "path": "frames/landscape/even-01.webp",
+          "bytes": 15324,
+          "sha256": "90df22880e5e49fc5c8a3b2bc4a69f817c2b6690966d394bda2059d66b16f7a0"
+        },
+        {
+          "path": "frames/landscape/even-02.webp",
+          "bytes": 15386,
+          "sha256": "09f20daad06fd6d21f75e1fbf2843b66ed70ff51cd1b08bafd558bf97ce6ab20"
+        },
+        {
+          "path": "frames/landscape/even-03.webp",
+          "bytes": 15176,
+          "sha256": "5428706b381fdc19900ff0000e74cd85ea04ef8272a40f1b9cec4ce364f48ce1"
+        },
+        {
+          "path": "frames/landscape/even-04.webp",
+          "bytes": 15230,
+          "sha256": "c9c7b8f2dd50fb3aebd61fe866be12023f16c4591102b46fac727adef36e937b"
+        },
+        {
+          "path": "frames/landscape/even-05.webp",
+          "bytes": 15010,
+          "sha256": "0f0995a43a4dbb282f8ae393856a4cfa604d080de2802001d80a131992afe2e6"
+        },
+        {
+          "path": "frames/landscape/even-06.webp",
+          "bytes": 15290,
+          "sha256": "602406b1b287bafce6f0fa409e75612449f8bfc731a8aad86522b926b938a2b6"
+        },
+        {
+          "path": "frames/landscape/even-07.webp",
+          "bytes": 15316,
+          "sha256": "a7983ec57d47e7f2c969c3eb88ee1b72acaa2d5a667b52d85a0bf4845f1afdba"
+        },
+        {
+          "path": "frames/landscape/even-08.webp",
+          "bytes": 15284,
+          "sha256": "c0ade3057545dd67ff514f4878b11b257be6029894e7834f4ef8787d7fa3a3bd"
+        },
+        {
+          "path": "frames/landscape/even-09.webp",
+          "bytes": 15240,
+          "sha256": "66329ca815f1c0d1df8ca2ab741250c43763c4534252e0c85cfb12d1f2b25098"
+        },
+        {
+          "path": "frames/landscape/even-10.webp",
+          "bytes": 15186,
+          "sha256": "e407c8b917b41923f940969afcc343fb9dfa31fbfc2a5377d403549469ab0cc0"
+        },
+        {
+          "path": "frames/landscape/even-11.webp",
+          "bytes": 14634,
+          "sha256": "1343545f435db4b69f8ad82a39273b129c182773afd7812254672f66ea306ebc"
+        },
+        {
+          "path": "frames/landscape/even-12.webp",
+          "bytes": 14294,
+          "sha256": "9103a5113f229e068927b0a943c8b594b6ff9e1ec896bd631ce64bab72ce4f63"
+        },
+        {
+          "path": "frames/landscape/even-13.webp",
+          "bytes": 14014,
+          "sha256": "496ff84c44eeebcdea7c4128746f7a307ff9feb0e61b998c5bfbd1fb54065d5a"
+        },
+        {
+          "path": "frames/landscape/even-14.webp",
+          "bytes": 14016,
+          "sha256": "d62e4c70033aa02172805b473d6119de27d885805d7367e721066e7e2d38e8ba"
+        },
+        {
+          "path": "frames/landscape/even-15.webp",
+          "bytes": 14024,
+          "sha256": "3893c0b8e9b99b36812e381ce4d2c0ce3bfa4aa3bf6c1661726e96f903b48d7a"
+        },
+        {
+          "path": "frames/landscape/even-16.webp",
+          "bytes": 14204,
+          "sha256": "3a92033dacfa3fa9eb32f0d97b179d3568721da41895a6042bb4086622e86f2f"
+        },
+        {
+          "path": "frames/landscape/even-17.webp",
+          "bytes": 14024,
+          "sha256": "1a75af2534024a2647715c79942457c2a1d07d0be6e60ebc51fc73c0d8ff448d"
+        },
+        {
+          "path": "frames/landscape/even-18.webp",
+          "bytes": 13962,
+          "sha256": "b154570cf4344e8d11fcf9bd58161b49bbe969fe65850f8ccdd728aae421f8a2"
+        },
+        {
+          "path": "frames/landscape/even-19.webp",
+          "bytes": 13978,
+          "sha256": "0415cd01b538cb2cd6207a1f67b12da88123e493ae8df9b88c5b9bdcdf873028"
+        },
+        {
+          "path": "frames/landscape/even-20.webp",
+          "bytes": 14068,
+          "sha256": "1b72d69af6ce6ca860148987091b1507801cbe2cc55b5ca91effa70f8b0eee0f"
+        },
+        {
+          "path": "frames/landscape/even-21.webp",
+          "bytes": 14298,
+          "sha256": "e1f5e365c9f2683c6fd2e6493f6b81080c67ca3b6363cc3c7ea99a7bf7f5a675"
+        },
+        {
+          "path": "frames/landscape/even-22.webp",
+          "bytes": 14394,
+          "sha256": "bf44eae3067f272f8dba5b34c977cb0fc1239c137d89519756ddc7b7a5a641cb"
+        },
+        {
+          "path": "frames/landscape/even-23.webp",
+          "bytes": 14224,
+          "sha256": "e545eca564d5310dab5926dddc45e88cf0dd48874de4cfb23d646251dd67f266"
+        },
+        {
+          "path": "frames/landscape/even-24.webp",
+          "bytes": 14272,
+          "sha256": "9725651462e0b70848c00a10d695498b9517cba66c3fd5cb84cb6bb0c5a64790"
+        },
+        {
+          "path": "frames/manifest.json",
+          "bytes": 14015,
+          "sha256": "e339e55fcd20e272496f15c7e3b5854f2112abbeab9b19fdc98ea9dd4d3f6269"
+        },
+        {
+          "path": "frames/portrait/ease-in-08.webp",
+          "bytes": 9858,
+          "sha256": "5995909ef32cf01a60224c25ec8b7ed8ce1109afa2be43dd7e00df5763778be3"
+        },
+        {
+          "path": "frames/portrait/ease-in-09.webp",
+          "bytes": 9790,
+          "sha256": "88f3106ae51821687eb810d58ca43900950cc97f2e97cb6de409575da3b3ab3f"
+        },
+        {
+          "path": "frames/portrait/ease-in-10.webp",
+          "bytes": 9714,
+          "sha256": "acd6c52e3ad2860c242dc32b5486460252cfb0c2f0b6032dd115218a23c72a79"
+        },
+        {
+          "path": "frames/portrait/ease-in-11.webp",
+          "bytes": 9278,
+          "sha256": "9e0b4bdecb513e8b210f4e4b89dba70ac17e5e89b0dd449eac234937c5f6f856"
+        },
+        {
+          "path": "frames/portrait/ease-out-08.webp",
+          "bytes": 9724,
+          "sha256": "166e631914fc6dabea0e6c16008ee5d94eb27e1a8f118393a9b020ea0e66da26"
+        },
+        {
+          "path": "frames/portrait/ease-out-09.webp",
+          "bytes": 9258,
+          "sha256": "bb63f4d02544f94bf6bf73d9ce7347b616191a2b5eda232fcd4a8d3dc08e1416"
+        },
+        {
+          "path": "frames/portrait/ease-out-10.webp",
+          "bytes": 9006,
+          "sha256": "0296f96f941697f8b1f57c686f0977f138c6915316438def1f716eface3d4fa0"
+        },
+        {
+          "path": "frames/portrait/ease-out-11.webp",
+          "bytes": 9062,
+          "sha256": "35704db4b84167ec763cd95ec433e7d9ba4566fde1371e4853bef2f96aa1f3b3"
+        },
+        {
+          "path": "frames/portrait/even-01.webp",
+          "bytes": 10004,
+          "sha256": "6fdae010386acc3199ba57dbec11fc9508ba79a1d27c50bf821e2ee63cb3678b"
+        },
+        {
+          "path": "frames/portrait/even-02.webp",
+          "bytes": 9934,
+          "sha256": "3ec54d1fec25d697a585876c75ea4177c9b1cf08c543b95a55e5f9bd20821416"
+        },
+        {
+          "path": "frames/portrait/even-03.webp",
+          "bytes": 9968,
+          "sha256": "825cfcb345503cd96e65f194b5c7ef9bcb3b5c683d4c5c252c937a7426d3e57d"
+        },
+        {
+          "path": "frames/portrait/even-04.webp",
+          "bytes": 9988,
+          "sha256": "3e5d83ecaf20e3c5241eb14958cc069817757f074c4f62e4dc8a70c116373659"
+        },
+        {
+          "path": "frames/portrait/even-05.webp",
+          "bytes": 9930,
+          "sha256": "f63d714235312cd9f86a9de212b3eebee0e8607295df4da2132f7e671bee564e"
+        },
+        {
+          "path": "frames/portrait/even-06.webp",
+          "bytes": 9920,
+          "sha256": "98aaa9aa8c01704f1c2c596a2eacc81bd97041d0450f861d08709b4de345035b"
+        },
+        {
+          "path": "frames/portrait/even-07.webp",
+          "bytes": 9842,
+          "sha256": "e15c1d11c440154866dffb40b1c09fbcd75263ef35b332b160c551f8a0dd32fe"
+        },
+        {
+          "path": "frames/portrait/even-08.webp",
+          "bytes": 9594,
+          "sha256": "ea3a05514c6097ddf556bded50528da3b0f111687369645cef690e5783e45b62"
+        },
+        {
+          "path": "frames/portrait/even-09.webp",
+          "bytes": 9502,
+          "sha256": "5735ba556bbf4f6cc61a3ab963e34da52be015ab93cf9cea50a543a14289e1b7"
+        },
+        {
+          "path": "frames/portrait/even-10.webp",
+          "bytes": 9262,
+          "sha256": "fa86502bf8b1c1d0a061865941140fd0de486be87ed6924bf2d5761bdf2bb671"
+        },
+        {
+          "path": "frames/portrait/even-11.webp",
+          "bytes": 9064,
+          "sha256": "f1482d3cea5970cba0b88dfb15ead1e90249272dc9ab84fedd25167ea0217aff"
+        },
+        {
+          "path": "frames/portrait/even-12.webp",
+          "bytes": 9072,
+          "sha256": "afde29a8a0df65c9634b0f111c1a737cef99797b3bef40b843247cba5fcf8b4e"
+        },
+        {
+          "path": "frames/portrait/even-13.webp",
+          "bytes": 9046,
+          "sha256": "82a709ae19fb3bd375aebcadf8804be1ab3b9a093c7f452b755e35489624b753"
+        },
+        {
+          "path": "frames/portrait/even-14.webp",
+          "bytes": 8884,
+          "sha256": "7d80a7e4ee7abbb2a0049964452cdaab778fa239e5de2b97f12c820b012b437c"
+        },
+        {
+          "path": "frames/portrait/even-15.webp",
+          "bytes": 8918,
+          "sha256": "281cfb96a958a214492ee44e03d0700fc6654c5636c20dc7aa96a788fd904101"
+        },
+        {
+          "path": "frames/portrait/even-16.webp",
+          "bytes": 8978,
+          "sha256": "c4cd63ef1a2115eaa481ed4d9e1f1ca9df065f715c14b6c2e60d93eb336c0fc2"
+        },
+        {
+          "path": "frames/portrait/even-17.webp",
+          "bytes": 8996,
+          "sha256": "13ddd7b1388a58068433800de68927db8bc7093625a884c2ee41bd6f061bcdfa"
+        },
+        {
+          "path": "frames/portrait/even-18.webp",
+          "bytes": 8954,
+          "sha256": "c115e5d596c2fbdb5f85556756825db364b1e3dacd6be526a266f56a57d47f3d"
+        },
+        {
+          "path": "frames/portrait/even-19.webp",
+          "bytes": 9056,
+          "sha256": "04d72482c46a7512c41fc2d112867a2b0bca4044664c91d175556c242e3d2041"
+        },
+        {
+          "path": "frames/portrait/even-20.webp",
+          "bytes": 9160,
+          "sha256": "ebfba345daf4b5a0e7c5add4514a26bf61f4b5cea075cd38f3daee86b4ef672e"
+        },
+        {
+          "path": "frames/portrait/even-21.webp",
+          "bytes": 9182,
+          "sha256": "a7206afa1d9d17faad9e06fa1ce007deb920b2545c53d6b3b7a62b406270bdeb"
+        },
+        {
+          "path": "frames/portrait/even-22.webp",
+          "bytes": 9262,
+          "sha256": "9c757520479d0d91982a240dafe5f4f242048beff2cce7c302e7fc3f7e8a1398"
+        },
+        {
+          "path": "frames/portrait/even-23.webp",
+          "bytes": 9160,
+          "sha256": "fe6c722524c73854da3b22a4dcb6ba264f3901cef8c4aac294fa78b4d4cd335b"
+        },
+        {
+          "path": "frames/portrait/even-24.webp",
+          "bytes": 9208,
+          "sha256": "e193662795315ee5ac4154a9200bc45700327a0c7482c884eb6fe192041327c6"
+        },
+        {
+          "path": "index.html",
+          "bytes": 2182,
+          "sha256": "ad6be804e1091aaf1c65da1bf9e385eab6f5af5ce7a30cffe7b665414fda5fab"
+        },
+        {
+          "path": "production-art-manifest.json",
+          "bytes": 42304,
+          "sha256": "579698f4028dd81999ad4766a1114a7dde53c92f80630fb072838273421921f3"
+        },
+        {
+          "path": "qa.html",
+          "bytes": 23736,
+          "sha256": "9aa3215b785d610a1e3c1f4a6d2f3e44d1ecb98ec55199b2b272b27c87ee79a7"
+        },
+        {
+          "path": "stills/contact-landscape.webp",
+          "bytes": 24762,
+          "sha256": "2f2c43fb0f5898ffb2a5f479d9c0846ade52cd109ddb8e4dfbc5c278fd941465"
+        },
+        {
+          "path": "stills/contact-portrait.webp",
+          "bytes": 13060,
+          "sha256": "5d93d443db0928b1c21a7a9c0d38e33f58dc2ad9cc41a46ac0c3582edb9b2f72"
+        },
+        {
+          "path": "stills/ending-landscape.webp",
+          "bytes": 29682,
+          "sha256": "7085876ab00ac18d2b6defb8f1a49bbbc05bfbd8528b3092e2f05efb98164694"
+        },
+        {
+          "path": "stills/ending-portrait.webp",
+          "bytes": 18396,
+          "sha256": "62eff68ae9e8911d20ddda84ac47f0530f2a39f4f21ba4a5da044d8a99a039d0"
+        },
+        {
+          "path": "stills/glance-landscape.webp",
+          "bytes": 28360,
+          "sha256": "3e31ed7c96451420eca37d13bc3f42e861d0155441b70691cbdd606b0be597b9"
+        },
+        {
+          "path": "stills/glance-portrait.webp",
+          "bytes": 17548,
+          "sha256": "bf922156ce35db7bdc8062eaa97a497b759a8dcb3940fc8c4efc38b46430849a"
+        },
+        {
+          "path": "stills/overhead-landscape.webp",
+          "bytes": 25674,
+          "sha256": "bb95162cf9532fd16e05bbaf89fbf0d0f6d325680fc93c3a6da1fed0d484c85d"
+        },
+        {
+          "path": "stills/overhead-portrait.webp",
+          "bytes": 13296,
+          "sha256": "b8dda146b18ac1687193bc3bf0dbc4bc3d10c617f16d65b17ad35bc235349453"
+        },
+        {
+          "path": "stills/preparation-landscape.webp",
+          "bytes": 28624,
+          "sha256": "9ae438ba507d61b039143fe3f5b41c18e3d00f205e5b191319ba9c987221c866"
+        },
+        {
+          "path": "stills/preparation-portrait.webp",
+          "bytes": 17408,
+          "sha256": "5258068b7f57dfa488c83b04e7d778e03a4ff971d6c4bc23ec3556dc0fbfa6b5"
+        },
+        {
+          "path": "stills/pushing-landscape.webp",
+          "bytes": 25028,
+          "sha256": "f5f00103d270d74f90fe75ceb2a50247bd9483d3c730ea34643904c732e5aa4b"
+        },
+        {
+          "path": "stills/pushing-portrait.webp",
+          "bytes": 12774,
+          "sha256": "60bb5127ba4e168dee5cbb89b614cf087f6204a74281aa8bbb5b34468b08f29c"
+        },
+        {
+          "path": "stills/resting-landscape.webp",
+          "bytes": 28970,
+          "sha256": "78b039cdad62c7b40ef6e9a93c58da4dc7a98fb255ea4648bbd5fa66e6d8abd5"
+        },
+        {
+          "path": "stills/resting-portrait.webp",
+          "bytes": 15314,
+          "sha256": "c85184705901a7c0b319ee885c3deda5cbb4864fa11a5649dbbabed538539646"
+        }
+      ],
+      "fileCount": 136,
+      "bytes": 2108998,
+      "sha256": "599f600356c200efba4af3642c74f641f5ad93b31d4c57adbeb1252d2828b0b8",
+      "hashMethod": "SHA256 of compact key-sorted JSON array of sorted path/bytes/sha256 records."
+    }
+  },
+  "sourceInputs": {
+    "fileCount": 159,
+    "sha256": "db47928721b9f99b5f5d38667c08f74740dbbe5150dea70d70e63d1e7024d022"
+  },
+  "candidatePackage": {
+    "archive": "FRAME-source.zip",
+    "entries": 367,
+    "uncompressedBytes": 28435530,
+    "rootFiles": [
+      "index.html",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "vite.config.ts",
+      "README.md",
+      "START-HERE.zh-CN.md",
+      "Start-Frame.cmd",
+      "PRODUCT.md",
+      "DESIGN.md",
+      "FRAME.html",
+      "QA-PREVIEW.html"
+    ],
+    "rootDirectories": [
+      "src",
+      "public",
+      "dist",
+      "concepts",
+      "docs",
+      "tests",
+      "evidence",
+      "scripts"
+    ],
+    "excludedFromSelectedDirectories": [
+      "scripts/__pycache__/"
+    ],
+    "policy": "Explicit project roots; no hidden files, symlinks, dependency directories, caches, native binaries, private-key files, or nested archives.",
+    "status": "packaged",
+    "bytes": 24407525,
+    "sha256": "e0e77d6b43cfc252c38f276af3b5edf6f0965a72032fc83d4565d97fc8c94528",
+    "meaning": "Candidate extracted for this reproduction run. Final delivery must be repackaged after documentation/evidence changes and will have a different ZIP hash."
+  },
+  "archiveInspection": {
+    "entries": 367,
+    "zipIntegrity": "pass",
+    "forbiddenEntries": [],
+    "freshDirectory": true,
+    "nodeModulesPresentAfterExtraction": false
+  },
+  "includedArtifactComparison": {
+    "matchesSource": true
+  },
+  "httpWithoutDependencies": {
+    "status": "pass",
+    "nodeModulesAbsent": true,
+    "browserOpened": false,
+    "serverStopped": true,
+    "checks": [
+      {
+        "name": "Index content",
+        "method": "GET",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "Index HEAD",
+        "method": "HEAD",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "name": "Every distribution file and known MIME type",
+        "files": 136,
+        "pass": true
+      },
+      {
+        "name": "Missing file",
+        "method": "GET",
+        "status": 404,
+        "pass": true
+      },
+      {
+        "name": "Reject POST",
+        "method": "POST",
+        "status": 405,
+        "pass": true
+      },
+      {
+        "name": "Encoded traversal",
+        "method": "GET",
+        "status": 400,
+        "pass": true
+      },
+      {
+        "name": "NUL path",
+        "method": "GET",
+        "status": 400,
+        "pass": true
+      },
+      {
+        "name": "Backslash path",
+        "method": "GET",
+        "status": 400,
+        "pass": true
+      },
+      {
+        "name": "Malformed percent encoding",
+        "method": "GET",
+        "status": 400,
+        "pass": true
+      },
+      {
+        "name": "Symlink escape",
+        "method": "GET",
+        "status": 403,
+        "pass": true
+      }
+    ]
+  },
+  "removedGeneratedOutputsBeforeRebuild": [
+    "dist/",
+    "FRAME.html",
+    "QA-PREVIEW.html",
+    "docs/offline-build.json"
+  ],
+  "rebuiltArtifacts": {
+    "FRAME.html": {
+      "bytes": 2681027,
+      "sha256": "13f99e61c4b2d2db1a817b391177c15c75380480708b46d9c2043f5f42a428df"
+    },
+    "QA-PREVIEW.html": {
+      "bytes": 23756,
+      "sha256": "36e4ecbfc340b830c37c0cf2d19d621453452d8c0efd12c20f14cb14ca816855"
+    },
+    "docs/offline-build.json": {
+      "bytes": 720,
+      "sha256": "f3f0d089ab69b5df577c6de39d9f9085318decf9e3ac6da0a93db4cfd16670dc"
+    },
+    "dist": {
+      "files": [
+        {
+          "path": "assets/index-CZ9DgoPw.css",
+          "bytes": 33993,
+          "sha256": "1b7de14a8e32dc72d887896ec742f789f4dd7ea2cf30a2118b371bcb3abf33b7"
+        },
+        {
+          "path": "assets/index-D8qDGgKe.js",
+          "bytes": 97306,
+          "sha256": "c200d7f33aa31e95e4cda8e24f3ac8e73e65bc3b327791f789991488bcf3065b"
+        },
+        {
+          "path": "assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+          "bytes": 24836,
+          "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 275,
+          "sha256": "c3096e3bb9d2bfc74bb586a25674dec82349075c6c20c1915a3f882431847f46"
+        },
+        {
+          "path": "frames/hero/even-01.webp",
+          "bytes": 20286,
+          "sha256": "dffa3a8c6aecb43480e83670179fc010fb5b7132ac421cab3431f708721d82ee"
+        },
+        {
+          "path": "frames/hero/even-02.webp",
+          "bytes": 20262,
+          "sha256": "05865c0f3699dfc6194305637b49800ec5b36f1dc9bd3e43d1fab7f744127375"
+        },
+        {
+          "path": "frames/hero/even-03.webp",
+          "bytes": 20272,
+          "sha256": "c870e954137671278683ee7f689416a6cf1dd5198373f20124ed1dac66f82ecd"
+        },
+        {
+          "path": "frames/hero/even-04.webp",
+          "bytes": 20026,
+          "sha256": "e1c208b254b10b56ec835c584870e91393def0a484bb05e022465030234426ee"
+        },
+        {
+          "path": "frames/hero/even-05.webp",
+          "bytes": 20124,
+          "sha256": "e0d6873c0815db7e43557363ab249b9b330f6550905e913167b13ff79a08e2f9"
+        },
+        {
+          "path": "frames/hero/even-06.webp",
+          "bytes": 20398,
+          "sha256": "8d69d6102e5ecb57f6a05cae43c7dbc57edc17bc204871d285fbc1c5b70d396f"
+        },
+        {
+          "path": "frames/hero/even-07.webp",
+          "bytes": 20334,
+          "sha256": "3089b79f68ee2b30b516b9b346ed8a7cd3c5071e2fe81d92edebc40d24bbb26a"
+        },
+        {
+          "path": "frames/hero/even-08.webp",
+          "bytes": 19950,
+          "sha256": "42452c2bf2cb31b2711daefe5f59e1f1bfa086ab6eff78c56ffef739d2ddfa53"
+        },
+        {
+          "path": "frames/hero/even-09.webp",
+          "bytes": 20114,
+          "sha256": "96aaa9aa6930a364531064b421d2c059c6e2edc14b9fed0ec396c79f2a0e9700"
+        },
+        {
+          "path": "frames/hero/even-10.webp",
+          "bytes": 19490,
+          "sha256": "f54b59b3f7781825a7291f343ab6d19f83ebdd9114f0a02e6407a28e5ec5ef6d"
+        },
+        {
+          "path": "frames/hero/even-11.webp",
+          "bytes": 20042,
+          "sha256": "f716b413ad45e8afa405af0ca54a3edb660a93e7215655f999b2638ef47d86a8"
+        },
+        {
+          "path": "frames/hero/even-12.webp",
+          "bytes": 19328,
+          "sha256": "a498b5772020278c3c340e8f5c6ae6b780bb9c96c08074c0be70ac85119a53b9"
+        },
+        {
+          "path": "frames/hero/even-13.webp",
+          "bytes": 19456,
+          "sha256": "e2556fecadf6cf8dea9838d391fbb1f82ed58c222489f5d630a2ed6e15edb314"
+        },
+        {
+          "path": "frames/hero/even-14.webp",
+          "bytes": 19510,
+          "sha256": "b46d661d14c7be0af6ad5990ec7f018806420c9994b27325913283e26e0843b0"
+        },
+        {
+          "path": "frames/hero/even-15.webp",
+          "bytes": 19430,
+          "sha256": "4973e1994fa7f8c8a0bfb37711f737832c0ca91f102a460c469bb32cb2fe1543"
+        },
+        {
+          "path": "frames/hero/even-16.webp",
+          "bytes": 19212,
+          "sha256": "36e30a85373677eee1b9586b93527047e35f62077544fa8492b380e6f1db49e9"
+        },
+        {
+          "path": "frames/hero/even-17.webp",
+          "bytes": 19732,
+          "sha256": "3c15798d2a4a831daae720c0f021633ef596d15760f15340cdca437f9b909657"
+        },
+        {
+          "path": "frames/hero/even-18.webp",
+          "bytes": 19452,
+          "sha256": "bcc59dc16b5c332758fad972893f5615145b42cf259799d8a49fa4ca2becda4f"
+        },
+        {
+          "path": "frames/hero/even-19.webp",
+          "bytes": 19370,
+          "sha256": "3962b6dd50cf4cc49f0e0f923721719a92a0a2371dfa093cf0550322a940ce69"
+        },
+        {
+          "path": "frames/hero/even-20.webp",
+          "bytes": 18924,
+          "sha256": "d81b5a7a0107fd620e76b12000526dd83d57de362bc8e49b337077e1275e3748"
+        },
+        {
+          "path": "frames/hero/even-21.webp",
+          "bytes": 19554,
+          "sha256": "609b33b257819af28ace1c27245375230a7b3cf51a27236e645666d8d12ddd90"
+        },
+        {
+          "path": "frames/hero/even-22.webp",
+          "bytes": 19672,
+          "sha256": "078abcc8a7ece8a9861a5f51273625051adebc81fb2774b8d62952dcf21a6d00"
+        },
+        {
+          "path": "frames/hero/even-23.webp",
+          "bytes": 19326,
+          "sha256": "27a3083e2fb8269a3bdf5d8a27ff4f1a246e3d2759ee063dfdd85d174d884ebb"
+        },
+        {
+          "path": "frames/hero/even-24.webp",
+          "bytes": 19290,
+          "sha256": "6bb3cfcab8fd4ba290484423b530beaa14d5c547c2d1f9f2ee526e4d94549276"
+        },
+        {
+          "path": "frames/hero/manifest.json",
+          "bytes": 4546,
+          "sha256": "08e6f39762d8e18ac1fbb42944bddcf13ddb73437229d39c1cadbf2f50523933"
+        },
+        {
+          "path": "frames/hero-portrait/even-01.webp",
+          "bytes": 13486,
+          "sha256": "4f088c639752c7a00aeb4343286ad940c20a42f3d41f32f62fcdd3f878baf8f4"
+        },
+        {
+          "path": "frames/hero-portrait/even-02.webp",
+          "bytes": 13520,
+          "sha256": "ba2e3e8bd8f1730561e9e2b44ae89475f8eca4125b08b15052320b3b644cf0c6"
+        },
+        {
+          "path": "frames/hero-portrait/even-03.webp",
+          "bytes": 13274,
+          "sha256": "21ec0cd58d2996f1b8bd32c27a85d6956d5f4ae912f6ea9c1049cee896cfb7e0"
+        },
+        {
+          "path": "frames/hero-portrait/even-04.webp",
+          "bytes": 13310,
+          "sha256": "519d8f85f9377859e681c50bf7b11fefc4915e2f128b13f776b2c1af7b7e5af7"
+        },
+        {
+          "path": "frames/hero-portrait/even-05.webp",
+          "bytes": 13234,
+          "sha256": "fe67c490071edb95b302bae35f69b417860ce7cd192bf76591f311a0c7f21865"
+        },
+        {
+          "path": "frames/hero-portrait/even-06.webp",
+          "bytes": 13372,
+          "sha256": "cb88c7b63bcc9afb342eb9f83e3c6ab19c96f79e888a5890f468e037564bdf3a"
+        },
+        {
+          "path": "frames/hero-portrait/even-07.webp",
+          "bytes": 13602,
+          "sha256": "6e357be0f773d366e8587ff52ca343fd603d486160b521d9d9d62523199a8742"
+        },
+        {
+          "path": "frames/hero-portrait/even-08.webp",
+          "bytes": 13414,
+          "sha256": "42587adb5d0fb8183182b42d536bee2aa4e4dc99df369bbeec16d338ff6fc3d1"
+        },
+        {
+          "path": "frames/hero-portrait/even-09.webp",
+          "bytes": 13844,
+          "sha256": "89f346a7a1470f050cba22428f0853b5e242b6ccd4eef00c13c1c8891c48b872"
+        },
+        {
+          "path": "frames/hero-portrait/even-10.webp",
+          "bytes": 13040,
+          "sha256": "bc831f2ba0eb303ff9b4396cc24bf19d69b7947a608a15c2bd552f2776d2c082"
+        },
+        {
+          "path": "frames/hero-portrait/even-11.webp",
+          "bytes": 13114,
+          "sha256": "19ebbdbe4481206be466edfffd5a25e1fcef31c9f0c515da205d4b7c98f9dfcf"
+        },
+        {
+          "path": "frames/hero-portrait/even-12.webp",
+          "bytes": 13308,
+          "sha256": "62804478332820505bec0fe214e15c731af1fea034e8dece06cd17821821c4be"
+        },
+        {
+          "path": "frames/hero-portrait/even-13.webp",
+          "bytes": 13328,
+          "sha256": "5a828036026e1f280b8b6205aa0e81e968adff254f4828ee7cdd21740a8126a4"
+        },
+        {
+          "path": "frames/hero-portrait/even-14.webp",
+          "bytes": 13220,
+          "sha256": "777adb13969b39fae33a2d5721c8adabf45a1c70da9c019f7a0d8479349120f4"
+        },
+        {
+          "path": "frames/hero-portrait/even-15.webp",
+          "bytes": 12914,
+          "sha256": "685123da6f2ddd9f4181d66930c8424cdda40e86d0e83d8afd794a0ac4f9c797"
+        },
+        {
+          "path": "frames/hero-portrait/even-16.webp",
+          "bytes": 13096,
+          "sha256": "877b4ae17da204e65f5d6d9c74ff3c445ff1c56a672e16b70dcc73f4b7bd4be8"
+        },
+        {
+          "path": "frames/hero-portrait/even-17.webp",
+          "bytes": 12998,
+          "sha256": "274fde91abf9508ad9a0bc0f5dde70e5224dad9ace41ba981927aaa5ad145f60"
+        },
+        {
+          "path": "frames/hero-portrait/even-18.webp",
+          "bytes": 12968,
+          "sha256": "9e9eff794026484bcfcc0b4827f662d76867e12a6d3dc896d983fff80bb45a4e"
+        },
+        {
+          "path": "frames/hero-portrait/even-19.webp",
+          "bytes": 12982,
+          "sha256": "cd578368b66f2323bd72851d48f0b4e516f3e143441bf779bd315b12f1fd9049"
+        },
+        {
+          "path": "frames/hero-portrait/even-20.webp",
+          "bytes": 12978,
+          "sha256": "231875498c897cba133d44ebced2407f66eafcf5f3eb3d3ab9e938fb8f346ed4"
+        },
+        {
+          "path": "frames/hero-portrait/even-21.webp",
+          "bytes": 13114,
+          "sha256": "11c00e78b96fe1402fdddd5da5cfef51e536331db4e02749a5f428caebfdce2f"
+        },
+        {
+          "path": "frames/hero-portrait/even-22.webp",
+          "bytes": 13442,
+          "sha256": "9252bdaa8f66f0a3f15dbc303fe460bf8ca6944bcd2a05d890a65a536b11141a"
+        },
+        {
+          "path": "frames/hero-portrait/even-23.webp",
+          "bytes": 13198,
+          "sha256": "6d22654cfff23847efab7e9bca85abd8228c61dc1d9deb566dc32512d507e152"
+        },
+        {
+          "path": "frames/hero-portrait/even-24.webp",
+          "bytes": 13146,
+          "sha256": "461c6d3a75e003ee4c9a220e1a00c87ca5d5d7256f7acb5b1602d5018b029562"
+        },
+        {
+          "path": "frames/hero-portrait/manifest.json",
+          "bytes": 4531,
+          "sha256": "b854d578023647a976c9df75e1d4dd160684213c23e1fdae98a60fb3b15842ba"
+        },
+        {
+          "path": "frames/landscape/ease-in-08.webp",
+          "bytes": 14978,
+          "sha256": "dca0a77205b1afe01de7fc548531dcdd97ab18c7869b3dd4834663dc0f6ad924"
+        },
+        {
+          "path": "frames/landscape/ease-in-09.webp",
+          "bytes": 15224,
+          "sha256": "4d9aad243ec04ce6cab1f86ce1105eb3684058ab4ad0b0c98fc76f9c0a4d167f"
+        },
+        {
+          "path": "frames/landscape/ease-in-10.webp",
+          "bytes": 15350,
+          "sha256": "7a9787699d33b3dbf03513c12def0cd11daa1c4034a5ccdf7a39c97ea89a24d1"
+        },
+        {
+          "path": "frames/landscape/ease-in-11.webp",
+          "bytes": 14928,
+          "sha256": "28c6d448d905a6e212b4f9cf436b96cebc20508a649d5528249a65e5e84e1496"
+        },
+        {
+          "path": "frames/landscape/ease-out-08.webp",
+          "bytes": 15324,
+          "sha256": "23c7836862a36c6e0a79e336614b344666dc932a18cf2a428cb00dd33f67fa91"
+        },
+        {
+          "path": "frames/landscape/ease-out-09.webp",
+          "bytes": 15128,
+          "sha256": "4886d2bcf693bf3051abcf8b6a02aa3aa8da741774646e005a351ef08934d917"
+        },
+        {
+          "path": "frames/landscape/ease-out-10.webp",
+          "bytes": 14446,
+          "sha256": "96597251a65134f3f5fcafe8bb2346a9a9370f05fa6a75f42831095098759a58"
+        },
+        {
+          "path": "frames/landscape/ease-out-11.webp",
+          "bytes": 14122,
+          "sha256": "cfb89360c666abb760a2107279f2035669e6e2914d7e4515ed7030a86d1035c5"
+        },
+        {
+          "path": "frames/landscape/even-01.webp",
+          "bytes": 15324,
+          "sha256": "90df22880e5e49fc5c8a3b2bc4a69f817c2b6690966d394bda2059d66b16f7a0"
+        },
+        {
+          "path": "frames/landscape/even-02.webp",
+          "bytes": 15386,
+          "sha256": "09f20daad06fd6d21f75e1fbf2843b66ed70ff51cd1b08bafd558bf97ce6ab20"
+        },
+        {
+          "path": "frames/landscape/even-03.webp",
+          "bytes": 15176,
+          "sha256": "5428706b381fdc19900ff0000e74cd85ea04ef8272a40f1b9cec4ce364f48ce1"
+        },
+        {
+          "path": "frames/landscape/even-04.webp",
+          "bytes": 15230,
+          "sha256": "c9c7b8f2dd50fb3aebd61fe866be12023f16c4591102b46fac727adef36e937b"
+        },
+        {
+          "path": "frames/landscape/even-05.webp",
+          "bytes": 15010,
+          "sha256": "0f0995a43a4dbb282f8ae393856a4cfa604d080de2802001d80a131992afe2e6"
+        },
+        {
+          "path": "frames/landscape/even-06.webp",
+          "bytes": 15290,
+          "sha256": "602406b1b287bafce6f0fa409e75612449f8bfc731a8aad86522b926b938a2b6"
+        },
+        {
+          "path": "frames/landscape/even-07.webp",
+          "bytes": 15316,
+          "sha256": "a7983ec57d47e7f2c969c3eb88ee1b72acaa2d5a667b52d85a0bf4845f1afdba"
+        },
+        {
+          "path": "frames/landscape/even-08.webp",
+          "bytes": 15284,
+          "sha256": "c0ade3057545dd67ff514f4878b11b257be6029894e7834f4ef8787d7fa3a3bd"
+        },
+        {
+          "path": "frames/landscape/even-09.webp",
+          "bytes": 15240,
+          "sha256": "66329ca815f1c0d1df8ca2ab741250c43763c4534252e0c85cfb12d1f2b25098"
+        },
+        {
+          "path": "frames/landscape/even-10.webp",
+          "bytes": 15186,
+          "sha256": "e407c8b917b41923f940969afcc343fb9dfa31fbfc2a5377d403549469ab0cc0"
+        },
+        {
+          "path": "frames/landscape/even-11.webp",
+          "bytes": 14634,
+          "sha256": "1343545f435db4b69f8ad82a39273b129c182773afd7812254672f66ea306ebc"
+        },
+        {
+          "path": "frames/landscape/even-12.webp",
+          "bytes": 14294,
+          "sha256": "9103a5113f229e068927b0a943c8b594b6ff9e1ec896bd631ce64bab72ce4f63"
+        },
+        {
+          "path": "frames/landscape/even-13.webp",
+          "bytes": 14014,
+          "sha256": "496ff84c44eeebcdea7c4128746f7a307ff9feb0e61b998c5bfbd1fb54065d5a"
+        },
+        {
+          "path": "frames/landscape/even-14.webp",
+          "bytes": 14016,
+          "sha256": "d62e4c70033aa02172805b473d6119de27d885805d7367e721066e7e2d38e8ba"
+        },
+        {
+          "path": "frames/landscape/even-15.webp",
+          "bytes": 14024,
+          "sha256": "3893c0b8e9b99b36812e381ce4d2c0ce3bfa4aa3bf6c1661726e96f903b48d7a"
+        },
+        {
+          "path": "frames/landscape/even-16.webp",
+          "bytes": 14204,
+          "sha256": "3a92033dacfa3fa9eb32f0d97b179d3568721da41895a6042bb4086622e86f2f"
+        },
+        {
+          "path": "frames/landscape/even-17.webp",
+          "bytes": 14024,
+          "sha256": "1a75af2534024a2647715c79942457c2a1d07d0be6e60ebc51fc73c0d8ff448d"
+        },
+        {
+          "path": "frames/landscape/even-18.webp",
+          "bytes": 13962,
+          "sha256": "b154570cf4344e8d11fcf9bd58161b49bbe969fe65850f8ccdd728aae421f8a2"
+        },
+        {
+          "path": "frames/landscape/even-19.webp",
+          "bytes": 13978,
+          "sha256": "0415cd01b538cb2cd6207a1f67b12da88123e493ae8df9b88c5b9bdcdf873028"
+        },
+        {
+          "path": "frames/landscape/even-20.webp",
+          "bytes": 14068,
+          "sha256": "1b72d69af6ce6ca860148987091b1507801cbe2cc55b5ca91effa70f8b0eee0f"
+        },
+        {
+          "path": "frames/landscape/even-21.webp",
+          "bytes": 14298,
+          "sha256": "e1f5e365c9f2683c6fd2e6493f6b81080c67ca3b6363cc3c7ea99a7bf7f5a675"
+        },
+        {
+          "path": "frames/landscape/even-22.webp",
+          "bytes": 14394,
+          "sha256": "bf44eae3067f272f8dba5b34c977cb0fc1239c137d89519756ddc7b7a5a641cb"
+        },
+        {
+          "path": "frames/landscape/even-23.webp",
+          "bytes": 14224,
+          "sha256": "e545eca564d5310dab5926dddc45e88cf0dd48874de4cfb23d646251dd67f266"
+        },
+        {
+          "path": "frames/landscape/even-24.webp",
+          "bytes": 14272,
+          "sha256": "9725651462e0b70848c00a10d695498b9517cba66c3fd5cb84cb6bb0c5a64790"
+        },
+        {
+          "path": "frames/manifest.json",
+          "bytes": 14015,
+          "sha256": "e339e55fcd20e272496f15c7e3b5854f2112abbeab9b19fdc98ea9dd4d3f6269"
+        },
+        {
+          "path": "frames/portrait/ease-in-08.webp",
+          "bytes": 9858,
+          "sha256": "5995909ef32cf01a60224c25ec8b7ed8ce1109afa2be43dd7e00df5763778be3"
+        },
+        {
+          "path": "frames/portrait/ease-in-09.webp",
+          "bytes": 9790,
+          "sha256": "88f3106ae51821687eb810d58ca43900950cc97f2e97cb6de409575da3b3ab3f"
+        },
+        {
+          "path": "frames/portrait/ease-in-10.webp",
+          "bytes": 9714,
+          "sha256": "acd6c52e3ad2860c242dc32b5486460252cfb0c2f0b6032dd115218a23c72a79"
+        },
+        {
+          "path": "frames/portrait/ease-in-11.webp",
+          "bytes": 9278,
+          "sha256": "9e0b4bdecb513e8b210f4e4b89dba70ac17e5e89b0dd449eac234937c5f6f856"
+        },
+        {
+          "path": "frames/portrait/ease-out-08.webp",
+          "bytes": 9724,
+          "sha256": "166e631914fc6dabea0e6c16008ee5d94eb27e1a8f118393a9b020ea0e66da26"
+        },
+        {
+          "path": "frames/portrait/ease-out-09.webp",
+          "bytes": 9258,
+          "sha256": "bb63f4d02544f94bf6bf73d9ce7347b616191a2b5eda232fcd4a8d3dc08e1416"
+        },
+        {
+          "path": "frames/portrait/ease-out-10.webp",
+          "bytes": 9006,
+          "sha256": "0296f96f941697f8b1f57c686f0977f138c6915316438def1f716eface3d4fa0"
+        },
+        {
+          "path": "frames/portrait/ease-out-11.webp",
+          "bytes": 9062,
+          "sha256": "35704db4b84167ec763cd95ec433e7d9ba4566fde1371e4853bef2f96aa1f3b3"
+        },
+        {
+          "path": "frames/portrait/even-01.webp",
+          "bytes": 10004,
+          "sha256": "6fdae010386acc3199ba57dbec11fc9508ba79a1d27c50bf821e2ee63cb3678b"
+        },
+        {
+          "path": "frames/portrait/even-02.webp",
+          "bytes": 9934,
+          "sha256": "3ec54d1fec25d697a585876c75ea4177c9b1cf08c543b95a55e5f9bd20821416"
+        },
+        {
+          "path": "frames/portrait/even-03.webp",
+          "bytes": 9968,
+          "sha256": "825cfcb345503cd96e65f194b5c7ef9bcb3b5c683d4c5c252c937a7426d3e57d"
+        },
+        {
+          "path": "frames/portrait/even-04.webp",
+          "bytes": 9988,
+          "sha256": "3e5d83ecaf20e3c5241eb14958cc069817757f074c4f62e4dc8a70c116373659"
+        },
+        {
+          "path": "frames/portrait/even-05.webp",
+          "bytes": 9930,
+          "sha256": "f63d714235312cd9f86a9de212b3eebee0e8607295df4da2132f7e671bee564e"
+        },
+        {
+          "path": "frames/portrait/even-06.webp",
+          "bytes": 9920,
+          "sha256": "98aaa9aa8c01704f1c2c596a2eacc81bd97041d0450f861d08709b4de345035b"
+        },
+        {
+          "path": "frames/portrait/even-07.webp",
+          "bytes": 9842,
+          "sha256": "e15c1d11c440154866dffb40b1c09fbcd75263ef35b332b160c551f8a0dd32fe"
+        },
+        {
+          "path": "frames/portrait/even-08.webp",
+          "bytes": 9594,
+          "sha256": "ea3a05514c6097ddf556bded50528da3b0f111687369645cef690e5783e45b62"
+        },
+        {
+          "path": "frames/portrait/even-09.webp",
+          "bytes": 9502,
+          "sha256": "5735ba556bbf4f6cc61a3ab963e34da52be015ab93cf9cea50a543a14289e1b7"
+        },
+        {
+          "path": "frames/portrait/even-10.webp",
+          "bytes": 9262,
+          "sha256": "fa86502bf8b1c1d0a061865941140fd0de486be87ed6924bf2d5761bdf2bb671"
+        },
+        {
+          "path": "frames/portrait/even-11.webp",
+          "bytes": 9064,
+          "sha256": "f1482d3cea5970cba0b88dfb15ead1e90249272dc9ab84fedd25167ea0217aff"
+        },
+        {
+          "path": "frames/portrait/even-12.webp",
+          "bytes": 9072,
+          "sha256": "afde29a8a0df65c9634b0f111c1a737cef99797b3bef40b843247cba5fcf8b4e"
+        },
+        {
+          "path": "frames/portrait/even-13.webp",
+          "bytes": 9046,
+          "sha256": "82a709ae19fb3bd375aebcadf8804be1ab3b9a093c7f452b755e35489624b753"
+        },
+        {
+          "path": "frames/portrait/even-14.webp",
+          "bytes": 8884,
+          "sha256": "7d80a7e4ee7abbb2a0049964452cdaab778fa239e5de2b97f12c820b012b437c"
+        },
+        {
+          "path": "frames/portrait/even-15.webp",
+          "bytes": 8918,
+          "sha256": "281cfb96a958a214492ee44e03d0700fc6654c5636c20dc7aa96a788fd904101"
+        },
+        {
+          "path": "frames/portrait/even-16.webp",
+          "bytes": 8978,
+          "sha256": "c4cd63ef1a2115eaa481ed4d9e1f1ca9df065f715c14b6c2e60d93eb336c0fc2"
+        },
+        {
+          "path": "frames/portrait/even-17.webp",
+          "bytes": 8996,
+          "sha256": "13ddd7b1388a58068433800de68927db8bc7093625a884c2ee41bd6f061bcdfa"
+        },
+        {
+          "path": "frames/portrait/even-18.webp",
+          "bytes": 8954,
+          "sha256": "c115e5d596c2fbdb5f85556756825db364b1e3dacd6be526a266f56a57d47f3d"
+        },
+        {
+          "path": "frames/portrait/even-19.webp",
+          "bytes": 9056,
+          "sha256": "04d72482c46a7512c41fc2d112867a2b0bca4044664c91d175556c242e3d2041"
+        },
+        {
+          "path": "frames/portrait/even-20.webp",
+          "bytes": 9160,
+          "sha256": "ebfba345daf4b5a0e7c5add4514a26bf61f4b5cea075cd38f3daee86b4ef672e"
+        },
+        {
+          "path": "frames/portrait/even-21.webp",
+          "bytes": 9182,
+          "sha256": "a7206afa1d9d17faad9e06fa1ce007deb920b2545c53d6b3b7a62b406270bdeb"
+        },
+        {
+          "path": "frames/portrait/even-22.webp",
+          "bytes": 9262,
+          "sha256": "9c757520479d0d91982a240dafe5f4f242048beff2cce7c302e7fc3f7e8a1398"
+        },
+        {
+          "path": "frames/portrait/even-23.webp",
+          "bytes": 9160,
+          "sha256": "fe6c722524c73854da3b22a4dcb6ba264f3901cef8c4aac294fa78b4d4cd335b"
+        },
+        {
+          "path": "frames/portrait/even-24.webp",
+          "bytes": 9208,
+          "sha256": "e193662795315ee5ac4154a9200bc45700327a0c7482c884eb6fe192041327c6"
+        },
+        {
+          "path": "index.html",
+          "bytes": 2182,
+          "sha256": "ad6be804e1091aaf1c65da1bf9e385eab6f5af5ce7a30cffe7b665414fda5fab"
+        },
+        {
+          "path": "production-art-manifest.json",
+          "bytes": 42304,
+          "sha256": "579698f4028dd81999ad4766a1114a7dde53c92f80630fb072838273421921f3"
+        },
+        {
+          "path": "qa.html",
+          "bytes": 23736,
+          "sha256": "9aa3215b785d610a1e3c1f4a6d2f3e44d1ecb98ec55199b2b272b27c87ee79a7"
+        },
+        {
+          "path": "stills/contact-landscape.webp",
+          "bytes": 24762,
+          "sha256": "2f2c43fb0f5898ffb2a5f479d9c0846ade52cd109ddb8e4dfbc5c278fd941465"
+        },
+        {
+          "path": "stills/contact-portrait.webp",
+          "bytes": 13060,
+          "sha256": "5d93d443db0928b1c21a7a9c0d38e33f58dc2ad9cc41a46ac0c3582edb9b2f72"
+        },
+        {
+          "path": "stills/ending-landscape.webp",
+          "bytes": 29682,
+          "sha256": "7085876ab00ac18d2b6defb8f1a49bbbc05bfbd8528b3092e2f05efb98164694"
+        },
+        {
+          "path": "stills/ending-portrait.webp",
+          "bytes": 18396,
+          "sha256": "62eff68ae9e8911d20ddda84ac47f0530f2a39f4f21ba4a5da044d8a99a039d0"
+        },
+        {
+          "path": "stills/glance-landscape.webp",
+          "bytes": 28360,
+          "sha256": "3e31ed7c96451420eca37d13bc3f42e861d0155441b70691cbdd606b0be597b9"
+        },
+        {
+          "path": "stills/glance-portrait.webp",
+          "bytes": 17548,
+          "sha256": "bf922156ce35db7bdc8062eaa97a497b759a8dcb3940fc8c4efc38b46430849a"
+        },
+        {
+          "path": "stills/overhead-landscape.webp",
+          "bytes": 25674,
+          "sha256": "bb95162cf9532fd16e05bbaf89fbf0d0f6d325680fc93c3a6da1fed0d484c85d"
+        },
+        {
+          "path": "stills/overhead-portrait.webp",
+          "bytes": 13296,
+          "sha256": "b8dda146b18ac1687193bc3bf0dbc4bc3d10c617f16d65b17ad35bc235349453"
+        },
+        {
+          "path": "stills/preparation-landscape.webp",
+          "bytes": 28624,
+          "sha256": "9ae438ba507d61b039143fe3f5b41c18e3d00f205e5b191319ba9c987221c866"
+        },
+        {
+          "path": "stills/preparation-portrait.webp",
+          "bytes": 17408,
+          "sha256": "5258068b7f57dfa488c83b04e7d778e03a4ff971d6c4bc23ec3556dc0fbfa6b5"
+        },
+        {
+          "path": "stills/pushing-landscape.webp",
+          "bytes": 25028,
+          "sha256": "f5f00103d270d74f90fe75ceb2a50247bd9483d3c730ea34643904c732e5aa4b"
+        },
+        {
+          "path": "stills/pushing-portrait.webp",
+          "bytes": 12774,
+          "sha256": "60bb5127ba4e168dee5cbb89b614cf087f6204a74281aa8bbb5b34468b08f29c"
+        },
+        {
+          "path": "stills/resting-landscape.webp",
+          "bytes": 28970,
+          "sha256": "78b039cdad62c7b40ef6e9a93c58da4dc7a98fb255ea4648bbd5fa66e6d8abd5"
+        },
+        {
+          "path": "stills/resting-portrait.webp",
+          "bytes": 15314,
+          "sha256": "c85184705901a7c0b319ee885c3deda5cbb4864fa11a5649dbbabed538539646"
+        }
+      ],
+      "fileCount": 136,
+      "bytes": 2108998,
+      "sha256": "599f600356c200efba4af3642c74f641f5ad93b31d4c57adbeb1252d2828b0b8",
+      "hashMethod": "SHA256 of compact key-sorted JSON array of sorted path/bytes/sha256 records."
+    }
+  },
+  "comparison": {
+    "FRAME.html": true,
+    "QA-PREVIEW.html": true,
+    "docs/offline-build.json": true,
+    "dist": true
+  },
+  "sourceInputsUnchangedDuringRun": true,
+  "extractedSourceInputsMatch": true,
+  "portableDeclarativeResources": {
+    "embeddedManifestPresent": true,
+    "nonEmbeddedScriptImageLinkReferences": [],
+    "cssUrls": 1,
+    "allCssUrlsEmbedded": true,
+    "scope": "Static entrypoint resource check only; this is not a browser or file:// execution result."
+  },
+  "portableEmbeddedNotices": {
+    "status": "pass",
+    "exactOriginalTexts": true,
+    "metadataMatches": true,
+    "notices": [
+      {
+        "name": "lenis",
+        "version": "1.3.27",
+        "license": "MIT",
+        "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+      },
+      {
+        "name": "@fontsource-variable/manrope",
+        "version": "5.3.0",
+        "license": "OFL-1.1",
+        "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+      }
+    ]
+  },
+  "completedAtUtc": "2026-11-09T05:26:00.647327+00:00"
+}

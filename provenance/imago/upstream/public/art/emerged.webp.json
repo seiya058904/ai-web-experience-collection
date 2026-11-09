@@ -1,0 +1,4 @@
+{
+  "prompt": "Precise image edit for matching a natural-history keyframe sequence. Image1 is the adult rest frame to edit; image2 is the exact branch/camera/background spatial template. Replace image1 branch with image2 branch at exactly its position, silk attachment at x=1110 y=270 on a 1536x1024 canvas. Keep ONE same adult and empty shell, adjust their group to hang from this attachment: shell top around y=330, shell bottom around y=550, adult below fully within y=960. Butterfly's wings remain short wrinkled and folded, body plump. Preserve anatomy and true foot contacts. Do NOT use image1's high branch y=100. Keep image2 ivory background and lower-right blurred leaf. No text, labels, extra butterfly or new objects. Spatial registration to image2 is essential; crisp natural texture.",
+  "createdAt": "2026-11-09T02:58:27.983Z"
+}

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4EBDD" />
+  <meta name="description" content="An old wooden dog. One stubborn wheel. A little sun worth keeping. MEND is an original, interactive story about care." />
+  <title>MEND — Still Yours</title>
+    <link rel="canonical" href="https://seiya058904.github.io%BASE_URL%mend/">
+    <meta property="og:site_name" content="AI Web Experience Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MEND — Still Yours">
+    <meta property="og:description" content="An old wooden dog. One stubborn wheel. A little sun worth keeping. MEND is an original, interactive story about care.">
+    <meta property="og:url" content="https://seiya058904.github.io%BASE_URL%mend/">
+    <meta property="og:image" content="https://seiya058904.github.io%BASE_URL%mend/art/hero-desktop.webp">
+    <meta property="og:image:alt" content="An AI-generated old wooden toy dog with one stubborn wheel in warm light">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MEND — Still Yours">
+    <meta name="twitter:description" content="An old wooden dog. One stubborn wheel. A little sun worth keeping. MEND is an original, interactive story about care.">
+    <meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%mend/art/hero-desktop.webp">
+    <link rel="stylesheet" href="/experiences/shared/collection-return.css">
+    <script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+  <link rel="icon" type="image/svg+xml" href="%BASE_URL%mend/favicon.svg" />
+  <link rel="preload" href="%BASE_URL%mend/fonts/newsreader-latin-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="%BASE_URL%mend/art/hero-desktop.webp" as="image" media="(min-width: 761px)" fetchpriority="high" />
+  <link rel="preload" href="%BASE_URL%mend/art/hero-mobile.webp" as="image" media="(max-width: 760px)" fetchpriority="high" />
+</head>
+<body>
+  <a class="skip-link" href="#chapter-01">Skip to the story</a>
+  <header class="site-header">
+    <a class="brand" href="#chapter-01" aria-label="MEND — back to the beginning">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="5.4"/><path d="M16 2v4m0 20v4M2 16h4m20 0h4M6 6l3 3m14 14 3 3M6 26l3-3m14-14 3-3"/></svg>
+      <span>MEND</span>
+    </a>
+    <span class="header-note">A small act of care.</span>
+    <nav class="header-actions" aria-label="Story controls">
+      <a class="collection-return" href="%BASE_URL%#world-mend" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a><button class="text-button" id="motion-toggle" type="button" aria-pressed="false">Motion <span id="motion-label">on</span></button>
+      <button class="text-button about-button" id="about-open" type="button">About</button>
+      <button class="menu-trigger" id="chapters-open" type="button" aria-haspopup="dialog" aria-controls="chapters-dialog">Chapters <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 12h14"/></svg></button>
+    </nav>
+  </header>
+
+  <div class="stage" id="stage" data-medium="photo" aria-hidden="true">
+    <picture class="opening-picture" id="opening-picture">
+      <source srcset="%BASE_URL%mend/art/hero-mobile.webp" media="(max-width: 760px)" />
+      <img id="opening-image" src="%BASE_URL%mend/art/hero-desktop.webp" alt="" width="1672" height="941" fetchpriority="high" decoding="async" />
+    </picture>
+    <img id="stage-photo" class="stage-photo" src="%BASE_URL%mend/art/inspection.webp" alt="" width="1536" height="1024" decoding="async" />
+    <canvas id="pip-canvas"></canvas>
+    <div class="stage-fade"></div>
+  </div>
+  <div id="hotspots" class="hotspots" hidden>
+    <button class="hotspot" data-focus="wheel" type="button" aria-label="Inspect the right rear wheel"><span>1</span></button>
+    <button class="hotspot" data-focus="ear" type="button" aria-label="Inspect the chipped right ear"><span>2</span></button>
+    <button class="hotspot" data-focus="paint" type="button" aria-label="Inspect the worn paint"><span>3</span></button>
+  </div>
+  <div class="scene-caption" id="scene-caption"><span class="caption-line"></span><span id="scene-label">Pip, on arrival.</span></div>
+  <p class="visually-hidden" id="scene-description" aria-live="off">Pip is an old cream-yellow wooden dog with four wheels, a red cord and a chipped ear. The right rear wheel leans inward.</p>
+  <p class="resource-notice" id="resource-notice" hidden></p>
+
+  <main id="story">
+    <section class="chapter hero" id="chapter-01" data-chapter="1" aria-labelledby="title-01">
+      <div class="chapter-body hero-body">
+        <h1 id="title-01" tabindex="-1">MEND</h1>
+        <p class="hero-subtitle">Still yours.</p>
+        <p class="hero-deck">A small story about<br />what we choose to keep.</p>
+        <p class="hero-introduction">This is Pip. One stubborn wheel. A little sun worth keeping.</p>
+        <div class="actions hero-actions">
+          <a class="button primary" href="#chapter-02">Meet Pip <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></a>
+          <button class="text-button pull-button" id="hero-pull" type="button">A gentle pull</button>
+        </div>
+        <p class="action-result" id="hero-result" role="status"></p>
+        <blockquote class="intake-note">
+          <span class="paper-pin" aria-hidden="true"></span>
+          <p>“Please help Pip walk a little farther.<br />Leave the sun underneath.”</p>
+          <cite>— Lan</cite>
+        </blockquote>
+      </div>
+      <a class="scroll-cue" href="#chapter-02"><span>Take a closer look</span><svg viewBox="0 0 20 28" aria-hidden="true"><path d="M10 2v22m-5-5 5 5 5-5"/></svg></a>
+    </section>
+
+    <section class="chapter" id="chapter-02" data-chapter="2" aria-labelledby="title-02">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">02 / 10</span>
+        <h2 id="title-02" tabindex="-1">A fault.<br /><em>A few familiar things.</em></h2>
+        <p class="chapter-intro">Not every mark asks to be mended.</p>
+        <div class="inspection-list" role="group" aria-label="Look closely at Pip">
+          <button data-focus="wheel" aria-pressed="true" class="inspection-item active" type="button"><span class="item-index">1</span><span class="inspect-thumb inspect-wheel" aria-hidden="true"><img src="%BASE_URL%mend/art/inspection.webp" alt="" width="1536" height="1024" loading="lazy" /></span><span>The reluctant wheel</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+          <button data-focus="ear" aria-pressed="false" class="inspection-item" type="button"><span class="item-index">2</span><span class="inspect-thumb inspect-ear" aria-hidden="true"><img src="%BASE_URL%mend/art/inspection.webp" alt="" width="1536" height="1024" loading="lazy" /></span><span>The chipped ear</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+          <button data-focus="paint" aria-pressed="false" class="inspection-item" type="button"><span class="item-index">3</span><span class="inspect-thumb inspect-paint" aria-hidden="true"><img src="%BASE_URL%mend/art/inspection.webp" alt="" width="1536" height="1024" loading="lazy" /></span><span>The places worn smooth</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        </div>
+        <div class="inspection-description" aria-live="polite"><p id="inspection-copy">The right rear wheel leans inward. Here, it catches against the body.</p><span id="inspection-kind" class="quiet-label">A small thing to put right.</span></div>
+        <a class="next-link" href="#chapter-03">And underneath <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></a>
+      </div>
+    </section>
+
+    <section class="chapter memory-chapter" id="chapter-03" data-chapter="3" aria-labelledby="title-03">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">03 / 10</span>
+        <h2 id="title-03" tabindex="-1">A little sun,<br /><em>underneath.</em></h2>
+        <p>Hidden from the room, but never forgotten.</p>
+        <p>A small, uneven sun lives on Pip’s belly. Beside it, three marks: Lan added one each time they moved house.</p>
+        <div class="memory-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p class="serif-aside">Three homes.<br />The same companion.</p>
+        <details class="story-detail">
+          <summary>See the little sun</summary>
+          <figure><img src="%BASE_URL%mend/art/underside.webp" width="1536" height="1024" loading="lazy" alt="Pip rests on two wood supports, showing the orange sun and three uneven move marks on the underside." /><figcaption>The sun and all three marks will stay.</figcaption></figure>
+        </details>
+      </div>
+    </section>
+
+    <section class="chapter" id="chapter-04" data-chapter="4" aria-labelledby="title-04">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">04 / 10</span>
+        <h2 id="title-04" tabindex="-1">One turn<br /><em>short.</em></h2>
+        <p>The wheel still turns. Its angle is what brings it to a stop.</p>
+        <p>It leans into the body, rubbing where there should be a little room.</p>
+        <div class="segmented" role="group" aria-label="Compare the wheel clearance">
+          <button id="fault-catch" class="selected" type="button" aria-pressed="true">Show the catch</button>
+          <button id="fault-clear" type="button" aria-pressed="false">Show the clearance</button>
+        </div>
+        <p class="action-result fault-result" id="fault-result" role="status">The tilted wheel touches the body.</p>
+        <div id="fault-diagram"></div>
+        <p class="serif-aside">The body.<br />The other three wheels.<br />All can stay.</p>
+        <p class="fine-note">A simplified view of Pip’s fictional mechanism.</p>
+      </div>
+    </section>
+
+    <section class="chapter choice-chapter" id="chapter-05" data-chapter="5" aria-labelledby="title-05">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">05 / 10</span>
+        <h2 id="title-05" tabindex="-1">What should<br /><em>stay?</em></h2>
+        <p>Two ways to give that wheel room to turn. Both leave Pip’s familiar marks alone.</p>
+        <fieldset class="repair-options">
+          <legend class="visually-hidden">Choose Pip’s repair</legend>
+          <label class="repair-option" id="option-A">
+            <input type="radio" name="repair-plan" value="A" checked />
+            <svg class="part-drawing" viewBox="0 0 72 72" aria-hidden="true"><circle class="old-part" cx="36" cy="36" r="24"/><path class="grain" d="M18 24q15 7 33-2M14 37q22 6 44-1M22 51q16-4 28-1"/><circle class="sleeve-part" cx="36" cy="36" r="10"/><circle class="axle-part" cx="36" cy="36" r="4"/></svg>
+            <span class="option-copy"><strong>Keep the old wheel</strong><span>Add a new sleeve around the axle. The original wheel stays on Pip.</span></span><span class="choice-check" aria-hidden="true"></span>
+          </label>
+          <label class="repair-option" id="option-B">
+            <input type="radio" name="repair-plan" value="B" />
+            <svg class="part-drawing" viewBox="0 0 72 72" aria-hidden="true"><circle class="new-part" cx="36" cy="36" r="24"/><path class="grain" d="M17 29q18-5 37 0M14 41q20-5 44 0"/><circle class="axle-part" cx="36" cy="36" r="5"/></svg>
+            <span class="option-copy"><strong>Fit a new wheel</strong><span>The original comes home in its own small bag.</span></span><span class="choice-check" aria-hidden="true"></span>
+          </label>
+        </fieldset>
+        <p class="choice-status" id="choice-status" role="status">Example choice — you can change it.</p>
+        <div class="actions"><a class="button primary" id="confirm-plan" href="#chapter-06">Continue with this care <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></a><button id="plan-reset" class="text-button" type="button">Reset choice</button></div>
+      </div>
+    </section>
+
+    <section class="chapter repair-chapter" id="chapter-06" data-chapter="6" aria-labelledby="title-06">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">06 / 10</span>
+        <h2 id="title-06" tabindex="-1">New,<br /><em>beside familiar.</em></h2>
+        <p id="repair-copy">A small new sleeve settles around the axle. The old wheel stays.</p>
+        <p>The difference is allowed to show. So is everything that came before.</p>
+        <div class="part-note"><span class="material-dot"></span><p id="part-label">Pale new sleeve. Original wooden wheel.</p></div>
+        <div id="fitting-diagram"></div>
+        <button id="seat-part" class="button outline" type="button">Watch the part settle <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z"/></svg></button>
+        <p class="action-result" id="seat-result" role="status"></p>
+        <details class="story-detail">
+          <summary>Keep a closer view</summary>
+          <figure><img id="repair-still" src="%BASE_URL%mend/art/repair-A.webp" width="1536" height="1024" loading="lazy" alt="Pip with the original right rear wheel retained and a new pale sleeve visible at the axle." /><figcaption id="repair-still-caption">The original wheel stays with Pip.</figcaption></figure>
+        </details>
+      </div>
+    </section>
+
+    <section class="chapter trial-chapter" id="chapter-07" data-chapter="7" aria-labelledby="title-07">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">07 / 10</span>
+        <h2 id="title-07" tabindex="-1">The first<br /><em>little step.</em></h2>
+        <p>The same short path. Before, the wheel catches. After the repair, Pip can follow the string to the end.</p>
+        <div id="trial-diagram"></div>
+        <div class="trial-track" aria-label="Trial walk progress">
+          <div class="track-rule"><span id="trial-progress"></span><i id="trial-marker"></i><i class="catch-mark"></i></div>
+          <div class="track-labels"><span>Start</span><span>The catch</span><span>A little farther</span></div>
+        </div>
+        <div class="actions trial-actions"><button class="button primary" id="trial-start" type="button">Try one walk <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z"/></svg></button><button class="button outline" id="trial-before" type="button">See before</button><button class="text-button" id="trial-reset" type="button">Reset</button></div>
+        <p class="trial-result" id="trial-result" role="status">Ready for a trial walk.</p>
+        <div class="reduced-steps" id="reduced-steps" hidden><span>Start</span><span>Before: stops at the catch</span><span>After: reaches the end</span></div>
+        <p class="fine-note">An observed result in this little digital world.</p>
+      </div>
+    </section>
+
+    <section class="chapter comparison-chapter" id="chapter-08" data-chapter="8" aria-labelledby="title-08">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">08 / 10</span>
+        <h2 id="title-08" tabindex="-1">Still unmistakably<br /><em>Pip.</em></h2>
+        <div class="segmented" role="group" aria-label="Compare Pip before and after repair"><button type="button" id="compare-before" aria-pressed="false">Before</button><button type="button" id="compare-after" class="selected" aria-pressed="true">After</button></div>
+        <div id="comparison-diagram"></div>
+        <p class="fine-note still-reference-note">The photograph holds the repaired details. The drawing compares the same pose.</p>
+        <ul class="kept-list"><li><span aria-hidden="true">01</span>The chipped right ear.</li><li><span aria-hidden="true">02</span>The places worn smooth.</li><li><span aria-hidden="true">03</span>The little sun underneath.</li></ul>
+        <p id="comparison-copy" role="status">The original wheel, with a little new help.</p>
+        <p class="serif-aside">Able to walk again.<br />Still the same one.</p>
+      </div>
+    </section>
+
+    <section class="chapter road-chapter" id="chapter-09" data-chapter="9" aria-labelledby="title-09">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">09 / 10</span>
+        <h2 id="title-09" tabindex="-1">A little<br /><em>farther.</em></h2>
+        <p>From the edge of the work mat,<br />into the light.</p>
+        <p class="road-second">The string reaches beyond the table.<br />Someone is waiting at the other end.</p>
+        <a class="next-link" href="#chapter-10">Follow the string <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5"/></svg></a>
+      </div>
+    </section>
+
+    <section class="chapter return-chapter" id="chapter-10" data-chapter="10" aria-labelledby="title-10">
+      <div class="chapter-body">
+        <span class="chapter-number" aria-hidden="true">10 / 10</span>
+        <h2 id="title-10" tabindex="-1">Yours,<br /><em>again.</em></h2>
+        <blockquote class="return-letter"><p>“I painted the sun when I was little.<br />Now He would like to take Pip for a walk.”</p><cite>— Lan</cite></blockquote>
+        <article class="repair-card" aria-labelledby="repair-card-title">
+          <div class="repair-card-head"><h3 id="repair-card-title">A record of care</h3><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="5.4"/><path d="M16 2v4m0 20v4M2 16h4m20 0h4M6 6l3 3m14 14 3 3M6 26l3-3m14-14 3-3"/></svg></div>
+          <dl><div><dt>Companion</dt><dd>Pip</dd></div><div><dt>Care given</dt><dd id="record-plan">Original wheel retained. New sleeve fitted.</dd></div><div><dt>Kept</dt><dd>Chipped ear, worn paint, little sun.</dd></div><div><dt>Coming home</dt><dd id="record-return">Pip and this record. The original wheel is still on Pip.</dd></div><div><dt>Trial walk</dt><dd id="record-trial">Not run.</dd></div></dl>
+          <button id="download-record" class="text-button download-button" type="button">Keep this repair card <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11m-4-4 4 4 4-4M3 14v3h14v-3"/></svg></button>
+        </article>
+        <p class="ending-line">Some things are worth<br /><em>carrying forward.</em></p>
+        <div class="ending-actions"><a class="next-link" href="#chapter-05">Change the repair <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H3m5-5-5 5 5 5"/></svg></a><a class="text-button" href="#chapter-01">Back to the beginning</a></div>
+        <details class="story-detail recap"><summary>Look back at the care</summary><p>We found one wheel rubbing against the body. The ear, the worn paint and the little sun did not need to disappear.</p><p id="recap-choice">The original wheel stayed on Pip, with a new sleeve to give it room.</p><p id="recap-trial">You can visit the short path to try the repair yourself.</p><a class="next-link" href="#chapter-07">Return to the short path</a></details>
+        <p class="end-credit">An original, fictional story. Made to be taken slowly.</p>
+      </div>
+    </section>
+  </main>
+
+  <nav class="chapter-rail" aria-label="Jump to a chapter">
+    <a href="#chapter-01" aria-label="Chapter 1: Arrival" aria-current="step"><span>01</span></a><a href="#chapter-02" aria-label="Chapter 2: Marks"><span>02</span></a><a href="#chapter-03" aria-label="Chapter 3: The sun"><span>03</span></a><a href="#chapter-04" aria-label="Chapter 4: The catch"><span>04</span></a><a href="#chapter-05" aria-label="Chapter 5: The choice"><span>05</span></a><a href="#chapter-06" aria-label="Chapter 6: The repair"><span>06</span></a><a href="#chapter-07" aria-label="Chapter 7: First steps"><span>07</span></a><a href="#chapter-08" aria-label="Chapter 8: Still Pip"><span>08</span></a><a href="#chapter-09" aria-label="Chapter 9: Into the light"><span>09</span></a><a href="#chapter-10" aria-label="Chapter 10: Going home"><span>10</span></a>
+  </nav>
+  <footer class="story-footer" aria-label="Story position"><span><b id="chapter-count">01</b> / 10</span><span id="chapter-name">Arrival</span><span class="footer-line"><i id="story-progress"></i></span><button id="view-toggle" class="text-button" type="button" aria-pressed="false">Still views</button></footer>
+
+  <dialog id="chapters-dialog" aria-labelledby="chapters-title" data-lenis-prevent>
+    <div class="dialog-heading"><h2 id="chapters-title">A little journey.</h2><button class="icon-button dialog-close" type="button" aria-label="Close chapters"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16"/></svg></button></div>
+    <nav aria-label="All chapters" class="chapter-menu"><a href="#chapter-01"><span>01</span>Arrival</a><a href="#chapter-02"><span>02</span>Marks, and what they mean</a><a href="#chapter-03"><span>03</span>The sun underneath</a><a href="#chapter-04"><span>04</span>The catch</a><a href="#chapter-05"><span>05</span>What should stay?</a><a href="#chapter-06"><span>06</span>New, beside familiar</a><a href="#chapter-07"><span>07</span>The first little step</a><a href="#chapter-08"><span>08</span>Still unmistakably Pip</a><a href="#chapter-09"><span>09</span>Into the light</a><a href="#chapter-10"><span>10</span>Yours, again</a></nav>
+    <p>Your repair choice stays with you as you look around.</p>
+  </dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title" data-lenis-prevent>
+    <div class="dialog-heading"><h2 id="about-title">About this story.</h2><button class="icon-button dialog-close" type="button" aria-label="Close about this story"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16"/></svg></button></div>
+    <p>MEND is a small, original fiction about care: helping something old take part in life again, without taking away the things that make it familiar.</p>
+    <p>Pip, Lan, He and the two repair options are invented. The moving model is an illustration, not a real repair procedure or evidence that a physical toy is safe to use.</p>
+    <p>Use the chapter links at any time. Nothing needs to finish playing before you move on. Motion can be reduced; still views preserve the whole story and its controls.</p>
+    <p class="fine-note">The artwork is AI-generated and the interactive object is purpose-built. No account, tracking or external service is used while you visit. Your repair choice can stay in this browser.</p>
+    <details class="story-detail"><summary>Ideas that informed the care</summary><p>We borrowed the principles of understanding wear, intervening with restraint, distinguishing new materials and recording changes.</p><ul><li><a href="https://www.history.sa.gov.au/resource/conserve-preserve-restore-what-is-the-difference/" target="_blank" rel="noopener noreferrer">History Trust of South Australia</a></li><li><a href="https://www.fieldmuseum.org/page/treatment" target="_blank" rel="noopener noreferrer">Field Museum</a></li></ul></details>
+  </dialog>
+  <p class="visually-hidden" id="global-status" role="status"></p>
+  <noscript><div class="no-script-note">The complete story is readable below. Enable JavaScript to choose a repair and try Pip’s short walk.</div><style>.stage,.chapter-rail,.story-footer,.scroll-cue{display:none}.chapter{min-height:auto}.chapter-body{padding-top:6rem;padding-bottom:3rem;max-width:42rem;width:auto}main{position:relative}</style></noscript>
+  <script type="module" src="../../experiences/mend/src/main.ts"></script>
+</body>
+</html>

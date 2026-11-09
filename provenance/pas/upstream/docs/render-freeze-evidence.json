@@ -1,0 +1,74 @@
+{
+  "density": 200,
+  "frameCounts": {
+    "unison": 2001,
+    "echo": 153
+  },
+  "sourceHashes": {
+    "src/motion.ts": "3523c96a5932e26010f1edcb07f121ee97fd7c66a8d27e278dff2e157e3585d9",
+    "src/character-metrics.ts": "415bae415514d9ee6299025123e8a701d8a1b129ad055b9fa8b5a293d674c0ef",
+    "src/render/character.ts": "28a078bee8f8a4f274f1510e7b6e4ec6aec0c1484e0d05090ad6d0a0c1e8412b"
+  },
+  "packetHashes": {
+    "frames-echo.bin": "993c99bc30a1f518779240f51f2526b56bc570c27998e58d10fd513ee16320bb",
+    "frames-echo.json": "a80ff4714fbe34ef962d9f97128d88b97d9f5195a991d6faefe80638f3be60c3",
+    "frames-unison.bin": "50c8a7f4f309ac0ee63d54e798553a8915f16e95d23a144edadc2b3e4b112d2a",
+    "frames-unison.json": "bfea9aacee771bc42d42f68034cacb3b71b02e2962b7b011a3439550ec03447c",
+    "rig.bin": "5b972037d855c2c32385a2fc8b5f796eef9d82ceb62938954e6d04192c31fd4c",
+    "rig.json": "15734a2401e5d2ae0708c5971622bcd37767aac4ec3d720ff86473003bdfbe10"
+  },
+  "numericalChecks": {
+    "motionTests": 18,
+    "motionTestsPassed": 18,
+    "typescript": "passed",
+    "outsidePoseCameraContactSamples": 1529,
+    "outsidePoseCameraContactExactEquality": true,
+    "preservedEndpoints": [
+      1.76,
+      2.89,
+      4.76,
+      6.0
+    ],
+    "modifiedFrameIndices": [
+      [
+        353,
+        577
+      ],
+      [
+        953,
+        1199
+      ]
+    ],
+    "travelledPathNote": "The actual travelled-path history intentionally records the corrected Cheng route after CH06."
+  },
+  "meshChecksReportedByRenderer": {
+    "palm": {
+      "t": 2.35,
+      "wristDegrees": {
+        "cen": 16.9370897671,
+        "cheng": 14.1755485345
+      },
+      "minOpposedSurfaceGapMm": 0.7655,
+      "sampledPenetrations": 0,
+      "surfaceSamples": 51490,
+      "surfaceGridMm": 0.3,
+      "maxRotationStepDegrees": {
+        "cen": 4.9495,
+        "cheng": 4.814
+      }
+    },
+    "crossing": {
+      "interval": [
+        5.25,
+        5.45
+      ],
+      "samples": 41,
+      "step": 0.005,
+      "minNearestMeshVertexClearanceMm": 16.829,
+      "minUpperbodyDepthSeparationMm": 19.11,
+      "maxMatrixRotationStepDegrees": 4.762,
+      "endpointMatricesExact": true
+    }
+  },
+  "visualReview": "V4 oblique palm proof inspected by choreography, editorial and root. Full final native render is a separate pending artifact review."
+}

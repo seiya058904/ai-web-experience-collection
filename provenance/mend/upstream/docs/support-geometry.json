@@ -1,0 +1,1553 @@
+{
+  "scope": "Actual scene.ts body extrusion and support helper geometry; no browser/rendering claim",
+  "source": {
+    "file": "src/scene.ts",
+    "sha256": "ab4444baa7971142ae9f7477e379c6e1fdd5659fa3669c43f73fcfad4c9e3055",
+    "three": "187"
+  },
+  "reproduction": {
+    "body": "extruded(silhouette(), .43, .065)",
+    "pivot_z": -0.58,
+    "parts_z": 0.58,
+    "roll_sample_count": 104,
+    "roll_range": [
+      0,
+      -1.03
+    ],
+    "roll_step": 0.01,
+    "support_count": 2,
+    "roof_grid": "9 by 9 per support, 0.0000001 inset from Float32 boundary",
+    "direction": "Ray upward from y=-2 for actual body underside; downward from y=3 for actual support roof",
+    "ray_query_count": 33696
+  },
+  "results": {
+    "penetrations": 0,
+    "missed_support_roof_rays": 0,
+    "body_intersections": 11302,
+    "minimum_body_support_clearance": 0.0014999857964882457,
+    "maximum_nearest_contact_gap_from_roll_minus_055": 0.0018042949775385342,
+    "support_base_world_y": [
+      0.012000000104308128,
+      0.012000000104308128
+    ],
+    "mat_surface_y": 0.012,
+    "sun_view_rays": 25,
+    "sun_occlusions_by_supports": 0,
+    "third_move_mark_center_y": 0.586,
+    "final_pose": [
+      {
+        "roll": -1.03,
+        "support": 1,
+        "world_z": -0.81,
+        "body_hits": 81,
+        "minimum_clearance": 0.0014999857964882457
+      },
+      {
+        "roll": -1.03,
+        "support": 2,
+        "world_z": -0.81,
+        "body_hits": 81,
+        "minimum_clearance": 0.0014999902257870623
+      }
+    ]
+  },
+  "properties": {
+    "rigid_geometry": true,
+    "base_stays_on_mat": true,
+    "reverse_uses_same_roll_function": true,
+    "local_sun_x_interval": [
+      -0.205,
+      0.345
+    ],
+    "support_x_intervals": [
+      [
+        -0.6100000000000001,
+        -0.49000000000000005
+      ],
+      [
+        0.5,
+        0.6200000000000001
+      ]
+    ],
+    "wheel_x_clearance_minimum": 0.15
+  },
+  "support_profiles": [
+    {
+      "x": -0.55,
+      "z": -0.81,
+      "roofCenter": 0.7460421826594017,
+      "slopeX": -0.10382894686328248,
+      "localBottom": 0.5820275705564123
+    },
+    {
+      "x": 0.56,
+      "z": -0.81,
+      "roofCenter": 0.737735092396264,
+      "slopeX": 0.07623031888848164,
+      "localBottom": 0.5777509239420822
+    }
+  ],
+  "tilt_samples": [
+    {
+      "roll": 0,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": 0,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.01,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.01,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.02,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.02,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.03,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.03,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.04,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.04,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.05,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.05,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.06,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.06,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.07,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.07,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.08,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.08,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.09,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.09,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.1,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.1,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.11,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.11,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.12,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.12,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.13,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.13,
+      "support": 2,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.14,
+      "support": 1,
+      "world_z": 1.19,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.14,
+      "support": 2,
+      "world_z": 1.1899931539398083,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.15,
+      "support": 1,
+      "world_z": 1.0922608257681747,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.15,
+      "support": 2,
+      "world_z": 1.0606625329975783,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.16,
+      "support": 1,
+      "world_z": 0.9765629250232659,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.16,
+      "support": 2,
+      "world_z": 0.9470207331824909,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.17,
+      "support": 1,
+      "world_z": 0.8740214879167398,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.17,
+      "support": 2,
+      "world_z": 0.8462984739924377,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.18,
+      "support": 1,
+      "world_z": 0.7824430937013029,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.18,
+      "support": 2,
+      "world_z": 0.7563418290095907,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.19,
+      "support": 1,
+      "world_z": 0.7000960544102015,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.19,
+      "support": 2,
+      "world_z": 0.6754502904241955,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.2,
+      "support": 1,
+      "world_z": 0.6255949814671102,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.2,
+      "support": 2,
+      "world_z": 0.6022634141896166,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.21,
+      "support": 1,
+      "world_z": 0.5578183332533322,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.21,
+      "support": 2,
+      "world_z": 0.5356798522647845,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.22,
+      "support": 1,
+      "world_z": 0.49584844969126074,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.22,
+      "support": 2,
+      "world_z": 0.47479846696157413,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.23,
+      "support": 1,
+      "world_z": 0.43892722996946887,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.23,
+      "support": 2,
+      "world_z": 0.4188748067563872,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.24,
+      "support": 1,
+      "world_z": 0.3864228908263403,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.24,
+      "support": 2,
+      "world_z": 0.3672884631387565,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.25,
+      "support": 1,
+      "world_z": 0.3378047028357414,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.25,
+      "support": 2,
+      "world_z": 0.3195182618065018,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.26,
+      "support": 1,
+      "world_z": 0.2926235567709914,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.26,
+      "support": 2,
+      "world_z": 0.2751231789601709,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.27,
+      "support": 1,
+      "world_z": 0.2504968485452297,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.27,
+      "support": 2,
+      "world_z": 0.23372749841165463,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.28,
+      "support": 1,
+      "world_z": 0.21109660308397094,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.28,
+      "support": 2,
+      "world_z": 0.19500914930331592,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.29,
+      "support": 1,
+      "world_z": 0.1741400553185103,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.29,
+      "support": 2,
+      "world_z": 0.15869045670394155,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.3,
+      "support": 1,
+      "world_z": 0.13938211497185093,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.3,
+      "support": 2,
+      "world_z": 0.12453074207680537,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.31,
+      "support": 1,
+      "world_z": 0.10660928976454243,
+      "body_hits": 0,
+      "minimum_clearance": null
+    },
+    {
+      "roll": -0.31,
+      "support": 2,
+      "world_z": 0.09232035590666865,
+      "body_hits": 9,
+      "minimum_clearance": 0.17580714621439775
+    },
+    {
+      "roll": -0.32,
+      "support": 1,
+      "world_z": 0.07563474801093517,
+      "body_hits": 18,
+      "minimum_clearance": 0.16779519006288535
+    },
+    {
+      "roll": -0.32,
+      "support": 2,
+      "world_z": 0.061875829200823906,
+      "body_hits": 27,
+      "minimum_clearance": 0.14705181588831773
+    },
+    {
+      "roll": -0.33,
+      "support": 1,
+      "world_z": 0.04629427891686533,
+      "body_hits": 27,
+      "minimum_clearance": 0.13689125521071466
+    },
+    {
+      "roll": -0.33,
+      "support": 2,
+      "world_z": 0.03303590652714217,
+      "body_hits": 36,
+      "minimum_clearance": 0.1170788602355094
+    },
+    {
+      "roll": -0.34,
+      "support": 1,
+      "world_z": 0.0184429657577464,
+      "body_hits": 41,
+      "minimum_clearance": 0.11134828086041626
+    },
+    {
+      "roll": -0.34,
+      "support": 2,
+      "world_z": 0.005658279096085073,
+      "body_hits": 47,
+      "minimum_clearance": 0.09194775777858699
+    },
+    {
+      "roll": -0.35,
+      "support": 1,
+      "world_z": -0.008047570639128865,
+      "body_hits": 54,
+      "minimum_clearance": 0.08885361923660384
+    },
+    {
+      "roll": -0.35,
+      "support": 2,
+      "world_z": -0.020383122122232922,
+      "body_hits": 63,
+      "minimum_clearance": 0.0699134744389922
+    },
+    {
+      "roll": -0.36,
+      "support": 1,
+      "world_z": -0.03329146900070046,
+      "body_hits": 63,
+      "minimum_clearance": 0.06743768735149969
+    },
+    {
+      "roll": -0.36,
+      "support": 2,
+      "world_z": -0.04520038214177258,
+      "body_hits": 72,
+      "minimum_clearance": 0.049084994873781485
+    },
+    {
+      "roll": -0.37,
+      "support": 1,
+      "world_z": -0.05739055221849865,
+      "body_hits": 72,
+      "minimum_clearance": 0.04733322034836496
+    },
+    {
+      "roll": -0.37,
+      "support": 2,
+      "world_z": -0.06889349191587346,
+      "body_hits": 81,
+      "minimum_clearance": 0.02943068986489572
+    },
+    {
+      "roll": -0.38,
+      "support": 1,
+      "world_z": -0.08043594808102217,
+      "body_hits": 81,
+      "minimum_clearance": 0.028522727204819742
+    },
+    {
+      "roll": -0.38,
+      "support": 2,
+      "world_z": -0.09155193988634469,
+      "body_hits": 81,
+      "minimum_clearance": 0.010925393531303729
+    },
+    {
+      "roll": -0.39,
+      "support": 1,
+      "world_z": -0.10250946067046829,
+      "body_hits": 81,
+      "minimum_clearance": 0.010708689915596148
+    },
+    {
+      "roll": -0.39,
+      "support": 2,
+      "world_z": -0.11325605868656452,
+      "body_hits": 81,
+      "minimum_clearance": 0.004013046517549523
+    },
+    {
+      "roll": -0.4,
+      "support": 1,
+      "world_z": -0.1236847360576957,
+      "body_hits": 81,
+      "minimum_clearance": 0.004100408819741386
+    },
+    {
+      "roll": -0.4,
+      "support": 2,
+      "world_z": -0.13407816984677434,
+      "body_hits": 81,
+      "minimum_clearance": 0.001627753171762114
+    },
+    {
+      "roll": -0.41,
+      "support": 1,
+      "world_z": -0.1440282574153695,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017300561562717531
+    },
+    {
+      "roll": -0.41,
+      "support": 2,
+      "world_z": -0.15408356098913378,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016283001542469755
+    },
+    {
+      "roll": -0.42,
+      "support": 1,
+      "world_z": -0.16360019797973013,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016885041581558013
+    },
+    {
+      "roll": -0.42,
+      "support": 2,
+      "world_z": -0.17333132343104463,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016288647832350955
+    },
+    {
+      "roll": -0.43,
+      "support": 1,
+      "world_z": -0.18245515500205156,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016893574272260903
+    },
+    {
+      "roll": -0.43,
+      "support": 2,
+      "world_z": -0.19187507292112627,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016294474072287013
+    },
+    {
+      "roll": -0.44,
+      "support": 1,
+      "world_z": -0.2006427836233926,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016902375699974215
+    },
+    {
+      "roll": -0.44,
+      "support": 2,
+      "world_z": -0.20976357210051344,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016300483895757
+    },
+    {
+      "roll": -0.45,
+      "support": 1,
+      "world_z": -0.2182083462402733,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016911451410444034
+    },
+    {
+      "roll": -0.45,
+      "support": 2,
+      "world_z": -0.22704126997679275,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016306681090683117
+    },
+    {
+      "roll": -0.46,
+      "support": 1,
+      "world_z": -0.23519319022149898,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016920807184812592
+    },
+    {
+      "roll": -0.46,
+      "support": 2,
+      "world_z": -0.24374877103923798,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016313069605837782
+    },
+    {
+      "roll": -0.47,
+      "support": 1,
+      "world_z": -0.25163516464739666,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016930449049463725
+    },
+    {
+      "roll": -0.47,
+      "support": 2,
+      "world_z": -0.25992324449445003,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016319653557468339
+    },
+    {
+      "roll": -0.48,
+      "support": 1,
+      "world_z": -0.2675689849641696,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016940383286432326
+    },
+    {
+      "roll": -0.48,
+      "support": 2,
+      "world_z": -0.27559878235498747,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016326437236471314
+    },
+    {
+      "roll": -0.49,
+      "support": 1,
+      "world_z": -0.2830265529942302,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016950616444376676
+    },
+    {
+      "roll": -0.49,
+      "support": 2,
+      "world_z": -0.2908067136878629,
+      "body_hits": 81,
+      "minimum_clearance": 0.001633342511586422
+    },
+    {
+      "roll": -0.5,
+      "support": 1,
+      "world_z": -0.2980372385528307,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016961155350221357
+    },
+    {
+      "roll": -0.5,
+      "support": 2,
+      "world_z": -0.305575881160677,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016340621858778048
+    },
+    {
+      "roll": -0.51,
+      "support": 1,
+      "world_z": -0.31262812794087186,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016972007121485166
+    },
+    {
+      "roll": -0.51,
+      "support": 2,
+      "world_z": -0.31993288506038087,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016348032326813922
+    },
+    {
+      "roll": -0.52,
+      "support": 1,
+      "world_z": -0.3268242437730306,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016983179179337338
+    },
+    {
+      "roll": -0.52,
+      "support": 2,
+      "world_z": -0.33390229916351366,
+      "body_hits": 81,
+      "minimum_clearance": 0.001635566158899593
+    },
+    {
+      "roll": -0.53,
+      "support": 1,
+      "world_z": -0.34064873992727096,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016994679262393175
+    },
+    {
+      "roll": -0.53,
+      "support": 2,
+      "world_z": -0.34750686217580906,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016363514931211354
+    },
+    {
+      "roll": -0.54,
+      "support": 1,
+      "world_z": -0.3541230748409134,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017006515441408965
+    },
+    {
+      "roll": -0.54,
+      "support": 2,
+      "world_z": -0.3607676479082651,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016371597866239318
+    },
+    {
+      "roll": -0.55,
+      "support": 1,
+      "world_z": -0.36726716590932346,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017018696134771805
+    },
+    {
+      "roll": -0.55,
+      "support": 2,
+      "world_z": -0.3737042168961216,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016379916144277917
+    },
+    {
+      "roll": -0.56,
+      "support": 1,
+      "world_z": -0.3800995273495651,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017031230125013064
+    },
+    {
+      "roll": -0.56,
+      "support": 2,
+      "world_z": -0.3863347517805438,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016388475764315125
+    },
+    {
+      "roll": -0.57,
+      "support": 1,
+      "world_z": -0.39263739355981403,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017044126576268859
+    },
+    {
+      "roll": -0.57,
+      "support": 2,
+      "world_z": -0.3986761784472475,
+      "body_hits": 81,
+      "minimum_clearance": 0.001639728298597376
+    },
+    {
+      "roll": -0.58,
+      "support": 1,
+      "world_z": -0.4048968297252219,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017057395052860747
+    },
+    {
+      "roll": -0.58,
+      "support": 2,
+      "world_z": -0.41074427464122876,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016406344342277945
+    },
+    {
+      "roll": -0.59,
+      "support": 1,
+      "world_z": -0.4168928311835436,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017071045539011065
+    },
+    {
+      "roll": -0.59,
+      "support": 2,
+      "world_z": -0.4225537675436629,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016415666653037952
+    },
+    {
+      "roll": -0.6,
+      "support": 1,
+      "world_z": -0.42863941286207546,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017085088459798392
+    },
+    {
+      "roll": -0.6,
+      "support": 2,
+      "world_z": -0.43411842159890623,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016425257039227592
+    },
+    {
+      "roll": -0.61,
+      "support": 1,
+      "world_z": -0.44014968992545195,
+      "body_hits": 81,
+      "minimum_clearance": 0.001709953470347081
+    },
+    {
+      "roll": -0.61,
+      "support": 2,
+      "world_z": -0.44545111771062396,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016435122938218694
+    },
+    {
+      "roll": -0.62,
+      "support": 1,
+      "world_z": -0.45143595062681025,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017114395645114744
+    },
+    {
+      "roll": -0.62,
+      "support": 2,
+      "world_z": -0.45656392478169094,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016445272119920418
+    },
+    {
+      "roll": -0.63,
+      "support": 1,
+      "world_z": -0.4625097222288158,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017129683171939192
+    },
+    {
+      "roll": -0.63,
+      "support": 2,
+      "world_z": -0.46746816444874584,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016455712704064318
+    },
+    {
+      "roll": -0.64,
+      "support": 1,
+      "world_z": -0.473381830752728,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017145409710153103
+    },
+    {
+      "roll": -0.64,
+      "support": 2,
+      "world_z": -0.4781744697559349,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016466453178578533
+    },
+    {
+      "roll": -0.65,
+      "support": 1,
+      "world_z": -0.4840624552203801,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017161588253628013
+    },
+    {
+      "roll": -0.65,
+      "support": 2,
+      "world_z": -0.4886928384207446,
+      "body_hits": 81,
+      "minimum_clearance": 0.001647750241912771
+    },
+    {
+      "roll": -0.66,
+      "support": 1,
+      "world_z": -0.4945611769733701,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017178232394434723
+    },
+    {
+      "roll": -0.66,
+      "support": 2,
+      "world_z": -0.49903268126569544,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016488869710029608
+    },
+    {
+      "roll": -0.67,
+      "support": 1,
+      "world_z": -0.5048870245839859,
+      "body_hits": 81,
+      "minimum_clearance": 0.001719535635548608
+    },
+    {
+      "roll": -0.67,
+      "support": 2,
+      "world_z": -0.5092028663211631,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016500564766497305
+    },
+    {
+      "roll": -0.68,
+      "support": 1,
+      "world_z": -0.5150485148118785,
+      "body_hits": 81,
+      "minimum_clearance": 0.00172129750253891
+    },
+    {
+      "roll": -0.68,
+      "support": 2,
+      "world_z": -0.5192117590451598,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016512597758473468
+    },
+    {
+      "roll": -0.69,
+      "support": 1,
+      "world_z": -0.5250536900078534,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017231103995611896
+    },
+    {
+      "roll": -0.69,
+      "support": 2,
+      "world_z": -0.5290672590542218,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016524979336030032
+    },
+    {
+      "roll": -0.7,
+      "support": 1,
+      "world_z": -0.5349101523202912,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017249759600327375
+    },
+    {
+      "roll": -0.7,
+      "support": 2,
+      "world_z": -0.5387768337145138,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016537720656549793
+    },
+    {
+      "roll": -0.71,
+      "support": 1,
+      "world_z": -0.5446250950196619,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017268958958982505
+    },
+    {
+      "roll": -0.71,
+      "support": 2,
+      "world_z": -0.5483475489029308,
+      "body_hits": 81,
+      "minimum_clearance": 0.001655083341382535
+    },
+    {
+      "roll": -0.72,
+      "support": 1,
+      "world_z": -0.5542053312215448,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017288720021895188
+    },
+    {
+      "roll": -0.72,
+      "support": 2,
+      "world_z": -0.5577860972135664,
+      "body_hits": 81,
+      "minimum_clearance": 0.001656432986921197
+    },
+    {
+      "roll": -0.73,
+      "support": 1,
+      "world_z": -0.5636573202578549,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017309061619168453
+    },
+    {
+      "roll": -0.73,
+      "support": 2,
+      "world_z": -0.5670988238547472,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016578222885024196
+    },
+    {
+      "roll": -0.74,
+      "support": 1,
+      "world_z": -0.572987191918979,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017330003513087444
+    },
+    {
+      "roll": -0.74,
+      "support": 2,
+      "world_z": -0.57629175045533,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016592525960349436
+    },
+    {
+      "roll": -0.75,
+      "support": 1,
+      "world_z": -0.5822007687657866,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017351566454393286
+    },
+    {
+      "roll": -0.75,
+      "support": 2,
+      "world_z": -0.5853705969756443,
+      "body_hits": 81,
+      "minimum_clearance": 0.001660725326944057
+    },
+    {
+      "roll": -0.76,
+      "support": 1,
+      "world_z": -0.5913035866895424,
+      "body_hits": 81,
+      "minimum_clearance": 0.001737377224273473
+    },
+    {
+      "roll": -0.76,
+      "support": 2,
+      "world_z": -0.5943408018978997,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016622419703071767
+    },
+    {
+      "roll": -0.77,
+      "support": 1,
+      "world_z": -0.6003009138792561,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017396643791666166
+    },
+    {
+      "roll": -0.77,
+      "support": 2,
+      "world_z": -0.6032075408527258,
+      "body_hits": 81,
+      "minimum_clearance": 0.001663804091287746
+    },
+    {
+      "roll": -0.78,
+      "support": 1,
+      "world_z": -0.6091977683396588,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017420205198558358
+    },
+    {
+      "roll": -0.78,
+      "support": 2,
+      "world_z": -0.6119757438224509,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016654133359179646
+    },
+    {
+      "roll": -0.79,
+      "support": 1,
+      "world_z": -0.6179989340884983,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017444481819948177
+    },
+    {
+      "roll": -0.79,
+      "support": 2,
+      "world_z": -0.6206501110474996,
+      "body_hits": 81,
+      "minimum_clearance": 0.001667071436237455
+    },
+    {
+      "roll": -0.8,
+      "support": 1,
+      "world_z": -0.6267089761489877,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017469500352739198
+    },
+    {
+      "roll": -0.8,
+      "support": 2,
+      "world_z": -0.6292351277496561,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016687802158446008
+    },
+    {
+      "roll": -0.81,
+      "support": 1,
+      "world_z": -0.6353322544418107,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017495288921813845
+    },
+    {
+      "roll": -0.81,
+      "support": 2,
+      "world_z": -0.637735077774718,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016705415958822023
+    },
+    {
+      "roll": -0.82,
+      "support": 1,
+      "world_z": -0.643872936670913,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017521877174633271
+    },
+    {
+      "roll": -0.82,
+      "support": 2,
+      "world_z": -0.6461540562470725,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016723576014974206
+    },
+    {
+      "roll": -0.83,
+      "support": 1,
+      "world_z": -0.6523350102882333,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017549296383623236
+    },
+    {
+      "roll": -0.83,
+      "support": 2,
+      "world_z": -0.6544959813198178,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016742303688312976
+    },
+    {
+      "roll": -0.84,
+      "support": 1,
+      "world_z": -0.6607222936144296,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017577579556824485
+    },
+    {
+      "roll": -0.84,
+      "support": 2,
+      "world_z": -0.6627646050960985,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016761621525880344
+    },
+    {
+      "roll": -0.85,
+      "support": 1,
+      "world_z": -0.6690384461854175,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017606761557877881
+    },
+    {
+      "roll": -0.85,
+      "support": 2,
+      "world_z": -0.6709635237902121,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016781553342208877
+    },
+    {
+      "roll": -0.86,
+      "support": 1,
+      "world_z": -0.6772869783880494,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017636879236129221
+    },
+    {
+      "roll": -0.86,
+      "support": 2,
+      "world_z": -0.6790961871906795,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016802124308210598
+    },
+    {
+      "roll": -0.87,
+      "support": 1,
+      "world_z": -0.6854712604424524,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017667971567796315
+    },
+    {
+      "roll": -0.87,
+      "support": 2,
+      "world_z": -0.6871659074817614,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016823361047669794
+    },
+    {
+      "roll": -0.88,
+      "support": 1,
+      "world_z": -0.6935945307833272,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017700079809610525
+    },
+    {
+      "roll": -0.88,
+      "support": 2,
+      "world_z": -0.6951758674747794,
+      "body_hits": 81,
+      "minimum_clearance": 0.001684529174212357
+    },
+    {
+      "roll": -0.89,
+      "support": 1,
+      "world_z": -0.7016599038878203,
+      "body_hits": 81,
+      "minimum_clearance": 0.00177332476657599
+    },
+    {
+      "roll": -0.89,
+      "support": 2,
+      "world_z": -0.7031291282960006,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016867946244913945
+    },
+    {
+      "roll": -0.9,
+      "support": 1,
+      "world_z": -0.7096703775933587,
+      "body_hits": 81,
+      "minimum_clearance": 0.001776752146995575
+    },
+    {
+      "roll": -0.9,
+      "support": 2,
+      "world_z": -0.7110286365736939,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016891356205557262
+    },
+    {
+      "roll": -0.91,
+      "support": 1,
+      "world_z": -0.7176288399450387,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017802950384013805
+    },
+    {
+      "roll": -0.91,
+      "support": 2,
+      "world_z": -0.718877231163234,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016915555205424537
+    },
+    {
+      "roll": -0.92,
+      "support": 1,
+      "world_z": -0.7255380756087282,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017839586614651903
+    },
+    {
+      "roll": -0.92,
+      "support": 2,
+      "world_z": -0.7266776494457694,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016940578905777492
+    },
+    {
+      "roll": -0.93,
+      "support": 1,
+      "world_z": -0.7334007718829445,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017877485650776848
+    },
+    {
+      "roll": -0.93,
+      "support": 2,
+      "world_z": -0.7344325332329125,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016966465209866666
+    },
+    {
+      "roll": -0.94,
+      "support": 1,
+      "world_z": -0.7412195243397718,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017916706523133374
+    },
+    {
+      "roll": -0.94,
+      "support": 2,
+      "world_z": -0.74214443430718,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016993254440327288
+    },
+    {
+      "roll": -0.95,
+      "support": 1,
+      "world_z": -0.748996842122542,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017957312089256217
+    },
+    {
+      "roll": -0.95,
+      "support": 2,
+      "world_z": -0.7498158196254061,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017020989533803599
+    },
+    {
+      "roll": -0.96,
+      "support": 1,
+      "world_z": -0.7567351529257169,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017999369346360927
+    },
+    {
+      "roll": -0.96,
+      "support": 2,
+      "world_z": -0.7574490762101072,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017049716254640135
+    },
+    {
+      "roll": -0.97,
+      "support": 1,
+      "world_z": -0.7644368076803162,
+      "body_hits": 81,
+      "minimum_clearance": 0.0018042949775385342
+    },
+    {
+      "roll": -0.97,
+      "support": 2,
+      "world_z": -0.7650465157517262,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017079483429973674
+    },
+    {
+      "roll": -0.98,
+      "support": 1,
+      "world_z": -0.7721040849663525,
+      "body_hits": 81,
+      "minimum_clearance": 0.001768084611543097
+    },
+    {
+      "roll": -0.98,
+      "support": 2,
+      "world_z": -0.7726103789428314,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016784839727861378
+    },
+    {
+      "roll": -0.99,
+      "support": 1,
+      "world_z": -0.7797391951720107,
+      "body_hits": 81,
+      "minimum_clearance": 0.0017248483482439347
+    },
+    {
+      "roll": -0.99,
+      "support": 2,
+      "world_z": -0.7801428395636528,
+      "body_hits": 81,
+      "minimum_clearance": 0.001646460538671457
+    },
+    {
+      "roll": -1,
+      "support": 1,
+      "world_z": -0.7873442844177545,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016799806047329557
+    },
+    {
+      "roll": -1,
+      "support": 2,
+      "world_z": -0.7876460083368108,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016132287358718855
+    },
+    {
+      "roll": -1.01,
+      "support": 1,
+      "world_z": -0.79492143826211,
+      "body_hits": 81,
+      "minimum_clearance": 0.0016333950105730244
+    },
+    {
+      "roll": -1.01,
+      "support": 2,
+      "world_z": -0.7951219365676898,
+      "body_hits": 81,
+      "minimum_clearance": 0.0015787245934071326
+    },
+    {
+      "roll": -1.02,
+      "support": 1,
+      "world_z": -0.8024726852045849,
+      "body_hits": 81,
+      "minimum_clearance": 0.0015762972317544532
+    },
+    {
+      "roll": -1.02,
+      "support": 2,
+      "world_z": -0.802572619585636,
+      "body_hits": 81,
+      "minimum_clearance": 0.0015428794786371824
+    },
+    {
+      "roll": -1.03,
+      "support": 1,
+      "world_z": -0.81,
+      "body_hits": 81,
+      "minimum_clearance": 0.0014999857964882457
+    },
+    {
+      "roll": -1.03,
+      "support": 2,
+      "world_z": -0.81,
+      "body_hits": 81,
+      "minimum_clearance": 0.0014999902257870623
+    }
+  ],
+  "limitations": [
+    "Sampled geometry checks do not replace browser visual review.",
+    "Initial approach is intentionally outside the body; far wheels support the partial tilt until the cradles engage.",
+    "Reported small positive contact clearance prevents coplanar z fighting; it is not a physical repair tolerance."
+  ]
+}

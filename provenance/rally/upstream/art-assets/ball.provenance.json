@@ -1,0 +1,12 @@
+{
+  "role": "Single tennis ball production cutout for contact and bounce scenes",
+  "tool": "image_gen.imagegen",
+  "source": "/workspace/scratch/f59134096ffe/generated_images/exec-22f946df-c621-4bc0-865f-302d57eac77c.png",
+  "file": "ball.png",
+  "prompt": "Use case: photorealistic-natural.\nAsset type: transparent ball production sprite for RALLY — The Space Between, a clay-court tennis editorial website.\nPrimary request: a single isolated real tennis ball, perfectly spherical, detailed short fuzzy yellow-green felt in the color family #DDEA54, with its one continuous curved cream-white seam clearly visible in the classic tennis ball figure-eight form. Fine natural fibers point in slightly varying directions, with realistic small imperfections, absolutely not glossy plastic or a glowing sphere. Soft warm morning sunlight from upper-left gives a restrained highlight and visible roundness; lower-right in cool soft shade. Mild terracotta-colored reflected warmth at the bottom suggests an off-frame red clay court without depicting the court itself. The seam should be one smooth believable manufactured curved seam, not a painted straight stripe or a random pattern. Match quiet high-end editorial tennis photography.\nComposition: square image, one centered complete ball filling approximately 85 percent of the frame diameter with transparent margin all around. Entire ball including fuzz visible and not clipped. Camera at ball height, slightly angled to show the curved seam.\nBackground: ACTUAL TRANSPARENT ALPHA. No floor, no court, NO cast shadow, no environment, no transparent black rectangle, no checkerboard printed into the image. The app supplies its own moving ground shadow. No tennis racket, no person, no duplicate ball, no motion streaks, no arrows, no diagram, no text, no logos, no brands, no watermark. Single production object cutout with clean neutral anti-aliased edges, no red or yellow halo beyond the true felt fibers.",
+  "parameters": {
+    "transparent_background": true
+  },
+  "review": "One realistic felt ball with clear continuous curved cream seam, upper-left morning key light and warm lower reflection. No floor, text, brand, cast shadow or other object. Real RGBA alpha verified. Visual representation shares the single main-ball identity; code determines scale, position, seam rotation, and ground contact shadow.",
+  "seed": "Not supplied by the tool"
+}

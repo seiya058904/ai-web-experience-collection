@@ -1,0 +1,112 @@
+/* The last two bridges reserve physical space for the actual controls. */
+.bridge-controls {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  flex: none;
+}
+.bridge-controls--compose {
+  position: absolute;
+  right: var(--gutter);
+  top: 46%;
+  width: clamp(210px, 24vw, 320px);
+  transform: translateY(-50%);
+}
+.bridge-share-fields { padding: 0; margin: 0; border: 0; min-width: 0; }
+.bridge-share-fields legend { padding: 0; margin-bottom: 23px; font-family: var(--serif); font-size: 37px; line-height: 1.1; letter-spacing: -.025em; }
+.bridge-share-row { display: grid; gap: 17px; }
+.bridge-share { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-width: 0; }
+.bridge-share label { font-family: var(--serif); font-size: 27px; line-height: 1.2; }
+.bridge-number-wrap { display: flex; align-items: center; gap: 3px; color: var(--muted); font-size: 11px; }
+.bridge-number-wrap input {
+  width: 66px; min-height: 42px; padding: 4px 3px;
+  border: 0; border-bottom: 1px solid var(--line); border-radius: 0;
+  background: transparent; color: var(--ink); font-size: 17px;
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+.bridge-number-wrap input::-webkit-inner-spin-button { opacity: 1; }
+.bridge-helper { margin-top: 17px; font-size: 10px; color: var(--muted); line-height: 1.5; }
+.bridge-action { display: inline-flex; justify-content: space-between; align-items: center; gap: 25px; min-height: 44px; margin-top: 20px; padding: 10px 0; border-bottom: 1px solid var(--ink); font-size: 13px; line-height: 1.4; }
+.bridge-action span { font-size: 21px; line-height: 1; }
+.bridge-action:hover { color: var(--plum); border-color: var(--plum); }
+.bridge-controls--keep { max-width: 740px; text-align: center; }
+.bridge-kicker { margin: 0 auto 5px; color: var(--muted); font-size: 10px; letter-spacing: .06em; }
+.bridge-controls--keep h3 { font-size: clamp(27px, 3vw, 42px); line-height: 1.1; overflow-wrap: anywhere; }
+.bridge-shares { margin: 9px auto 0; color: var(--muted); font-size: 11px; line-height: 1.6; font-variant-numeric: tabular-nums; }
+.bridge-controls--keep .bridge-action { margin-top: 9px; }
+.handoff--compose .transition-gallery { min-height: 240px; }
+.handoff--compose .transition-caption { min-height: 1.3em; font-size: 24px; }
+.handoff--keep .transition-gallery { min-height: 230px; }
+.handoff--keep .transition-print { width: min(52%, max(180px, calc((100svh - 390px) * 1.35))); }
+.handoff--keep .transition-caption { min-height: 1.3em; font-size: 24px; margin-top: 15px; }
+.preview-print { margin-bottom: -5px; }
+
+@media (min-width: 761px) and (max-height: 700px) {
+  .handoff--interactive .handoff-stage { min-height: 0; padding-top: 14px; padding-bottom: 42px; }
+  .handoff--compose .transition-print { width: min(52%, calc((100svh - 190px) * 1.6)); }
+  .bridge-share-fields legend { font-size: 30px; margin-bottom: 12px; }
+  .bridge-share-row { gap: 9px; }
+  .bridge-share label { font-size: 24px; }
+  .bridge-helper { margin-top: 10px; }
+  .bridge-controls--compose .bridge-action { margin-top: 10px; }
+}
+
+@media (max-width: 760px) {
+  .handoff--interactive .handoff-stage { padding: 18px 20px 48px; min-height: 500px; }
+  .handoff--interactive .transition-gallery { min-height: 220px; max-height: none; }
+  .bridge-controls--compose { position: relative; inset: auto; transform: none; width: 100%; max-width: 420px; margin: 14px auto 0; }
+  .bridge-share-fields legend { font-size: 25px; margin-bottom: 10px; }
+  .bridge-share-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+  .bridge-share { display: block; }
+  .bridge-share label { display: block; font-family: inherit; font-size: 11px; }
+  .bridge-number-wrap { justify-content: flex-start; }
+  .bridge-number-wrap input { width: 66px; min-height: 40px; text-align: left; font-size: 18px; }
+  .bridge-helper { margin-top: 8px; font-size: 9px; }
+  .bridge-controls--compose .bridge-action { display: flex; margin-top: 4px; min-height: 40px; padding: 8px 0; font-size: 12px; }
+  .handoff--interactive .transition-caption { min-height: 1.3em; max-width: 28ch; font-size: 21px; line-height: 1.15; padding: 0; margin-top: 15px; }
+  .bridge-controls--keep h3 { font-size: 27px; }
+  .bridge-controls--keep .bridge-action { min-height: 40px; padding: 8px 0; font-size: 12px; }
+  .bridge-shares { font-size: 10px; }
+  .handoff--keep .transition-print { width: min(87%, max(150px, calc((100svh - 350px) * .8))); }
+}
+
+/* Short landscape reads in normal document flow, so the final actions can
+   always be reached even when a whole workbench cannot fit above the fold. */
+@media (min-width: 761px) and (max-height: 480px) {
+  .handoff--interactive { height: auto; min-height: 0; padding: 20px 0; }
+  .handoff--interactive .handoff-stage { position: relative; top: 0; height: auto; min-height: 0; overflow: visible; padding-top: 20px; }
+  .handoff--interactive .transition-gallery { flex: none; height: 260px; min-height: 260px; }
+  .bridge-controls--compose { position: relative; inset: auto; transform: none; width: 100%; max-width: 620px; margin: 15px auto 0; }
+  .bridge-controls--compose .bridge-share-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .bridge-controls--compose .bridge-share label { font-size: 22px; }
+}
+
+.reduced-motion .handoff--interactive .handoff-stage { min-height: 0; }
+.reduced-motion .handoff--keep .transition-gallery { height: 350px; min-height: 350px; }
+@media (max-width: 760px) {
+  .reduced-motion .handoff--interactive .transition-gallery { height: 320px; min-height: 320px; }
+}
+
+/* The final mobile path needs three real rows, including each phase label.
+   Reserve height from the same capped print span; a long title flows below it. */
+@media (max-width: 760px) {
+  .handoff--keep {
+    --keep-print-span: min(calc((100vw - 40px) * .87), max(150px, calc((100svh - 350px) * .8)));
+    --keep-gallery-height: max(600px, calc(var(--keep-print-span) * 2.4));
+    height: auto;
+    min-height: 0;
+    /* A bounded interval retains reversible progress in normal document flow. */
+    padding-bottom: clamp(48px, 8svh, 80px);
+  }
+  .handoff--keep .handoff-stage { position: relative; top: 0; height: auto; min-height: 0; overflow: visible; }
+  .handoff--keep .transition-gallery,
+  .reduced-motion .handoff--keep .transition-gallery {
+    flex: none;
+    height: var(--keep-gallery-height);
+    min-height: var(--keep-gallery-height);
+  }
+  .reduced-motion .handoff--keep { padding-bottom: 25px; }
+}

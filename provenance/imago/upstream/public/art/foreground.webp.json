@@ -1,0 +1,4 @@
+{
+  "prompt": "Background extraction. Keep ONLY the softly out-of-focus green leaf corner entering from the lower RIGHT of this reference; preserve its original position and soft optical edge in a landscape1536x1024 transparent canvas. Remove twig, chrysalis, silk, all other background completely. Real alpha transparency in the rest of image. The leaf is a subtle near-field foreground layer, occupying rightmost25% and lowest30% of canvas. No other leaf, stem, insect, text, opaque backdrop or checkerboard.",
+  "createdAt": "2026-11-09T02:58:27.975Z"
+}

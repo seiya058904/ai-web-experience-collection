@@ -1,0 +1,222 @@
+{
+  "project": "SENTE",
+  "date": "2026-11-09",
+  "stage": "G1 — actual generation and visual review",
+  "tool": "image_gen.imagegen (built-in image generation)",
+  "tool_api": "image_gen__imagegen",
+  "call_count": 9,
+  "required_deliverables": 8,
+  "actual_distinct_outputs": 9,
+  "workflow": "Each distinct output was generated in its own actual tool call. Three alternative Hero directions were compared before choosing A. No photo downloads, placeholder diagrams or contact-sheet crops count toward the eight required outputs.",
+  "parameters_reported_by_tool": "The tool exposes prompt and transparent_background for these calls. Model name, seed, sampling and quality values were not returned and are not claimed.",
+  "rules_boundary": "None of the generated grid layouts or stone arrangements is used as rules data. The official 7×7 coordinates, legal targets, game states and text are all generated in code.",
+  "assets": [
+    {
+      "id": "IMG-01",
+      "required": true,
+      "title": "Hero A — an empty board, overhead",
+      "file": "art/concepts/img-01-hero-a.png",
+      "original_tool_output": "exec-1863009d-ebfd-4491-9958-78ae1d874c72.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE editorial website Hero art candidate A, wide landscape. Primary request: an exceptionally refined, photorealistic empty 7 by 7 practice Go board on a quiet warm wooden tabletop. Composition: high overhead camera, nearly orthographic but just enough visible board thickness to feel tangible; the complete square empty board occupies the right two thirds of this wide image; the left third is deliberately quiet empty table suitable for real webpage title text later. A few loose black and white Go stones rest on the table outside the board at the far right, with a simple dark bowl partly visible. Board has seven fine straight lines per axis, no coordinates, no text, absolutely no stones on the grid. Warm wood #C6A476, matte charcoal black stone #242A29, softly veined warm-white stone #E7E6DE. Wide diffuse natural upper-left side light, realistic restrained contact shadows, subtle lengthwise wood grain, exquisitely believable stone thickness and material, sophisticated editorial object photography. Crisp readable whole board, no excessive depth of field. No lettering, logo, watermark, hand, ink, bamboo, plants, Buddhist or Zen props. The empty intersections are the main subject. This image is a visual reference, with final precise geometry to be recreated in code. Landscape 3:2 composition.",
+      "decision": "Selected Hero direction",
+      "role": "Required Hero candidate A",
+      "review": "The full empty board is the dominant right-hand subject and the left table remains quiet. Stones are off the board. This overhead direction preserves visible intersections and can be reconstructed accurately for interaction.",
+      "page_use": "Selected composition reference for the implemented desktop Hero; refined by IMG-04. Original PNG is retained as a reference, not a runtime rules board.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "748a23b347ac5bcb714010b3c44deacbec9fc1dc94a06e3089510234e44834fb",
+      "size_bytes": 2737088
+    },
+    {
+      "id": "IMG-02",
+      "required": true,
+      "title": "Hero B — the weight of a stone",
+      "file": "art/concepts/img-02-hero-b.png",
+      "original_tool_output": "exec-f43edd2c-c4db-4567-b0b6-cfe3c8b1fd92.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE editorial website Hero art candidate B, distinctly low camera viewpoint. Primary request: an exceptionally refined photorealistic view from just above the front edge of a complete empty square 7 by 7 practice Go board, on a warm wooden table. One close matte charcoal Go stone rests OFF the board on the foreground tabletop at lower left, displaying its lenticular thickness and soft contact shadow; a simple dark wood bowl with softly veined white stones sits at the board's far right. The complete EMPTY board extends into the distance and remains clearly legible with thin restrained engraved lines. All stones are off the playing surface. Composition: tactile cinematic near-ground viewpoint, generous uncluttered upper-left negative space, warm wood #C6A476, charcoal #242A29, warm white #E7E6DE, no gold. Broad soft light from upper left, convincing thickness and subtle material texture, limited depth of field but every row remains discernible. This should feel materially intimate and clearly different from an overhead diagram. No text, coordinates, lettering, logo, watermark, hand, ink, plants, bamboo, religious objects, Zen ornaments. Premium editorial object photography. Landscape 3:2 composition.",
+      "decision": "Alternative retained as material reference",
+      "role": "Required Hero candidate B",
+      "review": "The close off-board stone and board edge establish believable thickness. Perspective compresses far rows, so this camera is unsuitable for active placement targets and was not selected as the interactive Hero.",
+      "page_use": "Retained material/light reference only; the low camera is not used for interactive placement.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "da81851c281fcc5cc64d8e571add3829e4db800410f3eb27ac62248190a449d5",
+      "size_bytes": 2040626
+    },
+    {
+      "id": "IMG-03",
+      "required": true,
+      "title": "Hero C — an interval of light",
+      "file": "art/concepts/img-03-hero-c.png",
+      "original_tool_output": "exec-77443ffc-f371-4f23-96a6-e2b1c7a42663.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE editorial website Hero art candidate C, sparse graphic editorial composition. Primary request: near-orthographic overhead view of the corner and lower portion of an empty warm-wood 7 by 7 Go practice board, deliberately cropped as a graphic object. Unlike a full-board view, the board enters the frame from the lower right and its fine engraved grid forms a precise restrained linear rhythm; the upper half and left side are quiet empty warm tabletop reserved for later DOM title placement. A few waiting black and warm-white Go stones are placed OFF the board along the lower edge of the tabletop. Subtle elongated shadows form a quiet diagonal under broad soft side light. Premium photorealistic stone surfaces, matte charcoal #242A29, softly veined #E7E6DE white, low-contrast straight wood grain #C6A476. Sophisticated minimalist art-book photography with disciplined negative space. No text, coordinates, logo, watermark, human hands, calligraphy, ink, plants, bamboo, religious decoration. No stones anywhere on the grid. Landscape 3:2 composition.",
+      "decision": "Alternative retained as editorial reference",
+      "role": "Required Hero candidate C",
+      "review": "Large negative space and lower-edge waiting stones create a clearly different composition. The deliberately cropped board cannot expose all 49 locations, so it was not selected for the primary interactive Hero.",
+      "page_use": "Retained editorial negative-space reference only; the cropped board is not an active runtime board.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "8805535397913225a1866ba6afc37f3d14453d841b247c0cb0be646e22ee8dfc",
+      "size_bytes": 2558934
+    },
+    {
+      "id": "IMG-04",
+      "required": true,
+      "title": "Refined desktop — material plate",
+      "file": "art/concepts/img-04-desktop-refined.png",
+      "original_tool_output": "exec-528925a7-0409-49a7-ab83-2ef2a7fd2c19.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: final textless SENTE desktop environment/material plate, independently usable behind a code-rendered interactive Go board. Create a refined, high-end editorial overhead photo of a warm golden-brown timber table with a COMPLETE SQUARE UNRULED WOODEN BOARD on the right two thirds. The board surface must be entirely blank, NO grid, NO lines, NO coordinates, NO stones, so a precise seven-by-seven grid can be drawn over it in code. Frame the square board from x=approximately 35% to 87% of image width, top about 10%, bottom about 90%; slight thickness and realistic soft contact shadow on the lower/right edge. The left third is quiet nearly uniform warm tabletop with exceptionally subtle grain, reserved for real webpage typography. A handful of waiting matte charcoal black and softly veined warm-white Go stones sit OFF the board, on the far-right table margin. Generous air, restrained natural material, fine lengthwise wood grain, no strong knots, no harsh contrast. Broad diffuse upper-left light with softly tapering long shadows. Palette warm wood #C6A476, matte charcoal #242A29, warm white #E7E6DE. Physically convincing curved stone thickness, microtexture, sophisticated tactile design. No text, logo, watermarks, rules diagram, hands, ink, plants, bamboo, religious ornaments, bright decoration. Landscape 3:2. This is a clean separable background plate, not a screenshot, every interaction and formal grid is built as real code.",
+      "decision": "Selected production environment",
+      "role": "Required desktop refinement",
+      "review": "The central board is genuinely unruled and free of stones. It supplies the warm table, board thickness, soft upper-left lighting and off-board stone material without embedding erroneous playable geometry.",
+      "page_use": "Implemented as public/assets/sente-hero-table.webp in the desktop Hero, underneath exact SVG geometry. At 2200px and above the Hero is capped and centred on paper gutters. The photograph is hidden in the compact layout.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "80ee9a44d685d44dd8df62e5074884d81bf6a3f8a2f0af341eb1ad998bfc1593",
+      "size_bytes": 2348115
+    },
+    {
+      "id": "IMG-05",
+      "required": true,
+      "title": "Mobile — a board within reach",
+      "file": "art/concepts/img-05-mobile-composition.png",
+      "original_tool_output": "exec-792bf649-b5e5-4359-a157-05252be1bcad.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE independent mobile portrait art direction, not a crop of a desktop. Compose a new VERTICAL 2:3 overhead editorial photograph with one complete square empty Go practice board occupying the upper two thirds. The board stays nearly orthographic so all seven rows are evenly spaced and fully legible. Board has seven thin straight engraved lines in each direction, no coordinates, no stones on the grid. The bottom third is a calm empty warm-wood table area with clear room for a later title, explanatory copy and real finger-size controls. Two loose waiting stones, one matte charcoal, one gently veined white, rest on the tabletop beside the bottom-left board corner, outside the play surface. The composition must be designed vertically from the start, full board visibly reachable, no clipped rows or extreme camera angles. Warm wood #C6A476, charcoal #242A29, ivory #E7E6DE, soft wide upper-left light and close believable shadows, understated wood texture, very high-quality product photography. No lettering or text anywhere, no hands, logo, coordinates, ink, calligraphy, bamboo, religious ornaments, artificial glow. Portrait 2:3 composition.",
+      "decision": "Selected mobile composition reference",
+      "role": "Required independent portrait composition",
+      "review": "A complete nearly orthographic board is placed above a lower text/control area. It was generated independently in portrait and is not a crop of the desktop result. Fine grid is a reference, not rule state.",
+      "page_use": "Independent portrait reference for the implemented DOM composition at 999px and below: full square board above the copy. The original portrait PNG is not a runtime poster.",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "reviewed": true,
+      "sha256": "76097c9dbbed809e1977d38e3cb49249eadff014fccf4be9ace446df5266725d",
+      "size_bytes": 2862034
+    },
+    {
+      "id": "IMG-06",
+      "required": true,
+      "title": "Chapter five — two quiet openings",
+      "file": "art/concepts/img-06-two-eyes.png",
+      "original_tool_output": "exec-0553107a-5e83-4253-88b9-5c30eab77a03.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE chapter-five atmosphere and material reference. Photorealistic overhead-to-very-slightly-oblique view of a complete small seven-by-seven Go board on a warm quiet wood tabletop. The subject is a single connected shape of THIRTEEN black Go stones, arranged as a 5-column by 3-row rectangle: top row five black stones, middle row black stones in positions 1, 3 and 5, bottom row five black stones. Thus there are exactly TWO CLEAR EMPTY INTERSECTIONS in the middle row, separated by a connecting central black stone. Stones sit on precise grid intersections and form two enclosed single-point openings. The empty points, not decorative marks, are the focus. There are no white stones on the playing board; perhaps two loose white stones on the table at far right for material context. Keep full board boundary readable. No eyes drawn as symbols, no bright rings or glowing bubbles, no diagram labels, no text or coordinates. Extremely fine matte charcoal surfaces with soft upper-left sheen, tangible stone thickness, warm #C6A476 wood with minimal grain, #242A29 charcoal, broad soft side light, restrained negative space, close natural shadows. Refined tactile editorial photograph, calm but not mystical. No Zen props, plants, hands, ink, bamboo, religious objects. Landscape 3:2. Exact interactive layout will be rebuilt separately from the supplied coordinate data; this image is only an artistic reference.",
+      "decision": "Selected chapter-five reference",
+      "role": "Required middle-chapter key frame",
+      "review": "Thirteen black stones form a single connected 5-by-3 pattern with two clear internal openings. Strong material continuity and clear negative space. Exact B2–F4 coordinates will still be constructed from rules data.",
+      "page_use": "Material and composition reference for chapter 05. The actual two-eye position is drawn from exact supplied coordinates by the SVG renderer.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "8c50122b6e266b68eae0384443d76e7c0066120c928cd0264ad3468c9e388d59",
+      "size_bytes": 2509412
+    },
+    {
+      "id": "IMG-07",
+      "required": true,
+      "title": "Chapter eight — what remains",
+      "file": "art/concepts/img-07-choice-comparison.png",
+      "original_tool_output": "exec-b16840cf-c79e-4f84-89f0-7badf5a998d9.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE chapter-eight editorial comparison concept, two boards on one table. Create an exceptionally refined near-orthographic photo of TWO equally sized small seven-by-seven Go boards side by side on the same warm wooden table, under exactly the same soft upper-left light. Both complete boards and all rows readable. The LEFT board conveys the aftermath of taking a single white stone: one white stone visibly placed off that board on the table and an empty pair of adjacent intersections in a sparse black-white local pattern. The RIGHT board conveys preserving two connected black stones: a clearly visible adjacent vertical pair of black stones remains on its left-center intersections, connected upward to a third black stone, with a sparse opposing white pattern around it. Show the decision quietly, in physical material and empty space; neither is a full match. High quality matte charcoal black and softly veined warm-white lenticular stones, delicate grid lines, minimal wood grain #C6A476, charcoal #242A29, ivory #E7E6DE. Do not put numerical scores, victory banners, lettering, labels, coordinates, arrows, glowing lines, medals or celebration. No hands, cultural ornaments, Zen props, plants, bamboo, ink. Broad editorial landscape 3:2 with strong symmetry, modest air between boards, consistent scale and light. This is an artistic reference; all true rule positions are drawn in code from exact supplied data.",
+      "decision": "Selected chapter-eight comparison reference",
+      "role": "Required later-chapter key frame",
+      "review": "The two boards share scale, material and light. The left has a separate white stone off the board while the right retains a connected black cluster. Sparse artistic positions are not the exact P3 data and will not be presented as the puzzle itself.",
+      "page_use": "Equal-scale comparison reference for chapter 08. Both final P3 examples are drawn from the rules engine; the generated positions are not shown as authoritative diagrams.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "33dff54c730326a67ed8e43609d9100240e820937d25782dd354c5a52a7559bd",
+      "size_bytes": 2856645
+    },
+    {
+      "id": "IMG-08",
+      "required": true,
+      "title": "Transition eight to nine — an empty intersection",
+      "file": "art/concepts/img-08-transition-midpoint.png",
+      "original_tool_output": "exec-5dae711b-2ad4-4068-8503-51bea5a89830.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: SENTE key transition 08-to-09 midpoint art direction. An elegant photorealistic editorial arrangement on a continuous warm wooden tabletop showing a transition from two Go variations to one clear new Go position. At far left, a pair of small physical Go-board pages or thin wooden boards is partly retreating from frame, each with its own completely separate, opaque few black/white stones. At center-right, one full seven-by-seven board is the dominant main subject, nearly overhead. Its sparse black-white local shape surrounds one clearly EMPTY intersection, which is emphasized by natural negative space, not a painted ring. A single black stone near that opening suggests a newly changed position. The three boards must remain distinct physical objects: NO transparent overlay, NO superimposed grids, NO ghost or duplicate stones, NO dirty double shadows. The tabletop makes their relationship clear without arrows. Broad soft upper-left light, subtle believable curved charcoal and ivory stone surfaces, fine engraved grid, very restrained warm wood grain #C6A476. Quiet hierarchy with room at top left for later real text. No text, labels, coordinates, logo, scores, hands, ink, bamboo, plants, religious or Zen decoration. Refined cinematic editorial composition, landscape 3:2. Concept only; exact ko states and interactive positions will be programmed separately.",
+      "decision": "Selected transition composition reference",
+      "role": "Required TR-08-09 midpoint",
+      "review": "One full board dominates the right while two smaller physical boards retreat at left. All are opaque and separate, without superimposed grids or ghost stones. Generated sparse positions are conceptual, not K1 or P3 rule data.",
+      "page_use": "Hierarchy reference for TR-08-09. The delivered handoff uses two labelled P3 examples and a separate K1 with small scroll-derived movement. It does not implement a continuous camera move or physical board merge.",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "reviewed": true,
+      "sha256": "304a3c5c956b9409e423f18b8cfc1db05381e0dd645eb0b00d914a3b25491114",
+      "size_bytes": 2794414
+    },
+    {
+      "id": "IMG-09",
+      "required": false,
+      "title": "Additional production asset — unruled board material",
+      "file": "art/concepts/img-09-board-material.png",
+      "original_tool_output": "exec-07f2e28a-e971-4f7c-a56b-7e23103bb533.png",
+      "actual_tool": "image_gen__imagegen",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: seamless-looking square wooden Go board surface material for precise code-rendered grids. Create a perfectly top-down flat SQUARE close-crop photograph of only a warm blond wooden board surface filling the entire frame edge to edge. Extremely fine straight horizontal lengthwise grain. Restrained sophisticated #C6A476 warm tan/honey color, no bright yellow or orange cast, mild natural microtexture, broad diffuse upper-left light that is almost uniform across the entire image. Readability is essential: a dark thin 1-pixel grid will later be drawn on top by code, so keep this image quiet and low contrast. No board edge, bevel, border, grid, lines, coordinates, inscriptions, stones, props, hands, stains, knots, scratches, decorative stripes, vignette, shadows, lens distortion or text. The image is a raw reusable material plate, not a whole board, not a website screenshot. Premium physically believable subtle polished wood, calm neutral light. Square 1:1, high resolution.",
+      "decision": "Selected additional production material",
+      "role": "Additional asset requested for portable interactive boards",
+      "review": "A flat, edge-free square wood surface with restrained horizontal grain. No grid, lettering, stones or props, so precise rule graphics can sit over it on every viewport.",
+      "page_use": "Implemented as public/assets/sente-board-material.webp for exact responsive/standalone SVG boards and the compact Hero. It is not tiled outside the capped wide-screen Hero.",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "reviewed": true,
+      "sha256": "aa1c124c8bd98552da970da42a168afb837e22e67aab2589655e1c42fa1a365a",
+      "size_bytes": 2115526
+    }
+  ],
+  "production_status": "Final source adoption recorded: the application references two optimized WebP derivatives. All nine generated PNGs remain separately inspectable. This provenance/adoption record does not claim full cinematic-brief or browser acceptance.",
+  "license_note": "These images were generated for this project using the built-in OpenAI image generation tool. No downloaded stock photography, third-party trademarks or claimed precious natural materials are included.",
+  "runtime_assets": [
+    {
+      "source_id": "IMG-04",
+      "file": "public/assets/sente-hero-table.webp",
+      "format": "WebP",
+      "size_bytes": 100572,
+      "sha256": "066a0e0cd472a5db301116cc2e88560ab2dc7c4e00a736822007573187587951"
+    },
+    {
+      "source_id": "IMG-09",
+      "file": "public/assets/sente-board-material.webp",
+      "format": "WebP",
+      "size_bytes": 39122,
+      "sha256": "d5959b1b6674ec6d68f6763ea4d0709bacb7e41d5d1fa6562e2c7706d479dd22"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+AER — Carried by Air
+Original project material prepared for the commissioning user, 2026-11-09.
+
+Copyright (c) 2026 the AER project owner, to the extent copyright applies.
+
+The original source, narrative, vectors and generated artwork are delivered to
+the commissioning user. This delivery does not select or announce a public
+open-source license for the original project. Publication and redistribution
+decisions for that material remain with the project owner, subject to the
+applicable generation-service terms and third-party rights.
+
+Third-party software and fonts retain their own copyright notices and
+licenses. The complete copied notices are in licenses/ and are indexed in
+docs/SOURCES-AND-LICENSES.md. Those individual licenses do not automatically
+apply to all original project material.
+
+No additional copyright claim is made for material in which copyright does
+not arise. This notice does not override any applicable service terms or
+third-party license.
+
+This package is a local delivery. It has not itself been deployed, published,
+pushed, released, or added to an existing collection.

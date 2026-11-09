@@ -1,0 +1,4 @@
+{
+  "prompt": "Background extraction for IMAGO hero. Exact same landscape1536x1024 canvas and subject positions. Keep ONLY the complete horizontal slender twig, tiny silk pad, black cremaster and opaque green monarch chrysalis from reference, preserving silhouette, very fine attachment threads, natural color and illumination. Remove every background pixel and remove lower-right blurry leaf. Everything except twig+single chrysalis must be truly transparent alpha, not a white rectangle or checkerboard. Do not recompose, resize or center. No extra insect or new props. This is an exact subject layer for compositing over its original background. No labels or text.",
+  "createdAt": "2026-11-09T02:58:27.968Z"
+}
