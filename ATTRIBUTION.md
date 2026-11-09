@@ -238,3 +238,43 @@ Original to this repository, not a supplied delivery. Source, text and rendered 
 ## CREASE — The Geometry of a Fold
 
 Original to this repository, not a supplied delivery. Source, text and rendered captures are the project author's. It reuses Space Grotesk (SIL OFL) from `public/dose/assets/fonts/` by URL. three.js, GSAP and Lenis come from the root dependencies. Sources and limits are recorded in `docs/crease/RESEARCH.md`; the deployed notice is `public/crease/NOTICE.md`.
+
+## IMAGO — Wings within
+
+Supplied illustrated natural history of a monarch butterfly. Images are AI-generated artistic reconstructions (31 recorded generation outcomes; prompt sidecars moved to `provenance/imago/upstream/public/art/`). The project declares MIT for its code and documentation. Cormorant Garamond and Inter (SIL OFL), Lenis (MIT). Original ZIP: `IMAGO-source.zip`, 21,717,428 bytes, 471 entries, SHA-256 `fce48be44a161665c4c608240a26f5495770756e60b52c582a38a1d1fde53e57`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/imago/upstream/`; the deployed notice is `public/imago/NOTICE.md`.
+
+## SILLAGE — The shape of scent
+
+Supplied visual essay on scent with AI-generated artwork and a composition you export. NIDCD and one Fragonard product page are cited as context only; no product text, imagery or branding is reproduced. No overall application license is declared. Cormorant Garamond and DM Sans (SIL OFL), Lenis (MIT). Original ZIP: `SILLAGE-Source.zip`, 56,887,298 bytes, 596 entries, SHA-256 `38fede8ef8fe240e514db02c65e96946359dbb4b880bcb54e9f9523d08531189`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/sillage/upstream/`; the deployed notice is `public/sillage/NOTICE.md`.
+
+## AER — Carried by Air
+
+Supplied balloon journey. Cinematic plates are AI-generated; the flight study, diagrams and keepsake are rendered in code; landscape, wind and routes are fiction. Its `PROJECT-NOTICE.txt` selects no public open-source license and leaves publication to the project owner. Cormorant Garamond and DM Sans (SIL OFL), three.js and Lenis (MIT). Original ZIP: `AER-Carried-by-Air-Source.zip`, 24,087,743 bytes, 98 entries, SHA-256 `df395b0e96b4347312ee83d0a53b126c63d248fa1e811fd0b7d7e3bf8aa71de0`, kept outside the repository. Root Lenis 1.3.26 and three 0.186.1 replace the supplied 1.3.27 and 0.187.0. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/aer/upstream/`; the deployed notice is `public/aer/NOTICE.md`.
+
+## BERTH — One night. Ten quiet moments.
+
+Supplied night-train story with AI-generated compartment and character images and embedded preview recovery. No overall application license is declared. Cormorant Garamond and DM Sans (SIL OFL), Lenis (MIT). Original ZIP: `BERTH-source.zip`, 4,141,152 bytes, 143 entries, SHA-256 `bf7888e915f6c7df886c3f19a49c57bbeaa627d467b6a23af319c96c5b7fa24d`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/berth/upstream/`; the deployed notice is `public/berth/NOTICE.md`.
+
+## MEND — Still Yours
+
+Supplied repair story with AI-generated photographic plates and a code-rendered Three.js toy. No overall application license is declared. Newsreader and DM Sans variable (SIL OFL), three.js and Lenis (MIT). Original ZIP: `MEND-Still-Yours-source.zip`, 28,928,982 bytes, 91 entries, SHA-256 `054ffd3f7f74fb69b2dbe65c70560d362ad3dfa75c8aed7b495f337ae4cbfe98`, kept outside the repository. Root Lenis 1.3.26 and three 0.186.1 replace the supplied 1.3.27 and 0.187.0. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/mend/upstream/`; the deployed notice is `public/mend/NOTICE.md`.
+
+## FRAME — A little move. A lot of life.
+
+Supplied digital stop-motion story: 24 rendered story frames, stills and an in-browser film export. Generated concept images stay in the ZIP. No overall application license is declared. Manrope (SIL OFL), Lenis (MIT). Original ZIP: `FRAME-source.zip`, 24,493,640 bytes, 371 entries, SHA-256 `0399fc9d1288c93a39e40ea6fbb64f7af301b75025fddd93dba531dc22601ca6`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/frame/upstream/`; the deployed notice is `public/frame/NOTICE.md`.
+
+## ODDS — A playground for chance
+
+Supplied probability playground; board, paths and charts are drawn in code and the surface texture is AI-generated. The delivery ships no separate font or Lenis notice files, so the standard Manrope OFL and Lenis MIT texts are copied from existing Collection notices. No overall application license is declared. Original ZIP: `ODDS-Source-v1.0.0.zip`, 2,177,438 bytes, 67 entries, SHA-256 `0851612e1a98030a739e87bb433733bf23dd4a0a03d2da97c96c604bd3e05a5c`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/odds/upstream/`; the deployed notice is `public/odds/NOTICE.md`.
+
+## RALLY — The Space Between
+
+Supplied clay-court story with AI-generated court, player and ball images and a deterministic educational trajectory model. The project declares MIT (“RALLY contributors”). Barlow Condensed and DM Sans (SIL OFL), Lenis (MIT). Original ZIP: `RALLY-source.zip`, 28,806,681 bytes, 118 entries, SHA-256 `4d91c86b09877a7d2227483e64943023207d2bbe3d41efcf38df2b7144331dab`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/rally/upstream/`; the deployed notice is `public/rally/NOTICE.md`.
+
+## SENTE — Between moves
+
+Supplied playable Go story with AI-generated table and board-material images; rules and positions are computed in code. Generated concepts stay in the ZIP. No overall application license is declared. Bodoni Moda and Manrope (SIL OFL), Lenis (MIT). Original ZIP: `SENTE-source.zip`, 27,427,347 bytes, 136 entries, SHA-256 `c5c5c1093fc3557249e88716f32afb7b9be45ea165b8d214826478e43aba5a35`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/sente/upstream/`; the deployed notice is `public/sente/NOTICE.md`.
+
+## PAS — The distance between two people
+
+Supplied duet in ten movements. Dancers are built from MakeHuman CC0 assets (sources in `provenance/pas/upstream/docs/MODEL-SOURCES.md`, licence texts kept with the model-source records); cover plates are AI-generated. The complete runtime frame set (4,699 WebP frames and their manifest) is deployed unchanged. The project declares MIT (“contributors”). Bodoni Moda and Manrope (SIL OFL), three.js and Lenis (MIT). Original ZIP: `PAS-source.zip`, 138,062,160 bytes, 4962 entries, SHA-256 `f2967216e2e18113c4e1af99c8a4de96c2cc62d403eab15b0a858dd4f6c168ba`, kept outside the repository. Root Lenis 1.3.26 and three 0.186.1 replace the supplied 1.3.27 and 0.187.0. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/pas/upstream/`; the deployed notice is `public/pas/NOTICE.md`.

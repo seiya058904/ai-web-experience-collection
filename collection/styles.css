@@ -383,6 +383,70 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .world-crease .world-image:after{background:linear-gradient(180deg,transparent 62%,#e8ecf3f0)}
 .world-crease:focus-visible{outline-color:#1c39c9}
 
+/* Ten works added 9 November 2026. Each keeps its own typeface and ground; every face reuses an existing
+   Collection URL except MEND's Newsreader, which is served from the work itself. */
+@font-face{font-family:'Collection Mend Newsreader';src:url('/mend/fonts/newsreader-latin-normal.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+.world-imago{--t:20;--s:9;background:#efede1;color:#173e34}
+.world-imago h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:.9}
+.world-imago .world-title p{font-family:'Collection Optic Cormorant',Georgia,serif;font-style:italic;font-weight:400;line-height:1.05}
+.world-imago .world-image img{object-position:72% 50%}
+.world-imago .world-image:after{background:linear-gradient(90deg,#efede1f0,#efede199 34%,transparent 62%),linear-gradient(180deg,transparent 56%,#efede1e6)}
+.world-imago:focus-visible{outline-color:#173e34}
+.world-sillage{--t:17;--s:9;background:#f3ede1;color:#29211e}
+.world-sillage h2{font-family:'DM Sans',Arial,sans-serif;font-weight:500;letter-spacing:.18em;line-height:1}
+.world-sillage .world-title p{font-family:'Collection Optic Cormorant',Georgia,serif;font-style:italic;font-weight:400;line-height:1.05}
+.world-sillage .world-image img{object-position:64% 50%}
+.world-sillage .world-image:after{background:linear-gradient(180deg,#f3ede166,transparent 36%,#f3ede1ee)}
+.world-sillage:focus-visible{outline-color:#29211e}
+.world-aer{--t:26;--s:9;background:#f6f1e8;color:#26364d}
+.world-aer h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:.12em;line-height:.9}
+.world-aer .world-title p{font-family:'Collection Optic Cormorant',Georgia,serif;font-style:italic;font-weight:400;line-height:1.05}
+.world-aer .world-image img{object-position:70% 40%}
+.world-aer .world-image:after{background:linear-gradient(90deg,#f6f1e8d9,transparent 52%),linear-gradient(180deg,transparent 58%,#f6f1e8e6)}
+.world-aer:focus-visible{outline-color:#26364d}
+.world-berth{--t:24;--s:9;background:#182d38;color:#f1e6d3}
+.world-berth h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:.14em;line-height:.9}
+.world-berth .world-title p{font-family:'Collection Optic Cormorant',Georgia,serif;font-style:italic;font-weight:400;line-height:1.05}
+.world-berth .world-image img{object-position:50% 50%}
+.world-berth .world-image:after{background:linear-gradient(180deg,#182d38cc,transparent 40%,#182d38f0)}
+.world-berth:focus-visible{outline-color:#f1e6d3}
+.world-mend{--t:22;--s:9;background:#f4ebdd;color:#4a3f36}
+.world-mend h2{font-family:'Collection Mend Newsreader',Georgia,serif;font-weight:400;letter-spacing:-.03em;line-height:.9}
+.world-mend .world-title p{font-family:'Collection Mend Newsreader',Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:1.05}
+.world-mend .world-image img{object-position:62% 50%}
+.world-mend .world-image:after{background:linear-gradient(90deg,#f4ebddf0,#f4ebdd88 32%,transparent 58%),linear-gradient(180deg,transparent 60%,#f4ebdde6)}
+.world-mend:focus-visible{outline-color:#4a3f36}
+.world-frame{--t:22;--s:9;background:#aed0c4;color:#403d49}
+.world-frame h2{font-family:'Manrope Variable',Arial,sans-serif;font-weight:800;letter-spacing:.14em;line-height:.95}
+.world-frame .world-title p{font-family:'Manrope Variable',Arial,sans-serif;font-weight:700;letter-spacing:-.04em;line-height:1}
+.world-frame .world-image img{object-position:50% 50%}
+.world-frame .world-image:after{background:linear-gradient(90deg,#aed0c4e6,transparent 50%),linear-gradient(180deg,transparent 60%,#aed0c4ee)}
+.world-frame:focus-visible{outline-color:#403d49}
+.world-odds{--t:24;--s:9;background:#f2eddf;color:#23232b}
+.world-odds h2{font-family:'Manrope Variable',Arial,sans-serif;font-weight:700;letter-spacing:-.05em;line-height:.9;text-transform:lowercase}
+.world-odds .world-title p{font-family:'Manrope Variable',Arial,sans-serif;font-weight:500;letter-spacing:-.04em;line-height:1.05}
+.world-odds .world-image img{object-position:70% 50%}
+.world-odds .world-image:after{background:linear-gradient(90deg,#f2eddff0,transparent 48%),linear-gradient(180deg,transparent 62%,#f2eddfe6)}
+.world-odds:focus-visible{outline-color:#2747b8}
+.world-rally{--t:30;--s:9;background:#243840;color:#f4f0e4}
+.world-rally h2{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;letter-spacing:-.01em;line-height:.88}
+.world-rally .world-title p{font-family:'DM Sans',Arial,sans-serif;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.world-rally .world-image img{object-position:58% 50%}
+.world-rally .world-image:after{background:linear-gradient(180deg,#243840aa,transparent 38%,#243840ee)}
+.world-rally:focus-visible{outline-color:#f4f0e4}
+.world-sente{--t:24;--s:9;background:#c6a476;color:#1f2321}
+.world-sente h2{font-family:'Bodoni Moda',Georgia,serif;font-weight:400;letter-spacing:.02em;line-height:.9}
+.world-sente .world-title p{font-family:'Bodoni Moda',Georgia,serif;font-weight:400;line-height:1.05}
+.world-sente .world-image img{object-position:96% 50%}
+.world-sente .world-image:after{background:linear-gradient(180deg,#c6a47699,transparent 36%,#c6a476ee)}
+.world-sente:focus-visible{outline-color:#1f2321}
+.world-pas{--t:30;--s:9;background:#c6b7a3;color:#27221f}
+.world-pas h2{font-family:'Collection Aeterna Bodoni',Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:.9}
+.world-pas .world-title p{font-family:'Collection Aeterna Bodoni',Georgia,serif;font-weight:400;line-height:1.05}
+.world-pas .world-image img{object-position:62% 46%}
+.world-pas .world-image:after{background:linear-gradient(90deg,#c6b7a3e6,transparent 46%),linear-gradient(180deg,transparent 60%,#c6b7a3e6)}
+.world-pas:focus-visible{outline-color:#27221f}
+
 /* The catalogue: one numbered list, in collection order. */
 .collection-index{margin:clamp(18px,2.8vh,44px) var(--gutter) clamp(18px,2.6vh,40px);border-top:1px solid #c7ccc2;border-bottom:1px solid #c7ccc2}
 .collection-index summary{display:flex;align-items:center;gap:16px;min-height:clamp(54px,6.4vh,84px);cursor:pointer;list-style:none;font-size:clamp(15px,1.1vw,40px);font-weight:500}

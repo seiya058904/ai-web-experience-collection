@@ -1124,5 +1124,331 @@
         ]
       }
     ]
+  },
+  "tenWorks": {
+    "date": "2026-11-09",
+    "method": "Sharp WebP q90, width-only resize, no upscaling, no crop. Eight sources are the works' own supplied hero files (largest candidate, unchanged); FRAME and ODDS use interface-cleaned 1920x1080 captures of their running opening (header and hero copy hidden, no artwork removed), stored in /collection/.",
+    "images": [
+      {
+        "work": "imago",
+        "source": "/imago/art/hero-desktop.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 48158,
+        "sourceSHA256": "6549c67df5c7ef5d9b86af66f63d0a4bbd4ceb177422164dc77f78b8f10c1c6d",
+        "width": 1536,
+        "height": 1024,
+        "variants": [
+          {
+            "url": "/collection/previews/imago-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 13494,
+            "sha256": "f7b222656e70d82c8ddb01b79837372adc26fe93bd94cb88bf0ce23101a5dd09"
+          },
+          {
+            "url": "/collection/previews/imago-960.webp",
+            "width": 960,
+            "height": 640,
+            "bytes": 26800,
+            "sha256": "59677e0248bebaab5dcf5f8e4472fed47ccd5c731d2c33f0ef2f461a01a7f0db"
+          },
+          {
+            "url": "/collection/previews/imago-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 38308,
+            "sha256": "c27507cc3f19a0748c8d03fa66cb31681093353cd68ab5c043bc76a4e92a9f0c"
+          }
+        ]
+      },
+      {
+        "work": "sillage",
+        "source": "/sillage/art/hero-desktop.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 64748,
+        "sourceSHA256": "082477fc4e46a6f069a53385f9204bb310aa9688648ae6cdb916ccddec657c68",
+        "width": 1536,
+        "height": 1024,
+        "variants": [
+          {
+            "url": "/collection/previews/sillage-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 16440,
+            "sha256": "0e79e86675accbc040f4922a6691fd653b3bf83685b314cd653496894d9c6820"
+          },
+          {
+            "url": "/collection/previews/sillage-960.webp",
+            "width": 960,
+            "height": 640,
+            "bytes": 32500,
+            "sha256": "bc6193c8cb1fcfc6d7b18ae134adb9984f728b02296ea6e496068837e85e5308"
+          },
+          {
+            "url": "/collection/previews/sillage-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 50226,
+            "sha256": "b5c1aab31788f223a32ae6a04ec8502919166d2ab344fdbf549ab539e2ead6a4"
+          }
+        ]
+      },
+      {
+        "work": "aer",
+        "source": "/aer/art/h-d.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 99728,
+        "sourceSHA256": "d2bf7a6c3be075048f3206456c0145051eb03be22d151bdf741ad5e62356e7d3",
+        "width": 1672,
+        "height": 941,
+        "variants": [
+          {
+            "url": "/collection/previews/aer-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 22076,
+            "sha256": "7249cc6b67e526fa9f8a23d6a934cf55bb549dc31ce267431f92956c9b983e4e"
+          },
+          {
+            "url": "/collection/previews/aer-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 45042,
+            "sha256": "f554c018d678abc5cf36e14b66bf22855b1fe22806a9a37fba35160dc1d48b64"
+          },
+          {
+            "url": "/collection/previews/aer-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 69678,
+            "sha256": "843a9a0c45d7aee9b6b88d9f11857d4e89e3ae07af0174ed2f159ba9621b24b7"
+          }
+        ]
+      },
+      {
+        "work": "berth",
+        "source": "/berth/assets/hero.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 71478,
+        "sourceSHA256": "63cd2b0f37a4bf20a0e203f22d916d3ae7e54c77aec3baa90f474768f9c75227",
+        "width": 1672,
+        "height": 941,
+        "variants": [
+          {
+            "url": "/collection/previews/berth-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 25010,
+            "sha256": "b71ab236e9be7a50b05d8e8b0aaf0b38cd03b77b26b13bfa2cfd8a866de109db"
+          },
+          {
+            "url": "/collection/previews/berth-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 44746,
+            "sha256": "2af0a55f09829be81032be4afcb152bed7c6f41278db1d0ab2695bb683dfbdea"
+          },
+          {
+            "url": "/collection/previews/berth-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 61386,
+            "sha256": "0e68fb8cde05fee677e839b3dbdf56410148c2279971ef201a839beb573c12d3"
+          }
+        ]
+      },
+      {
+        "work": "mend",
+        "source": "/mend/art/hero-desktop.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 134226,
+        "sourceSHA256": "d137311b29c736f97a6453df98dbe00d37c2f4a80e2bc0a5b2f8eb0af9f47778",
+        "width": 1672,
+        "height": 941,
+        "variants": [
+          {
+            "url": "/collection/previews/mend-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 31812,
+            "sha256": "10e8c6b6b38d19bfb3ff4aad9f0446b348fbd724133eb6ddd036e599c4b1ea71"
+          },
+          {
+            "url": "/collection/previews/mend-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 64704,
+            "sha256": "efbe705a15ad9e035af1019f5c129f331ccf0f6021bb646e9736713a52562bdf"
+          },
+          {
+            "url": "/collection/previews/mend-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 96286,
+            "sha256": "e71268f9afe489cec4f6b629bbd2f496a7b8c20dfb4efe52711b1b5bdc9dd39b"
+          }
+        ]
+      },
+      {
+        "work": "frame",
+        "source": "/collection/frame.webp",
+        "sourceKind": "interface-cleaned 1920x1080 capture of the running work (header and hero copy hidden, no artwork removed)",
+        "sourceBytes": 23330,
+        "sourceSHA256": "9876ebc796888ce9d83710bd0499150b5b64a3d3ed88e1d4fee9e310dbb77e06",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "url": "/collection/previews/frame-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 4422,
+            "sha256": "5a39089611fa00c125dd91350deb42ce60d2c23b8ed46650ae9f28401fdf128f"
+          },
+          {
+            "url": "/collection/previews/frame-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 8176,
+            "sha256": "19f21d6acbbdbef7c55fedf73c39431d420c2e527c793fed5d3438b5e1d46090"
+          },
+          {
+            "url": "/collection/previews/frame-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 11886,
+            "sha256": "5f1c4c21df823b48960032c609a05239be21d3fbcdd4c43251ad05ad20cfe6c9"
+          }
+        ]
+      },
+      {
+        "work": "odds",
+        "source": "/collection/odds.webp",
+        "sourceKind": "interface-cleaned 1920x1080 capture of the running work (header and hero copy hidden, no artwork removed)",
+        "sourceBytes": 37416,
+        "sourceSHA256": "ac7fe7b2f8de0610388c16feda33b920354bb9bb19f82e96a6d49b2c61ef4a45",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "url": "/collection/previews/odds-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 8304,
+            "sha256": "296eb0c8c8a8f1766d0c4f24609aa2521eb51708e7f5ba85602df37e61d7513b"
+          },
+          {
+            "url": "/collection/previews/odds-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 14906,
+            "sha256": "2a45c1c11828861c5e7c657867ae066ae03d0be4eddfae671084502c2e016f33"
+          },
+          {
+            "url": "/collection/previews/odds-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 20768,
+            "sha256": "61049abe10a9fb3bd73bc024ac91842dd9c3d3e9efe672be045739af5665952b"
+          }
+        ]
+      },
+      {
+        "work": "rally",
+        "source": "/rally/art/hero-desktop.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 215070,
+        "sourceSHA256": "1115aafbeab6f362aa7f73e99798d1ce5f4bc60d787e7afef11cefaffc99a8fa",
+        "width": 1672,
+        "height": 941,
+        "variants": [
+          {
+            "url": "/collection/previews/rally-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 52320,
+            "sha256": "7de5b4e9afad83b651954ffa6303b9aff563d1acbad4cb653f278c841bf5faf0"
+          },
+          {
+            "url": "/collection/previews/rally-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 106370,
+            "sha256": "8e45297f9e4791a36f604dcfb18b7b62fdce7adc7964604ef3152589150d2560"
+          },
+          {
+            "url": "/collection/previews/rally-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 158456,
+            "sha256": "5b8c3366b9efee3a303f4b4d23cadeaabc8ceb1368a692cb4b3f069d78d6c323"
+          }
+        ]
+      },
+      {
+        "work": "sente",
+        "source": "/sente/assets/sente-hero-table.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 100572,
+        "sourceSHA256": "066a0e0cd472a5db301116cc2e88560ab2dc7c4e00a736822007573187587951",
+        "width": 1536,
+        "height": 1024,
+        "variants": [
+          {
+            "url": "/collection/previews/sente-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 29294,
+            "sha256": "ecf61cbfff7039f66a9e491c6f30e5c0e9f8856ac579b9077f01f36f740818fb"
+          },
+          {
+            "url": "/collection/previews/sente-960.webp",
+            "width": 960,
+            "height": 640,
+            "bytes": 64656,
+            "sha256": "86036d14b896bd3e17f25bd4314d127cb125bc0fdd7bd4610c3ad6cdab5a9f37"
+          },
+          {
+            "url": "/collection/previews/sente-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 84802,
+            "sha256": "22b1b5f4dac7ae178754e3b859f48e7bd60f41cbc1dcf502971a5d80a9d33859"
+          }
+        ]
+      },
+      {
+        "work": "pas",
+        "source": "/pas/art/img-04.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 103720,
+        "sourceSHA256": "85904ead79b091a59e85994ee2308e88a5d716ea9e4a3b135db6ffc1138e510b",
+        "width": 1536,
+        "height": 1024,
+        "variants": [
+          {
+            "url": "/collection/previews/pas-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 19724,
+            "sha256": "692d08a64c1aa865af27de7a33bdf307f664450f23ee9dab159bef92006fe16d"
+          },
+          {
+            "url": "/collection/previews/pas-960.webp",
+            "width": 960,
+            "height": 640,
+            "bytes": 38148,
+            "sha256": "3e6f083d713c621baecb7a0570ed47a7c6416ec940a17953af0ddcfba0c5acfe"
+          },
+          {
+            "url": "/collection/previews/pas-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 54940,
+            "sha256": "647d55623394acdae41023c9bb9d515a1b844bdbdad8b87f88e8cded5e503a38"
+          }
+        ]
+      }
+    ]
   }
 }
