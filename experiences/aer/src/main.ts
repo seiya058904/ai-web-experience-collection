@@ -5,6 +5,7 @@ import type { GroundLoad, WindLayer } from './journey.ts';
 import { createKeepsakeSVG, createRouteDiagramSVG, keepsakeFilename } from './keepsake.ts';
 import { balloonMark, fallbackScene, stillFrame } from './illustration.ts';
 import { AirSound } from './audio.ts';
+import { softText } from '../../shared/soft-swap.ts';
 import type { JourneyScene } from './scene.ts';
 
 type MotionMode = 'system' | 'full' | 'reduced';
@@ -493,8 +494,8 @@ function tick(time: number): void {
     q('#journey-progress').style.width = `${Math.min(100, progress / 9.8 * 100)}%`;
     q('.site-header').classList.toggle('scrolled', scrollY > 60);
     if (index !== lastChapter) {
-      q('#current-number').textContent = String(index + 1).padStart(2, '0');
-      q('#current-label').textContent = chapterNames[index];
+      softText(q('#current-number'), String(index + 1).padStart(2, '0'), { instant: reduced });
+      softText(q('#current-label'), chapterNames[index], { instant: reduced });
       document.body.dataset.chapter = String(index + 1);
       for (const link of all<HTMLAnchorElement>('#chapter-links a')) {
         if (link.hash === `#${sections[index].id}`) link.setAttribute('aria-current', 'step');
