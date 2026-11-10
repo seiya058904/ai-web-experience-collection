@@ -274,3 +274,7 @@ Supplied clay-court story with AI-generated court, player and ball images and a 
 ## SENTE — Between moves
 
 Supplied playable Go story with AI-generated table and board-material images; rules and positions are computed in code. Generated concepts stay in the ZIP. No overall application license is declared. Bodoni Moda and Manrope (SIL OFL), Lenis (MIT). Original ZIP: `SENTE-source.zip`, 27,427,347 bytes, 136 entries, SHA-256 `c5c5c1093fc3557249e88716f32afb7b9be45ea165b8d214826478e43aba5a35`, kept outside the repository. Root Lenis 1.3.26 replace the supplied 1.3.27. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/sente/upstream/`; the deployed notice is `public/sente/NOTICE.md`.
+
+## ANAX — A Mechanical Dragonfly
+
+Original to this repository, not a supplied delivery. Source, text, geometry and rendered captures are the project author's; no external media. It reuses Roboto Flex and IBM Plex Mono (SIL OFL) from `public/grid/fonts/` by URL. three.js (MIT) comes from the root dependencies; GSAP and Lenis are not used. The deployed notice is `public/anax/NOTICE.md`.

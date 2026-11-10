@@ -66,12 +66,13 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 - **AURORA** (`/aurora/`): five chapters from a night sky to the solar wind and back, with published magnetosphere relationships and honest visibility for your latitude. An illustration, not a forecast.
 
 - **CREASE** (`/crease/`): five chapters of one sheet folded by exact rigid geometry, a breakable Kawasaki vertex, a Miura pattern you pull open, and a crease pattern you can print.
+- **ANAX** (`/anax/`): one precision mechanical dragonfly on a single screen that you can turn, open and take apart, with a working crank-and-rocker wing drive inside. A design study, not a product.
 
 ## Capabilities and Constraints
 
 - A restrained photographic Collection entrance; each work has its own HTML document, runtime and lifecycle.
 - Cinematic scrolling, continuous section handoffs and visual-first interaction; responsive compositions, keyboard access and reduced-motion reading.
-- Preserve the accepted imagery, typography, controls, timing and content of all forty-nine works. Do not impose a common visual theme or expand the entrance into another story.
+- Preserve the accepted imagery, typography, controls, timing and content of all fifty works. Do not impose a common visual theme or expand the entrance into another story.
 - One Lenis instance and one owned clock per smoothed experience: GSAP for F1, VERDANT, ORBITAL, GLAZE, CHRONOS, INTERVAL, FORM, FUSION, GLASSHOUSE, VEIL, INKSCAPE, FACET, SILICON, LUTHIER, NIB, CREMA, CRAVE, GRID, RELAY, SUPERCELL, PELAGIC, BACKSTAGE, MURMURATION, VAREN, AURORA and CREASE; the existing RAF for KAGE, OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, CODEX, MAGMA, FOSSIL, URUSHI, DOSE, COUNTERFORM and FERRUM. OPTIC, ATLAS, THRUST, RESONANCE, AETERNA, PARALLAX, LUTHIER, CODEX, MAGMA, FOSSIL, URUSHI, NIB, CREMA, CRAVE, GRID and DOSE use wheel interpolation of 0.105, native touch, immediate reduced-motion/restoration positioning and no second scene-progress easing. COUNTERFORM and FERRUM keep their supplied interpolation and timing. The Collection entrance smooths wheel input with one Lenis instance on its own RAF and starts none under reduced motion. Retain rendering caps, visibility suspension, teardown and read-position retention.
 - Static multi-page deployment under a configurable Vite base. Runtime assets and cross-work links must retain that base.
 - Preserve all asset and dependency provenance. Generated illustrations and simulated engineering values are not official photographs, precise engineering drawings or telemetry.
@@ -80,11 +81,11 @@ A showcase collection of complete, independent web experiences. Visitors choose 
 
 ## Brand Commitments
 
-The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects forty-nine distinct identities, including COUNTERFORM's real variable typography and letterform studies, FERRUM's original steel sculpture and firelit material theatre, and BACKSTAGE's working miniature stage. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
+The Collection is **AI Web Experience Collection**. Its quiet gallery frame connects fifty distinct identities, including COUNTERFORM's real variable typography and letterform studies, FERRUM's original steel sculpture and firelit material theatre, and BACKSTAGE's working miniature stage. Each experience owns its colors, compositions, motion and pace. See [the Collection design contract](docs/collection/DESIGN.md) and the scoped work design contracts.
 
 ## Evidence on Hand
 
-Forty-nine complete experiences are integrated. The preceding 326 model/continuity/rendering tests are supplemented by the new work-specific checks; current results are recorded in each acceptance file. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
+Fifty complete experiences are integrated. The preceding 326 model/continuity/rendering tests are supplemented by the new work-specific checks; current results are recorded in each acceptance file. [F1 motion audit](docs/f1/SCROLL-AUDIT.md) records the motion architecture, prior browser evidence and physical-device validation limits; previous release observations do not certify later builds.
 
 ## Accessibility & Inclusion
 

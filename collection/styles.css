@@ -440,6 +440,12 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .world-sente .world-image img{object-position:96% 50%}
 .world-sente .world-image:after{background:linear-gradient(180deg,#c6a47699,transparent 36%,#c6a476ee)}
 .world-sente:focus-visible{outline-color:#1f2321}
+.world-anax{--t:19;--s:8.5;background:#07080a;color:#edece8}
+.world-anax h2{font-family:'Collection Grid Roboto',Arial,sans-serif;font-weight:300;font-stretch:151%;letter-spacing:.3em;line-height:.9}
+.world-anax .world-title p{font-family:'Collection Grid Roboto',Arial,sans-serif;font-weight:300;font-stretch:108%;line-height:1.1}
+.world-anax .world-image img{object-position:62% 50%}
+.world-anax .world-image:after{background:linear-gradient(180deg,#07080a88,transparent 36%,#07080aee)}
+.world-anax:focus-visible{outline-color:#eaa94f}
 
 /* The catalogue: one numbered list, in collection order. */
 .collection-index{margin:clamp(18px,2.8vh,44px) var(--gutter) clamp(18px,2.6vh,40px);border-top:1px solid #c7ccc2;border-bottom:1px solid #c7ccc2}
