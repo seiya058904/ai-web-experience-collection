@@ -1,0 +1,178 @@
+@layer components {
+.anatomy-svg,
+.transition-anchor {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  color: var(--ivory, #f1e9e1);
+}
+.anatomy-svg { max-width: 820px; margin-inline: auto; }
+.transition-stage > .transition-anchor { height: 100%; max-height: 100%; min-height: 0; overflow: hidden; }
+.transition-stage:has(> .media-error) { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 8px; }
+.transition-stage > .media-error { position: relative; inset: auto; max-width: none; z-index: 5; display: flex; align-items: center; gap: 12px; padding: 10px 12px; font-size: 12px; line-height: 1.5; }
+.transition-stage > .media-error p { flex: 1; }
+.transition-stage > .media-error button { flex: 0 0 auto; margin-top: 0; padding-inline: 12px; }
+.anatomy-svg text,
+.transition-anchor text { font-family: var(--font-sans, 'DM Sans', sans-serif); fill: #eee2da; }
+.svg-label { font-size: 19px; font-weight: 400; letter-spacing: -.02em; }
+.svg-small { font-size: 18px; }
+.svg-title { font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif) !important; font-size: 34px; }
+.svg-note { font-size: 15px; fill: #c2afb0 !important; }
+.svg-micro { font-size: 12px; font-weight: 500; letter-spacing: .11em; }
+.svg-muted { fill: #ab969a !important; }
+.svg-internal { font-size: 25px; fill: #eeded6; font-weight: 400; letter-spacing: .04em; }
+.svg-leader { fill: none; stroke: #ab8f91; stroke-width: 1; }
+.svg-leader-dot { fill: #d5b3a3; }
+.svg-rule { stroke: #9b7c81; stroke-width: .75; opacity: .5; }
+.myocardial-fibers { stroke: #ddb1ae; stroke-width: .8; fill: none; opacity: .22; }
+.trabeculae { stroke: #b57482; stroke-width: 4; stroke-linejoin: round; fill: none; opacity: .52; }
+.valve-chordae { stroke: #ead6c6; stroke-width: 1.5; fill: none; opacity: .85; }
+.outflow-cusps { fill: none; stroke: #e3c3b3; stroke-width: 4; }
+.route-slate, .route-rose { fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 3.5; }
+.route-slate { stroke: #9ec9d0; }
+.route-rose { stroke: #e5a19f; }
+.electrical-routes { stroke: #ddbd86; stroke-width: 2.8; stroke-dasharray: 2 7; stroke-linecap: round; fill: none; }
+.electrical-routes .electrical-node { fill: #edcf93; stroke: none; }
+.electrical-routes .electrical-node-ring { stroke-width: 1.5; stroke-dasharray: none; fill: #372721; }
+.blood-routes, .electrical-routes, [data-chamber], [data-wall], [data-route], [data-gas] { transition: opacity .28s ease, filter .28s ease, stroke .28s ease; }
+.diagram--chambers[data-mode="ra"] [data-chamber]:not([data-chamber="ra"]),
+.diagram--chambers[data-mode="rv"] [data-chamber]:not([data-chamber="rv"]),
+.diagram--chambers[data-mode="la"] [data-chamber]:not([data-chamber="la"]),
+.diagram--chambers[data-mode="lv"] [data-chamber]:not([data-chamber="lv"]) { opacity: .32; }
+.diagram--chambers[data-mode="ra"] [data-chamber="ra"],
+.diagram--chambers[data-mode="rv"] [data-chamber="rv"],
+.diagram--chambers[data-mode="la"] [data-chamber="la"],
+.diagram--chambers[data-mode="lv"] [data-chamber="lv"] { stroke: #ffe0af; stroke-width: 5; filter: drop-shadow(0 0 10px #cba66c45); }
+.diagram--chambers[data-mode="right"] [data-chamber="la"],
+.diagram--chambers[data-mode="right"] [data-chamber="lv"],
+.diagram--chambers[data-mode="left"] [data-chamber="ra"],
+.diagram--chambers[data-mode="left"] [data-chamber="rv"] { opacity: .25; }
+.diagram--signal[data-mode="electrical"] [data-layer="blood"],
+.diagram--overview[data-mode="electrical"] [data-layer="blood"] { opacity: 0; }
+.diagram--signal[data-mode="blood"] [data-layer="electrical"],
+.diagram--overview[data-mode="blood"] [data-layer="electrical"] { opacity: 0; }
+.diagram--signal .heart-shell, .diagram--overview .heart-shell { opacity: .75; }
+.diagram--return [data-route="pulmonary-return"],
+.diagram--return [data-route="aortic-out"],
+.diagram--return [data-route="pulmonary-out"] { opacity: .08; }
+.diagram--return[data-mode="body"] [data-route="systemic-return"] { stroke-width: 4.5; }
+.diagram--return [data-chamber="la"],
+.diagram--return [data-chamber="lv"],
+.diagram--return [data-wall="left"],
+.diagram--return [data-vessel="aorta"],
+.diagram--return [data-vessel="pulmonary-veins"],
+.diagram--return [data-vessel="pulmonary-trunk"] { opacity: .3; }
+.diagram--return [data-return-segment] { opacity: .12; transition: opacity .22s ease, stroke-width .22s ease; }
+.diagram--return[data-mode="body"] [data-return-segment="entry"],
+.diagram--return[data-mode="cavae"] [data-return-segment="entry"],
+.diagram--return[data-mode="ra"] [data-return-segment="atrium"],
+.diagram--return[data-mode="rv"] [data-return-segment="valve"],
+.diagram--return[data-mode="rv"] [data-return-segment="ventricle"] { opacity: 1; stroke-width: 4.8; }
+.diagram--return[data-mode="ra"] [data-return-segment="entry"],
+.diagram--return[data-mode="rv"] [data-return-segment="atrium"] { opacity: .35; }
+.diagram--return[data-mode="cavae"] [data-vessel="cavae"] { stroke: #e2eeeb; stroke-width: 4; }
+.diagram--return[data-mode="ra"] [data-chamber="ra"],
+.diagram--return[data-mode="rv"] [data-chamber="rv"] { stroke: #ffe0af; stroke-width: 5; }
+.valve-family--outflow { display: none; }
+.diagram--valves[data-mode="outflow"] .valve-family--av { display: none; }
+.diagram--valves[data-mode="outflow"] .valve-family--outflow { display: inline; }
+.lung-lobes { fill: none; stroke: #d49ca3; stroke-width: 1.3; opacity: .5; }
+.airway-branches { fill: none; stroke: #c4b8ad; stroke-width: 7; stroke-linecap: round; opacity: .3; }
+.pulmonary-branch { stroke-width: 5; }
+.diagram--lungs[data-mode="right-lung"] [data-route="left-lung"],
+.diagram--lungs[data-mode="left-lung"] [data-route="right-lung"] { opacity: .14; }
+.gas-arrow { fill: none; stroke-width: 5; }
+.gas-oxygen .gas-arrow { stroke: #ddbd86; }
+.gas-carbon .gas-arrow { stroke: #9ec9d0; stroke-dasharray: 9 6; }
+.gas-symbol { font-family: var(--font-serif, Georgia, serif) !important; font-size: 37px; }
+.gas-oxygen text { fill: #e9ce9c; }
+.gas-carbon text { fill: #b5d4db; }
+.diagram--exchange[data-mode="oxygen"] [data-gas="carbon"],
+.diagram--exchange[data-mode="carbon"] [data-gas="oxygen"] { opacity: .12; }
+.diagram--pulmonary-return [data-route="aortic-out"],
+.diagram--pulmonary-return [data-route="pulmonary-out"] { opacity: .08; }
+.diagram--pulmonary-return[data-mode="systemic"] [data-route="pulmonary-return"],
+.diagram--pulmonary-return[data-mode="pulmonary"] [data-route="systemic-return"] { opacity: .08; }
+.diagram--pulmonary-return[data-mode="systemic"] [data-chamber="ra"],
+.diagram--pulmonary-return[data-mode="pulmonary"] [data-chamber="la"],
+.diagram--pulmonary-return[data-mode="pulmonary"] [data-chamber="lv"] { stroke: #edc2a5; stroke-width: 4; }
+.diagram--walls [data-layer="blood"] { opacity: .15; }
+.diagram--walls[data-mode="left"] [data-wall="left"],
+.diagram--walls[data-mode="right"] [data-wall="right"] { stroke: #ffe0af; stroke-width: 4; filter: drop-shadow(0 0 8px #d79c5c44); }
+.diagram--walls[data-mode="outflow"] [data-layer="blood"] { opacity: 1; }
+.diagram--walls[data-mode="outflow"] [data-route]:not([data-route="aortic-out"]) { opacity: .08; }
+.body-structures { fill: #343037; stroke: #6d5c65; stroke-width: 1; opacity: .65; }
+.systemic-arteries, .systemic-veins { stroke-width: 3.5; }
+.tissue-beds { fill: none; stroke: #ddbd86; stroke-width: 2; }
+.body-heart-label { font-size: 15px; fill: #f5dfcf; }
+.diagram--systemic[data-mode="arterial"] [data-route="venous"],
+.diagram--systemic[data-mode="venous"] [data-route="arterial"] { opacity: .12; }
+.anchor-trace { fill: none; stroke: #d5b17d; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.transition-anchor .anchor-target { opacity: var(--target-opacity, 1); }
+.transition-anchor .anchor-source { opacity: var(--source-opacity, 1); }
+.diagram-key { display: none; }
+.signal-reading { margin-top: 18px; padding-top: 20px; border-top: 1px solid #80606b66; }
+.signal-steps { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; list-style: none; padding: 0; margin: 0; }
+.signal-steps li { display: flex; gap: 10px; align-items: flex-start; }
+.signal-step-number { color: #d9b883; font-size: 12px; line-height: 1.8; }
+.signal-steps strong { display: block; font-size: 15px; line-height: 1.4; font-weight: 500; }
+.signal-steps small { display: block; color: #bfaab2; font-size: 13px; line-height: 1.6; margin-top: 5px; }
+.signal-blood-reading { display: none; font-size: 15px; line-height: 1.7; color: #dfb7ba; }
+.signal-reading .signal-clock-note { color: #bfaab2; font-size: 13px; line-height: 1.7; margin-top: 17px; }
+.signal-plate[data-mode="blood"] .signal-steps { display: none; }
+.signal-plate[data-mode="blood"] .signal-blood-reading,
+.signal-plate[data-mode="both"] .signal-blood-reading { display: block; }
+.signal-plate[data-mode="both"] .signal-blood-reading { margin-top: 18px; }
+@media (max-width: 600px) {
+  .anatomy-svg .svg-micro { font-size: 14px; letter-spacing: .035em; }
+  .anatomy-svg .svg-label { font-size: 22px; }
+  .anatomy-svg .svg-title { font-size: 38px; }
+  .anatomy-svg .svg-note { font-size: 17px; }
+  .anatomy-svg .svg-internal { font-size: 32px; }
+  .anatomy-svg .chamber-callouts { display: none; }
+  .anatomy-svg .orientation-labels .svg-micro { font-size: 15px; }
+  .anatomy-svg .orientation-labels .svg-muted { display: none; }
+  .diagram--return .svg-small, .diagram--walls .svg-small, .diagram--signal .svg-small { font-size: 19px; }
+  .diagram--exchange .gas-symbol { font-size: 42px; }
+  .anatomy-svg .svg-leader, .anatomy-svg .svg-leader-dot { display: none; }
+  .anatomy-svg .svg-note { display: none; }
+  .diagram--return .svg-small,
+  .diagram--return .svg-micro,
+  .diagram--pulmonary-return .svg-small,
+  .diagram--pulmonary-return .svg-micro,
+  .diagram--walls .svg-small,
+  .diagram--walls .svg-micro,
+  .diagram--systemic .svg-small,
+  .diagram--systemic .svg-micro,
+  .diagram--valves .svg-micro,
+  .diagram--signal .signal-callouts .svg-small,
+  .diagram--signal .signal-callouts .svg-micro,
+  .diagram--overview .signal-callouts .svg-small,
+  .diagram--overview .signal-callouts .svg-micro,
+  .diagram--exchange .svg-small,
+  .diagram--exchange .svg-micro { display: none; }
+  .diagram--lungs .svg-small { font-size: 25px; }
+  .diagram-key {
+    display: grid;
+    gap: .65rem;
+    margin: 1rem 0 0;
+    padding: 1.1rem 0 0;
+    border-top: 1px solid #73565d70;
+    list-style: none;
+    color: var(--ivory, #f1e9e1);
+    font: 400 16px/1.55 var(--font-sans, 'DM Sans', sans-serif);
+    text-align: left;
+  }
+  .diagram-key li { margin: 0; padding: 0; }
+  .signal-plate .diagram-key { display: none; }
+  .signal-steps { grid-template-columns: 1fr; gap: 15px; }
+  .signal-steps strong { font-size: 16px; }
+  .signal-steps small, .signal-reading .signal-clock-note { font-size: 14px; }
+  .signal-blood-reading { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .anatomy-svg * { transition: none !important; }
+}
+[data-motion="reduced"] .anatomy-svg * { transition: none !important; }
+}

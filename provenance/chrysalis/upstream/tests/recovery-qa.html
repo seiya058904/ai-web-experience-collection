@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHRYSALIS — Recovery and performance QA</title>
+<style>
+:root{color-scheme:dark;font:14px/1.5 system-ui,sans-serif;color:#e7e7cf;background:#17271c}*{box-sizing:border-box}body{margin:0}header{padding:16px 20px;background:#1b3022;border-bottom:1px solid #667658}h1{font-size:21px;line-height:1.2;margin:0 0 7px}p{margin:6px 0;color:#c6cfbb;max-width:110ch}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}button,input,select{font:inherit;min-height:36px;padding:6px 10px;color:inherit;background:#102118;border:1px solid #778669;border-radius:4px}button{cursor:pointer}button:hover{background:#35513b}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #d1b974;outline-offset:3px}label{display:flex;align-items:center;gap:7px}#source{width:155px}#status{padding:10px 20px;min-height:42px;background:#182a1e;border-bottom:1px solid #647456;position:sticky;top:0;z-index:5}#frame-shell{padding:12px;overflow:auto;width:100%;background:#0b170f}iframe{display:block;border:0;max-width:none;transform:none;background:#173924}#results-panel{padding:18px 20px}h2{font-size:18px;margin:0 0 10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;font:12px/1.5 ui-monospace,monospace;padding:14px;border:1px solid #647456;background:#0f1d14}#summary{margin-bottom:12px;font-variant-numeric:tabular-nums}.focus-view header,.focus-view #status,.focus-view #results-panel{display:none}.focus-view #frame-shell{padding:0;overflow:visible;width:max-content}.focus-view #leave-focus{display:block;position:static;margin:8px}.focus-view{width:max-content;min-width:100%}#leave-focus{display:none;position:fixed;right:8px;bottom:8px;z-index:20;font-size:12px;opacity:.75}#results-panel:target{scroll-margin-top:50px}a{color:#d1b974}
+</style>
+</head>
+<body>
+<header>
+<h1>CHRYSALIS · Recovery and performance</h1>
+<p>One retained, same-origin iframe. Ordinary checks reuse its loaded production document. Load and Reload are separate network actions. A changed shared preview route is recorded as an infrastructure blocker.</p>
+<p>Input is authored DOM clicks and native scroll calls. Delayed-callback stress is explicitly simulated. No device, operating-system, true browser-zoom, or network-throttling claim is made.</p>
+<div class="controls">
+<label>Site <input id="source" value="/" aria-label="Site path"></label>
+<label>Viewport <select id="viewport" aria-label="CSS viewport"><option value="1440x900">1440 × 900</option><option value="390x844">390 × 844</option></select></label>
+<button id="load" data-action>Load site once</button><button id="reload" data-action>Reload site</button><button id="reload-checks" data-action>Reload layout checks</button><button id="focus">Focus viewport</button>
+</div>
+<div class="controls">
+<button id="failure" data-action>Failed image + Retry</button><button id="race" data-action>Late callback stress</button><button id="stills" data-action>Still view + restore</button><button id="resize" data-action>Resize + refresh</button><button id="history" data-action>History back + forward</button><button id="performance" data-action>Observe performance</button><button id="run" data-action>Run recovery checks</button><button id="stop" disabled>Stop</button><button id="download">Download JSON</button><a href="#results-panel">Results</a>
+</div>
+</header>
+<div id="status" role="status" aria-live="polite">No site loaded. Reassert the authorized production route, then choose Load site once.</div>
+<div id="frame-shell"><iframe id="site" title="CHRYSALIS recovery test viewport" width="1440" height="900"></iframe></div>
+<section id="results-panel"><h2>Observed recovery results</h2><p id="summary">No checks have run.</p><pre id="results">No results yet.</pre></section>
+<button id="leave-focus">Return to recovery controls</button>
+<script>
+'use strict';
+const $=selector=>document.querySelector(selector);
+const frame=$('#site');
+const expectedTitle='CHRYSALIS — The architecture of becoming';
+const ids=Array.from({length:11},(_,i)=>'ch-'+String(i+1).padStart(2,'0'));
+let busy=false,stopping=false,loaded=false;
+let observers=[];
+let longTasks=[];
+let longTaskSupport={supported:false,observerStartedAtMs:null,error:null};
+let retainedWarmImages=[];
+const report={
+  status:'NOT TESTED',createdAt:new Date().toISOString(),lastUpdatedAt:null,
+  browserUserAgent:navigator.userAgent,outerViewport:{width:innerWidth,height:innerHeight,devicePixelRatio},
+  method:'A retained same-origin iframe containing the production document; visible controls invoke DOM click(), history actions, and native scrollTo().',
+  environment:{physicalDevice:false,cache:'Shared/warm browser cache may be present. No cache clearing is performed.',network:'Unthrottled. No bandwidth or latency emulation.',hardware:'Unknown; software/cloud rendering may affect measurements.'},
+  loads:[],routeChecks:[],checks:[],performanceObservations:[],
+  limitations:[
+    'The iframe is a CSS viewport, not a physical-device emulator.',
+    'A real unavailable-image URL exercises loading/decode failure. It does not emulate a general network outage.',
+    'Late-callback stress invokes captured old application handlers after the final UI selection. It does not reorder real network responses.',
+    'Frame intervals include iframe/browser/harness overhead and do not establish a hardware FPS capability.',
+    'FCP, application-ready, and hero-asset-ready are distinct observations. None is relabeled as LCP, INP, or time to first user interaction.',
+    'OS reduced-motion emulation, physical touch, native keyboard operation, background restoration, and true browser zoom are outside this harness.',
+    'Fresh navigation and resource checks require the shared preview route still to serve CHRYSALIS. Loaded-document checks remain independent of that route.'
+  ]
+};
+class BlockedError extends Error{constructor(message){super(message);this.name='InfrastructureBlocked';}}
+function status(text){$('#status').textContent=text;}
+function assert(condition,message,details){if(!condition)throw new Error(message+(details===undefined?'':' · '+JSON.stringify(details)));}
+function round(value){return Number.isFinite(value)?Math.round(value*1000)/1000:null;}
+function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+function show(){
+  report.lastUpdatedAt=new Date().toISOString();
+  const counts={PASS:0,FAIL:0,BLOCKED:0,OBSERVED:0};for(const c of report.checks)if(c.status in counts)counts[c.status]++;
+  report.status=busy?'IN PROGRESS':counts.FAIL?'FAIL':counts.BLOCKED?'PARTIAL':counts.PASS?'PASS':counts.OBSERVED?'OBSERVED':'NOT TESTED';
+  $('#summary').textContent=`${report.status} · ${counts.PASS} passed, ${counts.FAIL} failed, ${counts.BLOCKED} blocked, ${counts.OBSERVED} observational records.`;
+  $('#results').textContent=JSON.stringify(report,null,2);
+}
+function sourceUrl(){const url=new URL($('#source').value,location.href);if(url.origin!==location.origin)throw new BlockedError('Only the same-origin authorized preview is permitted.');url.hash='';return url;}
+function getContext(){
+  let win,doc;try{win=frame.contentWindow;doc=frame.contentDocument;}catch{throw new BlockedError('The iframe is no longer a readable same-origin document.');}
+  if(!loaded||!win||!doc)throw new BlockedError('Load the authorized production document first.');
+  if(doc.title!==expectedTitle||doc.querySelectorAll('.chapter').length!==11)throw new BlockedError('The retained iframe no longer contains the expected eleven-chapter CHRYSALIS document.');
+  return {win,doc};
+}
+async function waitFor(fn,message,timeout=10000){const start=performance.now();while(performance.now()-start<timeout){if(stopping)throw new Error('Stopped by the operator.');try{const answer=fn();if(answer)return answer;}catch(error){if(error instanceof BlockedError)throw error;}await sleep(50);}throw new Error(message);}
+async function settle(){const {win}=getContext();await new Promise(resolve=>win.requestAnimationFrame(()=>win.requestAnimationFrame(resolve)));await sleep(70);}
+async function verifyCurrentRoute(){
+  const url=sourceUrl();const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);
+  try{
+    const response=await fetch(url.href,{cache:'no-store',signal:controller.signal});
+    const text=await response.text();const documentTitle=new DOMParser().parseFromString(text,'text/html').title;
+    const result={at:new Date().toISOString(),url:url.href,status:response.status,title:documentTitle,expected:documentTitle===expectedTitle};report.routeChecks.push(result);show();
+    if(!response.ok||documentTitle!==expectedTitle)throw new BlockedError('The shared preview route is serving a different or unavailable document. Reassert the CHRYSALIS production route before network checks. Observed title: '+(documentTitle||'(none)'));
+    return result;
+  }catch(error){if(error instanceof BlockedError)throw error;const result={at:new Date().toISOString(),url:url.href,error:String(error.message??error),expected:false};report.routeChecks.push(result);throw new BlockedError('The current preview route could not be verified: '+String(error.message??error));}finally{clearTimeout(timeout);}
+}
+function disconnectObservers(){for(const observer of observers)observer.disconnect();observers=[];longTasks=[];longTaskSupport={supported:false,observerStartedAtMs:null,error:null};}
+function observeFrame(){
+  disconnectObservers();const {win}=getContext();
+  const supported=win.PerformanceObserver?.supportedEntryTypes?.includes('longtask')??false;
+  longTaskSupport={supported,observerStartedAtMs:round(win.performance.now()),bufferedRequested:true,error:null};
+  if(supported){try{const observer=new win.PerformanceObserver(list=>{for(const entry of list.getEntries())longTasks.push({startTimeMs:round(entry.startTime),durationMs:round(entry.duration),name:entry.name});});observer.observe({type:'longtask',buffered:true});observers.push(observer);}catch(error){longTaskSupport.error=String(error.message??error);}}
+}
+async function warmMedia(){
+  const {doc,win}=getContext();const urls=new Set();
+  for(const img of doc.querySelectorAll('img')){if(img.currentSrc&&!img.currentSrc.startsWith('data:'))urls.add(img.currentSrc);else if(img.src&&!img.src.startsWith('data:'))urls.add(img.src);}
+  for(const source of doc.querySelectorAll('source[srcset]'))for(const part of source.srcset.split(',')){const value=part.trim().split(/\s+/)[0];if(value&&!value.startsWith('data:'))urls.add(new URL(value,doc.baseURI).href);}
+  urls.add(new URL('assets/ai-15-unfolding.webp',doc.baseURI).href);
+  retainedWarmImages=[];
+  const results=await Promise.all([...urls].map(url=>new Promise(resolve=>{const image=new win.Image();retainedWarmImages.push(image);let done=false;const finish=state=>{if(done)return;done=true;resolve({url,state});};image.onload=()=>finish('loaded');image.onerror=()=>finish('unavailable');image.src=url;if(image.complete)finish(image.naturalWidth?'loaded':'unavailable');setTimeout(()=>finish('timeout'),12000);} )));
+  return {requested:results.length,loaded:results.filter(r=>r.state==='loaded').length,unavailable:results.filter(r=>r.state!=='loaded')};
+}
+function readingState(){
+  const {doc,win}=getContext();const y=win.scrollY,probe=y+win.innerHeight/2;
+  const chapters=[...doc.querySelectorAll('.chapter[id]')].map(el=>{const r=el.getBoundingClientRect();return {id:el.id,top:r.top+y,height:r.height,mode:el.dataset.mode??null};});
+  const markers=[...doc.querySelectorAll('.chapter-transition[data-from][data-to]')].map(el=>{const r=el.getBoundingClientRect();return {id:el.id,from:el.dataset.from,to:el.dataset.to,top:r.top+y,height:r.height};}).filter(m=>m.height>0);
+  let owner=0;for(let i=0;i<chapters.length;i++)if(probe>=chapters[i].top)owner=i;
+  for(const m of markers){const target=chapters.findIndex(c=>c.id===m.to);if(probe>=m.top+m.height/2&&target>=0)owner=Math.max(owner,target);}
+  let anchor=null;
+  for(const m of markers){const sourceIndex=chapters.findIndex(c=>c.id===m.from);const source=chapters[sourceIndex],target=chapters[sourceIndex+1];if(!source||!target||target.id!==m.to)continue;const bridgeStart=source.top+source.height,bridgeEnd=target.top;if((probe>=m.top&&probe<=m.top+m.height)||(probe>=bridgeStart&&probe<=bridgeEnd)){anchor={kind:'transition',id:m.id,from:m.from,to:m.to,fraction:(probe-m.top)/m.height,top:m.top,height:m.height,bridgeStart,bridgeEnd};break;}}
+  if(!anchor){const chapter=chapters.find(c=>c.height>0&&probe>=c.top&&probe<=c.top+c.height);if(chapter)anchor={kind:'chapter',id:chapter.id,fraction:(probe-chapter.top)/chapter.height,top:chapter.top,height:chapter.height};}
+  const selected=doc.querySelector('#ch-05 [data-select="instar"][aria-pressed="true"]');
+  return {scrollY:y,probeY:probe,viewport:{width:win.innerWidth,height:win.innerHeight},documentHeight:doc.documentElement.scrollHeight,hash:win.location.hash,activeChapter:doc.documentElement.dataset.activeChapter??null,reloadRestoration:doc.documentElement.dataset.reloadRestoration??null,measuredOwner:chapters[owner]?.id??null,renderedTransition:doc.documentElement.dataset.transition??null,renderedTransitionProgress:doc.documentElement.dataset.transitionProgress??null,anchor,selectedInstar:selected?.textContent.trim()??null};
+}
+async function settledReadingState(){
+  await settle();let measured=readingState();
+  await waitFor(()=>{measured=readingState();return measured.activeChapter===measured.measuredOwner;},'Rendered chapter ownership did not agree with freshly measured geometry. Last state: '+JSON.stringify(measured));
+  return measured;
+}
+function assertReloadRestoration(before,after,requirements={}){
+  assert(before.hash===after.hash,'Reload changed the chapter hash.',{before:before.hash,after:after.hash});
+  assert(before.activeChapter===before.measuredOwner&&after.activeChapter===after.measuredOwner,'Rendered ownership does not match the measured reading position.',{before,after});
+  assert(before.measuredOwner===after.measuredOwner,'Reload selected a different semantic chapter.',{before,after});
+  let layoutChanged=false,semanticDelta=null,expectedY=before.scrollY;
+  if(before.anchor){
+    assert(after.anchor&&before.anchor.kind===after.anchor.kind&&before.anchor.id===after.anchor.id,'Reload did not retain the same chapter or bridge anchor.',{before:before.anchor,after:after.anchor});
+    semanticDelta=Math.abs(before.anchor.fraction-after.anchor.fraction);
+    const tolerance=1.1/Math.min(before.anchor.height,after.anchor.height)+1e-6;
+    assert(semanticDelta<=tolerance,'Reload changed the reading fraction within its semantic anchor.',{before:before.anchor,after:after.anchor,semanticDelta,tolerance});
+    layoutChanged=Math.abs(before.anchor.top-after.anchor.top)>.01||Math.abs(before.anchor.height-after.anchor.height)>.01||before.viewport.height!==after.viewport.height;
+    if(layoutChanged)expectedY=after.anchor.top+after.anchor.height*before.anchor.fraction-after.viewport.height/2;
+  }
+  const maximum=Math.max(0,after.documentHeight-after.viewport.height);expectedY=Math.max(0,Math.min(maximum,expectedY));
+  assert(Math.abs(after.scrollY-expectedY)<=2,'Reload did not reach the offset implied by the retained reading anchor.',{before,after,layoutChanged,expectedY,error:after.scrollY-expectedY});
+  if(!layoutChanged)assert(Math.abs(before.scrollY-after.scrollY)<=2,'An unchanged layout did not preserve the native scroll offset.',{before:before.scrollY,after:after.scrollY});
+  if(requirements.expectGeometryChange)assert(layoutChanged,'The changed-layout reload scenario did not actually change anchor geometry.',{before:before.anchor,after:after.anchor});
+  if(requirements.requireUnchanged)assert(!layoutChanged,'The unchanged-layout reload scenario unexpectedly changed anchor geometry.',{before:before.anchor,after:after.anchor});
+  return {layoutChanged,nativeDelta:after.scrollY-before.scrollY,semanticDelta,expectedY,retainedOwner:after.measuredOwner,criterion:layoutChanged?'Same semantic anchor and fraction; absolute Y follows the new layout.':'Same layout and semantic reading point; native Y is retained.'};
+}
+async function loadSite(reload=false,requirements={}){
+  if(loaded&&!reload){getContext();return {reused:true,note:'The retained document was reused; no fresh navigation occurred.'};}
+  await verifyCurrentRoute();
+  const [width,height]=$('#viewport').value.split('x').map(Number);frame.width=width;frame.height=height;frame.style.width=width+'px';frame.style.height=height+'px';
+  const before=reload?await settledReadingState():null;
+  disconnectObservers();
+  const finished=new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new BlockedError('The iframe navigation did not finish.')),20000);frame.addEventListener('load',()=>{clearTimeout(timer);resolve();},{once:true});});
+  if(reload)frame.contentWindow.location.reload();else frame.src=sourceUrl().href;
+  await finished;loaded=true;
+  if(frame.contentDocument?.title!==expectedTitle)throw new BlockedError('Fresh navigation reached a different shared preview document. Reassert the CHRYSALIS route.');
+  await waitFor(()=>frame.contentDocument?.documentElement.dataset.ready==='true','The production application did not report readiness.');
+  const {win,doc}=getContext();if(doc.fonts)await Promise.race([doc.fonts.ready,sleep(8000)]);observeFrame();
+  const warmed=await warmMedia();const restorationWaitStarted=performance.now();if(reload)await waitFor(()=>!String(doc.documentElement.dataset.reloadRestoration??'').startsWith('pending-'),'Reload restoration remained pending after 10 seconds.');const restorationWaitMs=round(performance.now()-restorationWaitStarted);const after=await settledReadingState();
+  const record={at:new Date().toISOString(),operation:reload?'reload':'initial load',url:win.location.href,title:doc.title,cssViewport:{width:win.innerWidth,height:win.innerHeight},navigationType:win.performance.getEntriesByType('navigation')[0]?.type??null,warmed,restorationWaitMs,before,after};
+  report.loads.push(record);
+  if(reload&&before)record.restoration=assertReloadRestoration(before,after,requirements);
+  return record;
+}
+function visible(element){const {win}=getContext();const rect=element.getBoundingClientRect();const css=win.getComputedStyle(element);return rect.width>0&&rect.height>0&&css.display!=='none'&&css.visibility!=='hidden'&&!element.closest('[hidden]');}
+function findButton(label,scope){const {doc}=getContext();return [...(scope??doc).querySelectorAll('button')].find(button=>visible(button)&&button.textContent.trim().replace(/\s+/g,' ')===label);}
+async function clickButton(label,scope){const button=findButton(label,scope);assert(button,'A required visible button was not found.',label);button.focus();button.click();await settle();return button;}
+async function closeDialog(){const {doc}=getContext();const close=doc.querySelector('dialog[open] .dialog-close');if(close){close.click();await settle();}}
+async function scrollToY(y){const {win,doc}=getContext();const target=Math.max(0,Math.min(y,doc.documentElement.scrollHeight-win.innerHeight));win.scrollTo({top:target,behavior:'instant'});await waitFor(()=>Math.abs(win.scrollY-target)<2,'The actual native scroll position did not settle.');await settle();return win.scrollY;}
+async function goChapter(id){const {win,doc}=getContext();const chapter=doc.getElementById(id);assert(chapter,'A chapter is missing.',id);await scrollToY(chapter.getBoundingClientRect().top+win.scrollY-84);return chapter;}
+async function navigateByMenu(id){await closeDialog();await clickButton('Chapters');const {doc,win}=getContext();const link=doc.querySelector('#chapters-dialog a[href="#'+id+'"]');assert(link,'The chapter menu lacks the requested anchor.',id);link.focus();link.click();await waitFor(()=>win.location.hash==='#'+id&&doc.activeElement?.id==='title-'+id,'Chapter navigation did not finish with the requested hash and focus.');await settle();}
+async function seek(index,p){const {doc,win}=getContext();const marker=doc.querySelector('.chapter-transition[data-from="'+ids[index]+'"][data-to="'+ids[index+1]+'"]');assert(marker,'Transition marker is missing.',index);const rect=marker.getBoundingClientRect();assert(rect.height>1,'The transition is unavailable in the current reading mode.');await scrollToY(rect.top+win.scrollY+rect.height*p-win.innerHeight/2);return transitionState(marker,p);}
+function transitionState(marker,requested){const {win}=getContext();const rect=marker.getBoundingClientRect();const wrap=marker.closest('.transition-wrap');const actual=Math.max(0,Math.min(1,(win.innerHeight/2-rect.top)/rect.height));const rendered=parseFloat(win.getComputedStyle(wrap).getPropertyValue('--transition-progress'));assert(Math.abs(actual-requested)<.025,'The transition position is incorrect.',{requested,actual});assert(Number.isFinite(rendered)&&Math.abs(actual-rendered)<.025,'Transition rendering is stale after measurement.',{actual,rendered});return {id:marker.id,requested,actual:round(actual),rendered:round(rendered),caption:wrap.querySelector('.transition-stage')?.textContent.trim(),cssViewport:{width:win.innerWidth,height:win.innerHeight},activeChapter:docActive()};}
+function docActive(){return getContext().doc.documentElement.dataset.activeChapter??null;}
+function fingerprint(text){let hash=2166136261;for(let i=0;i<text.length;i++){hash^=text.charCodeAt(i);hash=Math.imul(hash,16777619);}return (hash>>>0).toString(16).padStart(8,'0');}
+async function withRouteDiagnosis(action){try{return await action();}catch(error){if(error instanceof BlockedError)throw error;await verifyCurrentRoute();throw error;}}
+async function imageFailure(){
+  await verifyCurrentRoute();
+  return withRouteDiagnosis(async()=>{
+    const chapter=await goChapter('ch-07');const {win}=getContext();const picture=chapter.querySelector('picture.scene-media');const image=picture?.querySelector('img');assert(picture&&image,'The jade image is missing.');
+    const originalSrc=image.getAttribute('src');const originalAsset=picture.dataset.asset;const invalid=new URL('assets/__chrysalis_qa_missing_image__.webp',image.baseURI);invalid.searchParams.set('attempt',String(Date.now()));
+    let errorObserved=false;const onError=()=>{errorObserved=true;};image.addEventListener('error',onError,{once:true});
+    try{
+      image.src=invalid.href;
+      await waitFor(()=>errorObserved&&picture.classList.contains('is-failed'),'The deliberately unavailable image did not reach the application fallback.');
+      const background=win.getComputedStyle(picture).backgroundImage;const visibility=win.getComputedStyle(image).visibility;const notice=picture.querySelector('.asset-error');
+      assert(background.includes('data:image/'),'The failed image has no embedded authored still.');assert(visibility==='hidden','The broken image is not hidden above its fallback.',visibility);
+      assert(notice?.textContent.includes('The story remains available in still view.'),'The recoverable error does not explain the still view.');
+      const entry=win.performance.getEntriesByName(invalid.href).at(-1);
+      const failed={errorEventObserved:errorObserved,requestUrl:invalid.href,responseStatus:entry&&'responseStatus'in entry?entry.responseStatus:null,assetIdentity:picture.dataset.asset,embeddedFallback:true,brokenImageVisibility:visibility,notice:notice.textContent.trim(),chapterHeading:chapter.querySelector('h2').textContent.trim()};
+      const retry=notice.querySelector('button');assert(retry&&retry.textContent.trim()==='Retry','The authored recovery has no Retry button.');retry.focus();retry.click();
+      await waitFor(()=>image.complete&&image.naturalWidth>0&&!picture.classList.contains('is-failed'),'Retry did not restore the original authored image.');
+      assert(picture.dataset.asset===originalAsset,'Retry changed chapter asset identity.');assert(!picture.querySelector('.asset-error'),'The failure notice remained after successful recovery.');
+      return {method:'A real unavailable image URL, followed by the application Retry control. No network throttle was applied.',failed,recovered:{assetIdentity:picture.dataset.asset,currentSrc:image.currentSrc,naturalWidth:image.naturalWidth,naturalHeight:image.naturalHeight,noticeRemoved:true,activeChapter:docActive()}};
+    }finally{image.removeEventListener('error',onError);if(image.getAttribute('src')===invalid.href&&originalSrc)image.src=originalSrc;}
+  });
+}
+async function callbackRace(){
+  const chapter=await goChapter('ch-10');const {win}=getContext();const picture=chapter.querySelector('picture.cinematic-art');const image=picture?.querySelector('img');assert(picture&&image,'The emergence image is missing.');
+  const records=[];const handlers=[];
+  for(const label of ['Leaving the shell','Wings unfolding','Ready for flight']){
+    await clickButton(label,chapter);
+    records.push({label,mode:chapter.dataset.mode,asset:picture.dataset.asset,diagram:fingerprint(chapter.querySelector('#emergence-diagram').innerHTML)});
+    handlers.push({load:image.onload,error:image.onerror});
+  }
+  assert(new Set(records.map(item=>item.diagram)).size===3,'The three UI choices did not produce distinct authored diagrams.');
+  try{await waitFor(()=>image.complete&&image.naturalWidth>0&&!picture.classList.contains('is-failed'),'The final C state did not settle before stale callback stress.');}catch(error){await verifyCurrentRoute();throw error;}
+  const final={mode:chapter.dataset.mode,asset:picture.dataset.asset,diagram:chapter.querySelector('#emergence-diagram').innerHTML,caption:chapter.querySelector('#emergence-caption').textContent,currentSrc:image.currentSrc};
+  const delivered=[];const deliveryStarted=performance.now();
+  await Promise.all([{index:1,kind:'load',delay:80},{index:0,kind:'error',delay:160},{index:1,kind:'error',delay:240},{index:0,kind:'load',delay:320}].map(item=>new Promise(resolve=>setTimeout(()=>{const callback=handlers[item.index][item.kind];if(typeof callback==='function'){callback.call(image,new win.Event(item.kind));delivered.push({olderSelection:records[item.index].label,kind:item.kind,scheduledDelayMs:item.delay,observedDelayMs:round(performance.now()-deliveryStarted)});}resolve();},item.delay))));
+  await settle();
+  assert(delivered.length===4,'The application did not expose the captured handlers expected by this targeted stress test.');
+  assert(chapter.dataset.mode===final.mode&&picture.dataset.asset===final.asset,'An older completion changed the final scene identity.');
+  assert(chapter.querySelector('#emergence-diagram').innerHTML===final.diagram&&chapter.querySelector('#emergence-caption').textContent===final.caption,'An older completion changed the final diagram or caption.');
+  assert(!picture.classList.contains('is-failed')&&!picture.querySelector('.asset-error'),'A stale error replaced the successful final image with an error.');
+  assert(findButton('Ready for flight',chapter)?.getAttribute('aria-pressed')==='true','The final selected control changed after stale callbacks.');
+  return {method:'Explicit simulation: saved A/B application callback closures are invoked after C completes. This is not reordered network traffic or synthetic network latency.',selections:records,delivered,retainedFinal:{mode:chapter.dataset.mode,asset:picture.dataset.asset,diagram:fingerprint(final.diagram),caption:final.caption,currentSrc:image.currentSrc}};
+}
+async function setStills(wanted){const {doc}=getContext();if((doc.documentElement.dataset.view==='stills')===wanted)return;await closeDialog();await clickButton('Chapters');await clickButton(wanted?'View as stills':'Return to immersive view',doc.getElementById('chapters-dialog'));await waitFor(()=>(doc.documentElement.dataset.view==='stills')===wanted,'The requested reading mode did not activate.');await closeDialog();await settle();}
+async function stillRecovery(){
+  const {doc}=getContext();const initial=doc.documentElement.dataset.view==='stills';
+  try{
+    await setStills(false);await goChapter('ch-05');const before=docActive();await setStills(true);
+    const {win}=getContext();const chapters=ids.map(id=>{const element=doc.getElementById(id);return {id,display:win.getComputedStyle(element).display,height:round(element.getBoundingClientRect().height),beats:element.querySelectorAll('.beat').length};});
+    assert(chapters.every(chapter=>chapter.display!=='none'&&chapter.height>0&&chapter.beats>=2),'Still view removed a chapter or its content beats.',chapters);
+    assert([...doc.querySelectorAll('.transition-wrap')].every(el=>win.getComputedStyle(el).display==='none'),'Still view retains cinematic bridge distance.');
+    const specimens=await goChapter('ch-05');await clickButton('Instar 4',specimens);assert(findButton('Instar 4',specimens)?.getAttribute('aria-pressed')==='true','Still view removed the instar interaction.');
+    const visited=[];for(const id of ['ch-01','ch-06','ch-11']){await goChapter(id);assert(docActive()===id,'Still-view navigation chose a hidden bridge instead of the visible chapter.',{expected:id,actual:docActive()});visited.push({id,activeChapter:docActive()});}
+    await goChapter('ch-05');await setStills(false);await waitFor(()=>docActive()==='ch-05','Restoring immersive view lost the selected chapter.');
+    assert([...doc.querySelectorAll('.transition-wrap')].some(el=>win.getComputedStyle(el).display!=='none'),'The immersive bridges were not restored.');
+    const bridge=await seek(5,.5);
+    return {allElevenChapterLayouts:chapters,visited,interaction:'Instar 4 remains selectable',before,restoredChapter:'ch-05',restoredBridge:bridge,initialModeWillBeRestored:initial?'stills':'immersive'};
+  }finally{await setStills(initial);}
+}
+async function resizeRecovery(){
+  const {doc}=getContext();const initialStills=doc.documentElement.dataset.view==='stills';const original={width:Number(frame.width),height:Number(frame.height)};const observations=[];
+  try{
+    await setStills(false);
+    for(const [width,height,index] of [[390,844,5],[1440,900,5],[390,844,8],[1440,900,8]]){
+      frame.width=width;frame.height=height;frame.style.width=width+'px';frame.style.height=height+'px';
+      await waitFor(()=>frame.contentWindow.innerWidth===width&&frame.contentWindow.innerHeight===height,'The iframe did not adopt the new CSS viewport.');await settle();
+      const state=await seek(index,.5);assert(doc.querySelectorAll('.chapter').length===11,'Resize removed chapters.');assert(doc.documentElement.scrollWidth<=width+2,'Resize introduced horizontal overflow.',{width,scrollWidth:doc.documentElement.scrollWidth});observations.push(state);
+    }
+    return {method:'The same loaded document was resized across the mobile breakpoint four times; no reload or emulation occurred.',observations};
+  }finally{frame.width=original.width;frame.height=original.height;frame.style.width=original.width+'px';frame.style.height=original.height+'px';await settle();await setStills(initialStills);}
+}
+async function historyRecovery(){
+  const {win}=getContext();await navigateByMenu('ch-02');const a={hash:win.location.hash,length:win.history.length,focused:getContext().doc.activeElement?.id};
+  await navigateByMenu('ch-08');const b={hash:win.location.hash,length:win.history.length,focused:getContext().doc.activeElement?.id};assert(b.length===a.length+1,'One distinct chapter navigation did not create exactly one history entry.',{a,b});
+  await navigateByMenu('ch-08');const repeated={hash:win.location.hash,length:win.history.length};assert(repeated.length===b.length,'Repeating the same chapter created a duplicate history entry.');
+  win.history.back();await waitFor(()=>win.location.hash==='#ch-02'&&getContext().doc.documentElement.dataset.activeChapter==='ch-02','Actual iframe history.back() did not restore chapter two.');const back={hash:win.location.hash,activeChapter:docActive(),focused:getContext().doc.activeElement?.id};
+  win.history.forward();await waitFor(()=>win.location.hash==='#ch-08'&&getContext().doc.documentElement.dataset.activeChapter==='ch-08','Actual iframe history.forward() did not restore chapter eight.');const forward={hash:win.location.hash,activeChapter:docActive(),focused:getContext().doc.activeElement?.id};
+  return {method:'Normal menu links create same-document entries, followed by actual iframe history.back()/forward(). No fresh source navigation is used.',a,b,repeated,back,forward};
+}
+async function reloadLayoutChecks(){
+  const initialStills=getContext().doc.documentElement.dataset.view==='stills';
+  try{
+    await setStills(false);const specimens=await goChapter('ch-05');await clickButton('Instar 4',specimens);
+    await navigateByMenu('ch-08');await seek(8,1);
+    const selected=await settledReadingState();
+    assert(selected.selectedInstar==='Instar 4'&&selected.anchor?.id==='tr-09-10','The reload reproduction did not retain its selected-instar layout and bridge endpoint.',selected);
+    const changed=await loadSite(true,{expectGeometryChange:true});
+    const unchanged=await loadSite(true,{requireUnchanged:true});
+    return {method:'Normal UI selects Instar 4, then the chapter-eight menu link establishes an older hash. Native scrolling reaches the emergence bridge endpoint. An actual reload resets selection/layout and must retain the semantic reading point. A second actual reload keeps the default layout and must also retain native Y.',selected,changedLayout:changed,unchangedLayout:unchanged};
+  }finally{await setStills(initialStills);}
+}
+function performanceSnapshot(){
+  const {win,doc}=getContext();const perf=win.performance;const nav=perf.getEntriesByType('navigation')[0];const fcp=perf.getEntriesByName('first-contentful-paint')[0];const mark=name=>{const entries=perf.getEntriesByName(name,'mark');return entries.length?round(entries[0].startTime):null;};
+  return {observedAt:new Date().toISOString(),documentTimeOrigin:new Date(perf.timeOrigin).toISOString(),cssViewport:{width:win.innerWidth,height:win.innerHeight,devicePixelRatio:win.devicePixelRatio},documentReadyState:doc.readyState,navigation:nav?{type:nav.type,responseEndMs:round(nav.responseEnd),domInteractiveMs:round(nav.domInteractive),domContentLoadedEventEndMs:round(nav.domContentLoadedEventEnd),loadEventEndMs:round(nav.loadEventEnd),transferSize:nav.transferSize,encodedBodySize:nav.encodedBodySize,decodedBodySize:nav.decodedBodySize}:null,firstContentfulPaintMs:fcp?round(fcp.startTime):null,appReadyMarkMs:mark('chrysalis-ready'),heroAssetReadyMarkMs:mark('chrysalis-hero-ready'),longTaskObserver:{...longTaskSupport},longTasks:{count:longTaskSupport.supported&&!longTaskSupport.error?longTasks.length:null,totalDurationMs:longTaskSupport.supported&&!longTaskSupport.error?round(longTasks.reduce((sum,entry)=>sum+entry.durationMs,0)):null,maximumDurationMs:longTasks.length?Math.max(...longTasks.map(entry=>entry.durationMs)):null,entries:[...longTasks]},caveat:'Actual entries from this loaded iframe. Cache may be warm. FCP and the two application marks are not interchangeable and are not LCP, INP, or a measured first user interaction.'};
+}
+function summarizeIntervals(intervals){if(!intervals.length)return {count:0,minimumMs:null,medianMs:null,p95Ms:null,maximumMs:null};const ordered=[...intervals].sort((a,b)=>a-b);const at=fraction=>ordered[Math.min(ordered.length-1,Math.floor((ordered.length-1)*fraction))];return {count:intervals.length,minimumMs:round(ordered[0]),medianMs:round(at(.5)),p95Ms:round(at(.95)),maximumMs:round(ordered.at(-1))};}
+async function sampleScroll(index){
+  await seek(index,0);const {win,doc}=getContext();const marker=doc.querySelector('.chapter-transition[data-from="'+ids[index]+'"]');const rect=marker.getBoundingClientRect();const startY=rect.top+win.scrollY-win.innerHeight/2;const endY=startY+rect.height;const intervals=[];const samples=[];const began=win.performance.now();let previous=null;let count=0;let timedOut=false;
+  await new Promise(resolve=>{let finished=false;let handle=0;const finish=()=>{if(finished)return;finished=true;clearTimeout(watchdog);if(handle)win.cancelAnimationFrame(handle);resolve();};const watchdog=setTimeout(()=>{timedOut=true;finish();},22000);function tick(timestamp){if(finished)return;if(stopping){finish();return;}if(previous!==null)intervals.push(timestamp-previous);previous=timestamp;const p=Math.min(1,count/60);win.scrollTo({top:startY+(endY-startY)*p,behavior:'instant'});samples.push({frame:count,atMs:round(timestamp),actualScrollY:round(win.scrollY)});count++;if(count>60||win.performance.now()-began>20000){timedOut=count<=60;finish();return;}handle=win.requestAnimationFrame(tick);}handle=win.requestAnimationFrame(tick);});
+  await scrollToY(endY);const end=transitionState(marker,1);
+  return {transition:marker.id,method:'The iframe requestAnimationFrame timestamps were sampled while native scrollTo() advanced across the real transition.',requestedFrames:61,observedFrames:samples.length,timedOutAfter20Seconds:timedOut,elapsedMs:round(win.performance.now()-began),startY:round(startY),endY:round(endY),intervalSummary:summarizeIntervals(intervals),frameIntervalsMs:intervals.map(round),actualScrollSamples:samples.filter((_,i)=>i%10===0||i===samples.length-1),endState:end};
+}
+async function performanceObservation(){
+  const {doc}=getContext();const initialStills=doc.documentElement.dataset.view==='stills';const wasFocused=document.body.classList.contains('focus-view');let result;
+  try{await setStills(false);const before=performanceSnapshot();document.body.classList.add('focus-view');window.scrollTo(0,0);await settle();const samples=[];for(const index of [5,8])samples.push(await sampleScroll(index));await sleep(150);result={before,scrollSamples:samples,after:performanceSnapshot(),scope:'Observed values, not a pass against a universal speed or FPS threshold. Controls are hidden during frame sampling to reduce harness layout work.'};report.performanceObservations.push(result);return result;}
+  finally{if(!wasFocused)document.body.classList.remove('focus-view');await setStills(initialStills);}
+}
+async function runCheck(id,action,observation=false){
+  status('Running '+id+'…');const began=performance.now();
+  try{const evidence=await action();report.checks.push({id,status:observation?'OBSERVED':'PASS',durationMs:round(performance.now()-began),evidence});}
+  catch(error){report.checks.push({id,status:error instanceof BlockedError?'BLOCKED':'FAIL',durationMs:round(performance.now()-began),error:String(error.message??error)});}
+  show();
+}
+async function run(action){if(busy)return;busy=true;stopping=false;document.querySelectorAll('[data-action]').forEach(button=>button.disabled=true);$('#stop').disabled=false;show();try{await action();}catch(error){report.checks.push({id:'runner',status:error instanceof BlockedError?'BLOCKED':'FAIL',error:String(error.message??error)});}finally{busy=false;document.querySelectorAll('[data-action]').forEach(button=>button.disabled=false);$('#stop').disabled=true;show();status($('#summary').textContent);}}
+$('#load').addEventListener('click',()=>run(()=>runCheck('Load or reuse the authorized production document',()=>loadSite(false))));
+$('#reload').addEventListener('click',()=>run(()=>runCheck('Actual reload and measured reading-position restoration',()=>loadSite(true))));
+$('#reload-checks').addEventListener('click',()=>run(()=>runCheck('Actual reload with changed selection geometry, then unchanged layout',reloadLayoutChecks)));
+$('#failure').addEventListener('click',()=>run(()=>runCheck('Real image failure, authored still, and Retry',imageFailure)));
+$('#race').addEventListener('click',()=>run(()=>runCheck('Simulated late A/B callback delivery after C',callbackRace)));
+$('#stills').addEventListener('click',()=>run(()=>runCheck('All eleven chapters in still view and immersive restoration',stillRecovery)));
+$('#resize').addEventListener('click',()=>run(()=>runCheck('Same-document resize and refreshed transition state',resizeRecovery)));
+$('#history').addEventListener('click',()=>run(()=>runCheck('Actual same-document history and duplicate-entry guard',historyRecovery)));
+$('#performance').addEventListener('click',()=>run(()=>runCheck('Navigation, paint, app marks, long tasks, and scroll frame intervals',performanceObservation,true)));
+$('#run').addEventListener('click',()=>run(async()=>{getContext();for(const [id,fn,observation] of [['Real image failure, authored still, and Retry',imageFailure,false],['Simulated late A/B callback delivery after C',callbackRace,false],['All eleven chapters in still view and immersive restoration',stillRecovery,false],['Same-document resize and refreshed transition state',resizeRecovery,false],['Actual same-document history and duplicate-entry guard',historyRecovery,false],['Navigation, paint, app marks, long tasks, and scroll frame intervals',performanceObservation,true]]){if(stopping)break;await runCheck(id,fn,observation);}}));
+$('#stop').addEventListener('click',()=>{stopping=true;status('Stopping after the current bounded operation.');});
+$('#focus').addEventListener('click',()=>{document.body.classList.add('focus-view');window.scrollTo(0,0);});
+$('#leave-focus').addEventListener('click',()=>document.body.classList.remove('focus-view'));
+$('#download').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'});const href=URL.createObjectURL(blob);const a=document.createElement('a');a.href=href;a.download='chrysalis-recovery-performance-qa.json';a.click();setTimeout(()=>URL.revokeObjectURL(href),1000);});
+show();
+</script>
+</body>
+</html>

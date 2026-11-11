@@ -1,0 +1,433 @@
+[
+  {
+    "id": "EX-01",
+    "name": "bakery-before.png",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT editorial scene, fictional Meridian City at 01:10, landscape 16:10 cinematic photograph. A working bakery before opening, modest lived-in kitchen seen from close workbench height with a natural 50mm lens. Anonymous baker's forearms and anatomically correct hands enter from right, one hand resting beside a loose mound of flour, the other drawing dough gently onto a scratched stainless steel table; no face visible. A cloth, flour dust, empty proofing baskets and neatly spaced simple tools establish actual preparation before baking, not a product advertisement. Single amber oven edge and a warm hanging worklamp at rear right, deep steel-teal window shadow left, plausible contact shadows and real tactile materials. Leave upper-left 30 percent as quiet dark negative space suitable for DOM caption later. Exactly one ordinary pair of hands. Cinematic documentary restraint, light film grain, rich natural dynamic range, palette midnight ink #0B1421, steel teal #203545, amber #E9A85F. No text, no logos, no UI, no letters, no figures on equipment, no luxury showroom, no hero loaf, no excessive flour cloud, no fantasy or neon.",
+    "retainedPath": "public/media/bakery-before.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Actual paired anonymous hands work dough; flour, scratched steel, baskets, warm oven, and cool window all read. Strong dark upper-left caption area. No readable lettering or facial identity. Useful before-preparation state.",
+    "rights": "New AI-generated artwork requested for this original fictional project. No third-party photograph, logo, identifiable subject or copied artwork was supplied. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-4171d7a4-6ef8-497a-a5ab-16a05a7cec77.png",
+    "workingOriginalName": "bakery-before.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/bakery-before.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 198500,
+      "sha256": "4f43d67db9e0640271b7234288c65f60089b99628ff033cc4180acca73c59467"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "d280bb1030e525fb58e70b8c37764c4d3c94fcef204920ef00c6838b225555f5"
+  },
+  {
+    "id": "EX-02",
+    "name": "care.png",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT chapter The Quiet Corridor, fictional Meridian City at 01:50, landscape 16:10 cinematic documentary photograph. Intimate human-scale night-care corridor with pale sea-glass low floor lighting and cool satin walls receding to a closed unmarked door; a quiet unattended nursing work station occupies foreground right. Close anonymous hands in plain dark teal sleeves carefully set a clear water glass beside a neatly folded cream blanket on a clean enamel tray; no patient, no face, no medical records, no operational medical procedure, no readable signs. Show linen fibers, glass condensation, soft contact shadows, a restrained warm task lamp under a shade, corridor glass reflections. Compose from low chest height, 65mm lens, believable scale; left third offers calm dark corridor negative space for later real DOM type. The activity is mundane care, not emergency spectacle. Color palette midnight ink #0B1421, cool steel teal #203545, low sea-glass and small amber #E9A85F. Fine cinematic grain, photographic realism, beautifully restrained. No typography, logos, UI, screen data, patient details, alarms, neon, advertising, collage or duplicated hands.",
+    "retainedPath": "public/media/care.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Two anatomically plausible hands set a water glass beside folded linen. Quiet cool corridor is distinct from kitchen; no patient or identifiable clinical data. Warm right foreground and cool left corridor provide two content beats.",
+    "rights": "New AI-generated artwork requested for this original fictional project. No third-party photograph, logo, identifiable subject or copied artwork was supplied. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-de651efd-f59f-4c93-b075-d86a3be80fed.png",
+    "workingOriginalName": "care.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/care.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 96406,
+      "sha256": "ca7218f197aec38cb2dd8125f34aab23790db030da5d93df5544c5e22930f1b6"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "c76b12f15db197208b47a31be3fcb39a2abddbfccc9532ea0928131551cf3fd5"
+  },
+  {
+    "id": "EX-03",
+    "name": "curb-before.png",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT chapter A Clean Start, fictional Meridian City at 02:25. Landscape 16:10 cinematic documentary photograph with an exact stable camera suitable for a later same-view comparison. Low curb-height view of a wet quiet city sidewalk and road at night. Strong clear stone curb runs diagonally from lower-left foreground toward middle-right vanishing point, with two subtle parallel paving lines and warm reflected light. Real accumulated leaves, a few small scraps of ordinary unmarked paper and loose grit lie along the near curb, enough to make a later sweeping result meaningful but no disgusting mess. In middle-right distance a single anonymous sanitation worker in plain dark workwear holds a grounded long-handled broom against pavement under a warm lamp, no visible face, no moving vehicles. Deep steel-blue buildings, one dark doorway and believable rain sheen, controlled sodium amber reflection. Keep EXACT coherent perspective, texture and landmarks throughout; left upper quarter dark and quiet for real text added later. Natural 35mm lens, realistic cobbles, rubber boots contacting ground, fine grain. Palette midnight ink #0B1421, steel teal #203545, amber #E9A85F. No text, logos, warning signs, license plates, UI, neon, unsafe roadway staging, floating brush, advertising or glamour pose.",
+    "retainedPath": "public/media/curb-before.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Near leaves, grit and a small blank paper scrap are distinct from wet reflections. Same curb remains visible far into perspective; worker and broom contact pavement at rear-right. Suitable fixed-camera before/after input.",
+    "rights": "New AI-generated artwork requested for this original fictional project. No third-party photograph, logo, identifiable subject or copied artwork was supplied. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-203afd68-70a0-4e77-85e1-126d665c8475.png",
+    "workingOriginalName": "curb-before.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/curb-before.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 286344,
+      "sha256": "990fa7bb69713b66d594f5e455ed747c71c193b4a3fdbc53e00f032ebfc5b8b8"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "34ab3682eab6827d936ab1e1a6d12b6a90e11949a47ab81ff615065c3ed2a3c3"
+  },
+  {
+    "id": "EX-04",
+    "name": "water.png",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT chapter Water Below, fictional Meridian City at 03:35. One landscape 16:10 cinematic documentary photograph of a quiet water utility pipe gallery, no text or UI. A large curved matte steel-teal water pipe in the near left foreground has convincing thickness, worn paint, bead condensation, a substantial bolted flange, heavy brackets and contact shadows. Several physically separate supported pipes recede along a clean narrow gallery to the right, plausible stable horizon and real damp concrete. A small anonymous adult worker stands well back right under an amber worklamp, holding a blank-looking logbook; face unidentifiable, not manipulating machinery. The scene feels maintained and quiet, no hazardous spectacle, no operational instructions, no exposed controls or numbers. Light comes from restrained warm practical lamps and a faint cool predawn clerestory. 35mm human-scale natural camera, exquisite natural materials, fine cinematic grain; palette #0B1421 midnight ink, #203545 steel teal, #E9A85F amber. Keep a calm negative area at upper right for later real DOM caption, but the environment remains tangible, never empty wallpaper. No writing, logos, signs, readouts, glowing pipes, tunnels merging with railways, fantastical plumbing, arc flashes, overdone bloom or neon.",
+    "retainedPath": "public/media/water.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Near bolted flange, condensation, structural supports and real pipe thickness read clearly; distant anonymous worker with log supports human attention beat. Upper-right dark ceiling is text-safe. Represents a separate fictional water gallery, not a continuation of rail plumbing.",
+    "rights": "New AI-generated artwork requested for this original fictional project. No third-party photograph, logo, identifiable subject or copied artwork was supplied. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-51dba5f0-d188-4e9e-bc88-6f20cc469081.png",
+    "workingOriginalName": "water.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/water.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 236686,
+      "sha256": "5a3640dc3a25b7bd2ff267efc40429af78b890d643ed6f61c4616d866159ad8f"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "5ad11195d4cd9adf5175503ecb6eef5939684dadb6eb6282caffa483737aa04b"
+  },
+  {
+    "id": "EX-05",
+    "name": "utility.png",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT chapter Light on Duty, fictional Meridian City at 04:05. Create one landscape 16:10 restrained cinematic documentary photograph, no text, no logo, no UI. A modest utility inspection room at predawn; simple CLOSED matte steel equipment cabinets with small generic mechanical latches, NO readable meters, settings, labels, symbols or screens. A warm amber worklamp hangs in upper-right field beside a tall rain-streaked window pane, beyond it a very distant market canopy and a hint of pale blue predawn. In middle-ground right an anonymous worker in plain dark workwear observes the closed cabinet with clipboard angled away and unidentifiable face, hands relaxed and no interaction with exposed electrical parts. Near-left foreground has a substantial dark window mullion and floor edge turning a believable corner, useful as an opaque scene transition anchor; left 30 percent has quiet deep ink negative space for real DOM caption. Natural 50mm perspective, brushed metal scratches, rubber cabinet gaskets, worn gloves tucked at belt, subtle contact shadows, no theatrical fog. Match humane night-city photography: midnight ink #0B1421, steel teal #203545, amber #E9A85F with very subtle predawn rose. No visible live wires, arcs, sparks, warning labels, circuit diagrams, industrial spectacle, brand names, distorted anatomy or advertising.",
+    "retainedPath": "public/media/utility.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Cabinets stay closed; anonymous worker only observes them; warm lamp, rain-glass pane and distant canopy establish the light-to-market handoff. Clipboard has faint non-legible marks and is not a source of UI information. No operating settings or exposed circuitry.",
+    "rights": "New AI-generated artwork requested for this original fictional project. No third-party photograph, logo, identifiable subject or copied artwork was supplied. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-29286dd9-83bf-430c-b46e-d166eb8bc878.png",
+    "workingOriginalName": "utility.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/utility.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 138238,
+      "sha256": "afec7214a6904a178df4dc44f097950bed8c991ef0bfa40bf3a61cf21ff4b496"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "b11c9faaea971edf26cf19aeffb73990a5d4599940c809261cfa03213766f66f"
+  },
+  {
+    "id": "EX-06",
+    "name": "bakery-after.png",
+    "prompt": "Use case: precise-object-edit. Edit the supplied NIGHTSHIFT bakery photograph to show AFTER preparation, for an exact same-camera before/after comparison. Preserve the photograph's camera, 1586x992 landscape composition, viewpoint, lens, all background edges and perspective, left dark wall, tall window panes, city beyond, oven, ceiling lamp, basket positions, workbench rim, lighting, palette and exposure. Keep the same anonymous baker's identity and sleeves entering from right. Change only the working state on the steel table and hand pose: the single pulled piece of dough and loose mound of flour are now a tidy set of five or six small prepared dough portions, hand shaped and arranged ready for the first bake. One hand gently finishes the last portion; the other rests naturally. Tidy loose flour into a light realistic dusting on the work area, move the existing scraper into its ready position, fold the existing cloth simply at lower-left without adding any new object. Preserve realistic worn scratched steel, ordinary work and anatomy. No baked bread, no product advertising, no additional people. This is a material work-progress change, NOT a relighting or color filter. Everything outside these small tabletop and hand regions must remain the SAME image and align under a comparison wipe. No typography, numbers, labels, logos, icons, or UI.",
+    "retainedPath": "public/media/bakery-after.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "public/media/bakery-before.webp"
+      ]
+    },
+    "requestedAspectRatio": "16:10 landscape",
+    "actualDimensions": [
+      1585,
+      992
+    ],
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Clear material preparation change: six dough portions, less loose flour, ready scraper and folded cloth. Same table, baskets, window, lamp and background perspective visually retained; same sleeves and anonymous hands. AI edit is not asserted to be pixel-identical. Returned 1585x992 versus 1586x992 original; normalize final delivery dimensions consistently before comparison UI.",
+    "rights": "New AI-generated artwork and edits requested for this original fictional project. Inputs, when present, are prior original AI-generated assets from this project. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-fe41654c-ea7c-4bd3-b88b-75cb8a371a77.png",
+    "workingOriginalName": "bakery-after.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/bakery-after.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 179278,
+      "sha256": "48d98c0b22eb361e33e2397efe70481f0d3b75b7177c87a6937a92be5438ff55"
+    },
+    "originalOutputSha256": "e5283577d49c2b61ddace9c6ac2b11eb0daa6dca505f5aedb8b5e48cfce617aa",
+    "knownParametersPathNote": "Reference path normalized to the shipped WebP derivative of the same generated input. The actual call used its working PNG, named bakery-before.png.",
+    "inputAsset": "EX-01",
+    "inputAssetPath": "public/media/bakery-before.webp"
+  },
+  {
+    "id": "EX-07",
+    "name": "curb-after.png",
+    "prompt": "Use case: precise-object-edit. Edit only the cleaning state in the supplied NIGHTSHIFT street photograph to create AFTER sweeping, for an EXACT registered before/after wipe. Preserve the identical camera, image framing, lens, vanishing point, all curb and paving geometry, building and doorway, window frames, streetlamps, sky, wet amber reflections, color palette and exposure. The exact near diagonal curb is the anchor and its edge MUST remain fixed pixel-for-pixel in screen space. Remove the scattered leaves, loose grit and single paper scrap along the near curb and gutter to reveal actual worn cobblestone paving and a clearer curb edge. Do not turn the entire street spotless: retain wet patches, stains, fine uneven texture, occasional tiny remaining debris farther away. Keep the same anonymous worker and clothing, move them only a small distance farther along the same pavement with a naturally grounded broom; no face visible and no new people or vehicles. Change no architecture or lighting. This is real debris removal and exposed paving detail, NOT merely a tint/filter. Everything beyond the cleaned gutter and small worker/broom region must remain the SAME image. No text, numbers, labels, signs, UI or logos.",
+    "retainedPath": "public/media/curb-after.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "public/media/curb-before.webp"
+      ]
+    },
+    "requestedAspectRatio": "16:10 landscape",
+    "actualDimensions": [
+      1585,
+      992
+    ],
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected",
+    "selectionRationale": "Selected. Leaves, grit and paper are removed from near curb/gutter exposing genuine worn paving and the curb edge; wet reflections and stains remain. Same diagonal camera geometry and building/lamps visually retained, worker/broom naturally adjusted. AI edit is not asserted to be pixel-identical. Returned 1585x992 versus 1586x992 original; normalize delivery dimensions consistently.",
+    "rights": "New AI-generated artwork and edits requested for this original fictional project. Inputs, when present, are prior original AI-generated assets from this project. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-083e2e67-ce80-4985-b177-48a93582ff45.png",
+    "workingOriginalName": "curb-after.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/curb-after.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 254022,
+      "sha256": "f3b744a38ab8f0cae0673964df80f747e4a06cedae3d19d4a666eacb06eac6a6"
+    },
+    "originalOutputSha256": "0c2c8a4f0ee7c997be6e6173b9daf657736f965e7832059c4c905d87e837ab32",
+    "knownParametersPathNote": "Reference path normalized to the shipped WebP derivative of the same generated input. The actual call used its working PNG, named curb-before.png.",
+    "inputAsset": "EX-03",
+    "inputAssetPath": "public/media/curb-before.webp"
+  },
+  {
+    "id": "EX-08",
+    "name": "platform.png",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT chapter First Service, fictional Meridian City just before dawn, one landscape 16:10 cinematic documentary photograph. A believable modest urban tram platform at human eye height beneath a dark canopy of satin-steel beams. One prepared stationary generic tram occupies the right side, realistic restrained cream and steel-teal body, coherent proportions, repeated warm window panes, closed door at safe platform level; no branding, route text, numbers, logos or destination display. On the far left platform three small anonymous first passengers in everyday coats stand safely well back from the track edge, faces unidentifiable; no worker on tracks, no approaching train. A substantial foreground canopy column frames the left third, a warm floor guide and paving lines lead into distance, clear horizon near mid-height; subdued blue and soft rose predawn sky beyond and low-rise city beginning to appear. Rain-damp paving retains plausible reflections, rubber seals and brushed steel have real material detail. Quiet spacious composition, humane 35mm natural lens, fine cinematic grain, no high-speed blur. Palette midnight ink #0B1421, steel teal #203545, amber #E9A85F, muted predawn rose #DDA6A0. Keep upper-left dark structural void for later real DOM caption. No typography, labels, UI, neon cyberpunk, fantasy architecture, luxury advertising or crowds.",
+    "retainedPath": "evidence/art/platform-original.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "requestedAspectRatio": "16:10 landscape",
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated and visually inspected; retained as source evidence",
+    "selectionRationale": "Retained as the original reference for EX-09 and EX-10. The closed-door prepared tram established the camera, canopy, platform and dawn palette. Replaced in production by the two matched scene-state edits so the chapter can show empty rails followed by open-door arrival and boarding.",
+    "rights": "New AI-generated artwork and edits requested for this original fictional project. Inputs, when present, are prior original AI-generated assets from this project. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity is claimed.",
+    "generationOutputName": "exec-1409b5ff-efce-4aa7-be13-0b163561d766.png",
+    "workingOriginalName": "platform.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "evidence/art/platform-original.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 251606,
+      "sha256": "c3310457276758a84f15d6feb50ddb91e1b823ea98a1229716c1b9dd136a226f"
+    },
+    "originalOutputSha256": "c1f2ae5b707694f5841d98d5c978c71d0840ed1192e284038445cbca8f0cf736",
+    "role": "CH-10 original prepared tram reference"
+  },
+  {
+    "id": "EX-09",
+    "name": "platform-before.png",
+    "prompt": "Use case: precise-object-edit. Edit the supplied NIGHTSHIFT platform photograph into the BEFORE first service state for an exact same-camera editorial sequence. Preserve the reference camera, landscape16:10 composition, foreground steel column position, canopy beams and lamps, pavement tiles and tactile edge strip, rails perspective, all distant buildings and trees, dawn blue/rose sky, rain sheen and amber reflections. REMOVE THE TRAM ENTIRELY from the right half, including roof, wires specifically attached to its pantograph, windows and body, and fill only the newly revealed space with physically plausible empty parallel tram rails and the same distant low-rise city background. Keep the fixed overhead route wires and their supporting poles coherent. The platform is waiting before the first vehicle. Preserve the SAME three anonymous waiting people at far left, safely well back from the platform edge; no new people, no face identification, no worker on the tracks. The empty track area must have continuous realistic rails, sleepers and ballast with correct vanishing point. All other existing architectural landmarks should stay fixed and visually registered to the source. This is a real change in scene contents, not a tint change. Restrained cinematic documentary photography, no motion blur, no fake panorama, no typography, labels, route numbers, signage, logos or UI. It is a fictional scene, not a real public transport operating instruction.",
+    "retainedPath": "public/media/platform-before.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "evidence/art/platform-original.webp"
+      ]
+    },
+    "knownParametersPathNote": "Reference path normalized to the unchanged EX-08 file shipped with this project. The actual call read public/media/platform.webp while that path still contained EX-08, before EX-10 replaced it.",
+    "inputAsset": "EX-08",
+    "inputAssetPath": "evidence/art/platform-original.webp",
+    "inputPathAtGeneration": "public/media/platform.webp",
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "actualDimensions": [
+      1585,
+      992
+    ],
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated, visually inspected and selected",
+    "role": "CH-10 platform before first service",
+    "selectionRationale": "Selected. The tram is absent and continuous empty rails reveal the distant city. The same three anonymous waiting figures remain far left, clear of the platform edge. The canopy, foreground column, wet paving, dawn sky and perspective landmarks closely match EX-08. The generated width was 1585 pixels and is normalized to 1586 for delivery. This is a photographic reveal plate, not 3D vehicle motion or guaranteed pixel registration.",
+    "rights": "New AI-generated artwork and edits requested for this original fictional project. Inputs are prior original AI-generated assets from this project. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity or rights guarantee is claimed.",
+    "generationOutputName": "exec-82e8ad49-17cc-464c-a683-fbe9a5695815.png",
+    "workingOriginalName": "platform-before.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/platform-before.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 216956,
+      "sha256": "21b5975960af53484122d5803942db1f830869574e6ddc5e891dc42b18596146"
+    },
+    "originalOutputSha256": "33591a856f0180abb1d61c3c25c58b4dabb19ed981987abe03eb0aa1983defba",
+    "deliveryTransform": {
+      "operation": "resize and WebP compression only",
+      "size": [
+        1586,
+        992
+      ],
+      "resampling": "Pillow LANCZOS",
+      "format": "WebP",
+      "quality": 86,
+      "method": 6,
+      "fallback": {
+        "size": [
+          512,
+          320
+        ],
+        "quality": 75,
+        "method": 6
+      }
+    },
+    "fallbackAsset": {
+      "path": "public/media/fallback/platform-before.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 18774,
+      "sha256": "25a0803e530f7c6fa1dae395b088eacee4c7a01bb6dd6ceae48e1029869ea6f7"
+    }
+  },
+  {
+    "id": "EX-10",
+    "name": "platform-arrival.png",
+    "prompt": "Use case: precise-object-edit. Edit the supplied NIGHTSHIFT platform photograph into the ARRIVED first-service state for a matched editorial sequence. Preserve the exact original camera and16:10 framing, foreground canopy column, beams, lamps, wet paving and tactile edge line, dawn blue/rose light, distant city, rail geometry, tram body position/shape and repeated warm window rhythm. The tram is fully STATIONARY at the platform. Open ONE clearly visible passenger door at the existing central-right doorway, with mechanically plausible inward or sliding door panels, warm interior handrail and a safe visible boarding step aligned with the platform. Of the existing three anonymous waiting people, keep TWO at far left and move ONE ordinary anonymous passenger to the opened doorway, viewed from behind in a muted coat, beginning to board from the safe platform, one natural foot on the boarding step and one hand lightly holding an interior rail. No identifiable face, no distorted anatomy, no unsafe gap, no person on tracks, no additional people. Keep all fixed architecture, tram dimensions, materials and lighting as close to the reference as possible so a scroll-owned before/arrival reveal reads as the same camera. This is a quiet material change of work becoming public life, not an advertisement or dramatic action. No typography, route display, words, digits, labels, brand marks or UI. Fictional city scene only, no real service claim.",
+    "retainedPath": "public/media/platform.webp",
+    "tool": "image_gen.imagegen",
+    "knownParameters": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "evidence/art/platform-original.webp"
+      ]
+    },
+    "knownParametersPathNote": "Reference path normalized to the unchanged EX-08 file shipped with this project. The actual call read public/media/platform.webp while that path still contained EX-08, before EX-10 replaced it.",
+    "inputAsset": "EX-08",
+    "inputAssetPath": "evidence/art/platform-original.webp",
+    "inputPathAtGeneration": "public/media/platform.webp",
+    "requestedAspectRatio": "16:10 landscape, requested in prompt",
+    "actualDimensions": [
+      1585,
+      992
+    ],
+    "unknownParameters": [
+      "seed",
+      "model version",
+      "sampling settings"
+    ],
+    "reviewDate": "2026-11-09",
+    "status": "Generated, visually inspected and selected",
+    "role": "CH-10 first service arrived and boarding",
+    "selectionRationale": "Selected. The stationary tram has one clearly open passenger door with a lit interior and visible boarding step. One anonymous passenger begins boarding while two remain waiting at far left; no identifiable face or person on the tracks. The fixed camera, canopy, foreground column and warm window rhythm closely match EX-08 and EX-09. The generated width was 1585 pixels and is normalized to 1586 for delivery. This is a photographic arrival-state plate, not 3D vehicle motion or guaranteed pixel registration.",
+    "rights": "New AI-generated artwork and edits requested for this original fictional project. Inputs are prior original AI-generated assets from this project. Redistribution is subject to the applicable image-generation service terms; no copyright exclusivity or rights guarantee is claimed.",
+    "generationOutputName": "exec-952e40ea-e1b9-42c9-b532-9b6f207d079f.png",
+    "workingOriginalName": "platform-arrival.png",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/platform.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 203352,
+      "sha256": "4534e8b883e7af9877bddc4624ff0b1a38485a0171ad992a4face2b763bb34b3"
+    },
+    "originalOutputSha256": "670635a954d81db9b9bad8683e8bf870c398307b15f48265b7e28613ea4eaf17",
+    "deliveryTransform": {
+      "operation": "resize and WebP compression only",
+      "size": [
+        1586,
+        992
+      ],
+      "resampling": "Pillow LANCZOS",
+      "format": "WebP",
+      "quality": 86,
+      "method": 6,
+      "fallback": {
+        "size": [
+          512,
+          320
+        ],
+        "quality": 75,
+        "method": 6
+      }
+    },
+    "fallbackAsset": {
+      "path": "public/media/fallback/platform.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 19240,
+      "sha256": "f060286f842d994f3c93d028958360d66d4d5b19b01151cf5ec70db80375c5a2"
+    }
+  }
+]

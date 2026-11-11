@@ -1,0 +1,64 @@
+{
+  "tool": "image_gen.imagegen",
+  "transparent_background": false,
+  "reference": "art/concepts/ai-01.png",
+  "jobs": [
+    {
+      "id": "ai-04",
+      "prompt": "Use case: illustration-story. Original PAPERSUN handmade cut-paper theatre, photographed physical cotton rag cardstock, fine irregular cut edges and rich fibers, separated blue paper planes with real raking shadows. Quiet exquisite storybook miniature, NOT flat vector, NOT glossy plastic, no living artist style. Single warm lateral stage light. Midnight navy #18233B, cornflower #5A729A, warm cream #EFE4CF, muted amber #E5B354 and one red linen thread. No letters, captions, numbers, marks, glyphs, logos or UI. REFINE the supplied selected reference image as a production desktop hero at landscape 16:10. Preserve the exact aesthetic, rooftop identities, same single amber attic window lower-right and red thread. Refine the missing sun as a truly CIRCULAR dark negative-space cutout, front-on not tilted, centered around x=77%, y=26%, radius=20% of image HEIGHT, retaining cream fibrous paper rim and deep shadow, never a white glowing moon. Blue rooftops fill only the lower 40% and right edge, leaving the entire left 42% and upper-left quiet dark navy for future large live headline. More deliberate separation in three roof planes, perfect tiny edge shadows. No duplicate lamp. No gold sun in the sky. No curtains or outer frame.",
+      "generation_original": {
+        "file": "art/concepts/ai-04.png",
+        "sha256": "8442bf641aaad6a9995a1cde29447446047bf2fff2ea49304a65d349279337b0",
+        "size_bytes": 2462276,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-04.webp",
+        "source": "art/concepts/ai-04.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 181526,
+        "source_bytes": 2462276,
+        "sha256": "055c8b432fd1c13564d64e9e09248a8361b6bd581f5294e074c0e126cf0eae11",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "ai-05",
+      "prompt": "Use case: illustration-story. Original PAPERSUN handmade cut-paper theatre, photographed physical cotton rag cardstock, fine irregular cut edges and rich fibers, separated blue paper planes with real raking shadows. Quiet exquisite storybook miniature, NOT flat vector, NOT glossy plastic, no living artist style. Single warm lateral stage light. Midnight navy #18233B, cornflower #5A729A, warm cream #EFE4CF, muted amber #E5B354 and one red linen thread. No letters, captions, numbers, marks, glyphs, logos or UI. RECOMPOSE the supplied paper-city concept into a distinct tall PORTRAIT mobile theatre composition, aspect 390:844 (roughly 9:19.5), not a crop. Keep same blue rooftops and one amber attic window and red thread. A perfectly identifiable DARK CIRCULAR CUTOUT is high at x=72%, y=30%, radius=24% of image WIDTH, its cream torn cardstock rim highly tactile. Upper 24% and mid-left 44% remain calm dark navy title area. Stacked steep paper rooftops lead from middle-lower right to the bottom, one tiny warm window in lower third, thread sweeps over actual roof ridges. Elaborate physical depth and shadows. No full moon, no stars, no curtains.",
+      "generation_original": {
+        "file": "art/concepts/ai-05.png",
+        "sha256": "ba6a3f84b2e9cccadab22b799d0adb2e1fee9e72a1a69ee8cd097626a471707c",
+        "size_bytes": 2559592,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-05.webp",
+        "source": "art/concepts/ai-05.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 853,
+          "height": 1844
+        },
+        "size_bytes": 213830,
+        "source_bytes": 2559592,
+        "sha256": "49e9db1cd44d038fc3fbe270b760bb5ae327908969d7519069af680334092bd8",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    }
+  ],
+  "packaging_note": "Unmodified generated PNGs remain in the scratch working tree. Native-resolution WebP derivatives are distributed in art/concepts/; source ZIP omits PNG and base64 intermediates."
+}

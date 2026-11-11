@@ -1,0 +1,129 @@
+/* Readable study details. These are explanatory illustrations, without a scale. */
+.instar-comparison,
+.instar-comparison-overview {
+  width: 100%;
+}
+
+/* display:none also removes the unused presentation from the accessibility tree. */
+.instar-comparison-rows {
+  display: none;
+}
+
+/* Match the actual strokes: casing in pale ink, wing regions in gold, support in green. */
+#ch-08 .inside-legend span:nth-child(1)::before {
+  background: #e7e7cf;
+}
+
+#ch-08 .inside-legend span:nth-child(2)::before {
+  background: #d1b974;
+}
+
+#ch-08 .inside-legend span:nth-child(3)::before {
+  background: #9db28a;
+}
+
+/* The closer viewBox fills a phone width. Keep the desktop study comfortably sized. */
+#inside-diagram .scientific-diagram {
+  max-height: 360px;
+}
+
+/* Let the reconstruction and its explanation grow together, including at text zoom. */
+#ch-08[data-mode='inside'] .inside-plate {
+  height: auto;
+  max-height: none;
+}
+
+#ch-08[data-mode='inside'] .inside-reconstruction {
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  /* Only the chapter inspector stacks; transition plates keep their overview. */
+  #ch-05 .instar-comparison-overview {
+    display: none;
+  }
+
+  #ch-05 .instar-comparison-rows {
+    display: block;
+    width: 100%;
+    padding: 4px 16px 8px;
+    color: #e7e7cf;
+  }
+
+  #ch-05 .instar-comparison-row {
+    margin: 0;
+    padding: 20px 0 12px;
+    border-top: 1px solid rgba(157, 178, 138, .28);
+  }
+
+  #ch-05 .instar-comparison-row:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  #ch-05 .instar-comparison-row figcaption {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  #ch-05 .instar-row-label {
+    color: #d1b974;
+    font-weight: 600;
+  }
+
+  #ch-05 .instar-row-feature {
+    color: #d1dac3;
+  }
+
+  #ch-05 .instar-comparison-row .scientific-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 4px;
+    overflow: hidden;
+  }
+
+  #ch-05 .instar-row-disclaimer {
+    margin: 8px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(157, 178, 138, .28);
+    color: #c2cbb3;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  /* The same identifying features are now next to their phone specimens. */
+  #ch-05 .instar-all-notes {
+    display: none;
+  }
+}
+
+/* Keep the first handoff landmark below its caption at every narrow width. */
+@media (max-width:700px) {
+  .transition-wrap[data-transition="0"] .transition-info { top:150px; bottom:auto; }
+}
+
+/* The mature larva must fit inside the upper half of its phone reveal. */
+@media (max-width:700px) {
+  .transition-wrap[data-transition="4"] .transition-target img {
+    object-fit:contain;
+    object-position:center 18%;
+  }
+}
+
+@media (max-width:700px) {
+  .transition-wrap[data-transition="4"] .transition-tag { left:24px; right:auto; }
+}
+
+/* A contained observation does not inherit the cinematic overscan camera. */
+@media (max-width:700px) {
+  .transition-wrap[data-transition="4"] .transition-target .transition-inner {
+    inset:0;
+    transform:none !important;
+  }
+}

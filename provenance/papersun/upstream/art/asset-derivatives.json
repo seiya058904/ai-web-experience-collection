@@ -1,0 +1,299 @@
+{
+  "created_date": "2026-11-09",
+  "derivation": "Lossy WebP encoding only. No composition changes, no crops, no resizing. PNG generation originals remain in the scratch working tree; source ZIP includes these optimized WebP assets.",
+  "assets": [
+    {
+      "file": "public/art/hero.webp",
+      "source": "art/concepts/ai-04.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 181526,
+      "source_bytes": 2462276,
+      "sha256": "055c8b432fd1c13564d64e9e09248a8361b6bd581f5294e074c0e126cf0eae11",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/hero-mobile.webp",
+      "source": "art/concepts/ai-05.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "size_bytes": 213830,
+      "source_bytes": 2559592,
+      "sha256": "49e9db1cd44d038fc3fbe270b760bb5ae327908969d7519069af680334092bd8",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/attic.webp",
+      "source": "public/art/attic-master.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 238678,
+      "source_bytes": 2597541,
+      "sha256": "d4900b8353662d9d7f3a849be8893ffe9d5180f4de4ac298eabaa848a4f12265",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/market.webp",
+      "source": "public/art/market-master.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 188798,
+      "source_bytes": 2367853,
+      "sha256": "f6222a60b7d90db53209554e57b3fa174dd98e06b5725d855349ee101330ca11",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/wind.webp",
+      "source": "public/art/wind-master.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 252470,
+      "source_bytes": 2717576,
+      "sha256": "b3b4122ef9ccb8948954c9b2c9eb08b20741c0ad12675dc136bb54be168e16e1",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/valley.webp",
+      "source": "public/art/valley-clean.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1585,
+        "height": 992
+      },
+      "size_bytes": 172194,
+      "source_bytes": 2327397,
+      "sha256": "37367366c4dca54eff18c021e3d01051f9972feea3d93fe67d1d4d9918d43a30",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/bridge.webp",
+      "source": "public/art/bridge-master.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 216564,
+      "source_bytes": 2531193,
+      "sha256": "3cf76b96413673271924cecd14f16ec88e8bbce5ca4c31890d6b2a5b6a21d2c8",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "public/art/transition-midpoint.webp",
+      "source": "art/concepts/ai-08.png",
+      "role": "Production web asset",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 258296,
+      "source_bytes": 2750705,
+      "sha256": "ab3d65968a9197b3dc13fc2305c7463a66bf5d80e0cbb0125777cc0e43d7a075",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-01.webp",
+      "source": "art/concepts/ai-01.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 225440,
+      "source_bytes": 2634412,
+      "sha256": "3644e8fcacef1b1e76753277e20fb47dbd0c67e1d53b7693d48219884a360c21",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-02.webp",
+      "source": "art/concepts/ai-02.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 322000,
+      "source_bytes": 2902850,
+      "sha256": "dacbb771848ddff31dbc63ca5d798fcb547931e6a23f2bf856b3c6852427e0ca",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-03.webp",
+      "source": "art/concepts/ai-03.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 298864,
+      "source_bytes": 2851835,
+      "sha256": "4c98bc10fc544c27de64756da8e4e09370b5b33c58b37933f4908d1e0b37fcf4",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-04.webp",
+      "source": "art/concepts/ai-04.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 181526,
+      "source_bytes": 2462276,
+      "sha256": "055c8b432fd1c13564d64e9e09248a8361b6bd581f5294e074c0e126cf0eae11",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-05.webp",
+      "source": "art/concepts/ai-05.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 853,
+        "height": 1844
+      },
+      "size_bytes": 213830,
+      "source_bytes": 2559592,
+      "sha256": "49e9db1cd44d038fc3fbe270b760bb5ae327908969d7519069af680334092bd8",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-06.webp",
+      "source": "art/concepts/ai-06.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 357486,
+      "source_bytes": 3150521,
+      "sha256": "f576a04684edf94045cb765e7d09a8c3b06bb75ee18df90ad8042d41c0956a02",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-07.webp",
+      "source": "art/concepts/ai-07.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 281542,
+      "source_bytes": 2842594,
+      "sha256": "ea59a916dab3d6cfc59cbf538f366f2eb8a214ff30c2c3079169e6d49be16823",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    },
+    {
+      "file": "art/concepts/ai-08.webp",
+      "source": "art/concepts/ai-08.png",
+      "role": "Retained inspectable concept derivative",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "size_bytes": 258296,
+      "source_bytes": 2750705,
+      "sha256": "ab3d65968a9197b3dc13fc2305c7463a66bf5d80e0cbb0125777cc0e43d7a075",
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "method": 6,
+        "resized": false
+      }
+    }
+  ],
+  "budgets": {
+    "production_bytes": 1722356,
+    "concept_bytes": 2138984,
+    "total_webp_bytes": 3861340
+  }
+}

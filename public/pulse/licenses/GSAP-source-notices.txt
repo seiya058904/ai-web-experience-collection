@@ -1,0 +1,32 @@
+Source: node_modules/gsap/gsap-core.js
+
+/*!
+ * GSAP 3.15.1
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+Source: node_modules/gsap/ScrollTrigger.js
+
+/*!
+ * ScrollTrigger 3.15.1
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+Source: node_modules/gsap/Observer.js
+
+/*!
+ * Observer 3.15.1
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/

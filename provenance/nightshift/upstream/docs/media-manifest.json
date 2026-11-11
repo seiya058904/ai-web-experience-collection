@@ -1,0 +1,331 @@
+[
+  {
+    "key": "atlas",
+    "width": 1586,
+    "height": 992,
+    "bytes": 135602,
+    "path": "public/media/atlas.webp",
+    "sha256": "dfc19fba9fc338ac3def794d0c806c9eea22dbbb5efff9675e49331292e1054e",
+    "fallback": {
+      "path": "public/media/fallback/atlas.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 7028,
+      "sha256": "f32f07e1887d26b8122b4b9d415e80a6a8a595060b3de48962bd760c076b54ea"
+    },
+    "use": "production"
+  },
+  {
+    "key": "bakery-after",
+    "width": 1586,
+    "height": 992,
+    "bytes": 179278,
+    "path": "public/media/bakery-after.webp",
+    "sha256": "48d98c0b22eb361e33e2397efe70481f0d3b75b7177c87a6937a92be5438ff55",
+    "fallback": {
+      "path": "public/media/fallback/bakery-after.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 13858,
+      "sha256": "de21cc7f70e1d909f3f0e71b12dacac814af403321c0baf687abe1e01ebf1f04"
+    },
+    "use": "production"
+  },
+  {
+    "key": "bakery-before",
+    "width": 1586,
+    "height": 992,
+    "bytes": 198500,
+    "path": "public/media/bakery-before.webp",
+    "sha256": "4f43d67db9e0640271b7234288c65f60089b99628ff033cc4180acca73c59467",
+    "fallback": {
+      "path": "public/media/fallback/bakery-before.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 15398,
+      "sha256": "5c438c6db41ea32c519b66ddce9b4a5209d026da6a6dff5ce8d1e86bff00ea5f"
+    },
+    "use": "production"
+  },
+  {
+    "key": "care",
+    "width": 1586,
+    "height": 992,
+    "bytes": 96406,
+    "path": "public/media/care.webp",
+    "sha256": "ca7218f197aec38cb2dd8125f34aab23790db030da5d93df5544c5e22930f1b6",
+    "fallback": {
+      "path": "public/media/fallback/care.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 9440,
+      "sha256": "04da1e85298668481c88c67969ee4f7f26f00ad898169cab2a3b0226331d7e94"
+    },
+    "use": "production"
+  },
+  {
+    "key": "concept-platform",
+    "width": 1586,
+    "height": 992,
+    "bytes": 172160,
+    "path": "evidence/art/concept-platform.webp",
+    "sha256": "e05ea5a492d99e0f55ec2d90ed834d4e23c9bdbb6ff86071e81518e5cadb1ce3",
+    "fallback": {
+      "path": "public/media/fallback/concept-platform.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 11864,
+      "sha256": "17a0d7fa626572c7c5233f8c888114e800c79c93a9fc2d4963f87ce51e065548"
+    },
+    "use": "evidence"
+  },
+  {
+    "key": "concept-street",
+    "width": 1586,
+    "height": 992,
+    "bytes": 195366,
+    "path": "evidence/art/concept-street.webp",
+    "sha256": "6a4269f6dd28a161970c40b0f36022dc9b32351464f8f58efdcb3e3399f1c438",
+    "fallback": {
+      "path": "public/media/fallback/concept-street.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 13650,
+      "sha256": "4807c30230bfe078ed765cc33483aaeaed947a3396d47c4cb96f72810a532fd2"
+    },
+    "use": "evidence"
+  },
+  {
+    "key": "concept-window",
+    "width": 1586,
+    "height": 992,
+    "bytes": 130438,
+    "path": "evidence/art/concept-window.webp",
+    "sha256": "a476af88babab5c9ce131fe1813a4035a8d3999cc1a02f9a190a6f152db10b6b",
+    "fallback": {
+      "path": "public/media/fallback/concept-window.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 7400,
+      "sha256": "925f54d5277ee1e6cbabdca10f88f9e02b3240ba03ce6cdacc63c800222e9ccc"
+    },
+    "use": "evidence"
+  },
+  {
+    "key": "curb-after",
+    "width": 1586,
+    "height": 992,
+    "bytes": 254022,
+    "path": "public/media/curb-after.webp",
+    "sha256": "f3b744a38ab8f0cae0673964df80f747e4a06cedae3d19d4a666eacb06eac6a6",
+    "fallback": {
+      "path": "public/media/fallback/curb-after.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 16574,
+      "sha256": "89a314ff435614efe8f9f894ec68661f623a1c0feaa02e69af6b1d0ac4bcfe06"
+    },
+    "use": "production"
+  },
+  {
+    "key": "curb-before",
+    "width": 1586,
+    "height": 992,
+    "bytes": 286344,
+    "path": "public/media/curb-before.webp",
+    "sha256": "990fa7bb69713b66d594f5e455ed747c71c193b4a3fdbc53e00f032ebfc5b8b8",
+    "fallback": {
+      "path": "public/media/fallback/curb-before.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 17108,
+      "sha256": "a3e56881ecca9cf0383f3ced3216dee39f946a7552e7a710bc2e0775c98628dd"
+    },
+    "use": "production"
+  },
+  {
+    "key": "dawn",
+    "width": 1586,
+    "height": 992,
+    "bytes": 236960,
+    "path": "public/media/dawn.webp",
+    "sha256": "bc8edd54b7f701a3a70644222e7f83712bcc1155daf0f93f7107ac4306d7f69d",
+    "fallback": {
+      "path": "public/media/fallback/dawn.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 12228,
+      "sha256": "56c9b2802facfb5915636b68ef8c0acdf612162b95de325faf67352ea63c8de3"
+    },
+    "use": "production"
+  },
+  {
+    "key": "hero",
+    "width": 1585,
+    "height": 992,
+    "bytes": 214350,
+    "path": "public/media/hero.webp",
+    "sha256": "7e9b19c32d6e0f870269b90d5e37fda29722ed8c84a8d0fdcb4a7ccd5cb8d431",
+    "fallback": {
+      "path": "public/media/fallback/hero.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 10234,
+      "sha256": "6eae3363e02a7941283eada8b0c8a5085e15501077f29754e625081a06539ca7"
+    },
+    "use": "production"
+  },
+  {
+    "key": "hero-mobile",
+    "width": 887,
+    "height": 1774,
+    "bytes": 166114,
+    "path": "public/media/hero-mobile.webp",
+    "sha256": "01748e699791dba760817c575e3da138a59b36fa27f5b07fc220a85c1f8b09fd",
+    "fallback": {
+      "path": "public/media/fallback/hero-mobile.webp",
+      "width": 450,
+      "height": 900,
+      "bytes": 22032,
+      "sha256": "a0dbe57bcf3fb2a0bf8b89fae4144def2b4dd4ebef557d6d6f0337b1a6f4fb78"
+    },
+    "use": "production"
+  },
+  {
+    "key": "market",
+    "width": 1586,
+    "height": 992,
+    "bytes": 278936,
+    "path": "public/media/market.webp",
+    "sha256": "a861d59e7f0066638ef912efe74b31d52724a65874520e01c8d3292fb72ddf25",
+    "fallback": {
+      "path": "public/media/fallback/market.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 25242,
+      "sha256": "bf47d26dc8b81dae866b0614aee7094ea7f9f50218dbe7a1b177882d13a225ef"
+    },
+    "use": "production"
+  },
+  {
+    "key": "market-after",
+    "width": 1586,
+    "height": 992,
+    "bytes": 349094,
+    "path": "public/media/market-after.webp",
+    "sha256": "7a9eefb5048f5b89902efa417ae20c90d8a28fd6701e3a2f801fd78b296c4439",
+    "fallback": {
+      "path": "public/media/fallback/market-after.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 32284,
+      "sha256": "bba467926d42ff568c8d80aff88b203a2f964e4fc6a21f97f84663a2aa7c58bf"
+    },
+    "use": "production"
+  },
+  {
+    "key": "platform",
+    "width": 1586,
+    "height": 992,
+    "bytes": 203352,
+    "path": "public/media/platform.webp",
+    "sha256": "4534e8b883e7af9877bddc4624ff0b1a38485a0171ad992a4face2b763bb34b3",
+    "fallback": {
+      "path": "public/media/fallback/platform.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 19240,
+      "sha256": "f060286f842d994f3c93d028958360d66d4d5b19b01151cf5ec70db80375c5a2"
+    },
+    "use": "production"
+  },
+  {
+    "key": "platform-before",
+    "path": "public/media/platform-before.webp",
+    "width": 1586,
+    "height": 992,
+    "bytes": 216956,
+    "sha256": "21b5975960af53484122d5803942db1f830869574e6ddc5e891dc42b18596146",
+    "fallback": {
+      "path": "public/media/fallback/platform-before.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 18774,
+      "sha256": "25a0803e530f7c6fa1dae395b088eacee4c7a01bb6dd6ceae48e1029869ea6f7"
+    },
+    "use": "production"
+  },
+  {
+    "key": "platform-original",
+    "path": "evidence/art/platform-original.webp",
+    "width": 1586,
+    "height": 992,
+    "bytes": 251606,
+    "sha256": "c3310457276758a84f15d6feb50ddb91e1b823ea98a1229716c1b9dd136a226f",
+    "use": "evidence"
+  },
+  {
+    "key": "rail",
+    "width": 1586,
+    "height": 992,
+    "bytes": 332434,
+    "path": "public/media/rail.webp",
+    "sha256": "97f92ea20ad4a47d926538d1894bae73e52f6e15340e84d9b15cda3fff4e0d3d",
+    "fallback": {
+      "path": "public/media/fallback/rail.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 19182,
+      "sha256": "9f1fde2e941e15db77df1c08e04f822f08fafb93ee00d5a3a5b3720cbfd26b5f"
+    },
+    "use": "production"
+  },
+  {
+    "key": "rail-water-midpoint",
+    "width": 1586,
+    "height": 992,
+    "bytes": 279422,
+    "path": "public/media/rail-water-midpoint.webp",
+    "sha256": "c80639f99259d9dbe9fdd6d505fba64f96241a6cb0ee8b080be1bb866c06f5cc",
+    "fallback": {
+      "path": "public/media/fallback/rail-water-midpoint.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 14580,
+      "sha256": "af44dc2473144d5dbc42b889a8193f01557ca5c74fa14945e43d81f263c8a4f9"
+    },
+    "use": "production"
+  },
+  {
+    "key": "utility",
+    "width": 1586,
+    "height": 992,
+    "bytes": 138238,
+    "path": "public/media/utility.webp",
+    "sha256": "afec7214a6904a178df4dc44f097950bed8c991ef0bfa40bf3a61cf21ff4b496",
+    "fallback": {
+      "path": "public/media/fallback/utility.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 7808,
+      "sha256": "4958e8274d7888255079697e58909794a68c1afd94c8c3d65f4ffca55c4309b0"
+    },
+    "use": "production"
+  },
+  {
+    "key": "water",
+    "width": 1586,
+    "height": 992,
+    "bytes": 236686,
+    "path": "public/media/water.webp",
+    "sha256": "5a3640dc3a25b7bd2ff267efc40429af78b890d643ed6f61c4616d866159ad8f",
+    "fallback": {
+      "path": "public/media/fallback/water.webp",
+      "width": 512,
+      "height": 320,
+      "bytes": 12572,
+      "sha256": "cbaeeed4c66c1083dd191040a74c9144d8763f3b69c5212616948b58cf8c97d5"
+    },
+    "use": "production"
+  }
+]

@@ -1450,5 +1450,171 @@
         ]
       }
     ]
+  },
+  "fiveWorks": {
+    "date": "2026-11-11",
+    "method": "Sharp WebP q90, width-only resize, no upscaling, no crop. All five sources are the works' own supplied hero files (largest candidate, unchanged).",
+    "images": [
+      {
+        "work": "papersun",
+        "source": "/papersun/art/hero.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 181526,
+        "sourceSHA256": "055c8b432fd1c13564d64e9e09248a8361b6bd581f5294e074c0e126cf0eae11",
+        "width": 1586,
+        "height": 992,
+        "variants": [
+          {
+            "url": "/collection/previews/papersun-640.webp",
+            "width": 640,
+            "height": 400,
+            "bytes": 38980,
+            "sha256": "9e7cda302c21c21cb214874304538f83040263c2c5021ca090c8b0ec5fdd68f4"
+          },
+          {
+            "url": "/collection/previews/papersun-960.webp",
+            "width": 960,
+            "height": 600,
+            "bytes": 77118,
+            "sha256": "ee256e7d1175e29ef292230376b5442896517d9a31a771abbb864bf7b34e6249"
+          },
+          {
+            "url": "/collection/previews/papersun-1280.webp",
+            "width": 1280,
+            "height": 801,
+            "bytes": 116278,
+            "sha256": "e03a364ada2ccff2611cdbe3bc2ca70f2695a04bbcdc95eb3d6b3c5c8b8252c7"
+          }
+        ]
+      },
+      {
+        "work": "cargo",
+        "source": "/cargo/media/hero.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 137262,
+        "sourceSHA256": "89884277921c5816b7023fb4eb4957bbaab5a11cd37b45d25e3d83d9ad8e1ca8",
+        "width": 1584,
+        "height": 991,
+        "variants": [
+          {
+            "url": "/collection/previews/cargo-640.webp",
+            "width": 640,
+            "height": 400,
+            "bytes": 38658,
+            "sha256": "cd97a009f208c53b927e3b13d6bd8748ad490aad6420e24a67d0cd0029d34300"
+          },
+          {
+            "url": "/collection/previews/cargo-960.webp",
+            "width": 960,
+            "height": 601,
+            "bytes": 77514,
+            "sha256": "b2771d8b0e484a01ffeeb0e107bdbef0ca24ca7c7b27a6364dd5100a8fd8521b"
+          },
+          {
+            "url": "/collection/previews/cargo-1280.webp",
+            "width": 1280,
+            "height": 801,
+            "bytes": 116746,
+            "sha256": "5a22f2faec1ed4c046fa0591aaf15560537736fb210ba99cea6f1ab0a423c90d"
+          }
+        ]
+      },
+      {
+        "work": "pulse",
+        "source": "/pulse/art/hero-desktop.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 83340,
+        "sourceSHA256": "03b4ccb09c23d7ec65307824bfb2c14ca804b21a62a9a8fadc64cb96c2e60c90",
+        "width": 1536,
+        "height": 1024,
+        "variants": [
+          {
+            "url": "/collection/previews/pulse-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 24514,
+            "sha256": "cb74c21e9ce76fbba080cd7301c4487a9bf117e890b479793708c892a3f9e717"
+          },
+          {
+            "url": "/collection/previews/pulse-960.webp",
+            "width": 960,
+            "height": 640,
+            "bytes": 47542,
+            "sha256": "449ce5af6da8fe1902c9295cf30b75e88339c9fd20d666f6fe53dde5b6663011"
+          },
+          {
+            "url": "/collection/previews/pulse-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 71108,
+            "sha256": "e3fd9d8e0795a27e03822c53672ca08bedfcb826b2f3b6251230c9bba9fb5c33"
+          }
+        ]
+      },
+      {
+        "work": "nightshift",
+        "source": "/nightshift/media/hero.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 214350,
+        "sourceSHA256": "7e9b19c32d6e0f870269b90d5e37fda29722ed8c84a8d0fdcb4a7ccd5cb8d431",
+        "width": 1585,
+        "height": 992,
+        "variants": [
+          {
+            "url": "/collection/previews/nightshift-640.webp",
+            "width": 640,
+            "height": 401,
+            "bytes": 42494,
+            "sha256": "1016695a7d415d881d6e400fc5b055c911d6e5944736a4c2163c8994a58a3a43"
+          },
+          {
+            "url": "/collection/previews/nightshift-960.webp",
+            "width": 960,
+            "height": 601,
+            "bytes": 89438,
+            "sha256": "0360c3726bf61f38c068f55a2c9819f7f59879c9ff0a3fed51db96f226e9c5c3"
+          },
+          {
+            "url": "/collection/previews/nightshift-1280.webp",
+            "width": 1280,
+            "height": 801,
+            "bytes": 143890,
+            "sha256": "5c71b63d3f3f1684e40443d670c76d5153ce909289e2e68168d00f0aeaae6491"
+          }
+        ]
+      },
+      {
+        "work": "chrysalis",
+        "source": "/chrysalis/assets/ai-04-hero.webp",
+        "sourceKind": "supplied AI-generated hero artwork",
+        "sourceBytes": 90928,
+        "sourceSHA256": "e5d48a6801e91415f09b0d1eda87a903740b9e0e2f6cd541b1a68b609ee72639",
+        "width": 1659,
+        "height": 948,
+        "variants": [
+          {
+            "url": "/collection/previews/chrysalis-640.webp",
+            "width": 640,
+            "height": 366,
+            "bytes": 22934,
+            "sha256": "0f473ea7224ea4b4abd0d37f29e374d31e8db300c984b9fc0fcbb7a0917afb9e"
+          },
+          {
+            "url": "/collection/previews/chrysalis-960.webp",
+            "width": 960,
+            "height": 549,
+            "bytes": 43638,
+            "sha256": "991db1b44889bbbd432855df7b4bf787281d4392bc53339ffece91a18d15785c"
+          },
+          {
+            "url": "/collection/previews/chrysalis-1280.webp",
+            "width": 1280,
+            "height": 731,
+            "bytes": 62348,
+            "sha256": "ccf05f972ae94f745837b82e51e956fe80853d3c3fd5532b5b8ea3f802a10f5b"
+          }
+        ]
+      }
+    ]
   }
 }

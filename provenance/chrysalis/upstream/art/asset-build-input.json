@@ -1,0 +1,80 @@
+{
+  "note": "Selected assets and portable relative paths; authoritative prompts and provenance are in asset-provenance.json.",
+  "assets": [
+    {
+      "id": "AI-01",
+      "original": "art/generated/AI-01.png",
+      "production": "public/assets/ai-01-concept-egg.webp"
+    },
+    {
+      "id": "AI-02",
+      "original": "art/generated/AI-02.png",
+      "production": "public/assets/ai-02-host.webp"
+    },
+    {
+      "id": "AI-03",
+      "original": "art/generated/AI-03.png",
+      "production": "public/assets/ai-03-veins.webp"
+    },
+    {
+      "id": "AI-04",
+      "original": "art/generated/AI-04.png",
+      "production": "public/assets/ai-04-hero.webp"
+    },
+    {
+      "id": "AI-05",
+      "original": "art/generated/AI-05.png",
+      "production": "public/assets/ai-05-mobile.webp"
+    },
+    {
+      "id": "AI-06",
+      "original": "art/generated/AI-06.png",
+      "production": "public/assets/ai-06-jade.webp"
+    },
+    {
+      "id": "AI-07",
+      "original": "art/generated/AI-07.png",
+      "production": "public/assets/ai-07-emergence.webp"
+    },
+    {
+      "id": "AI-08",
+      "original": "art/generated/AI-08.png",
+      "production": "public/assets/ai-08-pattern.webp"
+    },
+    {
+      "id": "AI-09",
+      "original": "art/generated/AI-09.png",
+      "production": "public/assets/ai-09-hatch.webp"
+    },
+    {
+      "id": "AI-10",
+      "original": "art/generated/AI-10.png",
+      "production": "public/assets/ai-10-feeding.webp"
+    },
+    {
+      "id": "AI-11",
+      "original": "art/generated/AI-11.png",
+      "production": "public/assets/ai-11-j-hang.webp"
+    },
+    {
+      "id": "AI-12",
+      "original": "art/generated/AI-12.png",
+      "production": "public/assets/ai-12-adult.webp"
+    },
+    {
+      "id": "AI-13",
+      "original": "art/generated/AI-13.png",
+      "production": "public/assets/ai-13-meadow.webp"
+    },
+    {
+      "id": "AI-14",
+      "original": "art/generated/AI-14.png",
+      "production": "public/assets/ai-14-butterfly.webp"
+    },
+    {
+      "id": "AI-15",
+      "original": "art/generated/AI-15.png",
+      "production": "public/assets/ai-15-unfolding.webp"
+    }
+  ]
+}

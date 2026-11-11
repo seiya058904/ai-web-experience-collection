@@ -278,3 +278,23 @@ Supplied playable Go story with AI-generated table and board-material images; ru
 ## ANAX — A Mechanical Dragonfly
 
 Original to this repository, not a supplied delivery. Source, text, geometry and rendered captures are the project author's; no external media. It reuses Roboto Flex and IBM Plex Mono (SIL OFL) from `public/grid/fonts/` by URL. three.js (MIT) comes from the root dependencies; GSAP and Lenis are not used. The deployed notice is `public/anax/NOTICE.md`.
+
+## PAPERSUN — A fable cut from light
+
+Supplied cut-paper fable with AI-generated scenery; props, fragment geometry and sound are authored code. No overall application license is declared. Cormorant Garamond (SIL OFL), Lenis (MIT), GSAP and ScrollTrigger (GSAP Standard “No Charge” license, not MIT). Original ZIP: `papersun-source (1).zip`, 491,249,783 bytes, 5,360 entries, SHA-256 `5cb4929380e2fabbd25632068699e5da1fb15078c15c9371839ed7abad71ffd1`, kept outside the repository. Root GSAP 3.15.0 / Lenis 1.3.26 / three 0.186.1 replace the supplied newer patch versions. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/papersun/upstream/`; the deployed notice is `public/papersun/NOTICE.md`.
+
+## CARGO — The same box, a changing world
+
+Supplied freight story with AI-generated photographic scenes; the container study is authored. No overall application license is declared. Archivo and Barlow Condensed (SIL OFL), three.js and Lenis (MIT), GSAP (Standard “No Charge”, not MIT). Original ZIP: `cargo-source.zip`, 4,546,281 bytes, 108 entries, SHA-256 `71a5668f13c6a0d40bba53fe5feba64c8e93ce78606eb5b884e09ba17cab5561`, kept outside the repository. Root GSAP 3.15.0 / Lenis 1.3.26 / three 0.186.1 replace the supplied newer patch versions. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/cargo/upstream/`; the deployed notice is `public/cargo/NOTICE.md`.
+
+## PULSE — An atlas of one heartbeat
+
+Supplied anatomical atlas with AI-generated artistic reconstructions and authored SVG diagrams; the supplied original source is MIT (`public/pulse/ATTRIBUTION.md`), not the artwork. Cormorant Garamond and DM Sans (SIL OFL), Lenis (MIT), GSAP (Standard “No Charge”, not MIT). Original ZIP: `pulse-source.zip`, 12,999,210 bytes, 233 entries, SHA-256 `fba47b3e0153bd5ab2f5ef00c0d2eddd7915233d8a977a221893d35c5fa957fb`, kept outside the repository. Root GSAP 3.15.0 / Lenis 1.3.26 / three 0.186.1 replace the supplied newer patch versions. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/pulse/upstream/`; the deployed notice is `public/pulse/NOTICE.md`.
+
+## NIGHTSHIFT — The city does not sleep at once
+
+Supplied night-city portrait with AI-generated imagery of a fictional city. No overall application license is declared. Barlow Condensed, DM Sans and Instrument Serif (SIL OFL), Lenis (MIT), GSAP (Standard “No Charge”, not MIT). Original ZIP: `nightshift-source.zip`, 48,925,944 bytes, 377 entries, SHA-256 `3aa1914d41d863960751caffda0c971b16bf1220482267f490c2f2ae02128763`, kept outside the repository. Root GSAP 3.15.0 / Lenis 1.3.26 / three 0.186.1 replace the supplied newer patch versions. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/nightshift/upstream/`; the deployed notice is `public/nightshift/NOTICE.md`.
+
+## CHRYSALIS — The architecture of becoming
+
+Supplied monarch life-cycle journey with AI-generated artistic reconstructions and authored SVG diagrams; supplied source under the permissive terms in `public/chrysalis/LICENSE.md`, which do not override generated-image terms. Libre Caslon Display and Source Sans 3 (SIL OFL), Lenis (MIT). Original ZIP: `chrysalis-source.zip`, 29,029,640 bytes, 196 entries, SHA-256 `a8bcca55e7431c0c6a22f28ca91529cc89d6824ea74d679970bb61e836d040de`, kept outside the repository. Root GSAP 3.15.0 / Lenis 1.3.26 / three 0.186.1 replace the supplied newer patch versions. Fonts byte-identical to existing Collection files are served from those URLs. Source records stay in `provenance/chrysalis/upstream/`; the deployed notice is `public/chrysalis/NOTICE.md`.

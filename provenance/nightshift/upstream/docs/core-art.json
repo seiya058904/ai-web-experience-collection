@@ -1,0 +1,250 @@
+[
+  {
+    "id": "AI-01",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT hero concept A, one worker against the sleeping metropolis. One wide 16:10 cinematic documentary photograph, no typography/logos/UI. Eye-height 35mm view of an empty wet street in fictional Meridian City at midnight. On the right third, one anonymous street maintenance worker fastening worn work gloves under a warm sodium-amber lamp, natural anatomy, face concealed by angle, wearing practical dark work jacket; stands safely on the pavement. Wet asphalt reflects restrained amber glints. Dense credible low and medium city buildings recede in honest perspective into dark steel-teal haze. Large quiet unlit upper-left area for future real DOM headline. Authentic surfaces, skin and fabric, respectful unposed human-scale work, richly detailed but not advertising or heroic pose, filmic grain and deep blacks with detail. Palette #0B1421 #203545 #E9A85F. No neon signage, brand names, traffic dangers, sci-fi, impossible buildings, or fake letters.",
+    "fileName": "concept-street",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-f7a7e40b-6bff-4e83-b0fa-0226ab9a33d9.png",
+    "workingOriginalName": "concept-street.png",
+    "retainedPath": "evidence/art/concept-street.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "evidence/art/concept-street.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 195366,
+      "sha256": "6a4269f6dd28a161970c40b0f36022dc9b32351464f8f58efdcb3e3399f1c438"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "73ac95505b044661614752d905baf4c7e85a560754439959dd6b3132d4a1107f"
+  },
+  {
+    "id": "AI-02",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. Asset AI-02, hero concept B for NIGHTSHIFT, a cinematic editorial website about night workers in fictional Meridian City. Create one exceptionally detailed wide landscape 16:10 cinematic photograph, no typography, no logos, no UI. Oblique view from beside a mid-rise building over an expansive believable sleeping city at midnight. At the lower-left/center third a SINGLE large, clearly readable amber-lit room window is seen slightly from outside; one small anonymous person in profile works at a table with one amber task lamp, face unidentifiable. The window has real thick mullions, rain-softened glass, restrained warm bounce, concrete wall. The room is large enough to recognize humanity, not a tiny irrelevant speck. To its right dense quiet city blocks and a wet curved street recede in honest perspective to a steel-blue horizon. The upper-left 38 percent is very quiet deep midnight ink sky and unlit architecture, deliberately low contrast to support large real website text later. Skyline horizon approximately 55 percent height. Four convincing depths: near window, mid buildings, long streets, atmospheric sky. Natural documentary 35mm lens, fine film grain, subtle mist, tactile wet materials, emotionally humane, extraordinary restrained cinematic quality. Palette midnight ink #0B1421, steel teal #203545, amber #E9A85F. Avoid cyberpunk, neon signs, mountains, futuristic city, identifiable faces, duplicated warm windows, decorative typography, exaggerated bloom, collage, or impossible building geometry.",
+    "fileName": "concept-window",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-f67ffffb-e2bf-4cff-968f-2cf562518f22.png",
+    "workingOriginalName": "concept-window.png",
+    "retainedPath": "evidence/art/concept-window.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "evidence/art/concept-window.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 130438,
+      "sha256": "a476af88babab5c9ce131fe1813a4035a8d3999cc1a02f9a190a6f152db10b6b"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "6ed06c439457f906b4b1cb40961fb80240f2777ce94a21ce685e21ea8f1017b6"
+  },
+  {
+    "id": "AI-03",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT hero concept C, threshold before dawn. Wide 16:10 natural cinematic documentary photograph. Fictional Meridian City, quiet pre-dawn tram platform, anonymous staff silhouette left-of-center checking empty public space beneath pale warm work light, safe empty platform with no moving vehicle next to staff. Long-lens honest perspective through weathered steel and glass canopy, traces of condensation and soft steel-blue horizon, deep dark structural void occupying right third and upper-right for real website headline later. Intricate credible materials, slate-blue surroundings, restrained amber lamp, very faint dawn rose but no sunrise. Worker is human and legible without recognizable face, gloves practical. No busy passengers, no logos, no writing, no numbers, no UI. High-end documentary cinema, restrained and humane, absolutely no cyberpunk neon or melodramatic action.",
+    "fileName": "concept-platform",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-de2cee96-ab5d-4cab-a139-535d82300814.png",
+    "workingOriginalName": "concept-platform.png",
+    "retainedPath": "evidence/art/concept-platform.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "evidence/art/concept-platform.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 172160,
+      "sha256": "e05ea5a492d99e0f55ec2d90ed834d4e23c9bdbb6ff86071e81518e5cadb1ce3"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "9aade4fb58996c66848e108d97f50df74f3ba49114bda344bd7e628ba65d8ea4"
+  },
+  {
+    "id": "AI-04",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural refinement. Image 1 is the chosen NIGHTSHIFT city hero. Preserve this EXACT city, oblique building geometry, rain-soft glass, single anonymous person at a desk, and one large amber-lit room in lower-left. Preserve the calm documentary mood and natural scale. Refine into a stunning final widescreen 16:10 production photograph: increase subtle legible concrete and window-frame detail, make amber lamp and its bounce more convincing, improve distant street layering and moist air without strong bloom. Keep title-safe upper 38 percent dark quiet sky, horizon near55 percent, window starts below41 percent height. Dark ink and steel teal background, honest amber. No new writing, logos, text, symbols, people, or duplicate lit foreground window. Final should retain all recognizable architectural landmarks for a later matched dawn return. Composition remains completely stable, no collage. Generate one finished photograph only.",
+    "fileName": "hero",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-0eaf6281-a779-47b7-a40b-787a16705455.png",
+    "workingOriginalName": "hero.png",
+    "retainedPath": "public/media/hero.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/hero.webp",
+      "width": 1585,
+      "height": 992,
+      "bytes": 214350,
+      "sha256": "7e9b19c32d6e0f870269b90d5e37fda29722ed8c84a8d0fdcb4a7ccd5cb8d431"
+    },
+    "actualDimensions": [
+      1585,
+      992
+    ],
+    "originalOutputSha256": "ce120199911777dfa4282280324af0a8cee2ff157449143a66621711808ba49d"
+  },
+  {
+    "id": "AI-05",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT dedicated portrait/mobile hero, a genuinely recomposed tall 9:19.5 photograph for a 390x844 screen, NOT a crop. Inside a quiet dark mid-rise room in fictional Meridian City looking outward through a tall slender rain-speckled window; upper 38 percent is uninterrupted midnight blue sky through glass, deliberately calm and low contrast for a real website two-line headline. Distant wet quiet streets and believable low-rise buildings below midpoint. In lower third, close anonymous worker sleeve and hand holding a pencil at a desk, warm amber task lamp with honest light falloff on worn wood, a small window mullion at the left edge, three distinct depths. Humane late-night work, room/window/city all legible at a small screen, luxurious understated editorial documentary cinema, midnight ink #0B1421 steel teal #203545 amber #E9A85F. Natural hand anatomy, no identifiable face, no visible writing or numbers or logos or UI. One coherent portrait composition, realistic materials, no cyberpunk, no giant bloom.",
+    "fileName": "hero-mobile",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-a8cf7091-2f59-48be-afd8-b5a736300245.png",
+    "workingOriginalName": "hero-mobile.png",
+    "retainedPath": "public/media/hero-mobile.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/hero-mobile.webp",
+      "width": 887,
+      "height": 1774,
+      "bytes": 166114,
+      "sha256": "01748e699791dba760817c575e3da138a59b36fa27f5b07fc220a85c1f8b09fd"
+    },
+    "actualDimensions": [
+      887,
+      1774
+    ],
+    "originalOutputSha256": "129f02052dc3b45aa739c87cf1b7bc0915cbc278dc0a272f1733e3d16d5895e2"
+  },
+  {
+    "id": "AI-06",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT AI-06 master image for chapter Between Trains. Wide landscape 16:10, exceptionally detailed cinematic documentary still in a fictional rail tunnel during a quiet scheduled inspection. Two straight parallel steel rails and believable sleepers, rough ballast and individual fasteners in near foreground, exact physically coherent vanishing point left of center. Two small anonymous workers in practical high visibility workwear stand far in the background beside stationary inspection lighting; NO trains anywhere. Narrow amber work lamps along steel-blue textured tunnel wall; a supported thick service pipe along left wall, damp worn concrete. Right third is deep blue textured tunnel wall with uncluttered low contrast negative space for real English DOM caption. Natural scale and elegant 35mm optics, steel contact shadows, real rail head profile, warm reflection along rail. Extremely high quality tactile materials, no fantasy, no lightning, no sci-fi, no labels or text or logos, no operational instructions.",
+    "fileName": "rail",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-79b8fa14-fb24-4a3d-bdc4-3018c482e8ad.png",
+    "workingOriginalName": "rail.png",
+    "retainedPath": "public/media/rail.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/rail.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 332434,
+      "sha256": "97f92ea20ad4a47d926538d1894bae73e52f6e15340e84d9b15cda3fff4e0d3d"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "a09b93340fc92f160a7bfb3eb30aac080a7db70a6a287bbb683bf17e28e401e1"
+  },
+  {
+    "id": "AI-07",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT AI-07 late-section master photograph, market before opening in fictional Meridian City. Wide16:10 cinematic documentary still, blue predawn flower and produce wholesale market. On right foreground an anonymous worker's believable gloved hands sort loose stems into a scuffed timber crate, sleeves practical, face outside the frame. At middle depth a few ordinary scratch-marked produce boxes and handcart under translucent weathered canopy, amber task lamps above. Warm light catches thin petal edges and leaves, not a luxury bouquet or floristry advertisement. Far aisle opens to pale blue and a tiny hint of dawn rose, with no customers. Left lower area is quiet dark aisle shadow for an English caption to be added later in DOM. Detailed real physical contact, tiny droplets, humble working materials, coherent natural perspective, film grain, humane restrained cinema. No visible writing, labels, signage, brands, UI, or logos. No extra fingers, floating flowers, glossy luxury, neon, fantasy.",
+    "fileName": "market",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-d85a843f-0e96-4c06-a254-b6237efe3c2b.png",
+    "workingOriginalName": "market.png",
+    "retainedPath": "public/media/market.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/market.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 278936,
+      "sha256": "a861d59e7f0066638ef912efe74b31d52724a65874520e01c8d3292fb72ddf25"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "fb22bda62f13e1bd6667cf4f910cd2d69cc34cfeb58eea7881a1840803550c47"
+  },
+  {
+    "id": "AI-08",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT authored transition midpoint AI-08. One exceptionally beautiful widescreen16:10 cinematic photographic composition, halfway in an editorial passage between TWO SEPARATE underground facilities. Near camera in the middle-left a huge thick dark vertical cylindrical service pipe and opaque architectural door frame create REAL complete occlusion. Leftmost third shows a believable rail tunnel with two converging steel rails, sleepers, damp concrete and small amber worklights; rightmost half looks beyond the door frame into a separately coherent waterworks gallery of supported curving blue-gray thick pipes, flanges and concrete floor, a warm lamp and a small distant anonymous worker. Both spaces have stable same-height horizon, light direction and natural scale; image is a composed architectural match cut, NOT transparent double exposure, not physical shared plumbing, no hardware morph. Midnight ink and steel teal with restrained amber rim on central pipe. No text, UI, logos, gauges, numbers, trains, sparks, unsafe actions or fantasy machinery. Emphasize true thickness, contact shadows, real opacity and tactile worn materials.",
+    "fileName": "rail-water-midpoint",
+    "knownParameters": {
+      "transparent_background": false
+    },
+    "unknownParameters": [
+      "seed",
+      "model build",
+      "sampling settings"
+    ],
+    "reviewedDate": "2026-11-09",
+    "generationOutputName": "exec-be45670f-cd6e-4531-9099-4bac4924bf59.png",
+    "workingOriginalName": "rail-water-midpoint.png",
+    "retainedPath": "public/media/rail-water-midpoint.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/rail-water-midpoint.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 279422,
+      "sha256": "c80639f99259d9dbe9fdd6d505fba64f96241a6cb0ee8b080be1bb866c06f5cc"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "fea4a926d537b7c1907fb3c3f6ede8ce59556d79ae25a359f8faf5bc9b1c0b7a"
+  }
+]

@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PULSE — Isolated production review</title><style>
+*{box-sizing:border-box}body{margin:0;background:#ede8e2;color:#251d24;font:13px/1.45 Arial,sans-serif}header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid #b6a6ae}h1{font-size:16px;margin:0 12px 0 0}button,select{font:inherit;padding:8px;border:1px solid #a18c98;background:#fff;color:#251d24;border-radius:3px;min-height:36px}button{cursor:pointer}label{display:flex;align-items:center;gap:6px}input[type=range]{width:100px}#stage{margin:12px auto;position:relative;overflow:auto;max-width:100vw}iframe{border:0;box-sizing:content-box;max-width:none;display:block;position:absolute;transform-origin:top left;background:#130c10}#status{padding:8px 20px;background:#ded1d8;margin:0}#capture-status{display:inline-block;margin-left:12px;font-weight:bold;color:#75530d}#capture-status[data-state="ready"]{color:#265c3b}#capture-status[data-state="not-ready"]{color:#a21e36}#report{padding:14px 20px;max-height:220px;overflow:auto;background:#fff;display:none}#report.show{display:block}.pass{color:#265c3b}.fail{color:#a21e36}.tools{display:flex;gap:10px;align-items:center}#export{color:#45344c;text-decoration:underline}#notes{margin:8px 20px;color:#675260;font-size:11px}.focused header,.focused #notes,.focused #report{display:none!important}.focused #status{display:none}.focused #stage{margin:0;max-width:none} .focused iframe{position:relative}
+</style></head><body><header><h1>PULSE / Production review</h1><label>Viewport <select id="viewport"><option>1440 × 900</option><option>390 × 844</option><option>320 × 700</option><option>360 × 640</option><option>768 × 1024</option><option>1920 × 1080</option><option>2560 × 1440</option><option>3840 × 2160</option><option>639 × 800</option><option>641 × 800</option><option>899 × 900</option><option>901 × 900</option><option>844 × 390</option></select></label><label>Chapter <select id="chapter"><option value="beginning">Hero</option><option value="living-form-observation">01 / The Living Form</option><option value="four-chambers">02 / Four Chambers</option><option value="the-signal">03 / The Signal</option><option value="the-return">04 / The Return</option><option value="one-way-gates">05 / One-Way Gates</option><option value="toward-the-lungs">06 / Toward the Lungs</option><option value="exchange">07 / Exchange</option><option value="the-way-back">08 / The Way Back</option><option value="the-stronger-wall">09 / The Stronger Wall</option><option value="around-the-body">10 / Around the Body</option><option value="beat-again">11 / Beat Again</option></select></label><label>Boundary <select id="boundary"><option value="">None</option><option value="0">01 → 02</option><option value="1">02 → 03</option><option value="2">03 → 04</option><option value="3">04 → 05</option><option value="4">05 → 06</option><option value="5">06 → 07</option><option value="6">07 → 08</option><option value="7">08 → 09</option><option value="8">09 → 10</option><option value="9">10 → 11</option></select></label><label>Stage <select id="quarter"><option>0</option><option>25</option><option selected>50</option><option>75</option><option>100</option></select></label><button id="run">Run browser suite</button><button id="show">Show report</button><button id="reset">Reload snapshot</button><button id="fault">Fail images</button><button id="httpretry">HTTP recovery probe</button><button id="nojs">Read without JavaScript</button><button id="fonts">Fallback fonts</button><button id="inspect">Inspect visible state</button><button id="pacing">Measure frame pacing</button><a id="export" download="pulse-browser-results.json">Download results</a></header><p id="status" data-capture="idle"><span id="status-summary">Loading isolated PULSE build…</span><span id="capture-status" data-state="idle" role="status" aria-live="polite">Capture idle — choose a boundary</span></p><div id="stage"><iframe id="app-frame" title="PULSE production build"></iframe></div><p id="notes">A production build inside a genuine CSS viewport. The outer frame scales only to fit this review window. Physical devices, native browser zoom and touch hardware are not simulated by frame scaling.</p><div id="report"></div><script type="module">
+const snapshot=/*__SNAPSHOT__*/;
+const buildInfo=/*__BUILD__*/;
+/*__SUITE__*/
+/*__PROBES__*/
+const frame=document.getElementById('app-frame');
+const viewport=document.getElementById('viewport');
+const stage=document.getElementById('stage');
+const status=document.getElementById('status');
+const statusSummary=document.getElementById('status-summary');
+const captureStatus=document.getElementById('capture-status');
+const reportNode=document.getElementById('report');
+const records=[]; let fitTimer; let revision=0;
+function fit(preserve=false){ const [w,h]=preserve?[parseFloat(frame.style.width),parseFloat(frame.style.height)]:viewport.value.split('×').map(Number);frame.style.width=w+'px';frame.style.height=h+'px';const reserved=document.querySelector('header').getBoundingClientRect().height+status.getBoundingClientRect().height+44;const s=Math.min(1,(innerWidth-32)/w,(innerHeight-reserved)/h);frame.style.transform=`scale(${s})`;frame.style.left=Math.max(0,(innerWidth-w*s)/2-16)+'px';stage.style.width='100%';stage.style.height=(h*s+4)+'px';statusSummary.textContent=`PULSE production snapshot / ${w} × ${h} CSS px / review scale ${s.toFixed(3)} / ${records.filter(r=>r.status==='PASS').length} passed, ${records.filter(r=>r.status==='FAIL').length} failed`; }
+function record(item){records.push(item);const line=document.createElement('p');line.className=item.status.toLowerCase();line.textContent=item.status+' · '+item.name+' · '+JSON.stringify(item.details??'');reportNode.append(line);reportNode.scrollTop=reportNode.scrollHeight;document.getElementById('export').href=URL.createObjectURL(new Blob([JSON.stringify({project:'PULSE',buildInfo,revision,userAgent:navigator.userAgent,observedAt:new Date().toISOString(),records},null,2)],{type:'application/json'}));fit(true);}
+function reload(kind='normal'){cancelCapture();revision++;let html=snapshot;if(kind==='images')html=html.replace(/data:image\/webp;base64,[A-Za-z0-9+/=]+/g,'data:image/webp;base64,broken');if(kind==='httpRetry'){const parsed=new DOMParser().parseFromString(html,'text/html');const picture=parsed.querySelector('.hero .art-picture');picture.querySelector('source[media]').setAttribute('srcset','./art/hero-mobile.webp');picture.querySelector('source:not([media])').setAttribute('srcset','./qa-retry/hero-desktop.webp 1536w');picture.querySelector('img').setAttribute('src','./qa-retry/hero-desktop.webp');html='<!doctype html>'+parsed.documentElement.outerHTML;}if(kind==='nojs')html=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'');frame.srcdoc=html;fit();}
+frame.addEventListener('load',()=>{fit();statusSummary.textContent+=' / '+frame.contentDocument.title;if(document.getElementById('boundary').value!=='')seek();});
+viewport.addEventListener('change',()=>{cancelCapture();fit();setTimeout(()=>{frame.contentWindow.dispatchEvent(new Event('resize'));fit();seek();},100);});
+document.getElementById('chapter').addEventListener('change',event=>{cancelCapture();document.getElementById('boundary').value='';const target=frame.contentDocument.getElementById(event.target.value);if(target){const offset=event.target.value==='beginning'?0:100;frame.contentWindow.scrollTo(0,target.getBoundingClientRect().top+frame.contentWindow.scrollY-offset);}});
+let captureToken=0, captureFrame=0, captureTimer, captureWindow;
+function cancelCapture(){
+  captureToken++;
+  if(captureFrame&&captureWindow)captureWindow.cancelAnimationFrame(captureFrame);
+  clearTimeout(captureTimer);captureFrame=0;
+  status.dataset.capture='idle';status.dataset.captureToken=String(captureToken);
+  delete status.dataset.captureGeometry;delete status.dataset.captureProgress;delete status.dataset.captureFrames;
+  captureStatus.dataset.state='idle';captureStatus.textContent='Capture idle — choose a boundary';
+}
+function seek(){
+  cancelCapture();
+  const token=captureToken;
+  const index=document.getElementById('boundary').value;
+  if(index==='')return;
+  const quarter=document.getElementById('quarter').value;
+  const p=Number(quarter)/100;
+  const win=frame.contentWindow;
+  const target=frame.contentDocument.querySelector(`main > section[data-transition="${index}"]`);
+  const identity=`${index}:${quarter}`;
+  const label=`${String(Number(index)+1).padStart(2,'0')} → ${String(Number(index)+2).padStart(2,'0')} / ${quarter}%`;
+  const update=(state,detail)=>{
+    if(token!==captureToken)return;
+    status.dataset.capture=`${state}:${identity}`;
+    captureStatus.dataset.state=state;
+    captureStatus.textContent=`Capture ${state==='not-ready'?'not ready':state} · ${label}${detail?' · '+detail:''}`;
+  };
+  if(!target){update('not-ready','boundary unavailable');return;}
+  captureWindow=win;
+  update('pending','waiting for two iframe frames and matching geometry');
+  const y=target.getBoundingClientRect().top+win.scrollY+target.offsetHeight*p-win.innerHeight/2;
+  win.scrollTo({top:Math.ceil(y),left:0,behavior:'instant'});
+  let frames=0;
+  const check=()=>{
+    if(token!==captureToken)return;
+    frames++;
+    const geometry=(win.innerHeight/2-target.getBoundingClientRect().top)/target.offsetHeight;
+    const rendered=Number(target.dataset.progress);
+    const expectedStage=Math.min(4,Math.floor(p*4));
+    status.dataset.captureGeometry=Number.isFinite(geometry)?geometry.toFixed(6):'unavailable';
+    status.dataset.captureProgress=Number.isFinite(rendered)?rendered.toFixed(6):'unavailable';
+    status.dataset.captureFrames=String(frames);
+    if(frames>=2&&Number.isFinite(geometry)&&Math.abs(geometry-p)<=0.005
+      &&Number.isFinite(rendered)&&Math.abs(rendered-p)<=0.005&&Number(target.dataset.stage)===expectedStage){
+      clearTimeout(captureTimer);captureFrame=0;
+      update('ready',`${frames} iframe frames; geometry ${geometry.toFixed(4)}`);
+      return;
+    }
+    captureFrame=win.requestAnimationFrame(check);
+  };
+  captureFrame=win.requestAnimationFrame(check);
+  captureTimer=setTimeout(()=>{
+    if(token!==captureToken)return;
+    win.cancelAnimationFrame(captureFrame);captureFrame=0;
+    update('not-ready',`timed out after ${frames} iframe frames; geometry ${status.dataset.captureGeometry??'unavailable'}`);
+  },8000);
+}
+
+document.getElementById('boundary').addEventListener('change',seek);document.getElementById('quarter').addEventListener('change',seek);
+document.getElementById('run').addEventListener('click',async()=>{cancelCapture();const button=document.getElementById('run');button.disabled=true;reportNode.classList.add('show');try{if(typeof runSuite!=='function')throw new Error('Suite is not included yet.');await runSuite(frame,record);}catch(error){record({name:'Suite execution',status:'FAIL',details:String(error)});}finally{button.disabled=false;fit();}});
+document.getElementById('show').addEventListener('click',()=>reportNode.classList.toggle('show'));
+document.getElementById('reset').addEventListener('click',()=>reload());
+document.getElementById('fault').addEventListener('click',()=>reload('images'));
+document.getElementById('httpretry').addEventListener('click',()=>reload('httpRetry'));
+document.getElementById('nojs').addEventListener('click',()=>reload('nojs'));
+document.getElementById('fonts').addEventListener('click',()=>{const doc=frame.contentDocument;let style=doc.getElementById('qa-fallback-fonts');if(style){style.remove();record({name:'Fallback font override removed',status:'PASS',details:'Returned to bundled font stack.'});}else{style=doc.createElement('style');style.id='qa-fallback-fonts';style.textContent=':root{--font-serif:Georgia,serif;--font-sans:Arial,sans-serif}.anatomy-svg{font-family:Arial,sans-serif!important}';doc.head.append(style);frame.contentWindow.dispatchEvent(new Event('resize'));record({name:'Fallback font override applied',status:'PASS',details:'Real Georgia/Arial metrics; this is not a slow-network font test.'});}});
+document.getElementById('inspect').addEventListener('click',()=>{const doc=frame.contentDocument,win=frame.contentWindow;record({name:'Manual state inspection',status:'OBSERVED',details:{viewport:[win.innerWidth,win.innerHeight],dpr:win.devicePixelRatio,hash:win.location.hash,scrollY:win.scrollY,chapter:doc.documentElement.dataset.chapter,motion:doc.documentElement.dataset.motion,hero:{...doc.querySelector('.hero').dataset},chapters:doc.querySelectorAll('main>section.chapter').length,beats:doc.querySelectorAll('main .chapter .beat').length,failedImages:doc.querySelectorAll('picture[data-asset-state="failed"]').length,readyImages:doc.querySelectorAll('picture[data-asset-state="ready"]').length,contentWidth:doc.documentElement.clientWidth,scrollWidth:doc.documentElement.scrollWidth,horizontalOverflow:doc.documentElement.scrollWidth>doc.documentElement.clientWidth,focus:doc.activeElement?.id||doc.activeElement?.tagName,visible:!doc.hidden}});});
+window.addEventListener('resize',()=>{clearTimeout(fitTimer);fitTimer=setTimeout(fit,100);});
+installManualProbes(frame,record);
+reload();
+</script></body></html>

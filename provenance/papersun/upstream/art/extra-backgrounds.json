@@ -1,0 +1,194 @@
+{
+  "created_date": "2026-11-09",
+  "tool": "image_gen.imagegen (built-in)",
+  "parameters": {
+    "transparent_background": false,
+    "referenced_image_paths": [
+      "art/concepts/ai-01.png"
+    ]
+  },
+  "reference_role": "Material, palette and lighting reference only; each image is a new composed location.",
+  "unknown_parameters": [
+    "model",
+    "seed",
+    "sampling controls",
+    "requested image size setting"
+  ],
+  "rights": "Original AI-generated artwork for the requested PAPERSUN source deliverable; no named artist, studio or existing character requested. No exclusivity or third-party-rights clearance is asserted.",
+  "assets": [
+    {
+      "id": "EXTRA-1",
+      "name": "attic",
+      "file": "public/art/attic-master.png",
+      "original_output": "generated_images/exec-a9826db0-1be1-4b52-8e5c-01103bd44c3b.png",
+      "prompt": "Use case: illustration-story. Production environment background for PAPERSUN, a poetic original story staged in miniature cut-paper theater. Use the attached reference ONLY for tactile fibrous paper material, layered physical construction, navy/cream/cornflower palette and cinematic warm right sidelight. Compose an entirely new scene. Every object is handmade thick cotton cardstock, irregular cut and deckle edges, watercolor grain, visibly separated planes and real shallow contact shadows, never glossy 3D plastic, never origami. Wide 16:10 landscape image. Keep the left 38 percent and upper-left exceptionally quiet dark navy paper for later real HTML reading text. NO text, glyphs, letters, numbers, logos, no UI. NO sun, moon, golden pieces or person. Scene: Mira's intimate attic lantern repair room. Upper-right sloping rafters and a small blue paper window. Desk occupies right half and lower third, with one single small amber lantern glowing on right, fine sewing needle and small scissors, coil of red linen thread, tiny blank cream paper note, careful scuffs and paper fibers. Desk surface has ample uncluttered space for later live story objects. Cozy warm ivory/blue paper architecture, a straight-on small theater stage, strong dimensional depth with at least five physical paper planes. A refined adult fairy-tale aesthetic, calm and beautifully composed.",
+      "role": "Production chapter environment",
+      "review": "Selected. Cohesive textured paper miniature with one amber lantern, empty workshop desk region, red thread, scissors, needle and a blank note. No character, golden fragment, sun, moon or text. Generous left title safety.",
+      "overlay_slots": {
+        "coordinate_system": "Normalized coordinates relative to original entire image; approximate observations, not exact segmentation.",
+        "empty_workbench": {
+          "x": [
+            0.45,
+            0.66
+          ],
+          "y": [
+            0.64,
+            0.78
+          ]
+        },
+        "amber_lantern_center": [
+          0.89,
+          0.6
+        ],
+        "blank_note_center": [
+          0.74,
+          0.75
+        ]
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "public/art/attic-master.png",
+        "sha256": "186dcde7fbe8a7a8a26101184fd4e2c9abcfe5608074e30c926b01c1dc94c20a",
+        "size_bytes": 2597541,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "public/art/attic.webp",
+        "source": "public/art/attic-master.png",
+        "role": "Production web asset",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 238678,
+        "source_bytes": 2597541,
+        "sha256": "d4900b8353662d9d7f3a849be8893ffe9d5180f4de4ac298eabaa848a4f12265",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "EXTRA-2",
+      "name": "market",
+      "file": "public/art/market-master.png",
+      "original_output": "generated_images/exec-7eb1726f-6a17-4339-aeb0-b7f81a912be4.png",
+      "prompt": "Use case: illustration-story. Production environment background for PAPERSUN, a poetic original story staged in miniature cut-paper theater. Use the attached reference ONLY for tactile fibrous paper material, layered physical construction, navy/cream/cornflower palette and cinematic warm right sidelight. Compose an entirely new scene. Every object is handmade thick cotton cardstock, irregular cut and deckle edges, watercolor grain, visibly separated planes and real shallow contact shadows, never glossy 3D plastic, never origami. Wide 16:10 landscape image. Keep the left 38 percent and upper-left exceptionally quiet dark navy paper for later real HTML reading text. NO text, glyphs, letters, numbers, logos, no UI. NO sun, moon, golden pieces or person. Scene: a midnight cut-paper lantern market, viewed straight on as a dimensional miniature stage. Rich amber and faded vermilion lanterns hang in spaced rows on the right 62 percent, suspended from thin actual thread. Layered blue paper stall awnings and scalloped cut canopy panels create depth behind them. One distinctly UNLIT small rectangular foreground lantern with navy frame and pale empty inset hangs near right center at about 76 percent x and 58 percent y; this lantern is the story action target and must be visually separate. A red linen thread curls from bottom-left toward its hook. NO people, no golden fragments. Warm pools of light, empty left air for narration. Finely made, poetic, tactile rather than busy.",
+      "role": "Production chapter environment",
+      "review": "Selected. Rich amber/vermilion hanging lanterns on the right, receding paper stalls, real thread, distinct unlit foreground lantern, and quiet left paper. No people, story fragments or lettering.",
+      "overlay_slots": {
+        "coordinate_system": "Normalized coordinates relative to original entire image; approximate observations, not exact segmentation.",
+        "unlit_lantern_bounds": {
+          "x": [
+            0.73,
+            0.83
+          ],
+          "y": [
+            0.51,
+            0.7
+          ]
+        },
+        "unlit_lantern_center": [
+          0.78,
+          0.61
+        ],
+        "thread_hook": [
+          0.78,
+          0.48
+        ]
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "public/art/market-master.png",
+        "sha256": "299c7fae7cab958418336f834f70311a9a8699e5187268f1bd4922a406621dfc",
+        "size_bytes": 2367853,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "public/art/market.webp",
+        "source": "public/art/market-master.png",
+        "role": "Production web asset",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 188798,
+        "source_bytes": 2367853,
+        "sha256": "f6222a60b7d90db53209554e57b3fa174dd98e06b5725d855349ee101330ca11",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "EXTRA-3",
+      "name": "valley",
+      "file": "public/art/valley-master.png",
+      "original_output": "generated_images/exec-2e93159e-fb78-423a-a3d1-c245d09593af.png",
+      "prompt": "Use case: illustration-story. Production environment background for PAPERSUN, a poetic original story staged in miniature cut-paper theater. Use the attached reference ONLY for tactile fibrous paper material, layered physical construction, navy/cream/cornflower palette and cinematic warm right sidelight. Compose an entirely new scene. Every object is handmade thick cotton cardstock, irregular cut and deckle edges, watercolor grain, visibly separated planes and real shallow contact shadows, never glossy 3D plastic, never origami. Wide 16:10 landscape image. Keep the left 38 percent and upper-left exceptionally quiet dark navy paper for later real HTML reading text. NO text, glyphs, letters, numbers, logos, no UI. NO sun, moon, golden pieces or person. Scene: Shadow Valley, a very deep indigo and muted purple multilayer paper canyon. At least seven thick contour planes recede into a dark narrow gorge. Large pale-blue paper arch on right with exposed paper thickness. Within the right arch hangs a darker hinged blue paper shade/card shape from ONE small metallic pin in its upper corner, angled slightly, with a hair-thin warm amber light slit visible behind its lower edge. Target shade centered near 75 percent x, 55 percent y, sized around 20 percent of image. One physical red linen thread follows the low canyon path toward the arch. Tiny bent paper leaves, delicate distant paper rock silhouettes, practical right-side grazing light shows edges. The left remains restrained and dark for reading. No animals or people, no gold fragments, no stars, no moon, no sun.",
+      "role": "Production chapter environment",
+      "review": "Selected as closed-shade background. Deep multi-plane indigo/purple canyon, right arch, one pinned blue shade, tiny warm slit and red thread. No gold piece or character. The shade is baked into this image; a genuinely moving shade implementation must cover its original pixels or obtain a corrected clean plate.",
+      "overlay_slots": {
+        "coordinate_system": "Normalized coordinates relative to original entire image; approximate observations, not exact segmentation.",
+        "shade_pivot": [
+          0.86,
+          0.38
+        ],
+        "shade_polygon": [
+          [
+            0.7,
+            0.44
+          ],
+          [
+            0.87,
+            0.35
+          ],
+          [
+            0.84,
+            0.64
+          ],
+          [
+            0.62,
+            0.7
+          ]
+        ],
+        "warm_slit_bounds": {
+          "x": [
+            0.65,
+            0.83
+          ],
+          "y": [
+            0.64,
+            0.7
+          ]
+        }
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "public/art/valley-master.png",
+        "sha256": "409823f62ac9b99b2babfd472181de106d4a8a58b6ddbcdc466e6128b4029f84",
+        "size_bytes": 2549364,
+        "included_in_source_zip": false
+      },
+      "archived_asset": null,
+      "superseded_by": "public/art/valley.webp",
+      "retention_note": "Closed-shade image was an intermediate clean-plate input, not a production or archive asset."
+    }
+  ],
+  "packaging_note": "Original PNGs are retained in the scratch working tree, excluded from source ZIP. archived_asset identifies the optimized production WebP and hash. Exact prompts and reference paths describe generation history, so some original input paths are historical rather than packaged files."
+}

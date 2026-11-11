@@ -1,0 +1,129 @@
+{
+  "created_date": "2026-11-09",
+  "tool": "image_gen.imagegen (built-in)",
+  "parameters": {
+    "transparent_background": false
+  },
+  "method": "Each reference image was inspected with view_image before a distinct imagegen edit. Original inputs and generated originals were left intact.",
+  "unknown_parameters": [
+    "model",
+    "seed",
+    "sampling settings",
+    "image size parameter"
+  ],
+  "rights": "Original AI-generated edits of project-owned generated artwork, created for the user's requested source deliverable. No exclusivity or independent third-party-rights clearance is claimed.",
+  "assets": [
+    {
+      "id": "wind",
+      "reference": "art/concepts/ai-06.png",
+      "target": "public/art/wind-master.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached PAPERSUN wind-hill image into a production clean plate. Remove ONLY all six cream paper rotor blades AND the single gold paper fragment behind them, including their cast shadows. Fill their former area with perfectly matching continuous fibrous cornflower-blue paper sky. Retain the vertical wooden/cardboard supporting pole in exactly its original position and retain the central small metal circular axle/pin at its top. Preserve ALL existing paper hillside arcs, grass blades, depth and contact shadows, lower-right amber lantern, red linen thread, composition, framing, palette, texture, image dimensions and warm light direction unchanged. There must be no gold piece and no rotating blade left anywhere; this plate is awaiting an exact live SVG wheel. Do not add words, numbers, glyphs, people, sun or moon. No invented replacement wheel.",
+      "original_output": "generated_images/exec-07d25b6c-7d61-42a7-b628-3eddc1bee8a2.png",
+      "role": "Production clean plate",
+      "visual_inspection": "PASS visual inspection: rotor blades and gold fragment removed, clean blue sky around preserved pole and axle, grass/lantern/thread retained. Normalized axle center approximately (0.674,0.260). Intended for exact SVG rotor and Piece B overlays.",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "public/art/wind-master.png",
+        "sha256": "c8faff5db8dda4cb79d910bf16864cb827bef6d63fe3383572f1dc12308862c6",
+        "size_bytes": 2717576,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "public/art/wind.webp",
+        "source": "public/art/wind-master.png",
+        "role": "Production web asset",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 252470,
+        "source_bytes": 2717576,
+        "sha256": "b3b4122ef9ccb8948954c9b2c9eb08b20741c0ad12675dc136bb54be168e16e1",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "valley",
+      "reference": "public/art/valley-master.png",
+      "target": "public/art/valley-clean.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached PAPERSUN Shadow Valley image into a production clean plate. Remove ONLY the dark blue hinged paper shade/flap hanging inside the right-hand arch and remove the warm light slit behind its lower edge. Fill the entire former flap region with continuous deep dark navy-blue paper interior of the arch, empty and clear, with coherent shadow and fibrous paper texture. KEEP the small metallic pivot pin in its current upper-right location, attached visibly to the inner edge of the arch. Preserve the arch's exact silhouette, thickness, large outer rim, all canyon paper planes, foreground leaves, red thread, practical sidelight, calm left negative space, original framing and dimensions. No golden fragment, no people, no sun or moon, no lettering. The right arch must have a completely empty deep dark interior for later real SVG shade and fragment overlays.",
+      "original_output": "generated_images/exec-80812d48-1a6b-4779-8d6b-4719f34771bc.png",
+      "role": "Production clean plate",
+      "visual_inspection": "PASS visual inspection: entire shade and warm slit removed, arch remains empty navy paper, pivot pin preserved at approximately (0.860,0.377), thread and canyon retained. Intended for exact SVG hinged flap and Piece C overlays.",
+      "dimensions": {
+        "width": 1585,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "public/art/valley-clean.png",
+        "sha256": "3d5c30dd95188f616c964941c9af40f0fbdccceb618be4b2c3fec46140458a94",
+        "size_bytes": 2327397,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "public/art/valley.webp",
+        "source": "public/art/valley-clean.png",
+        "role": "Production web asset",
+        "dimensions": {
+          "width": 1585,
+          "height": 992
+        },
+        "size_bytes": 172194,
+        "source_bytes": 2327397,
+        "sha256": "37367366c4dca54eff18c021e3d01051f9972feea3d93fe67d1d4d9918d43a30",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "bridge",
+      "reference": "art/concepts/ai-08.png",
+      "target": "public/art/bridge-master.png",
+      "prompt": "Use case: precise-object-edit. Recompose the attached PAPERSUN transition art as the full outdoor bridge chapter. Keep its exquisite fibrous cut-paper material, layered purple/blue valley, the curved blue paper bridge, and the red linen thread as the bridge railing. Remove the whole indoor workbench room, scissors, spool, shelf and huge near arch; replace that right half with the continuation of the outdoor blue paper bridge crossing a layered violet valley toward a small distant blue attic house at the far right with ONE tiny warm amber window. The bridge's recognizable arch rhythm and red railing thread continue coherently from left to right. Wide 16:10 frontal miniature-theatre composition, tactile thick card edges and physically separated shadowed paper planes. Maintain a large calm dark navy upper-left and left 38 percent title region. Warm right sidelight stays coherent. No people, gold fragments, text, glyphs, sun or moon. Production chapter background, sophisticated and tender, no glossy plastic, no origami.",
+      "original_output": "generated_images/exec-7c5fa3e0-1f85-4565-a676-4d296b37c9d7.png",
+      "role": "Production clean plate",
+      "visual_inspection": "PASS visual inspection: full exterior bridge replaces indoor room, a coherent curved blue bridge and red railing cross purple valley, one small warm distant attic on right. No narrative gold pieces or character. Intended CH-08 background and precursor to the retained AI-08 transition midpoint.",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "public/art/bridge-master.png",
+        "sha256": "619d43f48e38e84b36e04bdaa50fca3f5f7344161c3870aed4e87daf36b121c3",
+        "size_bytes": 2531193,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "public/art/bridge.webp",
+        "source": "public/art/bridge-master.png",
+        "role": "Production web asset",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 216564,
+        "source_bytes": 2531193,
+        "sha256": "3cf76b96413673271924cecd14f16ec88e8bbce5ca4c31890d6b2a5b6a21d2c8",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    }
+  ],
+  "packaging_note": "Original PNGs are retained in the scratch working tree, excluded from source ZIP. archived_asset identifies the optimized production WebP and hash. Exact prompts and reference paths describe generation history, so some original input paths are historical rather than packaged files."
+}
