@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080a">
+<title>ANAX — A Mechanical Dragonfly</title>
+<meta name="description" content="A precision mechanical dragonfly you can turn, open and take apart: shell, assemblies and core on one continuous control, with a working crank-and-rocker wing drive inside.">
+<link rel="canonical" href="https://seiya058904.github.io%BASE_URL%anax/">
+<meta property="og:site_name" content="AI Web Experience Collection">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ANAX — A Mechanical Dragonfly">
+<meta property="og:description" content="A precision mechanical dragonfly you can turn, open and take apart, with a working crank-and-rocker wing drive inside.">
+<meta property="og:url" content="https://seiya058904.github.io%BASE_URL%anax/">
+<meta property="og:image" content="https://seiya058904.github.io%BASE_URL%anax/social.jpg">
+<meta property="og:image:alt" content="A rendered titanium mechanical dragonfly with four iridescent wings, hovering in a dark studio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ANAX — A Mechanical Dragonfly">
+<meta name="twitter:description" content="A precision mechanical dragonfly you can turn, open and take apart, with a working crank-and-rocker wing drive inside.">
+<meta name="twitter:image" content="https://seiya058904.github.io%BASE_URL%anax/social.jpg">
+<link rel="icon" type="image/svg+xml" href="%BASE_URL%anax/favicon.svg">
+<link rel="stylesheet" href="/experiences/shared/collection-return.css">
+<script type="module" src="../../experiences/shared/collection-navigation.ts"></script>
+<!-- Cloudflare Web Analytics: public website only -->
+<script type="module">
+// Aggregate page visits on the public website only; local and offline copies stay offline.
+if (location.hostname === "seiya058904.github.io" && !document.querySelector("script[data-cf-beacon]")) {
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.dataset.cfBeacon = JSON.stringify({ token: "092f74f76781425ab5ed9495073e4d0f", spa: false });
+  document.head.appendChild(beacon);
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#progress">Skip to the disassembly control</a>
+<canvas id="scene" role="img" aria-label="A titanium mechanical dragonfly with four translucent wings. Drag to turn it, scroll to zoom, select a part to read about it."></canvas>
+<div id="callouts" aria-hidden="true"></div>
+
+<header class="bar">
+  <h1 class="mark"><span>ANAX</span><small>Mechanical dragonfly <i>Mk I</i></small></h1>
+  <nav aria-label="Main navigation">
+    <button type="button" id="index-toggle" aria-expanded="false" aria-controls="index">Index</button>
+    <button type="button" id="notes-open">Notes</button>
+    <a class="collection-return" href="%BASE_URL%#world-anax" aria-label="Return to Collection" title="Return to Collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg><span>Collection</span></a>
+  </nav>
+</header>
+
+<aside class="index" id="index" aria-label="Components">
+  <h2>Index</h2>
+  <ol id="index-list"></ol>
+</aside>
+
+<aside class="card" id="card" aria-live="polite" hidden>
+  <header>
+    <p><b data-card="number"></b><span data-card="role"></span></p>
+    <button type="button" id="card-close" aria-label="Close and return to the whole machine"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </header>
+  <h2 data-card="name"></h2>
+  <p class="body" data-card="text"></p>
+  <dl data-card="specs"></dl>
+</aside>
+
+<p class="hint" id="hint"><span class="for-mouse">Drag to turn · scroll to zoom · select a part</span><span class="for-touch">Drag to turn · pinch to zoom · tap a part</span></p>
+
+<footer class="deck">
+  <button type="button" class="primary" id="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Disassemble</span></button>
+  <div class="scrub">
+    <ol class="stages">
+      <li data-id="shell" data-to="0.3"><button type="button"><b>I</b>Shell</button></li>
+      <li data-id="assemblies" data-to="0.62"><button type="button"><b>II</b>Assemblies</button></li>
+      <li data-id="core" data-to="1"><button type="button"><b>III</b>Core</button></li>
+    </ol>
+    <input type="range" id="progress" min="0" max="1000" step="1" value="0" aria-label="Disassembly progress">
+    <p class="readout"><output id="readout" for="progress">000</output><i>%</i><span id="stage-name">Assembled</span></p>
+  </div>
+  <div class="tools">
+    <fieldset class="segment">
+      <legend>Shell</legend>
+      <label><input type="radio" name="shell" value="solid" checked><span>Solid</span></label>
+      <label><input type="radio" name="shell" value="glass"><span>Glass</span></label>
+      <label><input type="radio" name="shell" value="section"><span>Section</span></label>
+    </fieldset>
+    <button type="button" class="toggle" id="motion" aria-pressed="true">Motion</button>
+    <button type="button" class="toggle" id="labels-toggle" aria-pressed="true">Labels</button>
+    <button type="button" class="toggle plain" id="reset">Reset view</button>
+  </div>
+</footer>
+
+<div class="veil" id="veil" role="status"><p><span>ANAX</span><i></i><small>Building the machine</small></p></div>
+
+<section class="fallback" aria-labelledby="fallback-title">
+  <img src="%BASE_URL%anax/poster-wide.webp" alt="A rendered titanium mechanical dragonfly with four iridescent wings">
+  <div><h2 id="fallback-title">This piece needs WebGL.</h2><p>ANAX is a live three-dimensional model. Your browser could not start WebGL, so here is a still of the assembled machine. Enabling hardware acceleration, or opening the page in a current browser, brings the model back.</p></div>
+</section>
+
+<dialog id="notes" aria-labelledby="notes-title">
+  <div class="dialog-head"><h2 id="notes-title">Notes</h2><button type="button" id="notes-close">Close</button></div>
+  <p>ANAX is an original design study, not a product and not a model of any existing machine. Every part is generated in the browser from dimensions held in one file; nothing is scanned, downloaded or photographed.</p>
+  <h3>What is exact</h3>
+  <p>The wing drive is a real crank-and-rocker linkage and is solved every frame: the connecting rods keep their length and stay on their pins at any crank angle. Gear pairs share a module, sit at their true centre distance and turn at their tooth ratio, including the planetary stage. The figures on each part's card are read from the model.</p>
+  <h3>What is illustration</h3>
+  <p>Nothing here has been built or flown. Loads, materials, electronics and the tail's shape-memory coils are drawn to be plausible, not engineered. The wings beat far slower than a dragonfly's so the mechanism can be followed by eye.</p>
+  <h3>Starting points</h3>
+  <ul>
+    <li>Festo, BionicOpter (2013). A flying dragonfly that showed one main motor and small per-wing servos can be enough. ANAX borrows that division of labour, not its design.</li>
+    <li>Mechanical watch movements, for the habit of leaving the going train open to view.</li>
+    <li>Dragonfly anatomy: nodus, pterostigma, the ten abdominal segments, and the forward basket of legs.</li>
+  </ul>
+  <h3>Controls</h3>
+  <p>Drag to turn, scroll or pinch to zoom, right-drag or two fingers to slide. Select any part, here or in the Index, to bring it forward. Space opens and closes the machine, the arrow keys step it, R returns the view, Escape lets go of a part.</p>
+  <p class="fine">Typeface: Roboto Flex and IBM Plex Mono, SIL Open Font License. Rendering: three.js, MIT License. <a href="%BASE_URL%anax/NOTICE.md">Notices</a></p>
+</dialog>
+
+<noscript><img class="still" src="%BASE_URL%anax/poster-wide.webp" alt="A rendered titanium mechanical dragonfly with four iridescent wings"><p class="noscript">ANAX is a live three-dimensional model and needs JavaScript. This is a still of the assembled machine.</p></noscript>
+<script type="module" src="../../experiences/anax/src/main.js"></script>
+</body>
+</html>

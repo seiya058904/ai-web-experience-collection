@@ -6,11 +6,11 @@ const root = resolve('dist');
 const home = await readFile(join(root, 'index.html'), 'utf8');
 const base = home.match(/href="([^"]*)f1\/"/)?.[1];
 assert(base?.startsWith('/'), 'Collection links must carry the configured absolute base');
-for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'crema/index.html', 'crave/index.html', 'grid/index.html', 'dose/index.html', 'counterform/index.html', 'ferrum/index.html', 'relay/index.html', 'supercell/index.html', 'pelagic/index.html', 'backstage/index.html', 'murmuration/index.html', 'varen/index.html', 'aurora/index.html', 'crease/index.html', 'imago/index.html', 'sillage/index.html', 'aer/index.html', 'berth/index.html', 'mend/index.html', 'frame/index.html', 'odds/index.html', 'rally/index.html', 'sente/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
+for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/index.html', 'orbital/index.html', 'glaze/index.html', 'kage/index.html', 'chronos/index.html', 'interval/index.html', 'form/index.html', 'fusion/index.html', 'glasshouse/index.html', 'veil/index.html', 'optic/index.html', 'inkscape/index.html', 'facet/index.html', 'silicon/index.html', 'atlas/index.html', 'thrust/index.html', 'resonance/index.html', 'aeterna/index.html', 'parallax/index.html', 'luthier/index.html', 'codex/index.html', 'magma/index.html', 'fossil/index.html', 'urushi/index.html', 'nib/index.html', 'crema/index.html', 'crave/index.html', 'grid/index.html', 'dose/index.html', 'counterform/index.html', 'ferrum/index.html', 'relay/index.html', 'supercell/index.html', 'pelagic/index.html', 'backstage/index.html', 'murmuration/index.html', 'varen/index.html', 'aurora/index.html', 'crease/index.html', 'imago/index.html', 'sillage/index.html', 'aer/index.html', 'berth/index.html', 'mend/index.html', 'frame/index.html', 'odds/index.html', 'rally/index.html', 'sente/index.html', 'anax/index.html', 'sitemap.xml', 'licenses.txt', 'third-party-licenses.md']) {
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
-const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib', 'crema', 'crave', 'grid', 'dose', 'counterform', 'ferrum', 'relay', 'supercell', 'pelagic', 'backstage', 'murmuration', 'varen', 'aurora', 'crease', 'imago', 'sillage', 'aer', 'berth', 'mend', 'frame', 'odds', 'rally', 'sente'];
+const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib', 'crema', 'crave', 'grid', 'dose', 'counterform', 'ferrum', 'relay', 'supercell', 'pelagic', 'backstage', 'murmuration', 'varen', 'aurora', 'crease', 'imago', 'sillage', 'aer', 'berth', 'mend', 'frame', 'odds', 'rally', 'sente', 'anax'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {
   assert(home.includes(`href="${base}${route}/"`), `Missing gallery entrance: ${route}`);
@@ -75,6 +75,7 @@ for (const [file, route, title] of [
   ['odds/index.html', 'odds/', 'ODDS — A playground for chance'],
   ['rally/index.html', 'rally/', 'RALLY — The Space Between'],
   ['sente/index.html', 'sente/', 'SENTE — Between moves'],
+  ['anax/index.html', 'anax/', 'ANAX — A Mechanical Dragonfly'],
   ['atlas/index.html', 'atlas/', 'ATLAS — The World in Layers'],
   ['silicon/index.html', 'silicon/', 'SILICON — From Sand to Signal'],
   ['facet/index.html', 'facet/', 'FACET — The Light Within'],
@@ -139,6 +140,9 @@ for (const file of ['relay/favicon.svg', 'relay/social.jpg', 'relay/fonts/archiv
 }
 for (const file of ["aurora/favicon.svg","aurora/social.jpg","aurora/poster-wide.webp","aurora/poster-portrait.webp","aurora/NOTICE.md","aurora/licenses/RobotoFlex-OFL.txt","aurora/licenses/GSAP-NOTICES.txt","aurora/licenses/Lenis-MIT.txt","collection/aurora.webp","orbital/media/earth-texture.png","grid/fonts/RobotoFlex-Latin.woff2"]) {
   assert((await stat(join(root, file))).size > 0, 'Missing AURORA resource: ' + file);
+}
+for (const file of ["anax/favicon.svg","anax/social.jpg","anax/poster-wide.webp","anax/poster-portrait.webp","anax/NOTICE.md","anax/licenses/RobotoFlex-OFL.txt","anax/licenses/IBMPlexMono-OFL.txt","anax/licenses/three-LICENSE.txt","collection/anax.webp","grid/fonts/RobotoFlex-Latin.woff2","grid/fonts/IBMPlexMono-Regular.woff2"]) {
+  assert((await stat(join(root, file))).size > 0, 'Missing ANAX resource: ' + file);
 }
 for (const file of ["crease/favicon.svg","crease/social.jpg","crease/poster-wide.webp","crease/poster-portrait.webp","crease/NOTICE.md","crease/licenses/space-grotesk-OFL.txt","crease/licenses/three-LICENSE.txt","crease/licenses/GSAP-NOTICES.txt","crease/licenses/Lenis-MIT.txt","collection/crease.webp","dose/assets/fonts/space-grotesk-latin-variable.woff2"]) {
   assert((await stat(join(root, file))).size > 0, 'Missing CREASE resource: ' + file);
