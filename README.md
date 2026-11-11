@@ -4,7 +4,7 @@
 
 <h1 align="center">✦ AI Web Experience Collection</h1>
 
-<p align="center"><strong>Fifty worlds. Fifty ways to experience the web.</strong></p>
+<p align="center"><strong>Fifty-five worlds. Fifty-five ways to experience the web.</strong></p>
 
 <p align="center">
   A curated exhibition of cinematic, browser-native experiments in motion, matter,<br>
@@ -16,7 +16,7 @@
   &nbsp;·&nbsp;
   <a href="#find-your-world">✦ Where to Begin</a>
   &nbsp;·&nbsp;
-  <a href="#the-complete-exhibition">🗂️ All 50 Works</a>
+  <a href="#the-complete-exhibition">🗂️ All 55 Works</a>
   &nbsp;·&nbsp;
   <a href="#built-as-independent-worlds">⚙️ Architecture</a>
   &nbsp;·&nbsp;
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <sub>50 INDEPENDENT EXPERIENCES &nbsp;·&nbsp; ONE CURATED ENTRANCE &nbsp;·&nbsp; FULL-DOCUMENT NAVIGATION</sub><br>
+  <sub>55 INDEPENDENT EXPERIENCES &nbsp;·&nbsp; ONE CURATED ENTRANCE &nbsp;·&nbsp; FULL-DOCUMENT NAVIGATION</sub><br>
   <sub>SCROLL-DRIVEN NARRATIVES &nbsp;·&nbsp; WEBGL / CANVAS / SVG &nbsp;·&nbsp; DESKTOP + MOBILE</sub>
 </p>
 
@@ -106,9 +106,9 @@ A small selection of the visuals already shipped with individual experiences. Ea
 </table>
 
 <a id="the-complete-exhibition"></a>
-## 🗂️ The Complete Exhibition — 50 Works
+## 🗂️ The Complete Exhibition — 55 Works
 
-Each name below opens its published standalone page. The routes belong to this single collection, not to fifty separate repositories.
+Each name below opens its published standalone page. The routes belong to this single collection, not to fifty-five separate repositories.
 
 ### ⚙️ I. Machines, Energy & Motion
 
@@ -189,11 +189,16 @@ Each name below opens its published standalone page. The routes belong to this s
 | **RALLY** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/rally/) | One clay-court exchange in ten moments, where the return you choose changes what follows |
 | **SENTE** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/sente/) | A playable short story on a small Go board, three decisions and a note of what you noticed |
 | **ANAX** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/anax/) | A precision mechanical dragonfly you can turn, open and take apart, with a working crank-and-rocker wing drive inside. |
+| **PAPERSUN** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/papersun/) | An original cut-paper fable: find three lost pieces of the sun and stitch them into one circle |
+| **CARGO** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/cargo/) | One fictional freight container followed through road, rail, port, sea and arrival |
+| **PULSE** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/pulse/) | An illustrated atlas of one heartbeat, in eleven plates |
+| **NIGHTSHIFT** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/nightshift/) | The invisible work that carries a fictional city from midnight into morning |
+| **CHRYSALIS** | [Enter ↗](https://seiya058904.github.io/ai-web-experience-collection/chrysalis/) | An illustrated macro journey through the monarch butterfly life cycle, from egg to first flight |
 
 <a id="built-as-independent-worlds"></a>
 ## 🧭 Built as Independent Worlds
 
-This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping fifty 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
+This is **not** an iframe carousel, a screenshot showcase, or one giant application keeping fifty-five 3D scenes alive at once. The Collection entrance links to individual HTML documents, each responsible for its own runtime and cleanup.
 
 <table>
   <tr>
@@ -251,7 +256,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 | Path | Responsibility |
 | --- | --- |
-| [`pages/`](pages/) | Collection entry, credits, and fifty HTML page documents |
+| [`pages/`](pages/) | Collection entry, credits, and fifty-five HTML page documents |
 | [`collection/`](collection/) | Curated gallery layout and navigation |
 | [`experiences/`](experiences/) | Independent implementations and work-specific runtime code |
 | [`public/`](public/) | Namespaced media, fonts, models, and licenses |
@@ -261,7 +266,7 @@ npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection
 
 The repository's [`vite.config.ts`](vite.config.ts) registers each independent HTML input and sitemap route. When adding an experience, keep its page, gallery entrance, build verification, docs, credits, and provenance records synchronized. Preserve `import.meta.env.BASE_URL` / `%BASE_URL%` handling for project-subpath deployments.
 
-Verification is **per work and per integration surface**: one successful scene does not establish quality across all fifty. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
+Verification is **per work and per integration surface**: one successful scene does not establish quality across all fifty-five. Start with [Collection design](docs/collection/DESIGN.md), then use the corresponding acceptance record for a changed experience. Representative evidence: [AETERNA](docs/aeterna/ACCEPTANCE.md) · [PARALLAX](docs/parallax/ACCEPTANCE.md) · [CODEX](docs/codex/ACCEPTANCE.md) · [FOSSIL](docs/fossil/ACCEPTANCE.md) · [GRID](docs/grid/ACCEPTANCE.md).
 
 Read [`AGENTS.md`](AGENTS.md) before changing work lifecycle, scroll timing, original assets, or deployment. Historical source ZIPs and nondeployed references are tracked through provenance rather than mixed into browser output.
 

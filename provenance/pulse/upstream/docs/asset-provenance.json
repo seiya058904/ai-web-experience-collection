@@ -1,0 +1,112 @@
+[
+  {
+    "id": "AI-01",
+    "retained": "docs/art/AI-01.webp",
+    "prompt": "Use case: scientific-educational. Create ONE full-resolution, landscape 1536x1024 visual art asset for PULSE, a premium anatomical museum website. All text and annotations will be added separately in accessible HTML. No letters, numbers, labels, watermark, symbols, UI, border, or collage. A beautiful naturalistic, medically informed HUMAN anatomical heart, not a Valentine icon. No gore. Warm ivory soft key light from upper left, deep burgundy myocardium with fibrous matte-satin texture (not wet plastic), restrained copper edge highlights, black-wine #130c10 background. Anterior anatomical orientation: person's right is viewer left; apex slopes toward viewer right. Preserve plausible great-vessel anatomy; aorta from left ventricle, pulmonary trunk from right ventricle. Candidate A: entire intact heart sculpture, 3/4 anterior portrait with anatomical great-vessel crown and myocardial texture. Organ occupies right 55% of image, bottom contour fully within frame; left 40% almost empty dark wine negative space for title. 85mm museum-object lens. No cutaway. One confident object, floating subtly against pure museum darkness.",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Intact exterior candidate",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "id": "AI-02",
+    "retained": "docs/art/AI-02.webp",
+    "prompt": "Use case: scientific-educational. Create ONE full-resolution, landscape 1536x1024 visual art asset for PULSE, a premium anatomical museum website. All text and annotations will be added separately in accessible HTML. No letters, numbers, labels, watermark, symbols, UI, border, or collage. A beautiful naturalistic, medically informed HUMAN anatomical heart, not a Valentine icon. No gore. Warm ivory soft key light from upper left, deep burgundy myocardium with fibrous matte-satin texture (not wet plastic), restrained copper edge highlights, black-wine #130c10 background. Anterior anatomical orientation: person's right is viewer left; apex slopes toward viewer right. Preserve plausible great-vessel anatomy; aorta from left ventricle, pulmonary trunk from right ventricle. Candidate B: exterior / interior dialogue. An anterior-view entire heart sculpture with a controlled cutaway window ONLY through a portion of anatomical left ventricle (viewer right), showing a thick continuous muscle rim and a few coherent papillary/chordal structures. Keep exterior identity, full crown, septum and shape believable; not a hollow cave, not a severed heart, no disconnected fragments. Organ occupies right-middle 55%, left 40% completely dark calm negative space. 65mm lens. Soft moody illumination, sculptural premium editorial art.",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Cutaway candidate selected for refinement",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "id": "AI-03",
+    "retained": "docs/art/AI-03.webp",
+    "prompt": "Use case: scientific-educational. Create ONE full-resolution, landscape 1536x1024 visual art asset for PULSE, a premium anatomical museum website. All text and annotations will be added separately in accessible HTML. No letters, numbers, labels, watermark, symbols, UI, border, or collage. A beautiful naturalistic, medically informed HUMAN anatomical heart, not a Valentine icon. No gore. Warm ivory soft key light from upper left, deep burgundy myocardium with fibrous matte-satin texture (not wet plastic), restrained copper edge highlights, black-wine #130c10 background. Anterior anatomical orientation: person's right is viewer left; apex slopes toward viewer right. Preserve plausible great-vessel anatomy; aorta from left ventricle, pulmonary trunk from right ventricle. Candidate C: heart situated in a subtle anatomically proportioned adult torso from neck to waist, no face or identity. Translucent charcoal soft tissue and very faint rib structure; heart naturally located in mediastinum behind sternum, majority to person's left (viewer right), never entirely to side. Heart crisp and luminous burgundy, torso ghostlike. Torso right 60%, left 40% quiet negative space. No shiny acrylic body. A dignified museum anatomical observation, 50mm lens.",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Situated torso candidate",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "production": "public/art/torso.webp"
+  },
+  {
+    "id": "AI-04",
+    "retained": "docs/art/AI-04.webp",
+    "prompt": "Use case: scientific-educational. Refine this PULSE anatomical heart asset into final DESKTOP 1536x1024 editorial hero. Preserve the same entire human heart identity, anterior orientation, apex to viewer right, plausible vessel connections, controlled cutaway ONLY through anatomical left ventricle (viewer right), dark wine museum atmosphere, soft upper-left light and sculptural fibrous myocardium. Improve left ventricular section: thick continuous myocardial rim, realistic papillary muscles with fine chordae attaching ABOVE toward mitral valve, avoid an empty cavern. The left 42% must be nearly pure black-wine #130c10 negative space for selectable typography. Organ should occupy about 47% of width on right, with generous 8% margin above crown, 8% below apex and 8% at right: shrink and reframe subject slightly compared with reference, no clipped vessels. Grade to subdued deep burgundy, restrained rose highlights (less orange), anatomically credible neutral connective tissue, velvety museum light. Maintain current artistic silhouette as much as possible. This is an artist reconstruction, not medical scan. No text, watermark, captions, UI, borders, symbols, rings, or diagrams.",
+    "reference": "AI-02",
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Final desktop hero",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "production": "public/art/hero-desktop.webp"
+  },
+  {
+    "id": "AI-05",
+    "retained": "docs/art/AI-05.webp",
+    "prompt": "Use case: scientific-educational. Recompose the anatomical heart in reference as a final MOBILE PORTRAIT website hero for a 390x844 CSS viewport, output tall portrait aspect ratio close to 9:19.5, at least 768x1664. This is NOT a crop: move camera back, center the entire organ horizontally in LOWER 60% of image, leave UPPER 32% genuinely quiet almost black wine #130c10 for real headline and navigation. Preserve reference's same human heart identity, anterior orientation (person's right is viewer left), full great-vessel crown and apex contour, a modest controlled left ventricular section on viewer right with thick continuous rim and credible papillary/chordal anatomy. Plenty of breathing room at left/right/bottom, no chopped vessels. Refine soft upper-left museum key light, deep burgundy fibrous satin myocardium and restrained rose/ivory edges, reduce orange. No text, lettering, watermark, UI, labels, symbols or frame. Elegant premium medical exhibition art, not a Valentine's heart, no gore.",
+    "reference": "AI-02",
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Recomposed mobile hero",
+    "dimensions": {
+      "width": 984,
+      "height": 1599
+    },
+    "production": "public/art/hero-mobile.webp"
+  },
+  {
+    "id": "AI-06",
+    "retained": "docs/art/AI-06.webp",
+    "prompt": "Use case: scientific-educational. PULSE museum exhibition asset, single wide landscape 1536x1024 image. Refined medically informed CGI material study of a sectioned single human lung alveolus and its neighboring capillary. Airspace is completely empty, warm dark ivory translucent tissue, capillary wraps lower and outer edge OUTSIDE the airspace. A few soft dark red biconcave red cells confined strictly within the blood lumen. Tissue barrier thin and distinct. Deep wine #130c10 backdrop, restrained dusty rose and ivory, soft upper-left studio light, delicate material, not gore or slime. The subject is in right 60%, quiet left 35% for real HTML title. It is an artistic anatomical reconstruction NOT clinical micrograph. NO arrows, NO oxygen molecules, NO bubbles representing gas, NO text, typography, labels, numbers, UI, watermark. Precise arrows and explanatory schematic will be a separate SVG over a different atlas panel, so this image is a tactile editorial layer.",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Alveolar material plate",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "production": "public/art/alveolus.webp"
+  },
+  {
+    "id": "AI-07",
+    "retained": "docs/art/AI-07.webp",
+    "prompt": "Use case: scientific-educational. PULSE museum exhibition asset, single wide landscape 1536x1024. Beautiful medically informed macro cutaway of an anatomical HUMAN LEFT VENTRICLE, anterior section with thick rose-burgundy myocardial wall, continuous rim, relatively compact internal blood cavity, coherent two mitral valve leaflets above with fine chordae attached to papillary muscles in ventricular wall, separate aortic outflow root medially above, NOT a hollow cavern. An anatomical tissue sculpture under soft upper-left museum lighting, rich fiber structure, matte-satin tissue, restrained ivory connective structures, deep black wine background. Keep right ventricle suggested as a thinner adjacent outer rim on viewer left, left ventricle on viewer right, no mirrored anatomy. Organ section in right 60% of composition, dark clean left 35% reserved for real HTML text. No labels, no arrows, no text, no watermark, no UI, no blood splashes.",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Ventricular material plate",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "production": "public/art/ventricle.webp"
+  },
+  {
+    "id": "AI-08",
+    "retained": "docs/art/AI-08.webp",
+    "prompt": "Use case: scientific-educational. PULSE museum exhibition transition midpoint production asset, single wide landscape 1536x1024. A beautifully composed TWO-SCALE educational illustration: left side a cropped pulmonary arterial branch with credible burgundy vessel wall and dark-red internal lumen; on right a distinctly separate magnified view of an alveolar air sac and capillary bed, blood cells confined inside surrounding capillaries, no blood within air. A fine restrained antique gold magnifying circular boundary and two connecting fine guide lines make the representation change explicitly diagrammatic; DO NOT turn pipe directly into air sac or make a seamless fantasy tunnel. All anatomy floats in dark burgundy museum space with warm soft side light, muted crimson/ivory tissues; enough quiet dark top and bottom to add real HTML labels. No lettering, no numbers, no UI, no watermark, no arrows, no exaggerated oxygen marbles. This midpoint should be elegant when frozen.",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "returnedSettings": "Image dimensions inspected from returned file; no seed or model identifier was returned.",
+    "role": "Pulmonary magnification midpoint",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "production": "public/art/magnification.webp"
+  }
+]

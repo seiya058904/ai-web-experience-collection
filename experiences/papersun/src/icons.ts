@@ -1,0 +1,3 @@
+export const arrow = '<svg aria-hidden="true" viewBox="0 0 28 16" fill="none"><path d="M1 8h25M20 2l6 6-6 6" stroke="currentColor" stroke-width="1.3"/></svg>';
+export const closeIcon = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.4"/></svg>';
+export const brandIcon = '<svg aria-hidden="true" viewBox="0 0 40 40"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 7v13L9 27m11-7 11 7M16 12h8m-8 5h8m-7 8 4 4m3-4-4 4" fill="none" stroke="currentColor" stroke-width=".8"/><path d="M20 0v3m0 34v3M0 20h3m34 0h3M6 6l2 2m24 24 2 2M6 34l2-2M32 8l2-2" stroke="currentColor" stroke-width=".8"/></svg>';

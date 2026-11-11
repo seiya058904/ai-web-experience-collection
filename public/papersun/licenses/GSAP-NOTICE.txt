@@ -1,0 +1,13 @@
+GSAP and ScrollTrigger 3.15.1
+
+Copyright 2008-2026, GreenSock. All rights reserved.
+Subject to the terms at https://gsap.com/standard-license
+
+The installed package declares the Standard 'no charge' license.
+This component is not licensed under MIT.
+
+Official terms reviewed 2026-11-09:
+https://gsap.com/community/standard-license/
+
+Upstream: https://github.com/greensock/GSAP
+Installed evidence: package.json, gsap-core.js, ScrollTrigger.js, README.md.

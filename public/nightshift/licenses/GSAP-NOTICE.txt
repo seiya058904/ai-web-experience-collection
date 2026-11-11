@@ -1,0 +1,25 @@
+GSAP 3.15.1
+
+The installed package does not contain a standalone LICENSE file.
+The license field of its package.json is:
+
+Standard 'no charge' license: https://gsap.com/standard-license.
+
+Original installed ScrollTrigger source notice:
+
+/*!
+ * ScrollTrigger 3.15.1
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+Official license URL: https://gsap.com/standard-license
+Observed redirect: https://gsap.com/community/standard-license/
+Reviewed: 2026-11-09
+
+GSAP is supplied under its own Standard No Charge license, not the MIT license.
+This notice preserves the installed package notice and identifies the terms;
+it does not replace the full applicable terms or grant new rights.

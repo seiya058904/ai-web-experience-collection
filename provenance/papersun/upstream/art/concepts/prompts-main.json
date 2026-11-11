@@ -1,0 +1,91 @@
+{
+  "tool": "image_gen.imagegen",
+  "transparent_background": false,
+  "jobs": [
+    {
+      "id": "ai-06",
+      "prompt": "Use case: illustration-story. PAPERSUN original handmade cut-paper miniature theatre. Museum-quality physical photographed layered cardstock, cotton rag fibers, wavering knife-cut edges, subtle thick edge shadows, single warm lateral stage light from upper left. Palette midnight navy #18233B, faded cornflower #5A729A, unbleached stock #EFE4CF, lantern gold #E5B354, linen thread red #A94F45. Whimsical, restrained, poetic and tactile, never plastic or flat vectors. Landscape 16:10. Absolutely no text, letters, glyphs, logos or watermark. Middle-story master. Uneven nested handmade paper grass arcs form a dramatic wind hill against deep periwinkle sky. Right of center a single small upright six-bladed pinned paper wind-wheel with a visible metal axle, and exactly one irregular golden paper sun fragment caught behind its rotor. A fine red linen thread follows the hillside foreground, a tiny amber lamp next to it, no character. True layered shadows and thick grass cut edges. Left 38 percent quiet blue sky for future DOM narration. All elements have delicate photographed material detail.",
+      "generation_original": {
+        "file": "art/concepts/ai-06.png",
+        "sha256": "42de41537ec5b879f92c80a472f4d72b806e95cedeaf6f4e375950c5a85d055f",
+        "size_bytes": 3150521,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-06.webp",
+        "source": "art/concepts/ai-06.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 357486,
+        "source_bytes": 3150521,
+        "sha256": "f576a04684edf94045cb765e7d09a8c3b06bb75ee18df90ad8042d41c0956a02",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "ai-07",
+      "prompt": "Use case: illustration-story. PAPERSUN original handmade cut-paper miniature theatre. Museum-quality physical photographed layered cardstock, cotton rag fibers, wavering knife-cut edges, subtle thick edge shadows, single warm lateral stage light from upper left. Palette midnight navy #18233B, faded cornflower #5A729A, unbleached stock #EFE4CF, lantern gold #E5B354, linen thread red #A94F45. Whimsical, restrained, poetic and tactile, never plastic or flat vectors. Landscape 16:10. Absolutely no text, letters, glyphs, logos or watermark. Late-story master of the return of the sun. Wide stage of original blue cut-paper city rooftops now receiving gradual warm gold light, with one large repaired circular golden cardstock sun in the upper right suspended by two visible red linen rigging threads. Sun is exactly THREE interlocking pieces, only THREE radial seams from one central joint to three points on rim, with unmistakable red stitch marks. A small amber attic window remains visible lower-right. Keep left 38 percent calm dark-blue/cream negative space for future real caption. This is an intimate miniature physical stage, NOT a real celestial sunrise, no moon, no rays or magic particles.",
+      "generation_original": {
+        "file": "art/concepts/ai-07.png",
+        "sha256": "f695624b0959bd668eb783b78d5dd3ffd8fab75b4309d81ddd3bf83e96f1cd88",
+        "size_bytes": 2842594,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-07.webp",
+        "source": "art/concepts/ai-07.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 281542,
+        "source_bytes": 2842594,
+        "sha256": "ea59a916dab3d6cfc59cbf538f366f2eb8a214ff30c2c3079169e6d49be16823",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "ai-08",
+      "prompt": "Use case: illustration-story. PAPERSUN original handmade cut-paper miniature theatre. Museum-quality physical photographed layered cardstock, cotton rag fibers, wavering knife-cut edges, subtle thick edge shadows, single warm lateral stage light from upper left. Palette midnight navy #18233B, faded cornflower #5A729A, unbleached stock #EFE4CF, lantern gold #E5B354, linen thread red #A94F45. Whimsical, restrained, poetic and tactile, never plastic or flat vectors. Landscape 16:10. Absolutely no text, letters, glyphs, logos or watermark. Authored transition midpoint of a journey back to an attic. A large solid opaque deep-blue cardstock arch dominates center-right. Its curved edge is precisely aligned with a curved cream paper workbench support. LEFT HALF shows outdoor cobalt paper bridge across a violet paper valley; RIGHT HALF reveals an intimate warm amber paper attic repair desk, scissors and needle. One fine red linen guiding thread physically continues from left bridge railing under the opaque arch to right workbench. No human characters, no sun or golden fragments. Rich multi-plane thickness, believable theatrical scenic change hidden behind opaque arch. Quiet dark upper-left for narrative text.",
+      "generation_original": {
+        "file": "art/concepts/ai-08.png",
+        "sha256": "42403092880312eb594c02aeb1eec18cc97b4cd1384d4ec811746464c1a5b85c",
+        "size_bytes": 2750705,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-08.webp",
+        "source": "art/concepts/ai-08.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 258296,
+        "source_bytes": 2750705,
+        "sha256": "ab3d65968a9197b3dc13fc2305c7463a66bf5d80e0cbb0125777cc0e43d7a075",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    }
+  ],
+  "packaging_note": "Unmodified generated PNGs remain in the scratch working tree. Native-resolution WebP derivatives are distributed in art/concepts/; source ZIP omits PNG and base64 intermediates."
+}

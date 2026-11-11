@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHRYSALIS — Local QA harness</title>
+<style>
+:root{font:14px/1.5 system-ui,sans-serif;color:#e8ecd9;background:#18251c;color-scheme:dark}*{box-sizing:border-box}body{margin:0}header{padding:16px 20px;border-bottom:1px solid #66755b;background:#1c3021}h1{font-size:21px;line-height:1.2;margin:0 0 8px}p{margin:5px 0;color:#c5cfb7}button,select,input{font:inherit;min-height:36px;border:1px solid #758568;background:#122017;color:inherit;padding:6px 10px;border-radius:4px}button{cursor:pointer}button:hover{background:#34533a}button:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #dbb769;outline-offset:3px}input[type=number]{width:75px}#source{width:150px}.controls{display:flex;gap:8px 12px;align-items:center;flex-wrap:wrap;margin-top:12px}.controls label{display:flex;align-items:center;gap:7px}#phase-buttons{display:inline-flex;gap:4px}#progress{padding:10px 20px;min-height:42px;border-bottom:1px solid #66755b;position:sticky;top:0;z-index:3;background:#18251cf5}#frame-shell{overflow:auto;width:100%;padding:16px;background:#0b130e;min-height:100px}iframe{display:block;border:0;background:#173924;max-width:none;transform:none}details{margin:15px 20px;padding:14px;border:1px solid #66755b}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 ui-monospace,monospace}#results{max-height:600px;overflow:auto}.focus-view header,.focus-view #progress,.focus-view details{display:none}.focus-view #frame-shell{padding:0;overflow:visible;width:max-content}.focus-view #leave-focus{display:block;position:static;margin:8px}.focus-view{width:max-content;min-width:100%}#leave-focus{display:none;position:fixed;right:8px;bottom:8px;z-index:100;font-size:12px;opacity:.7}a{color:#e0be76}
+</style>
+</head>
+<body>
+<header>
+<h1>CHRYSALIS · Local browser QA</h1>
+<p>Same-origin iframe CSS viewports. This harness does not emulate physical devices, operating-system media preferences, browser zoom, network conditions, or native keyboard input.</p>
+<div class="controls">
+<label>Source <input id="source" value="/" aria-label="Site path"></label>
+<label>Viewport <select id="viewport" aria-label="CSS viewport"><option value="320x700">320 × 700</option><option value="360x640">360 × 640</option><option value="390x844">390 × 844</option><option value="768x1024">768 × 1024</option><option value="1440x900" selected>1440 × 900</option><option value="1920x1080">1920 × 1080</option><option value="2560x1440">2560 × 1440</option><option value="3840x2160">3840 × 2160</option><option value="844x390">844 × 390 landscape</option><option value="699x900">699 × 900 breakpoint</option><option value="701x900">701 × 900 breakpoint</option><option value="1099x900">1099 × 900 breakpoint</option><option value="1101x900">1101 × 900 breakpoint</option><option value="1152x720">1152 × 720 reflow</option><option value="960x600">960 × 600 reflow</option><option value="720x450">720 × 450 reflow</option></select></label>
+<button id="load">Load viewport</button><button id="focus">Focus viewport</button>
+<label>Chapter <select id="chapter" aria-label="Chapter"></select></label><button id="go">Go to chapter</button>
+</div>
+<div class="controls">
+<label>Transition <select id="transition" aria-label="Transition"></select></label>
+<label>Percent <input id="percent" type="number" min="0" max="100" value="50"></label><button id="seek">Seek transition</button>
+<span id="phase-buttons"></span><button id="run">Run matrix</button><button id="affected">Run affected checks</button><button id="refinements">Run final refinements</button><button id="hanging-only">Check hanging framing</button><button id="stop" disabled>Stop</button><button id="download">Download JSON</button>
+</div>
+</header>
+<div id="progress" role="status" aria-live="polite">Ready. Load a viewport, then inspect or run the matrix.</div>
+<div id="frame-shell"><iframe id="site" title="CHRYSALIS under test" width="1440" height="900"></iframe></div>
+<button id="leave-focus">Return to QA controls</button>
+<details open><summary>Observed results</summary><pre id="results">No checks have run.</pre></details>
+<script>
+'use strict';
+const $ = (selector) => document.querySelector(selector);
+const frame = $('#site');
+const chapterIds = Array.from({length:11}, (_,i)=>'ch-'+String(i+1).padStart(2,'0'));
+const chapterTitles = ['An Egg in the Green','Milkweed, the Host','The Shell Opens','The First Meal','Five Instars','A Place to Hang','The Jade Vessel','Inside the Change','A Pattern Beneath','Emergence','First Flight'];
+const primaryViewports = [[320,700],[360,640],[390,844],[768,1024],[1440,900],[1920,1080],[2560,1440],[3840,2160]];
+const extraViewports = [[844,390],[699,900],[701,900],[1099,900],[1101,900],[1152,720],[960,600],[720,450]];
+const pairedContracts = {
+  2:{layout:'landscape',source:{title:'Hatchling beside the shell',detail:'Shell, hatchling and leaf contact',asset:'ai-09-hatch'},target:{title:'Feeding at the leaf margin',detail:'Head, body and feeding edge visible',asset:'ai-10-feeding'},scope:'Separate illustrated observations. Movement between them is not shown.',midpoint:'Compare the hatchling and feeding observations.'},
+  5:{source:{title:'J-hanging larva',detail:'Rear attachment to a silk pad',asset:'ai-11-j-hang'},target:{title:'Attached chrysalis',detail:'Pupal stage; cremaster anchored to silk',asset:'ai-06-jade'},scope:'Separate illustrated observations. The skin-shedding process is not shown.',midpoint:'Compare the hanging larva and attached pupa.'},
+  8:{source:{title:'Late pupa',detail:'Wing pattern beneath the retained casing',asset:'ai-08-pattern'},target:{title:'Newly emerged adult',detail:'Crumpled wings; empty shell retained',asset:'ai-07-emergence'},scope:'Separate illustrated observations. The shell-opening movement is not shown.',midpoint:'Compare the late pupa and newly emerged adult.'},
+};
+let running = false;
+let stopping = false;
+let report = makeReport();
+for(let i=0;i<11;i++) $('#chapter').add(new Option(String(i+1).padStart(2,'0')+' · '+chapterTitles[i],chapterIds[i]));
+for(let i=0;i<10;i++) $('#transition').add(new Option(String(i+1).padStart(2,'0')+' → '+String(i+2).padStart(2,'0'),String(i)));
+for(const percent of [0,25,50,75,100]) {const button=document.createElement('button');button.textContent=percent+'%';button.addEventListener('click',()=>manualSeek(percent));$('#phase-buttons').append(button);}
+function makeReport(){return {status:'NOT TESTED',startedAt:null,finishedAt:null,method:'DOM assertions and DOM click()/native scrollTo() in a same-origin iframe',browserUserAgent:navigator.userAgent,devicePixelRatio:devicePixelRatio,physicalDevice:false,network:'Unthrottled; no network emulation',viewports:[],checks:[],observations:[],limitations:['Iframe dimensions are CSS viewport contexts, not physical-device emulation. The same real document is resized between sizes; images are warmed before matrix checks.','The reflow sizes approximate the content widths of 125%, 150%, and 200% zoom on a 1440-pixel-wide baseline; browser zoom itself is NOT TESTED.','OS prefers-reduced-motion emulation, touch emulation, network throttling, browser background restoration, and native Tab/Escape key behavior require independent browser tooling or manual checks.','Programmatic DOM clicks test application state; they do not establish pointer hit targeting or native keyboard operation.']};}
+function status(message){$('#progress').textContent=message;}
+function showReport(){ $('#results').textContent=JSON.stringify(report,null,2); }
+function assert(condition,message,actual){if(!condition)throw new Error(message+(actual===undefined?'':' · '+JSON.stringify(actual)));}
+function context(){const win=frame.contentWindow;const doc=frame.contentDocument;assert(win&&doc,'Frame has no accessible same-origin document.');return {win,doc};}
+function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+async function waitFor(fn,message,timeout=7000){const started=performance.now();while(performance.now()-started<timeout){if(stopping)throw new Error('Stopped by the operator.');try{const value=fn();if(value)return value;}catch{}await sleep(40);}throw new Error(message);}
+async function settle(){const {win}=context();await new Promise(resolve=>win.requestAnimationFrame(()=>win.requestAnimationFrame(resolve)));await sleep(80);}
+function targetUrl(hash=''){const url=new URL($('#source').value,location.href);assert(url.origin===location.origin,'Only same-origin local site paths are permitted.');url.hash=hash;return url.href;}
+async function loadViewport(width,height,hash=''){
+  frame.width=String(width);frame.height=String(height);frame.style.width=width+'px';frame.style.height=height+'px';
+  // Preserve the real production document between viewport sizes. The shared
+  // preview daemon can be reassigned by another task; no snapshot or mock replaces this app.
+  const reuse=!hash && frame.contentDocument?.documentElement.dataset.ready==='true';
+  if(!reuse){
+    const loaded=new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new Error('Iframe navigation timed out.')),15000);frame.addEventListener('load',()=>{clearTimeout(timer);resolve();},{once:true});});
+    const destination=new URL(targetUrl(hash));if(hash)destination.searchParams.set('qa-entry',String(Date.now()));
+    frame.src=destination.href;await loaded;
+  }
+  await waitFor(()=>context().doc.querySelectorAll('.chapter').length>=1,'The application did not render chapters.');
+  const {win,doc}=context();
+  if(doc.fonts)await Promise.race([doc.fonts.ready,sleep(5000)]);
+  if(!reuse){
+    doc.querySelectorAll('img').forEach(img=>{img.loading='eager';});
+    const urls=new Set([...doc.querySelectorAll('img')].map(img=>img.src));
+    doc.querySelectorAll('source[srcset]').forEach(source=>urls.add(new URL(source.srcset.split(',')[0].trim().split(' ')[0],doc.baseURI).href));
+    await Promise.race([Promise.all([...urls].map(url=>{const image=new win.Image();image.src=url;return image.decode().catch(()=>{});})),sleep(8000)]);
+  }
+  await settle();
+  assert(doc.title==='CHRYSALIS — The architecture of becoming','The shared preview route no longer serves this project.',doc.title);
+  assert(win.innerWidth===width&&win.innerHeight===height,'The iframe CSS viewport differs from the requested size.',{actual:[win.innerWidth,win.innerHeight],requested:[width,height]});
+  return {win,doc};
+}
+async function scrollToY(y){const {win,doc}=context();const max=Math.max(0,doc.documentElement.scrollHeight-win.innerHeight);const target=Math.max(0,Math.min(max,y));win.scrollTo({top:target,behavior:'instant'});await waitFor(()=>Math.abs(win.scrollY-target)<2,'The native scroll position did not settle at the requested coordinate.');await settle();return win.scrollY;}
+async function goChapter(id){const {doc,win}=context();const element=doc.getElementById(id);assert(element,'Chapter is missing.',id);await scrollToY(element.getBoundingClientRect().top+win.scrollY-84);return element;}
+function rectEvidence(element){const r=element.getBoundingClientRect();return {left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height};}
+function assertContained(inner,outer,message){assert(inner.width>0&&inner.height>0&&inner.left>=outer.left-2&&inner.right<=outer.right+2&&inner.top>=outer.top-2&&inner.bottom<=outer.bottom+2,message,{inner,outer});}
+function pairedPoseAudit(wrap,index,actual,middleQuarter){
+  const {doc,win}=context();const contract=pairedContracts[index];const reduced=doc.documentElement.dataset.motion==='reduced';
+  const expectedMode=reduced?(actual<.5?'source':'target'):(actual<.125?'source':actual>.875?'target':'comparison');
+  const mode=wrap.dataset.poseMode;assert(mode===expectedMode,'The complete-pose presentation has stale or incorrect ownership.',{actual,mode,expectedMode,reduced});
+  assert(wrap.dataset.presentation==='paired-study','A biological stage boundary is not using its complete-pose presentation.');
+  const allFigures=[...wrap.querySelectorAll('.transition-plates > figure')];assert(allFigures.length===2,'The comparison must contain exactly two separately labeled figures.',allFigures.length);
+  const shown=allFigures.filter(visible);assert(shown.length===(expectedMode==='comparison'?2:1),'The number of visible complete poses does not match the presentation.',{mode,visibleFigures:shown.length});
+  const frameBounds=rectEvidence(wrap.querySelector('.transition-frame'));const viewport={left:0,top:0,right:win.innerWidth,bottom:win.innerHeight};
+  const infoBounds=rectEvidence(wrap.querySelector('.transition-info'));const figures=[];
+  for(const role of ['source','target']){
+    const figure=wrap.querySelector('.transition-'+role);const expected=contract[role];const caption=figure?.querySelector('figcaption');const inner=figure?.querySelector('.transition-inner');const picture=figure?.querySelector('picture');
+    assert(figure&&caption&&inner&&picture,'A complete-pose figure or its caption is missing.',role);
+    assert(caption.querySelector('strong')?.textContent.trim()===expected.title,'The pose title does not match its stage.',{role,actual:caption.textContent,expected:expected.title});
+    assert(caption.querySelector('span')?.textContent.trim()===expected.detail,'The pose attachment/context label is incorrect.',{role,actual:caption.textContent,expected:expected.detail});
+    assert(picture.dataset.asset===expected.asset,'The comparison is displaying the wrong authored plate.',{role,actual:picture.dataset.asset,expected:expected.asset});
+    const isVisible=visible(figure);assert(isVisible===(mode==='comparison'||mode===role),'A hidden or visible figure contradicts its pose mode.',{role,mode,isVisible});
+    const css=win.getComputedStyle(figure);assert(css.clipPath==='none','A partial mask can splice one biological stage into another.',{role,clip:css.clipPath});
+    const evidence={role,title:expected.title,asset:picture.dataset.asset,visible:isVisible,clip:css.clipPath};
+    if(isVisible){
+      assert(Number(css.opacity)===1,'A complete pose is being made transparent.',{role,opacity:css.opacity});
+      const card=rectEvidence(figure),imageFrame=rectEvidence(inner),captionBounds=rectEvidence(caption);const image=picture.querySelector('img');
+      const imageCss=win.getComputedStyle(image);const ratio=imageFrame.width/imageFrame.height;
+      if(contract.layout==='landscape'){
+        assert(wrap.classList.contains('transition-paired-landscape'),'The wide larval observations inherited the hanging-stage crop.');
+        assert(Math.abs(ratio-1659/948)<.01,'The full landscape frame changed its authored aspect ratio.',{role,ratio,imageFrame});
+        assert(imageCss.objectFit==='contain'&&imageCss.objectPosition==='50% 50%','The full shell, larva or leaf contact may be cropped.',{role,objectFit:imageCss.objectFit,objectPosition:imageCss.objectPosition});
+      }else{
+        assert(Math.abs(ratio-2/3)<.01,'The complete-pose crop no longer retains its authored 2:3 frame.',{role,ratio,imageFrame});
+        assert(imageCss.objectFit==='cover'&&imageCss.objectPosition.startsWith('69%'),'The complete-pose crop has lost its safe horizontal registration.',{role,objectFit:imageCss.objectFit,objectPosition:imageCss.objectPosition});
+        if(image.naturalWidth>0)assert(ratio<=image.naturalWidth/image.naturalHeight,'The crop removes part of the source height.',{role,ratio,naturalWidth:image.naturalWidth,naturalHeight:image.naturalHeight});
+      }
+      if(middleQuarter){
+        assertContained(card,frameBounds,'A complete-pose card extends beyond the transition frame.');
+        assertContained(card,viewport,'A complete-pose card extends beyond the visible viewport.');
+        assertContained(imageFrame,card,'The pose image frame is cut off by its card.');
+        assertContained(captionBounds,card,'A pose caption extends beyond its card.');
+        assertContained(captionBounds,viewport,'A pose caption is outside the visible viewport.');
+        assert(card.bottom<=infoBounds.top+2,'The shared transition copy overlaps a complete pose or its caption.',{role,card,infoBounds});
+      }
+      Object.assign(evidence,{card,imageFrame,captionBounds,imageDecoded:image.complete&&image.naturalWidth>0,fallback:picture.classList.contains('is-failed'),objectFit:imageCss.objectFit,objectPosition:imageCss.objectPosition});
+    }
+    figures.push(evidence);
+  }
+  assert(wrap.querySelector('.transition-comparison-scope')?.textContent.trim()===contract.scope,'The comparison omits its honest scope statement.');
+  if(mode==='comparison'){
+    const left=rectEvidence(shown[0]),right=rectEvidence(shown[1]);const horizontal=left.right<=right.left+2||right.right<=left.left+2;const vertical=left.bottom<=right.top+2||right.bottom<=left.top+2;
+    assert(horizontal||(contract.layout==='landscape'&&vertical),'The two complete stages overlap instead of occupying separate frames.',{left,right});
+    if(contract.layout==='landscape')assert(win.innerWidth<=700?left.bottom<=right.top+2:horizontal,'The full landscape plates do not use the intended phone stack or desktop columns.',{width:win.innerWidth,left,right});
+    if(Math.abs(actual-.5)<=.005)assert(wrap.querySelector('.transition-stage')?.textContent.trim()===contract.midpoint,'The midpoint caption does not describe the paired comparison.');
+  }
+  return {mode,reduced,layout:contract.layout??'portrait',visibleFigureCount:shown.length,scope:contract.scope,figures};
+}
+async function seekTransition(index,progress){
+  const {doc,win}=context();const marker=doc.querySelector('.chapter-transition[data-from="'+chapterIds[index]+'"][data-to="'+chapterIds[index+1]+'"]');assert(marker,'Transition marker is missing.',index);
+  const rect=marker.getBoundingClientRect();await scrollToY(rect.top+win.scrollY+rect.height*progress-win.innerHeight/2);
+  const current=marker.getBoundingClientRect();const actual=Math.max(0,Math.min(1,(win.innerHeight/2-current.top)/current.height));const wrap=marker.closest('.transition-wrap');const styleProgress=parseFloat(win.getComputedStyle(wrap).getPropertyValue('--transition-progress'));
+  assert(Math.abs(actual-progress)<0.025,'Transition did not reach the requested stage.',{progress,actual});if(Number.isFinite(styleProgress))assert(Math.abs(styleProgress-actual)<0.025,'Rendered transition progress is stale.',{styleProgress,actual});
+  const dataStage=Number(wrap.dataset.stage);assert(Number.isFinite(dataStage),'The rendered transition does not expose its caption checkpoint.');
+  const quarter=[0,.25,.5,.75,1].includes(progress);
+  if(quarter){assert(Math.abs(actual-progress)<=.005+Number.EPSILON,'The actual stop falls outside the quarter-caption tolerance.',{requested:progress,actual});assert(dataStage===progress*100,'Scroll quantization retained the wrong quarter caption.',{requested:progress,actual,dataStage});}
+  const paired=pairedContracts[index]?pairedPoseAudit(wrap,index,actual,quarter&&progress>0&&progress<1):null;
+  return {transition:index,requestedProgress:progress,actualProgress:actual,renderedProgress:Number.isFinite(styleProgress)?styleProgress:null,dataStage,poseMode:wrap.dataset.poseMode??null,presentation:wrap.dataset.presentation??'occlusion',caption:wrap.querySelector('.transition-stage')?.textContent?.trim()??null,clip:wrap.querySelector('.transition-target')?win.getComputedStyle(wrap.querySelector('.transition-target')).clipPath:null,paired,scrollY:win.scrollY};
+}
+function visible(element){const {win}=context();const rect=element.getBoundingClientRect();const css=win.getComputedStyle(element);return rect.width>0&&rect.height>0&&css.visibility!=='hidden'&&css.display!=='none'&&!element.closest('[hidden]');}
+function findButton(label,scope){const {doc}=context();return [...(scope??doc).querySelectorAll('button')].find(el=>el.textContent.trim().replace(/\s+/g,' ')===label&&visible(el));}
+async function clickButton(label,scope){const button=findButton(label,scope);assert(button,'Visible button is missing.',label);button.focus();button.click();await settle();return button;}
+function boundsAudit(scope){const {doc,win}=context();assert(doc.documentElement.scrollWidth<=win.innerWidth+2,'The document has horizontal overflow.',{scrollWidth:doc.documentElement.scrollWidth,viewport:win.innerWidth});const bad=[...(scope??doc).querySelectorAll('h1,h2,h3,p,button')].filter(el=>visible(el)).filter(el=>{const r=el.getBoundingClientRect();return r.bottom>0&&r.top<win.innerHeight&&(r.left < -2||r.right>win.innerWidth+2);}).map(el=>({text:el.textContent.trim().slice(0,80),rect:{left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right}}));assert(bad.length===0,'Visible text or controls extend horizontally beyond the viewport.',bad);return {documentWidth:doc.documentElement.scrollWidth,viewportWidth:win.innerWidth};}
+function englishAudit(){const {doc}=context();const metadata=[...doc.querySelectorAll('[alt],[aria-label],meta[name="description"],meta[property]')].map(el=>[el.getAttribute('alt'),el.getAttribute('aria-label'),el.getAttribute('content')].filter(Boolean).join(' ')).join('\n');assert(!/[\u3400-\u4DBF\u4E00-\u9FFF\u3040-\u30FF]/u.test(doc.body.textContent+'\n'+metadata),'Unintended CJK text was found.');assert(doc.documentElement.lang==='en','Document language is not English.');return {language:doc.documentElement.lang,scope:'All rendered DOM text including hidden authored panels, alt text, aria-labels and metadata'};}
+async function check(id,fn){if(stopping)throw new Error('Stopped by the operator.');status('Running '+id+' · '+report.checks.length+' checks recorded');const began=performance.now();try{const evidence=await fn();report.checks.push({id,status:'PASS',durationMs:Math.round(performance.now()-began),evidence:evidence??null});}catch(error){report.checks.push({id,status:'FAIL',durationMs:Math.round(performance.now()-began),error:String(error.message??error)});}showReport();}
+async function chapterCheck(id){const element=await goChapter(id);assert(element.querySelector('h1,h2'),'Chapter lacks a semantic heading.',id);assert(element.querySelectorAll('.beat').length>=2,'Chapter lacks two substantive content beats.',{id,beats:element.querySelectorAll('.beat').length});const images=[...element.querySelectorAll('img')].filter(img=>{const r=img.getBoundingClientRect();return visible(img)&&r.bottom>0&&r.top<context().win.innerHeight;});await Promise.race([Promise.all(images.map(img=>img.decode?.().catch(()=>{}))),sleep(3000)]);const failed=images.filter(img=>!img.complete||img.naturalWidth===0);assert(failed.length===0||element.querySelector('.is-failed,.scene-fallback'),'A chapter image is unavailable without an authored fallback.',failed.map(img=>img.currentSrc));return {id,heading:element.querySelector('h1,h2').textContent.trim(),beats:element.querySelectorAll('.beat').length,...boundsAudit(element)};}
+async function fallbackFontCheck(label){
+  await check(label+' / forced fallback font metrics and restore',async()=>{
+    const {doc,win}=context();const root=doc.documentElement;
+    const oldFamily=root.style.fontFamily;const oldSerif=root.style.getPropertyValue('--serif');
+    const inspect=()=>{
+      const outside=[...doc.querySelectorAll('.chapter h1,.chapter h2,.chapter h3,.chapter .beat p,.chapter button')].filter(visible).map(el=>({text:el.textContent.trim().slice(0,70),left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right})).filter(r=>r.left < -2||r.right>win.innerWidth+2);
+      assert(outside.length===0,'Fallback-font text or controls exceed the document width.',outside);
+      assert(doc.documentElement.scrollWidth<=win.innerWidth+2,'Fallback font causes document overflow.');
+      return {bodyFont:win.getComputedStyle(root).fontFamily,headingFont:win.getComputedStyle(doc.querySelector('h1')).fontFamily,chapters:doc.querySelectorAll('.chapter').length,documentWidth:doc.documentElement.scrollWidth};
+    };
+    const original=inspect();let fallback;
+    try{root.style.fontFamily='Arial,sans-serif';root.style.setProperty('--serif','Georgia,serif');await settle();fallback=inspect();}
+    finally{root.style.fontFamily=oldFamily;if(oldSerif)root.style.setProperty('--serif',oldSerif);else root.style.removeProperty('--serif');await settle();}
+    return {method:'Explicit CSS fallback-font metric exercise followed by restoration. This does not delay or block actual font network requests.',original,fallback,restored:inspect()};
+  });
+}
+async function interactionChecks(label){
+  await check(label+' / instar selection and reset',async()=>{const c=await goChapter('ch-05');const signatures=[];for(let i=1;i<=5;i++){const button=await clickButton('Instar '+i,c);assert(button.getAttribute('aria-pressed')==='true','Selected instar button does not announce selection.');const caption=c.querySelector('#instar-caption')?.textContent.trim();const svg=c.querySelector('#instar-diagram svg')?.outerHTML;assert(caption&&svg,'The instar caption or diagram is missing.');signatures.push(caption+'|'+svg);}assert(new Set(signatures).size===5,'Five instars do not produce five distinct rendered states.');const reset=await clickButton('Show all',c);assert(reset.getAttribute('aria-pressed')==='true'||c.dataset.mode==='all','Show all does not expose an announced comparison state.');return {distinctStates:5,resetMode:c.dataset.mode??null};});
+  if(context().win.innerWidth<=700)await check(label+' / five stacked instar comparison rows',async()=>{const c=await goChapter('ch-05');await clickButton('Show all',c);const container=c.querySelector('.instar-comparison-rows');assert(container&&visible(container),'The phone Show all view lacks its stacked instar comparison.');const rows=[...container.querySelectorAll(':scope > figure.instar-comparison-row')].filter(visible);assert(rows.length===5,'The phone comparison must display five distinct rows.',rows.length);const outer=rectEvidence(container);const evidence=rows.map((row,index)=>{const rect=rectEvidence(row);assertContained(rect,outer,'A stacked instar row extends outside its comparison.');assert(row.textContent.includes('Instar '+(index+1))||row.getAttribute('aria-label')?.includes('Instar '+(index+1)),'A stacked row lacks its stage label.',{index,text:row.textContent});assert(row.matches('svg')||row.querySelector('svg'),'A stacked instar row lacks its authored illustration.',index);if(index)assert(rect.top>=rows[index-1].getBoundingClientRect().bottom-2,'Phone instar rows overlap instead of stacking.',{index,rect});return {stage:index+1,rect};});return {rows:rows.length,layout:'stacked',evidence,...boundsAudit(c)};});
+  await check(label+' / exterior and reconstruction',async()=>{const c=await goChapter('ch-08');await clickButton('Illustrated inside',c);const inside=c.querySelector('#inside-reconstruction');const exterior=c.querySelector('#inside-exterior');assert(inside&&!inside.hidden,'Illustrated reconstruction remains hidden.');assert(exterior&&exterior.hidden,'Exterior and reconstruction compete as two active views.');assert(c.innerText.includes('Illustrative reconstruction'),'Reconstruction disclaimer is missing.');const svg=inside.querySelector('#inside-diagram svg');assert(svg&&visible(svg),'The reconstruction has no displayed diagram.');const viewBox=svg.viewBox.baseVal;const diagram={viewBox:svg.getAttribute('viewBox'),x:viewBox.x,y:viewBox.y,width:viewBox.width,height:viewBox.height,rendered:rectEvidence(svg)};assert([diagram.x,diagram.y,diagram.width,diagram.height].every(Number.isFinite)&&diagram.width>0&&diagram.height>0,'The reconstruction viewBox is not a valid finite drawing frame.',diagram);const selected=findButton('Illustrated inside',c);assert(selected?.getAttribute('aria-pressed')==='true','The reconstruction selection is not announced.');await clickButton('Reset view',c);assert(inside.hidden&&!exterior.hidden,'Reset view did not restore the exterior.');assert(findButton('Exterior',c)?.getAttribute('aria-pressed')==='true','Reset view did not restore the announced exterior selection.');return {insideOpened:true,diagram,exteriorRestored:true};});
+  await check(label+' / emergence sequence and reset',async()=>{const c=await goChapter('ch-10');const signatures=[];for(const text of ['Leaving the shell','Wings unfolding','Ready for flight']){const b=await clickButton(text,c);assert(b.getAttribute('aria-pressed')==='true','Selected emergence stage is not announced.',text);const svg=c.querySelector('#emergence-diagram svg')?.outerHTML;const asset=c.querySelector('img[data-asset]')?.getAttribute('data-asset')??c.querySelector('img')?.currentSrc;assert(svg||asset,'The emergence stage has no authored visible medium.');signatures.push((svg??'')+'|'+(asset??''));}assert(new Set(signatures).size===3,'Emergence stages do not produce three distinct rendered states.');await clickButton('Back to stage one',c);assert(findButton('Leaving the shell',c)?.getAttribute('aria-pressed')==='true','Emergence reset did not select stage one.');return {distinctStates:3,reset:true};});
+  await check(label+' / chapter dialog and focus return',async()=>{await goChapter('ch-01');const opener=await clickButton('Chapters');const {doc}=context();const dialog=doc.getElementById('chapters-dialog');assert(dialog?.open,'The chapter dialog did not open.');assert(dialog.querySelectorAll('a[href^="#ch-"]').length===11,'The chapter dialog lacks eleven destinations.');const close=dialog.querySelector('button[aria-label="Close"],button[aria-label*="Close"],.dialog-close');assert(close,'Dialog close button is missing.');close.click();await settle();assert(!dialog.open,'The chapter dialog did not close.');assert(doc.activeElement===opener,'Dialog closure did not restore focus to its opener.');return {chapterLinks:11,focusReturned:true};});
+  await check(label+' / UI reduced motion preserves reading and selection',async()=>{const {doc}=context();let button=findButton('Motion: On');if(!button){await clickButton('Chapters');button=findButton('Motion: On');}const changed=Boolean(button);if(button){button.click();await settle();}assert(doc.documentElement.dataset.motion==='reduced','UI reduced mode did not activate.');const open=doc.querySelector('dialog[open]');if(open)open.querySelector('.dialog-close')?.click();await chapterCheck('ch-11');const c=await goChapter('ch-05');await clickButton('Instar 3',c);assert(findButton('Instar 3',c)?.getAttribute('aria-pressed')==='true','Reduced motion removed specimen selection.');if(changed){let restore=findButton('Motion: Reduced');if(!restore){await clickButton('Chapters');restore=findButton('Motion: Reduced');}assert(restore,'The motion setting cannot be restored.');restore.click();await settle();doc.querySelector('dialog[open] .dialog-close')?.click();}return {chapters:doc.querySelectorAll('.chapter').length,selection:'Instar 3',settingRestored:changed};});
+}
+async function runMatrix(){
+  if(running)return;running=true;stopping=false;report=makeReport();report.status='IN PROGRESS';report.startedAt=new Date().toISOString();$('#run').disabled=true;$('#stop').disabled=false;
+  try{
+    for(const [width,height] of primaryViewports){const label=width+'×'+height;await loadViewport(width,height);report.viewports.push({width,height,kind:'iframe CSS viewport'});
+      await check(label+' / identity, completeness and English',()=>{const {doc}=context();assert(doc.title==='CHRYSALIS — The architecture of becoming','Unexpected document title.',doc.title);assert(doc.querySelectorAll('.chapter').length===11,'Expected eleven chapters.',doc.querySelectorAll('.chapter').length);return englishAudit();});
+      await check(label+' / hero bounds',()=>boundsAudit(context().doc.querySelector('#ch-01')));
+      for(const id of chapterIds)await check(label+' / '+id,()=>chapterCheck(id));
+      if((width===1440&&height===900)||(width===390&&height===844)){
+        for(let i=0;i<10;i++)for(const progress of [0,.25,.5,.75,1])await check(label+' / transition '+(i+1)+' at '+Math.round(progress*100)+'%',async()=>{const observation=await seekTransition(i,progress);boundsAudit();return observation;});
+        for(let cycle=1;cycle<=3;cycle++){for(const progress of [.25,.5,.75,.5,.25,0])await check(label+' / hero return '+cycle+' at '+Math.round(progress*100)+'%',()=>seekTransition(0,progress));await scrollToY(0);}
+        await interactionChecks(label);
+      }else for(const index of [0,5,8])await check(label+' / hard handoff '+(index+1),()=>seekTransition(index,.5));
+      await check(label+' / ending',async()=>{const {win,doc}=context();await scrollToY(doc.documentElement.scrollHeight);assert(doc.querySelector('#ch-11'),'The ending chapter is missing.');return {activeChapter:doc.documentElement.dataset.activeChapter,scrollY:win.scrollY,...boundsAudit()};});
+    }
+    for(const [width,height] of extraViewports){const label=width+'×'+height;await loadViewport(width,height);report.viewports.push({width,height,kind:width===1152||width===960||width===720?'effective CSS reflow size; not browser zoom':'iframe CSS breakpoint or landscape viewport'});await check(label+' / hero reflow',()=>boundsAudit());await check(label+' / longest reading and interaction',()=>chapterCheck('ch-05'));await check(label+' / emergence midpoint',()=>seekTransition(8,.5));await check(label+' / ending reflow',()=>chapterCheck('ch-11'));}
+    await check('direct hash / ch-08',async()=>{await loadViewport(1440,900,'ch-08');const {doc}=context();await waitFor(()=>doc.documentElement.dataset.activeChapter==='ch-08','Direct hash did not select chapter eight.');return {activeChapter:doc.documentElement.dataset.activeChapter,hash:frame.contentWindow.location.hash};});
+    await check('mid-page reload / position restoration',async()=>{const {win}=context();await goChapter('ch-09');const before=win.scrollY;const loaded=new Promise(resolve=>frame.addEventListener('load',resolve,{once:true}));win.location.reload();await Promise.race([loaded,sleep(10000)]);await waitFor(()=>context().doc.querySelector('#ch-09'),'Reload did not recreate the story.');await settle();const after=context().win.scrollY;assert(Math.abs(before-after)<80,'Mid-page reload did not preserve the native position.',{before,after});return {before,after};});
+    report.status=report.checks.some(c=>c.status==='FAIL')?'FAIL':'PASS';
+  }catch(error){report.status=stopping?'STOPPED':'BLOCKED';report.observations.push({error:String(error.message??error)});}finally{running=false;report.finishedAt=new Date().toISOString();$('#run').disabled=false;$('#stop').disabled=true;showReport();const passed=report.checks.filter(c=>c.status==='PASS').length;status(report.status+' · '+passed+' passed / '+report.checks.length+' observed checks. See JSON for scope and limitations.');}
+}
+async function runAffected(){
+  if(running)return;running=true;stopping=false;report=makeReport();report.status='IN PROGRESS';report.startedAt=new Date().toISOString();
+  report.observations.push({scope:'Affected retest: responsive image handoff; complete-pose pupation/emergence comparisons; quarter-caption rounding; all eleven chapter layouts at390/1440; phone instar rows and reconstruction reset. Earlier matrix and recovery failures remain separate historical evidence.'});
+  $('#run').disabled=true;$('#affected').disabled=true;$('#stop').disabled=false;
+  try{
+    for(const [width,height] of primaryViewports){const label=width+'×'+height;await loadViewport(width,height);report.viewports.push({width,height,kind:'retained iframe CSS viewport'});
+      await check(label+' / final hero source and layout',async()=>{await goChapter('ch-01');const {doc,win}=context();const image=doc.querySelector('.hero-art img');await Promise.race([image.decode().catch(()=>{}),sleep(4000)]);assert(image.complete&&image.naturalWidth>0,'The selected responsive hero did not decode.',{source:image.currentSrc,classes:image.parentElement.className});assert(image.currentSrc.includes(width<=700?'ai-05-mobile':'ai-04-hero'),'The responsive hero selected the wrong art.',image.currentSrc);return {source:image.currentSrc,naturalWidth:image.naturalWidth,chapters:doc.querySelectorAll('.chapter').length,...boundsAudit()};});
+      await check(label+' / final midpoint and ending',async()=>{await seekTransition(5,.5);boundsAudit();await chapterCheck('ch-11');return {chapterCount:context().doc.querySelectorAll('.chapter').length,ending:true};});
+    }
+    await loadViewport(699,900);
+    await check('699×900 / corrected reconstruction annotation',async()=>{await seekTransition(6,.75);return boundsAudit();});
+    await loadViewport(320,700);
+    for(const index of [5,8]){
+      const label='320×700 / complete-pose transition '+(index+1);
+      for(const p of [0,.25,.5,.75,1])await check(label+' forward '+Math.round(p*100)+'%',()=>seekTransition(index,p));
+      for(const p of [.75,.5,.25,0])await check(label+' reverse '+Math.round(p*100)+'%',()=>seekTransition(index,p));
+      await check(label+' direct midpoint',async()=>{await scrollToY(0);return seekTransition(index,.5);});
+      for(const boundary of [.125,.875])await check(label+' ownership around '+(boundary*100)+'%',async()=>{const marker=context().doc.querySelector('.chapter-transition[data-from="'+chapterIds[index]+'"]');const delta=Math.max(.006,2/marker.getBoundingClientRect().height);const below=await seekTransition(index,boundary-delta);const above=await seekTransition(index,boundary+delta);assert(below.actualProgress<boundary&&above.actualProgress>boundary,'Scroll rounding did not place the ownership samples on opposite sides.',{boundary,below:below.actualProgress,above:above.actualProgress});return {boundary,delta,below,above};});
+    }
+    await loadViewport(390,844);
+    for(const id of chapterIds)await check('390×844 / final chapter '+id,()=>chapterCheck(id));
+    for(let i=0;i<10;i++)for(const p of [0,.25,.5,.75,1])await check('390×844 / corrected transition '+(i+1)+' at '+Math.round(p*100)+'%',async()=>{const state=await seekTransition(i,p);boundsAudit();return state;});
+    for(let cycle=1;cycle<=3;cycle++){for(const p of [.25,.5,.75,.5,.25,0])await check('390×844 / corrected hero return '+cycle+' at '+Math.round(p*100)+'%',()=>seekTransition(0,p));await scrollToY(0);}
+    await interactionChecks('390×844 / final');
+    await fallbackFontCheck('390×844');
+    await loadViewport(1440,900);
+    for(const id of chapterIds)await check('1440×900 / final chapter '+id,()=>chapterCheck(id));
+    for(let i=0;i<10;i++)for(const p of [0,.25,.5,.75,1])await check('1440×900 / corrected transition '+(i+1)+' at '+Math.round(p*100)+'%',async()=>{const state=await seekTransition(i,p);boundsAudit();return state;});
+    await interactionChecks('1440×900 / final');
+    await fallbackFontCheck('1440×900');
+    await check('final English and chapter completeness audit',()=>{assert(context().doc.querySelectorAll('.chapter').length===11,'The final document no longer has eleven chapters.');return englishAudit();});
+    report.status=report.checks.some(c=>c.status==='FAIL')?'FAIL':'PASS';
+  }catch(error){report.status=stopping?'STOPPED':'BLOCKED';report.observations.push({error:String(error.message??error)});}finally{
+    running=false;report.finishedAt=new Date().toISOString();$('#run').disabled=false;$('#affected').disabled=false;$('#stop').disabled=true;showReport();status(report.status+' · '+report.checks.filter(c=>c.status==='PASS').length+' passed / '+report.checks.length+' affected checks.');
+  }
+}
+function transitionCopyAudit(index){
+  const {doc,win}=context();const wrap=doc.querySelector('.transition-wrap[data-transition="'+index+'"]');
+  const frameBounds=rectEvidence(wrap.querySelector('.transition-frame'));const infoBounds=rectEvidence(wrap.querySelector('.transition-info'));const stageBounds=rectEvidence(wrap.querySelector('.transition-stage'));
+  const viewport={left:0,top:0,right:win.innerWidth,bottom:win.innerHeight};
+  assertContained(infoBounds,frameBounds,'The transition caption extends beyond its frame.');
+  assertContained(infoBounds,viewport,'The transition caption is outside the visible viewport.');
+  assertContained(stageBounds,infoBounds,'The transition stage text extends beyond its caption panel.');
+  const header=doc.querySelector('.site-header');const headerBounds=rectEvidence(header);
+  assert(infoBounds.top>=headerBounds.bottom-2,'The transition caption overlaps the fixed header.',{infoBounds,headerBounds});
+  return {infoBounds,stageBounds,headerBounds};
+}
+async function finalHangingMidpoint(){
+  const state=await seekTransition(4,.5);const {doc,win}=context();
+  const wrap=doc.querySelector('.transition-wrap[data-transition="4"]');const target=wrap.querySelector('.transition-target');const picture=target.querySelector('picture');const image=picture.querySelector('img');
+  assert(picture.dataset.asset==='ai-11-j-hang','The hanging midpoint has lost its complete J-pose plate.',picture.dataset.asset);
+  const css=win.getComputedStyle(image);const box=rectEvidence(image);const mask=rectEvidence(target);
+  let containedImage=null,revealed=null;
+  if(win.innerWidth<=700){
+    assert(css.objectFit==='contain'&&css.objectPosition==='50% 18%','The phone hanging midpoint does not retain the full landscape plate in the upper reveal.',{objectFit:css.objectFit,objectPosition:css.objectPosition});
+    assert(image.complete&&image.naturalWidth>0,'The complete J-pose image is unavailable.');
+    const scale=Math.min(box.width/image.naturalWidth,box.height/image.naturalHeight);const width=image.naturalWidth*scale,height=image.naturalHeight*scale;
+    const left=box.left+(box.width-width)*.5,top=box.top+(box.height-height)*.18;
+    containedImage={left,top,right:left+width,bottom:top+height,width,height};
+    revealed={left:mask.left,top:mask.top,right:mask.right,bottom:mask.top+mask.height*state.actualProgress,width:mask.width,height:mask.height*state.actualProgress};
+    assertContained(containedImage,revealed,'The midpoint reveal cuts the complete J-pose source plate.');
+  }
+  return {...state,objectFit:css.objectFit,objectPosition:css.objectPosition,containedImage,revealed,...boundsAudit()};
+}
+async function runRefinements(){
+  if(running)return;running=true;stopping=false;report=makeReport();report.status='IN PROGRESS';report.startedAt=new Date().toISOString();
+  report.observations.push({scope:'Final targeted refinements only: TR01 caption placement; TR03 complete landscape observations; TR05 phone full J pose; TR07/TR08 reconstruction wording. Earlier reports remain historical evidence. Asset geometry is measured from actual DOM and decoded image dimensions; no physical device or network emulation is claimed.'});
+  for(const id of ['run','affected','refinements'])$('#'+id).disabled=true;$('#stop').disabled=false;
+  try{
+    for(const [width,height] of [[320,700],[360,640],[390,844],[1440,900],[844,390]]){
+      const label=width+'×'+height;await loadViewport(width,height);const {doc,win}=context();
+      report.viewports.push({width,height,kind:'retained real iframe CSS viewport'});
+      if(!report.loadedDocument)report.loadedDocument={url:win.location.href,title:doc.title,scripts:[...doc.scripts].map(s=>s.src).filter(Boolean),ready:doc.documentElement.dataset.ready,fonts:doc.fonts?.status??null};
+      for(const index of [0,2])for(const p of [0,.25,.5,.75,1])await check(label+' / final transition '+(index+1)+' forward '+Math.round(p*100)+'%',async()=>{const state=await seekTransition(index,p);return {...state,copy:transitionCopyAudit(index),...boundsAudit()};});
+      for(const p of [.75,.5,.25,0])await check(label+' / final transition 3 reverse '+Math.round(p*100)+'%',()=>seekTransition(2,p));
+      await check(label+' / final transition 3 direct midpoint',async()=>{await scrollToY(0);return seekTransition(2,.5);});
+      for(const boundary of [.125,.875])await check(label+' / final transition 3 ownership around '+(boundary*100)+'%',async()=>{
+        const marker=doc.querySelector('.chapter-transition[data-from="ch-03"]');const delta=Math.max(.006,2/marker.getBoundingClientRect().height);
+        const below=await seekTransition(2,boundary-delta),above=await seekTransition(2,boundary+delta);
+        assert(below.actualProgress<boundary&&above.actualProgress>boundary,'Scroll rounding did not place the ownership samples on opposite sides.',{boundary,below:below.actualProgress,above:above.actualProgress});
+        return {boundary,delta,below,above};
+      });
+      if(width!==360){
+        await check(label+' / final transition 5 complete hanging midpoint',finalHangingMidpoint);
+        for(const [index,caption] of [[6,'A separate reconstruction introduces developing wing regions.'],[7,'The late pattern returns to the exterior view.']])await check(label+' / final transition '+(index+1)+' honest midpoint caption',async()=>{const state=await seekTransition(index,.5);assert(state.caption===caption,'The midpoint still claims exact anatomical registration.',{actual:state.caption,expected:caption});return state;});
+      }
+    }
+    await check('final refinement English audit',englishAudit);
+    report.status=report.checks.some(c=>c.status==='FAIL')?'FAIL':'PASS';
+  }catch(error){report.status=stopping?'STOPPED':'BLOCKED';report.observations.push({error:String(error.message??error)});}finally{
+    running=false;report.finishedAt=new Date().toISOString();for(const id of ['run','affected','refinements'])$('#'+id).disabled=false;$('#stop').disabled=true;showReport();status(report.status+' · '+report.checks.filter(c=>c.status==='PASS').length+' passed / '+report.checks.length+' final refinement checks.');
+  }
+}
+async function runHangingCheck(){
+  if(running)return;running=true;stopping=false;report=makeReport();report.status='IN PROGRESS';report.startedAt=new Date().toISOString();
+  report.observations.push({scope:'Targeted repeat of the two failed full-image containment checks after disabling narrow-screen cinematic overscan. All original geometry assertions remain unchanged.'});
+  try{
+    for(const [width,height] of [[320,700],[390,844]]){
+      await loadViewport(width,height);const {doc,win}=context();
+      report.viewports.push({width,height,kind:'retained real iframe CSS viewport'});
+      report.loadedDocument={url:win.location.href,title:doc.title,scripts:[...doc.scripts].map(s=>s.src).filter(Boolean),styles:[...doc.querySelectorAll('link[rel="stylesheet"]')].map(s=>s.href),ready:doc.documentElement.dataset.ready};
+      await check(width+'×'+height+' / repaired complete hanging midpoint',finalHangingMidpoint);
+    }
+    report.status=report.checks.some(c=>c.status==='FAIL')?'FAIL':'PASS';
+  }catch(error){report.status='BLOCKED';report.observations.push({error:String(error.message??error)});}finally{
+    running=false;report.finishedAt=new Date().toISOString();showReport();status(report.status+' · '+report.checks.filter(c=>c.status==='PASS').length+' passed / '+report.checks.length+' hanging framing checks.');
+  }
+}
+$('#hanging-only').addEventListener('click',runHangingCheck);
+async function manualSeek(percent){try{$('#percent').value=String(percent);const observation=await seekTransition(Number($('#transition').value),percent/100);status(JSON.stringify(observation));}catch(error){status(String(error.message??error));}}
+$('#load').addEventListener('click',async()=>{try{const [w,h]=$('#viewport').value.split('x').map(Number);await loadViewport(w,h);status('Loaded '+w+'×'+h+' CSS pixels.');}catch(e){status(String(e.message??e));}});
+$('#go').addEventListener('click',async()=>{try{await goChapter($('#chapter').value);status('Viewing '+$('#chapter').value);}catch(e){status(String(e.message??e));}});
+$('#seek').addEventListener('click',()=>manualSeek(Math.max(0,Math.min(100,Number($('#percent').value)))));
+$('#run').addEventListener('click',runMatrix);
+$('#affected').addEventListener('click',runAffected);
+$('#refinements').addEventListener('click',runRefinements);
+$('#stop').addEventListener('click',()=>{stopping=true;status('Stopping after the current operation.');});
+$('#focus').addEventListener('click',()=>{document.body.classList.add('focus-view');window.scrollTo(0,0);});
+$('#leave-focus').addEventListener('click',()=>document.body.classList.remove('focus-view'));
+$('#download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='chrysalis-browser-iframe-qa.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+// A read-only public result lets the controlling browser inspect exactly the
+// same data displayed above; no hidden browser automation API is required.
+Object.defineProperty(window,'chrysalisQaReport',{get:()=>report});
+</script>
+</body>
+</html>

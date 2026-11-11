@@ -1,0 +1,83 @@
+[
+  {
+    "id": "EX-dawn",
+    "fileName": "dawn",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: lighting-weather edit. Image 1 is NIGHTSHIFT's actual midnight hero; preserve the EXACT camera, facade, foreground window with identical mullions, building edges, chimney outlines, streets and distant skyline geometry. Change ONLY the time of day and related small narrative traces to early washed silver dawn. Same front room lower-left now gently lit by cool diffuse daylight, task lamp switched off, anonymous worker has left the chair and one neatly closed notebook remains; do not relocate the furniture. Street in right distance softly begins morning with two or three tiny unidentifiable pedestrians, no dense traffic. Muted pale rose at the low horizon, washed morning #E5EAE9, restrained blue-gray architecture and ordinary warm residual streetlights. NOT bright noon or orange sunset. Architecture must precisely match reference as a remembered return. Keep quiet upper sky for DOM title. Extremely fine original film texture and natural material detail, believable dark-to-light change, no text, logos, UI or numbers.",
+    "reviewedDate": "2026-11-09",
+    "parameters": {
+      "transparent_background": false
+    },
+    "seed": "not provided",
+    "generationOutputName": "exec-60df10d0-5ab9-4c2a-8bb0-1df54adfc9f7.png",
+    "workingOriginalName": "dawn.png",
+    "retainedPath": "public/media/dawn.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/dawn.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 236960,
+      "sha256": "bc8edd54b7f701a3a70644222e7f83712bcc1155daf0f93f7107ac4306d7f69d"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "fe1164fe32b24eabcb68e268c0ce20fafa65abcb90b9a33a4130c125cacee08c"
+  },
+  {
+    "id": "EX-market-after",
+    "fileName": "market-after",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: precise-object-edit. Image 1 is the NIGHTSHIFT market sorting photograph. Preserve EXACT camera, background city silhouette, canopy beams, lamp positions, all fixed crate corners and handcart. Show the SAME place a little later as first light reaches the aisle: the loose flower stems in front are now carefully sorted in tidy bundles inside the SAME scuffed crate, produce crates arranged for opening, worker's same anonymous sleeves and hands resting at crate edge after completing sorting. No faces. Add cool soft dawn light subtly from left exit while retaining amber lamps. Essential change is real visible organization of flowers/crates, not just a color filter. Keep wholesale work atmosphere, no luxury advertising, no customers, no text/logos/numbers/UI. Natural anatomy and physical contacts, honor all scene geometry.",
+    "reviewedDate": "2026-11-09",
+    "parameters": {
+      "transparent_background": false
+    },
+    "seed": "not provided",
+    "generationOutputName": "exec-f628b584-a0d3-4ddb-89a9-380f5c0e4fa6.png",
+    "workingOriginalName": "market-after.png",
+    "retainedPath": "public/media/market-after.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/market-after.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 349094,
+      "sha256": "7a9eefb5048f5b89902efa417ae20c90d8a28fd6701e3a2f801fd78b296c4439"
+    },
+    "actualDimensions": [
+      1585,
+      992
+    ],
+    "originalOutputSha256": "65e7cb2e6fdf45c6cbb879af87211fcb4e2f38349d06673cbcb5ea99e6ee456f"
+  },
+  {
+    "id": "EX-atlas",
+    "fileName": "atlas",
+    "tool": "image_gen.imagegen (built-in)",
+    "prompt": "Use case: photorealistic-natural. NIGHTSHIFT chapter night atlas, a quiet editorial notebook still life, widescreen16:10. Overhead oblique view of a dark worn wooden work desk beside a rain-spotted nighttime window with distant tiny amber city reflections. A large open unmarked aged blue-gray paper notebook lies toward center-right, two overlapping plain sheets, thin unsharpened pencil, a little glass tumbler, small warm desk lamp out-of-frame making one amber reflection down paper edge. Paper must be completely BLANK, no text, no street lines, no typography or numbers; the actual illustrative city diagram will be drawn as accessible vector on website. Left third and upper area naturally dark navy negative space. Premium tactile editorial photography, realistic subtle contact shadows, human presence only through recently used materials, not stock office photograph, not sci-fi or dashboard. Palette midnight ink, steel teal, small working amber. Quiet restrained cinematic texture.",
+    "reviewedDate": "2026-11-09",
+    "parameters": {
+      "transparent_background": false
+    },
+    "seed": "not provided",
+    "generationOutputName": "exec-ab8ac489-f800-45e2-b7e8-e0e9996245e8.png",
+    "workingOriginalName": "atlas.png",
+    "retainedPath": "public/media/atlas.webp",
+    "retainedFormat": "WebP derivative of the tool-generated PNG",
+    "finalAsset": {
+      "path": "public/media/atlas.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 135602,
+      "sha256": "dfc19fba9fc338ac3def794d0c806c9eea22dbbb5efff9675e49331292e1054e"
+    },
+    "actualDimensions": [
+      1586,
+      992
+    ],
+    "originalOutputSha256": "fa5e2db589e4cae66c4d41824f0e5971c5542cb7c68f2d34093b013803dafd27"
+  }
+]

@@ -446,6 +446,36 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .world-anax .world-image img{object-position:62% 50%}
 .world-anax .world-image:after{background:linear-gradient(180deg,#07080a88,transparent 36%,#07080aee)}
 .world-anax:focus-visible{outline-color:#eaa94f}
+.world-papersun{--t:17;--s:9;background:#18233b;color:#efe4cf}
+.world-papersun h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:.14em;line-height:.9}
+.world-papersun .world-title p{font-family:'Collection Optic Cormorant',Georgia,serif;font-style:italic;font-weight:400;line-height:1.05}
+.world-papersun .world-image img{object-position:96% 50%}
+.world-papersun .world-image:after{background:linear-gradient(180deg,#18233bb0,transparent 38%,#18233bee)}
+.world-papersun:focus-visible{outline-color:#e5b354}
+.world-cargo{--t:24;--s:10;background:#283138;color:#edf0eb}
+.world-cargo h2{font-family:'Collection Magma Archivo',Arial,sans-serif;font-weight:800;letter-spacing:-.02em;line-height:.9}
+.world-cargo .world-title p{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:600;letter-spacing:.01em;line-height:1.05}
+.world-cargo .world-image img{object-position:70% 50%}
+.world-cargo .world-image:after{background:linear-gradient(180deg,#283138b0,transparent 38%,#283138ee)}
+.world-cargo:focus-visible{outline-color:#e4aa4c}
+.world-pulse{--t:22;--s:8.5;background:#130c10;color:#f3e4e0}
+.world-pulse h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:.2em;line-height:.9}
+.world-pulse .world-title p{font-family:'DM Sans',Arial,sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1.15}
+.world-pulse .world-image img{object-position:80% 50%}
+.world-pulse .world-image:after{background:linear-gradient(180deg,#130c10b0,transparent 38%,#130c10ee)}
+.world-pulse:focus-visible{outline-color:#e3b08a}
+.world-nightshift{--t:19;--s:9;background:#0b1421;color:#f0eee7}
+.world-nightshift h2{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:600;letter-spacing:.04em;line-height:.9}
+.world-nightshift .world-title p{font-family:'Collection Facet Serif',Georgia,serif;font-style:italic;font-weight:400;line-height:1.1}
+.world-nightshift .world-image img{object-position:30% 50%}
+.world-nightshift .world-image:after{background:linear-gradient(180deg,#0b1421b0,transparent 38%,#0b1421ee)}
+.world-nightshift:focus-visible{outline-color:#e9a85f}
+.world-chrysalis{--t:17;--s:8.5;background:#173924;color:#e9ead2}
+.world-chrysalis h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:.06em;line-height:.9}
+.world-chrysalis .world-title p{font-family:'Collection Backstage Sans',Arial,sans-serif;font-weight:400;line-height:1.2}
+.world-chrysalis .world-image img{object-position:68% 50%}
+.world-chrysalis .world-image:after{background:linear-gradient(180deg,#173924b0,transparent 38%,#173924ee)}
+.world-chrysalis:focus-visible{outline-color:#e9ead2}
 
 /* The catalogue: one numbered list, in collection order. */
 .collection-index{margin:clamp(18px,2.8vh,44px) var(--gutter) clamp(18px,2.6vh,40px);border-top:1px solid #c7ccc2;border-bottom:1px solid #c7ccc2}
@@ -484,8 +514,8 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 /* The closing panel fills whatever remains of its row, as works are added. */
 @media(min-width:1001px){
 .worlds>.world.worlds-end:nth-child(10n+9){grid-column:span 2;--scale:.42}
-.worlds>.world.worlds-end:nth-child(10n+1){grid-column:1 / -1;height:auto;min-height:clamp(260px,32svh,560px);--scale:.26}
-.worlds>.world.worlds-end:nth-child(10n+1) br{display:none}
+.worlds>.world.worlds-end:nth-child(10n+1),.worlds>.world.worlds-end:nth-child(10n+6){grid-column:1 / -1;height:auto;min-height:clamp(260px,32svh,560px);--scale:.26}
+.worlds>.world.worlds-end:nth-child(10n+1) br,.worlds>.world.worlds-end:nth-child(10n+6) br{display:none}
 }
 @media(min-width:701px) and (max-width:1000px){.worlds>.world.worlds-end:nth-child(odd){grid-column:1 / -1;--scale:.42}}
 @media(max-width:1000px){.worlds>.world.worlds-end{height:auto;min-height:clamp(320px,44svh,520px)}}

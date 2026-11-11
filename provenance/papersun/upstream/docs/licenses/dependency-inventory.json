@@ -1,0 +1,543 @@
+{
+  "reviewed": "2026-11-09",
+  "source": "package-lock.json",
+  "note": "Lockfile entries include optional platform packages. This is not a statement that every package binary is included in the source archive. lockfilePath distinguishes duplicate package names at different versions.",
+  "packages": [
+    {
+      "name": "@fontsource/cormorant-garamond",
+      "version": "5.3.0",
+      "declaredLicense": "OFL-1.1",
+      "development": false,
+      "optional": false,
+      "lockfilePath": "node_modules/@fontsource/cormorant-garamond"
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.156.0",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/@oxc-project/types"
+    },
+    {
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-android-arm-eabi"
+    },
+    {
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-android-arm64"
+    },
+    {
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-darwin-arm64"
+    },
+    {
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-darwin-x64"
+    },
+    {
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-freebsd-x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-arm-gnueabihf"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-arm64-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-arm64-musl"
+    },
+    {
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-ppc64-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-s390x-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-x64-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-linux-x64-musl"
+    },
+    {
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-openharmony-arm64"
+    },
+    {
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-win32-arm64-msvc"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@rolldown/binding-win32-x64-msvc"
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/@rolldown/pluginutils"
+    },
+    {
+      "name": "@typescript/typescript-aix-ppc64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-aix-ppc64"
+    },
+    {
+      "name": "@typescript/typescript-darwin-arm64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-darwin-arm64"
+    },
+    {
+      "name": "@typescript/typescript-darwin-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-darwin-x64"
+    },
+    {
+      "name": "@typescript/typescript-freebsd-arm64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-freebsd-arm64"
+    },
+    {
+      "name": "@typescript/typescript-freebsd-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-freebsd-x64"
+    },
+    {
+      "name": "@typescript/typescript-linux-arm",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-arm"
+    },
+    {
+      "name": "@typescript/typescript-linux-arm64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-arm64"
+    },
+    {
+      "name": "@typescript/typescript-linux-loong64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-loong64"
+    },
+    {
+      "name": "@typescript/typescript-linux-mips64el",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-mips64el"
+    },
+    {
+      "name": "@typescript/typescript-linux-ppc64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-ppc64"
+    },
+    {
+      "name": "@typescript/typescript-linux-riscv64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-riscv64"
+    },
+    {
+      "name": "@typescript/typescript-linux-s390x",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-s390x"
+    },
+    {
+      "name": "@typescript/typescript-linux-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-linux-x64"
+    },
+    {
+      "name": "@typescript/typescript-netbsd-arm64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-netbsd-arm64"
+    },
+    {
+      "name": "@typescript/typescript-netbsd-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-netbsd-x64"
+    },
+    {
+      "name": "@typescript/typescript-openbsd-arm64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-openbsd-arm64"
+    },
+    {
+      "name": "@typescript/typescript-openbsd-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-openbsd-x64"
+    },
+    {
+      "name": "@typescript/typescript-sunos-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-sunos-x64"
+    },
+    {
+      "name": "@typescript/typescript-win32-arm64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-win32-arm64"
+    },
+    {
+      "name": "@typescript/typescript-win32-x64",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/@typescript/typescript-win32-x64"
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/detect-libc"
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/fdir"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.2",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/playwright/node_modules/fsevents"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/fsevents"
+    },
+    {
+      "name": "gsap",
+      "version": "3.15.1",
+      "declaredLicense": "Standard 'no charge' license: https://gsap.com/standard-license.",
+      "development": false,
+      "optional": false,
+      "lockfilePath": "node_modules/gsap"
+    },
+    {
+      "name": "lenis",
+      "version": "1.3.27",
+      "declaredLicense": "MIT",
+      "development": false,
+      "optional": false,
+      "lockfilePath": "node_modules/lenis"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/lightningcss"
+    },
+    {
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-android-arm64"
+    },
+    {
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-darwin-arm64"
+    },
+    {
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-darwin-x64"
+    },
+    {
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-freebsd-x64"
+    },
+    {
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-linux-arm-gnueabihf"
+    },
+    {
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-linux-arm64-gnu"
+    },
+    {
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-linux-arm64-musl"
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-linux-x64-gnu"
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-linux-x64-musl"
+    },
+    {
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-win32-arm64-msvc"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "development": true,
+      "optional": true,
+      "lockfilePath": "node_modules/lightningcss-win32-x64-msvc"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/nanoid"
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "declaredLicense": "ISC",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/picocolors"
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/picomatch"
+    },
+    {
+      "name": "playwright",
+      "version": "1.62.1",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/playwright"
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.62.1",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/playwright-core"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.32",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/postcss"
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.16",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/rolldown"
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "declaredLicense": "BSD-3-Clause",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/source-map-js"
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/tinyglobby"
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "declaredLicense": "Apache-2.0",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/typescript"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.6",
+      "declaredLicense": "MIT",
+      "development": true,
+      "optional": false,
+      "lockfilePath": "node_modules/vite"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "project": "CARGO",
+  "reviewedDate": "2026-11-09",
+  "reviewTimezone": "Asia/Tokyo",
+  "reviewType": "Primary-source public-page review",
+  "container": {
+    "identity": "CARGO / BOX-001",
+    "identityStatus": "Fictional exhibit ID, not an official registration",
+    "type": "20-foot standard general-purpose",
+    "nominalExternalMillimetres": {"length": 6058, "width": 2438, "height": 2591},
+    "nominalExternalMetres": {"length": 6.058, "width": 2.438, "height": 2.591},
+    "dimensionSourceIds": ["S-03", "S-04"],
+    "certifiedPhysicalAsset": false,
+    "manufacturingTolerancesVerified": false,
+    "fittingHoleDimensionsVerified": false,
+    "loadRatingsDisplayed": false,
+    "interiorManufacturerExampleMillimetres": {"length": 5900, "width": 2352, "height": 2395},
+    "doorManufacturerExampleMillimetres": {"width": 2340, "height": 2292},
+    "interiorExampleBoundary": "One Hapag-Lloyd fleet example. Manufacturer-specific, not universal normative dimensions."
+  },
+  "sources": [
+    {"id": "S-01", "url": "https://www.iso.org/standard/76912.html", "title": "ISO 668:2020", "status": "REVIEWED", "sessionRefs": ["turn0view0"], "scope": "Official public abstract and lifecycle", "fullStandardReviewed": false},
+    {"id": "S-02", "url": "https://www.iso.org/standard/86404.html", "title": "ISO 1161:2026", "status": "REVIEWED", "sessionRefs": ["turn2view2"], "publicationMonth": "2026-10", "publicationMilestone": "2026-10-16", "edition": 6, "previousEdition": "ISO 1161:2016", "previousStatus": "Withdrawn", "fullStandardReviewed": false},
+    {"id": "S-03", "url": "https://static-cf.hapag-lloyd.com/content/dam/website/downloads/local_info/HPL-CONTAINER_SPECIFICATION.pdf", "title": "Hapag-Lloyd Container Specification", "status": "REVIEWED", "sessionRefs": ["turn1search8", "turn2view3", "turn5view0"], "dimensionTable": {"pdfPageIndex": 3, "printedPage": 5}},
+    {"id": "S-04", "url": "https://www.bic-code.org/size-type-code/", "title": "BIC size and type code", "status": "REVIEWED", "sessionRefs": ["turn1search2", "turn4view2"]},
+    {"id": "S-05", "url": "https://www.hapag-lloyd.com/en/services-information/cargo-fleet/container/20-standard.html", "title": "Hapag-Lloyd 20-foot Standard", "status": "REVIEWED", "sessionRefs": ["turn1search0", "turn4view3"], "scope": "Example interior, door and classification values; manufacturer variability caveat"},
+    {"id": "S-06", "url": "https://www.imo.org/en/about/conventions/pages/international-convention-for-safe-containers-%28csc%29.aspx", "title": "IMO Convention for Safe Containers", "status": "REVIEWED", "sessionRefs": ["turn0view2"], "scope": "Testing, inspection, approval and maintenance framework; not operational lifting instructions"},
+    {"id": "S-07", "url": "https://www.bic-code.org/marking-of-containers/", "title": "BIC marking guide", "status": "REVIEWED", "sessionRefs": ["turn0view3"]},
+    {"id": "S-08", "url": "https://www.bic-code.org/identification-number/", "title": "BIC identification number", "status": "REVIEWED", "sessionRefs": ["turn4view1"]},
+    {"id": "T-01", "url": "https://github.com/darkroomengineering/lenis/blob/main/README.md", "title": "Lenis official README", "status": "REVIEWED", "sessionRefs": ["turn3search1", "turn4view0", "turn6view2", "turn6view3"]},
+    {"id": "T-02", "url": "https://github.com/darkroomengineering/lenis/blob/main/package.json", "title": "Lenis official package metadata", "status": "REVIEWED", "sessionRefs": ["turn3search3"], "versionObserved": "1.3.27", "installedVersionVerifiedByThisFile": false},
+    {"id": "T-03", "url": "https://github.com/darkroomengineering/lenis/releases", "title": "Lenis releases", "status": "REVIEWED", "sessionRefs": ["turn3search0"]},
+    {"id": "T-04", "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/", "title": "GSAP ScrollTrigger reference", "status": "REVIEWED", "sessionRefs": ["turn1view1", "turn4view4", "turn4view5", "turn4view6"]},
+    {"id": "T-05", "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/", "title": "GSAP matchMedia reference", "status": "REVIEWED", "sessionRefs": ["turn6view1"]},
+    {"id": "T-06", "url": "https://playwright.dev/docs/test-snapshots", "title": "Playwright visual comparisons", "status": "REVIEWED", "sessionRefs": ["turn1view2"]},
+    {"id": "T-07", "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html", "title": "W3C understanding WCAG 2.2 criterion 2.2.2", "status": "REVIEWED", "sessionRefs": ["turn1view3"]}
+  ],
+  "retrievalLimits": [
+    {"url": "https://github.com/darkroomengineering/lenis", "outcome": "Timed out twice; official README subpage was retrieved successfully instead"},
+    {"url": "https://raw.githubusercontent.com/darkroomengineering/lenis/main/README.md", "outcome": "Raw host disabled by retrieval tool; official GitHub HTML README used instead"},
+    {"url": "https://www.bic-code.org/check-digit/", "outcome": "Guessed subpage inaccessible; no claim relies on it"}
+  ],
+  "fictionalElements": ["exhibit identity", "operator", "cargo blocks", "scratch", "seal", "ports", "route", "terminal", "warehouse", "weather", "journey sequence"],
+  "deliberatelyOmittedMetrics": ["cost", "emissions", "travel time", "route distance", "live tracking", "capacity claim", "safe working load"],
+  "technicalBoundary": "Documented current APIs are research inputs. Installed package versions, actual integration and browser behavior require implementation evidence."
+}

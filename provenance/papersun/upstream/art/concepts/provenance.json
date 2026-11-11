@@ -1,0 +1,130 @@
+{
+  "created_date": "2026-11-09",
+  "tool": "image_gen.imagegen (built-in)",
+  "request_parameters": {
+    "transparent_background": false,
+    "referenced_image_paths": "omitted",
+    "num_last_images_to_include": "omitted"
+  },
+  "undisclosed_parameters": [
+    "model identifier",
+    "seed",
+    "sampling settings",
+    "generation size setting"
+  ],
+  "rights": "Original AI-generated artwork created for the user's PAPERSUN build. No named artist, studio, franchise, licensed character, or external source artwork was requested. No exclusivity or third-party-rights clearance is asserted. Distribution of these retained files is part of the requested source deliverable.",
+  "assets": [
+    {
+      "id": "AI-01",
+      "title": "AI-01 \u2014 The absent circle",
+      "file": "art/concepts/ai-01.webp",
+      "original_output": "generated_images/exec-35d517e6-df40-4043-b637-9244e899dfba.png",
+      "prompt": "Use case: illustration-story. Asset type: original PAPERSUN cut-paper theatre hero concept for an immersive English story website. Render ONLY artwork, with absolutely no text, letters, numbers, logos, runes, captions, or UI. Sophisticated physical miniature hand-cut paper theatre, visibly thick fibrous cotton rag paper and matte watercolor grain, tiny irregular knife cuts, soft contact shadows between separated paper planes, single warm practical raking light from the right, straight-on camera, cinematic gentle melancholy. Not origami, not flat vector illustration, no glossy plastic. Landscape wide 16:10 composition. Palette: midnight navy #18233B, cornflower #5A729A, warm ivory #EFE4CF, amber #E5B354, linen thread #A94F45. Hero candidate A \u2014 THE ABSENT CIRCLE. A city of beautifully layered dimensional blue rooftops occupies lower 52 percent. In the upper right sky there is a large perfectly circular CUTOUT HOLE with visibly thick cut cardstock rim and dark almost-black indigo empty space INSIDE. The circle is missing material, emphatically NOT a white moon, not glowing. Huge quiet dark empty area across left 40 percent for an eventual live headline. One single tiny amber-lit attic window at lower-right. Subtle fine red thread starts by this attic and curls over rooftops. Delicate steep roofs, little chimneys, scalloped paper planes, tangible theater-stage shadows. A spectacular tender and elegant composition, sparse rather than cluttered.",
+      "role": "Selected hero concept",
+      "decision": "SELECTED for refined desktop and portrait hero development. The actual image has a visibly physical dark circular cutout upper-right, one amber-lit attic window lower-right, a clear red thread, rich fibrous paper thickness, and a quiet title region across the left. The circle rim is intentionally handmade; exact matching inventory geometry will be authored separately in SVG.",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "art/concepts/ai-01.png",
+        "sha256": "7f16fc40cd41e81370a5f1c43c526f32b57b4667db77b6b79d187e3977bac991",
+        "size_bytes": 2634412,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-01.webp",
+        "source": "art/concepts/ai-01.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 225440,
+        "source_bytes": 2634412,
+        "sha256": "3644e8fcacef1b1e76753277e20fb47dbd0c67e1d53b7693d48219884a360c21",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "AI-02",
+      "title": "AI-02 \u2014 A desk before the journey",
+      "file": "art/concepts/ai-02.webp",
+      "original_output": "generated_images/exec-d7f5b5fd-9b5b-4a91-8195-7ac5e318402a.png",
+      "prompt": "Use case: illustration-story. Asset type: original PAPERSUN cut-paper theatre hero concept for an immersive English story website. Render ONLY artwork, with absolutely no text, letters, numbers, logos, runes, captions, or UI. Sophisticated physical miniature hand-cut paper theatre, visibly thick fibrous cotton rag paper and matte watercolor grain, tiny irregular knife cuts, soft contact shadows between separated paper planes, single warm practical raking light from the right, straight-on camera, cinematic gentle melancholy. Not origami, not flat vector illustration, no glossy plastic. Landscape wide 16:10 composition. Palette: midnight navy #18233B, cornflower #5A729A, warm ivory #EFE4CF, amber #E5B354, linen thread #A94F45. Hero candidate B \u2014 A DESK BEFORE THE JOURNEY. Close-up composition from inside a tiny paper lantern-repair workshop, intimate workbench across lower half, small original pinned paper puppet Mira in a simple faded vermilion coat, amber paper lamp beside her, visible metal paper-fastener joints and a curl of red linen thread. Several tiny disconnected GOLD PAPER OFFCUTS on the desk, NEVER a joined golden disc. Window on right reveals layered distant midnight-blue rooftops, strong warm sidelight and exquisite cut cardstock thickness, tiny scissors and sewing needle. Keep upper-left 40 percent quiet dark warm-indigo workspace for eventual live headline. A tactile original paper stage, never photoreal human, no modern apartment.",
+      "role": "Retained alternative concept",
+      "decision": "RETAINED as a concept and material/character reference; not selected as the opening. The pinned vermilion-coated paper repairer is tactile and charming, with a warm amber lantern and an exceptionally readable left title region. The desk shows more than three small decorative gold offcuts; production use must not treat them as story fragments or use this unmodified frame as inventory evidence. Starting inside the workshop weakens the missing-sun premise.",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "art/concepts/ai-02.png",
+        "sha256": "16e9ee09f318f3304395d3a5276e4b521199603fe34f3bb5b4e17b11c4d25cfe",
+        "size_bytes": 2902850,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-02.webp",
+        "source": "art/concepts/ai-02.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 322000,
+        "source_bytes": 2902850,
+        "sha256": "dacbb771848ddff31dbc63ca5d798fcb547931e6a23f2bf856b3c6852427e0ca",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    },
+    {
+      "id": "AI-03",
+      "title": "AI-03 \u2014 View from the attic",
+      "file": "art/concepts/ai-03.webp",
+      "original_output": "generated_images/exec-369c351e-e58e-4aa5-b6c0-71442f79cd7b.png",
+      "prompt": "Use case: illustration-story. Asset type: original PAPERSUN cut-paper theatre hero concept for an immersive English story website. Render ONLY artwork, with absolutely no text, letters, numbers, logos, runes, captions, or UI. Sophisticated physical miniature hand-cut paper theatre, visibly thick fibrous cotton rag paper and matte watercolor grain, tiny irregular knife cuts, soft contact shadows between separated paper planes, single warm practical raking light from the right, straight-on camera, cinematic gentle melancholy. Not origami, not flat vector illustration, no glossy plastic. Landscape wide 16:10 composition. Palette: midnight navy #18233B, cornflower #5A729A, warm ivory #EFE4CF, amber #E5B354, linen thread #A94F45. Hero candidate C \u2014 VIEW FROM THE ATTIC. Camera inside an angular hand-cut paper attic, warm amber lantern large in left foreground, irregular paper attic rafters frame the image. Through a huge stage window in center/right, multiple planes of deep-blue city rooftops recede. A giant exact circular dark absence cut out of navy sky floats over the rooftops. It is a physical missing paper disc with a thick layered rim and black/navy empty interior, not a moon. Clean quiet dark upper-right area for eventual live headline distinct from circle. Rich depth, strongly separated theatrical planes, delicate curled red linen thread on sill. Cozy interior versus immense dark outside, subtle melancholy, handmade textured paper throughout.",
+      "role": "Retained alternative concept",
+      "decision": "RETAINED as a concept for attic framing and chapter-two depth; not selected as the opening. The window/rafters produce strong theatrical layers and the circular absence is dark rather than luminous. The large foreground lamp and many warm windows compete with the desired single waking lamp, and the title-safe region is on the opposite side from the selected hero.",
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "generation_original": {
+        "file": "art/concepts/ai-03.png",
+        "sha256": "8b84798226baac75e70b1a4405d623e3569d5ff59fddd3bcd945321e13f7a5aa",
+        "size_bytes": 2851835,
+        "included_in_source_zip": false
+      },
+      "archived_asset": {
+        "file": "art/concepts/ai-03.webp",
+        "source": "art/concepts/ai-03.png",
+        "role": "Retained inspectable concept derivative",
+        "dimensions": {
+          "width": 1586,
+          "height": 992
+        },
+        "size_bytes": 298864,
+        "source_bytes": 2851835,
+        "sha256": "4c98bc10fc544c27de64756da8e4e09370b5b33c58b37933f4908d1e0b37fcf4",
+        "encoding": {
+          "format": "WebP",
+          "quality": 88,
+          "method": 6,
+          "resized": false
+        }
+      }
+    }
+  ],
+  "packaging_note": "PNG generation originals remain in the working tree but are excluded from the source ZIP. Each archived_asset is a native-resolution WebP derivative. Hashes in generation_original identify the unmodified generated PNG; archived_asset hashes identify the distributed bytes."
+}

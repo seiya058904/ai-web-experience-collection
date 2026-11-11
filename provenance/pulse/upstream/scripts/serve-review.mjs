@@ -1,0 +1,10 @@
+import { cp } from 'node:fs/promises';
+import { spawn } from 'node:child_process';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+await cp(resolve(root, 'pulse-review.html'), resolve(root, 'dist/pulse-review.html'));
+await cp(resolve(root, 'preview/pulse.html'), resolve(root, 'dist/pulse-offline.html'));
+const server = spawn(process.execPath, [resolve(root, 'node_modules/vite/bin/vite.js'), 'preview', '--host', '127.0.0.1', ...process.argv.slice(2)], { cwd: root, stdio: 'inherit' });
+server.on('exit', code => { process.exitCode = code ?? 1; });
+console.log('Open /pulse-review.html at the printed local address for the isolated CSS-viewport review.');

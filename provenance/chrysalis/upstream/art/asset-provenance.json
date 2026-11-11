@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "reviewedDate": "2026-11-09",
+  "generationCount": 20,
+  "retainedOutputCount": 15,
+  "requiredAI01Through08": "All eight separately generated before production layout",
+  "model": "Not disclosed by the tool; no model, seed or quality setting invented.",
+  "knownProcessing": {
+    "format": "WebP",
+    "quality": 88,
+    "method": 6,
+    "fallbackWidthPixels": 240,
+    "fallbackQuality": 65,
+    "notes": "Format conversion and thumbnail resizing only. Scene edits and background extraction were performed with image_gen."
+  },
+  "assets": [
+    {
+      "id": "AI-01",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-01.png",
+      "productionAsset": "public/assets/ai-01-concept-egg.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide cinematic macro nature image for a flagship scientific editorial website; no typography. Create an extraordinary high fidelity 1536 by 1024 landscape macro photograph-style illustration: ONE ivory-pearl monarch butterfly egg (Danaus plexippus), a tiny domed elongated egg with fine vertical ribs and soft cross ridging, attached naturally to the underside of a common milkweed leaf. Camera at intimate oblique level. One gracefully sweeping pale leaf vein leads from the left foreground diagonally toward the egg at 69 percent width and 60 percent height. Egg is the subject, appearing monumental through the macro lens but physically attached to a matte leaf, never floating. Soft diffuse dawn light from upper right reveals shell ribbing and living leaf hairs, shallow depth of field yet readable egg anatomy. Natural milkweed green #506A3C and shaded leaf #173924, eggshell #E7E7CF. The left upper 40 percent is dark quiet natural leaf blur, intentionally safe for large real DOM text. Bottom right tactile veins are sharp. Restrained museum nature cinema, rich detail, authentic texture. Do not add text, numbers, captions, watermarks, humans, butterfly inside egg, glass egg, fantasy glow, geometric egg, extra eggs or serrated plant margins. One coherent photograph-like composition only.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": null,
+      "role": "Hero concept A: monumental egg",
+      "whereItAppears": "CH-01 concept reference",
+      "selectionStatus": "SELECTED_REFERENCE",
+      "selectionRationale": "Selected for credible shell ribbing, clear leaf contact and dark text-safe left field.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "originalBytes": 2091522,
+      "productionBytes": 121046,
+      "productionSha256": "52dca3cb78698af2b17e2e66b9543ee7a7d7e14b0523e102f690c78e19eee64f",
+      "fallbackAsset": "public/assets/fallbacks/ai-01-concept-egg.webp"
+    },
+    {
+      "id": "AI-02",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-02.png",
+      "productionAsset": "public/assets/ai-02-host.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: 1536 by 1024 landscape macro ecology plate for a scientific editorial website. A gracefully curved common milkweed stem bearing TWO broad oval un-serrated leaves in still early morning air. View from below so a SINGLE tiny ridged pearl monarch butterfly egg attached beneath the forward leaf is visibly identifiable on the lower-right half. Compose leaf and stem in the right two-thirds, leave the entire upper-left third a clean soft dark green meadow bokeh gap suitable for future real DOM headline. Show the ecological plant scale clearly, unlike an extreme egg portrait. Diffuse meadow far in background, no flowers dominating, no other insects, accurate smooth leaf margins and softly branching leaf veins. Gentle side-light from upper-right, real matte plant texture with subtle hairs, natural milkweed green and pearl palette. The egg should be tiny relative to the leaf but perceptible as one small light speck with ridges. Museum natural history cinema: serene, composed, very high detail on plant, optical soft background. No typography, no labels, no numbers, no logos, no watermarks, no glowing effects. Do not turn this into a grassland stock landscape or butterfly swarm.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": null,
+      "role": "Hero concept B: host ecology",
+      "whereItAppears": "CH-02 production plate",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Rejected as hero because egg becomes a small secondary subject; retained as strong host-plant plate.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "originalBytes": 2041667,
+      "productionBytes": 120074,
+      "productionSha256": "5081482e62188f56aedf89871d57aab39f59833f82a441f1af8716a8bf2a2802",
+      "fallbackAsset": "public/assets/fallbacks/ai-02-host.webp"
+    },
+    {
+      "id": "AI-03",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-03.png",
+      "productionAsset": "public/assets/ai-03-veins.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide 1536 by 1024 editorial macro nature image. An oblique close view looking along a network of branching common milkweed leaf veins: the veins feel like a living cartography. At the right-of-center focal junction stands ONE naturally attached tiny monarch butterfly egg, pearl pale cream with delicate vertical ribbing, accurately domed shape. Low grazing warm sunlight from right reveals shell ribs and matte leaf microtexture with a few tiny natural moisture beads. Strong near/far separation in the leaf plane, dark calm upper third and upper-left reserved for typography that will be added in code. Leaf veins lead into egg, two or three main branches rather than a dense arbitrary spiderweb. Scientific macro cinema, credible biological scale, green #506A3C, deep shaded #173924, pearl #E7E7CF with subtle gold dawn. No letters or numbers, no infographic overlays, no UI, no luminous veins, no glass shell, no false visible insect inside, no extra eggs, no fantasy particles, no watermarks.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": null,
+      "role": "Hero concept C: vein cartography",
+      "whereItAppears": "Concept evidence; leaf texture reference",
+      "selectionStatus": "SELECTED_REFERENCE",
+      "selectionRationale": "Alternative warm oblique framing retained to prove materially distinct concept exploration; A gives stronger pearl shell detail.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "originalBytes": 1868996,
+      "productionBytes": 97476,
+      "productionSha256": "92fa03deaadd9f6554932a60b8706917da418a2f1f844d05e4cd23e93d0d3492",
+      "fallbackAsset": "public/assets/fallbacks/ai-03-veins.webp"
+    },
+    {
+      "id": "AI-04",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-04.png",
+      "productionAsset": "public/assets/ai-04-hero.webp",
+      "prompt": "Use case: precise-object-edit. EDIT TARGET: the supplied macro monarch egg candidate A. Refine this exact selected composition as the final 16:9 desktop backplate for CHRYSALIS, ideally 1792 by 1024. Preserve the SAME single egg identity, orientation, size, placement near 70 percent width and 57 percent height, SAME main curved leaf vein running diagonally from lower left into egg, SAME palette and upper-right daylight. Retain entire matching leaf background and natural contact; do not extract or duplicate the egg. Improve only shell rib delicacy: very fine pale opaque pearl vertical ridges with restrained cross-ridging, anatomically credible tiny monarch egg, matte not glass. Slightly calmer leaf hairs and softer background, preserve crisp shell and veining at focal plane. Dark quiet left 40 percent and top-left should remain naturally empty, suitable for a large real webpage title. Light should be elegant green dawn, not yellow studio glow. Full unbroken photographic plate; no blank holes, separate panels, labels, text, logos, UI, particles, butterfly visible inside, extra egg or detached objects. No crop that loses the subject or distinctive vein. This is a scientifically informed digital nature illustration, not microscopy.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "art/generated/AI-01.png",
+      "role": "Refined desktop hero",
+      "whereItAppears": "CH-01 production; shell comparison reference",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "True reference edit of AI-01 preserving egg orientation and main leaf vein, calmer texture and wide left-safe frame.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1851649,
+      "productionBytes": 90928,
+      "productionSha256": "e5d48a6801e91415f09b0d1eda87a903740b9e0e2f6cd541b1a68b609ee72639",
+      "fallbackAsset": "public/assets/fallbacks/ai-04-hero.webp"
+    },
+    {
+      "id": "AI-05",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-05.png",
+      "productionAsset": "public/assets/ai-05-mobile.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: purpose-built portrait hero background for a 390 by 844 mobile webpage, render 1024 by 1792 portrait. A NEW VERTICAL composition, not a horizontal photo crop: the underside of a common milkweed leaf arcs up along the right border and curves diagonally through the lower half, one delicate tiny monarch egg with opaque pearl shell and fine vertical ribs attached near 60 percent width and 65 percent height. A pale curved leaf vein runs upward from lower-left toward the egg, and then toward right top; coherent real venation and softly hairy matte texture. Top 46 percent of image is nearly uniform deep natural green optical blur reserved for large future DOM title, no distracting leaf there. The egg is approximately 13 percent image width and clearly visible, never cut off. Palette shaded green #173924, milkweed #506A3C, eggshell #E7E7CF. Soft dawn light from upper right, crisp useful focus on ribbed shell and contact surface, exquisite scientific macro cinema. No text, no letters, no numbers, no UI, no border, no extra eggs, no glowing fantasy shell, no transparent egg, no sharp serrated leaf margins. Keep composition quiet and serious.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": null,
+      "role": "Purpose-built portrait hero",
+      "whereItAppears": "CH-01 mobile production",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Independent vertical leaf arc; generous top negative space and protected egg at lower middle. Not a center crop.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 948,
+        "height": 1659
+      },
+      "originalBytes": 1958196,
+      "productionBytes": 100468,
+      "productionSha256": "ecacc58fead50a83eb6c78dd8953754339ac8256d889f66bd25aa51c60b015a9",
+      "fallbackAsset": "public/assets/fallbacks/ai-05-mobile.webp"
+    },
+    {
+      "id": "AI-06",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-06.png",
+      "productionAsset": "public/assets/ai-06-jade.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: 1792 by 1024 widescreen scientific nature cinema macro backplate. ONE monarch butterfly chrysalis, Danaus plexippus, hanging vertically from a physically visible tiny white silk pad on the underside of a slim gently arcing milkweed stem across the upper third. Chrysalis attached by a short black cremaster, never a long string; visible accurate connection. Place jade pupa at 72 percent width, fully inside frame from about 27 to 77 percent height. Characteristic monarch green opaque rounded tapered teardrop shell, subtle abdominal segmentation, a delicate metallic gold-dotted line near the upper shoulder and a few very tiny gold points on lower body, NOT jewelry. Natural surface soft matte jade #5B8D69, not faceted gemstone or glass. Soft directional sunlight from upper right; plant leaves and meadow are diffuse green #173924 background. Left 45 percent quiet dark forest-green blur for future DOM narration. Exquisite high-magnification physical detail with real weight and believable support, enough depth of field to see both silk pad and shell. No cocoon web wrapping shell, no rope, no fantasy particles, no extra pupae, no ghost butterfly, no text, labels, numbers, UI or watermarks. One continuous composed photographic illustration.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": null,
+      "role": "Jade chrysalis climax",
+      "whereItAppears": "CH-07 exterior; CH-08 exterior; CH-09 early",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Opaque jade, tiny gold marks, physically visible short cremaster and silk pad; no jewel effects.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1765576,
+      "productionBytes": 70836,
+      "productionSha256": "4aa078957af8b5889804ef3ccf3d1d938e661e81788a8c4d0f733b9ec60bf4a3",
+      "fallbackAsset": "public/assets/fallbacks/ai-06-jade.webp"
+    },
+    {
+      "id": "AI-07",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-07.png",
+      "productionAsset": "public/assets/ai-07-emergence.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied jade chrysalis nature macro. Generate the later biological scene with SAME leaf stem, camera, dark green background, silk pad at x69 percent y20 percent, upper-right sunlight, and 1792 by 1024 canvas. Now one monarch butterfly has JUST emerged and is hanging vertically, gripping its empty chrysalis with feet. The same empty shell is pale and collapsed but still attached by its black cremaster to the silk pad. Below shell, the adult has a swollen segmented black-and-white body and small soft crumpled orange-black wings, only partially unfolded, visibly much shorter than final full adult wings. Wings carry monarch vein pattern and white spotted black borders. Gravity points straight down. Show entire butterfly and support, no clipped body. Fine delicate legs genuinely contact shell. Subject stays on right, left 45 percent dark green negative space. Biological photorealistic digital nature illustration, wet tender texture, controlled quiet light; never gore. Do NOT give it fully expanded stiff wings, extra wings, duplicate insects, giant compound eyes, floating shell, glowing effects, labels, text, numbers, UI or watermarks. Preserve plant setting exactly; this single coherent scene is the early emergence state, not a collage or fake sequence.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "art/generated/AI-06.png",
+      "role": "Early adult emergence",
+      "whereItAppears": "CH-10 first emergence posture",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Same stem and silk pad as AI-06; empty shell supports swollen adult with small crumpled wings.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1799794,
+      "productionBytes": 88490,
+      "productionSha256": "3477e380470adc10ac87f968ba173b76f0de723897dfda2357c53e12984fa909",
+      "fallbackAsset": "public/assets/fallbacks/ai-07-emergence.webp"
+    },
+    {
+      "id": "AI-08",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-08.png",
+      "productionAsset": "public/assets/ai-08-pattern.webp",
+      "prompt": "Use case: precise-object-edit. EDIT TARGET supplied monarch chrysalis macro. Change ONLY the chrysalis surface to a later maturation midpoint: keep identical silhouette, exact silk pad, black cremaster, stem geometry, camera, position, scale, lighting and 1792 by 1024 canvas. The shell still has a coherent real surface and same gold ridge, but darker brown-black wing vein outlines and muted copper-orange patches can now be seen immediately beneath it as it matures. Upper area retains subtle jade green, lower folded wing region shows dark pattern, neither fully transparent glass nor an exploded cutaway. Adult is enclosed, no legs or wings poking out, no floating ghost butterfly. The chrysalis is still a single suspended physical object. Preserve opaque high fidelity shell contact and same leaf background, quiet dark green left 45 percent for future DOM narration. Scientific macro photograph-like illustration, restrained delicate real textures, no extra pupa, text, numbers, labels, UI, special effects or watermarks.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "art/generated/AI-06.png",
+      "role": "Maturing patterned pupa midpoint",
+      "whereItAppears": "CH-09 late stage; TR-08-09 midpoint reference",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Reference edit of AI-06 maintains silk pad, shell contour and background while bringing wing pattern beneath coherent shell surface.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1739721,
+      "productionBytes": 69906,
+      "productionSha256": "12540437f17791ac0d1f4e6f78e3a573f6b653d47259b4fc782d52a164785576",
+      "fallbackAsset": "public/assets/fallbacks/ai-08-pattern.webp"
+    },
+    {
+      "id": "AI-09",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-09.png",
+      "productionAsset": "public/assets/ai-09-hatch.webp",
+      "prompt": "Precisely edit the attached image. Keep the entire egg, leaf, caterpillar body and head, camera, position, lighting, colors and wide composition unchanged. There is one specific visible defect: a row of black spikes/legs under the pale caterpillar to the RIGHT of the egg. REMOVE THE ENTIRE ROW OF BLACK SPIKES UNDER THE CATERPILLAR, from its tail all the way to just behind its black head. All those underside spikes must disappear. Replace that tiny area with the softly raised GREEN LEAF VEIN in the foreground, so the caterpillar is resting lower behind that vein and ALL OF ITS FEET ARE NATURALLY OCCLUDED by the leaf edge. The underside of this tiny caterpillar must appear resting flush on the leaf, with no gap and no pointy legs sticking down. No ventral anatomy is displayed; the feet are hidden. Do not remove the black head, body hairs, pale rounded body segments, or opened egg. Do not move or resize anything. No added text or objects. This is a scientific illustration correction: invisible feet are preferable to invented spiky abdominal legs. Only the minute lower contact edge beneath the caterpillar changes.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "AI-09 initial hatchling candidate; rejected and not distributed",
+      "role": "Hatchling and opened shell",
+      "whereItAppears": "CH-03 hatch",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Preserves the hero egg, opened shell, leaf vein and tiny pale hatchling. Selected third anatomy edit removes false posterior pointed legs by naturally occluding the entire ventral contact line along the leaf. True legs are not visible in this observation angle; CH-04 supplies the separate visible-anterior-contact study.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1831995,
+      "productionBytes": 91028,
+      "productionSha256": "82b82c999e8a4516329ab1cd83467ce6bf2cc27bb805361922a16c5382d8b6fc",
+      "fallbackAsset": "public/assets/fallbacks/ai-09-hatch.webp",
+      "revisionHistory": [
+        {
+          "retained": false,
+          "reason": "Initial hatchling rendered repeated hard pointed abdominal contacts. Independent review requested correction.",
+          "prompt": "Use case: precise-object-edit. Edit target: the supplied macro monarch egg on milkweed leaf. Preserve exact leaf identity, same curved pale main vein, angle, dark left 40 percent, green dawn lighting and 1792 by 1024 wide frame. Show just AFTER hatching at the egg location on right: the single ribbed pearl eggshell now has a small irregular opening at its top, no lid flying. One TINY newly hatched first-instar monarch caterpillar is beside the shell, crawling a short distance along the same vein to the right. Its body length roughly 1.5 to 2 times egg height; pale translucent cream with fine short hairs, faint markings and distinct small black head, NOT a thick mature boldly striped caterpillar. Show its tiny actual legs at leaf contact. Keep only one larva and one shell, retain identifiable ribbed egg base and realistic eaten opening, no duplicated ghost layers. Useful focus on shell and tiny larva, serene scientific natural history illustration with shallow background. No cartoon face, smiling insect, huge antennas, full grown caterpillar, shell shattering, glowing effects, labels, text, numbers, logo or UI."
+        },
+        {
+          "retained": false,
+          "reason": "Narrow underside revision retained posterior pointed contacts and was rejected.",
+          "prompt": "Use case: precise-object-edit. Edit target is the supplied macro image of a single opened monarch eggshell with a TINY pale newly hatched caterpillar crawling right beside it. Make ONLY a narrow biological correction to the caterpillar's underside. Preserve the EXACT opened eggshell, leaf identity, main vein, insect body position and length, tiny black head at right, pale translucent early-instar appearance, camera, framing, focus, light, color and full landscape canvas. The current row of narrow black pointed legs continuing along the abdomen is inaccurate: REMOVE those posterior hard pointed legs. Retain only THREE near-side small jointed true legs directly behind the black head at the RIGHT/front end. The abdominal underside has FOUR pairs of soft broad rounded flesh-colored prolegs in its middle plus the terminal anal pair at rear; they must not look like hard black needles. Prefer a natural low resting posture in which the leaf vein/leaf surface gently occludes most abdominal contacts: no visible row of spiky legs in the middle or at the tail. At most two or three subtle pale broad rounded proleg contacts may be partly visible; the others can be hidden behind the leaf and body. No change to body segmentation, tiny size, head direction or original leaf geometry. Maintain one larva, one shell, no mature bands, no cartoon face, no additional objects, text, labels, UI or watermark."
+        },
+        {
+          "retained": false,
+          "reason": "Narrow underside revision retained posterior pointed contacts and was rejected.",
+          "prompt": "Use case: precise-object-edit. IMAGE ONE is the EDIT TARGET: egg plus tiny hatchling on the leaf, black head at RIGHT. IMAGE TWO is an anatomy-rendering reference ONLY: the corrected feeding caterpillar, where posterior legs are hidden and only three anterior legs show. Make image one's larval underside use that same safe occlusion treatment. Specifically ERASE EVERY dark pointed appendage beneath the abdomen and tail LEFT of the three legs nearest the right-hand head. In image one, the erroneous posterior points are roughly at x1298,1340,1376,1417 and their neighboring counterparts; replace them with real green leaf surface and gentle natural contact occlusion. No hard black spikes must remain under the left two-thirds of the larva. Keep just three small near-side jointed legs directly behind the RIGHT-hand black head, around the frontmost body portion. Abdominal soft prolegs are real but concealed by the body and leaf surface in this pose: do not depict them as new visible points. Preserve image one's egg, open shell rim, body shape and position, green leaf geometry, main vein, exact camera, color, negative space and full canvas. Do not copy image two's composition or feeding notch. Change only the tiny underside contact region of image one. The hatchling is pale and tiny, not a mature striped caterpillar. No added text, diagram, labels, border or objects."
+        }
+      ],
+      "observationLimit": "All ventral feet are occluded by leaf contact in this image. It must not be used to illustrate or count larval legs."
+    },
+    {
+      "id": "AI-10",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-10.png",
+      "productionAsset": "public/assets/ai-10-feeding.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: provided first-instar monarch caterpillar eating the milkweed leaf. Preserve its exact tiny pale translucent body, black head at the same fresh feeding notch, leaf shape/vein, camera, lighting and all negative space. Make a narrow scientific leg-anatomy correction. Caterpillars have only THREE pairs of slender true legs immediately behind the head; rear abdominal prolegs are soft broad flesh and not hard black pointed walking legs. Show just THREE delicate near-side true legs directly behind head. The leaf edge should naturally obscure most abdominal prolegs as the body rests on its far side: remove the row of exposed black pointed legs underneath the posterior body, replacing with a believable gentle contact shadow/leaf occlusion, with at most two subtle pale rounded proleg contacts barely visible. Do not change body length/position or feeding damage. This must still look like a real tiny early instar, not a toy or a mature striped larva. No added objects, text, annotations, UI or watermark. Keep same landscape canvas.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "AI-10 initial feeding candidate; rejected and not distributed",
+      "role": "First meal at leaf margin",
+      "whereItAppears": "CH-04 feeding",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Fresh notch is at mouth. Refined leg rendering keeps three anterior true-leg contacts and occludes abdominal contact behind leaf.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "revisionHistory": [
+        {
+          "retained": false,
+          "reason": "Initial image overstated hard pointed posterior legs. Refined before handoff.",
+          "prompt": "Use case: photorealistic-natural. Reference image establishes the SAME tiny pale newborn first-instar monarch caterpillar, host milkweed leaf and green dawn atmosphere. Generate a new 1792 by 1024 wide macro shot slightly farther along that leaf, centered on the young larva's FIRST MEAL at a thin tender leaf margin. Single translucent pale cream caterpillar with tiny black head, faint markings and fine short hairs, about same small proportions as reference, no mature bold bands. Caterpillar sits on right 60\u201382 percent of composition, head at the leaf's exposed edge where a small freshly eaten scalloped notch is clearly visible EXACTLY at its mouth. Accurate small true forelegs plus discreet prolegs grip the leaf, never cartoon teeth. Show a second untouched stretch of the same thin green leaf edge to make feeding difference visible. Soft main vein passes lower third as continuity signature. Upper-left and entire left third dark natural green blur for future narration. Warm diffuse upper-right sun, macro optical beauty, matte foliage with useful sharp focal plane. No egg needed in this new closeup. No random holes elsewhere, no duplicate larvae, no heavy yellow-black adult caterpillar, no fantasy glow, no text, numbers, UI, logos or watermarks."
+        }
+      ],
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1998493,
+      "productionBytes": 125364,
+      "productionSha256": "de6fec492cd97f117897825b63342a1e483423f1dbff18262b1d0e743554a4eb",
+      "fallbackAsset": "public/assets/fallbacks/ai-10-feeding.webp"
+    },
+    {
+      "id": "AI-11",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-11.png",
+      "productionAsset": "public/assets/ai-11-j-hang.webp",
+      "prompt": "Use case: precise-object-edit. Correct TWO specific biological errors in the supplied J-hanging monarch caterpillar illustration while keeping its same curved J body pose, exact stem/camera/background and 1792 by 1024 composition. (1) The larva at the TOP attaches by its REAR anal prolegs pressed directly into the white silk pad. REMOVE the narrow black pupal cremaster/stalk between body and silk; larval rear meets silk directly. (2) Remove excessive rounded prolegs down the abdominal underside. Monarch larvae have FOUR pairs of abdominal prolegs grouped in the middle (A3\u2013A6), plus one terminal pair at the rear attachment, and only THREE pairs of slender true legs on the thorax just behind the black head at bottom of J. Show exactly FOUR rounded near-side abdominal prolegs in the middle, no row of eight rounded feet; preserve clear gaps without legs near rear and behind thorax. Only three near-side slender true legs behind head. Far-side legs can be occluded. Keep natural monarch black white yellow banding and two front/two rear filaments. Head is lower curled end. Serious anatomical correction, no toys. No text, labels, UI, extra larva or magical effects.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "AI-11 initial hanging candidate; rejected and not distributed",
+      "role": "J-hanging mature larva",
+      "whereItAppears": "CH-06 support; CH-07 larval comparison",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Corrected initial overabundant prolegs and removed incorrect pupal cremaster from larval attachment; rear directly meets silk pad.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "revisionHistory": [
+        {
+          "retained": false,
+          "reason": "Initial image had excessive abdominal prolegs and a retained black pupal attachment. Corrected before handoff.",
+          "prompt": "Use case: precise-object-edit. Edit target is the supplied jade chrysalis on milkweed stem. Keep SAME gently arcing stem crossing near top, silk pad at x69 percent y20 percent, exact camera/lighting/background and 1792 by 1024 canvas. Replace chrysalis with its immediate earlier stage: a mature monarch caterpillar (Danaus plexippus) hangs in characteristic J shape, its REAR end with anal prolegs anchored directly into that small silk pad beneath stem; body hangs down vertically, then bends upward slightly at the bottom so the head curls up. Body gravity and attachment plausible. Distinct natural thin white, yellow and black transverse bands, accurate segmented larva, two long flexible black sensory filaments near head and a shorter pair near rear, no antenna forest. The head is at LOWER end of the J, not attached to pad. Its many segments with true thoracic legs and fleshy prolegs are visible but not exaggerated. Dark green left 45 percent clear for future text; rich matte caterpillar skin and soft green upper-right side light. One larva only, no chrysalis left behind, no long string/rope, no floating body, no shiny shell, no cartoon face. High fidelity scientific macro illustration. No text, numbers, UI, logo or watermark."
+        }
+      ],
+      "actualDimensions": {
+        "width": 1660,
+        "height": 948
+      },
+      "originalBytes": 1746947,
+      "productionBytes": 84942,
+      "productionSha256": "3a119c5251d78f58f89397e91e76f0b3cef9340b02ec8d2e2009943b8799e607",
+      "fallbackAsset": "public/assets/fallbacks/ai-11-j-hang.webp"
+    },
+    {
+      "id": "AI-12",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-12.png",
+      "productionAsset": "public/assets/ai-12-adult.webp",
+      "prompt": "Use case: photorealistic-natural. Reference establishes our original milkweed habitat: preserve its two broad oval softly hairy leaves, green upright stem on right, clean upper-left negative space and soft meadow background; recompose subtly into 1792 by 1024 landscape finale with same plant identity. ONE mature monarch butterfly (Danaus plexippus) rests at the upper edge of the forward leaf on right half of image, about x72 percent/y50 percent. Its fully established orange wings are open to a shallow V, front three-quarter view shows correct black venation and white-spotted black outer borders. A slender black-and-white body, fine antennae and proper delicate legs touching leaf. Adult entire silhouette within frame, magnificent but biologically believable size relative to plant. Remove the original egg; this is the same individual's later life. Butterfly should be distinctly separated from background with clean edges for later foreground extraction; no overlap hidden behind leaves. The leaf main vein remains clear below as a familiar landmark. Dawn has become a softly warm summer morning, muted copper #C8703A, black #1F1C1C, quiet green #173924. Maintain left 40 percent dark green bokeh for DOM ending text. Not migration, no swarm, no extra eggs or insects, no fantasy particles, labels, text, numbers, logos or UI.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "art/generated/AI-02.png",
+      "role": "Mature adult at original host",
+      "whereItAppears": "CH-11 full-composition reference/still fallback",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Expanded monarch-pattern wings on recognizable two-leaf host, no leftover egg or extra butterfly.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 2131368,
+      "productionBytes": 157894,
+      "productionSha256": "823130257638dfeb1b7bbdc6ecbf49b4c2f8debaaeadfb0a4094818f4beb5e0d",
+      "fallbackAsset": "public/assets/fallbacks/ai-12-adult.webp"
+    },
+    {
+      "id": "AI-13",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-13.png",
+      "productionAsset": "public/assets/ai-13-meadow.webp",
+      "prompt": "Use case: precise-object-edit. EDIT TARGET supplied adult monarch on milkweed. Remove ONLY the butterfly, including its wings, body, all legs, antennae and any tiny cast butterfly shadows. Reconstruct the plant leaf, leaf-edge hairs and blurred meadow that were hidden behind it. Keep EXACT same 1792 by 1024 composition/camera, same leaf position and contours, same stem geometry, same light and colors, all pixels outside removed insect unchanged as closely as possible. Need a CLEAN BACKPLATE for animation: absolutely no butterfly, insect, duplicate silhouette, ghost edge, remnant leg or orange patch anywhere. Preserve whole natural leaf and matte texture, no empty holes, no transparency, no labels or typography. One coherent macro nature image.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "art/generated/AI-12.png",
+      "role": "Final clean plant backplate",
+      "whereItAppears": "CH-11 departure background",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Generated removal of AI-12 adult, leaving coherent original milkweed and no duplicated butterfly or exposed hole.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 1974298,
+      "productionBytes": 132716,
+      "productionSha256": "6495dd5a42e89513ba285e4e1415f6b1d1631f84e2ae539d113b1058aaf14974",
+      "fallbackAsset": "public/assets/fallbacks/ai-13-meadow.webp"
+    },
+    {
+      "id": "AI-14",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-14.png",
+      "productionAsset": "public/assets/ai-14-butterfly.webp",
+      "prompt": "Use case: background-extraction. EDIT TARGET supplied adult monarch resting on milkweed. Create a clean genuine TRANSPARENT-background isolated cutout of ONLY that exact single monarch butterfly, including delicate legs and antennae. Preserve its exact orange-black wing markings, shallow V wing pose, lighting, body orientation and shape. Remove ALL plant, meadow, green foliage, leaf, stem, shadows on foliage; alpha transparency everywhere else. Keep same full landscape canvas dimensions and the butterfly at the SAME coordinates and scale as source so this foreground can be overlaid on its matching backplate with no camera change. Do not center or enlarge, do not invent new insect, do not leave opaque green pixels or leaf pieces between legs and antennae. Anti-aliased clean realistic edges without halo, no white background, no painted checkerboard, no text or borders. Preserve natural black wing-border white spots.",
+      "parameters": {
+        "transparent_background": true
+      },
+      "reference": "art/generated/AI-12.png",
+      "role": "Final transparent adult foreground",
+      "whereItAppears": "CH-11 departure foreground",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Generated alpha extraction preserving adult scale, position, markings and full-canvas coordinates.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1659,
+        "height": 948
+      },
+      "originalBytes": 273653,
+      "productionBytes": 51660,
+      "productionSha256": "fc46a1f05f17793df2521e5729fd18a8af842ec74a5ed33f384e37692ba99d2b"
+    },
+    {
+      "id": "AI-15",
+      "tool": "image_gen.imagegen (built-in)",
+      "retainedOriginal": "art/generated/AI-15.png",
+      "productionAsset": "public/assets/ai-15-unfolding.webp",
+      "prompt": "Use case: precise-object-edit. EDIT TARGET supplied just-emerged monarch hanging from empty chrysalis. Generate next later wing-expansion posture with EXACT same stem, background, silk pad, empty shell location, body head position, contact of legs and 1792 by 1024 canvas. Only the adult's soft orange-black wings have expanded downward into substantially broader longer wings, about 1.5x previous visible wing length, still held vertically together with slight natural folds, NOT spread into flight. Abdominal swelling subtly smaller. Keep exactly same monarch markings coherently unfolded, black white-spotted borders and true venation. Keep butterfly entirely inside frame, shift lower tip minimally only if absolutely necessary. Tiny feet still firmly contact empty shell. No duplicate butterfly, wing ghosting, fragments, change of support, tense time claims, text, labels, numbers, UI or watermarks. Scientific natural-history digital macro illustration, not timelapse measurement.",
+      "parameters": {
+        "transparent_background": false
+      },
+      "reference": "art/generated/AI-07.png",
+      "role": "Wing expansion posture",
+      "whereItAppears": "CH-10 second emergence posture",
+      "selectionStatus": "SELECTED",
+      "selectionRationale": "Same shell/feet/stem as AI-07; visibly broader longer wings, still hanging and not flying.",
+      "rights": "Generated for this project with the authorized built-in image tool. No external photo or artwork was downloaded or republished. Use remains subject to the service terms and applicable law; no guarantee of exclusive copyright is asserted.",
+      "interpretation": "Scientific digital illustration, not microscopy, not a photograph of a documented individual or a measured time sequence.",
+      "actualDimensions": {
+        "width": 1660,
+        "height": 948
+      },
+      "originalBytes": 1748178,
+      "productionBytes": 88906,
+      "productionSha256": "bab07cf9869c8aa91826b1c1133316b7c653db824fea4899578bc0f81e935fa6",
+      "fallbackAsset": "public/assets/fallbacks/ai-15-unfolding.webp"
+    }
+  ]
+}

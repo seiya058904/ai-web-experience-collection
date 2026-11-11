@@ -1,0 +1,204 @@
+{
+  "created": "2026-11-09",
+  "note": "No seed, model version, or quality setting returned by the generation tool; none is claimed. WebP conversion is a faithful format/size optimization; all semantic edits used image generation.",
+  "images": [
+    {
+      "id": "AI-01",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 hero art concept A for CARGO, a museum-quality immersive editorial website about a fictional freight container. Generate a monumental, exceptionally detailed industrial photograph from ground level, 24mm architectural lens, beneath a colossal mechanically credible ship-to-shore gantry crane at cool foggy dawn. One single grounded worn oxidized freight-red 20-foot corrugated shipping container occupies the lower right middle, with four visible structural corner locations, real door hinges and two vertical locking bars, a small unique diagonal rust scratch near upper-right door. The box rests firmly on concrete with a contact shadow. Massive graphite crane legs and beam hierarchy frame the sky. Quiet docks and tiny distant stacks disappear into soft sea mist. Rich tactile gray steel, subtle amber morning light from upper right, cinematic but truthful scale. Left 42 percent is low-detail gray-blue fog/sky for real DOM text added later. No letters, numbers, logos, labels, writing, UI or watermark. No hanging or floating box; do not include multiple red containers. Composition should be complete and highly polished, reserved and breathtaking.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "retainedPath": "art-direction/AI-01.webp",
+      "productionPath": null,
+      "selection": "Concept selected for refinement",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-02",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 alternative hero concept B for CARGO. An industrial object portrait: one complete worn freight-red 20-foot corrugated shipping container grounded in a huge minimal real concrete warehouse. Near orthographic 50mm view, three-quarter view showing long side and closed rear double doors, correct corner castings, real hinges and two slender vertical locking bars. Rich realistic enamel paint #A64B3B, tactile scuffs, unique diagonal rust scratch near upper-right door; grounded shadow and no floating. Wide empty warehouse floor and quiet cool gray wall occupy left half, container in right half. Slant of soft amber side light reveals steel and concrete; dark structural graphite, fog gray, restrained architectural photography, complete crisp subject. No logos, letters, numbers, labels, printed text, UI, watermark. This is a heavy freight object, never consumer packaging.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "retainedPath": "art-direction/AI-02.webp",
+      "productionPath": "public/media/warehouse.webp",
+      "selection": "Alternate hero rejected; retained as object/door reference",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-03",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 alternative hero concept C for CARGO. Elevated oblique 50mm architectural photograph of a fictional intermodal port terminal beside a gray-blue sea horizon. Orderly generic road tractors and correctly supported trailers in one lane, parallel straight freight railway lines and physically grounded rail wagons in another, geometrically coherent stacked neutral charcoal and gray containers on concrete. Select only one oxidized freight-red 20-foot box naturally by warm light near center-right on a road chassis, with convincing scale and no glow. The visual premise is the elegant geometry of three transport modes. Upper 35 percent calm fog and overcast sky forms a quiet empty title area. Tactile realistic corrugations and hardware, cinematic cool morning haze with amber sidelight. No logos, brands, numbers, text, labels, infographic UI, fantasy geometry or watermark. No duplicate red containers, no impossible wheelbase, no floating boxes.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "retainedPath": "art-direction/AI-03.webp",
+      "productionPath": null,
+      "selection": "Alternate hero rejected; retained as intermodal reference",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-04",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Refine this selected hero photograph for CARGO. Preserve the exact red container identity from reference, its two door rods, the diagonal scratch on its upper-right door, its proportions and grounded position. Create an extraordinarily polished LANDSCAPE 16:10 ultra-high detail industrial photograph, composed for a 1440x900 browser. A colossal steel ship-to-shore gantry with plausible structural beam hierarchy, port at misty dawn, grounded solitary red 20-foot box in lower-right third. Keep 40% of LEFT side calm, light gray-blue fog, with no major structures crossing that left text-safe zone. Warm light from upper right, damp concrete contact shadow, detailed corrugations and cast corner fittings. Refine image1 into a cleaner composed final, slightly more distant crane to reveal architectural scale. No lettering, no logos, no labels, no UI, no numbers, no watermark. Only ONE red box, no duplicated box in background. Steel and concrete are photoreal with believable geometry. This is a final website background plate; all typography will be real DOM separately.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-04.webp",
+      "productionPath": "public/media/hero.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-05",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Using reference ONLY for the exact red box identity, materials, diagonal upper-right door scratch, two vertical door rods and cold-fog / warm right-side light palette, create a wholly RECOMPOSED vertical PORTRAIT 9:19.5 photograph for a 390x844 phone website, not a horizontal crop. Low dock-level viewpoint looks upward beside one colossal gantry leg toward its beam in high fog. The same grounded red 20-foot box is substantial in lower middle, visible from three-quarter rear, with ground plane and contact shadow. Upper 40% is very quiet misty pale sky reserved for real English DOM headline later. Crane leg runs up far right side, not across title-safe left/top region. Container complete and not cropped. Monumental architectural photography, beautifully tactile oxidized steel, no labels, logos, numbers, text, lettering, UI, watermark, floating cargo or duplicate red boxes.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 887,
+        "height": 1774
+      },
+      "retainedPath": "art-direction/AI-05.webp",
+      "productionPath": "public/media/hero-mobile.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-06",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Use the reference red container as the identity reference. Generate a final LANDSCAPE 16:10 industrial photograph for the CARGO chapter The Lift: one and only one red 20-foot container with the same enamel, two door rods and diagonal rust scratch at upper-right door is lifted at a fictional port by a mechanically credible steel crane SPREADER rectangle engaged directly at the four top corner fitting locations. Spreader fits the box length and width exactly. Four taut vertical lifting cables rise from the spreader to the trolley high in a massive graphite ship-to-shore gantry. No sling, straps or disconnected crane. Three-quarter clear view, box suspended only a short controlled distance above the grounded neutral stacks, close to the side of a real ship. Small distant catwalk shows scale. Right 65% holds full box, hardware, dark textured ship hull and cranes; left 35% has calm deep graphite mist for white DOM type added later. Soft warm sidelight from upper right, cold blue-gray fog, photoreal corrugation and contact between spreader and corners. Full-frame masterpiece of credible industrial photography. No text, labels, logos, numbers, watermark or second red box.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-06.webp",
+      "productionPath": "public/media/lift.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-07",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Generate a final LANDSCAPE 16:10 photograph for CARGO chapter Open Water. Reference image supplies the red container identity and tactile industrial palette only. An immense realistic modern unbranded container ship seen from a restrained high aerial oblique distance sails through vast layered cold gray-blue ocean. One small red 20-foot container is securely seated within aligned neutral gray and muted beige deck stacks toward the forward half, never hovering. Its red color is subtle but distinct, no other bright red container. White bridge near aft, dark graphite hull, credible bow wake, calm honest small sea ripples and low fog horizon. Vessel occupies right half and lower-right quadrant, broad almost empty ocean on left for large white English DOM title later. Exquisite large scale, maritime midnight #102A3D, sea light #D8E1DD, subtle warm sidelight on boxes. No fantastical waves, storm, text, numbers, logos, UI, watermark, floating cargo.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-07.webp",
+      "productionPath": "public/media/sea.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-08",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Preserve the reference lift photograph's single red container identity, shadow direction, two door rods, upper-right diagonal scratch, matching spreader and top-corner engagement. Generate a beautiful LANDSCAPE 16:10 photo of the exact 50% moment from grounded port stacks into crane engagement. The single red box is near the ground in right-middle with the spreader aligned and seated directly on its four top corner positions. Neutral gray box stacks remain firmly grounded. A large real opaque graphite crane structural beam crosses the near foreground diagonally, partially occluding the corner of the selected red container but never all of it. Cables are taut vertically above spreader, same cool fog and subtle warm right sidelight, cold monumental industrial realism. Left third is restrained charcoal mist for actual DOM caption later. Matched 20-foot box scale and perspective with reference. No duplicated/translucent red box, ghost, disconnected hardware, numbers, letters, text, labels, logos, watermark.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-08.webp",
+      "productionPath": "public/media/midpoint.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-09",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Use the reference as exact red 20-foot container identity, corrugation, two rear rods, oxidized red paint and upper-right diagonal rust scratch. Generate a new LANDSCAPE 16:10 extremely refined industrial photograph for the Overland chapter of CARGO. The same single red box is secured firmly on a believable short container chassis behind a generic off-white truck tractor, complete truck at right, rear three-quarter low road-level view, tire contact and container corner-support contact visibly convincing. Rural industrial access road into mist, understated dry grassy verge, immense pale cloudy morning sky, cinematic warm sidelight from upper right. Big expanse of quiet pale mist and sky on the LEFT for dark editorial text. No other red box, no existing companies, no sign text or visible typography, no logos, no numbers, no watermark. Restrained road movement, grounded vehicle, photo quality.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-09.webp",
+      "productionPath": "public/media/road.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-11",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Use reference for container identity. LANDSCAPE 16:10 high but restrained oblique architectural photograph of a vast fictional container terminal at misty dawn, exquisite regular stacks of charcoal, sea-gray and neutral beige freight boxes, all grounded or correctly seated in aligned stack columns, generous distinct lanes. Our one single oxidized freight-red 20-foot box sits grounded in a clear lane at right-middle beneath a huge graphite gantry. It has the same two rear door rods, upper-right diagonal rust scratch and realistic dimensions. Camera about two container-heights above ground, box doors visible and complete. One steel gantry extends over the scene; cool morning haze and warm upper-right light. Left third lower contrast quiet fog but still photographic, room for real white editorial copy. No second red box, no floating stacks, no impossible machinery, no company brands, no text, numbers, logos, labels or watermark. Monumental and calm.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-11.webp",
+      "productionPath": "public/media/yard.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-12",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Generate a new final LANDSCAPE 16:10 industrial photograph for CARGO Another Shore. Reference supplied for exact red container identity: same twenty-foot oxidized red steel box, two rear vertical door rods, diagonal scratch at upper-right door. A different fictional receiving port in gentle warm late-afternoon light under an overcast sea-gray sky, low coastal hills, calm berth and dark graphite unbranded cargo vessel. Same red box is grounded on a short plausible terminal road trailer in right foreground, doors turned toward camera; wheels on real concrete, container secured at corners. A warehouse entrance sits beyond to the right. Clear physical receiving environment with quiet estuary horizon; no extra red boxes. Left third calm layered coastal air for large dark English DOM headline, no typography in image. Photoreal oxidized steel unchanged color, warm light from upper right, no logos, letters, numbers, signage, watermark or fantasy lifting equipment.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1586,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-12.webp",
+      "productionPath": "public/media/shore.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    },
+    {
+      "id": "AI-10R",
+      "tool": "image_gen.imagegen",
+      "inputPrompt": "Edit this image only to REMOVE the black typography in the upper-left sky, including CARGO and Across the Land. Replace those letters seamlessly with the same continuous natural empty foggy sky. Preserve the train, same red container, exact scratch, two locking rods, all mechanical support, landscape, camera angle, illumination and every other part of the picture unchanged. The final is a clean photographic background plate with ZERO text, ZERO letters, ZERO logos, ZERO numbers, ZERO watermark. Do not add any words anywhere.",
+      "knownParameters": {
+        "transparent_background": false
+      },
+      "dimensions": {
+        "width": 1585,
+        "height": 992
+      },
+      "retainedPath": "art-direction/AI-10R.webp",
+      "productionPath": "public/media/rail.webp",
+      "selection": "Selected",
+      "rights": "Original generated output for this project. No external photography or brand assets used; no exclusivity or certification is asserted."
+    }
+  ],
+  "rejections": [
+    {
+      "id": "AI-10",
+      "reason": "Unwanted baked title text. Replaced by AI-10R; rejected large PNG excluded from delivery."
+    }
+  ]
+}
