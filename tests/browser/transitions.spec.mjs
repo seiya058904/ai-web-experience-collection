@@ -74,6 +74,14 @@ test('RALLY rapid contact choices fade to the latest caption and settle on reduc
   await expect(page.locator('html')).toHaveAttribute('data-motion', 'reduced');
   expect(await caption.textContent()).toContain('Before contact.');
   expect(await caption.evaluate(e => e.getAnimations().length)).toBe(0);
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.locator('[data-choice="line"]').click();
+  const consequence = page.locator('#replay-consequence');
+  await expect.poll(() => consequence.evaluate(e => e.getAnimations().length)).toBe(1);
+  await consequence.evaluate(e => e.getAnimations().forEach(animation => animation.pause()));
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(consequence).toContainText('A changes direction');
+  expect(await consequence.evaluate(e => e.getAnimations().length)).toBe(0);
   await page.locator('[data-contact="contact"]').click();
   expect(await caption.textContent()).toContain('Contact. A short compression');
   expect(await caption.evaluate(e => e.getAnimations().length)).toBe(0);
