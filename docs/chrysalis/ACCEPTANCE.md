@@ -25,6 +25,13 @@ The owner found the reveals and the paired-study poses abrupt. Hard-edged `clip-
 - Portrait tablets (701 px and wider, aspect below 1:1) cropped the egg and the adult off the right edge of the wide plates; the crop is shifted towards the subject (83%, 92% for the adult plates). Checked at 768×1024, 1440×900, 2560×1080 and 390×844.
 - Defect fixed: in the three paired studies (hatchling/feeding, larva/pupa, pupa/adult) the wrapper switched to a single-column layout near the end, stacking the second pose below the first and pushing it half out of the frame, where it overlapped the caption. Both poses now stay in the two-up layout and only slide and fade; the single-column layout is used in reduced motion only. A check at 1440×900, 1616×1000, 768×1024 and 390×844 over nine positions of each paired transition found no visible layer outside the stage frame.
 
+## Motion preference handoff, 12 November 2026
+
+- Reproduced a pending stage-label fade that continued after reduced motion was enabled, because the target label had not changed. The renderer now resubmits the label on motion-mode changes, and the shared text helper settles the same pending value before its unchanged-value guard.
+- Removed the invalid duplicate CSS `@import` after font declarations. Lenis CSS remains imported by `scroll-controller.ts`; rendering and clock ownership are unchanged.
+- Chromium regression pauses an actual fade at the first transition's 25% stage, changes the OS preference, then verifies the correct label with no remaining animation and the same stage. Passes at 1440×900 and 390×844. Complete frames reviewed at all six required sizes from 390×844 to 3840×2160, with loaded fonts and no horizontal overflow, failed loaded images or page errors in those views.
+- Shared validation: 1,020 Node tests, 36 Chromium browser tests, root/project-path builds and asset verification, and `git diff --check` pass. Physical-device and full-journey coverage limits below still apply.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions. The upstream records list their own limits under `provenance/chrysalis/upstream/`.

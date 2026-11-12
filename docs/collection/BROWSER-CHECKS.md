@@ -20,6 +20,9 @@ npm run test:browser
 - ODDS fifth-chapter data: vertical scrolling over a fitting table; enlarged text at 320px creates genuine horizontal overflow; both input axes work independently; resizing back removes stale containment.
 - Collection Index → SILLAGE → explicit Collection return: project base, source offset and focus. The native Index and entry also work in a JavaScript-disabled context.
 - Collection font subsets: actual rendered text coverage and per-text-node geometry against the original fonts loaded into the same browser. Node tests check original/derivative/license hashes and copy coverage.
+- AER shape comparison: desktop cross-fade and rapid reversal with stable frame height, selected accessibility state, and complete paired views on phones and after a reduced-motion change.
+- RALLY study captions: latest-choice text after rapid input, immediate settling when reduced motion interrupts a fade, and replay button node stability while the playhead advances.
+- CHRYSALIS transition captions: an unchanged target label settles immediately when reduced motion interrupts its active fade; the transition remains at the same stage.
 
 Tests use authored UI state, fonts and settled scroll positions. The bounded wait after negative input checks observes the native key/wheel animation before asserting that the document did not move. A test must not pass on the first frame before the browser starts its default action. No retries conceal an intermittent failure.
 

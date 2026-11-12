@@ -51,6 +51,7 @@ const bounce = new BounceScene($('#bounce-scene'));
 const handoffs = bridgeElements.map((_,i)=>new HandoffScene($(`#handoff-${i+1}`),i+1));
 const timeline = $<HTMLInputElement>('#replay-timeline');
 const playButton = $<HTMLButtonElement>('#replay-play');
+let replayButtonState = '';
 const soundButton = $<HTMLButtonElement>('#sound-toggle');
 const menu = $<HTMLDialogElement>('#chapters-dialog');
 const about = $<HTMLDialogElement>('#about-dialog');
@@ -79,21 +80,26 @@ function persist() { try { localStorage.setItem(storageKey,JSON.stringify(persis
 function setPressed(selector:string,value:string,attribute:string) { all<HTMLButtonElement>(`button${selector}`).forEach(b=>b.setAttribute('aria-pressed',String(b.getAttribute(attribute)===value))); }
 function updateViewUI() {
   all<HTMLButtonElement>('[data-view-toggle]').forEach(b=>{b.innerHTML=`See from ${state.view==='A'?'B':'A'}’s side ${arrow}`;b.setAttribute('aria-label',`See the same court from ${state.view==='A'?'B':'A'}’s side`);});
-  all('.view-caption').forEach(e=>e.textContent=`Looking from ${state.view}’s side. A and B keep their identities.`);
+  all('.view-caption').forEach(e=>softText(e,`Looking from ${state.view}’s side. A and B keep their identities.`,{instant:reduced}));
   $('#print-choice').textContent=`${state.returnChoice==='line'?'Down the line':'Crosscourt'} / ${state.view}’s view`;
   story.dataset.view=state.view;
 }
 function updateSpinUI() {
   setPressed('[data-spin]',state.comparisonSpinPreset,'data-spin');
-  $('#spin-result').textContent=state.comparisonSpinPreset==='topspin'?'Topspin bends the descent. This preset lands inside B’s baseline.':'With no spin, this same launch travels beyond B’s baseline. The result is long.';
+  softText($('#spin-result'),state.comparisonSpinPreset==='topspin'?'Topspin bends the descent. This preset lands inside B’s baseline.':'With no spin, this same launch travels beyond B’s baseline. The result is long.',{instant:reduced});
   story.dataset.comparison=state.comparisonSpinPreset;
+}
+function updateStudyCaptions() {
+  softText($('#contact-caption'),{before:'Before contact. The ball approaches A’s strings.',contact:'Contact. A short compression at the same point on the strings.',after:'After contact. A’s fixed topspin shot leaves diagonally toward B.'}[contactState],{instant:reduced});
+  softText($('#bounce-caption'),{before:'Before the bounce. The ball descends toward the same marked point.',contact:'Contact. The ball’s bottom meets the clay; the shadow closes in.',after:'After the bounce. A small mark remains as the ball rises toward B.'}[bounceState],{instant:reduced});
+  if(netProgress!==null) softText($('#net-caption'),netProgress===mainTrajectory.netCrossing!.t/mainTrajectory.duration?'The same ball clears the tape. Its landing is still ahead.':netProgress===1?'The ball lands inside B’s half. Now the ground answers.':'A sends the validated topspin shot toward B.',{instant:reduced});
 }
 function updateChoiceUI() {
   const line=state.returnChoice==='line';
   setPressed('[data-choice]',state.returnChoice,'data-choice');
   $('#choice-status').textContent=line?'Down the line selected. A moves the other way, leaving an opening to A’s left.':'Crosscourt selected. An opening remains to A’s right.';
   $('#replay-branch-label').textContent=line?'Down-the-line return':'Crosscourt return';
-  $('#replay-consequence').textContent=line?'A changes direction to reach the sideline, then sends the ball back to B. A different opening remains on A’s left.':'A travels diagonally, sends a reply, then begins to recover. The opening remains on A’s right.';
+  softText($('#replay-consequence'),line?'A changes direction to reach the sideline, then sends the ball back to B. A different opening remains on A’s left.':'A travels diagonally, sends a reply, then begins to recover. The opening remains on A’s right.',{instant:reduced});
   $('#event-list').innerHTML=branches[state.returnChoice].events.map((event,i)=>`<li><button type="button" data-event="${i}" aria-label="Show moment ${i+1}: ${event.label}"><span>${String(i+1).padStart(2,'0')}</span><span>${event.label}</span></button></li>`).join('');
   story.dataset.returnChoice=state.returnChoice;
   updateViewUI(); updateReplayUI();
@@ -103,9 +109,14 @@ function updateReplayUI() {
   const progress=clamp(state.replayTime/branch.duration);
   timeline.value=String(Math.round(progress*1000));
   timeline.setAttribute('aria-valuetext',`${Math.round(progress*100)} percent. ${at.event.label}.`);
-  $('#replay-percent').textContent=`${Math.round(progress*100)}%`;
-  playButton.innerHTML=reduced?`Next moment ${arrow}`:state.playing?'Pause rally <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zm7 0h3v14h-3z" fill="currentColor"/></svg>':'Play rally <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z" fill="currentColor"/></svg>';
-  playButton.setAttribute('aria-pressed',String(state.playing));
+  const percent=`${Math.round(progress*100)}%`;
+  if ($('#replay-percent').textContent!==percent) $('#replay-percent').textContent=percent;
+  const buttonState=reduced?'step':state.playing?'playing':'paused';
+  if (buttonState!==replayButtonState) {
+    playButton.innerHTML=reduced?`Next moment ${arrow}`:state.playing?'Pause rally <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zm7 0h3v14h-3z" fill="currentColor"/></svg>':'Play rally <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z" fill="currentColor"/></svg>';
+    playButton.setAttribute('aria-pressed',String(state.playing));
+    replayButtonState=buttonState;
+  }
   if (previousEvent!==at.eventIndex || dirty) {
     softText($('#event-actor'),at.event.id==='a-bounce'?'The clay on A’s side':`${at.event.actor}’s ${at.event.id==='b-stop'?'receive':'racket'}`,{instant:reduced});
     softText($('#event-title'),at.event.label,{instant:reduced});
@@ -171,7 +182,7 @@ function renderStory(scrollY:number) {
     handoffs[i]!.render(evaluated,state.returnChoice,state.view,exitReplayTime);
   });
 }
-function redraw() {dirty=true;updateViewUI();updateSpinUI();updateReplayUI();renderCourts();flights.comparison.render({spin:state.comparisonSpinPreset,progress:spinProgress});contact.render(contactState);bounce.render(bounceState);}
+function redraw() {dirty=true;updateViewUI();updateSpinUI();updateStudyCaptions();updateReplayUI();renderCourts();flights.comparison.render({spin:state.comparisonSpinPreset,progress:spinProgress});contact.render(contactState);bounce.render(bounceState);}
 function goTo(hash:string,smooth=true,historyMode:'push'|'none'='push') {
   if(!/^#ch(?:0[1-9]|10)$/.test(hash))return;
   const target=$(hash);
@@ -209,10 +220,10 @@ document.addEventListener('click',event=>{
   else if(button.classList.contains('close-dialog'))closeDialog(button.closest('dialog')!);
   else if(button.id==='hero-positions') {const open=button.getAttribute('aria-pressed')!=='true';button.setAttribute('aria-pressed',String(open));$('.hero-labels').hidden=!open;button.innerHTML=`${open?'Hide':'Explore'} the positions <span>${open?'−':'+'}</span>`;}
   else if(button.id==='space-toggle'){showSpace=!showSpace;button.setAttribute('aria-pressed',String(showSpace));button.innerHTML=`${showSpace?'Hide':'Show'} the open court <span>${showSpace?'−':'+'}</span>`;dirty=true;}
-  else if(button.hasAttribute('data-contact')){contactState=button.dataset.contact as typeof contactState;setPressed('[data-contact]',contactState,'data-contact');contact.render(contactState);$('#contact-caption').textContent={before:'Before contact. The ball approaches A’s strings.',contact:'Contact. A short compression at the same point on the strings.',after:'After contact. A’s fixed topspin shot leaves diagonally toward B.'}[contactState];}
-  else if(button.hasAttribute('data-bounce')){bounceState=button.dataset.bounce as typeof bounceState;setPressed('[data-bounce]',bounceState,'data-bounce');bounce.render(bounceState);$('#bounce-caption').textContent={before:'Before the bounce. The ball descends toward the same marked point.',contact:'Contact. The ball’s bottom meets the clay; the shadow closes in.',after:'After the bounce. A small mark remains as the ball rises toward B.'}[bounceState];}
+  else if(button.hasAttribute('data-contact')){contactState=button.dataset.contact as typeof contactState;setPressed('[data-contact]',contactState,'data-contact');contact.render(contactState);updateStudyCaptions();}
+  else if(button.hasAttribute('data-bounce')){bounceState=button.dataset.bounce as typeof bounceState;setPressed('[data-bounce]',bounceState,'data-bounce');bounce.render(bounceState);updateStudyCaptions();}
   else if(button.hasAttribute('data-spin')||button.id==='reset-comparison'){state=setComparison(state,(button.dataset.spin??'topspin') as SpinPreset);spinProgress=reduced?1:0;spinPlaying=!reduced;updateSpinUI();flights.comparison.render({spin:state.comparisonSpinPreset,progress:spinProgress});dirty=true;persist();}
-  else if(button.hasAttribute('data-flight')){netProgress=button.dataset.flight==='net'?(mainTrajectory.netCrossing!.t/mainTrajectory.duration):Number(button.dataset.flight);setPressed('[data-flight]',button.dataset.flight!,'data-flight');flights.net.render({spin:'topspin',progress:netProgress});$('#net-caption').textContent=button.dataset.flight==='net'?'The same ball clears the tape. Its landing is still ahead.':netProgress===1?'The ball lands inside B’s half. Now the ground answers.':'A sends the validated topspin shot toward B.';dirty=true;}
+  else if(button.hasAttribute('data-flight')){netProgress=button.dataset.flight==='net'?(mainTrajectory.netCrossing!.t/mainTrajectory.duration):Number(button.dataset.flight);setPressed('[data-flight]',button.dataset.flight!,'data-flight');flights.net.render({spin:'topspin',progress:netProgress});updateStudyCaptions();dirty=true;}
   else if(button.hasAttribute('data-choice')){const choice=button.dataset.choice as ReturnChoice;state=chooseReturn(state,choice);exitReplayTime=state.replayTime;finalCompleted=false;previousEvent=-1;updateChoiceUI();redraw();persist();$('#export-status').textContent='A vector keepsake. No account needed.';}
   else if(button.hasAttribute('data-view-toggle')){state={...state,view:state.view==='A'?'B':'A'};redraw();persist();}
   else if(button.id==='replay-play'){
