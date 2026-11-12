@@ -60,7 +60,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-glasshouse,.world-veil{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-glasshouse h2{font-size:clamp(25px,7.8vw,49px)}.world-glasshouse .world-title p{font-size:55px}.world-veil h2{font-size:92px}.world-veil .world-title p{font-size:48px}}
 
 /* The optical film and continuous paper installation retain their own voices. */
-@font-face{font-family:'Collection Ink Cormorant';src:url('/inkscape/fonts/CormorantGaramond-Light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Collection Ink Cormorant';src:url('/collection/fonts/inkscape-preview.woff2') format('woff2');font-weight:300;font-display:swap}
 @font-face{font-family:'Collection Optic Cormorant';src:url('/optic/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
 .world-optic,.world-inkscape{grid-column:span 3;height:65svh;max-height:1400px}
 .world-optic{background:#090b0d;color:#eeede9}.world-optic .world-image img{object-position:74% 50%}.world-optic .world-image:after{background:linear-gradient(180deg,#090b0d55,transparent 45%,#090b0df2)}.world-optic h2{font-family:'Manrope Variable',sans-serif;font-size:clamp(23px,2.25vw,80px);font-weight:450;letter-spacing:.3em}.world-optic .world-title p{font-family:'Manrope Variable',sans-serif;font-size:clamp(33px,3.4vw,124px);font-weight:300;letter-spacing:-.05em;line-height:1.1;margin-top:25px}.world-optic em{font-family:'Collection Optic Cormorant',Georgia,serif;font-weight:400}
@@ -131,7 +131,7 @@ h1{font-size:clamp(40px,4.5vw,150px);font-weight:400;letter-spacing:-.04em;line-
 @media(max-width:700px){.world-crave{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-crave h2{font-size:17vw}.world-crave .world-title p{font-size:37px}}
 
 /* GRID retains its original variable grotesk and paper composition. */
-@font-face{font-family:"Collection Grid Roboto";src:url("/grid/fonts/RobotoFlex-Latin.woff2") format("woff2");font-weight:100 1000;font-stretch:25% 151%;font-display:swap}
+@font-face{font-family:"Collection Grid Roboto";src:url("/collection/fonts/grid-preview.woff2") format("woff2");font-weight:100 1000;font-stretch:25% 151%;font-display:swap}
 .world-grid{grid-column:span 6;height:65svh;max-height:1400px;background:#f8f8f3;color:#121411}.world-grid .world-image img{object-position:65% 50%}.world-grid .world-image:after{background:linear-gradient(90deg,#f8f8f3d6,transparent 75%),linear-gradient(180deg,transparent 40%,#f8f8f3ee)}.world-grid h2,.world-grid .world-title p{font-family:"Collection Grid Roboto",Arial,sans-serif}.world-grid h2{font-size:clamp(70px,12vw,430px);font-weight:700;font-variation-settings:"wght" 700,"wdth" 95,"opsz" 60,"slnt" 0;letter-spacing:-.055em;line-height:.9}.world-grid .world-title p{font-size:clamp(27px,3vw,108px);font-weight:400;letter-spacing:-.03em;line-height:1.1;margin-top:24px}
 @media(max-width:700px){.world-grid{grid-column:auto;height:76svh;min-height:520px;max-height:740px}.world-grid h2{font-size:17vw}.world-grid .world-title p{font-size:37px}}
 
@@ -384,8 +384,8 @@ h1{margin:0 var(--gutter) 0 calc(var(--gutter) - .05em);font-size:var(--headline
 .world-crease:focus-visible{outline-color:#1c39c9}
 
 /* Ten works added 9 November 2026. Each keeps its own typeface and ground; every face reuses an existing
-   Collection URL except MEND's Newsreader, which is served from the work itself. */
-@font-face{font-family:'Collection Mend Newsreader';src:url('/mend/fonts/newsreader-latin-normal.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+   Collection URL; MEND's Newsreader uses the generated Collection-only subset. */
+@font-face{font-family:'Collection Mend Newsreader';src:url('/collection/fonts/mend-preview.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
 .world-imago{--t:20;--s:9;background:#efede1;color:#173e34}
 .world-imago h2{font-family:'Collection Pelagic Cormorant',Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:.9}
 .world-imago .world-title p{font-family:'Collection Optic Cormorant',Georgia,serif;font-style:italic;font-weight:400;line-height:1.05}

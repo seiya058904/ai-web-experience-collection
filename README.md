@@ -251,6 +251,8 @@ npm run verify:build
 npm run preview -- --port 4175 --strictPort --base=/ai-web-experience-collection/
 ```
 
+After the project-path build, `npx playwright install chromium` and `npm run test:browser` run the focused desktop/phone input, navigation and font checks. The tests own a preview on port 4178; [coverage and failure evidence](docs/collection/BROWSER-CHECKS.md) explain their limits. Collection-only font derivatives and regeneration are documented in [FONT-SUBSETS.md](docs/collection/FONT-SUBSETS.md).
+
 <details>
 <summary><strong>⚙️ Expand repository map, verification &amp; contribution boundaries</strong></summary>
 

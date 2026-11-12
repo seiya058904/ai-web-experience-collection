@@ -95,7 +95,7 @@ Follow this sequence for each new independent work. Keep each work's established
 
 Node.js 24 LTS / npm; one lockfile. `npm ci`; `npm run dev`; `npm test` (model/continuity/rendering tests using Node built-in TypeScript transformation); `npm run build`; `npm run verify:build`; `npm run verify`; `git diff --check`.
 
-There is no lint or browser-test npm script. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
+There is no lint script. `npm run test:browser` runs the committed Chromium input/navigation/font checks against a prior project-path production build; install its browser with `npx playwright install chromium` (CI adds `--with-deps`). It owns the preview server on port 4178. See `docs/collection/BROWSER-CHECKS.md`. `scripts/prepare-data.mjs` and `scripts/prepare-assets.mjs` regenerate original F1 resources and must not run as verification. Do not commit temporary browser drivers, screenshots, caches, ZIPs or `dist/`.
 
 After UI/motion changes, inspect complete frames at 390×844, 768×1024, 1440×900, 1920×1080, 2560×1440 and 3840×2160, plus wide/short VERDANT. Exercise slow/normal/fine/high-frequency wheel, fast down/reverse, arbitrary stops, scene boundaries, disclosures, every control, menus, reduced motion, immediate-load input, resize and tab recovery. Record actual observations; physical touch, iOS and high-refresh hardware require actual devices.
 

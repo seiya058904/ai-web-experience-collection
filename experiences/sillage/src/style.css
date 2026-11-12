@@ -4,7 +4,6 @@
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-display:swap;font-weight:500;src:url('/shared/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2')}
 @font-face{font-family:'DM Sans';font-style:normal;font-display:swap;font-weight:400;src:url('/shared/fonts/dm-sans-latin-400-normal.woff2') format('woff2')}
 @font-face{font-family:'DM Sans';font-style:normal;font-display:swap;font-weight:500;src:url('/shared/fonts/dm-sans-latin-500-normal.woff2') format('woff2')}
-@import 'lenis/dist/lenis.css';
 
 :root{font-family:'DM Sans',sans-serif;color:#29211e;background:#f3ede1;font-synthesis:none;--paper:#f3ede1;--ink:#29211e;--muted:#65564d;--line:#cabead;--yellow:#e7b353;--plum:#594051;--brown:#8a6750;--gutter:clamp(24px,6.2vw,120px);--serif:'Cormorant Garamond',Georgia,serif;--header:80px;color-scheme:light;scrollbar-color:#8a6750 #f3ede1}
 *{box-sizing:border-box}body{margin:0}html{scroll-padding-top:100px}body,button,input{font-size:15px;line-height:1.65}button,input{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent}button{cursor:pointer;color:inherit}button{border:0;background:none}a{color:inherit;text-decoration:none}button,a,input,summary{touch-action:manipulation}img{display:block;max-width:100%;height:auto;object-fit:cover}svg{display:block}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-weight:400}h1,h2,h3,.large-quote{font-family:var(--serif);line-height:1.02;letter-spacing:-.035em;text-wrap:balance}h2{font-size:clamp(44px,5.3vw,80px)}h3{font-size:36px}p{max-width:66ch}em{font-weight:400}button svg,.line-link svg{width:24px;height:24px;flex-shrink:0}::selection{background:#594051;color:#f3ede1}:focus-visible{outline:2px solid #594051;outline-offset:5px;border-radius:2px}input{caret-color:#594051}button:disabled{opacity:.55;cursor:wait}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}
@@ -63,3 +62,6 @@
 .panorama-scene.has-image-fallback .panorama-points{inset:0 0 auto;aspect-ratio:3/2}
 .panorama-scene[data-stage=arrival] .panorama-fallback-arrival,.panorama-scene[data-stage=unfolding] .panorama-fallback-unfolding,.panorama-scene[data-stage=afterglow] .panorama-fallback-afterglow{filter:drop-shadow(0 6px 9px rgb(41 33 30 / 12%))}
 @media(max-width:760px){.panorama-fallback,.panorama-scene.has-image-fallback .panorama-points{aspect-ratio:2/3}.panorama-fallback-path-desktop{display:none}.panorama-fallback-path-mobile{display:block}.panorama-fallback-arrival{left:58%;top:19%;width:65%}.panorama-fallback-unfolding{left:49%;top:49%;width:67%}.panorama-fallback-afterglow{left:44%;top:81%;width:58%}}
+
+/* Native keyboard scrolling stays locked even when reduced motion starts no Lenis. */
+html:has(#chapter-index[open]){overflow:clip}

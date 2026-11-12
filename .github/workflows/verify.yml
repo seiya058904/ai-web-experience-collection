@@ -36,3 +36,13 @@ jobs:
       # link regressions (e.g. root-absolute /work/ anchors) fail here too.
       - run: npm run build -- --base=/ai-web-experience-collection/
       - run: npm run verify:build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - name: Keep failed browser evidence
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: browser-failures
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 7

@@ -93,6 +93,8 @@ FINISH: desktop/mobile full-frame review, verified native entry/return links, do
 
 ## Historical integration notes
 
+The 12 November 2026 font refinement serves Collection-only text subsets for Roboto Flex, Fraunces, Cormorant Garamond Light and Newsreader. CSS family aliases, glyph outlines, variable axes, weights, title geometry and all work resources remain authoritative. The four derived files total 217,756 bytes versus 769,544 bytes for the source files. See `FONT-SUBSETS.md` for generation/coverage and `BROWSER-CHECKS.md` for repeatable input, navigation and font-geometry validation.
+
 The records below preserve how the collection grew. References to paired rows, full-width spreads and earlier work counts describe prior revisions; the current gallery contract above takes precedence. Asset identities and provenance distinctions remain applicable.
 
 GLAZE adds its supplied Archivo voice, celadon jar and pale green ground. KAGE adds its supplied condensed voice and a real FRAME rendering on white. The homepage imports neither work runtime; previews are static local media. The original three-panel composition and native-link behavior remain intact.

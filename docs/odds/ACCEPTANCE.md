@@ -23,6 +23,10 @@ The scene SVG is written only when its markup changes (a resting chapter no long
 
 Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
 
+## Scroll ownership, 12 November 2026
+
+The entrypoint loads Lenis CSS. The chapter modal owns background input in both motion modes; closing for a chapter jump resumes Lenis synchronously. Tables keep document vertical scrolling and only guard native horizontal input while actually overflowing. Normal/reduced keyboard, wheel, horizontal access with enlarged text, resize recovery and chapter navigation pass in Chromium. Six-size complete-frame review and shared results are recorded in [Collection acceptance](../collection/SCROLL-FONTS-ACCEPTANCE-2026-11-12.md).
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

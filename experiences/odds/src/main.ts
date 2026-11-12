@@ -1,4 +1,5 @@
 import './style.css';
+import 'lenis/dist/lenis.css';
 import Lenis from 'lenis';
 import { appMarkup, chapters } from './content.ts';
 import { enumeratePaths, binomialCoefficients, expectedCounts, experimentSVG, prefixExperiment, type Experiment, type SamplePath } from './engine.ts';
@@ -34,7 +35,7 @@ function tokens(path:SamplePath|undefined,current=-1):string{return path?`<div c
 function pathReadout(round:Experiment):string{const p=round.paths.at(-1);return p?tokens(p)+`<div class="path-caption"><span>Ball ${round.N} · ${p.k} right ${p.k===1?'turn':'turns'}</span><span>Endpoint ${p.k}</span></div>`:'';}
 function dataTable(round:Experiment,label:string):string{
   const expected=expectedCounts(round.n,round.p,round.N);
-  return `<div class="data-scroll" data-lenis-prevent><table><caption>${escape(label)} · n=${round.n}, p=${round.p.toFixed(2)}, N=${round.N}<br>Seed: ${escape(round.seed)}</caption><thead><tr><th scope="col">Endpoint</th><th scope="col">Observed</th><th scope="col">Expected</th><th scope="col">Observed %</th><th scope="col">Theory %</th></tr></thead><tbody>${round.counts.map((count,k)=>`<tr><th scope="row">${k}</th><td>${count}</td><td>${expected[k].toFixed(3)}</td><td>${round.N?(count/round.N*100).toFixed(2):'0.00'}%</td><td>${(expected[k]/Math.max(1,round.N)*100).toFixed(2)}%</td></tr>`).join('')}</tbody><tfoot><tr><th scope="row">Total</th><td>${round.N}</td><td>${round.N.toFixed(3)}</td><td>${round.N?'100.00':'0.00'}%</td><td>100.00%</td></tr></tfoot></table></div>`;
+  return `<div class="data-scroll"><table><caption>${escape(label)} · n=${round.n}, p=${round.p.toFixed(2)}, N=${round.N}<br>Seed: ${escape(round.seed)}</caption><thead><tr><th scope="col">Endpoint</th><th scope="col">Observed</th><th scope="col">Expected</th><th scope="col">Observed %</th><th scope="col">Theory %</th></tr></thead><tbody>${round.counts.map((count,k)=>`<tr><th scope="row">${k}</th><td>${count}</td><td>${expected[k].toFixed(3)}</td><td>${round.N?(count/round.N*100).toFixed(2):'0.00'}%</td><td>${(expected[k]/Math.max(1,round.N)*100).toFixed(2)}%</td></tr>`).join('')}</tbody><tfoot><tr><th scope="row">Total</th><td>${round.N}</td><td>${round.N.toFixed(3)}</td><td>${round.N?'100.00':'0.00'}%</td><td>100.00%</td></tr></tfoot></table></div>`;
 }
 function syncBallChoices():void{
   const paths=teachingRounds[1].paths;
@@ -173,10 +174,10 @@ canvas.addEventListener('click',event=>{
   if(nearest){ballSlot=null;$<HTMLSelectElement>('#ball-slot').value='all';dispatch({type:'select-ball',index:nearest.index},`Selected ball ${nearest.index+1}, endpoint ${nearest.k}.`);}
 });
 
-$('#menu-toggle').addEventListener('click',()=>{menu.showModal();});
+$('#menu-toggle').addEventListener('click',()=>{menu.showModal();lenis?.stop();});
 $('#menu-close').addEventListener('click',()=>{menu.close();$('#menu-toggle').focus({preventScroll:true});});
 menu.addEventListener('click',event=>{if(event.target===menu){const r=menu.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)menu.close();}});
-menu.addEventListener('close',()=>{$('#menu-toggle').focus({preventScroll:true});});
+menu.addEventListener('close',()=>{lenis?.start();$('#menu-toggle').focus({preventScroll:true});});
 $('#sound-toggle').addEventListener('click',()=>{dispatch({type:'sound',enabled:!state.sound},state.sound?'Sound is off.':'Soft sound is on.');if(state.sound)knock();});
 $('#motion-toggle').addEventListener('click',()=>{dispatch({type:'motion',value:state.motion==='reduced'?'system':'reduced'});configureMotion();announce(reduced?'Reduced motion is active. All chapters and experiments are available.':'System motion preference restored.');});
 
@@ -184,6 +185,7 @@ function configureMotion():void{
   reduced=state.motion==='reduced'||motionMedia.matches;document.documentElement.dataset.motion=reduced?'reduced':'full';
   lenis?.destroy();lenis=null;
   if(!reduced)lenis=new Lenis({autoRaf:false,autoResize:true,lerp:.13,smoothWheel:true,syncTouch:false,anchors:false,respectReducedMotion:true,stopInertiaOnNavigate:true,prevent:node=>!!node.closest('dialog,[data-lenis-prevent]')});
+  if(menu.open)lenis?.stop();
   if(reduced&&playback){playback.progress=1;playback.playing=false;syncPlaybar();}
   const b=$<HTMLButtonElement>('#motion-toggle');b.setAttribute('aria-pressed',String(reduced));b.textContent=state.motion==='reduced'?'Use system motion':motionMedia.matches?'Reduced by system':'Less motion';dirty=true;
 }
@@ -191,6 +193,13 @@ motionMedia.addEventListener('change',configureMotion);
 
 function measure():void{
   measureFrame=0;
+  // Tables have no height cap: vertical input always belongs to the story.
+  // Only a genuinely wide, open table needs native horizontal scrolling.
+  document.querySelectorAll<HTMLElement>('.data-scroll').forEach(table=>{
+    const horizontal=table.closest('details')?.open!==false && table.scrollWidth>table.clientWidth+1;
+    table.toggleAttribute('data-lenis-prevent-horizontal',horizontal);
+    table.style.overscrollBehaviorX=horizontal?'contain':'auto';
+  });
   // The mobile opening keeps its heading in normal flow, above the apparatus.
   // Once it scrolls past, the shared scene pins below the header as usual.
   if(mobileMedia.matches){const top=$('#title-01').getBoundingClientRect().bottom+window.scrollY+12;$('#story').style.setProperty('--mobile-art-start',`${Math.round(top)}px`);}
@@ -214,7 +223,8 @@ function gotoHash(hash:string,instant=false):void{
 document.addEventListener('click',event=>{
   const target=event.target instanceof Element?event.target.closest<HTMLAnchorElement>('a[href^="#"]'):null;
   if(!target)return;const href=target.getAttribute('href')!;if(!document.getElementById(href.slice(1)))return;event.preventDefault();
-  if(menu.open)menu.close();history.pushState(null,'',href);gotoHash(href);
+  // Resume synchronously: the native close event arrives after this navigation.
+  if(menu.open){menu.close();lenis?.start();}history.pushState(null,'',href);gotoHash(href);
 });
 window.addEventListener('popstate',()=>{if(location.hash)gotoHash(location.hash,true);else{lenis?.scrollTo(0,{immediate:true});window.scrollTo(0,0);dirty=true;}});
 window.addEventListener('pageshow',()=>{scheduleMeasure();dirty=true;});

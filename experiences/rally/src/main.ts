@@ -1,4 +1,5 @@
 import './style.css';
+import 'lenis/dist/lenis.css';
 import Lenis from 'lenis';
 import { pageMarkup, arrow } from './content.ts';
 import { CourtScene, FlightScene, createRallySVG } from './scenes.ts';
@@ -66,6 +67,7 @@ function configureMotion() {
   document.documentElement.dataset.motion = reduced ? 'reduced' : 'full';
   lenis?.destroy(); lenis=null;
   if (!reduced) lenis = new Lenis({autoRaf:false,lerp:.14,smoothWheel:true,syncTouch:false,anchors:false});
+  if (menu.open || about.open) lenis?.stop();
   if (reduced) { state={...state,playing:false}; spinPlaying=false; spinProgress=1; }
   const button=$<HTMLButtonElement>('#motion-toggle');
   button.setAttribute('aria-pressed',String(reduced));
@@ -180,8 +182,13 @@ function goTo(hash:string,smooth=true,historyMode:'push'|'none'='push') {
   else window.scrollTo({top:Math.max(0,top),behavior:'instant'});
   dirty=true;
 }
-function openDialog(dialog:HTMLDialogElement,opener:HTMLElement) {dialogOpener=opener;dialog.showModal();}
-function closeDialog(dialog:HTMLDialogElement,restore=true) {dialog.close();if(restore)dialogOpener?.focus({preventScroll:true});}
+function openDialog(dialog:HTMLDialogElement,opener:HTMLElement) {dialogOpener=opener;dialog.showModal();lenis?.stop();}
+function closeDialog(dialog:HTMLDialogElement,restore=true) {
+  dialog.close();
+  // A chapter link navigates in this task, before the queued close event.
+  if(!menu.open&&!about.open)lenis?.start();
+  if(restore)dialogOpener?.focus({preventScroll:true});
+}
 function stepReplay() {
   const events=branches[state.returnChoice].events;
   const next=events.find(e=>e.time>state.replayTime+.0001);
@@ -227,7 +234,7 @@ timeline.addEventListener('input',()=>{state=seekReplay(state,Number(timeline.va
 timeline.addEventListener('change',persist,{signal});
 for(const dialog of [menu,about]) {
   dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closeDialog(dialog);},{signal});
-  dialog.addEventListener('close',()=>dialogOpener?.focus({preventScroll:true}),{signal});
+  dialog.addEventListener('close',()=>{if(!menu.open&&!about.open)lenis?.start();dialogOpener?.focus({preventScroll:true});},{signal});
 }
 window.addEventListener('scroll',()=>{dirty=true;},{passive:true,signal});
 window.addEventListener('resize',()=>{measure();},{passive:true,signal});
