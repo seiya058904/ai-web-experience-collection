@@ -27,6 +27,13 @@ Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe
 
 The entrypoint loads Lenis CSS. Native Chapters/About dialogs stop Lenis and lock background input in both motion modes; chapter navigation resumes synchronously before scrolling. The chapter directory passes keyboard/backdrop lock, overflowing internal wheel, Escape/focus, motion-preference change and chapter-jump checks in Chromium. Six-size complete-frame review and shared results are recorded in [Collection acceptance](../collection/SCROLL-FONTS-ACCEPTANCE-2026-11-12.md).
 
+## Interaction polish, 12 November 2026
+
+- Contact, bounce, net, spin, viewpoint and replay-consequence explanations use the shared fade-out/write/fade-in handoff. Selected controls and exact diagram poses remain immediate; rapid choices resolve to the latest explanation. Switching to reduced motion settles pending study captions.
+- Replay updates its button markup only when Play/Pause/Next moment changes, and its percentage text only when the displayed integer changes. A browser regression observes advancing playback across 12 frames with zero child mutations and the same button icon, then verifies Pause.
+- Chromium verifies rapid contact choices and an OS reduced-motion change during a paused in-flight fade at 1440×900 and 390×844. Complete contact-study frames reviewed at 390×844, 768×1024, 1440×900, 1920×1080, 2560×1440 and 3840×2160; no horizontal overflow, failed loaded images or page errors in the inspected views.
+- Shared validation: 1,020 Node tests, 36 Chromium browser tests, root/project-path builds and asset verification, and `git diff --check` pass. Existing directory/navigation checks also cover SILLAGE, ODDS, BERTH and Collection.
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

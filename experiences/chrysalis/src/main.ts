@@ -39,6 +39,7 @@ function render(snapshot:StorySnapshot):void{
     const box=positions[i];const p=Math.max(0,Math.min(1,(snapshot.probeY-box.top)/box.height));
     frame.wrapper.classList.toggle('is-active',p>0&&p<1&&!snapshot.reducedMotion);
     if(Math.abs(p-frame.lastProgress)<0.00001&&frame.lastReduced===snapshot.reducedMotion&&frame.lastMobile===snapshot.mobile)return;
+    const motionChanged=frame.lastReduced!==snapshot.reducedMotion;
     const t=evaluateTransition(frame.index,p,snapshot.reducedMotion,snapshot.mobile);frame.lastProgress=p;frame.lastReduced=snapshot.reducedMotion;
     if(frame.lastMobile!==snapshot.mobile){
       frame.lastMobile=snapshot.mobile;
@@ -78,7 +79,7 @@ function render(snapshot:StorySnapshot):void{
     frame.wrapper.dataset.owner=t.captionOwner;
     frame.wrapper.dataset.stage=String(t.stage);
     frame.register.style.opacity=String(snapshot.reducedMotion||t.presentation==='paired-study'?0:Math.sin(p*Math.PI)*.75);
-    if(frame.lastLabel!==t.stageLabel){softText(frame.stage,t.stageLabel,{instant:snapshot.reducedMotion});frame.lastLabel=t.stageLabel;frame.lastStage=t.stageIndex;}
+    if(frame.lastLabel!==t.stageLabel||motionChanged){softText(frame.stage,t.stageLabel,{instant:snapshot.reducedMotion});frame.lastLabel=t.stageLabel;frame.lastStage=t.stageIndex;}
   });
 }
 

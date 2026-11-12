@@ -79,6 +79,7 @@ function notify(message: string): void {
 }
 
 function measure(): void {
+  updateShape();
   const offset = innerWidth <= 680 ? 65 : 80;
   positions = sections.map((section, index) => index === 0 ? 0 : Math.max(0, section.offsetTop - offset));
   lenis?.resize();
@@ -101,6 +102,8 @@ function updateMotion(): void {
   document.body.classList.toggle('reduced', reduced);
   document.body.classList.toggle('motion-paused', preferences.paused);
   document.body.dataset.motion = reduced ? 'reduced' : 'full';
+  updateShape();
+  updateLab();
   motionSelect.value = preferences.motion;
   lenis?.destroy();
   lenis = null;
@@ -110,6 +113,7 @@ function updateMotion(): void {
   q('#pause-motion').setAttribute('aria-pressed', String(preferences.paused));
   q('#pause-motion').setAttribute('aria-label', preferences.paused ? 'Resume ambient motion' : 'Pause ambient motion');
   q('#pause-icon').setAttribute('d', preferences.paused ? 'm8 5 11 7-11 7Z' : 'M8 5v14M16 5v14');
+  lastChapter = -1;
   dirty = true;
   measure();
 }
@@ -203,13 +207,22 @@ q('#sound-toggle').addEventListener('click', async () => {
   }
 });
 
+function updateShape(): void {
+  q('.shape-images').dataset.shape = shape;
+  const paired = reduced || innerWidth <= 680;
+  for (const value of ['rest', 'held'] as const) {
+    const image = q(`#shape-${value}`);
+    image.hidden = false;
+    image.closest('figure')!.setAttribute('aria-hidden', String(!paired && shape !== value));
+  }
+  softText(q('#shape-caption'), shape === 'rest' ? 'At rest, the fabric lies low. Its colors and connections still belong to the same balloon.' : 'Held open, the same light envelope contains a great volume. The basket is still on the ground.', { instant: reduced });
+}
+
 for (const button of all<HTMLButtonElement>('[data-shape]')) {
   button.addEventListener('click', () => {
     shape = button.dataset.shape === 'held' ? 'held' : 'rest';
     for (const other of all('[data-shape]')) other.setAttribute('aria-pressed', String(other.dataset.shape === shape));
-    q('#shape-rest').hidden = shape !== 'rest';
-    q('#shape-held').hidden = shape !== 'held';
-    q('#shape-caption').textContent = shape === 'rest' ? 'At rest, the fabric lies low. Its colors and connections still belong to the same balloon.' : 'Held open, the same light envelope contains a great volume. The basket is still on the ground.';
+    updateShape();
     dirty = true;
   });
 }
@@ -221,7 +234,7 @@ function updateLab(): void {
   const result = buoyancy(Number(warmth.value), (selected?.value ?? 'standard') as GroundLoad);
   q('#warmth-value').textContent = `${warmth.value} / 100`;
   q('#balance-result').textContent = result.label;
-  q('#balance-description').textContent = result.state === 'heavy' ? 'The total weight is greater than the surrounding air can support.' : result.state === 'rising' ? 'The support is greater than the total weight: an upward tendency.' : 'The support and the total weight nearly meet.';
+  softText(q('#balance-description'), result.state === 'heavy' ? 'The total weight is greater than the surrounding air can support.' : result.state === 'rising' ? 'The support is greater than the total weight: an upward tendency.' : 'The support and the total weight nearly meet.', { instant: reduced });
   q('#support-bar').style.height = `${100 / 1.25}%`;
   q('#weight-bar').style.height = `${clamp(result.totalWeight / 1.25) * 100}%`;
   q('#balance-marker').style.background = result.state === 'heavy' ? '#b38070' : result.state === 'rising' ? '#75836e' : '#707d9a';

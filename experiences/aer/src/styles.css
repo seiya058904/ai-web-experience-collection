@@ -46,3 +46,12 @@ body.reduced .shape-images{display:grid;grid-template-columns:1fr;gap:22px;aspec
 @media(max-width:680px){.shape-images{display:grid;grid-template-columns:1fr;gap:20px;aspect-ratio:auto;overflow:visible;background:none}.shape-state,.shape-state:has(img[hidden]){display:grid!important;height:auto}.shape-state img,.shape-state img[hidden]{display:block!important;height:auto;aspect-ratio:auto;object-fit:contain}.shape-copy .segmented,#shape-caption{display:none}.shape-state figcaption{display:flex;font-size:12px;padding:10px 0}.shape-state figcaption span:last-child{margin-top:0;text-align:right}.ending-tableau{margin-top:26px}.ending-tableau figcaption{font-size:11px}.ending-tableau figcaption>span:last-child{max-width:100px}body.reduced #shadow-stills{grid-template-columns:1fr;gap:22px;margin-top:28px}body.reduced #shadow-stills svg{min-height:0}}
 
 #ending-scene{aspect-ratio:1.6}
+
+/* Keep the resting photograph beneath the held view, so reversing a choice
+   cross-fades without a blank frame or a change in the figure's height. */
+@media screen and (min-width:681px){
+  body:not(.reduced) .shape-images{display:grid;grid-template-rows:minmax(0,1fr)}
+  body:not(.reduced) .shape-state{grid-area:1/1;min-height:0}
+  body:not(.reduced) .shape-state:has(#shape-held){opacity:0;transition:opacity .62s cubic-bezier(.22,1,.36,1)}
+  body:not(.reduced) .shape-images[data-shape="held"] .shape-state:has(#shape-held){opacity:1}
+}

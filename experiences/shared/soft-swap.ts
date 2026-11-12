@@ -58,10 +58,14 @@ export function softText(element: Element | null | undefined, value: string, opt
     states.set(element, state);
   }
   state.html = html;
+  // A preference change must also settle an already pending copy of this value.
+  if (options.instant || prefersReduced() || !(element as HTMLElement).isConnected) {
+    state.target = value;
+    settle(element, state);
+    return;
+  }
   if (state.target === value && (state.phase !== 'idle' || current(element, html) === value)) return;
   state.target = value;
-
-  if (options.instant || prefersReduced() || !(element as HTMLElement).isConnected) { settle(element, state); return; }
 
   // Already fading out: the newest words are written when the fade ends.
   if (state.phase === 'out') return;
