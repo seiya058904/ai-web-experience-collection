@@ -45,6 +45,9 @@ test('AER shape reversal keeps its frame and both static alternatives', async ({
   await expect(page.locator('#shape-caption')).toContainText('Held open,');
   await finished(page.locator('#shape-caption'));
   await expect(held).toHaveCSS('opacity', '1');
+  await page.locator('[data-shape="held"]').click();
+  await expect(page.locator('[data-shape="held"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(box).not.toHaveAttribute('aria-pressed');
   expect(Math.abs((await box.boundingBox()).height - height)).toBeLessThan(1);
   await expect(held).toHaveAttribute('aria-hidden', 'false');
   await expect(rest).toHaveAttribute('aria-hidden', 'true');

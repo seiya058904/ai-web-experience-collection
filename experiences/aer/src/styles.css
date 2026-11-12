@@ -53,5 +53,5 @@ body.reduced .shape-images{display:grid;grid-template-columns:1fr;gap:22px;aspec
   body:not(.reduced) .shape-images{display:grid;grid-template-rows:minmax(0,1fr)}
   body:not(.reduced) .shape-state{grid-area:1/1;min-height:0}
   body:not(.reduced) .shape-state:has(#shape-held){opacity:0;transition:opacity .62s cubic-bezier(.22,1,.36,1)}
-  body:not(.reduced) .shape-images[data-shape="held"] .shape-state:has(#shape-held){opacity:1}
+  body:not(.reduced) .shape-images[data-shape-view="held"] .shape-state:has(#shape-held){opacity:1}
 }
