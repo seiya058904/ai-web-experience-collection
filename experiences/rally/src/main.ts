@@ -90,6 +90,7 @@ function updateSpinUI() {
   story.dataset.comparison=state.comparisonSpinPreset;
 }
 function updateStudyCaptions() {
+  softText($('#replay-consequence'),state.returnChoice==='line'?'A changes direction to reach the sideline, then sends the ball back to B. A different opening remains on A’s left.':'A travels diagonally, sends a reply, then begins to recover. The opening remains on A’s right.',{instant:reduced});
   softText($('#contact-caption'),{before:'Before contact. The ball approaches A’s strings.',contact:'Contact. A short compression at the same point on the strings.',after:'After contact. A’s fixed topspin shot leaves diagonally toward B.'}[contactState],{instant:reduced});
   softText($('#bounce-caption'),{before:'Before the bounce. The ball descends toward the same marked point.',contact:'Contact. The ball’s bottom meets the clay; the shadow closes in.',after:'After the bounce. A small mark remains as the ball rises toward B.'}[bounceState],{instant:reduced});
   if(netProgress!==null) softText($('#net-caption'),netProgress===mainTrajectory.netCrossing!.t/mainTrajectory.duration?'The same ball clears the tape. Its landing is still ahead.':netProgress===1?'The ball lands inside B’s half. Now the ground answers.':'A sends the validated topspin shot toward B.',{instant:reduced});
@@ -99,7 +100,7 @@ function updateChoiceUI() {
   setPressed('[data-choice]',state.returnChoice,'data-choice');
   $('#choice-status').textContent=line?'Down the line selected. A moves the other way, leaving an opening to A’s left.':'Crosscourt selected. An opening remains to A’s right.';
   $('#replay-branch-label').textContent=line?'Down-the-line return':'Crosscourt return';
-  softText($('#replay-consequence'),line?'A changes direction to reach the sideline, then sends the ball back to B. A different opening remains on A’s left.':'A travels diagonally, sends a reply, then begins to recover. The opening remains on A’s right.',{instant:reduced});
+  updateStudyCaptions();
   $('#event-list').innerHTML=branches[state.returnChoice].events.map((event,i)=>`<li><button type="button" data-event="${i}" aria-label="Show moment ${i+1}: ${event.label}"><span>${String(i+1).padStart(2,'0')}</span><span>${event.label}</span></button></li>`).join('');
   story.dataset.returnChoice=state.returnChoice;
   updateViewUI(); updateReplayUI();
