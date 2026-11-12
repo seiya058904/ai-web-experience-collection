@@ -10,6 +10,7 @@ for (const file of ['index.html', 'credits.html', 'f1/index.html', 'verdant/inde
   assert((await stat(join(root, file))).size > 0, `Missing output: ${file}`);
 }
 const site = `https://seiya058904.github.io${base}`;
+assert((await stat(join(root, 'collection/fonts/NOTICE.md'))).size > 0, 'Missing Collection font derivative notices');
 const routes = ['f1', 'verdant', 'orbital', 'glaze', 'kage', 'chronos', 'interval', 'form', 'fusion', 'glasshouse', 'veil', 'optic', 'inkscape', 'facet', 'silicon', 'atlas', 'thrust', 'resonance', 'aeterna', 'parallax', 'luthier', 'codex', 'magma', 'fossil', 'urushi', 'nib', 'crema', 'crave', 'grid', 'dose', 'counterform', 'ferrum', 'relay', 'supercell', 'pelagic', 'backstage', 'murmuration', 'varen', 'aurora', 'crease', 'imago', 'sillage', 'aer', 'berth', 'mend', 'frame', 'odds', 'rally', 'sente', 'anax', 'papersun', 'cargo', 'pulse', 'nightshift', 'chrysalis'];
 assert(!/<iframe\b/i.test(home), 'Collection must use independent documents');
 for (const route of routes) {

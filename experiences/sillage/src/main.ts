@@ -1,4 +1,5 @@
 import './style.css';
+import 'lenis/dist/lenis.css';
 import './bridge-controls.css';
 import Lenis from 'lenis';
 import { renderLayout, arrow } from './layout.ts';
@@ -181,6 +182,7 @@ function configureMotion() {
       prevent: node => !!node.closest('dialog, input[type="range"]'),
     });
     lenis.on('scroll', () => { scrollDirty = true; });
+    if (document.querySelector('#chapter-index[open]')) lenis.stop();
   }
   resizeDirty = true;
 }

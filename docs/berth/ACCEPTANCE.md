@@ -23,6 +23,10 @@ Sequence and binding captions and the chapter counter fade, with a dead band aro
 
 Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
 
+## Scroll ownership, 12 November 2026
+
+The entrypoint loads Lenis CSS. The existing measurement clock now applies directory containment only while its native navigation surface really overflows, including after toggle, font load and resize. Fitting-directory document wheel, short-directory internal wheel and resize recovery pass in both motion modes in Chromium. The earlier binding-text guard remains intact. Six-size complete-frame review and shared results are recorded in [Collection acceptance](../collection/SCROLL-FONTS-ACCEPTANCE-2026-11-12.md).
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

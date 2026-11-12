@@ -1,4 +1,5 @@
 import './styles.css';
+import 'lenis/dist/lenis.css';
 import './critical.css';
 import {heroPreview,heroMobilePreview} from './critical-art.ts';
 import { renderStory } from './render.ts';

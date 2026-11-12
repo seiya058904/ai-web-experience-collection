@@ -28,12 +28,19 @@ export function setupScroll(initialState: UserState) {
  const counter = document.querySelector('#chapter-count');
  const nav = [...document.querySelectorAll<HTMLAnchorElement>('[data-nav-chapter]')];
  const app = document.querySelector<HTMLElement>('#app')!;
+ const menu = document.querySelector<HTMLDetailsElement>('#chapter-menu');
+ const menuPane = menu?.querySelector<HTMLElement>('nav');
  const cleanups: Array<()=>void> = [];
  function listen(target: EventTarget, type: string, listener: EventListener, options?: AddEventListenerOptions) {
    target.addEventListener(type,listener,options); cleanups.push(()=>target.removeEventListener(type,listener,options));
  }
  function measure() {
    const y=window.scrollY; height=window.innerHeight;
+   if(menuPane) {
+     const scrollable=Boolean(menu?.open) && menuPane.scrollHeight>menuPane.clientHeight+1;
+     menuPane.toggleAttribute('data-lenis-prevent',scrollable);
+     menuPane.style.overscrollBehavior=scrollable?'contain':'auto';
+   }
    const box=(el:HTMLElement):Box=>({element:el,top:el.getBoundingClientRect().top+y,height:el.offsetHeight,stickyHeight:el.querySelector<HTMLElement>('.transition-sticky')?.offsetHeight ?? 0});
    chapters=[...document.querySelectorAll<HTMLElement>('section[data-chapter]')].map(box);
    transitions=[...document.querySelectorAll<HTMLElement>('[data-transition]')].map(box);
@@ -237,6 +244,7 @@ export function setupScroll(initialState: UserState) {
  }) as EventListener);
  listen(window,'scroll',(()=>request()) as EventListener,{passive:true});
  listen(window,'resize',(()=>{needsMeasure=true;request();}) as EventListener,{passive:true});
+ if(menu)listen(menu,'toggle',(()=>{needsMeasure=true;request();}) as EventListener);
  listen(window,'hashchange',(()=>{const target=document.getElementById(location.hash.slice(1));if(target)jump(target,false,false);}) as EventListener);
  listen(window,'pageshow',(()=>{needsMeasure=true;dirty=true;lenis?.scrollTo(window.scrollY,{immediate:true,force:true});request();}) as EventListener);
  listen(document,'visibilitychange',(()=>{

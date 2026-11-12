@@ -1,0 +1,148 @@
+{
+  "generator": "scripts/subset-collection-fonts.py",
+  "tools": {
+    "fonttools": "4.68.0",
+    "brotli": "1.2.1",
+    "zopfli": "0.4.3"
+  },
+  "fonts": [
+    {
+      "cssFamily": "Collection Grid Roboto",
+      "internalFamily": "Collection Grid Preview",
+      "worlds": [
+        "grid",
+        "aurora",
+        "anax"
+      ],
+      "source": "grid/fonts/RobotoFlex-Latin.woff2",
+      "sourceBytes": 249700,
+      "sourceSha256": "5107a806ba9bb123c5ff2d9465905d04b767c694d125fd58103b88048a38a613",
+      "output": "collection/fonts/grid-preview.woff2",
+      "bytes": 99084,
+      "sha256": "9024eb616f3acbe3fe759588d2a374f81dd34aea61a59b02896951ff3ca9588b",
+      "license": "grid/licenses/RobotoFlex-OFL.txt",
+      "licenseSha256": "85b3673b033b95c028b04a8fac4878f877ffef9b0657e8a71457d7c3a7d57eac",
+      "characters": " &,./02359ABCDEFGHIKLMNOPRSTUVWXYabcdefghiklmnoprstuvwxy",
+      "originalFallbackCharacters": "与体光太字序机极械秩蜓蜻阳风",
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 8.0,
+          "default": 14.0,
+          "max": 144.0
+        },
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "default": 400.0,
+          "max": 1000.0
+        },
+        {
+          "tag": "wdth",
+          "min": 25.0,
+          "default": 100.0,
+          "max": 151.0
+        },
+        {
+          "tag": "slnt",
+          "min": -10.0,
+          "default": 0.0,
+          "max": 0.0
+        }
+      ]
+    },
+    {
+      "cssFamily": "Fraunces",
+      "internalFamily": "Collection Counterform Preview",
+      "worlds": [
+        "counterform",
+        "backstage"
+      ],
+      "source": "counterform/assets/fonts/Fraunces-Variable.woff2",
+      "sourceBytes": 195012,
+      "sourceSha256": "7dc0dd18aeeae3204d5cc26679b5f41d8be1e622bd3bd39fef574346c99508e8",
+      "output": "collection/fonts/counterform-preview.woff2",
+      "bytes": 52740,
+      "sha256": "ebc0fab596d2434a8546c1a4f6c9e0322bdd65894cc963cf5c79e464f193664c",
+      "license": "counterform/licenses/Fraunces-OFL.txt",
+      "licenseSha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+      "characters": " &./136ABCDEFGHIKLMNOPRSTUVWXYabcdefghiklmnoprstuvwxy",
+      "originalFallbackCharacters": "与剧场字幻形空觉负间",
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 9.0,
+          "default": 9.0,
+          "max": 144.0
+        },
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "default": 900.0,
+          "max": 900.0
+        },
+        {
+          "tag": "SOFT",
+          "min": 0.0,
+          "default": 0.0,
+          "max": 100.0
+        },
+        {
+          "tag": "WONK",
+          "min": 0.0,
+          "default": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "cssFamily": "Collection Ink Cormorant",
+      "internalFamily": "Collection Ink Preview",
+      "worlds": [
+        "inkscape"
+      ],
+      "source": "inkscape/fonts/CormorantGaramond-Light.woff2",
+      "sourceBytes": 192832,
+      "sourceSha256": "4bafa704ce335aa2fe4ea43fbbf469b135f5824029dcc035f361a79162631d11",
+      "output": "collection/fonts/inkscape-preview.woff2",
+      "bytes": 22920,
+      "sha256": "11296dcf9b36c86e4bd80c10ba05de853da08914ec09cfdc8855cee8ce13d2ec",
+      "license": "inkscape/fonts/OFL-Cormorant.txt",
+      "licenseSha256": "6f5a41d57400577a50aae88475b11f292f3d7de78ee7d5113c69577331d8ad31",
+      "characters": " &,./13ACDEFGHIKLMNOPRSTUVWXacdefghiklmnoprstuvwx",
+      "originalFallbackCharacters": "、与墨水纸",
+      "axes": []
+    },
+    {
+      "cssFamily": "Collection Mend Newsreader",
+      "internalFamily": "Collection Mend Preview",
+      "worlds": [
+        "mend"
+      ],
+      "source": "mend/fonts/newsreader-latin-normal.woff2",
+      "sourceBytes": 132000,
+      "sourceSha256": "6e4f2958c3a7c4a80acde4e5a679abe7e01bc1e30b92be3c7a8b696ef401d101",
+      "output": "collection/fonts/mend-preview.woff2",
+      "bytes": 43012,
+      "sha256": "a0ab9c20c051125457e7c4635bddd9834b1ccc461feaa00ffe1d1334e119d849",
+      "license": "mend/licenses/Newsreader-OFL-1.1.txt",
+      "licenseSha256": "26028ec4e13b650065fa525a09532176f8a668b76ff849ea01c564a7480f91e7",
+      "characters": " &./45ABCDEFGHILMNOPRSTUWXYabcdefghilmnoprstuwxy",
+      "originalFallbackCharacters": "与修惜珍补",
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200.0,
+          "default": 400.0,
+          "max": 800.0
+        },
+        {
+          "tag": "opsz",
+          "min": 6.0,
+          "default": 18.0,
+          "max": 72.0
+        }
+      ]
+    }
+  ]
+}

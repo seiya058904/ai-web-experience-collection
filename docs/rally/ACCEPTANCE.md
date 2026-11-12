@@ -23,6 +23,10 @@ The preparation caption fades with a dead band; replay event labels fade; court 
 
 Checked in Chromium at 1440×900 and 390×844 with a frame-by-frame scroll probe (wheel steps of 90 px): no narrative text or picture changes opacity by more than a third in one frame or changes its words while visible. `npm test`, `npm run build` and `npm run verify:build` pass.
 
+## Scroll ownership, 12 November 2026
+
+The entrypoint loads Lenis CSS. Native Chapters/About dialogs stop Lenis and lock background input in both motion modes; chapter navigation resumes synchronously before scrolling. The chapter directory passes keyboard/backdrop lock, overflowing internal wheel, Escape/focus, motion-preference change and chapter-jump checks in Chromium. Six-size complete-frame review and shared results are recorded in [Collection acceptance](../collection/SCROLL-FONTS-ACCEPTANCE-2026-11-12.md).
+
 ## Not tested
 
 Physical phones and touch, iOS Safari, Firefox, high-refresh displays, real browser zoom, screen readers, throttled or cold network loads and long sessions.

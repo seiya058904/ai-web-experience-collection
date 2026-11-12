@@ -25,6 +25,9 @@ Beyond the Limit 没有生产视频或音频素材。运行时图片、字体和
 | Vite 8.3.2 | 构建 / 开发 | MIT。 |
 | TypeScript 5.9.x | 类型检查 | Apache-2.0。 |
 | Sharp 0.35.5 | 离线图片处理 | Apache-2.0；其平台原生依赖还包含 LGPL-3.0-or-later 等许可。原生库不进入浏览器构建。 |
+| Playwright 1.65.0 | 开发与 CI 浏览器回归检查 | Apache-2.0。测试工具及浏览器二进制不进入部署产物。 |
+
+Collection 入口的四个字体子集位于 `public/collection/fonts/`，由现有 Roboto Flex、Fraunces、Cormorant Garamond Light 和 Newsreader 派生；原作品字体保持不变。完整版权和 OFL 链接见 [派生字体说明](public/collection/fonts/NOTICE.md)，来源与输出哈希、覆盖字形和保留轴记录在 `provenance/collection/font-subsets.json`。生成工具仅离线使用：fontTools（MIT）、Brotli（MIT）、Zopfli（Apache-2.0），版本固定于 `scripts/collection-fonts-requirements.txt`。
 
 `package-lock.json` 固定实际版本，完整依赖树还包含 MIT、Apache-2.0、MPL-2.0、LGPL-3.0-or-later、ISC、BSD-3-Clause 和 0BSD 材料。`node_modules/` 与构建工具二进制不随仓库提交；安装时保留各包附带的许可证。构建工具的许可证不替代项目代码或图片的许可证。
 
