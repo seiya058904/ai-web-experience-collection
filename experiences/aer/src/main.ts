@@ -208,7 +208,7 @@ q('#sound-toggle').addEventListener('click', async () => {
 });
 
 function updateShape(): void {
-  q('.shape-images').dataset.shape = shape;
+  q('.shape-images').dataset.shapeView = shape;
   const paired = reduced || innerWidth <= 680;
   for (const value of ['rest', 'held'] as const) {
     const image = q(`#shape-${value}`);
