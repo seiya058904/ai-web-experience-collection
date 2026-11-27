@@ -295,7 +295,7 @@ Marks such as Formula 1, F1, NASA, and SpaceX belong to their respective rights 
 ---
 
 <p align="center">
-  <sub>FIFTY WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
+  <sub>FIFTY-FIVE WORLDS. ONE CURATED ENTRANCE. A DIFFERENT EXPERIENCE EVERY TIME.</sub><br>
   <sub>AI Web Experience Collection · Motion, matter, and the art of interaction.</sub>
 </p>
 
