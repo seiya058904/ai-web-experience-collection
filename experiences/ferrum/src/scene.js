@@ -576,6 +576,31 @@ export function createScene(canvas, { onReady, onContextLost, onContextRestored,
   const surfaceNormal = new THREE.Vector3(), reflectedView = new THREE.Vector3();
   const coolingAxis = new THREE.Vector3();
   const floorRotation = new THREE.Matrix4();
+  const rawPositions = metal.geometry.attributes.position.array;
+  const finalPositions = metal.geometry.morphAttributes.position[0].array;
+  let contactPose = [];
+  const contact = new THREE.Vector3();
+
+  function updateContact(shape) {
+    const { position, rotation, scale } = metal;
+    const pose = [shape, position.x, position.y, position.z, rotation.x, rotation.y, rotation.z, scale.x, scale.y, scale.z];
+    if (pose.every((value, i) => value === contactPose[i])) return;
+    floorRotation.makeRotationFromEuler(rotation);
+    const r = floorRotation.elements;
+    let lowestY = Infinity;
+    // Preserve the original vertex order and exact rotated lowest point.
+    for (let i = 0; i < rawPositions.length; i += 3) {
+      const x = lerp(rawPositions[i], finalPositions[i], shape) * scale.x;
+      const y = lerp(rawPositions[i + 1], finalPositions[i + 1], shape) * scale.y;
+      const z = lerp(rawPositions[i + 2], finalPositions[i + 2], shape) * scale.z;
+      const worldY = r[1] * x + r[5] * y + r[9] * z + position.y;
+      if (worldY < lowestY) {
+        lowestY = worldY;
+        contact.set(r[0] * x + r[4] * y + r[8] * z + position.x, worldY, r[2] * x + r[6] * y + r[10] * z + position.z);
+      }
+    }
+    contactPose = pose;
+  }
 
   function bindEnvironment(root) {
     root.traverse(object => {
@@ -734,32 +759,18 @@ export function createScene(canvas, { onReady, onContextLost, onContextRestored,
       warmHalo.mesh.quaternion.copy(camera.quaternion);
       warmHalo.material.uniforms.opacity.value = state.heat * state.heat * hotStage * .16 * breath;
       const groundWeight = (1 - state.lights.furnace) * (1 - state.lights.strike) * (1 - state.lights.cooling) * (1 - state.lights.reveal);
-      ground.mesh.visible = groundWeight > .001;
-      ground.material.opacity = groundWeight;
-      floorRotation.makeRotationFromEuler(metal.rotation);
-      const r = floorRotation.elements;
-      const rawPositions = metal.geometry.attributes.position.array;
-      const finalPositions = metal.geometry.morphAttributes.position[0].array;
-      let lowestY = Infinity, contactX = metal.position.x, contactZ = metal.position.z;
-      // The portrait object can stand diagonally. Find its actual lowest point
-      // so no photographic ground plane can cut through the persistent mesh.
-      for (let i = 0; i < rawPositions.length; i += 3) {
-        const x = lerp(rawPositions[i], finalPositions[i], state.shape) * metal.scale.x;
-        const y = lerp(rawPositions[i + 1], finalPositions[i + 1], state.shape) * metal.scale.y;
-        const z = lerp(rawPositions[i + 2], finalPositions[i + 2], state.shape) * metal.scale.z;
-        const worldY = r[1] * x + r[5] * y + r[9] * z + metal.position.y;
-        if (worldY < lowestY) {
-          lowestY = worldY;
-          contactX = r[0] * x + r[4] * y + r[8] * z + metal.position.x;
-          contactZ = r[2] * x + r[6] * y + r[10] * z + metal.position.z;
-        }
+      const groundVisible = groundWeight > .001;
+      const anvilVisible = anvil !== null && state.lights.strike > .001;
+      if (groundVisible || anvilVisible) updateContact(state.shape);
+      ground.mesh.visible = contactShadow.mesh.visible = groundVisible;
+      if (groundVisible) {
+        ground.material.opacity = groundWeight;
+        ground.mesh.position.y = contact.y - .025;
+        contactShadow.material.uniforms.opacity.value = groundWeight * lerp(.69, .45, portrait);
+        contactShadow.mesh.position.set(lerp(metal.position.x, contact.x, portrait), ground.mesh.position.y + .016, lerp(metal.position.z, contact.z, portrait));
+        contactShadow.mesh.rotation.set(-Math.PI / 2, 0, -metal.rotation.y);
+        contactShadow.mesh.scale.set(lerp(lerp(.68, 1, state.shape), .27, portrait), lerp(1, .55, portrait), 1);
       }
-      ground.mesh.position.y = lowestY - .025;
-      contactShadow.mesh.visible = groundWeight > .001;
-      contactShadow.material.uniforms.opacity.value = groundWeight * lerp(.69, .45, portrait);
-      contactShadow.mesh.position.set(lerp(metal.position.x, contactX, portrait), ground.mesh.position.y + .016, lerp(metal.position.z, contactZ, portrait));
-      contactShadow.mesh.rotation.set(-Math.PI / 2, 0, -metal.rotation.y);
-      contactShadow.mesh.scale.set(lerp(lerp(.68, 1, state.shape), .27, portrait), lerp(1, .55, portrait), 1);
 
       if (forge) {
         forge.group.visible = state.lights.furnace > .001;
@@ -768,10 +779,10 @@ export function createScene(canvas, { onReady, onContextLost, onContextRestored,
         forge.glowUniform.value = state.lights.furnace * .92 * breath;
       }
       if (anvil) {
-        anvil.group.visible = state.lights.strike > .001;
+        anvil.group.visible = anvilVisible;
         // Withdraw the body below the complete rotated form during the handoff.
         // A thickness-only support is valid only while the metal is horizontal.
-        anvil.body.position.y = Math.min(0, lowestY - anvil.supportTop - .008);
+        if (anvilVisible) anvil.body.position.y = Math.min(0, contact.y - anvil.supportTop - .008);
         for (const material of anvil.materials) { material.opacity = state.lights.strike; material.depthWrite = state.lights.strike > .995; }
         anvil.hammer.position.set(metal.position.x + state.hammer.contactX, state.hammer.contactY + .73 + state.hammer.height * lerp(1, .40, portrait), 0);
         anvil.hammer.rotation.z = state.hammer.tilt;
@@ -808,8 +819,10 @@ export function createScene(canvas, { onReady, onContextLost, onContextRestored,
         const a = p.brightness;
         colors.set([a * .15, a * .022, 0, a * 2.6, a * .80, a * .13], offset);
       }
-      sparks.geometry.attributes.position.needsUpdate = true;
-      sparks.geometry.attributes.color.needsUpdate = true;
+      if (activeParticles > 0) {
+        sparks.geometry.attributes.position.needsUpdate = true;
+        sparks.geometry.attributes.color.needsUpdate = true;
+      }
       sparks.geometry.setDrawRange(0, particles.length * 2);
       sparks.lines.visible = particles.length > 0;
       dust.visible = !reducedMotion && quality !== 'low';

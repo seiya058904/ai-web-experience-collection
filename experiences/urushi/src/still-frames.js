@@ -10,6 +10,8 @@ export function stillVariant(width, height) {
 }
 
 export function stillPath(chapter, variant) {
+  // The wide hero and the startup poster are byte-identical. Share the request.
+  if (chapter === 0 && variant === 'wide') return 'surface-black.webp';
   return `stills/${variant === 'wide' ? '' : `${variant}/`}${stillFiles[chapter]}.webp`;
 }
 

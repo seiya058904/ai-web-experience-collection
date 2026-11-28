@@ -8,14 +8,23 @@ export const cubic = (t: number) => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t
 export const rgb = (hex: string): RGB => [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16)) as RGB;
 export const colorMix = (a: RGB, b: RGB, t: number): RGB => a.map((v, i) => mix(v, b[i], t)) as RGB;
 export const cssColor = (a: RGB) => `rgb(${a.map(v => Math.round(clamp(v, 0, 255))).join(' ')})`;
-export const luminance = (a: RGB) => a.map(v => { v /= 255; return v <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4; }).reduce((sum, v, i) => sum + v * [.2126, .7152, .0722][i], 0);
-export const contrast = (a: RGB, b: RGB) => (Math.max(luminance(a), luminance(b)) + .05) / (Math.min(luminance(a), luminance(b)) + .05);
+function linearChannel(value: number) {
+  const v = value / 255;
+  return v <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4;
+}
+
+export const luminance = ([r, g, b]: RGB) => linearChannel(r) * .2126 + linearChannel(g) * .7152 + linearChannel(b) * .0722;
+export function contrast(a: RGB, b: RGB) {
+  const lightA = luminance(a), lightB = luminance(b);
+  return (Math.max(lightA, lightB) + .05) / (Math.min(lightA, lightB) + .05);
+}
 export function readable(ink: RGB, paper: RGB, ratio = 4.5): RGB {
   // Check the actual rounded CSS colours, including the middle of dark/light handoffs.
   const rounded = (c: RGB) => c.map(v => Math.round(clamp(v, 0, 255))) as RGB;
-  if (contrast(rounded(ink), rounded(paper)) >= ratio) return ink;
+  const surface = rounded(paper);
+  if (contrast(rounded(ink), surface) >= ratio) return ink;
   const black: RGB = [0, 0, 0], white: RGB = [255, 255, 255];
-  return contrast(black, rounded(paper)) >= contrast(white, rounded(paper)) ? black : white;
+  return contrast(black, surface) >= contrast(white, surface) ? black : white;
 }
 
 export function personality(index: number, t: number) {

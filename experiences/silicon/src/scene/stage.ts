@@ -34,6 +34,9 @@ export class SiliconStage {
   private height = 1;
   private pointer = new THREE.Vector2();
   private pointerTarget = new THREE.Vector2();
+  private readonly neutralPointer = new THREE.Vector2();
+  private readonly screenRight = new THREE.Vector3();
+  private readonly screenUp = new THREE.Vector3();
   private settings: StageSettings = { reduced: false, paused: false, gate: 1, spread: -1, exposure: -1, power: -1 };
   private quality = 1;
   private frameHistory: number[] = [];
@@ -226,7 +229,7 @@ export class SiliconStage {
         this.frameHistory = [];
       }
     }
-    this.pointer.lerp(still ? new THREE.Vector2() : this.pointerTarget, Math.min(1, delta * 4));
+    this.pointer.lerp(still ? this.neutralPointer : this.pointerTarget, Math.min(1, delta * 4));
     const index = Math.min(7, Math.floor(this.progress));
     // Reduced motion presents a complete, still composition per chapter.
     // Direct inspection controls remain available without sweeping the lens.
@@ -247,8 +250,8 @@ export class SiliconStage {
       this.camera.position.y = mix(mix(10.5, 9.2, hero), 8.8, microLens);
       this.camera.lookAt(0, .5, 0);
     }
-    const screenRight = new THREE.Vector3(1,0,0).applyQuaternion(this.camera.quaternion);
-    const screenUp = new THREE.Vector3(0,1,0).applyQuaternion(this.camera.quaternion);
+    const screenRight = this.screenRight.set(1,0,0).applyQuaternion(this.camera.quaternion);
+    const screenUp = this.screenUp.set(0,1,0).applyQuaternion(this.camera.quaternion);
     const horizontalPosition = this.compactLandscape ? (this.width / this.height) * 10.25 * .20 : this.mobile ? 0 : mix(2.9, 2.05, hero);
     this.rig.position.copy(screenRight.multiplyScalar(horizontalPosition));
     // Mobile gives the open cover its own vertical space below the prose.
@@ -287,7 +290,6 @@ export class SiliconStage {
       this.package.update({ ...state, progress: p < 5 ? 0 : clamp(p - Math.floor(p)), spread: p < 5 ? 1 : index === 5 ? state.spread : 0 });
     }
     this.handoff?.update(p);
-    this.scene.updateMatrixWorld();
     this.renderer.render(this.scene, this.camera);
     this.dirty = false;
   }

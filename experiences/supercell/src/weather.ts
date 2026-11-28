@@ -27,11 +27,13 @@ void main(){
  float streak=pow(max(0.,sin(ref.x*1750.+sin(ref.y*28.)*.4)),28.);
  float fall=pow(max(0.,sin(ref.y*140.-clock*1.1+ref.x*87.)),6.);
  col+=vec3(.018,.021,.023)*streak*fall*rainRegion*motion;
- vec3 field=texture2D(structure,clamp(ref,0.,1.)).rgb;
- float slice=1.-smoothstep(.005,.048,abs(ref.y-(.79-.74*height)));
- vec3 material=mix(vec3(.14,.22,.28),vec3(.86,.79,.64),field.g);
- float optical=slice*plane*clamp(field.r*2.,0.,1.);
- col=mix(col,mix(col*.72,material,.28),optical*.66);
+ if(plane>0.){
+   vec3 field=texture2D(structure,clamp(ref,0.,1.)).rgb;
+   float slice=1.-smoothstep(.005,.048,abs(ref.y-(.79-.74*height)));
+   vec3 material=mix(vec3(.14,.22,.28),vec3(.86,.79,.64),field.g);
+   float optical=slice*plane*clamp(field.r*2.,0.,1.);
+   col=mix(col,mix(col*.72,material,.28),optical*.66);
+ }
  col*=mix(.92,1.,reveal);
  gl_FragColor=vec4(col,1.);
 }`;
@@ -84,6 +86,9 @@ export class WeatherRenderer {
       const attribute=gl.getAttribLocation(program,'position');gl.enableVertexAttribArray(attribute);gl.vertexAttribPointer(attribute,2,gl.FLOAT,false,0,0);
       this.texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,this.texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
       this.densityTexture=gl.createTexture();gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,this.densityTexture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.activeTexture(gl.TEXTURE0);this.densityShear=-1;
+      gl.activeTexture(gl.TEXTURE1);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([0,0,128,255]));
+      gl.activeTexture(gl.TEXTURE0);
       for(const name of ['photograph','structure','viewport','imageSize','shear','clock','motion','scale','shift','mobile','height','plane','reveal'])this.uniforms[name]=gl.getUniformLocation(program,name);
       this.setMode('webgl');
     } catch(error) { console.info('SUPERCELL: illustrated fallback active.',String(error));this.gl=null;this.setMode('illustrated'); }
@@ -125,7 +130,7 @@ export class WeatherRenderer {
     const shiftX=story.shiftX*(this.mobile?.25:1);
     if(this.gl&&!this.lost){
       const gl=this.gl;const u=this.uniforms;gl.viewport(0,0,this.canvas.width,this.canvas.height);gl.useProgram(this.program);
-      if(this.densityShear!==shear){const projected=buildProjectedDensity(shear,96,64);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,this.densityTexture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,projected.width,projected.height,0,gl.RGBA,gl.UNSIGNED_BYTE,projected.data);gl.activeTexture(gl.TEXTURE0);this.densityShear=shear;}
+      if(story.p>=.24&&story.p<.95&&this.densityShear!==shear){const projected=buildProjectedDensity(shear,96,64);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,this.densityTexture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,projected.width,projected.height,0,gl.RGBA,gl.UNSIGNED_BYTE,projected.data);gl.activeTexture(gl.TEXTURE0);this.densityShear=shear;}
       gl.uniform1i(u.structure,1);
       gl.uniform2f(u.viewport,this.width,this.height);gl.uniform2f(u.imageSize,this.image.naturalWidth,this.image.naturalHeight);gl.uniform1i(u.photograph,0);gl.uniform1f(u.shear,shear);gl.uniform1f(u.clock,clock);gl.uniform1f(u.motion,motion?1:0);gl.uniform1f(u.scale,story.scale);gl.uniform2f(u.shift,shiftX,story.shiftY);gl.uniform1f(u.mobile,this.mobile?1:0);gl.uniform1f(u.height,height);gl.uniform1f(u.plane,story.plane);gl.uniform1f(u.reveal,reveal);gl.drawArrays(gl.TRIANGLES,0,6);
       this.canvas.classList.add('ready');this.fallbackCanvas.classList.remove('ready');this.setModeIfChanged('webgl');

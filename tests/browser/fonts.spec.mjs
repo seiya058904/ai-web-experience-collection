@@ -6,6 +6,8 @@ test.use({ reducedMotion: 'reduce' });
 
 test('Collection subsets cover rendered copy and retain original text geometry', async ({ page }) => {
   await page.goto('./');
+  // This test measures every title, including panels the browser can skip offscreen.
+  await page.addStyleTag({ content: '.worlds > .world { content-visibility: visible !important; }' });
   await page.evaluate(() => document.fonts.ready);
   const problems = await page.evaluate(async fonts => {
     const problems = [], references = new Map();

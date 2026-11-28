@@ -107,7 +107,12 @@ function tree(layers:number,options:{endpoint?:number|null;prefix?:string;route?
   return `<g>${text(500,90,headline,20,'#244AB8')}${firstFork?`<path d="M500 ${f(lerp(185,148,eased))}V${f(y0)}" stroke="url(#tray)" stroke-width="${f(40*(1-eased))}" stroke-linecap="round"/>`:''}${lines.join('')}${routes}${ball(500,lerp(firstFork?205:148,148,eased),lerp(firstFork?28:13,13,eased))}${endpoints.join('')}${text(500,758,completed?'Endpoint = number of right turns':'Earlier endpoints become intermediate nodes.',14)}</g>`;
 }
 
-function weightRelief(unit:'paths'|'probability'|'balls'='paths'):string{
+type ReliefUnit = 'paths' | 'probability' | 'balls';
+const reliefMarkup = new Map<ReliefUnit, string>();
+
+function weightRelief(unit:ReliefUnit='paths'):string{
+  const cached = reliefMarkup.get(unit);
+  if (cached !== undefined) return cached;
   const x=113,y=683,width=774,lane=width/9;
   let lines='',columns='';
   coefficients.forEach((count,k)=>{
@@ -117,7 +122,9 @@ function weightRelief(unit:'paths'|'probability'|'balls'='paths'):string{
     columns+=`<g data-weight="${count}"><path d="M${f(cx-25)} ${f(dy)}L${f(cx+27)} ${f(dy)}L${f(cx+36)} ${f(dy+11)}V${y+18}H${f(cx-15)}L${f(cx-25)} ${y}Z" fill="#183985"/><rect x="${f(cx-25)}" y="${f(dy)}" width="52" height="${f(h)}" rx="3" fill="url(#tray)"/><path d="M${f(cx-25)} ${f(dy)}H${f(cx+27)}L${f(cx+36)} ${f(dy+11)}H${f(cx-16)}Z" fill="#5F7ED1"/>${text(cx,y+53,value,unit==='paths'?19:12,'#244AB8')}${text(cx,y+84,String(k),12)}</g>`;
   });
   const label=unit==='paths'?'Exact path counts · total 256':unit==='probability'?'Probability · each count ÷ 256':'Expected balls · 16 × probability';
-  return `${text(500,80,label,20,'#244AB8')}<circle cx="500" cy="145" r="10" fill="url(#peg)"/>${lines}<g filter="url(#soft-shadow)">${columns}</g>${text(500,835,unit==='paths'?'Possible sequences, before any balls are sampled.':unit==='probability'?'The nine probabilities sum to one.':'The middle expects 4.375 balls. No integer outcome is promised.',14)}`;
+  const markup = `${text(500,80,label,20,'#244AB8')}<circle cx="500" cy="145" r="10" fill="url(#peg)"/>${lines}<g filter="url(#soft-shadow)">${columns}</g>${text(500,835,unit==='paths'?'Possible sequences, before any balls are sampled.':unit==='probability'?'The nine probabilities sum to one.':'The middle expects 4.375 balls. No integer outcome is promised.',14)}`;
+  reliefMarkup.set(unit, markup);
+  return markup;
 }
 
 function pair(state:AppState):string{const max=Math.max(...state.small.flatMap(r=>r.counts),...expectedCounts(8,.5,16));return traySVG(state.small[0],{x:126,y:190,width:748,height:175,maxCount:max,label:'Round A · 16 balls'})+traySVG(state.small[1],{x:126,y:535,width:748,height:175,maxCount:max,label:'Round B · 16 balls'});}

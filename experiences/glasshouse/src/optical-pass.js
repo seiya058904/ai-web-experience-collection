@@ -230,8 +230,23 @@ export function createOpticalPass(renderer, scene, camera) {
   }
 
   function render(objects) {
+    // The base scene, reflected scene and ordered panes share their object
+    // transforms. Reflectors change visibility and use their own cameras.
     scene.updateMatrixWorld();
     camera.updateMatrixWorld();
+    const autoSceneMatrices = scene.matrixWorldAutoUpdate;
+    const autoCameraMatrices = camera.matrixWorldAutoUpdate;
+    scene.matrixWorldAutoUpdate = false;
+    camera.matrixWorldAutoUpdate = false;
+    try {
+      renderLayers(objects);
+    } finally {
+      scene.matrixWorldAutoUpdate = autoSceneMatrices;
+      camera.matrixWorldAutoUpdate = autoCameraMatrices;
+    }
+  }
+
+  function renderLayers(objects) {
     const background = scene.background;
     copy.material = copyMaterial;
     camera.layers.set(0);

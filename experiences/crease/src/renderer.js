@@ -1,5 +1,5 @@
 import {
-  BackSide, BufferAttribute, BufferGeometry, CanvasTexture, Color, DirectionalLight, DoubleSide, FrontSide, HemisphereLight, Mesh,
+  BackSide, BufferAttribute, BufferGeometry, CanvasTexture, Color, DirectionalLight, DoubleSide, DynamicDrawUsage, FrontSide, HemisphereLight, Mesh,
   MeshStandardMaterial, PCFShadowMap, PerspectiveCamera, PlaneGeometry, RepeatWrapping, SRGBColorSpace, Scene, ShadowMaterial, Vector3, WebGLRenderer,
 } from 'three';
 import { SHEET } from './model.js';
@@ -50,6 +50,8 @@ export class SheetRenderer {
     renderer.outputColorSpace = SRGBColorSpace;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = PCFShadowMap;
+    renderer.shadowMap.autoUpdate = false;
+    canvas.addEventListener('webglcontextrestored', this.invalidateShadows);
     this.renderer = renderer;
     this.scene = new Scene();
     this.camera = new PerspectiveCamera(30, 1, 0.1, 40);
@@ -69,11 +71,13 @@ export class SheetRenderer {
     key.shadow.bias = -0.0006;
     key.shadow.normalBias = 0.008;
     this.scene.add(key);
+    this.keyLight = key;
 
     const ground = new Mesh(new PlaneGeometry(14, 14), new ShadowMaterial({ color: INK, opacity: 0.2 }));
     ground.position.z = -0.002;
     ground.receiveShadow = true;
     this.scene.add(ground);
+    this.ground = ground;
 
     this.creaseCanvas = document.createElement('canvas');
     this.creaseCanvas.width = 2048;
@@ -85,6 +89,7 @@ export class SheetRenderer {
     const fiber = fiberTexture();
     fiber.wrapS = RepeatWrapping;
     fiber.wrapT = RepeatWrapping;
+    this.fiber = fiber;
     this.geometry = new BufferGeometry();
     this.capacity = 0;
     this.ensure(600);
@@ -116,11 +121,12 @@ export class SheetRenderer {
 
   ensure(triangles) {
     if (triangles <= this.capacity) return;
+    if (this.capacity) this.geometry.dispose();
     this.capacity = Math.max(triangles, this.capacity * 2);
     const size = this.capacity * 3;
-    this.geometry.setAttribute('position', new BufferAttribute(new Float32Array(size * 3), 3));
-    this.geometry.setAttribute('normal', new BufferAttribute(new Float32Array(size * 3), 3));
-    this.geometry.setAttribute('uv', new BufferAttribute(new Float32Array(size * 2), 2));
+    this.geometry.setAttribute('position', new BufferAttribute(new Float32Array(size * 3), 3).setUsage(DynamicDrawUsage));
+    this.geometry.setAttribute('normal', new BufferAttribute(new Float32Array(size * 3), 3).setUsage(DynamicDrawUsage));
+    this.geometry.setAttribute('uv', new BufferAttribute(new Float32Array(size * 2), 2).setUsage(DynamicDrawUsage));
   }
 
   // The pattern is printed on the paper itself, so it folds with the facets and needs no line geometry.
@@ -180,8 +186,16 @@ export class SheetRenderer {
       }
     }
     this.geometry.setDrawRange(0, v);
-    for (const name of ['position', 'normal', 'uv']) this.geometry.attributes[name].needsUpdate = true;
+    for (const attribute of Object.values(this.geometry.attributes)) {
+      attribute.clearUpdateRanges();
+      attribute.addUpdateRange(0, v * attribute.itemSize);
+      attribute.needsUpdate = true;
+    }
+    this.invalidateShadows();
   }
+
+  // The camera, printed creases and shading uniforms do not move the caster or light.
+  invalidateShadows = () => { this.renderer.shadowMap.needsUpdate = true; };
 
   setView({ elevation, azimuth, distance, shiftX, shiftY, targetZ, reveal, lineAlpha }) {
     this.target.z = targetZ;
@@ -214,8 +228,15 @@ export class SheetRenderer {
   }
 
   dispose() {
+    this.canvas.removeEventListener('webglcontextrestored', this.invalidateShadows);
     this.geometry.dispose();
+    this.front.material.dispose();
+    this.back.material.dispose();
     this.creaseTexture.dispose();
+    this.fiber.dispose();
+    this.ground.geometry.dispose();
+    this.ground.material.dispose();
+    this.keyLight.shadow.dispose();
     this.renderer.dispose();
   }
 }

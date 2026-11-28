@@ -19,6 +19,7 @@ npm run test:browser
 - BERTH's native directory: a fitting menu lets wheel input continue the document; a short viewport lets the menu scroll internally; resizing back releases containment.
 - ODDS fifth-chapter data: vertical scrolling over a fitting table; enlarged text at 320px creates genuine horizontal overflow; both input axes work independently; resizing back removes stale containment.
 - Collection Index → SILLAGE → explicit Collection return: project base, source offset and focus. The native Index and entry also work in a JavaScript-disabled context.
+- Collection wheel wakes after an idle hold, reverses, and yields to native End while its wheel animation is active. The last panel's artwork loads at the destination.
 - Collection font subsets: actual rendered text coverage and per-text-node geometry against the original fonts loaded into the same browser. Node tests check original/derivative/license hashes and copy coverage.
 - AER shape comparison: desktop cross-fade and rapid reversal with stable frame height, selected accessibility state, and complete paired views on phones and after a reduced-motion change.
 - RALLY study captions: latest-choice text after rapid input, immediate settling when reduced motion interrupts a fade, and replay button node stability while the playhead advances.

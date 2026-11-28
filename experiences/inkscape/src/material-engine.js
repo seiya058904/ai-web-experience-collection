@@ -351,9 +351,11 @@ export class MaterialEngine {
     this.waterEdges = [makeWaterEdge(32891), makeWaterEdge(45119), makeWaterEdge(61003)];
     this.capillaries = makeCapillaries(87301);
     this.fibers = makeFibers(71938);
-    this.brushDry = makeBrushTexture({ width: 1500, height: 940, wet: false });
-    this.brushWet = makeBrushTexture({ width: 1500, height: 940, wet: true });
-    this.mark = makeBrushTexture({ width: 640, height: 920, wet: false, mark: true });
+    this.brushDry = null;
+    this.brushWet = null;
+    this.mark = null;
+    this.brushClips = new Map();
+    this.traceSamples = null;
     this.photoBrushSource = null;
     this.photoBrushDry = null;
     this.photoBrushWet = null;
@@ -371,12 +373,18 @@ export class MaterialEngine {
 
   resize(width, height, dpr = window.devicePixelRatio || 1) {
     if (this.destroyed) return;
-    this.width = Math.max(1, Number(width) || this.canvas.clientWidth || 1);
-    this.height = Math.max(1, Number(height) || this.canvas.clientHeight || 1);
+    width = Math.max(1, Number(width) || this.canvas.clientWidth || 1);
+    height = Math.max(1, Number(height) || this.canvas.clientHeight || 1);
     // Maximum 3.8 MP: 4K still has detailed material without an 8–32 MP fill.
-    this.dpr = Math.min(1.6, Math.max(1, Number(dpr) || 1), Math.sqrt(3_800_000 / (this.width * this.height)));
-    this.canvas.width = Math.max(1, Math.round(this.width * this.dpr));
-    this.canvas.height = Math.max(1, Math.round(this.height * this.dpr));
+    dpr = Math.min(1.6, Math.max(1, Number(dpr) || 1), Math.sqrt(3_800_000 / (width * height)));
+    if (this.width === width && this.height === height && this.dpr === dpr && this.canvas.width === Math.round(width * dpr) && this.canvas.height === Math.round(height * dpr)) return;
+    this.width = width;
+    this.height = height;
+    this.dpr = dpr;
+    this.brushClips.clear();
+    this.traceSamples = null;
+    this.canvas.width = Math.max(1, Math.round(width * dpr));
+    this.canvas.height = Math.max(1, Math.round(height * dpr));
     this.mobile = this.width < 700 || this.width / this.height < 0.86;
     this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
     this.ctx.imageSmoothingEnabled = true;
@@ -553,10 +561,31 @@ export class MaterialEngine {
     }
   }
 
-  brushClip(progress, x, y, width, height, normalizedCurve = TRACE_CURVE) {
+  brushClip(slot, progress, x, y, width, height, normalizedCurve = TRACE_CURVE) {
     const ctx = this.ctx;
     if (progress >= 0.999) return;
-    const route = sampleCurve(normalizedCurve.map((point) => ({ x: x + point.x * width, y: y + point.y * height })), 80);
+    let shape = this.brushClips.get(slot);
+    if (!shape || shape.x !== x || shape.y !== y || shape.width !== width || shape.height !== height) {
+      const route = sampleCurve(normalizedCurve.map((point) => ({ x: x + point.x * width, y: y + point.y * height })), 80);
+      const reach = Math.max(width, height) * 2;
+      const breadth = Math.min(width, height);
+      const nibRadius = breadth * 0.32;
+      const samples = Math.min(4096, Math.ceil(reach * 2 / 2));
+      const across = new Float64Array(samples + 1);
+      const shoulderSquared = new Float64Array(samples + 1);
+      const raggedness = new Float64Array(samples + 1);
+      for (let i = 0; i <= samples; i += 1) {
+        const offset = lerp(-reach, reach, i / samples);
+        const shoulder = Math.min(3, Math.abs(offset) / nibRadius);
+        const fibers = Math.sin(offset * 0.43) + Math.sin(offset * 1.19) * 0.52 + Math.sin(offset * 2.73) * 0.22;
+        across[i] = offset;
+        shoulderSquared[i] = shoulder * shoulder;
+        raggedness[i] = fibers * breadth * 0.002;
+      }
+      shape = { x, y, width, height, route, reach, breadth, across, shoulderSquared, raggedness };
+      this.brushClips.set(slot, shape);
+    }
+    const { route, reach, breadth, across, shoulderSquared, raggedness } = shape;
     // Interpolate the sampled path: slow scroll must not jump between the
     // eighty reference points. The brush front is a shallow, fibrous nib,
     // rather than a straight wipe across the photographed pigment.
@@ -569,27 +598,26 @@ export class MaterialEngine {
       tx: lerp(before.tx, after.tx, fraction), ty: lerp(before.ty, after.ty, fraction),
       nx: lerp(before.nx, after.nx, fraction), ny: lerp(before.ny, after.ny, fraction),
     };
-    const reach = Math.max(width, height) * 2;
-    const breadth = Math.min(width, height);
-    const nibRadius = breadth * 0.32;
     const nibDepth = breadth * 0.085 * (1 - smooth(0.90, 1, progress));
-    const samples = Math.min(4096, Math.ceil(reach * 2 / 2));
     ctx.beginPath();
     ctx.moveTo(point.x - point.tx * reach - point.nx * reach, point.y - point.ty * reach - point.ny * reach);
-    for (let i = 0; i <= samples; i += 1) {
-      const across = lerp(-reach, reach, i / samples);
-      const shoulder = Math.min(3, Math.abs(across) / nibRadius);
-      const fibers = Math.sin(across * 0.43) + Math.sin(across * 1.19) * 0.52 + Math.sin(across * 2.73) * 0.22;
-      const ragged = fibers * breadth * 0.002 - shoulder * shoulder * nibDepth;
-      ctx.lineTo(point.x + point.nx * across + point.tx * ragged, point.y + point.ny * across + point.ty * ragged);
+    for (let i = 0; i < across.length; i += 1) {
+      const ragged = raggedness[i] - shoulderSquared[i] * nibDepth;
+      ctx.lineTo(point.x + point.nx * across[i] + point.tx * ragged, point.y + point.ny * across[i] + point.ty * ragged);
     }
     ctx.lineTo(point.x - point.tx * reach + point.nx * reach, point.y - point.ty * reach + point.ny * reach);
     ctx.closePath();
     ctx.clip();
   }
 
+  prepareBrushTextures() {
+    this.brushDry ??= makeBrushTexture({ width: 1500, height: 940, wet: false });
+    this.brushWet ??= makeBrushTexture({ width: 1500, height: 940, wet: true });
+  }
+
   prepareBrushAsset(photo) {
     if (photo === this.photoBrushSource) return;
+    this.prepareBrushTextures();
     const width = 1500;
     const height = 940;
     const dry = surface(width, height);
@@ -623,6 +651,7 @@ export class MaterialEngine {
 
   prepareGestureAsset(photo) {
     if (photo === this.photoGestureSource) return;
+    this.mark ??= makeBrushTexture({ width: 640, height: 920, wet: false, mark: true });
     const height = 1200;
     const width = Math.round(height * photo.naturalWidth / photo.naturalHeight);
     const gesture = surface(width, height);
@@ -644,7 +673,7 @@ export class MaterialEngine {
       ? { x: -w * 0.23, y: h * 0.26, width: w * 1.40, height: h * 0.63 }
       : { x: 0, y: 0, width: w, height: h };
     ctx.save();
-    this.brushClip(reveal, area.x, area.y, area.width, area.height);
+    this.brushClip('trace', reveal, area.x, area.y, area.width, area.height);
     const inheritedAlpha = ctx.globalAlpha;
     const photo = this.assets.brush;
     const hasPhoto = photo && photo.complete && photo.naturalWidth > 0;
@@ -657,6 +686,7 @@ export class MaterialEngine {
       ctx.globalAlpha = inheritedAlpha * wetness * 0.78;
       ctx.drawImage(this.photoBrushWet, area.x, area.y, area.width, area.height);
     } else {
+      this.prepareBrushTextures();
       ctx.globalAlpha = inheritedAlpha * (1 - wetness);
       ctx.drawImage(this.brushDry, area.x, area.y, area.width, area.height);
       ctx.globalAlpha = inheritedAlpha * wetness;
@@ -665,7 +695,7 @@ export class MaterialEngine {
     ctx.globalAlpha = inheritedAlpha;
     // Wet margins collect gently without displacing the finished gesture.
     if (wetness > 0.03) {
-      const samples = sampleCurve(TRACE_CURVE.map((point) => ({ x: area.x + point.x * area.width, y: area.y + point.y * area.height })), 94);
+      const samples = this.traceSamples ??= sampleCurve(TRACE_CURVE.map((point) => ({ x: area.x + point.x * area.width, y: area.y + point.y * area.height })), 94);
       for (let edge = -1; edge <= 1; edge += 2) {
         ctx.beginPath();
         for (let i = 0; i < samples.length; i += 1) {
@@ -784,7 +814,7 @@ export class MaterialEngine {
     const photo = this.assets.gesture;
     const hasPhoto = photo && photo.complete && photo.naturalWidth > 0;
     if (hasPhoto) this.prepareGestureAsset(photo);
-    const texture = hasPhoto ? this.photoGesture : this.mark;
+    const texture = hasPhoto ? this.photoGesture : (this.mark ??= makeBrushTexture({ width: 640, height: 920, wet: false, mark: true }));
     const reveal = 0.29 + smooth(0, 0.22, progress) * 0.71;
     ctx.save();
     ctx.globalAlpha *= hasPhoto ? 0.98 : 0.95;
@@ -792,7 +822,7 @@ export class MaterialEngine {
     const artWidth = artHeight * texture.width / texture.height;
     const x = mobile ? w * 0.30 - artWidth * 0.5 : w * 0.30 - artWidth * 0.5;
     const y = h * (mobile ? 0.46 : 0.075);
-    this.brushClip(reveal, x, y, artWidth, artHeight, MARK_CURVE);
+    this.brushClip('mark', reveal, x, y, artWidth, artHeight, MARK_CURVE);
     ctx.drawImage(texture, x, y, artWidth, artHeight);
     ctx.restore();
     // The seal's pigment edge is compact. The DOM owns the actual impression.
@@ -825,6 +855,7 @@ export class MaterialEngine {
     const photo = this.assets.brush;
     const hasPhoto = photo && photo.complete && photo.naturalWidth > 0;
     if (hasPhoto) this.prepareBrushAsset(photo);
+    else this.prepareBrushTextures();
     const texture = hasPhoto ? this.photoBrushDry : this.brushDry;
     const area = mobile
       ? { x: -w * 0.27, y: h * 0.73, width: w * 1.39, height: h * 0.33 }
@@ -836,7 +867,7 @@ export class MaterialEngine {
     ctx.translate(pivotX, pivotY);
     ctx.rotate(0.045);
     ctx.translate(-pivotX, -pivotY);
-    this.brushClip(0.42 + smooth(0, 0.22, progress) * 0.58, area.x, area.y, area.width, area.height);
+    this.brushClip('finale', 0.42 + smooth(0, 0.22, progress) * 0.58, area.x, area.y, area.width, area.height);
     ctx.drawImage(texture, area.x, area.y, area.width, area.height);
     ctx.restore();
     // Retained edges sit below the central leave-taking, joining the parent's
@@ -879,6 +910,8 @@ export class MaterialEngine {
     if (this.destroyed) return;
     this.destroyed = true;
     this.drops.length = 0;
+    this.brushClips.clear();
+    this.traceSamples = null;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     for (const texture of [this.brushDry, this.brushWet, this.mark, this.photoBrushDry, this.photoBrushWet, this.photoGesture]) {
       if (!texture) continue;

@@ -36,6 +36,7 @@ let returnFocus:HTMLElement|null=null;
 let pendingFocus:number|null=null;
 const navLinks=$$<HTMLAnchorElement>('[data-chapter]');
 const pathMain=$<SVGPathElement>('#flow-main');const pathUnder=$<SVGPathElement>('#flow-under');
+const parcelMarkers=[$('#parcel'),$('#parcel-halo')];
 const diagram=$<SVGSVGElement>('#air-diagram');
 
 function updateInputs(){
@@ -120,9 +121,6 @@ function renderDiagram(story:Story){
  if(story.flow>.001){
    const points=Array.from({length:96},(_,i)=>{const v=flowPoint(i/95,state.u);return weather.project(v.x,v.h,v.z,story);});
    const d=points.map((v,i)=>`${i?'L':'M'}${v.x.toFixed(2)},${v.y.toFixed(2)}`).join('');pathMain.setAttribute('d',d);pathUnder.setAttribute('d',d);
-   const t=clamp(.06+.77*smoothstep(.11,.35,story.p)+(state.paused?0:Math.sin(state.clock*.18)*.035));
-   const parcel=flowPoint(t,state.u);const at=weather.project(parcel.x,parcel.h,parcel.z,story);
-   for(const id of ['#parcel','#parcel-halo']){$(id).setAttribute('cx',String(at.x));$(id).setAttribute('cy',String(at.y));}
    const labels=[['#inflow-label',.17,16,-22],['#updraft-label',.49,17,-15],['#outflow-label',.88,-12,-25]] as const;
    for(const [id,t,x,y]of labels){const point=flowPoint(t,state.u);const at=weather.project(point.x,point.h,point.z,story);const element=$(id);let lx=clamp(at.x+x,20,innerWidth-element.offsetWidth-20),ly=clamp(at.y+y,112,innerHeight-105);if(lx<copyRect.right+10&&lx+element.offsetWidth>copyRect.left-10&&ly+18>copyRect.top-10&&ly<copyRect.bottom+10){ly=copyRect.top-27;lx=clamp(at.x,20,innerWidth-element.offsetWidth-20);}element.style.left=`${lx}px`;element.style.top=`${ly}px`;}
  }
@@ -153,6 +151,13 @@ function renderDiagram(story:Story){
    }
    $('#section-svg').style.opacity=story.p>.8?String(1-smoothstep(.84,.865,story.p)):String(entering);
  }
+}
+
+function renderParcel(story:Story){
+ const t=clamp(.06+.77*smoothstep(.11,.35,story.p)+(state.paused?0:Math.sin(state.clock*.18)*.035));
+ const parcel=flowPoint(t,state.u);const at=weather.project(parcel.x,parcel.h,parcel.z,story);
+ const x=String(at.x),y=String(at.y);
+ for(const marker of parcelMarkers){marker.setAttribute('cx',x);marker.setAttribute('cy',y);}
 }
 
 function applyStory(story:Story){
@@ -188,11 +193,15 @@ function tick(seconds:number){
  const storyChanged=story.p!==lastAppliedP;
  const fieldChanged=contoursDirty||state.h!==lastHeight||state.u!==lastShear;
  if(storyChanged||layoutDirty||pendingFocus!==null){applyStory(story);lastAppliedP=story.p;}
- if(fieldChanged){updateContours();lastHeight=state.h;lastShear=state.u;}
+ // Prepare the section before its first opacity ramp, or immediately on a deep link.
+ const prepareSection=fieldChanged&&story.p>=.24;
+ if(prepareSection){updateContours();lastHeight=state.h;lastShear=state.u;}
  const layoutChanged=layoutDirty;
  if(layoutDirty){const rect=$('#section-svg').getBoundingClientRect();sectionRect={left:rect.left,top:rect.top,width:rect.width,height:rect.height};const copy=chapters[1].getBoundingClientRect();copyRect={left:copy.left,top:copy.top,width:copy.width,height:copy.height,right:copy.right,bottom:copy.bottom};const cut=$('#copy-cut');cut.setAttribute('x',String(copy.left-12));cut.setAttribute('y',String(copy.top-10));cut.setAttribute('width',String(copy.width+24));cut.setAttribute('height',String(copy.height+20));diagram.setAttribute('viewBox',`0 0 ${innerWidth} ${innerHeight}`);layoutDirty=false;}
  weather.render(story,state.u,state.h,state.clock,!state.paused,state.reduced?1:smoothstep(0,1.3,revealTime));
- if(storyChanged||fieldChanged||layoutChanged||(story.flow>.001&&!state.paused))renderDiagram(story);
+ const diagramChanged=storyChanged||prepareSection||layoutChanged;
+ if(diagramChanged)renderDiagram(story);
+ if(story.flow>.001&&(diagramChanged||!state.paused))renderParcel(story);
  sound.update(false,story.finale);
 }
 gsap.ticker.add(tick);
