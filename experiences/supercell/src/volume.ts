@@ -1,4 +1,4 @@
-import { clamp, contourSegments, density, yToHeight } from './field.ts';
+import { clamp, contourSegments, densitySlice, yToHeight } from './field.ts';
 import type { Contour } from './field.ts';
 
 export type ProjectedDensity = {
@@ -40,12 +40,12 @@ export function buildProjectedDensity(shear: number, width = 160, height = 112):
   for (let row = 0; row < height; row++) {
     const imageY = (row + 0.5) / height;
     const h = yToHeight(imageY);
-    const hasCloud = h > 0.025 && h < 0.985;
+    const sampleDensity = h > 0.025 && h < 0.985 ? densitySlice(h, u) : undefined;
     for (let column = 0; column < width; column++) {
       const index = (row * width + column) * 4;
       data[index + 2] = 128;
       data[index + 3] = 255;
-      if (!hasCloud) continue;
+      if (!sampleDensity) continue;
 
       const x = (column + 0.5) / width;
       let integrated = 0;
@@ -54,7 +54,7 @@ export function buildProjectedDensity(shear: number, width = 160, height = 112):
       for (let sample = 0; sample < depthSamples; sample++) {
         // Midpoint quadrature avoids bias toward the domain's empty boundaries.
         const depth = (sample + 0.5) / depthSamples;
-        const value = density(x, h, depth - 0.5, u);
+        const value = sampleDensity(x, depth - 0.5);
         integrated += value;
         depthMoment += value * depth;
         nearStructure = Math.max(nearStructure, value * (1 - 0.35 * depth));

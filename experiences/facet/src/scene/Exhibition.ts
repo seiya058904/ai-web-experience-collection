@@ -173,6 +173,7 @@ export class Exhibition {
  private lastRayKey='';private disposed=false;private frames=0;
  private background=new THREE.Color('#080b0e');
  private galleryPoses:Pose[]=[];
+ private chapterPoses:Pose[]=[];
  private lastReadout:ExhibitionReadout={theme:0,cut:0,polish:1,blue:0,agate:0,labels:[],facetLabels:[]};
 
  constructor(canvas:HTMLCanvasElement){
@@ -260,6 +261,7 @@ export class Exhibition {
   this.camera.aspect=this.width/this.height;this.camera.updateProjectionMatrix();
   this.worldWidth=2*Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2))*8.8*this.camera.aspect;
   this.lastRayKey='';this.layoutGallery();
+  this.chapterPoses=this.layoutChapters();
  }
 
  private layoutGallery():void{
@@ -276,10 +278,10 @@ export class Exhibition {
  }
 
  private screen(v:THREE.Vector3):{x:number;y:number}{v.project(this.camera);return {x:(v.x*.5+.5)*this.width,y:(-.5*v.y+.5)*this.height};}
- private poseFor(index:number):Pose{
+ private layoutChapters():Pose[]{
   if(this.mobile){
    const w=Math.min(1.12,this.worldWidth*.395);
-   const a:Pose[]=[
+   return [
     {x:0,y:.13,z:0,scale:w,rx:1.01,ry:.1,rz:-.3},
     {x:-.13,y:.2,z:0,scale:w*.81,rx:.27,ry:.18,rz:-.035},
     {x:0,y:.18,z:.1,scale:w*1.01,rx:1.12,ry:.16,rz:-.42},
@@ -287,7 +289,7 @@ export class Exhibition {
     {x:-.18,y:.22,z:0,scale:w*.92,rx:.09,ry:-.3,rz:-.15},
     {x:0,y:.2,z:0,scale:w*.94,rx:.4,ry:.08,rz:0},
     this.galleryPoses[2],
-   ];return a[index];
+   ];
   }
   const w=this.worldWidth;
   return [
@@ -298,7 +300,7 @@ export class Exhibition {
    {x:-w*.17,y:.07,z:0,scale:1.92,rx:.02,ry:-.3,rz:-.15},
    {x:w*.12,y:.25,z:0,scale:1.89,rx:.37,ry:.06,rz:0},
    this.galleryPoses[2],
-  ][index];
+  ];
  }
 
  render(state:NarrativeState,controls:ExhibitionControls,time:number):ExhibitionReadout{
@@ -319,9 +321,10 @@ export class Exhibition {
   this.floorMat.uniforms.uTime.value=ambient;
   this.floorMat.uniforms.uLight.value=w[0]*.45+w[2]*.25+w[5]*.85+exhibition*.25;
   this.floorMat.uniforms.uBand.value=smooth(4.5,4.77,p)*(1-smooth(5.03,5.35,p))*.85;
-  let current=this.poseFor(0);
+  const poses=this.chapterPoses;
+  let current=poses[0];
   // Every handoff reuses the current world-space pose; the smooth intervals are shared.
-  for(let i=1;i<7;i++)current=blendPose(current,this.poseFor(i),smooth(i-.24,i+.16,p));
+  for(let i=1;i<7;i++)current=blendPose(current,poses[i],smooth(i-.24,i+.16,p));
   const breath=ambient?Math.sin(ambient*.21)*.025:0;
   current.ry+=breath+controls.dragX;
   current.rx+=controls.dragY;
@@ -344,13 +347,13 @@ export class Exhibition {
   this.split.tiers[2].position.y=-explosion*.48;
   this.split.wireMaterials.forEach(m=>m.opacity=.18+w[1]*.26);
   this.construction.visible=w[1]>.01;
-  this.construction.position.set(this.poseFor(1).x,this.poseFor(1).y-.05,-.35);
-  this.construction.scale.setScalar(this.poseFor(1).scale);
-  this.construction.traverse(o=>{if(o instanceof THREE.Line)(o.material as THREE.LineBasicMaterial).opacity=w[1]*.28;});
+  this.construction.position.set(poses[1].x,poses[1].y-.05,-.35);
+  this.construction.scale.setScalar(poses[1].scale);
+  if(this.construction.visible)this.construction.traverse(o=>{if(o instanceof THREE.Line)(o.material as THREE.LineBasicMaterial).opacity=w[1]*.28;});
 
-  let stepPose=blendPose(this.poseFor(2),this.poseFor(3),smooth(2.76,3.16,p));
+  let stepPose=blendPose(poses[2],poses[3],smooth(2.76,3.16,p));
   stepPose.scale*=1+smooth(3.22,3.74,p)*.11;
-  stepPose=blendPose(stepPose,this.poseFor(4),smooth(3.74,4.10,p));
+  stepPose=blendPose(stepPose,poses[4],smooth(3.74,4.10,p));
   stepPose.ry+=breath*.65+controls.dragX;stepPose.rx+=controls.dragY;
   pose(this.stepRoot,stepPose);
   this.stepRoot.visible=w[3]>.002||exhibition>.002;
@@ -364,7 +367,7 @@ export class Exhibition {
    o.position.y=smooth(3.23,3.72,p)*(5-i)*.035;
   });
 
-  const organicPose=blendPose(this.poseFor(4),this.poseFor(5),smooth(4.76,5.16,p));
+  const organicPose=blendPose(poses[4],poses[5],smooth(4.76,5.16,p));
   const jp={...organicPose};
   jp.x-=agate*(this.mobile?.6:this.worldWidth*.11);
   jp.scale*=1-agate*.44;jp.ry-=agate*.6;
@@ -436,10 +439,10 @@ export class Exhibition {
   }else{
    this.plinths.forEach(o=>o.visible=false);
   }
-  this.mainRoot.updateMatrixWorld(true);
   const beamWeight=w[0]*.6+w[5];
   this.rayGroup.visible=beamWeight>.01&&controls.selected===null;
   if(this.rayGroup.visible){
+   this.mainRoot.updateWorldMatrix(true,false);
    this.updateRays(controls.angle,w[5]>.2,beamWeight);
    this.rayLines.forEach((l,i)=>(l.material as THREE.LineBasicMaterial).opacity=beamWeight*(i?.35:.55));
    this.spectralLines.forEach(l=>(l.material as THREE.LineBasicMaterial).opacity=beamWeight*(w[5]>.2?.68:.2));
@@ -448,7 +451,7 @@ export class Exhibition {
   this.scene.environmentIntensity=mix(.65,.88,theme);
   this.renderer.render(this.scene,this.camera);
   this.frames++;
-  const fbase=this.poseFor(1);
+  const fbase=poses[1];
   const facetLabels=[.4+explosion*.45,.0,-.55-explosion*.5].map(y=>{
    const local=new THREE.Vector3(1.03,y,0).applyEuler(new THREE.Euler(fbase.rx,fbase.ry,fbase.rz)).multiplyScalar(fbase.scale).add(new THREE.Vector3(fbase.x,fbase.y,fbase.z));
    const pt=this.screen(local);

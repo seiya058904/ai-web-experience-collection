@@ -68,6 +68,8 @@ Two motions run without a pointer, both in CSS only. The spectrum opens once on 
 
 ## Motion
 
+The Collection's RAF wakes for wheel interpolation and pointer movement, and stops when neither needs work. Fixed-height gallery panels let the browser skip offscreen descendants while retaining their full document geometry. The content-sized tablet rows use ordinary layout.
+
 Wheel and trackpad input is smoothed by one Lenis instance owned by `collection/main.ts` (`lerp: 0.105`, `syncTouch: false`, `anchors: false`) on its own RAF. It is the entrance's only clock and it imports no work runtime. Native touch, native fragment navigation, keyboard scrolling, focus and history stay authoritative: the Index, return journeys and Back/Forward never wait for an easing layer, and wheel momentum ends before a fragment jump or scroll key acts. `prefers-reduced-motion: reduce` starts no instance, and changing that preference destroys or recreates it at the current position. Every panel, the Index and the credits remain complete when the module fails or JavaScript is unavailable.
 
 ## Shapes

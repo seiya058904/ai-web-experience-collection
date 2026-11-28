@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { createStillQueue, stillVariant, stillPath } from '../experiences/urushi/src/still-frames.js';
 
 function fixture() {
@@ -107,7 +108,16 @@ test('A rapid reversal and terminal disposal invalidate pending image work', asy
 test('Fallback variants use the same phone and portrait breakpoints as their picture sources', () => {
   const cases = [[390, 844, 'mobile'], [700, 390, 'mobile'], [701, 1024, 'portrait'], [768, 1024, 'portrait'], [844, 390, 'wide'], [1100, 1100, 'portrait'], [1101, 1400, 'wide'], [3840, 2160, 'wide']];
   for (const [width, height, expected] of cases) assert.equal(stillVariant(width, height), expected);
-  assert.equal(stillPath(0, 'wide'), 'stills/hero.webp');
+  assert.equal(stillPath(0, 'wide'), 'surface-black.webp');
   assert.equal(stillPath(5, 'portrait'), 'stills/portrait/layers.webp');
   assert.equal(stillPath(10, 'mobile'), 'stills/mobile/depth.webp');
+});
+
+test('shared wide hero URL preserves the original fallback pixels', async () => {
+  const base = new URL('../public/urushi/assets/', import.meta.url);
+  const [poster, original] = await Promise.all([
+    readFile(new URL(stillPath(0, 'wide'), base)),
+    readFile(new URL('stills/hero.webp', base)),
+  ]);
+  assert.ok(poster.equals(original));
 });

@@ -84,7 +84,10 @@ let raf = 0,
   readingOnly = false,
   disposed = false;
 let renderDirty = true,
-  lastRenderedProgress = -1;
+  lastRenderedProgress = -1,
+  story: StoryState | undefined,
+  chromeDirty = true,
+  lastSavedProgress = NaN;
 let dialogOpener: HTMLElement | undefined;
 const pending = new Map<string, Promise<void>>();
 const loaded = new Set<string>();
@@ -121,8 +124,11 @@ function jump(p: number, smoothScroll = false) {
   lastP = getProgress();
 }
 function remember() {
+  const p = getProgress();
+  if (p === lastSavedProgress) return;
   try {
-    sessionStorage.setItem("atlas:progress", String(getProgress()));
+    sessionStorage.setItem("atlas:progress", String(p));
+    lastSavedProgress = p;
   } catch {}
 }
 function safeError(error: unknown) {
@@ -396,6 +402,7 @@ function load(name: string, task: () => Promise<void>) {
     .catch((error) => {
       if (disposed) return;
       failed.set(name, safeError(error));
+      renderDirty = true;
       console.error("ATLAS layer:", name, error);
     })
     .finally(() => pending.delete(name));
@@ -751,22 +758,29 @@ function tick(now: number) {
   scrollClock += elapsed;
   lenis.raf(scrollClock);
   if (!ready) { if (!readingOnly) raf = requestAnimationFrame(tick); return; }
-  if (!quiet && !dialog.open) time += dt;
+  const living = !quiet && !dialog.open;
+  if (living) time += dt;
   const p = getProgress();
   lastP = p;
-  const s = evaluateStory(p, mobile, cameraGuide);
-  requestAssets(s);
-  updateCamera(s);
-  terrain!.update(s, time);
-  map?.update(s);
-  city?.update(s, time);
-  globe?.update({ visibility: s.globe, night: 0, time: quiet ? 0 : time });
-  const dark = s.backdrop;
-  renderer!.setClearColor(reusableColour.copy(paper).lerp(nightPaper, dark));
-  updateChrome(s);
-  // The opaque dialog already pauses living time. Render its hidden scene only
-  // when loading, resizing or actual scroll makes a new frame necessary.
-  if ((!quiet && !dialog.open) || renderDirty || Math.abs(p - lastRenderedProgress) > 0.000001) {
+  const newPose = !story || p !== story.p || renderDirty;
+  if (newPose) {
+    story = evaluateStory(p, mobile, cameraGuide);
+    requestAssets(story);
+    updateCamera(story);
+    renderer!.setClearColor(reusableColour.copy(paper).lerp(nightPaper, story.backdrop));
+  }
+  // Only the geographic layers advance during the hold. Camera, projected
+  // labels and scale readouts depend on the scroll pose, layout and fonts.
+  if (newPose || chromeDirty) {
+    updateChrome(story!);
+    chromeDirty = false;
+  }
+  if (living || renderDirty || Math.abs(p - lastRenderedProgress) > 0.000001) {
+    const s = story!;
+    terrain!.update(s, time);
+    map?.update(s);
+    city?.update(s, time);
+    globe?.update({ visibility: s.globe, night: 0, time: quiet ? 0 : time });
     renderer!.render(scene, camera);
     lastRenderedProgress = p;
     renderDirty = false;
@@ -808,6 +822,12 @@ document.addEventListener("visibilitychange", () => {
   } else resume();
 });
 addEventListener("pageshow", resume);
+function invalidateFontMetrics() {
+  annotationMetricKey = "";
+  chromeDirty = true;
+}
+document.fonts.addEventListener("loadingdone", invalidateFontMetrics);
+document.fonts.addEventListener("loadingerror", invalidateFontMetrics);
 addEventListener("pagehide", (event) => {
   settleScrollInput();
   cancelAnimationFrame(raf);
@@ -878,6 +898,8 @@ function dispose() {
     if (disposed) return;
     disposed = true;
     cancelAnimationFrame(raf);
+    document.fonts.removeEventListener("loadingdone", invalidateFontMetrics);
+    document.fonts.removeEventListener("loadingerror", invalidateFontMetrics);
     lenis.destroy();
     terrain?.dispose();
     map?.dispose();

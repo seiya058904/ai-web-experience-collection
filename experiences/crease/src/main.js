@@ -41,6 +41,8 @@ let lookY = 0;
 let disposed = false;
 let lastSeen = -1;
 let creaseKey = '';
+let facetKey = '';
+let facetResult;
 
 const lenis = new Lenis({ autoRaf: false, lerp: 0.105, syncTouch: false, smoothWheel: !motion.matches, prevent: (node) => Boolean(node.closest?.('dialog,[data-lenis-prevent]')) });
 lenis.on('scroll', ScrollTrigger.update);
@@ -55,6 +57,7 @@ const resize = () => {
 };
 on(window, 'resize', resize);
 on(window, 'orientationchange', resize);
+on(stage, 'webglcontextrestored', () => { dirty = true; });
 resize();
 document.fonts?.ready.then(() => { if (!disposed) ScrollTrigger.refresh(); });
 
@@ -193,30 +196,41 @@ function setCreases(key, creases) {
   renderer.setCreases(creases());
 }
 
+function setFold(key, fold) {
+  if (key !== facetKey) {
+    facetResult = fold();
+    renderer.setFacets(facetResult);
+    facetKey = key;
+  }
+  return facetResult;
+}
+
 function compose(film) {
   if (film.stage === 'line') {
     setCreases('line', lineCreases);
-    return lineFold(film.lineFold);
+    return setFold(`line:${film.lineFold}`, () => lineFold(film.lineFold));
   }
   if (film.stage === 'vertex') {
     const shift = Math.round(shown.shift * 4) / 4;
     setCreases(`vertex:${shift}`, () => vertexCreases(shift));
-    return vertexFold(film.vertexFold, shown.shift);
+    return setFold(`vertex:${film.vertexFold}:${shown.shift}`, () => vertexFold(film.vertexFold, shown.shift));
   }
   if (film.stage === 'miura') {
     setCreases('miura', () => miuraCreases(MIURA_DEFAULT));
     const held = (shown.fold / 100) * film.miuraEnter;
-    return miuraFold(lerp(held, pullFold(shown.pull), film.pullZone) * film.miuraExit, MIURA_DEFAULT);
+    const fold = lerp(held, pullFold(shown.pull), film.pullZone) * film.miuraExit;
+    return setFold(`miura:${fold}`, () => miuraFold(fold, MIURA_DEFAULT));
   }
   const p = { ...params(), gamma: Math.round(shown.gamma * 2) / 2 };
-  setCreases(`yours:${p.columns}:${p.rows}:${p.gamma}`, () => miuraCreases(p));
-  return miuraFold((shown.foldYours / 100) * film.yoursEnter, p);
+  const pattern = `yours:${p.columns}:${p.rows}:${p.gamma}`;
+  setCreases(pattern, () => miuraCreases(p));
+  const fold = (shown.foldYours / 100) * film.yoursEnter;
+  return setFold(`${pattern}:${fold}`, () => miuraFold(fold, p));
 }
 
 function draw() {
   const film = filmAt(progress, innerWidth / innerHeight);
   const result = compose(film);
-  renderer.setFacets(result);
   const lines = film.stage === 'vertex' ? film.vertexFold : film.stage === 'line' ? film.lineFold : film.stage === 'miura' ? (shown.fold / 100) * film.miuraEnter : (shown.foldYours / 100) * film.yoursEnter;
   renderer.setView({
     elevation: film.elevation + lookY * 2.2,
@@ -285,6 +299,7 @@ syncInterface();
 gsap.ticker.add(frame);
 on(document, 'visibilitychange', () => { lastTime = 0; dirty = true; });
 on(window, 'pageshow', () => { lastTime = 0; ScrollTrigger.refresh(); dirty = true; });
+on(window, 'pagehide', (event) => { if (!event.persisted) dispose(); });
 if (anchors[location.hash.slice(1)] !== undefined) go(anchors[location.hash.slice(1)], { instant: true, history: false });
 
 function dispose() {

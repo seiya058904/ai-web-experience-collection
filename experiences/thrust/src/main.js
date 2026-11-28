@@ -8,12 +8,14 @@ const body = document.body;
 const sections = [...document.querySelectorAll('.chapter')];
 const copies = sections.map(section => section.querySelector('.scene-copy'));
 const rails = [...document.querySelectorAll('.chapter-rail a')];
+const fields = [...document.querySelectorAll('[data-field]')];
 const dialog = document.querySelector('#index-dialog');
 const indexOpen = document.querySelector('#index-open');
 const motionButton = document.querySelector('#motion-toggle');
 const qualityButton = document.querySelector('#quality-toggle');
 const soundButton = document.querySelector('#sound-toggle');
 const cutButton = document.querySelector('#blade-cut');
+const cutLabel = cutButton.querySelector('span');
 const announcement = document.querySelector('#announcement');
 const atmosphere = document.querySelector('.atmosphere');
 const shade = document.querySelector('.editorial-shade');
@@ -26,6 +28,8 @@ const on = (target, event, fn, extra = {}) => target.addEventListener(event, fn,
 let world, sound, bounds = [], target = 0, progress = 0, time = 0, lastTime = 0, raf = 0;
 let paused = media.matches, motionOverride = false, quality = false, soundEnabled = false;
 let bladeCut = null, lastIndex = -1, inspectAngle = 0, dragStart = null, startingAngle = 0;
+let previousUIState, previousStill, previousCut;
+let currentState;
 let restoreTimer = 0, resizeTimer = 0, disposed = false, staticMode = false;
 let wheelDirection = 0;
 const lenis = new Lenis({
@@ -67,6 +71,7 @@ function measure(preserveProgress = false) {
 
 function updateUI(state) {
   const { index, local } = state;
+  const still = media.matches || paused;
   if (index !== lastIndex) {
     bladeCut = null;
     inspectAngle = 0;
@@ -86,19 +91,28 @@ function updateUI(state) {
     const heading = sections[index].querySelector('h1,h2');
     heading.tabIndex = -1; heading.focus({preventScroll:true}); pendingFocusIndex = null;
   }
-  for (let i = 0; i < rails.length; i++) rails[i].style.setProperty('--part', i < index ? '1' : i === index ? String(local) : '0');
-  const entry = media.matches || paused ? 0 : Math.max(0, 1 - local / .12);
-  copies[index].style.transform = `translate3d(${entry * -10}px,0,0)`;
-  atmosphere.style.opacity = String(state.sky);
-  const baseShade = index === 7 ? .45 : index === 6 ? .72 : 1;
-  shade.style.opacity = String((1 - state.sky) * baseShade);
-  vignette.style.opacity = String(1 - state.sky);
-  body.classList.toggle('light-scene', state.sky > .64);
-  root.style.setProperty('--accent', state.sky > .64 ? '#1b5e71' : index === 4 || index === 5 ? '#efa46d' : '#81dcec');
-  document.querySelectorAll('[data-field]').forEach(field => { field.style.transform = `scaleX(${state[field.dataset.field]})`; });
-  const cut = bladeCut ?? state.bladeCut;
-  cutButton.setAttribute('aria-pressed', String(cut > .5));
-  cutButton.querySelector('span').textContent = cut > .5 ? 'CLOSE THE SECTION' : 'REVEAL THE CHANNELS';
+  if (state !== previousUIState) {
+    for (let i = 0; i < rails.length; i++) rails[i].style.setProperty('--part', i < index ? '1' : i === index ? String(local) : '0');
+    atmosphere.style.opacity = String(state.sky);
+    const baseShade = index === 7 ? .45 : index === 6 ? .72 : 1;
+    shade.style.opacity = String((1 - state.sky) * baseShade);
+    vignette.style.opacity = String(1 - state.sky);
+    body.classList.toggle('light-scene', state.sky > .64);
+    root.style.setProperty('--accent', state.sky > .64 ? '#1b5e71' : index === 4 || index === 5 ? '#efa46d' : '#81dcec');
+    for (const field of fields) field.style.transform = `scaleX(${state[field.dataset.field]})`;
+  }
+  if (state !== previousUIState || still !== previousStill) {
+    const entry = still ? 0 : Math.max(0, 1 - local / .12);
+    copies[index].style.transform = `translate3d(${entry * -10}px,0,0)`;
+    previousUIState = state;
+    previousStill = still;
+  }
+  const cut = (bladeCut ?? state.bladeCut) > .5;
+  if (cut !== previousCut) {
+    cutButton.setAttribute('aria-pressed', String(cut));
+    cutLabel.textContent = cut ? 'CLOSE THE SECTION' : 'REVEAL THE CHANNELS';
+    previousCut = cut;
+  }
 }
 
 function frame(now) {
@@ -114,7 +128,8 @@ function frame(now) {
   if (moving) time += dt;
   // Lenis owns the input easing; the engine follows that position directly.
   progress = target;
-  const state = sceneState(progress);
+  if (currentState?.p !== progress) currentState = sceneState(progress);
+  const state = currentState;
   updateUI(state);
   try { world?.render(time, state, { inspectAngle, bladeCut, staticShot: reduce }); }
   catch (error) { console.error('THRUST render failed:', error); enableStaticMode(); }

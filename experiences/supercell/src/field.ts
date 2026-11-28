@@ -64,28 +64,38 @@ const bell = (value: number, center: number, radius: number): number =>
 
 /** D(x,h,z,u). The same scalar is used for every displayed section. */
 export function density(x: number, h: number, z: number, u: number): number {
-  if (h <= 0.025 || h >= 0.985 || x < 0 || x > 1 || z < -0.5 || z > 0.5) return 0;
+  return densitySlice(h, u)(x, z);
+}
+
+/** Bind the shared field to a height and shear for repeated sampling. */
+export function densitySlice(h: number, u: number): (x: number, z: number) => number {
+  if (h <= 0.025 || h >= 0.985) return () => 0;
   const core = cloudCenter(h, u);
   const rain = rainCenter(h, u);
   const bodyRadius = 0.069 + 0.022 * Math.sin(h * Math.PI) ** 2;
-  const tower = 0.94 * bell(x, core.x, bodyRadius) * bell(z, core.z, 0.14)
-    * smoothstep(0.065, 0.16, h) * (1 - smoothstep(0.8, 0.98, h));
-  const base = 0.66 * bell(x, core.x - 0.035, 0.22) * bell(z, core.z, 0.22)
-    * bell(h, 0.19, 0.17);
-  const shoulder = 0.34 * bell(x, core.x - 0.07, 0.145) * bell(z, -0.055, 0.16)
-    * bell(h, 0.54, 0.24);
+  const towerIn = smoothstep(0.065, 0.16, h);
+  const towerOut = 1 - smoothstep(0.8, 0.98, h);
+  const baseHeight = bell(h, 0.19, 0.17);
+  const shoulderHeight = bell(h, 0.54, 0.24);
   const anvilX = 0.455 + coreShift(h, u);
-  const anvil = 0.85 * bell(x, anvilX, 0.36) * bell(z, core.z, 0.29)
-    * bell(h, 0.865, 0.115);
-  // A distinct, broad precipitation region. Its strength is not a risk score.
-  const precipitation = 0.59 * bell(x, rain.x, 0.12) * bell(z, rain.z, 0.17)
-    * bell(h, 0.3, 0.35);
+  const anvilHeight = bell(h, 0.865, 0.115);
+  const rainHeight = bell(h, 0.3, 0.35);
   const edge = smoothstep(0.025, 0.085, h) * (1 - smoothstep(0.95, 0.985, h));
-  // Fixed small lobes make contours organic without introducing temporal drift.
-  const texture = 0.94 + 0.035 * Math.sin(x * 47 + h * 11) * Math.cos(z * 31 - h * 5)
-    + 0.025 * Math.sin(x * 83 - z * 17 + h * 7);
-  return clamp((1 - Math.exp(-(tower + base + shoulder + anvil + precipitation) * 1.55))
-    * edge * texture);
+
+  return (x, z) => {
+    if (x < 0 || x > 1 || z < -0.5 || z > 0.5) return 0;
+    const tower = 0.94 * bell(x, core.x, bodyRadius) * bell(z, core.z, 0.14) * towerIn * towerOut;
+    const base = 0.66 * bell(x, core.x - 0.035, 0.22) * bell(z, core.z, 0.22) * baseHeight;
+    const shoulder = 0.34 * bell(x, core.x - 0.07, 0.145) * bell(z, -0.055, 0.16) * shoulderHeight;
+    const anvil = 0.85 * bell(x, anvilX, 0.36) * bell(z, core.z, 0.29) * anvilHeight;
+    // This broad precipitation region is distinct from the cloud structure.
+    const precipitation = 0.59 * bell(x, rain.x, 0.12) * bell(z, rain.z, 0.17) * rainHeight;
+    // Fixed small lobes make contours organic without introducing temporal drift.
+    const texture = 0.94 + 0.035 * Math.sin(x * 47 + h * 11) * Math.cos(z * 31 - h * 5)
+      + 0.025 * Math.sin(x * 83 - z * 17 + h * 7);
+    return clamp((1 - Math.exp(-(tower + base + shoulder + anvil + precipitation) * 1.55))
+      * edge * texture);
+  };
 }
 
 /**
@@ -199,10 +209,11 @@ export function sampleSlice(height: number, shear: number, resolutionX = 100, re
   const values = new Float32Array(columns * rows);
   const h = clamp(height);
   const u = clamp(shear);
+  const sample = densitySlice(h, u);
   for (let row = 0; row < rows; row++) {
     const z = row / (rows - 1) - 0.5;
     for (let col = 0; col < columns; col++) {
-      values[row * columns + col] = density(col / (columns - 1), h, z, u);
+      values[row * columns + col] = sample(col / (columns - 1), z);
     }
   }
   return { values, columns, rows, height: h, shear: u };
@@ -222,8 +233,11 @@ export function contourSegments(height: number, shear: number, resolutionX = 100
     const segments: string[] = [];
     for (let y = 0; y < rows - 1; y++) {
       for (let x = 0; x < columns - 1; x++) {
-        const v = [values[y * columns + x], values[y * columns + x + 1],
-          values[(y + 1) * columns + x + 1], values[(y + 1) * columns + x]];
+        const index = y * columns + x;
+        const a = values[index], b = values[index + 1], c = values[index + columns + 1], d = values[index + columns];
+        const above = a >= level;
+        if ((b >= level) === above && (c >= level) === above && (d >= level) === above) continue;
+        const v = [a, b, c, d];
         const corners = [[x * dx, y * dy], [(x + 1) * dx, y * dy],
           [(x + 1) * dx, (y + 1) * dy], [x * dx, (y + 1) * dy]];
         const cuts: number[][] = [];
@@ -241,8 +255,8 @@ export function contourSegments(height: number, shear: number, resolutionX = 100
         if (cuts.length === 2) line(cuts[0], cuts[1]);
         else if (cuts.length === 4) {
           // Resolve saddle ambiguity from the cell's bilinear center.
-          const centerAbove = (v[0] + v[1] + v[2] + v[3]) / 4 >= level;
-          if (centerAbove === (v[0] >= level)) {
+          const centerAbove = (a + b + c + d) / 4 >= level;
+          if (centerAbove === above) {
             line(cuts[0], cuts[1]); line(cuts[2], cuts[3]);
           } else {
             line(cuts[0], cuts[3]); line(cuts[1], cuts[2]);

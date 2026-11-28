@@ -20,6 +20,7 @@ export class Renderer {
   private readonly guide = document.querySelector<SVGSVGElement>('#guides')!;
   private readonly vertical: SVGPathElement[] = [];
   private readonly horizontal: SVGPathElement[] = [];
+  private readonly guidePaths = new WeakMap<SVGPathElement, string>();
   private readonly image = document.querySelector<HTMLImageElement>('#source-photo')!;
   private readonly canvas = document.querySelector<HTMLCanvasElement>('#raster')!;
   private readonly raster = new PhotoRaster(this.canvas, this.image);
@@ -226,8 +227,10 @@ export class Renderer {
     this.guide.style.opacity = String(fixed(1 - uiStrength));
     this.drawGuides(d, coordinate);
     this.labels.style.opacity = String(clamp(d.guide * 4) * (coordinate < .6 ? 0 : 1));
-    this.columnLabel.textContent = `${String(Math.round(d.cols)).padStart(2, '0')} columns`;
-    this.baselineLabel.textContent = `${Math.round(H / Math.max(1, d.rows))} px / baseline`;
+    const columns = `${String(Math.round(d.cols)).padStart(2, '0')} columns`;
+    const baseline = `${Math.round(H / Math.max(1, d.rows))} px / baseline`;
+    if (this.columnLabel.textContent !== columns) this.columnLabel.textContent = columns;
+    if (this.baselineLabel.textContent !== baseline) this.baselineLabel.textContent = baseline;
     this.invitation.style.opacity = String(1 - smooth(range(.04, .4, coordinate)));
     this.invitation.style.visibility = coordinate < .4 ? 'visible' : 'hidden';
   }
@@ -237,6 +240,12 @@ export class Renderer {
     line.setAttribute('vector-effect', 'non-scaling-stroke');
     this.guide.append(line);
     return line;
+  }
+
+  private setGuidePath(line: SVGPathElement, path: string) {
+    if (this.guidePaths.get(line) === path) return;
+    this.guidePaths.set(line, path);
+    line.setAttribute('d', path);
   }
 
   private drawGuides(d: Design, p: number) {
@@ -251,7 +260,7 @@ export class Renderer {
       const exists = clamp(cols - i + 1);
       const opening = p < .36 ? 0 : p < 1 ? smooth(range(.38 + (i % 12) * .023, .73 + (i % 12) * .016, p)) : 1;
       const leaving = p >= 10.36 ? clamp(d.guide / .21 * 1.8 - i / 48 * .8) : 1;
-      line.setAttribute('d', `M${fixed(x - skew / 2)} 0L${fixed(x + skew / 2)} ${fixed(H * opening)}`);
+      this.setGuidePath(line, `M${fixed(x - skew / 2)} 0L${fixed(x + skew / 2)} ${fixed(H * opening)}`);
       line.style.opacity = String(fixed(d.guide * exists * opening * leaving));
     });
     this.horizontal.forEach((line, i) => {
@@ -260,7 +269,7 @@ export class Renderer {
       if (p < .36) {y = H * (this.view.mobile ? .32 : isWideShort(this.view) ? .26 : .44) + 3; length = smooth(range(.015, .33, p));}
       const exists = p < .36 ? (i === 0 ? 1 : 0) : clamp(rows - i + 1);
       const leaving = p >= 10.36 ? clamp(d.guide / .21 * 1.8 - i / 24 * .8) : 1;
-      line.setAttribute('d', `M${fixed(mix(origin, 0, length))} ${fixed(y)}H${fixed(mix(origin, W, length))}`);
+      this.setGuidePath(line, `M${fixed(mix(origin, 0, length))} ${fixed(y)}H${fixed(mix(origin, W, length))}`);
       line.style.opacity = String(fixed(d.guide * exists * leaving));
     });
   }

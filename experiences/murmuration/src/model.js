@@ -19,6 +19,7 @@ const GX = 36, GY = 24, GZ = 10;
 const ORIGIN = [252, 168, 70];
 const NEIGHBORS = 7;
 const RADIUS2 = 25 * 25;
+const CANDIDATE_LIMIT = 112;
 
 export class Flock {
   constructor({ count = 2400, seed = 8419, state = null } = {}) {
@@ -59,7 +60,7 @@ export class Flock {
   snapshot() {
     return { version: 1, count: this.count, seed: this.seed, tick: this.tick,
       rules: { ...this.rules }, paused: this.paused, pending: this.pending.map(p=>({...p})),
-      data: Array.from(this.data), speedBias: Array.from(this.speedBias), neighborhood: { count: NEIGHBORS, radius: 25, candidateCap: 112 } };
+      data: Array.from(this.data), speedBias: Array.from(this.speedBias), neighborhood: { count: NEIGHBORS, radius: 25, candidateCap: CANDIDATE_LIMIT } };
   }
 
   restore(state) {
@@ -91,9 +92,9 @@ export class Flock {
       let inspected=0;
       // Bounded approximate nearest-neighbor query in adjacent spatial buckets.
       // Traversal is deterministic. This is explicitly not a biological solver.
-      for(let oz=-1;oz<=1;oz++) for(let oy=-1;oy<=1;oy++) for(let ox=-1;ox<=1;ox++) {
+      search: for(let oz=-1;oz<=1;oz++) for(let oy=-1;oy<=1;oy++) for(let ox=-1;ox<=1;ox++) {
         let k=this.head[(cx+ox)+(cy+oy)*GX+(cz+oz)*GX*GY];
-        while(k!==-1 && inspected<112) {
+        while(k!==-1) {
           if(k!==i) {
             inspected++;
             const q=k*6, dx=d[q]-x,dy=d[q+1]-y,dz=d[q+2]-z;
@@ -103,6 +104,7 @@ export class Flock {
               while(at>0 && dist<this.distances[at-1]) {this.distances[at]=this.distances[at-1];this.indices[at]=this.indices[at-1];at--;}
               this.distances[at]=dist;this.indices[at]=k;
             }
+            if(inspected===CANDIDATE_LIMIT) break search;
           }
           k=this.links[k];
         }

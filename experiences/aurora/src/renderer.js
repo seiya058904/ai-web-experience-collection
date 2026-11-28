@@ -51,7 +51,7 @@ export class AuroraRenderer {
     this.base = 1;
     this.smoothed = 16;
     this.sinceChange = 0;
-    this.earthAsset = `${import.meta.env.BASE_URL}orbital/media/earth-texture.png`;
+    this.earthAsset = `${import.meta.env.BASE_URL}orbital/media/earth-texture.webp`;
     const gl = canvas.getContext('webgl2', { alpha: false, antialias: false, powerPreference: 'high-performance' });
     if (!gl) throw new Error('WebGL2 unavailable');
     this.gl = gl;

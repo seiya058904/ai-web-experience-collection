@@ -548,3 +548,9 @@ h1 span{display:block}
 .collection-index ol{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.slit{animation:none}}
+
+/* Fixed-height panels keep their exact grid and anchor geometry while the browser
+   skips offscreen descendants. Tablet rows and the colophon size to their copy. */
+@media(max-width:700px), (min-width:1001px){
+.worlds>.world:not(.worlds-end){content-visibility:auto}
+}

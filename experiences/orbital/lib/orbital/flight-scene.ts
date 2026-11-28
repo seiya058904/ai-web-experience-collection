@@ -51,7 +51,7 @@ export function createFlightScene(canvas: HTMLCanvasElement, onStatus:(status:st
   const engineLight=new THREE.PointLight(0xff6b23,0,14,2);engineLight.position.set(0,-5.7,1);vehicle.add(engineLight);
 
   const textureLoader=new THREE.TextureLoader();
-  const earthMap=textureLoader.load((import.meta.env.BASE_URL + 'orbital/media/earth-texture.png'),()=>{if(!disposed)onStatus('webgl');});earthMap.colorSpace=THREE.SRGBColorSpace;earthMap.anisotropy=Math.min(4,renderer.capabilities.getMaxAnisotropy());
+  const earthMap=textureLoader.load((import.meta.env.BASE_URL + 'orbital/media/earth-texture.webp'),()=>{if(!disposed)onStatus('webgl');});earthMap.colorSpace=THREE.SRGBColorSpace;earthMap.anisotropy=Math.min(4,renderer.capabilities.getMaxAnisotropy());
   const earthRoot=new THREE.Group();scene.add(earthRoot);
   const earthMaterial=new THREE.MeshPhongMaterial({map:earthMap,color:0xcddded,shininess:9,specular:0x243e56,transparent:true,opacity:1});
   const earth=new THREE.Mesh(new THREE.SphereGeometry(1,80,56),earthMaterial);earthRoot.add(earth);

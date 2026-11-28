@@ -9,13 +9,44 @@ const worlds = document.querySelectorAll<HTMLAnchorElement>('.world');
 // The gallery stays a native document: one Lenis instance only smooths wheel and
 // trackpad input, on its own clock. Reduced motion starts no instance at all.
 let lenis: Lenis | null = null;
+let frame = 0;
+let pointer: { world: HTMLAnchorElement; image: HTMLImageElement; x: number; y: number } | null = null;
+
+function requestFrame() {
+  if (!frame) frame = requestAnimationFrame(renderFrame);
+}
+
+function renderFrame(time: number) {
+  frame = 0;
+  if (pointer && media.matches) {
+    const { world, image, x, y } = pointer;
+    const rect = world.getBoundingClientRect();
+    image.style.setProperty('--pointer-x', `${(x - rect.left - rect.width / 2) * -.012}px`);
+    image.style.setProperty('--pointer-y', `${(y - rect.top - rect.height / 2) * -.008}px`);
+  }
+  pointer = null;
+  if (lenis?.isScrolling === 'smooth') {
+    lenis.raf(Math.max(time, lenis.time));
+    if (lenis.isScrolling === 'smooth') requestFrame();
+  }
+}
+
 const syncSmoothing = () => {
   if (reduced.matches) {
     lenis?.destroy();
     lenis = null;
     return;
   }
-  lenis ??= new Lenis({ lerp: .105, smoothWheel: true, syncTouch: false, anchors: false, autoRaf: true });
+  if (lenis) return;
+  const instance = new Lenis({ lerp: .105, smoothWheel: true, syncTouch: false, anchors: false, autoRaf: false });
+  lenis = instance;
+  instance.on('virtual-scroll', ({ event, deltaY }) => {
+    if (event.type !== 'wheel' || event.ctrlKey || !deltaY) return;
+    // This event precedes Lenis starting the interpolation. Prime its timestamp
+    // after an idle period so the first advance does not include idle time.
+    if (instance.isScrolling !== 'smooth') instance.raf(performance.now());
+    requestFrame();
+  });
 };
 syncSmoothing();
 reduced.addEventListener('change', syncSmoothing, { signal: controller.signal });
@@ -89,15 +120,16 @@ if (catalogue && catalogueNav) {
 }
 
 for (const world of worlds) {
+  const image = world.querySelector<HTMLImageElement>('.world-image img');
   world.addEventListener('pointermove', (event) => {
-    if (!media.matches) return;
-    const rect = world.getBoundingClientRect();
-    world.style.setProperty('--pointer-x', `${(event.clientX - rect.left - rect.width / 2) * -.012}px`);
-    world.style.setProperty('--pointer-y', `${(event.clientY - rect.top - rect.height / 2) * -.008}px`);
+    if (!image || !media.matches) return;
+    pointer = { world, image, x: event.clientX, y: event.clientY };
+    requestFrame();
   }, { passive: true, signal: controller.signal });
   world.addEventListener('pointerleave', () => {
-    world.style.removeProperty('--pointer-x');
-    world.style.removeProperty('--pointer-y');
+    if (pointer?.world === world) pointer = null;
+    image?.style.removeProperty('--pointer-x');
+    image?.style.removeProperty('--pointer-y');
   }, { signal: controller.signal });
   world.addEventListener('click', (event) => {
     // New tabs are independent visits, even when sessionStorage is copied by an opener.
@@ -128,4 +160,5 @@ if (returning || typeof restoredSource === 'string') {
 import.meta.hot?.dispose(() => {
   controller.abort();
   lenis?.destroy();
+  cancelAnimationFrame(frame);
 });

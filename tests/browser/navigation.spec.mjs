@@ -194,3 +194,22 @@ test('Collection directory and native work links remain usable without JavaScrip
     await expect(page).toHaveURL(/\/ai-web-experience-collection\/sillage\/$/);
   } finally { await context.close(); }
 });
+
+test('Collection wheel wakes after idle and leaves native End in control', async ({ page }) => {
+  await ready(page, './');
+  await page.waitForTimeout(650);
+  const viewport = page.viewportSize();
+  await page.mouse.move(viewport.width * .5, viewport.height * .66);
+  await page.mouse.wheel(0, 700);
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(650);
+  await settleScroll(page);
+  await page.mouse.wheel(0, -450);
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeLessThan(300);
+  await page.mouse.wheel(0, 900);
+  await page.keyboard.press('End');
+  await expect.poll(() => page.evaluate(() => document.scrollingElement.scrollHeight - innerHeight - scrollY)).toBeLessThan(2);
+  const finalArtwork = page.locator('#world-chrysalis img');
+  await expect.poll(() => finalArtwork.evaluate(image => image.naturalWidth)).toBeGreaterThan(0);
+  await settleScroll(page);
+  expect(await page.evaluate(() => document.scrollingElement.scrollHeight - innerHeight - scrollY)).toBeLessThan(2);
+});

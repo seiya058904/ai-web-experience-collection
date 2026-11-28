@@ -89,26 +89,32 @@ export function createWorld(container, { mobile = false, onContextLost, onContex
     engine.group.visible = state.blade < .98;
     flow.group.visible = state.blade < .84 && state.flow > .005;
     blade.group.visible = state.blade > .01;
-    const bladeScale = lerp(.075, 1.55, state.blade);
-    blade.group.scale.setScalar(bladeScale);
-    // The macro grows out of, and returns to, the first high-pressure rotor.
-    blade.group.position.set(lerp(.566,1.4,state.blade),lerp(.566,0,state.blade),lerp(7.9,8.2,state.blade));
-    blade.group.rotation.y = -.12 + inspectAngle * .8 * (1-smooth(6.76,6.98,p));
-    blade.group.rotation.z = lerp(-Math.PI/4,-.14,state.blade);
-    engine.update(time, { ...state, focus: state.index });
-    flow.update(time, { progress: p / 10, heat: state.heat, explode: state.explode, intensity: state.flow * (1 - state.blade), focus: state.index === 3 || state.index === 4 ? 'core' : '' });
-    blade.update(time, { reveal: state.blade, cut: bladeCut ?? state.bladeCut });
+    if (blade.group.visible) {
+      blade.group.scale.setScalar(lerp(.075, 1.55, state.blade));
+      // The macro grows out of, and returns to, the first high-pressure rotor.
+      blade.group.position.set(lerp(.566,1.4,state.blade),lerp(.566,0,state.blade),lerp(7.9,8.2,state.blade));
+      blade.group.rotation.y = -.12 + inspectAngle * .8 * (1-smooth(6.76,6.98,p));
+      blade.group.rotation.z = lerp(-Math.PI/4,-.14,state.blade);
+      blade.update(time, { reveal: state.blade, cut: bladeCut ?? state.bladeCut });
+    }
+    // Each part samples absolute time and progress when it returns to view.
+    if (engine.group.visible) engine.update(time, { ...state, focus: state.index });
+    if (flow.group.visible) flow.update(time, { progress: p / 10, heat: state.heat, explode: state.explode, intensity: state.flow * (1 - state.blade), focus: state.index === 3 || state.index === 4 ? 'core' : '' });
     // Orbit around the axis of the entire assembly, not independently around each part.
     machine.rotation.y = state.index === 7 ? inspectAngle * .38 * (1-smooth(7.74,7.98,p)) : 0;
     machine.rotation.z = 0;
     aircraft.group.visible = state.aircraft > .001;
-    aircraft.update(time, { reveal: state.aircraft });
+    if (aircraft.group.visible) aircraft.update(time, { reveal: state.aircraft });
     energyMaterial.opacity = state.energy * .8;
-    for (let i = 0; i < 64; i++) {
-      const hp = i % 2 === 1, span = hp ? 5.70 : 10.55, startZ = hp ? 2.50 : -.10;
-      energyPoints[i * 3 + 2] = startZ + ((span+i/63*span-(time*1.45)%span)%span);
+    energyTrace.visible = state.energy > 0;
+    if (energyTrace.visible || frameCount === 0) {
+      for (let i = 0; i < 64; i++) {
+        const hp = i % 2 === 1, span = hp ? 5.70 : 10.55, startZ = hp ? 2.50 : -.10;
+        energyPoints[i * 3 + 2] = startZ + ((span+i/63*span-(time*1.45)%span)%span);
+      }
+      if (frameCount === 0) energyGeometry.computeBoundingSphere();
+      energyGeometry.attributes.position.needsUpdate = true;
     }
-    energyGeometry.attributes.position.needsUpdate = state.energy > 0;
     combustionLight.intensity = state.heat * (state.index === 4 ? 2.0 : .75);
     hemi.intensity = lerp(.35, .42, state.sky);
     key.intensity = lerp(2.0, 2.25, state.sky);
@@ -121,7 +127,7 @@ export function createWorld(container, { mobile = false, onContextLost, onContex
     frameCount++; renderTotal += performance.now() - start;
     // Bounded one-step adaptation, avoiding recurring resolution oscillation.
     if (frameCount === 100 && !highQuality && renderTotal / frameCount > 28) { performanceScale = .72; resize(); }
-    container.dataset.ready = 'true';
+    if (frameCount === 1) container.dataset.ready = 'true';
   }
   const lossHandler = event => { event.preventDefault(); lost = true; onContextLost?.(); };
   const restoreHandler = () => {

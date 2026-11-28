@@ -7,7 +7,7 @@
 - `experiences/aurora/src/renderer.js` and `shaders.js`: WebGL2 path.
 - `experiences/aurora/src/fallback.js`: Canvas 2D path with the same `resize`, `draw`, `adapt`, `dispose` surface.
 - `experiences/aurora/src/main.js`: lifecycle, scroll, interface state, overlays, export.
-- `public/aurora/`: poster, social image, favicon and notices. The Earth texture is ORBITAL's existing `orbital/media/earth-texture.png`, requested only when the film first approaches space.
+- `public/aurora/`: poster, social image, favicon and notices. The Earth texture is ORBITAL's shared `orbital/media/earth-texture.webp`, a lossless encoding of the preserved PNG. It is requested only when the film first approaches space.
 
 ## State flow
 
